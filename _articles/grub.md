@@ -1,3 +1,17 @@
+---
+layout: article
+title: Reinstall GRUB Bootloader
+description: >
+    Official directions to Reinstall Grub Bootloader.
+keywords:
+    - Support
+    - Grub
+    - Bootloader
+    - Refresh
+    - Reinstall
+    - System76
+---
+
 # Restore Grub Bootloader
 
 GRUB is the Ubuntu bootloader. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can begin acting funny, and it may not let you boot into Ubuntu to fix the problem.

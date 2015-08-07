@@ -12,10 +12,14 @@ table{
 	width: 100%;
 
 	thead{
+		border: none;
+
 		tr{
 			th,
 			td{
 				padding: 0.5em 1rem;
+
+				border-bottom: 1px solid;
 
 				font-family: "Roboto Slab", serif;
 				font-size: 1.25rem;

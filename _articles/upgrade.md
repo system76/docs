@@ -23,13 +23,11 @@ First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) h
 
 ### Create an Installation USB Drive
 
-* [Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu)
-* [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows)
-
-### Create an Installation DVD
-* [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
-* [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-* [Using OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+Create an Installation USB Drive  | Create an Installation DVD
+--------------------------------- | ---------------------------
+[Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
+[Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
+<small>OS X can't make a System76-compatible USB Drive</small>| [Using OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
 Next, we recommend backing up all important files from your comptuer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong.
 

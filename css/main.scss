@@ -12,23 +12,27 @@ table{
 	width: 100%;
 
 	thead{
-		th,
-		td{
-			padding: 0.5em 1em;
+		tr{
+			th,
+			td{
+				padding: 0.5em 1em;
 
-			font-family: "Roboto Slab", serif;
-			font-size: 1.25rem;
-			font-weight: bold;
-			line-height: 1.25rem;
+				font-family: "Roboto Slab", serif;
+				font-size: 1.25rem;
+				font-weight: bold;
+				line-height: 1.25rem;
+			}
 		}
 	}
 
 	tbody{
-		td{
-			padding: 0.5em 1em;
+		tr{
+			td{
+				padding: 0.5em 1em;
 
-			line-height: 1rem;
-			font-size: 1rem;
+				line-height: 1rem;
+				font-size: 1rem;
+			}
 		}
 	}
 }

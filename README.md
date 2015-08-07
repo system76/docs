@@ -3,7 +3,7 @@ System76 Support Docs
 
 The docs system is powered by [GitHub Flavbored Markdown](https://help.github.com/articles/github-flavored-markdown/). If you don't know what Markdown is (or need a refresher), take a minute to look over [the basics](https://help.github.com/articles/markdown-basics/).
 
-It is also powered by GitHub itself. If you know how to use git and GitHub, feel free to update the docs that way. Otherwise, we'll assume you will be using the GitHub website to update the docs.
+It is also powered by GitHub itself. If you know how to use git with GitHub, feel free to update the docs that way. Otherwise, we'll assume you will be using the GitHub website to update the docs.
 
 1. The Basics
 -------------
@@ -35,7 +35,7 @@ keywords:
 ---
 ```
 
-After that, it's just the contents of the article in markdown. Feel free to use `#Heading1`, `#Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
+After that, it's just the contents of the article in markdown. Feel free to use `#Heading1`, `##Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
 
 When you're all done, fill out the "Commit new file" form at the bottom with the description of your changes and press the "Commit changes" button.
 

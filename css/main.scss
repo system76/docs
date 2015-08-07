@@ -9,7 +9,9 @@
 }
 
 table{
-	width: 100%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 
 	thead{
 		border-top: none;
@@ -17,7 +19,7 @@ table{
 		tr{
 			th,
 			td{
-				padding: 0.5em 0;
+				padding: 0.5rem 0.2rem;
 
 				border-bottom: 1px solid;
 
@@ -32,7 +34,7 @@ table{
 	tbody{
 		tr{
 			td{
-				padding: 0.5em 0;
+				padding: 0.5rem 0.25rem;
 
 				border: 1px solid #eee;
 

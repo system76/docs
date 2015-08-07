@@ -13,13 +13,14 @@ table{
 
 	thead{
 		border: none;
+		border-bottom: 1px solid;
 
 		tr{
 			th,
 			td{
 				padding: 0.5em 1rem;
 
-				border-bottom: 1px solid;
+				border: 1px solid #eee;
 
 				font-family: "Roboto Slab", serif;
 				font-size: 1.25rem;

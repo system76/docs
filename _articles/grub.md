@@ -36,6 +36,7 @@ Laptops  | Desktops
 Hold F7 or F1 | Hold F8 or F10
 
 Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following commands:
+
 ```
 sudo mount /dev/sda1 /mnt
 sudo mount --bind /dev /mnt/dev

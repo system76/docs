@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <nav>
+            <h2>Articles:</h2>
+
+            <ul>
+                {% for article in site.articles %}
+                {% if article.title %}
+                <li>
+                    <a class="page-link" href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>

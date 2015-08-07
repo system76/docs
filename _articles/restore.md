@@ -18,7 +18,7 @@ System76 computers use a standard Ubuntu installation disc and the System76 Driv
 
 ### Important Note!
 
-If you recently updated your system, and now it does not boot, you may not need to reinstall Ubuntu. If, when you start your computer, you see a flashing underscore on the screen ("_"), then it is likely that Ubuntu's bootloader, GRUB, was not updated properly. To restore it, see How to Restore Grub Bootloader. 
+If you recently updated your system, and now it does not boot, you may not need to reinstall Ubuntu. If, when you start your computer, you see a flashing underscore on the screen ("_"), then it is likely that Ubuntu's bootloader, GRUB, was not updated properly. To restore it, see [How to Restore Grub Bootloader](http://http://docs.system76.com/articles/update_grub)
 
 ## 1. Create an Ubuntu Bootable Disk
 

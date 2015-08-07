@@ -20,9 +20,9 @@ System76 computers use a standard Ubuntu installation disc and the System76 Driv
 
 If you recently updated your system, and now it does not boot, you may not need to reinstall Ubuntu. If, when you start your computer, you see a flashing underscore on the screen ("_"), then it is likely that Ubuntu's bootloader, GRUB, was not updated properly. To restore it, see How to Restore Grub Bootloader. 
 
-## 1. Prepare for the Upgrade
+## 1. Create an Ubuntu Bootable Disk
 
-First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong.
+First, you'll need to create a bootable disk you can install Ubuntu from. 
 
 Create an Installation USB Drive  | Create an Installation DVD
 --------------------------------- | ---------------------------

@@ -12,7 +12,6 @@ keywords:
     - System76
 ---
 
-# Restore Grub Bootloader
 
 GRUB is the Ubuntu bootloader. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can begin acting funny, and it may not let you boot into Ubuntu to fix the problem.
 
@@ -28,7 +27,7 @@ Create an Installation USB Drive  | Create an Installation DVD
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
 <small>OS X can't make a System76-compatible USB Drive</small>| [Using OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
-## Reinstall GRUB Bootloader
+## 2. Reinstall GRUB Bootloader
 
 Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. When you see the System76 logo on the screen: 
 

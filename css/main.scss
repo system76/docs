@@ -7,3 +7,23 @@
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
+table{
+	thead{
+		th,
+		td{
+			padding: 0.5em 1em;
+
+			font-size: 1rem;
+			font-weight: bold;
+		}
+	}
+
+	tbody{
+		td{
+			padding: 0.5em 1em;
+
+			font-size: 1rem;
+		}
+	}
+}

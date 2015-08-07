@@ -13,12 +13,13 @@ table{
 
 	thead{
 		border-top: none;
-		border-bottom: 1px solid;
 
 		tr{
 			th,
 			td{
-				padding: 0.5em 1rem;
+				padding: 0.5em 0;
+
+				border-bottom: 1px solid;
 
 				font-family: "Roboto Slab", serif;
 				font-size: 1.25rem;
@@ -31,7 +32,7 @@ table{
 	tbody{
 		tr{
 			td{
-				padding: 0.5em 1rem;
+				padding: 0.5em 0;
 
 				border: 1px solid #eee;
 

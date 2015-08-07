@@ -2,22 +2,20 @@
 layout: default
 ---
 
-<div class="home">
+<div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <nav>
+            <h2>Articles:</h2>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+            <ul>
+                {% for article in site.articles %}
+                {% if article.title %}
+                <li>
+                    <a class="page-link" href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
 </div>

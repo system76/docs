@@ -17,7 +17,7 @@ GRUB is the Ubuntu bootloader. It takes care of getting the operating system sta
 
 ### Important Note About GRUB Updates!
 
-If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to /dev/sda (not /dev/sda1) **only**. Installing everywhere **will** break the bootloader.
+If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to /dev/sda (_not_ /dev/sda1) **only**. Installing everywhere **will** break the bootloader.
 
 ## 1. Create an Ubuntu Live Disk
 

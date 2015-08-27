@@ -1,3 +1,18 @@
+---
+layout: article
+title: Automatically Mount an Extra Drive
+description: >
+    Official directions to set up an extra drive to mount automatically.
+keywords:
+    - Support
+    - extra drive
+    - mount 
+    - automatically
+    - boot
+    - System76
+---
+
+
 If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the eject (⏏) icon. If you prefer to have the drive made available (mounted) automatically every time you start your comptuer, this is possible with some configuration changes.
 
 ### Caveats

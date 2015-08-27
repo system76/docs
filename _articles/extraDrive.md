@@ -64,6 +64,7 @@ Symbolic Icon Name                         | *{leave blank}*
 Mount Point                                | *{paste in value from step 2}*
 Identify As                                | `/dev/disk/by-uuid/....`
 Filesystem Type                            | `ext4`*
+
 *<small>This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.</small>
 
 ![Mount Options Set Correctly](http://archive.system76.com/images/drive-instructions/Step2.png)

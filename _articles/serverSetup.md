@@ -59,11 +59,9 @@ From a Windows computer: Download PuTTY from [here](http://www.chiark.greenend.o
 
 ### Configure the Server's IP Addresses
 
-`sudo nano /etc/network/interfaces`
-**Adjust as necessary & press <kbd>Ctrl</kbd> + <kbd>X</kbd> → <kbd>Y</kbd> → <kbd>enter</kbd> to save.
+`sudo nano /etc/network/interfaces` *Adjust as necessary & press <kbd>Ctrl</kbd> + <kbd>X</kbd> → <kbd>Y</kbd> → <kbd>enter</kbd> to save.
 
-`sudo nano /etc/resolv.conf`
-**Adjust as necessary & press <kbd>Ctrl</kbd> + <kbd>X</kbd> → <kbd>Y</kbd> → <kbd>enter</kbd> to save.
+`sudo nano /etc/resolv.conf` *Adjust as necessary & press <kbd>Ctrl</kbd> + <kbd>X</kbd> → <kbd>Y</kbd> → <kbd>enter</kbd> to save.
 
 
 

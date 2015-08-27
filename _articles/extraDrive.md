@@ -56,10 +56,10 @@ Option                                     | Value
 -------------------------------------------|-------
 Mount at startup                           | Checked ☑
 Show in user interface                     | Checked ☑
-Require additional authorization to mount | Unchecked ☐
-Display Name                               | `     `*{leave blank}*
-Icon Name                                  | `     `*{leave blank}*
-Symbolic Icon Name                         | `     `*{leave blank}*
+Require additional authorization to mount  | Unchecked ☐
+Display Name                               | *{leave blank}*
+Icon Name                                  | *{leave blank}*
+Symbolic Icon Name                         | *{leave blank}*
 *{unlabeled field}*                        | `nosuid,nodev,nofail,x-gvfs-show`
 Mount Point                                | `/home/...`*{paste in value from step 2}*
 Identify As                                | `/dev/disk/by-uuid/...`

@@ -67,7 +67,7 @@ Filesystem Type                            | `ext4`*
 
 *<small>This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.</small>
 
-![Mount Options Set Correctly](http://archive.system76.com/images/drive-instructions/Step2.png)
+![Mount Options Set Correctly](http://archive.system76.com/images/drive-instructions/Step4.png)
 
 ## 6. Save and Restart
 

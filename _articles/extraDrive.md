@@ -39,17 +39,16 @@ Turn off the Automatic Mount Options switch, then set the fields as follows:
 
 Option                                     | Value
 -------------------------------------------|-------
-Mount at startup                           | Checked
-Show in user interface                     | Checked
-Require additional authoriization to mount | Unchecked
+Mount at startup                           | Checked ☑
+Show in user interface                     | Checked ☑
+Require additional authoriization to mount | Unchecked ☐
 Display Name                               | *{leave blank}*
-Icon Name | *{leave blank}*
-Symbolic Icon Name | *{leave blank}*
-*{unlabeled field}* | `nosuid,nodev,nofail,x-gvfs-show`
-Mount Point | *{paste in value from step 2}*
-Identify As | `/dev/disk/by-uuid/....`
-Filesystem Type | `ext4`*
-
+Icon Name                                  | *{leave blank}*
+Symbolic Icon Name                         | *{leave blank}*
+*{unlabeled field}*                        | `nosuid,nodev,nofail,x-gvfs-show`
+Mount Point                                | *{paste in value from step 2}*
+Identify As                                | `/dev/disk/by-uuid/....`
+Filesystem Type                            | `ext4`*
 *<small>This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.
 
 ![Mount Options Set Correctly](http://archive.system76.com/images/drive-instructions/Step2.png)

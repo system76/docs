@@ -56,7 +56,7 @@ Option                                     | Value
 -------------------------------------------|-------
 Mount at startup                           | Checked ☑
 Show in user interface                     | Checked ☑
-Require additional authoriization to mount | Unchecked ☐
+Require additional authorization to mount | Unchecked ☐
 Display Name                               | `     `*{leave blank}*
 Icon Name                                  | `     `*{leave blank}*
 Symbolic Icon Name                         | `     `*{leave blank}*

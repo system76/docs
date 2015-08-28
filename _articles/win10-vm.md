@@ -1,3 +1,21 @@
+---
+layout: article
+title: Setting Up Windows 10 In a Virtual Machine
+description: >
+    Set up Windows 10 in a Virtual Machine.
+keywords:
+    - Support
+    - virtual
+    - machine 
+    - Windows
+    - Windows 10
+    - Dual Boot
+    - Dual
+    - VM
+    - System76
+---
+
+
 Setting up a Windows 10 Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Ubuntu applications simultaneously. 
 
 ###### Caveats

@@ -93,7 +93,7 @@ Review the terms of the EULA, then check the box to accept the license terms and
 
 ![Accept the EULA](http://archive.system76.com/images/win10-vm/step18.png)
 
-##### Important Note!
+##### **Important Note!**
 
 You are required to accept the terms of the EULA before completing the installation. Checking the box and clicking Next assumes you do accept the terms and agree to be bound by them. Do not continue with the installation if you don't agree to the terms in the EULA.
 

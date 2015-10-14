@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Restore Your System76 Comptuer
+title: Restore Your System76 Computer
 description: >
     Official directions to restore your System76 computer.
 keywords:

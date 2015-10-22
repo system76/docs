@@ -65,7 +65,7 @@ Once the process is finished, restart your computer for the changes to take effe
 
 Having trouble with your upgrade? We're here to help. Here are two ways to get assistance:
 
-# 1. Contact a Technician
+## 1. Contact a Technician
 
 Get in touch using our support system. View the orders in [your account](https://system76.com/my-account/orders), then choose **_Open Support Case_** under the product you need help with.
 

@@ -13,9 +13,9 @@ keywords:
 image: https://system76.com/images/blog/ubuntu-15.04-launch.png
 ---
 
-# Upgrading to Ubuntu 15.04
+# Upgrading to Ubuntu 15.10
 
-Ubuntu 15.04 is the latest release of Ubuntu. It brings faster graphics and improved system performance resulting in a more responsive desktop experience. Major open source applications are also updated including LibreOffice, Firefox, Thunderbird, and more.
+Ubuntu 5.10 is the latest release of Ubuntu. It brings faster graphics and improved system performance resulting in a more responsive desktop experience. Major open source applications are also updated including LibreOffice, Firefox, Thunderbird, and more.
 
 ## 1. Prepare for the Upgrade
 

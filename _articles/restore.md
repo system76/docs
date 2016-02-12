@@ -36,9 +36,9 @@ Next, we recommend backing up all important files from your comptuer. The restor
 
 Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on: 
 
-Laptops               | Desktops
---------------------- | ----------------------
-Hold ``F7`` or ``F1`` | Hold ``F8`` or ``F10``
+Laptops                             | Desktops
+----------------------------------- | ------------------------------------
+Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
 ## 3. Install the System76 Driver
 

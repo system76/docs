@@ -34,7 +34,7 @@ Next, we recommend backing up all important files from your comptuer. The restor
 
 ## 2. Reinstall
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. When you see the System76 logo on the screen: 
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on: 
 
 Laptops  | Desktops
 -------- | --------

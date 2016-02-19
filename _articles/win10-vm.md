@@ -71,7 +71,9 @@ Once you've created the new VM, you should see it listed in the VirtualBox windo
 
 The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the "Start" button. This is equivalent to pressing the power button on the virtual computer. 
 
-VirtualBox will now ask you to select a start-up disk. If you're using a DVD to install from, select your DVD drive from the drop down. If you're using an ISO file, click the small folder icon next to the dropdown, then point VirtualBox at your ISO file and open it. VirtualBox will insert the virtual DVD into the virtual optical drive, then boot the disk.
+VirtualBox will now ask you to select a start-up disk. We recommend finding a digital download (ISO File) for your purchase, since Windows 10 is not distributed on DVD. 
+
+Click the small folder icon next to the dropdown, then point VirtualBox at your ISO file and open it. VirtualBox will insert the virtual DVD into the virtual optical drive, then boot the disk.
 
 ![Start-up disk selection](http://archive.system76.com/images/win10-vm/step13.png)
 

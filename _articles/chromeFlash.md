@@ -4,4 +4,4 @@ Since Ubuntu 14.04, it's is no longer recommended to use Firefox for Flash conte
 
 # Download Chrome
 
-The first step will involve [downloading Google Chrome](https://www.google.com/chrome/). 
+The first step will involve [downloading Google Chrome](https://www.google.com/chrome/). Click on the blue "Download Now" button

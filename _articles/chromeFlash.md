@@ -48,7 +48,7 @@ Click on the Ubuntu Logo button in the upper left to open the Dash, then search 
 
 ![Dash searching for Chrome](http://archive.system76.com/images/chromeinstall/step6.png)
 
-#####Note that you may need to log out and log back in for Chrome to appear in the Dash. If you do not see it in the list of results, simply log out and log back in.
+####Note that you may need to log out and log back in for Chrome to appear in the Dash. If you do not see it in the list of results, simply log out and log back in.
 
 You can click on Chrome here to run it. For easy access, you can drag the item to the Launcher on the left:
 

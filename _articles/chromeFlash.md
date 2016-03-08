@@ -8,4 +8,7 @@ The first step will involve [downloading Google Chrome](https://www.google.com/c
 
 ![Google Chrome Download Page](http://archive.system76.com/images/chromeinstall/step1.png)
 
+Select the 64-bit download option for Ubuntu:
+
+![64-Bit Chrome for Ubuntu](http://archive.system76.com/images/chromeinstall/step2.png)
 

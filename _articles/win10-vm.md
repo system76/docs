@@ -147,11 +147,7 @@ If you prefer to use solely a local account, you can also skip this step.
 
 ![Sign into your Microsoft Account](http://archive.system76.com/images/win10-vm/step32.png)
 
-Windows 10 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. 
-
-![Set a PIN for more convenient logins](http://archive.system76.com/images/win10-vm/step33.png)
-
-After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop. 
+Windows 10 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop. 
 
 ![Windows 10 Desktop](http://archive.system76.com/images/win10-vm/step36.png)
 

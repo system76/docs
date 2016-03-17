@@ -17,17 +17,17 @@ keywords:
 
 When you select your target platform, choose the **deb (network)** installer:
 
-![Select Target Platform](images/cuda/1_download.png)
+![Select Target Platform]({{site.baseurl}}/images/cuda/1_download.png)
 
 Click the Download button and open the downloaded deb file with Ubuntu Software
 Center:
 
-![Download with](images/cuda/2_open_with.png)
+![Download with]({{site.baseurl}}/images/cuda/2_open_with.png)
 
 Click the **Install** button in the Ubuntu Software Center to install
 `cuda-repo-ubuntu1404`:
 
-![Click Install](images/cuda/3_install.png)
+![Click Install]({{site.baseurl}}/images/cuda/3_install.png)
 
 Then open a terminal and run these three commands:
 
@@ -50,5 +50,5 @@ And then you can run, for example, the `smokeParticles` sample like this:
 
     ./bin/x86_64/linux/release/smokeParticles
 
-![smokeParticles](images/cuda/4_smokeParticles.png)
+![smokeParticles]({{site.baseurl}}/images/cuda/4_smokeParticles.png)
 

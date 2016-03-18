@@ -36,7 +36,7 @@ Press the Ubuntu Key on your keyboard (between <kbd>Ctrl</kbd> and <kbd>Alt</kbd
 
 ![Disks Application Open](http://archive.system76.com/images/drive-instructions/Step1.png)
 
-Click on your extra drive in the list. You can identify it by size, or by the label; the extra drive is usually /dev/sdb or /dev/sdc. It will *not* be /dev/sda; this is your primary drive.
+Click on your extra drive in the list. You can identify it by size, or by the label; the extra drive is usually /dev/sdb or /dev/sdc.
 
 
 ## 4. Open the Extra Drive Mount Options

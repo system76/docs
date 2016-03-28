@@ -2,7 +2,7 @@
 title: System76 Docs
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-    Official directions to upgrade your System76 computer to the latest version of Ubuntu.
+    Official System76 documentation.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://docs.system76.com" # the base hostname & protocol for your site
 

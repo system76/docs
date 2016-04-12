@@ -34,7 +34,7 @@ Once you've made a mount point, double click it to open it and ensure that it is
 
 Press the Ubuntu Key on your keyboard (between <kbd>Ctrl</kbd> and <kbd>Alt</kbd>) and then type in `disks` and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
 
-![Disks Application Open](http://archive.system76.com/images/drive-instructions/Step1.png)
+![Disks Application Open](/images/extraDrive/Step1.png)
 
 Click on your extra drive in the list. You can identify it by size, or by the label; the extra drive is usually /dev/sdb or /dev/sdc.
 
@@ -43,9 +43,9 @@ Click on your extra drive in the list. You can identify it by size, or by the la
 
 Click on the Extra Drive Partition under "Volumes" on the right, then click on the Gear icon to open the options menu for the Volume. Then click on "Edit Mount Options".
 
-![Volume Options Menu](http://archive.system76.com/images/drive-instructions/Step2.png)
+![Volume Options Menu](/images/extraDrive/Step2.png)
 
-![Mount Options Dialog](http://archive.system76.com/images/drive-instructions/Step3.png)
+![Mount Options Dialog](/images/extraDrive/Step3.png)
 
 
 ## 5. Set the Mount Options
@@ -67,7 +67,7 @@ Filesystem Type                            | `ext4`*
 
 *<small>This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.</small>
 
-![Mount Options Set Correctly](http://archive.system76.com/images/drive-instructions/Step4.png)
+![Mount Options Set Correctly](/images/extraDrive/Step4.png)
 
 ## 6. Save and Restart
 

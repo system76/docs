@@ -34,11 +34,11 @@ Running a virtual machine will require a Hypervisor, which is a special applicat
 
 Open up the Ubuntu Software Center, then enter *virtualbox* in the search field. Click on the VirtualBox result with the blue icon, then click on "More Info". You should see the window below:
 
-![VirtualBox Listing in USC](http://archive.system76.com/images/win10-vm/step1.png)
+![VirtualBox Listing in USC](/images/win10-vm/step1.png)
 
 Click on the Install button, then wait for the download and install process to complete. When it's finished, Ubuntu Software Center will tell you that it was installed on the current date, like below:
 
-![VirtualBox Installed through USC](http://archive.system76.com/images/win10-vm/step3.png)
+![VirtualBox Installed through USC](/images/win10-vm/step3.png)
 
 
 ### 2. Obtain a Windows Installation Disk Image.
@@ -50,15 +50,15 @@ You will need to obtain a Windows Installation disk image. If you have a DVD dri
 
 Once you have VirtualBox installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Ubuntu key on your keyboard (located between <kbd>Ctrl</kbd> and <kdb>Alt</kbd>) and then enter *virtualbox* in the search field.
 
-![Opening VirtualBox through the Dash](http://archive.system76.com/images/win10-vm/step4.png) ![VirtualBox Main Window](http://archive.system76.com/images/win10-vm/step5.png)
+![Opening VirtualBox through the Dash](/images/win10-vm/step4.png) ![VirtualBox Main Window](/images/win10-vm/step5.png)
 
 Click on the "New" button in the toolbar, then give your machine a name you can remember it by. If it isn't already filled out, set the machine Type to *Microsoft Windows* and the Version to *Windows 10 64-bit*, and click Next.
 
-![Setting up the Virtual Machine](http://archive.system76.com/images/win10-vm/step6.png)
+![Setting up the Virtual Machine](/images/win10-vm/step6.png)
 
 You can leave the default option for the Virtual Machine Memory Size. For the Hard Drive, you'll want to choose to "Create a virtual hard drive now".
 
-![Creating a virtual hard drive](http://archive.system76.com/images/win10-vm/step8.png)
+![Creating a virtual hard drive](/images/win10-vm/step8.png)
 
 For the options in creating the virtual hard drive, simply choose the default options.
 
@@ -67,7 +67,7 @@ For the options in creating the virtual hard drive, simply choose the default op
 
 Once you've created the new VM, you should see it listed in the VirtualBox window:
 
-![VM listed in the VirtualBox Window](http://archive.system76.com/images/win10-vm/step12.png)
+![VM listed in the VirtualBox Window](/images/win10-vm/step12.png)
 
 The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the "Start" button. This is equivalent to pressing the power button on the virtual computer. 
 
@@ -75,25 +75,25 @@ VirtualBox will now ask you to select a start-up disk. We recommend finding a di
 
 Click the small folder icon next to the dropdown, then point VirtualBox at your ISO file and open it. VirtualBox will insert the virtual DVD into the virtual optical drive, then boot the disk.
 
-![Start-up disk selection](http://archive.system76.com/images/win10-vm/step13.png)
+![Start-up disk selection](/images/win10-vm/step13.png)
 
-![Windows booting up](http://archive.system76.com/images/win10-vm/step14.png)
+![Windows booting up](/images/win10-vm/step14.png)
 
 After Windows finishes booting from the DVD, you should see the Windows Setup window. Select your Language, Time and Currency, and Keyboard preferences, then click Next. 
 
-![Windows Setup window](http://archive.system76.com/images/win10-vm/step15.png)
+![Windows Setup window](/images/win10-vm/step15.png)
 
 On the next screen, click "Install Now" to start the installation.
 
-![Click Install Now to start the installation](http://archive.system76.com/images/win10-vm/step16.png)
+![Click Install Now to start the installation](/images/win10-vm/step16.png)
 
 You'll next need to enter your product key for the copy of windows you got. Be sure to enter this exactly as it's listed on the sticker or in your email. Then, click "Next".
 
-![Enter your Product Key](http://archive.system76.com/images/win10-vm/step17.png)
+![Enter your Product Key](/images/win10-vm/step17.png)
 
 Review the terms of the EULA, then check the box to accept the license terms and click "Next".
 
-![Accept the EULA](http://archive.system76.com/images/win10-vm/step18.png)
+![Accept the EULA](/images/win10-vm/step18.png)
 
 ##### **Important Note!**
 
@@ -102,31 +102,31 @@ You are required to accept the terms of the EULA before completing the installat
 
 Make sure you select to complete a "Custom" installation, as this is a new installation of Windows.
 
-![Select the Custom: Install Windows only option](http://archive.system76.com/images/win10-vm/step19.png)
+![Select the Custom: Install Windows only option](/images/win10-vm/step19.png)
 
 Select the "Drive 0 Unallocated Space" area, then click "New".
 
-![Click the New option](http://archive.system76.com/images/win10-vm/step20.png)
+![Click the New option](/images/win10-vm/step20.png)
 
 Let Windows automatically fill in the size (It will fill the space), then click "Apply". If you receive a notice that Windows might create additional partitions for system files, choose OK.
 
-![Creating the new partition](http://archive.system76.com/images/win10-vm/step21.png)
+![Creating the new partition](/images/win10-vm/step21.png)
 
 There should now be two partitions listed. One will be "Drive 0 Partition 1: System Reserved" and the second will be "Drive 0 Partition 2". Click on Partition 2, then click "Next"
 
-![Selecting Partition 2 for installation](http://archive.system76.com/images/win10-vm/step23.png)
+![Selecting Partition 2 for installation](/images/win10-vm/step23.png)
 
 Windows will next begin copying over the installation files onto the virtual hard disk. This step may take a while, so feel free to work in the background while it's running. The virtual machine will automatically reboot when it's time to continue.
 
-![Installing Windows](http://archive.system76.com/images/win10-vm/step24.png)
+![Installing Windows](/images/win10-vm/step24.png)
 
 When the VM reboots, you may be prompted to "Press any key to boot from CD or DVD...". Do not press any keys here, or the installation will start over.
 
-![Do not press any key. Seriously.](http://archive.system76.com/images/win10-vm/step25.png)
+![Do not press any key. Seriously.](/images/win10-vm/step25.png)
 
 Windows will now finish installing the files in place, and get the system ready to be set up. Wait for this step to complete. The virtual machine may reboot again several times. Remember not to press any keys to boot from the CD or DVD.
 
-![Getting ready](http://archive.system76.com/images/win10-vm/step26.png)
+![Getting ready](/images/win10-vm/step26.png)
 
 After the process is finalized, you'll be able to begin the set up process.
 
@@ -135,21 +135,21 @@ After the process is finalized, you'll be able to begin the set up process.
 
 Set up will begin with the following screen:
 
-![Get Going Fast](http://archive.system76.com/images/win10-vm/step28.png)
+![Get Going Fast](/images/win10-vm/step28.png)
 
 You may select either express settings, or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the lastest version of the OS. This step may take a while, depending on your internet connection. When it's finished, Windows will ask you who owns ths PC. It's recommended to select "I own it" and click "Next". 
 
-![Who owns this PC?](http://archive.system76.com/images/win10-vm/step31.png)
+![Who owns this PC?](/images/win10-vm/step31.png)
 
 Next, you'll be prompted to sign in with your Microsoft Account. This step is recommended as it can allow for resetting your password remotely if you forget it. It can also sync your VMs settings, apps, and files to other, physical Windows PCs. If you don't have a Microsoft account, you can create one with the supplied link.
 
 If you prefer to use solely a local account, you can also skip this step.
 
-![Sign into your Microsoft Account](http://archive.system76.com/images/win10-vm/step32.png)
+![Sign into your Microsoft Account](/images/win10-vm/step32.png)
 
 Windows 10 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop. 
 
-![Windows 10 Desktop](http://archive.system76.com/images/win10-vm/step36.png)
+![Windows 10 Desktop](/images/win10-vm/step36.png)
 
 
 ### 6. How to use your Virtual Machine.

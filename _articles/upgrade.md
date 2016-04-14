@@ -4,8 +4,8 @@ title: Upgrade to the latest version of Ubuntu
 description: >
     Official directions to upgrade your System76 computer to the latest version of Ubuntu.
 keywords:
-    - Ubuntu 15.04
-    - Vivid Vervet
+    - Ubuntu 15.10
+    - Wily Werewolf
     - Upgrade
     - Update
     - Release

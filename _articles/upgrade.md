@@ -4,22 +4,22 @@ title: Upgrade to the latest version of Ubuntu
 description: >
     Official directions to upgrade your System76 computer to the latest version of Ubuntu.
 keywords:
-    - Ubuntu 15.10
-    - Wily Werewolf
+    - Ubuntu 16.04
+    - Xenial Xerus
     - Upgrade
     - Update
     - Release
     - System76
-image: https://system76.com/images/blog/ubuntu-15.04-launch.png
+image: https://system76.com/images/newsletter/2016-04/xenial.jpg
 ---
 
-# Upgrading to Ubuntu 15.10
+# Upgrading to Ubuntu 16.04 LTS
 
-Ubuntu 15.10 is the latest release of Ubuntu. It brings usability improvements and faster system performance resulting in a more responsive desktop experience. Major open source applications are also updated including LibreOffice, Firefox, Thunderbird, and more.
+Ubuntu 16.04 LTS is the latest release of Ubuntu. It brings usability improvements and faster system performance resulting in a more responsive desktop experience. Major open source applications are also updated including LibreOffice, Firefox, Thunderbird, and more.
 
 ## 1. Prepare for the Upgrade
 
-First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong.
+First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu. You can download a copy from [ubuntu.com](http://www.ubuntu.com/download/desktop). Save the file on your hard drive.
 
 ### Create an Installation USB Drive
 
@@ -27,7 +27,7 @@ Create an Installation USB Drive  | Create an Installation DVD
 --------------------------------- | ---------------------------
 [Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-<small>OS X can't make a System76-compatible USB Drive</small>| [Using OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
 Next, we recommend backing up all important files from your comptuer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong.
 
@@ -36,6 +36,10 @@ Next, we recommend backing up all important files from your comptuer. The upgrad
 When you're ready, follow the [official Ubuntu upgrade process](http://www.ubuntu.com/download/desktop/upgrade). The System76 driver repository will be disabled during the upgrade process, but we will re-enable it in the next step.
 
 You will want to be present throughout the upgrade process as there may be prompts requiring your input.
+
+###### Notes about computers with Nvidia graphics
+
+If your computer has a 6th-Generation Core processor and Nvidia graphics using the _open source Nouveau driver_, you should wait until after 28th April, 2016 to upgrade your computer. Systems using the proprietary Nvidia driver will not have problems with the upgrade.
 
 ---
 

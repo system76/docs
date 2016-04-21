@@ -42,7 +42,7 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
 During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu". You'll need to choose the "Install Ubuntu" option to continue with the installation. Additionally, you will want to check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
 
-![Download updates while installing Ubuntu](/images/restore/udpates.png)
+![VirtualBox Listing in USC](/images/restore/updates.png)
 
 
 ## 3. Install the System76 Driver

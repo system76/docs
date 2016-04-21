@@ -40,6 +40,11 @@ Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
 Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
+During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu". You'll need to choose the "Install Ubuntu" option to continue with the installation. Additionally, you will want to check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
+
+![Download updates while installing Ubuntu](/images/restore/udpates.png)
+
+
 ## 3. Install the System76 Driver
 
 Once you've reinstalled Ubuntu, you'll need to download and install the System76 Driver. Open the Terminal app (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:

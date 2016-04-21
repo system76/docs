@@ -60,7 +60,7 @@ Once you've reinstalled Ubuntu, you'll need to download and install the System76
 
 ---
 
-**For NVIDIA Graphics:** If you ordered a system with a discreet Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
+**For NVIDIA Graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
 
     sudo apt install system76-driver-nvidia
 

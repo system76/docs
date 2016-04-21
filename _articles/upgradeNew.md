@@ -22,6 +22,10 @@ When you're ready, follow the [official Ubuntu upgrade process](http://www.ubunt
 
 You will want to be present throughout the upgrade process as there may be prompts requiring your input.
 
+###### Notes about computers with Nvidia graphics
+
+If your computer has a 6th-Generation Core processor and Nvidia graphics using the _open source Nouveau driver_, you should wait until after 28th April, 2016 to upgrade your computer. Systems using the proprietary Nvidia driver will not have problems with the upgrade.
+
 ---
 
 If asked about installation of `grub_pc` during the upgrade, you should select to **_Install the Package Maintainer's version_**, not the default option.

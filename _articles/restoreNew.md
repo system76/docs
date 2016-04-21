@@ -1,17 +1,3 @@
----
-layout: article
-title: Restore Your System76 Computer
-description: >
-    Official directions to restore your System76 computer.
-keywords:
-    - Ubuntu 15.04
-    - Vivid Vervet
-    - Restore
-    - Refresh
-    - Reinstall
-    - System76
----
-
 # Restoring Your System76 Computer
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore your system to factory settings. This action will reformat your hard drive and remove all data from the computer. Backup any personal files in your home directory before installing. 
@@ -44,6 +30,9 @@ During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu
 
 ![VirtualBox Listing in USC](/images/restore/updates.png)
 
+#### Notes about Computers with Nvidia Graphics
+
+Due to issues with certain packages on the install disk, customers with 6th-Generation Core processors and Nvidia graphics will need to wait until 28th April, 2016 to be able to restore your computer.
 
 ## 3. Install the System76 Driver
 

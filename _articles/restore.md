@@ -15,7 +15,6 @@ keywords:
 image: https://system76.com/images/newsletter/2016-04/xenial.jpg
 ---
 
-# Restoring Your System76 Computer
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore your system to factory settings. This action will reformat your hard drive and remove all data from the computer. Backup any personal files in your home directory before installing. 
 

@@ -1,3 +1,20 @@
+---
+layout: article
+title: Restore your System76 Computer
+description: >
+    Official directions to your System76 computer to factory defaults.
+keywords:
+    - Ubuntu 16.04
+    - Restore
+    - Reinstall
+    - Installation
+    - Driver
+    - system76-driver
+    - Release
+    - System76
+image: https://system76.com/images/newsletter/2016-04/xenial.jpg
+---
+
 # Restoring Your System76 Computer
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore your system to factory settings. This action will reformat your hard drive and remove all data from the computer. Backup any personal files in your home directory before installing. 

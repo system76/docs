@@ -33,13 +33,64 @@ Next, we recommend backing up all important files from your comptuer. The upgrad
 
 ## 2. Upgrade
 
-When you're ready, follow the [official Ubuntu upgrade process](http://www.ubuntu.com/download/desktop/upgrade). The System76 driver repository will be disabled during the upgrade process, but we will re-enable it in the next step.
+There are a couple of options for actually upgrading Ubuntu to 16.04; you can either Upgrade Ubuntu in place, or install a fresh copy of Ubuntu.
 
-You will want to be present throughout the upgrade process as there may be prompts requiring your input.
 
-###### Notes about computers with Nvidia graphics
+### Upgrading in Place
 
-If your computer has a 6th-Generation Core processor and Nvidia graphics using the _open source Nouveau driver_, you should wait until after 28th April, 2016 to upgrade your computer. Systems using the proprietary Nvidia driver will not have problems with the upgrade.
+#### 1. Launch the Software Updater
+
+Press the Ubuntu Key on your keyboard to launch the Dash, then search for *updater*. 
+
+![Updater in Dash](/images/upgrade/Step-1.jpg)
+
+#### 2. Enable All Updates
+
+Click on "Settings", then select the tab called *Updates*. Set the dropdown menu for *Notify me of a new Ubuntu Version* to "For any new version". Then close the window. If prompted, allow the package cache to be updated.
+
+#### 3. Check for Updates
+
+If there are any updates available, install them. When you're finished, click "Check for Updates" if available, then click on the "Upgrade..." button.
+
+![Software Updater](/images/upgrade/Step-2.jpg)
+
+#### 4. Install the Upgrade
+
+A message will appear informing you of the availability of the new release. Click Upgrade and follow the on-screen instructions.
+
+![Upgrade Message](/images/upgrade/Step-3.jpg)
+
+##### Stuck Upgrades
+
+If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to exand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact us at support (see below) and we'll be able to provide assistance
+
+
+### Installing a Fresh Copy of Ubuntu
+
+#### 1. Start Up the Installer
+
+Insert the live disk you made above, then restart your computer. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on: 
+
+Laptops                             | Desktops
+----------------------------------- | ------------------------------------
+Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
+
+#### 2. Install Updates
+
+During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu". You'll need to choose the "Install Ubuntu" option to continue with the installation. Additionally, you will want to check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
+
+![VirtualBox Listing in USC](/images/restore/updates.png)
+
+---
+###### Notes about Computers with Nvidia Graphics
+
+Due to issues with the libllvm package (See [this bug](https://bugs.launchpad.net/oem-priority/+bug/1564156)) on the install disk, customers with 6th-Generation Core processors and Nvidia graphics will need to wait until 28th April, 2016 to be able to restore your computer. 
+---
+
+#### 4. Complete the Upgrade Process
+
+Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu 15.10 to 16.04 LTS* (or *Upgrade Ubuntu 14.04 LTS to 16.04 LTS* if you're upgrading from 14.04). This will ensure that your files are not erased.
+
 
 ---
 

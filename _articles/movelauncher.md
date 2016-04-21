@@ -3,16 +3,15 @@ Ubuntu 16.04 LTS now includes the ability to move the Launcher at the left to th
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position 'Bottom'
 ```
-![Running the command](/images/movelauncher/Step-1.png)
+![Setting the Launcher to the bottom](/images/movelauncher/Step-1.png)
 
 This will set the launcher to the bottom of the screen:
 
-![Launcher on the bottom](/images/movelauncher/Step-2.png)
+![Lanncher on the bottom](/images/movelauncher/Step-2.png)
 
 To reset the position of the launcher to the left, run this command instead:
 
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position 'Left'
 ```
-
-![Restting the posistion](/images/movelauncher/Step-3.png)
+![Resetting the Launcher](/images/movelauncher/Step-3.png)

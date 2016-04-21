@@ -60,9 +60,14 @@ A message will appear informing you of the availability of the new release. Clic
 
 ![Upgrade Message](/images/upgrade/Step-3.jpg)
 
+
+---
+
 ##### Stuck Upgrades
 
 If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to exand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact us at support (see below) and we'll be able to provide assistance
+
+---
 
 
 ### Installing a Fresh Copy of Ubuntu
@@ -81,11 +86,15 @@ During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu
 
 ![VirtualBox Listing in USC](/images/restore/updates.png)
 
+
 ---
+
 ###### Notes about Computers with Nvidia Graphics
 
 Due to issues with the libllvm package (See [this bug](https://bugs.launchpad.net/oem-priority/+bug/1564156)) on the install disk, customers with 6th-Generation Core processors and Nvidia graphics will need to wait until 28th April, 2016 to be able to restore your computer. 
+
 ---
+
 
 #### 4. Complete the Upgrade Process
 

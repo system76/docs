@@ -13,6 +13,8 @@ keywords:
 image: https://system76.com/images/newsletter/2016-04/xenial.jpg
 ---
 
+**Note:** Upgrading from 14.04 to 16.04 isn't yet supported. Please wait till 16.04.1 is released to upgrade from 14.04.
+
 # Upgrading to Ubuntu 16.04 LTS
 
 Ubuntu 16.04 LTS is the latest release of Ubuntu. It brings usability improvements and faster system performance resulting in a more responsive desktop experience. Major open source applications are also updated including LibreOffice, Firefox, Thunderbird, and more.

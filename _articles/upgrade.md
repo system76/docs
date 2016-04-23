@@ -13,7 +13,7 @@ keywords:
 image: https://system76.com/images/newsletter/2016-04/xenial.jpg
 ---
 
-**Note:** Upgrading from 14.04 to 16.04 isn't yet supported. Please wait till 16.04.1 is released to upgrade from 14.04.
+**Note:** Upgrading from 14.04 to 16.04 in-place isn't yet supported. Please wait till 16.04.1 is released to upgrade from 14.04, or follow the instructions below to install a fresh copy of Ubuntu from bootable media.
 
 # Upgrading to Ubuntu 16.04 LTS
 

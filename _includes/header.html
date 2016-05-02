@@ -32,7 +32,10 @@
 {% if page.title %}
 <header id="page-title">
     <div class="row">
-        <h1 class="small-12 columns greeting">{{ page.title }}</h1>
+        <h1 class="small-12 columns greeting">
+          {{ page.title }}
+          <a href="https://github.com/system76/docs" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+        </h1>
     </div>
 </header>
 {% endif %}

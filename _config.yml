@@ -12,6 +12,7 @@ collections:
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 
 kramdown:
     input: GFM # Use GitHub markdown extensions

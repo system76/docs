@@ -35,55 +35,13 @@
     <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
     <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Ubuntu+Mono&subset=latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" media="all" href="https://2d8d001e4cee4d6851c4-fe3d8f3e89dbe9e42e37517169cf457d.ssl.cf2.rackcdn.com/stylesheets/app.min-f51a386edf.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://d1vhcvzji58n1j.cloudfront.net/stylesheets/app.min-40dd044286.css">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
     <!-- Google+ -->
     <link href="https://plus.google.com/104919222657565747428" rel="publisher" />
 
     <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
-
-
-    <!-- Start Zopim code -->
-    <script type="text/javascript">
-    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
-        $.src='//v2.zopim.com/?2ieIQGcICfW1o0au2y9L5yjjb4aTUmZg';z.t=+new Date;$.
-        type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
-        $zopim(function() {
-            var callButtonShown = false;
-
-            if( $('input[data-zopim=show]').length != 0 ) {
-                // We want the button on the page.
-                $zopim.livechat.setOnStatus(showButton);
-            } else if( !$zopim.livechat.window.getDisplay() && !$zopim.livechat.isChatting() ) {
-                // We don't want the button on the page (if the window isn't up and they're not chatting).
-                $zopim.livechat.hideAll();
-            }
-
-            function showButton(status) {
-                if( status == 'online' && !$zopim.livechat.window.getDisplay() ) {
-                    if( !$('html').hasClass('phone') ) {
-                        $zopim.livechat.button.show();
-                    } else if( callButtonShown != true ) { // Only add it once
-                        $('body').append('<a id="call-now-button" class="button" href="tel:+17202269269">Question? Call Us!</a>');
-                        callButtonShown = true;
-                    }
-                } else if( status == 'offline' ) {
-                    // Don't show the button.
-                } else if( status == 'away' ) {
-                    // Nothing for now.
-                }
-            }
-
-            $zopim.livechat.window.onHide(function() {
-                $zopim.livechat.button.show();
-            });
-        });
-        </script>
-        <!-- End Zopim code -->
 
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

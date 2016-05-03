@@ -31,7 +31,7 @@ Create an Installation USB Drive  | Create an Installation DVD
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
 [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
-Next, we recommend backing up all important files from your comptuer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong.
+Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong.
 
 ## 2. Upgrade
 

@@ -33,7 +33,7 @@ Once you have the disk made, reboot your system. You'll need to tell the compute
 
 Laptops  | Desktops
 -------- | --------
-Hold F7 or F1 | Hold F8 or F10
+Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
 Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following commands:
 
@@ -43,7 +43,7 @@ sudo mount --bind /dev /mnt/dev
 sudo mount --bind /proc /mnt/proc
 sudo cp /etc/resolv.conf /mnt/etc/resolv.conf
 sudo chroot /mnt
-grub-install --force /dev/sda
+grub-install /dev/sda
 ```
 
 After this, reboot your computer, removing the disk when prompted, and Ubuntu should boot.

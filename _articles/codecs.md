@@ -30,7 +30,7 @@ A purple Terminal window should open up.
 
 ## Step 2: Install packages
 
-Type the following lines into the terminal window, each followed by enter:
+Type the following lines into the terminal window, each followed by <kbd>Enter</kbd>:
 
 ```
 sudo apt install -y\

@@ -1,3 +1,23 @@
+---
+layout: article
+title: Instal Multimedia Playback Support
+description: >
+    How to install proprietary Multimedia format support (MP3, DVD, etc)
+keywords:
+    - Support
+    - multimedia
+    - format 
+    - proprietary
+    - restricted
+    - extras
+    - mp3
+    - dvd
+    - dvi
+    - aac
+    - wma
+    - System76
+---
+
 Ubuntu does not ship with playback support for some proprietary multimedia formats, like MP3 and DVD-videos. To enable playback of these media, please follow the instructions below.
 
 

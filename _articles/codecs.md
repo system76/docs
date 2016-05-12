@@ -24,7 +24,7 @@ You can also copy and paste the command. To paste into the terminal, use the "Ed
 After the last one, you should several lines of output in the terminal. The command may take a few minutes to complete
 
 
-## Step 3: Set up DVD playback _(optional)_
+## Step 3: Set up DVD playback <small>_(optional)_</small>
 
 Once you see the command above has finished, enter in the following command to enable DVD playback:
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Instal Multimedia Playback Support
+title: Install Multimedia Playback Support
 description: >
     How to install proprietary Multimedia format support (MP3, DVD, etc)
 keywords:

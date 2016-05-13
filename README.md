@@ -1,7 +1,7 @@
 System76 Support Docs
 =====================
 
-The docs system is powered by [GitHub Flavbored Markdown](https://help.github.com/articles/github-flavored-markdown/). If you don't know what Markdown is (or need a refresher), take a minute to look over [the basics](https://help.github.com/articles/markdown-basics/).
+The docs system is powered by [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). If you don't know what Markdown is (or need a refresher), take a minute to look over [the basics](https://help.github.com/articles/markdown-basics/).
 
 It is also powered by GitHub itself. If you know how to use git with GitHub, feel free to update the docs that way. Otherwise, we'll assume you will be using the GitHub website to update the docs.
 

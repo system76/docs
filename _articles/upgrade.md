@@ -93,7 +93,7 @@ During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu
 
 ###### Notes about Computers with Nvidia Graphics
 
-Due to issues with the libllvm package (See [this bug](https://bugs.launchpad.net/oem-priority/+bug/1564156)) on the install disk, customers with 6th-Generation Core processors and Nvidia graphics will need to wait until 28th April, 2016 to be able to restore your computer. Additionally, if you experience problems logging in post-installation, you can resolve the problems by updating your system manuall. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kdb>F2</kbd> to get to a text terminal, then type your username and password to log in. By default, you username is your first name, all lowercase. Finally, plug in an ethernet cable and run these commands to update and restart the computer:
+Due to issues with the libllvm package (See [this bug](https://bugs.launchpad.net/oem-priority/+bug/1564156)) on the install disk, customers with 6th-Generation Core processors and Nvidia graphics will need to wait until 28th April, 2016 to be able to restore your computer. Additionally, if you experience problems logging in post-installation, you can resolve the problems by updating your system manuall. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F2</kbd> to get to a text terminal, then type your username and password to log in. By default, you username is your first name, all lowercase. Finally, plug in an ethernet cable and run these commands to update and restart the computer:
 
 ```
 sudo apt update

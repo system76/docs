@@ -121,6 +121,7 @@ Once you've upgraded Ubuntu, you'll need to download and install the System76 Dr
 
     sudo apt-add-repository ppa:system76-dev/stable
     sudo apt update
+    sudo apt upgrade
     sudo apt install system76-driver
 
 ---

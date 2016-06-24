@@ -80,7 +80,7 @@ Insert the live disk you made above, then restart your computer. You'll need to 
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
+Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
 
 #### 2. Install Updates
 

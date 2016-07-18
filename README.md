@@ -35,7 +35,7 @@ keywords:
 ---
 ```
 
-After that, it's just the contents of the article in markdown. Feel free to use `#Heading1`, `##Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
+After that, it's just the contents of the article in markdown. Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
 
 When you're all done, fill out the "Commit new file" form at the bottom with the description of your changes and press the "Commit changes" button.
 
@@ -45,7 +45,18 @@ To edit or update an article, click on the article's file in [GitHub](https://gi
 
 When you're all done, fill out the "Commit changes" form at the bottom with the description of your changes and press the "Commit changes" button.
 
-2. More advanced stuff
+2. Files, Images, & Links
+-------------------------
+
+### Files
+
+To store files (i.e. BIOS updates), put them in the `/files` folder. If it's a BIOS/firmware update, it goes in the `/files/firmware` folder and should be named like `model-version.bio.zip`, i.e. `meer1-0358.bio.zip`.
+
+### Images & Links
+
+When linking to files or images, prepend the link with `{{site.baseurl}}`, i.e. `{{site.baseurl}}/files/firmware/meer1-0358.bio.zip`. This will ensure links will continue to work even if we move the docs site elsewhere.
+
+3. More advanced stuff
 ----------------------
 
 Cassidy will update this with more advanced things later. Until then, ask him directly. :smile:

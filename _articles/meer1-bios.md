@@ -14,7 +14,7 @@ keywords:
 
 # Updating Your BIOS
 
-1. <a href="{{site.baseurl}}/files/firmware/meer1-0358.bio.zip" download="download">Download</a> the `meer1-0358.bio.zip` file, unzip it, and put the `meer1-0358.bio` file on the root of a USB flash drive.
+1. <a href="{{site.baseurl}}/files/firmware/meer1-0358.bio.zip" download="download">Download the `meer1-0358.bio.zip` file</a>, unzip it, and put the `meer1-0358.bio` file on the root of a USB flash drive.
 
 2. Plug the USB flash drive with the `meer1-0358.bio` file on it into your Meerkat.
 

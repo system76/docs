@@ -28,7 +28,7 @@ keywords:
 
 7. When the updater prompts about making a configuration request, press <kbd>9</kbd> to allow it.
 
-   _The BIOS will now update.  This may take 2-5 minutes to complete.  Please wait, and **do not turn the system off** until the update has completed._
+   _The BIOS will now update.  This may take 2–5 minutes to complete.  Please wait, and **do not turn the system off** until the update has completed._
 
 8. When the update completes, remove the USB flash drive and restart the computer.
 

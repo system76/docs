@@ -12,22 +12,36 @@ keywords:
     - System76
 ---
 
-# To update your BIOS:
+# Updating Your BIOS
 
-1. Plug in a USB flash drive with the <a href="#" download="download">meer1 `.BIO` file</a> on it.
+1. <a href="#" download="download">Download</a> the Meerkat (meer1) `.BIO` file and put it on a USB flash drive.
 
-2. Turn on your Meerkat and press <kbd>F7</kbd> during boot.
+2. Plug the USB flash drive with the meer1 `.BIO` file on it into your Meerkat. 
 
-3. At the _BIOS Flash Update_ menu, select the USB device and press <kbd>Enter</kbd>.
+3. Turn on your Meerkat and press <kbd>F7</kbd> during boot.
 
-4. Select the `.BIO` file and press Enter.
+4. At the _BIOS Flash Update_ menu, select the USB device and press <kbd>Enter</kbd>.
 
-5. Press <kbd>Enter</kbd> again to confirm that you want to update the BIOS.
+5. Select the `.BIO` file and press Enter.
 
-6. When the updater prompts about making a configuration request, press <kbd>9</kbd> to allow it.
+6. Press <kbd>Enter</kbd> again to confirm that you want to update the BIOS.
+
+7. When the updater prompts about making a configuration request, press <kbd>9</kbd> to allow it.
 
    _The BIOS will now update.  This may take 2-5 minutes to complete.  Please wait, and **do not turn the system off** until the update has completed._
 
-7. When the update completes, remove the USB Device and restart the computer.
+8. When the update completes, remove the USB flash drive and restart the computer.
 
 Enjoy using your Meerkat with the fancy new BIOS!
+
+# Where to Get Help
+
+Having trouble with your BIOS update? We're here to help. Here are two ways to get assistance:
+
+## 1. Contact a Technician
+
+Get in touch using our support system. View the orders in [your account](https://system76.com/my-account/orders), then choose **_Open Support Case_** under your Meerkat (meer1).
+
+## 2. Phone Support
+
+Our representatives are available to help and take questions by phone between 8 AM and 5 PM Mountain Time, Mon–Fri. You can reach us at (720) 226-9269.

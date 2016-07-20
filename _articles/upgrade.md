@@ -4,8 +4,10 @@ title: Upgrade to the latest version of Ubuntu
 description: >
     Official directions to upgrade your System76 computer to the latest version of Ubuntu.
 keywords:
-    - Ubuntu 16.04
+    - Ubuntu 16.04.1
     - Xenial Xerus
+    - LTS
+    - Point Release
     - Upgrade
     - Update
     - Release
@@ -13,17 +15,15 @@ keywords:
 image: https://system76.com/images/newsletter/2016-04/xenial.jpg
 ---
 
-**Note:** Upgrading from 14.04 to 16.04 in-place isn't yet supported. Please wait till 16.04.1 is released to upgrade from 14.04, or follow the instructions below to install a fresh copy of Ubuntu from bootable media.
+# Upgrading to Ubuntu 16.04.1 LTS
 
-# Upgrading to Ubuntu 16.04 LTS
-
-Ubuntu 16.04 LTS is the latest release of Ubuntu. It brings usability improvements and faster system performance resulting in a more responsive desktop experience. Major open source applications are also updated including LibreOffice, Firefox, Thunderbird, and more.
+Ubuntu 16.04.1 LTS is the latest release of Ubuntu. It incorporates many bug and stability fixes over version 16.04.  The next version of CUDA (Ver 8) will be supported with this release.  Also, upgrading from version 14.04 LTS will now be enabled without having to use bootable media.
 
 ## 1. Prepare for the Upgrade
 
 First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu. You can download a copy from [ubuntu.com](http://www.ubuntu.com/download/desktop). Save the file on your hard drive.
 
-### Create an Installation USB Drive
+### - Create an Installation USB Drive -
 
 Create an Installation USB Drive  | Create an Installation DVD
 --------------------------------- | ---------------------------
@@ -35,10 +35,9 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 ## 2. Upgrade
 
-There are a couple of options for actually upgrading Ubuntu to 16.04; you can either Upgrade Ubuntu in place, or install a fresh copy of Ubuntu.
+There are a couple of options for upgrading Ubuntu to 16.04.1; you can either Upgrade Ubuntu in place, or install a fresh copy of Ubuntu.  Ubuntu can be directly upgraded from 14.04.x or 15.10 to 16.04.1.  If you have an older version of Ubuntu you will have to upgrade to one of those versions before performing the 16.04.1 upgrade.
 
-
-### Upgrading in Place
+### - Upgrading in Place -
 
 #### 1. Launch the Software Updater
 
@@ -67,12 +66,12 @@ A message will appear informing you of the availability of the new release. Clic
 
 ##### Stuck Upgrades
 
-If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to exand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact us at support (see below) and we'll be able to provide assistance
+If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to exand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact us at support (see below) and we'll be able to provide assistance.
 
 ---
 
 
-### Installing a Fresh Copy of Ubuntu
+### - Installing a Fresh Copy of Ubuntu -
 
 #### 1. Start Up the Installer
 
@@ -89,25 +88,9 @@ During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu
 ![VirtualBox Listing in USC](/images/restore/updates.png)
 
 
----
+#### 3. Complete the Upgrade Process
 
-###### Notes about Computers with Nvidia Graphics
-
-Due to issues with the libllvm package (See [this bug](https://bugs.launchpad.net/oem-priority/+bug/1564156)) on the install disk, customers with 6th-Generation Core processors and Nvidia graphics will need to wait until 28th April, 2016 to be able to restore your computer. Additionally, if you experience problems logging in post-installation, you can resolve the problems by updating your system manuall. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F2</kbd> to get to a text terminal, then type your username and password to log in. By default, you username is your first name, all lowercase. Finally, plug in an ethernet cable and run these commands to update and restart the computer:
-
-```
-sudo apt update
-sudo apt upgrade -y
-sudo reboot
-```
-
----
-
-
-#### 4. Complete the Upgrade Process
-
-Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu 15.10 to 16.04 LTS* (or *Upgrade Ubuntu 14.04 LTS to 16.04 LTS* if you're upgrading from 14.04). This will ensure that your files are not erased.
-
+Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu 15.10 to 16.04.1 LTS* (or *Upgrade Ubuntu 14.04 LTS to 16.04.1 LTS* if you're upgrading from 14.04). This will ensure that your files are not erased.
 
 ---
 
@@ -115,28 +98,72 @@ If asked about installation of `grub_pc` during the upgrade, you should select t
 
 ---
 
-## 3. Install the System76 Driver
+## 4. Install the System76 Driver
 
 Once you've upgraded Ubuntu, you'll need to download and install the System76 Driver. Open the Terminal app (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
     sudo apt-add-repository ppa:system76-dev/stable
     sudo apt update
-    sudo apt upgrade
+    sudo apt full-upgrade
     sudo apt install system76-driver
 
 ---
 
-**For NVIDIA Graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
+**For NVIDIA Graphics:** If you ordered a system with a discrete nVidia graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
 
     sudo apt install system76-driver-nvidia
 
+Once the process is finished, restart your computer for the changes to take effect.
+
 ---
 
-Once the process is finished, restart your computer for the changes to take effect.
+# Fixing Common Upgrade Failures
+
+Many upgrades proceed without a hitch.  Occasionally, things go wrong.  If you system hangs on the upgrade process, or if it reboots and won't start, then these steps can help repair your broken OS.
+
+### 1. Create Bootable Media
+
+Please see the steps above to create bootable media.  Restart your computer and use the keys above to start your computer from the bootable media.  When given the option, choose _Try Ubuntu_.
+
+### 2. Mount Your Existing Hard Drive
+
+Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following command:
+
+`lsblk`
+
+And then note what the name of your primary partition is.  It may be `/dev/nvme0n1` or `/dev/sda1`.  Notice that the first command below is using the partition (sda1), and the later command is using the disk (sda).
+
+Next, type these commands:
+
+```
+sudo mount /dev/sda1 /mnt
+sudo mount --bind /dev /mnt/dev
+sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys /mnt/sys
+sudo cp /etc/resolv.conf /mnt/etc/resolv.conf
+sudo chroot /mnt
+```
+
+### 3. Repair Exisiting OS
+
+Then run these commands next to fix GRUB bootloader issues, package issues, and to re-run the release upgrade software.
+
+```
+sudo grub-install /dev/sda
+sudo update-grub
+sudo apt clean
+sudo apt update -m
+sudo apt install -f
+sudo dpkg --configure -a
+sudo apt full-upgrade
+sudo do-release-upgrade -d
+```
+
+After that, if the apt package manager commands and release upgrade command sucessfully update and repair your issues, you should be able to boot normally.
 
 # Where to Get Help
 
-Having trouble with your upgrade? We're here to help. Here are two ways to get assistance:
+Having trouble with your upgrade? We're here to help! Here are two ways to get assistance:
 
 ## 1. Contact a Technician
 

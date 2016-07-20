@@ -12,7 +12,7 @@ keywords:
     - Update
     - Release
     - System76
-image: https://system76.com/images/newsletter/2016-04/xenial.jpg
+image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-07/16-c5e8aa32fb.04.1.png
 ---
 
 # Upgrading to Ubuntu 16.04.1 LTS

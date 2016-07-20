@@ -45,9 +45,9 @@ Press the Ubuntu Key on your keyboard to launch the Dash, then search for *updat
 
 ![Updater in Dash](/images/upgrade/Step-1.jpg)
 
-#### 2. Enable All Updates
+#### 2. Enable LTS Updates
 
-Click on "Settings", then select the tab called *Updates*. Set the dropdown menu for *Notify me of a new Ubuntu Version* to "For any new version". Then close the window. If prompted, allow the package cache to be updated.
+Click on "Settings", then select the tab called *Updates*. Under the dropdown menu for "notify me of a new Ubuntu Version", as long as you have "Prompt for LTS" selected, your computer will notify you that 16.04.1 is ready to release.  You may also have "For any new version" selected, which will prompt you for this LTS version, as well as future non-LTS versions. Then, close the window. If prompted, allow the package cache to be updated.
 
 #### 3. Check for Updates
 

@@ -12,6 +12,12 @@ keywords:
     - System76
 ---
 
+---
+
+These instructions only apply to the Meerkat 1 hardware.  These do not apply to the Meerkat 2 hardware or to any other computers we sell.  We have sent the announcement email to few poeple without Meerkat 1 hardware by mistake.  Apologies for any confusion!
+
+---
+
 # Updating Your BIOS
 
 1. <a href="{{site.baseurl}}/files/firmware/meer1-0358.bio.zip" download="download">Download the `meer1-0358.bio.zip` file</a>, unzip it, and put the `meer1-0358.bio` file on the root of a MBR FAT32 formatted USB flash drive.

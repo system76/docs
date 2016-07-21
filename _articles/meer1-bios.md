@@ -14,7 +14,7 @@ keywords:
 
 ---
 
-These instructions only apply to the Meerkat 1 hardware.  These do not apply to the Meerkat 2 hardware or to any other computers we sell.  We have sent the announcement email to few poeple without Meerkat 1 hardware by mistake.  Apologies for any confusion!
+These instructions only apply to the Meerkat 1 hardware.  These do not apply to the Meerkat 2 hardware or to any other computers we sell.  We mistakenly sent the announcement email to few poeple without Meerkat 1 hardware.  Apologies for any confusion!
 
 ---
 

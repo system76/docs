@@ -4,7 +4,8 @@ title: Restore your System76 Computer
 description: >
     Official directions to your System76 computer to factory defaults.
 keywords:
-    - Ubuntu 16.04
+    - Ubuntu 16.04.1
+    - LTS
     - Restore
     - Reinstall
     - Installation
@@ -16,7 +17,7 @@ image: https://system76.com/images/newsletter/2016-04/xenial.jpg
 ---
 
 
-System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore your system to factory settings. This action will reformat your hard drive and remove all data from the computer. Backup any personal files in your home directory before installing. 
+System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore your system to factory settings.
 
 ### Important Note!
 
@@ -45,10 +46,6 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kb
 During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu". You'll need to choose the "Install Ubuntu" option to continue with the installation. Additionally, you will want to check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
 
 ![VirtualBox Listing in USC](/images/restore/updates.png)
-
-#### Notes about Computers with Nvidia Graphics
-
-Due to issues with the libllvm package (See [this bug](https://bugs.launchpad.net/oem-priority/+bug/1564156)) on the install disk, customers with 6th-Generation Core processors and Nvidia graphics will need to wait until 28th April, 2016 to be able to restore your computer.
 
 ## 3. Install the System76 Driver
 

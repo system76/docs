@@ -21,7 +21,7 @@ Ubuntu 16.04.1 LTS is the latest release of Ubuntu. It incorporates many bug and
 
 ## 1. Prepare for the Upgrade
 
-First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu. You can download a copy from [ubuntu.com](http://www.ubuntu.com/download/desktop). Save the file on your hard drive.
+First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu. You can download a copy from [ubuntu.com](http://www.ubuntu.com/download/desktop).
 
 ### - Create an Installation USB Drive -
 
@@ -35,7 +35,7 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 ## 2. Upgrade
 
-There are a couple of options for upgrading Ubuntu to 16.04.1; you can either Upgrade Ubuntu in place, or install a fresh copy of Ubuntu.  Ubuntu can be directly upgraded from 14.04.x or 15.10 to 16.04.1.  If you have an older version of Ubuntu you will have to upgrade to one of those versions before performing the 16.04.1 upgrade.
+There are a couple of options for upgrading Ubuntu to 16.04.1; you can either Upgrade Ubuntu in place, use bootable media to upgrade your computer, or install a fresh copy of Ubuntu.  Ubuntu can be directly upgraded from 14.04.x or 15.10 to 16.04.1 without using bootable media.  If you have an older version of Ubuntu you will have to use bootable media to perform the 16.04.1 upgrade.
 
 ### - Upgrading in Place -
 
@@ -90,7 +90,7 @@ During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu
 
 #### 3. Complete the Upgrade Process
 
-Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu 15.10 to 16.04.1 LTS* (or *Upgrade Ubuntu 14.04 LTS to 16.04.1 LTS* if you're upgrading from 14.04). This will ensure that your files are not erased.
+Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu 15.10 to 16.04.1 LTS* (or *Upgrade Ubuntu 14.04 LTS to 16.04.1 LTS* if you're upgrading from 14.04). This will ensure that your files are not erased.  If you would like erase your operating system and start over, choose 'Erase disk and install Ubuntu'
 
 ---
 

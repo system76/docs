@@ -61,6 +61,9 @@ A message will appear informing you of the availability of the new release. Clic
 
 ![Upgrade Message](/images/upgrade/Step-3.jpg)
 
+If you are running 14.04.x and the updater isn't prompting you to do the upgrade, you may be able to manually start the upgrade with this command:
+
+`do-release-upgrade`
 
 ---
 

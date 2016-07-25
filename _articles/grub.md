@@ -44,6 +44,7 @@ sudo mount --bind /proc /mnt/proc
 sudo cp /etc/resolv.conf /mnt/etc/resolv.conf
 sudo chroot /mnt
 grub-install /dev/sda
+sudo update-grub
 ```
 
 After this, reboot your computer, removing the disk when prompted, and Ubuntu should boot.

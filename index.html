@@ -98,6 +98,31 @@ layout: default
 		</div>
 	</div>
 
+	<div class="row support-links">
+		<div class="small-12 columns">
+			<hr />
+			<h1>Complete List of Docs</h1>
+		</div>
+
+		{% assign articles = site.articles | sort:"title" %}
+		{% for article in articles %}
+			{% if article.title %}
+				<div class="small-12 small-centered medium-6 columns">
+					<ul>
+						<li>
+							<ul>
+								<li>
+									{{ article.title }}
+									<span>{% if article.excerpt %}{{ article.excerpt | strip_html | truncate: 200 }}{% endif %} <a href="{{ article.url | prepend: site.baseurl }}">More &raquo;</a></span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+
 </div>
 
 <!-- <script type="text/javascript">

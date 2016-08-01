@@ -36,9 +36,6 @@ layout: default
 						<article>
 							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
 							{{ article.description | markdownify }}
-							{% if article.more %}
-								<!-- <p><a href="{{ article.url | prepend: site.baseurl }}">Read More &raquo;</a></p> -->
-							{% endif %}
 						</article>
 					{% endif %}
 				{% endif %}

@@ -2,13 +2,14 @@
 layout: article
 title: Initial Server Setup
 description: >
-    Official directions to set up your new System76 Ubuntu Server.
+    Got a new server? Check out these complete instructions on setting up a System76 server, including initial login credentials.
 keywords:
     - Support
     - Server
     - Initial
     - Setup
     - System76
+hidden: false
 ---
 
 
@@ -21,7 +22,7 @@ Default Password       | system76
 Network Address (eth0) | Assigned by DHCP
 Network Address (eth1) | Unconfigured
 
-## Initial Server Setup 
+## Initial Server Setup
 
 Connect your server to a monitor to determine the IP addresses assigned to your server.  Afterwards you can configure and manage your server from any other computer on your network.
 
@@ -31,7 +32,7 @@ Run the following command to determine the server's IP address:
 
 In the directions below replace $IPADDRESS with the server's IP address.
 
-#### Remotely Administer Your Server 
+#### Remotely Administer Your Server
 
 From a Linux client terminal:
 
@@ -40,7 +41,7 @@ From a Linux client terminal:
 From a Windows computer: Download PuTTY from [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).  Connect to the server using the username `oem` and `$IPAddress`.
 
 
-### Add Your Administrative User 
+### Add Your Administrative User
 
 1. From your client computers terminal type:`ssh oem@$IPADDRESS`
 2. enter the default password - `system76`
@@ -100,7 +101,7 @@ nameserver 10.13.15.1
 nameserver 10.13.15.2
 ```
 
-### Configure the Server's Hostname and Domain 
+### Configure the Server's Hostname and Domain
 `sudo nano /etc/hosts` Example /etc/hosts file:
 
 ```
@@ -139,7 +140,7 @@ Reboot may be required for the changes to take effect:
 
 `sudo dpkg-reconfigure tzdata`
 
-## Additional Server Resources 
+## Additional Server Resources
 [Ubuntu Server Information](http://www.ubuntu.com/server)
 
 [Ubuntu Server Documentation](https://help.ubuntu.com/)

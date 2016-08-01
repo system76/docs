@@ -1,22 +1,23 @@
 ---
 layout: article
-title: Setting Up Windows 10 In a Virtual Machine
+title: Use Windows on a System76 laptop or desktop
 description: >
-    Set up Windows 10 in a Virtual Machine.
+    Users who wish to use Windows on their System76 laptop or desktop may do so with a virtual machine.
 keywords:
     - Support
     - virtual
-    - machine 
+    - machine
     - Windows
     - Windows 10
     - Dual Boot
     - Dual
     - VM
     - System76
+hidden: false
 ---
 
 
-Setting up a Windows 10 Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Ubuntu applications simultaneously. 
+Setting up a Windows 10 Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Ubuntu applications simultaneously.
 
 ###### Caveats
 
@@ -28,7 +29,7 @@ Virtual machines do impose a slight performance penalty in their operation, depe
 Virtual Machines are a method of running multiple OSs on your computer simultaneously. It's conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.
 
 
-### 1. Install VirtualBox 
+### 1. Install VirtualBox
 
 Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing VirtualBox for your hypervisor, since it's easy to set up and use, and available for free. It's available in the Ubuntu Software Center.
 
@@ -69,9 +70,9 @@ Once you've created the new VM, you should see it listed in the VirtualBox windo
 
 ![VM listed in the VirtualBox Window](/images/win10-vm/step12.png)
 
-The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the "Start" button. This is equivalent to pressing the power button on the virtual computer. 
+The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the "Start" button. This is equivalent to pressing the power button on the virtual computer.
 
-VirtualBox will now ask you to select a start-up disk. We recommend finding a digital download (ISO File) for your purchase, since Windows 10 is not distributed on DVD. 
+VirtualBox will now ask you to select a start-up disk. We recommend finding a digital download (ISO File) for your purchase, since Windows 10 is not distributed on DVD.
 
 Click the small folder icon next to the dropdown, then point VirtualBox at your ISO file and open it. VirtualBox will insert the virtual DVD into the virtual optical drive, then boot the disk.
 
@@ -79,7 +80,7 @@ Click the small folder icon next to the dropdown, then point VirtualBox at your 
 
 ![Windows booting up](/images/win10-vm/step14.png)
 
-After Windows finishes booting from the DVD, you should see the Windows Setup window. Select your Language, Time and Currency, and Keyboard preferences, then click Next. 
+After Windows finishes booting from the DVD, you should see the Windows Setup window. Select your Language, Time and Currency, and Keyboard preferences, then click Next.
 
 ![Windows Setup window](/images/win10-vm/step15.png)
 
@@ -137,7 +138,7 @@ Set up will begin with the following screen:
 
 ![Get Going Fast](/images/win10-vm/step28.png)
 
-You may select either express settings, or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the lastest version of the OS. This step may take a while, depending on your internet connection. When it's finished, Windows will ask you who owns ths PC. It's recommended to select "I own it" and click "Next". 
+You may select either express settings, or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the lastest version of the OS. This step may take a while, depending on your internet connection. When it's finished, Windows will ask you who owns ths PC. It's recommended to select "I own it" and click "Next".
 
 ![Who owns this PC?](/images/win10-vm/step31.png)
 
@@ -147,7 +148,7 @@ If you prefer to use solely a local account, you can also skip this step.
 
 ![Sign into your Microsoft Account](/images/win10-vm/step32.png)
 
-Windows 10 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop. 
+Windows 10 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop.
 
 ![Windows 10 Desktop](/images/win10-vm/step36.png)
 

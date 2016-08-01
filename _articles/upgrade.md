@@ -2,7 +2,7 @@
 layout: article
 title: Upgrade to the latest version of Ubuntu
 description: >
-    Official directions to upgrade your System76 computer to the latest version of Ubuntu.
+    Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
 keywords:
     - Ubuntu 16.04.1
     - Xenial Xerus
@@ -13,6 +13,7 @@ keywords:
     - Release
     - System76
 image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-07/16-c5e8aa32fb.04.1.png
+hidden: false
 ---
 
 # Upgrading to Ubuntu 16.04.1 LTS
@@ -41,7 +42,7 @@ There are a couple of options for upgrading Ubuntu to 16.04.1; you can either Up
 
 #### 1. Launch the Software Updater
 
-Press the Ubuntu Key on your keyboard to launch the Dash, then search for *updater*. 
+Press the Ubuntu Key on your keyboard to launch the Dash, then search for *updater*.
 
 ![Updater in Dash](/images/upgrade/Step-1.jpg)
 
@@ -78,7 +79,7 @@ If your upgrade appears to hang in place for an extended period of time, click o
 
 #### 1. Start Up the Installer
 
-Insert the live disk you made above, then restart your computer. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on: 
+Insert the live disk you made above, then restart your computer. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on:
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------

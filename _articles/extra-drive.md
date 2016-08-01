@@ -2,14 +2,15 @@
 layout: article
 title: Automatically Mount an Extra Drive
 description: >
-    Official directions to set up an extra drive to mount automatically.
+  If you ordered your computer with additional storage, it came pre-formatted and ready for use; no additional setup is required. For instructions on automatically mounting an additional hard drive, check out this extra drive documentation.
 keywords:
-    - Support
-    - extra drive
-    - mount 
-    - automatically
-    - boot
-    - System76
+  - extra drive
+  - mount
+  - automount
+  - boot
+  - support
+  - System76
+hidden: false
 ---
 
 
@@ -17,12 +18,12 @@ If you've added a second drive to your computer when you originally ordered it, 
 
 ##### Caveats
 
-If you make a drive mount automatically every time you start your computer, the drive will only be available to a single user. 
+If you make a drive mount automatically every time you start your computer, the drive will only be available to a single user.
 
 
 ## 1. Create a Mount Point
 
-Extra drives in Ubuntu require a folder on your primary drive where the extra drive's contents will be made available. This folder is called a mount point. You'll need to create an empty folder in your home folder to serve as this mount point. Navigate to a location for the mount point (e.g. Your Documents folder), then right click and choose "New Folder", then name the folder appropriately; something like "ExtraDrive" would work. It's recommended not to include any spaces in your mount point name. 
+Extra drives in Ubuntu require a folder on your primary drive where the extra drive's contents will be made available. This folder is called a mount point. You'll need to create an empty folder in your home folder to serve as this mount point. Navigate to a location for the mount point (e.g. Your Documents folder), then right click and choose "New Folder", then name the folder appropriately; something like "ExtraDrive" would work. It's recommended not to include any spaces in your mount point name.
 
 
 ## 2. Copy the Mount Point Location

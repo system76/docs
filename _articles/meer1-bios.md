@@ -10,6 +10,7 @@ keywords:
     - BIOS
     - Update
     - System76
+hidden: false
 ---
 
 ---

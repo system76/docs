@@ -6,13 +6,14 @@ description: >
 keywords:
     - Support
     - google
-    - chrome 
+    - chrome
     - netflix
     - flash
     - hulu
     - videos
     - restricted
     - System76
+hidden: false
 ---
 
 If you want to view content developed using Adobe Flash or streaming sites like Netflix in Ubuntu, you will need to download the Chrome Web Browser. Chrome is available free-of-charge from Google and includes support for Flash playback and Video Streaming services built-in.
@@ -61,4 +62,4 @@ Chrome will be locked to your Launcher so that you can click on it at any time.
 
 ## Run Chrome
 
-You can now open Chrome and browse the web. Chrome is automatically set up for Flash content and playback of streaming sites. 
+You can now open Chrome and browse the web. Chrome is automatically set up for Flash content and playback of streaming sites.

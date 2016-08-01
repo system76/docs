@@ -10,6 +10,7 @@ keywords:
     - Refresh
     - Reinstall
     - System76
+hidden: false
 ---
 
 
@@ -29,7 +30,7 @@ Create an Installation USB Drive  | Create an Installation DVD
 
 ## 2. Reinstall GRUB Bootloader
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. When you see the System76 logo on the screen: 
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. When you see the System76 logo on the screen:
 
 Laptops  | Desktops
 -------- | --------
@@ -57,4 +58,4 @@ If the chroot command returns with the error "chroot: cannot run command `/bin/b
 
 For example, the error is most frequently seen when trying to chroot to a 64-bit system (eg. amd64) from a 32-bit Install CD (eg. x86).
 
-The solution is to use an Install CD which is using the same architecture as the installed system (i.e. 32-bit Install CD for 32-bit targets / 64-bit Install CD for 64-bit targets). 
+The solution is to use an Install CD which is using the same architecture as the installed system (i.e. 32-bit Install CD for 32-bit targets / 64-bit Install CD for 64-bit targets).

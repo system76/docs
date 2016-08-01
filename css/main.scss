@@ -178,34 +178,17 @@ pre {
 
 .support-excerpts {
 	column-count: 2;
-
-	a {
-		color: inherit;
-
-		h3,
-		p {
-			text-decoration: none;
-		}
-
-		h3::after {
-			content: ' »';
-
-			color: $orange;
-		}
-
-		&:hover {
-			h3 {
-				color: $orange;
-			}
-
-			p {
-
-			}
-		}
-	}
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-ms-column-count: 2;
+	-o-column-count: 2;
 
 	article {
 		break-inside: avoid;
+		-webkit-break-inside: avoid;
+		-moz-break-inside: avoid;
+		-ms-break-inside: avoid;
+		-o-break-inside: avoid;
 	}
 
 	h3 {
@@ -216,6 +199,20 @@ pre {
 		font-weight: 600;
 
 		transition: color 100ms ease;
+
+		a {
+			color: inherit;
+
+			&::after {
+				content: ' »';
+
+				color: $orange;
+			}
+
+			&:hover {
+				color: $orange;
+			}
+		}
 	}
 
 	p {

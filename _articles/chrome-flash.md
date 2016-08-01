@@ -4,16 +4,20 @@ title: Watch Netflix or Flash Videos in Ubuntu
 description: >
     How to install Google Chrome to watch Netflix and Flash Videos
 keywords:
-    - Support
-    - google
-    - chrome
-    - netflix
-    - flash
-    - hulu
-    - videos
-    - restricted
-    - System76
+  - Support
+  - google
+  - chrome
+  - netflix
+  - flash
+  - hulu
+  - videos
+  - restricted
+  - System76
 hidden: false
+redirect_from:
+  - /chromeFlash
+  - /chromeflash
+faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
 If you want to view content developed using Adobe Flash or streaming sites like Netflix in Ubuntu, you will need to download the Chrome Web Browser. Chrome is available free-of-charge from Google and includes support for Flash playback and Video Streaming services built-in.

@@ -4,12 +4,13 @@ title: Set Up CUDA on Ubuntu 14.04
 description: >
   Complete instructions on setting up the NVIDIA CUDA toolkit, including compiling CUDA samples.
 keywords:
-    - NVIDIA
-    - CUDA
-    - Ubuntu
-    - 14.04
-    - LTS
+  - NVIDIA
+  - CUDA
+  - Ubuntu
+  - 14.04
+  - LTS
 hidden: false
+faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
 ## Install the NVIDIA CUDA Toolkit

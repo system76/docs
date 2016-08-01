@@ -27,92 +27,46 @@ layout: default
 		</div>
 	</div>
 
-	<!--
-	<div class="row support-links">
-		<div class="small-12 medium-6 columns">
-			<ul>
-				<li>
-					<ul>
-						<li>Upgrade to the latest Ubuntu
-							<span>Get the newest version of Ubuntu on your System76 computer! Check out our <a href="{{site.baseurl}}/articles/upgrade">upgrade directions</a>.</span>
-						</li>
-						<li>
-							Restore your System76 computer
-							<span>For full instructions on restoring your System76 computer, please read our <a href="{{site.baseurl}}/articles/restore">restore directions</a>.</span>
-						</li>
-						<li>
-							Find Your Quickstart Guide
-							<span>To see ports images, keyboard layouts, function keys, and product quickstart guides, visit our <a href="/guides">Guides</a> page. For older products, log into <a href="https://system76.com/my-account/orders"><i class="fa fa-user"></i> My Account</a> and select the <em>quickstart guide</em> button beneath your product.</span>
-						</li>
-						<li>
-							Access the boot menu
-							<span>For recent System76 laptops, hold the <kbd>F7</kbd> key immediately after turning your computer on. For desktops (besides the Meerkat), hold the <kbd>F8</kbd> or <kbd>F12</kbd> key. For the Meerkat, hold the <kbd>F10</kbd> key. For older laptops, hold the <kbd>F1</kbd> key.</span>
-						</li>
-						<li>Turn on/off and configure touchpad
-							<span>Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.</span>
-							<span>To configure your touchpad, click on the Ubuntu Logo near the top-left corner, then type <em>mouse</em>. Click on the result. The touchpad settings are under <em>Touchpad</em>.</span>
-						</li>
-						<li>Turn on webcam
-							<span>If you can’t see the image from your webcam or you receive a “No device found!” error when you try to use it: close all applications that can use the webcam, press <kbd>Fn</kbd>+<kbd>F10</kbd> to turn the camera on, then open a webcam application. You will now see the image from the webcam in the app.</span>
-						</li>
-						<li>Solve wireless issues
-							<span>If you’re having problems with your wireless internet connection, first try unplugging your wireless router or modem for a minute or two, then plug it back in. You can also try turning the wireless internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting a minute, then pressing it again to turn it back on.</span>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<div class="small-12 medium-6 columns">
-			<ul>
-				<li>
-					<ul>
-						<li>
-							Use the microphone
-							<span>Click on the Volume (<i class="fa fa-volume-up"></i>) icon in the upper right, then click on <em>Sound Settings</em>. Click on the <em>Input</em> tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the <em>Input Level</em> indicator show activity that corresponds your voice.</span>
-						</li>
-						<li>Configure HDMI audio
-							<span>To enable HDMI audio output, open a song or video with audio then connect your HDMI cable to your computer and receiver. Click on the Volume (<i class="fa fa-volume-up"></i>) icon in the upper right, and click on <em>Sound Settings</em>. Click on the <em>Output</em> tab, then click on the HDMI device for audio output. You should hear the song of video playing through the HDMI device.</span>
-						</li>
-						<li>
-							Set up a second hard drive
-							<span>If you ordered your computer with additional storage, it came pre-formatted and ready for use; no additional setup is required. For instructions on automatically mounting an additional hard drive, please see our <a href="{{site.baseurl}}/articles/extraDrive">extra drive</a> documentation.</span>
-						<li>
-							Set up your System76 server
-							<span>For complete instructions on setting up a new System76 server, including initial login credentials, please see our <a href="{{site.baseurl}}/articles/serverSetup">Initial Server Setup</a> documentation.</span>
-						</li>
-						<li>
-							Install multimedia codecs (MP3, DVD, etc.)
-							<span>Ubuntu does not ship with playback support for some proprietary multimedia formats, like MP3 and DVD-videos. To enable playback of these media, please see our <a href="{{site.baseurl}}/articles/codecs">Multimedia Playback Support</a> documentation.</span>
-						</li>
-						<li>
-							Set up CUDA on Ubuntu 14.04
-							<span>For complete instructions on setting up the NVIDIA CUDA toolkit, including compiling CUDA samples, please see our <a href="{{site.baseurl}}/articles/cuda">CUDA documentation</a>.</span>
-						</li>
-						<li>
-							Use Windows on a System76 laptop or desktop
-							<span>Users who wish to use Windows on their System76 laptop or desktop may do so with a virtual machine. For complete instructions on setting up a Windows VM, please see our <a href="{{site.baseurl}}/articles/win10-vm">Windows Virtual Machine</a> documentation.</span>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div> -->
-
 	<div class="row">
-		<div class="small-12 columns support-excerpts">
+		<div class="small-12 columns support-excerpts faq">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
-				<a href="{{ article.url | prepend: site.baseurl }}">
-					<article>
-						<h3>{{ article.title }}</h3>
-						<p>
-							{{ article.description }}
-							<!-- <a href="{{ article.url | prepend: site.baseurl }}">More &raquo;</a> -->
-						</p>
-					</article>
-				</a>
+					{% if article.faq %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+							{% if article.more %}
+								<!-- <p><a href="{{ article.url | prepend: site.baseurl }}">Read More &raquo;</a></p> -->
+							{% endif %}
+						</article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<hr />
+			<h1 id="other">Other Articles</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts other-articles">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.faq != true %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+							{% if article.more %}
+								<!-- <p><a href="{{ article.url | prepend: site.baseurl }}">Read More &raquo;</a></p> -->
+							{% endif %}
+						</article>
+					{% endif %}
 				{% endif %}
 			{% endfor %}
 		</div>

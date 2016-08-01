@@ -1,15 +1,19 @@
 ---
 layout: article
-title: Initial Server Setup
+title: Set up your System76 server
 description: >
-    Got a new server? Check out these complete instructions on setting up a System76 server, including initial login credentials.
+  Got a new server? Check out these complete instructions on setting up a System76 server, including initial login credentials.
 keywords:
-    - Support
-    - Server
-    - Initial
-    - Setup
-    - System76
+  - support
+  - server
+  - initial
+  - setup
+  - System76
 hidden: false
+redirect_from:
+  - /serversetup
+  - /serverSetup
+faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
 

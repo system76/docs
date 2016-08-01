@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Automatically Mount an Extra Drive
+title: Set up a second hard drive
 description: >
   If you ordered your computer with additional storage, it came pre-formatted and ready for use; no additional setup is required. For instructions on automatically mounting an additional hard drive, check out this extra drive documentation.
 keywords:
@@ -11,6 +11,10 @@ keywords:
   - support
   - System76
 hidden: false
+redirect_from:
+  - /extraDrive
+  - /extradrive
+faq: true # If it shows in the "Frequently Answered Questions" section
 ---
 
 

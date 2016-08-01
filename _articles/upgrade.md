@@ -2,18 +2,19 @@
 layout: article
 title: Upgrade to the latest version of Ubuntu
 description: >
-    Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
+  Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
 keywords:
-    - Ubuntu 16.04.1
-    - Xenial Xerus
-    - LTS
-    - Point Release
-    - Upgrade
-    - Update
-    - Release
-    - System76
+  - Ubuntu 16.04.1
+  - Xenial Xerus
+  - LTS
+  - Point Release
+  - Upgrade
+  - Update
+  - Release
+  - System76
 image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-07/16-c5e8aa32fb.04.1.png
 hidden: false
+faq: true # If it shows in the "Frequently Answered Questions" section
 ---
 
 # Upgrading to Ubuntu 16.04.1 LTS

@@ -2,15 +2,16 @@
 layout: article
 title: Reinstall GRUB Bootloader
 description: >
-    Official directions to Reinstall Grub Bootloader.
+  Official directions to Reinstall Grub Bootloader.
 keywords:
-    - Support
-    - Grub
-    - Bootloader
-    - Refresh
-    - Reinstall
-    - System76
+  - Support
+  - Grub
+  - Bootloader
+  - Refresh
+  - Reinstall
+  - System76
 hidden: false
+faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
 

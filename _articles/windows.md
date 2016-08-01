@@ -2,18 +2,21 @@
 layout: article
 title: Use Windows on a System76 laptop or desktop
 description: >
-    Users who wish to use Windows on their System76 laptop or desktop may do so with a virtual machine.
+  Users who wish to use Windows on their System76 laptop or desktop may do so with a virtual machine.
 keywords:
-    - Support
-    - virtual
-    - machine
-    - Windows
-    - Windows 10
-    - Dual Boot
-    - Dual
-    - VM
-    - System76
+  - Support
+  - virtual
+  - machine
+  - Windows
+  - Windows 10
+  - Dual Boot
+  - Dual
+  - VM
+  - System76
 hidden: false
+redirect_from:
+  - /win10-vm
+faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
 

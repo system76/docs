@@ -10,14 +10,15 @@ keywords:
     - BIOS
     - Update
     - System76
-hidden: false
+hidden: true
+faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
----
+------
 
 These instructions only apply to the Meerkat 1 hardware.  These do not apply to the Meerkat 2 hardware or to any other computers we sell.  We mistakenly sent the announcement email to few poeple without Meerkat 1 hardware.  Apologies for any confusion!
 
----
+------
 
 # Updating Your BIOS
 

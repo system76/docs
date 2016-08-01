@@ -27,6 +27,7 @@ layout: default
 		</div>
 	</div>
 
+	<!--
 	<div class="row support-links">
 		<div class="small-12 medium-6 columns">
 			<ul>
@@ -90,37 +91,31 @@ layout: default
 						</li>
 						<li>
 							Use Windows on a System76 laptop or desktop
-							<span>Users who wish to use Windows on their System76 laptop or desktop may do so with a virtual machine. For complete instructions on setting up a Windows VM, please see our <a href="{{site.baseurl}}/articles/win10-vm" target="_blank">Windows Virtual Machine</a> documentation.</span>
+							<span>Users who wish to use Windows on their System76 laptop or desktop may do so with a virtual machine. For complete instructions on setting up a Windows VM, please see our <a href="{{site.baseurl}}/articles/win10-vm">Windows Virtual Machine</a> documentation.</span>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="row support-links">
-		<div class="small-12 columns">
-			<hr />
-			<h1>Complete List of Docs</h1>
+	<div class="row">
+		<div class="small-12 columns support-excerpts">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+				<a href="{{ article.url | prepend: site.baseurl }}">
+					<article>
+						<h3>{{ article.title }}</h3>
+						<p>
+							{{ article.description }}
+							<!-- <a href="{{ article.url | prepend: site.baseurl }}">More &raquo;</a> -->
+						</p>
+					</article>
+				</a>
+				{% endif %}
+			{% endfor %}
 		</div>
-
-		{% assign articles = site.articles | sort:"title" %}
-		{% for article in articles %}
-			{% if article.title %}
-				<div class="small-12 small-centered medium-6 columns">
-					<ul>
-						<li>
-							<ul>
-								<li>
-									{{ article.title }}
-									<span>{% if article.excerpt %}{{ article.excerpt | strip_html | truncate: 200 }}{% endif %} <a href="{{ article.url | prepend: site.baseurl }}">More &raquo;</a></span>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			{% endif %}
-		{% endfor %}
 	</div>
 
 </div>

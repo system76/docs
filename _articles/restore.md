@@ -2,7 +2,7 @@
 layout: article
 title: Restore your System76 Computer
 description: >
-    Official directions to your System76 computer to factory defaults.
+    Full instructions on restoring your System76 computer.
 keywords:
     - Ubuntu 16.04.1
     - LTS
@@ -14,6 +14,7 @@ keywords:
     - Release
     - System76
 image: https://system76.com/images/newsletter/2016-04/xenial.jpg
+hidden: false
 ---
 
 
@@ -25,7 +26,7 @@ If you recently updated your system, and now it does not boot, you may not need 
 
 ## 1. Create an Ubuntu Bootable Disk
 
-First, you'll need to create a bootable disk you can install Ubuntu from. 
+First, you'll need to create a bootable disk you can install Ubuntu from.
 
 Create an Installation USB Drive  | Create an Installation DVD
 --------------------------------- | ---------------------------
@@ -37,7 +38,7 @@ Next, we recommend backing up all important files from your comptuer. The restor
 
 ## 2. Reinstall
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on: 
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on:
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------

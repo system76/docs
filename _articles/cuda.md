@@ -1,14 +1,15 @@
 ---
 layout: article
-title: Setting Up CUDA on Ubuntu 14.04
+title: Set Up CUDA on Ubuntu 14.04
 description: >
-    Setting Up CUDA on Ubuntu 14.04
+  Complete instructions on setting up the NVIDIA CUDA toolkit, including compiling CUDA samples.
 keywords:
     - NVIDIA
     - CUDA
     - Ubuntu
     - 14.04
     - LTS
+hidden: false
 ---
 
 ## Install the NVIDIA CUDA Toolkit
@@ -51,4 +52,3 @@ And then you can run, for example, the `smokeParticles` sample like this:
     ./bin/x86_64/linux/release/smokeParticles
 
 ![smokeParticles]({{site.baseurl}}/images/cuda/4_smokeParticles.png)
-

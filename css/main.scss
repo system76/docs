@@ -177,11 +177,13 @@ pre {
 }
 
 .support-excerpts {
-	column-count: 2;
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	-ms-column-count: 2;
-	-o-column-count: 2;
+	@media (min-width: 769px) {
+		column-count: 2;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		-ms-column-count: 2;
+		-o-column-count: 2;
+	}
 
 	article {
 		-ms-break-inside: avoid;

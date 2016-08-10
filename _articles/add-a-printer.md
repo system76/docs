@@ -17,7 +17,7 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 
 In the Printer Application, click the *Add* button and a box will pop up with different options.
 
-![Add Printer](/pictures/addprinterclick.png)
+![Add Printer]({{site.baseurl}}/images//add-a-printer/addprinterclick.png)
 
 Wait a few seconds for printers to appear in the Device List
 

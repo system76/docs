@@ -8,17 +8,24 @@ keywords:
   - Printing
   - Printer
   - System76
-hidden: true
+hidden: false
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
   To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printer* then choose the *Printers* application in the search box. When the Printer dialogue opens, follow these instructions to print your first page. 
+
 ## Add a Printer in Ubuntu
 
-In the Printer Application, click the *Add* button and a box will pop up with different options.
+In the Printer Application, click the *Add* button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
-![Add Printer]({{site.baseurl}}/images//add-a-printer/addprinterclick.png)
+![Add Printer]({{site.baseurl}}/images//add-a-printer/selectcorrectprinter.png)
 
-Wait a few seconds for printers to appear in the Device List
+Select the correct printer and click *Forward*. The computer will search for the correct Drivers to enable the functionality of your printer. A box may come up that says *Installable Options* which you can select any other options available for your printer and then click *Forward* again. Name your computer in the next dialogue box and click *Apply*. A prompt to print a test page will appear next. Select the option to print the test page to test if the printer was added successfully.
+
+## Troubleshooting Printers
+
+If the printer stops working, open the *Printers* Application again and right-click on the printer and select *Delete* to remove the printer and its settings. Repeat the steps to add the printer and try printing the test page again. This process usually resolves printing issues.
+
+
 
 

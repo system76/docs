@@ -41,7 +41,7 @@ Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd
 
 `lsblk`
 
-And then look for the name of your main hard drive.  It could be /dev/sda or /dev/nvme0n1p1, depending on if you have a standard SATA drive, or an NVMe drive.  Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) in the following commands, or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk), depending on your hardware.
+And then look for the name of your main hard drive.  It could be `/dev/sda` or `/dev/nvme0n1p1`, depending on if you have a standard SATA drive, or an NVMe drive.  Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) in the following commands, or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk), depending on your hardware.
 
 ```
 sudo mount /dev/sda1 /mnt

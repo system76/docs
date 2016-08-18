@@ -27,7 +27,7 @@ Create an Installation USB Drive  | Create an Installation DVD
 --------------------------------- | ---------------------------
 [Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-<small>OS X can't make a System76-compatible USB Drive</small>| [Using OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx)| [Using OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
 ## 2. Reinstall GRUB Bootloader
 
@@ -39,10 +39,15 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
 Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following commands:
 
+`lsblk`
+
+And then look for the name of your main hard drive.  It could be /dev/sda or /dev/nvme0n1p1, depending on if you have a standard SATA drive, or an NVMe drive.  Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) in the following commands, or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk), depending on your hardware.
+
 ```
 sudo mount /dev/sda1 /mnt
 sudo mount --bind /dev /mnt/dev
 sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys /mnt/sys
 sudo cp /etc/resolv.conf /mnt/etc/resolv.conf
 sudo chroot /mnt
 grub-install /dev/sda

@@ -45,8 +45,10 @@ And then look for the name of your main hard drive.  It could be `/dev/sda` or `
 
 Run these only if you have an NVMe drive:
 
-`sudo mkdir -p /mnt/boot/efi`
-`sudo mount /dev/nvme0n1p1 /mnt/boot/efi`
+```
+sudo mkdir -p /mnt/boot/efi
+sudo mount /dev/nvme0n1p1 /mnt/boot/efi
+```
 
 And then continue with these commands for either style:
 

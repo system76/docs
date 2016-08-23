@@ -41,6 +41,10 @@ Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd
 
 `lsblk`
 
+and
+
+`blkid`
+
 And then look for the name of your main hard drive.  It could be `/dev/sda` or `/dev/nvme0n1p1`, depending on if you have a standard SATA drive, or an NVMe drive.  Pay attention to the sizes of the partitons if you have multiple drives, and look for the [SWAP] partition to help identify the main OS partition.  Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) in the following commands, or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk), depending on your hardware.
 
 Run these only if you have an NVMe drive:

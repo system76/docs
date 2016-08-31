@@ -16,7 +16,7 @@ To enable HDMI audio output, open a song or video with audio then connect your H
 
 ![Sound Menu](/images/hdmi-audio/sound-menu.png)
 
-You can also look for the Sound Settings by pushing the <kbd> Windows or Meta key </kbd> to enter the _Dash_. 
+You can also look for the Sound Settings by pushing the <kbd> Super key </kbd> to enter the _Dash_. 
 
 ![Sound in Dash](/images/hdmi-audio/sound-dash.png)
 

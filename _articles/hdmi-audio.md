@@ -16,10 +16,12 @@ To enable HDMI audio output, open a song or video with audio then connect your H
 
 ![Sound Menu](/images/hdmi-audio/sound-menu.png)
 
+You can also look for the Sound Settings by pushing the <kbd><i class=fl-ubuntu-inverse></i></kbd> to enter the _Dash_. 
+
 ![Sound in Dash](/images/hdmi-audio/sound-dash.png)
 
 Click on the _Output_ tab, then click on the HDMI device for audio output. You should hear the song of video playing through the HDMI device.
 
-![Sound in Dash](/images/hdmi-audio/.png)
+![Sound Settings](/images/hdmi-audio/sound-settings-default.png)
 
-![Sound in Dash](/images/hdmi-audio/.png)
+![Sound Settings](/images/hdmi-audio/sound-settings-hdmi.png)

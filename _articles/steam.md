@@ -15,4 +15,4 @@ faq: false # If it shows in the 'Frequently Answered Questions' section
 
 To launch the _Ubuntu Software Store_ when using the Launcher
 
-![Ubuntu Store](/images/ubuntu-store_launcher.png)
+![Ubuntu Store](/images/steam/ubuntu-store_launcher.png)

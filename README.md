@@ -65,4 +65,12 @@ When linking to files or images, prepend the link with `{{site.baseurl}}`, i.e. 
 3. More advanced stuff
 ----------------------
 
+The Ubuntu logo can be included in a doc using the following span:
+
+    <span class="fl-ubuntu-inverse"></span>
+
+This is capable of being embedded in other Markdown and Tags, for example, you can create an Ubuntu Key item as follows:
+
+    <kbd><span class="fl-ubuntu-inverse"></span></kbd>
+
 Cassidy will update this with more advanced things later. Until then, ask him directly. :smile:

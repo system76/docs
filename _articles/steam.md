@@ -11,6 +11,8 @@ hidden: false
 faq: false # If it shows in the 'Frequently Answered Questions' section
 ---
 
-## Install Steam from the Ubuntu Store 
+## Install Steam from the Ubuntu Software Store 
 
-![Ubuntu Store](/images/.png)
+To launch the _Ubuntu Software Store_ when using the Launcher
+
+![Ubuntu Store](/images/ubuntu-store_launcher.png)

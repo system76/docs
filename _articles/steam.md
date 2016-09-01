@@ -2,7 +2,7 @@
 layout: article
 title: Installing Steam
 description: >
-  To enable HDMI audio output, open a song or video with audio then connect your HDMI cable to your computer and receiver. Click on the Volume (<i class='fa fa-volume-up'></i>) icon in the upper right, and click on _Sound Settings_. Click on the _Output_ tab, then click on the HDMI device for audio output. You should hear the song of video playing through the HDMI device.
+   Want to game on your super awesome new System 76 machine? Head on over to the 'Ubuntu Software Store' to install Steam on your machine.
 keywords:
   - gaming
   - support
@@ -19,11 +19,11 @@ To launch the _Ubuntu Software Store_ when using the Launcher
 
 Then search for 'steam' in the search box
 
-![Ubuntu Software Store](/images/steam/ubuntu-store-search.png)
+![Ubuntu Software Store](/images/steam/ubuntu-store-search_min.png)
 
 Click on the 'Steam' application to open the application's page 
 
-![Ubuntu Software Store](/images/steam/ubuntu-store-app_page.png)
+![Ubuntu Software Store](/images/steam/ubuntu-store-app_page_min.png)
 
 Click the 'Install' button (we have it installed already on this system)
 

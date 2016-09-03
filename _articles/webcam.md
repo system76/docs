@@ -17,6 +17,5 @@ If you can’t see the image from your webcam or you receive a “No device foun
 
 ![Cheese in Dash](/images/webcam/cheese-dash_min.png)
 
-![Cheese applcation](/images/webcam/cheese-app.png)
 
 

@@ -20,32 +20,32 @@ redirect_from:
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
-If you want to view content developed using Adobe Flash or streaming sites like Netflix in Ubuntu, you will need to download the Chrome Web Browser. Chrome is available free-of-charge from Google and includes support for Flash playback and Video Streaming services built-in.
+If you want to play Flash games or videos, or watch movies on Netflix in Ubuntu, you'll need to download the Chrome Web Browser. Chrome is available free-of-charge from Google and includes support for Flash playback and many popular video streaming services.
 
-#### <small>Since Ubuntu 14.04, it's is no longer recommended to use Firefox for Flash content on internet sites due to security concerns. </small>
+#### <small>Since Ubuntu 14.04, it's is no longer recommended to use Firefox for Flash content online due to security concerns. </small>
 
-## Download Chrome
+## 1. Download Chrome
 
-The first step will involve [downloading Google Chrome](https://www.google.com/chrome/). Click on the blue "Download Now" button:
+First, you'll need to [download Google Chrome](https://www.google.com/chrome/). Click the blue "Download Now" button:
 
 ![Google Chrome Download Page](/images/chromeFlash/step1.png)
 
-Select the 64-bit download option for Ubuntu:
+Select the 64-bit download option for Ubuntu, then click Accept and Install.
 
 ![64-Bit Chrome for Ubuntu](/images/chromeFlash/step2.png)
 
-Select to "Open with Ubuntu Software Center":
+Select "Open with Ubuntu Software Center"
 
 ![Open With dialog](/images/chromeFlash/step3.png)
 
 
-## Install Chrome
+## 2. Install Chrome
 
 After the download is complete, Ubuntu Software Center will open automatically. Click on the "Install" button:
 
-![USC with Chrome ready to install](/images/chromeFlash/Astep4.png)
+![USC with Chrome ready to install](/images/chromeFlash/step4.png)
 
-You will need to type your password. Wait for the installation to finish. When it's complete, the Install button will say "Reinstall" Instead:
+When prompted, enter your password and wait for the installation to finish. When it's complete, the Install button will say "Reinstall" instead:
 
 ![USC with Chrome installed](/images/chromeFlash/step5.png)
 
@@ -64,6 +64,6 @@ Chrome will be locked to your Launcher so that you can click on it at any time.
 ![Chrome locked to Launcher](/images/chromeFlash/step8.png)
 
 
-## Run Chrome
+## 3. Run Chrome
 
-You can now open Chrome and browse the web. Chrome is automatically set up for Flash content and playback of streaming sites.
+You can now open Chrome and browse the web. Chrome is automatically set up for Flash content and playback of streaming sites. Chrome will automatically be updated through the Ubuntu Software Center.

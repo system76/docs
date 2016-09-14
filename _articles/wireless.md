@@ -12,7 +12,7 @@ hidden: true
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
-Wifi issues are related to many different factors, including the hardware involved, settings at both ends of the connection, and the local environment.  If you’re having problems, first try unplugging your wireless router or modem and then plug it back in. You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting a minute, then pressing it again to turn it back on.
+Wifi issues are related to many different factors, including the hardware involved, settings at both ends of the connection, and the local environment.  If you’re having problems, first try unplugging your wireless router or modem and then plug it back in. You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting a minute, then pressing it again to turn it back on.  If that doesn't work, then rebooting the computer, or restarting network manager, can help in many situations.
 
 First, check the settings in the router.  WPA2-AES is the preferred security method, and not WPA/WPA2 mixed mode or TKIP.  Second, if your router is capable of N speeds, you may have better connectivity with a channel width of 20 MHz in the 2.4 GHz band instead of automatic 20/40 MHz or fixed 40 MHz.  Making sure the 2.4Ghz and 5Ghz SSID names are different will help also.  And picking a fixed channel, either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic channel selection.
 

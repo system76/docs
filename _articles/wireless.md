@@ -18,13 +18,13 @@ WiFi issues are influenced by many different factors, including:
 - Settings at both ends of the connection
 - The local environment
 
-# Basic troubleshooting
+# Basic Troubleshooting
 
 If you’re having problems, try these steps first:
 
 - Try unplugging your wireless router or modem and then plug it back in.
 - You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting a minute, then pressing it again to turn it back on.
-- Try rebooting the computer or restarting network manager.
+- Try rebooting the computer.
 
 If that doesn't solve the problem, you can check the router:
 
@@ -33,10 +33,10 @@ If that doesn't solve the problem, you can check the router:
 - Make sure the 2.4Ghz and 5Ghz SSID names are different.
 - Pick a fixed channel, either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic channel selection.
 - Check if the router is set to use N speeds only; auto B/G/N is preferred.
+- Lower the max/burst speeds, turn off channel bonding, and reduce channel width.  Setting the mode to 600 Mb/s or 450 Mb/s speeds uses spread frequencies and decreases stability.  Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
+- After making these changes, reboot the router.
 
-For routers with max/burst speed or channel bonding, check those settings as well. Don't set it to the max, as that can make Wifi unstable.  If the router goes up to 600 Mb/s, it will use spread frequencies and will decrease stability due to congestion and other issues.  Try setting it to 90 Mb/s or 120 Mb/s or somewhere in that range, or choose 54 Mb/s as the most stable.  After making these changes, reboot the router.
-
-# Advanced troubleshooting
+# Advanced Troubleshooting
 
 In many cases, it's recommended to explicitly set the WiFi regulatory domain. Check yours with this command:
 
@@ -73,6 +73,8 @@ options iwlwifi 11n_disable=8
 
 Also, you can try disabling N mode completely by using '11n_disable=1' in the previous settings.  N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available out to the Internet is much less than N speeds.
 
+# Useful Commands
+
 If you want to watch what the Wifi hardware is doing, you can leave this command running in the terminal:
 
 `iwevent`
@@ -90,3 +92,11 @@ If you want to see if the driver is being loaded correctly, and what sort of mes
 And to see if the hardware is being detected by the computer, run this command:
 
 `lspci | grep Network`
+
+# Wifi Speed Settings
+
+- 54 Mb/s uses the 802.11g & 802.11b standards. 
+- 145 Mb/s and 300 Mb/s modes support the 802.11n standard and use 20MHz and 40MHz bandwidths.
+- 300Mbps / 40Mhz will provide the maximum performance in most cases.
+- 145Mbps / 20MHz will work better in areas with more access points.
+- 450Mbps uses 60Mhz channels and 600Mbps uses 80Mhz, and typically create instability.

@@ -99,4 +99,4 @@ And to see if the hardware is being detected by the computer, run this command:
 - 145 Mb/s and 300 Mb/s modes support the 802.11n standard and use 20MHz and 40MHz bandwidths.
 - 300Mbps / 40Mhz will provide the maximum performance in most cases.
 - 145Mbps / 20MHz will work better in areas with more access points.
-- 450Mbps uses 60Mhz channels and 600Mbps uses 80Mhz, and typically create instability.
+- 450Mbps uses 60Mhz channels and 600Mbps uses 80Mhz, and typically creates instability.

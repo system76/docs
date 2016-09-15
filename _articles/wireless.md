@@ -93,7 +93,7 @@ And to see if the hardware is being detected by the computer, run this command:
 
 `lspci | grep Network`
 
-# Wifi Speed Settings
+# WiFi Speeds and Frequencies
 
 - 54 Mb/s uses the 802.11g & 802.11b standards. 
 - 145 Mb/s and 300 Mb/s modes support the 802.11n standard and use 20MHz and 40MHz bandwidths.

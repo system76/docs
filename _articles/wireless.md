@@ -13,6 +13,7 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
 WiFi issues are influenced by many different factors, including:
+
 - Hardware (WiFi card, access point)
 - Settings at both ends of the connection
 - The local environment
@@ -20,6 +21,7 @@ WiFi issues are influenced by many different factors, including:
 # Basic troubleshooting
 
 If you’re having problems, try these steps first:
+
 - Try unplugging your wireless router or modem and then plug it back in.
 - You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting a minute, then pressing it again to turn it back on.
 - Try rebooting the computer or restarting network manager.

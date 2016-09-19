@@ -7,7 +7,7 @@ keywords:
   - gaming
   - support
   - System76
-hidden: false
+hidden: true
 faq: false # If it shows in the 'Frequently Answered Questions' section
 ---
 

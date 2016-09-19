@@ -44,7 +44,7 @@ Press the Ubuntu Key on your keyboard (between <kbd>Ctrl</kbd> and <kbd>Alt</kbd
 Click on your extra drive in the list. You can identify it by size, or by the label; the extra drive is usually /dev/sdb or /dev/sdc.
 
 
-## 4. (Optionaly) Format the Drive
+## 4. (Optionally) Format the Drive
 
 If this is a new drive, and it is not formatted, it will need to be formatted before use.  If the drive has formatting from the manufacturer, it is usually best to format it to the Ubuntu standard format (ext4).  First, delete the existing partition by clicking the minus button.  Then click the plus icon, change the type to (Ext4), give your drive a name, such as "Extra Drive", and click 'Create'.
 

@@ -44,7 +44,12 @@ Press the Ubuntu Key on your keyboard (between <kbd>Ctrl</kbd> and <kbd>Alt</kbd
 Click on your extra drive in the list. You can identify it by size, or by the label; the extra drive is usually /dev/sdb or /dev/sdc.
 
 
-## 4. Open the Extra Drive Mount Options
+## 4. (Optionaly) Format the Drive
+
+If this is a new drive, and it is not formatted, it will need to be formatted before use.  If the drive has formatting from the manufacturer, it is usually best to format it to the Ubuntu standard format (ext4).  First, delete the exisiting partition by clicking the minus button.  Then click the plus icon, change the type to (Ext4), give your drive a name, such as "Extra Drive", and click 'Create'.
+
+
+## 5. Open the Extra Drive Mount Options
 
 Click on the Extra Drive Partition under "Volumes" on the right, then click on the Gear icon to open the options menu for the Volume. Then click on "Edit Mount Options".
 
@@ -53,7 +58,7 @@ Click on the Extra Drive Partition under "Volumes" on the right, then click on t
 ![Mount Options Dialog](/images/extraDrive/Step3.png)
 
 
-## 5. Set the Mount Options
+## 6. Set the Mount Options
 
 Turn off the Automatic Mount Options switch, then set the fields as follows:
 
@@ -74,6 +79,6 @@ Filesystem Type                            | `ext4`*
 
 ![Mount Options Set Correctly](/images/extraDrive/Step4.png)
 
-## 6. Save and Restart
+## 7. Save and Restart
 
 Once the mount options are set up correctly, you'll need to click 'OK' to save the changes and then restart your computer. After the computer starts back up, ensure that there are no error messages during the boot, and that the drive is mounted when you first boot. You can check this by opening your home folder and ensure that you see the eject icon next to the drive *before* you click on the drive.

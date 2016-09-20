@@ -17,9 +17,11 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 
 Use the *Launcher* on the left hand side of the screen to start your favorite apps.  You can switch between running apps by clicking on their icons. Right click on an icon in the Launcher to show a menu of actions. Actions include adding, removing application icons, opening new tabs, switching multiply windows of the same app and much more.
 
-![Ubuntu Desktop](/images/ubuntu-basics/Launcher-16.04.png)
+![Ubuntu Desktop](/images/ubuntu-basics/Launcher-16.04-min.png)
 
 When you click the Ubuntu Circle of Friends Logo at the top of your application list, you'll open the *Dash.* Use the Dash to search or browse files, photos and applications.
+
+![Ubuntu Desktop](/images/ubuntu-basics/Dash-16.04-min.png)
 
 Access the *Menu Bar* at the top of the screen to view options for the current application window you're working in. You can Mouse over the Menu Bar to see the drop-down menu. The example here shows the LibreOffice Writer drop-down menu.
 

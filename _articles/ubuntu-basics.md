@@ -31,3 +31,5 @@ Access the *Menu Bar* at the top of the screen to view options for the current a
 *Window controls* are on the left of the title bar of the window.
 
 Access the *Ubuntu Desktop Guide* by clicking the gear icon in the top right corner of your desktop and select 'Ubuntu Help' for official documentation.
+
+![Ubuntu Desktop](docs/images/ubuntu-basics/ubuntudesktopguide.png)

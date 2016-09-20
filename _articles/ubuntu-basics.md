@@ -32,4 +32,4 @@ Access the *Menu Bar* at the top of the screen to view options for the current a
 
 Access the *Ubuntu Desktop Guide* by clicking the gear icon in the top right corner of your desktop and select 'Ubuntu Help' for official documentation.
 
-![Ubuntu Desktop](docs/images/ubuntu-basics/ubuntudesktopguide.png)
+![Ubuntu Desktop]({{site.baseurl}}(docs/images/ubuntu-basics/ubuntudesktopguide.png)

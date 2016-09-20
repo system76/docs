@@ -13,11 +13,12 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
   The Ubuntu operating system provides all the features you would expect from a sophisticated desktop.
+  
 ## Getting to Know the Ubuntu Desktop
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Launcher-16.04.png)
 
-Use the *Launcher* on the left hand side of the screen to start your favorite apps.  You can switch between running apps by clicking on their icons. Right click on an icon in the Launcher to show a menu of actions. Actions include adding, removing application icons, opening new tabs, switching multiply windows of the same app and much more.
+Use the *Launcher* on the left hand side of the screen to start your favorite apps.  You can switch between running apps by clicking on their icons. Right click on an icon in the Launcher to show a menu of actions. Actions include adding, removing application icons, opening new tabs, switching multiple windows of the same app and much more.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Launcher-16.04-min.png)
 

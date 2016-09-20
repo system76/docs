@@ -36,4 +36,4 @@ When you press the left <kbd>Alt key</kbd> or right <kbd>Alt key</kbd> the *HUD*
 
 Access the *Ubuntu Desktop Guide* by clicking the gear icon in the top right corner of your desktop and select 'Ubuntu Help' for official documentation.
 
-![Ubuntu Desktop](/images/ubuntu-basics/ubuntudesktopguide.png)
+![Ubuntu Desktop](/images/ubuntu-basics/Ubuntu-Desktop-Guide-16.04.png)

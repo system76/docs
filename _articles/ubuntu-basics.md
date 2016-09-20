@@ -21,7 +21,7 @@ Use the *Launcher* on the left hand side of the screen to start your favorite ap
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Launcher-16.04-min.png)
 
-When you click the Ubuntu Circle of Friends Logo at the top of your application list, you'll open the *Dash.* Use the Dash to search or browse files, photos and applications.
+When you click the Ubuntu Circle of Friends Logo at the top of your application list or the <kbd><span class="fl-ubuntu-inverse"></span></kbd> you'll open the *Dash.* Use the Dash to search or browse files, photos and applications.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Dash-16.04-min.png)
 
@@ -29,7 +29,7 @@ Access the *Menu Bar* at the top of the screen to view options for the current a
 
 *Window controls* are on the left of the title bar of the window.
 
-When you press the Left or Right Alt key the *HUD* is brought up. The *HUD* is super helpful for keyboard super users for searching though application's menu
+When you press the left <kbd>Alt key</kbd> or right <kbd>Alt key</kbd> the *HUD* is brought up. The *HUD* is super helpful for keyboard super users for searching though an application's menu
 
 ![Ubuntu Desktop](/images/ubuntu-basics/HUD-16.04-min.png)
 

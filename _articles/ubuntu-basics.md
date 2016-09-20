@@ -29,4 +29,8 @@ Access the *Menu Bar* at the top of the screen to view options for the current a
 
 *Window controls* are on the left of the title bar of the window.
 
+When you press the Left or Right Alt key the *HUD* is brought up. The *HUD* is super helpful for keyboard super users for searching though application's menu
+
+![Ubuntu Desktop](/images/ubuntu-basics/HUD-16.04-min.png)
+
 Access the *Ubuntu Desktop Guide* by clicking the gear icon in the top right corner of your desktop and select 'Ubuntu Help' for official documentation.

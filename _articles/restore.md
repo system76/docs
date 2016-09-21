@@ -21,7 +21,7 @@ faq: true # If it shows in the "Frequently Answered Questions" section
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore your system to factory settings.
 
-*<small>On our second generation Oryx (oryp2), there is a firmware bug that prevents the trackpad from working until the System76 driver is installed.  Please use an external mouse for the initial install steps and until the driver is installed.</small>
+\*On our second generation Oryx (oryp2), there is a firmware bug that prevents the trackpad from working until the System76 driver is installed.  Please use an external mouse for the initial install steps and until the driver is installed.
 
 ### Important Note!
 

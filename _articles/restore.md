@@ -21,9 +21,11 @@ faq: true # If it shows in the "Frequently Answered Questions" section
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore your system to factory settings.
 
+*<small>On our second generation Oryx (oryp2), there is a firmware bug that prevents the trackpad from working until the System76 driver is installed.  Please use an external mouse for the initial install steps and until the driver is installed.</small>
+
 ### Important Note!
 
-If you recently updated your system, and now it does not boot, you may not need to reinstall Ubuntu. If, when you start your computer, you see a flashing underscore on the screen ("_"), then it is likely that Ubuntu's bootloader, GRUB, was not updated properly. To restore it, see [How to Restore Grub Bootloader](http://docs.system76.com/articles/grub)
+If you recently updated your system, and now it does not boot, you may not need to reinstall Ubuntu. If, when you start your computer, you see a flashing underscore on the screen ("\_"), then it is likely that Ubuntu's boot-loader, GRUB, was not updated properly. To restore it, see [How to Restore Grub Boot-loader](http://docs.system76.com/articles/grub)
 
 ## 1. Create an Ubuntu Bootable Disk
 
@@ -35,7 +37,7 @@ Create an Installation USB Drive  | Create an Installation DVD
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
 [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
-Next, we recommend backing up all important files from your comptuer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong.
+Next, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong.
 
 ## 2. Reinstall
 

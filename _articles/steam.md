@@ -40,6 +40,6 @@ Once the _Terminal_ application is opened you can use the Command Line tool *apt
 
 Once we find the right name for Steam we can install it with *apt* as well.
 
-![Terminal](/images/steam/Install-SteamCLI#2-16.04.png)
+![Terminal](/images/steam/Install-SteamCLI_P2-16.04.png)
 
 ***Be very careful when using sudo with *ANY* Command. It can make system wide changes so be sure to read everything before entering 'Y'.***

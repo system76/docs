@@ -11,7 +11,7 @@ keywords:
   - Cinnamon
   - Gnome
   - Mint
-hidden: true
+hidden: false
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 

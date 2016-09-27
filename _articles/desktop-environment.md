@@ -118,7 +118,7 @@ Edubuntu can be installed with:
 Desktop environments can interfere with each other or change universal settings.  Issues with a desktop environment looking funny can generally be fixed by changing the theme in the _Display Settings_ or _Appearance_.
 
 
-#### To change the login greeter
+#### Change Login Greeter
 
 Gnome will add it's own login greeter, which is shown at the top of this article.  To change it, run this command:
 
@@ -135,7 +135,7 @@ GNOME:
 greeter-session=lightdm-gtk-greeter
 ```
 
-#### To change the (default) desktop environment for automatic login
+#### Change Default Desktop Environment
 
 After installing multiple desktop environments, a default can be set for automatic login with this command:
 
@@ -143,7 +143,7 @@ After installing multiple desktop environments, a default can be set for automat
 
 And add a line at the bottom to set the (default):
 
-LXDE
+LXDE:
 ```
 user-session=Lubuntu
 ```
@@ -183,7 +183,7 @@ user-session=gnome-flashback-metacity
 ```
 
 
-#### To change the startup and shutdown splash screens after installing additional desktop environments
+#### Change Startup/Shutdown Splash Screen
 
 Many desktop environments change the startup and shutdown splash screens.  To change the Plymouth splash screen, run these commands:
 
@@ -193,7 +193,7 @@ sudo update-initramfs -u
 ```
 
 
-#### To Change the notification dialog
+#### Change Notification Dialog
 
 Xfce will change the notification dialog to it's own version.  It can be configured with this command:
 
@@ -203,53 +203,49 @@ Or changed back to Unity's with this command:
 
 `gksu gedit /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service`
 
-And replace this line:
-```
-Exec=/usr/lib/xfce4/notifyd/xfce4-notifyd
-```
+And replace this line: `Exec=/usr/lib/xfce4/notifyd/xfce4-notifyd`
 
-with this one:
-```
-Exec=/usr/lib/x86_64-linux-gnu/notify-osd
-```
+With this one: `Exec=/usr/lib/x86_64-linux-gnu/notify-osd`
 
 
-#### To fix a broken desktop background
+#### Fix Broken Desktop Background
 
 If your background turns to black or white, or stops changing when you select a new background, re-enable it with this command:
 
 `gsettings set org.gnome.settings-daemon.plugins.background active true`
 
 
-#### To remove the duplicate options from the login screen
+#### Remove Duplicate Options From Login Screen
 
 Many desktop environments supply both a bare-bones environment, a full featured environment, or other options.    Cinnamon provides both a 2d and 3d environment.  Some of the extra options aren't needed, and can be turned off.  The options available at login are in the `/usr/share/xsessions` folder.  Simply rename or delete the files to remove them as options.
 
 Lubuntu's extra options:
 
 ```
-sudo mv /usr/share/xsessions/Lubuntu-Netbook.desktop /usr/share/xsessions/Lubuntu-Netbook.desktop.backup
-sudo mv /usr/share/xsessions/LXDE.desktop /usr/share/xsessions/LXDE.desktop.backup
-sudo mv /usr/share/xsessions/openbox.desktop /usr/share/xsessions/openbox.desktop.backup
+sudo mv /usr/share/xsessions/Lubuntu-Netbook.desktop /usr/share/xsessions/Lubuntu-Netbook.desktop.bak
+sudo mv /usr/share/xsessions/LXDE.desktop /usr/share/xsessions/LXDE.desktop.bak
+sudo mv /usr/share/xsessions/openbox.desktop /usr/share/xsessions/openbox.desktop.bak
 ```
 
 Xubuntu's extra option:
+
 ```
-sudo mv /usr/share/xsessions/xfce.desktop /usr/share/xsessions/xfce.desktop.backup
+sudo mv /usr/share/xsessions/xfce.desktop /usr/share/xsessions/xfce.desktop.bak
 ```
 
 Cinnamon's extra option:
+
 ```
-sudo mv /usr/share/xsessions/cinnamon2d.desktop /usr/share/xsessions/cinnamon2d.desktop.backup
+sudo mv /usr/share/xsessions/cinnamon2d.desktop /usr/share/xsessions/cinnamon2d.desktop.bak
 ```
 
 
-#### To change automatic startup programs
+#### Change Automatic Startup Programs
 
 Some desktop environments add addition programs to be started at boot.  To change them, run the _Startup Applications_ program, and turn off any additional startup programs that were undesirably added.
 
 
-#### Double lock screen passwords
+#### Double Lock Screen Passwords
 
 Sometimes the GNOME screensaver presents a second password unlock screen after suspending or locking the screen.  It can be disabled with this command:
 
@@ -262,7 +258,7 @@ Or, if that doesn't stop the 2nd prompt, the screensaver can be removed with thi
 When using Gnome, the lock screens will still function normally even with the screensaver disabled.
 
 
-#### Removing desktop environments
+#### Removing Desktop Environments
 
 If you no longer want to use a desktop environment, it can be removed by using the `sudo apt purge ...` command, followed by the `sudo apt autoremove` command.  For example, to remove KDE:
 
@@ -272,6 +268,7 @@ sudo apt autoremove
 ```
 
 Or to remove Unity:
+
 ```
 sudo apt purge ubuntu-desktop unity
 sudo apt autoremove

@@ -11,8 +11,8 @@ keywords:
   - firefox
   - netflix
   - amazon 
-  - flash
   - hulu
+  - flash
   - videos
   - restricted
   - System76
@@ -24,12 +24,13 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
 
-
-### <small>Since Ubuntu 14.04, it's is no longer recommended to use Firefox for Flash content online due to security concerns. </small>
-
 ####You can still install 'pepperflash' to use Firefox to watch  DRM Online content.
 
 `sudo apt install browser-plugin-freshplayer-pepperflash`
+
+This plugin will work also work with Chromium but <b> we recommand using Chrome </b>
+
+#####The pepperflash plugin is closed source and maintained by Google
 
 ## 1. Download Chrome
 

@@ -1,13 +1,16 @@
 ---
 layout: article
-title: Watch Netflix or Flash Videos in Ubuntu
+title: Watch Netflix and other DRM Content on Ubuntu
 description: >
     How to install Google Chrome to watch Netflix and Flash Videos
 keywords:
   - Support
   - google
   - chrome
+  - mozilla
+  - firefox
   - netflix
+  - amazon 
   - flash
   - hulu
   - videos
@@ -20,9 +23,13 @@ redirect_from:
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
-If you want to play Flash games or videos, or watch movies on Netflix in Ubuntu, you'll need to download the Chrome Web Browser. Chrome is available free-of-charge from Google and includes support for Flash playback and many popular video streaming services.
+
 
 #### <small>Since Ubuntu 14.04, it's is no longer recommended to use Firefox for Flash content online due to security concerns. </small>
+
+###You can still install 'pepperflash' to use Firefox to watch  DRM Online content.
+
+`sudo apt install browser-plugin-freshplayer-pepperflash`
 
 ## 1. Download Chrome
 

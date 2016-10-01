@@ -258,13 +258,6 @@ Or, if that doesn't stop the 2nd prompt, the screensaver can be removed with thi
 When using Gnome, the lock screens will still function normally even with the screensaver disabled.
 
 
-#### Enable Cinnamon Lock Screen
-
-If Cinnamon's desktop lock isn't working, then running this command will re-enable it:
-
-`gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false`
-
-
 #### Removing Desktop Environments
 
 If you no longer want to use a desktop environment, it can be removed by using the `sudo apt purge ...` command, followed by the `sudo apt autoremove` command.  For example, to remove KDE:

@@ -9,7 +9,7 @@ keywords:
   - Ubuntu Beginner
   - System76
 hidden: true
-faq: false # If it shows in the "Frequently Answered Questions" section
+faq: true # If it shows in the "Frequently Answered Questions" section
 ---
 
   The Ubuntu operating system provides all the features you would expect from a sophisticated desktop.
@@ -26,11 +26,11 @@ When you click the Ubuntu Circle of Friends Logo at the top of your application 
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Dash-16.04-min.png)
 
-Access the *Menu Bar* at the top of the screen to view options for the current application window you're working in. You can Mouse over the Menu Bar to see the drop-down menu. The example here shows the LibreOffice Writer drop-down menu.
+Access the *Menu Bar* at the top of the screen to view options like *File, Edit, View* for the current application window you're working in. You can Mouse over the Menu Bar to see the drop-down menu.
 
 *Window controls* are on the left of the title bar of the window.
 
-When you press the left <kbd>Alt key</kbd> or right <kbd>Alt key</kbd> the *HUD* is brought up. The *HUD* is super helpful for keyboard super users for searching though an application's menu
+When you press the left <kbd>Alt key</kbd> or right <kbd>Alt key</kbd> the *HUD* is brought up. The *HUD* is helpful for keyboard super users for searching though an application's menu
 
 ![Ubuntu Desktop](/images/ubuntu-basics/HUD-16.04-min.png)
 

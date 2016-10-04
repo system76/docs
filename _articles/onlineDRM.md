@@ -28,7 +28,7 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 
 `sudo apt install browser-plugin-freshplayer-pepperflash`
 
-### This plugin will work also work with Chromium but <b> we recommand using Chrome </b>
+This plugin will work also work with Chromium but <b> we recommand using Chrome </b>
 
 ##### The pepperflash plugin is closed source and maintained by Google
 

@@ -9,7 +9,7 @@ keywords:
   - KDE
   - XFCE
   - Cinnamon
-  - Gnome
+  - GNOME
   - Mint
 hidden: false
 faq: false # If it shows in the "Frequently Answered Questions" section

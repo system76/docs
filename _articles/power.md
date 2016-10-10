@@ -14,7 +14,7 @@ hidden: true
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
-The biggest single consumer of power is the monitor.  Up to 10% more battery life can be added to your system simply by reducing monitor brightness.  Since our laptops don't currently have an ambient light sensor, brightness needs adjusted manually.
+The biggest single consumer of power is the monitor.  Up to 10% more battery life can be added to your system simply by reducing monitor brightness.  Since our laptops don't currently have an ambient light sensor, brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.
 
 #### Software
 

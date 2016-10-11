@@ -1,13 +1,13 @@
 ---
 layout: article
 title: Set Up CUDA on Ubuntu
-description: Set up CUDA on Ubuntu
+description: >
   Complete instructions on setting up the NVIDIA CUDA toolkit, including compiling CUDA samples.
 keywords:
   - NVIDIA
   - CUDA
   - Ubuntu
-  hidden: false
+hidden: false
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 

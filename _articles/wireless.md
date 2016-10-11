@@ -14,9 +14,9 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 
 WiFi issues are influenced by many different factors, including:
 
-- Hardware (WiFi card, access point)
-- Settings at both ends of the connection
-- The local environment
+-   Hardware (WiFi card, access point)
+-   Settings at both ends of the connection
+-   The local environment
 
 # Basic Troubleshooting
 
@@ -26,14 +26,14 @@ If you’re having problems, try these steps first:
 - You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting a minute, then pressing it again to turn it back on.
 - Try rebooting the computer.
 
-If that doesn't solve the problem, you can check the router:
+Router settings also cause problems.  Try adjusting your access point to these settings:
 
 - WPA2-AES is the preferred security method over WPA/WPA2 mixed mode or TKIP
 - If your router is capable of N speeds, you may have better connectivity with a channel width of 20 MHz in the 2.4 GHz band instead of automatic 20/40 MHz or fixed 40 MHz.
 - Make sure the 2.4Ghz and 5Ghz SSID names are different.
 - Pick a fixed channel, either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic channel selection.
 - Check if the router is set to use N speeds only; auto B/G/N is preferred.
-- Lower the max/burst speeds, turn off channel bonding, and reduce channel width.  Setting the mode to 600 Mb/s or 450 Mb/s speeds uses spread frequencies and decreases stability.  Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
+- Lower the max/burst speeds, turn off channel bonding, and reduce channel width.  Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and tend to decrease stability.  Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
 - After making these changes, reboot the router.
 
 # Advanced Troubleshooting
@@ -44,7 +44,7 @@ In many cases, it's recommended to explicitly set the WiFi regulatory domain. Ch
 
 If you get 00, that is a one-size-maybe-fits-all setting. Find yours here: wikipedia.org/wiki/ISO_3166-1
 
-Then set it set it permanently with this command:
+And set it permanently with this command:
 
 `gksudo gedit /etc/default/crda`
 
@@ -77,11 +77,11 @@ Also, you can try disabling N mode completely by using '11n_disable=1' in the pr
 
 If you want to watch what the Wifi hardware is doing, you can leave this command running in the terminal:
 
-`iwevent`
+`iwevent -t`
 
 Pay attention to the disconnect reasons, and ignore the scans.
 
-Also, if wifi is giving you problems, many times you can run this command to restart the service that manages all internet traffic on the computer, which is usually easier than restarting the computer:
+Also, if Wifi is giving you problems, many times you can run this command to restart the service that manages all Internet traffic on the computer, which is usually easier than restarting the computer:
 
 `sudo service network-manager restart`
 
@@ -93,9 +93,17 @@ And to see if the hardware is being detected by the computer, run this command:
 
 `lspci | grep Network`
 
-# WiFi Speeds and Frequencies
+Sometimes erasing the stored information about wireless locations can fix problems:
 
-- 54 Mb/s uses the 802.11g & 802.11b standards. 
+`sudo rm /etc/NetworkManager/system-connections/*`
+
+Occasionally, reinstalling network-manager can fix some network issues:
+
+`sudo apt install --reinstall network-manager`
+
+# Wifi Speeds and Frequencies
+
+- 54 Mb/s uses the 802.11g & 802.11b standards.
 - 145 Mb/s and 300 Mb/s modes support the 802.11n standard and use 20MHz and 40MHz bandwidths.
 - 300Mbps / 40Mhz will provide the maximum performance in most cases.
 - 145Mbps / 20MHz will work better in areas with more access points.

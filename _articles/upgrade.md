@@ -91,7 +91,9 @@ A message will appear informing you of the availability of the new release. Clic
 
 #### 5. Done!
 
-You're all set! The upgrade will prompt you to restart, then you'll be on your newly upgraded system! If you run into any issues, check out Stuck Upgrades or Fixing Common Upgrade Failures below.
+The upgrade will prompt you to restart, then you'll be on your newly upgraded system! If you run into any issues, check out Stuck Upgrades or Fixing Common Upgrade Failures below.
+
+If you use any third-party packages, you'll need to re-enable them in the Software & Updates settings on the **Other Software** tab. Check any sources that you might need, then close the window.
 
 ---
 
@@ -148,6 +150,8 @@ Once you've upgraded Ubuntu, you'll need to download and install the System76 Dr
 Once the process is finished, restart your computer for the changes to take effect.
 
 ---
+
+If you use any third-party packages, you'll need to re-enable them in the Software & Updates settings on the **Other Software** tab. Check any sources that you might need, then close the window.
 
 # Fixing common upgrade failures
 

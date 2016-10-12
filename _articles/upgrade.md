@@ -49,16 +49,16 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 There are two methods of upgrading:
 
-1. [Upgrade while running](#---upgrade-while-running--)
-2. [Upgrade from media](#anchor!)
+1. [Upgrade while running](#--upgrade-while-running--)
+2. [Upgrade from media](#--upgrade-from-media--)
 
-Upgrading while running is great for upgrading to the next available release, or when switching from an LTS to a Standard release. Upgrading from media is good when you're more than one version behind and can also provide a more stable environment since the system isn't running while it's being upgrades.
+Upgrading while running is great for moving to the next available release, or when switching from an LTS to a Standard release. Upgrading from media is can provide a more stable environment since the system isn't running while it's being upgraded, and is required when upgrading if you're more than one version behind.
 
 ### - Upgrade while running -
 
 #### 1. Open Software Updater
 
-Open the Dash, then search for *updater*.
+Open the Dash, then search for *updater.*
 
 ![Updater in Dash](/images/upgrade/Step-1.jpg)
 
@@ -67,18 +67,23 @@ Open the Dash, then search for *updater*.
 Click on **Settings** then select **Updates.** You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labled **Notify me of a new Ubuntu version.**
 
 Selecting *For any new version* will show both Standard and LTS updates.
+
 Selecting *For long-term support versions* will show only LTS updates.
+
 Selecting *Never* will prevent upgrades to newer versions.
+
+![Update Preference](/images/upgrade/notification-preference.png)
+
 
 Changing this option will require your user password. After selecting your update preference, close the window.
 
-#### 3. Check for Updates
+#### 3. Check for updates
 
 The system will automatically check for updates. You may need to update (and sometimes, restart) before continuing with the upgrade process. If you have to restart after installing updates, launch the updater again as described in Step 1.
 
 ![Software Updater](/images/upgrade/Step-2.jpg)
 
-#### 4. Install the Upgrade
+#### 4. Install the upgrade
 
 A message will appear informing you of the availability of the new release. Click Upgrade and follow the on-screen instructions.
 
@@ -108,14 +113,16 @@ Tap <kbd>F7</kbd> or <kbd>F1</kbd> | Tap <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>
 
 #### 2. Install updates
 
-During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu". You'll need to choose the "Install Ubuntu" option to continue with the installation. Additionally, you will want to check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
+When prompted, choose *Install Ubuntu.*
+
+Next, check the box labeled **Download updates while installing Ubuntu** to bring your installation up to date.
 
 ![VirtualBox Listing in USC](/images/restore/updates.png)
 
 
 #### 3. Complete the upgrade
 
-Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu.* This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing 'Erase disk and install Ubuntu.' More information on this is available in our [restore guide.](http://support.system76.com/articles/restore/)
+Follow the on-screen instructions to complete the upgrade. **To preserve your files and settings, be sure to choose Upgrade Ubuntu.** This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing 'Erase disk and install Ubuntu.' More information on this is available in our [restore guide.](http://support.system76.com/articles/restore/)
 
 ---
 
@@ -142,15 +149,15 @@ Once the process is finished, restart your computer for the changes to take effe
 
 ---
 
-# Fixing Common Upgrade Failures
+# Fixing common upgrade failures
 
 Many upgrades proceed without a hitch.  Occasionally, things go wrong.  If you system hangs on the upgrade process, or if it reboots and won't start, then these steps can help repair your broken OS.
 
-### 1. Create Bootable Media
+### 1. Create install media
 
 Please see the steps above to create bootable media.  Restart your computer and use the keys above to start your computer from the bootable media.  When given the option, choose _Try Ubuntu_.
 
-### 2. Mount Your Existing Hard Drive
+### 2. Mount your hard drive
 
 Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following command:
 
@@ -169,7 +176,7 @@ sudo cp /etc/resolv.conf /mnt/etc/resolv.conf
 sudo chroot /mnt
 ```
 
-### 3. Repair Exisiting OS
+### 3. Repair your installation
 
 Then run these commands next to fix GRUB bootloader issues, package issues, and to re-run the release upgrade software.
 
@@ -186,14 +193,14 @@ sudo do-release-upgrade -d
 
 After that, if the apt package manager commands and release upgrade command sucessfully update and repair your issues, you should be able to boot normally.
 
-# Where to Get Help
+# Where to get help
 
 Having trouble with your upgrade? We're here to help! Here are two ways to get assistance:
 
-## 1. Contact a Technician
+## 1. Create a support case
 
 Get in touch using our support system. View the orders in [your account](https://system76.com/my-account/orders), then choose **_Open Support Case_** under the product you need help with.
 
-## 2. Phone Support
+## 2. Give us a call
 
 Our representatives are available to help and take questions by phone between 8 AM and 5 PM Mountain Time, Mon–Fri. You can reach us at (720) 226-9269.

@@ -1,10 +1,13 @@
 ---
 layout: article
-title: Upgrade to the latest version of Ubuntu
+title: Upgrading Ubuntu
 description: >
   Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
 keywords:
+  - Ubuntu 16.04
   - Ubuntu 16.04.1
+  - Ubuntu 16.10
+  - Yakkety Yak
   - Xenial Xerus
   - LTS
   - Point Release
@@ -12,20 +15,27 @@ keywords:
   - Update
   - Release
   - System76
+  - apt
 image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-07/16-c5e8aa32fb.04.1.png
 hidden: false
 faq: true # If it shows in the "Frequently Answered Questions" section
 ---
 
-# Upgrading to Ubuntu 16.04.1 LTS
+# Do I need to upgrade?
 
-Ubuntu 16.04.1 LTS is the latest release of Ubuntu. It incorporates many bug and stability fixes over version 16.04.  The next version of CUDA (Ver 8) will be supported with this release.  Also, upgrading from version 14.04 LTS will now be enabled without having to use bootable media.
+The choice to upgrade depends on what you're using your computer for. Ubuntu Desktop has two versions. The first type is designed for long-term use as a "daily driver." These are known as LTS, or Long Term Support releases, since they receive updates for 5 years. The second type is designed for those who like having the latest and greatest. These are known as Standard releases.
 
-## 1. Prepare for the Upgrade
+For many users, the LTS release is the best option, combining regular updates with a strong foundation. Users who are interested in new and interesting features can choose the Standard releases, which have a shorter lifespan.
 
-First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu. You can download a copy from [ubuntu.com](http://www.ubuntu.com/download/desktop).
+# What versions of Ubuntu are available?
 
-### - Create an Installation USB Drive -
+A current list of Ubuntu releases [can be found here.](https://wiki.ubuntu.com/Releases)
+
+## Preparing for the upgrade
+
+First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu from [ubuntu.com](http://www.ubuntu.com/download/desktop).
+
+### - Create install media -
 
 Create an Installation USB Drive  | Create an Installation DVD
 --------------------------------- | ---------------------------
@@ -35,25 +45,36 @@ Create an Installation USB Drive  | Create an Installation DVD
 
 Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong.
 
-## 2. Upgrade
+# How do I upgrade?
 
-There are a couple of options for upgrading Ubuntu to 16.04.1; you can either Upgrade Ubuntu in place, use bootable media to upgrade your computer, or install a fresh copy of Ubuntu.  Ubuntu can be directly upgraded from 14.04.x or 15.10 to 16.04.1 without using bootable media.  If you have an older version of Ubuntu you will have to use bootable media to perform the 16.04.1 upgrade.
+There are two methods of upgrading:
 
-### - Upgrading in Place -
+1. [Upgrade while running](#---upgrade-while-running--)
+2. [Upgrade from media](#anchor!)
 
-#### 1. Launch the Software Updater
+Upgrading while running is great for upgrading to the next available release, or when switching from an LTS to a Standard release. Upgrading from media is good when you're more than one version behind and can also provide a more stable environment since the system isn't running while it's being upgrades.
 
-Press the Ubuntu Key on your keyboard to launch the Dash, then search for *updater*.
+### - Upgrade while running -
+
+#### 1. Open Software Updater
+
+Open the Dash, then search for *updater*.
 
 ![Updater in Dash](/images/upgrade/Step-1.jpg)
 
-#### 2. Enable LTS Updates
+#### 2. Configure version updates
 
-Click on "Settings", then select the tab called *Updates*. Under the dropdown menu for "notify me of a new Ubuntu Version", as long as you have "Prompt for LTS" selected, your computer will notify you that 16.04.1 is ready to release.  You may also have "For any new version" selected, which will prompt you for this LTS version, as well as future non-LTS versions.  You may have to choose that option to make 14.04.x prompt for upgrading. Then, close the window. If prompted, allow the package cache to be updated.
+Click on **Settings** then select **Updates.** You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labled **Notify me of a new Ubuntu version.**
+
+Selecting *For any new version* will show both Standard and LTS updates.
+Selecting *For long-term support versions* will show only LTS updates.
+Selecting *Never* will prevent upgrades to newer versions.
+
+Changing this option will require your user password. After selecting your update preference, close the window.
 
 #### 3. Check for Updates
 
-If there are any updates available, install them. When you're finished, click "Check for Updates" if available, then click on the "Upgrade..." button.
+The system will automatically check for updates. You may need to update (and sometimes, restart) before continuing with the upgrade process. If you have to restart after installing updates, launch the updater again as described in Step 1.
 
 ![Software Updater](/images/upgrade/Step-2.jpg)
 
@@ -63,39 +84,38 @@ A message will appear informing you of the availability of the new release. Clic
 
 ![Upgrade Message](/images/upgrade/Step-3.jpg)
 
-If you are running 14.04.x and the updater isn't prompting you to do the upgrade, you may be able to manually start the upgrade with this command:
+#### 5. Done!
 
-`do-release-upgrade`
+You're all set! The upgrade will prompt you to restart, then you'll be on your newly upgraded system! If you run into any issues, check out Stuck Upgrades or Fixing Common Upgrade Failures below.
 
 ---
 
 ##### Stuck Upgrades
 
-If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to exand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact us at support (see below) and we'll be able to provide assistance.
+If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to exand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support (see below) and we'll be able to provide assistance.
 
 ---
 
+### - Upgrade from media -
 
-### - Installing a Fresh Copy of Ubuntu -
+#### 1. Start the installer
 
-#### 1. Start Up the Installer
-
-Insert the live disk you made above, then restart your computer. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on:
+Insert your live disk, then restart your computer. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on:
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
+Tap <kbd>F7</kbd> or <kbd>F1</kbd> | Tap <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
 
-#### 2. Install Updates
+#### 2. Install updates
 
 During the initial setup, you may be asked to "Try Ubuntu" or to "Install Ubuntu". You'll need to choose the "Install Ubuntu" option to continue with the installation. Additionally, you will want to check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
 
 ![VirtualBox Listing in USC](/images/restore/updates.png)
 
 
-#### 3. Complete the Upgrade Process
+#### 3. Complete the upgrade
 
-Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu 15.10 to 16.04.1 LTS* (or *Upgrade Ubuntu 14.04 LTS to 16.04.1 LTS* if you're upgrading from 14.04). This will ensure that your files are not erased.  If you would like erase your operating system and start over, choose 'Erase disk and install Ubuntu'
+Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose *Upgrade Ubuntu.* This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing 'Erase disk and install Ubuntu.' More information on this is available in our [restore guide.](http://support.system76.com/articles/restore/)
 
 ---
 

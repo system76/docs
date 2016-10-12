@@ -23,7 +23,7 @@ faq: true # If it shows in the "Frequently Answered Questions" section
 
 # Do I need to upgrade?
 
-The choice to upgrade depends on what you're using your computer for. Ubuntu has two versions. The first type is designed for long-term use as a "daily driver." These are known as LTS, or Long Term Support releases, since they receive updates for 5 years. The second type is designed for those who like having the latest and greatest. These are known as Standard releases.
+The choice to upgrade depends on how you're using your computer. Ubuntu has two versions. The first type is designed for long-term use as a "daily driver." These are known as LTS, or Long Term Support releases, since they receive updates for 5 years. The second type is designed for those who like having the latest and greatest. These are known as Standard releases.
 
 For many users, the LTS release is the best option, combining regular updates with a strong foundation. Users who are interested in new and interesting features can choose the Standard releases, which have a shorter lifespan.
 
@@ -52,19 +52,19 @@ There are two methods of upgrading:
 1. Upgrade while running
 2. Upgrade from media
 
-Upgrading while running is great for moving to the next available release, or when switching from an LTS to a Standard release. Upgrading from media is can provide a more stable environment since the system isn't running while it's being upgraded, and is required when upgrading if you're more than one version behind.
+Upgrading while running is great for moving to the next available release, or when switching from an LTS to a Standard release. Upgrading from media can provide a more stable environment since the system isn't running while it's being upgraded. Upgrading from media is required if you're more than one version behind.
 
 ### - Upgrade while running -
 
 #### 1. Open Software Updater
 
-Open the Dash, then search for *updater.*
+Open the Dash and then search for *updater.*
 
 ![Updater in Dash](/images/upgrade/Step-1.jpg)
 
 #### 2. Configure version updates
 
-Click on **Settings** then select **Updates.** You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labled **Notify me of a new Ubuntu version.**
+Click on **Settings** and then select **Updates.** You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labled **Notify me of a new Ubuntu version.**
 
 Selecting *For any new version* will show both Standard and LTS updates.
 
@@ -99,7 +99,7 @@ If you use any third-party packages, you'll need to re-enable them in the Softwa
 
 ##### Stuck Upgrades
 
-If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to exand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support (see below) and we'll be able to provide assistance.
+If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support (see below) and we'll be able to provide assistance.
 
 ---
 
@@ -155,7 +155,7 @@ If you use any third-party packages, you'll need to re-enable them in the Softwa
 
 # Fixing common upgrade failures
 
-Many upgrades proceed without a hitch.  Occasionally, things go wrong.  If you system hangs on the upgrade process, or if it reboots and won't start, then these steps can help repair your broken OS.
+Many upgrades proceed without a hitch.  Occasionally, things go wrong.  If you system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
 
 ### 1. Create install media
 
@@ -167,7 +167,7 @@ Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd
 
 `lsblk`
 
-And then note what the name of your primary partition is.  It may be `/dev/nvme0n1` or `/dev/sda1`.  Notice that the first command below is using the partition (sda1), and the later command is using the disk (sda).
+And then note the name of your primary partition.  It may be `/dev/nvme0n1` or `/dev/sda1`.  Notice that the first command below is using the partition (sda1) and the later command is using the disk (sda).
 
 Next, type these commands:
 
@@ -182,7 +182,7 @@ sudo chroot /mnt
 
 ### 3. Repair your installation
 
-Then run these commands next to fix GRUB bootloader issues, package issues, and to re-run the release upgrade software.
+Next, run these commands to fix GRUB bootloader issues, package issues, and to re-run the release upgrade software.
 
 ```
 sudo grub-install /dev/sda

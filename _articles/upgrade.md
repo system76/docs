@@ -23,7 +23,7 @@ faq: true # If it shows in the "Frequently Answered Questions" section
 
 # Do I need to upgrade?
 
-The choice to upgrade depends on what you're using your computer for. Ubuntu Desktop has two versions. The first type is designed for long-term use as a "daily driver." These are known as LTS, or Long Term Support releases, since they receive updates for 5 years. The second type is designed for those who like having the latest and greatest. These are known as Standard releases.
+The choice to upgrade depends on what you're using your computer for. Ubuntu has two versions. The first type is designed for long-term use as a "daily driver." These are known as LTS, or Long Term Support releases, since they receive updates for 5 years. The second type is designed for those who like having the latest and greatest. These are known as Standard releases.
 
 For many users, the LTS release is the best option, combining regular updates with a strong foundation. Users who are interested in new and interesting features can choose the Standard releases, which have a shorter lifespan.
 

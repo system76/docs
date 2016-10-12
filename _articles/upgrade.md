@@ -49,8 +49,8 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 There are two methods of upgrading:
 
-1. [Upgrade while running](#--upgrade-while-running--)
-2. [Upgrade from media](#--upgrade-from-media--)
+1. Upgrade while running
+2. Upgrade from media
 
 Upgrading while running is great for moving to the next available release, or when switching from an LTS to a Standard release. Upgrading from media is can provide a more stable environment since the system isn't running while it's being upgraded, and is required when upgrading if you're more than one version behind.
 

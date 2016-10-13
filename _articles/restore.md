@@ -63,15 +63,9 @@ Once the operating system is successfully installed, and the nVidia driver is su
 
 `sudo gedit /etc/default/grub`
 
-And change this line:
-```
-GRUB_CMDLINE_LINUX="nomodeset"
-```
+And change this line: `GRUB_CMDLINE_LINUX="nomodeset"`
 
-to:
-```
-GRUB_CMDLINE_LINUX=""
-```
+to: `GRUB_CMDLINE_LINUX=""`
 
 Then save the file, exit the editor, and run this command to make the change permanent:  
 

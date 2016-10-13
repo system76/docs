@@ -16,14 +16,15 @@ To create a new support article, click the **+** icon at the top of the /_articl
 
 > docs / _articles / **+**
 
-Name the file something descriptive (this will be the part of the URL after `docs.system76.com/articles/`) with the `.md` filetype (i.e. `server-setup.md`). Don't use spaces; instead, use dashes (`-`). Then include the following (called **frontmatter**) at the very top of the file (including the `---`es):
+Name the file something short but descriptive (this will be the part of the URL after `support.system76.com/articles/`) with the `.md` filetype (i.e. `server-setup.md`). Don't use spaces; instead, use dashes (`-`). Then include the following (called **frontmatter**) at the very top of the file (including the `---`es):
 
 ```
 ---
 layout: article
-title: A Short, Descriptive Title
+title: Do the thing
 description: >
   A more descriptive sentence or two about the page; will show up in search engines and on the support home page.
+image: https://system76.com/images/foo.jpg
 keywords:
   - List
   - of
@@ -34,6 +35,11 @@ keywords:
   - System76
 ---
 ```
+
+A couple of notes:
+ 
+ * The `title` should be phrased so a customer could say, "I want to `title`." For example, use `Upgrade Ubuntu` instead of `Upgrading Ubuntu`.
+ * The `image` is a full URL to an image and will show up on social media, when shared in Slack, etc.
 
 After that, it's just the contents of the article in markdown. Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
 

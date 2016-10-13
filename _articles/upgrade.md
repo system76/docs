@@ -16,7 +16,7 @@ keywords:
   - Release
   - System76
   - apt
-image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-07/16-c5e8aa32fb.04.1.png
+image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-10/16-c1f27f8de8.10.jpg
 hidden: false
 faq: true # If it shows in the "Frequently Answered Questions" section
 ---

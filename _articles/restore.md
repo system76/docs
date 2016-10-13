@@ -91,13 +91,12 @@ sudo apt update
 sudo apt install system76-driver
 ```
 
-**For Nvidia Graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance.  Please run the following command after the above commands to install the driver:
+**For systems with Nvidia graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance.  Please run the following command after the above commands to install the driver:
 
 ```
 sudo apt install system76-driver-nvidia
 ```
-
-After the Nvidia driver is successfully installed, we need to remove the nomodeset modifier.  Please run this command to edit the startup options file:
+**If you had to start your system with 'nomodeset' as described in Step 1,** you'll need to remove the nomodeset modifier.  Please run this command to edit the startup options file:
 
 `sudo gedit /etc/default/grub`
 

@@ -111,7 +111,7 @@ Insert your live disk, then restart your computer. You'll need to tell the compu
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
-Tap <kbd>F7</kbd> or <kbd>F1</kbd> | Tap <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
+Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
 
 #### 2. Install updates
 

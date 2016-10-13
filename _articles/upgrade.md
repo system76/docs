@@ -23,19 +23,19 @@ faq: true # If it shows in the "Frequently Answered Questions" section
 
 # Do I need to upgrade?
 
-The choice to upgrade depends on how you're using your computer. Ubuntu has two versions. The first type is designed for long-term use as a "daily driver." These are known as LTS, or Long Term Support releases, since they receive updates for 5 years. The second type is designed for those who like having the latest and greatest. These are known as Standard releases.
+The choice to upgrade depends on how you're using your computer. Ubuntu has two versions. The first type, **LTS** is designed for long-term use as a "daily driver." LTS stands for "Long Term Support" since they receive updates for 5 years. The second type, **Standard**, is designed for those who like having the latest and greatest.
 
 For many users, the LTS release is the best option, combining regular updates with a strong foundation. Users who are interested in new and interesting features can choose the Standard releases, which have a shorter lifespan.
 
 # What versions of Ubuntu are available?
 
-A current list of Ubuntu releases [can be found here.](https://wiki.ubuntu.com/Releases)
+A current list of Ubuntu releases can be found here on the [Ubuntu wiki](https://wiki.ubuntu.com/Releases).
 
 ## Preparing for the upgrade
 
 First, we recommend having Ubuntu installation media (i.e. a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu from [ubuntu.com](http://www.ubuntu.com/download/desktop).
 
-### - Create install media -
+### Create install media
 
 Create an Installation USB Drive  | Create an Installation DVD
 --------------------------------- | ---------------------------
@@ -52,9 +52,9 @@ There are two methods of upgrading:
 1. Upgrade while running
 2. Upgrade from media
 
-Upgrading while running is great for moving to the next available release, or when switching from an LTS to a Standard release. Upgrading from media can provide a more stable environment since the system isn't running while it's being upgraded. Upgrading from media is required if you're more than one version behind.
+**Upgrading while running** is great for moving to the next available release, or when switching from an LTS to a Standard release. **Upgrading from media** can provide a more stable environment since the system isn't running while it's being upgraded. Upgrading from media is required if you're more than one version behind.
 
-### - Upgrade while running -
+### Upgrade while running
 
 #### 1. Open Software Updater
 
@@ -91,19 +91,19 @@ A message will appear informing you of the availability of the new release. Clic
 
 #### 5. Done!
 
-The upgrade will prompt you to restart, then you'll be on your newly upgraded system! If you run into any issues, check out Stuck Upgrades or Fixing Common Upgrade Failures below.
+The upgrade will prompt you to restart, then you'll be on your newly upgraded system! If you run into any issues, check out _Stuck Upgrades_ or _Fixing Common Upgrade Failures_ below.
 
-If you use any third-party packages, you'll need to re-enable them in the Software & Updates settings on the **Other Software** tab. Check any sources that you might need, then close the window.
+If you use any third-party packages, you'll need to re-enable them in the **Software & Updates** app on the **Other Software** tab. Check any sources that you might need, then close the window.
 
 ---
 
 ##### Stuck Upgrades
 
-If your upgrade appears to hang in place for an extended period of time, click on the "Terminal" item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support (see below) and we'll be able to provide assistance.
+If your upgrade appears to hang in place for an extended period of time, click on the _Terminal_ item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support (see below) and we'll be able to provide assistance.
 
 ---
 
-### - Upgrade from media -
+### Upgrade from media
 
 #### 1. Start the installer
 
@@ -115,7 +115,7 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kb
 
 #### 2. Install updates
 
-When prompted, choose *Install Ubuntu.*
+When prompted, choose _Install Ubuntu_.
 
 Next, check the box labeled **Download updates while installing Ubuntu** to bring your installation up to date.
 
@@ -124,7 +124,7 @@ Next, check the box labeled **Download updates while installing Ubuntu** to brin
 
 #### 3. Complete the upgrade
 
-Follow the on-screen instructions to complete the upgrade. **To preserve your files and settings, be sure to choose Upgrade Ubuntu.** This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing 'Erase disk and install Ubuntu.' More information on this is available in our [restore guide.](http://support.system76.com/articles/restore/)
+Follow the on-screen instructions to complete the upgrade. **To preserve your files and settings, be sure to choose _Upgrade Ubuntu_.** This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing _Erase disk and install Ubuntu_. More information on this is available in our [restore guide](http://support.system76.com/articles/restore/).
 
 ---
 
@@ -151,23 +151,23 @@ Once the process is finished, restart your computer for the changes to take effe
 
 ---
 
-If you use any third-party packages, you'll need to re-enable them in the Software & Updates settings on the **Other Software** tab. Check any sources that you might need, then close the window.
+If you use any third-party packages, you'll need to re-enable them in the **Software & Updates** app on the **Other Software** tab. Check any sources that you might need, then close the window.
 
 # Fixing common upgrade failures
 
-Many upgrades proceed without a hitch.  Occasionally, things go wrong.  If you system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
+Most upgrades proceed without a hitch, but occasionally things go wrong. If you system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
 
 ### 1. Create install media
 
-Please see the steps above to create bootable media.  Restart your computer and use the keys above to start your computer from the bootable media.  When given the option, choose _Try Ubuntu_.
+Please see the steps above to create bootable media. Restart your computer and use the keys above to start your computer from the bootable media.  When given the option, choose _Try Ubuntu_.
 
 ### 2. Mount your hard drive
 
-Open a terminal  (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following command:
+Open a terminal (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following command:
 
 `lsblk`
 
-And then note the name of your primary partition.  It may be `/dev/nvme0n1` or `/dev/sda1`.  Notice that the first command below is using the partition (sda1) and the later command is using the disk (sda).
+And then note the name of your primary partition. It may be `/dev/nvme0n1` or `/dev/sda1`. Notice that the first command below is using the partition (sda1) and the later command is using the disk (sda).
 
 Next, type these commands:
 

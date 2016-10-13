@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Upgrading Ubuntu
+title: Upgrade Ubuntu
 description: >
   Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
 keywords:

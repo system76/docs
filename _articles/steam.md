@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Installing Steam
+title: Install Steam
 description: >
    Want to game on your super awesome new System 76 machine? Head on over to the 'Ubuntu Software Store' to install Steam on your machine.
 keywords:

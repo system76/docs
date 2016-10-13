@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Changing the Desktop Environment
+title: Change the Desktop Environment
 description: >
   Would you like to change how your desktop looks and feels?  Ubuntu comes with Unity installed by default.  Don't like it?  Don't install another operating system or reinstall a special version of Ubuntu!  Follow these instructions to install additional desktop environments!
 keywords:

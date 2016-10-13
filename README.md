@@ -55,7 +55,7 @@ When you're all done, fill out the "Commit changes" form at the bottom with the 
 
 ### Index page
 
-By default, all articles show up on the index page at [docs.system76.com](http://docs.system76.com) under **Other Articles**. To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `faq: true` in its frontmatter.
+By default, all articles show up on the index page at [support.system76.com](http://support.system76.com) under **Other Articles**. To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `faq: true` in its frontmatter.
 
 2. Files, Images, & Links
 -------------------------

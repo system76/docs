@@ -23,14 +23,14 @@ faq: true # If it shows in the "Frequently Answered Questions" section
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.
 
-\* On our second generation Oryx (oryp2), the Sytem76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
+#### Important notes
 
-#### Important Note!
+**On our second generation Oryx (oryp2), the Sytem76 driver is required for the touchpad.**  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
-If you recently updated your system, and now it does not boot, you may not need to reinstall Ubuntu.  If, when you start your computer, you see a flashing underscore on the screen ("\_"), then it is likely that Ubuntu's boot-loader, GRUB, was not updated properly.  To restore it, see [How to Restore Grub Boot-loader](http://docs.system76.com/articles/grub)
+**If your recently updated system does not boot, it can often be recovered.**  If you see a flashing underscore on the screen ("\_"), after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated.  To restore it, see [How to Restore Grub Boot-loader](http://docs.system76.com/articles/grub)
 
 
-## 1. Create Bootable Media
+## 1. Create install media
 
 First, you'll need to create bootable media you can restore or install Ubuntu with.
 
@@ -41,35 +41,23 @@ Create an Installation USB Drive  | Create an Installation DVD
 [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
 
-## 2. Boot From Ubuntu Media
+## 2. Boot from install media
 
 Once you have the disk made, reboot your system.  You'll need to tell the computer to boot from the Live Disk.  Immediately after you turn the computer on:
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
+Tap <kbd>F7</kbd> or <kbd>F1</kbd> | Tap <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
 
 ---
 
-**For nVidia Graphics:** Ubuntu may need a special option enabled to install and boot from Ubuntu until the nVidia driver can be installed as described below.  If the installer doesn't show an image after this first screen, please follow the next instructions:
+**For systems with Nvidia graphics:** Ubuntu may need a special option enabled to install and boot from Ubuntu until the Nvidia driver can be installed as described below.  If the installer doesn't show an image after this first screen, please follow the next instructions:
 
 ![First](/images/restore/first.png)
 
 When you see the above screen, press any key to enter the initial configuration screen.  Now, push <kbd>F6</kbd> to choose additional options.  Move the box down to 'nomodeset', press <kbd>Enter</kbd> to select it, then <kbd>ESC</kbd> to go back to the installer choices.  Pick either "Try Ubuntu" or "Install Ubuntu" as described next.
 
 ![Second](/images/restore/second.png)
-
-Once the operating system is successfully installed, and the nVidia driver is successfully installed as described below, we need to remove the nomodeset modifier.  Please run this command to edit the startup options file:
-
-`sudo gedit /etc/default/grub`
-
-And change this line: `GRUB_CMDLINE_LINUX="nomodeset"`
-
-to: `GRUB_CMDLINE_LINUX=""`
-
-Then save the file, exit the editor, and run this command to make the change permanent:  
-
-`sudo update-grub`
 
 ---
 
@@ -103,10 +91,25 @@ sudo apt update
 sudo apt install system76-driver
 ```
 
-**For NVIDIA Graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance.  Please run the following command after the above commands to install the driver:
+**For Nvidia Graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance.  Please run the following command after the above commands to install the driver:
 
 ```
 sudo apt install system76-driver-nvidia
 ```
+
+After the Nvidia driver is successfully installed, we need to remove the nomodeset modifier.  Please run this command to edit the startup options file:
+
+`sudo gedit /etc/default/grub`
+
+Update this line:<br/>
+`GRUB_CMDLINE_LINUX="nomodeset"`
+
+to:<br/>
+`GRUB_CMDLINE_LINUX=""`
+
+Then save the file, exit the editor, and run this command to make the change permanent:  
+
+`sudo update-grub`
+
 
 Once the process is finished, restart your computer for all changes to take effect.

@@ -26,7 +26,7 @@ Make sure to stop tapping <kbd>ESC</kbd> when the menu appears, otherwise a GRUB
 
 If you get to the GRUB command prompt, type in 'exit', then press <kbd>ENTER</kbd>, <kbd>ESC</kbd>, <kbd>ESC</kbd>.
 
-Once in the GRUB menu, choose the second option "Advanced options for Ubuntu", followed by the 3rd option "Ubuntu, with Linux <current kernel number> (recovery mode)".
+Once in the GRUB menu, choose the second option "Advanced options for Ubuntu", followed by the 3rd option "Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)".
 
 ![Grub2](/images/password/grub2.png)
 

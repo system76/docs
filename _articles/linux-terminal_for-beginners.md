@@ -29,7 +29,7 @@ When you run a command with **sudo** in front of it, You'll be prompted for your
 #### Frequently Used Commands:
 *Omit the brackets when entering the command.*
 
-This series of commands will update the sources.list (a list telling your Ubuntu Operating System where to look for software and updates.)
+This series of commands will update your package database for new versions (a list telling your Ubuntu Operating System where to look for software and updates.)
 
 `sudo apt update`
 
@@ -39,13 +39,11 @@ When using the 'upgrade' option of the command 'apt' your System will download a
 
 The "man" command is short for manual. You can use it like so: 
 
-`man sources.list`
+`man sudo`
 
 ### Add an Application
 
 `sudo apt install [insert application name here]`
-
-*Omit the brackets when entering the command.*
 
 ## Example:
 
@@ -55,7 +53,7 @@ The "man" command is short for manual. You can use it like so:
 
 `sudo apt purge google-chrome-stable`
 
-`sudo apt autoremove google-chrome-stable`
+`sudo apt autoremove`
 
 `sudo apt update`
 

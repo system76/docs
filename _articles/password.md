@@ -16,15 +16,15 @@ If you can't log into your computer, you can follow these instructions to reset 
 
 #### GRUB
 
-There are two ways to enter into the GRUB boot menu.  The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts.  <kbd>SHIFT</kdb> will also work, but not as often.  The second is to power it off while it is starting up, which will make the menu show up on the next boot.
+There are two ways to enter into the GRUB boot menu.  The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts.  <kbd>SHIFT</kbd> will also work, but not as often.  The second is to power it off while it is starting up, which will make the menu show up on the next boot.
 
 ![Grub1](/images/password/grub1.png)
 
-Make sure to stop tapping <kbd>ESC</kdb> when the menu appears, otherwise a GRUB command prompt will appear:
+Make sure to stop tapping <kbd>ESC</kbd> when the menu appears, otherwise a GRUB command prompt will appear:
 
 ![Prompt](/images/password/prompt.png)
 
-If you get to the GRUB command prompt, type in 'exit', then press <kbd>ENTER</kdb>, <kbd>ESC</kdb>, <kbd>ESC</kdb>.
+If you get to the GRUB command prompt, type in 'exit', then press <kbd>ENTER</kbd>, <kbd>ESC</kbd>, <kbd>ESC</kbd>.
 
 Once in the GRUB menu, choose the second option "Advanced options for Ubuntu", followed by the 3rd option "Ubuntu, with Linux <current kernel number> (recovery mode)".
 

@@ -7,11 +7,11 @@ keywords:
   - gaming
   - support
   - System76
-hidden: falso
+hidden: false
 faq: false # If it shows in the 'Frequently Answered Questions' section
 ---
 
-## Install Steam from the Ubuntu Software Store 
+## Install Steam from the Ubuntu Software Store
 
 To launch the _Ubuntu Software Store_ when using the *Launcher*
 
@@ -21,7 +21,7 @@ Then search for 'steam' in the search box
 
 ![Ubuntu Software Store](/images/steam/ubuntu-store-search_min.png)
 
-Click on the 'Steam' application to open the application's page 
+Click on the 'Steam' application to open the application's page
 
 ![Ubuntu Software Store](/images/steam/ubuntu-store-app_page_min.png)
 

@@ -11,7 +11,7 @@ keywords:
   - Linux Terminal
   - System76
   - Technical Support
-hidden: flase
+hidden: false
 faq: true # If it shows in the "Frequently Answered Questions" section
 ---
 
@@ -37,7 +37,7 @@ When using the 'upgrade' option of the command 'apt' your System will download a
 
 `sudo apt upgrade`
 
-The "man" command is short for manual. You can use it like so: 
+The "man" command is short for manual. You can use it like so:
 
 `man sudo`
 
@@ -56,9 +56,3 @@ The "man" command is short for manual. You can use it like so:
 `sudo apt autoremove`
 
 `sudo apt update`
-
-
-
-
-
-

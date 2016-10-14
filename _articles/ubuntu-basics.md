@@ -8,12 +8,12 @@ keywords:
   - Ubuntu
   - Ubuntu Beginner
   - System76
-hidden: true
+hidden: false
 faq: true # If it shows in the "Frequently Answered Questions" section
 ---
 
   The Ubuntu operating system provides all the features you would expect from a sophisticated desktop.
-  
+
 ## Getting to Know the Ubuntu Desktop
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Launcher-16.04.png)

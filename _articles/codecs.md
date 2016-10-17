@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install multimedia codecs (MP3, DVD, etc.)
+title: Watch Videos and Play Music (MP3, DVD, etc.)
 description: >
   Ubuntu does not ship with playback support for some proprietary multimedia formats, like MP3 and DVD-videos. To enable playback of these media, please see this Multimedia Playback Support documentation.
 keywords:

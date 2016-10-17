@@ -27,23 +27,24 @@ A box like the one below will appear.
 When you run a command with **sudo** in front of it, You'll be prompted for your password, but when you type it, it won't show the letters as you type in the terminal, but type your password anyway and press <kbd>enter</kbd>.
 
 #### Frequently Used Commands:
-*Omit the brackets when entering the command.*
 
-This series of commands will update your package database for new versions (a list telling your Ubuntu Operating System where to look for software and updates.)
+To update your packages and applications, type the command below and press <kbd>enter</kbd>. This command will tell your system to search for potential updates and advise if there are any available, but this command does not install them.
 
 `sudo apt update`
 
-When using the 'upgrade' option of the command 'apt' your System will download and apply any updates to your System76.
+To download and apply any updates to your System76 computer, type the following command and press <kbd>enter</kbd>.
 
 `sudo apt upgrade`
 
-The "man" command is short for manual. You can use it like so:
+The "man" command is short for manual. You can type the "man" command in front of any command that you want more information about. For example;
 
 `man sudo`
 
 ### Add an Application
 
 `sudo apt install [insert application name here]`
+
+*Omit the brackets when entering the command.*
 
 ## Example:
 

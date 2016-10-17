@@ -77,7 +77,7 @@ Also, you can try disabling N mode completely by using '11n_disable=1' in the pr
 
 If you want to watch what the Wifi hardware is doing, you can leave this command running in the terminal:
 
-`iwevent -t`
+`iwevent`
 
 Pay attention to the disconnect reasons, and ignore the scans.
 

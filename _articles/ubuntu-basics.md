@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Ubuntu Basics
+title: Learn Ubuntu Basics
 description: >
   Learn how to navigate your new Ubuntu desktop enviornment with a few easy tips.
 keywords:

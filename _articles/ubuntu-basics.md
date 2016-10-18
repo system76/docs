@@ -2,7 +2,7 @@
 layout: article
 title: Ubuntu Basics
 description: >
-  Learn how to navigate your new Ubuntu desktop enviornment with a few easy tips.
+  Learn how to navigate your new Ubuntu desktop environment with a few easy tips.
 keywords:
   - Support
   - Ubuntu
@@ -30,10 +30,14 @@ Access the *Menu Bar* at the top of the screen to view options like *File, Edit,
 
 *Window controls* are on the left of the title bar of the window.
 
-When you press the left <kbd>Alt key</kbd> or right <kbd>Alt key</kbd> the *HUD* is brought up. The *HUD* is helpful for keyboard super users for searching though an application's menu
+When you press the left <kbd>Alt</kbd> key or right <kbd>Alt</kbd> key the *HUD* is brought up. The *HUD* is helpful for keyboard super users for searching though an application's menu.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/HUD-16.04-min.png)
 
 Access the *Ubuntu Desktop Guide* by clicking the gear icon in the top right corner of your desktop and select 'Ubuntu Help' for official documentation.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Ubuntu-Desktop-Guide-16.04.png)
+
+The awesome community driven Ubuntu Beginner's Manual is another great place to learn about this operating system.  You can download or read the manual here:
+
+[Ubuntu-Manual.org](http://ubuntu-manual.org)

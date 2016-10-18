@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Learn the Linux Terminal for Beginners
+title: Linux Terminal for Beginners
 description: >
   Using a Linux Terminal is faster and easier to update and install software. Learn simple ways to use the terminal to your advantage.
 

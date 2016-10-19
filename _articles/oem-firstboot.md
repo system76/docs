@@ -14,7 +14,7 @@ hidden: true
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
-We put a lot of work into making your System76 experience fantastic right out of the box. Almost every time, you can get up and running with just a little bit of information like a username and password. Every now and then, something goes wrong with the first boot user creator. If you end up booting your computer and only finding the option for a Guest Session, follow these instructions to get a new user created manually.
+A lot of work goes in to making your System76 experience fantastic right out of the box. Almost every time, you can get up and running with just a little bit of information like a username and password. Every now and then, something goes wrong with the first boot user creator. If you end up booting your computer and only finding the option for a Guest Session, follow these instructions to get a new user created manually.
 
 # Overview
 
@@ -32,11 +32,18 @@ Here are the general steps for creating a user manually:
 
 **Power on (or reboot) your system.** Hold the left <kbd>Shift</kbd> key, or start pressing <kbd>Esc</kbd> to get to the GRUB boot menu.
 
+![GRUB menu](/images/oem-firstboot/grub-menu.png)
+
+
 **If you end up at the GRUB CLI (`grub >`)** type _exit_, press <kbd>Enter</kbd> and then immediately pres <kbd>Esc</kbd> twice.
 
 Once you're in the GRUB boot menu, choose **Advanced Options for Ubuntu** and then **recovery.** The system will boot into the recovery menu.
 
+![Advanced options](/images/oem-firstboot/recovery-mode.png)
+
 **Choose `root` to get started.**
+
+![Recovery menu](/images/oem-firstboot/recovery-menu.png)
 
 # Creating a new user
 
@@ -58,6 +65,8 @@ exit
 ~~~~
 
 Once you're back at the recovery menu choose `resume` to resume normal boot.
+
+![GRUB menu](/images/oem-firstboot/commands.png)
 
 # Help us track down the problem
 

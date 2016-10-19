@@ -64,9 +64,9 @@ adduser tom sambashare
 exit
 ~~~~
 
-Once you're back at the recovery menu choose `resume` to resume normal boot.
+![Entering commands one at a time](/images/oem-firstboot/commands.png)
 
-![GRUB menu](/images/oem-firstboot/commands.png)
+Once you're back at the recovery menu choose `resume` to resume normal boot.
 
 # Help us track down the problem
 

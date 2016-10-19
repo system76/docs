@@ -35,9 +35,9 @@ Here are the general steps for creating a user manually:
 ![GRUB menu](/images/oem-firstboot/grub-menu.png)
 
 
-**If you end up at the GRUB CLI (`grub >`)** type _exit_, press <kbd>Enter</kbd> and then immediately pres <kbd>Esc</kbd> twice.
+**If you end up at the GRUB CLI** (it looks like `grub >`) type _exit_, press <kbd>Enter</kbd> and then immediately pres <kbd>Esc</kbd> twice.
 
-Once you're in the GRUB boot menu, choose **Advanced Options for Ubuntu** and then **recovery.** The system will boot into the recovery menu.
+Once you're in the GRUB boot menu, choose **Advanced options for Ubuntu** and then **recovery mode.** The system will boot into the recovery menu.
 
 ![Advanced options](/images/oem-firstboot/recovery-mode.png)
 
@@ -66,10 +66,12 @@ exit
 
 ![Entering commands one at a time](/images/oem-firstboot/commands.png)
 
-Once you're back at the recovery menu choose `resume` to resume normal boot.
+Once you're back at the recovery menu, choose `resume` to resume normal boot.
 
 # Help us track down the problem
 
 Lastly, we need your help in tracking down this bug. When you get logged in, open a terminal and run this command, then send us the 'log.tgz' file it creates.
 
 `sudo tar -cvz -f ~/log/.tgz /var/log`
+
+Please open a Support ticket and attach the log file.

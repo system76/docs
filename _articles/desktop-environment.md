@@ -53,7 +53,7 @@ Cinnamon is installed with:
 
 ## Gnome
 
-The GNOME desktop is a classic environment and contains both a modern (GNOME) and a classic (GNOME Classic) version.
+The GNOME desktop is a different environment than most people are used to.  It contains both a modern and a classic version.  It is a good example of another way to interact with the operating system, but isn't as straight-forward as other desktop environments.
 
 ![Gnome](/images/desktop-environment/Gnome.png)
 ![Gnome2](/images/desktop-environment/Gnome2.png)
@@ -65,7 +65,7 @@ Gnome is installed with:
 
 ## KDE
 
-The KDE Plasma desktop environment is a familiar working environment.
+The KDE Plasma desktop environment is a familiar working environment and looks similar to windows.  It is highly customizable and looks great.  It is more heavy on system resources than other desktop environments, and isn't recommended for
 
 ![KDE](/images/desktop-environment/KDE.png)
 
@@ -82,7 +82,7 @@ sudo apt install -f
 
 ## Xfce
 
-Xfce embodies the traditional UNIX philosophy of modularity and re-usability.
+Xfce embodies the traditional UNIX philosophy of modularity and re-usability.  This environment provides a good bit of conformity for the programs written for it.  Xfce also provides a highly customizable environment, while being leaner on resources than Unity.
 
 ![Xfce](/images/desktop-environment/Xfce.png)
 
@@ -93,7 +93,7 @@ Xfce can be installed with:
 
 ## LXDE
 
-The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment.
+The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment.  It looks similar to older versions of Windows.  This is the leanest desktop environment and can help extend battery life in laptops.
 
 ![LXDE](/images/desktop-environment/LXDE.png)
 

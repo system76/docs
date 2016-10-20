@@ -10,7 +10,7 @@ keywords:
   - mozilla
   - firefox
   - netflix
-  - amazon 
+  - amazon
   - hulu
   - flash
   - videos
@@ -60,6 +60,10 @@ When prompted, enter your password and wait for the installation to finish. When
 Click on the Ubuntu Logo button in the upper left to open the Dash, then search for `chrome`:
 
 ![Dash searching for Chrome](/images/onlineDRM/step6.png)
+
+If the Software Center isn't working, Chrome can be installed with this command:
+
+`sudo apt install ./Downloads/google-chrome-stable_current_amd64.deb`
 
 #### <small>Note that you may need to log out and log back in for Chrome to appear in the Dash. If you do not see it in the list of results, simply log out and log back in.</small>
 

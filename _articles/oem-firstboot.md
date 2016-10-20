@@ -35,13 +35,13 @@ Power on (or reboot) your system.  Hold the left <kbd>Shift</kbd> key, or start 
 ![GRUB menu](/images/oem-firstboot/grub-menu.png)
 
 
-If you end up at the GRUB CLI (it looks like `grub >`) type _exit_, press <kbd>Enter</kbd> and then immediately pres <kbd>ESC</kbd> twice.
+If you end up at the GRUB CLI (it looks like `grub >`) type _exit_, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd> twice.
 
 Once you're in the GRUB boot menu, choose **Advanced options for Ubuntu** and then **recovery mode.** The system will boot into the recovery menu.
 
 ![Advanced options](/images/oem-firstboot/recovery-mode.png)
 
-Choose `root`, and then press <kbd>Enter</kdb> to get started.
+Choose `root`, and then press <kbd>Enter</kbd> to get started.
 
 ![Recovery menu](/images/oem-firstboot/recovery-menu.png)
 
@@ -51,7 +51,7 @@ Once you're at the root shell (identified with the prompt `root@ubuntu:~#`), ent
 
 _Note that in this example, we're creating the user **tom.** Replace **tom** with your desired username._
 
-A note on `adduser`: The adduser tool will ask for a lot of information, like full name, room number, phone number, etc. -- It's not necessary to provide anything other than Password and Full Name.
+`adduser` will ask for a lot of information, like full name, room number, phone number, etc. -- It's not necessary to provide anything other than Password and Full Name.
 
 ```
 mount -o rw,remount /

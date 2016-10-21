@@ -56,13 +56,7 @@ _Note that in this example, we're creating the user **tom.** Replace **tom** wit
 ```
 mount -o rw,remount /
 adduser tom
-adduser tom adm
-adduser tom cdrom
-adduser tom sudo
-adduser tom dip
-adduser tom plugdev
-adduser tom lpadmin
-adduser tom sambashare
+usermod -a -G adm,cdrom,sudo,dip,plugdev,lpadmin,sambashare tom
 exit
 ```
 

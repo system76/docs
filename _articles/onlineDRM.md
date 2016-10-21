@@ -23,14 +23,13 @@ redirect_from:
 faq: false # If it shows in the "Frequently Answered Questions" section
 ---
 
-
-#### You can still install 'pepperflash' to use Firefox to watch  DRM Online content.
+**If you prefer using Firefox or Chromium, you can still install 'pepperflash' to watch DRM or Flash content online.**
 
 `sudo apt install browser-plugin-freshplayer-pepperflash`
 
-This plugin will work also work with Chromium but <b> we recommend using Chrome </b>
+Pepperflash is maintained by Google and is not open source.
 
-##### The pepperflash plugin is closed source and maintained by Google
+**Otherwise, you can download and install Google Chrome.**
 
 ## 1. Download Chrome
 

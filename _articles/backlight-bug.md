@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Blank Screen nVidia
+title: Screen Stays Dark After Timeout
 description: >
   If you have an Oryx 2 (oryp2), a Serval 10 (serw10), or a Bonobo 11 (bonw11), there is currently a bug in the nVidia driver which prevents the screen backlight from coming on after a screen timeout.  Here are some suggestions to work around the bug.
 keywords:

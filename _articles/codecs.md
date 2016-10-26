@@ -18,6 +18,7 @@ keywords:
   - System76
 hidden: false
 faq: false # If it shows in the "Frequently Answered Questions" section
+known: false # If it shows in the "Known issues" section
 ---
 
 Ubuntu does not ship with playback support for some proprietary multimedia formats, like MP3 and DVD-videos. To enable playback of these media, please follow the instructions below.

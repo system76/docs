@@ -21,6 +21,7 @@ redirect_from:
   - /chromeFlash
   - /chromeflash
 faq: false # If it shows in the "Frequently Answered Questions" section
+known: false # If it shows in the "Known issues" section
 ---
 
 **If you prefer using Firefox or Chromium, you can still install 'pepperflash' to watch DRM or Flash content online.**

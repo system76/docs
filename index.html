@@ -69,6 +69,33 @@ layout: default
 		</div>
 	</div>
 
+	<div class="row">
+		<div class="small-12 columns">
+			<hr />
+			<h1 id="known">Known Solutions</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts known-solutions">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.faq != true %}
+						{% if article.known %}
+							<article>
+								<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+								{{ article.description | markdownify }}
+								{% if article.more %}
+								{% endif %}
+						</article>
+						{% endif %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
 </div>
 
 <!-- <script type="text/javascript">

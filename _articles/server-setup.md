@@ -14,6 +14,7 @@ redirect_from:
   - /serversetup
   - /serverSetup
 faq: false # If it shows in the "Frequently Answered Questions" section
+known: false # If it shows in the "Known issues" section
 ---
 
 

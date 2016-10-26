@@ -15,7 +15,7 @@ faq: false # If it shows in the "Frequently Answered Questions" section
 known: true # If it shows in the "Known issues" section
 ---
 
-There is a bug in the Plymouth splash screen which can cause issues inputting your password.  This only affects systems with nVidida hardware.
+There is a bug in the Plymouth splash screen which can cause issues inputting your password.  This only affects systems with nVidia hardware.
 
 The current work-around is to disable the splash screen while booting.  To disable the splash screen on the first boot, tap <kbd>ESC</kbd> while booting to enter the GRUB menu.  Press <kbd>E</kbd> to edit the default option, then delete the word 'splash' from the second to last line, and press <kbd>F10</kbd> to continue booting.  Once booted, disable the Plymouth splash screen permanently by editing the GRUB configuration file with this command:
 

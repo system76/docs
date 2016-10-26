@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Problems Entering Password for Full Disk Encryption
+title: Problems Entering Password with Full Disk Encryption
 description: >
   If you have a system with full disk encryption and an nVidia graphics card, there is a bug in Plymouth that prevents the password from showing or being accepted.  Here are some solutions to this problem.
 keywords:

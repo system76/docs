@@ -15,6 +15,7 @@ redirect_from:
   - /extraDrive
   - /extradrive
 faq: true # If it shows in the "Frequently Answered Questions" section
+known: false # If it shows in the "Known issues" section
 ---
 
 

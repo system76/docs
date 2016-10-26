@@ -10,6 +10,7 @@ keywords:
   - System76
 hidden: false
 faq: false # If it shows in the "Frequently Answered Questions" section
+known: false # If it shows in the "Known issues" section
 ---
 
 WiFi issues are influenced by many different factors, including:

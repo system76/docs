@@ -13,6 +13,7 @@ keywords:
   - Technical Support
 hidden: false
 faq: true # If it shows in the "Frequently Answered Questions" section
+known: false # If it shows in the "Known issues" section
 ---
 
 The **Terminal** is a tool for issuing text-based commands to your Ubuntu Operating System. When you type a command, you're basically telling your computer to do something very specific. The quickest way to install, remove or update applications is through the Terminal. A Terminal is sometimes referred to as the Shell, Command Line, or Command Prompt.

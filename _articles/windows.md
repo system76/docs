@@ -16,8 +16,8 @@ keywords:
 hidden: false
 redirect_from:
   - /win10-vm
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
 

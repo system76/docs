@@ -12,8 +12,8 @@ keywords:
   - GNOME
   - Mint
 hidden: false
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
 Ubuntu comes with the desktop environment **Unity** installed by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.

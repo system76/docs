@@ -15,8 +15,8 @@ hidden: false
 redirect_from:
   - /moveLauncher
   - /movelauncher
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
 Ubuntu 16.04 LTS now includes the ability to move the Launcher at the left to the bottom edge of the screen. If you'd like to put the launcher at the bottom of the screen, then press <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>T</kbd> to open a terminal window, then enter in this command, followed by enter:

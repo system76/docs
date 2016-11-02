@@ -11,8 +11,8 @@ keywords:
     - Update
     - System76
 hidden: true
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
 ------

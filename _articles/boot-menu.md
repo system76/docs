@@ -9,8 +9,8 @@ keywords:
   - support
   - System76
 hidden: false
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
 For recent System76 laptops, hold the <kbd>F7</kbd> key immediately after turning your computer on. For desktops (besides the Meerkat), hold the <kbd>F8</kbd> or <kbd>F12</kbd> key. For the Meerkat, hold the <kbd>F10</kbd> key. For older laptops, hold the <kbd>F1</kbd> key.

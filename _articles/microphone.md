@@ -9,8 +9,8 @@ keywords:
   - support
   - System76
 hidden: false
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
 Click on the Volume (<i class='fa fa-volume-up'></i>) icon in the upper right, then click on _Sound Settings_. Click on the _Input_ tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the _Input Level_ indicator show activity.

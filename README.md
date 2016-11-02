@@ -12,9 +12,9 @@ The docs articles are stored as Markdown files under [/_articles/](https://githu
 
 ### Create an article
 
-To create a new support article, click the **+** icon at the top of the /_articles/ page.
+To create a new support article, click the **+** icon at the top of the /\_articles/ page.
 
-> docs / _articles / **+**
+\> docs / \_articles / **+**
 
 Name the file something short but descriptive (this will be the part of the URL after `support.system76.com/articles/`) with the `.md` filetype (i.e. `server-setup.md`). Don't use spaces; instead, use dashes (`-`). Then include the following (called **frontmatter**) at the very top of the file (including the `---`es):
 
@@ -37,9 +37,9 @@ keywords:
 ```
 
 A couple of notes:
- 
- * The `title` should be phrased so a customer could say, "I want to `title`." For example, use `Upgrade Ubuntu` instead of `Upgrading Ubuntu`.
- * The `image` is a full URL to an image and will show up on social media, when shared in Slack, etc.
+
+- The `title` should be phrased so a customer could say, "I want to `title`." For example, use `Upgrade Ubuntu` instead of `Upgrading Ubuntu`.
+- The `image` is a full URL to an image and will show up on social media, when shared in Slack, etc.
 
 After that, it's just the contents of the article in markdown. Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
 
@@ -55,7 +55,7 @@ When you're all done, fill out the "Commit changes" form at the bottom with the 
 
 ### Index page
 
-By default, all articles show up on the index page at [support.system76.com](http://support.system76.com) under **Other Articles**. To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `faq: true` in its frontmatter.
+Articles will only show up under the section they are configured for.  To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `section: faq` in its frontmatter.  To get it to show up under **Known Solutions**, set `section: solutions`, and to get into the the **Articles** section, set `section: articles`.
 
 2. Files, Images, & Links
 -------------------------
@@ -78,5 +78,15 @@ The Ubuntu logo can be included in a doc using the following span:
 This is capable of being embedded in other Markdown and Tags, for example, you can create an Ubuntu Key item as follows:
 
     <kbd><span class="fl-ubuntu-inverse"></span></kbd>
+
+If you would like to run a local instance of Jekyll to see changes without uploading to the public website, please run these commands to install Ruby, Nodejs, and Jekyll:
+
+```
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt install -y nodejs build-essential ruby-full
+gem install jekyll
+cd docs
+jekyll serve
+```
 
 Cassidy will update this with more advanced things later. Until then, ask him directly. :smile:

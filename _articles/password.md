@@ -9,8 +9,8 @@ keywords:
   - locked out
   - crash
 hidden: false
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
 If you can't log into your computer, you can follow these instructions to reset the password for any user.  Ubuntu allows for the root user to reset the password for any user account.  In order to get to the root user, we need to restart the computer and use what's called 'single user mode', which means the low level repair system for the computer.

@@ -11,8 +11,8 @@ keywords:
   - nVidia
   - Plymouth
 hidden: false
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: true # If it shows in the "Known issues" section
+section: solutions
+
 ---
 
 There is a bug in the Plymouth splash screen which can cause issues inputting your password.  This only affects systems with nVidia hardware.

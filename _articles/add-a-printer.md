@@ -9,8 +9,8 @@ keywords:
   - Printer
   - System76
 hidden: false
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: articles
+
 ---
 
   To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word **Printer** then choose the **Printers** application in the search box. When the Printer dialogue opens, follow these instructions to print your first page.

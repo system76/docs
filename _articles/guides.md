@@ -10,8 +10,8 @@ keywords:
   - setup
   - System76
 hidden: false
-faq: true # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: faq
+
 ---
 
 To see ports images, keyboard layouts, function keys, and product quickstart guides, visit our [Guides](https://system76.com/guides) page.

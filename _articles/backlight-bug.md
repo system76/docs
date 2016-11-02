@@ -10,8 +10,8 @@ keywords:
   - screen timeout
   - blank screen
 hidden: false
-faq: false # If it shows in the "Frequently Answered Questions" section
-known: true # If it shows in the "Known issues" section
+section: solutions
+
 ---
 
 This is new bug introduced by the current version of the nVidia driver.  It prevents the internal screen backlight from turning on after the screen is turned off when idle.

@@ -18,8 +18,8 @@ keywords:
   - apt
 image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-10/16-c1f27f8de8.10.jpg
 hidden: false
-faq: true # If it shows in the "Frequently Answered Questions" section
-known: false # If it shows in the "Known issues" section
+section: faq
+
 ---
 
 # Do I need to upgrade?

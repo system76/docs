@@ -1,10 +1,10 @@
 # Site settings
-title: System76 Docs
-email: your-email@domain.com
+title: System76 Support
+email: cassidy@system76.com
 description: > # this means to ignore newlines until "baseurl:"
-  Official System76 documentation.
+  Official System76 Support and useful documentation.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://docs.system76.com" # the base hostname & protocol for your site
+url: "http://support.system76.com" # the base hostname & protocol for your site
 
 collections:
   articles:

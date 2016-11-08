@@ -34,10 +34,10 @@ It might not look like much, and at first glance there might not appear to be mu
 
 ![Ubuntu Terminal Overview](/images//ubuntu-terminal/overview.png)
 
-**Current user:** The username of the person currently logged in to this terminal.
-**Current host:** The hostname of the system currently in use by the terminal. Unless you've connected to a remote machine via SSH, this will be the same name as your computer.
-**Current directory:** The current 'folder' that this terminal resides in. Commands entered and files modified are scoped to this folder, unless providing an absolute path to another file or folder, or if the command is available in the user's $PATH. Basically, the terminal can only 'see' into this folder. A tilde (~) indicates the user's home directory (/home/emma) for example.
-**Prompt:** Anything entered after this symbol is interpreted as a command.
+**Current user:** The username of the person currently logged in to this terminal.<br/>
+**Current host:** The hostname of the system currently in use by the terminal. Unless you've connected to a remote machine via SSH, this will be the same name as your computer.<br/>
+**Current directory:** The current 'folder' that this terminal resides in. Commands entered and files modified are scoped to this folder, unless providing an absolute path to another file or folder, or if the command is available in the user's $PATH. Basically, the terminal can only 'see' into this folder. A tilde (~) indicates the user's home directory (/home/emma) for example.<br/>
+**Prompt:** Anything entered after this symbol is interpreted as a command.<br/>
 **Cursor:** A visual indicator of the user's current position in the terminal.
 
 As you 'move' throughout your computer, the prompt will change in response. In many cases, you won't need to move around to just run a command.

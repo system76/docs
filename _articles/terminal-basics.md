@@ -16,7 +16,10 @@ section: faq
 
 ---
 
-The **Terminal** is a tool for issuing text-based commands to your Ubuntu Operating System. When you type a command, you're basically telling your computer to do something very specific. The quickest way to install, remove or update applications is through the Terminal. A Terminal is sometimes referred to as the Shell, Command Line, or Command Prompt.
+The **terminal** is an interactive, text-based interface for your Ubuntu Operating System. When you type a command, you're basically telling your computer to do something very specific. Many commands will print information to the screen. Some will ask for input. Others may just return you to a prompt.
+
+The quickest way to install, remove or update applications is through the terminal. The terminal is also referred to as the **shell, command line, prompt, or command prompt.**
+
 To open a terminal, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>
 
 You can also tap your **Ubuntu key** to search your computer and type the word 'terminal.'
@@ -24,6 +27,30 @@ You can also tap your **Ubuntu key** to search your computer and type the word '
 A box like the one below will appear.
 
 ![Ubuntu Terminal](/images//ubuntu-terminal/terminalmain.png)
+
+### Navigating the terminal
+
+It might not look like much, and at first glance there might not appear to be much information, but the terminal is one of the most powerful tools at your disposal. **First,** what do we have here?
+
+![Ubuntu Terminal Overview](/images//ubuntu-terminal/overview.png)
+
+**Current user:** The username of the person currently logged in to this terminal.
+**Current host:** The hostname of the system currently in use by the terminal. Unless you've connected to a remote machine via SSH, this will be the same name as your computer.
+**Current directory:** The current 'folder' that this terminal resides in. Commands entered and files modified are scoped to this folder, unless providing an absolute path to another file or folder, or if the command is available in the user's $PATH. Basically, the terminal can only 'see' into this folder. A tilde (~) indicates the user's home directory (/home/emma) for example.
+**Prompt:** Anything entered after this symbol is interpreted as a command.
+**Cursor:** A visual indicator of the user's current position in the terminal.
+
+As you 'move' throughout your computer, the prompt will change in response. In many cases, you won't need to move around to just run a command.
+
+To **list all files and folders** in the current directory, type **ls**. To **change directories** (folders), type **cd [directory name]**. At any time, you can press the Tab key twice to have the terminal 'guess' the completion for your entry.
+
+![Moving around](/images//ubuntu-terminal/moving-around.png)
+
+### Running commands with escalated privileges
+
+In most cases, the terminal prevents you from damaing your system by requiring authentication or escalated priveleges to run certain commands. For example, to check for updates you will need to prepend the command **apt update** with **sudo**. Below is an example of the same command, run once without sudo and once with sudo. 
+
+![Using sudo](/images//ubuntu-terminal/sudo.png)
 
 When you run a command with **sudo** in front of it, you'll be prompted for your password. When typing your password, you won't see anything. Just enter your password and then press <kbd>Enter</kbd>. If it's entered incorrectly, the terminal will let you know and give you another chance to enter your password.
 
@@ -41,7 +68,7 @@ The "man" command is short for manual. You can type the "man" command in front o
 
 `man sudo`
 
-### Add an Application
+### Install an application by name
 
 `sudo apt install [insert application name here]`
 

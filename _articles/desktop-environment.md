@@ -24,13 +24,13 @@ Desktop environments can be installed with a single command and can be selected 
 ![Login2](/images/desktop-environment/Login2.png)
 
 
-###### Important:
+##### Important:
 
 Make sure to always pick 'lightdm' as the desktop manager when prompted while installing additional desktop environments.  Choosing 'gdm', 'sddm', or another, will break the installation.  If needed, the `sudo dpkg-reconfigure lightdm` command can be used to fix this issue.
 
 ---
 
-## MATE
+# MATE
 
 Mate is an intuitive and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
 
@@ -41,7 +41,7 @@ MATE is installed with:
 `sudo apt install mate-desktop-environment-extras mate-dock-applet`
 
 
-## Cinnamon
+# Cinnamon
 
 Cinnamon is used in Mint Linux by default.  Cinnamon strives to provide a traditional experience and is a fork of GNOME 3.
 
@@ -52,7 +52,7 @@ Cinnamon is installed with:
 `sudo apt install cinnamon-desktop-environment`
 
 
-## Gnome
+# Gnome
 
 The GNOME desktop is a different environment than most people are used to.  It contains both a modern and a classic version.  It is a good example of another way to interact with the operating system, but isn't as straight-forward as other desktop environments.
 
@@ -64,7 +64,7 @@ Gnome is installed with:
 `sudo apt install ubuntu-gnome-desktop`
 
 
-## KDE
+# KDE
 
 The KDE Plasma desktop environment is a familiar working environment and looks similar to windows.  It is highly customizable and looks great.  It is more heavy on system resources than other desktop environments, and isn't recommended for
 
@@ -81,7 +81,7 @@ sudo apt install -f
 \*<small>KDE currently has a package conflict which needs those 2 packages removed to complete installation.</small>
 
 
-## Xfce
+# Xfce
 
 Xfce embodies the traditional UNIX philosophy of modularity and re-usability.  This environment provides a good bit of conformity for the programs written for it.  Xfce also provides a highly customizable environment, while being leaner on resources than Unity.
 
@@ -92,7 +92,7 @@ Xfce can be installed with:
 `sudo apt-get install xubuntu-desktop`
 
 
-## LXDE
+# LXDE
 
 The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment.  It looks similar to older versions of Windows.  This is the leanest desktop environment and can help extend battery life in laptops.
 
@@ -103,7 +103,7 @@ LXDE can be installed with:
 `sudo apt-get install lubuntu-desktop`
 
 
-## Edubuntu
+# Edubuntu
 
 Edubuntu has been developed in collaboration with teachers and technologists in several countries and is aimed at users aged 6 to 18.  It is designed for easy installation and ongoing system maintenance.  It uses GNOME for it's desktop manager.
 
@@ -114,7 +114,7 @@ Edubuntu can be installed with:
 
 ---
 
-### Caveats and Conflicts
+## Caveats and Conflicts
 
 Desktop environments can interfere with each other or change universal settings.  Issues with a desktop environment looking funny can generally be fixed by changing the theme in the _Display Settings_ or _Appearance_.
 

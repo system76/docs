@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Problems joining WiFi after logging into the computer for the first time
+title: Problems joining WiFi after creating first user
 description: >
-  After setting up a new user and then logging into the computer, the WiFi network will show "device not ready" instead of access points.
+  If you try to join a WiFi access point after setting up a new user and then logging into the computer, the WiFi network will show "device not ready" instead of access points.  Here is the solution to this problem.
 keywords:
   - System76
   - first boot

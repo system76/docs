@@ -16,7 +16,7 @@ section: solutions
 
 This is new bug introduced by the current version of the nVidia driver.  It prevents the internal screen backlight from turning on after the screen is turned off when idle.
 
-The current work-around is to press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F1</kbd>, followed by <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F7</kbd> after resuming from the screen idle timeout.  Other options are disabling the screen idle timeout, only suspending (since it doesn't have this issue), using a screensaver to blank the screen, or using an older version of the nVidia driver.
+The current work-around is to press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F1</kbd>, followed by <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F7</kbd> after resuming from the screen idle timeout.  Other options are disabling the screen idle timeout, only suspending (since it doesn't have this issue), or using a screensaver to blank the screen.
 
 
 There is a bug report here:

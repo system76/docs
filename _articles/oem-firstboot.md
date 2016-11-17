@@ -52,14 +52,14 @@ Once you're at the root shell (identified with the prompt `root@ubuntu:~#`), ent
 
 _Note that in this example, we're creating the user **tom.** Replace **tom** with your desired username._
 
-`adduser` will ask for a lot of information, like full name, room number, phone number, etc. -- It's not necessary to provide anything other than Password and Full Name.
-
 ```
 mount -o rw,remount /
 adduser tom
 usermod -a -G adm,cdrom,sudo,dip,plugdev,lpadmin,sambashare tom
 exit
 ```
+
+`adduser` will ask for a lot of information, like full name, room number, phone number, etc. -- It's not necessary to provide anything other than Password and Full Name.
 
 ![Entering commands one at a time](/images/oem-firstboot/commands.png)
 

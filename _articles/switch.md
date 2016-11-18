@@ -123,7 +123,7 @@ Ubuntu comes with [Firefox](https://www.mozilla.org/en-US/firefox/products/) by 
 
 ## Emailing
 
-Ubuntu comes with [Thunderbird](https://www.mozilla.org/en-US/thunderbird/) as it's default email program.  It has similar functionality to Apple's email program, and is highly configurable with plugins.  A calendar can be added, address books can be synced, and the look and feel can be customized.  The plugins [*Lightning*](https://www.mozilla.org/en-US/projects/calendar/), [*Thunderbird Conversations*](https://addons.mozilla.org/en-US/thunderbird/addon/gmail-conversation-view/), and [*GContactSync*](https://addons.mozilla.org/en-US/thunderbird/addon/gcontactsync/), are a few of the common ones installed.
+Ubuntu comes with [Thunderbird](https://www.mozilla.org/en-US/thunderbird/) as its default email program.  It has similar functionality to Apple's email program, and is highly configurable with plugins.  A calendar can be added, address books can be synced, and the look and feel can be customized.  The plugins [*Lightning*](https://www.mozilla.org/en-US/projects/calendar/), [*Thunderbird Conversations*](https://addons.mozilla.org/en-US/thunderbird/addon/gmail-conversation-view/), and [*GContactSync*](https://addons.mozilla.org/en-US/thunderbird/addon/gcontactsync/), are a few of the common ones installed.
 
 ![apple-email](/images/switch/apple-email.png)
 
@@ -173,7 +173,7 @@ Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gim
 
 ## Playing Games
 
-[Steam](https://store.steampowered.com/) on Ubuntu is gaining more and more games in it's library every day.  Many popular games can be found in the Steam program, including several you won't find anywhere else.  It may not have every top game, but there is no shortage of entertainment to be found!  The Ubuntu Software Center also has a collection of free games for every level of gamer.
+[Steam](https://store.steampowered.com/) on Ubuntu is gaining more and more games in its library every day.  Many popular games can be found in the Steam program, including several you won't find anywhere else.  It may not have every top game, but there is no shortage of entertainment to be found!  The Ubuntu Software Center also has a collection of free games for every level of gamer.
 
 ![apple-games](/images/switch/apple-games.png)
 

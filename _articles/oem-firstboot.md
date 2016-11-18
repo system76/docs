@@ -69,6 +69,6 @@ Once you're back at the recovery menu, choose `resume` to resume normal boot.
 
 Lastly, we need your help in tracking down this bug. When you get logged in, open a terminal and run this command, then send us the 'log.tgz' file it creates.
 
-`sudo tar -cvz -f ~/log/.tgz /var/log`
+`sudo tar -cvz -f ~/log.tgz /var/log`
 
 Please open a Support ticket and attach the log file.

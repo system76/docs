@@ -21,7 +21,7 @@ Ubuntu, included software, and Ubuntu's default desktop environment, [Unity](htt
 
 ## Running and Managing Programs
 
-Unity defaults to having its launcher on the left side of the screen.  Unity's launcher handles programs nearly identical to Apple's taskbar.  To run a program, click on it.  To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher.  And to see if programs are open, look for the arrows around the icon.  
+Unity defaults to having its launcher on the left side of the screen.  Unity's launcher handles programs nearly identical to Apple's dock.  To run a program, click on it.  To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher.  And to see if programs are open, look for the arrows around the icon.  
 
 ![apple-launcher](/images/switch/apple-launcher.png)
 

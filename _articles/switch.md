@@ -143,7 +143,7 @@ Many communication programs are available for both operating systems.  [Skype](h
 
 ## Working With Images
 
-Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gimp.org), [darktable](http://www.darktable.org/), and [Inkskape](https://inkscape.org/en/) will do what [Adobe](https://www.adobe.com/) products can.  Plus, they are free, which is a huge bonus.  Adobe products don't currently run on Ubuntu but there are plenty of replacement software options.
+Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gimp.org), [darktable](http://www.darktable.org/), and [Inkscape](https://inkscape.org/en/) will do what [Adobe](https://www.adobe.com/) products can.  Plus, they are free, which is a huge bonus.  Adobe products don't currently run on Ubuntu but there are plenty of replacement software options.
 
 ![apple-images](/images/switch/apple-images.png)
 

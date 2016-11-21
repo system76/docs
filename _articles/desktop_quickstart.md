@@ -1,3 +1,4 @@
+---
 layout: article
 title: Desktop Quickstart Guide
 description: >
@@ -40,12 +41,15 @@ When you power on, you'll be prompted to create a user account, which is the adm
 
 ### Frequently Asked Questions
 
-Do I need to encrypt my home folder?
-No. This is for advanced users familiar with encryption.
+*Do I need to encrypt my home folder?*
 
-Should I connect to Wifi during my user account setup?
-No. It's best to do this after the user account creation.
+> No. This is for advanced users familiar with encryption.
 
-Should I download 3rd party applications when setting up my user account?
-No. You can install any software after you create your user account.
+*Should I connect to Wifi during my user account setup?*
+
+> No. It's best to do this after the user account creation.
+
+*Should I download 3rd party applications when setting up my user account?*
+
+> No. You can install any software after you create your user account.
 

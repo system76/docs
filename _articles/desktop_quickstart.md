@@ -25,8 +25,6 @@ To enable WiFi capability, screw the black antennas to the back of the desktop w
 ### Connect Your Monitor
 If you ordered a graphics card, you will plug your monitor into one of the horizontal ports on the back of the machine. Do not connect your display to the vertical ports if you have a graphics card. The vertical ports are directly connected to the motherboard and are disabled if there is a dedicated graphics card. Please see below to determine where to plug your monitor into.
 
-![Desktop Back](/images/desktop-quickstart/back_desktopdiagram.jpg)
-
 ### Connect Keyboard and Mouse
 Keyboards can connect via USB ports, PS/2 circular port, or wirelessly. If your keyboard/mouse connect wirelessly, you should have a small USB device, called a receiver, that connects to the desktop and communicates with your keyboard and mouse via radio frequency. This should be included when you purchase a wireless keyboard or mouse. You can connect to the front USB ports or the back, depending on where your cords will extend/fit.
 

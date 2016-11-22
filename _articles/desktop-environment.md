@@ -266,6 +266,17 @@ If Cinnamon's desktop lock isn't working, then running this command will re-enab
 `gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false`
 
 
+#### Managing Lots of Desktop environments
+
+Ubuntu's unity greeter signin screen will only accommodate a certain number of desktop environments.  If the list is too large, then extra options can be deleted from this folder:
+
+`/usr/share/xsessions/`
+
+Another solution is to switch to the lightdm-gtk-greeter following the instructions above.  This secondary greeter is installed with Gnome, or can be installed manually with this command:
+
+`sudo apt install lightdm-gtk-greeter`
+
+
 #### Removing Desktop Environments
 
 If you no longer want to use a desktop environment, it can be removed by using the `sudo apt purge ...` command, followed by the `sudo apt autoremove` command.  For example, to remove KDE:

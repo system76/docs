@@ -16,9 +16,9 @@ Most of the hardware in a System76 computer is Intel based, and the Windows Upda
 
 [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
 
-For systems with nVidia graphics cards, nVidia drivers can be found on thier website:
+For systems with NVIDIA graphics cards, NVIDIA drivers can be found on thier website:
 
-[nVidia Drivers](http://www.nvidia.com/Download/index.aspx)
+[NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 
 Trackpad drivers for our laptops can be found on Synaptic's website:
 

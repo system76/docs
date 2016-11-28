@@ -144,7 +144,7 @@ Once you've upgraded Ubuntu, you'll need to download and install the System76 Dr
 
 ---
 
-**For NVIDIA Graphics:** If you ordered a system with a discrete nVidia graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
+**For NVIDIA Graphics:** If you ordered a system with a discrete NVIDIA graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
 
     sudo apt install system76-driver-nvidia
 

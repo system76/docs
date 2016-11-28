@@ -43,7 +43,7 @@ In many cases, it's recommended to explicitly set the WiFi regulatory domain. Ch
 
 `sudo iw reg get`
 
-If you get 00, that is a one-size-maybe-fits-all setting. Find yours here: wikipedia.org/wiki/ISO_3166-1
+If you get 00, that is a one-size-maybe-fits-all setting. Find yours here: [ISO_3166](http://wikipedia.org/wiki/ISO_3166-1)
 
 And set it permanently with this command:
 
@@ -51,7 +51,7 @@ And set it permanently with this command:
 
 Change the last line to read:
 
-REGDOMAIN=US
+> REGDOMAIN=US
 
 Save and close the text editor.
 
@@ -59,10 +59,8 @@ Unless specifically required, you can set IPv6 to Ignore in Network Manager. Go 
 
 If these changes do not help, you can try enabling antenna aggregation:
 
-```
-sudo modprobe -r iwlwifi
-sudo modprobe iwlwifi 11n_disable=8
-```
+`sudo modprobe -r iwlwifi`
+`sudo modprobe iwlwifi 11n_disable=8`
 
 Then, test to see if that helps.  To make it permanent:
 
@@ -70,9 +68,18 @@ Then, test to see if that helps.  To make it permanent:
 
 Then, add this line to the bottom (effective upon reboot):
 
-options iwlwifi 11n_disable=8
+> options iwlwifi 11n_disable=8
 
 Also, you can try disabling N mode completely by using '11n_disable=1' in the previous settings.  N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available out to the Internet is much less than N speeds.
+
+Another way to help with Wifi issues is to turn off power management for the hardware.  To do so, edit the configuration file with this command:
+
+`gksudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf`
+
+And change the file to read (effective upon reboot):
+
+> \[connection\]
+> wifi.powersave = 2
 
 # Useful Commands
 
@@ -108,4 +115,4 @@ Occasionally, reinstalling network-manager can fix some network issues:
 - 145 Mb/s and 300 Mb/s modes support the 802.11n standard and use 20MHz and 40MHz bandwidths.
 - 300Mbps / 40Mhz will provide the maximum performance in most cases.
 - 145Mbps / 20MHz will work better in areas with more access points.
-- 450Mbps uses 60Mhz channels and 600Mbps uses 80Mhz, and typically creates instability.
+- 450Mbps uses a 60Mhz channel width and 600Mbps uses a 80Mhz channel width, and will typically create instabilities.

@@ -21,15 +21,15 @@ The biggest single consumer of power is the monitor.  Up to 10% more battery lif
 
 Every running program in Ubuntu also consumes a part of the battery life.  This could be a program that is part of the operating system, or a program that is currently being used like Firefox or Libre Office.  We recommend using *powertop* to check what software is consuming the battery, and to tune your operating system for longer battery life.
 
-To install powertop, please open a terminal and run this command:  
+To install powertop, please open a terminal and run this command:
 
 `sudo apt install powertop`
 
-After installing the program, reboot your computer and calibrate the readings on battery power with this command:  
+After installing the program, reboot your computer and calibrate the readings on battery power with this command:
 
 `sudo powertop -c`
 
-This will take about 15 minutes to run the calibration.  The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process.  After it's complete, HTML reports can be generated with this command:  
+This will take about 15 minutes to run the calibration.  The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process.  After it's complete, HTML reports can be generated with this command:
 
 `sudo powertop --html=report`
 
@@ -54,3 +54,13 @@ Please test the settings and make sure they doesn't introduce any instability or
 `gksu gedit /etc/rc.local`
 
 And add either `sudo powertop --auto-tune` above the 'exit 0' line, or add the individual tuning options.
+
+#### Battery Information
+
+To see the information that your computer can read about the battery, please run this command in the terminal:
+
+`upower -i /org/freedesktop/UPower/devices/battery_BAT0`
+
+And if the battery life indicator is inaccurate, removing the stored statistics, and then doing a few charge/discharge cycles, will usually help.  Please remove the existing statistics with this command:
+
+`sudo rm /var/lib/upower/*`

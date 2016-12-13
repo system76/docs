@@ -160,3 +160,10 @@ Windows 10 allows you to set a PIN for logging in instead of a password. If you'
 ### 6. How to use your Virtual Machine.
 
 The virtual machine will be presented through a window in Ubuntu, and can be interacted with similarly to any other application. Note that the Virtual Machine window will **capture** the keyboard input (The mouse is automatically captured or uncaptured depending on whether it's currently on top of the Virtual Machine window or not). If the input is currently captured, and you need to send input to Ubuntu (or a window outside of your Virtual Machine window), you'll need to tap the Right-hand <kbd>Ctrl</kbd> first, which will release the keyboard from the Virtual machine, and allow it to work in Ubuntu again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
+
+### 6. Add a Network Printer
+In the Virtual Machine, click your virtual machine so it's highlighted in orange. Select Settings in the top menu. Select Network and make sure the "Enable Network Adapter" is checked and the "Attached to" option is "Bridged Adapter." The Name is the name of the network you wish to connect to.
+
+Select "OK" and power on your virtual machine. Go to the Printer menu and select the option to "Add a Printer." Windows will automatically find your printer. Select it and follow the prompts to finish the installation. Print the test page to confirm the connection worked.
+
+![Windows 10 Desktop](/images/win10-vm/vmsettings.png)

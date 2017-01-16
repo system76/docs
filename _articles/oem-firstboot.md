@@ -51,13 +51,13 @@ Choose `fsck`, and then press <kbd>Enter</kbd>. You will be notified that to con
 
 `fsck` will run for about 3 seconds and ends with `[ OK ] Reached target Swap.` At this point, press <kbd>Enter</kbd> for the Recovery menu.
 
-![Root shell](/images/oem-firstboot/recovery-menu.png)
-
 Choose `root` and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> until the system shows a root prompt like the image below.
+
+![Root shell](/images/oem-firstboot/recovery-menu.png)
 
 ## Recovering the first-boot menu
 
-Once you're at the root shell (identified with the prompt `root@ubuntu:~#`), enter the command below.
+Once you're at the root shell, identified with the prompt `root@ubuntu:~#`, enter the command below and reboot:
 
 `oem-config-prepare` then press <kbd>Enter</kbd>
 

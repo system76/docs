@@ -19,41 +19,7 @@ The biggest single consumer of power is the monitor.  Up to 10% more battery lif
 
 #### Software
 
-Every running program in Ubuntu also consumes a part of the battery life.  This could be a program that is part of the operating system, or a program that is currently being used like Firefox or Libre Office.  We recommend using *powertop* to check what software is consuming the battery, and to tune your operating system for longer battery life.
-
-To install powertop, please open a terminal and run this command:
-
-`sudo apt install powertop`
-
-After installing the program, reboot your computer and calibrate the readings on battery power with this command:
-
-`sudo powertop -c`
-
-This will take about 15 minutes to run the calibration.  The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process.  After it's complete, HTML reports can be generated with this command:
-
-`sudo powertop --html=report`
-
-Open the report located in the home directory to see the results.
-
-![Powertop1](/images/power/powertop1.png)
-
-It's useful to create a baseline by running powertop after a cold startup, without opening any applications, and then run it a few more times throughout the day to get a comparison of different workloads. Make sure to specify a different filename each time for comparison.  Take a look at the list of software running and see if anything can be removed or if settings of high consumers can be changed.
-
-#### Tuning
-
-After looking at running software, head over to the 'Tuning' tab.
-
-![Powertop2](/images/power/powertop2.png)
-
-Powertop provides many suggestions to increase battery life.  To test enabling of all of the suggested tunings, please run this command:
-
-`sudo powertop --auto-tune`
-
-Please test the settings and make sure they doesn't introduce any instability or oddities.  The above command will only last until reboot.  To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
-
-`gksu gedit /etc/rc.local`
-
-And add either `sudo powertop --auto-tune` above the 'exit 0' line, or add the individual tuning options.
+Every running program in Ubuntu consumes a part of the battery life.  This could be a program that is part of the operating system, or a program that is currently being used like Firefox or Libre Office.  We recommend using *TLP* to quickly reduce overall power consumption and using *powertop* to check what software is consuming the battery.
 
 #### TLP
 
@@ -75,6 +41,42 @@ All of the info about the the program can be found with these 2 command:
 
 `man tlp`
 `man tlp-stat`
+
+#### Powertop
+
+To install powertop, please open a terminal and run this command:
+
+`sudo apt install powertop`
+
+After installing the program, reboot your computer and calibrate the readings on battery power with this command:
+
+`sudo powertop -c`
+
+This will take about 15 minutes to run the calibration.  The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process.  After it's complete, HTML reports can be generated with this command:
+
+`sudo powertop --html=report`
+
+Open the report located in the home directory to see the results.
+
+![Powertop1](/images/power/powertop1.png)
+
+It's useful to create a baseline by running powertop after a cold startup, without opening any applications, and then run it a few more times throughout the day to get a comparison of different workloads. Make sure to specify a different filename each time for comparison.  Take a look at the list of software running and see if anything can be removed or if settings of high consumers can be changed.
+
+#### Tuning
+
+After looking at running software, head over to the 'Tuning' tab.  We recommend install TLP first, and then seeing if Powertop finds any other tuning suggestions.
+
+![Powertop2](/images/power/powertop2.png)
+
+Powertop provides many suggestions to increase battery life.  To test enabling of all of the suggested tunings, please run this command:
+
+`sudo powertop --auto-tune`
+
+Please test the settings and make sure they doesn't introduce any instability or oddities.  The above command will only last until reboot.  To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
+
+`gksu gedit /etc/rc.local`
+
+And add either `sudo powertop --auto-tune` above the 'exit 0' line, or add the individual tuning options.
 
 #### Battery Information
 

@@ -31,7 +31,7 @@ If the printer stops working, open the *Printers* Application again and right-cl
 
 ### Epson Printers
 
-First, enable 'Canonical Partners' in the *Software & Updates* settings.  Go to the Other Software tab, and check the first item.  Then, add the driver with this command:
+First, enable 'Canonical Partners' in the *Software & Updates* settings. Go to the Other Software tab, and check the first item. Then, add the driver with this command:
 
 `sudo apt-get install printer-driver-escpr lsb lsb-core`
 

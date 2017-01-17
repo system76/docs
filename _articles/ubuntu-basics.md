@@ -27,11 +27,11 @@ Click the <span class="fl-ubuntu-inverse" title="Ubuntu"> icon at the top of the
 
 ![Ubuntu Desktop](/images/ubuntu-basics/Dash-16.04-min.png)
 
-Access the *Menu Bar* at the top of the screen to view options like *File, Edit, View* for the current application window you're working in. You can Mouse over the Menu Bar to see the drop-down menu.
+Use the *Menu Bar* at the top of the screen to view options like *File, Edit, View* for the current application window you're working in. You can Mouse over the Menu Bar to see the drop-down menu.
 
 *Window controls* are on the left of the title bar of the window.
 
-When you press and release the <kbd>Alt</kbd> key, the *HUD* is brought up. The *HUD* is helpful for keyboard super users for searching though an application's menu.
+Press and release the <kbd>Alt</kbd> key, to bring up the *HUD*. The HUD is helpful for keyboard super users for searching though an application's menu.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/HUD-16.04-min.png)
 

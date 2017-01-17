@@ -2,7 +2,7 @@
 layout: article
 title: Solve wireless issues
 description: >
-  If you’re having problems with your wireless Internet connection, first try unplugging your wireless router or modem for a minute then plug it back in. You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, then pressing it again to turn it back on.  If you are still having problems, take a look at the suggestions in this article.
+  If you’re having problems with your wireless Internet connection, first try unplugging your wireless router or modem for a minute then plug it back in. You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, then pressing it again to turn it back on. If you are still having problems, take a look at the suggestions in this article.
 keywords:
   - wireless
   - wifi
@@ -27,14 +27,14 @@ If you’re having problems, try these steps first:
 - You can also try turning the wireless Internet card in your laptop off by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting a minute, then pressing it again to turn it back on.
 - Try rebooting the computer.
 
-Router settings also cause problems.  Try adjusting your access point to these settings:
+Router settings also cause problems. Try adjusting your access point to these settings:
 
 - WPA2-AES is the preferred security method over WPA/WPA2 mixed mode or TKIP
 - If your router is capable of N speeds, you may have better connectivity with a channel width of 20 MHz in the 2.4 GHz band instead of automatic 20/40 MHz or fixed 40 MHz.
 - Make sure the 2.4Ghz and 5Ghz SSID names are different.
 - Pick a fixed channel, either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic channel selection.
 - Check if the router is set to use N speeds only; auto B/G/N is preferred.
-- Lower the max/burst speeds, turn off channel bonding, and reduce channel width.  Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and tend to decrease stability.  Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
+- Lower the max/burst speeds, turn off channel bonding, and reduce channel width. Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and tend to decrease stability. Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
 - After making these changes, reboot the router.
 
 # Advanced Troubleshooting
@@ -62,7 +62,7 @@ If these changes do not help, you can try enabling antenna aggregation:
 `sudo modprobe -r iwlwifi`
 `sudo modprobe iwlwifi 11n_disable=8`
 
-Then, test to see if that helps.  To make it permanent:
+Then, test to see if that helps. To make it permanent:
 
 `gksudo gedit /etc/modprobe.d/iwlwifi.conf`
 
@@ -70,9 +70,9 @@ Then, add this line to the bottom (effective upon reboot):
 
 > options iwlwifi 11n_disable=8
 
-Also, you can try disabling N mode completely by using '11n_disable=1' in the previous settings.  N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available out to the Internet is much less than N speeds.
+Also, you can try disabling N mode completely by using '11n_disable=1' in the previous settings. N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available out to the Internet is much less than N speeds.
 
-Another way to help with Wifi issues is to turn off power management for the hardware.  To do so, edit the configuration file with this command:
+Another way to help with Wifi issues is to turn off power management for the hardware. To do so, edit the configuration file with this command:
 
 `gksudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf`
 

@@ -13,11 +13,11 @@ section: articles
 
 ---
 
-If you can't log into your computer, you can follow these instructions to reset the password for any user.  Ubuntu allows for the root user to reset the password for any user account.  In order to get to the root user, we need to restart the computer and use what's called 'single user mode', which means the low level repair system for the computer.
+If you can't log into your computer, you can follow these instructions to reset the password for any user. Ubuntu allows for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called 'single user mode', which means the low level repair system for the computer.
 
 #### GRUB
 
-There are two ways to enter into the GRUB boot menu.  The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts.  <kbd>SHIFT</kbd> will also work, but not as often.  The second is to power it off while it is starting up, which will make the menu show up on the next boot.
+There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. <kbd>SHIFT</kbd> will also work, but not as often. The second is to power it off while it is starting up, which will make the menu show up on the next boot.
 
 ![Grub1](/images/password/grub1.png)
 

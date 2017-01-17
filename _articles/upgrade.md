@@ -160,7 +160,7 @@ Most upgrades proceed without a hitch, but occasionally things go wrong. If you 
 
 ### 1. Create install media
 
-Please see the steps above to create bootable media. Restart your computer and use the keys above to start your computer from the bootable media.  When given the option, choose _Try Ubuntu_.
+Please see the steps above to create bootable media. Restart your computer and use the keys above to start your computer from the bootable media. When given the option, choose _Try Ubuntu_.
 
 ### 2. Mount your hard drive
 

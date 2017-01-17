@@ -28,7 +28,7 @@ System76 computers use a standard Ubuntu installation disc and the System76 Driv
 
 **On our second generation Oryx (oryp2), the Sytem76 driver is required for the touchpad.**  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
-**If your recently updated system does not boot, it can often be recovered.**  If you see a flashing underscore on the screen ("\_"), after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated.  To restore it, see [How to Restore Grub Boot-loader](http://docs.system76.com/articles/grub)
+**If your recently updated system does not boot, it can often be recovered.**  If you see a flashing underscore on the screen ("\_"), after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [How to Restore Grub Boot-loader](http://docs.system76.com/articles/grub)
 
 
 ## 1. Create install media
@@ -44,7 +44,7 @@ Create an Installation USB Drive  | Create an Installation DVD
 
 ## 2. Boot from install media
 
-Once you have the disk made, reboot your system.  You'll need to tell the computer to boot from the Live Disk.  Immediately after you turn the computer on:
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on:
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
@@ -52,19 +52,19 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kb
 
 ---
 
-**For systems with Nvidia graphics:** Ubuntu may need a special option enabled to install and boot from Ubuntu until the Nvidia driver can be installed as described below.  If the installer doesn't show an image after this first screen, please follow the next instructions:
+**For systems with Nvidia graphics:** Ubuntu may need a special option enabled to install and boot from Ubuntu until the Nvidia driver can be installed as described below. If the installer doesn't show an image after this first screen, please follow the next instructions:
 
 ![First](/images/restore/first.png)
 
-When you see the above screen, press any key to enter the initial configuration screen.  Now, push <kbd>F6</kbd> to choose additional options.  Move the box down to 'nomodeset', press <kbd>Enter</kbd> to select it, then <kbd>ESC</kbd> to go back to the installer choices.  Pick either "Try Ubuntu" or "Install Ubuntu" as described next.
+When you see the above screen, press any key to enter the initial configuration screen. Now, push <kbd>F6</kbd> to choose additional options. Move the box down to 'nomodeset', press <kbd>Enter</kbd> to select it, then <kbd>ESC</kbd> to go back to the installer choices. Pick either "Try Ubuntu" or "Install Ubuntu" as described next.
 
 ![Second](/images/restore/second.png)
 
 ---
 
-Once Ubuntu starts, you will be asked to "Try Ubuntu" or to "Install Ubuntu".  If you are attempting to restore a broken operating system, please choose "Try Ubuntu".  First, we recommend backing up all important files from your computer.  The restore process can leave your files intact, but it's best to be safe in case something goes wrong.  Next, double-click on the "Install Ubuntu" icon on the desktop.
+Once Ubuntu starts, you will be asked to "Try Ubuntu" or to "Install Ubuntu". If you are attempting to restore a broken operating system, please choose "Try Ubuntu". First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the "Install Ubuntu" icon on the desktop.
 
-If all of your files are backed up, or if you are installing from scratch, you'll need to pick the "Install Ubuntu" option to continue with the installation.  Please check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
+If all of your files are backed up, or if you are installing from scratch, you'll need to pick the "Install Ubuntu" option to continue with the installation. Please check the box labeled "Download updates while installing Ubuntu" to ensure that your new installation is fully up to date once the installation is complete.
 
 ![Download Updates](/images/restore/updates.png)
 
@@ -75,16 +75,16 @@ Ubuntu will present several options when installing:
 
 ![Install Ubuntu](/images/restore/install.png)
 
-- Choose the first option, **Upgrade**, to preserve everything in the /home directory and attempt to restore Ubuntu to a working condition.  This option can also be used to upgrade Ubuntu to the version currently on the bootable media.  Choose this option if you would like to repair your OS.  This is the least destructive of the options.
-- Choose the second option, **Erase Ubuntu**, to erase only the partitions related to Ubuntu.  Choose this option if you would like to preserve an existing installation of Windows or another operating system, while still reinstalling Ubuntu.
-- Choose the third option, **Install Ubuntu Alongside**, to allow you to add an additional operating system to your computer.  Choose this option if you already have an operating system, such as Windows or another version of Linux, and would like to also install Ubuntu.  Please note that the existing operating system's partition will need to be reduced before installing Ubuntu in the extra space.
-- Choose the fourth option, **Erase Disk**, to erase everything on the hard drive and install Ubuntu.  The is the most destructive of the options, and will guarantee a clean slate.  This option also has to be selected if you would like to encrypt the entire drive.  When encrypting the drive, use the LVM option for flexibility with partitions later.
-- Choose the fifth option, **Something Else**, to do a manual installation of the partitions.  This can be used to customize the partition or put certain directories on separate partitions or disks.
+- Choose the first option, **Upgrade**, to preserve everything in the /home directory and attempt to restore Ubuntu to a working condition. This option can also be used to upgrade Ubuntu to the version currently on the bootable media. Choose this option if you would like to repair your OS. This is the least destructive of the options.
+- Choose the second option, **Erase Ubuntu**, to erase only the partitions related to Ubuntu. Choose this option if you would like to preserve an existing installation of Windows or another operating system, while still reinstalling Ubuntu.
+- Choose the third option, **Install Ubuntu Alongside**, to allow you to add an additional operating system to your computer. Choose this option if you already have an operating system, such as Windows or another version of Linux, and would like to also install Ubuntu. Please note that the existing operating system's partition will need to be reduced before installing Ubuntu in the extra space.
+- Choose the fourth option, **Erase Disk**, to erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, use the LVM option for flexibility with partitions later.
+- Choose the fifth option, **Something Else**, to do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
 
 
 ## 4. Install the System76 Driver
 
-Once you've reinstalled Ubuntu, you'll need to download and install the System76 Driver.  Open the Terminal (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've reinstalled Ubuntu, you'll need to download and install the System76 Driver. Open the Terminal (search _Terminal_ from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
 ```
 sudo apt-add-repository -y ppa:system76-dev/stable
@@ -92,12 +92,12 @@ sudo apt update
 sudo apt install system76-driver
 ```
 
-**For systems with Nvidia graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance.  Please run the following command after the above commands to install the driver:
+**For systems with Nvidia graphics:** If you ordered a system with a discrete Nvidia graphics card, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command after the above commands to install the driver:
 
 ```
 sudo apt install system76-driver-nvidia
 ```
-**If you had to start your system with 'nomodeset' as described in Step 1,** you'll need to remove the nomodeset modifier.  Please run this command to edit the startup options file:
+**If you had to start your system with 'nomodeset' as described in Step 1,** you'll need to remove the nomodeset modifier. Please run this command to edit the startup options file:
 
 `sudo gedit /etc/default/grub`
 

@@ -14,7 +14,7 @@ section: articles
 
 ---
 
-Sometimes the settings or packages related to the sound system can become corrupt or broken.  Many times, deleting the configuration files, reinstalling the sound related packages, and reloading alsa can help.  The commands can also help fix the _Sound_ settings showing "Dummy Output" as the audio output.  Try running the following commands to repair your system:
+Sometimes the settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound related packages, and reloading alsa can help. The commands can also help fix the _Sound_ settings showing "Dummy Output" as the audio output. Try running the following commands to repair your system:
 
 ```
 rm -r ~/.pulse ~/.asound* ~/.pulse-cookie ~/.config/pulse /tmp/pulse-*

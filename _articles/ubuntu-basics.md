@@ -31,7 +31,7 @@ Use the *Menu Bar* at the top of the screen to view options like *File, Edit, Vi
 
 *Window controls* are on the left of the title bar of the window.
 
-Press and release the <kbd>Alt</kbd> key, to bring up the *HUD*. The HUD is helpful for keyboard super users for searching though an application's menu.
+Press and release the <kbd>Alt</kbd> key to bring up the *HUD*. The HUD is helpful for keyboard super users for searching though an application's menu.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/HUD-16.04-min.png)
 

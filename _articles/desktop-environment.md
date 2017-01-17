@@ -2,7 +2,7 @@
 layout: article
 title: Change the Desktop Environment
 description: >
-  Would you like to change how your desktop looks and feels?  Ubuntu comes with Unity installed by default.  Don't like it?  Don't install another operating system or reinstall a special version of Ubuntu!  Follow these instructions to install additional desktop environments!
+  Would you like to change how your desktop looks and feels?  Ubuntu comes with Unity installed by default. Don't like it?  Don't install another operating system or reinstall a special version of Ubuntu!  Follow these instructions to install additional desktop environments!
 keywords:
   - desktop environment
   - MATE
@@ -18,7 +18,7 @@ section: articles
 
 Ubuntu comes with the desktop environment **Unity** installed by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
-Desktop environments can be installed with a single command and can be selected at the login screen.  All desktop environments have access to your home folder and files, so they can share data. They are basically the top graphical layer of Ubuntu, each with it's own individual settings.
+Desktop environments can be installed with a single command and can be selected at the login screen. All desktop environments have access to your home folder and files, so they can share data. They are basically the top graphical layer of Ubuntu, each with it's own individual settings.
 
 ![Login](/images/desktop-environment/Login.png)
 ![Login2](/images/desktop-environment/Login2.png)
@@ -26,7 +26,7 @@ Desktop environments can be installed with a single command and can be selected 
 
 ##### Important:
 
-Make sure to always pick 'lightdm' as the desktop manager when prompted while installing additional desktop environments.  Choosing 'gdm', 'sddm', or another, will break the installation.  If needed, the `sudo dpkg-reconfigure lightdm` command can be used to fix this issue.
+Make sure to always pick 'lightdm' as the desktop manager when prompted while installing additional desktop environments. Choosing 'gdm', 'sddm', or another, will break the installation. If needed, the `sudo dpkg-reconfigure lightdm` command can be used to fix this issue.
 
 ---
 
@@ -43,7 +43,7 @@ MATE is installed with:
 
 # Cinnamon
 
-Cinnamon is used in Mint Linux by default.  Cinnamon strives to provide a traditional experience and is a fork of GNOME 3.
+Cinnamon is used in Mint Linux by default. Cinnamon strives to provide a traditional experience and is a fork of GNOME 3.
 
 ![Cinnamon](/images/desktop-environment/Cinnamon.png)
 
@@ -54,7 +54,7 @@ Cinnamon is installed with:
 
 # Gnome
 
-The GNOME desktop is a different environment than most people are used to.  It contains both a modern and a classic version.  It is a good example of another way to interact with the operating system, but isn't as straight-forward as other desktop environments.
+The GNOME desktop is a different environment than most people are used to. It contains both a modern and a classic version. It is a good example of another way to interact with the operating system, but isn't as straight-forward as other desktop environments.
 
 ![Gnome](/images/desktop-environment/Gnome.png)
 ![Gnome2](/images/desktop-environment/Gnome2.png)
@@ -66,7 +66,7 @@ Gnome is installed with:
 
 # KDE
 
-The KDE Plasma desktop environment is a familiar working environment and looks similar to windows.  It is highly customizable and looks great.  It is more heavy on system resources than other desktop environments, and isn't recommended for
+The KDE Plasma desktop environment is a familiar working environment and looks similar to windows. It is highly customizable and looks great. It is more heavy on system resources than other desktop environments, and isn't recommended for
 
 ![KDE](/images/desktop-environment/KDE.png)
 
@@ -83,7 +83,7 @@ sudo apt install -f
 
 # Xfce
 
-Xfce embodies the traditional UNIX philosophy of modularity and re-usability.  This environment provides a good bit of conformity for the programs written for it.  Xfce also provides a highly customizable environment, while being leaner on resources than Unity.
+Xfce embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good bit of conformity for the programs written for it. Xfce also provides a highly customizable environment, while being leaner on resources than Unity.
 
 ![Xfce](/images/desktop-environment/Xfce.png)
 
@@ -94,7 +94,7 @@ Xfce can be installed with:
 
 # LXDE
 
-The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment.  It looks similar to older versions of Windows.  This is the leanest desktop environment and can help extend battery life in laptops.
+The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment. It looks similar to older versions of Windows. This is the leanest desktop environment and can help extend battery life in laptops.
 
 ![LXDE](/images/desktop-environment/LXDE.png)
 
@@ -105,7 +105,7 @@ LXDE can be installed with:
 
 # Edubuntu
 
-Edubuntu has been developed in collaboration with teachers and technologists in several countries and is aimed at users aged 6 to 18.  It is designed for easy installation and ongoing system maintenance.  It uses GNOME for it's desktop manager.
+Edubuntu has been developed in collaboration with teachers and technologists in several countries and is aimed at users aged 6 to 18. It is designed for easy installation and ongoing system maintenance. It uses GNOME for it's desktop manager.
 
 Edubuntu can be installed with:
 
@@ -116,12 +116,12 @@ Edubuntu can be installed with:
 
 ## Caveats and Conflicts
 
-Desktop environments can interfere with each other or change universal settings.  Issues with a desktop environment looking funny can generally be fixed by changing the theme in the _Display Settings_ or _Appearance_.
+Desktop environments can interfere with each other or change universal settings. Issues with a desktop environment looking funny can generally be fixed by changing the theme in the _Display Settings_ or _Appearance_.
 
 
 #### Change Login Greeter
 
-Gnome will add it's own login greeter, which is shown at the top of this article.  To change it, run this command:
+Gnome will add it's own login greeter, which is shown at the top of this article. To change it, run this command:
 
 `gksudo gedit /etc/lightdm/lightdm.conf`
 
@@ -186,7 +186,7 @@ user-session=gnome-flashback-metacity
 
 #### Change Startup/Shutdown Splash Screen
 
-Many desktop environments change the startup and shutdown splash screens.  To change the Plymouth splash screen, run these commands:
+Many desktop environments change the startup and shutdown splash screens. To change the Plymouth splash screen, run these commands:
 
 ```
 sudo update-alternatives --config default.plymouth
@@ -196,7 +196,7 @@ sudo update-initramfs -u
 
 #### Change Notification Dialog
 
-Xfce will change the notification dialog to it's own version.  It can be configured with this command:
+Xfce will change the notification dialog to it's own version. It can be configured with this command:
 
 `xfce4-notifyd-config`
 
@@ -218,7 +218,7 @@ If your background turns to black or white, or stops changing when you select a 
 
 #### Remove Duplicate Options From Login Screen
 
-Many desktop environments supply both a bare-bones environment, a full featured environment, or other options.    Cinnamon provides both a 2d and 3d environment.  Some of the extra options aren't needed, and can be turned off.  The options available at login are in the `/usr/share/xsessions` folder.  Simply rename or delete the files to remove them as options.
+Many desktop environments supply both a bare-bones environment, a full featured environment, or other options. Cinnamon provides both a 2d and 3d environment. Some of the extra options aren't needed, and can be turned off. The options available at login are in the `/usr/share/xsessions` folder. Simply rename or delete the files to remove them as options.
 
 Lubuntu's extra options:
 
@@ -243,12 +243,12 @@ sudo mv /usr/share/xsessions/cinnamon2d.desktop /usr/share/xsessions/cinnamon2d.
 
 #### Change Automatic Startup Programs
 
-Some desktop environments add addition programs to be started at boot.  To change them, run the _Startup Applications_ program, and turn off any additional startup programs that were undesirably added.
+Some desktop environments add addition programs to be started at boot. To change them, run the _Startup Applications_ program, and turn off any additional startup programs that were undesirably added.
 
 
 #### Double Lock Screen Passwords
 
-Sometimes the GNOME screensaver presents a second password unlock screen after suspending or locking the screen.  It can be disabled with this command:
+Sometimes the GNOME screensaver presents a second password unlock screen after suspending or locking the screen. It can be disabled with this command:
 
 `gsettings set org.gnome.desktop.screensaver lock-enabled false`
 
@@ -268,18 +268,18 @@ If Cinnamon's desktop lock isn't working, then running this command will re-enab
 
 #### Managing Lots of Desktop environments
 
-Ubuntu's unity greeter signin screen will only accommodate a certain number of desktop environments.  If the list is too large, then extra options can be deleted from this folder:
+Ubuntu's unity greeter signin screen will only accommodate a certain number of desktop environments. If the list is too large, then extra options can be deleted from this folder:
 
 `/usr/share/xsessions/`
 
-Another solution is to switch to the lightdm-gtk-greeter following the instructions above.  This secondary greeter is installed with Gnome, or can be installed manually with this command:
+Another solution is to switch to the lightdm-gtk-greeter following the instructions above. This secondary greeter is installed with Gnome, or can be installed manually with this command:
 
 `sudo apt install lightdm-gtk-greeter`
 
 
 #### Removing Desktop Environments
 
-If you no longer want to use a desktop environment, it can be removed by using the `sudo apt purge ...` command, followed by the `sudo apt autoremove` command.  For example, to remove KDE:
+If you no longer want to use a desktop environment, it can be removed by using the `sudo apt purge ...` command, followed by the `sudo apt autoremove` command. For example, to remove KDE:
 
 ```
 sudo apt purge kubuntu-desktop

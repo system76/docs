@@ -26,7 +26,7 @@ Once the _Terminal_ application is opened you can use the Command Line tool `apt
 
 ![Terminal](/images/steam/Install-SteamCLI-16.04.png)
 
-Once we find the right name for Steam we can install it with `apt` as well.  Please type this command into the terminal and press <kbd>Enter</kbd>:
+Once we find the right name for Steam we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
 `sudo apt install steam`
 

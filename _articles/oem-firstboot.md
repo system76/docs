@@ -30,7 +30,7 @@ Here are the general steps for creating a user manually:
 
 ## Boot into Recovery Mode
 
-Power on (or reboot) your system.  Hold the left <kbd>Shift</kbd> key, or start pressing <kbd>ESC</kbd> to get to the GRUB boot menu.
+Power on (or reboot) your system. Hold the left <kbd>Shift</kbd> key, or start pressing <kbd>ESC</kbd> to get to the GRUB boot menu.
 
 ![GRUB menu](/images/oem-firstboot/grub-menu.png)
 

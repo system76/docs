@@ -12,7 +12,7 @@ section: articles
 
 ---
 
-Most of the hardware in a System76 computer is Intel based, and the Windows Update Program is rather effective at finding drivers.  We also recommend using Intel's Driver Update Program, which does an awesome job of finding drivers for Intel hardware:
+Most of the hardware in a System76 computer is Intel based, and the Windows Update Program is rather effective at finding drivers. We also recommend using Intel's Driver Update Program, which does an awesome job of finding drivers for Intel hardware:
 
 [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
 

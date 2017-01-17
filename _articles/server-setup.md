@@ -29,7 +29,7 @@ Network Address (eth1) | Unconfigured
 
 ## Initial Server Setup
 
-Connect your server to a monitor to determine the IP addresses assigned to your server.  Afterwards you can configure and manage your server from any other computer on your network.
+Connect your server to a monitor to determine the IP addresses assigned to your server. Afterwards you can configure and manage your server from any other computer on your network.
 
 Run the following command to determine the server's IP address:
 
@@ -43,7 +43,7 @@ From a Linux client terminal:
 
 `ssh oem@$IPADDRESS`
 
-From a Windows computer: Download PuTTY from [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).  Connect to the server using the username `oem` and `$IPAddress`.
+From a Windows computer: Download PuTTY from [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). Connect to the server using the username `oem` and `$IPAddress`.
 
 
 ### Add Your Administrative User

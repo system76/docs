@@ -17,7 +17,7 @@ section: articles
 
 ------
 
-These instructions only apply to the Meerkat 1 hardware.  These do not apply to the Meerkat 2 hardware or to any other computers we sell.  We mistakenly sent the announcement email to few poeple without Meerkat 1 hardware.  Apologies for any confusion!
+These instructions only apply to the Meerkat 1 hardware. These do not apply to the Meerkat 2 hardware or to any other computers we sell. We mistakenly sent the announcement email to few poeple without Meerkat 1 hardware. Apologies for any confusion!
 
 ------
 
@@ -37,7 +37,7 @@ These instructions only apply to the Meerkat 1 hardware.  These do not apply to 
 
 7. When the updater prompts about making a configuration request, press <kbd>9</kbd> to allow it.
 
-   _The BIOS will now update.  This may take 2–5 minutes to complete.  Please wait, and **do not turn the system off** until the update has completed._
+   _The BIOS will now update. This may take 2–5 minutes to complete. Please wait, and **do not turn the system off** until the update has completed._
 
 8. When the update completes, remove the USB flash drive and restart the computer.
 

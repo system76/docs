@@ -15,13 +15,13 @@ section: articles
 
 ---
 
-If you are just coming to [Ubuntu](https://www.ubuntu.com/) from [Apple](https://www.apple.com/), it can be a little confusing where everything is.  Some software will have the same names, while some tasks need different software.  Generally, all operating systems accomplish the same functions: running programs, managing files, installing software, watching funny cat videos, sending email, and low-level functions, such as networking, keyboard input, and displaying images.
+If you are just coming to [Ubuntu](https://www.ubuntu.com/) from [Apple](https://www.apple.com/), it can be a little confusing where everything is. Some software will have the same names, while some tasks need different software. Generally, all operating systems accomplish the same functions: running programs, managing files, installing software, watching funny cat videos, sending email, and low-level functions, such as networking, keyboard input, and displaying images.
 
-Ubuntu, included software, and Ubuntu's default desktop environment, [Unity](https://unity.ubuntu.com/about), will handle most needs.  Additional software can be installed, and the desktop environment can be changed to make the experience quite different.  We will go through some of the most common operating system tasks, and show where they are located in Ubuntu Unity.
+Ubuntu, included software, and Ubuntu's default desktop environment, [Unity](https://unity.ubuntu.com/about), will handle most needs. Additional software can be installed, and the desktop environment can be changed to make the experience quite different. We will go through some of the most common operating system tasks, and show where they are located in Ubuntu Unity.
 
 ## Running and Managing Programs
 
-Unity defaults to having its launcher on the left side of the screen.  Unity's launcher handles programs nearly identical to Apple's dock.  To run a program, click on it.  To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher.  And to see if programs are open, look for the arrows around the icon.  
+Unity defaults to having its launcher on the left side of the screen. Unity's launcher handles programs nearly identical to Apple's dock. To run a program, click on it. To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher. And to see if programs are open, look for the arrows around the icon. 
 
 ![apple-launcher](/images/switch/apple-launcher.png)
 
@@ -29,7 +29,7 @@ Unity defaults to having its launcher on the left side of the screen.  Unity's l
 
 ![ubuntu-launcher](/images/switch/ubuntu-launcher.png)
 
-If the Unity desktop environment isn't for you, it can be changed easily.  Please see this article for how to change desktop environments:
+If the Unity desktop environment isn't for you, it can be changed easily. Please see this article for how to change desktop environments:
 
 [Desktop Environment](http://support.system76.com/articles/desktop-environment/)
 
@@ -49,7 +49,7 @@ Ubuntu comes with a full featured [software center](https://wiki.gnome.org/Apps/
 
 ## Workspaces and Window Management
 
-Ubuntu has an option to turn on [workspaces](https://help.ubuntu.com/stable/ubuntu-help/shell-workspaces.html) located under System Settings -> Appearance -> Behavior.  With workspaces enabled, 4 copies of all available monitors are created.  Each workspace can be switched to, and windows can be moved between workspaces.
+Ubuntu has an option to turn on [workspaces](https://help.ubuntu.com/stable/ubuntu-help/shell-workspaces.html) located under System Settings -> Appearance -> Behavior. With workspaces enabled, 4 copies of all available monitors are created. Each workspace can be switched to, and windows can be moved between workspaces.
 
 ![apple-window](/images/switch/apple-window.png)
 
@@ -59,7 +59,7 @@ Ubuntu has an option to turn on [workspaces](https://help.ubuntu.com/stable/ubun
 
 ## Finding Programs and Files
 
-Ubuntu has a [Dash](https://help.ubuntu.com/stable/ubuntu-help/unity-dash-intro.html) much like Apple's [Spotlight](https://support.apple.com/en-us/HT204014) search.  If you press the Super key, all graphical software and files can be searched for easily.
+Ubuntu has a [Dash](https://help.ubuntu.com/stable/ubuntu-help/unity-dash-intro.html) much like Apple's [Spotlight](https://support.apple.com/en-us/HT204014) search. If you press the Super key, all graphical software and files can be searched for easily.
 
 ![apple-software](/images/switch/apple-search.png)
 
@@ -69,7 +69,7 @@ Ubuntu has a [Dash](https://help.ubuntu.com/stable/ubuntu-help/unity-dash-intro.
 
 ## File Management
 
-The file managers are largely the same.  Each file manager starts with a standard set of shortcuts, and additional shortcuts can be added by dragging a folder to the left panel.  The way files are shown is customizable in both operating systems.  In Ubuntu, there is an 'Applications' folder that contains shortcuts to all GUI applications on your computer.  Navigate to `/usr/share/applications` and drag the folder to the left panel to have a list of currently installed programs readily available.
+The file managers are largely the same. Each file manager starts with a standard set of shortcuts, and additional shortcuts can be added by dragging a folder to the left panel. The way files are shown is customizable in both operating systems. In Ubuntu, there is an 'Applications' folder that contains shortcuts to all GUI applications on your computer. Navigate to `/usr/share/applications` and drag the folder to the left panel to have a list of currently installed programs readily available.
 
 ![apple-file](/images/switch/apple-file.png)
 
@@ -79,7 +79,7 @@ The file managers are largely the same.  Each file manager starts with a standar
 
 ## Cloud Storage
 
-[Dropbox](https://www.dropbox.com) and [Mega.nz](https://mega.nz) currently have desktop integrations for Ubuntu, while [Google Drive](https://www.google.com/drive/) and [Box.com](https://www.box.com) currently do not.  All four major cloud storage solutions can be accessed from a web browser in Ubuntu.
+[Dropbox](https://www.dropbox.com) and [Mega.nz](https://mega.nz) currently have desktop integrations for Ubuntu, while [Google Drive](https://www.google.com/drive/) and [Box.com](https://www.box.com) currently do not. All four major cloud storage solutions can be accessed from a web browser in Ubuntu.
 
 ![apple-cloud](/images/switch/apple-cloud.png)
 
@@ -89,7 +89,7 @@ The file managers are largely the same.  Each file manager starts with a standar
 
 ## Watching Videos
 
-The open source video player, [VLC](https://www.videolan.org/vlc/), can be downloaded for both Apple and Ubuntu, and will play just about anything.  Ubuntu doesn't come with proprietary decoders for DVDs and some audio, but they can be installed with ease.
+The open source video player, [VLC](https://www.videolan.org/vlc/), can be downloaded for both Apple and Ubuntu, and will play just about anything. Ubuntu doesn't come with proprietary decoders for DVDs and some audio, but they can be installed with ease.
 
 ![apple-video](/images/switch/apple-video.png)
 
@@ -103,7 +103,7 @@ Please see this article for steps to install software for DVD playback:
 
 ## Networking
 
-Networking is adjusted in very similar ways.  A drop-down menu in the top right allows for picking wifi access points and changing network access.  There are also system settings to configure more advanced networking, including VPN, Proxy, DNS settings, and more.
+Networking is adjusted in very similar ways. A drop-down menu in the top right allows for picking wifi access points and changing network access. There are also system settings to configure more advanced networking, including VPN, Proxy, DNS settings, and more.
 
 ![apple-networking](/images/switch/apple-networking.png)
 
@@ -113,7 +113,7 @@ Networking is adjusted in very similar ways.  A drop-down menu in the top right 
 
 ## Web Browsing
 
-Ubuntu comes with [Firefox](https://www.mozilla.org/en-US/firefox/products/) by default.  Most major web browsers are universally available and look nearly identical between operating systems.  [Safari](https://www.apple.com/safari/) is an Apple only web browser, and is not available in Ubuntu.
+Ubuntu comes with [Firefox](https://www.mozilla.org/en-US/firefox/products/) by default. Most major web browsers are universally available and look nearly identical between operating systems. [Safari](https://www.apple.com/safari/) is an Apple only web browser, and is not available in Ubuntu.
 
 ![apple-web](/images/switch/apple-web.png)
 
@@ -123,7 +123,7 @@ Ubuntu comes with [Firefox](https://www.mozilla.org/en-US/firefox/products/) by 
 
 ## Emailing
 
-Ubuntu comes with [Thunderbird](https://www.mozilla.org/en-US/thunderbird/) as its default email program.  It has similar functionality to Apple's email program, and is highly configurable with plugins.  A calendar can be added, address books can be synced, and the look and feel can be customized.  The plugins [*Lightning*](https://www.mozilla.org/en-US/projects/calendar/), [*Thunderbird Conversations*](https://addons.mozilla.org/en-US/thunderbird/addon/gmail-conversation-view/), and [*GContactSync*](https://addons.mozilla.org/en-US/thunderbird/addon/gcontactsync/), are a few of the common ones installed.
+Ubuntu comes with [Thunderbird](https://www.mozilla.org/en-US/thunderbird/) as its default email program. It has similar functionality to Apple's email program, and is highly configurable with plugins. A calendar can be added, address books can be synced, and the look and feel can be customized. The plugins [*Lightning*](https://www.mozilla.org/en-US/projects/calendar/), [*Thunderbird Conversations*](https://addons.mozilla.org/en-US/thunderbird/addon/gmail-conversation-view/), and [*GContactSync*](https://addons.mozilla.org/en-US/thunderbird/addon/gcontactsync/), are a few of the common ones installed.
 
 ![apple-email](/images/switch/apple-email.png)
 
@@ -133,7 +133,7 @@ Ubuntu comes with [Thunderbird](https://www.mozilla.org/en-US/thunderbird/) as i
 
 ## Communicating With Friends/Co-workers
 
-Many communication programs are available for both operating systems.  [Skype](https://www.skype.com/en/), [Google Hangouts](https://hangouts.google.com), [Slack](https://slack.com), [Hip Chat](https://www.hipchat.com), and others are available on Ubuntu.  There is also a program called [Pidgin](https://www.pidgin.im/) included with Ubuntu to connect to IRC, AOL IM, and many others, all within the same program.
+Many communication programs are available for both operating systems. [Skype](https://www.skype.com/en/), [Google Hangouts](https://hangouts.google.com), [Slack](https://slack.com), [Hip Chat](https://www.hipchat.com), and others are available on Ubuntu. There is also a program called [Pidgin](https://www.pidgin.im/) included with Ubuntu to connect to IRC, AOL IM, and many others, all within the same program.
 
 ![apple-chat](/images/switch/apple-chat.png)
 
@@ -143,7 +143,7 @@ Many communication programs are available for both operating systems.  [Skype](h
 
 ## Working With Images
 
-Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gimp.org), [darktable](http://www.darktable.org/), and [Inkscape](https://inkscape.org/en/) will do what [Adobe](https://www.adobe.com/) products can.  Plus, they are free, which is a huge bonus.  Adobe products don't currently run on Ubuntu but there are plenty of replacement software options.
+Ubuntu has several powerful image manipulation programs. [Gimp](https://www.gimp.org), [darktable](http://www.darktable.org/), and [Inkscape](https://inkscape.org/en/) will do what [Adobe](https://www.adobe.com/) products can. Plus, they are free, which is a huge bonus. Adobe products don't currently run on Ubuntu but there are plenty of replacement software options.
 
 ![apple-images](/images/switch/apple-images.png)
 
@@ -153,7 +153,7 @@ Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gim
 
 ## Document Editing
 
-[Libre Office](https://www.libreoffice.org) is included by default in Ubuntu, and is very similar to [Open Office](https://www.openoffice.org).  There is a bit of a learning curve if coming from [Microsoft](https://www.office.com) programs, the functionality is the same.  Libre Office will open and save documents, spreadsheets, and presentations in Microsoft formats.  Documents saved in the open document format will translate better both directions than the proprietary format, but the issues are getting less over time.
+[Libre Office](https://www.libreoffice.org) is included by default in Ubuntu, and is very similar to [Open Office](https://www.openoffice.org). There is a bit of a learning curve if coming from [Microsoft](https://www.office.com) programs, the functionality is the same. Libre Office will open and save documents, spreadsheets, and presentations in Microsoft formats. Documents saved in the open document format will translate better both directions than the proprietary format, but the issues are getting less over time.
 
 ![apple-documents](/images/switch/apple-documents.png)
 
@@ -163,7 +163,7 @@ Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gim
 
 ## Managing Music
 
-[Spotify](https://www.spotify.com/) is fully supported in the Ubuntu operating system, along with other web based players such as [Pandora](https://www.pandora.com/) and [Google Music](https://play.google.com/music/listen).  Ubuntu also comes with [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox) which is a replacement for [Apple iTunes](https://www.apple.com/itunes/), and [Clementine](https://www.clementine-player.org) is another open source, cross platform tool that provides an awesome music library experience.  Although iTunes doesn't run on Ubuntu, music libraries can be moved.  Several programs are available for music editing, mixing, and DJ-ing as well, including [Audacity](http://www.audacityteam.org/), [Mixxx](https://www.mixxx.org/), and [Ardour](https://ardour.org).
+[Spotify](https://www.spotify.com/) is fully supported in the Ubuntu operating system, along with other web based players such as [Pandora](https://www.pandora.com/) and [Google Music](https://play.google.com/music/listen). Ubuntu also comes with [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox) which is a replacement for [Apple iTunes](https://www.apple.com/itunes/), and [Clementine](https://www.clementine-player.org) is another open source, cross platform tool that provides an awesome music library experience. Although iTunes doesn't run on Ubuntu, music libraries can be moved. Several programs are available for music editing, mixing, and DJ-ing as well, including [Audacity](http://www.audacityteam.org/), [Mixxx](https://www.mixxx.org/), and [Ardour](https://ardour.org).
 
 ![apple-music](/images/switch/apple-music.png)
 
@@ -173,7 +173,7 @@ Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gim
 
 ## Playing Games
 
-[Steam](https://store.steampowered.com/) on Ubuntu is gaining more and more games in its library every day.  Many popular games can be found in the Steam program, including several you won't find anywhere else.  It may not have every top game, but there is no shortage of entertainment to be found!  The Ubuntu Software Center also has a collection of free games for every level of gamer.
+[Steam](https://store.steampowered.com/) on Ubuntu is gaining more and more games in its library every day. Many popular games can be found in the Steam program, including several you won't find anywhere else. It may not have every top game, but there is no shortage of entertainment to be found!  The Ubuntu Software Center also has a collection of free games for every level of gamer.
 
 ![apple-games](/images/switch/apple-games.png)
 
@@ -183,7 +183,7 @@ Ubuntu has several powerful image manipulation programs.  [Gimp](https://www.gim
 
 ## Writing Software
 
-Anyone familiar with writing software on a Mac will be at home with writing software on Ubuntu.  [Atom](https://atom.io), [Sublime](https://www.sublimetext.com), and other editors are available for both systems.  Compilers can be used directly, and many web applications including [Apache](https://httpd.apache.org) can be run natively in Ubuntu, without the need for [virtual machines](https://www.virtualbox.org).
+Anyone familiar with writing software on a Mac will be at home with writing software on Ubuntu. [Atom](https://atom.io), [Sublime](https://www.sublimetext.com), and other editors are available for both systems. Compilers can be used directly, and many web applications including [Apache](https://httpd.apache.org) can be run natively in Ubuntu, without the need for [virtual machines](https://www.virtualbox.org).
 
 ![apple-code](/images/switch/apple-code.png)
 
@@ -193,7 +193,7 @@ Anyone familiar with writing software on a Mac will be at home with writing soft
 
 ## Working In The Terminal
 
-If you are used to an Apple terminal, Ubuntu's terminal will feel right at home.  The [brew](http://brew.sh/) package manager quickly translates to the [apt](https://wiki.debian.org/Apt) package manager, and many commands are the same or only slightly different.
+If you are used to an Apple terminal, Ubuntu's terminal will feel right at home. The [brew](http://brew.sh/) package manager quickly translates to the [apt](https://wiki.debian.org/Apt) package manager, and many commands are the same or only slightly different.
 
 ![apple-terminal](/images/switch/apple-terminal.png)
 

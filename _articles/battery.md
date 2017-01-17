@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Improve Power Usage
+title: Increase Battery Life
 description: >
   Is your system running a little short on battery life?  Here are several ways to stretch the battery and create amazing things for longer.
 keywords:
@@ -19,13 +19,36 @@ The biggest single consumer of power is the monitor. Up to 10% more battery life
 
 #### Software
 
-Every running program in Ubuntu also consumes a part of the battery life. This could be a program that is part of the operating system, or a program that is currently being used like Firefox or Libre Office. We recommend using *powertop* to check what software is consuming the battery, and to tune your operating system for longer battery life.
+Every running program in Ubuntu consumes a part of the battery life. This could be a program that is part of the operating system, or a program that is currently being used like Firefox or Libre Office. We recommend using *TLP* to quickly reduce overall power consumption and using *powertop* to check what software is consuming the battery.
 
-To install powertop, please open a terminal and run this command:  
+#### TLP
+
+TLP is an excellent program for increasing battery life on all of our laptops. TLP is a pure command line tool with automated background tasks and does not contain a GUI. It's default settings are excellent for most situations and require little tuning. TLP will take care of most of the settings that Powertop autotuning would, and with less trial and error.
+
+To install TLP, run this command:
+
+`sudo apt install tlp`
+
+TLP will take effect upon restart. To see current configuration settings, run this command:
+
+`sudo tlp-stat`
+
+The program is highly configurable by editing the settings file. Run this command to edit the file:
+
+`sudo gedit /etc/default/tlp`
+
+All of the info about the the program can be found with these 2 command:
+
+`man tlp`
+`man tlp-stat`
+
+#### Powertop
+
+To install powertop, please open a terminal and run this command:
 
 `sudo apt install powertop`
 
-After installing the program, reboot your computer and calibrate the readings on battery power with this command:  
+After installing the program, reboot your computer and calibrate the readings on battery power with this command:
 
 `sudo powertop -c`
 
@@ -41,7 +64,7 @@ It's useful to create a baseline by running powertop after a cold startup, witho
 
 #### Tuning
 
-After looking at running software, head over to the 'Tuning' tab.
+After looking at running software, head over to the 'Tuning' tab. We recommend install TLP first, and then seeing if Powertop finds any other tuning suggestions.
 
 ![Powertop2](/images/power/powertop2.png)
 
@@ -54,3 +77,13 @@ Please test the settings and make sure they doesn't introduce any instability or
 `gksu gedit /etc/rc.local`
 
 And add either `sudo powertop --auto-tune` above the 'exit 0' line, or add the individual tuning options.
+
+#### Battery Information
+
+To see the information that your computer can read about the battery, please run this command in the terminal:
+
+`upower -i /org/freedesktop/UPower/devices/battery_BAT0`
+
+And if the battery life indicator is inaccurate, removing the stored statistics, and then doing a few charge/discharge cycles, will usually help. Please remove the existing statistics with this command:
+
+`sudo rm /var/lib/upower/*`

@@ -91,7 +91,7 @@ Pay attention to the disconnect reasons, and ignore the scans.
 
 Also, if Wifi is giving you problems, many times you can run this command to restart the service that manages all Internet traffic on the computer, which is usually easier than restarting the computer:
 
-`sudo service network-manager restart`
+`sudo systemctl restart NetworkManager.service`
 
 If you want to see if the driver is being loaded correctly, and what sort of messages are associated with the driver and the starting of the hardware, run this command:
 

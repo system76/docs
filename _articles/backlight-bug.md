@@ -18,7 +18,6 @@ This is new bug introduced by the current version of the NVIDIA driver. It preve
 
 The current work-around is to press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F1</kbd>, followed by <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F7</kbd> after resuming from the screen idle timeout. Other options are disabling the screen idle timeout, only suspending (since it doesn't have this issue), or using a screensaver to blank the screen.
 
-
 There is a bug report here:
 
 [Bug 1631191](https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-367/+bug/1631191)

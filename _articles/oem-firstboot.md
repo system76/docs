@@ -30,12 +30,12 @@ Here are the general steps for creating a user manually:
 
 ## Boot into Recovery Mode
 
-Power on (or reboot) your system. Hold the left <kbd>Shift</kbd> key, or start pressing <kbd>ESC</kbd> to get to the GRUB boot menu.
+Power on (or reboot) your system. Hold the left <kbd>Shift</kbd> key, or start tapping <kbd>ESC</kbd> to get to the GRUB boot menu.
 
 ![GRUB menu](/images/oem-firstboot/grub-menu.png)
 
 
-If you end up at the GRUB CLI (it looks like `grub >`) type _exit_, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd> twice. If that fails, just reboot the computer with Ctrl+Alt+Del, pressing the reset button, or holding the power button until the computer shuts off.
+If you end up at the GRUB CLI (it looks like `grub >`) type _normal_, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd>. If that fails, just reboot the computer with Ctrl+Alt+Del, pressing the reset button, or holding the power button until the computer shuts off.
 
 Once you're in the GRUB boot menu, choose **Advanced options for Ubuntu** and then **recovery mode.** The system will boot into the recovery menu. **At any time, random messages or text may clutter up the recovery menu.** If this happens, just press the up/down arrow keys to re-draw the menu items. The text does not affect operation of the recovery menu.
 

@@ -25,7 +25,7 @@ Make sure to stop tapping <kbd>ESC</kbd> when the menu appears, otherwise a GRUB
 
 ![Prompt](/images/password/prompt.png)
 
-If you get to the GRUB command prompt, type in 'exit', then press <kbd>ENTER</kbd>, <kbd>ESC</kbd>, <kbd>ESC</kbd>.
+If you get to the GRUB command prompt, type in _normal_, then press <kbd>ENTER</kbd> and immediately press <kbd>ESC</kbd>.
 
 Once in the GRUB menu, choose the second option "Advanced options for Ubuntu", followed by the 3rd option "Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)".
 
@@ -49,7 +49,7 @@ Then, to change your password, type in this command:
 
 `passwd frank`
 
-(Change 'frank' to the actual user on the system whose password you would like to reset)  
+(Change 'frank' to the actual user on the system whose password you would like to reset)
 
 Then type in:
 

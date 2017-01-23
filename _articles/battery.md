@@ -52,7 +52,7 @@ After installing the program, reboot your computer and calibrate the readings on
 
 `sudo powertop -c`
 
-This will take about 15 minutes to run the calibration. The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process. After it's complete, HTML reports can be generated with this command:  
+This will take about 15 minutes to run the calibration. The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process. After it's complete, HTML reports can be generated with this command:
 
 `sudo powertop --html=report`
 

@@ -37,14 +37,14 @@ The program is highly configurable by editing the settings file. Run this comman
 
 `sudo gedit /etc/default/tlp`
 
-All of the info about the the program can be found with these 2 command:
+All of the info about the the program can be found with these 2 commands:
 
-`man tlp`
-`man tlp-stat`
+`man tlp`  
+`man tlp-stat`  
 
 #### Powertop
 
-To install powertop, please open a terminal and run this command:
+To install powertop, please open a terminal and run this command:  
 
 `sudo apt install powertop`
 
@@ -52,7 +52,7 @@ After installing the program, reboot your computer and calibrate the readings on
 
 `sudo powertop -c`
 
-This will take about 15 minutes to run the calibration. The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process. After it's complete, HTML reports can be generated with this command:
+This will take about 15 minutes to run the calibration. The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process. After it's complete, HTML reports can be generated with this command:  
 
 `sudo powertop --html=report`
 

@@ -26,6 +26,12 @@ pulseaudio --start
 
 Don't worry about any missing files in the first command since it is a catch-all command.
 
+##### Useful Programs
+
+The program _PulseAudio Volume Control_ is super helpful in figuring out which program is producing audio, where that audio is being routed, defaults for audio outputs, and volume levels for every souce, input and output.  It can be installed using the software center, or with this command:  
+
+`sudo apt install pavucontrol`
+
 ##### Useful Commands
 
 To see if the system is recognizing the audio hardware, use this command:

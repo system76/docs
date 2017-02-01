@@ -27,9 +27,13 @@ sudo apt-get dist-upgrade
 
 Sometimes, you may see some packages that are still broken and need to be installed manually or purged manually.  There may be broken dependencies or cyclical dependencies.  If so, these commands can help:
 
+`sudo apt-get install --reinstall <packagename>`
+
+This command reinstalls the package.  This can be convenient when the package has many reverse dependencies.
+
 `sudo apt purge <package name>`  
 
-This will remove a package and it's configuration files.  Use this command to remove a dependency or a main package that is causing issues, and reinstall it with this command:
+This will remove a package and it's configuration files.  Use this command to remove a package that is causing issues, and reinstall it with this command:
 
 `sudo apt install <package name>`  
 

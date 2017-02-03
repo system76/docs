@@ -66,7 +66,7 @@ Gnome is installed with:
 
 # KDE
 
-The KDE Plasma desktop environment is a familiar working environment and looks similar to windows. It is highly customizable and looks great. It is more heavy on system resources than other desktop environments, and isn't recommended for
+The KDE Plasma desktop environment is a familiar working environment and looks similar to windows. It is highly customizable and looks great. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
 
 ![KDE](/images/desktop-environment/KDE.png)
 

@@ -53,7 +53,7 @@ You will need to obtain a Windows Installation disk image. If you have a DVD dri
 
 ### 3. Create the Virtual Machine
 
-Once you have VirtualBox installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Ubuntu key on your keyboard (located between <kbd>Ctrl</kbd> and <kdb>Alt</kbd>) and then enter *virtualbox* in the search field.
+Once you have VirtualBox installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Ubuntu key on your keyboard (located between <kbd>Ctrl</kbd> and <kbd>Alt</kbd>) and then enter *virtualbox* in the search field.
 
 ![Opening VirtualBox through the Dash](/images/win10-vm/step4.png) ![VirtualBox Main Window](/images/win10-vm/step5.png)
 

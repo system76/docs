@@ -2,7 +2,7 @@
 layout: article
 title: Install Steam
 description: >
-   Want to game on your super awesome new System 76 machine?  Take a look at these instrucitons to install Steam, a marketplace for hundres of Linux games.
+   Want to game on your super awesome new System 76 machine?  Take a look at these instructions to install Steam, a marketplace for hundreds of Linux games.
 keywords:
   - gaming
   - support

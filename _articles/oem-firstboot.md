@@ -35,7 +35,7 @@ Power on (or reboot) your system. Hold the left <kbd>Shift</kbd> key, or start t
 ![GRUB menu](/images/oem-firstboot/grub-menu.png)
 
 
-If you end up at the GRUB CLI (it looks like `grub >`) type _normal_, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd>. If that fails, just reboot the computer with Ctrl+Alt+Del, pressing the reset button, or holding the power button until the computer shuts off.
+If you end up at the GRUB CLI (it looks like `grub >`) type _normal_, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd>. If that fails, just reboot the computer with <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>, pressing the reset button, or holding the power button until the computer shuts off.
 
 Once you're in the GRUB boot menu, choose **Advanced options for Ubuntu** and then **recovery mode.** The system will boot into the recovery menu. **At any time, random messages or text may clutter up the recovery menu.** If this happens, just press the up/down arrow keys to re-draw the menu items. The text does not affect operation of the recovery menu.
 

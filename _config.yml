@@ -12,10 +12,12 @@ collections:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 permalink: pretty
 
 kramdown:
   input: GFM # Use GitHub markdown extensions
+  syntax_highlighter: rouge
 
 gems:
   - jekyll-redirect-from

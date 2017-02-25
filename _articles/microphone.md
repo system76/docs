@@ -1,16 +1,14 @@
 ---
 layout: article
-title: Use the microphone
+title: Use The Microphone
 description: >
-  Click on the Volume (<i class='fa fa-volume-up'></i>) icon in the upper right, then click on _Sound Settings_. Click on the _Input_ tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the _Input Level_ indicator show activity.
+  Here is how to enable and adjust the microphone.
 keywords:
   - microphone
   - volume settings
-  - support
-  - System76
 hidden: false
 section: articles
 
 ---
 
-Click on the Volume (<i class='fa fa-volume-up'></i>) icon in the upper right, then click on _Sound Settings_. Click on the _Input_ tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the _Input Level_ indicator show activity.
+Click on the Volume (<i class='fa fa-volume-up'></i>) icon in the upper right, then click on **Sound Settings**. Click on the **Input** tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the "Input Level" indicator show activity.

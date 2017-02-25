@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Turn on/off and configure touchpad
+title: Configure Or Disable Touchpad
 description: >
-  Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off. To configure your touchpad, click on the Ubuntu Logo near the top-left corner, then type _mouse_. Click on the result. The touchpad settings are under _Touchpad_.
+  Here's how to change how the touchpad functions.
 keywords:
   - touchpad
   - trackpad
@@ -17,6 +17,6 @@ section: articles
 
 Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.
 
-To configure your touchpad, click on the Ubuntu Logo near the top-left corner, then type _mouse_. Click on the result. The touchpad settings are under _Touchpad_.
+To configure your touchpad, click on the Ubuntu Logo (<i class="fl-ubuntu"></i>) near the top-left corner, then type <u>Mouse & Touchpad</u> and click on the result. The touchpad settings are under the **Touchpad** tab.
 
 ![Mouse in Dash](/images/touchpad/mouse-dash.png)

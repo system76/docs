@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Access the boot menu
+title: Access BIOS or Boot Menu
 description: >
-  For recent System76 laptops, hold the <kbd>F7</kbd> key immediately after turning your computer on. For desktops (besides the Meerkat), hold the <kbd>F8</kbd> or <kbd>F12</kbd> key. For the Meerkat, hold the <kbd>F10</kbd> key. For older laptops, hold the <kbd>F1</kbd> key.
+  Here are the list of keys to access BIOS settings or boot from other media.
 keywords:
   - boot
   - menu
@@ -13,4 +13,6 @@ section: articles
 
 ---
 
-For recent System76 laptops, hold the <kbd>F7</kbd> key immediately after turning your computer on. For desktops (besides the Meerkat), hold the <kbd>F8</kbd> or <kbd>F12</kbd> key. For the Meerkat, hold the <kbd>F10</kbd> key. For older laptops, hold the <kbd>F1</kbd> key.
+To enter BIOS for recent System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.
+
+To enter BIOS for desktops, hold down the <kbd>DEL</kbd> key.  To show the boot menu (besides the Meerkat), hold the <kbd>F8</kbd> or <kbd>F12</kbd> key. For the Meerkat, hold the <kbd>F10</kbd> key.

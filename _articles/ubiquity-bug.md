@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Problems when you first boot your computer
+title: Problems With WPA2-Enterprise During User Configuration
 description: >
   If you try to join a WPA-Enterprise or WPA2-Enterprise while setting up your computer, the installer may crash.
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - wifi
   - WPA2-Enterprise
   - crash
-hidden: false
+hidden: true
 section: solutions
 
 ---
@@ -20,7 +20,7 @@ There is a bug in the installer program, Ubiquity, which may crash the initial s
 
 The current solution is to not join a network access point while setting up the computer for the first time. Once the desktop is reached, WiFi access points can be joined as normal. If the new user setup program crashes and leaves only a Guest account, please see these instructions for creating a new user manually:
 
-[http://support.system76.com/articles/oem-firstboot/](http://support.system76.com/articles/oem-firstboot/)
+[support.system76.com/articles/oem-firstboot](http://support.system76.com/articles/oem-firstboot/)
 
 There is a bug report filed here:
 

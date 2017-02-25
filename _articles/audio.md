@@ -14,30 +14,56 @@ section: articles
 
 ---
 
-Sometimes the settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound related packages, and reloading alsa can help. The commands can also help fix the _Sound_ settings showing "Dummy Output" as the audio output. Try running the following commands to repair your system:
+Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound related packages, and reloading alsa can help. The commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
+
+## Useful Programs
+
+The program <u>PulseAudio Volume Control</u> is super helpful in figuring out which program is producing audio, where that audio is being routed, defaults for audio outputs, and volume levels for every source, input and output.  It can be installed using the software center, or with this command:  
 
 ```
-rm -r ~/.pulse ~/.asound* ~/.pulse-cookie ~/.config/pulse /tmp/pulse-*
+sudo apt install pavucontrol
+```
+
+## Useful Commands
+
+```
+rm -r ~/.config/pulse
+```
+
+This will remove the user configuration files for pulseaudio.
+
+```
 sudo apt install --reinstall alsa-base alsa-utils pulseaudio linux-sound-base libasound2
+```
+
+This will reinstall many of the core audio packages.
+
+```
 pulseaudio -k
+```
+
+This will kill all pulseaudio instances.
+
+```
 sudo alsa force-reload
+```
+
+This reloads all of the sound driver modules.
+
+```
 pulseaudio --start
 ```
 
-Don't worry about any missing files in the first command since it is a catch-all command.
+This starts pulseaudio after it's been stopped.
 
-##### Useful Programs
+```
+lspci -v | grep -A6 Audio
+```
 
-The program _PulseAudio Volume Control_ is super helpful in figuring out which program is producing audio, where that audio is being routed, defaults for audio outputs, and volume levels for every souce, input and output.  It can be installed using the software center, or with this command:  
+This checks to see if the system is recognizing the audio hardware.
 
-`sudo apt install pavucontrol`
+```
+aplay -l
+```
 
-##### Useful Commands
-
-To see if the system is recognizing the audio hardware, use this command:
-
-`lspci -v | grep -A6 Audio`
-
-To see what the audio driver has configured for the hardware, use this commands:
-
-`aplay -l`
+This command will show what the audio driver has configured for the hardware.

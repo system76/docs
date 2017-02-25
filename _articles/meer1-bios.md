@@ -15,21 +15,21 @@ section: articles
 
 ---
 
-------
+---
 
-These instructions only apply to the Meerkat 1 hardware. These do not apply to the Meerkat 2 hardware or to any other computers we sell. We mistakenly sent the announcement email to few poeple without Meerkat 1 hardware. Apologies for any confusion!
+These instructions only apply to the Meerkat 1 hardware. These do not apply to the Meerkat 2 hardware or to any other computers we sell. We mistakenly sent the announcement email to few people without Meerkat 1 hardware. Apologies for any confusion!
 
-------
+---
 
-# Updating Your BIOS
+### Updating BIOS
 
-1. <a href="{{site.baseurl}}/files/firmware/meer1-0358.bio.zip" download="download">Download the `meer1-0358.bio.zip` file</a>, unzip it, and put the `meer1-0358.bio` file on the root of a MBR FAT32 formatted USB flash drive.
+1. Download the <a href="{{site.baseurl}}/files/firmware/meer1-0358.bio.zip" download="download"> meer1-0358.bio.zip</a> file, unzip it, and put the `meer1-0358.bio` file on the root of a MBR FAT32 formatted USB flash drive.
 
 2. Plug the USB flash drive with the `meer1-0358.bio` file on it into your Meerkat.
 
 3. Turn on your Meerkat and press <kbd>F7</kbd> during boot.
 
-4. At the _BIOS Flash Update_ menu, select the USB device and press <kbd>Enter</kbd>.
+4. At the 'BIOS Flash Update' menu, select the USB device and press <kbd>Enter</kbd>.
 
 5. Select the `meer1-0358.bio` file and press <kbd>Enter</kbd>.
 
@@ -43,14 +43,14 @@ These instructions only apply to the Meerkat 1 hardware. These do not apply to t
 
 Enjoy using your Meerkat with the fancy new BIOS!
 
-# Where to Get Help
+### Get Help
 
 Having trouble with your BIOS update? We're here to help. Here are two ways to get assistance:
 
-## 1. Contact a Technician
+#### Contact A Technician
 
-Get in touch using our support system. View the orders in [your account](https://system76.com/my-account/orders), then choose **_Open Support Case_** under your Meerkat (meer1).
+Get in touch using our support system. View the orders in [your account](https://system76.com/my-account/orders), then choose **Open Support Case** under your Meerkat (meer1).
 
-## 2. Phone Support
+#### Phone Support
 
 Our representatives are available to help and take questions by phone between 8 AM and 5 PM Mountain Time, Mon–Fri. You can reach us at (720) 226-9269.

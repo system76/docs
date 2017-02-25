@@ -2,7 +2,7 @@
 layout: article
 title: Watch Videos and Play Music (MP3, DVD, etc.)
 description: >
-  Ubuntu does not ship with playback support for some proprietary multimedia formats, like MP3 and DVD-videos. To enable playback of these media, please see this Multimedia Playback Support documentation.
+  Ubuntu does not ship with playback support for some proprietary multimedia formats, such as MP3 files and DVD-videos. To enable playback of these media, please see this Multimedia Playback Support documentation.
 keywords:
   - Support
   - multimedia
@@ -21,17 +21,13 @@ section: articles
 
 ---
 
-Ubuntu does not ship with playback support for some proprietary multimedia formats, like MP3 and DVD-videos. To enable playback of these media, please follow the instructions below.
+Ubuntu does not ship with playback support for some proprietary multimedia formats, such as MP3 files and DVD-videos. To enable playback of these media, please follow the instructions below.
 
+### Open A Terminal
 
-## Step 1: Open a terminal
+Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> on your keyboard.  A purple Terminal window should open up.
 
-Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> on your keyboard.
-
-A purple Terminal window should open up.
-
-
-## Step 2: Install packages
+### Install Packages
 
 Type the following lines into the terminal window, each followed by <kbd>Enter</kbd>:
 
@@ -43,10 +39,9 @@ chromium-codecs-ffmpeg-extra oxideqt-codecs-extra libdvd-pkg
 
 You can also copy and paste the command. To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>
 
-You may be prompted for your "[sudo] password". If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should several lines of output in the terminal. The command may take a few minutes to complete
+You may be prompted for your `[sudo] password`. If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should several lines of output in the terminal. The command may take a few minutes to complete.
 
-
-## Step 3: Set up DVD playback <small>_(optional)_</small>
+### Setup DVD Playback <small>_(optional)_</small>
 
 Once you see the command above has finished, enter in the following command to enable DVD playback:
 
@@ -54,7 +49,6 @@ Once you see the command above has finished, enter in the following command to e
 sudo dpkg-reconfigure libdvd-pkg
 ```
 
-
-## Step 4: Restart your computer
+### Restart Your Computer
 
 After enabling codec support, it's recommended to restart your computer. Click on the Device Menu (Gear Icon in the upper-right corner of your screen), then click on "Shut Down...". Then, click on the restart item in the shutdown overlay.

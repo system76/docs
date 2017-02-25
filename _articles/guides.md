@@ -2,18 +2,18 @@
 layout: article
 title: Find Your Quickstart Guide
 description: >
-  To see ports images, keyboard layouts, function keys, and product quickstart guides, visit our [Guides](https://system76.com/guides) page. For older products, log into [<i class='fa fa-user'></i> My Account](https://system76.com/my-account/orders) and select the _quickstart guide_ button beneath your product.
+  Check here for diagrams and quickstart guides for your computer.
 keywords:
-  - support
-  - guides
-  - quickstart
-  - setup
+  - Support
+  - Guides
+  - Quickstart
+  - Setup
   - System76
 hidden: false
 section: faq
 
 ---
 
-To see ports images, keyboard layouts, function keys, and product quickstart guides, visit our [Guides](https://system76.com/guides) page.
+To see ports, keyboard layouts, function keys, and product quickstart guides, visit our [Guides](https://system76.com/guides) page.
 
-For older products, log into [<i class="fa fa-user"></i> My Account](https://system76.com/my-account/orders) and select the <em>quickstart guide</em> button beneath your product.
+For older products, log into [<i class="fa fa-user"></i> My Account](https://system76.com/my-account/orders) and select the **quickstart guide** button beneath your product.

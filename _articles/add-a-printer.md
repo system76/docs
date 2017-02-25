@@ -2,7 +2,7 @@
 layout: article
 title: Add a Printer
 description: >
-  To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printer* then choose the *Printers* application in the search box. When the Printer dialogue opens, follow these instructions to print your first page.
+  Here is how to add a printer in Ubuntu.
 keywords:
   - Support
   - Printing
@@ -13,32 +13,30 @@ section: articles
 
 ---
 
-  To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word **Printer** then choose the **Printers** application in the search box. When the Printer dialogue opens, follow these instructions to print your first page.
+To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printers* then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
-## Add a Printer in Ubuntu
+![Add Printer](/images/add-a-printer/selectcorrectprinter.png)
 
-In the Printer Application, click the *Add* button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
+Select the correct printer and click **Forward**. The computer will search for the correct Drivers to enable the printer. A box may come up that says 'Installable Options' which you can select any other options available for your printer and then click **Forward** again. Name your printer in the next dialogue box and click **Apply**. A prompt to print a test page will appear next.
 
-![Add Printer]({{site.baseurl}}/images//add-a-printer/selectcorrectprinter.png)
+#### Epson Printers
 
-Select the correct printer and click *Forward*. The computer will search for the correct Drivers to enable the functionality of your printer. A box may come up that says *Installable Options* which you can select any other options available for your printer and then click **Forward** again. Name your printer in the next dialogue box and click **Apply**. A prompt to print a test page will appear next. Select the option to print the test page to test if the printer was added successfully.
+First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command:
 
-## Troubleshooting Printers
+```
+sudo apt install lsb printer-driver-escpr
+```
 
-If the printer stops working, open the *Printers* Application again and right-click on the printer and select **Delete** to remove the printer and its settings. Repeat the steps to add the printer and try printing the test page again. This process usually resolves many printing issues.
+And when adding the printer, select type of connection as **DNS-SD**, and then **Forward**, and then **ESC/P-R**.
 
-## Specific Printer Installation
+## Troubleshooting
 
-### Epson Printers
-
-First, enable 'Canonical Partners' in the *Software & Updates* settings. Go to the Other Software tab, and check the first item. Then, add the driver with this command:
-
-`sudo apt-get install printer-driver-escpr lsb lsb-core`
-
-And when adding the printer, select type of connection DNS-SD and ESC/P-R.
+If the printer stops working, open the <u>Printers</u> Application again and right-click on the printer and select **Delete** to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.
 
 ## Useful Commands:
 
-Sometimes, reinstalling CUPS, the main printing software, can help:
+```
+sudo apt install --reinstall cups cups-client
+```
 
-`sudo apt install --reinstall cups cups-client`
+This will reinstall <u>CUPS</u>, the main printing software, which can help with generic issues.

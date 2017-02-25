@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Problems Entering Password with Full Disk Encryption
+title: Problems Entering Password With Full Disk Encryption
 description: >
-  If you have a system with full disk encryption and an NVIDIA graphics card, there is a bug in Plymouth that prevents the password from showing or being accepted. Here are some solutions to this problem.
+  Full disk encryption and NVIDIA graphics cards currently have a bug in Plymouth that prevents the password request from showing or being accepted. Here are some solutions to this problem.
 keywords:
   - System76
   - encryption
@@ -17,26 +17,25 @@ section: solutions
 
 There is a bug in the Plymouth splash screen which can cause issues inputting your password. This only affects systems with NVIDIA hardware.
 
-The current work-around is to disable the splash screen while booting. To disable the splash screen on the first boot, tap <kbd>ESC</kbd> while booting to enter the GRUB menu. Press <kbd>E</kbd> to edit the default option, then delete the word 'splash' from the second to last line, and press <kbd>F10</kbd> to continue booting. Once booted, disable the Plymouth splash screen permanently by editing the GRUB configuration file with this command:
+The current work-around is to disable the splash screen while booting. To disable the splash screen on the first boot, tap <kbd>ESC</kbd> while booting to enter the GRUB menu. Press <kbd>E</kbd> to edit the default option, then delete the word "splash" from the second to last line, and press <kbd>F10</kbd> to continue booting. Once booted, disable the Plymouth splash screen permanently by editing the GRUB configuration file with this command:
 
-`sudo gedit /etc/default/grub`
+```
+sudo gedit /etc/default/grub
+```
 
 And change this line:
 
-```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"  
-```
+> GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"  
 
 to this:
 
-```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet"  
-```
+> GRUB_CMDLINE_LINUX_DEFAULT="quiet"  
 
 Save the file, and run this command to make it permanent:
 
-`sudo update-grub`
-
+```
+sudo update-grub
+```
 
 There is a bug report filed here:
 

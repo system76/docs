@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Disable Touchpad While Typing
-description: If you would like to disable your touchpad while typing, please follow these instructions.
+description: If you would like to disable the touchpad while typing, please follow these instructions.
 keywords:
   - touchpad
   - trackpad
@@ -14,21 +14,19 @@ section: articles
 
 ---
 
-To disable the touchpad while typing in Ubuntu, a built-in program needs to be run. It's best to add it to the startup items to run every time your computer starts. Search for and open 'Startup Applications' from the Dash, and then click **Add**
+To disable the touchpad while typing in Ubuntu, a built-in program needs run. It's best to add it to the startup items to run every time your computer starts. Search for and open <u>Startup Applications</u> from the Dash by pressing the <kbd><span class="fl-ubuntu"></span></kbd> key, and then click **Add**.
 
-> Name: `Syndaemon`
->
-> Command: `syndaemon -i 1.0 -K -t -d`
->
-> Comment: `Disable touchpad while typing`
+Field    | Value
+---------|------------------------------
+Name:    | Syndaemon
+Command: | `syndaemon -i 1.0 -K -t -d`
+Comment: | Disable touchpad while typing
 
-The `-i 1.0` parameter sets the idle time of the keyboard to 1 second. 
-The `-K` option ignores the Modifier keys. 
-The `-t` option only disables tapping and scrolling (optional: leave out to disable all mouse movement). 
-The `-d` runs it as a daemon (in the background). 
+The `-i 1.0` parameter sets the idle time of the keyboard to 1 second.  
+The `-K` ignores the Modifier keys.  
+The `-t` only disables tapping and scrolling (leave out to disable all mouse movement).  
+The `-d` runs it as a daemon (in the background).  
 
-Click **Add** and then **Close**
+Click **Add** and then **Close**.  Reboot your computer to enable this setting.
 
-Reboot your computer to enable this setting
-
-Note: this is a user setting, so repeat this process for all user accounts.
+Note: This is a per user setting, so repeat this process for all user accounts.

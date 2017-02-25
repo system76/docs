@@ -9,7 +9,7 @@ keywords:
   - NVIDIA
   - screen timeout
   - blank screen
-hidden: false
+hidden: true
 section: solutions
 
 ---

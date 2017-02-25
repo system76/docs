@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Find Windows Drivers for a System76 Computer
+title: Find Windows Drivers
 description: >
-  If you are trying to install Windows on our computers, here are some instructions for locating the drivers.
+  If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
 keywords:
   - Windows
   - Microsoft
@@ -16,16 +16,20 @@ Most of the hardware in a System76 computer is Intel based, and the Windows Upda
 
 [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
 
-For systems with NVIDIA graphics cards, NVIDIA drivers can be found on thier website:
+For systems with NVIDIA graphics cards, NVIDIA drivers can be found on their website:
 
 [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 
 Trackpad drivers for our laptops can be found on Synaptic's website:
 
-[Synaptic's Driver](http://www.synaptics.com/resources)
+[Synaptic Drivers](http://www.synaptics.com/resources)
 
 Ethernet drivers can be found on Realtek's website:
 
-[Realtek's Driver](http://www.realtek.com.tw/downloads/)
+[Realtek Drivers](http://www.realtek.com.tw/downloads/)
 
-If there are any missing drivers, open up the device manager, right click on the item with the missing driver, choose Properties, then Details, and look for the hardware PID of the device, and do an Internet search for that info.
+If there is a missing driver in the <u>Device Manager</u>, right click on the item with the missing driver, choose **Properties**, then **Details**, and then **Hardware Ids** from the drop-down.  The VEN (vendor) and DEV (device) numbers are unique to every piece of hardware.  Search for the device at the PCI Database:
+
+[PCI Database](http://pcidatabase.com/)
+
+And use that info to find the driver.

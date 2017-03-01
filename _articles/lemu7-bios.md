@@ -17,7 +17,7 @@ section: articles
 
 ---
 
-This BIOS update enables VT-x for virtualization on your Lemur.  These instructions only apply to the Lemur 7 hardware. They do not apply to any other model of computer we sell.
+This BIOS update enables VT-x for virtualization on your Lemur.  These instructions only apply to the Lemur 7. They do not apply to any other model of computer we sell.
 
 ---
 
@@ -29,19 +29,19 @@ This BIOS update enables VT-x for virtualization on your Lemur.  These instructi
 
 3. Restart your Lemur and hold <kbd>F7</kbd> during boot.  Choose the USB drive from the boot menu.
 
-4. At the prompt, type in `fs1:` and press <kbd>Enter</kbd> (this switches to the USB drive to run the flashing files on the drive).
+4. At the prompt, type in `fs1:` and press <kbd>Enter</kbd> (this switches to the USB drive to run the updates).
 
 5. Type in `meset` and press <kbd>Enter</kbd>.  This unlocks the ME for flashing.  The computer will turn off and reboot.  The fans will be at 100% for the next steps.  If they are not, please plug in AC power and try again.
 
-6. Hold <kbd>F7</kdb> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
+6. Hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
 
 7. Type in `flashme` and press <kbd>Enter</kbd>.  This will flash the ME, and then the BIOS.  The computer will then turn off.
 
-8. Hold <kbd>F7</kdb> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
+8. Hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
 
 9. Type in `ecflash` and press <kbd>Enter</kbd>.  This will flash the EC.  The computer will turn off.
 
-10. Hold <kbd>F7</kdb> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
+10. Hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
 
 11. Type in `eol` and press <kbd>Enter</kbd>.  This will lock the ME again.  The computer will turn off.
 

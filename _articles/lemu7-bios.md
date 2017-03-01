@@ -5,10 +5,12 @@ description: >
     New Lemur (lemu7) BIOS Released!
 keywords:
     - Support
-    - Leemur
+    - Lemur
     - lemu7
     - BIOS
     - Update
+    - Virtualization
+    - VT-x
     - System76
 hidden: true
 section: articles

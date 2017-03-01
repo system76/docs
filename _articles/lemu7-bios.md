@@ -23,7 +23,7 @@ This BIOS update enables VT-x for virtualization on your Lemur.  These instructi
 
 ### Updating BIOS
 
-1. Download the [lumu7.zip](/files/firmware/lemu7-bios.zip) file, unzip it, and put all of the files on the root of a MBR FAT32 formatted USB flash drive.
+1. Download the [lemu7.zip](/files/firmware/lemu7-bios.zip) file, unzip it, and put all of the files on the root of a MBR FAT32 formatted USB flash drive.
 
 2. Remove all external devices and connect AC power to the laptop.
 

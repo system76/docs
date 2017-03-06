@@ -1,17 +1,26 @@
----
+
+  ---
 layout: article
 title: Install CJDNS
 description: >
-  INstalling CJDNS, a Encrypted Wireless Ipv6 meshnet using public keycryptography for address allocation and a distributed hash table for routing.
-image: https://system76.com/images/foo.jpg
-keywords:
-  - Meshnet
+  Installing CJDNS, a Encrypted Wireless Ipv6 meshnet using public keycryptography for address allocation and a distributed hash table for routing.
+  keyword:
+   - Meshnet
   - hyperboria
   - encryption
   - privacy
   - cjdns
   - cjdelisle
-  ---
+image: https://system76.com/images/foo.jpg
+keywords:
+  - List
+  - of
+  - keywords
+  - about
+  - this
+  - page
+  - System76
+---
   See more at the Whitepaper and the README!
       
       [https://github.com/hyperboria/docs](https://github.com/hyperboria/docs)

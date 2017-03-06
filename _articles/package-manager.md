@@ -44,7 +44,7 @@ This will remove a package and it's configuration files.  Use this command to re
 sudo apt install <package name>
 ```
 
-If <u>Software Updater</u>u indicates that some remote repositories can't be reached, open the <u>Software & Updates</u> program and look in the **Other Software** tab for the broken repository.  Either remove the repository, or search for the software vendor to determine what has happened to their software server.
+If <u>Software Updater</u> indicates that some remote repositories can't be reached, open the <u>Software & Updates</u> program and look in the **Other Software** tab for the broken repository.  Either remove the repository, or search for the software vendor to determine what has happened to their software server.
 
 ## Useful Programs
 

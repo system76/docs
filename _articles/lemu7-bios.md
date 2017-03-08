@@ -21,6 +21,8 @@ section: articles
 
 This BIOS update enables VT-x for virtualization on your Lemur.  These instructions only apply to the Lemur 7. They do not apply to any other model of computer we sell. **If you have a BIOS/UEFI password set, clear it prior to updating your BIOS.**
 
+This will update your BIOS to version 1.05.03SA3.
+
 ---
 
 ### Updating BIOS

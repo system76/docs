@@ -1,16 +1,9 @@
 
   ---
 layout: article
-title: Install CJDNS
+title: Do the thing
 description: >
-  Installing CJDNS, a Encrypted Wireless Ipv6 meshnet using public keycryptography for address allocation and a distributed hash table for routing.
-  keyword:
-   - Meshnet
-  - hyperboria
-  - encryption
-  - privacy
-  - cjdns
-  - cjdelisle
+  A more descriptive sentence or two about the page; will show up in search engines and on the support home page.
 image: https://system76.com/images/foo.jpg
 keywords:
   - List

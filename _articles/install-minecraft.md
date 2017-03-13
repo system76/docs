@@ -40,6 +40,11 @@ wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 Now run the file! Log in with your username and password and start playing!
 # Arch Linux
 The easiest way with all dependencies to install is from the AUR package ```minecraft```, then launch from the command ```minecraft```. Note thst it requires ```xorg-xrandr```. See more at the [ArchWiki Minecraft Page](https://wiki.archlinux.org/index.php/minecraft).
+If you wish to manually install, do ```pacman -S jre8-openjdk``` and [download the launcher](https://minecraft.net/en-us/download/) or...
+
+```bash
+wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+```
 
 # Fedora
 Minecraft is not avaliable through rpm so we cannot really do it automatically. First, let's get java.

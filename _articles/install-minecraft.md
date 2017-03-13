@@ -55,3 +55,22 @@ Now we can get the minecraft jar file and run it!
 ```bash
 wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 ```
+But wait, aren't you that cool kid? Then we set up a desktop app! This step is 100% optional.
+```bash
+$ sudo mkdir -p /opt/minecraft/bin
+$ sudo wget -O /opt/minecraft/bin/Minecraft.jar http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+$ sudo chown -R <your username>:<your username> /opt/minecraft
+```
+After that, the minecraft jar can be executed from the opt directory.We then set the file ```sudo gedit /usr/share/applications/minecraft.desktop```.
+```
+Desktop Entry]
+Categories=Game;ActionGame;AdventureGame;
+Exec=java -jar /opt/minecraft/bin/Minecraft.jar
+Path=/opt/minecraft/bin/
+Icon=minecraft.png
+Terminal=false
+Type=Application
+Name=Minecraft
+Comment=The world's most exciting block simulator, now on Fedora!
+```
+Now we are ready to rock and roll!

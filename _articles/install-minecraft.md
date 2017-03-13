@@ -48,5 +48,5 @@ sudo dnf install java-1.8.0-openjdk
 ```
 Now we can get the minecraft jar file and run it!
 ```bash
-http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 ```

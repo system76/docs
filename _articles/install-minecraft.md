@@ -13,9 +13,9 @@ section: articles
 ---
 
 
-  Alright! Hitch on, choose your distro, and lets go on! This tutorial consists of debian and Ubuntu based instructions as well as arch linux, fedora (rdd, and opensuse.
+  Alright! Hitch on, choose your distro, and lets go on! This tutorial consists of debian and Ubuntu based instructions as well as arch linux, fedora, and opensuse.
   
-  # Debian and Ububtu 
+# Debian and Ubuntu
   
   First, you will need Java runtime. 
   
@@ -31,10 +31,12 @@ sudo apt-add-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
 ```
-You will then sownload the launcher. Go to the minecraft.net page to download or...
+You will then download the launcher. Go to the [minecraft.net page to download](https://minecraft.net/en-us/download/) or...
 
 ```bash
-http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 ```
 
-Now run the file! Log in with your username and passwors and start playing!
+Now run the file! Log in with your username and password and start playing!
+# Arch Linux
+Easiest way with all dependencies to install is from the AUR package ```minecraft```, then launch from the command ```minecraft```

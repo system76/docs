@@ -13,7 +13,7 @@ section: articles
 ---
 
 
-  Alright! Hitch on, choose your distro, and lets go on! This tutorial consists of debian and Ubuntu based instructions as well as arch linux, fedora, and opensuse.
+  Alright! Hitch on, choose your distro, and lets go on! This tutorial consists of debian and Ubuntu based instructions as well as arch linux, and fedora,
   
 # Debian and Ubuntu
   
@@ -39,4 +39,14 @@ wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 
 Now run the file! Log in with your username and password and start playing!
 # Arch Linux
-Easiest way with all dependencies to install is from the AUR package ```minecraft```, then launch from the command ```minecraft```
+The easiest way with all dependencies to install is from the AUR package ```minecraft```, then launch from the command ```minecraft```. Note thst it requires ```xorg-xrandr```. See more at the [ArchWiki Minecraft Page](https://wiki.archlinux.org/index.php/minecraft).
+
+# Fedora
+Minecraft is not avaliable through rpm so we cannot really do it automatically. First, let's get java.
+```bash
+sudo dnf install java-1.8.0-openjdk
+```
+Now we can get the minecraft jar file and run it!
+```bash
+http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+```

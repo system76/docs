@@ -31,3 +31,10 @@ sudo apt-add-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
 ```
+You will then sownload the launcher. Go to the minecraft.net page to download or...
+
+```bash
+http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+```
+
+Now run the file! Log in with your username and passwors and start playing!

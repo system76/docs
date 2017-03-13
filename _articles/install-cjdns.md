@@ -16,13 +16,7 @@ section: articles
 
 ---
 
-The biggest single consumer of power is the monitor. Up to 10% more battery life can gained simply by reducing monitor brightness. Since our laptops don't currently have an ambient light sensor, brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.  
-
-Every running program in Ubuntu consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
-
-## Useful Programs
-
-<u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. It's default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
+ of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
 
 To install TLP, run this command:
 

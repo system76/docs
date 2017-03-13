@@ -45,7 +45,8 @@ If you wish to manually install, do ```pacman -S jre8-openjdk``` and [download t
 ```bash
 wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 ```
-
+# One Click Install Redhat Family 
+Self Explanatory peeps. Just go here. [https://software.opensuse.org/package/Minecraft](https://software.opensuse.org/package/Minecraft)
 # Fedora
 Minecraft is not avaliable through rpm so we cannot really do it automatically. First, let's get java.
 ```bash

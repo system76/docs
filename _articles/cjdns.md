@@ -1,19 +1,21 @@
-
-  ---
-layout: article
-title: Do the thing
-description: >
-  A more descriptive sentence or two about the page; will show up in search engines and on the support home page.
-image: https://system76.com/images/foo.jpg
-keywords:
-  - List
-  - of
-  - keywords
-  - about
-  - this
-  - page
-  - System76
 ---
+layout: article
+title: Install cjdns
+description: 
+  Connect to the meshnet! Cjdns uses an ipv6 allocated space public key encrypted routing system to protect privacy.
+keywords:
+  - NSA
+  - Privacy
+  - CJDNS
+  - meshnet
+  - hyperboria
+  - encryption
+  - github
+hidden: false
+section: articles
+
+---
+
 
   See more at the Whitepaper and the README!
       

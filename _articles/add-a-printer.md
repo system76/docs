@@ -40,3 +40,9 @@ sudo apt install --reinstall cups cups-client
 ```
 
 This will reinstall <u>CUPS</u>, the main printing software, which can help with generic issues.
+
+```
+sudo apt install --reinstall system-config-printer-*
+```
+
+This will reinstall the system control panel if the settings are not available.

@@ -22,3 +22,12 @@ section: articles
   ```bash
    sudo apt-get install openjdk-8-jre
    ```
+   
+So, you want oracle runtime instead? But.... fine....
+Get the repository and install the apk.
+```bash
+
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```

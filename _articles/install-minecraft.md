@@ -13,4 +13,12 @@ section: articles
 ---
 
 
+  Alright! Hitch on, choose your distro, and lets go on! This tutorial consists of debian and Ubuntu based instructions as well as arch linux, fedora (rdd, and opensuse.
   
+  # Debian and Ububtu 
+  
+  First, you will need Java runtime. 
+  
+  ```bash
+   sudo apt-get install openjdk-8-jre
+   ```

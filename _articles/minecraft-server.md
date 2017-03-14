@@ -8,6 +8,8 @@ keywords:
   - Mojang
   - Games
   - Server
+  - Multiplayer
+  - Notch
 hidden: false
 section: articles
 

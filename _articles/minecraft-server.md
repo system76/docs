@@ -33,3 +33,5 @@ sudo apt-get install openjdk-7-jre
 ```bash
 pacman -S jre8-openjdk
 ```
+## Installation and Configuration
+Suggest Getting Screen for your distro too.

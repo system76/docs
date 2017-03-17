@@ -36,3 +36,21 @@ sudo apt-get install openjdk-7-jre screen
 pacman -S jre8-openjdk screen
 ```
 ## Installation and Configuration
+
+Now let's make a directory, because it's about to get messy.
+```
+mkdir minecraft && cd minecraft
+```
+
+Now let's get's get the latest version. You can update your server by stopping it, downloading the new server, and restarting it. You can download the latest version at [mcversions.net](https://mcversions.net) There are two types of servers, snapshot and stable.
+```
+wget -O THE_URL.RANSOM.jar
+```
+Now we make a bash startup script. If it crashes, it auto restarts.
+
+```bash
+while :
+java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+done
+```
+

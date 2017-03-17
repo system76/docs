@@ -46,11 +46,18 @@ Now let's get's get the latest version. You can update your server by stopping i
 ```
 wget -O THE_URL.RANSOM.jar
 ```
-Now we make a bash startup script. If it crashes, it auto restarts.
+Now we make a bash startup script. If it crashes, it auto restarts. Let's name it ```start.sh```
 
 ```bash
 while :
-java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
+java -Xmx1024M -Xms1024M -jar THE_URL.RANSOM.jar nogui
 done
 ```
 
+We can start the server with ```screen -S start.sh``` and exit the window with ```CTRL + A ``` then push ```D``` Directly after. This causes it to run in the background. We can resume it using ```screen -r``` to view the avaliable screens, then ```screen -r PID``` to get back in.
+
+The server will crash on the first run, so first change the eula.txt text from ```eula=false``` to ```eula.true``` and save.
+
+Then, Re-start by stopping the server and restarting.
+We can also configure the world and other settings in ```server.properties```
+For more info, [see the Minecraft Wiki on this issue.](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server).

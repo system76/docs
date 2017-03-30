@@ -39,6 +39,10 @@ Router settings also cause problems. Try adjusting your access point to these se
 
 ### Advanced Troubleshooting
 
+If the above steps aren't working, or you would like to fine tune and improve you connection, see the following steps.
+
+#### Regulatory Domain
+
 In many cases, it's recommended to explicitly set the WiFi regulatory domain. Check yours with this command:
 
 ```
@@ -59,7 +63,11 @@ Change the last line to read:
 
 Save and close the text editor.
 
+#### IPv6
+
 Unless specifically required, you can set IPv6 to Ignore in Network Manager. Go to **System Settings** → **Network** and click the orange arrow next to your network, then click **Settings** → **IPv6 Settings** → **Automatic** to **Ignore**.
+
+#### Antenna Aggregation
 
 If these changes do not help, you can try enabling antenna aggregation:
 
@@ -78,7 +86,17 @@ Then, add this line to the bottom (effective upon reboot):
 
 > options iwlwifi 11n_disable=8
 
-Also, you can try disabling N mode completely by using `11n_disable=1` in the previous settings. N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available to the Internet is less than N speeds.
+#### N Mode
+
+You can try disabling N mode completely by using `11n_disable=1` in the previous settings. N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available to the Internet is less than N speeds.
+
+#### Bluetooth Coexistence
+
+If you have trouble with a Bluetooth headset and keeping a steady downlink speed, try disabling Bluetooth coexistence in the configuration file above:
+
+> options iwlwifi bt_coex_active=0
+
+#### Power Management
 
 Another way to help with Wifi issues is to turn off power management for the hardware. To do so, edit the configuration file with this command:
 

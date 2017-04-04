@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Problems With Graphical Corruption After Suspend
+title: Problems With Graphical Artifacts After Suspend
 description: >
   With NVIDIA driver 375.39 and 378.13 resuming from suspend in Unity causes graphical issues.
 keywords:
@@ -9,6 +9,7 @@ keywords:
   - Corruption
   - Suspend
   - Resume
+  - Artifacts
 hidden: false
 section: solutions
 
@@ -52,6 +53,12 @@ And make it executible with this command:
 
 ```
 sudo chmod +x /lib/systemd/system-sleep/resetcompiz
+```
+
+If restarting <u>Compiz</u> doesn't solve the issue, the X windows session can be restarted.  Use this command to restart the session, which is faster than restarting your computer (this will close all open windows):
+
+```
+sudo systemctl restart lightdm
 ```
 
 We suspect that <u>Compiz</u> is largely responsible for this issue.  As another option, other desktop environments that we've tested, including <u>Cinnamon</u>, <u>MATE</u>, and <u>XFCE</u>, don't have these problems.  Take a look at the other environments, and try running a different one:

@@ -99,7 +99,7 @@ And then text can continue.  Wrap all commands in full length blocks.  For lots 
 ```
 Lots of commands
 Here
-Run this shit
+Run this
 ```
 
 <small>\*This is a small note</small>

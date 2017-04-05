@@ -12,12 +12,15 @@ layout: default
             <h2>Articles:</h2>
 
             <ul>
-                {% for article in site.articles %}
-                {% if article.title %}
-                <li>
-                    <a class="page-link" href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
-                </li>
-                {% endif %}
+                {% assign articles = site.articles | sort:"title" %}
+                {% for article in articles %}
+                  {% if article.hidden != true %}
+                    {% if article.title %}
+                    <li>
+                        <a class="page-link" href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+                    </li>
+                    {% endif %}
+                  {% endif %}
                 {% endfor %}
             </ul>
         </nav>

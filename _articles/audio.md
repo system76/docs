@@ -54,16 +54,22 @@ This reloads all of the sound driver modules.
 pulseaudio --start
 ```
 
-This starts pulseaudio after it's been stopped.
+This starts pulseaudio after it's been stopped.  Pulseaudio will typically restart itself if killed, but this will manually start it if not.
 
 ```
 lspci -v | grep -A6 Audio
 ```
 
-This checks to see if the system is recognizing the audio hardware.
+This checks to see if the system is recognizing the audio hardware.  This will be blank if the kernel hasn't seen or initialized the audio hardware.
 
 ```
 aplay -l
 ```
 
 This command will show what the audio driver has configured for the hardware.
+
+```
+alsamixer
+```
+
+This command shows the Alsa mixer, which is at the core of the sound software.  Pulseaudio sits on top of and interacts heavily with the Alsa system.

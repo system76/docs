@@ -109,6 +109,20 @@ And change the file to read (effective upon reboot):
 > \[connection\]
 > wifi.powersave = 2
 
+## Useful Programs
+
+The program <u>wavemon</u> can be used to see info about nearby access points, such as power levels, channels, and BSSIDs.  It can be installed with this command:
+
+```
+sudo apt install wavemon
+```
+
+And run with this command:
+
+```
+sudo wavemon
+```
+
 ## Useful Commands
 
 ```

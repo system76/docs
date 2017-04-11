@@ -150,6 +150,12 @@ lspci | grep Network
 This will check if the hardware is being detected by the kernel.
 
 ```
+lsmod | grep iwlwifi
+```
+
+This will check to see if the device driver (module) is loaded.
+
+```
 sudo rm /etc/NetworkManager/system-connections/*
 ```
 

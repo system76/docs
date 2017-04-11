@@ -68,27 +68,6 @@ If it says: `cat: /dev/net/tun: No such file or directory`, create it using:
       [https://github.com/cjdelisle/cjdns/](CJDNS GITHUB)
       
       
- ### Arch:
-
-You can install cjdns by running
-
-    pacman -S cjdns
-
-If you need to build from source, everything you need can be installed like this
-
-    pacman -S nodejs git base-devel
-
-Alternatively, you may like to install via AUR from the package, `cjdns-git`.
-After Installation, The configuration file is located at `/etc/cjdroute.conf`.
-To start the service `cjdns.service`, do:
-
-        systemctl start cjdns
-
-To stop it:
-
-       systemctl stop cjdns
-
- 
 See more at the Whitepaper and the README!
       
       [https://github.com/hyperboria/docs](https://github.com/hyperboria/docs)

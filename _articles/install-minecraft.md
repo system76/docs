@@ -38,40 +38,4 @@ wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 ```
 
 Now run the file! Log in with your username and password and start playing!
-# Arch Linux
-The easiest way with all dependencies to install is from the AUR package ```minecraft```, then launch from the command ```minecraft```. Note thst it requires ```xorg-xrandr```. See more at the [ArchWiki Minecraft Page](https://wiki.archlinux.org/index.php/minecraft).
-If you wish to manually install, do ```pacman -S jre8-openjdk``` and [download the launcher](https://minecraft.net/en-us/download/) or...
 
-```bash
-wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
-```
-# One Click Install Redhat Family 
-Self Explanatory peeps. Just go here. [https://software.opensuse.org/package/Minecraft](https://software.opensuse.org/package/Minecraft)
-# Fedora
-Minecraft is not avaliable through rpm so we cannot really do it automatically. First, let's get java.
-```bash
-sudo dnf install java-1.8.0-openjdk
-```
-Now we can get the minecraft jar file and run it!
-```bash
-wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
-```
-But wait, aren't you that cool kid? Then we set up a desktop app! This step is 100% optional.
-```bash
-$ sudo mkdir -p /opt/minecraft/bin
-$ sudo wget -O /opt/minecraft/bin/Minecraft.jar http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
-$ sudo chown -R <your username>:<your username> /opt/minecraft
-```
-After that, the minecraft jar can be executed from the opt directory.We then set the file ```sudo gedit /usr/share/applications/minecraft.desktop```.
-```
-Desktop Entry]
-Categories=Game;ActionGame;AdventureGame;
-Exec=java -jar /opt/minecraft/bin/Minecraft.jar
-Path=/opt/minecraft/bin/
-Icon=minecraft.png
-Terminal=false
-Type=Application
-Name=Minecraft
-Comment=The world's most exciting block simulator, now on Fedora!
-```
-Now we are ready to rock and roll!

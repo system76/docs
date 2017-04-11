@@ -86,10 +86,14 @@ KDE is installed with:
 
 ```
 sudo apt install kubuntu-desktop
+```
+
+KDE currently has a packaging conflict which will cause the installation to fail.  Two packages need removed to complete the installation.  After the error, please run these commands to remove the packages and finish the installation:
+
+```
 sudo dpkg --purge unity-scope-gdrive account-plugin-google
 sudo apt install -f
 ```
-<small>\*KDE currently has a packaging conflict which needs those 2 packages removed to complete installation.</small>
 
 ---
 

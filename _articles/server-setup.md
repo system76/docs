@@ -36,7 +36,25 @@ In the directions below replace `IPADDRESS` with the server's IP address.
 
 ### Remote Administration
 
-From a Linux client terminal:
+To remotely administer the server, a secure shell program needs installed to accept incoming SSH connections.  Install the program with this command:
+
+```
+sudo apt install openssh-server
+```
+
+And then configure the program by editing it's settings file with this command:
+
+```
+sudo nano /etc/ssh/sshd_config
+```
+
+And to use the new settings, restart the SSH daemon with this command (or restart the server):
+
+```
+sudo systemctl restart sshd
+```
+
+Then, from another Linux client terminal:
 
 ```
 ssh oem@IPADDRESS
@@ -75,13 +93,12 @@ To change the IP address of the server, run these commands:
 
 ```
 sudo nano /etc/network/interfaces
-sudo nano /etc/resolv.conf
 ```
 
 Adjust as necessary & press <kbd>Ctrl</kbd>+<kbd>X</kbd> → <kbd>Y</kbd> → <kbd>Enter</kbd> to save.  Next, restart network services (this will drop your ssh connection):
 
 ```
-sudo /etc/init.d/networking restart
+sudo systemctl restart networking
 ```
 
 ---
@@ -95,21 +112,17 @@ Example `/etc/network/interfaces` file:
 > \# Primary Network Interface  
 > auto eth0  
 > iface eth0 inet static  
-> address 10.13.15.10  
-> netmask 255.255.255.0  
-> gateway 10.13.15.254  
+>   address 10.13.15.10  
+>   netmask 255.255.255.0  
+>   gateway 10.13.15.1  
+>   dns-nameservers 8.8.8.8 8.8.4.4
 >
-> \# The Secondary Network Interface  
-> auto eth1  
-> iface eth1 inet static  
-> address 10.13.15.11  
-> netmask 255.255.255.0  
-> gateway 10.13.15.254  
-
-Example /etc/resolv.conf file:
-
-> nameserver 10.13.15.1  
-> nameserver 10.13.15.2  
+> auto eth1
+> iface eth1 inet static
+>   address 10.13.15.11
+>   netmask 255.255.255.0
+>   gateway 10.13.15.1
+>   dns-nameservers 8.8.8.8 8.8.4.4
 
 ---
 

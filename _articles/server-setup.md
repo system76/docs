@@ -108,21 +108,21 @@ Example `/etc/network/interfaces` file:
 > \# This is the loopback interface - Do not adjust  
 > auto lo  
 > iface lo inet loopback  
-> 
+>
 > \# Primary Network Interface  
 > auto eth0  
 > iface eth0 inet static  
 >   address 10.13.15.10  
 >   netmask 255.255.255.0  
 >   gateway 10.13.15.1  
->   dns-nameservers 8.8.8.8 8.8.4.4
+>   dns-nameservers 8.8.8.8 8.8.4.4  
 >
-> auto eth1
-> iface eth1 inet static
->   address 10.13.15.11
->   netmask 255.255.255.0
->   gateway 10.13.15.1
->   dns-nameservers 8.8.8.8 8.8.4.4
+> auto eth1  
+> iface eth1 inet static  
+>   address 10.13.15.11  
+>   netmask 255.255.255.0  
+>   gateway 10.13.15.1  
+>   dns-nameservers 8.8.8.8 8.8.4.4  
 
 ---
 

@@ -49,14 +49,14 @@ And insert the following:
 
 > #!/bin/sh
 >
-> \# This file (or a link to it) must be in the folder /lib/systemd/system-sleep/
-> \# Purpose: Kill Compiz after system wakes up from sleep.
-> \# This will fix bad window borders caused by Nvidia driver 375.39.
+> \# This file (or a link to it) must be in the folder /lib/systemd/system-sleep/  
+> \# Purpose: Kill Compiz after system wakes up from sleep.  
+> \# This will fix bad window borders caused by Nvidia driver 375.39.  
 >
-> kill $(ps -C compiz -o pid=)
-> BACKGROUND=$(gsettings get org.gnome.desktop.background picture-uri)
-> gsettings set org.gnome.desktop.background picture-uri ''
-> gsettings set org.gnome.desktop.background picture-uri $BACKGROUND
+> kill $(ps -C compiz -o pid=)  
+> BACKGROUND=$(gsettings get org.gnome.desktop.background picture-uri)  
+> gsettings set org.gnome.desktop.background picture-uri ''  
+> gsettings set org.gnome.desktop.background picture-uri $BACKGROUND  
 
 And make it executable with this command:
 

@@ -10,6 +10,7 @@ keywords:
     - Bottom
     - Left
     - Moving
+image: http://support.system76.com/images/system76.png
 hidden: false
 redirect_from:
   - /moveLauncher

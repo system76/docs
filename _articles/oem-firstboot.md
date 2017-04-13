@@ -10,6 +10,7 @@ keywords:
   - Guest Session
   - OEM
   - First boot
+image: http://support.system76.com/images/system76.png
 hidden: false
 section: articles
 

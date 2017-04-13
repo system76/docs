@@ -9,6 +9,7 @@ keywords:
   - won't boot
   - won't post
   - hardware
+image: http://support.system76.com/images/system76.png
 hidden: false
 section: faq
 

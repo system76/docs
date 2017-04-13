@@ -10,6 +10,7 @@ keywords:
   - password
   - NVIDIA
   - Plymouth
+image: http://support.system76.com/images/system76.png
 hidden: false
 section: solutions
 

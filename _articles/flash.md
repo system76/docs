@@ -16,6 +16,7 @@ keywords:
   - videos
   - restricted
   - System76
+image: http://support.system76.com/images/system76.png
 hidden: false
 redirect_from:
   - /chromeFlash

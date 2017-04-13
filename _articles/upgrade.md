@@ -7,8 +7,10 @@ keywords:
   - Ubuntu 16.04
   - Ubuntu 16.04.1
   - Ubuntu 16.10
+  - Ubuntu 17.04
   - Yakkety Yak
   - Xenial Xerus
+  - Zesty Zapus
   - LTS
   - Point Release
   - Upgrade
@@ -16,7 +18,7 @@ keywords:
   - Release
   - System76
   - apt
-image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-10/16-c1f27f8de8.10.jpg
+image: http://support.system76.com/images/upgrade/Ubuntu-17-04.jpg
 hidden: false
 section: faq
 

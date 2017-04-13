@@ -9,6 +9,7 @@ keywords:
   - NVIDIA
   - screen timeout
   - blank screen
+image: http://support.system76.com/images/system76.png
 hidden: true
 section: solutions
 

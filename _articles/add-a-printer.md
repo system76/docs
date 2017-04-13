@@ -8,6 +8,7 @@ keywords:
   - Printing
   - Printer
   - System76
+image: http://support.system76.com/images/system76.png
 hidden: false
 section: articles
 

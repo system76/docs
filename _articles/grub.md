@@ -37,13 +37,13 @@ Laptops  | Desktops
 -------- | --------
 Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
-Choose **try ubuntu without installing**. Next, open a terminal (search <u>Terminal</u> from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following command:
+Choose **try ubuntu without installing**. Once the desktop is shown, connect the computer to the Internet.  Next, open a terminal (search <u>Terminal</u> from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following command:
 
 ```
 sudo parted -ls
 ```
 
-And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. 
+And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectfully. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. 
 
 ---
 
@@ -55,28 +55,24 @@ If `boot, esp` is listed under `flags`, the system is installed in UEFI mode.  R
 
 ```
 sudo mkdir -p /mnt/boot/efi
-sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 sudo mount /dev/nvme0n1p2 /mnt
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
+sudo mount /dev/nvme0n1p1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-sudo grub-install --recheck
-sudo update-grub
+apt install --reinstall grub-efi-amd64
 ```
 
 #### For SATA Drives:
 
 ```
 sudo mkdir -p /mnt/boot/efi
-sudo mount /dev/sda1 /mnt/boot/efi
 sudo mount /dev/sda2 /mnt
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
+sudo mount /dev/sda1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-sudo grub-install --recheck
-sudo update-grub
+apt install --reinstall grub-efi-amd64
 ```
 
 ---
@@ -89,24 +85,20 @@ If `bios_grub` is listed under `flags`, the system is installed in BIOS mode.  R
 
 ```
 sudo mount /dev/nvme0n1p2 /mnt
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
+for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-sudo grub-install /dev/nvme0n1 --recheck
-sudo update-grub
+apt install --reinstall grub-efi-amd64
 ```
 
 #### For SATA Drives:
 
 ```
 sudo mount /dev/sda2 /mnt
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
+for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-sudo grub-install /dev/sda --recheck
-sudo update-grub
+apt install --reinstall grub-efi-amd64
 ```
 
 ---

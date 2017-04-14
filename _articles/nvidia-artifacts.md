@@ -24,7 +24,7 @@ Here is more info about the security vulnerabilities fixed:
 
 While it is possible to downgrade, it's not recommended due to the nature of the security issues. NVIDIA is planning an updated release to fix the issue, which will be released in May, '17.
 
-We've developed a solution that we will be releasing in a few days, and will provide on this page after we've released the fix in our System76 driver (to prevent conflicts).
+We've developed a solution that has been released in our driver.  Please run updates to get the current system76 driver for this fix.
 
 As another option, other desktop environments that we've tested, including <u>Cinnamon</u>, <u>MATE</u>, and <u>XFCE</u>, don't have this issue.  Take a look at the other environments, and try running a different one:
 

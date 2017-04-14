@@ -46,12 +46,12 @@ layout: default
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="other">Articles</h1>
+			<h1 id="articles">Articles</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns support-excerpts other-articles">
+		<div class="small-12 columns support-excerpts articles">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
@@ -87,7 +87,7 @@ layout: default
 								{{ article.description | markdownify }}
 								{% if article.more %}
 								{% endif %}
-						</article>
+						  </article>
 					{% endif %}
 				{% endif %}
 			{% endfor %}

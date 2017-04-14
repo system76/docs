@@ -28,9 +28,13 @@ The choice to upgrade depends on how you're using your computer. Ubuntu has two 
 
 For many users, the LTS release is the best option, combining regular updates with a strong foundation. Users who are interested in new and interesting features can choose the Standard releases, which have a shorter lifespan.
 
-### Versions Available
+### Information
 
-A current list of Ubuntu releases can be found here on the [Ubuntu Wiki](https://wiki.ubuntu.com/Releases).
+For more information about releases and how long they are supported for, please see the [Ubuntu Release Wiki](https://wiki.ubuntu.com/Releases).
+
+For more information about what end of life means, please see the [End of Life](https://www.ubuntu.com/info/release-end-of-life) document.
+
+For more information on LTS support and the Hardware Enablement Stack, please the the [HWE Wiki](https://wiki.ubuntu.com/Kernel/LTSEnablementStack). 
 
 ### Preparing For Upgrade
 

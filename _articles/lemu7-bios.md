@@ -28,11 +28,11 @@ This will update your BIOS to version 1.05.14RSA4/EC 1.05.02SA3.
 
 ### Prerequisites
 
-1. If you have a BIOS/UEFI password set, clear it prior to updating. This can be done by editing your Supervisor/Boot passwords and pressing <kbd>Enter</kbd> when prompted for a new password.
+1. If you have a BIOS password set, clear this prior to updating. This can be done by holding down <kbd>F2</kbd> when you computer starts, and going to the <u>Security</u> tab.  Press <kbd>Enter</kbd> on the Supervisor/Boot passwords, and press <kbd>Enter</kbd> when prompted for a new password.  This password is not the same as the user account password in Ubuntu.  This is the hardware level, BIOS password, that needs cleared.
 
 2. Remove all external USB drives and devices.
 
-3. Ensure your computer is set to boot with UEFI enabled in the Boot menu.
+3. Ensure your computer is set to boot with UEFI mode enabled in the Boot menu.  If the computer has not been changed to Legacy boot mode in the BIOS, then UEFI boot is the default setting.  UEFI boot mode does not show a System76 logo when the computer first starts, while BIOS mode does.
 
 ### Updating BIOS
 

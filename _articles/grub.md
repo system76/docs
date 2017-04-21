@@ -61,7 +61,7 @@ sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-apt install --reinstall grub-efi-amd64
+apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 ```
 
 #### For SATA Drives:
@@ -73,7 +73,7 @@ sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-apt install --reinstall grub-efi-amd64
+apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 ```
 
 ---
@@ -89,7 +89,7 @@ sudo mount /dev/nvme0n1p2 /mnt
 for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-apt install --reinstall grub-efi-amd64
+apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 ```
 
 #### For SATA Drives:
@@ -99,7 +99,7 @@ sudo mount /dev/sda2 /mnt
 for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-apt install --reinstall grub-efi-amd64
+apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 ```
 
 ---

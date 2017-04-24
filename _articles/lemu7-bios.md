@@ -36,27 +36,29 @@ This will update your BIOS to version 1.05.14RSA4/EC 1.05.02SA3.
 
 ### Updating BIOS
 
-1. Download the [lemu7.zip](/files/firmware/lemu7-bios.zip) file, unzip it, and put all of the files on the root of a MBR FAT32 formatted USB flash drive.
+1. Format a USB drive with MBR (msdos) FAT32 formating.  To format a USB drive, use the built-in program <u>Disks</u> or the installable program <u>Gparted</u>.  Do not use <u>UNetbootin</u> as it adds additional files that are not needed.  Make sure the USB drive is clean before extracting the archive to the drive.
 
-2. Connect AC power to the laptop. AC power is required to update.
+2. Download the [lemu7.zip](/files/firmware/lemu7-bios.zip) file, double click the file to open it, click **Extract**, and choose the USB drive as the destination. 
 
-3. Restart your Lemur and hold <kbd>F7</kbd> during boot.  Choose the USB drive from the boot menu.
+3. Connect AC power to the laptop. AC power is required to update.
 
-4. At the prompt, type in `fs1:` and press <kbd>Enter</kbd> (this switches to the USB drive to run the updates).
+4. Restart your Lemur and hold <kbd>F7</kbd> during boot.  Choose the USB drive from the boot menu.  It will be labeled as the brand of USB drive, such as Sandisk or Cuzer.
 
-5. Type in `meset` and press <kbd>Enter</kbd>.  This unlocks the ME for flashing.  The computer will turn off and reboot.  The fans will be at 100% for the next steps.  If they are not, please plug in AC power and try again.
+5. At the prompt, type in `fs1:` and press <kbd>Enter</kbd> (this switches to the USB drive to run the updates).
 
-6. Hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
+6. Type in `meset` and press <kbd>Enter</kbd>.  This unlocks the ME for flashing.  The computer will turn off and reboot.  The fans will be at 100% for the next steps.  If they are not, please plug in AC power and try again.
 
-7. Type in `flashme` and press <kbd>Enter</kbd>.  This will flash the ME, and then the BIOS.  The computer will then turn off.
+7. Hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
 
-8. Hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
+8. Type in `flashme` and press <kbd>Enter</kbd>.  This will flash the ME, and then the BIOS.  The computer will then turn off.
 
-9. Type in `ecflash` and press <kbd>Enter</kbd>.  This will flash the EC.  The computer will turn off.
+9. Power the computer on and hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
 
-10. Hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
+10. Type in `ecflash` and press <kbd>Enter</kbd>.  This will flash the EC.  The computer will then turn off.
 
-11. Type in `eol` and press <kbd>Enter</kbd>.  This will lock the ME again.  The computer will turn off.
+11. Power the computer on and hold <kbd>F7</kbd> to boot from USB again.  Type in `fs1:` and press <kbd>Enter</kbd>.
+
+12. Type in `eol` and press <kbd>Enter</kbd>.  This will lock the ME and turn the computer off.
 
 Enjoy using your Lemur with the fancy new BIOS!
 

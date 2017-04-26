@@ -72,7 +72,7 @@ Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, ne
 Then they can be installed with this command:
 
 ```
-sudo dpkg -i linux-firmware_1.161.1_all.deb
+sudo dpkg -i linux-firmware_1.164.1_all.deb
 ```
 
 #### File Transfer

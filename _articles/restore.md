@@ -106,7 +106,7 @@ sudo apt install system76-driver-nvidia
 
 #### If 'nomodeset' Was Used
 
-The nomodeset modifier needs removed after installing the NVIDIA driver. Please run this command to edit the startup options file:
+The nomodeset modifier needs to be removed after installing the NVIDIA driver. Please run this command to edit the startup options file:
 
 ```
 sudo gedit /etc/default/grub

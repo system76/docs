@@ -59,6 +59,12 @@ pactl load-module module-bluetooth-discover
 
 This will load the PulseAudio module responsible for Bluetooth Audio.  Typically, it's loaded by default, but sometimes a manual loading can get Bluetooth headsets working again.
 
+```
+sudo btmon
+```
+
+This will show all Bluetooth related messages.  Try leaving this command running while pairing or using a device to see any error messages or failures.
+
 ## Additional Info
 
 Here are a few addition tidbits about the Bluetooth system that may help with troubleshooting.

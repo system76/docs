@@ -23,7 +23,7 @@ When you connect a non-HiDPI display to your HiDPI laptop, the System76 driver w
 
 This dialog appears whenever the driver detects a new mixed-DPI configuration:
 
-![DIALOG SCREENSHOT] (/images/hidpi-multi-monitor/dialog.png)
+![DIALOG SCREENSHOT](/images/hidpi-multi-monitor/dialog.png)
 
 You can keep the changes or revert if you'd prefer to keep each display at its native resolution.  Most of the time you'll want to Keep Changes, but there are a few cases where the Revert option is useful....
 

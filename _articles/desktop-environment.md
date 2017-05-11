@@ -160,7 +160,7 @@ GNOME:
 
 > greeter-session=lightdm-gtk-greeter  
 
-#### Change Default Desktop Environment
+#### Change Automatic Login Environment
 
 After installing multiple desktop environments, a default can be set for automatic login with this command:
 

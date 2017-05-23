@@ -40,23 +40,3 @@ sudo apt install cuda
 ```
 
 Now reboot your system so that the new NVIDIA driver takes effect.
-
-### Compile The CUDA Samples
-
-You'll need to copy the CUDA samples source code to a writable location and
-then compile it, which you can do like this:
-
-```
-mkdir ~/cuda-samples
-cp -r /usr/local/cuda-8.0/samples/ ~/cuda-samples
-cd ~/cuda-samples/
-make
-```
-
-And then you can run, for example, the <u>smokeParticles</u> sample like this:
-
-```
-./bin/x86_64/linux/release/smokeParticles
-```
-
-![smokeParticles](/images/cuda/4_smokeParticles.png)

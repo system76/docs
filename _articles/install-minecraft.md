@@ -24,7 +24,7 @@ Alright! Hitch on, choose your distro, and lets go on! This tutorial consists of
    ```
    
 So, you want oracle runtime instead? But.... fine....
-Get the repository and install the apk.
+Get the repository and install the package.
 ```bash
 
 sudo apt-add-repository ppa:webupd8team/java

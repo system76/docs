@@ -26,7 +26,7 @@ System76 computers use a standard Ubuntu installation disc and the System76 Driv
 
 #### Oryx Pro (oryp2) Touchpad
 
-On our second generation Oryx Pro (oryp2), the Sytem76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
+On our second generation Oryx Pro (oryp2), the System76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
 #### Recent Upgrade
 

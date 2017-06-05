@@ -24,7 +24,7 @@ sudo apt update -m
 sudo dpkg --configure -a
 sudo apt install -f
 sudo apt dist-upgrade
-sudo apt autoremove
+sudo apt autoremove --purge
 ```
 
 Sometimes, you may see some packages that are still broken and need to be installed manually or purged manually.  There may be broken dependencies or cyclical dependencies.  If so, these commands can help:

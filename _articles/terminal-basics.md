@@ -69,6 +69,13 @@ sudo apt upgrade
 This command will download and apply any updates to your System76 computer.
 
 ```
+sudo apt full-upgrade
+```
+
+This command will upgrade your packages and installs or remove packages to resolve dependencies so everything is up-to-date.
+
+
+```
 sudo apt install [application]
 ```
 

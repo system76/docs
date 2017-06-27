@@ -101,6 +101,10 @@ $color-carnation: $carnation;
 }
 
 #page-title {
+  a {
+    color: inherit;
+  }
+    
   .button {
     display: block;
     margin: 1em auto 0.5em;
@@ -121,10 +125,6 @@ $color-carnation: $carnation;
       margin: 0;
       position: relative;
       top: -2px;
-    }
-      
-    a {
-      color: inherit;
     }
 
     i {

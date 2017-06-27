@@ -122,6 +122,10 @@ $color-carnation: $carnation;
       position: relative;
       top: -2px;
     }
+      
+    a {
+      font-color: inherit;
+    }
 
     i {
       font-size: 1.5em;

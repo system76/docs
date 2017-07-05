@@ -57,7 +57,7 @@ When you're all done, fill out the "Commit changes" form at the bottom with the 
 
 ### Index page
 
-Articles will only show up under the section they are configured for.  To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `section: faq` in its frontmatter.  To get it to show up under **Known Solutions**, set `section: solutions`, and to get into the the **Articles** section, set `section: articles`.
+Articles will only show up under the section they are configured for. To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `section: faq` in its frontmatter. To get it to show up under **Known Solutions**, set `section: solutions`, and to put it in the **Articles** section, set `section: articles`.
 
 
 ## 2. Files, Images, & Links
@@ -69,7 +69,7 @@ To store files (i.e. BIOS updates), put them in the `/files` folder. If it's a B
 
 ### Images & Links
 
-When linking to files or images, prepend the link with `{{site.baseurl}}`, i.e. `{{site.baseurl}}/files/firmware/meer1-0358.bio.zip`. This will ensure links will continue to work even if we move the docs site elsewhere.
+When linking to files or images, prepend the link with `{{site.baseurl}}`, i.e. `{{site.baseurl}}/files/firmware/meer1-0358.bio.zip`. This ensures links continue to work even if we move the docs site elsewhere.
 
 
 ## 3. More advanced stuff
@@ -80,7 +80,7 @@ The Ubuntu logo can be included in a doc using the following span:
 <span class="fl-ubuntu-inverse"></span>
 ```
 
-This is capable of being embedded in other Markdown and Tags, for example, you can create an Ubuntu Key item as follows:
+You can embed this in other Markdown and Tags, for example, you can create an Ubuntu (Super) key:
 
 ```html
 <kbd><span class="fl-ubuntu-inverse"></span></kbd>

@@ -1,13 +1,11 @@
-System76 Support Docs
-=====================
+# System76 Support Docs
 
 The docs system is powered by [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). If you don't know what Markdown is (or need a refresher), take a minute to look over [the basics](https://help.github.com/articles/markdown-basics/).
 
 It is also powered by GitHub itself. If you know how to use git locally with GitHub, feel free to update the docs that way. Otherwise, we'll assume you will be using the GitHub website to update the docs.
 
 
-1. The Basics
--------------
+## 1. The Basics
 
 The docs articles are stored as Markdown files under [/_articles/](https://github.com/system76/docs/tree/gh-pages/_articles). For example, take a look at [/_articles/upgrade.md](https://github.com/system76/docs/blob/gh-pages/_articles/upgrade.md). You can use the GitHub website itself to navigate to, create, edit, and delete pages.
 
@@ -62,8 +60,7 @@ When you're all done, fill out the "Commit changes" form at the bottom with the 
 Articles will only show up under the section they are configured for.  To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `section: faq` in its frontmatter.  To get it to show up under **Known Solutions**, set `section: solutions`, and to get into the the **Articles** section, set `section: articles`.
 
 
-2. Files, Images, & Links
--------------------------
+## 2. Files, Images, & Links
 
 ### Files
 
@@ -75,8 +72,7 @@ To store files (i.e. BIOS updates), put them in the `/files` folder. If it's a B
 When linking to files or images, prepend the link with `{{site.baseurl}}`, i.e. `{{site.baseurl}}/files/firmware/meer1-0358.bio.zip`. This will ensure links will continue to work even if we move the docs site elsewhere.
 
 
-3. More advanced stuff
-----------------------
+## 3. More advanced stuff
 
 The Ubuntu logo can be included in a doc using the following span:
 

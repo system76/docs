@@ -25,7 +25,7 @@ For this Tutorial, We will be using openjdk and a command line window separator 
 
 ##### Fedora / RHEL / CentOS
 
-To install OpenJDK: Do 
+To install OpenJDK:  
 
 ```
 sudo yum install java-1.8.0-openjdk screen
@@ -68,7 +68,7 @@ java -Xmx1024M -Xms1024M -jar THE_URL.RANSOM.jar nogui
 done
 ```
 
-We can start the server with `screen -S start.sh` and exit the window with `CTRL + A` then push `D` Directly after. This causes it to run in the background. We can resume it using `screen -r` to view the available screens, then `screen -r PID` to get back in.  
+We can start the server with `screen -S start.sh` and exit the window with <kbd>CTRL + A</kbd> then push <kbd>D</kbd> directly after. This causes it to run in the background. We can resume it using `screen -r` to view the available screens, then `screen -r PID` to get back in.  
 
 The server will crash on the first run, so first change the eula.txt text from `eula=false` to `eula.true` and save.  
 

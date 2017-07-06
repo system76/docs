@@ -59,15 +59,11 @@ Run it:
 
 [www.minetest.net/customize](http://www.minetest.net/customize/)
 
-The game only comes with a default subgame.  
-To play single player with more features, add a subgame or mod!  
-To add textures, `cd textures and do a git clone of a texture pack or put one in!  
+The game only comes with a default subgame. To play single player with more features, add a subgame or mod!  To add textures, `cd textures` and do a git clone of a texture pack or put one in!  
 
-## Connecting to servers:
+## Connecting to servers
 
-To connect to a server, choose one from the list, then choose a username and password on the right side of the screen.  
-The server will then connect.  The next time you use the server, simply put in the same username and password!  
-Custom mods are automatically loaded, so no fuss is needed.  
+To connect to a server, choose one from the list, then choose a username and password on the right side of the screen.  The server will then connect.  The next time you use the server, simply put in the same username and password!  Custom mods are automatically loaded, so no fuss is needed.
 
 ## Resources
 

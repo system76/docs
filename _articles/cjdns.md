@@ -63,10 +63,14 @@ Now that we have that, we can configure it in nano /etc/cjdroute.conf and enable
 systemctl enable cjdns
 systemctl start cjdns
 ```
-      
+
 You will connect automatically with wifi, but you can peer over the internet too!
 See more at the Whitepaper and the README!
 
 [https://github.com/hyperboria/docs](https://github.com/hyperboria/docs)
 [CJDNS Whitepaper](https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md)
 [CJDNS GITHUB](https://github.com/cjdelisle/cjdns/)
+
+---
+
+This article was contributed by [kylerschin](https://github.com/kylerschin).

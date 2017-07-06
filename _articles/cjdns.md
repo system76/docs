@@ -33,15 +33,15 @@ cd cjdns
 ./do
 ```
 
-Now, check  bash `./cjdroute`
-Make sure you got the swag.
+Now, check `bash ./cjdroute`  
+Make sure you got the swag.  
 
 ```
 LANG=C cat /dev/net/tun
 ```
 
-If it says: `cat: /dev/net/tun: File descriptor in bad state` Good!
-If it says: `cat: /dev/net/tun: No such file or directory`, create it using:
+If it says: `cat: /dev/net/tun: File descriptor in bad state` Good!  
+If it says: `cat: /dev/net/tun: No such file or directory`, create it using:  
 
 ```
 sudo mkdir -p /dev/net &&
@@ -67,9 +67,9 @@ systemctl start cjdns
 You will connect automatically with wifi, but you can peer over the internet too!
 See more at the Whitepaper and the README!
 
-[https://github.com/hyperboria/docs](https://github.com/hyperboria/docs)
-[CJDNS Whitepaper](https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md)
-[CJDNS GITHUB](https://github.com/cjdelisle/cjdns/)
+[github.com/hyperboria/docs](https://github.com/hyperboria/docs)  
+[CJDNS Whitepaper](https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md)  
+[CJDNS GITHUB](https://github.com/cjdelisle/cjdns/)  
 
 ---
 

@@ -32,11 +32,15 @@ Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**,
 
 ![Grub2](/images/password/grub2.png)
 
-Once in the recovery menu, choose the **root** option, then press <kbd>ENTER</kbd> to drop to a root prompt.
+At the recovery menu, choose the **root** option, then press <kbd>Enter</kbd> to drop to a root prompt.
 
 ![Recovery](/images/password/recovery.png)
 
 ### Root Prompt
+
+**A note on the root prompt:** Since the system is operating with only a single console, all output is printed to the screen. This can be really confusing, but nothing has changed -- it's just output. **If your screen looks like the image below, with a timeout notice or similar,** press Ctrl+C to return to the prompt and continue working. You will need to re-enter the command you were typing.
+
+![Timeout in recovery mode](/images/password/timeout.png)
 
 Now, type this command to make your hard drive editable:
 
@@ -53,15 +57,22 @@ ls /home
 Then, to change your password, type in this command:
 
 ```
-passwd frank
+passwd april
 ```
 
-(Change `frank` to the actual user whose password you would like to reset)
+(Change `april` to the actual user whose password you would like to reset, as seen in the output of ```ls /home```)
 
-Then type in:
+Enter a new password, then press <kbd>Enter</kbd>. Even though you are typing, no text will be displayed nor will the password be obfuscated as seen in the image below.
+
+![Full commands to reset password](/images/password/example.png)
+
+
+Enter the same password again to confirm, then press <kbd>Enter</kbd>.
+
+If successful, you will see a message confirming ```passwd: password updated successfully```
+
+You can now reboot.
 
 ```
-exit
+reboot
 ```
-
-And Select **Resume normal boot**.

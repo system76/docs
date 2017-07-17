@@ -26,7 +26,7 @@ In short, HiDPI refers to pixel doubling: drawing an image with twice as many ph
 So, why pixel doubling and not just increasing the density on a 15" display from, say, 1080p to something like 2880×1620? To get you user interface at the same physical size as on the 1080p display, you would have to scale it by 1.5×. That means a dot that is requested to be drawn at 1 virtual pixel now has to be drawn at 1.5 physical pixels.
 Half pixels don’t exist, so the software would have to compensate with aliasing. Aliasing = blurring. So with a higher resolution display, you get a blurry UI. Fonts do have mechanisms to deal with this, so it’s not an issue there, but UI elements like icons and strokes around buttons will end up looking worse on a 1.5× display than a 1× display.
 
-For a fantastic explanation on HiDPI, please read Cassidy's full series of articles available [here.]https://medium.com/elementaryos/tagged/hidpi
+For a fantastic explanation on HiDPI, please read Cassidy's full series of articles available [here.](https://medium.com/elementaryos/tagged/hidpi)
 
 ### Handling HiDPI and LoDPI simultaneously
 

@@ -1,0 +1,66 @@
+---
+layout: article
+title: Can't log in
+description: >
+  Are you getting stuck in a login loop, even though your password is correct?
+keywords:
+  - Support
+  - Guides
+  - Login
+  - Nvidia
+  - Loop
+  - Password
+  - session
+  - greeter
+image: http://support.system76.com/images/system76.png
+hidden: true
+section: articles
+
+---
+
+Sometimes after an upgrade or under certain conditions, your system might not allow you to log in. If you try logging in and Ubuntu just brings you back to the login screen even though your password was correct, you're experiencing a login loop. There are several causes for login loop:
+
+* Nvidia driver update
+* An update broke the window manager
+* Attempted to start the window manager as root
+* An issue with your user account
+
+Each cause has a different solution, and certain items (e.g., Nvidia) might not be applicable to your system. In most cases, you can drop down to a terminal (called a *tty*) to log in and fix the issue.
+
+# Switch to a terminal
+
+First, confirm that you can still log in to your user account. At the login screen, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd> to switch to a tty. You'll be prompted to enter a login. At the `login` prompt, enter your username and press <kbd>Enter</kbd>. You'll then be prompted for your password. As you type your password, it won't be displayed nor will it be obfuscated.
+
+Once you're logged in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
+
+![Login and initial prompt](/images/login-loop/login-initial.png)
+
+If you're not able to log in, there could be a few reasons:
+
+* Wrong username
+* Something is blocking the login
+* Wrong password (you're notified of this at the graphical login greeter)
+
+The easiest way to confirm your login (username) is by booting into recovery mode, starting a root shell, and running `ls` in the `/home` directory, as outlined in the [Password Reset](http://support.system76.com/articles/password/) article. If your login is correct (both username and password) then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [reinstalling Ubuntu](support.system76.com/articles/restore/) or contacting Support for more assistance.
+
+If you get logged in without issue, move on to the next steps.
+
+# Reinstalling the Nvidia driver (when applicable)
+
+If your system is equipped with Nvidia graphics, a recent update might be causing the login issues. Refer to the table below to determine if your system contains Nvidia graphics.
+
+Always        | Maybe                | Never
+:-------------|:---------------------|:-----
+Oryx Pro      | Wild Dog Pro         | Lemur
+Serval WS     | Ratel                | Gazelle
+Bonobo WS     | Galago Pro (w/ eGPU) | Kudu
+Leopard WS    |                      | Meerkat
+Silverback WS |                      |
+
+Even if your system doesn't have Nvidia graphics, there's no harm in removing the driver anyway.
+
+To remove the Nvidia drivers, run the following:
+
+```
+sudo apt purge nvidia*
+```

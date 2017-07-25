@@ -98,7 +98,7 @@ Upgrade           | Try out Ubuntu
                   
 Ubuntu will boot into the installer or send you to the familiar Ubuntu dekstop. You can install Ubuntu from the live environment.
 
-![The live disk environment](/images/live-desktop.png)
+![The live disk environment](/images/live-usb/live-desktop.png)
 
 ## Using the live environment
 

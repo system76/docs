@@ -16,7 +16,9 @@ section: faq
 
 ---
 
-Ubuntu is remakably flexible -- enough so that you can run a full version of Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) or a DVD in what's known as a *live environment.* Using a live environment (live disk) is useful for:
+## What is a live disk?
+
+Ubuntu is remakably flexible. You can run a full version of Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) or a DVD in what's known as a *live environment.* Using a live environment (live disk) is useful for:
 
 * [Determining if an issue is caused by hardware or software](http://support.system76.com/articles/hardware-failure/)
 * [Reinstalling](support.system76.com/articles/restore/) or [upgrading](http://support.system76.com/articles/upgrade/) your Ubuntu installation
@@ -44,27 +46,27 @@ Create an Installation USB | Create an Installation DVD
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
 [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
-### Advanced: Using **dd** to create a live USB
+### Advanced: Using ``dd`` to create a live USB
 
-If you have a Linux (or macOS) system available, you can create a live USB using a command line tool called `dd`. **Please note, this is an advanced method. `dd` is a simple and powerful tool which can overwrite any drive, destination, or file. Use with caution!**
+If you have a Linux system available, you can create a live USB using a command line tool called `dd`. **Please note, this is an advanced method. `dd` is a simple and powerful tool which can overwrite any drive, destination, or file. Use with caution!**
 
 Warnings aside, `dd` is safe and highly effective when used properly. Be sure to confirm your destination file `of=` before running the command. A screenshot is provided below the instructions for reference.
 
 1. Insert the USB drive
-2. Run `lsblk` to get a listing of all block-level devices and their mountpoints (`mount` is also useful)
+2. Run `lsblk` or `mount` to get a listing of all block-level devices and their mountpoints
 3. Unmount the USB with `umount /dev/[path-to-usb-drive]`
 4. Write out your `dd` command. **The following assumes the ISO is in the ~/Downloads folder and is being writing to /dev/sdf -- substitute the correct paths for your system!**
 
 ```
 sudo dd if=~/Downloads/ubuntu-17.04-desktop-amd64.iso of=/dev/sdf
 ```
-5. **Confirm the output file path `of=` is correct** -- open a new terminal if needed!
-6. If everything looks good, press <kbd>Enter</kbd> to write the ISO to disk.
+**Confirm the output file path `of=` is correct** -- open a new terminal if needed!
+
+* If everything looks good, press <kbd>Enter</kbd> to write the ISO to disk.
 
 Since `dd` is writing to a device at the block level, it requires elevated permissions via `sudo`. You will be prompted for your password.
 
-7. The ISO is a large file, and it takes several minutes to write. The system might not look like it's doing anything. Be patient!
-8. Once complete, `dd` will print a final count of blocks in/out.
+The ISO is a large file, and it takes several minutes to write. The system might not look like it's doing anything. Be patient! Once complete, `dd` will print a final count of blocks in/out.
 
 If your `dd` completes immediately, it was likely written to a file instead of to your USB drive. Confirm the `of=` destination is correct (it should be a block-level device, like /dev/sdf) and try again.
 
@@ -98,5 +100,14 @@ Ubuntu will boot into the installer or send you to the familiar Ubuntu dekstop. 
 
 ![The live disk environment](/images/live-desktop.png)
 
-## What's different about the live environment?
+## Using the live environment
 
+The list provided at the beginning of the article provides links to other articles on using the live environment for hardware testing, restoration/upgrades, and boot repair. The live environment has other purposes as well.
+
+### Recovering your normal environment
+
+Since the live environment is a full Ubuntu installation, it works just like your normal environment. There are tools that allow you to `chroot` (change root) into your normal installation and work in your normal environment to repair a broken package or installation that is preventing you from booting normally.
+
+### Backing up files
+
+Perhaps you're reinstalling, or maybe you can't boot but you want to try and recover and back up your files? The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar Files utility.

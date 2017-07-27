@@ -21,7 +21,7 @@ There is a bug in the installer program, Ubiquity, which may crash the initial s
 
 The current solution is to not join a network access point while setting up the computer for the first time. Once the desktop is reached, WiFi access points can be joined as normal. If the new user setup program crashes and leaves only a Guest account, please see these instructions for creating a new user manually:
 
-[support.system76.com/articles/oem-firstboot](http://support.system76.com/articles/oem-firstboot/)
+[Oem Firstboot](/articles/oem-firstboot/)
 
 There is a bug report filed here:
 

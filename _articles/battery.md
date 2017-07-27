@@ -98,7 +98,7 @@ And add:
 
 > sudo powertop --auto-tune
 
-above the 'exit 0' line, or add the individual tuning options.
+above the 'exit 0' line, or add the individual tuning options.  **Do not do this without testing!  Several auto-tune settings will create system instability!**
 
 ## Useful Commands
 

@@ -60,18 +60,17 @@ Then, to change your password, type in this command:
 passwd april
 ```
 
-(Change `april` to the actual user whose password you would like to reset, as seen in the output of ```ls /home```)
+(Change `april` to the actual user whose password you would like to reset, as seen in the output of `ls /home`)
 
 Enter a new password, then press <kbd>Enter</kbd>. Even though you are typing, no text will be displayed nor will the password be obfuscated as seen in the image below.
 
 ![Full commands to reset password](/images/password/example.png)
 
-
 Enter the same password again to confirm, then press <kbd>Enter</kbd>.
 
-If successful, you will see a message confirming ```passwd: password updated successfully```
+If successful, you will see a message confirming `passwd: password updated successfully
 
-You can now reboot.
+You can now reboot:
 
 ```
 reboot

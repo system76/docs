@@ -15,17 +15,15 @@ hidden: false
 section: community
 
 ---
-## Install
-  
-### Ubuntu
-  
+### Install
+
 Install Dependencies for Ubuntu
 
 ```  
 sudo apt-get install nodejs git build-essential python2.7
 ```  
 
-Next, Clone the repo and build!
+Next, clone the repo and build!
 
 ```
 git clone https://github.com/cjdelisle/cjdns.git
@@ -64,7 +62,7 @@ systemctl enable cjdns
 systemctl start cjdns
 ```
 
-You will connect automatically with wifi, but you can peer over the internet too!
+You will connect automatically with WiFi, but you can peer over the Internet too!
 See more at the Whitepaper and the README!
 
 [github.com/hyperboria/docs](https://github.com/hyperboria/docs)  

@@ -20,11 +20,13 @@ section: faq
 ---
 
 
-If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the eject (⏏) icon. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes. Auto-mounting is a per user configuration.
+If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the eject (⏏) icon. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes.  
+
+Auto-mounting is a per user configuration, and is optional.  Extra drives can always be accessed by clicking on them in the file explorer, which will mount the drive if not currently mounted.  
 
 ### Create Mount Point
 
-Extra drives in Ubuntu require a folder on your primary drive where the drive's contents will be made available. This folder is called a mount point. You'll need to create an empty folder in your home folder to serve as this mount point. Navigate to a location for the mount point (e.g. Your Documents folder), then right click and choose **New Folder**, then name the folder appropriately; something like *ExtraDrive* would work. It's recommended not to include any spaces in your mount point name.
+Extra drives in Ubuntu require a folder on your primary drive where the drive's contents will be made available. This folder is called a mount point. You'll need to create an empty folder in your home folder to serve as this mount point. Navigate to a location for the mount point (e.g. your Documents folder), then right click and choose **New Folder**, then name the folder appropriately; something like *ExtraDrive* would work. It's recommended not to include any spaces in your mount point name.
 
 ### Copy Mount Point Location
 

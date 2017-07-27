@@ -141,7 +141,7 @@ Next, check the box labeled **Download updates while installing Ubuntu** to brin
 
 #### Complete The Upgrade
 
-Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose **Upgrade Ubuntu**. This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing **Erase disk and install Ubuntu**. More information on this is available in our [Restore Guide](http://support.system76.com/articles/restore/).
+Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose **Upgrade Ubuntu**. This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing **Erase disk and install Ubuntu**. More information on this is available in our [Restore Guide](/articles/restore/).
 
 If asked about installation of `grub_pc` during the upgrade, you should select **Install the Package Maintainer's version**, not the default option.
 
@@ -185,11 +185,11 @@ Please see the steps above to create bootable media. Restart your computer and u
 
 Next follow the steps to repair grub first:
 
-[Repair Grub](http://support.system76.com/articles/grub/)
+[Repair Grub](/articles/grub/)
 
 And then the steps to repair the package manager next:
 
-[Repair Package Manager](http://support.system76.com/articles/package-manager/)
+[Repair Package Manager](/articles/package-manager/)
 
 And continue the upgrade with this command:
 

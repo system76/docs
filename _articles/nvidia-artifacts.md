@@ -11,7 +11,7 @@ keywords:
   - Resume
   - Artifacts
 image: http://support.system76.com/images/system76.png
-hidden: false
+hidden: true 
 section: solutions
 
 ---
@@ -46,7 +46,7 @@ sudo apt upgrade
 
 As another option, other desktop environments that we've tested, including <u>Cinnamon</u>, <u>MATE</u>, and <u>XFCE</u>, don't have this issue.  Take a look at the other environments, and try running a different one:
 
-[support.system76.com/articles/desktop-environment](http://support.system76.com/articles/desktop-environment/)
+[Desktop Environment](/articles/desktop-environment/)
 
 There is a bug report filed here:
 

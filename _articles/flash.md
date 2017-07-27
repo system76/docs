@@ -31,7 +31,7 @@ To watch Flash videos with <u>Firefox</u>, <u>Chromium</u>, and <u>Opera</u>, we
 sudo apt install browser-plugin-freshplayer-pepperflash
 ```
 
-To install Google <u>Chrome</u>, follow these instructions:
+Otherwise, to install Google <u>Chrome</u>, follow these instructions:
 
 ### Download Chrome
 

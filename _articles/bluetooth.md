@@ -23,7 +23,7 @@ sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudi
 
 ## Useful Programs
 
-There is a program called 'Bluetooth Manager' which is included with XFCE. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
+There is a program called <u>Bluetooth Manager</u> which is included with <u>XFCE</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
 
 ```
 sudo apt install blueman
@@ -78,7 +78,7 @@ Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, ne
 Then they can be installed with this command:
 
 ```
-sudo dpkg -i linux-firmware_1.164.1_all.deb
+sudo dpkg -i linux-firmware_1.167.1_all.deb
 ```
 
 #### File Transfer

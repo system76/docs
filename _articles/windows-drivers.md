@@ -17,9 +17,9 @@ Most of the hardware in a System76 computer is Intel based, and Windows Update i
 
 [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
 
-For systems with Nvidia graphics cards, drivers can be found on their website:
+For systems with NVIDIA graphics cards, drivers can be found on their website:
 
-Nvidia hardware table
+NVIDIA hardware table:
 
 Always        | Maybe                | Never
 :-------------|:---------------------|:-----
@@ -35,7 +35,7 @@ Trackpad drivers for our laptops can be found on Synaptic's website:
 
 [Synaptic Drivers](http://www.synaptics.com/resources)
 
-Ethernet hardware table
+Ethernet hardware table:
 
 Realtek RTL8111/8168/8411 | Intel I219-V         | Atheros/Killer Ethernet E2400 | Intel I210
 :-------------------------|:--------------------|:------------------------------|:----------
@@ -52,8 +52,7 @@ Kudu                      |                     |                               
 
 [Killer Ethernet Drivers](http://www.killernetworking.com/driver-downloads/category/killer-suite)
 
-Our laptops and desktops use Intel WiFi, which should be found by the Intel Driver Update utility.
-
+Our laptops and desktops use Intel WiFi, which should be found by the Intel Driver Update utility.  
 
 If there is a missing driver in the <u>Device Manager</u>, right click on the item with the missing driver, choose **Properties**, then **Details**, and then **Hardware Ids** from the drop-down.  The VEN (vendor) and DEV (device) numbers are unique to every piece of hardware.  Search for the device at the PCI Database:
 

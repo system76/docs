@@ -17,7 +17,7 @@ section: faq
 
 ### Won't Power On
 
-If a computer won't turn on, this could be any number of component failures.  The only way to know for sure which one has failed, is to test the system without anything attached.  We need to disconnect anything that can be removed.  This includes: the hard drives, Wifi card, RAM, and video cards (desktop, with on-board graphics). The only thing the system needs to boot is one stick of RAM in slot 0. Try different RAM sticks in slot 0 if it doesn't boot (to test for failed RAM).  Also, remove the CMOS battery and disconnect the main battery (laptops) for one minute.  We don't recommend removing the CPU as a test.
+If a computer won't turn on, this could be any number of component failures.  The only way to know for sure which one has failed, is to test the system without anything attached.  We need to disconnect anything that can be removed.  This includes: the hard drives, Wifi card, RAM, and video cards (desktop, with on-board graphics). The only thing the system needs to boot is one stick of RAM in slot 0. Try different RAM sticks in slot 0 if it doesn't boot (to test for failed RAM).  Also, remove the CMOS battery and disconnect the main battery (laptops), and any AC input, for one minute.  We don't recommend removing the CPU as a test.
 
 If the system will boot with everything removed, then add components back one by one and see which one is causing the problem.  If everything works fine after removing and replacing all of the hardware, a loose connection is most likely the culprit.  If the system won't boot with everything disconnected, then the motherboard has likely failed, and needs replaced.
 
@@ -35,9 +35,9 @@ Create an Installation USB | Create an Installation DVD
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
 [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
 
-Once you switch to BIOS mode, restart, and use the key to boot from other drives (<kbd>F7</kbd> for laptops, and <kbd>F12</kbd> for most desktops) to select the USB.  Right after you select the USB for boot, start tapping the ESC key to get into the GRUB boot menu.  If you accidentally get to a GRUB command prompt, type in the word `normal`, press <kbd>Enter</kbd>, then immediately press <kbd>ESC</kbd>.  Grub is available for only a second, so if you miss the opportunity, turn your computer off and try again.
+Once you switch to BIOS mode, restart, and use the key to boot from other drives (<kbd>F7</kbd> for laptops, and <kbd>F12</kbd> for most desktops) to select the USB.  Right after you select the USB for boot, start tapping the <kbd>ESC</kbd> key to get into the GRUB boot menu.  If you accidentally get to a GRUB command prompt, type in the word `normal`, press <kbd>Enter</kbd>, then immediately press <kbd>ESC</kbd>.  Grub is available for only a second, so if you miss the opportunity, turn your computer off and try again.
 
-In the grub boot menu, choose **Memory test (memtest86+)** and let it run overnight to check for any memory errors.  If memory errors show up, the memory stick should be replaced.
+In the grub boot menu, choose **Memory test (memtest86+)** and let it run overnight to check for any memory errors.  6 to 8 passes are minimally recommended.  If memory errors show up, the memory stick should be replaced.
 
 #### Hard Drive
 
@@ -57,7 +57,7 @@ Then, after the system has crashed or been used for a period of time, take a loo
 
 > /var/log/mcelog
 
-If there is no log, then the crash isn't related to a hardware failure.  The log will stay empty until a MCE happens.  Take a look for "uncorrected" errors, as most "corrected" errors can be ignored.  If there are a consistent number of "uncorrected" errors, the hardware should probably be replaced.
+If there is no log or the log is empty, then the crash isn't related to a hardware failure.  The log will stay empty until a MCE happens.  Take a look for "uncorrected" errors, as most "corrected" errors can be ignored.  If there are a consistent number of "uncorrected" errors, the hardware should be examined.
 
 #### Support
 

@@ -12,9 +12,9 @@ section: community
 
 ---
 
-Alright! Hitch on, choose your distro, and lets go on! This tutorial consists of Debian and Ubuntu based instructions as well as Arch Linux, and Fedora.
+Alright! Hitch on and let's go on!
   
-# Debian and Ubuntu
+### Debian and Ubuntu
   
 First, you will need Java runtime.  
   

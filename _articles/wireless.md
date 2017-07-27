@@ -24,18 +24,18 @@ WiFi issues are influenced by many different factors, including:
 
 If you’re having problems, try these steps first:
 
-- Try unplugging your wireless router or modem and then plug it back in.
-- You can also try airplane mode by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting 10s, then disabling.
+- Try unplugging the wireless router or modem to reboot it.
+- Try airplane mode by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting 10s, then disabling.
 - Try rebooting the computer.
 
-Router settings also cause problems. Try adjusting your access point to these settings:
+Some router settings can cause problems. Try adjusting your access point to these settings:
 
-- WPA2-AES is the preferred security method over WPA/WPA2 mixed mode or TKIP
-- If your router is capable of N speeds, a channel width of 20 MHz in the 2.4 GHz band is more stable than automatic 20/40 MHz or fixed 40 MHz.
-- Make sure the 2.4Ghz and 5Ghz SSID names are different.
-- Pick a fixed channel, either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic selection.
-- Check if the router is set to use N speeds only, auto B/G/N is preferred.
-- Lower the max/burst speeds, turn off channel bonding, and reduce channel width. Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and tend to decrease stability. Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
+- WPA2-AES is preferred over WPA/WPA2 mixed mode or TKIP.
+- A channel width of 20 MHz in the 2.4 GHz band is more stable than automatic 20/40 MHz or fixed 40 MHz.
+- Set 2.4Ghz and 5Ghz SSID names differently.
+- Pick a fixed channel.  Use either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic selection.
+- Check if the router is set to N speeds only.  Auto B/G/N is preferred.
+- Lower the max/burst speeds, turn off channel bonding, and reduce channel width. Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and may decrease stability. Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
 - After making these changes, reboot the router.
 
 ### Advanced Troubleshooting
@@ -89,7 +89,7 @@ Then, add this line to the bottom (effective upon reboot):
 
 #### N Mode
 
-You can try disabling N mode completely by using `11n_disable=1` in the previous settings. N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available to the Internet is less than N speeds.
+You can try disabling N mode completely by using `11n_disable=1` in the previous settings. N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available in/out from/to the Internet is less than N speeds.
 
 #### Bluetooth Coexistence
 

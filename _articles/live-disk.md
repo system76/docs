@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create and use a live disk
+title: Create and Use a Live Disk
 description: >
   You can run Ubuntu from a USB or DVD for hardware testing, recovering your environment, or reinstalling.
 keywords:
@@ -18,11 +18,11 @@ section: faq
 
 ## What is a live disk?
 
-Ubuntu is remakably flexible. You can run a full version of Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) or a DVD in what's known as a *live environment.* Using a live environment (live disk) is useful for:
+Ubuntu is remarkably flexible. You can run a full version of Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) or a DVD in what's known as a *live environment.* Using a live environment (live disk) is useful for:
 
-* [Determining if an issue is caused by hardware or software](http://support.system76.com/articles/hardware-failure/)
-* [Reinstalling](support.system76.com/articles/restore/) or [upgrading](http://support.system76.com/articles/upgrade/) your Ubuntu installation
-* [Fixing the boot loader](support.system76.com/articles/grub/)
+* [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
+* [Reinstalling](/articles/restore/) or [upgrading](/articles/upgrade/) your Ubuntu installation
+* [Fixing the boot loader](/articles/grub/)
 * Recovering your normal environment
 * Backing up files when you can't boot
 

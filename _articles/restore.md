@@ -30,7 +30,7 @@ On our second generation Oryx Pro (oryp2), the System76 driver is required for t
 
 #### Recent Upgrade
 
-If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [How to Restore Grub Boot-loader](http://docs.system76.com/articles/grub)
+If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [How to Restore Grub Boot-loader](/articles/grub)
 
 ---
 
@@ -56,7 +56,7 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kb
 
 #### NVIDIA Graphics
 
-Ubuntu may need a special option enabled to install and boot from Ubuntu until the NVIDIA driver can be installed as described below. If the installer doesn't show an image after this first screen, please follow the next instructions:
+Ubuntu may need a special option enabled to install and boot from Ubuntu until the NVIDIA driver can be installed as described below. If the installer doesn't show an image after this screen, please follow the next instructions:
 
 ![First](/images/restore/first.png)
 

@@ -32,11 +32,11 @@ Unity defaults to having its launcher on the left side of the screen. Unity's la
 
 If the Unity desktop environment isn't for you, it can be changed easily. Please see this article for how to change desktop environments:
 
-[Desktop Environment](http://support.system76.com/articles/desktop-environment/)
+[Desktop Environment](/articles/desktop-environment/)
 
 And if you would like to move the launcher to the bottom of the screen, please see this article:
 
-[Move the Launcher](http://support.system76.com/articles/move-launcher/)
+[Move the Launcher](/articles/move-launcher/)
 
 ### Installing Software
 
@@ -100,7 +100,7 @@ The open source video player, [VLC](https://www.videolan.org/vlc/), can be downl
 
 Please see this article for steps to install software for DVD playback:
 
-[Codecs](http://support.system76.com/articles/codecs/)
+[Codecs](/articles/codecs/)
 
 ### Networking
 
@@ -198,6 +198,6 @@ If you are used to an Apple terminal, Ubuntu's terminal will feel right at home.
 
 ![apple-terminal](/images/switch/apple-terminal.png)
 
------
+---
 
 ![ubuntu-terminal](/images/switch/ubuntu-terminal.png)

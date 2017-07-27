@@ -19,16 +19,16 @@ section: articles
 
 ### What is HiDPI?
 
-With 4K monitors becoming more prominent in the marketplace, it's crucial to define the difference between a high resolution display and a true HiDPI display. Our UX designer Cassidy has put together [a great series of articles](https://medium.com/elementaryos/what-is-hidpi-and-why-does-it-matter-b024eabea20d) explaining the difference betweek high resolution and HiDPI.
+With 4K monitors becoming more prominent in the marketplace, it's crucial to define the difference between a high resolution display and a true HiDPI display. Our UX designer Cassidy Blaede has put together [a great series of articles](https://medium.com/elementaryos/what-is-hidpi-and-why-does-it-matter-b024eabea20d) explaining the difference between high resolution and HiDPI.
 
 In short, HiDPI refers to pixel doubling: drawing an image with twice as many physical pixels in each dimension than requested in virtual pixels. For example, an icon or image might be 64 virtual pixels tall, but on a HiDPI display, it’s drawn with 128 physical pixels. This makes the icon twice as crisp in any angles or curves, or allows for twice as much detail in the photo.
 
 So, why pixel doubling and not just increasing the density on a 15" display from, say, 1080p to something like 2880×1620? To get you user interface at the same physical size as on the 1080p display, you would have to scale it by 1.5×. That means a dot that is requested to be drawn at 1 virtual pixel now has to be drawn at 1.5 physical pixels.
 Half pixels don’t exist, so the software would have to compensate with aliasing. Aliasing = blurring. So with a higher resolution display, you get a blurry UI. Fonts do have mechanisms to deal with this, so it’s not an issue there, but UI elements like icons and strokes around buttons will end up looking worse on a 1.5× display than a 1× display.
 
-For a fantastic explanation on HiDPI, please read Cassidy's full series of articles available [here.](https://medium.com/elementaryos/tagged/hidpi)
+For a fantastic explanation on HiDPI, please read Cassidy's full series of articles available [here](https://medium.com/elementaryos/tagged/hidpi).
 
-### Handling HiDPI and LoDPI simultaneously
+### Handling HiDPI and LoDPI Simultaneously
 
 While HiDPI displays work well on Ubuntu, things can get a little funny when using both HiDPI and LoDPI displays together.  Generally, it's best to make all displays match the same scaling factor (all HiDPI or all LoDPI).  The System76 driver takes care of this automatically on HiDPI laptops.
 
@@ -41,11 +41,10 @@ This dialog appears whenever the driver detects a new mixed-DPI configuration:
 You can keep the changes or revert if you'd prefer to keep each display at its native resolution.  Most of the time you'll want to Keep Changes, but there are a few cases where the Revert option is useful....
 
 ### Big/Tiny Applications
+
 Some applications won't recognize the change in scaling factor until they're restarted.  This includes LibreOffice, Chrome/Chromium, and applications using the QT toolkit.  With a few exceptions like GIMP and Inkscape, apps will pick up the right scaling if you close and restart them.  (Don't forget to save your work!)
 
 If you don't want to restart these applications right now, you can choose the Revert button in the dialog, and the System76 driver will set the HiDPI monitors back to their native resolution and scaling.  They will still look big on the non-HiDPI monitors, but will look normal on the HiDPI displays.
-
----
 
 ### NVIDIA Issues
 

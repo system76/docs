@@ -181,3 +181,9 @@ Wifi Speeds and Frequencies:
 The name of the Linux driver for Intel Wifi cards is called <u>iwlwifi</u> and is included in the kernel by default. All information about the driver can be found here:
 
 [wireless.wiki.kernel.org/en/users/drivers/iwlwifi](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi)
+
+The newest version of the <u>linux-firmware</u> package, which contains the iwlwifi driver, can be found here:
+
+[mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware](https://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware)
+
+Sometimes the newest version of the firmware will clear up occasional bugs.  Please download the `.deb` package, version 1.167 or newer.

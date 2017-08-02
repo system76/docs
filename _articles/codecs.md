@@ -53,3 +53,11 @@ sudo dpkg-reconfigure libdvd-pkg
 ### Restart Your Computer
 
 After enabling codec support, it's recommended to restart your computer. Click on the Device Menu (Gear Icon in the upper-right corner of your screen), then click on "Shut Down...". Then, click on the restart item in the shutdown overlay.
+
+## Useful Programs
+
+The program <u>VLC</u> is a excellent media player with support for DVDs, CDs, and most formats of media files.  It can be installed with the <u>Software Center</u> or with this command:
+
+```
+sudo apt install vlc
+```

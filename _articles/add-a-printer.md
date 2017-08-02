@@ -34,6 +34,12 @@ And when adding the printer, select type of connection as **DNS-SD**, and then *
 
 If the printer stops working, open the <u>Printers</u> Application again and right-click on the printer and select **Delete** to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.
 
+To look at the CUPS (Common Unix Printing System) configuration and status window, please open this webpage:
+
+[localhost:631](http://localhost:631)
+
+The status window will show current print jobs, detected printers, and other information about the printing system.
+
 ## Useful Commands:
 
 ```

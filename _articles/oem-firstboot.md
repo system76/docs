@@ -33,15 +33,15 @@ Here are the general steps for creating a user manually:
 
 Power on (or reboot) your system and tap the <kbd>ESC</kbd> key to get to the GRUB boot menu.
 
-![GRUB menu](/images/oem-firstboot/grub-menu.png)
-
 If you end up at the GRUB CLI (it looks like `grub >`) type `normal`, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd>. If that fails, just reboot the computer with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>, pressing the reset button, or holding the power button until the computer shuts off.
+
+![GRUB menu](/images/oem-firstboot/grub-menu.png)
 
 Once you're in the GRUB boot menu, choose **Advanced options for Ubuntu** and then **(recovery mode)** on the first listed kernel. The system will boot into the recovery menu.
 
-At any time, random messages or text may clutter up the recovery menu. If this happens, just press the up/down arrow keys to re-draw the menu items. The text does not affect operation of the recovery menu.
-
 ![Advanced options](/images/oem-firstboot/recovery-mode.png)
+
+At any time, random messages or text may clutter up the recovery menu. If this happens, just press the up/down arrow keys to re-draw the menu items. The text does not affect operation of the recovery menu.
 
 The system will boot into the recovery menu:
 
@@ -74,4 +74,4 @@ Lastly, we need your help in tracking down this bug. When you get logged in, ope
 
 `sudo tar -cvz -f ~/log.tgz /var/log`
 
-Please open a Support ticket and attach the log file.
+Please open a support ticket and attach the log file.

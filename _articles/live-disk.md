@@ -11,7 +11,7 @@ keywords:
   - Reinstall
   - Installation
   - System76
-hidden: true
+hidden: false
 section: faq
 
 ---

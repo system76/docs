@@ -37,7 +37,7 @@ Create an Installation USB | Create an Installation DVD
 
 Once you switch to BIOS mode, restart, and use the key to boot from other drives (<kbd>F7</kbd> for laptops, and <kbd>F12</kbd> for most desktops) to select the USB.  Right after you select the USB for boot, start tapping the <kbd>ESC</kbd> key to get into the GRUB boot menu.  If you accidentally get to a GRUB command prompt, type in the word `normal`, press <kbd>Enter</kbd>, then immediately press <kbd>ESC</kbd>.  Grub is available for only a second, so if you miss the opportunity, turn your computer off and try again.
 
-In the grub boot menu, choose **Memory test (memtest86+)** and let it run overnight to check for any memory errors.  6 to 8 passes are minimally recommended.  If memory errors show up, the memory stick should be replaced.
+In the grub boot menu, choose **Memory test (memtest86+)**.  Right as memtest loads (blue screen), press F2 to enable multi-core mode.  Wait at least 20 minutes for the tests to run, or until any errors are shown in red.  If any errors are found, please run it again in single core mode, and let it run overnight to check for any memory errors.  6 to 8 passes are minimally recommended.  If memory errors show up, the memory stick should be replaced.
 
 #### Hard Drive
 

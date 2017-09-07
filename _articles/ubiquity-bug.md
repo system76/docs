@@ -19,7 +19,7 @@ section: solutions
 
 There is a bug in the installer program, Ubiquity, which may crash the initial setup of your computer if a WPA-Enterprise or WPA2-Enterprise access point is joined. WPA Enterprise access points can be joined after the system is finished being setup.
 
-The current solution is to not join a network access point while setting up the computer for the first time. Once the desktop is reached, WiFi access points can be joined as normal. If the new user setup program crashes and leaves only a Guest account, please see these instructions for creating a new user manually:
+The current solution is to not join a network access point while setting up the computer for the first time. Once the installation is finished and your desktop loads, WiFi access points can be joined as normal. If the new user setup program crashes and leaves only a Guest account, please see these instructions for creating a new user manually:
 
 [Oem Firstboot](/articles/oem-firstboot/)
 

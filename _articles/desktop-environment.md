@@ -79,7 +79,7 @@ sudo apt install ubuntu-gnome-desktop
 
 ### KDE
 
-The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
+The KDE Plasma 5 desktop environment is a familiar working environment and looks similar to Windows. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
 
 ![KDE](/images/desktop-environment/KDE.png)
 
@@ -89,7 +89,7 @@ KDE is installed with:
 sudo apt install kubuntu-desktop
 ```
 
-KDE currently has a packaging conflict which will cause the installation to fail.  Two packages need removed to complete the installation.  After the error, please run these commands to remove the packages and finish the installation:
+KDE currently has a packaging conflict which will cause the installation to fail.  Two packages need to be removed to complete the installation.  After the error, please run these commands to remove the packages and finish the installation:
 
 ```
 sudo dpkg --purge unity-scope-gdrive account-plugin-google

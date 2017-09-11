@@ -60,7 +60,7 @@ sudo gedit /etc/default/crda
 
 Change the last line to read:
 
-> REGDOMAIN=US
+> REGDOMAIN=US  
 
 Save and close the text editor.
 
@@ -85,7 +85,7 @@ sudo gedit /etc/modprobe.d/iwlwifi.conf
 
 Then, add this line to the bottom (effective upon reboot):
 
-> options iwlwifi 11n_disable=8
+> options iwlwifi 11n_disable=8  
 
 #### N Mode
 
@@ -95,7 +95,7 @@ You can try disabling N mode completely by using `11n_disable=1` in the previous
 
 If you have trouble with a Bluetooth headset and keeping a steady downlink speed, try disabling Bluetooth coexistence in the configuration file above:
 
-> options iwlwifi bt_coex_active=0
+> options iwlwifi bt_coex_active=0  
 
 #### Power Management
 
@@ -107,8 +107,8 @@ sudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 
 And change the file to read (effective upon reboot):
 
-> \[connection\]
-> wifi.powersave = 2
+> \[connection\]  
+> wifi.powersave = 2  
 
 ## Useful Programs
 

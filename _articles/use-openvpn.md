@@ -28,3 +28,8 @@ If your using the GNOME Shell (Desktop Enviroment) you will also need the 'netwo
 sudo apt install network-manager-openvpn-gnome
 ```
 
+Next let's open up the Settings app (GNOME Control Center)
+
+![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
+![Add-VPN-Dialog](/images/use-openvpn/Add-VPN-Dialog.png)
+

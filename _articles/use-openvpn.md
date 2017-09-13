@@ -31,5 +31,10 @@ sudo apt install network-manager-openvpn-gnome
 Next let's open up the Settings app (GNOME Control Center)
 
 ![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
-![Add-VPN-Dialog](/images/use-openvpn/Add-VPN-Dialog.png)
 
+
+If you have a .ovpn (OpenVPN file type) you would click 'Import from file...'
+
+![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
+
+If you setup your own server for use of OpenVPN then the top option would let you fill all the needed info to connect to your server.

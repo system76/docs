@@ -6,13 +6,14 @@ description: >
 keywords:
   - OpenVPN
   - Security
-  - Privaty
+  - Privacy
   - ProtonVPN
   - System76
----
 image: http://support.system76.com/images/system76.png
 hidden: true
 section: articles
+
+---
 
 This tutorial will very closely follow the one that ProtonVPN has for using their VPN locations but it can also be used to use other VPN providers.
 

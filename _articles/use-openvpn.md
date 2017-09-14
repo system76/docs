@@ -15,9 +15,7 @@ section: articles
 
 ---
 
-This tutorial will very closely follow the one that ProtonVPN has for using their VPN locations but it can also be used to use other VPN providers.
-
-For all Desktop Enviroments, Window Managers and anything in general you will need the 'network-manager-openvpn' package, this will also install the openvpn package as that is a dependcy.
+For all Desktop Enviroments, Window Managers and anything in general you will need the 'network-manager-openvpn' package, this will also install the openvpn package as that is a dependency.
 
 ```
 sudo apt install network-manager-openvpn

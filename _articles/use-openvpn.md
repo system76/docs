@@ -8,14 +8,23 @@ keywords:
   - Security
   - Privacy
   - ProtonVPN
-  - System76
 image: http://support.system76.com/images/system76.png
 hidden: true
 section: articles
 
 ---
 
+# **Use OpenVPN**
+
 For all Desktop Enviroments, Window Managers and anything in general you will need the 'network-manager-openvpn' package, this will also install the openvpn package as that is a dependency.
+
+### Open A Terminal
+
+Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> on your keyboard.  A purple Terminal window should open up.
+
+### Install Packages
+
+Copy and paste the following long line, followed by <kbd>Enter</kbd>:
 
 ```
 sudo apt install network-manager-openvpn
@@ -35,5 +44,7 @@ Next let's open up the Settings app (GNOME Control Center)
 If you have a .ovpn (OpenVPN file type) you would click 'Import from file...'
 
 ![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
+
+#### **Connecting to your personal server**
 
 If you setup your own server for use of OpenVPN then the top option would let you fill all the needed info to connect to your server.

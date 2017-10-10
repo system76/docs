@@ -30,15 +30,13 @@ Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> on your keyboard.  A purple Te
 
 ### Install Packages
 
-Type the following lines into the terminal window, each followed by <kbd>Enter</kbd>:
+Copy and paste the following long line, followed by <kbd>Enter</kbd>:
 
 ```
-sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly \
-libavcodec-extra gstreamer1.0-libav gstreamer1.0-fluendo-mp3 \
-chromium-codecs-ffmpeg-extra oxideqt-codecs-extra libdvd-pkg
+sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libavcodec-extra gstreamer1.0-libav gstreamer1.0-fluendo-mp3 chromium-codecs-ffmpeg-extra oxideqt-codecs-extra libdvd-pkg
 ```
 
-You can also copy and paste the command. To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>
+To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>
 
 You may be prompted for your `[sudo] password`. If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should several lines of output in the terminal. The command may take a few minutes to complete.
 

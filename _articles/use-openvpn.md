@@ -36,10 +36,13 @@ If your using the GNOME Shell (Desktop Enviroment) you will also need the 'netwo
 sudo apt install network-manager-openvpn-gnome
 ```
 
+### Opening up the network settings
+
 Next let's open up the Settings app (GNOME Control Center)
 
 ![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
 
+### Using a .ovpn file
 
 If you have a .ovpn (OpenVPN file type) you would click 'Import from file...'
 

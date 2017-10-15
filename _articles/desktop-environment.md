@@ -50,7 +50,7 @@ sudo apt install mate-desktop-environment-extras mate-dock-applet
 
 ### Cinnamon
 
-Cinnamon is used in Mint Linux by default. Cinnamon strives to provide a traditional experience and is a fork of GNOME 3.
+Cinnamon is used in Linux Mint by default. Cinnamon strives to provide a traditional experience and is a fork of GNOME 3.
 
 ![Cinnamon](/images/desktop-environment/Cinnamon.png)
 

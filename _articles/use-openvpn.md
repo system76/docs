@@ -14,9 +14,9 @@ section: articles
 
 ---
 
-# **Use OpenVPN**
+### Use OpenVPN
 
-For all Desktop Enviroments, Window Managers and anything in general you will need the 'network-manager-openvpn' package, this will also install the openvpn package as that is a dependency.
+For all Desktop Enviroments you will need the <u>network-manager-openvpn</u> package, this will also install the <u>openvpn</u> package as that is a dependency.
 
 ### Open A Terminal
 
@@ -30,13 +30,13 @@ Copy and paste the following long line, followed by <kbd>Enter</kbd>:
 sudo apt install network-manager-openvpn
 ```
 
-If your using the GNOME Shell (Desktop Enviroment) you will also need the 'network-manager-openvpn-gnome' package:
+If your using GNOME Shell (Desktop Enviroment) you will also need the <u>network-manager-openvpn-gnome</u> package:
 
 ```
 sudo apt install network-manager-openvpn-gnome
 ```
 
-### Opening up the network settings
+### Open Network Settings
 
 Next let's open up the Settings app (GNOME Control Center)
 
@@ -48,6 +48,6 @@ If you have a .ovpn (OpenVPN file type) you would click 'Import from file...'
 
 ![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
 
-#### **Connecting to your personal server**
+#### Connect to your personal server
 
 If you setup your own server for use of OpenVPN then the top option would let you fill all the needed info to connect to your server.

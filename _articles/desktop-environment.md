@@ -79,7 +79,7 @@ sudo apt install ubuntu-gnome-desktop
 
 ### KDE
 
-The KDE Plasma 5 desktop environment is a familiar working environment and looks similar to Windows. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
+The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
 
 ![KDE](/images/desktop-environment/KDE.png)
 

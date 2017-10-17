@@ -1,16 +1,16 @@
 # **Header**
 
 title: Verb progressive:  Add A Printer.  Fix An Issue.  Find A Guide.  Restore Your Computer.  Upgrade Ubuntu.  Access Boot Menu.  Change Settings.  Install Programs.  Use Title Case.
-description: >
-  Short and sweet.  Keep it to 3 or less sentences for brevity on the listing page.
-keywords:
- - Add some useful ones for searching
-image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-10/16-c1f27f8de8.10.jpg
-(This is for slack and other linked reference sites)
-section:
-  FAQ - Important stuff
-  articles - Average stuff
-  Known Solutions - When we have lingering bugs
+description: >  
+  Short and sweet.  Keep it to 3 or less sentences for brevity on the listing page.  
+keywords:  
+ - Add some useful ones for searching  
+image: https://d1vhcvzji58n1j.cloudfront.net/images/newsletter/2016-10/16-c1f27f8de8.10.jpg  
+(This is for slack and other linked reference sites)  
+section:  
+  FAQ - Important stuff  
+  articles - Average stuff  
+  Known Solutions - When we have lingering bugs  
 
 # **General Layout**
 

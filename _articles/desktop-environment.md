@@ -2,7 +2,7 @@
 layout: article
 title: Change the Desktop Environment
 description: >
-    Ubuntu comes with Unity installed by default.  Don't like it?  Follow these instructions to install additional desktop environments.
+    Pop!_OS Comes with GNOME.  Don't like it?  Follow these instructions to install additional desktop environments.
 keywords:
   - desktop environment
   - MATE
@@ -17,16 +17,16 @@ section: articles
 
 ---
 
-Ubuntu comes with the desktop environment <u>Unity</u> installed by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
+Pop!_OS comes with the <u>GNOME</u> desktop environment and Ubuntu before 17.10 comes with the <u>Unity</u> desktop environment installed by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
-Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Ubuntu, each with it's own individual settings.
+Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Pop!_OS, each with it's own individual settings.
 
 ![Login](/images/desktop-environment/Login.png)
 ![Login2](/images/desktop-environment/Login2.png)
 
 #### Important
 
-Make sure to always pick **lightdm** as the desktop manager when prompted while installing additional desktop environments. Choosing **gdm**, **sddm**, or another, will break the installation. If needed, this command can be run to pick the display manager again:
+In Ubuntu 16.04, make sure to choose **lightdm** as the display manager when prompted. Choosing **gdm**, **sddm**, or another, will break the installation.  Other display managers work fine in 17.04 and later. If needed, this command can be run to choose the display manager again:
 
 ```
 sudo dpkg-reconfigure lightdm
@@ -62,14 +62,14 @@ sudo apt install cinnamon-desktop-environment
 
 ---
 
-### Gnome
+### GNOME
 
-The GNOME desktop is a different environment than most people are used to. It contains both a modern and a classic version. It is a good example of another way to interact with the operating system, but isn't as straight-forward as other desktop environments.
+GNOME is the default desktop environment in Pop!_OS and Ubuntu 17.10. It contains both a modern and a classic version. It is a good example of another way to interact with the operating system, but isn't as straight-forward as other desktop environments.
 
 ![Gnome](/images/desktop-environment/Gnome.png)
 ![Gnome2](/images/desktop-environment/Gnome2.png)
 
-Gnome is installed with:
+GNOME is installed with:
 
 ```
 sudo apt install ubuntu-gnome-desktop
@@ -79,7 +79,7 @@ sudo apt install ubuntu-gnome-desktop
 
 ### KDE
 
-The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
+The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows' desktop. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
 
 ![KDE](/images/desktop-environment/KDE.png)
 
@@ -89,7 +89,7 @@ KDE is installed with:
 sudo apt install kubuntu-desktop
 ```
 
-KDE currently has a packaging conflict which will cause the installation to fail.  Two packages need removed to complete the installation.  After the error, please run these commands to remove the packages and finish the installation:
+KDE may have a packaging conflict which will cause the installation to fail.  If so, two packages need removed to complete the installation.  After an error, please run these commands to remove the packages and finish the installation:
 
 ```
 sudo dpkg --purge unity-scope-gdrive account-plugin-google
@@ -138,13 +138,21 @@ sudo apt install edubuntu-desktop
 
 ---
 
+### Resource Use
+
+GNOME and KDE are heavy resource desktop environments.  Installations consume more disk space than lightweight alternatives and more CPU and memory resources while in use. This is because they are full-featured; they provide the most complete and well-integrated environments.
+
+LXDE and Xfce, on the other hand, are lightweight desktop environments. They are designed to work well on older or lower-power hardware and generally consume fewer system resources while in use. This is achieved by cutting back on extra features.
+
+---
+
 ## Troubleshooting
 
-Desktop environments can interfere with each other or change universal settings. Issues with a desktop environment looking funny can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
+Desktop environments can interfere with each other or change universal settings. Issues with a desktop environment looking different can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
 #### Change Login Greeter
 
-Gnome will add it's own login greeter, which is shown as the second image at the top of this article. To change it, run this command:
+GNOME will add it's own login greeter, which is shown as the second image at the top of this article. To change it, run this command:
 
 ```
 sudo gedit /etc/lightdm/lightdm.conf
@@ -162,7 +170,7 @@ GNOME:
 
 #### Change Automatic Login Environment
 
-After installing multiple desktop environments, a default can be set for automatic login with this command:
+If you currently use automatic login to bypass the password login, a default can be set with this command:
 
 ```
 gksudo gedit /etc/lightdm/lightdm.conf
@@ -210,7 +218,7 @@ sudo update-initramfs -u
 
 #### Change Notification Dialog
 
-Xfce will change the notification dialog to it's own version. It can be configured with this command:
+Xfce will change the notification dialog to it's own. It can be configured with this command:
 
 ```
 xfce4-notifyd-config
@@ -280,7 +288,7 @@ Or, if that doesn't stop the 2nd prompt, the screensaver can be removed with thi
 sudo apt purge gnome-screensaver
 ```
 
-When using Gnome, the lock screens will still function normally even with the screensaver disabled.
+When using GNOME, the lock screens will still function normally even with the screensaver disabled.
 
 #### Enable Cinnamon Lock Screen
 
@@ -296,7 +304,7 @@ Ubuntu's unity greeter signin screen will only accommodate a certain number of d
 
 `/usr/share/xsessions/`
 
-Another solution is to switch to the lightdm-gtk-greeter following the instructions above. This secondary greeter is installed with Gnome, or can be installed manually with this command:
+Another solution is to switch to the lightdm-gtk-greeter following the instructions above. This secondary greeter is installed with GNOME, or can be installed manually with this command:
 
 ```
 sudo apt install lightdm-gtk-greeter
@@ -324,5 +332,3 @@ Or to remove Unity:
 sudo apt purge ubuntu-desktop
 sudo apt autoremove
 ```
-
-We don't recommend removing all unity related packages, as other desktop environments rely on some of those programs to function.

@@ -18,32 +18,18 @@ keywords:
   - Release
   - System76
   - apt
-image: http://support.system76.com/images/upgrade/Ubuntu-17-04.jpg
+image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-17-04.jpg
 hidden: false
 section: faq
 
 ---
-
-The choice to upgrade depends on how you're using your computer. Ubuntu has two versions. The first type, **LTS** is designed for long-term use as a "daily driver." LTS stands for "Long Term Support" since they receive updates for 5 years. The second type, **Standard**, is designed for those who like having the latest and greatest.
-
-For many users, the LTS release is the best option, combining regular updates with a strong foundation. Users who are interested in new and interesting features can choose the Standard releases, which have a shorter lifespan.
-
-### Information
-
-For more information about releases and how long they are supported for, please see the [Ubuntu Release Wiki](https://wiki.ubuntu.com/Releases).
-
-For more information about what end of life means, please see the [End of Life](https://www.ubuntu.com/info/release-end-of-life) document.
-
-For more information on LTS support and the Hardware Enablement Stack, please the the [HWE Wiki](https://wiki.ubuntu.com/Kernel/LTSEnablementStack). 
-
-### Preparing For Upgrade
 
 First, we recommend having Ubuntu installation media (a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu from [ubuntu.com](http://www.ubuntu.com/download/desktop).
 
 ### Create Install Media
 
 Create an Installation USB | Create an Installation DVD
---------------------------------- | ---------------------------
+-------------------------- | ---------------------------
 [Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
 [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
 [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
@@ -52,9 +38,10 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 ### Upgrade
 
-Method | Reason
-Upgrade While Running | Great for moving to the next available release, or when switching from an LTS to a Standard release.
-Upgrade From Media | Provides a more stable environment since the system isn't running while it's being upgraded. Upgrading from media is required if you're more than one version behind.
+Method |Reason
+------ |:------:
+[Upgrade While Running](#upgrade-while-running) | Great for moving to the next available release.
+[Upgrade From Media](#upgrade-from-media) | Provides a more stable environment since the system isn't running while it's being upgraded. Upgrading from media is required if you're more than one version behind.
 
 ---
 
@@ -66,32 +53,33 @@ Upgrade From Media | Provides a more stable environment since the system isn't r
 
 Open the Dash <i class="fl-ubuntu"></i> and then search for <u>Software Updater</u>.
 
-![Updater in Dash](/images/upgrade/Step-1.jpg)
+![Updater in Dash](/images/upgrade-ubuntu/Step-1.jpg)
 
 #### Configure Version Updates
 
 Click on **Settings** and then select **Updates**. You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labeled "Notify me of a new Ubuntu version".
 
 Option | Result
+------ | ------
 For any new version | Will show both Standard and LTS updates.
 For long-term support versions | Will show only LTS updates.
 Never | Will prevent upgrades to newer versions.
 
-![Update Preference](/images/upgrade/notification-preference.png)
+![Update Preference](/images/upgrade-ubuntu/notification-preference.png)
 
 Changing this option will require your user password. After selecting your update preference, close the window.
 
 #### Check For Updates
 
-The system will automatically check for updates. You may need to update (and sometimes, restart) before continuing with the upgrade process. If you have to restart after installing updates, launch the updater again as described in Step 1.
+The system will automatically check for updates. You may need to update (and sometimes, restart) before continuing with the upgrade process. If you have to restart after installing updates, launch the updater again as described above.
 
-![Software Updater](/images/upgrade/Step-2.jpg)
+![Software Updater](/images/upgrade-ubuntu/Step-2.jpg)
 
 #### Install The Upgrade
 
 A message will appear informing you of the availability of the new release. Click **Upgrade** and follow the on-screen instructions.
 
-![Upgrade Message](/images/upgrade/Step-3.jpg)
+![Upgrade Message](/images/upgrade-ubuntu/Step-3.jpg)
 
 #### Install The System76 Driver
 
@@ -103,7 +91,7 @@ sudo apt update
 sudo apt install system76-driver
 ```
 
-For NVIDIA Graphics: If you ordered a system with a discrete NVIDIA graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
+For NVIDIA Graphics: If you ordered a system with a discrete NVIDIA graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Please run the following command:
 
 ```
 sudo apt install system76-driver-nvidia
@@ -137,13 +125,13 @@ When prompted, choose **Install Ubuntu**.
 
 Next, check the box labeled **Download updates while installing Ubuntu** to bring your installation up to date.
 
-![VirtualBox Listing in USC](/images/restore/updates.png)
+![Download Updates](/images/restore/updates.png)
 
 #### Complete The Upgrade
 
 Follow the on-screen instructions to complete the upgrade. To preserve your files and settings, be sure to choose **Upgrade Ubuntu**. This will ensure that your files are not erased. You do have the option to erase your operating system and start over by choosing **Erase disk and install Ubuntu**. More information on this is available in our [Restore Guide](/articles/restore/).
 
-If asked about installation of `grub_pc` during the upgrade, you should select **Install the Package Maintainer's version**, not the default option.
+If asked about installation of `grub_pc`, or other configuration packages, during the upgrade, you should select **Install the Package Maintainer's version**, not the default option.
 
 #### Install The System76 Driver
 
@@ -155,7 +143,7 @@ sudo apt update
 sudo apt install system76-driver
 ```
 
-For NVIDIA Graphics: If you ordered a system with a discrete NVIDIA graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Open the Terminal app and enter the following command:
+For NVIDIA Graphics: If you ordered a system with a discrete NVIDIA graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Please run the following command:
 
 ```
 sudo apt install system76-driver-nvidia
@@ -168,6 +156,16 @@ Once the process is finished, restart your computer for the changes to take effe
 Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out Troubleshooting below.
 
 If you use any third-party packages, you'll need to re-enable them in the **Software & Updates** app on the **Other Software** tab. Check any sources that you might need, then close the window.
+
+---
+
+### Information
+
+For more information about releases and how long they are supported for, please see the [Ubuntu Release Wiki](https://wiki.ubuntu.com/Releases).
+
+For more information about what end of life means, please see the [End of Life](https://www.ubuntu.com/info/release-end-of-life) document.
+
+For more information on LTS support and the Hardware Enablement Stack, please the the [HWE Wiki](https://wiki.ubuntu.com/Kernel/LTSEnablementStack). 
 
 ---
 

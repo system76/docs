@@ -1,80 +1,48 @@
 ---
 layout: article
-title: Create and Use a Live Disk
+title: Create and Use Bootable Media
 description: >
-  You can run Ubuntu from a USB or DVD for hardware testing, recovering your environment, or reinstalling.
+  You can run Pop!_OS from a USB drive for hardware testing, recovery, and installation/re-installation.
 keywords:
-  - Ubuntu
-  - USB 
+  - Pop_OS!
+  - USB
   - Live disk
   - Restore
   - Reinstall
   - Installation
   - System76
+image: http://support.system76.com/images/pop-icon.jpg
 hidden: false
 section: faq
 
 ---
 
-## What is a live disk?
+Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
-Ubuntu is remarkably flexible. You can run a full version of Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) or a DVD in what's known as a *live environment.* Using a live environment (live disk) is useful for:
+- Installing Pop!_OS
+- Recovering your exiting operating system
+- Backing up files when you can't boot
+- [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
+- [Reinstalling](/articles/restore/) or [upgrading](/articles/upgrade/) your installation
+- [Fixing the boot loader](/articles/grub/)
 
-* [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
-* [Reinstalling](/articles/restore/) or [upgrading](/articles/upgrade/) your Ubuntu installation
-* [Fixing the boot loader](/articles/grub/)
-* Recovering your normal environment
-* Backing up files when you can't boot
+A live disk is a handy tool to have around!
 
-You can understand why a live disk is a handy tool to have around! Note that it's typically called a *live disk* since you can use either a USB or DVD. USB is recommended, since it's significantly faster.
-
-## How do I create a live disk?
+## Create Live Disk
 
 The basic steps to create a live disk are as follows:
 
-1. [Download](https://www.ubuntu.com/download) an ISO copy of Ubuntu
-2. Connect a USB or DVD drive
-3. Use a special program (Startup Disk Creator, Rufus, unetbootin, or dd) to write the ISO to disk
+1. [Download](https://system76.com/pop) a copy of Pop!_OS
+2. Connect a USB drive
+3. Use a special program to write the ISO to disk
 
-If you're upgrading or reinstalling Ubuntu, choose the version you plan on installing. If you're using the live disk for recovery purposes, try and match the same version.
+If you're upgrading or reinstalling Pop!_OS, choose the version you plan on installing. If you're using the live disk for recovery purposes, try and match the same version.
 
-Ubuntu has provided step-by-step guides to create install media:
+To create the a bootable USB drive, use [Etcher](https://etcher.io).  <u>Etcher</u> is available for Windows, macOS, and Linux.
 
-Create an Installation USB | Create an Installation DVD
---------------------------------- | ---------------------------
-[Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
-[Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+## Booting From Live Disk
 
-### Advanced: Using ``dd`` to create a live USB
-
-If you have a Linux system available, you can create a live USB using a command line tool called `dd`. **Please note, this is an advanced method. `dd` is a simple and powerful tool which can overwrite any drive, destination, or file. Use with caution!**
-
-Warnings aside, `dd` is safe and highly effective when used properly. Be sure to confirm your destination file `of=` before running the command. A screenshot is provided below the instructions for reference.
-
-1. Insert the USB drive
-2. Run `lsblk` or `mount` to get a listing of all block-level devices and their mountpoints
-3. Unmount the USB with `umount /dev/[path-to-usb-drive]`
-4. Write out your `dd` command. **The following assumes the ISO is in the ~/Downloads folder and is being writing to /dev/sdf -- substitute the correct paths for your system!**
-
-```
-sudo dd if=~/Downloads/ubuntu-17.04-desktop-amd64.iso of=/dev/sdf
-```
-**Confirm the output file path `of=` is correct** -- open a new terminal if needed!
-
-* If everything looks good, press <kbd>Enter</kbd> to write the ISO to disk.
-
-Since `dd` is writing to a device at the block level, it requires elevated permissions via `sudo`. You will be prompted for your password.
-
-The ISO is a large file, and it takes several minutes to write. The system might not look like it's doing anything. Be patient! Once complete, `dd` will print a final count of blocks in/out.
-
-If your `dd` completes immediately, it was likely written to a file instead of to your USB drive. Confirm the `of=` destination is correct (it should be a block-level device, like /dev/sdf) and try again.
-
-![Using dd](/images/live-usb/using-dd.png)
-
-## Booting from a live disk
-
-After creating the live disk, insert the USB or DVD into your computer, then reboot or power on your system. You'll need to tell the computer to boot from the live disk by holding a key right as you power on:
+After creating the live disk, insert the USB into your computer, then reboot or power on your system. You'll need to tell the computer to boot from the live disk by holding a key right as you power on:
 
 Laptops                             | Desktops
 ----------------------------------- | ------------------------------------
@@ -82,32 +50,22 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kb
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 
-![Boot menu](/images/live-usb/boot-menu.jpg)
+![Boot Menu](/images/live-disk/boot-menu.jpg)
 
-Use the arrow keys to select your USB or DVD drive, then press <kbd>Enter</kbd> to boot the selection.
+Use the arrow keys to select the USB drive, then press <kbd>Enter</kbd> to boot the selection.  
 
-You'll be asked if you want to **Install Ubuntu** or **Try Ubuntu without installing**. Choose whichever is applicable:
+Pop!_OS will boot into the familiar Pop!_OS desktop.
 
-Install Ubuntu    | Try Ubuntu
-------------------| -------------
-Reinstall         | Test hardware
-Upgrade           | Try out Ubuntu
-                  | Fix the bootloader
-                  | Back up files
-                  | Fix your environment
-                  
-Ubuntu will boot into the installer or send you to the familiar Ubuntu dekstop. You can install Ubuntu from the live environment.
+![Live Disk](/images/live-disk/live-desktop.png)
 
-![The live disk environment](/images/live-usb/live-desktop.png)
+## Using Live Environment
 
-## Using the live environment
+The list provided at the beginning of the article provides links to other articles on using the live environment for hardware testing, restoration/upgrades, and boot repair.
 
-The list provided at the beginning of the article provides links to other articles on using the live environment for hardware testing, restoration/upgrades, and boot repair. The live environment has other purposes as well.
+### Repairing Existing Operating System
 
-### Recovering your normal environment
+Since the live environment is a full Pop!_OS installation, it works just like the normal environment. There are tools and methods that allow to `chroot` (change root) into the normal installation and work in the existing operating system to repair a broken package or other problem that is preventing normal booting.
 
-Since the live environment is a full Ubuntu installation, it works just like your normal environment. There are tools that allow you to `chroot` (change root) into your normal installation and work in your normal environment to repair a broken package or installation that is preventing you from booting normally.
+### Backup Files
 
-### Backing up files
-
-Perhaps you're reinstalling, or maybe you can't boot but you want to try and recover and back up your files? The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar Files utility.
+Perhaps you're reinstalling, or maybe you can't boot but you want to try and recover and back up your files? The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar <u>Files</u> utility.

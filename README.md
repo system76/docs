@@ -38,7 +38,6 @@ keywords:
 
 A couple of notes:
 
-- The `title` should be phrased so a customer could say, "I want to `title`." For example, use `Upgrade Ubuntu` instead of `Upgrading Ubuntu`.
 - The `image` is a full URL to an image and will show up on social media, when shared in Slack, etc.
 
 After that, it's just the contents of the article in markdown. Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.

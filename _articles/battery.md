@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Increase Battery Life
+title: Battery - Increase Battery Life
 description: >
   Here are several ways to stretch the battery and create amazing things for longer.
 keywords:
@@ -17,14 +17,13 @@ section: articles
 
 ---
 
-## battery protection (keep battery to 2~3 year )
-* reboot system76 ubuntu linux system,then F2 in BIOS
-* Advanced->Advanced Chipset Control->Flexicharger set Enabled
-* Start Charge set is 70% And Stop Charge set is 80% (Default is Disable and Start Charge 95% Stop Charge 100%)
-
 The biggest single consumer of power is the display backlight. Up to 10% more battery life can gained simply by reducing display brightness. Since our laptops don't currently have an ambient light sensor, brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.  
 
-Every running program in Ubuntu consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
+Every running program consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
+
+### FlexiCharger
+
+On several models of our laptops, Flexicharger can be used to change the top charge the computer will fill the battery to.  The general consensus is that charging a battery to 100% every time will shorten it's overall lifespan.  To adjust the top charge, reboot the computer and enter into BIOS by holding down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control, and set Flexicharger to Enabled. Reduce the top charge down 10-20% to possibly gain additional battery lifespan, at the cost of daily battery life.
 
 ## Useful Programs
 
@@ -118,3 +117,5 @@ sudo rm /var/lib/upower/*
 ```
 
 If the battery life indicator is inaccurate, this will remove the stored statistics. After a few charge/discharge cycles the indicator should be more accurate.
+
+## 

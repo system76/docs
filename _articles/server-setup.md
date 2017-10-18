@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configure Your System76 Server
+title: Server - Configure Your System76 Server
 description: >
   Purchased a new server? Check out these instructions on setting up a System76 server, including initial login credentials.
 keywords:
@@ -165,7 +165,7 @@ hostname -f
 
 ### Update Packages
 
-Download and install Ubuntu updates:
+Download and install updates:
 
 ```
 sudo apt update
@@ -183,6 +183,10 @@ sudo reboot
 ```
 sudo dpkg-reconfigure tzdata
 ```
+
+### Configure BMC
+
+To setup remote management on the server, connect an additional Ethernet line to the management interface port.  Configure the management interface IP address in BIOS.  Next, use a web browser on another computer to see the management interface.
 
 ### Additional Server Resources
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Laptop Repackaging Instructions
+title: Shipping - Laptop Repackaging Instructions
 description: >
   Here are instructions for repackaging your laptop for shipping in for repairs.
 keywords:

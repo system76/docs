@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Use The Microphone
+title: Audio - Use The Microphone
 description: >
   Here is how to enable and adjust the microphone.
 keywords:
@@ -12,4 +12,6 @@ section: articles
 
 ---
 
-Click on the Volume (<i class='fa fa-volume-up'></i>) icon in the upper right, then click on **Sound Settings**. Click on the **Input** tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the "Input Level" indicator show activity.
+Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd> and search for <u>Sound</u>, then click on **Sound Settings**. Click on the **Input** tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the "Input Level" indicator show activity.
+
+![Sound Settings](/images/microphone/input.png)

@@ -28,7 +28,7 @@ This will update your BIOS to version 1.05.14RSA4/EC 1.05.02SA3.
 
 ### Prerequisites
 
-1. If you have a BIOS password set, clear this prior to updating. This can be done by holding down <kbd>F2</kbd> when you computer starts, and going to the <u>Security</u> tab.  Press <kbd>Enter</kbd> on the Supervisor/Boot passwords, and press <kbd>Enter</kbd> when prompted for a new password.  This password is not the same as the user account password in Ubuntu.  This is the hardware level, BIOS password, that needs cleared.
+1. If you have a BIOS password set, clear this prior to updating. This can be done by holding down <kbd>F2</kbd> when you computer starts, and going to the <u>Security</u> tab.  Press <kbd>Enter</kbd> on the Supervisor/Boot passwords, and press <kbd>Enter</kbd> when prompted for a new password.  This password is not the same as the user account password in the operating system.  This is the hardware level, BIOS password, that needs cleared.
 
 2. Remove all external USB drives and devices.
 

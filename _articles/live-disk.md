@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create and Use Bootable Media
+title: Pop! - Create and Use Bootable Media
 description: >
   You can run Pop!_OS from a USB drive for hardware testing, recovery, and installation/re-installation.
 keywords:
@@ -19,26 +19,42 @@ section: faq
 
 Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
-- Installing Pop!_OS
+- [Installing Pop!_OS](/articles/install-pop/)
 - Recovering your exiting operating system
 - Backing up files when you can't boot
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
-- [Reinstalling](/articles/restore/) or [upgrading](/articles/upgrade/) your installation
+- [Installing Ubuntu](/articles/install-ubuntu/) or [upgrading Ubuntu](/articles/upgrade-ubuntu/)
 - [Fixing the boot loader](/articles/grub/)
 
 A live disk is a handy tool to have around!
 
-## Create Live Disk
+## Make Bootable drive
 
-The basic steps to create a live disk are as follows:
+In order to install Pop!_OS, we must first download the .iso image, this is a disk image with the operating system and installer on it. You can download [Pop!_OS here](http://pop.system76.com), just click the link and the download should begin!
 
-1. [Download](https://system76.com/pop) a copy of Pop!_OS
-2. Connect a USB drive
-3. Use a special program to write the ISO to disk
+In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use Etcher.
 
-If you're upgrading or reinstalling Pop!_OS, choose the version you plan on installing. If you're using the live disk for recovery purposes, try and match the same version.
+Etcher is an open source app for Windows, Linux and MacOS that allows you to "burn images to SD cards & USB drives safely and easily", you can download it at [Etcher.io](https://etcher.io).
 
-To create the a bootable USB drive, use [Etcher](https://etcher.io).  <u>Etcher</u> is available for Windows, macOS, and Linux.
+Once you have installed Etcher and downloaded the Pop!_OS.iso image, open up the Etcher application, you should see something like this:
+
+![Etcher](/images/live-disk/etcher.png)
+
+Choose *Select Image* and navigate to where you downloaded Pop!_OS, click on it and hit the *open* button:
+
+![Select Pop!_OS iso](/images/live-disk/open-pop-iso-etcher.png)
+
+Next you select the drive that you want to use, if there is only one it should automatically recognize that you have a flash drive inserted and select it.
+
+![Etcher Flash Drive Selected](/images/live-disk/etcher-flash-selected.png)
+
+Now hit the *Flash* button and watch the magic happen!
+
+![Flashing Pop!_OS...](/images/live-disk/flashing-pop-os.png)
+  
+![Flash Complete](/images/live-disk/flash-complete.png)
+
+Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
 
 ## Booting From Live Disk
 

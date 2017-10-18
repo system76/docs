@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Add a Printer
+title: Printer - Add a Printer in Ubuntu
 description: >
   Here is how to add a printer in Ubuntu.
 keywords:
@@ -16,7 +16,7 @@ section: articles
 
 To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printers* then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
-![Add Printer](/images/add-a-printer/selectcorrectprinter.png)
+![Add Printer](/images/add-a-printer-ubuntu/selectcorrectprinter.png)
 
 Select the correct printer and click **Forward**. The computer will search for the correct Drivers to enable the printer. A box may come up that says 'Installable Options' which you can select any other options available for your printer and then click **Forward** again. Name your printer in the next dialogue box and click **Apply**. A prompt to print a test page will appear next.
 

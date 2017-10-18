@@ -15,9 +15,10 @@ hidden: false
 section: community
 
 ---
+
 ### Install
 
-Install Dependencies for Ubuntu
+Install Dependencies
 
 ```  
 sudo apt-get install nodejs git build-essential python2.7
@@ -62,8 +63,7 @@ systemctl enable cjdns
 systemctl start cjdns
 ```
 
-You will connect automatically with WiFi, but you can peer over the Internet too!
-See more at the Whitepaper and the README!
+You will connect automatically with WiFi, but you can peer over the Internet too!  See more at the Whitepaper and the README!
 
 [github.com/hyperboria/docs](https://github.com/hyperboria/docs)  
 [CJDNS Whitepaper](https://github.com/cjdelisle/cjdns/blob/master/doc/Whitepaper.md)  

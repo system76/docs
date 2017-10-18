@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Can't Log In or No Icons On Desktop
+title: Ubuntu - Can't Log In or No Icons On Desktop
 description: >
   Are you getting stuck in a login loop, even though your password is correct? Are you logged in with no desktop icons?
 keywords:

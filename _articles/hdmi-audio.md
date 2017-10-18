@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configure HDMI Audio
+title: Audio - Configure HDMI Audio
 description: >
   Here is how to play audio over an HDMI connection.
 keywords:
@@ -14,16 +14,14 @@ section: articles
 
 ---
 
-To enable HDMI audio output, open a song or video with audio then connect your HDMI cable to your computer and receiver. Click on the Volume (<i class='fa fa-volume-up'></i>) icon in the upper right, and click on **Sound Settings**. Click on the **Output** tab, then click on the **HDMI / DisplayPort** device for audio output.
+To enable HDMI audio output, click on the settings icons in the upper right, and then click the gear icon(<i class='fa fa-gear'></i>).
 
-![Sound Menu](/images/hdmi-audio/sound-menu.png)
+![Sound Menu](/images/hdmi-audio/user-menu.png)
 
-You can also look for the <u>Sound</u> Settings by pushing the Ubuntu key <kbd><span class="fl-ubuntu"></span></kbd> and searching for <u>Sound</u>.
+You can also look for the <u>Sound</u> Settings by pushing the Super key <kbd><span class="fl-ubuntu"></span></kbd> and searching for <u>Sound</u>.
 
-![Sound in Dash](/images/hdmi-audio/sound-dash.png)
+![Sound in Dash](/images/hdmi-audio/sound-search.png)
 
-Click on the **Output** tab, then click on the HDMI device for audio output. You should hear the song of video playing through the HDMI device.
-
-![Sound Settings](/images/hdmi-audio/sound-settings-default.png)
+Click on the **Output** tab, then click on the HDMI device for audio output.
 
 ![Sound Settings](/images/hdmi-audio/sound-settings-hdmi.png)

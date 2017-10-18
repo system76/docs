@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Find Windows Drivers
+title: Windows - Find Windows Drivers
 description: >
   If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
 keywords:
@@ -22,7 +22,7 @@ For systems with NVIDIA graphics cards, drivers can be found on their website:
 NVIDIA hardware table:
 
 Always        | Maybe                | Never
-:-------------|:---------------------|:-----
+:------------:|:--------------------:|:----:
 Oryx Pro      | Wild Dog Pro         | Lemur
 Serval WS     | Ratel                | Gazelle
 Bonobo WS     | Galago Pro (w/ eGPU) | Kudu
@@ -37,8 +37,8 @@ Trackpad drivers for our laptops can be found on Synaptic's website:
 
 Ethernet hardware table:
 
-Realtek RTL8111/8168/8411 | Intel I219-V         | Atheros/Killer Ethernet E2400 | Intel I210
-:-------------------------|:--------------------|:------------------------------|:----------
+Realtek RTL8111/8168/8411 | Intel I219-V        | Atheros/Killer Ethernet E2400 | Intel I210
+:------------------------:|:-------------------:|:-----------------------------:|:---------:
 Oryx Pro                  | Meerkat             | Serval WS                     | Silverback WS
 Lemur                     | Wild Dog Pro        | Bonobo WS                     |
 Gazelle                   | Leopard WS          |                               |

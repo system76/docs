@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Troubleshoot Bluetooth Issues
+title: Bluetooth - Troubleshoot Bluetooth Issues
 description: >
   Here is how to fix several common Bluetooth issues with your computer.
 keywords:
@@ -71,7 +71,7 @@ Here are a few addition tidbits about the Bluetooth system that may help with tr
 
 #### Linux Firmware
 
-Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the Ubuntu repositories.  They can be downloaded from here:
+Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
 
 [http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/](http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/)
 

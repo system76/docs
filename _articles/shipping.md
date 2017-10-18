@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Prepare For Shipping
+title: Shipping - Prepare For Shipping
 description: >
   Here are instructions for preparing your computer for shipping to System76.
 keywords:
@@ -17,7 +17,7 @@ When shipping a computer to us for any reason, several steps need followed befor
 
 ### Do I Include The Hard Drive?
 
-For repairs of most hardware level failures, such as LCD, motherboard, and power supply replacement, the hard drive doesn't need included.  We will use a substitute drive for testing after repairs are completed.  If the hard drive is causing problems, the issues may be software related, or you would like a fresh copy of Ubuntu installed, please include the drive.  We will do all testing with our drives, and will boot the included drive.  If provided, we will use credentials to test the existing OS by logging in.
+For repairs of most hardware level failures, such as LCD, motherboard, and power supply replacement, the hard drive doesn't need included.  We will use a substitute drive for testing after repairs are completed.  If the hard drive is causing problems, the issues may be software related, or you would like a fresh copy of the operating system installed, please include the drive.  We will do all testing with our drives, and will boot the included drive.  If provided, we will use credentials to test the existing OS by logging in.
 
 #### Backing Up Data
 

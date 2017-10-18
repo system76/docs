@@ -47,12 +47,3 @@ Use the Menu Bar at the top of the screen to view options for the current applic
 
 Various settings for the operating system can be found in the top right menu, and additionally by clicking the gear icon.
 
-![Pop Desktop](/images/pop-basics/pop-help.png)
-
-Access the Pop Desktop Guide by pressing <kbd>F1</kbd> on the desktop.
-
-### Additional References
-
-Pop is built from Ubuntu.  The awesome community driven Ubuntu Beginner's Manual is another great place to learn about this operating system. You can download or read the manual here:
-
-[Ubuntu-Manual.org](http://ubuntu-manual.org)

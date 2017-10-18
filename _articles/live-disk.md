@@ -23,7 +23,6 @@ Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB
 - Recovering your exiting operating system
 - Backing up files when you can't boot
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
-- [Installing Ubuntu](/articles/install-ubuntu/) or [upgrading Ubuntu](/articles/upgrade-ubuntu/)
 - [Fixing the boot loader](/articles/grub/)
 
 A live disk is a handy tool to have around!

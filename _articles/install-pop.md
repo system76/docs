@@ -33,7 +33,7 @@ Please see our instructions for making and booting from a live disk of Pop!_OS [
 
 Once the system boots from the Pop!_OS live image (cool words for an OS running from a flash drive), you will be at the Pop!_OS desktop! You can use the operating system as you normally would now. Because it is running from the flash drive performance may be slower and if you reboot back into the flash drive at this point, you'll lose anything you've changed while running in this "live session".
 
-Doubleclick the *Install Pop!_OS* desktop icon to continue.  
+Double click the *Install Pop!_OS* desktop icon to continue.  
 
 ![Install Pop!_OS Icon](/images/install-pop/pop-live-desktop.jpg)
 
@@ -41,13 +41,11 @@ First we have to select the language we want to use:
 
 ![Select Language](/images/install-pop/select-language-pop.jpg)
 
-Next is probably the most important stage in installing Pop!_OS, as this is the screen where you can do the most damage if you don't know what you're doing. You'll see a few different options for how you can install Pop!_OS here.
-
-So here is what you need to know. If you already have another operating system installed (like Windows or MacOS) and you don't want to get rid of it - select the "Install Alongside option" (pictured below):
+Next you'll see a few different options for how you can install Pop!_OS. If you already have another operating system installed (like Windows or MacOS) and you don't want to get rid of it - select the "Install Alongside option" (pictured below):
 
 ![Install and Erase Disk](/images/install-pop/erase-install.jpg)
 
-To finish this part up, it will ask you to confirm that you want to make changes to your hard disk (hard drive). If you are okay to do this, then hit "Continue". If you want to check or change something, you can click "Go Back".
+To finish this part up, it will ask you to confirm that you want to make changes to your hard drive. If you are okay to do this, then hit "Continue". If you want to check or change something, you can click "Go Back".
 
 ![Continue or Go Back](/images/install-pop/write-changes.jpg)
 

@@ -2,7 +2,7 @@
 layout: article
 title: Install and Optimize Minecraft!
 description: 
-  So you want some of that blocky goodness? Well, Get Java and some graphics card and lets go!
+  So you want some of that blocky goodness? Well, get Java and some graphics cards and let's go!
 keywords:
   - Minecraft
   - Mojang

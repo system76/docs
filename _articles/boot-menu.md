@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Access BIOS or Boot Menu
+title: BIOS - Access BIOS or Boot Menu
 description: >
   Here are the list of keys to access BIOS settings or boot from other media.
 keywords:

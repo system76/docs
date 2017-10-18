@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Learn Pop!_OS Basics
+title: Pop! - Learn Pop!_OS Basics
 description: >
   Learn how to navigate your new Pop!_OS desktop environment with a few easy tips.
 keywords:

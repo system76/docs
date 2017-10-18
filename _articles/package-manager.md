@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Fix Package Manager Issues
+title: Apt - Fix Package Manager Issues
 description: >
   Here are ways to fix update, upgrade, and other package manager issues.
 keywords:
@@ -45,13 +45,13 @@ This will remove a package and it's configuration files.  Use this command to re
 sudo apt install <package name>
 ```
 
-**Important:** Please pay attention when using a purge command.  If the command looks like it will remove several additional packages besides the one you are trying to fix, don't run it!  If it's only a few packages, most likely it's safe.  If additional packages are removed, make sure to install them again before restarting the computer.  This command will make sure the core Ubuntu components are installed after any purge commands:
+**Important:** Please pay attention when using a purge command.  If the command looks like it will remove several additional packages besides the one you are trying to fix, don't run it!  If it's only a few packages, most likely it's safe.  If additional packages are removed, make sure to install them again before restarting the computer.  This command will make sure the core Pop!_OS components are installed after any purge commands:
 
 ```
-sudo apt install ubuntu-desktop
+sudo apt install pop-desktop
 ```
 
-If <u>Software Updater</u> indicates that some remote repositories can't be reached, open the <u>Software & Updates</u> program and look in the **Other Software** tab for the broken repository.  Either remove the repository, or search for the software vendor to determine what has happened to their software server.  Sometimes the version of Ubuntu needs changing to match the current version.
+If <u>Software Updater</u> indicates that some remote repositories can't be reached, open the <u>Software & Updates</u> program and look in the **Other Software** tab for the broken repository.  Either remove the repository, or search for the software vendor to determine what has happened to their software server.  Sometimes the version of the repo (xenial, yakkety, zesty, artful, etc) needs changing to match the current version of the operating system.
 
 ## Useful Programs
 

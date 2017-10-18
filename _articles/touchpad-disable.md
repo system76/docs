@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Disable Touchpad While Typing
+title: Hardware - Disable Touchpad While Typing
 description: If you would like to disable the touchpad while typing, please follow these instructions.
 keywords:
   - touchpad
@@ -15,7 +15,7 @@ section: articles
 
 ---
 
-To disable the touchpad while typing in Ubuntu, a built-in program needs run. It's best to add it to the startup items to run every time your computer starts. Search for and open <u>Startup Applications</u> from the Dash by pressing the <kbd><span class="fl-ubuntu"></span></kbd> key, and then click **Add**.
+To disable the touchpad while typing, a built-in program needs run. It's best to add it to the startup items to run every time your computer starts. Search for and open <u>Startup Applications</u> from the Dash by pressing the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, and then click **Add**.
 
 Field    | Value
 ---------|------------------------------

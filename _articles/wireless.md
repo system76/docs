@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Solve Wireless Issues
+title: Wireless - Solve Wireless Issues
 description: >
   If you’re having problems with your wireless Internet connection, take a look at the suggestions in this article.
 keywords:
@@ -186,4 +186,4 @@ The newest version of the <u>linux-firmware</u> package, which contains the iwlw
 
 [mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware](https://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware)
 
-Sometimes the newest version of the firmware will clear up occasional bugs.  Please download the `.deb` package, version 1.167 or newer.
+Sometimes the newest version of the firmware will clear up occasional bugs.  Please download the newest `.deb` package.

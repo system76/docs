@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Repair GRUB Bootloader
+title: GRUB - Repair GRUB Bootloader
 description: >
    How to repair and reinstall Grub bootloader.
 keywords:
@@ -16,19 +16,15 @@ section: articles
 
 ---
 
-GRUB is the Ubuntu bootloader. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can break, and it may not let you boot into Ubuntu to fix the problem.
+GRUB is the bootloader. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can break, and it may not let you boot into your computer to fix the problem.
 
 #### Important Note About GRUB Updates
 
 If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`. Installing everywhere will break the bootloader.
 
-### Create Ubuntu Live Disk
+### Create Live Disk
 
-Create an Installation USB | Create an Installation DVD
---------------------------------- | ---------------------------
-[Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
-[Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx)| [Using OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+Please see our instructions for making a live disk of Pop!_OS [here](/articles/live-disk/).
 
 ### Reinstall GRUB Bootloader
 
@@ -38,7 +34,7 @@ Laptops  | Desktops
 -------- | --------
 Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
-Choose **try ubuntu without installing**. Once the desktop is shown, connect the computer to the Internet.  Next, open a terminal (search <u>Terminal</u> from the Ubuntu dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>) and run the following command:
+Once the desktop is shown, connect the computer to the Internet.  Next, open a terminal (search <u>Terminal</u> after pressing the Super Key) and run the following command:
 
 ```
 sudo parted -ls
@@ -50,7 +46,7 @@ And then look for the name of your main hard drive. It could be `/dev/sda` or `/
 
 ### EFI Boot
 
-If `boot, esp` is listed under `flags`, the system is installed in UEFI mode.  Run these commands based on what type of disk you have:
+Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode.  Run these commands based on what type of disk you have:
 
 #### For NVMe Drives:
 
@@ -104,11 +100,11 @@ apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 
 ---
 
-After this, reboot your computer, removing the disk when prompted, and Ubuntu should boot.
+After this, reboot your computer, removing the disk when prompted, and the computer should boot.
 
 ## Troubleshooting
 
-If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Ubuntu Install CD is not compatible with that of the installed system.
+If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install CD is not compatible with that of the installed system.
 
 For example, the error is most frequently seen when trying to `chroot` to a 64-bit system (amd64) from a 32-bit Install CD (x86).
 

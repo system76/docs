@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Use Windows Programs
+title: Windows - Use Windows Programs
 description: >
-  This is how to use Windows programs in Ubuntu.
+  This is how to use Windows programs in Pop!_OS.
 keywords:
   - Support
   - virtual
@@ -21,9 +21,9 @@ section: articles
 
 ---
 
-Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Ubuntu applications simultaneously.
+Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.
 
-Virtual machines do impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot. Setting up a Windows-Ubuntu Dual Boot is beyond the scope of this support.
+Virtual machines do impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot. Setting up a Windows-Pop!_OS Dual Boot is beyond the scope of this support.
 
 ### Understand Virtual Machines
 
@@ -31,13 +31,13 @@ Virtual Machines are a method of running multiple OSs on your computer simultane
 
 ### Install VirtualBox
 
-Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it's easy to set up and use, and available for free. It's available in the <u>Ubuntu Software Center</u>.
+Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it's easy to set up and use, and available for free. It's available in the <u>Pop!_Shop</u>.
 
-Open up the <u>Ubuntu Software Center</u>, then enter *virtualbox* in the search field. Click on the <u>VirtualBox</u> result with the blue icon, then click on **More Info**. You should see the window below:
+Open up the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click on the <u>VirtualBox</u> result with the blue icon, then click on **More Info**. You should see the window below:
 
 ![VirtualBox Listing in USC](/images/windows/step1.png)
 
-Click on the Install button, then wait for the download and install process to complete. When it's finished, <u>Ubuntu Software Center</u> will tell you that it was installed on the current date, like below:
+Click on the Install button, then wait for the download and install process to complete. When it's finished, <u>Pop!_Shop</u> will tell you that it was installed on the current date, like below:
 
 ![VirtualBox Installed through USC](/images/windows/step2.png)
 
@@ -49,7 +49,7 @@ Windows 10 can be downloaded from [here](https://www.microsoft.com/en-us/softwar
 
 ### Create Virtual Machine
 
-Once you have <u>VirtualBox</u> installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Ubuntu key on your keyboard <kbd><span class="fl-ubuntu"></span></kbd> and then enter *virtualbox* in the search field.
+Once you have <u>VirtualBox</u> installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Super Key on your keyboard <kbd><span class="fl-ubuntu"></span></kbd> and then enter *virtualbox* in the search field.
 
 ![Opening VirtualBox through the Dash](/images/windows/step3.png)  
 
@@ -143,7 +143,7 @@ Windows 10 allows you to set a PIN for logging in instead of a password. If you'
 
 ### Use Virtual Machine
 
-The virtual machine will be presented through a window in Ubuntu, and can be interacted with similarly to any other application. Note that the Virtual Machine window will capture the keyboard input (The mouse is automatically captured or uncaptured depending on whether it's currently on top of the Virtual Machine window or not). If the input is currently captured, and you need to send input to Ubuntu (or a window outside of your Virtual Machine window), you'll need to tap the Right-hand <kbd>Ctrl</kbd> first, which will release the keyboard from the Virtual machine, and allow it to work in Ubuntu again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
+The virtual machine will be presented through a window, and can be interacted with similarly to any other application. Note that the Virtual Machine window will capture the keyboard input (The mouse is automatically captured or uncaptured depending on whether it's currently on top of the Virtual Machine window or not). If the input is currently captured, and you need to send input to the desktop (or a window outside of your Virtual Machine window), you'll need to tap the Right-hand <kbd>Ctrl</kbd> first, which will release the keyboard from the Virtual machine, and allow it to work in the desktop again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
 
 ### Add Network Printer
 

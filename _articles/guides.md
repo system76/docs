@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Find Your Quickstart Guide
+title: Guides - Find Your Quickstart Guide
 description: >
   Check here for diagrams and quickstart guides for your computer.
 keywords:

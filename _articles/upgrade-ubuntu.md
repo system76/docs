@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Upgrade Ubuntu
+title: Ubuntu - Upgrade Ubuntu
 description: >
   Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
 keywords:
@@ -20,7 +20,7 @@ keywords:
   - apt
 image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-17-04.jpg
 hidden: false
-section: faq
+section: articles
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Watch Videos and Play Music (MP3, DVD, etc.)
+title: Videos - Watch Videos and Play Music (MP3, DVD, etc.)
 description: >
-  Ubuntu does not ship with playback support for some proprietary multimedia formats, such as MP3 files and DVD-videos. To enable playback of these media, please see this Multimedia Playback Support documentation.
+  Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these media, please see this document.
 keywords:
   - Support
   - multimedia
@@ -22,15 +22,15 @@ section: articles
 
 ---
 
-Ubuntu does not ship with playback support for some proprietary multimedia formats, such as MP3 files and DVD-videos. To enable playback of these media, please follow the instructions below.
+Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these medias, please follow the instructions below.
 
 ### Open A Terminal
 
-Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> on your keyboard.  A purple Terminal window should open up.
+Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, and type the word *terminal*, then press <kbd>Enter</kbd>.  A <u>Terminal</u> window should open up.
 
 ### Install Packages
 
-Copy and paste the following long line, followed by <kbd>Enter</kbd>:
+Copy and paste the following line, followed by <kbd>Enter</kbd>:
 
 ```
 sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libavcodec-extra gstreamer1.0-libav gstreamer1.0-fluendo-mp3 chromium-codecs-ffmpeg-extra oxideqt-codecs-extra libdvd-pkg
@@ -50,11 +50,11 @@ sudo dpkg-reconfigure libdvd-pkg
 
 ### Restart Your Computer
 
-After enabling codec support, it's recommended to restart your computer. Click on the Device Menu (Gear Icon in the upper-right corner of your screen), then click on "Shut Down...". Then, click on the restart item in the shutdown overlay.
+After enabling codec support, it's recommended to restart your computer.
 
 ## Useful Programs
 
-The program <u>VLC</u> is a excellent media player with support for DVDs, CDs, and most formats of media files.  It can be installed with the <u>Software Center</u> or with this command:
+The program <u>VLC</u> is a excellent media player with support for DVDs, CDs, and most formats of media files.  It can be installed with the the <u>Pop!_Shop</u> in Pop!_OS, in the <u>Software Center</u> in Ubuntu, or with this command:
 
 ```
 sudo apt install vlc

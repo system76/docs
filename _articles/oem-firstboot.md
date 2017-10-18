@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create a User If Initial User Setup Fails
+title: Ubuntu - Create a User If Initial User Setup Fails
 description: >
   Sometimes, the first boot user creation fails and leaves only a Guest session. You can fix this by following the steps here.
 keywords:

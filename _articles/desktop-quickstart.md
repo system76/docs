@@ -1,14 +1,13 @@
 ---
 layout: article
-title: Desktop Quickstart Guide
+title: Desktop - Desktop Quickstart Guide
 description: >
-  Getting started on your new Ubuntu System76 Desktop.
+  Getting started on your new System76 Desktop.
 keywords:
   - Support
   - Desktop Quickstart
   - Desktop Beginner
   - Beginner
-  - Ubuntu Beginner
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
@@ -26,6 +25,8 @@ If you ordered a desktop without the max amount of drives, you'll receive an ext
 To enable WiFi capability, screw the black antennas to the back of the desktop where the wireless antennas are located.  Look for the gold terminals.
 
 ### Connect Your Monitor
+
+![Ports](/images/desktop-quickstart/back_desktopdiagram.jpg)
 
 If you ordered a dedicated graphics card, plug your monitor into one of the horizontal ports on the back of the machine. Do not connect your display to the vertical ports if you have a graphics card. The vertical ports are directly connected to the motherboard and are disabled by default if there is a dedicated graphics card.
 

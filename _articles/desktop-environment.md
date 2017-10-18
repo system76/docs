@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Change the Desktop Environment
+title: Desktop - Change the Desktop Environment
 description: >
-    Pop!_OS Comes with GNOME.  Don't like it?  Follow these instructions to install additional desktop environments.
+    Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
 keywords:
   - desktop environment
   - MATE
@@ -17,11 +17,12 @@ section: articles
 
 ---
 
-Pop!_OS comes with the <u>GNOME</u> desktop environment and Ubuntu before 17.10 comes with the <u>Unity</u> desktop environment installed by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
+Pop!_OS comes with the <u>GNOME</u> desktop environment and Ubuntu before 17.10 comes with the <u>Unity</u> desktop environment. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
 Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Pop!_OS, each with it's own individual settings.
 
 ![Login](/images/desktop-environment/Login.png)
+  
 ![Login2](/images/desktop-environment/Login2.png)
 
 #### Important
@@ -64,12 +65,13 @@ sudo apt install cinnamon-desktop-environment
 
 ### GNOME
 
-GNOME is the default desktop environment in Pop!_OS and Ubuntu 17.10. It contains both a modern and a classic version. It is a good example of another way to interact with the operating system, but isn't as straight-forward as other desktop environments.
+GNOME is the default desktop environment in Pop!_OS and Ubuntu 17.10. It contains both a modern and a classic version.
 
 ![Gnome](/images/desktop-environment/Gnome.png)
+  
 ![Gnome2](/images/desktop-environment/Gnome2.png)
 
-GNOME is installed with:
+In Ubuntu, GNOME is installed with:
 
 ```
 sudo apt install ubuntu-gnome-desktop
@@ -100,7 +102,7 @@ sudo apt install -f
 
 ### Xfce
 
-Xfce embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good bit of conformity for the programs written for it. Xfce also provides a highly customizable environment, while being leaner on resources than Unity.
+Xfce embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good bit of conformity for the programs written for it. Xfce also provides a highly customizable environment, while being leaner on resources.
 
 ![Xfce](/images/desktop-environment/Xfce.png)
 

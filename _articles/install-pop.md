@@ -59,7 +59,7 @@ Once you restart, remove the flash drive when it tells you to, and when the comp
 
 ### Install System76 Driver
 
-Once you've reinstalled Pop!_OS, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> by pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd> or press <kbd><i class="fl-ubuntu"></kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've reinstalled Pop!_OS, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> by pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>), then enter the following commands:
 
 ```
 sudo apt-add-repository -y ppa:system76-dev/stable

@@ -56,3 +56,13 @@ Then Pop!_OS should start installing!
 Just sit tight as the installer does its thing. Once it completes, you will have the option to continue using the live session or restart the computer (so  you can boot into your newly install Pop!_OS installation).
 
 Once you restart, remove the flash drive when it tells you to, and when the computer comes back up - you'll have Pop!_OS. Great job!
+
+### Install System76 Driver
+
+Once you've reinstalled Pop!_OS, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> by pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd> or press <kbd><i class="fl-ubuntu"></kbd>+<kbd>T</kbd>), then enter the following commands:
+
+```
+sudo apt-add-repository -y ppa:system76-dev/stable
+sudo apt update
+sudo apt install -y system76-driver
+```

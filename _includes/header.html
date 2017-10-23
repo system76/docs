@@ -1,42 +1,28 @@
 <header id="masthead" class="row">
-    <a id="logo" class="small-6 medium-3 large-3 columns" href="https://system76.com/"></a>
+  <a id="logo" class="small-6 medium-3 large-3 columns" href="https://system76.com/"></a>
 
-    <nav id="nav-icons" class="small-6 medium-offset-0 medium-4 medium-push-5 large-offset-0 large-3 large-push-6 columns">
-        <a id="link-contact" href="https://system76.com/contact" title="Contact"><i class="fa fa-comments"></i></a>
-        <a id="link-support" href="http://support.system76.com" title="Support"><i class="fa fa-life-ring"></i></a>
-        <a id="link-account" href="https://system76.com/my-account" title="Account"><i class="fa fa-user"></i></a>
-    </nav>
+  <nav id="nav-icons" class="small-6 medium-offset-0 medium-4 medium-push-5 large-offset-0 large-3 large-push-6 columns">
+    <a id="link-contact" href="https://system76.com/contact" title="Contact"><i class="fa fa-comments"></i></a>
+    <a id="link-support" href="http://support.system76.com" title="Support"><i class="fa fa-life-ring"></i></a>
+    <a id="link-account" href="https://system76.com/my-account" title="Account"><i class="fa fa-user"></i></a>
+  </nav>
 
-    <nav id="nav-links" class="small-12 medium-5 medium-pull-4 large-6 large-pull-3 columns">
-        <a id="link-laptops" href="https://system76.com/laptops" >Laptops</a>
-        <a id="link-desktops" href="https://system76.com/desktops" >Desktops</a>
-        <a id="link-servers" href="https://system76.com/servers" >Servers</a>
-        <a id="link-gear" href="https://system76.com/swag" >Swag</a>
-    </nav>
+  <nav id="nav-links" class="small-12 medium-5 medium-pull-4 large-6 large-pull-3 columns">
+    <a href="https://system76.com/laptops">Laptops</a>
+    <a href="https://system76.com/desktops">Desktops</a>
+    <a href="https://system76.com/servers">Servers</a>
+    <a href="https://system76.com/pop">Pop!_OS</a>
+  </nav>
 </header>
-
-<!--
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <div class="trigger">
-        {% for page in site.pages %}
-        {% if page.title %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
--->
 
 {% if page.title %}
-<header id="page-title">
+  <header id="page-title">
     <div class="row">
-        <h1 class="small-12 columns greeting">
-          <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
-          {{ page.title }}
-          <a href="https://github.com/system76/docs/blob/gh-pages/{{ page.path }}" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
-        </h1>
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        {{ page.title }}
+        <a href="https://github.com/system76/docs/blob/gh-pages/{{ page.path }}" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
     </div>
-</header>
+  </header>
 {% endif %}

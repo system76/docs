@@ -16,6 +16,7 @@ keywords:
 ### Compatible systems
 
  - Oryx Pro
+ - Serval WS
 
 ### Product and Model:
 

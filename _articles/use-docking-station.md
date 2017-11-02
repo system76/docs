@@ -25,10 +25,12 @@ We have tested:
 
 ### Pop!_OS
 
-The recommended ISO to install Pop!_OS is the NVIDIA ISO as that will include the needed Drivers to run the cards. You'll also need the [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) as well.
+The recommended ISO to install Pop!_OS is the NVIDIA ISO as that will include our NVIDIA Driver for the card. You'll also need the [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) as well.
 
-To install the DisplayLink Driver.
+To install the DisplayLink Driver open the Terminal and move to the Download directory like so:
+
 ```
+cd Downloads
 unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 1.4.zip
 sudo ./displaylink-driver-1.4.210.run
 ```

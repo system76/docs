@@ -2,7 +2,7 @@
 layout: article
 title: Display - Docking Station Support
 description: >
-  A Docking Station makes it easy to use multi monitors as well as having an ethernet port, multi USB ports and more while only using one USB 3.0 port on your laptop.
+  A Docking Station makes it easy to use multi monitors. It also adds an ethernet port, multi USB ports and more while only using one USB 3.0 port on your laptop.
 image: https://system76.com/images/foo.jpg
 keywords:
   - docking 

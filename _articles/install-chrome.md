@@ -31,6 +31,8 @@ Select **Open with Eddy**
 
 ### Install Chrome
 
+#### In Pop!_OS 
+
 After the download is complete, <u>Eddy</u> will open automatically. Click on the **Install** button:
 
 ![Chrome ready to install](/images/flash/step4.png)
@@ -39,10 +41,24 @@ When prompted, enter your password and wait for the installation to finish. When
 
 ![Chrome installed](/images/flash/step5.png)
 
-If <u>Eddy</u> isn't working, re-download <u>Chrome</u> and choose **Save File** to the `Downloads` folder, and then run this command:
+If <u>Eddy</u> isn't working, re-download <u>Chrome</u> and choose **Save File** to the `Downloads` folder, and then run these commands:
 
 ```
 sudo apt install ~/Downloads/google-chrome-stable_current_amd64.deb
+sudo apt -f install
+```
+
+#### In Ubuntu
+
+After you select **64-bit .deb (For Debian/Ubuntu)** option, then click **Accept and Install**.
+
+![64-Bit Chrome](/images/flash/step2.png)
+
+Open a Terminal by tapping the Super Key <kbd><span class="fl-ubuntu"></span></kbd> and run these commands:
+
+```
+sudo apt install ~/Downloads/google-chrome-stable_current_amd64.deb
+sudo apt -f install
 ```
 
 ### Run Chrome

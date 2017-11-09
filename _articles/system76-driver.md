@@ -16,7 +16,7 @@ section: articles
 
 ### System76 Driver
 
-To install our Driver you run the following commands in the Terminal:
+To install our Driver you need to run the following commands in the Terminal:
 
 ```
 sudo apt-add-repository -ys ppa:system76-dev/stable
@@ -26,7 +26,7 @@ sudo apt-get install -y system76-driver
 
 #### Generate Log Files
 
-Simply clicking the button outlined in red will create a file called 'system76-logs.tgz'.
+Simply clicking the button outlined in red will create a file called 'system76-logs.tgz', it will be placed in your Home directory (/home/username)
 
 ![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
 
@@ -35,5 +35,5 @@ Simply clicking the button outlined in red will create a file called 'system76-l
 Follow the above steps as well as this additional command:
 
 ```
-sudo apt install system76-driver-nvidia
+sudo apt-get install system76-driver-nvidia
 ```

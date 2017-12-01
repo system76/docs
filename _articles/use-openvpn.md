@@ -9,7 +9,7 @@ keywords:
   - Privacy
   - ProtonVPN
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 section: articles
 
 ---

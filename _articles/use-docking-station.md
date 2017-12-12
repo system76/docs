@@ -18,7 +18,6 @@ hidden: false
  - Lemur
  - Galago Pro
  - Gazelle
- - 
 
 ### Compatible NVIDIA systems
 

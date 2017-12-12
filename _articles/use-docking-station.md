@@ -10,7 +10,7 @@ keywords:
   - popos
   - ubuntu
   - System76
-  
+hidden: false  
 ---
 
 ### Compatible Intel systems

@@ -13,15 +13,31 @@ keywords:
   
 ---
 
-### Compatible systems
+### Compatible Intel systems
+
+ - Lemur
+ - Galago Pro
+ - Gazelle
+ - 
+
+### Compatible NVIDIA systems
 
  - Oryx Pro
  - Serval WS
+ - Bonoobo WS
 
 ### Product and Model:
 
 We have tested:
  - [Plugable UD-3900](http://plugable.com/products/ud-3900/)
+
+### For Intel systems
+
+You'll also need to install the 'dkms' package to install DisplayLink Driver. The NVIDIA Driver install this package and has it already.
+
+```
+sudo apt install dkms
+```
 
 ### Pop!_OS
 

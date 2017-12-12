@@ -29,7 +29,7 @@ section: articles
 ### Product and Model:
 
 We have tested:
- - [Plugable UD-3900](http://plugable.com/products/ud-3900/)
+ - [Plugable UD-3900](http://plugable.com/products/ud-3900/) [works with NVIDIA and Intel systems]
 
 ### For Intel systems
 

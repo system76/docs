@@ -5,35 +5,26 @@ description:
   Show the battery percentage in the top bar in Pop!_OS.
 keywords:
   - battery percentage
-  - gnome extension
+  - gnome tweak tool
   - battery
 hidden: false
 section: community
 
 ---
-To show the battery percentage in the top bar in Pop!\_OS, you will need to install a GNOME extension.
+To show the battery percentage in the top bar in Pop!\_OS, you will need to use the GNOME Tweak Tool.
 
-### Installing GNOME Extensions
-To get started with installing GNOME extensions, install the GNOME Tweak Tool and Chrome GNOME Shell using the following commands:
+### Installing the GNOME Tweak Tool
+To get started with showing the battery percentage, you need to install the GNOME Tweak Tool using the following command:
 ```shell
-sudo apt install gnome-tweak-tool chrome-gnome-shell
+sudo apt install gnome-tweak-tool
 ```
 
-Then open Firefox or Chromium (or Google Chrome) and install the GNOME shell integration tool if needed:
-- [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
-- [Chrome extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en)
+Once it is installed, open it up.
 
-Once the shell integration software is done, you can move on to installing the battery percentage extension.
+### Showing the battery percentage
+In the GNOME Tweak Tool, navigate to the "Top Bar" section, and toggle the "Battery Percentage" on.
 
-### Installing the Battery Percentage Extension
-Navigate to the [battery extension](https://extensions.gnome.org/extension/818/battery-percentage/). Click the slider on the right which says "OFF".
-
-![Slider]({{site.baseurl}}/images/show-battery-percentage/battery-percentage-gnome-store.png)
-
-
-Click the "Install" button which pops up, as seen below:
-
-![Install]({{site.baseurl}}/images/show-battery-percentage/install.png)
+![Top Bar Settings]({{site.baseurl}}/images/show-battery-percentage/top-bar.png)
 
 
 You should now see your battery percentage in the top bar.

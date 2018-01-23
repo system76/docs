@@ -31,10 +31,11 @@ These instructions are for System76 laptop owners who have been prompted for a f
 1. Select **Restart Now** to begin.
 2. The System76 Firmware updater will start on reboot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
 3. The firmware update process will begin, then the system will restart back into the System76 Firmware updater. The fans on the laptop will be on full blast.
-5. The firmware update process will finish. When prompted, **press any key to shutdown**.
-7. After the laptop powers off, **press the power button** to turn it back on.
-8. Two small blue boxes will appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one.
-10. The machine will boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
-12. Select and confirm **Load Setup Defaults**.
-13. Select and confirm **Save changes and reset**.
-14. Once the laptop restarts, the firmware will be up to date!
+4. The firmware update process will finish. When prompted, **press any key to shutdown**.
+5. After the laptop powers off, **press the power button** to turn it back on.
+6. Two small blue boxes will appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one.
+7. The machine will then reboot. Repeatedly press the <kbd>F2</kbd> key to boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
+ - If the BIOS settings do not launch, reboot the machine and try again.
+8. Select and confirm **Load Setup Defaults**.
+9. Select and confirm **Save changes and reset**.
+10. Once the laptop restarts, the firmware will be up to date!

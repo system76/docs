@@ -21,7 +21,7 @@ For repairs of most hardware level failures, such as LCD, motherboard, and power
 
 #### Backing Up Data
 
-If the hard drive is included with the shipment, please backup all important data.  We will try out best to not destroy any data, but we are not responsible for any lost data during the repair.  Methods for backing up data include:
+If the hard drive is included with the shipment, please backup all important data.  We will try our best to not destroy any data, but we are not responsible for any lost data during the repair.  Methods for backing up data include:
 
 | Method | Description |
 |-------|------------|

@@ -2,7 +2,7 @@
 layout: article
 title: Software - Update Laptop Firmware
 description: >
-  Learn and follow along with how to update your System76 laptop's firmware.
+  How to update System76 laptop firmware.
 keywords:
   - Firmware
   - Intel ME
@@ -14,11 +14,9 @@ section: articles
 
 ---
 
-# Updating Firmware
+These instructions are for System76 laptop owners who have been prompted for a firmware update. Firmware updates may be issued to fix security vulnerabilities or to improve hardware functionality.
 
-These instructions are for System76 laptop owners who have been prompted for a firmware update.
-
-## Before You Begin
+### Before You Begin
 
 * Make sure the laptop is **plugged into power** for the entire firmware updating process.
 
@@ -26,7 +24,7 @@ These instructions are for System76 laptop owners who have been prompted for a f
 
 * During the firmware updating process, **the laptop will restart several times**. Prompts will occasionally ask for user involvement.
 
-## Performing the Update
+### Performing the Update
 
 1. Select **Restart Now** to begin.
 2. The System76 Firmware updater will start on reboot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.

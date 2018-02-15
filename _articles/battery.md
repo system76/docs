@@ -32,7 +32,7 @@ On several models of our laptops, Flexicharger can be used to change the top cha
 To install TLP, run this command:
 
 ```
-sudo apt install tlp
+sudo apt install tlp tlp-rdw --no-install-recommends
 ```
 
 TLP will take effect upon restart. To see current configuration settings, run this command:

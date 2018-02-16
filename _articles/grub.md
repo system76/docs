@@ -54,7 +54,7 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 sudo mkdir -p /mnt/boot/efi
 sudo mount /dev/nvme0n1p2 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
-for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
@@ -66,7 +66,7 @@ apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 sudo mkdir -p /mnt/boot/efi
 sudo mount /dev/sda2 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
-for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
@@ -82,7 +82,7 @@ If `bios_grub` is listed under `flags`, the system is installed in BIOS mode.  R
 
 ```
 sudo mount /dev/nvme0n1p2 /mnt
-for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
@@ -92,7 +92,7 @@ apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 
 ```
 sudo mount /dev/sda2 /mnt
-for i in /dev /dev/pts /proc /sys; do sudo mount -B $i /mnt$i; done
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic

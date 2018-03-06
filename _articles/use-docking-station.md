@@ -33,17 +33,17 @@ We have tested:
 
 ### For Intel systems
 
-You'll also need to install the 'dkms' package to install DisplayLink Driver. The NVIDIA Driver install this package and has it already.
+You'll also need to install the 'dkms' package to install DisplayLink Driver. The NVIDIA Driver installs this package automatically.
 
 ```
 sudo apt install dkms
 ```
 
-### Pop!_OS
+### Installing DisplayLink Driver
 
-The recommended ISO to install Pop!_OS is the NVIDIA ISO as that will include our NVIDIA Driver for the card. You'll also need the [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) as well.
+The recommended ISO to install Pop!_OS is the NVIDIA ISO as that will include our NVIDIA Driver for the card. You'll also need the newest [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) as well.
 
-To install the DisplayLink Driver open the Terminal and move to the Download directory like so:
+To install the DisplayLink Driver open the Terminal and move to the Download directory like so: (the version for the driver may change so look at the file name and change it accordly.)
 
 ```
 cd Downloads
@@ -51,9 +51,7 @@ unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 1.4.zip
 sudo ./displaylink-driver-1.4.210.run
 ```
 
-### Ubuntu
-
-For machines that ship with Ubuntu from us include our NVIDIA Driver but in case a reinstall is needed
+For machines that ship with Ubuntu and Pop!_OS from us include our NVIDIA Driver but in case a reinstall was needed
 below is how you add our NVIDIA Driver.
 
 ```

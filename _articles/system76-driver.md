@@ -19,7 +19,7 @@ section: articles
 To install our Driver you need to run the following commands in the Terminal:
 
 ```
-sudo apt-add-repository -ys ppa:system76-dev/stable
+sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt-get update
 sudo apt-get install -y system76-driver
 ```

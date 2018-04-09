@@ -20,6 +20,8 @@ These instructions are for System76 laptop owners who have been prompted for a f
 
 * Make sure the laptop is **plugged into power** for the entire firmware updating process.
 
+* **Disconnect external devices**, including any displays or USB devices.
+
 * **Take a picture of these instructions** or pull up [s76.co/lfw](http://s76.co/lfw) on a phone or other device for reference. 
 
 * During the firmware updating process, **the laptop will restart several times**. Prompts will occasionally ask for user involvement.

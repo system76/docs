@@ -143,6 +143,9 @@ Ubuntu Icon:
 Ubuntu Key:  
 <kbd><span class="fl-ubuntu"></span></kbd>
 
+Pop Key:
+<kbd><span class="fl-pop-key"></span></kbd>
+
 An arrow:  
 Do this → Do that → Yay!
 

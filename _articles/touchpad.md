@@ -18,6 +18,6 @@ section: articles
 
 Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.
 
-To configure your touchpad, press the Super Key <kbd><span class="fl-ubuntu"></span></kbd> then type <u>Mouse & Touchpad</u> and click on the result. The touchpad settings are under the **Touchpad** tab.
+To configure your touchpad, press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, <kbd><span class="fl-pop-key"></span></kbd> then type <u>Mouse & Touchpad</u> and click on the result. The touchpad settings are under the **Touchpad** tab.
 
 ![Mouse Search](/images/touchpad/mouse.png)

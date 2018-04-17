@@ -18,7 +18,7 @@ section: articles
 
 #### Pop!_OS
 
-Press <kbd><span class="fl-ubuntu-inverse"></span></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open up.
+Press <kbd><span <kbd><span class="fl-pop-key"></span></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open up.
 
 #### Ubuntu
 

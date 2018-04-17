@@ -188,6 +188,18 @@ sudo dpkg-reconfigure tzdata
 
 To setup remote management on the server, connect an additional Ethernet line to the management interface port.  Configure the management interface IP address in BIOS.  Next, use a web browser on another computer to see the management interface.
 
+See Intel's user guide for configuring the BMC here:
+
+[Intel BMC User Guide](http://download.intel.com/support/motherboards/server/sb/intel_rmm4_bmc_ews_userguide_r2_8.pdf)
+
+To run the jwviewer.jnlp file on the viewing computer, please install this program:
+
+```
+sudo apt install icedtea-netx
+```
+
+Which will install the program 'javaws' (Java Web Services)
+
 ### Additional Server Resources
 
 [Ubuntu Server Information](http://www.ubuntu.com/server)

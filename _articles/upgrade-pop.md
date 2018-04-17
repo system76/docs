@@ -1,20 +1,19 @@
 ---
 layout: article
-title: Upgrade to Pop!_os 18.04 LTS
+title: Upgrade to Pop!_OS 18.04 LTS
 description: >
-  Get the newest version of Pop!_os on your System76 computer! Check out our upgrade directions.
+  Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
 keywords:
-  - Pop 17.10
+  - Pop!_OS 17.10
   - Pop!_OS 18.04
   - LTS
-  - Point Release
   - Upgrade
   - Update
   - Release
   - System76
   - apt
 image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-17-04.jpg
-hidden: true
+hidden: false
 section: articles
 
 ---
@@ -58,7 +57,7 @@ If your upgrade appears to hang in place for an extended period of time, click o
 
 ### Broken Upgrade
 
-Please see the steps above to create a bootable USB. Restart your computer and start your computer from the bootable USB. When given the option, choose **Try Pop!_os**.
+Please see the steps above to create a bootable USB. Restart your computer and start your computer from the bootable USB. When given the option select your Language and Keyboard then choose **Try Demo Mode**.
 
 Next follow the steps to repair grub first:
 

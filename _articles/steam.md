@@ -15,7 +15,7 @@ section: articles
 
 ### Install Steam From Command Line
 
-Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>.
+Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>, <kbd><span class="fl-pop-key"></span></kbd>.
 
 ![Activities Overview](/images/steam/search.png)
 

@@ -69,7 +69,7 @@ Press the Super Key <kbd><i class="fl-ubuntu"></i></kbd> button to open the Acti
 
 ![Searching for Chrome](/images/flash/step6.png)
 
-<small>* You may need to log out and in for <u>Chrome</u> to appear in the Dash.</small>
+<small>* You may need to log out and in for <u>Chrome</u> to appear in the Overview.</small>
 
 You can click on <u>Chrome</u> here to run it. For easy access, you can add <u>Chrome</u> to your favorites:
 

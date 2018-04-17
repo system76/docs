@@ -18,7 +18,7 @@ To enable HDMI audio output, click on the settings icons in the upper right, and
 
 ![Sound Menu](/images/hdmi-audio/user-menu.png)
 
-You can also look for the <u>Sound</u> Settings by pushing the Super key <kbd><span class="fl-ubuntu"></span></kbd> and searching for <u>Sound</u>.
+You can also look for the <u>Sound</u> Settings by pushing the Super key <kbd><span class="fl-ubuntu"></span></kbd> or <kbd><span class="fl-pop-key"></span></kbd> and searching for <u>Sound</u>.
 
 ![Sound in Dash](/images/hdmi-audio/sound-search.png)
 

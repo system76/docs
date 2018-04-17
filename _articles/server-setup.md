@@ -205,3 +205,7 @@ Which will install the program 'javaws' (Java Web Services)
 [Ubuntu Server Information](http://www.ubuntu.com/server)
 
 [Ubuntu Server Documentation](https://help.ubuntu.com/)
+
+### Troubleshooting
+
+If the Jackal 2U server is fully loaded with 8 spinning drives, and will not boot, staggered drive startup may be needed.  Enter into BIOS, and in the 'Setup Mass Storage Controller Configuration' screen, enable 'AHCI HDD Staggered Spin-Up'.

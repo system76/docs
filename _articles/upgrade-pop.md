@@ -13,7 +13,7 @@ keywords:
   - System76
   - apt
 image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-17-04.jpg
-hidden: false
+hidden: true
 section: articles
 
 ---

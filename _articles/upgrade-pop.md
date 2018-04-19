@@ -17,6 +17,8 @@ hidden: false
 section: articles
 
 ---
+To install Pop!_OS for the first time or get the new recovery system (recommended), download and install from https://system76.com/pop. Though not necessary, we recommend a fresh install with this release for the recovery system. In future releases the recovery partition will download the next version enabling more reliable on-disk release upgrades. The recovery partition also provides an always-stable live environment that helps speed up diagnosing and fixing support issues. 
+
 ### Create Installation USB
 
 First, we recommend having Pop!_OS installation media handy before starting any upgrades in case something goes wrong. You can find instructions on creating a a USB with Pop!_OS from [support.system76.com](http://support.system76.com/articles/live-disk/).

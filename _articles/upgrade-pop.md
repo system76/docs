@@ -13,7 +13,7 @@ keywords:
   - System76
   - apt
 image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-17-04.jpg
-hidden: true
+hidden: false
 section: articles
 
 ---
@@ -23,7 +23,7 @@ First, we recommend having Pop!_OS installation media handy before starting any 
 
 ### Backup Your Files
 
-Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong.
+Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. Please read our article on [How to Backup Your Files](articles/backup-files/) for helpful instructions.
 
 ### Upgrade
 
@@ -49,7 +49,7 @@ Once restarted the computer will be on the newly upgraded system! If you run int
 
 ## Troubleshooting
 
-Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then the followingsteps can help repair your broken OS.
+Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then the following steps can help repair your broken OS.
 
 ### Stuck Upgrades
 

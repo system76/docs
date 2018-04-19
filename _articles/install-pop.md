@@ -35,33 +35,33 @@ Please see our instructions for making and booting from a live disk of Pop!_OS [
 
 The first step after booting from your new live disk is to select your language for the installation steps:
 
-![Keyboard](/images/install-pop2/2_keyboard.png)
+![Keyboard](/images/install-pop/2_keyboard.png)
 
 Next we will select the keyboard layout for our setup and region:
 
-![Try or Install](/images/install-pop2/3_try_or_install.png)
+![Try or Install](/images/install-pop/3_try_or_install.png)
 
 Now we can choose to install Pop!_OS or try Demo Mode to learn your new desktop before installing:
 
-![Disk setup](/images/install-pop2/4_disk.png)
+![Disk setup](/images/install-pop/4_disk.png)
 
 We can select to erase the currently install OS(s) and install Pop!_OS on the selected drive. To the left we can choose Custom Partitioning if you need to Dual Boot or want to have a separate Home partition or place the /tmp partition on a different drive:
 
 ### Choosing to encrypt your drive
 
-![Encrypt option](/images/install-pop2/5_encrypt_notice.png)
+![Encrypt option](/images/install-pop/5_encrypt_notice.png)
 
 You can choose to encrypt your drive or to no encrypt your drive. If you would like to encrypt the drive then push the "Choose Password" button, if you don't want to encrypt you push the "Don't Encrypt" button:
 
-![Encrypt password](/images/install-pop2/6_encrypt_password.png)
+![Encrypt password](/images/install-pop/6_encrypt_password.png)
 
 At this step you choose the password that will be used to encrypt your drive and it will be required to boot your computer to the login screen. Then you enter your password for the new user that you will create on the next boot of your computer:
 
-![Progress](/images/install-pop2/7_progress.png)
+![Progress](/images/install-pop/7_progress.png)
 
 Now Pop!_OS will begin installing!
 
-![Success](/images/install-pop2/8_success.png)
+![Success](/images/install-pop/8_success.png)
 
 Pop!_OS has been successfully installed on your computer! Awesome work! You can choose to reboot your computer to create your new user for the OS or you can shut down and setup the new user later:
 

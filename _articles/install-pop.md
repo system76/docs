@@ -31,7 +31,7 @@ Please see our instructions for making and booting from a live disk of Pop!_OS [
 
 ## Installing Pop!_OS
 
-![Language](/images/install-pop2/1_language.png)
+![Language](/images/install-pop/1_language.png)
 
 The first step after booting from your new live disk is to select your language for the installation steps:
 

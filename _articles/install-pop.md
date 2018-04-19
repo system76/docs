@@ -5,7 +5,7 @@ description: >
   Full instructions on installing Pop!_OS your computer.
 keywords:
   - Pop!_OS
-  - 17.10
+  - 18.04
   - Restore
   - Reinstall
   - Installation
@@ -31,35 +31,43 @@ Please see our instructions for making and booting from a live disk of Pop!_OS [
 
 ## Installing Pop!_OS
 
-Once the system boots from the Pop!_OS live image (cool words for an OS running from a flash drive), you will be at the Pop!_OS desktop! You can use the operating system as you normally would now. Because it is running from the flash drive performance may be slower and if you reboot back into the flash drive at this point, you'll lose anything you've changed while running in this "live session".
+![Language](/images/install-pop2/1_language.png)
 
-Double click the *Install Pop!_OS* desktop icon to continue.  
+The first step after booting from your new live disk is to select your language for the installation steps:
 
-![Install Pop!_OS Icon](/images/install-pop/pop-live-desktop.jpg)
+![Keyboard](/images/install-pop2/2_keyboard.png)
 
-First we have to select the language we want to use:
+Next we will select the keyboard layout for our setup and region:
 
-![Select Language](/images/install-pop/select-language-pop.jpg)
+![Try or Install](/images/install-pop2/3_try_or_install.png)
 
-Next you'll see a few different options for how you can install Pop!_OS. If you already have another operating system installed (like Windows or MacOS) and you don't want to get rid of it - select the "Install Alongside option" (pictured below):
+Now we can choose to install Pop!_OS or try Demo Mode to learn your new desktop before installing:
 
-![Install and Erase Disk](/images/install-pop/erase-install.jpg)
+![Disk setup](/images/install-pop2/4_disk.png)
 
-To finish this part up, it will ask you to confirm that you want to make changes to your hard drive. If you are okay to do this, then hit "Continue". If you want to check or change something, you can click "Go Back".
+We can select to erase the currently install OS(s) and install Pop!_OS on the selected drive. To the left we can choose Custom Partitioning if you need to Dual Boot or want to have a separate Home partition or place the /tmp partition on a different drive:
 
-![Continue or Go Back](/images/install-pop/write-changes.jpg)
+### Choosing to encrypt your drive
 
-Then Pop!_OS should start installing!
+![Encrypt option](/images/install-pop2/5_encrypt_notice.png)
 
-![Installing Pop!_OS For Real!](/images/install-pop/installing-pop-os.jpg)
+You can choose to encrypt your drive or to no encrypt your drive. If you would like to encrypt the drive then push the "Choose Password" button, if you don't want to encrypt you push the "Don't Encrypt" button:
 
-Just sit tight as the installer does its thing. Once it completes, you will have the option to continue using the live session or restart the computer (so  you can boot into your newly install Pop!_OS installation).
+![Encrypt password](/images/install-pop2/6_encrypt_password.png)
 
-Once you restart, remove the flash drive when it tells you to, and when the computer comes back up - you'll have Pop!_OS. Great job!
+At this step you choose the password that will be used to encrypt your drive and it will be required to boot your computer to the login screen. Then you enter your password for the new user that you will create on the next boot of your computer:
+
+![Progress](/images/install-pop2/7_progress.png)
+
+Now Pop!_OS will begin installing!
+
+![Success](/images/install-pop2/8_success.png)
+
+Pop!_OS has been successfully installed on your computer! Awesome work! You can choose to reboot your computer to create your new user for the OS or you can shut down and setup the new user later:
 
 ### Install System76 Driver
 
-Once you've reinstalled Pop!_OS, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> by pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>), then enter the following commands:
+Once you've reinstalled Pop!_OS, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> by pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>, <kbd><span class="fl-pop-key"></span></kbd>) then enter the following commands:
 
 ```
 sudo apt-add-repository -y ppa:system76-dev/stable

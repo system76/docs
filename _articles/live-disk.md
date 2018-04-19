@@ -35,17 +35,19 @@ In order to make a live disk of Pop!_OS you must have a bootable flash drive. Yo
 
 Popsicle is an open source app for Linux that allows you to "burn images to USB drives safely and easily", it is installed in Pop!_OS 18.04 and up. If you are running Pop!_OS 17.10 you can install it like so in a terminal:
 
+```
 sudo apt install popsicle-gtk
+```
 
 Once you have installed Popsicle and downloaded the Pop!_OS.iso image, open up the Popsicle application, you should see something like this:
 
 ![Popsicle](/images/live-disk/popsicle.png)
 
-Choose *Select Image* and navigate to where you downloaded Pop!_OS, click on it and hit the *open* button:
+Pick *Choose Image* and navigate to where you downloaded Pop!_OS, click on it and hit the *open* button:
 
 ![Select Pop!_OS iso](/images/live-disk/popsicle-image-selection.png)
 
-Next you select the drive that you want to use, if there is only one it should automatically recognize that you have a flash drive inserted and select it.
+Next you select the drive that you want to use, the name of the drive most likely will be the brand name like SanDisk or Kingston.
 
 ![Popsicle Flash Drive Selected](/images/live-disk/popsicle-drive-selection.png)
 

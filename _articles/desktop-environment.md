@@ -175,7 +175,7 @@ GNOME:
 If you currently use automatic login to bypass the password login, a default can be set with this command:
 
 ```
-gksudo gedit /etc/lightdm/lightdm.conf
+sudo gedit /etc/lightdm/lightdm.conf
 ```
 
 And add a line at the bottom to set the (default):
@@ -229,7 +229,7 @@ xfce4-notifyd-config
 Or changed back to Unity's with this command:
 
 ```
-gksu gedit /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service
+sudo gedit /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service
 ```
 
 And replace this line:

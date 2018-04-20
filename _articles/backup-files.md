@@ -22,7 +22,7 @@ The key to good backups is having the data automatically backed up, accessible, 
 
 -   Automatic: Data is automatically backed up.  Manual copies work well in some cases, but automatic backups makes sure it's always fresh, and that nothing is lost if a manual backup isn't performed
 -   Accessible: Data needs to be able to be retrieved.  Data has to be able to be restored easily if the original is lost.
--   Secure: Data needs to be only accessible by by the owner.  Cloud solutions are great, but additional steps need taken to make sure the data is private.
+-   Secure: Data needs to be only accessible by the owner.  Cloud solutions are great, but additional steps need taken to make sure the data is private.
 -   Distributed: Data needs to be in multiple places.  If all the data is in one location, the risk for data loss increases.
 
 ### User Files
@@ -31,7 +31,13 @@ User files are the most common data to be backed up.  This includes documents, p
 
 #### Deja-dup
 
-Deja-dup is built into the operating system.  It can be used to backup user data locally, remotely, or to a cloud server.  It can be setup to run automatically on a regular basis.
+Deja-dup is a popular backup option.  It can be used to backup user data locally, remotely, or to a cloud server.  It can be setup to run automatically on a regular basis.
+
+To install deja-dup, download it from the Pop!_Shop, or run this command:
+
+```
+sudo apt install deja-dup
+```
 
 **Local** - Backup data to another internal or external hard drive.
 
@@ -65,9 +71,11 @@ Many online services offer free storage up to a certain amount of data, and offe
 [Box.com](https://www.box.com)  
 [Mega.nz](https://www.mega.nz)  
 
-[Google drive](https://drive.google.com) does not have a native Linux client, but there is a 3rd party replacement, and there is built-in support within the OS.
+[Google drive](https://drive.google.com) does not have a native Linux client, but there is built-in support within the OS.  Please note that the built in support does not copy and keep files locally as the above desktop clients do.
 
 To keep the data from being read by everyone, one solution is to keep all of the files into passworded archives.  A .zip or .7z file with a password is encrypted, and can't be easily accessed by anyone without the password.
+
+Another option is [Nextcloud](https://nextcloud.com/).  Nextcloud is a cloud solution that is completely controlled by the user.  The remote server needs setup by the individual, or a 3rd party needs paid to setup and maintain the server.
 
 #### Manual
 

@@ -84,7 +84,7 @@ Open the report located at `~/report.html` to see the results.
 
 ![Powertop1](/images/power/powertop1.png)
 
-It's useful to create a baseline by running <u>powertop</u> after a cold startup, without opening any applications, and then run it a few more times throughout the day to get a comparison of different workloads. Make sure to specify a different filename each time for comparison. Take a look at the list of software running and see if anything can be removed or if settings of high consumers can be changed.
+It's useful to create a baseline by running <u>powertop</u> after a cold startup, without opening any applications, and then run it a few more times throughout the day to get a comparison of different workloads. Make sure to specify a different filename each time for comparison. Look at running software and see if programs can be uninstalled or if the settings of high resource using programs can be changed.
 
 #### Tuning
 
@@ -101,7 +101,7 @@ sudo powertop --auto-tune
 Please test the settings and make sure they doesn't introduce any instability or oddities. The above command will only last until reboot. The most likely problem with the auto-tune command is that external USB devices have delays after inactivity. To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
 
 ```
-gksu gedit /etc/rc.local
+sudo gedit /etc/rc.local
 ```
 
 And add:

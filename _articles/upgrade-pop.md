@@ -17,7 +17,7 @@ hidden: false
 section: articles
 
 ---
-To install Pop!_OS for the first time or get the new recovery system (recommended), download and install from https://system76.com/pop. Though not necessary, we recommend a fresh install with this release for the recovery system. In future releases the recovery partition will download the next version enabling more reliable on-disk release upgrades. The recovery partition also provides an always-stable live environment that helps speed up diagnosing and fixing support issues. 
+Pop 18.04 includes a new recovery system feature. If you would like this new feature, please reinstall the operating system as described here: http://support.system76.com/articles/install-pop/. Future upgrades will update the recovery partition enabling more reliable upgrades. The recovery partition also provides a live environment that helps speed up diagnosing and fixing support issues. Upgrading in place will not create a recovery partition. 
 
 ### Create Installation USB
 

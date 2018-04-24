@@ -40,7 +40,7 @@ Once the desktop is shown, connect the computer to the Internet.  Next, open a t
 sudo parted -ls
 ```
 
-And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectfully. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. 
+And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. 
 
 ---
 

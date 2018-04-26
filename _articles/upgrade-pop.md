@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Upgrade to Pop!_OS 18.04 LTS
+title: Pop! - Upgrade Pop!_OS
 description: >
   Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
 keywords:
@@ -17,11 +17,12 @@ hidden: false
 section: articles
 
 ---
-Pop 18.04 includes a new recovery system feature. If you would like this new feature, please reinstall the operating system as described here: http://support.system76.com/articles/install-pop/. Future upgrades will update the recovery partition enabling more reliable upgrades. The recovery partition also provides a live environment that helps speed up diagnosing and fixing support issues. Upgrading in place will not create a recovery partition. 
+
+Pop 18.04 includes a new recovery system feature. If you would like this new feature, please reinstall the operating system as described here: [Install Pop](/articles/install-pop/). Future upgrades will update the recovery partition enabling more reliable upgrades. The recovery partition also provides a live environment that helps speed up diagnosing and fixing support issues. Upgrading in place will not create a recovery partition. 
 
 ### Create Installation USB
 
-First, we recommend having Pop!_OS installation media handy before starting any upgrades in case something goes wrong. You can find instructions on creating a a USB with Pop!_OS from [support.system76.com](http://support.system76.com/articles/live-disk/).
+First, we recommend having Pop!_OS installation media handy before starting any upgrades in case something goes wrong. You can find instructions on creating a a USB with Pop!_OS from [support.system76.com](/articles/live-disk/).
 
 ### Backup Your Files
 
@@ -29,9 +30,9 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 ### Upgrade
 
-Open a terminal by right-clicking on your desktop background and choose **Open Terminal.**
+Open a terminal by right-clicking on your desktop background and choose **Open Terminal**
 
-Type the following command, followed by the enter key.
+Type the following command, followed by the <kbd>Enter</kbd> key:
 
 ```
 sudo do-release-upgrade
@@ -42,15 +43,12 @@ You'll be prompted to enter your system password, but when you type it, the lett
 Type <kbd>Y</kbd> and press enter when prompted
 
 Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd>.
-You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintaner's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
+
+You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
 
 ---
 
-Once the process is finished, restart your computer for the changes to take effect.
-
-#### Done!
-
-Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out Troubleshooting below.
+If the upgrade completes sucessfully, restart your computer for the changes to take effect.  Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out Troubleshooting below.
 
 ## Troubleshooting
 
@@ -62,20 +60,20 @@ If your upgrade appears to hang in place for an extended period of time, click o
 
 ### Broken Upgrade
 
-Please see the steps above to create a bootable USB. Restart your computer and start your computer from the bootable USB. When given the option select your Language and Keyboard then choose **Try Demo Mode**.
+If the upgrade fails it will most likely be due to a package manager issue.  First, run the upgrade again with this command, and see if it will get further:
 
-Next follow the steps to repair grub first:
+```
+sudo do-release-upgrade
+```
 
-[Repair Grub](/articles/grub/)
-
-And then the steps to repair the package manager next:
+If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document to repair the package manager:
 
 [Repair Package Manager](/articles/package-manager/)
 
-And continue the upgrade with this command:
+Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:
 
-```
-do-release-upgrade
-```
+> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
-After that, if all of the grub, apt package manager, and release upgrade commands successfully complete, the computer should be able to boot normally.
+If you do reboot and find your computer not starting, please follow these steps to get your system booting:
+
+[Repair Grub](/articles/grub/)

@@ -14,7 +14,7 @@ keywords:
   - system76-driver-nvidia
   - Release
   - System76
-image: http://support.system76.com/images/pop-icon.jpg
+image: http://support.system76.com/images/pop-icon.png
 hidden: false
 section: faq
 

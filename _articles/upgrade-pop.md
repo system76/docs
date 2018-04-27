@@ -12,7 +12,7 @@ keywords:
   - Release
   - System76
   - apt
-image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-17-04.jpg
+image: http://support.system76.com/images/pop-icon.png
 hidden: false
 section: articles
 

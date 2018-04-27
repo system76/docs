@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Create and Use Bootable Media from other OS's
+title: Pop! - Create and Use Bootable Media on Pop!
 description: >
   You can run Pop!_OS from a USB drive for hardware testing, recovery, and installation/re-installation.
 keywords:
@@ -31,27 +31,31 @@ A live disk is a handy tool to have around!
 
 In order to install Pop!_OS, we must first download the .iso image, this is a disk image with the operating system and installer on it. You can download [Pop!_OS here](http://pop.system76.com), just click the link and the download should begin!
 
-In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use Etcher.
+In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use Popsicle.
 
-Etcher is an open source app for Windows, Linux and MacOS that allows you to "burn images to SD cards & USB drives safely and easily", you can download it at [Etcher.io](https://etcher.io).
+Popsicle is an open source app for Linux that allows you to "burn images to USB drives safely and easily", it is installed in Pop!_OS 18.04 and up. If you are running Pop!_OS 17.10 you can install it like so in a terminal:
 
-Once you have installed Etcher and downloaded the Pop!_OS.iso image, open up the Etcher application, you should see something like this:
+```
+sudo apt install popsicle-gtk
+```
 
-![Etcher](/images/live-disk/etcher.png)
+Once you have installed Popsicle and downloaded the Pop!_OS.iso image, open up the Popsicle application, you should see something like this:
 
-Choose *Select Image* and navigate to where you downloaded Pop!_OS, click on it and hit the *open* button:
+![Popsicle](/images/pop-live-disk/popsicle.png)
 
-![Select Pop!_OS iso](/images/live-disk/open-pop-iso-etcher.png)
+Pick *Choose Image* and navigate to where you downloaded Pop!_OS, click on it and hit the *open* button:
 
-Next you select the drive that you want to use, if there is only one it should automatically recognize that you have a flash drive inserted and select it.
+![Select Pop!_OS iso](/images/pop-live-disk/popsicle-image-selection.png)
 
-![Etcher Flash Drive Selected](/images/live-disk/etcher-flash-selected.png)
+Next you select the drive that you want to use, the name of the drive most likely will be the brand name like SanDisk or Kingston.
+
+![Popsicle Flash Drive Selected](/images/pop-live-disk/popsicle-drive-selection.png)
 
 Now hit the *Flash* button and watch the magic happen!
 
-![Flashing Pop!_OS...](/images/live-disk/flashing-pop-os.png)
+![Flashing Pop!_OS...](/images/pop-live-disk/popsicle-progress.png)
   
-![Flash Complete](/images/live-disk/flash-complete.png)
+![Flash Complete](/images/pop-live-disk/popsicle-finished.png)
 
 Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
 
@@ -65,13 +69,13 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kb
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 
-![Boot Menu](/images/live-disk/boot-menu.jpg)
+![Boot Menu](/images/pop-live-disk/boot-menu.jpg)
 
 Use the arrow keys to select the USB drive, then press <kbd>Enter</kbd> to boot the selection.  
 
-Pop!_OS will boot into the familiar Pop!_OS desktop.
+Pop!_OS will boot into the installer once you pick your language and keyboard then select 'Try Demo Mode' in the third slide.
 
-![Live Disk](/images/live-disk/live-desktop.png)
+![Live Disk](/images/pop-live-disk/live-desktop.png)
 
 ## Using Live Environment
 

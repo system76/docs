@@ -125,7 +125,7 @@ When prompted, choose **Install Ubuntu**.
 
 Next, check the box labeled **Download updates while installing Ubuntu** to bring your installation up to date.
 
-![Download Updates](/images/restore/updates.png)
+![Download Updates](/images/install-ubuntu/updates.png)
 
 #### Complete The Upgrade
 

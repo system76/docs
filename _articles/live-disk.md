@@ -11,7 +11,7 @@ keywords:
   - Reinstall
   - Installation
   - System76
-image: http://support.system76.com/images/pop-icon.jpg
+image: http://support.system76.com/images/pop-icon.png
 hidden: false
 section: faq
 

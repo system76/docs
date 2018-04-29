@@ -14,7 +14,7 @@ keywords:
   - apt
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: articles
+section: faq
 
 ---
 
@@ -35,10 +35,10 @@ Open a terminal by right-clicking on your desktop background and choose **Open T
 Type the following command, followed by the <kbd>Enter</kbd> key:
 
 ```
-sudo do-release-upgrade
+sudo do-release-upgrade -d
 ```
 
-You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>
+You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.  The `-d` flag is needed for early upgrading, and can be omitted once the next version is officially released.
 
 Type <kbd>Y</kbd> and press enter when prompted
 
@@ -63,7 +63,7 @@ If your upgrade appears to hang in place for an extended period of time, click o
 If the upgrade fails it will most likely be due to a package manager issue.  First, run the upgrade again with this command, and see if it will get further:
 
 ```
-sudo do-release-upgrade
+sudo do-release-upgrade -d
 ```
 
 If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document to repair the package manager:
@@ -73,7 +73,3 @@ If it fails again, the package manager will need to be repaired manually.  Pleas
 Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:
 
 > 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-
-If you do reboot and find your computer not starting, please follow these steps to get your system booting:
-
-[Repair Grub](/articles/grub/)

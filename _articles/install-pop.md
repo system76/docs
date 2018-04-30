@@ -20,6 +20,7 @@ section: faq
 
 ---
 
+# About this Guide
 
 The following guide describes how to download the Pop!_OS.iso image, write it to a flash drive, and install it on the hardware of your choice.
 
@@ -31,38 +32,68 @@ Please see our instructions for making and booting from a live disk of Pop!_OS [
 
 ## Installing Pop!_OS
 
-Once the system boots from the Pop!_OS live image (cool words for an OS running from a flash drive), you will be at the Pop!_OS desktop! You can use the operating system as you normally would now. Because it is running from the flash drive performance may be slower and if you reboot back into the flash drive at this point, you'll lose anything you've changed while running in this "live session".
+Once the system boots from the Pop!_OS live image (cool words for an OS running from a flash drive), after the initial setup, you will be at the Pop!_OS desktop. Because it is running from the flash drive performance may be slower and if you reboot back into the flash drive at this point, you’ll lose anything you’ve changed while running in this “live session”. The setup will allow you to install Pop!_OS to your hard drive as well, which is what we're trying to do here.
 
-Double click the *Install Pop!_OS* desktop icon to continue.  
-
-![Install Pop!_OS Icon](/images/install-pop/pop-live-desktop.jpg)
+# Initial Setup
 
 First we have to select the language we want to use:
 
 ![Select Language](/images/install-pop/select-language-pop.jpg)
 
-Next you'll see a few different options for how you can install Pop!_OS. If you already have another operating system installed (like Windows or MacOS) and you don't want to get rid of it - select the "Install Alongside option" (pictured below):
+Next, we have to select the country for that language:
 
-![Install and Erase Disk](/images/install-pop/erase-install.jpg)
+![Select Language Country](/images/install-pop/select-language-country.jpg)
 
-To finish this part up, it will ask you to confirm that you want to make changes to your hard drive. If you are okay to do this, then hit "Continue". If you want to check or change something, you can click "Go Back".
+After that, you'll select your keyboard layout:
 
-![Continue or Go Back](/images/install-pop/write-changes.jpg)
+![Select Keyboard Layout](/images/install-pop/select-keyboard-layout.jpg)
 
-Then Pop!_OS should start installing!
+Now select your input language of choice.
 
-![Installing Pop!_OS For Real!](/images/install-pop/installing-pop-os.jpg)
+![Select Input Language](/images/install-pop/select-input-language.jpg)
+# Installing Pop!_OS 
 
-Just sit tight as the installer does its thing. Once it completes, you will have the option to continue using the live session or restart the computer (so  you can boot into your newly install Pop!_OS installation).
+You will now be presented with two options: demo mode, or installing Pop!_OS. We want to install Pop!_OS, so go ahead and click "Install Pop!_OS 18.04 LTS."
 
-Once you restart, remove the flash drive when it tells you to, and when the computer comes back up - you'll have Pop!_OS. Great job!
+![Install Pop!_OS 18.04 LTS](/images/install-pop/install-dialog.jpg)
 
-### Install System76 Driver
+Now, you'll want to choose the hard drive to install to. Be careful when doing this, because if you choose the wrong hard drive, you can lose all your data.
 
-Once you've reinstalled Pop!_OS, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> by pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>), then enter the following commands:
+![Hard Drive Chooser](/images/install-pop/select-hard-drive.jpg)
 
-```
-sudo apt-add-repository -y ppa:system76-dev/stable
-sudo apt update
-sudo apt install -y system76-driver
-```
+The Pop!_OS Installer will ask you to encrypt your hard drive by default. If you want to skip this step, click "Don't Encrypt."
+
+![Choose to Encrypt Your Hard Drive](/images/install-pop/choose-to-encrypt.jpg)
+
+If you clicked "Choose Password", type in a password. If it is a weak password, like "password", then you will see this:
+
+![Weak Encryption Password](/images/install-pop/weak-encryption-password.jpg)
+
+You may still continue, but setting a weak password is not recommended.
+
+If you type in a stronger password, you will see this:
+
+![Strong Encryption Password](/images/install-pop/strong-encryption-password.jpg)
+
+
+Now the installer with start install Pop!_OS to your hard drive.
+
+![Installing](/images/install-pop/installing.jpg)
+
+
+At any point if you'd like to see what's going on in the background just click the terminal icon above the progress bar:
+
+![Terminal Output](/images/install-pop/terminal-output.jpg)
+
+If something goes wrong during the installation, you will see this:
+
+![Something Goes Wrong](/images/install-pop/something-goes-wrong.jpg)
+
+
+
+
+Just sit tight as the installer does its thing. Once it completes, you will have the option to continue using the live session or restart the computer (so you can boot into your newly installed Pop!_OS installation).
+
+Once the install finishes, restart, and at the boot logo of your computer (or before it starts booting) remove the flash drive. Go through the initial setup, and you are now ready to start using Pop!_OS!
+
+### Note: The Pop!_OS Installer should install the System76 Driver by default.

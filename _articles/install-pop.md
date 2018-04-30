@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Pop! - Install Pop!\_OS On Your System76 Computer
+title: Pop! - Install Pop!_OS On Your System76 Computer
 description: >
-  Full instructions on installing Pop!\_OS your computer.
+  Full instructions on installing Pop!_OS your computer.
 keywords:
   - Pop!\_OS
   - 18.04

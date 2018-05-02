@@ -35,7 +35,7 @@ Open a terminal by right-clicking on your desktop background and choose **Open T
 Type the following command, followed by the <kbd>Enter</kbd> key:
 
 ```
-sudo do-release-upgrade -d
+sudo do-release-upgrade 
 ```
 
 You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.  The `-d` flag is needed for early upgrading, and can be omitted once the next version is officially released.

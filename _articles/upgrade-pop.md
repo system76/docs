@@ -63,7 +63,7 @@ If your upgrade appears to hang in place for an extended period of time, click o
 If the upgrade fails it will most likely be due to a package manager issue.  First, run the upgrade again with this command, and see if it will get further:
 
 ```
-sudo do-release-upgrade -d
+sudo do-release-upgrade
 ```
 
 If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document to repair the package manager:

@@ -16,7 +16,7 @@ keywords:
   - system76-driver-nvidia
   - Release
   - System76
-image: http://support.system76.com/images/upgrade/Ubuntu-17-04.jpg
+image: http://support.system76.com/images/upgrade/Ubuntu-18-04.jpg
 hidden: false
 section: articles
 

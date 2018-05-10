@@ -56,6 +56,6 @@ Our laptops and desktops use Intel WiFi, which should be found by the Intel Driv
 
 If there is a missing driver in the <u>Device Manager</u>, right click on the item with the missing driver, choose **Properties**, then **Details**, and then **Hardware Ids** from the drop-down.  The VEN (vendor) and DEV (device) numbers are unique to every piece of hardware.  Search for the device at the PCI Database:
 
-[PCI Database](http://pcidatabase.com/)
+[PCI Lookup](http://www.pcilookup.com/)
 
 You can use that info to find the manufacturer, then search for drivers.

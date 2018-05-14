@@ -14,24 +14,10 @@ section: articles
 
 ### Install The NVIDIA CUDA Toolkit
 
-[Click here to download the NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
-
-When you select your target platform, choose the 'deb (network)' installer for either 16.04 or 17.04.
-
-![Select Target Platform](/images/cuda/download.png)
-
-Click the Download button and open the downloaded .deb
-
-![Download with](/images/cuda/open-with.png)
-
-Click the **Install** button to install <u>cuda-repo-ubuntu1704</u>
-
-Then open a terminal and run these commands:
+The NVIDIA CUDA toolkit is currently available in the standard Ubuntu software repositories.  To install the CUDA toolkit, please run this command:
 
 ```
-sudo apt update
-sudo apt upgrade
-sudo apt install cuda
+sudo apt install nvidia-cuda-toolkit
 ```
  
 Now reboot your system so that the new NVIDIA driver takes effect.

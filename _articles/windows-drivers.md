@@ -31,10 +31,6 @@ Silverback WS |                      |
 
 [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 
-Trackpad drivers for our laptops can be found on Synaptic's website:
-
-[Synaptic Drivers](http://www.synaptics.com/resources)
-
 Ethernet hardware table:
 
 Realtek RTL8111/8168/8411 | Intel I219-V        | Atheros/Killer Ethernet E2400 | Intel I210

@@ -21,6 +21,12 @@ Then, try reinstalling Bluetooth related software with this command:
 sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudio-module-bluetooth
 ```
 
+If `tlp` is installed, then there may be settings interfering with Bluetooth functionality.  Edit this file and disable Wifi and Bluetooth power saving features:
+
+```
+sudo gedit /etc/default/tlp
+```
+
 ## Useful Programs
 
 There is a program called <u>Bluetooth Manager</u> which is included with <u>XFCE</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:

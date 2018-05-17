@@ -43,7 +43,7 @@ All of the values start at 100, and work their way down to 0.  The terms "old-ag
 
 #### Machine Check Exceptions
 
-Machine Check Exceptions are hardware failure events, and can be logged with the <u>mcelog</u> program.  Run this command to install the program:
+Machine Check Exceptions are hardware failure events, and can be logged with the <u>mcelog</u> program.  Run this command in Ubuntu 17.10 or earlier to install the program:
 
 ```
 sudo apt install mcelog

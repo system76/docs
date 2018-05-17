@@ -110,6 +110,12 @@ And change the file to read (effective upon reboot):
 > \[connection\]  
 > wifi.powersave = 2  
 
+If `tlp` is installed, take a look at the settings file found here for additional Wifi power saving being enabled:
+
+```
+sudo gedit /etc/default/tlp
+```
+
 ## Useful Programs
 
 The program <u>wavemon</u> can be used to see info about nearby access points, such as power levels, channels, and BSSIDs.  It can be installed with this command:

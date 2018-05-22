@@ -1,0 +1,14 @@
+---
+layout: article
+title: Full Disk Encryption with Two Drives
+description: >
+ This is atep by step guide to help people with full disk encryption and two drives, as is common on most computers nowadays (SSD/HD)
+image: https://system76.com/images/foo.jpg
+keywords:
+  - encryption
+  - Pop!_OS
+  - Ubuntu
+  - 16.04/18.04
+  - Two HDDs
+  - System76
+---

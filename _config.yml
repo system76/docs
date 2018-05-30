@@ -19,5 +19,5 @@ kramdown:
   input: GFM # Use GitHub markdown extensions
   syntax_highlighter: rouge
 
-gems:
+plugins:
   - jekyll-redirect-from

@@ -18,9 +18,11 @@ section: articles
 
 GRUB is the bootloader. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can break, and it may not let you boot into your computer to fix the problem.
 
-#### Important Note About GRUB Updates
+#### Important Note
 
 If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`. Installing everywhere will break the bootloader.
+
+On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply.
 
 ### Create Live Disk
 
@@ -58,6 +60,7 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
 ```
 
 #### For SATA Drives:
@@ -70,6 +73,7 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
 ```
 
 ---
@@ -86,6 +90,7 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
 ```
 
 #### For SATA Drives:
@@ -96,6 +101,7 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
 ```
 
 ---

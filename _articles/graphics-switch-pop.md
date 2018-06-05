@@ -15,4 +15,14 @@ section: articles
 
 ---
 
-### 
+### Software
+
+Pop!_OS by System76 includes our system76-power package that includes the ability to switch between NVIDIA and Intel graphics.
+
+### Switch graphics
+
+Click the top right corner of your screen where your Power, WiFi/Wired, and Sound settings are then click the battery icon.
+
+## Selecting NVIDIA or Intel
+
+Then select either NVIDIA or Intel depending on which GPU you would like to use.

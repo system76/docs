@@ -15,7 +15,7 @@ section: articles
 
 ---
 
-#### Pro and Con
+### Pro's and Con's
 
 Pro:
 

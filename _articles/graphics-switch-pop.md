@@ -15,7 +15,7 @@ section: articles
 
 ---
 
-If you need longer battery life and don't need the full power of the NVIDIA GPU you can switch to the Intel graphics and then back to the NVIDIA graphics when you need the power.
+For longer battery life and a quieter laptop use Intel graphics and switch to NVIDIA graphics when you need additional performance or to use external displays on certain laptops. _External display ports are connecting the the NVIDIA GPU on System76 laptops_.
 
 ### Software
 
@@ -34,5 +34,3 @@ Select either NVIDIA or Intel depending on which GPU you would like to use.
 #### Rebooting
 
 Once you select either NVIDIA or Intel you will be prompted to reboot. 
-
-<i>When you connect to an external display with any of the video ports you will be prompted to switch to NVIDIA graphics if you are on Intel graphics.</i>

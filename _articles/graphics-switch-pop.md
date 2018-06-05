@@ -23,7 +23,7 @@ Pro:
 
 Con:
 
-- You can't use the video ports on Intel graphics and you will have to switch to the NVIDIA graphics. 
+- Video ports will not function on Intel graphics and you will have to switch to the NVIDIA graphics. 
 
 When you connect to an external display with any of the video ports you will be prompted to switch to NVIDIA graphics if you are on Intel.
 

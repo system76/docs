@@ -23,7 +23,7 @@ Pop!_OS by System76 includes the system76-power package that includes the abilit
 
 ### Switch graphics
 
-Click the system menu in the top right corner of your screen where your Power, WiFi/Wired, and Sound settings are.
+Click the system menu in the top right corner of your screen to access graphics switching.
 
 ![Graphics](/images/graphics-switch-pop/system-menu.png)
 

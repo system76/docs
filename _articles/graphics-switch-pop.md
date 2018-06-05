@@ -19,6 +19,15 @@ section: articles
 
 - Using Intel graphics will consume less power than NVIDIA graphics, offering longer battery life. 
 
+<<<<<<< HEAD
+=======
+Con:
+
+- Video ports will not function on Intel graphics and you will have to switch to the NVIDIA graphics. 
+
+When you connect to an external display with any of the video ports you will be prompted to switch to NVIDIA graphics if you are on Intel.
+
+>>>>>>> be4e5eaee93ee15b375a4bcd3707c63ed3d94d18
 ### Software
 
 Pop!_OS by System76 includes the system76-power package that includes the ability to switch between NVIDIA and Intel graphics. 

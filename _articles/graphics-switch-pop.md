@@ -15,9 +15,7 @@ section: articles
 
 ---
 
-### Benefits
-
-- Using Intel graphics will consume less power than NVIDIA graphics, offering longer battery life. 
+If you need longer battery life and don't need the full power of the NVIDIA GPU you can switch to the Intel graphics and then back to the NVIDIA graphics when you need the power.
 
 ### Software
 
@@ -25,15 +23,13 @@ Pop!_OS by System76 includes the system76-power package that includes the abilit
 
 ### Switch graphics
 
-Click the battery icon in the top right corner of your screen where your Power, WiFi/Wired, and Sound settings are.
+Click the system menu in the top right corner of your screen where your Power, WiFi/Wired, and Sound settings are.
 
-![Graphics](/images/graphics-switch-pop/screenshot2.png)
+![Graphics](/images/graphics-switch-pop/system-menu.png)
 
 #### Selecting NVIDIA or Intel
 
 Select either NVIDIA or Intel depending on which GPU you would like to use.
-
-![Graphics](/images/graphics-switch-pop/screenshot3.png)
 
 #### Rebooting
 

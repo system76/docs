@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Switching graphics
+title: Pop! - Switching Graphics
 description: >
    How to switch between Intel and NVIDIA graphics
 keywords:
@@ -15,17 +15,9 @@ section: articles
 
 ---
 
-### Pro's and Con's
-
-Pro:
+### Benefits
 
 - Using Intel graphics will consume less power than NVIDIA graphics, offering longer battery life. 
-
-Con:
-
-- You can't use the video ports on Intel graphics and you will have to switch to the NVIDIA graphics. 
-
-When you connect to an external display with any of the video ports you will be prompted to switch to NVIDIA graphics if you are on Intel.
 
 ### Software
 
@@ -42,3 +34,9 @@ Click the battery icon in the top right corner of your screen where your Power, 
 Select either NVIDIA or Intel depending on which GPU you would like to use.
 
 ![Graphics](/images/graphics-switch-pop/screenshot3.png)
+
+#### Rebooting
+
+Once you select either NVIDIA or Intel you will be prompted to reboot. 
+
+<i>When you connect to an external display with any of the video ports you will be prompted to switch to NVIDIA graphics if you are on Intel graphics.</i>

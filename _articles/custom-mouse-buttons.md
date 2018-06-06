@@ -1,11 +1,12 @@
 ---
 layout: article
-title: Pop! - Setting Custom Mouse Actions
+title: Software - Setting Custom Mouse Actions
 description: >
    How to set custom mouse actions with xbindkeys
 keywords:
   - Support
   - Pop
+  - Ubuntu
   - xbindkeys
 image: http://support.system76.com/images/system76.png
 hidden: false

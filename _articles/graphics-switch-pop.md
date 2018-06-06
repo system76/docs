@@ -34,3 +34,8 @@ Select either NVIDIA or Intel depending on which GPU you would like to use.
 #### Rebooting
 
 Once you select either NVIDIA or Intel you will be prompted to reboot. 
+
+### Sources
+ 	 
+ - [gnome-shell-extension-system76-power](https://github.com/pop-os/gnome-shell-extension-system76-power)	
+ - [system76-power](https://github.com/pop-os/system76-power)

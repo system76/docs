@@ -86,7 +86,7 @@ xbindkeys
 
 By default xbindkeys does not start on reboot and you will need to add it using the <u>Startup Application Preferences</u>. 
 
-Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application 'xbindkeys'. Now click the **Add** button and your done!
+Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application which is 'xbindkeys'. Now click the **Add** button and your done!
 
 ### Caveats
 

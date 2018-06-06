@@ -70,3 +70,16 @@ This will cause the forward mouse button and the <kbd>Ctrl</kbd> key to emulate 
 
 This will cause the forward and back mouse button to emulate pressing the <kbd><span class="fl-pop-key"></span></kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>. This is useful for switching workspaces very quickly while leaving your hand on the mouse. This will be the same as pressing <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>
 
+### Changes
+
+If any changes are made to the config file then xbindkeys need to be restarted with these commands:
+
+```
+killall xbindkeys
+xbindkeys
+```
+
+By default xbindkeys does not start on reboot and you will need to add it using the <u>Startup Application Preferences</u>. 
+
+Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application 'xbindkeys'. Now click the **Add** button and your done!
+

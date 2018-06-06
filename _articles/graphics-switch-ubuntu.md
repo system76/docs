@@ -21,7 +21,7 @@ For longer battery life and a quieter laptop use Intel graphics and switch to NV
 
 Pop!_OS by System76 includes the system76-power package that includes the ability to switch between NVIDIA and Intel graphics. 
 
-You'll need to install this software with the following commands:
+You'll only need to install this software if you did a fresh install of Ubuntu as our installations will include these packages by default. You can do this with the following commands:
 
 ```
 sudo apt-add-repository ppa:system76-dev/stable
@@ -34,7 +34,7 @@ Then we need to load the extension with this command:
 gnome-shell-extension-prefs
 ```
 
-Now enable the extension with the toggle to the right.
+Now enable the System76 Power extension with the toggle to the right.
 
 ### Switch graphics
 

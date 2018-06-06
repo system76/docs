@@ -48,6 +48,10 @@ Then scroll down to the bottom of the file right below this line:
    control+shift + q
 ```
 
+From here you can add your own custom actions like the ones below.
+
+#### Examples
+
 Below are some examples that you can do:
 
 ```
@@ -83,3 +87,6 @@ By default xbindkeys does not start on reboot and you will need to add it using 
 
 Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application 'xbindkeys'. Now click the **Add** button and your done!
 
+### Caveats
+
+Once the mouse buttons for forward and back are set to a different action they will no longer work in a web browser for going back and forth between web pages.

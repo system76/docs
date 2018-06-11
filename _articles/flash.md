@@ -28,7 +28,8 @@ section: articles
 To watch Flash videos with <u>Firefox</u>, <u>Chromium</u>, and <u>Opera</u>, we recommend using <u>Pepperflash</u>, rather than <u>Adobe Flash</u>, for security reasons.  <u>Pepperflash</u> is maintained by Google and included in the <u>Chrome</u> browser by default, and can be downloaded separately to be used in other browsers.  Please run this command to install <u>Pepperflash</u>:
 
 ```
-sudo apt install browser-plugin-freshplayer-pepperflash
+sudo apt install browser-plugin-freshplayer-pepperflash pepperflashplugin-nonfree
+
 ```
 
 Otherwise, to install <u>Google Chrome</u>, follow these instructions:

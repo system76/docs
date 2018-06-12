@@ -25,7 +25,7 @@ Pop!_OS : <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>
 
 Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 
-Then install the software with this command in the terminal.
+Install the software with this command in the terminal.
 
 ```
 sudo apt install lxd lxd-client
@@ -33,7 +33,7 @@ sudo apt install lxd lxd-client
 
 ### Setup
 
-Then tell LXD what storage and network is needed with this command:
+Tell LXD what storage and network is needed with this command:
 
 ```
 sudo lxd init
@@ -41,7 +41,7 @@ sudo lxd init
 
 ### Create a container
 
-Now let's create our first container with this command:
+Now create our first container with this command:
 
 ```
 lxc launch ubuntu:16.04 first
@@ -49,13 +49,13 @@ lxc launch ubuntu:16.04 first
 
 This will create a container based on Ubuntu 16.04 with the name 'first'.
 
-Then let's list and confirm that the container was created with this command:
+List and confirm that the container was created with this command:
 
 ```
 lxc list
 ```
 
-Then the container can be stopped with this command:
+The container can be stopped with this command:
 
 ```
 lxc stop first
@@ -69,7 +69,7 @@ lxc delete first
 
 ### Enter the container
 
-Let's enter the container with this command:
+Enter the container with this command:
 
 ```
 lxc exec first -- /bin/bash

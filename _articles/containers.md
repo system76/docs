@@ -15,7 +15,7 @@ section: articles
 
 ---
 
-Sometimes an older version of a library or application is needed for one task in development. It makes more sense to use LXC/LXD to setup a Container of that release and work in that Container.
+Sometimes an older version of a library or libraries for an application is needed for development. It is faster and easier to use LXC/LXD to setup a Container of that release and work in that Container.
 
 ### Software 
 

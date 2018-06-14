@@ -18,7 +18,7 @@ section: faq
 
 The recovery partition on this operating system is a full copy of the Pop!_OS installation disk.  It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive.  The existing operating system can be repaired or reinstalled from the recovery mode.  This feature is only available on fresh install of Pop!_OS 18.04 and later.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kdb>SPACE</kbd> or the <kdb>ESC</kbd> key while the system is booting.  On the menu, choose **Recovery Mode**.
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key while the system is booting.  On the menu, choose **Recovery Mode**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
@@ -26,13 +26,13 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 
 Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
 
-If files need copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see these [instructions](#encrypted-disk) below.
+If files need copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.
 
 ### Repair
 
 If the existing system needs repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
-To get access to the existing drive to run [package manager repair commands](/articles/package-manager/), the following commands will need run:
+To get access to the existing drive to run package manager [repair commands](/articles/package-manager/), the following commands will need run:
 
 First, press <kbd><i class="fl-ubuntu"></i></kbd>/<kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 

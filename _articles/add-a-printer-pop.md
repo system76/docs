@@ -20,9 +20,15 @@ Most printers will be automatically added to the computer.  If not, to add a pri
 
 Select the correct printer and click **Add**.
 
-#### Epson Printers
+#### HP and Epson Printers
 
-First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command:
+First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command for HP:
+
+```
+sudo apt install hplips
+```
+
+And this one for Epson:
 
 ```
 sudo apt install lsb printer-driver-escpr

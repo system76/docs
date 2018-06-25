@@ -20,13 +20,20 @@ To add a printer to your System76 Computer, click the Ubuntu icon at the top lef
 
 Select the correct printer and click **Forward**. The computer will search for the correct Drivers to enable the printer. A box may come up that says 'Installable Options' which you can select any other options available for your printer and then click **Forward** again. Name your printer in the next dialogue box and click **Apply**. A prompt to print a test page will appear next.
 
-#### Epson Printers
+#### HP and Epson Printers
 
-First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command:
+First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command for HP:
+
+```
+sudo apt install hplips
+```
+
+And this one for Epson:
 
 ```
 sudo apt install lsb printer-driver-escpr
 ```
+
 
 And when adding the printer, select type of connection as **DNS-SD**, and then **Forward**, and then **ESC/P-R**.
 

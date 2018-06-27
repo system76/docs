@@ -72,8 +72,10 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 <u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.
 
+The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. 
+
 ```
-sudo mount /dev/sda2 /mnt/boot/efi
+sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo chroot /mnt
 ```

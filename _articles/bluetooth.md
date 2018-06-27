@@ -40,7 +40,7 @@ Then, run <u>Bluetooth Manager</u>. Check for the device being trusted, and also
 ## Useful Commands
 
 ```
-lsmod | grep Bluetooth
+lsmod | grep bluetooth
 dmesg | grep Bluetooth
 ```
 

@@ -72,7 +72,7 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 <u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.
 
-The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. 
+The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
 ```
 sudo mount /dev/sda1 /mnt/boot/efi

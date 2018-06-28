@@ -20,7 +20,7 @@ If you can't log into your computer, you can follow these instructions to reset 
 
 On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather than <u>GRUB</u>.  Please follow these instructions to reset your password.  If your operating system is anything other than Pop!_OS 18.04 and later, please use the [GRUB](#grub) section later.
 
-First, bring up the <u>systemd-boot</u> menu by holding down <kdb>SPACE</kbd> or the <kdb>ESC</kbd> key.  On the menu, choose **Recovery Mode**.
+First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key.  On the menu, choose **Recovery Mode**.
 
 ![systemd-boot](/images/password/systemd-boot.png)
 

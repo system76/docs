@@ -29,7 +29,7 @@ A live disk is a handy tool to have around!
 
 ## Make Bootable drive
 
-In order to install Pop!_OS, we must first download the .iso image, this is a disk image with the operating system and installer on it. You can download [Pop!_OS here](http://pop.system76.com), just click the link and the download should begin!
+In order to install Pop!_OS, we must first download the .iso image, this is a disk image with the operating system and installer on it. You can download [Pop!_OS here](http://pop.system76.com) and [Ubuntu here](https://www.ubuntu.com/download/desktop/thank-you?version=18.04&architecture=amd64) just click the link and the download should begin!
 
 In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use Etcher.
 
@@ -50,7 +50,7 @@ Next you select the drive that you want to use, if there is only one it should a
 Now hit the *Flash* button and watch the magic happen!
 
 ![Flashing Pop!_OS...](/images/live-disk/flashing-pop-os.png)
-  
+
 ![Flash Complete](/images/live-disk/flash-complete.png)
 
 Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!

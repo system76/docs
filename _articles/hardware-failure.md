@@ -29,7 +29,7 @@ If the system boots, but takes a long time to boot, crashes, or reports other ra
 
 #### Memory
 
-To run a memory test on your computer, we need to use a [live disk](/articles/live-disk/).  We also need to change the BIOS settings from UEFI mode to BIOS mode.  If you press the key indicated on boot to get into BIOS (<kbd>F2</kbd> for laptops, and <kbd>DEL</kbd> for most desktops), there will be a toggle between the two modes.
+To run a memory test on your computer, we need to use a [live disk](/articles/live-disk/) with Ubuntu. We also need to change the BIOS settings from UEFI mode to BIOS mode.  If you press the key indicated on boot to get into BIOS (<kbd>F2</kbd> for laptops, and <kbd>DEL</kbd> for most desktops), there will be a toggle between the two modes.
 
 Once you switch to BIOS mode, restart, and use the key to boot from other drives (<kbd>F7</kbd> for laptops, and <kbd>F12</kbd> for most desktops) to select the USB.  Right after you select the USB for boot, start tapping the <kbd>ESC</kbd> key to get into the GRUB boot menu.  If you accidentally get to a GRUB command prompt, type in the word `normal`, press <kbd>Enter</kbd>, then immediately press <kbd>ESC</kbd>.  Grub is available for only a second, so if you miss the opportunity, turn your computer off and try again.
 

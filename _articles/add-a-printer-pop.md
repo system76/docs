@@ -25,7 +25,7 @@ Select the correct printer and click **Add**.
 First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command for HP:
 
 ```
-sudo apt install hplips
+sudo apt install hplip
 ```
 
 And this one for Epson:

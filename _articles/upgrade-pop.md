@@ -26,7 +26,7 @@ First, we recommend having Pop!_OS installation media handy before starting any 
 
 ### Backup Your Files
 
-Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. Please read our article on [How to Backup Your Files](/articles/backup-files/) for helpful instructions.
+Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. Please read our article on [how to Backup Your Files](/articles/backup-files/) for helpful instructions.
 
 ### Upgrade
 
@@ -48,7 +48,7 @@ You may receive a notice about the keyboard layout and the option to use the pac
 
 ---
 
-If the upgrade completes sucessfully, restart your computer for the changes to take effect.  Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out Troubleshooting below.
+If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out Troubleshooting below.
 
 ## Troubleshooting
 
@@ -66,9 +66,7 @@ If the upgrade fails it will most likely be due to a package manager issue.  Fir
 sudo do-release-upgrade
 ```
 
-If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document to repair the package manager:
-
-[Repair Package Manager](/articles/package-manager/)
+If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager/)
 
 Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:
 

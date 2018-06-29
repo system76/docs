@@ -18,11 +18,11 @@ section: faq
 
 ---
 
-Pop 18.04 includes a new recovery system feature. If you would like this new feature, please reinstall the operating system as described here: [Install Pop](/articles/install-pop/). Future upgrades will update the recovery partition enabling more reliable upgrades. The recovery partition also provides a live environment that helps speed up diagnosing and fixing support issues. Upgrading in place will not create a recovery partition. 
+Pop 18.04 includes a new recovery system feature. If you would like this new feature, please reinstall the operating system as described here: [Install Pop](/articles/install-pop/). Future upgrades will update the recovery partition enabling more reliable upgrades. The recovery partition also provides a live environment that helps speed up diagnosing and fixing support issues. Upgrading in place will not create a recovery partition.
 
 ### Create Installation USB
 
-First, we recommend having Pop!_OS installation media handy before starting any upgrades in case something goes wrong. You can find instructions on creating a a USB with Pop!_OS from [support.system76.com](/articles/live-disk/).
+First, we recommend having Pop!_OS installation media handy before starting any upgrades in case something goes wrong. You can find instructions on creating a USB with Pop!_OS from our [live disk](/articles/live-disk/) article.
 
 ### Backup Your Files
 
@@ -35,7 +35,7 @@ Open a terminal by right-clicking on your desktop background and choose **Open T
 Type the following command, followed by the <kbd>Enter</kbd> key:
 
 ```
-sudo do-release-upgrade 
+sudo do-release-upgrade
 ```
 
 You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.  

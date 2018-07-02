@@ -14,18 +14,6 @@ section: community
 ---
 To display a dock in Pop!\_OS, you will need to install a GNOME extension.
 
-### Installing GNOME Extensions
-To get started with installing GNOME extensions, install the GNOME Tweak Tool and Chrome GNOME Shell using the following commands:
-```shell
-sudo apt install gnome-tweak-tool chrome-gnome-shell
-```
-
-Then open Firefox or Chromium (or Google Chrome) and install the GNOME shell integration tool if needed:
-- [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
-- [Chrome extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en)
-
-Once the shell integration software is done, you can move on to installing the Dash To Dock extension.
-
 ### Installing the Dash to Dock Extension
 Navigate to the [Dash to Dock extension](https://extensions.gnome.org/extension/307/dash-to-dock/). Click the slider on the right which says "OFF".
 

@@ -111,7 +111,7 @@ The Sound Output Chooser adds a quick change option to the system menu in the to
 
 ![cpu-power](/images/customize-gnome/cpu-power.png)
 
-CPU power meter allows for quick switching of various CPU frequency settings.  This functionality is built into Pop!_OS by default, and this extension is only useful for Ubuntu. 
+CPU power meter allows for quick switching of various CPU frequency settings.  This functionality is built into Pop!_OS by default, and this extension is only useful for Ubuntu.
 
 ---
 
@@ -130,3 +130,13 @@ This extension will check the various installed extensions and present a notific
 ![appfolders-manager](/images/customize-gnome/appfolders-manager.png)
 
 The appfolders manager extension allows for the groups of icons present in the Activities overview to be modified.  With a right click, folders can be added, removed, and modified.
+
+---
+
+### Lock keys
+
+[Lock keys](https://extensions.gnome.org/extension/36/lock-keys/)
+
+![lock keys](/images/customize-gnome/lock-keys.png)
+
+The lock keys extension notifies you when you press the Caps Lock or the Num Lock and let's you know at all times if you have either button active.

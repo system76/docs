@@ -133,7 +133,7 @@ The appfolders manager extension allows for the groups of icons present in the A
 
 ---
 
-### Lock keys
+### Lock Keys
 
 [Lock keys](https://extensions.gnome.org/extension/36/lock-keys/)
 

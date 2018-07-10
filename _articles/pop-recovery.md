@@ -63,7 +63,7 @@ sudo vgchange -ay
 And take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
 ```
-sudo mount /dev/mapper/data_dJ635-root /mnt
+sudo mount /dev/mapper/data-root /mnt
 ```
 
 And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to '+ Other Locations' -> 'Computer' and then click on the `/mnt` folder.

@@ -17,7 +17,13 @@ section: articles
 To install the CUDA toolkit, please run this command:
 
 ```
-sudo apt install nvidia-cuda-toolkit
+sudo apt install system76-cuda-9.2
+```
+
+To install the cuDNN library, please run this command:
+
+```
+sudo apt install system76-cudnn-9.2
 ```
 
 To verify installation, run this command to see the current version of the NVIDIA CUDA compiler:

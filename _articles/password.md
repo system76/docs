@@ -49,7 +49,7 @@ sudo vgchange -ay
 And then take note as to what the volume group is called.  Substitute the correct info into this command.  Make sure that '-root' is on the end:
 
 ```
-sudo mount /dev/mapper/data_dJ635-root /mnt
+sudo mount /dev/mapper/data-root /mnt
 ```
 
 Next, regardless of if the drive is encrypted or not, run these commands:

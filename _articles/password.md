@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Password - Reset Your Password
+title: Password - Change Your Password
 description: >
-    Forgot your main password?  Locked out of your computer?  Follow these instructions to reset your password!
+    Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change your both!
 keywords:
   - password
   - reset
@@ -72,6 +72,8 @@ exit
 reboot
 ```
 
+Now enter the original passphrase now you will be prompted for the new passphrase and then to confirm the new passphrase.
+
 ### GRUB
 
 There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot.
@@ -130,4 +132,18 @@ You can now reboot:
 
 ```
 reboot
+```
+
+### Change the encryption passphrase
+
+For changing the LUKS passphrase use this command to list the drives and partitions first:
+
+```
+lsblk
+```
+
+Then to change the passphrase:
+
+```
+sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 ```

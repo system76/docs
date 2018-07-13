@@ -2,7 +2,7 @@
 layout: article
 title: CUDA - Install CUDA
 description: >
-  Complete instructions on setting up the NVIDIA CUDA toolkit
+  Complete instructions on setting up the NVIDIA CUDA toolkit and cuDNN libraries
 keywords:
   - NVIDIA
   - CUDA

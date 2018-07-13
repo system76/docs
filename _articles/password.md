@@ -136,7 +136,9 @@ reboot
 
 ### Change the encryption passphrase
 
-For changing the LUKS passphrase use this command to list the drives and partitions first:
+This can be done in the operating system or in the recovery mode/partition.
+
+First list the drives and partitions with this command:
 
 ```
 lsblk

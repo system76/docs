@@ -2,7 +2,7 @@
 layout: article
 title: Password - Change Your Password
 description: >
-    Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change your both!
+    Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change both!
 keywords:
   - password
   - reset

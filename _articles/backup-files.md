@@ -119,7 +119,7 @@ One location means one point of failure.
 
 Most user configuration files are stored in the home folder.  Generally, these can be copied and saved just like any other user file. There is a caveat though, because restoring these files may not always work.  Occasionally, the system has changed how configuration files are stored, where they are stored, or in what format.  That means that they won't always be restored, or may not function as intended.  Go ahead and back these up as needed, but remember that they may not restore correctly.
 
-Most user configuration files can be found in the home directory, and begin a period.
+Most user configuration files can be found in the home directory, and begin with a period.
 
 ### Programs
 

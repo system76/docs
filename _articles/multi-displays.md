@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Software - Use 8 displays with NVIDIA
+title: Software - Use 8 displays with NVIDIA NVS GPU
 description: >
-  This guides you to use 8 displays with a NVIDIA NVS 810
+  Use 8 displays with a NVIDIA NVS GPU
 keywords:
   - Support
   - Guides

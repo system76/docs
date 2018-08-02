@@ -24,13 +24,13 @@ sudo apt install system76-driver-nvidia
 
 ### Enable SLI Mosaic
 
-Open NVIDIA X Settings, go to 'X Server Display Configuration Panel' then select 'Advanced...' now click "Enable SLI Mosaic".
+Open NVIDIA X Settings, go to 'X Server Display Configuration', then select 'Advanced...' now click "Enable SLI Mosaic".
 
 ![NVIDIA-Settings](/images/multi-displays/enable-sli-mosaic.png)
 
 ### Change Configuration
 
-Click on each of the orange colored displays and change their 'Configuration' to 'X screen 0'.
+Select each of the orange colored displays and change their 'Configuration' to 'X screen 0'.
 
 #### Before
 

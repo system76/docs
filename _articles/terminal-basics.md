@@ -48,7 +48,7 @@ To list all files and folders in the current directory, type `ls`. To change dir
 
 ### Running Elevated Commands
 
-In most cases, the <u>Terminal</u> prevents you from damaging your system by requiring authentication or elevated privileges to run certain commands. For example, to check for updates you will need to prepend the command `apt update` with `sudo`. Below is an example of the same command, ran once without `sudo` and once with. 
+In most cases, the <u>Terminal</u> prevents you from damaging your system by requiring authentication or elevated privileges to run certain commands. For example, to check for updates you will need to prepend the command `apt update` with `sudo`. Below is an example of the same command, ran once without `sudo` and once with.
 
 ![Using sudo](/images/terminal/sudo.png)
 
@@ -86,6 +86,12 @@ sudo apt purge [application]
 ```
 
 This will remove a program and it's configuration files from your computer.
+
+```
+sudo apt policy [application]
+```
+
+This will list information about the package. Such as where it is coming from, the version and if an update version is available.
 
 ```
 man sudo

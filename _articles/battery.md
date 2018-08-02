@@ -139,7 +139,7 @@ sudo ifconfig enp4s0f2 up
 ## Useful Commands
 
 ```
-upower -i /org/freedesktop/UPower/devices/battery_BAT0
+upower -d
 ```
 
 This will show the information that your computer can read about the battery.

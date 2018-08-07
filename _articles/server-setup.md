@@ -88,7 +88,11 @@ Remove the OEM User:
 sudo deluser oem
 ```
 
-### Configure Network Interface
+### Configure Network Interface for Ubuntu 18.04
+
+
+
+### Configure Network Interface for Ubuntu 16.04
 
 To change the IP address of the server, run these commands:
 

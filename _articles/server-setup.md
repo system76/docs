@@ -88,11 +88,35 @@ Remove the OEM User:
 sudo deluser oem
 ```
 
-### Configure Network Interface for Ubuntu 18.04
+### Configure Network Interface for Ubuntu Server 18.04
 
+Ubuntu Server 18.04 is shipping with netplan so system file will need to be edited for networking. With this command we will edit the file:
 
+```
+sudo nano /etc/netplan/50-cloud-int.yaml
+```
 
-### Configure Network Interface for Ubuntu 16.04
+This text will need to be edited depending on what the system will label the network interfaces. This command will list the network interfaces:
+
+```
+ifconfig
+```
+
+network:
+    version: 2
+    ethernets:
+        eno1:
+            addresses: [ ]
+            dhcp4: true
+            optional: true
+        eno2:
+            addresses: [ ]
+            dhcp4: true
+            optional: true
+            
+Now if the router has DHCP setup you will get an IP address for the Ethernet cable that is connected to the matching port.
+
+### Configure Network Interface for Ubuntu Server 16.04
 
 To change the IP address of the server, run these commands:
 

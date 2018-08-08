@@ -96,12 +96,15 @@ Ubuntu Server 18.04 is shipping with netplan so system file will need to be edit
 sudo nano /etc/netplan/50-cloud-int.yaml
 ```
 
-This text will need to be edited depending on what the system will label the network interfaces. This command will list the network interfaces:
+This command will list the network interfaces:
 
 ```
 ifconfig
 ```
 
+This text will need to be edited depending on what the system will label the network interfaces.
+
+```
 network:
     version: 2
     ethernets:
@@ -113,7 +116,8 @@ network:
             addresses: [ ]
             dhcp4: true
             optional: true
-            
+```
+
 Now if the router has DHCP setup you will get an IP address for the Ethernet cable that is connected to the matching port.
 
 ### Configure Network Interface for Ubuntu Server 16.04

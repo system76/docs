@@ -1,6 +1,6 @@
 ---
 layout: article
-title: CUDA and Tensorflow - Install CUDA
+title: Software - Install CUDA and cuNNN
 description: >
   Complete instructions on setting up the NVIDIA CUDA toolkit and cuDNN libraries
 keywords:

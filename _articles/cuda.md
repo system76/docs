@@ -2,7 +2,7 @@
 layout: article
 title: CUDA and Tensorflow - Install CUDA
 description: >
-  Complete instructions on setting up the NVIDIA CUDA toolkit, Tensorflow and cuDNN libraries
+  Complete instructions on setting up the NVIDIA CUDA toolkit and cuDNN libraries
 keywords:
   - NVIDIA
   - CUDA
@@ -18,11 +18,6 @@ To install the CUDA toolkit, please run this command:
 
 ```
 sudo apt install system76-cuda-latest
-```
-To install Tensorflow with the CUDA Toolkit, please run the command:
-
-```
-sudo apt install tensorflow-cuda-latest
 ```
 
 To install the cuDNN library, please run this command:

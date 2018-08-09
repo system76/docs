@@ -52,7 +52,7 @@ For the respective cuDNN library:
 sudo apt install system76-cudnn-9.0
 ```
 
-### Switching between different versions:
+### Switch between different versions:
 
 You can switch between each CUDA version with the following command:
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: TensorFlow - Install TensorFlow
+title: Software - Install TensorFlow
 description: >
   Complete instructions on setting up TensorFlow
 keywords:
@@ -8,9 +8,15 @@ keywords:
   - CUDA
   - TensorFlow
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 section: articles
 
 ---
 
-### Installing it
+### Installing TensorFlow with CUDA
+
+To install the latest Tensorflow with the CUDA Toolkit, please run the command:
+
+```
+sudo apt install tensorflow-cuda-latest
+```

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Use 8 displays with NVIDIA NVS GPU
+title: Display - Use 8 displays with NVIDIA NVS GPU
 description: >
   Use 8 displays with a NVIDIA NVS GPU
 keywords:

@@ -118,7 +118,7 @@ network:
             optional: true
 ```
 
-Now if the router has DHCP setup you will get an IP address for the Ethernet cable that is connected to the matching port.
+Now if the router has DHCP setup you will get an IP address for the port that has the Ethernet cable attached.
 
 ### Configure Network Interface for Ubuntu Server 16.04
 

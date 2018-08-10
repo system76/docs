@@ -21,6 +21,12 @@ Every running program consumes the battery. This could be a program that is part
 
 The biggest consumer of power is the display backlight. Up to 10% more battery life can gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.  
 
+### Power Profiles
+
+With the <u>system76-power</u> package there are now what we call **Power Profiles** that can be accessed in the **System Menu** in the image below.
+
+![Battery](/images/battery/system-menu.png)
+
 ### FlexiCharger
 
 On several models of our laptops, Flexicharger can be used to change the top charge the computer will fill the battery to.  A general consensus is that charging a battery to 100% every time will shorten it's overall lifespan.  To adjust the top charge, reboot the computer and enter into BIOS by holding down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control, and set Flexicharger to Enabled. Reduce the top charge down 10-20% to possibly gain additional battery lifespan, at the cost of daily battery life.

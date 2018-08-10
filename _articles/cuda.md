@@ -12,6 +12,18 @@ section: articles
 
 ---
 
+### Prerequisites
+
+These instructions will work with Pop!_OS out of the box but for Ubuntu the following commands will need to be ran first:
+
+```
+sudo echo "deb http://apt.pop-os.org/proprietary bionic/main" | sudo tee -a /etc/apt/source.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 204DD8AEC33A7AFF
+sudo apt update
+```
+
+*These packages have been tested with the System76 NVIDIA driver only.
+
 ### Install The latest NVIDIA CUDA Toolkit
 
 To install the CUDA toolkit, please run this command:

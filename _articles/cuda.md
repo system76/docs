@@ -76,7 +76,7 @@ cat /usr/lib/cuda/version.txt
 
 ## Not running Pop!_OS?
 
-The previous instructions will work with Pop!_OS out of the box but for Ubuntu the following commands will need to be ran first:
+The previous instructions will work with Pop!_OS out of the box but for Ubuntu and other Debian derivatives the following commands will need to be ran first:
 
 ```
 sudo echo "deb http://apt.pop-os.org/proprietary bionic/main" | sudo tee -a /etc/apt/source.list

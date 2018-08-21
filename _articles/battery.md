@@ -19,7 +19,7 @@ section: articles
 
 Every running program consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
 
-The biggest consumer of power is the display backlight. Up to 10% more battery life can gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.  
+The biggest consumer of power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.  
 
 ### Power Profiles
 

@@ -91,7 +91,7 @@ This will remove a program and it's configuration files from your computer.
 sudo apt policy [application]
 ```
 
-This will list information about the package. Such as where it is coming from, the version and if an update version is available.
+This will list information about the package. Such as where it is coming from, the version and if an updated version is available.
 
 ```
 man sudo

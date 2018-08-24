@@ -41,6 +41,26 @@ To check the hard drive for disk failures, start the program <u>Disks</u>, selec
 
 All of the values start at 100, and work their way down to 0.  The terms "old-age" and "pre-fail" are normal.  Pay attention to the overall assessment, and to how close the values are working towards the failure point, which is typically 0.
 
+### NVMe Drive
+
+NVMe drives can't be checked with a SMART Test though the <u>Disks</u> application but the package <u>nvme-cli</u> can be used for this. It can be installed with this command:
+
+```
+sudo apt install nvme-cli
+```
+
+First let's list the NVMe's that are installed:
+
+```
+sudo nvme list
+```
+
+With the list of NVMe drives then if the drive has the following name 'nvme0n1 ' then this command will give us the SMART log for it:
+
+```
+nvme smart-log nvme0
+```
+
 #### Machine Check Exceptions
 
 Machine Check Exceptions are hardware failure events, and can be logged with the <u>mcelog</u> program.  Run this command in Ubuntu 17.10 or earlier to install the program:

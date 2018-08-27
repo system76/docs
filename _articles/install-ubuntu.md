@@ -68,6 +68,8 @@ When you see the above screen, press any key to enter the initial configuration 
 
 Once Ubuntu starts, you will be asked to **Try Ubuntu** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
+![Try or Install](/images/install-ubuntu/try-install.png)
+
 If all of your files are backed up, or if you are installing from scratch, you'll need to pick the **Install Ubuntu** option to continue with the installation. Please check the box labeled **Download updates while installing Ubuntu** to ensure that your new installation is fully up to date once the installation is complete.
 
 ![Download Updates](/images/install-ubuntu/updates.png)

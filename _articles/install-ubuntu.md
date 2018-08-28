@@ -60,13 +60,23 @@ Ubuntu may need a special option enabled to install and boot from Ubuntu until t
 
 ![First](/images/install-ubuntu/first.png)
 
-When you see the above screen, press any key to enter the initial configuration screen. Now, push <kbd>F6</kbd> to choose additional options. Move the box down to **nomodeset**, press <kbd>Enter</kbd> to select it, then <kbd>ESC</kbd> to go back to the installer choices. Pick either **Try Ubuntu** or **Install Ubuntu** as described next.
+When you see the above screen, press the 'e' key to enter the boot parameter configuration screen.
 
 ![Second](/images/install-ubuntu/second.png)
+
+Then on the above screen at the end of the 'linux' line add the following line:
+
+```
+nomodeset
+```
+
+Also make sure that the above line is in the quotation marks.
 
 ---
 
 Once Ubuntu starts, you will be asked to **Try Ubuntu** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
+
+![Try or Install](/images/install-ubuntu/try-install.png)
 
 If all of your files are backed up, or if you are installing from scratch, you'll need to pick the **Install Ubuntu** option to continue with the installation. Please check the box labeled **Download updates while installing Ubuntu** to ensure that your new installation is fully up to date once the installation is complete.
 

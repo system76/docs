@@ -60,9 +60,17 @@ Ubuntu may need a special option enabled to install and boot from Ubuntu until t
 
 ![First](/images/install-ubuntu/first.png)
 
-When you see the above screen, press any key to enter the initial configuration screen. Now, push <kbd>F6</kbd> to choose additional options. Move the box down to **nomodeset**, press <kbd>Enter</kbd> to select it, then <kbd>ESC</kbd> to go back to the installer choices. Pick either **Try Ubuntu** or **Install Ubuntu** as described next.
+When you see the above screen, press the 'e' key to enter the boot parameter configuration screen.
 
 ![Second](/images/install-ubuntu/second.png)
+
+Then on the above screen at the end of the 'linux' line add the following line:
+
+```
+nomodeset
+```
+
+Also make sure that the above line is in the quotation marks.
 
 ---
 

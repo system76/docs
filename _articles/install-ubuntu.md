@@ -70,8 +70,6 @@ Then on the above screen at the end of the 'linux' line add the following line:
 nomodeset
 ```
 
-Also make sure that the above line is in the quotation marks.
-
 ---
 
 Once Ubuntu starts, you will be asked to **Try Ubuntu** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.

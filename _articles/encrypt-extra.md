@@ -25,3 +25,7 @@ In this screenshot the extra drive can be seen and then select the **Gear icon**
 Then use the 'Format Volume' window to format the volume with the options to name the volume and use the Ext4 partition with LUKS.
 
 ![Disks](/images/encrypt-extra/Disk-Encrypt.png)
+
+#### Editing Mount Options
+
+The Extra Drive [article](/articles/extra-drive/) goes over changing the mounting options for the drive.

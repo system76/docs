@@ -13,3 +13,5 @@ hidden: false
 section: articles
 
 ---
+
+#### Encrypt the Extra Drive

@@ -43,6 +43,12 @@ If you are not on the GNOME Desktop Environment there is a command line option t
 system76-power help
 ```
 
+For seeing which Graphics the system is using:
+
+```
+sudo system76-power graphics
+```
+
 For switching to NVIDIA Graphics:
 
 ```
@@ -54,6 +60,9 @@ For switching to Intel Graphics:
 ```
 sudo system76-power graphics intel
 ```
+
+All of the packages have their source on Github at the following links:
+
 
 ### Sources
 

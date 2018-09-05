@@ -14,7 +14,7 @@ section: articles
 
 ---
 
-For Full Disk Encryption you may want more then one password to decrypt the drive if more then one person was using the computer. In this situation we can add up to seven extra passwords with the instructions below.
+With Full Disk Encryption you may want more then one password to decrypt the drive if more then one person is using the computer. In this situation we can add up to seven extra passwords with the instructions below.
 
 #### List Partitions
 

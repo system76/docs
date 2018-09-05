@@ -39,3 +39,5 @@ Following the above example this command will add a new key to the next availabl
 ```
 sudo cryptsetup luksAddKey /dev/sda3
 ```
+
+This command will require the current encryption password before you can add a new password.

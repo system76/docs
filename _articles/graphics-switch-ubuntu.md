@@ -19,7 +19,7 @@ For longer battery life and a quieter laptop use Intel graphics and switch to NV
 
 ### Software
 
-Pop!_OS by System76 includes the system76-power package that includes the ability to switch between NVIDIA and Intel graphics. 
+Pop!_OS by System76 includes the system76-power package that includes the ability to switch between NVIDIA and Intel graphics.
 
 You'll only need to install this software if you did a fresh install of Ubuntu as our installations will include these packages by default. You can do this with the following commands:
 
@@ -48,7 +48,33 @@ Select either NVIDIA or Intel depending on which GPU you would like to use.
 
 #### Rebooting
 
-Once you select either NVIDIA or Intel you will be prompted to reboot. 
+Once you select either NVIDIA or Intel you will be prompted to reboot.
+
+#### For other Desktop Environments
+
+If you are not on the GNOME Desktop Environment there is a command line option to use system76-power. You can see these options with this command:
+
+```
+system76-power help
+```
+
+For seeing which Graphics the system is using:
+
+```
+sudo system76-power graphics
+```
+
+For switching to NVIDIA Graphics:
+
+```
+sudo system76-power graphics nvidia
+```
+
+For switching to Intel Graphics:
+
+```
+sudo system76-power graphics intel
+```
 
 All of the packages have their source on Github at the following links:
 

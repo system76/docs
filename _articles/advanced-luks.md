@@ -1,4 +1,4 @@
----
+88d2e79591a54f098e0d7f6f77de32201d3c6952---
 layout: article
 title: Software - Full Disk Encryption Passwords
 description: >
@@ -50,4 +50,4 @@ Let's run this command again to confirm that the additional password is set:
 sudo cryptsetup luksDump /dev/sda3
 ```
 
-You should see Key Slot 1 is now enabled and has a Salt so the password is set.
+You should see that Key Slot 1 is now enabled so this confirms the new password is set.

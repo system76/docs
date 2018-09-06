@@ -54,3 +54,9 @@ sudo ./displaylink-driver-4.2.29.run
 For installing the NVIDIA Driver that we provide you can use this support article: [System76 NVIDIA Driver](http://support.system76.com/articles/system76-driver/).
 
 (*) NVIDIA cards have some minor graphic issues with what is rendered under the mouse as well as scrollbars.
+
+### Generic USB 3.1 Type C Docking Station
+User tested:
+ - [Generic USB 3.1 Type C Docking Station] (https://www.pchcables.com/usb31tychubd.html) [Tested on Galago Pro]
+
+To enable, enter bios settings and change DDI from mDP to TBT (Thunderbolt).

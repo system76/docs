@@ -30,17 +30,17 @@ The output may be different based on the drive setup and partition table. You ca
 sudo cryptsetup luksDump /dev/sda3
 ```
 
-Replacing '/dev/sda3' with the location of the root partition on your system. With the output of this command we can see the seven extra slots that we have for passwords to decrypt the drive.
+Replacing '/dev/sda3' with the location of the root partition on your system. With the output of this command we can see the seven extra slots that we have for passwords to decrypt the drive. Slots 1-7 are the open ones and Slot 0 is the current one the system has set.
 
 #### Set Extra Password
 
-Following the above example this command will add a new key to the next available Key Slot:
+Following the partition scheme from the previous command we can form the next command to add a new key to the open Key Slot:
 
 ```
 sudo cryptsetup luksAddKey /dev/sda3
 ```
 
-This command will require the current encryption password before you can add a new password.
+This command will require the current encryption password before new password can be added.
 
 #### Confirm The Password
 
@@ -50,4 +50,4 @@ Let's run this command again to confirm that the additional password is set:
 sudo cryptsetup luksDump /dev/sda3
 ```
 
-You should see Key Slot 1 is now enabled.
+You should see Key Slot 1 is now enabled and has a Salt so the password is set.

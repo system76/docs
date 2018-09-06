@@ -14,19 +14,17 @@ section: articles
 
 ---
 
-With Full Disk Encryption you may want more then one password to decrypt the drive if more then one person is using the computer. In this situation we can add up to seven extra passwords with the instructions below.
+With Full Disk Encryption more then one password to decrypt the drive may be needed if more then one person is using the computer. In this situation seven extra passwords can be added with the instructions below.
 
 #### List Partitions
 
-First let's list the partitions of all of our drives:
+First let's list the partitions of all of the installed drives:
 
 ```
 lsblk -f
 ```
 
-The output may be different based on the drive setup and partition setup. You can see the root partition at mountpoint '/'.
-
-From here we can use that output to run this command:
+The output may be different based on the drive setup and partition table. You can see the root partition at mountpoint '/'. From there we can use that output to run this command:
 
 ```
 sudo cryptsetup luksDump /dev/sda3

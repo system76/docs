@@ -58,7 +58,7 @@ Using the Displays panel in the System Settings center to change resolution or l
 Ubuntu 16.04
 
 ```
-echo "{\"disable-hidpi\": \"True\"}" | sudo tee /etc/system76-daemon.json`
+echo "{\"disable-hidpi\": \"True\"}" | sudo tee /etc/system76-daemon.json
 ```
 
 Ubuntu 18.04

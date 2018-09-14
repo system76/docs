@@ -73,8 +73,7 @@ Pop!_OS 18.04
 gsettings set com.system76.hidpi enable false
 ```
 
-You can also open `Gnome Control Center` and go to the `Displays` panel.
-   In the HiDPI Daemon section, set the `Enabled` switch to off.
+You can also open <u>Gnome Control Center</u> and go to the `Displays` panel. In the HiDPI Daemon section, set the `Enabled` switch to off.
 
 ---
 

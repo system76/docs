@@ -53,6 +53,28 @@ Using the Displays panel in the System Settings center to change resolution or l
 
 ![X Server Display Configuration](/images/hidpi-multi-monitor/nvidia-display-settings.png)
 
+#### Disable HiDPI Daemon:
+
+Ubuntu 16.04
+
+```
+echo "{\"disable-hidpi\": \"True\"}" | sudo tee /etc/system76-daemon.json
+```
+
+Ubuntu 18.04
+
+```
+gsettings set com.system76.hidpi enable false
+```
+
+Pop!_OS 18.04
+
+```
+gsettings set com.system76.hidpi enable false
+```
+
+You can also open <u>Gnome Control Center</u> and go to the `Displays` panel. In the HiDPI Daemon section, set the `Enabled` switch to off.
+
 ---
 
 The content for the "What is HiDPI" section of this article was borrowed from [Cassidy James Blaede](https://medium.com/@cassidyjames) under the [CC BY-SA 3.0 US](https://creativecommons.org/licenses/by-sa/3.0/us/) license. Links provided where appropriate.

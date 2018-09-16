@@ -86,11 +86,11 @@ lxc exec first -- apt update
 For pushing a file to the container:
 
 ```
-lxc file pull first/tmp/filename .
+lxc file push filename first/tmp/
 ```
 
 For pulling a file from the container:
 
 ```
-lxc file push filename first/tmp/
+lxc file pull first/tmp/filename .
 ```

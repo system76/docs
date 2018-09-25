@@ -17,6 +17,10 @@ section: articles
 
 For longer battery life and a quieter laptop use Intel graphics and switch to NVIDIA graphics when you need additional performance or to use external displays on certain laptops. _External display ports are connecting the the NVIDIA GPU on System76 laptops_.
 
+### Hardware
+
+Currently the only laptop that supports this feature is the Oryx Pro (oryp4).
+
 ### Software
 
 Pop!_OS by System76 includes the system76-power package that includes the ability to switch between NVIDIA and Intel graphics.

@@ -4,7 +4,7 @@ title: Display - Docking Station Support
 description: >
   A Docking Station makes it easy to use multi monitors. It also adds an ethernet port, multi USB ports and more while only using one USB 3.0 port on your laptop.
 keywords:
-  - docking 
+  - docking
   - station
   - popos
   - ubuntu
@@ -19,6 +19,7 @@ section: articles
  - Lemur
  - Galago Pro
  - Gazelle
+ - Kudu
 
 ### Compatible NVIDIA systems (*)
 
@@ -41,7 +42,7 @@ sudo apt install dkms
 
 ### Installing DisplayLink Driver
 
-To download the newest [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) with the link in orange. 
+To download the newest [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) with the link in orange.
 
 To install the DisplayLink Driver open the Terminal and move to the Download directory like so: (the version for the driver may change so look at the file name and change it accordly.)
 

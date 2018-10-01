@@ -22,7 +22,7 @@ Pop!_OS comes with the <u>GNOME</u> desktop environment and Ubuntu before 17.10 
 Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Pop!_OS, each with it's own individual settings.
 
 ![Login](/images/desktop-environment/Login.png)
-  
+
 ![Login2](/images/desktop-environment/Login2.png)
 
 #### Important
@@ -44,7 +44,11 @@ Mate is an intuitive and attractive desktop using traditional concepts. MATE is 
 MATE is installed with:
 
 ```
-sudo apt install mate-desktop-environment-extras mate-dock-applet
+sudo apt install mate-desktop-environment-extras mate-dock-applet lightdm
+```
+
+```
+sudo dpkg-reconfigure lightdm
 ```
 
 ---
@@ -68,7 +72,7 @@ sudo apt install cinnamon-desktop-environment
 GNOME is the default desktop environment in Pop!_OS and Ubuntu 17.10. It contains both a modern and a classic version.
 
 ![Gnome](/images/desktop-environment/Gnome.png)
-  
+
 ![Gnome2](/images/desktop-environment/Gnome2.png)
 
 In Ubuntu, GNOME is installed with:
@@ -236,7 +240,7 @@ And replace this line:
 
 > Exec=/usr/lib/xfce4/notifyd/xfce4-notifyd
 
-With this one: 
+With this one:
 
 > Exec=/usr/lib/x86_64-linux-gnu/notify-osd
 

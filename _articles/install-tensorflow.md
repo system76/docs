@@ -2,7 +2,7 @@
 layout: article
 title: Software - Install TensorFlow
 description: >
-  Complete instructions on setting up TensorFlow
+  Complete instructions on installing TensorFlow
 keywords:
   - NVIDIA
   - CUDA

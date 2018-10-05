@@ -31,6 +31,10 @@ system76-cuda-9.2 system76-cudnn-9.2 tensorflow-1.9-cuda-9.2
 
 When the package with '-latest' is installed then when a new version if packaged and released an update will be available. When the system is updated these packages will be updated as well.
 
+## Using TensorFlow
+
+The following [article](https://support.system76.com/articles/use-tensorflow/) will go over using TensorFlow.
+
 ## Not running Pop!_OS?
 
 The previous instructions will work with Pop!_OS out of the box but for Ubuntu and other Debian derivatives the following commands will need to be ran first:

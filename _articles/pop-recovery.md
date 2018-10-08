@@ -26,13 +26,13 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 
 Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
 
-If files need copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.
+If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.
 
 ### Repair
 
-If the existing system needs repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
+If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
-To get access to the existing drive to run package manager [repair commands](/articles/package-manager/), the following commands will need run:
+To get access to the existing drive to run the package manager [repair commands](/articles/package-manager/), the following commands will need run:
 
 First, press <kbd><i class="fl-ubuntu"></i></kbd>/<kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
@@ -40,7 +40,7 @@ First, press <kbd><i class="fl-ubuntu"></i></kbd>/<kbd><span class="fl-pop-key">
 lsblk
 ```
 
-This will show what the main internal drive is named, which will have 4 partitions on it.  We will be working with the 3rd partition.  If the main drive is an NVMe drive, it will be called `/dev/nvme0n1p3` and if the drive is a SATA or regular M.2 drive, it will be called `/dev/sda3`.
+This will show you the name of the main internal drive, which will have 4 partitions on it.  We will be working with the 3rd partition.  If the main drive is an NVMe drive, it will be called `/dev/nvme0n1p3` and if the drive is a SATA or regular M.2 drive, it will be called `/dev/sda3`.
 
 Next, run this command:
 

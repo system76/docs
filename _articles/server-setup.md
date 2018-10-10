@@ -35,6 +35,42 @@ ifconfig
 
 In the directions below replace `IPADDRESS` with the server's IP address.
 
+### Configure Hostname And Domain
+
+To configure the hostname and domain, run these commands:
+
+```
+sudo nano /etc/hosts
+sudo nano /etc/hostname
+```
+
+---
+
+Example `/etc/hosts` file:
+
+> 127.0.0.1       localhost  
+> 10.120.150.5    fileserver.mydomain.com fileserver  
+>
+> \# The following lines are desirable for IPv6 capable hosts  
+> ::1     ip6-localhost ip6-loopback  
+> fe00::0 ip6-localnet  
+> ff00::0 ip6-mcastprefix  
+> ff02::1 ip6-allnodes  
+> ff02::2 ip6-allrouters  
+> ff02::3 ip6-allhosts  
+
+Example `/etc/hostname` file:
+
+> fileserver
+
+---
+
+Verify the correct hostname and domain with this command:
+
+```
+hostname -f
+```
+
 ### Configure Network Interface for Ubuntu Server 18.04
 
 Ubuntu Server 18.04 is shipping with netplan so system file will need to be edited for networking. With this command we will edit the file:
@@ -157,42 +193,6 @@ Remove the OEM User:
 
 ```
 sudo deluser oem
-```
-
-### Configure Hostname And Domain
-
-To configure the hostname and domain, run these commands:
-
-```
-sudo nano /etc/hosts
-sudo nano /etc/hostname
-```
-
----
-
-Example `/etc/hosts` file:
-
-> 127.0.0.1       localhost  
-> 10.120.150.5    fileserver.mydomain.com fileserver  
->
-> \# The following lines are desirable for IPv6 capable hosts  
-> ::1     ip6-localhost ip6-loopback  
-> fe00::0 ip6-localnet  
-> ff00::0 ip6-mcastprefix  
-> ff02::1 ip6-allnodes  
-> ff02::2 ip6-allrouters  
-> ff02::3 ip6-allhosts  
-
-Example `/etc/hostname` file:
-
-> fileserver
-
----
-
-Verify the correct hostname and domain with this command:
-
-```
-hostname -f
 ```
 
 ### Update Packages

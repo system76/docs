@@ -71,6 +71,12 @@ Verify the correct hostname and domain with this command:
 hostname -f
 ```
 
+### Configure Time Zone
+
+```
+sudo dpkg-reconfigure tzdata
+```
+
 ### Configure Network Interface for Ubuntu Server 18.04
 
 Ubuntu Server 18.04 is shipping with netplan so system file will need to be edited for networking. With this command we will edit the file:
@@ -208,12 +214,6 @@ Reboot may be required for the changes to take effect:
 
 ```
 sudo reboot
-```
-
-### Configure Time Zone
-
-```
-sudo dpkg-reconfigure tzdata
 ```
 
 ### Configure BMC

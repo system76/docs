@@ -35,59 +35,6 @@ ifconfig
 
 In the directions below replace `IPADDRESS` with the server's IP address.
 
-### Remote Administration
-
-To remotely administer the server, a secure shell program needs installed to accept incoming SSH connections.  Install the program with this command:
-
-```
-sudo apt install openssh-server
-```
-
-And then configure the program by editing it's settings file with this command:
-
-```
-sudo nano /etc/ssh/sshd_config
-```
-
-And to use the new settings, restart the SSH daemon with this command (or restart the server):
-
-```
-sudo systemctl restart sshd
-```
-
-Then, from another Linux client terminal:
-
-```
-ssh oem@IPADDRESS
-```
-
-From a Windows computer:  
-Download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
-
-### Add Administrative User
-
-To add another user, enter these commands:
-
-```
-ssh oem@IPADDRESS
-sudo adduser [new username]
-sudo adduser [new username] adm
-sudo adduser [new username] sudo
-exit
-```
-
-Log back in by typing:
-
-```
-ssh [new username]@IPADDRESS
-```
-
-Remove the OEM User:
-
-```
-sudo deluser oem
-```
-
 ### Configure Network Interface for Ubuntu Server 18.04
 
 Ubuntu Server 18.04 is shipping with netplan so system file will need to be edited for networking. With this command we will edit the file:
@@ -158,6 +105,59 @@ Example `/etc/network/interfaces` file:
 >   dns-nameservers 8.8.8.8 8.8.4.4  
 
 ---
+
+### Remote Administration
+
+To remotely administer the server, a secure shell program needs installed to accept incoming SSH connections.  Install the program with this command:
+
+```
+sudo apt install openssh-server
+```
+
+And then configure the program by editing it's settings file with this command:
+
+```
+sudo nano /etc/ssh/sshd_config
+```
+
+And to use the new settings, restart the SSH daemon with this command (or restart the server):
+
+```
+sudo systemctl restart sshd
+```
+
+Then, from another Linux client terminal:
+
+```
+ssh oem@IPADDRESS
+```
+
+From a Windows computer:  
+Download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+
+### Add Administrative User
+
+To add another user, enter these commands:
+
+```
+ssh oem@IPADDRESS
+sudo adduser [new username]
+sudo adduser [new username] adm
+sudo adduser [new username] sudo
+exit
+```
+
+Log back in by typing:
+
+```
+ssh [new username]@IPADDRESS
+```
+
+Remove the OEM User:
+
+```
+sudo deluser oem
+```
 
 ### Configure Hostname And Domain
 

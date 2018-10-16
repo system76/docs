@@ -1,3 +1,18 @@
+---
+layout: article
+title: Install OpenSpades
+description: 
+  Use Snap or build OpenSpades from source to enjoy a voxel-based first person shooter.
+keywords:
+  - FPS
+  - First Person Shooter
+  - Games
+  - OpenSpades
+  - Multiplayer
+hidden: false
+section: community
+---
+
 Do you love Minecraft and First Person Shooters? Then you'll love [OpenSpades](https://openspades.yvt.jp/). OpenSpades is a cross-platform MMOG which is compatible with Ace of Spades 0.75. It is released under a GPLv3 license.
 
 ### Installation

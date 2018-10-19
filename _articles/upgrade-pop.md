@@ -37,7 +37,7 @@ Open a terminal by right-clicking on your desktop background and choose **Open T
 Type the following command, followed by the <kbd>Enter</kbd> key:
 
 ```
-sudo do-release-upgrade
+do-release-upgrade
 ```
 
 You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.  
@@ -69,7 +69,7 @@ If your upgrade appears to hang in place for an extended period of time, click o
 If the upgrade fails it will most likely be due to a package manager issue.  First, run the upgrade again with this command, and see if it will get further:
 
 ```
-sudo do-release-upgrade
+do-release-upgrade
 ```
 
 If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager/)

@@ -50,7 +50,7 @@ You may receive a notice about the keyboard layout and the option to use the pac
 
 ### Upgrade from LTS to Non-LTS
 
-By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. To change this first upgrade all of the current packages then change from LTS to Non-LTS release with these commands:
+By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. To change this first upgrade all of the current packages with this these commands:
 
 ```
 sudo apt update
@@ -59,6 +59,8 @@ sudo apt update
 ```
 sudo apt full-upgrade
 ```
+
+Now to change from LTS to Non-LTS release with this command:
 
 ```
 sudo sed -i s/Prompt=lts/Prompt=normal/ /etc/update-manager/release-upgrades

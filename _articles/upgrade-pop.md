@@ -6,7 +6,9 @@ description: >
 keywords:
   - Pop!_OS 17.10
   - Pop!_OS 18.04
+  - Pop!_OS 18.10
   - LTS
+  - Non-LTS
   - Upgrade
   - Update
   - Release
@@ -28,7 +30,7 @@ First, we recommend having Pop!_OS installation media handy before starting any 
 
 Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
-### Upgrade
+### Upgrade from LTS to LTS
 
 Open a terminal by right-clicking on your desktop background and choose **Open Terminal**
 
@@ -45,6 +47,10 @@ Type <kbd>Y</kbd> and press enter when prompted
 Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd>.
 
 You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
+
+### Upgrade from LTS to Non-LTS
+
+
 
 ---
 

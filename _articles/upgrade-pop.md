@@ -70,6 +70,14 @@ Then finally this command:
 do-release-upgrade
 ```
 
+You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.  
+
+Type <kbd>Y</kbd> and press enter when prompted
+
+Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd>.
+
+You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
+
 ---
 
 If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.

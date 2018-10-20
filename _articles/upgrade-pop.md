@@ -39,8 +39,6 @@ sudo apt update
 ```
 You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>. 
 
-![Terminal Window sudo apt update](docs/images/Screenshot from 2018-10-20 07-59-15.png) 
-
 ```
 sudo apt full-upgrade
 ```
@@ -56,8 +54,6 @@ Initiate the upgrade with this command:
 do-release-upgrade
 ```
 Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.
-
-![Yes/No Prompts]( docs/images/Screenshot from 2018-10-20 08-00-23.png )
 
 If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue. 
 

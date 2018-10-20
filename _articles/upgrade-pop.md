@@ -20,41 +20,26 @@ section: faq
 
 ---
 
-Pop 18.04 includes a new recovery system feature. If you would like this new feature, please reinstall the operating system as described here: [Install Pop](/articles/install-pop/). Future upgrades will update the recovery partition enabling more reliable upgrades. The recovery partition also provides a live environment that helps speed up diagnosing and fixing support issues. Upgrading in place will not create a recovery partition.
+Pop!_OS 18.10 was released in October, 2018. This article explains how to upgrade from Pop!_OS 18.04 to Pop!_OS 18.10. If you are on Pop!_OS 17.10, please backup your files and reinstall the operating system as described here: [Install Pop](/articles/install-pop/).
 
 ### Create Installation USB
 
-First, we recommend having Pop!_OS installation media handy before starting any upgrades in case something goes wrong. You can find instructions on creating a USB with Pop!_OS from our [live disk](/articles/live-disk/) article.
+First, we recommend having Pop!_OS installation media handy before starting any upgrades in case you need to reinstall the operating system. Instructions on creating a USB with Pop!_OS are located in our [live disk](/articles/live-disk/) article.
 
 ### Backup Your Files
 
-Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe! Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
-### Upgrade from LTS to LTS
+### Upgrade from Pop!_OS 18.04 to Pop!_OS 18.10
 
-Open a terminal by right-clicking on your desktop background and choose **Open Terminal**
-
-Type the following command, followed by the <kbd>Enter</kbd> key:
-
-```
-do-release-upgrade
-```
-
-You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.  
-
-Type <kbd>Y</kbd> and press enter when prompted
-
-Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd>.
-
-You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
-
-### Upgrade from LTS to Non-LTS
-
-By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. To change this first upgrade all of the current packages with this these commands:
+By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. To change this, first upgrade all current packages with this these commands:
 
 ```
 sudo apt update
 ```
+You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>. 
+
+![Terminal Window sudo apt update](docs/images/Screenshot from 2018-10-20 07-59-15.png) 
 
 ```
 sudo apt full-upgrade
@@ -65,20 +50,26 @@ Now to change from LTS to Non-LTS release with this command:
 ```
 sudo sed -i s/Prompt=lts/Prompt=normal/ /etc/update-manager/release-upgrades
 ```
-
-Then finally this command:
+Initiate the upgrade with this command:
 
 ```
 do-release-upgrade
 ```
+Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.
 
-You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.  
+![Yes/No Prompts]( docs/images/Screenshot from 2018-10-20 08-00-23.png )
 
-Type <kbd>Y</kbd> and press enter when prompted
+If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue. 
 
-Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd>.
+Type <kbd>Y</kbd> and press enter when prompted about starting the upgrade.
+
+If you have your lock screen set to enabled, you will receive a prompt about the screen being disabled during the update. Press <kbd>Enter</kbd> to continue.
+
+Near the end of the upgrade process, you'll be prompted to remove obsolete packages. Type <kbd>Y</kbd> and press <kbd>Enter</kbd>  when prompted.
 
 You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
+
+The last prompt will ask you to restart your computer to complete the upgrade. Make sure all files are saved and programs are closed, then type <kbd>Y</kbd> and <kbd>Enter</kbd>. The computer will immediately restart. 
 
 ---
 

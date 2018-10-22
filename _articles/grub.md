@@ -104,6 +104,43 @@ apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
 ```
 
+### Encrypted Disk
+
+To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
+
+```
+sudo cryptsetup luksOpen /dev/sda3 volume
+sudo lvscan
+sudo vgchange -ay
+```
+
+And take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
+
+```
+sudo mount /dev/mapper/data-root /mnt
+```
+
+And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to '+ Other Locations' -> 'Computer' and then click on the `/mnt` folder.
+
+### Chroot
+
+<u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.
+
+The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
+
+```
+sudo mount /dev/sda1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+sudo chroot /mnt
+```
+
+To exit from the <u>chroot</u> and reboot the computer, run these commands:
+
+```
+exit
+reboot
+```
+
 ---
 
 After this, reboot your computer, removing the disk when prompted, and the computer should boot.

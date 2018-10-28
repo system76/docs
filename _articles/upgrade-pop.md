@@ -43,6 +43,12 @@ You'll be prompted to enter your system password, but when you type it, the lett
 sudo apt full-upgrade
 ```
 
+Before beginning the upgrade, it is important to ensure that the `pop-desktop` metapackage is installed. If it is not installed, the ability to boot into an encrypted install may be lost. The `pop-desktop` metapackage includes `cryptsetup` as a dependency, which is included in the initramfs for decrypting LUKS partitions at boot.
+
+```
+sudo apt install pop-desktop
+```
+
 Now to change from LTS to Non-LTS release with this command:
 
 ```

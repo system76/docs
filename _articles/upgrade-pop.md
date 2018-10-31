@@ -49,6 +49,12 @@ Before beginning the upgrade, it is important to ensure that the `pop-desktop` m
 sudo apt install pop-desktop
 ```
 
+If you receive a notice that you have an unmet dependency for `sessioninstaller`, you'll need to install that before you can successfully install the `pop-desktop` package.
+
+```
+sudo apt install sessioninstaller
+```
+
 Now to change from LTS to Non-LTS release with this command:
 
 ```

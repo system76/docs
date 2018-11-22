@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Install CUDA and cuNNN
+title: Software - Install CUDA and cuDNN
 description: >
   Complete instructions on setting up the NVIDIA CUDA toolkit and cuDNN libraries
 keywords:

@@ -91,5 +91,26 @@ You're laptop firmware can be updated using a live disk when running on another 
 
 Once the laptop is booted from the live disk by plugging in the disk, reboot the laptop and hold the <kbd>F7</kbd> key. The brand name of the flash drive used will be show on that list and can be selected with the arrow keys and then press <kbd>Enter</kbd>.
 
-Next open a terminal with <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd> or on Ubuntu with <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>.
+Next open a terminal with <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd> or on Ubuntu with <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>. Now enter this command to list the partition layout for your installed OS:
 
+```
+lsblk
+```
+
+Now depending on the partition layout these commands will change. The EFI partition is around 512MB in size but may be smaller and it is usually the first partition on the drive.
+
+#### For NVMe Drives:
+
+```
+sudo mkdir -p /mnt/boot/efi
+sudo mount /dev/nvme0n1p1 /mnt/boot/efi
+```
+
+#### For SATA Drives:
+
+```
+sudo mkdir -p /mnt/boot/efi
+sudo mount /dev/sda1 /mnt/boot/efi
+```
+
+After the above commands are ran depending on the drive that the OS is installed on you can use the above instructions to update your firmware.

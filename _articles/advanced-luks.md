@@ -11,7 +11,7 @@ keywords:
   - FDE
 image: http://support.system76.com/images/pop.png
 hidden: false
-section: articles
+section: security
 
 ---
 

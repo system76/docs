@@ -61,6 +61,7 @@ sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
+sudo update-grub
 ```
 
 #### For SATA Drives:
@@ -74,6 +75,7 @@ sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
+sudo update-grub
 ```
 
 ---
@@ -91,6 +93,7 @@ sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
+sudo update-grub
 ```
 
 #### For SATA Drives:
@@ -102,6 +105,7 @@ sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
+sudo update-grub
 ```
 
 ### Encrypted Disk

@@ -55,26 +55,30 @@ First let's list the NVMe's that are installed:
 sudo nvme list
 ```
 
-With the list of NVMe drives then if the drive has the following name 'nvme0n1 ' then this command will give us the SMART log for it:
+Under 'Node' you will see a mount path for each drive something like '/dev/nvme0n1', to access the smart-log you would type in the following:
 
 ```
-nvme smart-log nvme0
+sudo nvme smart-log /dev/nvme0n1
 ```
 
 #### Machine Check Exceptions
 
-Machine Check Exceptions are hardware failure events, and can be logged with the <u>mcelog</u> program.  Run this command in Ubuntu 17.10 or earlier to install the program:
-
+Machine Check Exceptions are hardware failure events and can be logged with <u>rasdaemon.service</u> to journalctl. On Ubuntu based systems (<u>and Pop!_OS</u>) you can install via:
 ```
-sudo apt install mcelog
+sudo apt install rasdaemon
+```
+verify rasdaemon is active
+```
+systemctl status rasdaemon
 ```
 
-Then, after the system has crashed or been used for a period of time, take a look at this log:
-
-> /var/log/mcelog
+Then, after the system has crashed or been used for a period of time, take a look at the log:
+```
+journalctl -f -u rasdaemon
+```
 
 If there is no log or the log is empty, then the crash isn't related to a hardware failure.  The log will stay empty until a MCE happens.  Take a look for "uncorrected" errors, as most "corrected" errors can be ignored.  If there are a consistent number of "uncorrected" errors, the hardware should be examined.
 
 #### Support
 
-Please contact support by opening a ticket to get the system repaired or to have failed components replaced.
+Please contact [support](https://support.system76.com/) by opening a ticket to get the system repaired or to have failed components replaced.

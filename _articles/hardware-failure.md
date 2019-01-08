@@ -63,34 +63,19 @@ sudo nvme smart-log /dev/nvme0n1
 
 #### Machine Check Exceptions
 
-Machine Check Exceptions are hardware failure events, and can be logged with the <u>mcelog</u> program. 
-
-You will need to download, compile and install mcelog. To do this, ensure you have internet and run this command:
+Machine Check Exceptions are hardware failure events and can be logged with <u>rasdaemon.service</u> to journalctl. On Ubuntu based systems (<u>and Pop!_OS</u>) you can install via:
 ```
-sudo  git clone git://git.kernel.org/pub/scm/utils/cpu/mce/mcelog.git
+sudo apt install rasdaemon
 ```
-change directories
+verify rasdaemon is active
 ```
-cd mcelog
-```
-compile mcelog
-```
-make
-```
-then install
-```
-sudo make install
+systemctl status rasdaemon
 ```
 
-If using Ubuntu 17.10 or earlier run the following command to install the program:
-
+Then, after the system has crashed or been used for a period of time, take a look at the log:
 ```
-sudo apt install mcelog
+journalctl -f -u rasdaemon
 ```
-
-Then, after the system has crashed or been used for a period of time, take a look at this log:
-
-> /var/log/mcelog
 
 If there is no log or the log is empty, then the crash isn't related to a hardware failure.  The log will stay empty until a MCE happens.  Take a look for "uncorrected" errors, as most "corrected" errors can be ignored.  If there are a consistent number of "uncorrected" errors, the hardware should be examined.
 

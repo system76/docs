@@ -22,7 +22,7 @@ GRUB is the bootloader. It takes care of getting the operating system started up
 
 If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`. Installing everywhere will break the bootloader.
 
-On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply.
+On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page. 
 
 ### Create Live Disk
 
@@ -46,9 +46,16 @@ And then look for the name of your main hard drive. It could be `/dev/sda` or `/
 
 ---
 
+## GRUB
+
 ### EFI Boot
 
-Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode.  Run these commands based on what type of disk you have:
+Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
+
+```
+[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
+```
+Run these commands based on what type of disk you have:
 
 #### For NVMe Drives:
 
@@ -82,7 +89,13 @@ sudo update-grub
 
 ### BIOS Boot
 
-If `bios_grub` is listed under `flags`, the system is installed in BIOS mode.  Run these commands based on what type of disk you have:
+If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
+
+```
+[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
+```
+
+Run these commands based on what type of disk you have:
 
 #### For NVMe Drives:
 
@@ -107,6 +120,48 @@ apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
 sudo update-grub
 ```
+
+## systemd-boot
+
+### EFI Boot
+
+Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
+
+```
+[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
+```
+
+Run these commands based on what type of disk you have:
+
+#### For NVMe Drives:
+
+```
+sudo mkdir -p /mnt/boot/efi
+sudo mount /dev/nvme0n1p2 /mnt
+sudo mount /dev/nvme0n1p1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+apt install --reinstall linux-generic linux-headers-generic
+update-initramfs -c -k all
+sudo bootctl --path=/boot/efi install
+```
+
+#### For SATA Drives:
+
+```
+sudo mkdir -p /mnt/boot/efi
+sudo mount /dev/sda2 /mnt
+sudo mount /dev/sda1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+apt install --reinstall linux-generic linux-headers-generic
+update-initramfs -c -k all
+sudo bootctl --path=/boot/efi install
+```
+
+---
 
 ### Encrypted Disk
 
@@ -151,7 +206,7 @@ After this, reboot your computer, removing the disk when prompted, and the compu
 
 ## Troubleshooting
 
-If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install CD is not compatible with that of the installed system.
+If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system.
 
 For example, the error is most frequently seen when trying to `chroot` to a 64-bit system (amd64) from a 32-bit Install CD (x86).
 

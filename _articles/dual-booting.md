@@ -58,6 +58,24 @@ Once you have your partition(s) selected, select the red "Erase and Install" but
 
 Choose your previous OS with the arrow keys, then press Enter.
 
+## Install Windows 10
+
+Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected.
+
+![Windows](/images/dual-booting/windows-partitioning.png)
+
+With the 'Unallocated Space' selected new press the 'Apply' button. Note if the whole partition is being used for this installation then the size property won't need to be changed.
+
+![Windows](/images/dual-booting/windows-partitioning-2.png)
+
+Next Windows will create an extra partition that is needs for some features.
+
+![Windows](/images/dual-booting/windows-partitioning-3.png)
+
+This message can be safely ignored and it is caused by Windows not being the first OS in the boot order.
+
+![Windows](/images/dual-booting/windows-partitioning-4.png)
+
 ## Windows Caveats
 
 Windows 8 and later uses a "Fast Startup" setting which prevents Windows from fully shutting down and allowing other OSes to use the disk. Before you can properly dual boot with Windows, you must disable this setting in Windows.

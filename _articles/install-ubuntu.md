@@ -122,7 +122,7 @@ sudo gedit /etc/default/grub
 
 Update this line:
 
-> GRUB_CMDLINE_LINUX="nomodeset"
+> GRUB_CMDLINE_LINUX="nouveau.modeset=0"
 
 to:
 

@@ -17,9 +17,10 @@ section: faq
 
 ---
 
-Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
+Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_OS or Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
 - [Installing Pop!_OS](/articles/install-pop/)
+- [Installing Ubuntu](/articles/install-ubuntu/)
 - Recovering your exiting operating system
 - Backing up files when you can't boot
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
@@ -29,11 +30,21 @@ A live disk is a handy tool to have around!
 
 ## Make Bootable drive
 
-In order to install Pop!_OS, we must first download the .iso image, this is a disk image with the operating system and installer on it. You can download [Pop!_OS here](http://pop.system76.com) and [Ubuntu here](https://www.ubuntu.com/download/desktop/thank-you?version=18.04.1&architecture=amd64) just click the link and the download should begin!
+[comment]: <> (Feb 7th 2019 is when 18.04.2 should come out so the Ubuntu will need to be updated)
 
-In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use Etcher.
+In order to install Pop!_OS or Ubuntu, we must first download the .iso image, this is a disk image with the operating system and installer on it. You can [download Pop!_OS here](http://pop.system76.com) and [Ubuntu here](https://www.ubuntu.com/download/desktop/thank-you?version=18.04.1&architecture=amd64) just click the link and the download should begin!
 
-Etcher is an open source app for Windows, Linux and MacOS that allows you to "burn images to SD cards & USB drives safely and easily", you can download it at [Etcher.io](https://etcher.io).
+In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use the Disks applicaton for Ubuntu and Etcher for Windows/MacOS.
+
+Press the <kbd><span class="fl-pop-key"></span></kbd>/<kbd><span class="fl-ubuntu"></span></kbd> key then type 'disks' to launch the Disks application.
+
+![Disks](/images/live-disk/disks.png)
+
+ Next select the flash drive in the list on left and click on the three dots on the top right of the window. Now select 'Restore Disk Image...' and select the Ubuntu or Pop_OS ISO file. Then finally hit the 'Start Restoring...' button and enter your user password.
+
+![Disks](/images/live-disk/disks-selection.png)
+
+Etcher is an open source app for Windows and MacOS that allows you to "burn images to SD cards & USB drives safely and easily", you can download it at [Etcher.io](https://etcher.io).
 
 Once you have installed Etcher and downloaded the Pop!_OS.iso image, open up the Etcher application, you should see something like this:
 

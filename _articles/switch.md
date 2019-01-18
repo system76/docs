@@ -18,11 +18,11 @@ section: articles
 
 If you are just coming to [Ubuntu](https://www.ubuntu.com/) from [Apple](https://www.apple.com/), it can be a little confusing where everything is. Some software will have the same names, while some tasks need different software. Generally, all operating systems accomplish the same functions: running programs, managing files, installing software, watching funny cat videos, sending email, and low-level functions, such as networking, keyboard input, and displaying images.
 
-Ubuntu, included software, and Ubuntu's default desktop environment, [Unity](https://unity.ubuntu.com/about), will handle most needs. Additional software can be installed, and the desktop environment can be changed to make the experience quite different. We will go through some of the most common operating system tasks, and show where they are located in Ubuntu Unity.
+Ubuntu, included software, and Ubuntu's default desktop environment, [GNOME Shell](https://www.gnome.org/gnome-3/), will handle most needs. Additional software can be installed, and the desktop environment can be changed to make the experience quite different. We will go through some of the most common operating system tasks, and show where they are located in GNOME Shell.
 
 ### Running And Managing Programs
 
-Unity defaults to having its launcher on the left side of the screen. Unity's launcher handles programs nearly identical to Apple's dock. To run a program, click on it. To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher. And to see if programs are open, look for the arrows around the icon. 
+GNOME Shell defaults to having its launcher on the left side of the screen. GNOME Shell's launcher handles programs nearly identical to Apple's dock. To run a program, click on it. To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher. And to see if programs are open, look for the arrows around the icon. 
 
 ![apple-launcher](/images/switch/apple-launcher.png)
 
@@ -30,17 +30,13 @@ Unity defaults to having its launcher on the left side of the screen. Unity's la
 
 ![ubuntu-launcher](/images/switch/ubuntu-launcher.png)
 
-If the Unity desktop environment isn't for you, it can be changed easily. Please see this article for how to change desktop environments:
+If the GNOME desktop environment isn't for you, it can be changed easily. Please see this article for how to change desktop environments:
 
 [Desktop Environment](/articles/desktop-environment/)
 
-And if you would like to move the launcher to the bottom of the screen, please see this article:
-
-[Move the Launcher](/articles/move-launcher/)
-
 ### Installing Software
 
-Ubuntu comes with a full featured [Software Center](https://wiki.gnome.org/Apps/Software) to search for new software, games, programs, and other applications for your computer.
+Ubuntu comes with a full featured [GNOME Software](https://wiki.gnome.org/Apps/Software) to search for new software, games, programs, and other applications for your computer.
 
 ![apple-software](/images/switch/apple-software.png)
 
@@ -50,7 +46,7 @@ Ubuntu comes with a full featured [Software Center](https://wiki.gnome.org/Apps/
 
 ### Workspaces And Window Management
 
-Ubuntu has an option to turn on [Workspaces](https://help.ubuntu.com/stable/ubuntu-help/shell-workspaces.html) located under <u>System Settings</u> → **Appearance** → **Behavior**. With workspaces enabled, 4 copies of all available monitors are created. Each workspace can be switched to, and windows can be moved between workspaces.
+Ubuntu has [Workspaces](https://help.ubuntu.com/stable/ubuntu-help/shell-workspaces.html) and they are dynamically created which means more can be created when needed. Each workspace can be switched to, and windows can be moved between workspaces.
 
 ![apple-window](/images/switch/apple-window.png)
 
@@ -60,7 +56,7 @@ Ubuntu has an option to turn on [Workspaces](https://help.ubuntu.com/stable/ubun
 
 ### Finding Programs And Files
 
-Ubuntu has a [Dash](https://help.ubuntu.com/stable/ubuntu-help/unity-dash-intro.html) much like Apple's [Spotlight](https://support.apple.com/en-us/HT204014) search. If you press the Super key <kbd><span class="fl-ubuntu"></span></kbd> all graphical software and files can be searched for easily.
+Ubuntu has a [Dash](https://help.gnome.org/misc/release-notes/3.6/users-activities-overview.html.en) much like Apple's [Spotlight](https://support.apple.com/en-us/HT204014) search. If you press the Super key <kbd><span class="fl-ubuntu"></span></kbd> all graphical software and files can be searched for easily.
 
 ![apple-software](/images/switch/apple-search.png)
 

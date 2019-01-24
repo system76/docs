@@ -30,10 +30,16 @@ Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, and type the wor
 
 ### Install Packages
 
-Copy and paste the following line, followed by <kbd>Enter</kbd>:
+Copy and paste the following line for Ubuntu/Pop 18.04, followed by <kbd>Enter</kbd>:
 
 ```
 sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libavcodec-extra gstreamer1.0-libav gstreamer1.0-fluendo-mp3 chromium-codecs-ffmpeg-extra libdvd-pkg
+```
+
+Copy and paste the following line for Ubuntu/Pop 18.04, followed by <kbd>Enter</kbd>:
+
+```
+sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good libavcodec-extra gstreamer1.0-libav chromium-codecs-ffmpeg-extra libdvd-pkg
 ```
 
 To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>

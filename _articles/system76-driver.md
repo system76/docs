@@ -26,7 +26,9 @@ sudo apt-get install -y system76-driver
 
 #### Generate Log Files
 
-Simply clicking the button outlined in red will create a file called `system76-logs.tgz`, it will be placed in your Home directory (/home/username)
+The System76 Driver can be opened by pressing the Ubuntu or Pop key and then search for 'system76', then click on the System76 Driver. 
+
+Next click on the button outlined in red in the application and there will be a file called `system76-logs.tgz` placed in your Home directory (/home/username)
 
 ![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Ubuntu - Switching to Ubuntu From Apple
+title: Switching to Ubuntu From Apple
 description: >
   If you are coming from Apple's operating system and just using Ubuntu for the first time, we can help make the transition a little smoother.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - Ubuntu
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: getting-started
 
 ---
 

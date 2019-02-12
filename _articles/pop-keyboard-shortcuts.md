@@ -1,13 +1,13 @@
 ---
 layout: article
-title: Pop! - Keyboard Shortcuts
+title: Keyboard Shortcuts
 description: Learn how master using Pop!_OS with your keyboard
 keywords:
   - keyboard
   - shortcuts
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: getting-started
 
 ---
 

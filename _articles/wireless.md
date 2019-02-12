@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Wireless - Solve Wireless Issues
+title: Solve Wireless Issues
 description: >
   If you’re having problems with your wireless Internet connection, take a look at the suggestions in this article.
 keywords:

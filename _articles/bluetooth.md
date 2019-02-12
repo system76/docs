@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Bluetooth - Troubleshoot Bluetooth Issues
+title: Troubleshoot Bluetooth Issues
 description: >
   Here is how to fix several common Bluetooth issues with your computer.
 keywords:

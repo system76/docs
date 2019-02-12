@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Windows - Find Windows Drivers
+title: Find Windows Drivers
 description: >
   If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
 keywords:
@@ -9,7 +9,7 @@ keywords:
   - drivers
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

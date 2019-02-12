@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Bootloaders - Repair The Bootloader
+title: Repair the Bootloader
 description: >
-   How to repair and reinstall your bootloader.
+   How to repair and reinstall the bootloader.
 keywords:
   - Support
   - Grub
@@ -12,11 +12,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 
-There are a few different bootloaders, the two main ones are [GRUB](https://www.gnu.org/software/grub/manual/grub/) and [systemd-boot](https://www.freedesktop.org/wiki/Software/systemd/systemd-boot/). It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, the bootloader can break, and it may not let you boot into your computer to fix the problem.
+GRUB is the bootloader. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can break, and it may not let you boot into your computer to fix the problem.
 
 #### Important Note
 
@@ -26,7 +26,7 @@ On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the
 
 ### Create Live Disk
 
-Please see our instructions for making a live disk of Pop!_OS [here](/articles/live-disk/) and Ubuntu [here](/articles/live-disk/)
+Please see our instructions for making a live disk of Pop!_OS [here](/articles/live-disk/).
 
 ### Reinstall GRUB Bootloader
 

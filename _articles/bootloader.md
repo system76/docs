@@ -168,7 +168,7 @@ sudo bootctl --path=/boot/efi install
 To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
 ```
-sudo cryptsetup luksOpen /dev/sda3 volume
+sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```

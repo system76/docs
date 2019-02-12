@@ -15,7 +15,7 @@ hidden: false
 redirect_from:
   - /extraDrive
   - /extradrive
-section: faq
+section: hardware-drivers
 
 ---
 

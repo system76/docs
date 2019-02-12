@@ -69,16 +69,39 @@ layout: default
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="security-encryption">Security & Encryption</h1>
+			<h1 id="software-applications">Software & Applications</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns support-excerpts security-encryption">
+		<div class="small-12 columns support-excerpts software-applications">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
-					{% if article.section == 'security-encryption' %}
+					{% if article.section == 'software-applications' %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+						</article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="small-12 columns">
+			<hr />
+			<h1 id="hardware-drivers">Hardware & Drivers</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts hardware-drivers">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.section == 'hardware-drivers' %}
 						<article>
 							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
 							{{ article.description | markdownify }}
@@ -138,16 +161,16 @@ layout: default
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="hardware-drivers">Hardware & Drivers</h1>
+			<h1 id="security-encryption">Security & Encryption</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns support-excerpts hardware-drivers">
+		<div class="small-12 columns support-excerpts security-encryption">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
-					{% if article.section == 'hardware-drivers' %}
+					{% if article.section == 'security-encryption' %}
 						<article>
 							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
 							{{ article.description | markdownify }}
@@ -184,16 +207,17 @@ layout: default
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="software-applications">Software & Applications</h1>
+			<h1 id="machine-learning">Machine Learning/AI</h1>
 		</div>
 	</div>
 
+	<!--
 	<div class="row">
-		<div class="small-12 columns support-excerpts software-applications">
+		<div class="small-12 columns support-excerpts machine-learning">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
-					{% if article.section == 'software-applications' %}
+					{% if article.section == 'machine-learning' %}
 						<article>
 							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
 							{{ article.description | markdownify }}
@@ -203,8 +227,9 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
+    -->
 	
-	<div class="row">
+		<div class="row">
 		<div class="small-12 columns">
 			<hr />
 			<h1 id="repairs-returns">Repairs and Returns</h1>
@@ -227,29 +252,7 @@ layout: default
 		</div>
 	</div>
 	
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="machine-learning">Machine Learning/AI</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts machine-learning">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'machine-learning' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
+	<!--
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -274,7 +277,8 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-
+    -->
+	
   <div class="row">
 		<div class="small-12 medium-8 medium-centered columns">
 			<hr />

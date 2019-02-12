@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Guides - Find Your Quickstart Guide
+title: Find Your Quickstart Guide
 description: >
-  Check here for diagrams and quickstart guides for your computer.
+  Diagrams and component guides for your computer.
 keywords:
   - Support
   - Guides
@@ -11,7 +11,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: faq
+section: getting-started
 
 ---
 

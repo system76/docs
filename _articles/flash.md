@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Videos - Watch Flash Content and Netflix
+title: Watch Flash Content and Netflix
 description: >
     How to install Google Chrome or Pepperflash to watch Netflix, Hulu, and other Flash Videos.
 keywords:
@@ -21,7 +21,7 @@ hidden: false
 redirect_from:
   - /chromeFlash
   - /chromeflash
-section: articles
+section: software-applications
 
 ---
 

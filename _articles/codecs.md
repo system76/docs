@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Videos - Watch Videos and Play Music (MP3, DVD, etc.)
+title: Watch Videos and Play Music (MP3, DVD, etc.)
 description: >
   Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these media, please see this document.
 keywords:
@@ -18,7 +18,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

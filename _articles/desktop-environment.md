@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Desktop - Change the Desktop Environment
+title: Change the Desktop Environment
 description: >
     Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
 keywords:
@@ -13,7 +13,7 @@ keywords:
   - Mint
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

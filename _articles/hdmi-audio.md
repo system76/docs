@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Audio - Configure HDMI Audio
+title: Configure HDMI Audio
 description: >
   Here is how to play audio over an HDMI connection.
 keywords:

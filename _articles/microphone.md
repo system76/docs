@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Audio - Use The Microphone
+title: Use The Microphone
 description: >
   Here is how to enable and adjust the microphone.
 keywords:

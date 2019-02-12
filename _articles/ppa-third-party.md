@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Apt - Keep PPAs Enabled when Upgrading Releases
+title: Keep PPAs Enabled when Upgrading Releases
 description: >
     Upgrading to a new releases disables PPAs and third party repos.  Learn how to keep your PPA or third party repo enabled during upgrades.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - release upgrade
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

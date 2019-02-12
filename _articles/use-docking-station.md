@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Display - Docking Station Support
+title: Docking Station Support
 description: >
   A Docking Station makes it easy to use multi monitors. It also adds an ethernet port, multi USB ports and more while only using one USB 3.0 port on your laptop.
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - System76
 image: https://system76.com/images/system76.png
 hidden: false
-section: articles
+section: accessories
 ---
 
 ### Compatible Intel systems

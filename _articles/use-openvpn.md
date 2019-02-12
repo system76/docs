@@ -10,7 +10,7 @@ keywords:
   - ProtonVPN
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: security
+section: security-encryption
 
 ---
 

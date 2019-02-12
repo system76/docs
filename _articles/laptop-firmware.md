@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Update Laptop Firmware
+title: Update Laptop Firmware
 description: >
   How to update System76 laptop firmware.
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - update
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

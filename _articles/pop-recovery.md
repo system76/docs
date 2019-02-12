@@ -12,7 +12,7 @@ keywords:
   - repair
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: faq
+section: pop-ubuntu
 
 ---
 

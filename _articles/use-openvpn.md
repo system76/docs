@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Install OpenVPN 
+title: Install OpenVPN 
 description: >
   This page will go over setting up and using OpenVPN to browse the internet more securely in places like airports, cafe shops and more.
 keywords:

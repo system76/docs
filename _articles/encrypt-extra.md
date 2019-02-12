@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Encrypt Extra Drive
+title: Encrypt Extra Drive
 description: Learn how to encrypt the extra drive
 keywords:
   - System76

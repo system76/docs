@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Desktop - Desktop Quickstart Guide
+title: Desktop Quickstart
 description: >
   Getting started on your new System76 Desktop.
 keywords:
@@ -11,18 +11,10 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: getting-started
 
 ---
 Congratulations on receiving your System76 Desktop! Read this article to get started quickly.
-
-### Bag Of Cables
-
-If you ordered a desktop without the max amount of drives, you'll receive an extra bag of parts. This can include hard drive cables, screws or antennas. Remove the black antennas from your bag of extras, and set the rest of the parts aside. You will use the cables and screws if you decide to add other components at a later date.
-
-### Wireless Antennas
-
-To enable WiFi capability, screw the black antennas to the back of the desktop where the wireless antennas are located.  Look for the gold terminals.
 
 ### Connect Your Monitor
 
@@ -44,13 +36,13 @@ Press the circular button on the front of the machine after all components are p
 
 ### Set Up User Account
 
-When you power on, you'll be prompted to create a user account, which is the administrative account. The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. 
+When you power on, you'll be prompted to create a user account, which is the administrative account (root). The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. In Pop!_OS, you can choose to encrypt your hard drive while setting up the user account. You will be prompted for the encryption passphrase first if you select that option during the account creation process. After the encryption passphrase is set, you will proceed to set up a user account and be prompted to set the administrator password. If you encrypt your hard drive, you will be prompted for the encryption passphrase every time you power on. It's important to write this password down and keep it somewhere safe. If the password is lost or forgotten, you will lose access to the contents of the drive.
 
 ## Frequently Asked Questions
 
 *Do I need to encrypt my home folder?*
 
-> No. This is for advanced users familiar with encryption.
+> It is not required, but it is an added security measure to keep your data safe.
 
 *Should I connect to Wifi during my user account setup?*
 

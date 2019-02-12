@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Terminal - Learn Linux Terminal Basics
+title: Linux Terminal Basics
 description: >
-  Linux offers users a lot of flexibility. There's always more than one way to complete a task, and using the terminal is one of them.
+  Linux offers users a lot of flexibility. Use the terminal to accomplish tasks faster
 keywords:
   - Linux
   - Beginner
@@ -11,7 +11,7 @@ keywords:
   - Technical Support
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: faq
+section: getting-started
 
 ---
 

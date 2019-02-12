@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Printer - Add a Printer in Ubuntu
+title: Add a Printer in Ubuntu
 description: >
   Here is how to add a printer in Ubuntu.
 keywords:

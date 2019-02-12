@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Printer - Add a Printer in Pop!_OS
+title: Add a Printer in Pop!_OS
 description: >
   Here is how to add a printer in Pop!_OS.
 keywords:

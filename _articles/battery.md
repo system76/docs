@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Battery - Increase Battery Life
+title: Battery Life Improvements
 description: >
-  Here are several ways to stretch the battery and create amazing things for longer.
+  Stretch the battery life and create amazing things for longer.
 keywords:
   - Battery
   - Battery Life
@@ -13,7 +13,7 @@ keywords:
   - Power
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: hardware-drivers
 
 ---
 
@@ -23,7 +23,7 @@ The biggest consumer of power is the display backlight. Up to 10% more battery l
 
 ### Power Profiles
 
-With the <u>system76-power</u> package there are now what we call **Power Profiles** that can be accessed in the **System Menu** in the image below.
+With the <u>system76-power</u> package there are **Power Profiles** that can be accessed in the **System Menu** in the image below.
 
 ![Battery](/images/battery/system-menu.png)
 

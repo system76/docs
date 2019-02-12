@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Ubuntu - Move the Launcher In 16.04+
+title: Move the Launcher In 16.04+
 description: >
     Ubuntu 16.04 LTS introduced a way to move the Unity Launcher to the bottom of your display. Learn how to do that (and how to move it back).
 keywords:
@@ -15,7 +15,7 @@ hidden: false
 redirect_from:
   - /moveLauncher
   - /movelauncher
-section: articles
+section: pop-ubuntu
 
 ---
 

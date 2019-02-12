@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Dual Booting
+title: Dual Booting
 description: Learn how to install Pop!\_OS alongside another OS
 keywords:
   - System76
@@ -9,7 +9,7 @@ keywords:
   - Linux
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: pop-ubuntu
 
 ---
 

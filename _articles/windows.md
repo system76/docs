@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Windows - Use Windows Programs
+title: Use Windows Programs
 description: >
   This is how to use Windows programs in Pop!_OS.
 keywords:
@@ -17,7 +17,7 @@ image: http://support.system76.com/images/system76.png
 hidden: false
 redirect_from:
   - /windows
-section: articles
+section: software-applications
 
 ---
 

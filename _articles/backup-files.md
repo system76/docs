@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Files - Backup Files
+title: Backup Files
 description: >
   Here is how to backup your important files.
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - Nextcloud
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

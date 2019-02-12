@@ -2,7 +2,7 @@
 layout: article
 title: Server - Configure Your System76 Server
 description: >
-  Purchased a new server? Check out these instructions on setting up a System76 server, including initial login credentials.
+  Instructions on setting up a System76 server, including initial login credentials.
 keywords:
   - support
   - server
@@ -14,7 +14,7 @@ hidden: false
 redirect_from:
   - /serversetup
   - /serverSetup
-section: articles
+section: getting-started
 
 ---
 

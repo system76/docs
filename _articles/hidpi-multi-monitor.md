@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Display - HiDPI Multi-Monitor Support
+title: HiDPI Multi-Monitor Support
 description: >
     Mixing HiDPI and LoDpi displays can be complicated.  Learn what to do and how System76 automates this for you!
 keywords:
@@ -13,13 +13,13 @@ keywords:
   - xorg
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: hardware-drivers
 
 ---
 
 ### What Is HiDPI?
 
-With 4K monitors becoming more prominent in the marketplace, it's crucial to define the difference between a high resolution display and a true HiDPI display. Our UX designer Cassidy Blaede has put together a great series of [articles](https://medium.com/elementaryos/what-is-hidpi-and-why-does-it-matter-b024eabea20d) explaining the difference between high resolution and HiDPI.
+With 4K monitors becoming more prominent in the marketplace, it's crucial to define the difference between a high resolution display and a true HiDPI display. There's a great series of [articles](https://medium.com/elementaryos/what-is-hidpi-and-why-does-it-matter-b024eabea20d) explaining the difference between high resolution and HiDPI.
 
 In short, HiDPI refers to pixel doubling: drawing an image with twice as many physical pixels in each dimension than requested in virtual pixels. For example, an icon or image might be 64 virtual pixels tall, but on a HiDPI display, it’s drawn with 128 physical pixels. This makes the icon twice as crisp in any angles or curves, or allows for twice as much detail in the photo.
 

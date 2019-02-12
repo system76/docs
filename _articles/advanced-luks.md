@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Full Disk Encryption Passwords
+title: Full Disk Encryption Passwords
 description: >
    How to add extra passwords for your Full Disk Encryption setup
 keywords:

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Sharing files between your Pop!_OS Computers
+title: Sharing files between your Pop!_OS Computers
 description: >
     How to share files with the Public Folder.
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: articles
+section: pop-ubuntu
 
 ---
 

@@ -1,15 +1,15 @@
 ---
 layout: article
-title: Shipping - Laptop Repackaging Instructions
+title: Laptop Repackaging Instructions
 description: >
-  Here are instructions for repackaging your laptop for shipping in for repairs.
+  Step by step instructions for repackaging your laptop for repair or return
 keywords:
   - shipping
   - repair
   - laptop
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: repairs-returns
 
 ---
 

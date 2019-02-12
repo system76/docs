@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Install Pop!_OS in VirtualBox
+title: Install Pop!_OS in VirtualBox
 description: Install Pop!_OS in a virtual machine like VirtualBox
 keywords:
   - VirtualBox
@@ -8,7 +8,7 @@ keywords:
   - Virtual Machine
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

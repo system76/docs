@@ -141,6 +141,29 @@ layout: default
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
+			<h1 id="wifi-bluetooth">WiFi & Bluetooth</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts wifi-bluetooth">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.section == 'wifi-bluetooth' %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+						</article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="small-12 columns">
+			<hr />
 			<h1 id="repairs-returns">Repairs and Returns</h1>
 		</div>
 	</div>

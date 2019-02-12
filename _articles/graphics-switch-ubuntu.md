@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Ubuntu - Switching Graphics
+title: Switching Graphics in Ubuntu
 description: >
    How to switch between Intel and NVIDIA graphics
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - Intel
 image: http://support.system76.com/images/ubuntu.png
 hidden: false
-section: articles
+section: pop-ubuntu
 
 ---
 

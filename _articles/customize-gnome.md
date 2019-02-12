@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Customize Pop!_OS
+title: Customize Pop!_OS
 description: >
   Pop with the GNOME desktop is highly customizable!  See here to get started making your desktop just right for you.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - Tweaks
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: articles
+section: pop-ubuntu
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Hardware - Configure Or Disable Touchpad
+title: Configure Or Disable Touchpad
 description: >
-  Here's how to change how the touchpad functions.
+  Learn how to turn on and configure touchpad functions.
 keywords:
   - touchpad
   - trackpad
@@ -12,7 +12,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: hardware-drivers
 
 ---
 

@@ -1,15 +1,15 @@
 ---
 layout: article
-title: Order - Order accessories for your laptop
+title: How to order accessories for your laptop
 description: >
-  Check here to order a new AC Adapter for your laptop.
+  Instructions to order a new AC Adapter for your laptop.
 keywords:
   - Support
   - Accessories
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: faq
+section: accessories
 
 ---
 

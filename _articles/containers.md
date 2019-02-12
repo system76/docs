@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Using Containers on Linux
+title: Using Containers on Linux
 description: >
    How to setup and use LXC/LXD
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - LXD
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: software-applications
 
 ---
 

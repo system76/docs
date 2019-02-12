@@ -1,8 +1,8 @@
 ---
 layout: article
-title: BIOS - Access BIOS or Boot Menu
+title: Access BIOS or Boot Menu
 description: >
-  Here are the list of keys to access BIOS settings or boot from other media.
+  How to access BIOS settings or boot from other media.
 keywords:
   - boot
   - menu
@@ -10,7 +10,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: articles
+section: hardware-drivers
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Use The Recovery Partition
+title: Use The Recovery Partition
 description: >
     Here is how to use the recovery partition to reinstall or repair your operating system.
 keywords:

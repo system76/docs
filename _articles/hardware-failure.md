@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Hardware - Diagnose Hardware Failures
+title: Diagnose Hardware Failures
 description: >
   If the computer won't start, boot, or otherwise operate normally, there may be a hardware issue.  Follow these steps to diagnose hardware failures.
 keywords:

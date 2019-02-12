@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Live Disk - Create and Use Bootable Media from Other OS's
+title: Create and Use Bootable Media from Other OS's
 description: >
   You can run Pop!_OS from a USB drive for hardware testing, recovery, and installation/re-installation.
 keywords:

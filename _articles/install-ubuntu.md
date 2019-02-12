@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Ubuntu - Install Ubuntu On Your System76 Computer
+title: Install Ubuntu On Your System76 Computer
 description: >
   Full instructions on installing Ubuntu your computer.
 keywords:

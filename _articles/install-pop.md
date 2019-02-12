@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - Install Pop!_OS On Your System76 Computer
+title: Install Pop!_OS On Your System76 Computer
 description: >
   Full instructions on installing Pop!_OS your computer.
 keywords:

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Apt - Fix Package Manager Issues
+title: Fix Package Manager Issues
 description: >
   Here are ways to fix update, upgrade, and other package manager issues.
 keywords:

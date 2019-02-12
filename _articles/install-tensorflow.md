@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Software - Install TensorFlow
+title: Install TensorFlow
 description: >
   Complete instructions on installing TensorFlow
 keywords:
@@ -9,7 +9,7 @@ keywords:
   - TensorFlow
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: machine-learning
+section: software-applications
 
 ---
 

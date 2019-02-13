@@ -55,12 +55,12 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
 ```
-sudo cryptsetup luksOpen /dev/sda3 volume
+sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```
 
-And take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
+And take note as to what the cryptdata group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
 ```
 sudo mount /dev/mapper/data-root /mnt

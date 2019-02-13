@@ -60,15 +60,19 @@ Now depending on the partition layout these commands will change. The EFI partit
 #### For NVMe Drives:
 
 ```
-sudo mkdir -p /mnt/boot/efi
-sudo mount /dev/nvme0n1p1 /mnt/boot/efi
+sudo apt install system76-driver
+sudo mkdir -p /boot/efi
+sudo mount /dev/nvme0n1p1 /boot/efi
+sudo system76-firmware-pkexec
 ```
 
 #### For SATA Drives:
 
 ```
-sudo mkdir -p /mnt/boot/efi
-sudo mount /dev/sda1 /mnt/boot/efi
+sudo apt install system76-driver
+sudo mkdir -p /boot/efi
+sudo mount /dev/sda1 /boot/efi
+sudo system76-firmware-pkexec
 ```
 
 After the above commands are ran depending on the drive that the OS is installed on you can use the above instructions to update your firmware.

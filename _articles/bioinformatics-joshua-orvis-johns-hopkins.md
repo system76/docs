@@ -81,4 +81,4 @@ potential:
 
 ---
 
-_[Click here to download a PDF copy of this case study ↓](https://support.system76.com/images/system76-case-study_bioinformatics-joshua-orvis-johns-hopkins.pdf)_
+[Click here to download a PDF copy of this case study](https://github.com/system76/docs/raw/gh-pages/pdfs/case-studies/system76-case-study_bioinformatics-joshua-orvis-johns-hopkins.pdf)

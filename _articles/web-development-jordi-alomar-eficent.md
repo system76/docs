@@ -77,4 +77,4 @@ can help you develop and deploy your work.
 
 ---
 
-[Click here to download a PDF copy of this case study](https://github.com/system76/docs/raw/gh-pages/pdfs/case-studies/system76-case-study_web-development-jordi-alomar-eficent.pdf)
+[Click here to download a PDF copy of this case study ↓](https://github.com/system76/docs/raw/gh-pages/pdfs/case-studies/system76-case-study_web-development-jordi-alomar-eficent.pdf)

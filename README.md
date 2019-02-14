@@ -7,7 +7,7 @@ It is also powered by GitHub itself. If you know how to use git locally with Git
 
 ## 1. The Basics
 
-The docs articles are stored as Markdown files under [/_articles/](https://github.com/system76/docs/tree/gh-pages/_articles). For example, take a look at [/_articles/upgrade.md](https://github.com/system76/docs/blob/gh-pages/_articles/upgrade.md). You can use the GitHub website itself to navigate to, create, edit, and delete pages.
+The docs articles are stored as Markdown files under [/_articles/](https://github.com/system76/docs/tree/gh-pages/_articles). For example, take a look at [/_articles/upgrade-pop.md](https://github.com/system76/docs/blob/gh-pages/_articles/upgrade-pop.md). You can use the GitHub website itself to navigate to, create, edit, and delete pages.
 
 
 ### Create an article

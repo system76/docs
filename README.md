@@ -33,6 +33,8 @@ keywords:
   - this
   - page
   - System76
+hidden: true
+section: 
 ---
 ```
 
@@ -43,6 +45,10 @@ A couple of notes:
 After that, it's just the contents of the article in markdown. Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
 
 For keyboard shortcuts, use the HTML tag `<kbd>`, i.e. `<kbd>Alt</kbd>+<kbd>F4</kbd>`.
+
+The default publication status is set to `true`, which is hidden. To make your 
+article visible, change this to `false`. There is no section included by 
+default. To make your article visible within a section, add it.
 
 When you're all done, fill out the "Commit new file" form at the bottom with the description of your changes and press the "Commit changes" button.
 

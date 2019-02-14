@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Bioinformatics - Joshua Orvis, Professor of Bioinformatics at Johns Hopkins University
+title: Bioinformatics at Johns Hopkins University
 description: >
   Using Linux computers for bioinformatics education and scientific data 
   analysis.

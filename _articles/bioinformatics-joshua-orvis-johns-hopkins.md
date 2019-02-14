@@ -77,9 +77,8 @@ Scientists and educators rely on System76 to get their work done. Contact an
 expert today to learn how System76 hardware and software can unleash your 
 potential: 
 
-[Contact System76 Today](https://system76.com/contact/)
+[Contact System76 Today →](https://system76.com/contact/)
 
 ---
 
-_[Click here to download a PDF copy of this case study]
-(https://support.system76.com/images/system76-case-study_bioinformatics-joshua-orvis-johns-hopkins.pdf)_
+_[Click here to download a PDF copy of this case study ↓](https://support.system76.com/images/system76-case-study_bioinformatics-joshua-orvis-johns-hopkins.pdf)_

@@ -267,6 +267,28 @@ layout: default
   <div class="row">
 		<div class="small-12 medium-8 medium-centered columns">
 			<hr />
+			<h1 id="community">Case Studies</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts case-studies">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.section == 'case-studies' %}
+							<article>
+								<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+								{{ article.description | markdownify }}
+								{% if article.more %}
+								{% endif %}
+						  </article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
 			<h1 id="community">Community Articles</h1>
       <p align="center"> The following documents have been graciously submitted by community members.  They have not been checked for accuracy, completeness, or style.  Please
       contact the contributers through their GitHub account for any questions.</p>

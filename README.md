@@ -7,7 +7,7 @@ It is also powered by GitHub itself. If you know how to use git locally with Git
 
 ## 1. The Basics
 
-The docs articles are stored as Markdown files under [/_articles/](https://github.com/system76/docs/tree/gh-pages/_articles). For example, take a look at [/_articles/upgrade.md](https://github.com/system76/docs/blob/gh-pages/_articles/upgrade.md). You can use the GitHub website itself to navigate to, create, edit, and delete pages.
+The docs articles are stored as Markdown files under [/_articles/](https://github.com/system76/docs/tree/gh-pages/_articles). For example, take a look at [/_articles/upgrade-pop.md](https://github.com/system76/docs/blob/gh-pages/_articles/upgrade-pop.md). You can use the GitHub website itself to navigate to, create, edit, and delete pages.
 
 
 ### Create an article
@@ -33,6 +33,8 @@ keywords:
   - this
   - page
   - System76
+hidden: true
+section: 
 ---
 ```
 
@@ -43,6 +45,10 @@ A couple of notes:
 After that, it's just the contents of the article in markdown. Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
 
 For keyboard shortcuts, use the HTML tag `<kbd>`, i.e. `<kbd>Alt</kbd>+<kbd>F4</kbd>`.
+
+The default publication status is set to `true`, which is hidden. To make your 
+article visible, change this to `false`. There is no section included by 
+default. To make your article visible within a section, add it.
 
 When you're all done, fill out the "Commit new file" form at the bottom with the description of your changes and press the "Commit changes" button.
 

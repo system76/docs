@@ -30,6 +30,8 @@ A live disk is a handy tool to have around!
 
 ## Make Bootable drive
 
+### For Ubuntu/Pop!_OS
+
 [comment]: <> (Feb 7th 2019 is when 18.04.2 should come out so the Ubuntu will need to be updated)
 
 In order to install Pop!_OS or Ubuntu, we must first download the .iso image, this is a disk image with the operating system and installer on it. You can [download Pop!_OS here](http://pop.system76.com) and [Ubuntu here](https://www.ubuntu.com/download/desktop/thank-you?version=18.04.1&architecture=amd64) just click the link and the download should begin!
@@ -43,6 +45,8 @@ Press the <kbd><span class="fl-pop-key"></span></kbd>/<kbd><span class="fl-ubunt
  Next select the flash drive in the list on left and click on the three dots on the top right of the window. Now select 'Restore Disk Image...' and select the Ubuntu or Pop_OS ISO file. Then finally hit the 'Start Restoring...' button and enter your user password.
 
 ![Disks](/images/live-disk/disks-selection.png)
+
+### For Windows/MacOS
 
 Etcher is an open source app for Windows and MacOS that allows you to "burn images to SD cards & USB drives safely and easily", you can download it at [Etcher.io](https://etcher.io).
 

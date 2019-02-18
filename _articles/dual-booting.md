@@ -58,6 +58,30 @@ Once you have your partition(s) selected, select the red "Erase and Install" but
 
 Choose your previous OS with the arrow keys, then press Enter.
 
+## Operating System Selection on Startup
+
+In some instances, POP_OS! may not automatically see the presence of other operating systems on your machine. Or simply it may be undesirable to hold the spacebar on boot to be presented with a boot menu. An alternative approach to using the built in EFI boot selection menu, is to install grub using the Ubuntu Boot Repair utility which can be found here:
+
+```
+https://help.ubuntu.com/community/Boot-Repair
+```
+To use this utility, follow these steps:
+
+- Create an Ubuntu (18.04 or 18.10) live USB stick using USB Flasher (Popsicle)
+- Reboot your System76 computer and select the USB device from the boot menu, or the BIOS. (To enter BIOS for recent System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.)
+- Boot into Ubuntu using the "Try Ubuntu without Installing". NOTE: The "nomodeset" flag may need to be used on machines with Nvidia graphics adapters
+- When in Ubuntu, open a terminal and paste the following lines in: (REQUIRES INTERNET CONNECTION)
+
+```
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install -y boot-repair && boot-repair
+```
+- Then click the "Recommended repair" button.
+- Depending on the configuration of your system, the utility may prompt you to enter additional commanads into terminal. Follow the on screen instructions one at a time
+- Upon finishing, grub should be installed on your system and configred to see all of the operating systems installed.
+- Reboot your computer and remove the USB stick, POP_OS! and any other bootable device should be visible in a new menu which is presenting to you on boot.
+
 ## Windows Caveats
 
 Windows 8 and later uses a "Fast Startup" setting which prevents Windows from fully shutting down and allowing other OSes to use the disk. Before you can properly dual boot with Windows, you must disable this setting in Windows.

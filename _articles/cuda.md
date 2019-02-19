@@ -91,7 +91,7 @@ cat /usr/lib/cuda/version.txt
 The previous instructions will work with Pop!_OS out of the box but for Ubuntu and other Debian derivatives the following commands will need to be ran first:
 
 ```
-sudo echo "deb [arch=amd64] http://apt.pop-os.org/proprietary bionic main" | sudo tee -a /etc/apt/sources.list
+sudo echo "deb http://apt.pop-os.org/proprietary bionic main" | sudo tee -a /etc/apt/sources.list.d/pop-proprietary.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 204DD8AEC33A7AFF
 sudo apt update
 ```

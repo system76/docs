@@ -43,3 +43,11 @@ Next let's open up the Settings app (GNOME Control Center)
 If you have a .ovpn (OpenVPN file type) click the plus icon to the right of the VPN section then this window will appear. Next you would click 'Import from file...'
 
 ![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
+
+### Getting a .ovpn file
+
+Most VPN providers will provide a .ovpn file such as the following:
+
+- [ProtonVPN](https://protonvpn.com/)
+- [NordVPN](https://nordvpn.com/ovpn/)
+- [Private Internet Access](https://www.privateinternetaccess.com/openvpn/openvpn.zip)

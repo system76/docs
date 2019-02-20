@@ -38,3 +38,13 @@ sudo apt install steam
 **Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.**
 
 Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+
+### Install Steam From the Pop!_Shop
+
+Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. 
+
+![Pop!_Shop](/images/steam/pop_shop1.png)
+
+Then click the **install button**.
+
+![Pop!_Shop](/images/steam/pop_shop2.png)

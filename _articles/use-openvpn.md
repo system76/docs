@@ -18,11 +18,11 @@ section: security-encryption
 
 #### Pop!_OS
 
-Press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open up.
+Press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
 #### Ubuntu
 
-Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open up.
+Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
 ### Install Packages
 
@@ -34,7 +34,7 @@ sudo apt install network-manager-openvpn-gnome
 
 ### Open Network Settings
 
-Next let's open up the Settings app (GNOME Control Center)
+Next let's open up the <u>Settings</u> application (GNOME Control Center)
 
 ![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
 

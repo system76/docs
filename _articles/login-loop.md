@@ -24,6 +24,7 @@ Sometimes after an upgrade or under certain conditions, your system might not br
 * An update broke the window manager
 * Attempted to start the window manager as root
 * An issue with your user account
+* Login Manager is not working correctly
 
 Each cause has a different solution, and certain items (e.g., NVIDIA) might not be applicable to your system. In most cases, you can drop down to a terminal (called a *TTY*) to log in and fix the issue.
 
@@ -109,6 +110,39 @@ ls -lah .Xauthority
 ![chown Xauth](/images/login-loop/chown-xauth.png)
 
 Switch back to the graphical login with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F7</kbd> and confirm you can log in.
+
+### An issue with your user account
+
+This may be caused by a bad config directory and a new config directory can be created with the following command:
+
+```
+mv ~/.config ~/.config.bk
+```
+
+That will rename the current .config directory in your home directory (directories with period in the beginning of their names are hidden by default) which will allow the OS to create a new folder once it is rebooted:
+
+```
+reboot
+```
+
+### Login Manager is not working correctly
+
+There could also be an issue with the Login Manager and both Pop!_OS and Ubuntu use GDM as their Login Managers. That package can reinstalled with these commands:
+
+#### Pop!_OS
+
+```
+sudo apt purge gdm3 
+sudo apt install gdm3 pop-desktop
+```
+
+#### Ubuntu
+
+
+```
+sudo apt purge gdm3 
+sudo apt install gdm3 ubuntu-desktop
+```
 
 ### If These Steps Don't Work
 

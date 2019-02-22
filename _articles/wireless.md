@@ -66,7 +66,7 @@ Save and close the text editor.
 
 #### IPv6
 
-Unless specifically required, you can set IPv6 to Ignore in Network Manager. Go to **System Settings** → **Network** and click the orange arrow next to your network, then click **Settings** → **IPv6 Settings** → **Automatic** to **Ignore**.
+Unless specifically required, you can set IPv6 to Ignore in Network Manager. Go to **System Settings** → **Network** and click the orange arrow next to your network, then click **Settings** → **Network** → **Ethernet** → **Gear Icon** → **IPv6 Settings** then change **Automatic** to **Disable**.
 
 #### Antenna Aggregation
 

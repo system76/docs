@@ -25,3 +25,11 @@ You can also look for the <u>Sound</u> Settings by pushing the Super key <kbd><s
 Click on the **Output** tab, then click on the HDMI device for audio output.
 
 ![Sound Settings](/images/hdmi-audio/sound-settings-hdmi.png)
+
+## Useful Programs
+
+The program <u>PulseAudio Volume Control</u> is super helpful in figuring out which program is producing audio, where that audio is being routed, defaults for audio outputs, and volume levels for every source, input and output.  It can be installed using the software center, or with this command:  
+
+```
+sudo apt install pavucontrol
+```

@@ -19,7 +19,7 @@ Alright! Hitch on and let's go on!
 First, you will need Java runtime.  
   
 ```bash
-sudo apt-get install openjdk-8-jre
+sudo apt install default-jdk
 ```
 
 So, you want oracle runtime instead? But.... fine....  

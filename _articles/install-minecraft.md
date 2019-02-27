@@ -34,7 +34,7 @@ sudo apt-get install oracle-java8-installer
 You will then download the launcher. Go to the [minecraft.net](https://minecraft.net/en-us/download/) page to download or...
 
 ```bash
-wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+wget https://launcher.mojang.com/download/Minecraft.deb
 ```
 
 Now run the file! Log in with your username and password and start playing!

@@ -42,7 +42,7 @@ These instructions are for System76 laptop owners who have been prompted for a f
 
 ### Updating on Other OS's
 
-You're laptop firmware can be updated using a live disk when running on another Linux based OS. First a live disk will need to be created using one of our following articles:
+Your laptop firmware can be updated using a live disk when running on another Linux based OS. First a live disk will need to be created using one of our following articles:
 
 - [Live Disk creation on Pop!_OS](/articles/pop-live-disk/)
 - [Live Disk creation on Other OS's](/articles/live-disk/)

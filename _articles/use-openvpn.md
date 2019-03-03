@@ -51,3 +51,5 @@ OpenVPN uses '.ovpn' files for setting up the VPN on your system and includes th
 After getting a .ovpn (OpenVPN file type) click the plus icon to the right of the VPN section. A dialog will as show will open. Click 'Import from file...'
 
 ![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
+
+Select the 'ovpn' file downloaded from your VPN provider.

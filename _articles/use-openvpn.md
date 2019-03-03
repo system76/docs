@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install OpenVPN 
+title: Install OpenVPN
 description: >
   This page will go over setting up and using OpenVPN to browse the internet more securely in places like airports, cafe shops and more.
 keywords:
@@ -34,20 +34,20 @@ sudo apt install network-manager-openvpn-gnome
 
 ### Open Network Settings
 
-Next let's open up the <u>Settings</u> application (GNOME Control Center)
+Access OpenVPN setting in the <u>Settings</u> application (GNOME Control Center)
 
 ![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
 
-### Using a .ovpn file
-
-If you have a .ovpn (OpenVPN file type) click the plus icon to the right of the VPN section then this window will appear. Next you would click 'Import from file...'
-
-![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
-
 ### Getting a .ovpn file
 
-Most VPN providers will provide a .ovpn file such as the following:
+OpenVPN uses '.ovpn' files for setting up the VPN on your system and includes the servers to contact. Most VPN providers will provide a .ovpn file such as the following:
 
 - [ProtonVPN](https://protonvpn.com/)
 - [NordVPN](https://nordvpn.com/ovpn/)
 - [Private Internet Access](https://www.privateinternetaccess.com/openvpn/openvpn.zip)
+
+### Using a .ovpn file
+
+After getting a .ovpn (OpenVPN file type) click the plus icon to the right of the VPN section. A dialog will as show will open. Click 'Import from file...'
+
+![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)

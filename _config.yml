@@ -1,6 +1,6 @@
 # Site settings
 title: System76 Support
-email: cassidy@system76.com
+email: info@system76.com
 description: > # this means to ignore newlines until "baseurl:"
   Official System76 Support and useful documentation.
 baseurl: "" # the subpath of your site, e.g. /blog/

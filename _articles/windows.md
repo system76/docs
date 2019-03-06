@@ -27,7 +27,7 @@ Virtual machines do impose a slight performance penalty in their operation, depe
 
 ### Understand Virtual Machines
 
-Virtual Machines are a method of running multiple OSs on your computer simultaneously. It's conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.
+Virtual Machines are a method of running multiple OSes on your computer simultaneously. It's conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.
 
 ### Enable AMD-V
 

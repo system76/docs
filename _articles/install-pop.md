@@ -73,3 +73,11 @@ sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt update
 sudo apt install -y system76-driver
 ```
+
+#### NVIDIA Graphics
+
+If you ordered a system with a discrete NVIDIA graphics card or if you added one later on, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command after the above commands to install the driver:
+
+```
+sudo apt install system76-driver-nvidia
+```

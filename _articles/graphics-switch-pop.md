@@ -19,7 +19,7 @@ For longer battery life and a quieter laptop use Intel graphics and switch to NV
 
 ### Hardware
 
-Currently the only laptop that supports this feature is the Oryx Pro (oryp4).
+Currently the only laptop that supports this feature is the Oryx Pro (oryp4 and oryp5).
 
 ### Software
 

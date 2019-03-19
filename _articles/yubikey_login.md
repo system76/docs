@@ -55,7 +55,7 @@ You should receive a message similar to:
 
 `Stored initial challenge and expected response in '$HOME/.yubico/challenge-123456'.`
 
-**You should receive a unique **challenge-123456** in your output.**
+You should receive a unique *challenge-123456* in your output.
 
 Now, to finish up:
 
@@ -63,7 +63,7 @@ Now, to finish up:
     sudo chown root.root /var/yubico/alice-123456
     sudo chmod 600 /var/yubico/alice-123456
 
-**Pay close attention when copying/pasting the commands above.  The **challenge-123456** and **alice-123456** needs to match whatever your output is.**
+Pay close attention when copying/pasting the commands above.  The *challenge-123456* and *alice-123456* needs to match whatever your output is.**
 
 ## Configure Plugable Authentication Modules
 

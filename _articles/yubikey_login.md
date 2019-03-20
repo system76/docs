@@ -24,7 +24,7 @@ To do this you must install the yubikey-luks package, configure a challenge-resp
 
 To install the necessary packages, run:
 
-    sudo apt install -y libpam-yubico
+    sudo apt install -y libpam-yubico yubikey-personalization
 
 You may get a question about the PAM configuration line. If so, enter this line:
 

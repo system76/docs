@@ -109,7 +109,7 @@ Add the auth line immediately below the **@include common-auth** line.
 
 ## References
 
-I used the following sites were used to build this guide:
+The following sites were used to build this guide:
 - [Authentication Using Challenge Response](https://developers.yubico.com/yubico-pam/Authentication_Using_Challenge-Response.html) (From Yubikey).
 - [Yubico PAM Module](https://developers.yubico.com/yubico-pam/) (From Yubikey).
 

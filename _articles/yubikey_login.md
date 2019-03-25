@@ -67,7 +67,7 @@ Pay close attention when copying/pasting the commands above.  The *challenge-123
 
 ## Configure Plugable Authentication Modules
 
-**Before making any changes to the files below, I recommend  backing up each file, and having a sudo/root session open in case you need to roll-back.**
+**Before making any changes to the files listed below, I highly recommend backing up each file, and having a sudo/root session open in case you need to roll-back.**
 
 You need to add the following line to each of the files listed below:
 
@@ -97,15 +97,15 @@ You may need to run `pam-auth-update` afterwards.
 
 Modifying this file is optional.  This allows you to authenticate to the Linux terminal with your Yubikey.
 
-Add the auth line to the top of this file.
+Add the auth line to the top of this file (after the comment block).
 
 ### /etc/pam.d/gdm-password
 
-If you want to login to your Desktop Environment, (e.g. GNOME), you will need to add the auth line to the /etc/pam.d/gdm-password file.
+Modifying this file is also optional.  If you want to login to your Desktop Environment, (e.g. GNOME), you will need to add the auth line to the /etc/pam.d/gdm-password file.
 
 Add the auth line immediately below the **@include common-auth** line.
 
-**NOTE: This will allow you to login to your desktop without a password, but you may still be asked to use a password to unlock your keyring.**
+**NOTE: This will allow you to login to your desktop without a password, but you may still be asked to use a password to unlock your keyring.  This prompt should only appear once upon initial login.**
 
 ## References
 

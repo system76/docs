@@ -64,19 +64,10 @@ Pop!\_OS has been successfully installed on your computer! Awesome work! You can
 
 ![Success](/images/install-pop/8_success.png)
 
-### Install System76 Driver
-
-Once you've reinstalled Pop!\_OS, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> by pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>, <kbd><span class="fl-pop-key"></span></kbd>) then enter the following commands:
-
-```
-sudo apt-add-repository -y ppa:system76-dev/stable
-sudo apt update
-sudo apt install -y system76-driver
-```
 
 #### NVIDIA Graphics
 
-If you ordered a system with a discrete NVIDIA graphics card or if you added one later on, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command after the above commands to install the driver:
+If you installed from the Intel/AMD ISO and your system has discrete NVIDIA graphics card or if you added one later on, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command in a command terminal to install the driver:
 
 ```
 sudo apt install system76-driver-nvidia

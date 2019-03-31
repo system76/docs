@@ -24,7 +24,7 @@ To do this you must install the yubikey-luks package, configure a challenge-resp
 
 To install the necessary packages, run:
 
-    sudo apt install -y libpam-yubico
+    sudo apt install -y libpam-yubico yubikey-personalization
 
 You may get a question about the PAM configuration line. If so, enter this line:
 
@@ -55,7 +55,7 @@ You should receive a message similar to:
 
 `Stored initial challenge and expected response in '$HOME/.yubico/challenge-123456'.`
 
-**You should receive a unique **challenge-123456** in your output.**
+You should receive a unique *challenge-123456* in your output.
 
 Now, to finish up:
 
@@ -63,11 +63,11 @@ Now, to finish up:
     sudo chown root.root /var/yubico/alice-123456
     sudo chmod 600 /var/yubico/alice-123456
 
-**Pay close attention when copying/pasting the commands above.  The **challenge-123456** and **alice-123456** needs to match whatever your output is.**
+Pay close attention when copying/pasting the commands above.  The *challenge-123456* and *alice-123456* needs to match whatever your output is.**
 
 ## Configure Plugable Authentication Modules
 
-**Before making any changes to the files below, I recommend  backing up each file, and having a sudo/root session open in case you need to roll-back.**
+**Before making any changes to the files listed below, I highly recommend backing up each file, and having a sudo/root session open in case you need to roll-back.**
 
 You need to add the following line to each of the files listed below:
 
@@ -97,19 +97,19 @@ You may need to run `pam-auth-update` afterwards.
 
 Modifying this file is optional.  This allows you to authenticate to the Linux terminal with your Yubikey.
 
-Add the auth line to the top of this file.
+Add the auth line to the top of this file (after the comment block).
 
 ### /etc/pam.d/gdm-password
 
-If you want to login to your Desktop Environment, (e.g. GNOME), you will need to add the auth line to the /etc/pam.d/gdm-password file.
+Modifying this file is also optional.  If you want to login to your Desktop Environment, (e.g. GNOME), you will need to add the auth line to the /etc/pam.d/gdm-password file.
 
 Add the auth line immediately below the **@include common-auth** line.
 
-**NOTE: This will allow you to login to your desktop without a password, but you may still be asked to use a password to unlock your keyring.**
+**NOTE: This will allow you to login to your desktop without a password, but you may still be asked to use a password to unlock your keyring.  This prompt should only appear once upon initial login.**
 
 ## References
 
-I used the following sites were used to build this guide:
+The following sites were used to build this guide:
 - [Authentication Using Challenge Response](https://developers.yubico.com/yubico-pam/Authentication_Using_Challenge-Response.html) (From Yubikey).
 - [Yubico PAM Module](https://developers.yubico.com/yubico-pam/) (From Yubikey).
 

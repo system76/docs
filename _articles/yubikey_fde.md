@@ -39,13 +39,15 @@ To enable challenge-response on your Yubikey, type the following command:
 
 This configures slot 2 for challenge-response, and leaves slot 1 alone.
 
-## Add Key to LUKS Header
+## Modify LUKS Header
 
-The last step is to add a key to an available slot in the LUKS header of the partition you wish to allow unlock with your Yubikey and password.
+The last step is to modify the LUKS header to support the Yubikey.  There are 8 key slots available in a LUKS header.  We need to add your Yubikey's challenge and response key to one of them.
+
+To do this, run the command:
 
     yubikey-luks-enroll -s 7 -d /dev/sda3
 
-See the man page for full details, but the two basic options are: **-s**, and **-d**.  The default is key slot is slot 7 and **/dev/sda3** is the default partition.  At a minimum, replace the -d option with the path to your partition.
+See the man page for full details, but the two basic options are: **-s**, and **-d**.  The default key slot is slot 7 and **/dev/sda3** is the default partition.  At a minimum, replace the -d option with the path to your partition.
 
 ## References
 

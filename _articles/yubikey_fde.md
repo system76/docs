@@ -17,11 +17,11 @@ section: community
 
 If you have a Yubikey, and you have Full Disk Encryption (FDE) set up, you can use it to unlock your encrypted hard drive.  You will still need a password, but it won't neet to be as complex since your pairing it with another token.
 
-To do this, you must install the yubikey-luks package, configure a challenge-response slot on the Yubikey, and then add a new key slot to your LUKS partition.
+To do this, you must install the yubikey-luks and yubikey-personalization packages, configure a challenge-response slot on the Yubikey, and then add a new key slot to your LUKS partition.
 
 **This guide assumes you are running Pop!_OS**
 
-Once completed, this setup will configure your encrypted hard drive to be unlocked with a password, and the presence of the configured Yubikey.  **In addition to whatever password you had previously configured.  It will not remove any previously configured LUKS keys.**
+Once completed, this guide will configure your encrypted hard drive to be unlocked with a password and the presence of the configured Yubikey.  **This is in addition to whatever password you had previously configured.  Existing LUKS keys/passwords will be preserved.**
 
 ## Install Packages
 
@@ -38,6 +38,29 @@ To enable challenge-response on your Yubikey, type the following command:
     ykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible
 
 This configures slot 2 for challenge-response, and leaves slot 1 alone.
+
+## Check LUKS Header for Available Key Slots
+
+Before modifying the LUKS header to add the Yubikey's challenge response, it's a good idea to see which slots are available.
+
+To see which slots are available, please run:
+
+    sudo cryptsetup luksDump /dev/sda1 | grep Slot
+
+Replace **/dev/sda1** with the path to your desired FDE partition.
+
+You shoudl see something similar to:
+
+    Key Slot 0: ENABLED
+    Key Slot 1: ENABLED
+    Key Slot 2: DISABLED
+    Key Slot 3: DISABLED
+    Key Slot 4: DISABLED
+    Key Slot 5: DISABLED
+    Key Slot 6: DISABLED
+    Key Slot 7: DISABLED
+
+Choose an available Key Slot and use it with the **-s** option in the next step.
 
 ## Modify LUKS Header
 

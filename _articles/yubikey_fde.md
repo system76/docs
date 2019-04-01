@@ -15,7 +15,7 @@ section: community
 
 # Unlock Encrypted Drive with Yubikey
 
-If you have a Yubikey, and you have Full Disk Encryption (FDE) set up with Pop!_OS, you can use it to unlock your encrypted hard drive.  You will still need a password, but it won't neet to be as complex since your pairing it with another token.
+If you have a Yubikey, and you have Full Disk Encryption (FDE) set up, you can use it to unlock your encrypted hard drive.  You will still need a password, but it won't neet to be as complex since your pairing it with another token.
 
 To do this, you must install the yubikey-luks package, configure a challenge-response slot on the Yubikey, and then add a new key slot to your LUKS partition.
 

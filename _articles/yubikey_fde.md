@@ -49,7 +49,7 @@ To see which slots are available, please run:
 
 Replace **/dev/sda1** with the path to your desired FDE partition.
 
-You shoudl see something similar to:
+You should see something similar to:
 
     Key Slot 0: ENABLED
     Key Slot 1: ENABLED
@@ -70,7 +70,7 @@ To do this, run the command:
 
     yubikey-luks-enroll -s 7 -d /dev/sda3
 
-See the man page for full details, but the two basic options are: **-s**, and **-d**.  The default key slot is slot 7 and **/dev/sda3** is the default partition.  At a minimum, replace the -d option with the path to your partition.
+See the man page for full details, but the two basic options are: **-s**, and **-d**.  The default key slot is slot 7 and **/dev/sda3** is the default partition.  At a minimum, replace the **-d** option with the path to your partition.
 
 ## References
 

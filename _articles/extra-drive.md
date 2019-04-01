@@ -72,6 +72,8 @@ Filesystem Type                            | `ext4`*
 
 ![Mount Options Set Correctly](/images/extra-drive/Step4-updated.png)
 
+The red box shows the item we don't want to change and the green box shows the item we want to change. 
+
 ### Save And Restart
 
 Once the mount options are set up correctly, click **OK** to save the changes and then restart your computer. After the computer starts back up, ensure that there are no error messages during the boot, and that the drive is mounted when booting. You can check this by opening your home folder and ensure that you see the eject icon (⏏) next to the drive *before* you click on the drive.

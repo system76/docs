@@ -34,7 +34,7 @@ And this one for Epson:
 sudo apt install lsb printer-driver-escpr
 ```
 
-Automatically installed printers will work fine, but if you need to make changes to the configuration of the pritners, you will need to add your user to the 'lpadmin' group. To do that run the following command (substituting your user name):
+Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command (substituting your user name):
 
 ```
 sudo usermod -aG lpadmin username
@@ -48,7 +48,7 @@ To look at the CUPS (Common Unix Printing System) configuration and status windo
 
 [localhost:631](http://localhost:631)
 
-The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, lick on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer.
+The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer.
 
 ## Useful Commands:
 

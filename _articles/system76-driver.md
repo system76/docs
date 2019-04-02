@@ -34,7 +34,7 @@ Next click on the button outlined in red in the application and there will be a 
 
 ### System76 NVIDIA Driver
 
-Follow the above steps as well as this additional command:
+Follow the above steps as well as this additional command if you have a NVIDIA GPU:
 
 ```
 sudo apt-get install system76-driver-nvidia

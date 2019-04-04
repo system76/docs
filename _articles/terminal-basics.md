@@ -85,7 +85,7 @@ This will install a particular application and its dependencies on your computer
 sudo apt purge [application]
 ```
 
-This will remove a program and it's configuration files from your computer.
+This will remove a program and its configuration files from your computer.
 
 ```
 sudo apt policy [application]

@@ -23,7 +23,7 @@ To do this, you must install the yubikey-luks and yubikey-personalization packag
 
 Once completed, this guide will configure your encrypted hard drive to be unlocked with a password and the presence of the configured Yubikey.  **This is in addition to whatever password you had previously configured.  Existing LUKS keys/passwords will be preserved.**
 
-## Install Packages
+# Install Packages
 
 To install the necessary packages, please run:
 
@@ -31,7 +31,7 @@ To install the necessary packages, please run:
 
 yubikey-luks is maintained by Markus Frosch at [https://github.com/cornelinux/yubikey-luks](https://github.com/cornelinux/yubikey-luks).
 
-## Configure Challenge-Response for your Yubikey
+# Configure Challenge-Response for your Yubikey
 
 The command below will enable challenge-response on your Yubikey.  This configures slot 2 for challenge-response, and leaves slot 1 alone.  Slot 1 is used for the Yubikey's default Static password.  We don't need to modify the default behavior for this guide.
 
@@ -39,7 +39,13 @@ The command below will enable challenge-response on your Yubikey.  This configur
 
 If prompted, type **y** to commit the changes.
 
-## Check LUKS Header for Available Key Slots
+
+
+# Modify LUKS Header
+
+The last step is to modify the LUKS header to support the Yubikey.  There are 8 key slots available in a LUKS header.  We need to add your Yubikey's challenge and response key to one of them.
+
+## Check for Available Key Slots
 
 Before modifying the LUKS header to add the Yubikey's challenge response, it's a good idea to see which slots are available.
 
@@ -77,11 +83,9 @@ You should see something similar to:
 
 Choose an available Key Slot and use it with the **-s** option in the next step.
 
-## Modify LUKS Header
+## Add Yubikey Challenge to Key Slot
 
-The last step is to modify the LUKS header to support the Yubikey.  There are 8 key slots available in a LUKS header.  We need to add your Yubikey's challenge and response key to one of them.
-
-To do this, run the command:
+Use **yubikey-luks-enroll** to add your Yubikey's challenge-resonse to a Key Slot:
 
     sudo yubikey-luks-enroll -s 7 -d /dev/sda3
 

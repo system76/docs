@@ -33,21 +33,36 @@ yubikey-luks is maintained by Markus Frosch at [https://github.com/cornelinux/yu
 
 ## Configure Challenge-Response for your Yubikey
 
-To enable challenge-response on your Yubikey, type the following command:
+The command below will enable challenge-response on your Yubikey.  This configures slot 2 for challenge-response, and leaves slot 1 alone.  Slot 1 is used for the Yubikey's default Static password.  We don't need to modify the default behavior for this guide.
 
     ykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible
 
-This configures slot 2 for challenge-response, and leaves slot 1 alone.
+If prompted, type **y** to commit the changes.
 
 ## Check LUKS Header for Available Key Slots
 
 Before modifying the LUKS header to add the Yubikey's challenge response, it's a good idea to see which slots are available.
 
-To see which slots are available, please run:
+First, run **lsblk** to list your current partition table.
 
-    sudo cryptsetup luksDump /dev/sda1 | grep Slot
+Every system is different, but you should see something similar to:
 
-Replace **/dev/sda1** with the path to your desired FDE partition.
+    NAME                  MAJ:MIN  RM  SIZE RO  TYPE  DISK
+    sda                   8:0       0   20G  0  disk  
+    ├─sda1                8:1       0  498M  0  part  /boot
+    ├─sda2                8:2       0 15.5G  0  part
+    | └─cryptdata       253:0       0 15.5G  0  crypt
+    |   └─data-root     253:1       0 15.5G  0  lvm   /
+    └─sda3                8:3       0    4G  0  part
+      └─cryptswap       253:2       0    4G  0  crypt [SWAP]
+
+Look for a partition of type: **crypt**.  In this example, the associated partition is **/dev/sda2**.  This example is from a freshly installed Pop!_OS 18.04 system, so you should see something very similar.
+
+To see which Key Slots are available on this partition, run:
+
+    sudo cryptsetup luksDump /dev/sda2 | grep Slot
+
+Replace **/dev/sda2** with the path to your encrypted partition identified in the previous step with **lsblk**.
 
 You should see something similar to:
 
@@ -68,9 +83,17 @@ The last step is to modify the LUKS header to support the Yubikey.  There are 8 
 
 To do this, run the command:
 
-    yubikey-luks-enroll -s 7 -d /dev/sda3
+    sudo yubikey-luks-enroll -s 7 -d /dev/sda3
+
+**NOTE:  Ensure your Yubikey is inserted when completing this step.**
 
 See the man page for full details, but the two basic options are: **-s**, and **-d**.  The default key slot is slot 7 and **/dev/sda3** is the default partition.  At a minimum, replace the **-d** option with the path to your partition.
+
+Enter the password you want to use in conjunction with your Yubikey to unlock the encrypted partition when prompted.  Then enter it again to confirm.  Finally, you will be asked to enter any existing password.
+
+Once complete, your encrypted partition can be unlocked with your Yubikey and the password you set up.
+
+**If you encounter issues, your original password will still unlock the encrypted partition.**
 
 ## References
 

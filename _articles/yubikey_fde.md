@@ -19,7 +19,7 @@ If you have a Yubikey, and you have Full Disk Encryption (FDE) set up, you can u
 
 To do this, you must install the yubikey-luks and yubikey-personalization packages, configure a challenge-response slot on the Yubikey, and then add a new key slot to your LUKS partition.
 
-**This guide assumes you are running Pop!_OS**
+**This guide assumes you are running Pop!_OS.  It is known to work with Pop!_OS 17.10, 18.04, and 18.10.**
 
 Once completed, this guide will configure your encrypted hard drive to be unlocked with a password and the presence of the configured Yubikey.  **This is in addition to whatever password you had previously configured.  Existing LUKS keys/passwords will be preserved.**
 

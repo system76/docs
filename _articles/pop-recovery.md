@@ -2,7 +2,7 @@
 layout: article
 title: Use The Recovery Partition
 description: >
-    Here is how to use the recovery partition to reinstall or repair your operating system.
+    Here is how to use the recovery partition to repair, refresh or reinstall your operating system.
 keywords:
   - recovery
   - reset

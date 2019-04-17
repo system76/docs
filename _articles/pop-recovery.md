@@ -26,7 +26,7 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 ## Table of Contents
 
 - [Repair](/articles/pop-recovery/#repair) 
-- [Refresh](/articles/pop-recovery/#refresh) 
+- [Refresh Install](/articles/pop-recovery/#refresh) 
 - [Reinstall](/articles/pop-recovery/#reinstall) 
 
 ### Repair

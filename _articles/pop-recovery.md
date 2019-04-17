@@ -9,6 +9,7 @@ keywords:
   - locked out
   - crash
   - reinstall
+  - refresh
   - repair
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
@@ -21,6 +22,12 @@ The recovery partition on this operating system is a full copy of the Pop!_OS in
 To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key while the system is booting.  On the menu, choose **Recovery Mode**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
+
+### Refresh Install of Pop 19.04
+
+Starting with new installations of Pop!_OS 19.04 (not though upgrading) the installer will include a new Refresh Install option which will allow the Operating System to be reinstalled but will not wipe the user account information and user data. Applications will still need to be reinstalled but data in the home directory will not be touched. 
+
+![Refresh Install Option](/images/pop-recovery/refresh-install-option.png)
 
 ### Reinstall
 

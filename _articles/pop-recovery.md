@@ -91,7 +91,7 @@ reboot
 
 ### Refresh
 
-Starting with new installations of Pop!_OS 19.04 (not though upgrading) the installer will include a new Refresh Install option which will allow the Operating System to be reinstalled but will not wipe the user account information and user data. Applications will still need to be reinstalled but data in the home directory will not be touched. 
+Starting with new installations of Pop!_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled. 
 
 ![Refresh Install Option](/images/pop-recovery/refresh-install-option.png)
 

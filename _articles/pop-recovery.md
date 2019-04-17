@@ -9,6 +9,7 @@ keywords:
   - locked out
   - crash
   - reinstall
+  - refresh
   - repair
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
@@ -18,15 +19,15 @@ section: pop-ubuntu
 
 The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!_OS 19.04.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key while the system is booting.  On the menu, choose **Recovery Mode**.
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key while the system is booting.  On the menu, choose **Pop!_OS Recovery**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
-### Reinstall
+## Table of Contents
 
-Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
-
-If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.
+- [Repair](/articles/pop-recovery/#repair) 
+- [Refresh](/articles/pop-recovery/#refresh) 
+- [Reinstall](/articles/pop-recovery/#reinstall) 
 
 ### Repair
 
@@ -34,7 +35,7 @@ If the existing system needs to be repaired, then click the **Install Pop!_OS** 
 
 To get access to the existing drive to run the package manager [repair commands](/articles/package-manager/), the following commands will need run:
 
-First, press <kbd><i class="fl-ubuntu"></i></kbd>/<kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
+First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
 ```
 lsblk
@@ -87,3 +88,15 @@ To exit from the <u>chroot</u> and reboot the computer, run these commands:
 exit
 reboot
 ```
+
+### Refresh
+
+Starting with new installations of Pop!_OS 19.04 (not though upgrading) the installer will include a new Refresh Install option which will allow the Operating System to be reinstalled but will not wipe the user account information and user data. Applications will still need to be reinstalled but data in the home directory will not be touched. 
+
+![Refresh Install Option](/images/pop-recovery/refresh-install-option.png)
+
+### Reinstall
+
+Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
+
+If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.

@@ -39,7 +39,7 @@ Stop Charge 80%
 ```
 Save and exit the BIOS
 
-- FlexiCharger will allow your System76 laptop to run solely off the AC power connection, and leave the battery alone while the computer is operates normally
+- FlexiCharger will allow your System76 laptop to run solely off the AC power connection, and leave the battery alone while the computer is operating normally
 - This prevents unnecessary micro-charging which reduces battery longevity
 -  It is particularly useful when your laptop is plugged into AC power adapter for extended periods of time
 - FlexiCharger can be disabled at any time in the BIOS, which reverts the charging profile to factory defaults. Before heading out into the wild blue yonder, disable FlexiCharger to charge your laptop battery to 100%.

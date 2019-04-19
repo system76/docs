@@ -26,7 +26,7 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 ## Table of Contents
 
 - [Repair](/articles/pop-recovery/#repair) 
-- [Refresh Install](/articles/pop-recovery/#refresh) 
+- [Refresh Install](/articles/pop-recovery/#refresh-install) 
 - [Reinstall](/articles/pop-recovery/#reinstall) 
 
 ### Repair
@@ -89,7 +89,7 @@ exit
 reboot
 ```
 
-### Refresh
+### Refresh Install
 
 Starting with new installations of Pop!_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled. 
 

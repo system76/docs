@@ -33,7 +33,7 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 
 If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
-To get access to the existing drive to run the package manager [repair commands](/articles/package-manager/), the following commands will need run:
+To get access to the existing drive to run the package manager [repair commands](/articles/package-manager/), the following commands will need to be run:
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
@@ -53,7 +53,7 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 ### Encrypted Disk
 
-To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
+To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
 ```
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
@@ -97,6 +97,6 @@ Starting with new installations of Pop!_OS 19.04 (not through upgrading) the ins
 
 ### Reinstall
 
-Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
+Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
 
 If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.

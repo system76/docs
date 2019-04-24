@@ -10,7 +10,7 @@ keywords:
   - CUDA
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: community
 
 ---
 
@@ -19,7 +19,6 @@ section: software-applications
 ### Prerequisits
 
 These instructions assume that the CUDA toolkit is already set up and working on your installation of Pop_OS.
-The Environmental Variable setup assumes the default Bash shell is used in your environment. Should you be using a different one, please set up the environmental variables using that (eg. for zsh, ~/.zshrc).
 
 ### Install The latest Numba library
 
@@ -30,8 +29,9 @@ sudo apt install python3-numba
 ```
 
 ### Environmental Variable setup
-
-In ~/.bashrc, please add:
+To make changes on the system level, add the below in  /etc/environment .
+To make changes on user level (assuming you have the default bash shell), add in ~/.bashrc.
+Note the system level approach is not dependendent on your choice of shell. 
 
 ```
 # path to CUDA driver shared library file.

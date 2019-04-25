@@ -40,6 +40,8 @@ export NUMBAPRO_CUDA_DRIVER=/usr/lib/x86_64-linux-gnu/libcuda.so
 export NUMBAPRO_NVVM=/usr/lib/cuda/nvvm/lib64/libnvvm.so
 # path to CUDA libNVVM libdevice directory which contains .bc files.
 export NUMBAPRO_LIBDEVICE=/usr/lib/cuda/nvvm/libdevice
+# path to CUDA libraries
+export NUMBAPRO_CUDALIB=/usr/lib/cuda/lib64
 ```
 Finally, restart your computer to complete setup. 
 

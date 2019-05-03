@@ -19,7 +19,7 @@ If you have a Yubikey, and you have Full Disk Encryption (FDE) set up, you can u
 
 To do this, you must install the yubikey-luks and yubikey-personalization packages, configure a challenge-response slot on the Yubikey, and then add a new key slot to your LUKS partition.
 
-**This guide assumes you are running Pop!_OS.  It is known to work with Pop!_OS 17.10, 18.04, and 18.10.**
+**This guide assumes you are running Pop!_OS.**
 
 Once completed, this guide will configure your encrypted hard drive to be unlocked with a password and the presence of the configured Yubikey.  **This is in addition to whatever password you had previously configured.  Existing LUKS keys/passwords will be preserved.**
 
@@ -29,7 +29,7 @@ To install the necessary packages, please run:
 
     sudo apt install -y yubikey-luks yubikey-personalization
 
-yubikey-luks is maintained by Markus Frosch at [https://github.com/cornelinux/yubikey-luks](https://github.com/cornelinux/yubikey-luks).
+yubikey-luks is maintained by Cornelius Kölbel at [https://github.com/cornelinux/yubikey-luks](https://github.com/cornelinux/yubikey-luks).
 
 # Configure Challenge-Response for your Yubikey
 
@@ -38,8 +38,6 @@ The command below will enable challenge-response on your Yubikey.  This configur
     ykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible
 
 If prompted, type **y** to commit the changes.
-
-
 
 # Modify LUKS Header
 
@@ -98,6 +96,17 @@ Enter the password you want to use in conjunction with your Yubikey to unlock th
 Once complete, your encrypted partition can be unlocked with your Yubikey and the password you set up.
 
 **If you encounter issues, your original password will still unlock the encrypted partition.**
+
+# Modify Kernel Boot Parameters (Pop!_OS 19.04)
+
+If you are running Pop!_OS 19.04, then you will need to modify your GRUB boot options to execute the script at /sbin/ykluks-keyscript to unlock the encrypted partition at boot.
+
+Add the following line to **/etc/default/grub**:
+
+    cryptoptions=target=cryptroot,source=/dev/sda,keyscript=/sbin/ykluks-keyscript
+
+**NOTE: Change the /dev/sda option in the line above to match your encrypted partition.**
+
 
 ## References
 

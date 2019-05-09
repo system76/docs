@@ -31,7 +31,7 @@ section: accessories
 ### Product and Model:
 
 We have tested:
- - [Plugable UD-3900](http://plugable.com/products/ud-3900/) [works with NVIDIA and Intel systems] (*)
+ - [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] (**)
 
 ### For Intel systems
 
@@ -58,3 +58,4 @@ sudo ./displaylink-driver-5.1.26.run
 For installing the NVIDIA Driver that we provide you can use this support article: [System76 NVIDIA Driver](http://support.system76.com/articles/system76-driver/).
 
 (*) NVIDIA cards have some minor graphic issues with what is rendered under the mouse as well as scrollbars.
+(**) Does not need the DisplayLink Driver installed to work.

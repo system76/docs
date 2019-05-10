@@ -209,3 +209,182 @@ gedit /etc/SARndbox-1.6/BoxLayout.txt
 - Save the file and close `gedit`.
 
 ## Postition projector
+
+- If you haven't already, turn on your projector and plug it into your computer.
+
+- If you have a dedicated display in addition to the projector, you'll find it easier if you setup the two displays to be mirrored:
+
+![Mirror settings](/images/ar-sandbox/6-A-mirror-displays-9275bf68e0.png)
+
+- Launch the XBackgroud tool from a terminal like this:
+
+```
+XBackground
+```
+
+- You'll need to position the projector so that it fills the interior of your sandbox. It's okay if it overlaps slightly.
+
+![](/images/ar-sandbox/6-C-xbackground-af01671469.jpg)
+
+After you're done positioning your projector, hit Esc to close the `XBackgroud` application.
+
+## Calibrate AR Sandbox
+
+- As with step 5, this step requires you to have filed your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
+
+- To calibrate your sandbox, you'll need an alignment target and several spacers to help you perform the alignment at multiple heights:
+
+![Tools](/images/ar-sandbox/7-A-tools-27804401fe.jpg)
+
+The easiest way to build an alignment target is to create a target cross-hair on a piece of paper and tape it to the top of an old CD or DVD. The cross-hairs should be at right angles to one-another and be centered on the CD or DVD.
+
+A few rolls of tape make great spacers. Note the rolls of tape need to have a diameter smaller than the CD or DVD you're using for the alignment target.
+
+At each height, you'll capture 12 tie-points. For a decent calibration, you'll need to capture tie-points at at least two heights (24 total tie-points). For an optimal calibration, we recommend capturing tie-points at three different heights (36 total tie-points).
+
+- Launch `CalibrateProjector` from a terminal like this:
+
+```
+CalibrateProjector -s WIDTH HEIGHT
+```
+
+Replacing WIDTH and HEIGHT with the settings for your projector. The Kinect itself has a 4:3 aspect ratio, so a resolution like 1024x768 or 1600x1200 is best.
+
+To match the resolution of the laptop we used in this tutorial, we set our projector to 1920x1080, but our particular BenQ projector allows us to force a 4:3 aspect ratio even when the resolution is a 16:9 aspect ratio. So in our case, we launched `CalibrateProjector` like this:
+
+```
+CalibrateProjector -s 1920 1080
+```
+
+- Then maximize this window so it fills your entire sandbox:
+
+![CalibrateProjector](/images/ar-sandbox/7-maximize-478e070818.png)
+
+- Press and hold the 1 key, move your cursor over Capture, then release the 1 key:
+
+![Tools Menu](/images/ar-sandbox/7-B-press-1-17ad6d4ad8.png)
+
+- Then press the 2 key when you see this dialog:
+
+![Capture](/images/ar-sandbox/7-C-press-2-867c3ffac3.png)
+
+Press the 2 key to capture the background image, after which you'll briefly see a uniform red color projected onto your sandbox:
+
+![Uniform Red Color](/images/ar-sandbox/7-D-capture-background-af5f6cb582.jpg)
+
+After this is completed, you can proceed with the calibration.
+
+- Next, you'll capture tie-points at the lowest height. Using your shortest spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface:
+
+![Lowest](/images/ar-sandbox/7-E-lowest-db2aad81b1.jpg)
+
+Then press the 1 key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
+
+Repeat this process for the remaining 11 tie-points at this depth. Once the white projected cross-hairs are back at their original position, you're ready to switch to a taller spacer.
+
+- Now you'll capture tie-points at the middle height. Using a taller spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface:
+
+![Middle](/images/ar-sandbox/7-F-middle-8e56231939.jpg)
+
+Then press the 1 key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
+
+Repeat this process for the remaining 11 tie-points at this depth. Once the white projected cross-hairs are back at their original position, you're ready to switch to a larger spacer.
+
+- Finally, you'll capture tie-points at highest height. Using your tallest spacer (or stacking two spacers on top of each other), line-up your alignment target under the white cross-hairs projected onto the sand surface:
+
+![Highest](/images/ar-sandbox/7-G-highest-948cda7d1e.jpg)
+
+Then press the 1 key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
+
+Repeat this process for the remaining 11 tie-points at this depth. Once the white projected cross-hairs are back at their original position, you're done with the calibration!
+
+- Once you've completed the calibration, hit Esc to close the `CalibrateProjector` application.
+
+Hitting Esc will automatically write the calibration file in `/etc/SARndbox-1.6/ProjectorMatrix.dat`.
+
+## Adjust the "sea level"
+
+- Launch the main `SARndbox` application by searching for "sandbox" in GNOME Search:
+
+![Launch SARndbox](/images/ar-sandbox/9-A-launch-sarndbox-3d1afe80d2.png)
+
+- Then maximize the application so it fills your entire sandbox:
+
+![SARndbox](/images/ar-sandbox/8-maximize-6789e388ee.png)
+
+- If in step 4 you calculated the base plane with a piece of poster board (or a similar flat surface) on top of your sandbox, your sea level will be too high, and you'll see something like this:
+
+![Sea Level too high](/images/ar-sandbox/8-A-sea-level-too-high-6eaead66d8.jpg)
+
+On the other hand, if in step 4 you calculated the base plane when your sandbox was empty, the sea level will be too low. Either way, you'll want to adjust the sea level so it's just below the surface of your sand when it's more or less flattened out.
+
+- Hit Esc to close the AR Sandbox application.
+
+- To adjust the sea level, edit the `/etc/SARndbox-1.6/BoxLayout.txt` by running this command from the terminal:
+
+```
+gedit /etc/SARndbox-1.6/BoxLayout.txt
+```
+
+The value highlighted below in `BoxLayout.txt` controls the sea-level:
+
+![BoxLayout1](/images/ar-sandbox/8-B-gedit-1-66e79657fe.png)
+
+- You'll want to adjust the final value in the first line to be roughly the same as the smallest of the final value on the four lines at the end.
+In our example `-106.927` is the smallest value:
+
+![BoxLayout2](/images/ar-sandbox/8-C-gedit-2-6673dc3a21.png)
+
+So we'll set the sea-level to `-107`, like this:
+
+![BoxLayout3](/images/ar-sandbox/8-D-gedit-3-36f32a4191.png)
+
+- Save the file and close `gedit`.
+
+- Re-launch the AR Sandbox application from the Ubuntu dash, maximize the window, and you'll see something like this:
+
+![Sea Level just right](/images/ar-sandbox/8-E-sea-level-just-right-cdc5f0037b.jpg)
+
+You can experiment with different values for the sea-level to suite your preferences, but our recommendations here will give you a good starting point.
+
+Note that you can adjust the sea level at any time in the future without recalibrating your sandbox.
+
+## Use the Sandbox!
+
+- Whew! You made it through the setup and calibration!
+As long as you don't change the physical setup of your sandbox (in particular, the position of the Kinect, the projector, and the sandbox relative to each other), you never need to calibrate it again. Although now that you have the hang of it, you might want to go through the calibration again in order to achieve a more accurate setup.
+
+- If you hold your hand above the sand surface (like a cloud), you can "make it rain":
+
+![Make it rain](/images/ar-sandbox/9-B-make-it-rain-fe5051a11f.jpg)
+
+- As a convenience, the System76 packaging for Ubuntu includes a launcher you can search for in the GNOME Search:
+
+![Launch SARndbox](/images/ar-sandbox/9-A-launch-sarndbox-3d1afe80d2.png)
+
+This is a shortcut to launch `SARndbox` with the following arguments (which you can also do directly from a terminal):
+
+```
+SARndbox -uhm -fpv -evr -0.01
+```
+
+The `-evr -0.01` bit of the above command sets the evaporation rate. Without any evaporation rate set, the sandbox will steadily fill with more and more water as you "make it rain", which eventually will cause the real-time fluid simulation to become slow.
+
+So you typically want to set an evaporation rate, especially when deploying the Augmented Reality Sandbox in schools or museums.
+
+- If our recommended evaporation rate seems too fast for your tastes, try:
+
+```
+SARndbox -uhm -fpv -evr -0.005
+```
+
+If our recommended evaporation rate seems too slow for your tastes, try:
+
+```
+SARndbox -uhm -fpv -evr -0.02
+```
+
+Thanks again to [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) for developing such an incredible, inspiring piece of software!
+
+Be sure to check out the [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) website for more details.
+

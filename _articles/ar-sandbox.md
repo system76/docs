@@ -91,7 +91,7 @@ The Augmented Reality Sandbox only uses the depth view (left), but the camera vi
 
 - The depth view needs to cover the entire interior of your sandbox. It's okay if it overlaps it slightly.
 
-- Hit Esc to close the RawKinectViewer.
+- Hit Esc to close the `RawKinectViewer`.
 
 ## Calculate base plane
 

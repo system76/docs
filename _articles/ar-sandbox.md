@@ -13,6 +13,8 @@ section: software-applications
 
 ---
 
+[AR Sandbox Video](https://www.youtube.com/watch?v=uTPOE2XceEA)
+
 The [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) was developed by [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) at [UC Davis](https://www.ucdavis.edu/).
 
 In hopes of giving this awesome software wider exposure and making it easier to consume, System76 [packaged this software for Ubuntu-based OSes](https://launchpad.net/~system76-dev/+archive/ubuntu/weekend-project) and wrote this tutorial.

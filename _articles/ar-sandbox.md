@@ -21,7 +21,7 @@ In hopes of giving this awesome software wider exposure and making it easier to 
 
 ### Required Hardware
 
-This tutorial focuses on installing and calibrating the software, but wont cover the details of the hardware setup.
+This tutorial focuses on installing and calibrating the software, but won't cover the details of the hardware setup.
 
 For detailed information on the hardware setup, see the [AR Sandbox hardware tutorial](https://arsandbox.ucdavis.edu/instructions/hardware-2/), but in brief you'll need:
 
@@ -49,7 +49,7 @@ sudo apt-get update
 sudo apt-get install arsandbox
 ```
 
-- Find out what your user-name is by running this command in the terminal:
+- Find out what your username is by running this command in the terminal:
 
 ```
 whoami
@@ -61,7 +61,7 @@ whoami
 sudo adduser USERNAME vrui-grp
 ```
 
-- Reboot your computer so all the above changes take effect.
+- Reboot your computer so all of the above changes take effect.
 
 ## Calibrate Kinect
 
@@ -98,6 +98,7 @@ The Augmented Reality Sandbox only uses the depth view (left), but the camera vi
 ## Calculate base plane
 
 - There are two ways to calculate the base plane. If you haven't yet filled your sandbox with sand, you can calculate the base plane using a region on the floor of your sandbox.
+
 On the other hand, if you've already filed your sandbox with sand, you can calculate the base plane by placing a piece of poster board (or a similar flat surface) on top of your sandbox, which is what we'll do in this example:
 
 ![Align Kinect](/images/ar-sandbox/4-A-posterboard-718b802347.jpg)
@@ -150,6 +151,7 @@ You should end up with a first line something like this:
 ## Measure 3D extents of sand surface
 
 - This step requires you to have filed your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
+
 If you placed a piece of poster board (or another flat surface) on top of your sandbox in the previous step, you'll need to remove it for this step.
 
 - From a terminal, again launch the RawKinectViewer:

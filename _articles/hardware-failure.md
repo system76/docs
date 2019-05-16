@@ -61,6 +61,34 @@ Under 'Node' you will see a mount path for each drive something like '/dev/nvme0
 sudo nvme smart-log /dev/nvme0n1
 ```
 
+#### Testing the GPU
+
+There are a few tools that we can use to confirm whether there is an issue with the GPU in your system. A benchmarking tool is one of them and the one that we use is [Unigine Heaven](https://benchmark.unigine.com/heaven).
+
+There is a free download link for Linux on the home page and once that is pressed the download will start. There should be a `Unigine_Heaven-4.0.run` file in the Downloads directory and from a terminal let's run this command:
+
+```
+chmod +x Unigine_Heaven-4.0.run 
+```
+
+Then the application can be extracted:
+
+```
+./Unigine_Heaven-4.0.run 
+```
+
+Then let's move to the new directory that was created:
+
+```
+cd Unigine_Heaven-4.0/
+```
+
+Then the application can be started:
+
+```
+./heaven
+```
+
 #### Machine Check Exceptions
 
 Machine Check Exceptions are hardware failure events and can be logged with <u>rasdaemon.service</u> to journalctl. On Ubuntu based systems (<u>and Pop!_OS</u>) you can install via:

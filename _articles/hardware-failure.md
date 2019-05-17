@@ -89,6 +89,36 @@ Then the application can be started:
 ./heaven
 ```
 
+We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need to install git with this command:
+
+```
+sudo apt install git
+```
+
+Then we can clone the repository with this command:
+
+```
+git clone https://github.com/wilicc/gpu-burn.git
+```
+
+Now that we have cloned it we can move into that directory like so:
+
+```
+cd gpu-burn
+```
+
+Now we'll compile it:
+
+```
+make
+```
+
+And now we can run it like so (this example will run it for 60 minutes/1 hour):
+
+```
+gpu-burn -d 3600
+```
+
 #### Machine Check Exceptions
 
 Machine Check Exceptions are hardware failure events and can be logged with <u>rasdaemon.service</u> to journalctl. On Ubuntu based systems (<u>and Pop!_OS</u>) you can install via:

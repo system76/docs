@@ -63,6 +63,8 @@ sudo nvme smart-log /dev/nvme0n1
 
 #### Testing the GPU
 
+### Benchmarking
+
 There are a few tools that we can use to confirm whether there is an issue with the GPU in your system. A benchmarking tool is one of them and the one that we use is [Unigine Heaven](https://benchmark.unigine.com/heaven).
 
 There is a free download link for Linux on the home page and once that is pressed the download will start. There should be a `Unigine_Heaven-4.0.run` file in the Downloads directory and from a terminal let's run this command:
@@ -88,6 +90,8 @@ Then the application can be started:
 ```
 ./heaven
 ```
+
+### GPU Burn
 
 We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need to install git with this command:
 

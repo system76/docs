@@ -120,7 +120,7 @@ make
 And now we can run it like so (this example will run it for 60 minutes/1 hour):
 
 ```
-gpu-burn -d 3600
+./gpu_burn -d 3600
 ```
 
 #### Machine Check Exceptions

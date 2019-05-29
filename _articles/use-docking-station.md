@@ -26,7 +26,7 @@ section: accessories
 
  - Oryx Pro
  - Serval WS
- - Bonoobo WS
+ - Bonobo WS
 
 ### Product and Model:
 

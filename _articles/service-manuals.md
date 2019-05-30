@@ -29,8 +29,5 @@ Oryx Pro ([oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals
 
 Thelio ([thelio-r1](https://system76.com/guides/thelio/r1), [thelio-b1](https://system76.com/guides/thelio/b1))
 
-[Thelio Major (thelio-major-r1)](https://system76.com/guides/thelio-major/r1)
+Thelio Major ([thelio-major-r1](https://system76.com/guides/thelio-major/r1))
 
-[]()
-
-[]()

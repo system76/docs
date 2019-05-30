@@ -15,19 +15,14 @@ section: repairs-returns
 
 ---
 
-### Laptops
+| Laptops      | Service Manual |
+| -------------| ---------------|
+| Darter Pro   | [darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | 
+| Galago Pro   | [galp2](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf), [galp3](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf) | 
+| Orxy Pro     | [oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf)  |
+| Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) | 
 
-Darter Pro ([darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf))
-
-Galago Pro ([galp2](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf), [galp3](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf))
-
-Lemur ([lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf))
-
-Oryx Pro ([oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf))
-
-### Desktops
-
-Thelio ([thelio-r1](https://system76.com/guides/thelio/r1), [thelio-b1](https://system76.com/guides/thelio/b1))
-
-Thelio Major ([thelio-major-r1](https://system76.com/guides/thelio-major/r1))
-
+| Desktops     | Service Manual |
+| -------------| ---------------|
+| Thelio       | [thelio-r1](https://system76.com/guides/thelio/r1), [thelio-b1](https://system76.com/guides/thelio/b1) |
+| Thelio Major | [thelio-major-r1](https://system76.com/guides/thelio-major/r1) |

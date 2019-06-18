@@ -22,7 +22,7 @@ GRUB is the bootloader. It takes care of getting the operating system started up
 
 If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`. Installing everywhere will break the bootloader.
 
-On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page. 
+On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page.
 
 ### Create Live Disk
 
@@ -42,7 +42,7 @@ Once the desktop is shown, connect the computer to the Internet.  Next, open a t
 sudo parted -ls
 ```
 
-And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. 
+And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive.
 
 ---
 
@@ -60,7 +60,6 @@ Run these commands based on what type of disk you have:
 #### For NVMe Drives:
 
 ```
-sudo mkdir -p /mnt/boot/efi
 sudo mount /dev/nvme0n1p2 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
@@ -74,7 +73,6 @@ sudo update-grub
 #### For SATA Drives:
 
 ```
-sudo mkdir -p /mnt/boot/efi
 sudo mount /dev/sda2 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
@@ -136,29 +134,29 @@ Run these commands based on what type of disk you have:
 #### For NVMe Drives:
 
 ```
-sudo mkdir -p /mnt/boot/efi
-sudo mount /dev/nvme0n1p2 /mnt
+sudo mount /dev/nvme0n1p3 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall linux-generic linux-headers-generic
 update-initramfs -c -k all
-sudo bootctl --path=/boot/efi install
+exit
+sudo bootctl --path=/mnt/boot/efi install
 ```
 
 #### For SATA Drives:
 
 ```
-sudo mkdir -p /mnt/boot/efi
-sudo mount /dev/sda2 /mnt
+sudo mount /dev/sda3 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall linux-generic linux-headers-generic
 update-initramfs -c -k all
-sudo bootctl --path=/boot/efi install
+exit
+sudo bootctl --path=/mnt/boot/efi install
 ```
 
 ---

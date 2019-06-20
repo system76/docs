@@ -67,7 +67,7 @@ When you see the above screen, press the 'e' key to enter the boot parameter con
 Then on the above screen at the end of the 'linux' line add the following line:
 
 ```
-nomodeset
+nouveau.modeset=0
 ```
 
 ---
@@ -112,9 +112,9 @@ If you ordered a system with a discrete NVIDIA graphics card or if you added one
 sudo apt install system76-driver-nvidia
 ```
 
-#### If 'nomodeset' Was Used
+#### If 'nouveau.modeset=0' Was Used
 
-The `nomodeset` modifier needs to be removed after installing the NVIDIA driver. Please run this command to edit the startup options file:
+The `nouveau.modeset=0` modifier should be made default if your machine has NVIDIA hardware. Please run this command to edit the startup options file:
 
 ```
 sudo gedit /etc/default/grub

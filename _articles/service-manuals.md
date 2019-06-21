@@ -25,4 +25,4 @@ section: repairs-returns
 | Desktops     | Service Manual |
 | -------------| ---------------|
 | Thelio       | [thelio-r1](https://system76.com/guides/thelio/r1), [thelio-b1](https://system76.com/guides/thelio/b1) |
-| Thelio Major | [thelio-major-r1](https://system76.com/guides/thelio-major/r1) |
+| Thelio Major | [thelio-major-r1/thelio-major-b1](https://system76.com/guides/thelio-major/r1) |

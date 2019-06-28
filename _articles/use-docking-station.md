@@ -16,17 +16,8 @@ section: accessories
 
 ### Compatible Intel systems
 
- - Lemur
- - Galago Pro
- - Darter Pro
- - Gazelle
- - Kudu
-
-### Compatible NVIDIA systems (*)
-
- - Oryx Pro
- - Serval WS
- - Bonobo WS
+ - Galago Pro (galp3-b, galp3-c)
+ - Darter Pro (darp5)
 
 ### Product and Model:
 

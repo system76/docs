@@ -57,4 +57,4 @@ Details of the installation should be returned.
 ### Further information
 
 For further details on Numba, please see:
-http://numba.pydata.org/
+[http://numba.pydata.org/](http://numba.pydata.org/)

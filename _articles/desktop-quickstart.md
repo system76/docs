@@ -24,7 +24,7 @@ If you ordered a dedicated graphics card, plug your monitor into one of the hori
 
 ### Connect Keyboard and Mouse
 
-Keyboards can connect via USB ports, PS/2 circular port, or wirelessly. If your keyboard/mouse connects wirelessly, you should have a small USB device, called a receiver, that connects to the desktop and communicates with your keyboard and mouse via radio frequency. This should be included when you purchase a wireless keyboard or mouse. You can connect to the front USB ports or the back, depending on where your cords will extend/fit.
+Keyboards can connect via USB ports or wirelessly. If your keyboard/mouse connects wirelessly, you should have a small USB device, called a receiver, that connects to the desktop and communicates with your keyboard and mouse via radio frequency. This should be included when you purchase a wireless keyboard or mouse. You can connect to the front USB ports or the back, depending on where your cords will extend/fit.
 
 ### Connect Power Supply
 

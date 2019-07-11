@@ -13,9 +13,37 @@ section: software-applications
 
 ---
 
-# TensorFlow 1.9 for CUDA 9.2
+# Using Tensorflow
 
-The `include` directory contains the headers needed for the C & C++ APIs. The `lib` directory contains static builds of shared libraries for the C and C++ API, as well as the unpackaged Python wheel for Python 3.6.
+The packaging of TensorFlow for Pop!_OS contains libraries for the Python, C and C++ APIs. Other languages, such as Rust, bind to the C API for their support.
+
+## Switching Between Versions
+
+All of the TensorFlow packages are built to support concurrent installations using the Debian alternatives system. A symbolic link at `/usr/lib/tensorflow` points to another symbolic link at `/etc/alternatives/tensorflow`, which finally points to the location of the actual library path, which could be at a location such as `/usr/lib/tensorflow1.13-cpu`, or `/usr/lib/tensorflow1.31-cuda10.0`. To change the active toolkit, the `update-alternatives` command may be called like so:
+
+```
+sudo update-alternatives --config tensorflow
+```
+
+This will display a list of available TensorFlow libraries to choose from:
+
+```
+There are 2 choices for the alternative tensorflow (providing /usr/lib/tensorflow).
+
+  Selection    Path                               Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/tensorflow1.13-cuda10.0/   100       auto mode
+  1            /usr/lib/tensorflow1.13-cpu/        100       manual mode
+  2            /usr/lib/tensorflow1.13-cuda10.0/   100       manual mode
+
+Press <enter> to keep the current choice[*], or type selection number:
+```
+
+After setting the active version, you can verify that it is set with:
+
+```
+readlink -f /etc/alternatives/tensorflow
+```
 
 ## C API
 
@@ -31,13 +59,15 @@ int main() {
 }
 ```
 
-You may compile it with the following:
+You may compile it with:
 
 ```sh
 export LD_LIBRARY_PATH="/usr/lib/tensorflow/lib:$LD_LIBRARY_PATH"
 gcc -I/usr/lib/tensorflow/include/ -L/usr/lib/tensorflow/lib example.c -ltensorflow -o example
 ./example
 ```
+
+Note that `LD_LIBRARY_PATH` must point to the location of the lib directory for the toolkit that you wish to use, which can be the active toolkit, or defined as the path to the specific version to use with that project.
 
 ## C++ API
 
@@ -57,6 +87,8 @@ print(sess.run(hello))
 You may build a project with Python API by setting your PYTHONPATH when building it, like so:
 
 ```sh
-env PYTHONPATH=/usr/lib/tensorflow/lib/python3.6:$PYTHONPATH \
+env PYTHONPATH=/usr/lib/tensorflow/lib/python3.7:$PYTHONPATH \
     python3 example.py
 ```
+
+Note that `python3.7` should be changed to the version of Python that the version of TensorFlow supports.

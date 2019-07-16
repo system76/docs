@@ -92,7 +92,7 @@ The KDE Plasma desktop environment is a familiar working environment and looks s
 KDE is installed with:
 
 ```
-sudo apt install kubuntu-desktop
+sudo apt install kde-standard
 ```
 
 KDE may have a packaging conflict which will cause the installation to fail.  If so, two packages need removed to complete the installation.  After an error, please run these commands to remove the packages and finish the installation:

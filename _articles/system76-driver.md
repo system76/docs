@@ -28,7 +28,7 @@ sudo apt-get install -y system76-driver
 
 The System76 Driver can be opened by pressing the Ubuntu or Pop key and then search for 'system76', then click on the System76 Driver. 
 
-Next click on the button outlined in red in the application and there will be a file called `system76-logs.tgz` placed in your Home directory (/home/username)
+Next click on the button outlined in red in the <u>System76 Driver</u> application and there will be a file called `system76-logs.tgz` placed in your Home directory (/home/username)
 
 ![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
 

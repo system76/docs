@@ -37,7 +37,7 @@ By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS
 ```
 sudo apt update
 ```
-You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>. 
+You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.
 
 ```
 sudo apt full-upgrade
@@ -67,7 +67,7 @@ do-release-upgrade
 ```
 Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.
 
-If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue. 
+If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue.
 
 Type <kbd>Y</kbd> and press enter when prompted about starting the upgrade.
 
@@ -77,11 +77,23 @@ Near the end of the upgrade process, you'll be prompted to remove obsolete packa
 
 You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
 
-The last prompt will ask you to restart your computer to complete the upgrade. Make sure all files are saved and programs are closed, then type <kbd>Y</kbd> and <kbd>Enter</kbd>. The computer will immediately restart. 
+The last prompt will ask you to restart your computer to complete the upgrade. Make sure all files are saved and programs are closed, then type <kbd>Y</kbd> and <kbd>Enter</kbd>. The computer will immediately restart.
 
 ---
 
 If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
+
+### Upgrade 17.10 to 18.04
+
+Pop!_OS 17.10 is now unsupported and no updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates.
+
+```
+sudo sed -e `s/us.archive./old-releases./` /etc/apt/sources.list
+sudo apt clean
+sudo apt update -m
+sudo apt full-upgrade
+sudo do-release-upgrade
+```
 
 ## Troubleshooting
 

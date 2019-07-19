@@ -96,7 +96,7 @@ sudo apt clean
 sudo apt update -m
 sudo apt full-upgrade
 sudo do-release-upgrade
-```s
+```
 
 ## Troubleshooting
 

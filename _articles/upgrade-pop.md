@@ -23,7 +23,7 @@ section: pop-ubuntu
 
 Pop!_OS 18.10 was released in October, 2018. This article explains how to upgrade from Pop!_OS 18.04 to Pop!_OS 18.10.
 
-Pop!_OS 19.04 was released in April, 2019. This article explains how to upgrade from Pop!_OS 18.10 to Pop!_OS 19.04. 
+Pop!_OS 19.04 was released in April, 2019. This article explains how to upgrade from Pop!_OS 18.10 to Pop!_OS 19.04.
 
 ### Create Installation USB
 
@@ -90,7 +90,8 @@ If the upgrade completes successfully, restart your computer for the changes to 
 ### Pop!_OS 17.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates.
 
 ```
-sudo bash -c "sed -e 's/us.archive./old-releases./' /etc/apt/sources.list > /etc/apt/sources.list"
+sudo sed -e 's/us.archive./old-releases./' /etc/apt/sources.list > ~/sources.list
+sudo mv ~/sources.list /etc/apt/sources.list
 sudo apt clean
 sudo apt update -m
 sudo apt full-upgrade

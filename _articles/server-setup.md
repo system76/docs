@@ -156,7 +156,7 @@ To remotely administer the server, a secure shell program needs installed to acc
 sudo apt install openssh-server
 ```
 
-And then configure the program by editing it's settings file with this command:
+And then configure the program by editing its settings file with this command:
 
 ```
 sudo nano /etc/ssh/sshd_config

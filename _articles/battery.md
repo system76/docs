@@ -29,7 +29,7 @@ With the <u>system76-power</u> package there are **Power Profiles** that can be 
 
 ### FlexiCharger
 
-On several models of our laptops, FlexiCharger can be used to change the charging behavior of the battery.  A general consensus is that charging a battery to 100% every time will shorten it's overall lifespan. 
+On several models of our laptops, FlexiCharger can be used to change the charging behavior of the battery.  A general consensus is that charging a battery to 100% every time will shorten its overall lifespan.
 
 To adjust the top charge, reboot the computer and enter into BIOS by holding down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control, and set Flexicharger to Enabled. Two new sub-menus will appear, and can be set to the user's desired percentages. The longevity of lithium batteries is dependent on the number of charge cycles they go through. The larger the percentage of spread between Top and Bottom charge percentages, the longer the physical battery will last. For optimal longevity, charge cycles of 40%~80% are a good idea:
 
@@ -39,7 +39,7 @@ Stop Charge 80%
 ```
 Save and exit the BIOS
 
-- FlexiCharger will allow your System76 laptop to run solely off the AC power connection, and leave the battery alone while the computer is operates normally
+- FlexiCharger will allow your System76 laptop to run solely off the AC power connection, and leave the battery alone while the computer is operating normally
 - This prevents unnecessary micro-charging which reduces battery longevity
 -  It is particularly useful when your laptop is plugged into AC power adapter for extended periods of time
 - FlexiCharger can be disabled at any time in the BIOS, which reverts the charging profile to factory defaults. Before heading out into the wild blue yonder, disable FlexiCharger to charge your laptop battery to 100%.
@@ -48,7 +48,7 @@ Save and exit the BIOS
 
 ## Useful Programs
 
-<u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. It's default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
+<u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. Its default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
 
 To install TLP, run this command:
 

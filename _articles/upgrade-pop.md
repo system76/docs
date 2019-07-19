@@ -85,7 +85,7 @@ If the upgrade completes successfully, restart your computer for the changes to 
 
 ### Upgrade 17.10 to 18.04
 
-Pop!_OS 17.10 is now unsupported and no updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates.
+Pop!_OS 17.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates.
 
 ```
 sudo sed -e `s/us.archive./old-releases./` /etc/apt/sources.list

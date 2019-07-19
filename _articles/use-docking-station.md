@@ -16,22 +16,13 @@ section: accessories
 
 ### Compatible Intel systems
 
- - Lemur
- - Galago Pro
- - Darter Pro
- - Gazelle
- - Kudu
-
-### Compatible NVIDIA systems (*)
-
- - Oryx Pro
- - Serval WS
- - Bonoobo WS
+ - Galago Pro (galp3-b, galp3-c)
+ - Darter Pro (darp5)
 
 ### Product and Model:
 
 We have tested:
- - [Plugable UD-3900](http://plugable.com/products/ud-3900/) [works with NVIDIA and Intel systems] (*)
+ - [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] (**)
 
 ### For Intel systems
 
@@ -50,9 +41,12 @@ To install the DisplayLink Driver open the Terminal and move to the Download dir
 ```
 cd Downloads
 unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 5.1.zip
+cd DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 5.1/
+sudo chmod +x displaylink-driver-5.1.26.run
 sudo ./displaylink-driver-5.1.26.run
 ```
 
 For installing the NVIDIA Driver that we provide you can use this support article: [System76 NVIDIA Driver](http://support.system76.com/articles/system76-driver/).
 
 (*) NVIDIA cards have some minor graphic issues with what is rendered under the mouse as well as scrollbars.
+(**) Does not need the DisplayLink Driver installed to work.

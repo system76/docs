@@ -174,6 +174,8 @@ Ubuntu has several powerful image manipulation programs. [Gimp](https://www.gimp
 
 ![apple-games](/images/switch/apple-games.png)
 
+[Installing Steam](/articles/steam)
+
 ---
 
 ![ubuntu-games](/images/switch/ubuntu-games.png)

@@ -39,7 +39,7 @@ This command reinstalls the package.  This can be convenient when the package ha
 sudo apt purge <package name>
 ```
 
-This will remove a package and it's configuration files.  Use this command to remove a package that is causing issues, and reinstall it with this command:
+This will remove a package and its configuration files.  Use this command to remove a package that is causing issues, and reinstall it with this command:
 
 ```
 sudo apt install <package name>

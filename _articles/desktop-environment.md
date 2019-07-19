@@ -19,7 +19,7 @@ section: software-applications
 
 Pop!_OS comes with the <u>GNOME</u> desktop environment and Ubuntu before 17.10 comes with the <u>Unity</u> desktop environment. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
-Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Pop!_OS, each with it's own individual settings.
+Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Pop!_OS, each with its own individual settings.
 
 ![Login](/images/desktop-environment/Login.png)
 
@@ -134,7 +134,7 @@ sudo apt install lubuntu-desktop
 
 ### Edubuntu
 
-Edubuntu has been developed in collaboration with teachers and technologists in several countries and is aimed at users aged 6 to 18. It is designed for easy installation and ongoing system maintenance. It uses GNOME for it's desktop manager.
+Edubuntu has been developed in collaboration with teachers and technologists in several countries and is aimed at users aged 6 to 18. It is designed for easy installation and ongoing system maintenance. It uses GNOME for its desktop manager.
 
 Edubuntu can be installed with:
 
@@ -158,7 +158,7 @@ Desktop environments can interfere with each other or change universal settings.
 
 #### Change Login Greeter
 
-GNOME will add it's own login greeter, which is shown as the second image at the top of this article. To change it, run this command:
+GNOME will add its own login greeter, which is shown as the second image at the top of this article. To change it, run this command:
 
 ```
 sudo gedit /etc/lightdm/lightdm.conf
@@ -224,7 +224,7 @@ sudo update-initramfs -u
 
 #### Change Notification Dialog
 
-Xfce will change the notification dialog to it's own. It can be configured with this command:
+Xfce will change the notification dialog to its own. It can be configured with this command:
 
 ```
 xfce4-notifyd-config

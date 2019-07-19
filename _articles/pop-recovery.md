@@ -2,13 +2,14 @@
 layout: article
 title: Use The Recovery Partition
 description: >
-    Here is how to use the recovery partition to reinstall or repair your operating system.
+    Here is how to use the recovery partition to repair, refresh or reinstall your operating system.
 keywords:
   - recovery
   - reset
   - locked out
   - crash
   - reinstall
+  - refresh
   - repair
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
@@ -16,25 +17,25 @@ section: pop-ubuntu
 
 ---
 
-The recovery partition on this operating system is a full copy of the Pop!_OS installation disk.  It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive.  The existing operating system can be repaired or reinstalled from the recovery mode.  This feature is only available on fresh install of Pop!_OS 18.04 and later.
+The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!_OS 19.04.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key while the system is booting.  On the menu, choose **Recovery Mode**.
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key while the system is booting.  On the menu, choose **Pop!_OS Recovery**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
-### Reinstall
+## Table of Contents
 
-Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
-
-If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.
+- [Repair](/articles/pop-recovery/#repair) 
+- [Refresh Install](/articles/pop-recovery/#refresh-install) 
+- [Reinstall](/articles/pop-recovery/#reinstall) 
 
 ### Repair
 
 If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
-To get access to the existing drive to run the package manager [repair commands](/articles/package-manager/), the following commands will need run:
+To get access to the existing drive to run the package manager [repair commands](/articles/package-manager/), the following commands will need to be run:
 
-First, press <kbd><i class="fl-ubuntu"></i></kbd>/<kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
+First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
 ```
 lsblk
@@ -52,7 +53,7 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 ### Encrypted Disk
 
-To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
+To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
 ```
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
@@ -87,3 +88,15 @@ To exit from the <u>chroot</u> and reboot the computer, run these commands:
 exit
 reboot
 ```
+
+### Refresh Install
+
+Starting with new installations of Pop!_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled. 
+
+![Refresh Install Option](/images/pop-recovery/refresh-install-option.png)
+
+### Reinstall
+
+Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
+
+If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions below.

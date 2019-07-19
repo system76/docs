@@ -16,7 +16,7 @@ section: software-applications
 
 ---
 
-GRUB is the bootloader. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can break, and it may not let you boot into your computer to fix the problem.
+Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can break, and it may not let you boot into your computer to fix the problem.
 
 #### Important Note
 

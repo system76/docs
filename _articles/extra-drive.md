@@ -70,7 +70,9 @@ Filesystem Type                            | `ext4`*
 
 <small>* This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.</small>
 
-![Mount Options Set Correctly](/images/extra-drive/Step4.png)
+![Mount Options Set Correctly](/images/extra-drive/Step4-updated.png)
+
+The red box shows the item we don't want to change and the green box shows the item we want to change. 
 
 ### Save And Restart
 

@@ -36,7 +36,7 @@ These instructions are for System76 laptop owners who have been prompted for a f
 6. Two small blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one.
 7. The machine will then reboot. Repeatedly press the <kbd>F2</kbd> key to boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
  - If the BIOS settings do not launch, reboot the machine and try again.
-8. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults**.
+8. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults** or **Load Optimal Defaults**.
 9. Select and confirm **Save changes and reset** in that same tab.
 10. Once the laptop restarts, the firmware will be up to date!
 

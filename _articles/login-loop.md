@@ -133,7 +133,7 @@ There could also be an issue with the Login Manager and both Pop!_OS and Ubuntu 
 
 ```
 sudo apt purge gdm3 
-sudo apt install gdm3 pop-desktop
+sudo apt install --reinstall gdm3 pop-desktop
 ```
 
 #### Ubuntu
@@ -141,7 +141,7 @@ sudo apt install gdm3 pop-desktop
 
 ```
 sudo apt purge gdm3 
-sudo apt install gdm3 ubuntu-desktop
+sudo apt install --reinstall gdm3 ubuntu-desktop
 ```
 
 ### If These Steps Don't Work

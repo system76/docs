@@ -76,3 +76,7 @@ sudo system76-firmware-pkexec
 ```
 
 After the above commands are ran depending on the drive that the OS is installed on you can use the above instructions to update your firmware.
+
+### Firmware Notifications
+
+If you're receiving the firmware update notification then your system's Intel ME may be turned on. Let's reboot the laptop and hold F2. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. Any changes? If not let's go back into the BIOS and use the load setup options in the Exit tab then save and reboot. 

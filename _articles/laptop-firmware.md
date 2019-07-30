@@ -79,4 +79,4 @@ After the above commands are ran depending on the drive that the OS is installed
 
 ### Firmware Notifications
 
-If you're receiving the firmware update notification then your system's Intel ME may be turned on. Let's reboot the laptop and hold F2. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. Any changes? If not let's go back into the BIOS and use the load setup options in the Exit tab then save and reboot. 
+If you’re receiving the firmware update notification after a firmware update, then your system’s Intel ME may be turned on. Let’s reboot the laptop and hold F2 to get to the BIOS. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. That should stop the notifications about a firmware update and you're all set. 

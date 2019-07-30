@@ -165,7 +165,7 @@ For more information about releases and how long they are supported for, please 
 
 For more information about what end of life means, please see the [End of Life](https://www.ubuntu.com/info/release-end-of-life) document.
 
-For more information on LTS support and the Hardware Enablement Stack, please the the [HWE Wiki](https://wiki.ubuntu.com/Kernel/LTSEnablementStack). 
+For more information on LTS support and the Hardware Enablement Stack, please see the [HWE Wiki](https://wiki.ubuntu.com/Kernel/LTSEnablementStack).
 
 ---
 
@@ -183,7 +183,7 @@ Please see the steps above to create bootable media. Restart your computer and u
 
 Next follow the steps to repair grub first:
 
-[Repair Grub](/articles/grub/)
+[Repair Bootloader](/articles/bootloader/)
 
 And then the steps to repair the package manager next:
 

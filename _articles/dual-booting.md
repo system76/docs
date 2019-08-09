@@ -76,6 +76,10 @@ This message can be safely ignored and it is caused by Windows not being the fir
 
 ![Windows](/images/dual-booting/windows-partitioning-4.png)
 
+## Using another drive
+
+Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for it's partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops and F12/Del for our desktops).
+
 ## Windows Caveats
 
 Windows 8 and later uses a "Fast Startup" setting which prevents Windows from fully shutting down and allowing other OSes to use the disk. Before you can properly dual boot with Windows, you must disable this setting in Windows.

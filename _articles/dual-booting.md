@@ -60,7 +60,7 @@ Choose your previous OS with the arrow keys, then press Enter.
 
 ## Install Windows 10
 
-Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected.
+Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that it's efi files will be placed in that partition for the systemd-boot menu item.
 
 ![Windows](/images/dual-booting/windows-partitioning.png)
 

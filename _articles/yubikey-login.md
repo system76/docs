@@ -6,6 +6,8 @@ description: >
 keywords:
   - Yubikey
   - Administration
+  - Google Titan
+  - U2F USB Key
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: community

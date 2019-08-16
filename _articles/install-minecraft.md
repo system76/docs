@@ -49,4 +49,4 @@ Now run the file! Log in with your username and password and start playing! Take
 
 ---
 
-This article was contributed by [kylerschin](https://github.com/kylerschin).
+This article was contributed by [kylerchin](https://github.com/kylerchin).

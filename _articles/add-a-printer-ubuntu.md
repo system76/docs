@@ -52,6 +52,10 @@ To look at the CUPS (Common Unix Printing System) configuration and status windo
 
 The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer.
 
+Pop OS will mostly quit on low bandwidth usb printers (Brother <2005, HP <2007) and older printers are gone. Print using System UI instead of from the Browser.
+
+The system will disagree with the printer on what are ink levels are. Make Pop forget the printer using the settings UI and restart the print job. Yes, the printing companies are scamming you.
+
 ## Useful Commands:
 
 ```

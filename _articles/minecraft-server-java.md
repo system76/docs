@@ -85,6 +85,9 @@ java -Xmx16G -Xms2G -jar THE_URL.RANSOM.jar -server nogui
 ```
 The values -XMX(1st number)G and -Xms(2nd number)G are defining memory pool sizes. Your maximum allocation is going to be the first number, and while it doesn't really matter what the second number is, it is the initial amount of memory your server will start with, and thus the engine will need a healthy amount to start up. Use your best judgement.
 
+#### Networking (For people at home)
+You'll want to set things up on your router and outgoing connection to the rest of the world. If your like most people running a typical server, the default port is 25565. Get people to connect to that. Suggestion if you are running this in your basement like me, get a domain and set up your IP to DNS on Cloudflare, so that way, your server will stay at the same address, even if your ISP gets turned off.
+
 #### MultiThreading
 JDK Java version 8 REQUIRED:
 The way that Mojang (The company that made minecraft) runs Java Servers is stupid, on a single thread. Considering how massive a world can be and with so many things, it may get overwelmed. In this case, you'll want to add special flags to your java startup script in start.sh to get things running smoothly and tell the CPU to use multiple cores. Try
@@ -110,4 +113,4 @@ Datapacks are per-world, so you'll need to drag the .zip or folder provided by t
 
 ---
 
-This article was contributed by [kylerschin](https://github.com/kylerschin).
+This article was contributed by [kylerchin](https://github.com/kylerchin).

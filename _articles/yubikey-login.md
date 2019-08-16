@@ -114,7 +114,7 @@ Add the auth line immediately below the **@include common-auth** line.
 The following sites were used to build this guide:
 - [Authentication Using Challenge Response](https://developers.yubico.com/yubico-pam/Authentication_Using_Challenge-Response.html) (From Yubikey).
 - [Yubico PAM Module](https://developers.yubico.com/yubico-pam/) (From Yubikey).
- (Tested on Google Titan and new Yubikey Bluetooth, NFC modules. Security vulnerability in BLE version 2, please change your crap)
+- Tested on Google Titan and new Yubikey Bluetooth, NFC modules. Security vulnerability in BLE version 2, please change your key and stop using it, disconnect and get a new key. It's a hardware problem allowing for man in the middle attacks over the air.
 
 ---
 

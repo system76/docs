@@ -71,4 +71,4 @@ You will connect automatically with WiFi, but you can peer over the Internet too
 
 ---
 
-This article was contributed by [kylerschin](https://github.com/kylerschin).
+This article was contributed by [@kylerchin](https://github.com/kylerchin).

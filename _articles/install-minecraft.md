@@ -2,7 +2,7 @@
 layout: article
 title: Install and Optimize Minecraft! (Java Edition)
 description: 
-  So you want some of that blocky goodness? Well, get Java and some graphics cards and let's go!
+  So you want some of that sandbox blocky goodness? Well, get Java and some graphics cards and let's go!
 keywords:
   - Minecraft
   - Mojang
@@ -45,7 +45,7 @@ Elesewhere
 wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
 ```
 
-Now run the file! Log in with your username and password and start playing!
+Now run the file! Log in with your username and password and start playing! Take your revenge! What's your journey?
 
 ---
 

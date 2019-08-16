@@ -24,6 +24,9 @@ The following guide describes how to download the Pop!\_OS.iso image, write it t
 
 Requirements: At the time of this writing Pop!\_OS only runs on 64-bit x86 architecture, 2 GB of RAM is required, 4 GB of RAM is recommended and 20 GB of storage is recommended.
 
+(Advert:)
+WHAT?!? You never used Pop!_OS? You know it's fun, right?  I'm not supposed to give my opinion, but give it a try, and then you can tell me if it's good or not. Not convinced yet? Ok, I'll cut you a deal. The distro is available for FREE! And that's a great price!
+
 ## Make Bootable Drive
 
 Please see our instructions for making and booting from a live disk of Pop!\_OS [here](/articles/live-disk/).
@@ -60,7 +63,7 @@ Now Pop!\_OS will begin installing!
 
 ![Progress](/images/install-pop/7_progress.png)
 
-Pop!\_OS has been successfully installed on your computer! Awesome work! You can choose to reboot your computer to create your new user for the OS or you can shut down and setup the new user later:
+Pop!\_OS has been successfully installed on your computer! Awesome work! Incredible job! You can choose to reboot your computer to create your new user for the OS or you can shut down and setup the new user later:
 
 ![Success](/images/install-pop/8_success.png)
 

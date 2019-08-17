@@ -97,7 +97,16 @@ sudo mv ~/sources.list /etc/apt/sources.list
 sudo apt clean
 sudo apt update -m
 sudo apt full-upgrade
-sudo do-release-upgrade
+do-release-upgrade
+```
+
+Pop!_OS 18.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!_OS
+
+```
+sudo apt update
+sudo apt full-upgrade
+do-release-upgrade
+sudo apt install pop-desktop
 ```
 
 ## Troubleshooting

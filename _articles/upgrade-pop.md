@@ -105,8 +105,8 @@ Pop!_OS 18.10 is now unsupported and no new updates are available. After unsuppo
 ```
 sudo apt update
 sudo apt full-upgrade
-sudo apt install pop-desktop
 do-release-upgrade
+sudo apt install pop-desktop
 ```
 
 ## Troubleshooting

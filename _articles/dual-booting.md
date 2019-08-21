@@ -60,7 +60,7 @@ Choose your previous OS with the arrow keys, then press Enter.
 
 ## Install Windows 10
 
-Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that it's efi files will be placed in that partition for the systemd-boot menu item.
+Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that Windows boot efi files will be placed in the ESP partition.
 
 ![Windows](/images/dual-booting/windows-partitioning.png)
 
@@ -78,7 +78,7 @@ This message can be safely ignored and it is caused by Windows not being the fir
 
 ## Using another drive
 
-Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for it's partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops and F12/Del for our desktops).
+Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for automatically created partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops and F12/Del for our desktops).
 
 ## Windows Caveats
 

@@ -79,7 +79,7 @@ sudo dpkg-reconfigure tzdata
 
 ### Configure Network Interface for Ubuntu Server 18.04
 
-Ubuntu Server 18.04 is shipping with netplan so system file will need to be edited for networking. With this command we will edit the file:
+Ubuntu Server 18.04 is shipping with netplan, so the system file will need to be edited for networking. With this command, we will edit the file:
 
 ```
 sudo nano /etc/netplan/50-cloud-int.yaml

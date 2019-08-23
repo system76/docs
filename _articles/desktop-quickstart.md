@@ -38,7 +38,9 @@ Press the circular button on the front of the machine after all components are p
 
 When you power on, you'll be prompted to create a user account, which is the administrative account (root). The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. In Pop!_OS, you can choose to encrypt your hard drive while setting up the user account. 
 
-You will be prompted for the encryption passphrase first if you select that option during the account creation process. After the encryption passphrase is set, you will proceed to set up a user account and be prompted to set the administrator password. If you encrypt your hard drive, you will be prompted for the encryption passphrase every time you power on. It's important to write this password down and keep it somewhere safe. If the password is lost or forgotten, you will lose access to the contents of the drive.
+You will be prompted for the encryption passphrase first if you select that option during the account creation process. After the encryption passphrase is set, you will proceed to set up a user account and be prompted to set the administrator password. If you encrypt your hard drive, you will be prompted for the encryption passphrase every time you power on.
+
+***IMPORTANT: Write your password down and keep it somewhere safe. If the password is lost or forgotten, you will lose access to all contents of the drive.
 
 ### Looking for your additional drives?
 

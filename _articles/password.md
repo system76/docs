@@ -1,151 +1,77 @@
 ---
 layout: article
-title: Change Your Password
+title: Create a User If Initial User Setup Fails
 description: >
-    Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change both!
+  Sometimes, the first-boot user creation fails and leaves only a Guest session. You can fix this by following the steps here.
 keywords:
-  - password
-  - reset
-  - locked out
-  - crash
+  - Support
+  - Crash
+  - Guest
+  - Guest Session
+  - OEM
+  - First boot
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: pop-ubuntu
 
 ---
 
-If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low-level repair system for the computer.
+Occasionally, the first boot user creation fails and leaves only a Guest session. If there is only a Guest Session, follow these instructions to fix the issue.
 
-### Pop!_OS 18.04 and Later
+### Overview
 
-On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather than <u>GRUB</u>.  Please follow these instructions to reset your password.  If your operating system is anything other than Pop!_OS 18.04 and later, please use the [GRUB](#grub) section later.
+Here are the general steps for creating a user manually:
 
-First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key.  On the menu, choose **Recovery Mode**.
+1.  Reboot into Recovery Mode
+2.  Run a fsck to mount the drive as read-write
+3.  Drop to a root shell
+4.  Run oem-config-prepare
+5.  Reboot the system
+6.  Send logs to System76 to help us track this down
 
-![systemd-boot](/images/password/systemd-boot.png)
+#### Recovery Mode
 
-Once the recovery operating system has opened, click the **Install Pop!_OS** in the top left, and choose **quit**.  Then, press <kbd><i class="fl-ubuntu"></i></kbd>/<kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
+Power on (or reboot) your system and tap the <kbd>ESC</kbd> key to get to the GRUB boot menu.
 
-```
-lsblk
-```
+If you end up at the GRUB CLI (it looks like `grub >`) type `normal`, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd>. If that fails, just reboot the computer with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>, pressing the reset button, or holding the power button until the computer shuts off.
 
-This will show what the main internal drive is named, which will have 4 partitions on it.  We will be working with the 3rd partition.  If the main drive is an NVMe drive, it will be `/dev/nvme0n1p3` and if the drive is a SATA or regular M.2 drive, it will be `/dev/sda3`.
+![GRUB menu](/images/oem-firstboot/grub-menu.png)
 
-Next, run this command:
+Once you're in the GRUB boot menu, choose **Advanced options for Ubuntu** and then **(recovery mode)** on the first listed kernel. The system will boot into the recovery menu.
 
-```
-sudo mount /dev/sda3 /mnt
-```
+![Advanced options](/images/oem-firstboot/recovery-mode.png)
 
-If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  If the command succeeds (no output), then skip these next steps:
+At any time, random messages or text may clutter up the recovery menu. If this happens, just press the up/down arrow keys to re-draw the menu items. The text does not affect operation of the recovery menu.
 
-```
-sudo cryptsetup luksOpen /dev/sda3 volume
-sudo lvscan
-sudo vgchange -ay
-```
+The system will boot into the recovery menu:
 
-Take note as to what the volume group is called,  substituting the correct info into this command.  Make sure that '-root' is on the end:
+![fsck option at recovery mode](/images/oem-firstboot/fsck-option.png)
 
-```
-sudo mount /dev/mapper/data-root /mnt
-```
+Choose **fsck**, and then press <kbd>Enter</kbd>. You will be notified that to continue, "your / filesystem will be mounted in read/write mode". Choose **Yes** to continue.
 
-Next, regardless of if the drive is encrypted or not, run these commands:
+![fsck remount request](/images/oem-firstboot/fsck-remount.png)
 
-```
-sudo chroot /mnt
-ls /home
-```
+<u>fsck</u> will run for about 3 seconds and ends with `[ OK ] Reached target Swap.` At this point, press <kbd>Enter</kbd> for the Recovery menu.
 
-Take note of the users on this computer, then run this command to change a user's password:
+Choose **root** and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> until the system shows a root prompt like the image below:
+
+![Root shell](/images/oem-firstboot/recovery-menu.png)
+
+#### Recover First-Boot Menu
+
+Once you're at the root shell, identified with the prompt `root@ubuntu:~#`, enter the commands below:
 
 ```
-passwd john
-```
-
-Type in your new password, and then enter these commands:
-
-```
-exit
+oem-config-prepare
 reboot
 ```
 
-Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
+The system will reboot into the first-user System Configuration.
 
-### GRUB
+#### Help Us
 
-There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot. Make sure to stop tapping <kbd>ESC</kbd> when the menu appears.
+Lastly, we need your help in tracking down this bug. When you get logged in, open a terminal and run this command, then send us the 'log.tgz' file it creates.
 
-![Grub1](/images/password/grub1.png)
+`sudo tar -cvz -f ~/log.tgz /var/log`
 
-If you do tap <kbd>ESC</kbd> when the menu appears, a GRUB command prompt will appear:
-
-![Prompt](/images/password/prompt.png)
-
-If you get to the GRUB command prompt, type in `normal`, then press <kbd>ENTER</kbd> and immediately press <kbd>ESC</kbd>.
-
-Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**, followed by the 3rd option **Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)**.
-
-![Grub2](/images/password/grub2.png)
-
-At the recovery menu, choose the **root** option, then press <kbd>Enter</kbd> to drop to a root prompt.
-
-![Recovery](/images/password/recovery.png)
-
-### Root Prompt
-
-**A note on the root prompt:** Since the system is operating with only a single console, all output is printed to the screen. This can be really confusing, but nothing has changed -- it's just output. **If your screen looks like the image below, with a timeout notice or similar,** press Ctrl+C to return to the prompt and continue working. You will need to re-enter the command you were typing.
-
-![Timeout in recovery mode](/images/password/timeout.png)
-
-Now, type this command to make your hard drive editable:
-
-```
-mount -o rw,remount /
-```
-
-Then type this command to show what usernames are present on the computer:
-
-```
-ls /home
-```
-
-Then, to change your password, type in this command:
-
-```
-passwd april
-```
-
-(Change `april` to the actual user whose password you would like to reset, as seen in the output of `ls /home`)
-
-Enter a new password, then press <kbd>Enter</kbd>. Even though you are typing, no text will be displayed nor will the password be obfuscated as seen in the image below.
-
-![Full commands to reset password](/images/password/example.png)
-
-Enter the same password again to confirm, then press <kbd>Enter</kbd>.
-
-If successful, you will see a message confirming `passwd: password updated successfully
-
-You can now reboot:
-
-```
-reboot
-```
-
-### Change the encryption passphrase
-
-This can be done in the operating system or in the recovery mode/partition.
-
-First list the drives and partitions with this command:
-
-```
-lsblk
-```
-
-Then, to change the passphrase:
-
-```
-sudo cryptsetup luksChangeKey /dev/sda3 -S 0
-```
+Please open a support ticket and attach the log file.

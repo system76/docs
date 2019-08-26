@@ -14,7 +14,7 @@ section: pop-ubuntu
 
 ---
 
-If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which means the low level repair system for the computer.
+If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low-level repair system for the computer.
 
 ### Pop!_OS 18.04 and Later
 
@@ -46,7 +46,7 @@ sudo lvscan
 sudo vgchange -ay
 ```
 
-And then take note as to what the volume group is called.  Substitute the correct info into this command.  Make sure that '-root' is on the end:
+Take note as to what the volume group is called,  substituting the correct info into this command.  Make sure that '-root' is on the end:
 
 ```
 sudo mount /dev/mapper/data-root /mnt
@@ -59,28 +59,28 @@ sudo chroot /mnt
 ls /home
 ```
 
-And take note of the users on this computer, then run this command to change a user's password:
+Take note of the users on this computer, then run this command to change a user's password:
 
 ```
 passwd john
 ```
 
-Then, type in your new password, and then these commands:
+Type in your new password, and then enter these commands:
 
 ```
 exit
 reboot
 ```
 
-Now enter the original passphrase now you will be prompted for the new passphrase and then to confirm the new passphrase.
+Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
 
 ### GRUB
 
-There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot.
+There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot. Make sure to stop tapping <kbd>ESC</kbd> when the menu appears.
 
 ![Grub1](/images/password/grub1.png)
 
-Make sure to stop tapping <kbd>ESC</kbd> when the menu appears, otherwise a GRUB command prompt will appear:
+If you do tap <kbd>ESC</kbd> when the menu appears, a GRUB command prompt will appear:
 
 ![Prompt](/images/password/prompt.png)
 
@@ -134,7 +134,7 @@ You can now reboot:
 reboot
 ```
 
-### Change the encryption passphrase using the Terminal:
+### Change the encryption passphrase
 
 This can be done in the operating system or in the recovery mode/partition.
 
@@ -144,14 +144,8 @@ First list the drives and partitions with this command:
 lsblk
 ```
 
-Then to change the passphrase:
+Then, to change the passphrase:
 
 ```
 sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 ```
-
-### Change the encryption passphrase using Disks:
-
-Click on the drive that has the OS installed on it on the left side of the <u>Disks</u> application. Then click on the LUKS partition (where the root partition is) and then click on the gear icon under the 'Volumes' section.
-
-![GNOME Disks](/images/password/disks-change-passphrase.png)

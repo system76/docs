@@ -27,4 +27,3 @@ Use the grid icon on the bottom of the launcher to list all of the installed app
 ![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-search.png)
 
 Type in any word to search your computer for installed programs, files, and items in <u>Ubuntu Software</u>.
-

@@ -16,7 +16,7 @@ section: pop-ubuntu
 
 ---
 
-The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
+The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can match a look and feel with what you may be more comfortable with.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 
 To install a customization, simply head to [extensions.gnome.org](https://extensions.gnome.org) to install, remove, and configure currently installed customizations.  A web browser plugin is needed to interact with the site, and it will prompt for installation if needed.  Remember to refresh the page after the plugin is installed.
 
@@ -38,7 +38,7 @@ This extension allows for the desktop to be themed in further ways than default.
 
 ![dash-to-dock](/images/customize-gnome/dash-to-dock.png)
 
-This extension brings a launcher similar to the Unity launcher on the left side, or the macOS launcher on the bottom.  It is high customizable and allows for different locations, styles, sizes, and layouts.  This is included by default in Ubuntu 18.04 and can be added to Pop!_OS.
+This extension brings a launcher similar to the Unity launcher on the left side, or the macOS launcher on the bottom.  It is highly customizable and allows for different locations, styles, sizes, and layouts.  This is included by default in Ubuntu 18.04 and can be added to Pop!_OS.
 
 ---
 
@@ -58,7 +58,7 @@ This extension is a wallpaper slideshow for your desktop.  After choosing a fold
 
 ![window-list](/images/customize-gnome/window-list.png)
 
-This extension adds a window list to the bottom of the monitors.  This shows what windows are open, and allows for them to be minimized, maximized, and closed from the bar, similar to Microsoft Window's window list.
+This extension adds a window list to the bottom of the monitors.  This shows what windows are open, and allows for them to be minimized, maximized, and closed from the bar, similar to Microsoft Windows' window list.
 
 ---
 
@@ -68,7 +68,7 @@ This extension adds a window list to the bottom of the monitors.  This shows wha
 
 ![gnomenu](/images/customize-gnome/gnomenu.png)
 
-This extension adds a traditionally styled, full featured menu to GNOME.  This menu is similar to a traditional Window's Start Menu, and is highly customizable for how it looks and functions.
+This extension adds a traditionally styled, full-featured menu to GNOME.  This menu is similar to a traditional Windows Start Menu, and is highly customizable for how it looks and functions.
 
 ---
 
@@ -91,7 +91,7 @@ See [blogs.gnome.org](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-g
 
 ![internet-radio](/images/customize-gnome/internet-radio.png)
 
-Internet Radio adds a quick menu integration to play various radios stations found online.  A few default stations are included, and many more can be found at [www.internet-radio.com](https://www.internet-radio.com/).  Simply right-click on the `.m3u` file and choose 'Copy link address', and add that as a station to the Internet Radio icon at the top right of the menu bar.
+Internet Radio adds a quick menu integration to play various radio stations found online.  A few default stations are included, and many more can be found at [www.internet-radio.com](https://www.internet-radio.com/).  Simply right-click on the `.m3u` file and choose 'Copy link address', and add that as a station to the Internet Radio icon at the top right of the menu bar.
 
 ---
 
@@ -101,7 +101,7 @@ Internet Radio adds a quick menu integration to play various radios stations fou
 
 ![sound-output](/images/customize-gnome/sound-output.png)
 
-The Sound Output Chooser adds a quick change option to the system menu in the top right of the screen.  This allows for changing audio inputs and outputs and adjusting volume levels quickly.
+The Sound Output Device Chooser adds a quick change option to the system menu in the top right of the screen.  This allows for changing audio inputs and outputs and adjusting volume levels quickly.
 
 ---
 
@@ -111,7 +111,7 @@ The Sound Output Chooser adds a quick change option to the system menu in the to
 
 ![cpu-power](/images/customize-gnome/cpu-power.png)
 
-CPU power meter allows for quick switching of various CPU frequency settings.  This functionality is built into Pop!_OS by default, and this extension is only useful for Ubuntu.
+CPU power meter allows for quick switching of various CPU frequency settings.  This functionality is built into Pop!_OS by default, so this extension is only useful for Ubuntu.
 
 ---
 
@@ -139,4 +139,4 @@ The appfolders manager extension allows for the groups of icons present in the A
 
 ![lock keys](/images/customize-gnome/lock-keys.png)
 
-The lock keys extension notifies you when you press the Caps Lock or the Num Lock and let's you know at all times if you have either button active.
+The lock keys extension notifies you when you press the Caps Lock or the Num Lock keys and lets you know if you have either button active.

@@ -57,11 +57,11 @@ If your system is equipped with NVIDIA graphics, a recent update might be causin
 Always        | Maybe                | Never
 :-------------|:---------------------|:-----
 Oryx Pro      | Wild Dog Pro         | Lemur
-Serval WS     | Ratel                | Kudu
-Bonobo WS     | Gazelle              | Meerkat
-Leopard WS    | Thelio               | Galago Pro
-Silverback WS | Thelio Major         | Darter Pro
-              | Thelio Massive       |
+Adder WS      | Ratel                | Kudu
+Serval WS     | Gazelle              | Meerkat
+Bonobo WS     | Thelio               | Galago Pro
+Leopard WS    | Thelio Major         | Darter Pro
+Silverback WS | Thelio Massive       |
 
 Even if your system doesn't have NVIDIA graphics, there's no harm in uninstalling the driver. If it's not installed, nothing will happen. 
 
@@ -128,7 +128,7 @@ reboot
 
 ### Login Manager is not working correctly
 
-There could also be an issue with the Login Manager and both Pop!_OS and Ubuntu use GDM as their Login Managers. That package can reinstalled with these commands:
+There could also be an issue with the Login Manager. Both Pop!_OS and Ubuntu use GDM as their Login Managers. That package can reinstalled with these commands:
 
 #### Pop!_OS
 

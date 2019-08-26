@@ -46,7 +46,7 @@ sudo lvscan
 sudo vgchange -ay
 ```
 
-Take note as to what the volume group is called, suubstituting the correct info into this command.  Make sure that '-root' is on the end:
+Take note as to what the volume group is called, substituting the correct info into this command.  Make sure that '-root' is on the end:
 
 ```
 sudo mount /dev/mapper/data-root /mnt
@@ -86,7 +86,7 @@ If you do tap <kbd>ESC</kbd> when the menu appears, a GRUB command prompt will a
 
 If you get to the GRUB command prompt, type in `normal`, then press <kbd>ENTER</kbd> and immediately press <kbd>ESC</kbd>.
 
-Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**, followed by the 3rd option **Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)**.
+Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**, then, choose the 3rd option **Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)**.
 
 ![Grub2](/images/password/grub2.png)
 

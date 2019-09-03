@@ -26,7 +26,7 @@ sudo apt install tensorflow-cuda-latest
 This will install the following packages:
 
 ```
-system76-cuda-9.2 system76-cudnn-9.2 tensorflow-1.9-cuda-9.2
+system76-cuda-10.0 system76-cudnn-10.0 tensorflow-1.13-cuda-10.0
 ```
 
 When the package with '-latest' is installed then when a new version if packaged and released an update will be available. When the system is updated these packages will be updated as well.

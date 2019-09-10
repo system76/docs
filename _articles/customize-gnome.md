@@ -111,7 +111,7 @@ The Sound Output Chooser adds a quick change option to the system menu in the to
 
 ![cpu-power](/images/customize-gnome/cpu-power.png)
 
-CPU power meter allows for quick switching of various CPU frequency settings.  This functionality is built into Pop!_OS by default, and this extension is only useful for Ubuntu.
+CPU power meter allows for quick switching of various CPU frequency settings.
 
 ---
 

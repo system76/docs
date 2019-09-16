@@ -24,7 +24,7 @@ If you ordered a dedicated graphics card, plug your monitor into one of the hori
 
 ### Connect Keyboard and Mouse
 
-Keyboards can connect via USB ports or wirelessly. If your keyboard/mouse connects wirelessly, you should have a small USB device, called a receiver, that connects to the desktop and communicates with your keyboard and mouse via radio frequency. This should be included when you purchase a wireless keyboard or mouse. You can connect to the front USB ports or the back, depending on where your cords will extend/fit.
+Keyboards and mice can connect via USB ports or wirelessly. Bluetooth devices can only be paired and used after new user setup. If your keyboard/mouse connects wirelessly, you should have a small USB device, called a receiver, that connects to the desktop and communicates with your keyboard and mouse via radio frequency. This should be included when you purchase a wireless keyboard or mouse. 
 
 ### Connect Power Supply
 
@@ -32,11 +32,11 @@ The power supply is located on the bottom of the back of the desktop. Use the co
 
 ### Power On
 
-Press the circular button on the front of the machine after all components are plugged in. The power button is the largest button on the front of the machine.
+Press the circular button on the front of the machine after all components are plugged in. The power button is the largest button on the front of the machine. Check that the power supply is turned on at the power cable if the power button does not light up when pressed.
 
 ### Set Up User Account
 
-When you power on, you'll be prompted to create a user account, which is the administrative account (root). The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. In Pop!_OS, you can choose to encrypt your hard drive while setting up the user account. 
+When you power on, you'll be prompted to create a user account, which is the administrative account (root). The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. In Pop!_OS, you can choose to encrypt your hard drive while setting up the user account.
 
 You will be prompted for the encryption passphrase first if you select that option during the account creation process. After the encryption passphrase is set, you will proceed to set up a user account and be prompted to set the administrator password. If you encrypt your hard drive, you will be prompted for the encryption passphrase every time you power on. It's important to write this password down and keep it somewhere safe. If the password is lost or forgotten, you will lose access to the contents of the drive.
 

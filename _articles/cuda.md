@@ -39,7 +39,7 @@ sudo apt install system76-cuda-10.0
 For the respective cuDNN library:
 
 ```
-sudo apt install system76-cudnn-10.1
+sudo apt install system76-cudnn-10.0
 ```
 
 To install CUDA 9.2:

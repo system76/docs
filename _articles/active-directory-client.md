@@ -16,7 +16,7 @@ section: security-encryption
 
 #### Join an Active Directory Domain
 
-Pop!_OS and Ubuntu can be joined to an Active Directory domain, which allows users to log in with their network credentials.
+Pop!_OS and Ubuntu can be joined to an Active Directory domain, which allows users to log in with their existing network credentials.
 
 1. Install the necessary packages:
 

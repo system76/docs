@@ -34,7 +34,7 @@ sudo apt install plasma-applet-redshift-control
 ```
 This tool allows you to set your geolocation, so it will know when the sunrise and sunsets are, and turn on/off the redshift automatically. Color temperature is modificable through mouse scroll over the applet (doesn't work that well) or temperature limits in the config window and can be swithced on/off clicking in the applet. I'm using a 6000K temperature for day use and 2500K for night, but be my guess and try your own configuration. It didn't improve my spleep noticeably (never haver problems while sleeping... to wake up tough, :thinking\_face:), but overuse of screen affects people differently. Don't be affraid and try, can change your life.
 
-#### Power Management in KDE
+### Power Management in KDE
 Power Maranagement in KDE is great, with the ability to configure several power profiles either the computer is on AC, using the battery or when the battery is beyond certain low battery threshold (also configurable). From the applet, is possible to adjust the brightness of the display and the keyboard (didn't see that on Gnome). Yet, is NOT possible to switch between the discrete/built in graphics card NOR change the processor power profiles from KDE Power Management applet.
 
 But don't despair. This is linux workd and there is a solution for almost anything just a couple of commands away. System76 people did an excelent job providing the system76-power command line tool that allows to change CPU power profiles and switch between discrete/built in graphic cards, even remotely (I wish I knew two weeks ago). 
@@ -77,7 +77,7 @@ CPU: 50% - 100%, Turbo
 Backlight intel_backlight: 120000/120000 = 100%
 Keyboard Backlight system76::kbd_backlight: 0/255 = 0%
 ```
-Available power profiles for me are 'battery', 'balanced', and 'performance'. May be different for you but you can always ask system76-power tool to tell you what are the available modes with 
+Available power profiles for me are **battery**, **balanced**, and **performance**. May be different for you but you can always ask system76-power tool to tell you what are the available modes with 
 ```
 $ system76-power profile --help
 system76-power-profile 

@@ -39,7 +39,8 @@ Power Maranagement in KDE is great, with the ability to configure several power 
 
 But don't despair. This is linux workd and there is a solution for almost anything just a couple of commands away. System76 people did an excelent job providing the system76-power command line tool that allows to change CPU power profiles and switch between discrete/built in graphic cards, even remotely (I wish I knew two weeks ago). 
 
-I.e., to query which graphic card is on, you can type in Konsole or whatever you prefer terminal emulator:
+#### Querying, Switching graphic cards
+To query which graphic card is on, you can type in Konsole or whatever you prefer terminal emulator:
 ```
 $ system76-power graphics
 intel
@@ -59,16 +60,20 @@ So, to switch to nvidia graphic card:
 $ system76-power graphics nvidia
 setting graphics to nvidia
 ```
-You should take into account that exactly the same as in Gnome, a reboot is needed in order to the graphic card switch take effect. To go back to the built in graphic card you can run
+
+You should take into account that exactly the same as in Gnome, a reboot is needed in order to the graphic card switch take effect. To go back to the built in graphic card you can run:
 ```
 $ system76-power graphics intel
 setting graphics to intel
 ```
-At the contrary, CPU power profile changes take effect immediately. You can switch the power profile with
+
+At the contrary, CPU power profile changes take effect immediately. You can switch the power profile with:
 ```
 $ system76-power profile performance
 setting power profile to performance
 ```
+
+#### Changing CPU Power Profile
 You can query the power profile in use with:
 ```
 $ system76-power profile
@@ -77,7 +82,7 @@ CPU: 50% - 100%, Turbo
 Backlight intel_backlight: 120000/120000 = 100%
 Keyboard Backlight system76::kbd_backlight: 0/255 = 0%
 ```
-Available power profiles for me are **battery**, **balanced**, and **performance**. May be different for you but you can always ask system76-power tool to tell you what are the available modes with 
+Available power profiles for me are **battery**, **balanced**, and **performance**. May be different for you but you can always ask system76-power tool to tell you what are the available modes with:
 ```
 $ system76-power profile --help
 system76-power-profile 

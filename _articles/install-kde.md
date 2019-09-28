@@ -43,28 +43,65 @@ I.e., to query which graphic card is on, you can type in Konsole or whatever you
 ```
 $ system76-power graphics
 intel
-$ 
 ```
 To check if your system has an hybrid graphic card system, you can use the following command:
 ```
 $ system76-power graphics switchable
 switchable
-$ 
 ```
 And to check the status of the discrete graphic card (if any):
 ```
 $ system76-power graphics power
 off (discrete)
-$ 
 ```
 So, to switch to nvidia graphic card:
 ```
 $ system76-power graphics nvidia
 setting graphics to nvidia
-$ 
 ```
+You should take into account that exactly the same as in Gnome, a reboot is needed in order to the graphic card switch take effect. To go back to the built in graphic card you can run
+```
+$ system76-power graphics intel
+setting graphics to intel
+```
+At the contrary, CPU power profile changes take effect immediately. You can switch the power profile with
+```
+$ system76-power profile performance
+setting power profile to performance
+```
+You can query the power profile in use with:
+```
+$ system76-power profile
+Power Profile: Performance
+CPU: 50% - 100%, Turbo
+Backlight intel_backlight: 120000/120000 = 100%
+Keyboard Backlight system76::kbd_backlight: 0/255 = 0%
+```
+Available power profiles for me are 'battery', 'balanced', and 'performance'. May be different for you but you can always ask system76-power tool to tell you what are the available modes with 
+```
+$ system76-power profile --help
+system76-power-profile 
+Queries or sets the power profile.
 
+ - If an argument is not provided, the power profile will be queried
+ - Otherwise, that profile will be set, if it is a valid profile
+
+USAGE:
+    system76-power profile [profile]
+
+OPTIONS:
+    -h, --help    
+            Prints help information
+
+
+ARGS:
+    <profile>    
+            set the power profile [possible values: battery, balanced, performance]
+```
+This should solve all your power management needs. Sadly there is no specific version of the power applet for System76 laptops yet, but there is a version that support Intel Power profiles. I didn't try it though.
+
+Hope you find this tutorial helpful. Feel free to send me comments through github.
 
 ---
 
-This article was contributed by [kylerschin](https://github.com/kylerschin).
+This article was contributed by [Joaquin Bogado](https://github.com/jwackito).

@@ -23,6 +23,7 @@ section: accessories
 
 We have tested:
  - [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] (**)
+ - [Dell WD19TB Thunderbold Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [verified to work on Intel systems] (**)
 
 ### For Intel systems
 

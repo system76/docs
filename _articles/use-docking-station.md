@@ -19,10 +19,15 @@ section: accessories
  - Galago Pro (galp3-b, galp3-c)
  - Darter Pro (darp5)
 
-### Product and Model:
+### System76-tested docks:
 
-We have tested:
+We have tested the following docks:
  - [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] (**)
+ 
+### Community-tested docks:
+
+Community members have reported that the following docks work with our products:
+ - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [community-tested on an Intel system] (**)
 
 ### For Intel systems
 

@@ -27,7 +27,7 @@ We have tested the following docks:
 ### Community-tested docks:
 
 Community members have reported that the following docks work with our products:
- - [Dell WD19TB Thunderbold Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [community-tested on an Intel system] (**)
+ - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [community-tested on an Intel system] (**)
 
 ### For Intel systems
 

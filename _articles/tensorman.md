@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Use Tensoran
+title: Use Tensorman
 description: >
-  Instructions on using Tensoran
+  Using TensorMan to manage TensorFlow Containers
 keywords:
   - NVIDIA
   - CUDA
@@ -17,6 +17,39 @@ section: software-applications
 # Using Tensorman
 
 <u>Tensorman<u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 coming soon to Pop!_OS 18.04 LTS. 
+
+# TensorMan
+
+Packaging Tensorflow for Linux distributions is notoriously difficult, if not impossible. Every release of Tensorflow is accommodated by a myriad of possible build configurations, which requires building many variants of Tensorflow for each Tensorflow release. To make matters worse, each new version of Tensorflow will depend on a wide number of shared dependencies which may not be supported on older versions of a Linux distribution that is still actively supported by the distribution maintainers.
+
+To solve this problem, the Tensorflow project provides official Docker container builds, which allows Tensorflow to operate in an isolated environment that is contained from the rest of the system. This virtual environment can operate independent of the base system, allowing you to use any version of Tensorflow on any version of a Linux distribution that supports the Docker runtime.
+
+However, configuring and managing Docker containers for Tensorflow using the `docker` command line is currently tedious, and managing multiple versions for different projects is even moreso. To solve this problem for our users, we have developed `tensorman` as a convenient tool to manage the installation and execution of Tensorflow Docker containers. It condenses the command-line soup into a set of simple commands that are easy to memorize.
+
+# Comparison to Docker Command
+
+Take the following Docker invocation as an example:
+
+```
+docker run -u $UID:$UID -v $PWD:/project -w /project \
+    --runtime=nvidia --it --rm tensorflow/tensorflow:latest-gpu \
+    python ./script.py
+```
+
+This designates for the latest version of Tensorflow with GPU support to be used, mounting the working directory to `/project`, launching the container with the current user account, and and executing `script.py` with the Python binary in the container. With `tensorman`, we can achieve the same with:
+
+```
+tensorman run --gpu python -- ./script.py
+```
+
+Which defaults to the latest version, and whose version and tag variants can be set as defaults per-run, per-project, or user-wide.
+
+# Install TensorMan
+
+```
+sudo apt install tensorman
+```
+>>>>>>> b489346c3b6cad431f00e65f4f3af9ce2d81b043
 
 # Updating and installing containers
 

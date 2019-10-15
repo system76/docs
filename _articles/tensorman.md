@@ -22,7 +22,7 @@ To solve this problem, the Tensorflow project provides official Docker container
 
 However, configuring and managing Docker containers for Tensorflow using the `docker` command line is currently tedious, and managing multiple versions for different projects is even moreso. To solve this problem for our users, we have developed `tensorman` as a convenient tool to manage the installation and execution of Tensorflow Docker containers. It condenses the command-line soup into a set of simple commands that are easy to memorize.
 
-## Comparison to Docker Command
+# Comparison to Docker Command
 
 Take the following Docker invocation as an example:
 

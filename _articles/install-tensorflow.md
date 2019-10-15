@@ -13,6 +13,10 @@ section: software-applications
 
 ---
 
+# TensorMan
+
+This is a tool for managing different <u>TensorFlow</u> toolchains and will be available in Pop!_OS 19.10 at launch and will arrive in Pop!_OS 18.04 LTS a bit later. A few list of it's options and source can be found [here](/articles/tensorman/)
+
 ## Install on Pop!_OS
 
 ### Installing TensorFlow with CUDA

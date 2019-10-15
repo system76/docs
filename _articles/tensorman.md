@@ -18,7 +18,7 @@ section: software-applications
 
 <u>Tensorman<u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 coming soon to Pop!_OS 18.04 LTS. 
 
-# TensorMan
+# Tensorman
 
 Packaging Tensorflow for Linux distributions is notoriously difficult, if not impossible. Every release of Tensorflow is accommodated by a myriad of possible build configurations, which requires building many variants of Tensorflow for each Tensorflow release. To make matters worse, each new version of Tensorflow will depend on a wide number of shared dependencies which may not be supported on older versions of a Linux distribution that is still actively supported by the distribution maintainers.
 

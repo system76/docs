@@ -16,15 +16,15 @@ section: software-applications
 
 # Using Tensorman
 
-<u>Tensorman<u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 coming soon to Pop!_OS 18.04 LTS. 
+<u>Tensorman<u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 (and coming soon to Pop!_OS 18.04 LTS). 
 
 # Tensorman
 
-Packaging Tensorflow for Linux distributions is notoriously difficult, if not impossible. Every release of Tensorflow is accommodated by a myriad of possible build configurations, which requires building many variants of Tensorflow for each Tensorflow release. To make matters worse, each new version of Tensorflow will depend on a wide number of shared dependencies which may not be supported on older versions of a Linux distribution that is still actively supported by the distribution maintainers.
+Packaging Tensorflow for Linux distributions is notoriously difficult, if not impossible. Every release of Tensorflow is accommodated by a myriad of possible build configurations, which requires building many variants of Tensorflow for each Tensorflow release. To make matters worse, each new version of Tensorflow will depend on a wide number of shared dependencies. Dependencies which may not be supported on older versions of a Linux distribution, even if that distribution is actively supported by the distribution maintainers.
 
-To solve this problem, the Tensorflow project provides official Docker container builds, which allows Tensorflow to operate in an isolated environment that is contained from the rest of the system. This virtual environment can operate independent of the base system, allowing you to use any version of Tensorflow on any version of a Linux distribution that supports the Docker runtime.
+To solve this problem, the Tensorflow project provides official Docker container builds, which allow Tensorflow to operate in a contained environment that is isolated from the rest of the system. This virtual environment can operate independent of the base system, allowing you to use any version of Tensorflow on any version of a Linux distribution that supports the Docker runtime.
 
-However, configuring and managing Docker containers for Tensorflow using the `docker` command line is currently tedious, and managing multiple versions for different projects is even moreso. To solve this problem for our users, we have developed `tensorman` as a convenient tool to manage the installation and execution of Tensorflow Docker containers. It condenses the command-line soup into a set of simple commands that are easy to memorize.
+However, configuring and managing Docker containers for Tensorflow using the `docker` command line is currently tedious, and managing multiple versions for different projects is even more-so. To solve this problem for our users, we have developed `tensorman` as a convenient tool to manage the installation and execution of Tensorflow Docker containers. It condenses the command-line soup into a set of simple commands that are easy to memorize.
 
 # Comparison to Docker Command
 
@@ -49,7 +49,6 @@ Which defaults to the latest version, and whose version and tag variants can be 
 ```
 sudo apt install tensorman
 ```
->>>>>>> b489346c3b6cad431f00e65f4f3af9ce2d81b043
 
 # Updating and installing containers
 
@@ -117,7 +116,7 @@ tensorman show
 
 # Removing containers
 
-Having quite a few containers installed at the same time can use a lot of disk space but so if some need to be removed the `remove` command can be used:
+Having quite a few containers installed at the same time can use a lot of disk space. If some need to be removed, the `remove` command can be used:
 
 ```
 tensorman remove 1.14.0
@@ -127,7 +126,7 @@ tensorman remove 481cb7ea88260404
 
 # Listing installed containers
 
-To assist on finding the installed containers the `list` command can be used:
+To find installed containers the `list` command can be used:
 
 ```
 tensorman list

@@ -15,7 +15,7 @@ section: software-applications
 
 # TensorMan
 
-If your system is running Pop!_OS 19.10, see the see the [TensorMan documenation](/articles/tensorman/) for managing TensorFlow containers.
+If your system is running Pop!_OS 19.10, see the see the [TensorMan documenation](/articles/use-tensorman/) for managing TensorFlow containers.
 
 ## Install on Pop!_OS
 

@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Use TensorMan
+title: Use Tensoran
 description: >
-  Instructions on using TensorMan
+  Instructions on using Tensoran
 keywords:
   - NVIDIA
   - CUDA
@@ -14,22 +14,22 @@ section: software-applications
 
 ---
 
-# Using TensorMan
+# Using Tensorman
 
-<u>TensorMan<u> is a new tool for managing TensorFlow toolchains that is available for Pop!_OS 19.10 at launch and will arrive in Pop!_OS 18.04 LTS in time. 
+<u>Tensorman<u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 coming soon to Pop!_OS 18.04 LTS. 
 
-# Updating and installing Containers
+# Updating and installing containers
 
-The following commands can be used for installing either the latest version of a Container or a certain version:
+The following commands can be used for installing either the latest version of a container or a certain version:
 
 ```
 tensorman pull latest
 tensorman pull 1.14.0
 ```
 
-# Running commands in Containers
+# Running commands in containers
 
-The `run` command will allow to execute a command from within the Container like below:
+Commands are executed within the container using the `run` command. 
 
 ```
 # Default container version with Bash prompt
@@ -55,7 +55,7 @@ tensorman +1.14.0 run --python3 --gpu bash
 
 # Setting per-project
 
-TensorMan can also be used to change settings per-project. If the `tensorflow-toolchain` file is found in the working directory, the release tag and tag variants defined in that file will override the user-wide default version.
+Tensorman can also be used to change settings per-project. If the `tensorflow-toolchain` file is found in the working directory, the release tag and tag variants defined in that file will override the user-wide default version.
 
 ```
 # cat tensor-toolchain
@@ -74,17 +74,17 @@ tensorman default nightly
 
 <small>\*By default, <u>tensorman</u> will use the latest as the default per-user version tag.</small>
 
-# Listing active Container version
+# Listing active container version
 
-If the active Containers from the current working directory need to be listed the `show` command can be used:
+If the active containers from the current working directory need to be listed the `show` command can be used:
 
 ```
 tensorman show
 ```
 
-# Removing Containers
+# Removing containers
 
-Having quite a few Containers installed at the same time can use a lot of disk space but so if some need to be removed the `remove` command can be used:
+Having quite a few containers installed at the same time can use a lot of disk space but so if some need to be removed the `remove` command can be used:
 
 ```
 tensorman remove 1.14.0
@@ -92,9 +92,9 @@ tensorman remove latest
 tensorman remove 481cb7ea88260404
 ```
 
-# Listing installed Containers
+# Listing installed containers
 
-To assist on finding the installed Containers the `list` command can be used:
+To assist on finding the installed containers the `list` command can be used:
 
 ```
 tensorman list

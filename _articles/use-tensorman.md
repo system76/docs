@@ -16,7 +16,11 @@ section: software-applications
 
 # Using Tensorman
 
-<u>Tensorman</u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 (and coming soon to Pop!_OS 18.04 LTS). 
+<u>Tensorman</u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 (and coming soon to Pop!_OS 18.04 LTS). It can be installed with this command:
+
+```
+sudo apt install tensorman
+```
 
 For NVIDIA CUDA support the following package must be installed:
 

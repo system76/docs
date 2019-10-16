@@ -8,6 +8,7 @@ keywords:
   - Pop!_OS 18.04
   - Pop!_OS 18.10
   - Pop!_OS 19.04
+  - Pop!_OS 19.10
   - LTS
   - Non-LTS
   - Upgrade
@@ -89,6 +90,17 @@ If the upgrade completes successfully, restart your computer for the changes to 
 
 ### Upgrading older releases
 
+Pop!_OS 18.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!_OS
+
+```
+sudo apt update
+sudo apt full-upgrade
+do-release-upgrade
+sudo apt install pop-desktop
+```
+
+_____________________________
+
 Pop!_OS 17.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!_OS
 
 ```
@@ -98,15 +110,6 @@ sudo apt clean
 sudo apt update -m
 sudo apt full-upgrade
 do-release-upgrade
-```
-
-Pop!_OS 18.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!_OS
-
-```
-sudo apt update
-sudo apt full-upgrade
-do-release-upgrade
-sudo apt install pop-desktop
 ```
 
 ## Troubleshooting

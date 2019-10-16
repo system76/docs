@@ -9,14 +9,28 @@ keywords:
   - TensorFlow
   - TensorMan
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 section: software-applications
 
 ---
 
 # Using Tensorman
 
-<u>Tensorman<u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 (and coming soon to Pop!_OS 18.04 LTS). 
+<u>Tensorman</u> is a new tool for managing TensorFlow toolchains in Pop!_OS 19.10 (and coming soon to Pop!_OS 18.04 LTS). 
+
+For NVIDIA CUDA support the following package must be installed:
+
+```
+sudo apt install nvidia-container-runtime
+```
+
+The user account that is being used with Tensorman must be added to the `docker` group if that hasn't been done already:
+
+```
+sudo usermod -aG docker $USER
+```
+
+If Docker was just installed then a reboot will be needed before Tensorman can be used.
 
 # Tensorman
 
@@ -132,6 +146,6 @@ To find installed containers the `list` command can be used:
 tensorman list
 ```
 
-You can see the source code for the application [here](https://github.com/pop-os/tensorman)
+To see the source code and suggest features visit the project on [GitHub](https://github.com/pop-os/tensorman)
 
 

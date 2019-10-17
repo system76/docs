@@ -30,7 +30,7 @@ On our second generation Oryx Pro (oryp2), the System76 driver is required for t
 
 #### Recent Upgrade
 
-If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [How to Restore GRUB Bootloader](/articles/grub)
+If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [Repair the Bootloader](/articles/bootloader)
 
 ---
 

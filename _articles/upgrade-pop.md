@@ -24,7 +24,9 @@ section: pop-ubuntu
 
 ### Upgrading to Pop!\_OS 19.10
 
-<u>NOTE: Users running Pop!\_OS 18.04 LTS may also upgrade to Pop!\_OS 19.10 (if they wish) starting in November 2019</u>
+```
+NOTE: Users running Pop!\_OS 18.04 LTS may also upgrade to Pop!\_OS 19.10 (if they wish) starting in November 2019
+```
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through Terminal.
 Once the updates are applied, a notification will appear at the top of your screen saying that an update is available.

@@ -33,18 +33,25 @@ Once the updates are applied, a notification will appear at the top of your scre
 
 Clicking on the notification takes you to the system's "About" page, where you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 19.10 is available with a blue "Download" button.
 
+[Image Name](/images/upgrade-pop/image.png)
+
 Click the button and the download will begin.
+
+[Image Name](/images/upgrade-pop/image.png)
 
 Once the download is complete you will receive a second notification saying the upgrade is ready.
 
 Click on the notification and your computer will restart to the upgrade screen.
+
+[Image Name](/images/upgrade-pop/image.png)
+
+[Image Name](/images/upgrade-pop/image.png)
 
 After the upgrade is finished you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 19.10!
 
 ### Backup Your Files
 
 The upgrade process will leave your files intact, but it's always a good idea to play it safe, and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
-
 
 ### Create Installation USB (Optional)
 

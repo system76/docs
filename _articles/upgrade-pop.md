@@ -37,7 +37,7 @@ Clicking on the notification takes you to the system's "About" page, where you w
 
 Click the button and the download will begin.
 
-![Image Name](/images/upgrade-pop/image.png)
+![Image Name](/images/upgrade-pop/about-download-complete.png)
 
 Once the download is complete you will receive a second notification saying the upgrade is ready.
 

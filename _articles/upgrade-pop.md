@@ -29,7 +29,7 @@ NOTE: Users running Pop!_OS 18.04 LTS may also upgrade to Pop!_OS 19.10 (if they
 ```
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through Terminal.
-Once the updates are applied, a notification will appear at the top of your screen saying that an update is available.
+Once the updates are applied, a notification will appear at the top of your screen saying that an upgrade is available.
 
 Clicking on the notification takes you to the system's "About" page, where you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 19.10 is available with a blue "Download" button.
 

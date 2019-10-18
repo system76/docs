@@ -42,10 +42,6 @@ Once the download is complete you will receive a second notification saying the 
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-![Image Name](/images/upgrade-pop/image.png)
-
-![Image Name](/images/upgrade-pop/image.png)
-
 After the upgrade is finished you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 19.10!
 
 ### Backup Your Files

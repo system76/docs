@@ -122,7 +122,7 @@ tensorman default latest gpu python3
 tensorman default nightly
 ```
 
-<small>\*By default, <u>tensorman</u> will use the latest as the default per-user version tag.</small>
+<small>\*By default, <u>tensorman</u> will use the latest version as the default per-user version tag.</small>
 
 # Listing active container version
 

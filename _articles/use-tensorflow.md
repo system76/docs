@@ -13,6 +13,10 @@ section: software-applications
 
 ---
 
+# Tensorman
+
+If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/articles/use-tensorman/) for managing TensorFlow containers.
+
 # Using Tensorflow
 
 The packaging of TensorFlow for Pop!_OS contains libraries for the Python, C and C++ APIs. Other languages, such as Rust, bind to the C API for their support.

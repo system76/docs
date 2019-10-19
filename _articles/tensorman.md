@@ -34,7 +34,7 @@ The user account working with Tensorman must be added to the `docker` group if t
 sudo usermod -aG docker $USER
 ```
 
-If Docker was just installed, log out and back in before using Tensorman.
+If Docker was just installed, then a reboot will be needed before using Tensorman.
 
 # Tensorman
 

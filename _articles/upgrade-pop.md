@@ -55,7 +55,7 @@ Some users may prefer to have Pop!\_OS installation media handy before starting 
 
 ### Upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10
 
-By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. However, in November (2019) it will be possible for users who wish to upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10 through standard GUI method on the "About" page.
+By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. However, in November (2019) it will be possible for users who wish to upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10 through the standard GUI method on the "About" page.
 
 ### Advanced Install (Terminal)
 

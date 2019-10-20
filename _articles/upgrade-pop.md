@@ -22,15 +22,21 @@ section: pop-ubuntu
 
 ---
 
-### Upgrading to Pop!\_OS 19.10
+### Upgrading to Pop!\_OS 19.10 from 19.04
 
-> NOTE: Users running Pop!_OS 18.04 LTS may also upgrade to Pop!_OS 19.10 (if they wish)
+# > NOTE: Users running Pop!_OS 18.04 LTS may also upgrade to Pop!_OS 19.10 (if they wish)
+# This will be implemented sometime in November.
 
+First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
-First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through Terminal.
-Once the updates are applied, a notification will appear at the top of your screen saying that an upgrade is available.
+```
+sudo apt update
+sudo apt full-upgrade
+```
 
-Clicking on the notification takes you to the system's "About" page, where you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 19.10 is available with a "Download" button.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> Details -> About.
+
+On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 19.10 is available with a "Download" button.
 
 ![Image Name](/images/upgrade-pop/about-download-button.png)
 
@@ -38,15 +44,15 @@ Click the button and the download will begin.
 
 ![Image Name](/images/upgrade-pop/about-download-complete.png)
 
-Once the download is complete you will receive a second notification saying the upgrade is ready.
+Once the download is complete, you will receive a second notification saying the upgrade is ready.
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 19.10!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 19.10!
 
 ### Backup Your Files
 
-The upgrade process will leave your files intact, but it's always a good idea to play it safe, and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
 ### Create Installation USB (Optional)
 
@@ -55,7 +61,7 @@ Some users may prefer to have Pop!\_OS installation media handy before starting 
 
 ### Upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10
 
-By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. However, in November (2019) it will be possible for users who wish to upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10 through the standard GUI method on the "About" page.
+By default, LTS releases are set to only upgrade to another LTS, such as 16.04 LTS to 18.04 LTS. However, in November (2019), it will be possible for users who wish to upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10 through the standard GUI method on the "About" page.
 
 ### Advanced Install (Terminal)
 
@@ -92,7 +98,7 @@ The last prompt will ask you to restart your computer to complete the upgrade. M
 
 ---
 
-If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
+If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
 
 
 ### Upgrading older releases

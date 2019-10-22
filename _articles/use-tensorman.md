@@ -28,7 +28,7 @@ For NVIDIA CUDA support the following package must be installed:
 sudo apt install nvidia-container-runtime
 ```
 
-The user account that is being used with Tensorman must be added to the `docker` group if that hasn't been done already:
+The user account working with Tensorman must be added to the `docker` group if that hasn't been done already:
 
 ```
 sudo usermod -aG docker $USER
@@ -149,6 +149,7 @@ To find installed containers the `list` command can be used:
 ```
 tensorman list
 ```
+
 # Pull requests welcome!
 
 To see the source code and suggest features visit the project on [GitHub](https://github.com/pop-os/tensorman)

@@ -16,7 +16,7 @@ section: software-applications
 
 ---
 
-Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB can break, and it may not let you boot into your computer to fix the problem.
+Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB/systemd-boot can break, and it may not let you boot into your computer to fix the problem.
 
 #### Important Note
 
@@ -165,6 +165,14 @@ sudo bootctl --path=/mnt/boot/efi install
 
 To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
+#### For NVMe Drives:
+```
+sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
+sudo lvscan
+sudo vgchange -ay
+```
+
+#### For SATA Drives:
 ```
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
@@ -204,6 +212,7 @@ After this, reboot your computer, removing the disk when prompted, and the compu
 
 ## Troubleshooting
 
+### chroot
 If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system.
 
 For example, the error is most frequently seen when trying to `chroot` to a 64-bit system (amd64) from a 32-bit Install CD (x86).
@@ -211,3 +220,10 @@ For example, the error is most frequently seen when trying to `chroot` to a 64-b
 The solution is to use an Install CD which is using the same architecture as the installed system (32-bit Install CD for 32-bit targets / 64-bit Install CD for 64-bit targets).
 
 Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk) correctly in the commands above.
+
+### systemd-boot fails to start the OS
+If the system boots into a `BusyBox` environment, try `exit` to show potential failure causes. 
+
+A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates an issue with the loader entry in `systemd-boot`.
+
+Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct UUID for the disk. For an encrypted setup, the line `options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash` should match the UUID reported by `lsblk -f` for the `data-root` partition on a standard installation with LUKS. 

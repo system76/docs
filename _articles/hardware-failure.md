@@ -19,7 +19,7 @@ section: hardware-drivers
 
 If a computer won't turn on, this could be any number of component failures.  The only way to know for sure which one has failed, is to test the system without anything attached.  We need to disconnect anything that can be removed.  This includes: the hard drives, Wifi card, RAM, and video cards (desktop, with on-board graphics).
 
-The only thing the system needs to boot is one stick of RAM in slot 0. Try different RAM sticks in slot 0 if it doesn't boot (to test for failed RAM).  Also, remove the CMOS battery and disconnect the main battery (laptops), and any AC input, for one minute.  We don't recommend removing the CPU as a test.
+The only thing the system needs to boot is one stick of RAM in slot 0. Try different RAM sticks in slot 0 if it doesn't boot (to test for failed RAM).  Also, remove the CMOS battery and disconnect the main battery (laptops), and any AC input, for one minute.  We don't recommend removing the CPU as a test. The following key combo may also be handled at boot time to reset the CMOS as well <kbd>Fn</kbd>+<kbd>D</kbd>. 
 
 If the system will boot with everything removed, then add components back one by one and see which one is causing the problem.  If everything works fine after removing and replacing all of the hardware, a loose connection is most likely the culprit.  If the system won't boot with everything disconnected, then the motherboard has likely failed, and needs replacing.
 

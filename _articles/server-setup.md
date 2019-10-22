@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Server - Configure Your System76 Server
+title: Configure Your System76 Server
 description: >
   Instructions on setting up a System76 server, including initial login credentials.
 keywords:
@@ -27,10 +27,14 @@ Network Address (eth1)      | Unconfigured
 
 Connect your server to a monitor to determine the IP addresses assigned to your server. Afterwards you can configure and manage your server from any other computer on your network.
 
-Run the following command to determine the server's IP address:
+The following commands will determine the server's IP address:
 
 ```
 ifconfig
+```
+
+```
+ip link show
 ```
 
 In the directions below replace `IPADDRESS` with the server's IP address.
@@ -79,7 +83,7 @@ sudo dpkg-reconfigure tzdata
 
 ### Configure Network Interface for Ubuntu Server 18.04
 
-Ubuntu Server 18.04 is shipping with netplan so system file will need to be edited for networking. With this command we will edit the file:
+Ubuntu Server 18.04 is shipping with netplan, so the system file will need to be edited for networking. With this command, we will edit the file:
 
 ```
 sudo nano /etc/netplan/50-cloud-int.yaml
@@ -88,7 +92,7 @@ sudo nano /etc/netplan/50-cloud-int.yaml
 This command will list the network interfaces:
 
 ```
-ifconfig
+ip link show
 ```
 
 This text will need to be edited depending on what the system will label the network interfaces.

@@ -134,7 +134,7 @@ You can now reboot:
 reboot
 ```
 
-### Change the encryption passphrase
+### Change the encryption passphrase using the Terminal:
 
 This can be done in the operating system or in the recovery mode/partition.
 
@@ -149,3 +149,9 @@ Then to change the passphrase:
 ```
 sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 ```
+
+### Change the encryption passphrase using Disks:
+
+Click on the drive that has the OS installed on it on the left side of the <u>Disks</u> application. Then click on the LUKS partition (where the root partition is) and then click on the gear icon under the 'Volumes' section.
+
+![GNOME Disks](/images/password/disks-change-passphrase.png)

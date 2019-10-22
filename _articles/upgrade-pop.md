@@ -8,6 +8,7 @@ keywords:
   - Pop!_OS 18.04
   - Pop!_OS 18.10
   - Pop!_OS 19.04
+  - Pop!_OS 19.10
   - LTS
   - Non-LTS
   - Upgrade
@@ -21,21 +22,49 @@ section: pop-ubuntu
 
 ---
 
-Pop!_OS 18.10 was released in October, 2018. This article explains how to upgrade from Pop!_OS 18.04 to Pop!_OS 18.10.
+### Upgrading to Pop!\_OS 19.10 from 19.04
 
-Pop!_OS 19.04 was released in April, 2019. This article explains how to upgrade from Pop!_OS 18.10 to Pop!_OS 19.04.
+ > NOTE: Users running Pop!_OS 18.04 LTS may also upgrade to Pop!_OS 19.10 (if they wish.) This functionality is not ready yet, but is expected sometime in November.
 
-### Create Installation USB
+First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
-First, we recommend having Pop!_OS installation media handy before starting any upgrades in case you need to reinstall the operating system. Instructions on creating a USB with Pop!_OS are located in our [live disk](/articles/live-disk/) article.
+```
+sudo apt update
+sudo apt full-upgrade
+```
+
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> Details -> About.
+
+On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 19.10 is available with a "Download" button.
+
+![Image Name](/images/upgrade-pop/about-download-button.png)
+
+Click the button and the download will begin.
+
+![Image Name](/images/upgrade-pop/about-download-complete.png)
+
+Once the download is complete, you will receive a second notification saying the upgrade is ready.
+
+Click on the notification and your computer will restart to the upgrade screen.
+
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 19.10!
 
 ### Backup Your Files
 
-Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe! Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
-### Upgrade from Pop!_OS 18.04 to Pop!_OS 18.10
+### Create Installation USB (Optional)
 
-By default LTS releases are set to only upgrade to another LTS such as 16.04 LTS to 18.04 LTS. To change this, first upgrade all current packages with this these commands:
+Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
+
+
+### Upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10
+
+By default, LTS releases are set to only upgrade to another LTS, such as 16.04 LTS to 18.04 LTS. However, in November (2019), it will be possible for users who wish to upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10 through the standard GUI method on the "About" page.
+
+### Advanced Install (Terminal)
+
+Users wishing to use the Terminal to apply the upgrade may do so by running the following commands:
 
 ```
 sudo apt update
@@ -46,28 +75,12 @@ You'll be prompted to enter your system password, but when you type it, the lett
 sudo apt full-upgrade
 ```
 
-Before beginning the upgrade, it is important to ensure that the `pop-desktop` metapackage is installed. If it is not installed, the ability to boot into an encrypted install may be lost. The `pop-desktop` metapackage includes `cryptsetup` as a dependency, which is included in the initramfs for decrypting LUKS partitions at boot.
+Once any updates are applied, initiate the upgrade with this command:
 
 ```
-sudo apt install pop-desktop
+pop-upgrade release upgrade
 ```
 
-If you receive a notice that you have an unmet dependency for `sessioninstaller`, you'll need to install that before you can successfully install the `pop-desktop` package.
-
-```
-sudo apt install sessioninstaller
-```
-
-Now to change from LTS to Non-LTS release with this command:
-
-```
-sudo sed -i s/Prompt=lts/Prompt=normal/ /etc/update-manager/release-upgrades
-```
-Initiate the upgrade with this command:
-
-```
-do-release-upgrade
-```
 Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.
 
 If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue.
@@ -84,12 +97,27 @@ The last prompt will ask you to restart your computer to complete the upgrade. M
 
 ---
 
-If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
+If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
 
 
 ### Upgrading older releases
 
-Pop!_OS 17.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!_OS
+Pop!\_OS 18.10 was released in October, 2018. This section explains how to upgrade from Pop!\_OS 18.04 to Pop!\_OS 18.10.
+
+Pop!\_OS 18.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!\_OS
+
+```
+sudo apt update
+sudo apt full-upgrade
+do-release-upgrade
+sudo apt install pop-desktop
+```
+
+_____________________________
+
+Pop!\_OS 19.04 was released in April, 2019. This section explains how to upgrade from Pop!\_OS 18.10 to Pop!\_OS 19.04.
+
+Pop!\_OS 17.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!\_OS
 
 ```
 sudo sed -e 's/us.archive./old-releases./' /etc/apt/sources.list > ~/sources.list
@@ -97,7 +125,7 @@ sudo mv ~/sources.list /etc/apt/sources.list
 sudo apt clean
 sudo apt update -m
 sudo apt full-upgrade
-sudo do-release-upgrade
+do-release-upgrade
 ```
 
 ## Troubleshooting

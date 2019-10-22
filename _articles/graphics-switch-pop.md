@@ -15,7 +15,7 @@ section: pop-ubuntu
 
 ---
 
-For longer battery life and a quieter laptop use Intel graphics and switch to NVIDIA graphics when you need additional performance or to use external displays on certain laptops. _External display ports are connecting the the NVIDIA GPU on System76 laptops_.
+For longer battery life and a quieter laptop, use Intel graphics and switch to NVIDIA graphics when you need additional performance or to use external displays on certain laptops. _On System76 laptops, external display ports connect to the NVIDIA GPU_.
 
 ### Hardware
 
@@ -23,7 +23,7 @@ Currently the only laptop that supports this feature is the Oryx Pro (oryp4 and 
 
 ### Software
 
-Pop!_OS by System76 includes the system76-power package that includes the ability to switch between NVIDIA and Intel graphics.
+Pop!_OS by System76 includes the system76-power package which includes the ability to switch between NVIDIA and Intel graphics.
 
 ### Switch graphics
 
@@ -47,19 +47,19 @@ If you are not on the GNOME Desktop Environment there is a command line option t
 system76-power help
 ```
 
-For seeing which Graphics the system is using:
+To see which Graphics the system is using:
 
 ```
 sudo system76-power graphics
 ```
 
-For switching to NVIDIA Graphics:
+To switch to NVIDIA Graphics:
 
 ```
 sudo system76-power graphics nvidia
 ```
 
-For switching to Intel Graphics:
+To switch to Intel Graphics:
 
 ```
 sudo system76-power graphics intel

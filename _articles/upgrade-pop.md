@@ -78,7 +78,7 @@ sudo apt full-upgrade
 Once any updates are applied, initiate the upgrade with this command:
 
 ```
-pop-upgrade release upgrade
+pop-upgrade release upgrade systemd
 ```
 
 Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.

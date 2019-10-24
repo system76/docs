@@ -44,11 +44,11 @@ Mate is an intuitive and attractive desktop using traditional concepts. MATE is 
 MATE is installed with:
 
 ```
-sudo apt install mate-desktop-environment-extras mate-dock-applet lightdm
+sudo apt install mate-desktop-environment  
 ```
-
+And optionally
 ```
-sudo dpkg-reconfigure lightdm
+sudo apt install mate-desktop-environment-extras
 ```
 
 ---
@@ -85,14 +85,21 @@ sudo apt install ubuntu-gnome-desktop
 
 ### KDE
 
-The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows' desktop. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
+The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows' desktop. It is highly customizable and looks clean.
 
 ![KDE](/images/desktop-environment/KDE.png)
 
-KDE is installed with:
-
+A minimal KDE is installed with:
 ```
-sudo apt install kubuntu-desktop
+sudo apt install kde-plasma-desktop
+```
+A standard KDE desktop is installed with:
+```
+sudo apt install kde-standard
+```
+For a complete set of KDE applications and Plasma desktop
+```
+sudo apt install kde-full
 ```
 
 KDE may have a packaging conflict which will cause the installation to fail.  If so, two packages need removed to complete the installation.  After an error, please run these commands to remove the packages and finish the installation:
@@ -100,6 +107,20 @@ KDE may have a packaging conflict which will cause the installation to fail.  If
 ```
 sudo dpkg --purge unity-scope-gdrive account-plugin-google
 sudo apt install -f
+```
+---
+
+### UKUI
+
+UKUI is a lightweight desktop environment based on pluggable framework for Linux and other Unix-like Distributions. It provides a simpler and more enjoyable experience for browsing, searching, and managing your computer.It is developed using GTK and Qt.
+
+UKUI can be installed with:
+```
+sudo apt install ukui-desktop-environment
+```
+For additional optional components:
+```
+sudo apt install ukui-desktop-environment-extras
 ```
 
 ---
@@ -113,9 +134,13 @@ XFCE embodies the traditional UNIX philosophy of modularity and re-usability. Th
 Xfce can be installed with:
 
 ```
-sudo apt install xubuntu-desktop
+sudo apt install xfce4
 ```
+For additional options would be to installed
 
+```
+sudo apt install xfce4-goodies
+```
 ---
 
 ### LXDE
@@ -127,22 +152,20 @@ The Lightweight X11 Desktop Environment is a fast and energy-saving desktop envi
 LXDE can be installed with:
 
 ```
-sudo apt install lubuntu-desktop
+sudo apt install lxde
 ```
-
 ---
 
-### Edubuntu
+### LXQt
 
-Edubuntu has been developed in collaboration with teachers and technologists in several countries and is aimed at users aged 6 to 18. It is designed for easy installation and ongoing system maintenance. It uses GNOME for its desktop manager.
+LXQt is a lightweight Qt desktop environment.It will not get in your way. It will not hang or slow down your system. It is focused on being a classic desktop with a modern look and feel.
 
-Edubuntu can be installed with:
-
+LXQt can be installed with:
 ```
-sudo apt install edubuntu-desktop
+sudo apt install lxqt
 ```
-
 ---
+
 
 ### Resource Use
 
@@ -328,7 +351,7 @@ sudo apt autoremove
 For example, to remove KDE:
 
 ```
-sudo apt purge kubuntu-desktop
+sudo apt purge kde-*
 sudo apt autoremove
 ```
 

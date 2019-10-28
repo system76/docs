@@ -2,7 +2,7 @@
 layout: article
 title: Switching Graphics in Ubuntu
 description: >
-   How to switch between Intel and NVIDIA graphics
+   How to switch between Intel, NVIDIA, and Hybrid graphics
 keywords:
   - System76
   - Ubuntu
@@ -15,17 +15,41 @@ section: pop-ubuntu
 
 ---
 
-For longer battery life and a quieter laptop use Intel graphics and switch to NVIDIA graphics when you need additional performance or to use external displays on certain laptops. _External display ports are connecting the the NVIDIA GPU on System76 laptops_.
+The following laptops have switchable graphics:
 
-### Hardware
+- Oryx Pro (oryp4, oryp4-b, oryp5)
+- Gazelle (gaze14)
+- Adder Workstation (addw1)
 
-Currently the only laptop that supports this feature is the Oryx Pro (oryp4 and oryp5).
+### Graphics modes
 
-### Software
+#### Intel
 
-Pop!_OS by System76 includes the system76-power package that includes the ability to switch between NVIDIA and Intel graphics.
+Intel graphics uses in the integrated Intel GPU only and turns off the NVIDIA
+GPU. This mode uses less power, leading to a longer battery life and less fan
+noise.
 
-You'll only need to install this software if you did a fresh install of Ubuntu as our installations will include these packages by default. You can do this with the following commands:
+#### NVIDIA
+
+NVIDIA graphics uses the discrete NVIDIA GPU only. This provides a better
+graphical experience, but reduces battery life. External display ports on
+System76 laptops are connected to the NVIDIA GPU. (Some models, such as the
+Gazelle, may also have external ports connected to the integrated GPU.)
+
+#### Hybrid
+
+Hybrid graphics uses both the integrated Intel GPU and the discrete NVIDIA GPU.
+Applications will use the integrated GPU unless explicitly requested to use the
+discrete GPU.
+
+### Switch graphics
+
+Pop!_OS by System76 includes the system76-power package that includes the
+ability to switch between Intel, NVIDIA, and hybrid graphics modes.
+
+You'll only need to install this software if you did a fresh install of Ubuntu
+as our installations will include these packages by default. You can do this
+with the following commands:
 
 ```
 sudo apt-add-repository ppa:system76-dev/stable
@@ -40,23 +64,21 @@ gnome-shell-extension-prefs
 
 Now enable the System76 Power extension with the toggle to the right.
 
-### Switch graphics
+#### From GNOME Desktop
 
-Click the system menu in the top right corner of your screen to access graphics switching.
+Click the system menu in the top right corner of your screen to access graphics
+switching.
 
 ![Graphics](/images/graphics-switch-ubuntu/system-menu.png)
 
-#### Selecting NVIDIA or Intel
+Click on NVIDIA, Intel, or Hybrid, depending on your use case.
 
-Select either NVIDIA or Intel depending on which GPU you would like to use.
+Once you select a mode you will be prompted to reboot.
 
-#### Rebooting
+#### From the command line
 
-Once you select either NVIDIA or Intel you will be prompted to reboot.
-
-#### For other Desktop Environments
-
-If you are not on the GNOME Desktop Environment there is a command line option to use system76-power. You can see these options with this command:
+If you are not on the GNOME Desktop Environment there is a command line option
+to use system76-power. You can see these options with this command:
 
 ```
 system76-power help
@@ -78,6 +100,12 @@ For switching to Intel Graphics:
 
 ```
 sudo system76-power graphics intel
+```
+
+For switching to Hybrid Graphics:
+
+```
+sudo system76-power graphics hybrid
 ```
 
 All of the packages have their source on Github at the following links:

@@ -57,7 +57,7 @@ rfkill list
 sudo rfkill unblock bluetooth
 ```
 
-If both Bluetooth and Wireless are soft blocked or if the Wireless is soft blocked this command can be ran to unblock:
+If both Bluetooth and Wireless are soft blocked or if the Wireless is soft blocked run this command to unblock:
 
 ```
 sudo rfkill unblock all

@@ -111,11 +111,40 @@ tensorman =custom-image run --gpu bash
 
 # Setting per-project
 
-Tensorman can also be used to change settings per-project. If the `tensorflow-toolchain` file is found in the working directory, the release tag and tag variants defined in that file will override the user-wide default version.
+There are two files that can be used for configuring Tensorman locally: `tensorflow-toolchain`, and `Tensorman.toml`. These files will be automatically detected if they can be found in a parent directory.
+
+## tensorflow-toolchain
+
+This file overrides the tensorflow image, defined either in `Tensorman.toml`, or the user-wide configuration file.
 
 ```
-# cat tensor-toolchain
 1.14.0 gpu python3
+```
+
+Or specifying a custom image:
+
+```
+=custom-image gpu
+```
+
+## Tensorman.toml
+
+This file supports additional configuration parameters, with a user-wide configuration located at `~/.config/tensorman/config.toml`, and a project-wide location at `Tensorman.toml`. One of the reasons in which you may want to use this file is to declare some additional Docker flags, with the `docker_flags` key.
+
+Using a default tensorflow image:
+
+```toml
+docker_flags = [ '-p', '8080:8080' ]
+tag = '2.0.0'
+variants = ['gpu', 'python3']
+```
+
+Defining a custom image:
+
+```toml
+docker_flags = [ '-p', '8080:8080' ]
+image = 'custom-image'
+variants = ['gpu']
 ```
 
 # Setting per-user

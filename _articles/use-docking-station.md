@@ -28,7 +28,7 @@ We have tested the following docks:
 
 Community members have reported that the following docks work with our products:
  - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [Community-tested on an Intel system] (**)
- - [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [Community-tested on a galp4 Galago Pro (2019 model). Drives two 27" 1920x1080 DisplayPort monitors, charging, ethernet, and 3 USB connections simultaneously through the single Thunderbolt port on the Galago Pro.] (**)
+ - [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [Community-tested on a galp4 Galago Pro (2019 model). Drives two 27" 1920x1080 DisplayPort monitors, charging, ethernet, and 3 USB connections simultaneously through the single Thunderbolt port on the Galago Pro.]
 
 ### For Intel systems
 

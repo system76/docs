@@ -17,7 +17,7 @@ section: repairs-returns
 
 | Laptops      | Service Manual |
 | -------------| ---------------|
-| Darter Pro   | [darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | 
+| Darter Pro   | [darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | [darp6](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp6-service-manual.pdf)
 | Galago Pro   | [galp2](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf), [galp3](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf) | 
 | Oryx Pro     | [oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf)  |
 | Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) | 

@@ -19,3 +19,19 @@ To enter BIOS for recent System76 laptops, hold the <kbd>F2</kbd> key immediatel
 To enter BIOS for desktops (besides the Meerkat), hold down the <kbd>DEL</kbd> key.  To show the boot menu, hold the <kbd>F8</kbd> or <kbd>F12</kbd> key. 
 
 For the Meerkat, hold the <kbd>F2</kbd> key for the BIOS, or the <kbd>F10</kbd> key for the boot menu.
+
+The newest Darter Pro (darp6) and Galago Pro (galp4) ship with Open Firmware with Coreboot so their menu system looks different then our other laptops. The BIOS can be accessed by rebooting the laptop and tapping the <kbd>ESC</kbd> key. The following screenshots show what the menus look like.
+
+### Boot Default
+
+![Main menu](/images/boot-menu/homepage.png)
+
+### One Time Boot
+
+![One Time Boot](/images/boot-menu/one-time-boot.png)
+
+### Change Boot Order
+
+![Change Boot Order](/images/boot-menu/change-boot-order.png)
+
+![Change Boot Order Menu](/images/boot-menu/change-boot-order_changing.png)

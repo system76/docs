@@ -77,7 +77,7 @@ This configures your system to accept your Yubikey as an acceptable login altern
 
 If you want your Yubiky to be **required to login**, then you need to change *sufficient* to *required*.  For example:
 
-    auth required pam_yubico.so mode=challenge-response chalresp_path/var/yubico
+    auth required pam_yubico.so mode=challenge-response chalresp_path=/var/yubico
 
 There a a number of other options for PAM.  Check the man pages for more information.  Also, the [Yubico PAM module](https://developers.yubico.com/yubico-pam/) page has a pretty good breakdown.
 

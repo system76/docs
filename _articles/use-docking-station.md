@@ -45,10 +45,9 @@ To install the DisplayLink Driver open the Terminal and move to the Download dir
 
 ```
 cd Downloads
-unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 5.1.zip
-cd DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 5.1/
-sudo chmod +x displaylink-driver-5.1.26.run
-sudo ./displaylink-driver-5.1.26.run
+unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 5.2.zip
+sudo chmod +x displaylink-driver-5.2.14.run
+sudo ./displaylink-driver-5.2.14.run
 ```
 
 For installing the NVIDIA Driver that we provide you can use this support article: [System76 NVIDIA Driver](http://support.system76.com/articles/system76-driver/).

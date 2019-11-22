@@ -22,19 +22,25 @@ Select the correct printer and click **Add**.
 
 #### HP and Epson Printers
 
-First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command for HP:
+HP printers are supported with the **hplip** package, which is installed by default in Pop!_OS_
 
 ```
 sudo apt install hplip
 ```
+If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
-And this one for Epson:
+```
+sudo apt install python3-pyqt5
+hp-setup
+```
+
+Epson printer drivers in the **printer-driver-escper** package and is also installed by default. You may need to install the **lsb** package for some versions:
 
 ```
 sudo apt install lsb printer-driver-escpr
 ```
 
-Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command (substituting your user name):
+Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command (substituting your user name) and logging out and back in after the command is run:
 
 ```
 sudo usermod -aG lpadmin username

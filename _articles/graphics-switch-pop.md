@@ -42,6 +42,9 @@ Hybrid graphics uses both the integrated Intel GPU and the discrete NVIDIA GPU.
 Applications will use the integrated GPU unless explicitly requested to use the
 discrete GPU.
 
+Please refer to Pop!_OS [system76-power repo](https://github.com/pop-os/system76-power#hybrid) for details 
+about how to explicity request the discrete GPU.
+
 ### Switch graphics
 
 Pop!_OS by System76 includes the system76-power package that includes the

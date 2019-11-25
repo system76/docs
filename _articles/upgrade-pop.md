@@ -22,9 +22,7 @@ section: pop-ubuntu
 
 ---
 
-### Upgrading to Pop!\_OS 19.10 from 19.04
-
- > NOTE: Users running Pop!_OS 18.04 LTS may also upgrade to Pop!_OS 19.10 (if they wish.) This functionality is not ready yet, but is expected sometime in November.
+### Upgrading to Pop!\_OS 19.10 from 19.04 or 18.04
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -56,11 +54,6 @@ The upgrade process will leave your files intact, but it's always a good idea to
 ### Create Installation USB (Optional)
 
 Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
-
-
-### Upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10
-
-By default, LTS releases are set to only upgrade to another LTS, such as 16.04 LTS to 18.04 LTS. However, in November (2019), it will be possible for users who wish to upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10 through the standard GUI method on the "About" page.
 
 ### Advanced Install (Terminal)
 

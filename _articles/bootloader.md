@@ -145,6 +145,8 @@ exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
 
+For those dual-booting with Windows, the first command, `sudo mount /dev/nvme0n1p3 /mnt`, refers to the Pop root partition. The second command, `sudo mount /dev/nvme0n1p1 /mnt/boot/efi`, refers to the EFI system partition. The number on the partition may vary on your configuration. See the output of `sudo parted -ls`.
+
 #### For SATA Drives:
 
 ```

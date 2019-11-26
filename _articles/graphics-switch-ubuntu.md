@@ -25,29 +25,29 @@ The following laptops have switchable graphics:
 
 #### Intel
 
-Intel graphics uses in the integrated Intel GPU only and turns off the NVIDIA
+Intel graphics mode uses the integrated Intel GPU only and turns off the NVIDIA
 GPU. This mode uses less power, leading to a longer battery life and less fan
 noise.
 
 #### NVIDIA
 
-NVIDIA graphics uses the discrete NVIDIA GPU only. This provides a better
-graphical experience, but reduces battery life. External display ports on
-System76 laptops are connected to the NVIDIA GPU. (Some models, such as the
+NVIDIA graphics mode uses the discrete NVIDIA GPU only. This provides a better
+graphical experience, but reduces battery life. Most external display ports on
+System76 laptops are connected to the NVIDIA GPU only. (Some models, such as the
 Gazelle, may also have external ports connected to the integrated GPU.)
 
 #### Hybrid
 
-Hybrid graphics uses both the integrated Intel GPU and the discrete NVIDIA GPU.
+Hybrid graphics mode uses both the integrated Intel GPU and the discrete NVIDIA GPU.
 Applications will use the integrated GPU unless explicitly requested to use the
 discrete GPU.
 
 ### Switch graphics
 
-Pop!_OS by System76 includes the system76-power package that includes the
+Pop!_OS by System76 includes the system76-power package, which includes the
 ability to switch between Intel, NVIDIA, and hybrid graphics modes.
 
-You'll only need to install this software if you did a fresh install of Ubuntu
+You'll only need to install this software manually if you did a fresh install of Ubuntu,
 as our installations will include these packages by default. You can do this
 with the following commands:
 
@@ -73,18 +73,18 @@ switching.
 
 Click on NVIDIA, Intel, or Hybrid, depending on your use case.
 
-Once you select a mode you will be prompted to reboot.
+Once you select a mode, you will be prompted to reboot.
 
 #### From the command line
 
-If you are not on the GNOME Desktop Environment there is a command line option
-to use system76-power. You can see these options with this command:
+If you are not using the GNOME Desktop Environment, you can use the system76-power 
+command line tool. You can see the options with this command:
 
 ```
 system76-power help
 ```
 
-For seeing which Graphics the system is using:
+For seeing which graphics mode the system is using:
 
 ```
 sudo system76-power graphics
@@ -102,15 +102,15 @@ For switching to Intel Graphics:
 sudo system76-power graphics intel
 ```
 
-For switching to Hybrid Graphics:
+For switching to hybrid graphics:
 
 ```
 sudo system76-power graphics hybrid
 ```
 
-All of the packages have their source on Github at the following links:
-
 ### Sources
 
-- [gnome-shell-extension-system76-power](https://github.com/pop-os/gnome-shell-extension-system76-power)
-- [system76-power](https://github.com/pop-os/system76-power)
+The source code for the system76-power utility and the GNOME Shell extension can be found on GitHub:
+
+ - [system76-power](https://github.com/pop-os/system76-power)
+ - [gnome-shell-extension-system76-power](https://github.com/pop-os/gnome-shell-extension-system76-power)

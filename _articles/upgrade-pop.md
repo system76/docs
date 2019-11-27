@@ -86,12 +86,11 @@ Near the end of the upgrade process, you'll be prompted to remove obsolete packa
 
 You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
 
-The last prompt will ask you to restart your computer to complete the upgrade. Make sure all files are saved and programs are closed, then type <kbd>Y</kbd> and <kbd>Enter</kbd>. The computer will immediately restart.
+Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing `[sudo] reboot` and pressing <kbd>Enter</kbd>. If you prefer, you can also use the graphical interface to reboot.
 
 ---
 
-If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
-
+Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
 
 ### Upgrading older releases
 

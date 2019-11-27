@@ -67,6 +67,12 @@ This starts pulseaudio after it's been stopped.  Pulseaudio will typically resta
 lspci -v | grep -A6 Audio
 ```
 
+This will get some output about the system and the audio stack that it is using.
+
+```
+alsa-info
+```
+
 This checks to see if the system is recognizing the audio hardware.  This will be blank if the kernel hasn't seen or initialized the audio hardware.
 
 ```

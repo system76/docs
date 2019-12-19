@@ -2,7 +2,7 @@
 layout: article
 title: Can't Log In or No Icons On Desktop
 description: >
-  Are you getting stuck in a login loop, even though your password is correct? Are you logged in with no desktop icons?
+  Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
 keywords:
   - Support
   - Guides

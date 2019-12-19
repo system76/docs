@@ -24,7 +24,7 @@ Sometimes after an upgrade, your system might not bring you to the desktop after
 * The display/login manager is not working correctly
 * The NVIDIA driver has been updated and is causing an issue
 
-Each cause has a different solution, and certain items (e.g., NVIDIA) might not be applicable to your system. In most cases, you can switch to a full-screen terminal (called a *TTY*) to log in and fix the issue.
+Each cause has a different solution, and certain items (such as NVIDIA) might not be applicable to your system. In most cases, you can switch to a full-screen terminal (called a *TTY*) to log in and fix the issue.
 
 ### Switch to a Terminal
 

@@ -30,19 +30,19 @@ Each cause has a different solution, and certain items (such as NVIDIA) might no
 
 At the login screen, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd> to switch to a TTY. You'll be prompted to enter a login. At the `login` prompt, enter your username and press <kbd>Enter</kbd>. You'll then be prompted for your password. You will not see your password as you are typing it; just type it and press "Enter."
 
-If you're not able to log in, there could be a few reasons:
+If you're not able to log in, the reason could be:
 
-* Wrong username: Your username may not be the same as your display name. It is often your first name all lowercase, first and last name all lowercase, or first initial and last name all lowercase.
-* Wrong password: You're notified of this at the graphical login greeter.
-* Something is blocking the login.
+* **Wrong username**: your username may not be the same as your display name. It is often your first name all lowercase, first and last name all lowercase, or first initial and last name all lowercase.
+* **Wrong password**: you're notified of this at the graphical login screen.
+* Something else is blocking the login.
 
-The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/pop-recovery/) or contacting Support for more assistance.
+The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 
 ![Login and initial prompt](/images/login-loop/login-initial.png)
 
-Note that you can always return to the graphical login screen by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>, or by typing `systemctl restart gdm`.
+Note that you can always return to the graphical login screen by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>, or by typing `sudo systemctl restart gdm`.
 
 ### Move old configuration files out of the way
 
@@ -64,7 +64,7 @@ mv .nv .nv.old
 sudo systemctl reboot
 ```
 
-After removing those files, try logging in again.
+After moving those files and rebooting, try logging in again. (There may be files you need to move other than the common ones listed above.)
 
 ### Reinstall the login manager
 
@@ -82,7 +82,7 @@ sudo apt install --reinstall gdm3 ubuntu-desktop gnome-shell
 sudo systemctl reboot
 ```
 
-After reinstalling those packages, try logging in again.
+After reinstalling those packages and rebooting, try logging in again.
 
 ### Reinstall NVIDIA Driver
 
@@ -117,10 +117,6 @@ sudo apt install system76-driver-nvidia
 
 After the installation has completed, type `sudo systemctl reboot` and try logging in again.
 
-![chown Xauth](/images/login-loop/chown-xauth.png)
+### If these steps don't work...
 
-Switch back to the graphical login with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F7</kbd> and confirm you can log in.
-
-### If These Steps Don't Work
-
-Contact Support: we have a few more things to try. There are a significant number of processes and files required for your graphical desktop environment to be loaded, and much fewer for the terminal login. As such, you can usually recover your desktop using the command line interface!
+Contact Support! We have a few more things to try. There are a significant number of processes and files required for your graphical desktop environment to be loaded, and much fewer for the terminal login. As such, you can usually recover your desktop using the command line interface!

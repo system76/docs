@@ -56,11 +56,11 @@ sudo systemctl reboot
 If you're able to log in with the test user, the issue is somewhere in your regular user's home folder. Log into the full-screen terminal with your regular user again, and move some of the common configuration files out of the way:
 
 ```
-mv .config .config.old
-mv .local .local.old
-mv .cache .cache.old
-mv .nvidia-settings-rc .nvidia-settings-rc.old
-mv .nv .nv.old
+mv ~/.config ~/.config.old
+mv ~/.local ~/.local.old
+mv ~/.cache ~/.cache.old
+mv ~/.nvidia-settings-rc ~/.nvidia-settings-rc.old
+mv ~/.nv ~/.nv.old
 sudo systemctl reboot
 ```
 

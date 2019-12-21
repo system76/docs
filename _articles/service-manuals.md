@@ -23,6 +23,7 @@ section: repairs-returns
 | Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) | 
 | Gazelle      | [gaze14](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf)
 | Adder WS     | [addw1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Adder/addw1-service-manual.pdf)
+| Serval WS    | [serw11](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Serval/serw11-service-manual.pdf)
 
 | Desktops     | Service Manual |
 | -------------| ---------------|

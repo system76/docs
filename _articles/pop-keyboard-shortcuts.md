@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Keyboard Shortcuts
+title: Pop!_OS Keyboard Shortcuts
 description: Learn how master using Pop!_OS with your keyboard
 keywords:
   - keyboard

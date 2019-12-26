@@ -34,7 +34,7 @@ sudo apt install python3-pyqt5
 hp-setup
 ```
 
-Epson printer drivers are in the **printer-driver-escper** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
+Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
 ```
 sudo apt install lsb printer-driver-escpr

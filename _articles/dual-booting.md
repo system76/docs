@@ -13,6 +13,15 @@ section: pop-ubuntu
 
 ---
 
+### If Windows is installed first
+
+1. Boot from the Windows Install Media that was created with WoeUSB.
+2. Install Windows by removing any partitions and then hitting Next.
+3. Boot to a Pop!\_OS live disk to use GParted to resize the largest partition.
+4. 
+
+### If Pop!\_OS is installed first
+
 To dual boot Pop!\_OS alongside another OS, use the "Customize Partitions…" option when selecting a drive.
 
 ![Customize Partitions](/images/dual-booting/customize.png)

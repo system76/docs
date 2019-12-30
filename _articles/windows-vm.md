@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Use Windows Programs
+title: Install Windows 10 in VirtualBox
 description: >
-  This is how to use Windows programs in Pop!_OS.
+  Install Windows 10 in a virtual machine like VirtualBox
 keywords:
   - Support
   - virtual

@@ -16,7 +16,7 @@ section: accessories
 
 ### Compatible Intel systems
 
- - Galago Pro (galp4, galp3-b, galp3-c)
+ - Galago Pro (galp4, galp3-c, galp3-b)
  - Darter Pro (darp6, darp5)
 
 ### System76-tested docks:

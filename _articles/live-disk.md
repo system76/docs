@@ -21,7 +21,7 @@ Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_O
 
 - [Installing Pop!_OS](/articles/install-pop/)
 - [Installing Ubuntu](/articles/install-ubuntu/)
-- Recovering your exiting operating system
+- Recovering your existing operating system
 - Backing up files when you can't boot
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
 - [Fixing the boot loader](/articles/bootloader)

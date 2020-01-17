@@ -118,7 +118,7 @@ This will set the launcher to the bottom of the screen:
 
 ![Lanncher on the bottom](/images/dash-to-dock/unity2.png)
 
-To reset the position of the launcher to the left, run this command instead:
+To reset the position of the launcher to the left, run this command:
 
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position 'Left'

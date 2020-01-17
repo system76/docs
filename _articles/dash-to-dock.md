@@ -101,3 +101,27 @@ To customize the launcher's settings, right-click on the "Show Applications" but
 In the Dash to Dock Settings window, you can choose which screen edge to display the launcher on, such as the bottom of the screen:
 
 ![Launcher at bottom of screen](/images/dash-to-dock/ubuntu-launcher3.png)
+
+---
+
+# Moving the Launcher in 16.04 LTS
+
+Ubuntu 16.04 LTS includes its own launcher as part of the Unity desktop environment. If you'd like to put the launcher at the bottom of the screen in 16.04, enter this command in a terminal:
+
+```
+gsettings set com.canonical.Unity.Launcher launcher-position 'Bottom'
+```
+
+![Setting the Launcher to the bottom](/images/move-launcher/Step-1.png)
+
+This will set the launcher to the bottom of the screen:
+
+![Lanncher on the bottom](/images/move-launcher/Step-2.png)
+
+To reset the position of the launcher to the left, run this command instead:
+
+```
+gsettings set com.canonical.Unity.Launcher launcher-position 'Left'
+```
+
+![Resetting the Launcher](/images/move-launcher/Step-3.png)

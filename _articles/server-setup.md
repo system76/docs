@@ -226,7 +226,7 @@ To setup remote management on the server, connect an additional Ethernet line to
 
 See Intel's user guide for configuring the BMC here:
 
-[Intel BMC User Guide](http://download.intel.com/support/motherboards/server/sb/intel_rmm4_bmc_ews_userguide_r2_8.pdf)
+[Intel BMC User Guide](https://www.intel.com/content/dam/support/us/en/documents/server-products/intel-rmm4-ibmc-userguide.pdf)
 
 To run the jwviewer.jnlp file on the viewing computer, please install this program:
 

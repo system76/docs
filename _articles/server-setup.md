@@ -236,6 +236,14 @@ sudo apt install icedtea-netx
 
 Which will install the program 'javaws' (Java Web Services)
 
+---
+
+#### BMC on the Ibex Pro GPU
+
+On the Ibex Pro GPU, the BMC interface will look slightly different. See the [Gigabyte Server Management Console](https://download.gigabyte.com/FileList/Manual/server_manual_mgt_console_user_guide_ami_v1.x.pdf) manual.
+
+For this machine, the default BMC username is `admin` and the default password is `password`.
+
 ### Additional Server Resources
 
 [Ubuntu Server Information](http://www.ubuntu.com/server)

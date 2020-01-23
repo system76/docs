@@ -27,6 +27,7 @@ sudo apt-get install nodejs git build-essential python2.7
 Next, clone the repo and build!
 
 ```
+cd /opt/
 git clone https://github.com/cjdelisle/cjdns.git
 cd cjdns
 ./do

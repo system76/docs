@@ -39,7 +39,7 @@ The <u>Pop!_Shop</u> can be used to install additional software. Just search for
 
 ![Pop Desktop](/images/pop-basics/pop-shop.png)
 
-You can find options for the current application window you're working in using the Menu Bar at the top of the screen.
+You can find options for the current window you're working in using the Menu Bar at the top of the screen.
 
 ![Pop Desktop](/images/pop-basics/pop-top-menu.png)
 

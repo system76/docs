@@ -39,9 +39,13 @@ The <u>Pop!_Shop</u> can be used to install additional software. Just search for
 
 ![Pop Desktop](/images/pop-basics/pop-shop.png)
 
-You can find certain options for the current application window you're working in using the Menu Bar at the top of the screen.
+You can find options for the current application window you're working in using the Menu Bar at the top of the screen.
 
 ![Pop Desktop](/images/pop-basics/pop-top-menu.png)
+
+For many applications, additional options are available in a separate menu within the application itself.
+
+![Pop Desktop](/images/pop-basics/pop-app-menu.png)
 
 The top right menu can be used to adjust volume and screen brightness, connect to WiFi networks, and log out/restart/shut down the computer. You can open the system settings using the gear icon in this menu.
 

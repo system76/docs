@@ -23,7 +23,7 @@ The Pop!_OS operating system provides all the features you would expect from a s
 
 Welcome to the Pop!_OS desktop! By default, it's clean and ready for action.
 
-To navigate within the desktop, either click the <u>Activities</u> button in the top left, or press the <kbd><span class="fl-pop-key"></span></kbd> key on the keyboard.  This will show the overview of all open windows and provide a search to open program.
+To navigate within the desktop, either click the <u>Activities</u> button in the top left, or press the <kbd><span class="fl-pop-key"></span></kbd> key on the keyboard.  This will show an overview of all open windows and provide a text box to search your system.
 
 ![Pop Desktop](/images/pop-basics/activities-view.png)
 
@@ -35,14 +35,14 @@ Type in any word to search your computer for installed programs, files, and item
 
 ![Pop Desktop](/images/pop-basics/search.png)
 
-The <u>Pop!_Shop</u> can be used to install additional software.  Simply search for programs in categories, and click the <u>Install</u> button to install the software.
+The <u>Pop!_Shop</u> can be used to install additional software. Just search for programs or browse for them by category, and click the <u>Install</u> button to add them to your computer.
 
 ![Pop Desktop](/images/pop-basics/pop-shop.png)
 
-Use the Menu Bar at the top of the screen to view options for the current application window you're working in.
+You can find certain options for the current application window you're working in using the Menu Bar at the top of the screen.
 
 ![Pop Desktop](/images/pop-basics/pop-top-menu.png)
 
-Various settings for the operating system can be found in the top right menu, and additionally by clicking the gear icon.
+The top right menu can be used to adjust volume and screen brightness, connect to WiFi networks, and log out/restart/shut down the computer. You can open the system settings using the gear icon in this menu.
 
 ![Pop Desktop](/images/pop-basics/pop-settings.png)

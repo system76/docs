@@ -39,7 +39,7 @@ Type in any word to search your computer for installed programs, files, and item
 
 The <u>Pop!_Shop</u> can be used to install additional software.  Simply search for programs in categories, and click the <u>Install</u> button to install the software.
 
-![Pop Desktop](/images/pop-basics/pop-menu.png)
+![Pop Desktop](/images/pop-basics/pop-top-menu.png)
 
 Use the Menu Bar at the top of the screen to view options for the current application window you're working in.
 

@@ -44,6 +44,13 @@ After logging in, you'll be presented with a prompt showing your username, hostn
 
 Note that you can always return to the graphical login screen by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>, or by typing `sudo systemctl restart gdm`.
 
+### Check Path is correct
+
+Your path files may have changed and be misconfigured. Check if your path is awefully empty by running
+
+```/usr/bin/printenv``` under the user you login in. If it's awefully empty, check your ```~/.bashrc, ~/.bash_profile, ~/.profile, /etc/profile, /etc/bash.bashrc``` files. When editing those files, since your path is empty, use ```/bin/nano FILE_NAME``` or reference your tools via the direct 
+binary path 
+
 ### Move old configuration files out of the way
 
 To determine whether configuration in your home directory is causing the issue, you can create a new user account for testing purposes:

@@ -11,6 +11,7 @@ collections:
     output: true
 
 # Build settings
+destination: build
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
@@ -21,3 +22,6 @@ kramdown:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-last-modified-at
+
+exclude: ['.github']

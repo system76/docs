@@ -2,7 +2,7 @@
 layout: article
 title: Install Windows 10 in VirtualBox
 description: >
-  Install Windows 10 in a virtual machine like VirtualBox
+  Instructions on how to install Windows 10 in a virtual machine using VirtualBox
 keywords:
   - Support
   - virtual

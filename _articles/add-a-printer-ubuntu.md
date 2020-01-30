@@ -27,8 +27,13 @@ First in the <u>Software & Updates</u> settings go to the **Other Software** tab
 ```
 sudo apt install hplip
 ```
+If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
-And this one for Epson:
+```
+sudo apt install python3-pyqt5
+hp-setup
+```
+Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
 ```
 sudo apt install lsb printer-driver-escpr

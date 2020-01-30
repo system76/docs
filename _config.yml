@@ -11,7 +11,6 @@ collections:
     output: true
 
 # Build settings
-destination: build
 markdown: kramdown
 highlighter: rouge
 permalink: pretty

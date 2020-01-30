@@ -89,7 +89,7 @@ You can navigate between the different volume meters using the left and right ar
 
 If your system has more than one sound card (for example, an Intel sound card and an NVIDIA sound card in switchable-graphics systems), you can switch between them by pressing F6.
 
-![alsamixer](/images/audio/alsamixer-soundcard.png)
+![alsamixer's sound card selection](/images/audio/alsamixer-soundcard.png)
 
 ## Check if Hardware is Detected
 
@@ -120,3 +120,15 @@ This command will start PulseAudio after it's been stopped (this is not usually 
 ```
 pulseaudio --start
 ```
+
+## Gather Information for Support
+
+The `alsa-info` command will gather a number of outputs, including some of the above-listed outputs, and package them so they can be shared easily. In a terminal, run the command:
+
+```
+alsa-info
+```
+
+When the script is finished gathering information, type <kbd>y</kbd> and press Enter to upload your output to the ALSA website, then send the link to Support.
+
+![alsa-info](/images/audio/alsa-info.png)

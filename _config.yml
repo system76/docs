@@ -21,3 +21,6 @@ kramdown:
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-last-modified-at
+
+exclude: ['.github']

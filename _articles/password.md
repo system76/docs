@@ -14,17 +14,17 @@ section: pop-ubuntu
 
 ---
 
-If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which means the low level repair system for the computer.
+If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
 
 ### Pop!_OS 18.04 and Later
 
-On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather than <u>GRUB</u>.  Please follow these instructions to reset your password.  If your operating system is anything other than Pop!_OS 18.04 and later, please use the [GRUB](#grub) section later.
+On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather than <u>GRUB</u>.  Please follow these instructions to reset your password.  If your operating system is anything other than Pop!_OS 18.04 and later, please use the [GRUB](#grub) section.
 
 First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key.  On the menu, choose **Recovery Mode**.
 
 ![systemd-boot](/images/password/systemd-boot.png)
 
-Once the recovery operating system has opened, click the **Install Pop!_OS** in the top left, and choose **quit**.  Then, press <kbd><i class="fl-ubuntu"></i></kbd>/<kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
+Once the recovery operating system has opened, click **Install Pop!_OS** in the top left, and choose **quit**.  Then, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd> to open a terminal, and type in these commands:
 
 ```
 lsblk
@@ -46,47 +46,47 @@ sudo lvscan
 sudo vgchange -ay
 ```
 
-And then take note as to what the volume group is called.  Substitute the correct info into this command.  Make sure that '-root' is on the end:
+Take note as to what the volume group is called, substituting the correct info into this command.  Make sure that '-root' is on the end:
 
 ```
 sudo mount /dev/mapper/data-root /mnt
 ```
 
-Next, regardless of if the drive is encrypted or not, run these commands:
+Next, regardless of whether the drive is encrypted or not, run these commands:
 
 ```
 sudo chroot /mnt
 ls /home
 ```
 
-And take note of the users on this computer, then run this command to change a user's password:
+Take note of the users on this computer, then run this command to change a user's password:
 
 ```
 passwd john
 ```
 
-Then, type in your new password, and then these commands:
+Type in your new password, and then enter these commands:
 
 ```
 exit
 reboot
 ```
 
-Now enter the original passphrase now you will be prompted for the new passphrase and then to confirm the new passphrase.
+Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
 
 ### GRUB
 
-There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot.
+There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot. Make sure to stop tapping <kbd>ESC</kbd> when the menu appears:
 
 ![Grub1](/images/password/grub1.png)
 
-Make sure to stop tapping <kbd>ESC</kbd> when the menu appears, otherwise a GRUB command prompt will appear:
+If you do tap <kbd>ESC</kbd> when the menu appears, a GRUB command prompt will appear:
 
 ![Prompt](/images/password/prompt.png)
 
 If you get to the GRUB command prompt, type in `normal`, then press <kbd>ENTER</kbd> and immediately press <kbd>ESC</kbd>.
 
-Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**, followed by the 3rd option **Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)**.
+Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**, then, choose the 3rd option **Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)**.
 
 ![Grub2](/images/password/grub2.png)
 
@@ -120,7 +120,7 @@ passwd april
 
 (Change `april` to the actual user whose password you would like to reset, as seen in the output of `ls /home`)
 
-Enter a new password, then press <kbd>Enter</kbd>. Even though you are typing, no text will be displayed nor will the password be obfuscated as seen in the image below.
+Enter a new password, then press <kbd>Enter</kbd>. Even though you are typing, no text will be displayed as seen in the image below.
 
 ![Full commands to reset password](/images/password/example.png)
 

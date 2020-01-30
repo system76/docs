@@ -131,6 +131,8 @@ This extension will check the various installed extensions and present a notific
 
 The appfolders manager extension allows for the groups of icons present in the Activities overview to be modified.  With a right click, folders can be added, removed, and modified.
 
+This extension is not needed in Ubuntu 19.10 or Pop 19.10 as GNOME 3.34 has added this feature.
+
 ---
 
 ### Lock Keys

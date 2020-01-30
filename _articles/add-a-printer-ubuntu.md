@@ -27,8 +27,13 @@ First in the <u>Software & Updates</u> settings go to the **Other Software** tab
 ```
 sudo apt install hplip
 ```
+If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
-And this one for Epson:
+```
+sudo apt install python3-pyqt5
+hp-setup
+```
+Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
 ```
 sudo apt install lsb printer-driver-escpr
@@ -37,7 +42,7 @@ sudo apt install lsb printer-driver-escpr
 Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command (substituting your user name):
 
 ```
-sudo usermod -aG lpadmin username
+sudo usermod -aG lpadmin $USER
 ```
 
 And when adding the printer, select type of connection as **DNS-SD**, and then **Forward**, and then **ESC/P-R**.

@@ -22,9 +22,7 @@ section: pop-ubuntu
 
 ---
 
-### Upgrading to Pop!\_OS 19.10 from 19.04
-
- > NOTE: Users running Pop!_OS 18.04 LTS may also upgrade to Pop!_OS 19.10 (if they wish.) This functionality is not ready yet, but is expected sometime in November.
+### Upgrading to Pop!\_OS 19.10 from 19.04 or 18.04
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -57,11 +55,6 @@ The upgrade process will leave your files intact, but it's always a good idea to
 
 Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
 
-
-### Upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10
-
-By default, LTS releases are set to only upgrade to another LTS, such as 16.04 LTS to 18.04 LTS. However, in November (2019), it will be possible for users who wish to upgrade from Pop!\_OS 18.04 to Pop!\_OS 19.10 through the standard GUI method on the "About" page.
-
 ### Advanced Install (Terminal)
 
 Users wishing to use the Terminal to apply the upgrade may do so by running the following commands:
@@ -78,7 +71,7 @@ sudo apt full-upgrade
 Once any updates are applied, initiate the upgrade with this command:
 
 ```
-pop-upgrade release upgrade
+pop-upgrade release upgrade systemd
 ```
 
 Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.
@@ -93,12 +86,11 @@ Near the end of the upgrade process, you'll be prompted to remove obsolete packa
 
 You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
 
-The last prompt will ask you to restart your computer to complete the upgrade. Make sure all files are saved and programs are closed, then type <kbd>Y</kbd> and <kbd>Enter</kbd>. The computer will immediately restart.
+Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing `[sudo] reboot` and pressing <kbd>Enter</kbd>. If you prefer, you can also use the graphical interface to reboot.
 
 ---
 
-If the upgrade completes successfully, restart your computer for the changes to take effect.  Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
-
+Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
 
 ### Upgrading older releases
 

@@ -39,8 +39,7 @@ Epson printer drivers are in the **printer-driver-escpr** package and is also in
 ```
 sudo apt install lsb printer-driver-escpr
 ```
-
-Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command (substituting your user name) and logging out and back in after the command is run:
+Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command:
 
 ```
 sudo usermod -aG lpadmin $USER

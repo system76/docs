@@ -48,3 +48,9 @@ Open the <u>Pop!_Shop</u> application then either search for Steam or by clickin
 Then click the **install button**.
 
 ![Pop!_Shop](/images/steam/pop_shop2.png)
+
+#### Enable Steam Play (Proton)
+
+Proton is a way to enable support for some Windows games using Wine and some tweaks and additions that Valve have been working on. You can enable it using the the <u>Steam</u> Settings to download and install Proton.
+
+![Steam Settings](/images/steam/enable-steam-play_proton.png)

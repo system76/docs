@@ -2,7 +2,7 @@
 layout: article
 title: Configure HDMI Audio
 description: >
-  Here is how to play audio over an HDMI connection.
+  Here is how to play audio over an HDMI or DisplayPort connection.
 keywords:
   - hdmi
   - audio settings
@@ -14,22 +14,44 @@ section: graphics-audio-video
 
 ---
 
-To enable HDMI audio output, click on the settings icons in the upper right, and then click the gear icon(<i class='fa fa-gear'></i>).
+If you're using an HDMI display with its own built-in speakers, you can configure your system to output audio over the HDMI connection. (These steps should also work for DisplayPort connections.)
 
-![Sound Menu](/images/hdmi-audio/user-menu.png)
+## Using the Sound Settings
 
-You can also look for the <u>Sound</u> Settings by pushing the Super key <kbd><span class="fl-ubuntu"></span></kbd> or <kbd><span class="fl-pop-key"></span></kbd> and searching for <u>Sound</u>.
+To make all sound play over HDMI, open the menu in the top right of the screen, then click the <i class='fa fa-gear'></i> icon in the bottom left of the menu.
 
-![Sound in Dash](/images/hdmi-audio/sound-search.png)
+![Opening the Settings app](/images/hdmi-audio/top-right-menu.png)
 
-Click on the **Output** tab, then click on the HDMI device for audio output.
+Choose the Sound page using the left sidebar.
 
-![Sound Settings](/images/hdmi-audio/sound-settings-hdmi.png)
+![Sound settings](/images/hdmi-audio/sound-settings.png)
 
-## Useful Programs
+Under the "Output" section, click the dropdown box to display a list of output devices, then select the HDMI device you wish to use for audio output.
 
-The program <u>PulseAudio Volume Control</u> is super helpful in figuring out which program is producing audio, where that audio is being routed, defaults for audio outputs, and volume levels for every source, input and output.  It can be installed using the software center, or with this command:  
+![Output device](/images/hdmi-audio/output-device.png)
+
+After selecting the appropriate device, sound should play through the HDMI connection. You can use the "Test" button to test the HDMI-connected speakers.
+
+## Using PulseAudio Volume Control
+
+The <u>PulseAudio Volume Control</u> utility also allows you to change the sound output. In addition to changing the default output device, you can also set the output device (and volume) on a per-application basis.
+
+<u>PulseAudio Volume Control</u> can be installed using this command: 
 
 ```
 sudo apt install pavucontrol
 ```
+
+Then, open the utility by running `pavucontrol` in a terminal, or by opening the <u>PulseAudio Volume Control</u> app using the Activities menu.
+
+On the "Output Devices" tab, the output device with the green checkmark selected is the default (or "fallback") audio device.
+
+![pavucontrol Output Devices](/images/hdmi-audio/pavucontrol-output-devices.png)
+
+You can set a device as default by clicking the green checkmark next to it.
+
+![Set default output device in pavucontrol](/images/hdmi-audio/pavucontrol-set-default.png)
+
+On the "Playback" tab, each application that's playing audio will be listed. You can change which output device a specific application is using by selecting it under the drop-down box next to that application.
+
+![Set per-app output device in pavucontrol](/images/hdmi-audio/pavucontrol-per-application.png)

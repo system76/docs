@@ -22,12 +22,12 @@ To configure your touchpad, press the Super Key <kbd><span class="fl-ubuntu"></s
 
 ![Mouse Search](/images/touchpad/mouse.png)
 
-The <u>GNOME Tweak Tool</u> has a few other options for the touchpad like disabling it while typing, the acceleration profile and mouse click emulation.
+<u>GNOME Tweaks</u> has a few other options for the touchpad like disabling it while typing, the acceleration profile and mouse click emulation.
 
-![GNOME Tweak Tool](/images/touchpad/gnome-tweak-tool.png)
+![GNOME Tweaks](/images/touchpad/gnome-tweak-tool.png)
 
-The <u>GNOME Tweak Tool</u> can be installed from the <u>Pop!_Shop</u> (Pop!_OS), <u>Ubuntu Software Center</u> (Ubuntu) or from the <u>Terminal</u> with this command:
+<u>GNOME Tweaks</u> can be installed from the <u>Pop!_Shop</u> (Pop!_OS), <u>Ubuntu Software Center</u> (Ubuntu) or from the <u>Terminal</u> with this command:
 
 ```
-sudo apt install gnome-tweak-tool
+sudo apt install gnome-tweaks
 ```

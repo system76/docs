@@ -2,7 +2,7 @@
 layout: article
 title: Configure HDMI Audio
 description: >
-  Here is how to play audio over an HDMI connection.
+  Here is how to play audio over an HDMI or DisplayPort connection.
 keywords:
   - hdmi
   - audio settings
@@ -14,17 +14,23 @@ section: graphics-audio-video
 
 ---
 
-To enable HDMI audio output, click on the settings icons in the upper right, and then click the gear icon(<i class='fa fa-gear'></i>).
+If you're using an HDMI display with its own built-in speakers, you can configure your system to output audio over the HDMI connection. (These steps should also work for DisplayPort connections.)
 
-![Sound Menu](/images/hdmi-audio/user-menu.png)
+## Using the Sound Settings
 
-You can also look for the <u>Sound</u> Settings by pushing the Super key <kbd><span class="fl-ubuntu"></span></kbd> or <kbd><span class="fl-pop-key"></span></kbd> and searching for <u>Sound</u>.
+To make all sound play over HDMI, open the menu in the top right of the screen, then click the <i class='fa fa-gear'></i> icon in the bottom left of the menu.
 
-![Sound in Dash](/images/hdmi-audio/sound-search.png)
+![Opening the Settings app](/images/hdmi-audio/top-right-menu.png)
 
-Click on the **Output** tab, then click on the HDMI device for audio output.
+Choose the Sound page using the left sidebar.
 
-![Sound Settings](/images/hdmi-audio/sound-settings-hdmi.png)
+![Sound settings](/images/hdmi-audio/sound-settings.png)
+
+Under the "Output" section, click the dropdown box to display a list of output devices, then select the HDMI device you wish to use for audio output.
+
+![Output device](/images/hdmi-audio/output-device.png)
+
+After selecting the appropriate device, sound should play through the HDMI connection. You can use the "Test" button to test the HDMI-connected speakers.
 
 ## Useful Programs
 

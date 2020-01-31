@@ -23,4 +23,11 @@ plugins:
   - jekyll-redirect-from
   - jekyll-last-modified-at
 
-exclude: ['.github']
+exclude:
+  - '.github'
+  - '.nojekyll'
+  - 'CONTRIBUTE.md'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'LICENSE.md'
+  - 'README.md'

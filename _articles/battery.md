@@ -73,8 +73,7 @@ Starting with <u>TLP</u> 1.3 the default configuration file has changed so the c
 ```
 sudo gedit /etc/tlp.conf
 ```
-
-The `/etc/tlp.conf` file is for user configuration while `/etc/tlp.d*.conf` file is for drop-in customization snippets.
+The `/etc/tlp.conf` file is for user configuration while `/etc/tlp.d/*.conf` file is for drop-in customization snippets.
 
 All of the info about the the program can be found with these 2 commands:
 

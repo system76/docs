@@ -17,7 +17,19 @@ section: software-applications
 
 ---
 
-Pop!_OS comes with the <u>GNOME</u> desktop environment and Ubuntu before 17.10 comes with the <u>Unity</u> desktop environment. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
+Pop!_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
+
+You can install an alternative desktop environment using the instructions below. If you run into trouble in an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!_OS, install the `pop-desktop` package:
+
+```
+sudo apt install pop-desktop
+```
+
+For Ubuntu, install the `ubuntu-desktop` package instead:
+
+```
+sudo apt install ubuntu-desktop
+```
 
 Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Pop!_OS, each with its own individual settings.
 

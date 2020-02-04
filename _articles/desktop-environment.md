@@ -35,14 +35,6 @@ The desktop enviroment is basically the top graphical layer of the OS. The deskt
 
 ![Login2](/images/desktop-environment/Login2.png)
 
-#### Important
-
-In Ubuntu 16.04, make sure to choose **lightdm** as the display manager when prompted. Choosing **gdm**, **sddm**, or another, will break the installation.  Other display managers work fine in 17.04 and later. If needed, this command can be run to choose the display manager again:
-
-```
-sudo dpkg-reconfigure lightdm
-```
-
 ---
 
 ### MATE

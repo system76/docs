@@ -45,16 +45,10 @@ MATE is an intuitive and attractive desktop using traditional concepts. MATE is 
 
 ![MATE](/images/desktop-environment/MATE.png)
 
-The core MATE packages are installed with this command:
+This command will install MATE and its dependencies:
 
 ```
-sudo apt install mate-desktop-environment  
-```
-
-We'd recommend also installing these extra packages for a better experience:
-
-```
-sudo apt install mate-desktop-environment-extras
+sudo apt install mate-desktop-environment mate-desktop-environment-extras
 ```
 
 ---

@@ -41,7 +41,7 @@ If multiple desktop environments are installed, GDM will display a gear icon, wh
 
 ### MATE
 
-MATE is an intuitive and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
+MATE is a simple and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
 
 ![MATE](/images/desktop-environment/MATE.png)
 

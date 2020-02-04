@@ -39,7 +39,7 @@ The desktop enviroment is basically the top graphical layer of the OS. The deskt
 
 ### MATE
 
-Mate is an intuitive and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
+MATE is an intuitive and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
 
 ![MATE](/images/desktop-environment/MATE.png)
 

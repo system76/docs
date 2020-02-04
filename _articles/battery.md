@@ -68,6 +68,14 @@ The program is highly configurable by editing the settings file. Run this comman
 sudo gedit /etc/default/tlp
 ```
 
+Starting with <u>TLP</u> 1.3 the default configuration file has changed so the command for that version is below:
+
+```
+sudo gedit /etc/tlp.conf
+```
+
+The `/etc/tlp.conf` file is for user configuration while `/etc/tlp.d*.conf` file is for drop-in customization snippets.
+
 All of the info about the the program can be found with these 2 commands:
 
 ```

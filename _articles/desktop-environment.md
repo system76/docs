@@ -87,10 +87,10 @@ The KDE Plasma desktop environment is a familiar working environment and looks s
 
 ![KDE Plasma](/images/desktop-environment/Plasma.png)
 
-The KDE Plasma desktop itself can be installed with this command:
+The KDE Plasma and its dependencies can be installed with this command:
 
 ```
-sudo apt install kde-plasma-desktop
+sudo apt install kde-standard
 ```
 
 While installing KDE, you'll be prompted to choose a display manager:
@@ -101,22 +101,6 @@ Press Enter to select the OK option. At the list, press Enter again to keep gdm3
 
 ![Display Manager Section](/images/desktop-environment/kde-sddm-2.png)
 
-A standard KDE desktop is installed with:
-```
-sudo apt install kde-standard
-```
-
-For a complete set of KDE applications and Plasma desktop
-```
-sudo apt install kde-full
-```
-
-KDE may have a packaging conflict which will cause the installation to fail.  If so, two packages need removed to complete the installation.  After an error, please run these commands to remove the packages and finish the installation:
-
-```
-sudo dpkg --purge unity-scope-gdrive account-plugin-google
-sudo apt install -f
-```
 ---
 
 ### UKUI

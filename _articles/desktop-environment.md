@@ -173,15 +173,6 @@ sudo apt install lxqt
 
 ---
 
-
-### Resource Use
-
-GNOME and KDE are heavy resource desktop environments.  Installations consume more disk space than lightweight alternatives and more CPU and memory resources while in use. This is because they are full-featured; they provide the most complete and well-integrated environments.
-
-LXDE and Xfce, on the other hand, are lightweight desktop environments. They are designed to work well on older or lower-power hardware and generally consume fewer system resources while in use. This is achieved by cutting back on extra features.
-
----
-
 ## Troubleshooting
 
 Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment's appearance can generally be fixed by changing the theme in the <u>Appearance</u> control panel.

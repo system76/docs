@@ -165,6 +165,8 @@ Press Enter to select the OK option. (If the OK option is not selected, press Ta
 
 LXQt is a lightweight Qt desktop environment. It's being developed as a successor to LXDE. It is focused on being a classic desktop with a modern look and feel.
 
+![LXQt](/images/desktop-environment/LXQt.png)
+
 LXQt can be installed with:
 
 ```

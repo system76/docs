@@ -95,11 +95,11 @@ sudo apt install kde-standard
 
 While installing KDE, you'll be prompted to choose a display manager:
 
-![Display Manager Section](/images/desktop-environment/kde-sddm-1.png)
+![Display Manager Section](/images/desktop-environment/sddm-1.png)
 
-Press Enter to select the OK option. At the list, press Enter again to keep gdm3 as your display manager:
+Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
 
-![Display Manager Section](/images/desktop-environment/kde-sddm-2.png)
+![Display Manager Section](/images/desktop-environment/sddm-2.png)
 
 ---
 
@@ -121,7 +121,7 @@ sudo apt install ukui-desktop-environment
 
 XFCE embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good amount of conformity for the programs written for it. XFCE also provides a highly customizable environment, while being leaner on resources.
 
-![Xfce](/images/desktop-environment/Xfce.png)
+![Xfce](/images/desktop-environment/XFCE.png)
 
 You can install XFCE and its dependencies with this command:
 
@@ -131,7 +131,11 @@ sudo apt install xfce4 xfce4-goodies
 
 While installing XFCE, you'll see a prompt to select your default display manager:
 
-Need to fill in screenshots here.
+![Display Manager Section](/images/desktop-environment/lightdm-1.png)
+
+Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
+
+![Display Manager Section](/images/desktop-environment/lightdm-2.png)
 
 ---
 

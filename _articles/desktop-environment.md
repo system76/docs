@@ -171,24 +171,6 @@ LXDE and Xfce, on the other hand, are lightweight desktop environments. They are
 
 Desktop environments can interfere with each other or change universal settings. Issues with a desktop environment looking different can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
-#### Change Login Greeter
-
-GNOME will add its own login greeter, which is shown as the second image at the top of this article. To change it, run this command:
-
-```
-sudo gedit /etc/lightdm/lightdm.conf
-```
-
-And add a line at the bottom to set the preferred greeter:
-
-Unity:
-
-> greeter-session=unity-greeter  
-
-GNOME:
-
-> greeter-session=lightdm-gtk-greeter  
-
 #### Change Automatic Login Environment
 
 If you currently use automatic login to bypass the password login, a default can be set with this command:

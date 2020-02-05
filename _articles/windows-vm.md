@@ -1,16 +1,14 @@
 ---
 layout: article
-title: Use Windows Programs
+title: Install Windows 10 in VirtualBox
 description: >
-  This is how to use Windows programs in Pop!_OS.
+  Instructions on how to install Windows 10 in a virtual machine using VirtualBox
 keywords:
   - Support
   - virtual
   - machine
   - Windows
   - Windows 10
-  - Dual Boot
-  - Dual
   - VM
   - System76
 image: http://support.system76.com/images/system76.png
@@ -41,13 +39,11 @@ M.I.T tab -> Advanced Frequency Settings -> Advanced CPU Core Settings -> SVM mo
 
 Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it's easy to set up and use, and available for free. It's available in the <u>Pop!_Shop</u>.
 
-Open up the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click on the <u>VirtualBox</u> result with the blue icon, then click on **More Info**. You should see the window below:
+Open up the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click on the <u>VirtualBox</u> result with the blue icon. You should see the window below:
 
 ![VirtualBox Listing in USC](/images/windows/step1.png)
 
-Click on the Install button, then wait for the download and install process to complete. When it's finished, <u>Pop!_Shop</u> will tell you that it was installed on the current date, like below:
-
-![VirtualBox Installed through USC](/images/windows/step2.png)
+Click on the Install button, then wait for the download and install process to complete. 
 
 ### Obtain Windows Image
 

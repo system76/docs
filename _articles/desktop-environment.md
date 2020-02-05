@@ -141,7 +141,7 @@ Press Enter to select the OK option. (If the OK option is not selected, press Ta
 
 ### LXDE
 
-The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment. It looks similar to older versions of Windows. This is the leanest desktop environment and can help extend battery life in laptops.
+The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment. It looks similar to older versions of Windows. This is a lean desktop environment and can help extend battery life in laptops.
 
 ![LXDE](/images/desktop-environment/LXDE.png)
 

@@ -163,12 +163,14 @@ Press Enter to select the OK option. (If the OK option is not selected, press Ta
 
 ### LXQt
 
-LXQt is a lightweight Qt desktop environment.It will not get in your way. It will not hang or slow down your system. It is focused on being a classic desktop with a modern look and feel.
+LXQt is a lightweight Qt desktop environment. It's being developed as a successor to LXDE. It is focused on being a classic desktop with a modern look and feel.
 
 LXQt can be installed with:
+
 ```
 sudo apt install lxqt
 ```
+
 ---
 
 

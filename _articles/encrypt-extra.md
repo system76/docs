@@ -28,7 +28,7 @@ Then use the 'Format Volume' window to format the volume with the options to nam
 
 ###  Decrypt on Login
 
-If we would like to decrypt the drive on login into the system there are settings for the encryption. In the <u>Disks</u> application on the drive that is encrypted then click on the LUKS partition and then the **Gear icons** on the bottom of the Volumes table. Then click on **Edit Encryption Options...** then unclick 'User Session Defaults'. Now enter the Passphrase for the encrypted drive and hit **OK** button. It will ask for your password and once it is entered the drive will be decrypted on login.
+If we would like to decrypt the drive on login into the system there are settings for the encryption. In the <u>Disks</u> application on the drive that is encrypted then click on the LUKS partition and then the **Gear icons** on the bottom of the Volumes table. Then click on **Edit Encryption Options...** then unclick **User Session Defaults**. Now enter the Passphrase for the encrypted drive and hit **OK** button. It will ask for your password and once it is entered the drive will be decrypted on login.
 
 ![Disks](/images/encrypt-extra/Encrypt-Options.png)
 

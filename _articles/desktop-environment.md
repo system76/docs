@@ -123,16 +123,12 @@ XFCE embodies the traditional UNIX philosophy of modularity and re-usability. Th
 
 ![Xfce](/images/desktop-environment/Xfce.png)
 
-Xfce can be installed with:
+You can install XFCE and its dependencies with this command:
 
 ```
-sudo apt install xfce4
+sudo apt install xfce4 xfce4-goodies
 ```
-For additional options would be to installed
 
-```
-sudo apt install xfce4-goodies
-```
 ---
 
 ### LXDE

@@ -184,7 +184,7 @@ LXDE and Xfce, on the other hand, are lightweight desktop environments. They are
 
 ## Troubleshooting
 
-Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment looking different can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
+Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment's appearance can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
 #### Change Startup/Shutdown Splash Screen
 

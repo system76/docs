@@ -69,16 +69,14 @@ sudo apt install cinnamon-desktop-environment
 
 ### GNOME
 
-GNOME is the default desktop environment in Pop!_OS and Ubuntu 17.10. It contains both a modern and a classic version.
+While Pop and Ubuntu contain GNOME by default, both include a number of customizations to GNOME. You can also install a vanilla GNOME session to get the upstream GNOME experience.
 
-![Gnome](/images/desktop-environment/Gnome.png)
+![GNOME](/images/desktop-environment/GNOME.png)
 
-![Gnome2](/images/desktop-environment/Gnome2.png)
-
-In Ubuntu, GNOME is installed with:
+You can install the vanilla GNOME session using this command:
 
 ```
-sudo apt install ubuntu-gnome-desktop
+sudo apt install gnome-session
 ```
 
 ---

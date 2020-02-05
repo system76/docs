@@ -19,7 +19,7 @@ section: hardware-drivers
 
 ---
 
-If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the eject (⏏) icon. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes.  
+If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the **eject (⏏) icon**. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes.  
 
 Auto-mounting is a per user configuration, and is optional.  Extra drives can always be accessed by clicking on them in the file explorer, which will mount the drive if not currently mounted.  
 
@@ -33,7 +33,7 @@ Once you've made a mount point, double click it to open it and ensure that it is
 
 ### Locate The Drive
 
-Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
+Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>/<kbd><span class="fl-pop-key"></span></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
 
 ![Disks Application](/images/extra-drive/Step1.png)
 
@@ -41,7 +41,7 @@ Click on your extra drive in the list. You can identify it by size, or by the la
 
 ### (Optionally) Format The Drive
 
-If this is a new drive, and it is not formatted, it will need to be formatted before use. If the drive has formatting from the manufacturer, it is usually best to format it to the standard format (ext4). First, delete the existing partition by clicking the minus button. Then click the plus icon, change the type to *(Ext4)*, give your drive a name, such as *Extra Drive*, and click **Create**.
+If this is a new drive, and it is not formatted, it will need to be formatted before use. If the drive has formatting from the manufacturer, it is usually best to format it to the standard format (Ext4). First, delete the existing partition by clicking the **minus button**. Then click the **plus icon**, change the type to *(Ext4)*, give your drive a name, such as *Extra Drive*, and click **Create**.
 
 ### Open Extra Drive Mount Options
 
@@ -76,4 +76,4 @@ The red box shows the item we don't want to change and the green box shows the i
 
 ### Save And Restart
 
-Once the mount options are set up correctly, click **OK** to save the changes and then restart your computer. After the computer starts back up, ensure that there are no error messages during the boot, and that the drive is mounted when booting. You can check this by opening your home folder and ensure that you see the eject icon (⏏) next to the drive *before* you click on the drive.
+Once the mount options are set up correctly, click **OK** to save the changes and then restart your computer. After the computer starts back up, ensure that there are no error messages during the boot, and that the drive is mounted when booting. You can check this by opening your home folder and ensure that you see the **eject icon (⏏)** next to the drive *before* you click on the drive.

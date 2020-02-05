@@ -171,45 +171,6 @@ LXDE and Xfce, on the other hand, are lightweight desktop environments. They are
 
 Desktop environments can interfere with each other or change universal settings. Issues with a desktop environment looking different can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
-#### Change Automatic Login Environment
-
-If you currently use automatic login to bypass the password login, a default can be set with this command:
-
-```
-sudo gedit /etc/lightdm/lightdm.conf
-```
-
-And add a line at the bottom to set the (default):
-
-LXDE:
-> user-session=Lubuntu  
-
-KDE:
-> user-session=kde-plasma-kf5  
-
-Unity:
-> user-session=ubuntu  
-
-MATE:
-> user-session=mate  
-
-GNOME:
-> user-session=gnome  
-
--or-  
-
-> user-session=gnome-classic  
-
-XFCE:
-> user-session=xubuntu  
-
-Edubuntu:
-> user-session=gnome-flashback-compiz  
-
--or-  
-
-> user-session=gnome-flashback-metacity  
-
 #### Change Startup/Shutdown Splash Screen
 
 Many desktop environments change the startup and shutdown splash screens. To change the Plymouth splash screen, run these commands:

@@ -87,7 +87,7 @@ The KDE Plasma desktop environment is a familiar working environment and looks s
 
 ![KDE Plasma](/images/desktop-environment/Plasma.png)
 
-The KDE Plasma and its dependencies can be installed with this command:
+The KDE Plasma desktop and its dependencies can be installed with this command:
 
 ```
 sudo apt install kde-standard
@@ -105,15 +105,14 @@ Press Enter to select the OK option. At the list, press Enter again to keep gdm3
 
 ### UKUI
 
-UKUI is a lightweight desktop environment based on pluggable framework for Linux and other Unix-like Distributions. It provides a simpler and more enjoyable experience for browsing, searching, and managing your computer.It is developed using GTK and Qt.
+UKUI is a lightweight desktop environment based on a pluggable framework for Linux and other UNIX-like distributions. It provides a simple experience for browsing, searching, and managing your computer. It is developed using GTK and Qt.
+
+![UKUI](/images/desktop-environment/UKUI.png)
 
 UKUI can be installed with:
+
 ```
 sudo apt install ukui-desktop-environment
-```
-For additional optional components:
-```
-sudo apt install ukui-desktop-environment-extras
 ```
 
 ---

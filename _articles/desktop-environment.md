@@ -150,6 +150,15 @@ LXDE can be installed with:
 ```
 sudo apt install lxde
 ```
+
+While installing LXDE, you'll see a prompt to select your default display manager:
+
+![Display Manager Section](/images/desktop-environment/lightdm-1.png)
+
+Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
+
+![Display Manager Section](/images/desktop-environment/lightdm-2.png)
+
 ---
 
 ### LXQt

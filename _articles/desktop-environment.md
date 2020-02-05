@@ -186,15 +186,6 @@ LXDE and Xfce, on the other hand, are lightweight desktop environments. They are
 
 Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment's appearance can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
-#### Change Startup/Shutdown Splash Screen
-
-Many desktop environments change the startup and shutdown splash screens. To change the Plymouth splash screen, run these commands:
-
-```
-sudo update-alternatives --config default.plymouth
-sudo update-initramfs -u
-```
-
 #### Change Notification Dialog
 
 Xfce will change the notification dialog to its own. It can be configured with this command:

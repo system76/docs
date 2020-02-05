@@ -81,20 +81,31 @@ sudo apt install gnome-session
 
 ---
 
-### KDE
+### KDE Plasma
 
 The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows' desktop. It is highly customizable and looks clean.
 
-![KDE](/images/desktop-environment/KDE.png)
+![KDE Plasma](/images/desktop-environment/Plasma.png)
 
-A minimal KDE is installed with:
+The KDE Plasma desktop itself can be installed with this command:
+
 ```
 sudo apt install kde-plasma-desktop
 ```
+
+While installing KDE, you'll be prompted to choose a display manager:
+
+![Display Manager Section](/images/desktop-environment/kde-sddm-1.png)
+
+Press Enter to select the OK option. At the list, press Enter again to keep gdm3 as your display manager:
+
+![Display Manager Section](/images/desktop-environment/kde-sddm-2.png)
+
 A standard KDE desktop is installed with:
 ```
 sudo apt install kde-standard
 ```
+
 For a complete set of KDE applications and Plasma desktop
 ```
 sudo apt install kde-full

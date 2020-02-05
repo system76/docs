@@ -119,7 +119,7 @@ sudo apt install ukui-desktop-environment
 
 ### XFCE
 
-XFCE embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good bit of conformity for the programs written for it. Xfce also provides a highly customizable environment, while being leaner on resources.
+XFCE embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good amount of conformity for the programs written for it. XFCE also provides a highly customizable environment, while being leaner on resources.
 
 ![Xfce](/images/desktop-environment/Xfce.png)
 

@@ -129,6 +129,10 @@ You can install XFCE and its dependencies with this command:
 sudo apt install xfce4 xfce4-goodies
 ```
 
+While installing XFCE, you'll see a prompt to select your default display manager:
+
+Need to fill in screenshots here.
+
 ---
 
 ### LXDE

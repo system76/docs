@@ -55,19 +55,19 @@ Using the Displays panel in the System Settings center to change resolution or l
 
 #### Disable HiDPI Daemon:
 
-Ubuntu 18.04
+Ubuntu 18.04/19.10
 
 ```
 gsettings set com.system76.hidpi enable false
 ```
 
-Pop!_OS 18.04
+Pop!_OS 18.04/19.10
 
 ```
 gsettings set com.system76.hidpi enable false
 ```
 
-You can also open <u>Gnome Control Center</u> and go to the `Displays` panel. In the HiDPI Daemon section, set the `Enabled` switch to off.
+You can also open <u>Gnome Control Center</u> and go to the `Displays` panel under the `Devices` section. In the HiDPI Daemon section, set the `Enabled` switch to off.
 
 ---
 

@@ -12,6 +12,6 @@ section: graphics-audio-video
 
 ---
 
-Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, <kbd><span class="fl-pop-key"></span></kbd> and search for <u>Sound</u>, then click on **Sound Settings**. Click on the **Input** tab and make sure that none of the Mute boxes are checked. Adjust the volume until you see the "Input Level" indicator show activity.
+Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, <kbd><span class="fl-pop-key"></span></kbd> and search for <u>Sound</u>, then click on **Sound**. Scroll down to the **Input** section and make sure that the correct audio device is selected. Adjust the volume until you see activity under the **Input Device** drop-down box.
 
 ![Sound Settings](/images/microphone/input.png)

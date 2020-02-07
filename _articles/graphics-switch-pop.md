@@ -54,7 +54,7 @@ __NV_PRIME_RENDER_OFFLOAD=1 *application*
 GLX applications much be launcher with this command before the application to be rendered on the dGPU (NVIDIA):
 
 ```
-__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia *application*
 ```
 
 ### Switch graphics

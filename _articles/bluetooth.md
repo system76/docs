@@ -81,6 +81,15 @@ This will show all Bluetooth related messages.  Try leaving this command running
 
 Here are a few addition tidbits about the Bluetooth system that may help with troubleshooting.
 
+#### Controlling audio
+
+Once you are connected to a Bluetooth speaker, you may need to change where your current audio is "routed". You can get a more advanced interface to settings on audio with the program called PulseAudio Volume Control. To install, run this command:
+```
+sudo apt install pavucontrol
+```
+There will be a drop-down in the Playback tab for each of your applications that is outputting sound that you should be able to change to your Bluetooth speaker.
+
+
 #### Linux Firmware
 
 Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:

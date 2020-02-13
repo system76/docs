@@ -17,10 +17,10 @@ section: pop-ubuntu
 
 ### Accessing Repoman
 
-The tool that Pop!_OS has for adding, removing and editing repositories is called <u>Repoman</u> which is a part of the Pop!_Shop.
+Pop!_OS' tool for adding, removing and editing repositiories is called <u>Repoman</u> which is a part of the Pop!_Shop.
 
 ![Pop!_OS Shop](/images/manage-repos/Pop!_Shop.png)
 
-Once <u>Repoman</u> is opened click on the **Extra Sources** button from this tab there will be options to add repositories with the **Plus** button on the bottom left and edit repositories with the **Edit** button next to the **Plus** button once a repository is selected.
+Once <u>Repoman</u> is opened, click on the **Extra Sources** button from this tab there will be options to add repositories with the **Plus** button (on the bottom left) to add repositories. Select a repository from the list and then click on the **Edit** button (next to the **Plus** button) to edit the existing repository.
 
 ![Repoman window](/images/manage-repos/Repoman.png)

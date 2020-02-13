@@ -31,4 +31,4 @@ Ubuntu's tool for adding, removing and editing repositories is called <u>Softwar
 
 ![Software & Updates](/images/manage-repos/Software&Updates.png)
 
-Once <u>Software & Updates</u> is opened, click on **Other Software** tab there will be options to add repositories with the **Add...** button. Select a repository from the list and then click on the **Edit...** button (next to the **Add...** button) to edit the selected repository.
+Once <u>Software & Updates</u> is opened, click on **Other Software** tab. Under this tab, add repositories with the **Add...** button. Select a repository from the list and then click on the **Edit...** button (next to the **Add...** button) to edit the selected repository.

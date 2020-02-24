@@ -18,7 +18,7 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 ### Before You Begin
 
-* Make sure the laptop is **plugged into power** for the entire firmware updating process.
+* Make sure the laptop is **plugged into the AC Adapter as USB Type-C charging is not supported** for the entire firmware updating process.
 
 * **Disconnect external devices**, including any displays or USB devices.
 
@@ -28,17 +28,18 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 ### Performing the Update
 
-1. Select **Restart Now** to begin.
-2. The System76 Firmware updater will start on reboot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
-3. The firmware update process will begin, then the system will restart back into the System76 Firmware updater. The fans on the system will be on full blast.
-4. The firmware update process will finish. When prompted, **press any key to shutdown**.
-5. After the system powers off, **press the power button** to turn it back on.
-6. Two small blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one.
-7. The machine will then reboot. Repeatedly press the <kbd>F2</kbd> key to boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
+1. For Pop!_OS or Ubuntu you can start the firmware update using **Settings -> Devices -> Firmware**.
+2. Select **Restart Now** to begin.
+3. The System76 Firmware updater will start on reboot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
+4. The firmware update process will begin, then the system will restart back into the System76 Firmware updater. The fans on the system will be on full blast.
+5. The firmware update process will finish. When prompted, **press any key to shutdown**.
+6. After the system powers off, **press the power button** to turn it back on.
+7. Two small blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one.
+8. The machine will then reboot. Repeatedly press the <kbd>F2</kbd> key to boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
  - If the BIOS settings do not launch, reboot the machine and try again.
-8. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults** or **Load Optimal Defaults**.
-9. Select and confirm **Save changes and reset** in that same tab.
-10. Once the system restarts, the firmware will be up to date!
+9. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults** or **Load Optimal Defaults**.
+10. Select and confirm **Save changes and reset** in that same tab.
+11. Once the system restarts, the firmware will be up to date!
 
 ### Updating on Other OS's
 

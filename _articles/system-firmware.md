@@ -29,15 +29,15 @@ These instructions are for System76 owners who have been prompted for a firmware
 ### Performing the Update
 
 1. For Pop!_OS or Ubuntu you can start the firmware update using **Settings -> Devices -> Firmware**.
-2. Select **Restart Now** to begin.
+2. Select **Restart Now** from the notification or **Update** from the Settings application.
 3. The System76 Firmware updater will start on reboot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
 4. The firmware update process will begin, then the system will restart back into the System76 Firmware updater. The fans on the system will be on full blast.
 5. The firmware update process will finish. When prompted, **press any key to shutdown**.
 6. After the system powers off, **press the power button** to turn it back on.
 7. Two small blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one.
-8. The machine will then reboot. Repeatedly press the <kbd>F2</kbd> key to boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
+8. The machine will then reboot. Repeatedly press or hold the <kbd>F2</kbd> key to boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
  - If the BIOS settings do not launch, reboot the machine and try again.
-9. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults** or **Load Optimal Defaults**.
+9. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults** or **Load Optimal Defaults**. (This step does not apply to Open Firmware machines)
 10. Select and confirm **Save changes and reset** in that same tab.
 11. Once the system restarts, the firmware will be up to date!
 

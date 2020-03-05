@@ -23,7 +23,7 @@ The power button assembly is held on by a single nut inside the case. First, unp
 
 ![Unplugged power button](/images/thelio-power-button/unplug-2.jpg)
 
-Next, unscrew the nut from the power button. Use a needle-nose pliers to loosen the nut.
+Next, unscrew the nut from the power button. Use a pair of needle-nose pliers to loosen the nut.
 
 ![Needle-nose pliers](/images/thelio-power-button/needle-nose.jpg)
 

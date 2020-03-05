@@ -1,0 +1,33 @@
+# Site settings
+title: System76 Support
+email: info@system76.com
+description: > # this means to ignore newlines until "baseurl:"
+  Official System76 Support and useful documentation.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://support.system76.com" # the base hostname & protocol for your site
+
+collections:
+  articles:
+    output: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+kramdown:
+  input: GFM # Use GitHub markdown extensions
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-last-modified-at
+
+exclude:
+  - '.github'
+  - '.nojekyll'
+  - 'CONTRIBUTE.md'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'LICENSE.md'
+  - 'README.md'

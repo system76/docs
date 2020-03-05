@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<header id="page-title">
+    <div class="row">
+        <h1 class="small-12 columns">Support Docs</h1>
+    </div>
+</header>
+<div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <nav>
+            <h2>Articles:</h2>
+
+            <ul>
+                {% assign articles = site.articles | sort:"title" %}
+                {% for article in articles %}
+                  {% if article.hidden != true %}
+                    {% if article.title %}
+                    <li>
+                        <a class="page-link" href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a>
+                    </li>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>

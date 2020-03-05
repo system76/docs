@@ -57,6 +57,12 @@ rfkill list
 sudo rfkill unblock bluetooth
 ```
 
+If both Bluetooth and Wireless are soft blocked or if the Wireless is soft blocked run this command to unblock:
+
+```
+sudo rfkill unblock all
+```
+
 This will check to see Bluetooth is blocked, and if so, unblock it.
 
 ```
@@ -74,6 +80,15 @@ This will show all Bluetooth related messages.  Try leaving this command running
 ## Additional Info
 
 Here are a few addition tidbits about the Bluetooth system that may help with troubleshooting.
+
+#### Controlling audio
+
+Once you are connected to a Bluetooth speaker, you may need to change where your current audio is "routed". You can get a more advanced interface to settings on audio with the program called PulseAudio Volume Control. To install, run this command:
+```
+sudo apt install pavucontrol
+```
+There will be a drop-down in the Playback tab for each of your applications that is outputting sound that you should be able to change to your Bluetooth speaker.
+
 
 #### Linux Firmware
 

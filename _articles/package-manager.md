@@ -16,7 +16,7 @@ section: pop-ubuntu
 
 ---
 
-If your system complains about a failed upgrade, package managers conflicts, broken upgrades, or other package related issues, there are several common fixes to these problems.  Some package manager issues can be resolved with the graphical update program, but many require the command line.  If you get the red circle in the status bar, run these commands to fix your package manager:
+If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems.  Some package manager issues can be resolved with the graphical update program, but many require the command line.  If you get the red circle in the status bar, run these commands to fix your package manager:
 
 ```
 sudo apt clean

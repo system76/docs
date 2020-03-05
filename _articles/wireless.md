@@ -38,6 +38,12 @@ Some router settings can cause problems. Try adjusting your access point to thes
 - Lower the max/burst speeds, turn off channel bonding, and reduce channel width. Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and may decrease stability. Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
 - After making these changes, reboot the router.
 
+If the issues started after you applied updates, try running this command to make sure a bad WiFi driver has not been installed, then reboot your computer:
+
+```
+sudo apt remove backport-iwlwifi-dkms
+```
+
 ### Advanced Troubleshooting
 
 If the above steps aren't working, or you would like to fine tune and improve you connection, see the following steps.

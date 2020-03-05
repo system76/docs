@@ -17,38 +17,38 @@ section: software-applications
 
 ---
 
-Pop!_OS comes with the <u>GNOME</u> desktop environment and Ubuntu before 17.10 comes with the <u>Unity</u> desktop environment. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
+Pop!_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
-Desktop environments can be installed with a single command and can be selected at the login screen (image below). All desktop environments have access to your home folder and files, so they can share data. They are basically the top, graphical layer of Pop!_OS, each with its own individual settings.
+You can install an alternative desktop environment using the instructions below. If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!_OS, install the `pop-desktop` package:
 
-![Login](/images/desktop-environment/Login.png)
+```
+sudo apt install pop-desktop
+```
+
+For Ubuntu, install the `ubuntu-desktop` package instead:
+
+```
+sudo apt install ubuntu-desktop
+```
+
+The desktop enviroment is basically the top graphical layer of the OS. The desktop environment is launched by a display manager; Pop!_OS and Ubuntu both use GDM (GNOME Display Manager) by default.
+
+If multiple desktop environments are installed, GDM will display a gear icon, which will allow you to select the desktop environment you want to launch. You will need to either reboot or restart your display manager using `sudo systemctl restart gdm` before a newly-installed desktop environment will show up in the list of options.
 
 ![Login2](/images/desktop-environment/Login2.png)
-
-#### Important
-
-In Ubuntu 16.04, make sure to choose **lightdm** as the display manager when prompted. Choosing **gdm**, **sddm**, or another, will break the installation.  Other display managers work fine in 17.04 and later. If needed, this command can be run to choose the display manager again:
-
-```
-sudo dpkg-reconfigure lightdm
-```
 
 ---
 
 ### MATE
 
-Mate is an intuitive and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
+MATE is a simple and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
 
 ![MATE](/images/desktop-environment/MATE.png)
 
-MATE is installed with:
+This command will install MATE and its dependencies:
 
 ```
-sudo apt install mate-desktop-environment-extras mate-dock-applet lightdm
-```
-
-```
-sudo dpkg-reconfigure lightdm
+sudo apt install mate-desktop-environment mate-desktop-environment-extras ubuntu-mate-themes
 ```
 
 ---
@@ -69,158 +69,115 @@ sudo apt install cinnamon-desktop-environment
 
 ### GNOME
 
-GNOME is the default desktop environment in Pop!_OS and Ubuntu 17.10. It contains both a modern and a classic version.
+While Pop and Ubuntu contain GNOME by default, both include a number of customizations to GNOME. You can also install a vanilla GNOME session to get the upstream GNOME experience.
 
-![Gnome](/images/desktop-environment/Gnome.png)
+![GNOME](/images/desktop-environment/GNOME.png)
 
-![Gnome2](/images/desktop-environment/Gnome2.png)
-
-In Ubuntu, GNOME is installed with:
+You can install the vanilla GNOME session using this command:
 
 ```
-sudo apt install ubuntu-gnome-desktop
+sudo apt install gnome-session
 ```
 
 ---
 
-### KDE
+### KDE Plasma
 
-The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows' desktop. It is highly customizable and looks clean. It is more heavy on system resources than other desktop environments, and isn't recommended for low power usage on laptops.
+The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows' desktop. It is highly customizable and looks clean.
 
-![KDE](/images/desktop-environment/KDE.png)
+![KDE Plasma](/images/desktop-environment/Plasma.png)
 
-KDE is installed with:
-
-```
-sudo apt install kubuntu-desktop
-```
-
-KDE may have a packaging conflict which will cause the installation to fail.  If so, two packages need removed to complete the installation.  After an error, please run these commands to remove the packages and finish the installation:
+The KDE Plasma desktop and its dependencies can be installed with this command:
 
 ```
-sudo dpkg --purge unity-scope-gdrive account-plugin-google
-sudo apt install -f
+sudo apt install kde-standard
+```
+
+While installing KDE, you'll be prompted to choose a display manager:
+
+![Display Manager Section](/images/desktop-environment/sddm-1.png)
+
+Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
+
+![Display Manager Section](/images/desktop-environment/sddm-2.png)
+
+---
+
+### UKUI
+
+UKUI is a lightweight desktop environment based on a pluggable framework for Linux and other UNIX-like distributions. It provides a simple experience for browsing, searching, and managing your computer. It is developed using GTK and Qt.
+
+![UKUI](/images/desktop-environment/UKUI.png)
+
+UKUI can be installed with:
+
+```
+sudo apt install ukui-desktop-environment
 ```
 
 ---
 
 ### XFCE
 
-XFCE embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good bit of conformity for the programs written for it. Xfce also provides a highly customizable environment, while being leaner on resources.
+XFCE embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good amount of conformity for the programs written for it. XFCE also provides a highly customizable environment, while being leaner on resources.
 
-![Xfce](/images/desktop-environment/Xfce.png)
+![Xfce](/images/desktop-environment/XFCE.png)
 
-Xfce can be installed with:
+You can install XFCE and its dependencies with this command:
 
 ```
-sudo apt install xubuntu-desktop
+sudo apt install xfce4 xfce4-goodies
 ```
+
+While installing XFCE, you'll see a prompt to select your default display manager:
+
+![Display Manager Section](/images/desktop-environment/lightdm-1.png)
+
+Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
+
+![Display Manager Section](/images/desktop-environment/lightdm-2.png)
 
 ---
 
 ### LXDE
 
-The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment. It looks similar to older versions of Windows. This is the leanest desktop environment and can help extend battery life in laptops.
+The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment. It looks similar to older versions of Windows. This is a lean desktop environment and can help extend battery life in laptops.
 
 ![LXDE](/images/desktop-environment/LXDE.png)
 
 LXDE can be installed with:
 
 ```
-sudo apt install lubuntu-desktop
+sudo apt install lxde
 ```
+
+While installing LXDE, you'll see a prompt to select your default display manager:
+
+![Display Manager Section](/images/desktop-environment/lightdm-1.png)
+
+Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
+
+![Display Manager Section](/images/desktop-environment/lightdm-2.png)
 
 ---
 
-### Edubuntu
+### LXQt
 
-Edubuntu has been developed in collaboration with teachers and technologists in several countries and is aimed at users aged 6 to 18. It is designed for easy installation and ongoing system maintenance. It uses GNOME for its desktop manager.
+LXQt is a lightweight Qt desktop environment. It's being developed as a successor to LXDE. It is focused on being a classic desktop with a modern look and feel.
 
-Edubuntu can be installed with:
+![LXQt](/images/desktop-environment/LXQt.png)
+
+LXQt can be installed with:
 
 ```
-sudo apt install edubuntu-desktop
+sudo apt install lxqt
 ```
-
----
-
-### Resource Use
-
-GNOME and KDE are heavy resource desktop environments.  Installations consume more disk space than lightweight alternatives and more CPU and memory resources while in use. This is because they are full-featured; they provide the most complete and well-integrated environments.
-
-LXDE and Xfce, on the other hand, are lightweight desktop environments. They are designed to work well on older or lower-power hardware and generally consume fewer system resources while in use. This is achieved by cutting back on extra features.
 
 ---
 
 ## Troubleshooting
 
-Desktop environments can interfere with each other or change universal settings. Issues with a desktop environment looking different can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
-
-#### Change Login Greeter
-
-GNOME will add its own login greeter, which is shown as the second image at the top of this article. To change it, run this command:
-
-```
-sudo gedit /etc/lightdm/lightdm.conf
-```
-
-And add a line at the bottom to set the preferred greeter:
-
-Unity:
-
-> greeter-session=unity-greeter  
-
-GNOME:
-
-> greeter-session=lightdm-gtk-greeter  
-
-#### Change Automatic Login Environment
-
-If you currently use automatic login to bypass the password login, a default can be set with this command:
-
-```
-sudo gedit /etc/lightdm/lightdm.conf
-```
-
-And add a line at the bottom to set the (default):
-
-LXDE:
-> user-session=Lubuntu  
-
-KDE:
-> user-session=kde-plasma-kf5  
-
-Unity:
-> user-session=ubuntu  
-
-MATE:
-> user-session=mate  
-
-GNOME:
-> user-session=gnome  
-
--or-  
-
-> user-session=gnome-classic  
-
-XFCE:
-> user-session=xubuntu  
-
-Edubuntu:
-> user-session=gnome-flashback-compiz  
-
--or-  
-
-> user-session=gnome-flashback-metacity  
-
-#### Change Startup/Shutdown Splash Screen
-
-Many desktop environments change the startup and shutdown splash screens. To change the Plymouth splash screen, run these commands:
-
-```
-sudo update-alternatives --config default.plymouth
-sudo update-initramfs -u
-```
+Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment's appearance can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
 #### Change Notification Dialog
 
@@ -328,7 +285,7 @@ sudo apt autoremove
 For example, to remove KDE:
 
 ```
-sudo apt purge kubuntu-desktop
+sudo apt purge kde-*
 sudo apt autoremove
 ```
 

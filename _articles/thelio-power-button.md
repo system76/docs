@@ -13,44 +13,62 @@ section: hardware-drivers
 
 ---
 
-If you've purchased a new top case for your Thelio (or received one for a support case), you may need to move the power button from your old top case to the new one. Conversely, if you've received a replacement power button, you may need to remove the old one from your top case and install the new one.
+If you've purchased a new top case for your Thelio (or received one for a support case), you may need to move the power button from your old top case to the new one. Conversely, if you've received a replacement power button, you may need to remove the old power button from your top case and install the new one.
 
 # Removing the Power Button
 
-The power button is held on from the inside by a nut around the button. First, loosen the nut using a pair of needle-nose pliers.
+The power button assembly is held on by a single nut inside the case. First, unplug the power button's wire from the 90-degree connector.
 
-![Needle-nose pliers](/images/thelio-power-button/pliers-1.jpg)
+![Unplugging the power button](/images/thelio-power-button/unplug-1.jpg)
 
-Once the nut has been loosened, you can unscrew it the rest of the way using your fingers.
+![Unplugged power button](/images/thelio-power-button/unplug-2.jpg)
 
-![Needle-nose pliers](/images/thelio-power-button/unscrew.jpg)
+Next, unscrew the nut from the power button. Use a needle-nose pliers to loosen the nut.
 
-![Nut removal 1](/images/thelio-power-button/hand-1.jpg)
+![Needle-nose pliers](/images/thelio-power-button/needle-nose.jpg)
 
-![Nut removal 2](/images/thelio-power-button/hand-2.jpg)
+Once the nut has been loosened, use your fingers to remove it the rest of the way.
 
-Without the nut to secure it, the button will slide out the front of the case.
+![Unscrewing the button](/images/thelio-power-button/unscrewing.jpg)
 
-![Button removal 1](/images/thelio-power-button/button-front-1.jpg)
+![Removing the nut](/images/thelio-power-button/nut-removal.jpg)
 
-![Button removal 2](/images/thelio-power-button/button-front-1.jpg)
+With the wire unplugged and the nut removed, the power button can be pushed out the front of the case.
 
-The button will still be connected to the 90-degree connector inside of the machine. You'll need to unplug the button from this connector.
+![Removing the button](/images/thelio-power-button/button-removal-1.jpg)
 
-![Unplugged button](/images/thelio-power-button/unplugged.jpg)
+![Removing the button](/images/thelio-power-button/button-removal-2.jpg)
 
-Once unplugged, the button can be completely removed. (The plastic rectangle inside of the case will be loose at this point, and can also be removed.)
+The black plastic rectangle inside of the case will also be loose at this point, and can be removed.
 
-![Removed button](/images/thelio-power-button/removed-button.jpg)
+# Instsalling the Power Button
 
-# Installing the power button
+First, line up the black plastic rectangle with the hole inside of the case.
 
-To put the new button in, line up the black rectangle with the hole on the inside of the case, then insert the power button in from the outside.
+![Empty power button hole](/images/thelio-power-button/power-button-hole.jpg)
 
-![Button installation](/images/thelio-power-button/button-front-3.jpg)
+![Power button bracket](/images/thelio-power-button/bracket.jpg)
 
-Make sure to thread the power button's wire through the center of the nut. Screw the nut onto the button to hold the assembly together (once again, a needle-nose pliers can be used once . Plug the power button's wire into the 90-degree connector so the red wire is on the left.
+While holding the black plastic rectangle to the hole, feed the power button wire through the hole and push the power button into the case.
 
-![Needle-nose pliers](/images/thelio-power-button/pliers-2.jpg)
+![Installing the power button](/images/thelio-power-button/button-installation-1.jpg)
 
-![Installed button assembly](/images/thelio-power-button/installed.jpg)
+![Installing the power button](/images/thelio-power-button/button-installation-2.jpg)
+
+![Installing the power button](/images/thelio-power-button/button-installation-3.jpg)
+
+While holding the button in from the front, thread the power button wire through the nut, then screw the nut onto the power button.
+
+![Screwing in the power button](/images/thelio-power-button/nut-installation-1.jpg)
+
+![Screwing in the power button](/images/thelio-power-button/nut-installation-2.jpg)
+
+Tighten the nut with a pair of needle-nose pliers to ensure the plastic bracket doesn't move around later.
+
+![Screwing in the power button](/images/thelio-power-button/nut-installation-3.jpg)
+
+Finally, plug the power button's wire into the 90-degree connector so the red wire is on the left.
+
+![Plugging in the power button](/images/thelio-power-button/plugging-in-wire.jpg)
+
+![Completed power button assembly](/images/thelio-power-button/final-assembly.jpg)

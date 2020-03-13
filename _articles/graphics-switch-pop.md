@@ -48,13 +48,13 @@ discrete GPU.
 Vulkan applications must be launched with the following command before the application name to be rendered on the dGPU (NVIDIA):
 
 ```
-__NV_PRIME_RENDER_OFFLOAD=1 *application*
+__NV_PRIME_RENDER_OFFLOAD=1 <application>
 ```
 
 GLX applications much be launcher with this command before the application to be rendered on the dGPU (NVIDIA):
 
 ```
-__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia *application*
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia <application>
 ```
 
 ### Switch graphics

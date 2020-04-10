@@ -21,7 +21,7 @@ section: repairs-returns
 | Darter Pro   | [darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf), [darp6](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp6-service-manual.pdf)
 | Galago Pro   | [galp2](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf), [galp3](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf), [galp4](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp4-service-manual.pdf) | 
 | Gazelle      | [gaze14](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf)
-| Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) [lemp9](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemp9-service-manual.pdf)
+| Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) [lemp9](https://tech-docs.system76.com/models/lemp9/README.html)
 | Oryx Pro     | [oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf)  | 
 | Serval WS    | [serw11](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Serval/serw11-service-manual.pdf)
 

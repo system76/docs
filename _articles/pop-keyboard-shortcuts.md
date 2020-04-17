@@ -17,6 +17,20 @@ The Super Key is the OS key on your keyboard and is the Ubuntu or Pop key (<kbd>
 
 In Pop!\_OS, <kbd><span class="fl-pop-key"></span></kbd> handles the majority of OS and window actions.
 
+With the release of Pop!_OS 20.04 LTS there are new shortcuts with the introduction of Pop Shell and here are some of the shortcuts.
+
+### Pop Shell Shortcuts
+
+| Shortcut | Action      |
+| -------- | ----------- |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd> | Lock Screen |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | Move to Workspace Up or Down |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>W</kbd> | Close Window |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd> | Toggle Maximize |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>/</kbd> | Launch Application Switcher/Launcher |
+
+### Pop!_OS (up to 19.10 release) Shortcuts
+
 #### Primary Actions
 
 Tapping <kbd><span class="fl-pop-key"></span></kbd> on its own brings up the **Activities overview**, which is the core way of launching apps and managing your workflow.

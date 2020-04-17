@@ -7,7 +7,7 @@ keywords:
   - Firmware
   - Intel ME
   - Management Engine
-  - update
+  - Update
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: software-applications
@@ -40,6 +40,13 @@ These instructions are for System76 owners who have been prompted for a firmware
 9. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults** or **Load Optimal Defaults**. (This step does not apply to Open Firmware machines)
 10. Select and confirm **Save changes and reset** in that same tab.
 11. Once the system restarts, the firmware will be up to date!
+
+The following commands can be used to schedule the firmware update for the next reboot and then reboot the system:
+
+```
+sudo system76-firmware-cli schedule
+sudo reboot
+```
 
 ### Updating on Other OS's
 

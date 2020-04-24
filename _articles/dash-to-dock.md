@@ -16,7 +16,7 @@ redirect_from:
   - /moveLauncher
   - /movelauncher
   - /articles/move-launcher/
-section: pop-ubuntu
+section: pop
 
 ---
 

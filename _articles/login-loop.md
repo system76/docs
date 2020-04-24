@@ -118,13 +118,16 @@ sudo apt install system76-driver-nvidia
 
 After the installation has completed, type `sudo systemctl reboot` and try logging in again.
 
-### Blacklist Radeon driver
+### Blacklist Radeon Driver
+
 If you are using an AMD graphics card, the radeon driver might be causing issues as it does not support newer versions of Ubuntu.  The amdgpu driver that comes with the kernel does however. To blacklist the radeon driver and ensure amdgpu is loaded:
 
-* Open `/etc/modprobe.d/blacklist.conf` for editing.
-* Add `blacklist radeon` to the file
-* Run `sudo update-initramfs -u`
-* Reboot
+Open `/etc/modprobe.d/blacklist.conf` for editing and add `blacklist radeon` to the file. Then run:
+
+```
+sudo update-initramfs -c -k all
+sudo shutdown -r now
+```
 
 ### If these steps don't work...
 

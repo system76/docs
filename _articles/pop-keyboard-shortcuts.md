@@ -17,6 +17,58 @@ The Super Key is the OS key on your keyboard and is the Ubuntu or Pop key (<kbd>
 
 In Pop!\_OS, <kbd><span class="fl-pop-key"></span></kbd> handles the majority of OS and window actions.
 
+### Pop!_OS (20.04 LTS and above) Shortcuts
+
+#### Direction keys
+
+| Shortcut | Action |
+| -------- | ------ |
+| <kbd>←</kbd> + <kbd>↓</kbd> + <kbd>↑</kbd> + <kbd>→</kbd> | Direction keys (arrow keys) |
+| <kbd>H</kbd> + <kbd>J</kbd> + <kbd>K</kbd> + <kbd>L</kbd> | Direction keys (Vim shortcuts) |
+
+#### Move, resize and swap windows
+
+| Shortcut | Action |
+| -------- | ------ |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Enter</kbd> | Enter adjustment mode |
+| <kbd>Shift</kbd> + <kbd>Direction keys</kbd> | Resize window (while in adjustment mode) |
+| <kbd>Ctrl</kbd> + <kbd>Direction keys</kbd> | Swap windows (while in adjustment mode) |
+| <kbd>Enter</kbd> | Apply changes |
+| <kbd>ESC</kbd> | Cancel |
+
+#### Window Shortcuts
+
+| Shortcut | Action |
+| -------- | ------ |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>O</kbd> | Change window orientation |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>G</kbd> | Toggle floating mode |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd> | Close Window |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd> | Toggle Maximize |
+
+#### Navigate applications and windows
+
+| Shortcut | Action |
+| -------- | ------ |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>/</kbd> | Launch and switch applications |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Direction keys</kbd> | Switch focus between windows |
+
+#### Workspaces
+
+| Shortcut | Action |
+| -------- | ------ |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | Move to Workspace Up or Down |
+
+#### Launcher Shortcuts
+
+| Shortcut | Action |
+| -------- | ------ |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>/</kbd> | Activate Launcher |
+| <kbd>t:</kbd> | Execute a command in a terminal |
+| <kbd>:</kbd> | Execute a command in sh |
+| <kbd>=</kbd> | Calculate an equation |
+
+### Pop!_OS (up to 19.10 release) Shortcuts
+
 #### Primary Actions
 
 Tapping <kbd><span class="fl-pop-key"></span></kbd> on its own brings up the **Activities overview**, which is the core way of launching apps and managing your workflow.

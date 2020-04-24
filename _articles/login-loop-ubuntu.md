@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Can't Log In or Black Screen After Logging In
+title: Can't Log In or Black Screen After Logging In with Ubuntu
 description: >
   Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
 keywords:
@@ -14,7 +14,7 @@ keywords:
   - greeter
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop-ubuntu
+section: ubuntu
 
 ---
 

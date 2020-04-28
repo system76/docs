@@ -21,11 +21,13 @@ The following packages will be needed to build and install DaVinci Resolve:
 
 ### Download DaVinci Resolve and the MakeResolveDeb script
 
-[Here](https://www.blackmagicdesign.com/products/davinciresolve/) we will select the DaVinci Resolve and not the Studio version.
+#### Please note that this script is not created by Black Magic or System76 and is maintained by the community
+
+[Here](https://www.blackmagicdesign.com/products/davinciresolve/) we will select DaVinci Resolve and not the Studio version.
 
 [Here](http://www.danieltufvesson.com/makeresolvedeb) once DaVinci Resolve is downloaded extract the zip file either with the right click menu on the file in the **Files** application.
 
-Then we'll extract the MakeResolveDeb zip file into the same directory that the DaVinci Resolve files are in. Then from the DaVinci Resolve directory right click on an empty space and selet 'Open in Terminal' and in the new **Terminal** window run this command:
+Then we'll extract the MakeResolveDeb zip file into the same directory that the DaVinci Resolve files are in. Then from the DaVinci Resolve directory right click on an empty space and select 'Open in Terminal' and in the new **Terminal** window run this command:
 
 ```./makeresolvedeb*.sh lite```
 

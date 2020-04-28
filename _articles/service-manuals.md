@@ -27,5 +27,5 @@ section: repairs-returns
 
 | Desktops     | PDF | Tech Docs |
 | -------------| ----| ----------|
-| Thelio       | [thelio-r1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf), [thelio-b1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) | [thelio-r1/b1](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/repairs.html)
-| Thelio Major | |[thelio-major-b1](https://system76.com/guides/thelio-major/b1) | [thelio-major](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf)
+| Thelio       | [thelio-r1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf), [thelio-b1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) | 
+| Thelio Major | |[thelio-major-b1](https://system76.com/guides/thelio-major/b1) | [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/repairs.html)

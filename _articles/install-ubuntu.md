@@ -84,7 +84,7 @@ If all of your files are backed up, or if you are installing from scratch, you'l
 
 Ubuntu will present several options when installing:
 
-![Install Ubuntu](/images/install-ubuntu/install.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen10.png)
 
 Option | Action
 ----------- | ----------------
@@ -93,6 +93,15 @@ Option | Action
 **Install Ubuntu Alongside** | To allow you to add an additional operating system to your computer. Choose this option if you already have an operating system, such as Windows or another version of Linux, and would like to also install Ubuntu. Please note that the existing operating system's partition will need to be reduced before installing Ubuntu in the extra space.
 **Erase Disk** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, select **Use LVM with the new Ubuntu Installation** option for flexibility with partitions later.
 **Something Else** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
+
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen2.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen3.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen4.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen5.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen6.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen7.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen8.png)
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen9.png)
 
 ### Install System76 Driver
 

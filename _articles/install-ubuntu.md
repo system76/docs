@@ -64,7 +64,7 @@ From the menu shown the 'nomodeset' option can be selected during this boot.
 
 ---
 
-Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
+Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process is designed to leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
 ![Try or Install](/images/install-ubuntu/ubuntu-install-try-install.png)
 

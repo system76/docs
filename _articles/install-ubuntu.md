@@ -58,21 +58,13 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kb
 
 Ubuntu may need a special option enabled to install and boot from Ubuntu until the NVIDIA driver can be installed as described below. If the installer doesn't show an image after this screen, please follow the next instructions:
 
-![First](/images/install-ubuntu/first.png)
+![nomodeset](/images/install-ubuntu/ubuntu-install-nomodeset.png)
 
-When you see the above screen, press the 'e' key to enter the boot parameter configuration screen.
-
-![Second](/images/install-ubuntu/second.png)
-
-Then on the above screen at the end of the 'linux' line add the following line:
-
-```
-nouveau.modeset=0
-```
+From the menu shown the 'nomodeset' option can be selected during this boot.
 
 ---
 
-Once Ubuntu starts, you will be asked to **Try Ubuntu** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
+Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
 ![Try or Install](/images/install-ubuntu/ubuntu-install-try-install.png)
 

@@ -74,17 +74,13 @@ nouveau.modeset=0
 
 Once Ubuntu starts, you will be asked to **Try Ubuntu** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. First, we recommend backing up all important files from your computer. The restore process can leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
-![Try or Install](/images/install-ubuntu/try-install.png)
+![Try or Install](/images/install-ubuntu/ubuntu-install-try-install.png)
 
 If all of your files are backed up, or if you are installing from scratch, you'll need to pick the **Install Ubuntu** option to continue with the installation. Please check the box labeled **Download updates while installing Ubuntu** to ensure that your new installation is fully up to date once the installation is complete.
 
-![Download Updates](/images/install-ubuntu/updates.png)
+![Download Updates](/images/install-ubuntu/ubuntu-install-screen2.png)
 
 ### Install Ubuntu
-
-Ubuntu will present several options when installing:
-
-![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen10.png)
 
 Option | Action
 ----------- | ----------------
@@ -94,14 +90,43 @@ Option | Action
 **Erase Disk** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, select **Use LVM with the new Ubuntu Installation** option for flexibility with partitions later.
 **Something Else** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
 
-![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen2.png)
+#### Language and Keyboard layout
+
+![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen1.png)
+
+#### Installation type
+
 ![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen3.png)
+
+#### Advanced Features
+
 ![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen4.png)
+
+#### Disk encryption
+
 ![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen5.png)
+
+#### Write changes to the drive/disk
+
 ![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen6.png)
+
+#### Location 
+
 ![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen7.png)
+
+This option will effect your timezone.
+
+#### User creation
+
 ![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen8.png)
+
+This is when you will create your first user in your new install of Ubuntu.
+
+#### Slideshow
+
 ![Install Ubuntu](/images/install-ubuntu/ubuntu-install-screen9.png)
+
+This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved. 
 
 ### Install System76 Driver
 

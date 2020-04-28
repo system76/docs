@@ -27,7 +27,7 @@ The following packages will be needed to build and install DaVinci Resolve:
 
 ![Download button](/images/davinci-resolve/davinci-resolve-download.png)
 
-![Questions for download](/image/davinci-resolve/davinci-resolve-questions.png)
+![Questions for download](/images/davinci-resolve/davinci-resolve-questions.png)
 
 [Here](http://www.danieltufvesson.com/makeresolvedeb) once DaVinci Resolve is downloaded extract the zip file either with the right click menu item called "Extract Here" on the file in the **Files** application.
 

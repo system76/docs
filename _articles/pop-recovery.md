@@ -48,7 +48,7 @@ Next, run this command:
 ```
 sudo mount /dev/sda3 /mnt
 ```
-OR
+OR for NVMe drives:
 
 ```
 sudo mount /dev/nvme0n1p3 /mnt

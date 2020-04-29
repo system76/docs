@@ -17,7 +17,9 @@ section: pop
 
 The following packages will be needed to build and install DaVinci Resolve:
 
-```sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso```
+```
+sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
+```
 
 ### Download DaVinci Resolve and the MakeResolveDeb script
 
@@ -39,7 +41,7 @@ Once DaVinci Resolve is downloaded, extract the zip file.
 You can extract the archive by right-clicking on the file in the **Files** application. and selecting the menu item "Extract Here"
 
 - Next, we'll extract the MakeResolveDeb zip file into the same directory where the DaVinci Resolve files were extracted.
-- We do this by again right0-clicking on the file. This time however, we select 'Extract to..." and choose the newly created DaVinci Resolve directory.
+- We do this by right-clicking on the zip file. This time, however, we select 'Extract to..." and choose the newly created DaVinci Resolve directory.
 
 ### Create The .deb File
 

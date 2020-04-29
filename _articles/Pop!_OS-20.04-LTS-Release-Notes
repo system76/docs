@@ -15,7 +15,7 @@ section: pop
 
 ---
 
-Pop!_OS 20.04 was released April 30, 2020.
+Pop!\_OS 20.04 was released April 30, 2020.
 
 ## Pop!_OS 20.04 Release Notes
 
@@ -33,7 +33,7 @@ Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kb
 ### New Features
 
 #### Pop Shell Tiling
-Pop!_OS 20.04 features automatic window tiling. To activate tiling mode, click the tiling menu icon at the top right of the screen and toggle on Tile Windows. Open and newly launched windows will be automatically tiled. Toggling off Tile Windows will revert to floating mode.
+Pop!\_OS 20.04 features automatic window tiling. To activate tiling mode, click the tiling menu icon at the top right of the screen and toggle on Tile Windows. Open and newly launched windows will be automatically tiled. Toggling off Tile Windows will revert to floating mode.
 
 Click the tiling menu icon again and choose Keyboard Shortcuts. This help application will show you how to navigate, move, and resize windows all with your keyboard.
 
@@ -41,6 +41,6 @@ Click the tiling menu icon again and choose Keyboard Shortcuts. This help applic
 Type `Super` + `/` to activate the new application switcher and launcher. Instead of `Super` + `Tabbing` through application icons, simply type `Super` + `/` and start typing the name of the application you want to switch to or launch.
 
 #### Flatpak support with the Flathub
-Pop!_Shop now includes Flatpak application support and the Flathub application repository by default. The source of applications is visible when viewing applications details.
+Pop!\_Shop now includes Flatpak application support and the Flathub application repository by default. The source of applications is visible when viewing applications details.
 
-System76 continues to curate and package key applications such as Steam, Atom, and VS Code. Pop!_OS repositories are prioritized to provide the best user experience for these applications.
+System76 continues to curate and package key applications such as Steam, Atom, and VS Code. Pop!\_OS repositories are prioritized to provide the best user experience for these applications.

@@ -21,22 +21,41 @@ The following packages will be needed to build and install DaVinci Resolve:
 
 ### Download DaVinci Resolve and the MakeResolveDeb script
 
-#### Please note that this script is not created by Black Magic or System76 and is maintained by the community
+#### Please note that the MakeResolveDeb script is not created by Black Magic or System76 and is maintained by the community
 
-[Here](https://www.blackmagicdesign.com/products/davinciresolve/) we will select DaVinci Resolve and not the Studio version.
+DaVinci resolve can be downloaded [Here](https://www.blackmagicdesign.com/products/davinciresolve/) we will select DaVinci Resolve and not the Studio version.
 
 ![Download button](/images/davinci-resolve/davinci-resolve-download.png)
 
+Before DaVinci Resolve will download the site asks you to fill in a contact form (below).
+
 ![Questions for download](/images/davinci-resolve/davinci-resolve-questions.png)
 
-[Here](http://www.danieltufvesson.com/makeresolvedeb) once DaVinci Resolve is downloaded extract the zip file either with the right click menu item called "Extract Here" on the file in the **Files** application.
+The MakeResolveDeb script can be downloaded [Here](http://www.danieltufvesson.com/makeresolvedeb)
 
-Then we'll extract the MakeResolveDeb zip file into the same directory that the DaVinci Resolve files are in but right clicking on the file and selecting 'Extract to..." and select the DaVinci Resolve directory. Then from the DaVinci Resolve directory right click on an empty space and select 'Open in Terminal' and in the new **Terminal** window run this command:
+### Extract the Zip Files
+
+Once DaVinci Resolve is downloaded, extract the zip file.
+You can extract the archive by right-clicking on the file in the **Files** application. and selecting the menu item "Extract Here"
+
+- Next, we'll extract the MakeResolveDeb zip file into the same directory where the DaVinci Resolve files were extracted.
+- We do this by again right0-clicking on the file. This time however, we select 'Extract to..." and choose the newly created DaVinci Resolve directory.
+
+### Create The .deb File
+
+From the DaVinci Resolve directory, right click on an empty space between file icons and select 'Open in Terminal.'
+
+**NOTE:** You may need to change from "list" view to "grid view" to access the space between files.
+
+In the new **Terminal** window run this command:
 
 ```./makeresolvedeb*.sh lite```
 
-Once that completes we'll be dropped to a new line with our username and then we'll run this command to install **DaVinci Resolve**:
+Once the script's process completes, we'll be dropped to a new line with our username.
+Finally, run this command to install **DaVinci Resolve**:
 
 ```sudo dpkg -i davinci-resolve*_amd64.deb```
 
+![DaVinci Loading Screen](/images/davinci-resolve/davinci-loading-screen.png)
 
+![DaVinci App Open](/images/davinci-resolve/davinci-app-open.png)

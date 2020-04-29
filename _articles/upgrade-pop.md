@@ -21,6 +21,7 @@ hidden: false
 section: pop
 
 ---
+Pop!\_OS 20.04 LTS was released April 30, 2020. View the [Release Notes](/articles/Pop!_OS-20.04-LTS-Release-Notes) to learn about new features.
 
 ### Upgrading to Pop!\_OS to 20.04 from 19.10 or 18.04
 
@@ -33,7 +34,7 @@ sudo apt full-upgrade
 
 Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> Details -> About.
 
-On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 19.10 is available with a "Download" button.
+On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.04 is available with a "Download" button.
 
 ![Image Name](/images/upgrade-pop/about-download-button.png)
 
@@ -45,7 +46,7 @@ Once the download is complete, you will receive a second notification saying the
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 19.10!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.04!
 
 ### Backup Your Files
 

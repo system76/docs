@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Change Your Password
+title: Change Your Password in Pop!_OS
 description: >
     Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change both!
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - crash
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop-ubuntu
+section: pop
 
 ---
 

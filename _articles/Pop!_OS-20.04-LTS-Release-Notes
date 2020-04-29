@@ -47,7 +47,7 @@ Customers with integrated and discrete graphics can now choose Hybrid Graphics f
 #### Offline Upgrades
 Version upgrades allow you to download the upgrade in the background and then apply it offline when you’re ready to perform the upgrade.
 
-#### Application Settings in Top Bar
+#### Application Indicators in Top Bar
 Application indicators are now present at the top right of the desktop by default.
 
 #### More Accessible Pop!\_Picks
@@ -63,7 +63,7 @@ Dark mode is enabled by default. Default desktop wallpaper has a new design. Bot
 ** Better organized power off / logout section in the user menu
 ** Most password dialogs now have the option to reveal the password by clicking the "eye" icon
 ** App folders in the application overview can now be renamed
-** GNOME Settings sextions have been rearranved for easier navigation
+** GNOME Settings sections have been rearranged for easier navigation
 ** The privacy section now lists applications that have been granted permission to access location services, camera and microphone. Access can be revoked on a per-app basis.
 ** The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
 

@@ -11,7 +11,7 @@ keywords:
   - Intel
 image: http://support.system76.com/images/pop.png
 hidden: false
-section: pop-ubuntu
+section: pop
 
 ---
 

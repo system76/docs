@@ -16,6 +16,30 @@ section: hardware-drivers
 
 ### System76 Driver
 
+#### Apt Preferences File
+
+If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
+
+Create the apt preferences file here:
+
+```
+sudo gedit /etc/apt/preferences.d/system76-apt-preferences
+```
+
+Add the following six lines (seven if you count the space in the middle):
+
+```
+Package: *
+Pin: release o=LP-PPA-system76-dev-stable
+Pin-Priority: 1001
+
+Package: *
+Pin: release o=LP-PPA-system76-dev-pre-stable
+Pin-Priority: 1001
+```
+
+Save the file. Now you should be able to install the System76 Driver as described below.
+
 To install our Driver you need to run the following commands in the Terminal:
 
 ```
@@ -39,27 +63,3 @@ Follow the above steps as well as this additional command if you have a NVIDIA G
 ```
 sudo apt-get install system76-driver-nvidia
 ```
-
-#### Apt Preferences File
-
-If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
-
-Create the apt preferences file here:
-
-```
-sudo gedit /etc/apt/preferences.d/system76-apt-preferences
-```
-
-Add the following six lines (seven if you count the space in the middle):
-
-```
-Package: *
-Pin: release o=LP-PPA-system76-dev-stable
-Pin-Priority: 1001
-
-Package: *
-Pin: release o=LP-PPA-system76-dev-pre-stable
-Pin-Priority: 1001
-```
-
-Save the file. Now you should be able to install the System76 Driver as described above.

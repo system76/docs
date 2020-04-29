@@ -20,7 +20,7 @@ section: hardware-drivers
 Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
 - [Installing Pop!_OS](/articles/install-pop/)
-- Recovering your exiting operating system
+- Recovering your existing operating system
 - Backing up files when you can't boot
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
 - [Fixing the boot loader](/articles/bootloader/)
@@ -47,7 +47,7 @@ Pick *Choose Image* and navigate to where you downloaded Pop!_OS, click on it an
 
 ![Select Pop!_OS iso](/images/pop-live-disk/popsicle-image-selection.png)
 
-Next you select the drive that you want to use, the name of the drive most likely will be the brand name like SanDisk or Kingston.
+Next, select the drive that you want to use, the name of the drive most likely will be the brand name like SanDisk or Kingston.
 
 ![Popsicle Flash Drive Selected](/images/pop-live-disk/popsicle-drive-selection.png)
 

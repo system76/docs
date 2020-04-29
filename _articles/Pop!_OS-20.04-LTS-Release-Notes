@@ -2,7 +2,7 @@
 layout: article
 title: Pop!_OS 20.04 LTS Release Notes
 description: >
-  Discover what's new in Pop!_OS 20.04 LTS
+  Discover what's new in Pop!\_OS 20.04 LTS
 keywords:
   - Pop
   - 20.04
@@ -50,8 +50,8 @@ Version upgrades allow you to download the upgrade in the background and then ap
 #### Application Settings in Top Bar
 Application indicators are now present at the top right of the desktop by default.
 
-#### Faster Pop!\_Picks
-Pop!\_Shop now loads Pop!\_Picks much faster. These are curated and preferred applications tested to provide the best experience.
+#### More Accessible Pop!\_Picks
+Pop!\_Shop now loads up to 20 Pop!\_Picks making highlighted applications more accessible. These are curated and preferred applications tested to provide the best experience.
 
 #### Theme Updates
 Dark mode is enabled by default. Default desktop wallpaper has a new design. Both defaults can be changed within the Appearance settings.

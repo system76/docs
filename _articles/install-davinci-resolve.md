@@ -43,9 +43,7 @@ Next, extract the MakeResolveDeb zip file into the same directory where the DaVi
 
 ### Create the .deb File
 
-From the DaVinci Resolve directory, right click on an empty space between file icons and select 'Open in Terminal.'
-
-**NOTE:** You may need to change from "list" view to "grid view" to access the space between files.
+Open the DaVinci Resolve directory, right click on an empty space between/below the file icons, and select 'Open in Terminal.'
 
 In the new **Terminal** window run this command:
 

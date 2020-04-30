@@ -25,7 +25,7 @@ sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
 
 **Please note that the MakeResolveDeb script is not created by Black Magic or System76 and is maintained by the community.**
 
-DaVinci resolve can be downloaded [Here](https://www.blackmagicdesign.com/products/davinciresolve/) we will select DaVinci Resolve and not the Studio version.
+DaVinci Resolve can be downloaded [here](https://www.blackmagicdesign.com/products/davinciresolve/). Select the regular DaVinci Resolve version and not the Studio version, unless you have a license for the Studio version.
 
 ![Download button](/images/davinci-resolve/davinci-resolve-download.png)
 

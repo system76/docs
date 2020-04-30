@@ -28,8 +28,7 @@ In order to download the beta, you are required to register an account on Lightw
 
 ![Registration Page 2](/images/lightworks/lightworks-registration-page-2.png)
 
-We will need to confirm our registration from whichever email account we used to register.
-Lightworks will send a confirmation email with a verification link. It may be helpful to check the "spam" folder to ensure that it was not falsely-flagged by your Email Service Provider (ESP).
+Upon registration, Lightworks will send a confirmation email with a verification link. If you do not receive the email, it may be helpful to check your "spam" folder.
 
 ## Download the Beta
 

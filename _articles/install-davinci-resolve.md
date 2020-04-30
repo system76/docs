@@ -37,11 +37,9 @@ Also download the MakeResolveDeb script from [here](http://www.danieltufvesson.c
 
 ### Extract the Zip Files
 
-Once DaVinci Resolve is downloaded, extract the zip file.
-You can extract the archive by right-clicking on the file in the **Files** application. and selecting the menu item "Extract Here"
+Once DaVinci Resolve is downloaded, extract the zip file by right-clicking on the Davinci Resolve zip file in the **Files** application and selecting "Extract Here" from the menu.
 
-- Next, we'll extract the MakeResolveDeb zip file into the same directory where the DaVinci Resolve files were extracted.
-- We do this by right-clicking on the zip file. This time, however, we select 'Extract to..." and choose the newly created DaVinci Resolve directory.
+Next, extract the MakeResolveDeb zip file into the same directory where the DaVinci Resolve files were extracted by right-clicking on the MakeResolveDeb zip file, selecting "Extract to..." from the menu, and choosing the newly created DaVinci Resolve directory.
 
 ### Create The .deb File
 

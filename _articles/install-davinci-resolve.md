@@ -45,9 +45,13 @@ Next, extract the MakeResolveDeb zip file into the same directory where the DaVi
 
 Open the DaVinci Resolve directory, right click on an empty space between/below the file icons, and select 'Open in Terminal.'
 
-In the new **Terminal** window, run this command:
+In the new **Terminal** window, run this command if you are using the free-of-cost version of DaVinci Resolve:
 
 ```./makeresolvedeb*.sh lite```
+
+Or this command if you are using the paid Studio version of DaVinci Resolve:
+
+```./makeresolvedeb*.sh studio```
 
 Once the script's process completes, we'll be dropped to a new line with our username.
 Finally, run this command to install **DaVinci Resolve**:

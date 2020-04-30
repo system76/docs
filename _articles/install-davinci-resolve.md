@@ -21,6 +21,14 @@ The following packages will be needed to build and install DaVinci Resolve:
 sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
 ```
 
+DaVinci Resolve requires either CUDA or OpenCL. If you are using an NVIDIA GPU, install CUDA using this command:
+
+```
+sudo apt install system76-cuda-latest
+```
+
+If you are using an AMD GPU, install the AMDGPU-PRO driver from AMD's website [here](https://www.amd.com/en/support) for OpenCL support.
+
 ### Download DaVinci Resolve and the MakeResolveDeb script
 
 **Please note that the MakeResolveDeb script is not created by Black Magic or System76 and is maintained by the community.**

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install MATLAB on Pop!\_OS 20.04 LTS
+title: Install MATLAB on Pop!_OS 20.04 LTS
 description: >
    How to install MATLAB
 keywords:
@@ -48,7 +48,7 @@ Select the appropriate license. If you've received and activation key, select th
 
 Select the destination for the MATLAB installation. The destination specified in the previous command will auto-populate, but you can change it here if necessary. Click Next.
 
-![Select Destination Folder for MATLAB]/(images/MATLAB/destinationfoldermatlab.png)
+![Select Destination Folder for MATLAB](images/MATLAB/destinationfoldermatlab.png)
 
 Choose your toolboxes. Each tool box requires additional storage space.
 

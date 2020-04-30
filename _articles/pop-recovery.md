@@ -13,11 +13,11 @@ keywords:
   - repair
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop-ubuntu
+section: pop
 
 ---
 
-The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!_OS 19.04.
+The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
 
 To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting. On the menu, choose **Pop!_OS Recovery**.
 
@@ -25,15 +25,15 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 
 ## Table of Contents
 
-- [Repair](/articles/pop-recovery/#repair) 
-- [Refresh Install](/articles/pop-recovery/#refresh-install) 
-- [Reinstall](/articles/pop-recovery/#reinstall) 
+- [Repair](/articles/pop-recovery/#repair)
+- [Refresh Install](/articles/pop-recovery/#refresh-install)
+- [Reinstall](/articles/pop-recovery/#reinstall)
 
 ### Repair
 
 If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
-To get access to the existing drive to run the package manager [repair commands](/articles/package-manager/), the following commands will need to be run:
+To access to the existing OS drive and run the package manager [repair commands](/articles/package-manager/), the following commands will need to be run:
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
@@ -48,6 +48,11 @@ Next, run this command:
 ```
 sudo mount /dev/sda3 /mnt
 ```
+OR for NVMe drives:
+
+```
+sudo mount /dev/nvme0n1p3 /mnt
+```
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  
 
@@ -60,8 +65,15 @@ sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```
+OR for NVMe drives:
 
-And take note as to what the cryptdata group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
+```
+sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
+sudo lvscan
+sudo vgchange -ay
+```
+
+**Note** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
 ```
 sudo mount /dev/mapper/data-root /mnt
@@ -91,9 +103,9 @@ reboot
 
 ### Refresh Install
 
-Starting with new installations of Pop!_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled. 
+Starting with new installations of Pop!\_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled.
 
-![Refresh Install Option](/images/pop-recovery/refresh-install-option.png)
+![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
 
 ### Reinstall
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Fix Package Manager Issues
+title: Fix Package Manager Issues in Ubuntu
 description: >
   Here are ways to fix update, upgrade, and other package manager issues.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - updates
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop-ubuntu
+section: ubuntu
 
 ---
 

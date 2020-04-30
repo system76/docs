@@ -54,7 +54,7 @@ Click the green "Install" button in the top-right corner of Eddy to install the 
 
 ![Eddy Installation](/images/lightworks/lightworks-eddy-2.png)
 
-Now we should be able to launch Lightworks from the Activities menu like any other integrated system app!
+Now, the Lightworks launcher will appear in the Activities menu.
 
 ![Activities Menu](/images/lightworks/lightworks-activities-menu.png)
 

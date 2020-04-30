@@ -47,7 +47,7 @@ Pick *Choose Image* and navigate to where you downloaded Pop!_OS, click on it an
 
 ![Select Pop!_OS iso](/images/pop-live-disk/popsicle-image-selection.png)
 
-Next, select the drive that you want to use, the name of the drive most likely will be the brand name like SanDisk or Kingston.
+Next, select the drive that you want to use; the name of the drive most likely will be the brand name, e.g. "SanDisk" or "Kingston".
 
 ![Popsicle Flash Drive Selected](/images/pop-live-disk/popsicle-drive-selection.png)
 

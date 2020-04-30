@@ -13,7 +13,7 @@ section: pop
 
 ---
 
-### Install the following packages
+### Install prerequisite packages
 
 The following packages will be needed to build and install DaVinci Resolve:
 

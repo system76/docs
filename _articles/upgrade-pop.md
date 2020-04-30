@@ -18,11 +18,12 @@ keywords:
   - apt
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop-ubuntu
+section: pop
 
 ---
+Pop!\_OS 20.04 LTS was released April 30, 2020. View the [Release Notes](/articles/Pop!_OS-20.04-LTS-Release-Notes) to learn about new features.
 
-### Upgrading to Pop!\_OS 19.10 from 19.04 or 18.04
+### Upgrading to Pop!\_OS to 20.04 from 19.10 or 18.04
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -33,7 +34,7 @@ sudo apt full-upgrade
 
 Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> Details -> About.
 
-On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 19.10 is available with a "Download" button.
+On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.04 is available with a "Download" button.
 
 ![Image Name](/images/upgrade-pop/about-download-button.png)
 
@@ -45,7 +46,7 @@ Once the download is complete, you will receive a second notification saying the
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 19.10!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.04!
 
 ### Backup Your Files
 
@@ -94,20 +95,9 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 ### Upgrading older releases
 
-Pop!\_OS 18.10 was released in October, 2018. This section explains how to upgrade from Pop!\_OS 18.04 to Pop!\_OS 18.10.
+Upgrading Pop!\_OS 17.10, 18.10 or 19.04.
 
-Pop!\_OS 18.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!\_OS
-
-```
-sudo apt update
-sudo apt full-upgrade
-do-release-upgrade
-sudo apt install pop-desktop
-```
-
-_____________________________
-
-Pop!\_OS 19.04 was released in April, 2019. This section explains how to upgrade from Pop!\_OS 18.10 to Pop!\_OS 19.04.
+These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!\_OS
 
 Pop!\_OS 17.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!\_OS
 
@@ -117,9 +107,16 @@ sudo mv ~/sources.list /etc/apt/sources.list
 sudo apt clean
 sudo apt update -m
 sudo apt full-upgrade
-do-release-upgrade
+sudo apt install pop-desktop
 ```
-
+For Pop!_OS 18.10 and 19.04 Run
+```
+sudo pop-upgrade release upgrade systemd
+```
+For Pop!_OS 17.10 Run
+```
+sudo do-release-upgrade
+```
 ## Troubleshooting
 
 Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then the following steps can help repair your broken OS.

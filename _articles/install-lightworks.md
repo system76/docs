@@ -18,7 +18,7 @@ section: software-applications
 
 Lightworks is a powerful video-editing tool used by industry professionals. This tutorial provides steps on installing Lightworks in Pop!\_OS.
 
-**NOTE:** The stable version of Lightworks will not install correctly on current OS versions because it requires an obsolete ```libssl``` package. Instead, select the Beta download from the Linux download page [here](https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=1).
+**NOTE:** The stable version of Lightworks will not install correctly on current OS versions because it requires an obsolete ```libssl``` package. Instead, select the Beta download from the Linux download page [here](https://www.lwks.com/get-linux).
 
 ## Register on Lightworks' Website
 
@@ -32,7 +32,7 @@ Upon registration, Lightworks will send a confirmation email with a verification
 
 ## Download the Beta
 
-Once your registration is confirmed, sign in to the Lightworks website and revisit the [download page](https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=1).
+Once your registration is confirmed, sign in to the Lightworks website and revisit the [download page](https://www.lwks.com/get-linux).
 The sign-in and download links are located in the top right of the webpage.
 
 ![Top Right](/images/lightworks/lightworks-top-right.png)

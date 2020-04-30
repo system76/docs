@@ -33,7 +33,7 @@ Before DaVinci Resolve will download, the website asks you to fill in a contact 
 
 ![Questions for download](/images/davinci-resolve/davinci-resolve-questions.png)
 
-The MakeResolveDeb script can be downloaded [Here](http://www.danieltufvesson.com/makeresolvedeb)
+Also download the MakeResolveDeb script from [here](http://www.danieltufvesson.com/makeresolvedeb).
 
 ### Extract the Zip Files
 

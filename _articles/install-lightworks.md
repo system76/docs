@@ -22,7 +22,7 @@ Lightworks is a powerful video-editing tool used by industry professionals. This
 
 ## Register on Lightworks' Website
 
-In order to download the beta, we will be required to register with Lightworks' site.
+In order to download the beta, you are required to register an account on Lightworks' website.
 
 ![Registration Page 1](/images/lightworks/lightworks-registration-page-1.png)
 

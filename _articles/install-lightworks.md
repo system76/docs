@@ -50,7 +50,7 @@ If you're using Firefox, the browser will ask whether you want to open or save t
 
 In Pop!\_OS, the default application for opening .deb files is Eddy. Choose the "Open" option, and Eddy will launch automatically when the download is complete. (If you are using a different web browser and you saved the .deb file, locate the .deb file in the **Files** app and open it.)
 
-Click the "Install" button in the top-right corner of Eddy and the installation process will begin. When the process is finished, an "Uninstall" button will appear in pale-red.
+Click the green "Install" button in the top-right corner of Eddy to install the package. When the process is finished, a red "Uninstall" button will appear in its place.
 
 ![Eddy Installation](/images/lightworks/lightworks-eddy-2.png)
 

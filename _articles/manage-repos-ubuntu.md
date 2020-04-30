@@ -10,7 +10,7 @@ keywords:
   - apt
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop-ubuntu
+section: ubuntu
 
 ---
 

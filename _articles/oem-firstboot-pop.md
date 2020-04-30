@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create a User If Initial User Setup Fails
+title: Create a User If Initial User Setup Fails in Pop
 description: >
   Sometimes, the first boot user creation fails and leaves only a Guest session. You can fix this by following the steps here.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - First boot
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop-ubuntu
+section: pop
 
 ---
 

@@ -57,14 +57,14 @@ Pop!\_Shop now loads up to 20 Pop!\_Picks making highlighted applications more a
 Dark mode is enabled by default. Default desktop wallpaper has a new design. Both defaults can be changed within the Appearance settings.
 
 ### GNOME 3.36
-** New lockscreen
-** Additional performance improvements
-** New Extensions application to GNOME Shell Extensions and their settings
-** Better organized power off / logout section in the user menu
-** Most password dialogs now have the option to reveal the password by clicking the "eye" icon
-** App folders in the application overview can now be renamed
-** GNOME Settings sections have been rearranged for easier navigation
-** The privacy section now lists applications that have been granted permission to access location services, camera and microphone. Access can be revoked on a per-app basis.
-** The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
+* New lockscreen
+* Additional performance improvements
+* New Extensions application to GNOME Shell Extensions and their settings
+* Better organized power off / logout section in the user menu
+* Most password dialogs now have the option to reveal the password by clicking the "eye" icon
+* App folders in the application overview can now be renamed
+* GNOME Settings sections have been rearranged for easier navigation
+* The privacy section now lists applications that have been granted permission to access location services, camera and microphone. Access can be revoked on a per-app basis.
+* The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
 
-* Linux Kernel 5.4
+### Linux Kernel 5.4

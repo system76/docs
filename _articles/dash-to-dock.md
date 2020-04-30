@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Move or Customize the Launcher
+title: Move or Customize the Dock
 description: >
-    Learn how to move the launcher to the bottom of the screen and customize other settings.
+    Learn how to move the Dock to the bottom of the screen and customize other settings.
 keywords:
     - Launcher
     - Bottom
@@ -16,7 +16,7 @@ redirect_from:
   - /moveLauncher
   - /movelauncher
   - /articles/move-launcher/
-section: pop-ubuntu
+section: pop
 
 ---
 

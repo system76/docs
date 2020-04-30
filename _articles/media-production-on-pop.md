@@ -53,6 +53,12 @@ Open Broadcaster Software is a free and open-source cross-platform streaming and
 
 Install Directly From the Pop!\_Shop
 
+### LMMS
+
+LMMS is a digital audio workstation application. Produce music with your computer by creating melodies and beats, synthesizing and mixing sounds, arranging samples and much more.
+
+Install Directly From the Pop!\_Shop
+
 ### Natron
 
 Natron is a powerful Digital Compositor that can handle of your 2D/2.5D needs. Its robust OIIO file formats and OpenFX architecture is what make Natron the most flexible open source compositor for the visual effects community.

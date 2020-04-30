@@ -41,7 +41,7 @@ Once DaVinci Resolve is downloaded, extract the zip file by right-clicking on th
 
 Next, extract the MakeResolveDeb zip file into the same directory where the DaVinci Resolve files were extracted by right-clicking on the MakeResolveDeb zip file, selecting "Extract to..." from the menu, and choosing the newly created DaVinci Resolve directory.
 
-### Create The .deb File
+### Create the .deb File
 
 From the DaVinci Resolve directory, right click on an empty space between file icons and select 'Open in Terminal.'
 

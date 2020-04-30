@@ -62,11 +62,9 @@ Now, the Lightworks launcher will appear in the Activities menu.
 
 # Terminal Instructions
 
-Once the .deb file is downloaded, we can also install it from a Terminal by running the following commands:
+Once the .deb file is downloaded, instead of using Eddy, it can also be installed from a terminal by running the following commands:
 
 ```
-cd /Downloads
-sudo dpkg -i Lightworks-2020.1-Beta-121161.deb
+cd ~/Downloads
+sudo apt install ./Lightworks*.deb
 ```
-
-**NOTE** The version number may be different at your time of installation. If that is the case, run: ```ls | grep Lightworks``` to get the exact name of your download.

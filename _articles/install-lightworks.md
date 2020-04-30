@@ -42,13 +42,13 @@ Click on the blue "Download DEB" button to download the beta version of Lightwor
 
 ![Beta Button](/images/lightworks/lightworks-beta-download-button.png)
 
-If we're using Firefox, the browser will ask whether you want to save the file or use a default application to open it.
+If you're using Firefox, the browser will ask whether you want to open or save the file.
 
 ![Download Page](/images/lightworks/lightworks-beta-downnload-with-eddy.png)
 
 ## Install the Beta
 
-In Pop!\_OS, the default application for opening .deb files is Eddy. Go ahead and click on the "Open" option, and Eddy will launch automatically.
+In Pop!\_OS, the default application for opening .deb files is Eddy. Choose the "Open" option, and Eddy will launch automatically when the download is complete. (If you are using a different web browser and you saved the .deb file, locate the .deb file in the **Files** app and open it.)
 
 Click the "Install" button in the top-right corner of Eddy and the installation process will begin. When the process is finished, an "Uninstall" button will appear in pale-red.
 

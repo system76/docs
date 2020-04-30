@@ -29,7 +29,7 @@ DaVinci Resolve can be downloaded [here](https://www.blackmagicdesign.com/produc
 
 ![Download button](/images/davinci-resolve/davinci-resolve-download.png)
 
-Before DaVinci Resolve will download the site asks you to fill in a contact form (below).
+Before DaVinci Resolve will download, the website asks you to fill in a contact form (shown below).
 
 ![Questions for download](/images/davinci-resolve/davinci-resolve-questions.png)
 

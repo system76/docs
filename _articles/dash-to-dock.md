@@ -2,7 +2,7 @@
 layout: article
 title: Move or Customize the Dock
 description: >
-    Learn how to move the Dock to the bottom of the screen and customize other settings.
+    How to move the Dock to different areas of the screen and customize other settings.
 keywords:
     - Launcher
     - Bottom
@@ -20,7 +20,7 @@ section: pop
 
 ---
 
-Pop!\_OS and Ubuntu both contain an application launcher on the left side of the screen. In Pop!\_OS, the launcher is only visible when the Activities menu is open. In Ubuntu, the launcher is always visible. By installing a GNOME extension called Dash to Dock, you can adjust this preference, move the launcher to the bottom of the screen, and more.
+Pop!\_OS and Ubuntu both contain an application dock on the left side of the screen. In Pop!\_OS, the dock is only visible when the Activities menu is open. In Ubuntu, the dock is always visible. By installing a GNOME extension called Dash to Dock, you can adjust this preference, move the dock to the bottom of the screen, and more.
 
 # Dash to Dock on Pop!\_OS
 
@@ -42,25 +42,25 @@ On the resulting pop-up, click Install to download and install the extension.
 
 ![Enabling Dash to Dock](/images/dash-to-dock/pop-install-extension.png)
 
-At this point, Firefox can be closed. The launcher will now display on the left side of the screen, similar to Ubuntu.
+At this point, Firefox can be closed. The dock will display on the left side of the screen.
 
-![Launcher on left side](/images/dash-to-dock/pop-launcher1.png)
+![Dock on left side](/images/dash-to-dock/pop-launcher1.png)
 
-To customize the launcher's settings, right-click on the "Show Applications" button and click "Dash to Dock Settings."
+To customize the dock's settings, right-click on the "Show Applications" button and click "Dash to Dock Settings."
 
 ![Dash to Dock Settings](/images/dash-to-dock/pop-launcher2.png)
 
 In the Dash to Dock Settings window, you can choose which screen edge to display the launcher on, such as the bottom of the screen:
 
-![Launcher at bottom of screen](/images/dash-to-dock/pop-launcher3.png)
+![Dock at bottom of screen](/images/dash-to-dock/pop-launcher3.png)
 
-You can also choose to extend the dock into "Panel mode," which looks more similar to Ubuntu:
+You can also choose to extend the dock into "Panel mode," which looks similar to Ubuntu:
 
-![Launcher with Panel Mode](/images/dash-to-dock/pop-launcher4.png)
+![Dock with Panel Mode](/images/dash-to-dock/pop-launcher4.png)
 
 # Dash to Dock on Ubuntu
 
-Ubuntu includes a lightweight version of Dash to Dock, which is why the launcher already displays on the left side of the screen by default. When you enable the full version of Dash to Dock, it will override the built-in version.
+Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. When you enable the full version of Dash to Dock, it will override the built-in version.
 
 To install Dash to Dock on Ubuntu, you will first need to install the "native host connector," which allows Firefox to install and remove GNOME Shell extensions. This component is installed by default in Pop!\_OS, but it is not installed by default in Ubuntu. Open a terminal and run this command to install the native host connector:
 
@@ -90,23 +90,23 @@ On the resulting pop-up, click Install to download and install the extension.
 
 ![Enabling Dash to Dock](/images/dash-to-dock/ubuntu-install-extension.png)
 
-At this point, Firefox can be closed. The launcher will now display on the left side of the screen, but not in Panel mode.
+At this point, Firefox can be closed. The dock will now display on the left side of the screen, but not in Panel mode.
 
-![Launcher on left side](/images/dash-to-dock/ubuntu-launcher1.png)
+![Dock on left side](/images/dash-to-dock/ubuntu-launcher1.png)
 
-To customize the launcher's settings, right-click on the "Show Applications" button and click "Dash to Dock Settings."
+To customize the dock's settings, right-click on the "Show Applications" button and click "Dash to Dock Settings."
 
 ![Dash to Dock Settings](/images/dash-to-dock/ubuntu-launcher2.png)
 
-In the Dash to Dock Settings window, you can choose which screen edge to display the launcher on, such as the bottom of the screen:
+In the Dash to Dock Settings window, you can choose which screen edge to display the dock on, such as the bottom of the screen:
 
-![Launcher at bottom of screen](/images/dash-to-dock/ubuntu-launcher3.png)
+![Dock at bottom of screen](/images/dash-to-dock/ubuntu-launcher3.png)
 
 ---
 
-# Moving the Launcher in 16.04 LTS
+# Moving the Application Launcher in Ubuntu 16.04 LTS
 
-Ubuntu 16.04 LTS includes its own launcher as part of the Unity desktop environment. If you'd like to put the launcher at the bottom of the screen in 16.04, enter this command in a terminal:
+Ubuntu 16.04 LTS includes its own dock as part of the Unity desktop environment. If you'd like to put the dock at the bottom of the screen in 16.04, enter this command in a terminal:
 
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position 'Bottom'
@@ -114,11 +114,11 @@ gsettings set com.canonical.Unity.Launcher launcher-position 'Bottom'
 
 ![Setting the Launcher to the bottom](/images/dash-to-dock/unity1.png)
 
-This will set the launcher to the bottom of the screen:
+This will set the dock to the bottom of the screen:
 
 ![Lanncher on the bottom](/images/dash-to-dock/unity2.png)
 
-To reset the position of the launcher to the left, run this command:
+To reset the position of the dock to the left, run this command:
 
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position 'Left'

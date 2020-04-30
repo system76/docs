@@ -19,6 +19,19 @@ In Pop!\_OS, <kbd><span class="fl-pop-key"></span></kbd> handles the majority of
 
 ### Pop!_OS (20.04 LTS and above) Shortcuts
 
+To advance keyboard driven control, keyboard shortcuts have been modified in Pop!_OS 20.04.
+
+### Notable Shortcut Changes
+
+|          Action            |     Old Shortcut      |      New Shortcut  |
+|:---------------------------| :-------------------- |--------------------|
+Lock Screen                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>ESC</kbd> |
+Move to Workspace Up or Down | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> |
+Close Window                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>W</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd>
+Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
+
+
+
 #### Direction keys
 
 | Shortcut | Action |

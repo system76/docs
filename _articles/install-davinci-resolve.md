@@ -65,6 +65,10 @@ Once the script finishes running and the terminal prompt returns, run this comma
 
 ```sudo dpkg -i davinci-resolve*_amd64.deb```
 
+After installing, DaVinci Resolve will be ready to launch from your Activities menu:
+
+![DaVinci Resolve Icon](/images/davinci-resolve/davinci-icon.png)
+
 ![DaVinci Loading Screen](/images/davinci-resolve/davinci-loading-screen.png)
 
 ![DaVinci App Open](/images/davinci-resolve/davinci-app-open.png)

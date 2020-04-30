@@ -13,7 +13,7 @@ section: software-applications
 
 ---
 
-Visit the [MATLAB Download](https://www.mathworks.com/downloads/web_downloads/7318751?elqsid=1588205421341&potential_use=Home&s_tid=tfa_packageTrial_download.html) and click the blue box titled Linux.Save the file.
+Visit the MatLab website with this [link](https://www.mathworks.com/downloads/web_downloads/7318751?elqsid=1588205421341&potential_use=Home&s_tid=tfa_packageTrial_download.html) and click the blue box titled Linux.Save the file.
 
 ![Downloaded file prompt to save Matlab installation file](images/MATLAB/downloadedmatlab.png)
 

@@ -32,14 +32,13 @@ Upon registration, Lightworks will send a confirmation email with a verification
 
 ## Download the Beta
 
-Once your registration is confirmed, sign in to the Lightworks website and revisit the [download page](https://www.lwks.com/get-linux).
-The sign-in and download links are located in the top right of the webpage.
+Once your registration is confirmed, sign in to the Lightworks website and revisit the [download page](https://www.lwks.com/get-linux). The sign-in link is located in the top right of the webpage.
 
 ![Top Right](/images/lightworks/lightworks-top-right.png)
 
 For first time downloads, accept the EULA. The checkbox is below the blue download buttons and will not reappear on later visits to the website.
 
-Click on the blue ".deb" button under the beta row.
+Click on the blue "Download DEB" button to download the beta version of Lightworks.
 
 ![Beta Button](/images/lightworks/lightworks-beta-download-button.png)
 

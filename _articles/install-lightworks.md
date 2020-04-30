@@ -16,7 +16,7 @@ section: software-applications
 
 # Install Lightworks on Pop!\_OS
 
-Lightworks is a powerful, video-editing tool used by industry professionals. This tutorial provides steps on installing Lightworks in Pop!\_OS.
+Lightworks is a powerful video-editing tool used by industry professionals. This tutorial provides steps on installing Lightworks in Pop!\_OS.
 
 **NOTE** The stable version will not install correctly on current OS versions due to a deprecated ```libssl``` package. Instead, select the Beta download from the Linux download page [here.](https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=1)
 

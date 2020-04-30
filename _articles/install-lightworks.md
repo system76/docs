@@ -16,37 +16,55 @@ section: software-applications
 
 # Install Lightworks on Pop!\_OS
 
-![Download Page](path to image)
+Lightworks is a powerful, video-editing tool used by industry professionals. This tutorial provides steps on installing Lightworks in Pop!\_OS.
 
-**NOTE** The stable version will not install correctly on current OS versions due to a deprecated libssl package. Instead, select the Beta download from the Linux download page which can be found [here](https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=1)
+**NOTE** The stable version will not install correctly on current OS versions due to a deprecated ```libssl``` package. Instead, select the Beta download from the Linux download page [here.](https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=1)
 
 ## Register on Lightworks' Website
 
 In order to download the beta, we will be required to register with Lightworks' site.
 
-We will also need to confirm our registration from whichever email account we used to register.
+![Registration Page 1](/images/lightworks/lightworks-registration-page-1.png)
 
-Lightworks will send a confirmation email with a verification link. It may be helpful to check your "spam" folder to ensure that it was not falsely-flagged by your Email Service Provider (ESP).
+![Registration Page 2](/images/lightworks/lightworks-registration-page-2.png)
+
+We will need to confirm our registration from whichever email account we used to register.
+Lightworks will send a confirmation email with a verification link. It may be helpful to check the "spam" folder to ensure that it was not falsely-flagged by your Email Service Provider (ESP).
 
 ## Download the Beta
 
 Once your registration is confirmed, sign in to the Lightworks website and revisit the download page.
+The sign-in and download links are located in the top right of the webpage.
 
-Accept the EULA and click on the blue ".deb" button under the beta row.
+![Top Right](/images/lightworks/lightworks-top-right.png)
+
+For first time downloads, accept the EULA. The checkbox is below the blue download buttons and will not reappear on later visits to the website.
+
+Click on the blue ".deb" button under the beta row.
+
+![Beta Button](/images/lightworks/lightworks-beta-download-button.png)
 
 If we're using Firefox, the browser will ask whether you want to save the file or use a default application to open it.
 
+![Download Page](/images/lightworks/lightworks-beta-downnload-with-eddy.png)
+
 ## Install the Beta
 
-In Pop!\_OS, the default application for opening .deb files is Eddy. Go ahead and click on the "Open" option, and Eddy will laucnh automatically.
+In Pop!\_OS, the default application for opening .deb files is Eddy. Go ahead and click on the "Open" option, and Eddy will launch automatically.
 
 Click the "Install" button in the top-right corner of Eddy and the installation process will begin. When the process is finished, an "Uninstall" button will appear in pale-red.
 
+![Eddy Installation](/images/lightworks/lightworks-eddy-2.png)
+
 Now we should be able to launch Lightworks from the Activities menu like any other integrated system app!
+
+![Activities Menu](/images/lightworks/lightworks-activities-menu.png)
+
+![Eddy Launces](/images/lightworks/lightworks-installed.png)
 
 # Terminal Instructions
 
-Once the file is downloaded, we can also install it from a Terminal by running the following commands:
+Once the .deb file is downloaded, we can also install it from a Terminal by running the following commands:
 
 ```
 cd /Downloads

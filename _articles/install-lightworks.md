@@ -32,7 +32,7 @@ Upon registration, Lightworks will send a confirmation email with a verification
 
 ## Download the Beta
 
-Once your registration is confirmed, sign in to the Lightworks website and revisit the download page.
+Once your registration is confirmed, sign in to the Lightworks website and revisit the [download page](https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=1).
 The sign-in and download links are located in the top right of the webpage.
 
 ![Top Right](/images/lightworks/lightworks-top-right.png)

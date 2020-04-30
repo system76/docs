@@ -7,6 +7,7 @@ keywords:
   - Support
   - Desktop Quickstart
   - Desktop Beginner
+  - Thelio
   - Beginner
   - System76
 image: http://support.system76.com/images/system76.png
@@ -14,7 +15,7 @@ hidden: false
 section: getting-started
 
 ---
-Congratulations on receiving your System76 Desktop! Read this article to get started quickly.
+Congratulations on receiving your System76 Thelio Desktop! Read this article to get started quickly.
 
 ### Connect Your Monitor
 
@@ -36,7 +37,7 @@ Press the circular button on the front of the machine after all components are p
 
 ### Set Up User Account
 
-When you power on, you'll be prompted to create a user account, which is an administrative account (in the sudo group). The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. In Pop!_OS, you can choose to encrypt your hard drive while setting up the user account. If Ubuntu was picked during configuration reinstalling the OS will be needed to set up encryption and instructions for that can be found [here](/articles/install-ubuntu)
+When you power on, you'll be prompted to create a user account, which is an administrative account (in the sudo group). The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. In Pop!_OS, you can choose to encrypt your hard drive while setting up the user account. If Ubuntu was picked during configuration reinstalling the OS will be needed to set up encryption and instructions for that can be found [here](/articles/install-ubuntu).
 
 You will be prompted for the encryption passphrase first if you select that option during the account creation process. After the encryption passphrase is set, you will proceed to set up a user account and be prompted to set the administrator password. If you encrypt your hard drive, you will be prompted for the encryption passphrase every time you power on. It's important to write this password down and keep it somewhere safe. If the password is lost or forgotten, you will lose access to the contents of the drive.
 

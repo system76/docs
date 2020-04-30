@@ -14,7 +14,7 @@ keywords:
   - Hybrid
 image: http://support.system76.com/images/ubuntu.png
 hidden: false
-section: pop-ubuntu
+section: ubuntu
 
 ---
 

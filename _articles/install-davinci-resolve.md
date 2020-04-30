@@ -53,8 +53,7 @@ Or this command if you are using the paid Studio version of DaVinci Resolve:
 
 ```./makeresolvedeb*.sh studio```
 
-Once the script's process completes, we'll be dropped to a new line with our username.
-Finally, run this command to install **DaVinci Resolve**:
+Once the script finishes running and the terminal prompt returns, run this command to install **DaVinci Resolve**:
 
 ```sudo dpkg -i davinci-resolve*_amd64.deb```
 

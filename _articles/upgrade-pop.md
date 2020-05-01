@@ -23,7 +23,7 @@ section: pop
 ---
 Pop!\_OS 20.04 LTS was released April 30, 2020. View the [Release Notes](/articles/Pop!_OS-20.04-LTS-Release-Notes) to learn about new features.
 
-### Upgrading to Pop!\_OS to 20.04 from 19.10 or 18.04
+### Upgrading Pop!\_OS to 20.04 from 19.10 or 18.04
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 

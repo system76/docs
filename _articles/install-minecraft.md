@@ -27,7 +27,7 @@ Next, click install.
 
 
 Now you will have installed Minecraft! Open Minecraft and log in with your username and password, tp start playing!
-![Minecraft Installed](/images/minecraft/minecraftapppageinstalled.png)
+![Minecraft Installed](/images/minecraft/minecraftinstalled.png)
 
 
 ### Debian and Ubuntu

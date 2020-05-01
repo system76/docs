@@ -13,6 +13,15 @@ section: community
 ---
 
 Alright! Hitch on and let's go on!
+
+### Pop!_OS 20.04
+First, open the Pop!_Shop.
+
+Next, type "Minecraft" into the search bar, and click "Minecraft".
+
+Next, click install.
+  
+Now you wull have installed Minecraft! Open Minecraft and log in with your username and password, tp start playing!
   
 ### Debian and Ubuntu
   

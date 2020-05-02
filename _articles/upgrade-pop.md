@@ -133,7 +133,7 @@ If the upgrade fails it will most likely be due to a package manager issue.  Fir
 do-release-upgrade
 ```
 
-If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](https://support.system76.com/articles/package-manager-pop/)
+If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager-pop/)
 
 Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:
 

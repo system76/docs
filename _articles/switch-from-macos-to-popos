@@ -1,0 +1,216 @@
+# Switching from macOS to Pop!\_OS
+
+## Finding Programs and Files
+
+**macOS**
+- Spotlight Search
+
+**Pop!\_OS**
+- Activities Overview
+
+## Application Shortcuts
+
+**macOS**
+  - Dock
+
+**Pop!\_OS**
+  - Dock
+
+## Install/Manage Software
+
+**macOS**
+  - App Store
+  - .dmg Files
+
+**Pop!_OS**
+  - Pop!\_Shop
+  - .deb Files
+  - flatpaks
+
+## Workspaces and Window Management
+
+Both macOS and Pop!\_OS use workspaces to organize open applications windows
+
+In macOS you use multi-touch gestures, or hold down CTRL+up arrow or down arrow, to launch "Mission Control" and CTRL+left arrow or right arrow use to navigate "workspaces."
+
+In Pop!\_OS you press the SUPER key to enter "overview" and show all "workspaces." You can also use SUPER+up arrow or down arrow to navigate "workspaces.""
+
+## File Management
+
+Apple
+     Finder
+     Files
+
+
+### A note about the Applications folder:
+
+
+## Light Mode vs. Dark Mode
+
+As of macOS 10.14 (Mojave) users have the option of using a default "dark mode"
+for the look and feel of their OS. Pop!\_OS has a dark mode as of 19.10. There
+were dark mode option available before 19.10, but the official "Dark Mode" of Pop!\_OS
+was added in Pop!\_OS 19.10.
+
+Dark Mode can be enabled by visiting Settings>Appearance>Appearance(Tab)
+
+
+## Web Browsing
+
+**macOS**
+  - Safari (Default)
+**Pop\_OS**
+  - Firefox (Default)
+
+**Other options**
+  - Chrome
+  - Chromium
+  - Brave
+
+If you're used to using Chrome, don't worry! There are Chrome versions available for Linux too, as well as Chrome-based alternative options like Chromium and Brave.
+
+## Office Work
+**macOS**
+  - Pages/Numbers/Keynote (iWork)
+
+**Pop!\_OS**
+  - Writer/Calc/Impress (LibreOffice)
+
+  Pop!\_OS comes with the open-source office suite LibreOffice by default. LibreOffice can open Microsoft Office files, and export to Office formats (.docx, etc.). LibreOffice cannot open iWork formatted projects. For example documents ending in .pages will have to be saved in a different format before LibreOffice will open them.
+
+**Other**
+iCloud.com
+If exporting your .pages files is not an option, you can also visit iCloud.com in Firefox and use the web based version of pages.
+
+
+Office365 Online
+
+## Calls and Video Chats
+
+**macOS**
+     - Facetime/iMessage
+
+**Pop!\_OS**
+Chat
+  - Jitsi
+  - Mattermost
+  - Slack
+
+Video/Calls
+- Discord
+- Skype
+- Zoom
+
+## Take Selfies
+
+**macOS**
+- Photobooth
+
+**Pop!\_OS**
+- Cheese
+
+## Email
+
+**macOS**
+  - Apple Mail (default)
+
+**Pop!\_OS**
+  - Geary (default)
+  - Thunderbird
+
+**Other Options
+  - Outlook Web
+  - Webmail (in General)
+
+## Watching Videos
+
+**macOS**
+  - Quicktime
+
+**Pop!\_OS**
+  - VLC
+
+## Listing to Music
+
+**macOS**
+  - Apple Music (formerly iTunes)
+
+**Pop!_OS**
+  - Clementine
+  - Spotify
+
+## Video Editing
+
+**macOS**
+- Final Cut
+- iMovie
+
+**Pop!_OS**
+- Lightworks
+- DaVinci Resolve/DaVinci Resolve Studio
+- Kden Live
+
+## Sound Recording
+
+**macOS**
+  - Garageband
+  - Logic Pro
+
+**Pop!\_OS**
+  - LMMS
+  - Audacity
+  - Ardour
+
+## Gaming
+
+**macOS**
+     - App Store/Arcade
+     - Steam
+
+**Pop!_OS**
+     - Pop!\_Shop
+     - Steam/Lutris
+
+
+## Cloud Storage
+
+**macOS**
+- iCloud
+
+**Pop!_OS**
+
+  -iCloud.com
+
+**Additional Options**
+
+  - Nextcloud
+  - SpiderOak
+  - Dropbox
+  - Google Drive
+
+# System Management
+
+## Kill Programs
+
+**macOS**
+  - Force Quit
+  - Activity Monitor
+
+**Pop!\_OS**
+
+## Networking
+
+## Disk Encryption
+
+## System Backups
+
+**Apple**
+- Filevault
+
+**Pop!\_OS**
+- LUKS (during Install)
+
+# What if I have an iPhone?
+
+Backups
+Files/Photos

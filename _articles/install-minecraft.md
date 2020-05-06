@@ -26,7 +26,7 @@ Next, click install.
 ![Open Minecraft page](/images/minecraft/minecraftapppage.png)
 
 
-Now you will have installed Minecraft! Open Minecraft and log in with your username and password, tp start playing!
+Now you will have installed Minecraft! Open Minecraft and log in with your username and password to start playing!
 ![Minecraft Installed](/images/minecraft/minecraftinstalled.png)
 
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Switching to Ubuntu From Apple
+title: Switching to Ubuntu from Apple
 description: >
   If you are coming from Apple's operating system and just using Ubuntu for the first time, we can help make the transition a little smoother.
 keywords:

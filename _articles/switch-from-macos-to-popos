@@ -1,12 +1,18 @@
 # Switching from macOS to Pop!\_OS
 
+It can be difficult to change work habits or the Desktop Environment you are used to. macOS users, accustomed to a refined and consistent work-flow may be hesitant to switch from macOS to Linux. Fortunately, Pop!\_OS offers many convenient and similar workflows and applications to those available in macOS. Users will find many things where they expect them to be, as well as few pleasant surprises.
+
 ## Finding Programs and Files
 
 **macOS**
 - Spotlight Search
 
+On macOS, Spotlight Search can be launched by clicking the magnifying glass in the upper right-hand corner of the screen, or by pressing CMD+SPACE.
+
 **Pop!\_OS**
 - Activities Overview
+
+In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of the screen opens the Activities Overview. Overview has a search bar situated in the top-center of the screen which will search file names and applications. The Activities Overview screen can also be launched by pressing the SUPER key. Once Overview is launched users can simply begin typing to search their computer.
 
 ## Application Shortcuts
 
@@ -15,6 +21,16 @@
 
 **Pop!\_OS**
   - Dock
+
+  In both macOS and Pop!\_OS, a tray of application shortcuts is provided for convenience. In both OSes this is referred to as the "Dock." Icons show additional indicators when an app is open (a dot next to the icon) and favorite applications can be saved to the Dock for easy-access. The Dock is located on the Left side of the screen, vertically in Pop!\_OS. macOS' default is to place the Dock at the bottom of the screen. The Dock can be moved in both OSes. macOS has this feature in System Preferences; Pop!\_OS accomplishes this change with a GNOME extension.
+
+## View Installed applications
+
+**macOS**
+  - Launchpad
+
+**Pop!\_OS**
+  - Show Applications
 
 ## Install/Manage Software
 
@@ -27,30 +43,52 @@
   - .deb Files
   - flatpaks
 
+
+
+
 ## Workspaces and Window Management
 
-Both macOS and Pop!\_OS use workspaces to organize open applications windows
+Both macOS and Pop!\_OS use workspaces to organize open applications' windows
 
-In macOS you use multi-touch gestures, or hold down CTRL+up arrow or down arrow, to launch "Mission Control" and CTRL+left arrow or right arrow use to navigate "workspaces."
+In macOS you use multi-touch gestures, or hold down CTRL+up arrow or down arrow, to launch "Mission Control" and CTRL+left arrow or right arrow use to navigate workspaces.
 
-In Pop!\_OS you press the SUPER key to enter "overview" and show all "workspaces." You can also use SUPER+up arrow or down arrow to navigate "workspaces.""
+In Pop!\_OS you press the SUPER key to enter "overview" and show all "workspaces." You can also use CTRL+SUPER+up arrow or down arrow to navigate workspaces.
+
+### Pop!\_Shell
+
+Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called Pop!\_Shell, and allows for even easier window organization and keyboard navigation among windows and applications. You can read more about Pop!\_Shell here: [LINK]
 
 ## File Management
 
-Apple
+**Apple**
      Finder
+**Pop!\_OS**
      Files
 
+The filesystems in macOS and Pop!\_OS are laid out in a very similar fashion. In macOS the application which displays files and directories (folders) is called Finder. In Pop!\_OS the Files application serves the same purpose. It is represented by a gray an teal icon that looks like a tabbed folder in a filing cabinet.
 
 ### A note about the Applications folder:
 
+One key difference between macOS and Pop!\_OS is how and where applications are installed. in macOS, with a few exceptions, all installed applications go into a dedicated folder located under /path/to/applications folder. Applications are self-contained items and can be moved or deleted by acting on the file for the application itself.
+
+In Pop!\_OS, and other Ubuntu-based distributions, there are certain parts of applications that used by enough other applications that they are installed separtely and referenced as needed. These smaller applications and parts of applications are called libraries or dependencies. Due to this structure of software installation, and depending on how a program is installed, it may be stored in one of a few locations.
+
+~/.local/share/applications
+/usr/share/applications
+OR
+/usr/bin
+OR
+/opt/
+
+SAY MORE ABOUT THESE
 
 ## Light Mode vs. Dark Mode
 
 As of macOS 10.14 (Mojave) users have the option of using a default "dark mode"
-for the look and feel of their OS. Pop!\_OS has a dark mode as of 19.10. There
-were dark mode option available before 19.10, but the official "Dark Mode" of Pop!\_OS
-was added in Pop!\_OS 19.10.
+for the look and feel of their OS.
+
+Pop!\_OS has a dark mode as of 19.10. There were dark mode options available before 19.10,
+but the official "Dark Mode" of Pop!\_OS was added in Pop!\_OS 19.10.
 
 Dark Mode can be enabled by visiting Settings>Appearance>Appearance(Tab)
 
@@ -61,6 +99,14 @@ Dark Mode can be enabled by visiting Settings>Appearance>Appearance(Tab)
   - Safari (Default)
 **Pop\_OS**
   - Firefox (Default)
+
+  The web browsing experience will be very similar on either macOS or Firefox. Both browsers offer privacy features like "do not track" requests, blockers, and customizable search-engine defaults. If you are accustomed to using Apple Pay or iCloud Keychain for your payments and password management, some changes will need to be made to your workflow as these are apple proprietary services. However there are several reliable, cross-platform password managers available, and they also offer the option to save payment methods.
+
+Examples include:
+
+Bitwarden
+1Password
+LastPass
 
 **Other options**
   - Chrome
@@ -76,7 +122,7 @@ If you're used to using Chrome, don't worry! There are Chrome versions available
 **Pop!\_OS**
   - Writer/Calc/Impress (LibreOffice)
 
-  Pop!\_OS comes with the open-source office suite LibreOffice by default. LibreOffice can open Microsoft Office files, and export to Office formats (.docx, etc.). LibreOffice cannot open iWork formatted projects. For example documents ending in .pages will have to be saved in a different format before LibreOffice will open them.
+  Pop!\_OS comes with the open-source office suite LibreOffice by default. LibreOffice can open Microsoft Office files, and export to Office formats (.docx, etc.). LibreOffice cannot open iWork formatted projects. For example, documents ending in .pages will have to be saved in a different format before LibreOffice will open them.
 
 **Other**
 iCloud.com
@@ -118,7 +164,7 @@ Video/Calls
   - Geary (default)
   - Thunderbird
 
-**Other Options
+**Other Options**
   - Outlook Web
   - Webmail (in General)
 
@@ -200,15 +246,19 @@ Video/Calls
 
 ## Networking
 
+
 ## Disk Encryption
 
-## System Backups
 
 **Apple**
 - Filevault
 
 **Pop!\_OS**
 - LUKS (during Install)
+
+## System Backups
+
+
 
 # What if I have an iPhone?
 

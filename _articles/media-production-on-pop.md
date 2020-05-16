@@ -3,6 +3,7 @@ layout: article
 title: Media Production on Pop!_OS
 description: Learn about media production tools on Pop!\_OS
 keywords:
+  - Audacity
   - Blender
   - DaVinci Resolve
   - OBS Studio
@@ -20,6 +21,12 @@ section: pop
 There's something special about telling stories. And the more tools you have at your disposal, the more vivid and dynamic your story telling can be. 
 
 Pop!\_OS supports world class story-telling tools that when combined with System76 hardware, create an unparalleled system for content creation.
+
+### Audacity
+
+Audacity is a free and open-sourced, easy-to-use, multi-track audio editor and recorder for Linux and other operating systems. You can use Audacity to record live audio, cut, copy, splice, and mix sounds, change the speed and pitch of audio, and more. The Audacity interphase is translated into many languages.
+
+Install Directly From the Pop!\_Shop
 
 ### Blender
 

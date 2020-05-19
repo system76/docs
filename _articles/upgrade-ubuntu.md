@@ -171,7 +171,7 @@ For more information on LTS support and the Hardware Enablement Stack, please se
 
 ## Troubleshooting
 
-Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
+Most upgrades proceed without issues, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
 
 ### Stuck Upgrades
 

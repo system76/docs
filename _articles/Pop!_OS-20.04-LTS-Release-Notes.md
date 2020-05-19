@@ -57,7 +57,6 @@ Pop!\_Shop now loads up to 20 Pop!\_Picks making highlighted applications more a
 Dark mode is enabled by default. Default desktop wallpaper has a new design. Both defaults can be changed within the Appearance settings.
 
 ### GNOME 3.36
-<<<<<<< HEAD:_articles/Pop!_OS-20.04-LTS-Release-Notes.md
 * New lockscreen
 * Additional performance improvements
 * New Extensions application to GNOME Shell Extensions and their settings
@@ -81,4 +80,3 @@ Dark mode is enabled by default. Default desktop wallpaper has a new design. Bot
 ** The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
 
 * Linux Kernel 5.4
->>>>>>> efae26911a722042f1255d8621350ae3f7c7dc0d:_articles/Pop!_OS-20.04-LTS-Release-Notes

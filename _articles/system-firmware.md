@@ -83,7 +83,7 @@ sudo mount /dev/sda1 /boot/efi
 gnome-control-center firmware
 ```
 
-After the above commands are ran depending on the drive that the OS is installed on, you can use the above instructions to update your firmware.
+After the above commands are run depending on the drive that the OS is installed on, you can use the above instructions to update your firmware.
 
 ### Firmware Notifications for Laptops
 

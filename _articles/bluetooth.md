@@ -79,7 +79,7 @@ This will show all Bluetooth related messages.  Try leaving this command running
 
 ## Additional Info
 
-Here are a few addition tidbits about the Bluetooth system that may help with troubleshooting.
+Here are a few additional tidbits about the Bluetooth system that may help with troubleshooting.
 
 #### Controlling audio
 

@@ -82,7 +82,7 @@ sudo system76-power graphics nvidia
 For switching to Intel graphics:
 
 ```
-sudo system76-power graphics intel
+sudo system76-power graphics integrated
 ```
 
 For switching to hybrid graphics:

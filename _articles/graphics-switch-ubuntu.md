@@ -25,7 +25,7 @@ The following laptops have switchable graphics:
 
 #### Integrated
 
-Integrated graphics mode uses the integrated Intel GPU only and turns off the NVIDIA
+Integrated graphics mode uses the integrated GPU only and turns off the NVIDIA
 GPU. This mode uses less power, leading to a longer battery life and less fan
 noise.
 

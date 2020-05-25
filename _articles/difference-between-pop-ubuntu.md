@@ -2,7 +2,7 @@
 layout: article
 title: Differences between Pop!_OS and Ubuntu
 description: >
-  What are the differences between these two OSes?
+  Discover the differences between these two Operating Systems
 keywords:
    - Ubuntu
    - Pop
@@ -10,7 +10,7 @@ keywords:
    - 19.04
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop-ubuntu
+section: pop
 
 ---
 

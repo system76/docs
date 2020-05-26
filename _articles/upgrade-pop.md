@@ -115,7 +115,7 @@ sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
 sudo sed -i 's/disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 
-3) Now,do the upgrade! This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
+3) Now,do the upgrade! This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
 ```
 sudo apt update
 sudo apt install dpkg apt

@@ -2,13 +2,13 @@
 layout: article
 title: Switching Graphics in Ubuntu
 description: >
-   How to switch between Intel, NVIDIA, and Hybrid graphics
+   How to switch between integrated, NVIDIA, and Hybrid graphics
 keywords:
   - System76
   - Ubuntu
   - 18.04
   - NVIDIA
-  - Intel
+  - Integrated
 image: http://support.system76.com/images/ubuntu.png
 hidden: false
 section: ubuntu
@@ -23,9 +23,9 @@ The following laptops have switchable graphics:
 
 ### Graphics modes
 
-#### Intel
+#### Integrated
 
-Intel graphics mode uses the integrated Intel GPU only and turns off the NVIDIA
+Integrated graphics mode uses the integrated GPU only and turns off the NVIDIA
 GPU. This mode uses less power, leading to a longer battery life and less fan
 noise.
 
@@ -38,14 +38,14 @@ Gazelle, may also have external ports connected to the integrated GPU.)
 
 #### Hybrid
 
-Hybrid graphics mode uses both the integrated Intel GPU and the discrete NVIDIA GPU.
+Hybrid graphics mode uses both the integrated GPU and the discrete NVIDIA GPU.
 Applications will use the integrated GPU unless explicitly requested to use the
 discrete GPU.
 
 ### Switch graphics
 
 Pop!_OS by System76 includes the system76-power package, which includes the
-ability to switch between Intel, NVIDIA, and hybrid graphics modes.
+ability to switch between integrated, NVIDIA, and hybrid graphics modes.
 
 You'll only need to install this software manually if you did a fresh install of Ubuntu,
 as our installations will include these packages by default. You can do this
@@ -71,7 +71,7 @@ switching.
 
 ![Graphics](/images/graphics-switch-ubuntu/system-menu.png)
 
-Click on NVIDIA, Intel, or Hybrid, depending on your use case.
+Click on NVIDIA, integrated, or Hybrid, depending on your use case.
 
 Once you select a mode, you will be prompted to reboot.
 
@@ -96,10 +96,10 @@ For switching to NVIDIA Graphics:
 sudo system76-power graphics nvidia
 ```
 
-For switching to Intel Graphics:
+For switching to integrated Graphics:
 
 ```
-sudo system76-power graphics intel
+sudo system76-power graphics integrated
 ```
 
 For switching to hybrid graphics:

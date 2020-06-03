@@ -44,7 +44,7 @@ sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer
 
 To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>
 
-You may be prompted for your `[sudo] password`. If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should several lines of output in the terminal. The command may take a few minutes to complete.
+You may be prompted for your `[sudo] password`. If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should see several lines of output in the terminal. The command may take a few minutes to complete.
 
 ### Setup DVD Playback <small>_(optional)_</small>
 

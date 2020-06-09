@@ -33,7 +33,7 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 
 If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
-To access to the existing OS drive and run the package manager [repair commands](/articles/package-manager/), the following commands will need to be run:
+To access to the existing OS drive and run the package manager [repair commands](/articles/package-manager-pop/), the following commands will need to be run:
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 

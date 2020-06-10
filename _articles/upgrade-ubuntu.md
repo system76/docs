@@ -171,7 +171,7 @@ For more information on LTS support and the Hardware Enablement Stack, please se
 
 ## Troubleshooting
 
-Most upgrades proceed without a hitch, but occasionally things go wrong. If you system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
+Most upgrades proceed without issues, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
 
 ### Stuck Upgrades
 
@@ -181,7 +181,7 @@ If your upgrade appears to hang in place for an extended period of time, click o
 
 Please see the steps above to create bootable media. Restart your computer and use the keys above to start your computer from the bootable media. When given the option, choose **Try Ubuntu**.
 
-Next follow the steps to repair grub first:
+Next, follow the steps to repair grub first:
 
 [Repair Bootloader](/articles/bootloader/)
 

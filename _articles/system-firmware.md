@@ -22,7 +22,7 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 * **Disconnect external devices**, including any displays or USB devices.
 
-* **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference. 
+* **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
 
 * During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
 
@@ -83,8 +83,8 @@ sudo mount /dev/sda1 /boot/efi
 gnome-control-center firmware
 ```
 
-After the above commands are ran depending on the drive that the OS is installed on you can use the above instructions to update your firmware.
+After the above commands are run depending on the drive that the OS is installed on, you can use the above instructions to update your firmware.
 
 ### Firmware Notifications for Laptops
 
-If you’re receiving the firmware update notification after a firmware update, then your system’s Intel ME may be turned on. Let’s reboot the laptop and hold F2 to get to the BIOS. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. That should stop the notifications about a firmware update and you're all set. 
+If you’re receiving the firmware update notification after a firmware update, then your system’s Intel ME may be turned on. Let’s reboot the laptop and hold F2 to get to the BIOS. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. That should stop the notifications about a firmware update and you're all set.

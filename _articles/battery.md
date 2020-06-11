@@ -19,7 +19,7 @@ section: hardware-drivers
 
 Every running program consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
 
-The biggest consumer of power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.  
+The biggest consumer of power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.
 
 ### Power Profiles
 
@@ -75,7 +75,7 @@ sudo gedit /etc/tlp.conf
 ```
 The `/etc/tlp.conf` file is for user configuration while `/etc/tlp.d/*.conf` file is for drop-in customization snippets.
 
-All of the info about the the program can be found with these 2 commands:
+All of the info about the program can be found with these 2 commands:
 
 ```
 man tlp
@@ -84,7 +84,7 @@ man tlp-stat
 
 ---
 
-To install <u>powertop</u>, please open a terminal and run this command:  
+To install <u>powertop</u>, please open a terminal and run this command:
 
 ```
 sudo apt install powertop
@@ -102,7 +102,7 @@ This will take about 15 minutes to run the calibration. The system will turn the
 powertop
 ```
 
-Powertop can also generate HTML reports with this command:  
+Powertop can also generate HTML reports with this command:
 
 ```
 sudo powertop --html=report
@@ -126,7 +126,7 @@ After looking at running software, head over to the 'Tuning' tab. We recommend i
 sudo powertop --auto-tune
 ```
 
-Please test the settings and make sure they doesn't introduce any instability or oddities. The above command will only last until reboot. The most likely problem with the auto-tune command is that external USB devices have delays after inactivity. To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
+Please test the settings and make sure they don't introduce any instability or oddities. The above command will only last until reboot. The most likely problem with the auto-tune command is that external USB devices have delays after inactivity. To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
 
 ```
 sudo gedit /etc/rc.local
@@ -136,7 +136,7 @@ And add:
 
 > sudo powertop --auto-tune
 
-above the 'exit 0' line, or add the individual tuning options.  
+above the 'exit 0' line, or add the individual tuning options.
 
 **Do not do this without testing!  Several auto-tune settings will create system instability!**
 

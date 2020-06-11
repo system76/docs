@@ -120,7 +120,14 @@ This command will start PulseAudio after it's been stopped (this is not usually 
 ```
 pulseaudio --start
 ```
+## Fix PCI/internal sound card not detected (dummy output) with Ubuntu kernel 5.3.0-41 and newer in Ubuntu 19.10  
+```
+echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-base.conf  
+echo "blacklist snd_soc_skl" | sudo tee -a /etc/modprobe.d/blacklist.conf  
+```
+Reboot after making the changes.  
 
+Credit of ![Linux-Uprising](https://www.linuxuprising.com/2018/06/fix-no-sound-dummy-output-issue-in.html)  
 ## Gather Information for Support
 
 The `alsa-info` command will gather a number of outputs, including some of the above-listed outputs, and package them so they can be shared easily. In a terminal, run the command:

@@ -28,7 +28,7 @@ To advance keyboard driven control, keyboard shortcuts have been modified in Pop
 Lock Screen                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>ESC</kbd> |
 Move to Workspace Up or Down | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> |
 Close Window                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>W</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd>
-Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
+Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
 
 ### New Features
 

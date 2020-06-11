@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<div id=LEARN</div>
+	<a href=#LEARN
+<div id=MANAGE</div>
+<div id=TROUBLESHOOT</div>
+
+
+
 <div class="support">
 	<div class="hero">
 		<img src="https://system76.com/images/support/robot-type.png" alt="Buy a computer, don't talk to one. Lifetime support from 100% real humans." />
@@ -52,20 +59,20 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="pop-ubuntu">Pop!_OS & Ubuntu</h1>
+			<h1 id="pop">Pop!_OS</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns support-excerpts pop-ubuntu">
+		<div class="small-12 columns support-excerpts pop">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
-					{% if article.section == 'pop-ubuntu' %}
+					{% if article.section == 'pop' %}
 						<article>
 							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
 							{{ article.description | markdownify }}
@@ -76,6 +83,29 @@ layout: default
 		</div>
 	</div>
 	
+	<div class="row">
+		<div class="small-12 columns">
+			<hr />
+			<h1 id="ubuntu">Ubuntu</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts ubuntu">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.section == 'ubuntu' %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+						</article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -98,7 +128,7 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -121,7 +151,7 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -144,7 +174,7 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -167,7 +197,7 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -190,7 +220,7 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -213,7 +243,7 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
@@ -236,7 +266,7 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-	
+
 	<!--
 	<div class="row">
 		<div class="small-12 columns">
@@ -263,7 +293,7 @@ layout: default
 		</div>
 	</div>
     -->
-	
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />

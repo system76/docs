@@ -16,7 +16,7 @@ section: security-encryption
 
 #### Join an Active Directory Domain
 
-Pop!_OS and Ubuntu can be joined to an Active Directory domain, which allows users to log in with their existing network credentials.
+Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows users to log in with their existing network credentials.
 
 1. Install the necessary packages:
 
@@ -69,7 +69,7 @@ Pop!_OS and Ubuntu can be joined to an Active Directory domain, which allows use
 
     ```
     sudo mv my-keytab.keytab /etc/sssd/my-keytab.keytab
-    sudo nano /etc/sssd/sssd.conf 
+    sudo nano /etc/sssd/sssd.conf
     ```
 
     The SSSD configuration file should contain the following:
@@ -129,7 +129,7 @@ Pop!_OS and Ubuntu can be joined to an Active Directory domain, which allows use
     After saving that file, restart SSSD:
 
     ```
-    sudo systemctl restart sssd 
+    sudo systemctl restart sssd
     ```
 
 6. Add the domain administrator to the local sudo group:

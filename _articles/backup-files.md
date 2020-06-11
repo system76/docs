@@ -67,9 +67,9 @@ More difficult to setup.
 
 Many online services offer free storage up to a certain amount of data, and offer a desktop client to make synchronization automatic.  These companies give away tens of gigabytes of data for free, and have a native Linux/Windows/macOS/Android/iOS/Web client, making the data easily accessible anywhere.
 
-[Dropbox](https://www.dropbox.com)  
-[Box.com](https://www.box.com)  
-[Mega.nz](https://www.mega.nz)  
+[Dropbox](https://www.dropbox.com)
+[Box.com](https://www.box.com)
+[Mega.nz](https://www.mega.nz)
 
 [Google drive](https://drive.google.com) does not have a native Linux client, but there is built-in support within the OS.  Please note that the built in support does not copy and keep files locally as the above desktop clients do.
 
@@ -102,7 +102,7 @@ None
 **IMAP**
 
 <u>Pros:</u>
-Data is synchronized between the remove server and local devices.  No single failure point.
+Data is synchronized between the remote server and local devices. No single failure point.
 
 <u>Cons:</u>
 None
@@ -110,7 +110,7 @@ None
 **POP**
 
 <u>Pros:</u>
-Data is more secure, as it's only in one location at any time
+Data is more secure, as it's only in one location at any time.
 
 <u>Cons:</u>
 One location means one point of failure.

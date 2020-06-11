@@ -23,7 +23,7 @@ section: pop
 ---
 Pop!\_OS 20.04 LTS was released April 30, 2020. View the [Release Notes](/articles/Pop!_OS-20.04-LTS-Release-Notes) to learn about new features.
 
-### Upgrading to Pop!\_OS to 20.04 from 19.10 or 18.04
+### Upgrading to Pop!\_OS to 20.04 from 19.10 or 18.04 (For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -36,11 +36,7 @@ Once the updates are applied, a notification should appear at the top of your sc
 
 On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.04 is available with a "Download" button.
 
-![Image Name](/images/upgrade-pop/about-download-button.png)
-
-Click the button and the download will begin.
-
-![Image Name](/images/upgrade-pop/about-download-complete.png)
+Click the "Download" button and the download will begin.
 
 Once the download is complete, you will receive a second notification saying the upgrade is ready.
 
@@ -95,28 +91,39 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 ### Upgrading older releases
 
-Upgrading Pop!\_OS 17.10, 18.10 or 19.04.
+Upgrading Pop!\_OS 18.10 or 19.04.
 
-These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!\_OS
+These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10 or 19.04.
 
-Pop!\_OS 17.10 is now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for updates to be able to upgrade. Type the following commands in a terminal to switch where `apt` checks for updates. If you would like to have the recovery partition, you will need to backup data and reinstall with a 18.04 or newer release of Pop!\_OS
-
+1) Get your current system fully updated:
 ```
-sudo sed -e 's/us.archive./old-releases./' /etc/apt/sources.list > ~/sources.list
-sudo mv ~/sources.list /etc/apt/sources.list
-sudo apt clean
+sudo sed -i 's/us.archive/old-releases/g' /etc/apt/sources.list
 sudo apt update -m
+sudo dpkg --configure -a
+sudo apt install -f
 sudo apt full-upgrade
 sudo apt install pop-desktop
 ```
-For Pop!_OS 18.10 and 19.04 Run
+
+2) Move any PPA additions out of the way, and get all of the sources pointed at the 20.04 versions:
 ```
-sudo pop-upgrade release upgrade systemd
+sudo mkdir -p /etc/apt/sources.list.d/backup
+sudo mv /etc/apt/sources.list.d/* /etc/apt/sources.list.d/backup
+sudo apt-add-repository -yn ppa:system76-dev/stable
+sudo apt-add-repository -yn ppa:system76/pop
+sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
+sudo sed -i 's/disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
-For Pop!_OS 17.10 Run
+
+3) Now,do the upgrade! This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
 ```
-sudo do-release-upgrade
+sudo apt update
+sudo apt install dpkg apt
+sudo apt full-upgrade | tee ~/upgrade.log
 ```
+
+4) Now put the PPAs back; You will want to take a look at the files that end in "list" in "/etc/apt/sources.list.d/backup" to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.
+
 ## Troubleshooting
 
 Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then the following steps can help repair your broken OS.
@@ -133,7 +140,7 @@ If the upgrade fails it will most likely be due to a package manager issue.  Fir
 do-release-upgrade
 ```
 
-If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager/)
+If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager-pop/)
 
 Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:
 

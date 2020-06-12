@@ -18,7 +18,7 @@ section: pop
 This roadmap details features which are currently-planned to be implemented in Pop!_OS, as well
 as major features which were added to Pop!_OS during previous release cycles. Only features
 specific to Pop!_OS will be listed here. To see how features are chosen, see the
-[Pop!_OS Development Approach page](/docs/pop-os-development-approach/).
+[Pop!_OS Development Approach page](/articles/pop-os-development-approach/).
 
 However, note that feature development in Pop!_OS is not exclusive to any particular point release,
 as we follow a rolling-release strategy for updates to projects which we maintain. This means that

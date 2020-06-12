@@ -59,3 +59,24 @@ In your Windows install, open Control Panel and head to "Power Options" Select "
 
 Once in the BIOS change the Boot Order to boot Pop!\_OS first that way when the <kbd>Spacebar</kbd> is pressed systemd-boot will appear and then the Windows Boot Manager can be selected for booting Windows 10. Steps for accessing the BIOS and changing the Boot Order are found [here](/articles/boot-menu/).
 
+### For non-EFI/Legacy BIOS systems
+
+Windows should be installed before Pop!\_OS, otherwise Windows installation will overwrite the Master Boot Record and Grub won't start.
+
+After Pop!\_OS installation (at least versions 19.10 and 20.04) Grub menu might not show up on reboot.
+
+The reason is the following lines in file: /etc/default/grub
+GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=0
+
+These two lines should be commented or removed since they do not allow Grub menu to display.
+
+Now, even if Grub menu shows up, Windows will not be listed as a possible boot candidate because 'os-prober' package is not installed by default during Pop!\_OS installation, so Windows operating system will not be auto-detected during initial installation of Grub.
+
+It can be installed after booting into Pop!\_OS with:
+$ sudo apt install os-prober
+
+and then
+$ sudo update-grub
+
+'Windows' boot menu entry is successfully added on the Grub menu and will show up on reboot.

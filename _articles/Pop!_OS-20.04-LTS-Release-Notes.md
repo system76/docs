@@ -28,7 +28,7 @@ To advance keyboard driven control, keyboard shortcuts have been modified in Pop
 Lock Screen                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>ESC</kbd> |
 Move to Workspace Up or Down | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> |
 Close Window                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>W</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd>
-Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
+Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
 
 ### New Features
 
@@ -39,7 +39,7 @@ Pop!\_OS 20.04 features automatic window tiling. To activate tiling mode, click 
 Type `Super` + `/` to activate the new application switcher and launcher. Instead of `Super` + `Tabbing` through application icons, simply type `Super` + `/` and start typing the name of the application you want to switch to or launch.
 
 #### Flatpak support with the Flathub
-Pop!\_Shop now includes Flatpak application support and the Flathub application repository by default. The source of applications is visible when viewing applications details. System76 continues to curate and package key applications such as Steam, Atom, and VS Code. Pop!\_OS repositories are prioritized to provide the best user experience for these applications.
+Pop!\_Shop now includes Flatpak application support and the Flathub application repository by default. The source of applications is visible when viewing application details. System76 continues to curate and package key applications such as Steam, Atom, and VS Code. Pop!\_OS repositories are prioritized to provide the best user experience for these applications.
 
 #### Hybrid Graphics
 Customers with integrated and discrete graphics can now choose Hybrid Graphics from the battery section of the user menu. While in Hybrid Graphics mode, right clicking an application in the Activities overview offers a "Launch Using Dedicated Graphics Card" option. This enables customers to use battery-saving integrated graphics while launching specific apps on the dedicated GPU.
@@ -68,3 +68,15 @@ Dark mode is enabled by default. Default desktop wallpaper has a new design. Bot
 * The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
 
 ### Linux Kernel 5.4
+=======
+** New lockscreen
+** Additional performance improvements
+** New Extensions application to GNOME Shell Extensions and their settings
+** Better organized power off / logout section in the user menu
+** Most password dialogs now have the option to reveal the password by clicking the "eye" icon
+** App folders in the application overview can now be renamed
+** GNOME Settings sections have been rearranged for easier navigation
+** The privacy section now lists applications that have been granted permission to access location services, camera, and microphone. Access can be revoked on a per-app basis.
+** The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
+
+* Linux Kernel 5.4

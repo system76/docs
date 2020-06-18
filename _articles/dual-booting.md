@@ -58,3 +58,26 @@ Windows 8 and later uses a "Fast Startup" setting which prevents Windows from fu
 In your Windows install, open Control Panel and head to "Power Options" Select "Choose what the power buttons do", select "Change settings that are currently unavailable", then disable the "fast startup" setting. Note that Windows updates may occasionally turn this setting back on without asking, so if you are unable to boot into Pop!\_OS, check this setting first.
 
 Once in the BIOS change the Boot Order to boot Pop!\_OS first that way when the <kbd>Spacebar</kbd> is pressed systemd-boot will appear and then the Windows Boot Manager can be selected for booting Windows 10. Steps for accessing the BIOS and changing the Boot Order are found [here](/articles/boot-menu/).
+
+## Fix your clock
+
+Windows and Linux store their time in the BIOS differently, this will cause your clock to be desynchronized when you switch from one OS to the other.
+
+The easiest solution for it is to fix it in Linux, forcing it to work the same way as Windows. You can do this through the terminal:
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+You can verify if the change has been successful, by running this command:
+
+```
+timedatectl
+```
+
+You should see `RTC in local TZ: yes`. 
+If you need to revert it, just set it to 0:
+
+```
+timedatectl set-local-rtc 0 --adjust-system-clock
+```

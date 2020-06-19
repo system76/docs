@@ -43,7 +43,7 @@ Set the memory to 2048 MB.  The default value of 1024 MB is not enough to run Ub
 
 ![Hard Disk](/images/install-in-a-vm/create_hard_disk.png)
 
-You can use the defaults here for this exercise.  Feel free to accept the defaults and clik the "Create" button.
+Pop!_OS will need at least 15GB but it is recommended to give it 20GB if possible. After adjusting storage, feel free to accept the defaults and click the "Create" button.
 
 ### Step 5
 

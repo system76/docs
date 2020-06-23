@@ -21,8 +21,8 @@ section: pop
 The following laptops have switchable graphics:
 
 - Oryx Pro (oryp4, oryp4-b, oryp5)
-- Gazelle (gaze14)
-- Adder Workstation (addw1)
+- Gazelle (gaze14, gaze15)
+- Adder Workstation (addw1, addw2)
 
 ### Graphics modes
 

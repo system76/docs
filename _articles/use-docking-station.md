@@ -42,7 +42,7 @@ sudo apt install dkms
 
 To download the newest [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) with the link in orange.
 
-To install the DisplayLink Driver open the Terminal and move to the Download directory like so: (the version for the driver may change so look at the file name and change it accordly.)
+To install the DisplayLink Driver, open the Terminal and move to the Downloads directory (the version for the driver may change, so look at the file name and change it accordingly):
 
 ```
 cd Downloads

@@ -86,3 +86,11 @@ Go to your Downloads area and select the ISO image you downloaded and click "Ope
 Click on the Start button on the toolbar. It is the icon with the green arrow.
 
 That's it!  You're done!  Visit our [Pop!_OS page](http://pop.system76.com/) and please give us feedback on how Pop!_OS is working for you!
+
+#### "The screen resolution is too small!"
+
+If you notice that the installer for Pop!_OS is too large to fit into the default screen resolution by VirtualBox, try this:
+
+Move the installation window slightly (but not completely) out of the way, right-click on the desktop and select "Display Settings". From here you will be able to change the virtual machine's screen resolution. Increase the virtual machine resolution slightly, then click Apply in the top right-hand corner.
+
+You will now be able to continue with the installation.

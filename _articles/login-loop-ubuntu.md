@@ -23,6 +23,7 @@ Sometimes after an upgrade, your system might not bring you to the desktop after
 * Configuration files in your home directory are not compatible with new versions of software
 * The display/login manager is not working correctly
 * The NVIDIA driver has been updated and is causing an issue
+* The AMD radeon driver is being loaded and causing issues
 
 Each cause has a different solution, and certain items (such as NVIDIA) might not be applicable to your system. In most cases, you can switch to a full-screen terminal (called a *TTY*) to log in and fix the issue.
 
@@ -116,6 +117,17 @@ sudo apt install system76-driver-nvidia
 ```
 
 After the installation has completed, type `sudo systemctl reboot` and try logging in again.
+
+### Blacklist Radeon Driver
+
+If you are using an AMD graphics card, the radeon driver might be causing issues as it does not support newer versions of Ubuntu.  The amdgpu driver that comes with the kernel does however. To blacklist the radeon driver and ensure amdgpu is loaded:
+
+Open `/etc/modprobe.d/blacklist.conf` for editing and add `blacklist radeon` to the file. Then run:
+
+```
+sudo update-initramfs -c -k all
+sudo shutdown -r now
+```
 
 ### If these steps don't work...
 

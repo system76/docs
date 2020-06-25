@@ -119,7 +119,7 @@ Windows can be switched between, moved around, tiled, and closed all with the ke
 | <kbd><span class="fl-pop-key"></span></kbd> | Activities overview |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>A</kbd> | Applications |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>P</kbd> | Presentation mode (cycle display modes) |
-| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd> | Lock screen |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>ESC</kbd> | Lock screen |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>O</kbd> | Orientation lock (on devices w/accelerometer) |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>D</kbd> | Show desktop |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>V</kbd> | Calendar and notifications indicator |

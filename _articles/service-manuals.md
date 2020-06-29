@@ -22,10 +22,10 @@ section: repairs-returns
 | Galago Pro   | [galp2](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf), [galp3](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf), [galp4](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp4-service-manual.pdf) | 
 | Gazelle      | [gaze14](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf) | [gaze15](https://tech-docs.system76.com/models/gaze15/README.html)
 | Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf), [lemp9](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemp9-service-manual.pdf) | [lemp9](https://tech-docs.system76.com/models/lemp9/README.html)
-| Oryx Pro     | [oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf)  | 
+| Oryx Pro     | [oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf)  | [oryp6](https://tech-docs.system76.com/models/oryp6/repairs.html)
 | Serval WS    | [serw11](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Serval/serw11-service-manual.pdf)
 
 | Desktops     | PDF | Tech Docs |
 | -------------| ----| ----------|
 | Thelio       | [thelio-r1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf), [thelio-b1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) | 
-| Thelio Major | |[thelio-major-b1](https://system76.com/guides/thelio-major/b1) | [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/repairs.html)
+| Thelio Major | | [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/repairs.html)

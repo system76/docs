@@ -21,8 +21,8 @@ section: hardware-drivers
 
 - [Overview](#overview)
 - [Make Bootable drive](#make-bootable-drive)
-  - [For Ubuntu/Pop!_OS](#for-ubuntu\/pop\!_os)
-  - [For Windows/MacOS](#for-windows\/macos)
+  - [For Ubuntu/Pop!_OS](#for-ubuntupop_os)
+  - [For Windows/MacOS](#for-windowsmacos)
 - [Booting From Live Disk](#booting-from-live-disk)
 - [Using Live Environment](#using-live-environment)
   - [Repairing Existing Operating System](#repairing-existing-operating-system)

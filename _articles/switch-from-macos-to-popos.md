@@ -18,7 +18,7 @@ section: getting-started
 ---
 
 # **Switching from macOS to Pop!\_OS**
-- Document Version: 1.0
+- Document Version: 1.0.0
 - Date: (8-1-2020)
 - Author: Nathaniel Warburton
 - Contributing Editor(s): Emma Marshall
@@ -100,7 +100,9 @@ In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of 
 
 In both macOS and Pop!\_OS, a tray of application shortcuts is provided for convenience. In both OSes this is referred to as the "Dock." Icons show additional indicators when an app is open (a dot next to the icon) and favorite applications can be saved to the Dock for easy-access. The Dock is located on the Left side of the screen, vertically, in Pop!\_OS. macOS' default is to place the Dock at the bottom of the screen. The Dock can be moved in both OSes. macOS has this feature in System Preferences; Pop!\_OS accomplishes this change with a GNOME extension.
 
-[LINK]
+For more information on GNOME extensions, refer to the following support articles:
+[Customize Pop!\_OS](https://support.system76.com/articles/customize-gnome/)
+[Dock Customization](https://support.system76.com/articles/dash-to-dock/)
 
 [Return to Table of Contents](#Contents)
 
@@ -119,9 +121,10 @@ Both macOS and Pop!\_OS have a quick method for showing you your installed appli
 **Pop!\_OS**
   - Show Applications
 
+![show-applications-close-up](/images/pop-os-screenshots/show-applications-close.png)
+
 ![show-applications](/images/pop-os-screenshots/show-applications.png)
 
-[IMAGE show applications close-up]
 
   In Pop!\_OS, you can show this same overview by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
 
@@ -202,7 +205,8 @@ In Pop!\_OS you press the SUPER key to enter "overview" and show all workspaces.
 
 Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called Pop!\_Shell, and allows for even easier window organization and keyboard navigation among windows and applications. You can read more about Pop!\_Shell here:
 
-[LINK]
+[Pop!\_OS 20.04 Release Notes](https://support.system76.com/articles/Pop!_OS-20.04-LTS-Release-Notes/)
+[Pop-Shell Keyboard Shortcuts](https://support.system76.com/articles/pop-keyboard-shortcuts/)
 
 [Return to Table of Contents](#Contents)
 
@@ -218,16 +222,17 @@ The file-systems in macOS and Pop!\_OS are laid out in a very similar fashion.
 
  In macOS, the application which displays files and directories (folders) is called Finder, and is represented by the two-tone, blue face icon in the dock.
 
- [CLOSE UP IMAGE]
+<!-- [CLOSE UP IMAGE] -->
 
 **Pop!\_OS**
      Files
 
+
 ![files](/images/pop-os-screenshots/files.png)
 
- In Pop!\_OS, the Files application serves the same purpose. It is represented by a gray and teal icon that looks like a tabbed folder from a filing cabinet.
+ In Pop!\_OS, the Files application serves the same purpose. It is represented by a gray icon that looks like a tabbed folder from a filing cabinet.
 
- [CLOSE UP IMAGE]
+![files-close](/images/pop-os-screenshots/files-close.png)
 
  [Return to Table of Contents](#Contents)
 
@@ -240,9 +245,9 @@ Pop!\_OS has had a dark mode since 19.10. There were dark mode options available
 
 Dark Mode can be enabled by visiting
 
-Settings>Appearance>Appearance(Tab)
+Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 
-[IMAGE]
+![appearance-settings](/images/pop-os-screenshots/appearance-settings.png)
 
 [Return to Table of Contents](#Contents)
 
@@ -262,16 +267,16 @@ Settings>Appearance>Appearance(Tab)
 
 Examples include:
 
-- Bitwarden [LINK]
-- 1Password (Terminal app or Browser Extension) [LINK]
-- LastPass [LINK]
+- [Bitwarden](https://bitwarden.com/)
+- [1Password](https://1password.com/) (Terminal app or Browser Extension)
+- [LastPass](https://www.lastpass.com/)
 
 ![bitwarden](/images/pop-os-screenshots/bitwarden.png)
 
 **Other Browser Options**
-  - Chrome [LINK]
-  - Chromium (available in the Pop!\_Shop)
-  - Brave [LINK]
+  - [Chrome](https://www.google.com/chrome/)
+  - [Chromium](https://www.chromium.org/) (available in the Pop!\_Shop)
+  - [Brave](https://brave.com/)
 
 If you currently use Chrome, don't worry! There are Chrome versions available for Linux too, as well as Chrome-based alternative options like Chromium and Brave.
 
@@ -299,11 +304,12 @@ The software suite formerly known as "iWork" contains Apple's equivalent to Micr
   Pop!\_OS comes with the open-source office suite LibreOffice installed by default. LibreOffice can open Microsoft Office files, and export to Office formats (.docx, etc.). LibreOffice cannot open iWork formatted projects. For example, documents ending in .pages will need saved in a different format before LibreOffice will open them. LibreOffice saves documents in the .odt format by default.
 
 **Other**
-- iCloud.com
+- [iCloud.com](https://www.icloud.com/)
 
 If exporting your iWork files is not an option, you can also visit iCloud.com in a web browser and use the web-based versions of Pages, Numbers, and Keynote. However an Apple ID is required (free).
 
-Office365 Online
+- [Office365 Online](https://www.office.com/)
+
 Microsoft now also offers in-browser versions of the Microsoft Office suite as part of Office365. Those with subscriptions can access Word, Excel, Powerpoint, Teams, Outlook and more. In most cases, there's no need to install Windows.
 
 [Return to Table of Contents](#Contents)
@@ -321,9 +327,9 @@ For video and and instant messaging, macOS provides FaceTime and iMessage. Both 
 
 **Pop!\_OS**
 Chat
-  - Element (Formerly Riot.im) [LINK]
-  - Mattermost [LINK]
-  - Slack [LINK]
+  - [Element](https://element.io/) (Formerly Riot.im)
+  - [Mattermost](https://mattermost.com/) (also available in the Pop!\_Shop)
+  - [Slack](https://slack.com/) (also available in the Pop!\_Shop)
 
 Element (formerly Riot.im) is an open-source instant messaging client which makes use of the matrix network. The client offers end-to-end encryption, multiple chat rooms and communities, and can be used on the decentralized matrix network or self-hosted. It also offers many integrations with other applications and platforms like IRC, Slack, and Jitsi.
 
@@ -332,10 +338,10 @@ There are also Linux versions available of Slack and its open-source alternative
 ![element](/images/pop-os-screenshots/element.png)
 
 Video/Calls
-  - Jitsi [LINK]
-  - Discord [LINK]
-  - Skype [LINK]
-  - Zoom [LINK]
+  - [Jitsi](https://jitsi.org/) (browser-based)
+  - [Discord](https://discord.com/new) (also available in the Pop!\_Shop)
+  - [Skype](https://www.skype.com/en/) (also available in the Pop!\_Shop)
+  - [Zoom](https://zoom.us/) (also available in the Pop!\_Shop)
 
 ![jitsi](/images/pop-os-screenshots/jitsi.png)
 
@@ -355,7 +361,7 @@ macOS has an included application called Photobooth which allows you and your fr
 ![photobooth](/images/macOS-Screenshots/photobooth.png)
 
 **Pop!\_OS**
-- Cheese
+- Cheese (available in the Pop!\_Shop)
 
 While not included by default, there is a very similar program available in the Pop!\_Shop called "Cheese." Cheese also allows you to take webcam selfies, and apply fun filters.
 
@@ -389,7 +395,7 @@ For users more accustomed to Microsoft Outlook, there's an alternative, open-sou
 **NOTE:** Regardless of platform or client, many email accounts (e.g. Google) have implemented a security policy where a single-use password has to be created for each email app you want to sync with your account. These passwords have to be created from your email provider's account website.
 
 **Other Options**
-  - Outlook Web
+  - [Outlook Web](https://outlook.live.com/owa/)
   - Webmail (in General)
 
 Microsoft also offers a web-based version of Outlook mail which can be accessed from a web browser.
@@ -415,7 +421,12 @@ Apple's proprietary Quicktime platform has a built in video player that can pres
 
 GNOME Videos offers a very similar video player to Quicktime. It can play local media or fetch videos from RSS feeds. Due to copyright reasons, not all video formats are supported out of the box, but many codecs can be installed as needed. Linux defaults to not including non-free software, and users can opt-in if they need additional software support.
 
-You can read more about video codecs here: [LINK]
+You can add additional codecs with the following commands:
+
+    sudo add-apt-repository multiverse
+    sudo apt install ubuntu-restricted-extras
+
+
 
 Another popular alternative is VLC Media Player. This software is available in the Pop!\_Shop, and offers many customizable features.
 
@@ -453,14 +464,14 @@ Apple offers two main solutions for video editing. They have a free program call
 ![imovie](/images/macOS-Screenshots/imovie.png)
 
 **Pop!_OS**
-- Lightworks [LINK]
-- DaVinci Resolve/DaVinci Resolve Studio [LINK]
-- Kden Live [LINK] (also available in the Pop!\Shop)
+- [Lightworks](https://www.lwks.com/)
+- [DaVinci Resolve/DaVinci Resolve Studio](https://www.blackmagicdesign.com/products/davinciresolve/)
+- [Kden Live](https://kdenlive.org/en/)  (also available in the Pop!\Shop)
 
 Pop!\_OS supports two popular, professional video editing suites. Lightworks and DaVinci Resolve. We have help articles on how to install both, which are listed below:
 
-Lightworks [LINK]
-DaVinci Resolve [LINK]
+[Lightworks](https://support.system76.com/articles/install-lightworks/)
+[DaVinci Resolve] (https://support.system76.com/articles/install-davinci-resolve/)
 
 There is also a popular open-source video editing program called Kden Live which offers a similar interface and feature-set to iMovie, and is available in the Pop!\_Shop.
 
@@ -479,9 +490,9 @@ macOS offers a free music composition and editing program called Garageband. It 
 ![garageband](/images/macOS-Screenshots/garageband.png)
 
 **Pop!\_OS**
-  - LMMS
-  - Audacity
-  - Ardour
+  - [LMMS](https://lmms.io/) (also available in the Pop!\_Shop)
+  - [Audacity](https://www.audacityteam.org/) (also available in the Pop!\_Shop)
+  - [Ardour](https://ardour.org/) (also available in the Pop!\_Shop)
 
 Linux does not have a direct, 1:1 equivalent to Garageband, however there are several useful applications that can be used for similar purposes.
 
@@ -523,8 +534,8 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
 **Pop!_OS**
      - Pop!\_Shop
-     - Steam
-     - Lutris
+     - [Steam](https://store.steampowered.com/)
+     - [Lutris](https://lutris.net/) (also available in the Pop!\_Shop)
 
 ![popshop-games](/images/pop-os-screenshots/popshop-games.png)
 
@@ -543,16 +554,16 @@ Apple offers cloud storage and software services through their iCloud platform. 
 
 **Pop!_OS**
 
-  -iCloud.com (browser access)
+- [iCloud.com](https://www.icloud.com/) (browser access)
 
 While there's no direct equivalent offered by System76, there are several cloud options that can be used for alternative backups and file syncing. Additionally, many of iCloud's files and programs can be accessed through a web browser on Pop!\_OS.
 
 **Additional Options**
 
-  - Nextcloud [LINK] (desktop and web clients)
-  - SpiderOak [LINK] (desktop and web client)
-  - Dropbox [LINK] (desktop and web client)
-  - Google Drive [LINK] (Files integration and web client)
+  - [Nextcloud](https://nextcloud.com/) (desktop and web clients, also available in the Pop!\_Shop)
+  - [SpiderOak](https://spideroak.com/) (desktop and web client)
+  - [Dropbox](https://www.dropbox.com) (desktop and web client, also avilable in the Pop!\_Shop)
+  - [Google Drive](https://drive.google.com/) (Files integration and web client)
 
 [Return to Table of Contents](#Contents)
 

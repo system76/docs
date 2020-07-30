@@ -17,11 +17,52 @@ section: getting-started
 
 ---
 
-# Switching from macOS to Pop!\_OS
+# **Switching from macOS to Pop!\_OS**
+- Document Version: 1.0
+- Date: (8-1-2020)
+- Author: Nathaniel Warburton
+- Contributing Editor(s): Emma Marshall
 
-It can be difficult to change work habits or the Desktop Environment you are used to. macOS users, accustomed to a refined and consistent work-flow may be hesitant to switch from macOS to Linux. Fortunately, Pop!\_OS offers many convenient and similar workflows and applications to those available in macOS. Users will find many things where they expect them to be, as well as few pleasant surprises.
+#### [Table of Contents](#Contents)
+- [Navigation](#navigation)
+  -  [Finding Programs and Files](#finding-programs-and-files)
+    - [Application Shortcuts](#application-shortcuts)
+    - [View Installed applications](#view-installed-applications)
+    - [Install/Manage Software](#manage-software)
+    - [A note about the Applications folder:](#application-folders)
+  - [Workspaces and Window Management](#workspaces-window-management)
+    - [Pop!\_Shell](#pop-shell)
+  - [File Management](#file-management)
+  - [Light Mode vs. Dark Mode](#light-mode-vs-dark-mode)
+- [Software](#software)
+  - [Web Browsing & Password Management](#web-browsing-and-password-management)
+  - [Office Work](#office-work)
+  - [Calls and Video Chat](#calls-and-video-chat)
+  - [Take Selfies](#take-selfies)
+  - [Email](#email)
+  - [Watching Videos](#watching-videos)
+  - [Listening to Music](#listening-to-music)
+  - [Video Editing](#video-editing)
+  - [Sound Recording](#sound-recording)
+  - [Development](#development)
+  - [Gaming](#gaming)
+  - [Cloud Storage](#cloud-storage)
+- [System Management](#system-management)
+  - [Kill Programs](#kill-programs)
+  - [Networking](#networking)
+  - [Disk Encryption](#disk-encryption)
+  - [System Backups](#system-backups)
+- [What if I have an iPhone?](#iphone)
+  - [Backups (macOS)](#iphone-backups-macos)
+  - [Files/Photos (macOS)](#iphone-files-photos-macos)
+  - [Backups (Pop!\_OS)](#iphone-backups-popos)
+  - [Files/Photos (Pop!\_OS)](#iphone-files-photos-popos)
 
-## Finding Programs and Files
+Pop!\_OS offers many convenient and similar workflows and applications to those available in macOS. Users will find many things where they expect them to be, as well as few pleasant surprises.
+
+#[Navigation](#navigation)
+
+## [Finding Programs and Files](#finding-programs-and-files)
 
 **macOS**
 - Spotlight Search
@@ -38,10 +79,12 @@ On macOS, Spotlight Search can be launched by clicking the magnifying glass in t
 ![activities-search](/images/pop-os-screenshots/activities-search-pop-os.png)
 
 
-
 In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of the screen opens the Activities Overview. Overview has a search bar situated in the top-center of the screen which will search file names and applications. The Activities Overview screen can also be launched by pressing the SUPER key. Once Overview is launched users can simply begin typing to search their computer.
 
-## Application Shortcuts
+[Return to Table of Contents](#Contents)
+
+
+## [Application Shortcuts](#application-shortcuts)
 
 **macOS**
   - Dock
@@ -57,7 +100,12 @@ In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of 
 
 In both macOS and Pop!\_OS, a tray of application shortcuts is provided for convenience. In both OSes this is referred to as the "Dock." Icons show additional indicators when an app is open (a dot next to the icon) and favorite applications can be saved to the Dock for easy-access. The Dock is located on the Left side of the screen, vertically, in Pop!\_OS. macOS' default is to place the Dock at the bottom of the screen. The Dock can be moved in both OSes. macOS has this feature in System Preferences; Pop!\_OS accomplishes this change with a GNOME extension.
 
-## View Installed applications
+[LINK]
+
+[Return to Table of Contents](#Contents)
+
+
+## [View Installed applications](#view-installed-applications)
 
 **macOS**
   - Launchpad
@@ -73,9 +121,14 @@ Both macOS and Pop!\_OS have a quick method for showing you your installed appli
 
 ![show-applications](/images/pop-os-screenshots/show-applications.png)
 
+[IMAGE show applications close-up]
+
   In Pop!\_OS, you can show this same overview by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
 
-## Install/Manage Software
+  [Return to Table of Contents](#Contents)
+
+
+## [Install/Manage Software](#manage-software)
 
 **macOS**
   - App Store
@@ -106,10 +159,12 @@ Debian/Ubuntu based distributions like Pop!\_OS can also install applications fr
 
 Since 20.04, The Pop!\_Shop has also offered the ability to install flatpak versions of apps instead of, or alongside .deb files. Flatpaks are self-contained (or containerized) versions of apps that hold everything that program needs in one package. This allows you to run multiple versions of an application, and for the application to be reasonably separated from the rest of the OS.
 
+[Return to Table of Contents](#Contents)
 
-### A note about the Applications folder:
 
-  One key difference between macOS and Pop!\_OS is how and where applications are installed. in macOS, with a few exceptions, all installed applications go into a dedicated folder located under /path/to/applications folder. Applications are self-contained items and can be moved or deleted by acting on the file for the application itself.
+### [A note about the Applications folder:](#application-folders)
+
+  One key difference between macOS and Pop!\_OS is how and where applications are installed. in macOS, with a few exceptions, all installed applications go into a dedicated folder located under /path/to/Applications folder. Applications are self-contained items and can be moved or deleted by acting on the file for the application itself.
 
   In Pop!\_OS, and other Ubuntu-based distributions, there are certain parts of applications that are used by enough other applications that they are installed separately and referenced as needed. These smaller applications and parts of applications are called libraries or dependencies. Due to this structure of software installation, and depending on how a program is installed, it may be stored in one of a few locations.
 
@@ -123,26 +178,36 @@ Since 20.04, The Pop!\_Shop has also offered the ability to install flatpak vers
 
 <!--SAY MORE ABOUT THESE-->
 
+[Return to Table of Contents](#Contents)
 
-## Workspaces and Window Management
 
-Both macOS and Pop!\_OS use work-spaces to organize open applications' windows
+## [Workspaces and Window Management](#workspaces-window-management)
+
+Both macOS and Pop!\_OS use workspaces to organize open applications' windows
 
 ![workspaces-overview](/images/macOS-Screenshots/workspaces-overview.png)
 
 ![workspaces](/images/macOS-Screenshots/workspaces.png)
 
-In macOS you use multi-touch gestures, or hold down CTRL+up arrow or down arrow, to launch "Mission Control" and CTRL+left arrow or right arrow use to navigate work-spaces.
+In macOS you use multi-touch gestures, or hold down CTRL+[up arrow] or [down arrow], to launch "Mission Control" and CTRL+[left arrow] or [right arrow] are used to navigate between workspaces.
 
-In Pop!\_OS you press the SUPER key to enter "overview" and show all "work-spaces." You can also use CTRL+SUPER+up arrow or down arrow to navigate work-spaces.
+In Pop!\_OS you press the SUPER key to enter "overview" and show all workspaces. You can also use CTRL+SUPER+[up arrow] or [down arrow] to navigate between workspaces.
 
 ![workspaces-pop](/images/pop-os-screenshots/workspaces-pop-os.png)
 
-### Pop!\_Shell
+[Return to Table of Contents](#Contents)
 
-Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called Pop!\_Shell, and allows for even easier window organization and keyboard navigation among windows and applications. You can read more about Pop!\_Shell here: [LINK]
 
-## File Management
+### [Pop!\_Shell](#pop-shell)
+
+Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called Pop!\_Shell, and allows for even easier window organization and keyboard navigation among windows and applications. You can read more about Pop!\_Shell here:
+
+[LINK]
+
+[Return to Table of Contents](#Contents)
+
+
+## [File Management](#file-management)
 
 The file-systems in macOS and Pop!\_OS are laid out in a very similar fashion.
 
@@ -151,7 +216,9 @@ The file-systems in macOS and Pop!\_OS are laid out in a very similar fashion.
 
 ![finder](/images/macOS-Screenshots/finder.png)
 
- In macOS the application which displays files and directories (folders) is called Finder, and is represented by the two-tone, blue face icon in the dock.
+ In macOS, the application which displays files and directories (folders) is called Finder, and is represented by the two-tone, blue face icon in the dock.
+
+ [CLOSE UP IMAGE]
 
 **Pop!\_OS**
      Files
@@ -160,21 +227,28 @@ The file-systems in macOS and Pop!\_OS are laid out in a very similar fashion.
 
  In Pop!\_OS, the Files application serves the same purpose. It is represented by a gray and teal icon that looks like a tabbed folder from a filing cabinet.
 
+ [CLOSE UP IMAGE]
 
-## Light Mode vs. Dark Mode
+ [Return to Table of Contents](#Contents)
 
-As of macOS 10.14 (Mojave) users have the option of using a default "dark mode"
-for the look and feel of their OS.
 
-Pop!\_OS has had a dark mode since 19.10. There were dark mode options available before 19.10,
-but the official "Dark Mode" of Pop!\_OS was added in Pop!\_OS 19.10.
+## [Light Mode vs. Dark Mode](#light-mode-vs-dark-mode)
+
+As of macOS 10.14 (Mojave) users have the option of using a default "dark mode" for the look and feel of their OS.
+
+Pop!\_OS has had a dark mode since 19.10. There were dark mode options available before 19.10, but the official "Dark Mode" of Pop!\_OS was added in Pop!\_OS 19.10.
 
 Dark Mode can be enabled by visiting
 
 Settings>Appearance>Appearance(Tab)
 
+[IMAGE]
 
-## Web Browsing & Password Management
+[Return to Table of Contents](#Contents)
+
+# [Software](#software)
+
+## [Web Browsing & Password Management](#web-browsing-and-password-management)
 
 **macOS**
   - Safari (Default)
@@ -184,24 +258,27 @@ Settings>Appearance>Appearance(Tab)
 
   The web browsing experience will be very similar on either macOS or Firefox. Both browsers offer privacy features like "do not track" requests, other blockers, and customize-able search-engine defaults. If you are accustomed to using Apple Pay or iCloud Keychain for your payments and password management, your workflow will require some changes as these are Apple proprietary services.
 
-  However there are several reliable, cross-platform password managers available, and they also offer the option to save and auto-fill payment methods. Most modern browsers also offer the ability to create an account that will save and sync you logins.
+  However there are several reliable, cross-platform password managers available, and they also offer the option to save and auto-fill payment methods. Most modern browsers also offer the ability to create an account that will save and sync your logins.
 
 Examples include:
 
-- Bitwarden
-- 1Password (Terminal app or Browser Extension)
-- LastPass
+- Bitwarden [LINK]
+- 1Password (Terminal app or Browser Extension) [LINK]
+- LastPass [LINK]
 
 ![bitwarden](/images/pop-os-screenshots/bitwarden.png)
 
 **Other Browser Options**
-  - Chrome
-  - Chromium
-  - Brave
+  - Chrome [LINK]
+  - Chromium (available in the Pop!\_Shop)
+  - Brave [LINK]
 
-If you're used to using Chrome, don't worry! There are Chrome versions available for Linux too, as well as Chrome-based alternative options like Chromium and Brave.
+If you currently use Chrome, don't worry! There are Chrome versions available for Linux too, as well as Chrome-based alternative options like Chromium and Brave.
 
-## Office Work
+[Return to Table of Contents](#Contents)
+
+
+## [Office Work](#office-work)
 **macOS**
   - Pages/Numbers/Keynote (iWork)
 
@@ -209,9 +286,8 @@ If you're used to using Chrome, don't worry! There are Chrome versions available
 
 ![iwork](/images/macOS-Screenshots/pages-numbers-keynote-windows.png)
 
-The software suite formerly known as "iWork" contains Apple's answers to Microsoft Office. It contains Pages (word processing), Numbers (spreadsheets) and Keynote (presentations). These apps are all capable of reading and saving files in outside formats like those used in Microsoft Office, but by default, they save files in formats specific to the iWorks suite: .pages, .numbers, .keynote respectively.
+The software suite formerly known as "iWork" contains Apple's equivalent to Microsoft Office. It contains Pages (word processing), Numbers (spreadsheets) and Keynote (presentations). These apps are all capable of reading and saving files in outside formats like those used in Microsoft Office, but by default, they save files in formats specific to the iWorks suite: .pages, .numbers, and .keynote respectively.
 
-[CHECK ON THESE FORMATS]
 
 **Pop!\_OS**
   - Writer/Calc/Impress (LibreOffice)
@@ -220,16 +296,21 @@ The software suite formerly known as "iWork" contains Apple's answers to Microso
 
 ![libreoffice-windows-open](/images/pop-os-screenshots/libreoffice-windows-open.png)
 
-  Pop!\_OS comes with the open-source office suite LibreOffice by default. LibreOffice can open Microsoft Office files, and export to Office formats (.docx, etc.). LibreOffice cannot open iWork formatted projects. For example, documents ending in .pages will need saved in a different format before LibreOffice will open them. LibreOffice saves documents in the .odt format by default.
+  Pop!\_OS comes with the open-source office suite LibreOffice installed by default. LibreOffice can open Microsoft Office files, and export to Office formats (.docx, etc.). LibreOffice cannot open iWork formatted projects. For example, documents ending in .pages will need saved in a different format before LibreOffice will open them. LibreOffice saves documents in the .odt format by default.
 
 **Other**
-iCloud.com
-If exporting your iWork files is not an option, you can also visit iCloud.com in Firefox and use the web-based versions of Pages Numbers and Keynote. However an Apple ID is required (free).
+- iCloud.com
+
+If exporting your iWork files is not an option, you can also visit iCloud.com in a web browser and use the web-based versions of Pages, Numbers, and Keynote. However an Apple ID is required (free).
 
 Office365 Online
 Microsoft now also offers in-browser versions of the Microsoft Office suite as part of Office365. Those with subscriptions can access Word, Excel, Powerpoint, Teams, Outlook and more. In most cases, there's no need to install Windows.
 
-## Calls and Video Chats
+[Return to Table of Contents](#Contents)
+
+## [Calls and Video Chat](#calls-and-video-chat)
+
+Pop!\_OS does not offer a default messaging app as we prefer users choose whichever ones they would like to use and install only what they need/want. However, many popular 3rd-party applications have Linux versions available.There are also many lesser-known, but feature-rich solutions that work cross-platform.
 
 **macOS**
      - FaceTime/iMessage
@@ -240,31 +321,31 @@ For video and and instant messaging, macOS provides FaceTime and iMessage. Both 
 
 **Pop!\_OS**
 Chat
-  - Element (Formerly Riot.im)
-  - Mattermost
-  - Slack
+  - Element (Formerly Riot.im) [LINK]
+  - Mattermost [LINK]
+  - Slack [LINK]
 
-Element (formerly Riot.im) is an open-source instant messaging client which makes use of the matrix network. The client offers end-to-end encryption, multiple chat rooms and communities, and be used on the decentralized matrix network or self-hosted. It also offers many integrations with other applications and platforms like IRC, Slack, and Jitsi.
+Element (formerly Riot.im) is an open-source instant messaging client which makes use of the matrix network. The client offers end-to-end encryption, multiple chat rooms and communities, and can be used on the decentralized matrix network or self-hosted. It also offers many integrations with other applications and platforms like IRC, Slack, and Jitsi.
 
-There are also Linux versions available of the open-source Slack alternative Mattermost, and Slack itself.
+There are also Linux versions available of Slack and its open-source alternative Mattermost.
 
 ![element](/images/pop-os-screenshots/element.png)
 
 Video/Calls
-  - Jitsi
-  - Discord
-  - Skype
-  - Zoom
+  - Jitsi [LINK]
+  - Discord [LINK]
+  - Skype [LINK]
+  - Zoom [LINK]
 
 ![jitsi](/images/pop-os-screenshots/jitsi.png)
 
-Pop!\_OS does not offer a default messaging app as we prefer users choose whichever ones they would like to use and install only what they need/want. However, many popular 3rd-party applications have Linux versions available, as well as some cool lesser-known solutions.
 
-Jitsi is a multi-user video chat program which runs in a browser. Similar in functionality to Zoom, it allows password protected rooms, phone-dial-in and IM-ing alongside video-chat. All calls are encrypted by default using HTTPS. The System76 team makes daily use of this platform.
+
+Jitsi is a multi-user video chat program which runs in a browser. Similar in functionality to Zoom, it allows password protected rooms, phone-dial-in and IM-ing alongside video-chat. All calls are encrypted by default using HTTPS, with additional end-to-end encryption options also offered. The System76 team makes daily use of the Jitsi platform.
 
 There are also Linux clients for popular apps like Discord, Skype and Zoom.
 
-## Take Selfies
+## [Take Selfies](#take-selfies)
 
 **macOS**
 - Photobooth
@@ -280,30 +361,32 @@ While not included by default, there is a very similar program available in the 
 
 ![cheese](/images/pop-os-screenshots/cheese.png)
 
-## Email
+[Return to Table of Contents](#Contents)
+
+## [Email](#email)
 
 **macOS**
   - Apple Mail (default)
 
-macOS offers a built in mail application called Apple Mail which allows you to add a variety of email accounts and presents them in a clean, organized column view.
+macOS offers a built in mail application called Apple Mail which allows you to add a variety of email accounts and presents them in an organized column view.
 
 ![apple-mail](/images/macOS-Screenshots/apple-mail.png)
 
 **Pop!\_OS**
   - Geary (default)
-  - Thunderbird
+  - Thunderbird (available in the Pop!\_Shop)
 
-Pop!\_OS offers a similar email client by default. Geary is a GNOME email client with a very similar layout to Apple Mail making use of a column view as well. It too, has the option to add a variety of email accounts.
+Pop!\_OS offers the GNOME "Geary" email client by default. Geary also makes use of a column view, and supports adding a variety of email accounts.
 
 ![geary](/images/pop-os-screenshots/geary.png)
 
 
-For those users more accustomed to the customize-able and feature-packed interface of Microsoft Outlook, there's an excellent, open-source program by Mozilla called Thunderbird.
+For users more accustomed to Microsoft Outlook, there's an alternative, open-source program by Mozilla called Thunderbird which supports calendar integration and similar organizational features to Outlook.
 
 
 ![thunderbird](/images/pop-os-screenshots/thunderbird.png)
 
-**NOTE:** Regardless of platform or client, many email accounts (e.g. Google) have implemented a security policy where a single-use password has to be created for each email app you want to sync with your account. These passwords have to created from your email provider's account website.
+**NOTE:** Regardless of platform or client, many email accounts (e.g. Google) have implemented a security policy where a single-use password has to be created for each email app you want to sync with your account. These passwords have to be created from your email provider's account website.
 
 **Other Options**
   - Outlook Web
@@ -313,28 +396,32 @@ Microsoft also offers a web-based version of Outlook mail which can be accessed 
 
 In addition, most modern Email Service Providers (ESPs) have an online version of their inbox which can be accessed by signing into your ESP account in a browser.
 
-## Watching Videos
+[Return to Table of Contents](#Contents)
+
+## [Watching Videos](#watching-videos)
 
 **macOS**
   - Quicktime
 
 ![quicktime](/images/macOS-Screenshots/quicktime.png)
 
-Apple's proprietary Quicktime platform also has a built in video player that is packed with macOS. It offers a standard video player that can present video content in a variety of formats.
+Apple's proprietary Quicktime platform has a built in video player that can present video content in a variety of formats.
 
 **Pop!\_OS**
-  - GNOME Videos
-  - VLC
+  - GNOME Videos (default)
+  - VLC (available in the Pop!\_Shop)
 
 ![gnome-video](/images/pop-os-screenshots/gnome-videos.png)
 
-GNOME Videos offers a very similar video player to Quicktime. It can play local media or fetch videos from RSS feeds. Due to copyright reasons not all video formats are supported out of the box, but many codecs can be installed as needed. Linux defaults to not including non-free software, and users can opt-in if they need additional software support.
+GNOME Videos offers a very similar video player to Quicktime. It can play local media or fetch videos from RSS feeds. Due to copyright reasons, not all video formats are supported out of the box, but many codecs can be installed as needed. Linux defaults to not including non-free software, and users can opt-in if they need additional software support.
 
 You can read more about video codecs here: [LINK]
 
 Another popular alternative is VLC Media Player. This software is available in the Pop!\_Shop, and offers many customizable features.
 
-## Listing to Music
+[Return to Table of Contents](#Contents)
+
+## [Listening to Music](#listening-to-music)
 
 **macOS**
   - Apple Music (formerly iTunes)
@@ -344,40 +431,44 @@ Another popular alternative is VLC Media Player. This software is available in t
 In recent releases, Apple has merged the functionality of their iTunes program with their music streaming platform Apple Music. The app is now known simply as "Music" or "Apple Music." The program can play your local iTunes library or stream music from the streaming service.
 
 **Pop!_OS**
-  - Clementine
-  - Spotify
+  - Clementine (available in the Pop!\_Shop)
+  - Spotify (available in the Pop!\_Shop)
 
-There are many music player apps available for Linux. One of the older/more popular one's is Clementine. Clementine has a similar layout to iTunes and can also play music stored locally on your computer or stream internet radio channels.
+There are many music player apps available for Linux. One of the older/more popular ones is Clementine. Clementine has a similar layout to iTunes and can also play music stored locally on your computer or stream internet radio channels.
 
 ![clementine](/images/pop-os-screenshots/clementine.png)
 
 There is also a Linux client for the popular streaming service Spotify, available in the Pop!\_Shop.
 
-## Video Editing
+[Return to Table of Contents](#Contents)
+
+## [Video Editing](#video-editing)
 
 **macOS**
 - iMovie
 - Final Cut
 
-Apple offers two main solutions for video editing. They have a free program called iMovie which is available to all Apple hardware customers. They also offer a professional grade (paid) editing client called Final Cut.
+Apple offers two main solutions for video editing. They have a free program called iMovie which is available to all Apple hardware customers. They also offer a professional-grade (paid) editing client called Final Cut.
 
 ![imovie](/images/macOS-Screenshots/imovie.png)
 
 **Pop!_OS**
-- Lightworks
-- DaVinci Resolve/DaVinci Resolve Studio
-- Kden Live
+- Lightworks [LINK]
+- DaVinci Resolve/DaVinci Resolve Studio [LINK]
+- Kden Live [LINK] (also available in the Pop!\Shop)
 
-Pop!\_OS supports two popular, professional video editing suites. Lightworks and DaVinci Resolve. We have help articles on how to install both which are listed below;
+Pop!\_OS supports two popular, professional video editing suites. Lightworks and DaVinci Resolve. We have help articles on how to install both, which are listed below:
 
-Lightworks
-DaVinci Resolve
+Lightworks [LINK]
+DaVinci Resolve [LINK]
 
 There is also a popular open-source video editing program called Kden Live which offers a similar interface and feature-set to iMovie, and is available in the Pop!\_Shop.
 
 ![kden-live](/images/pop-os-screenshots/kden-live.png)
 
-## Sound Recording
+[Return to Table of Contents](#Contents)
+
+## [Sound Recording](#sound-recording)
 
 **macOS**
   - Garageband
@@ -400,7 +491,7 @@ The closest match would likely be LMMS (Let's Make Music Software). It's an open
 
 ![audacity](/images/pop-os-screenshots/audacity.png)
 
-Audacity is another popular application, mainly used for recording and editing voice tracks for things like podcasts and memos. It is a tried and true recording solution.
+Audacity is another popular application, mainly used for recording and editing voice tracks for things like podcasts and memos. It is a tried-and-true recording solution.
 
 ![ardour](/images/pop-os-screenshots/ardour.png)
 
@@ -408,7 +499,21 @@ Similar to LMMS, but more targeted to audio engineering professionals rather tha
 
 LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
-## Gaming
+[Return to Table of Contents](#Contents)
+
+## [Development](#development)
+
+**macOS**
+  - Xcode
+
+**Pop!\_OS**
+  - Text Editer (default)
+  - Atom (available in the Pop!\_Shop)
+  - Microsoft VSCode (available in the Pop!\_Shop)
+
+[Return to Table of Contents](#Contents)
+
+## [Gaming](#gaming)
 
 **macOS**
      - App Store/Arcade
@@ -418,7 +523,8 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
 **Pop!_OS**
      - Pop!\_Shop
-     - Steam/Lutris
+     - Steam
+     - Lutris
 
 ![popshop-games](/images/pop-os-screenshots/popshop-games.png)
 
@@ -426,8 +532,9 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
 ![lutris](/images/pop-os-screenshots/lutris.png)
 
+[Return to Table of Contents](#Contents)
 
-## Cloud Storage
+## [Cloud Storage](#cloud-storage)
 
 **macOS**
 - iCloud
@@ -442,14 +549,16 @@ While there's no direct equivalent offered by System76, there are several cloud 
 
 **Additional Options**
 
-  - Nextcloud (desktop and web clients)
-  - SpiderOak (desktop and web client)
-  - Dropbox (desktop and web client)
-  - Google Drive (Files integration and web client)
+  - Nextcloud [LINK] (desktop and web clients)
+  - SpiderOak [LINK] (desktop and web client)
+  - Dropbox [LINK] (desktop and web client)
+  - Google Drive [LINK] (Files integration and web client)
 
-# System Management
+[Return to Table of Contents](#Contents)
 
-## Kill Programs
+# [System Management](#system-management)
+
+## [Kill Programs](#kill-programs)
 
 **macOS**
   - Force Quit
@@ -459,7 +568,7 @@ On macOS there are two main ways to kill unresponsive programs. The force-quit m
 
 ![force-quit-activity-monitor](/images/macOS-Screenshots/force-quit-activity-monitor.png)
 
-Force-quit is launched by clicking on the Apple menu in the upper-lefthand corner of the screen, or by pressing Opt+Cmd+Esc, selecting the application, and then "force-quit."
+Force-quit is launched by clicking on the Apple menu in the upper-left-hand corner of the screen, or by pressing Opt+Cmd+Esc, selecting the application, and then "force-quit."
 
 You can also get an overview of running processes and stop or kill them from the Activity Monitor.
 
@@ -473,7 +582,9 @@ You can also kill processes in the Terminal if you know the process ID.
 
 Pop!\_OS has very similar options for killing misbehaving processes. There is an almost identical utility built into the OS called System Monitor, which displays running processes and allows you to stop or kill them.
 
-While Pop!\_OS does not a force-quit menu, the same Terminal commands available in macOS.
+While Pop!\_OS does not a force-quit menu, when applications freeze, the OS will show a pop-up window asking if you want to wait on the program or force-quit it.
+
+The same Terminal commands available in macOS can also be used in Pop!\_OS.
 
 Running the command:
 
@@ -481,13 +592,13 @@ Running the command:
 
 will show you a similar output to what's displayed in the System Monitor.
 
-Once you know the offending processes Process ID (PID), you can issue a command like this:
+Once you know the offending process' Process ID (PID) (either from System Monitor or the Terminal) you can issue a command like this:
 
     sudo kill -pid ####
 
+[Return to Table of Contents](#Contents)
 
-
-## Networking
+## [Networking](#networking)
 
 **macOS**
 
@@ -499,9 +610,11 @@ Once you know the offending processes Process ID (PID), you can issue a command 
 
 macOS and Pop!\_OS manage network menus and settings almost identically. Both have a drop-down menu in the upper right corner of the screen to quickly connect to an available network.
 
-Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) to edit saved connections, IP settings and configure things like proxy settings or VPNs.
+Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) to edit saved connections, IP settings and configure things like proxy settings or Virtual Private Networks (VPN).
 
-## Disk Encryption
+[Return to Table of Contents](#Contents)
+
+## [Disk Encryption](#disk-encryption)
 
 
 **macOS**
@@ -519,7 +632,9 @@ On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS 
 
 **NOTE:** Because of the way encryption is implemented on Pop!\_OS, and the type of delicate work involved in encrypting or decrypting the drive, encryption is only offered when the OS is being first set up. If you choose not to use encryption, and want to add it later, it will require a full erase and reinstall. So create backups accordingly.
 
-## System Backups
+[Return to Table of Contents](#Contents)
+
+## [System Backups](#system-backups)
 
 **macOS**
 - Time Machine
@@ -529,38 +644,43 @@ On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS 
 macOS features a program called Time Machine which can be set to perform periodic backups to an external drive, or in some cases to a networked drive. The utility supports restoring the system to a specific point in time and keeps track of changes to the backed up files.
 
 **Pop!\_OS**
-- Timeshift
-- Déjà Dup Backups
+- Timeshift (available in the Pop!\_Shop)
+- Déjà Dup Backups (available in the Pop!\_Shop)
 
 ![pop-backups](/images/pop-os-screenshots/pop-backups.png)
 
-Pop!\_OS does not have a built in backup utility, but several good one's are available to choose from in the Pop!\_OS Shop. The two featured here are Timeshift (pictured left) and Déjà Dup Backups (pictured right).
+In the interest of user-choice, Pop!\_OS does not have a built in backup utility, but several applications are available to choose from in the Pop!\_Shop. The two featured here are Timeshift (pictured left) and Déjà Dup Backups (pictured right).
 
-Timeshift is designed to capture snapshots and restore points of your system at a given time and is only compatible with backing up your Linux system to another linux formatted drive. It's very similar to the snapshot feature offered by virtual machine managers.
+Timeshift is designed to capture snapshots and restore points of your system at a given time and is only compatible with backing up your Linux system to another Linux formatted drive. It's very similar to the snapshot feature offered by virtual machine managers.
 
 Déjà Dup Backups is closer in functionality to Time Machine. It offers local hardware backups, or backups to network locations. Folders and files can be added to the backup list manually, and it backs up the Home folder by default. It can also be setup to perform backups automatically on a schedule.
 
-# What if I have an iPhone?
+[Return to Table of Contents](#Contents)
 
-## Backups (macOS)
+# [What if I have an iPhone?](#iphone)
+
+## [Backups (macOS)](#iphone-backups-macos)
 
 Full system iPhone backups are traditionally done in one of two ways.
 - Local backups (formerly iTunes, now Finder)
 Local backups of your iPhone can be created by connecting it to you Apple laptop or desktop computer and using iTunes (for older macOS versions) or Finder (for newer releases) to create a local snapshot of your iPhone data. These backups can be encrypted or unencrypted.
 
 - iCloud backups
-It is also possible to set your iPhone to backup and sync changes to your iCloud account. These are not full-system backups, but do contain most of the data needed to get your iPhone restored to a particular state in time. To read more about what is backed up in iCloud backups visit: [LINK]
+It is also possible to set your iPhone to backup and sync changes to your iCloud account. These are not full-system backups, but do contain most of the data needed to get your iPhone restored to a particular point in time. To read more about what is backed up in iCloud backups visit: [LINK]
 
-## Files/Photos (macOS)
-It's also possible to sync your iPhone like a digital camera through the Apple Photos app, and a special directory on the iPhone called Files is available to be accessed like any other flash drive or external hard drive.
+## [Files/Photos (macOS)](#iphone-files-photos-macos)
+It's also possible to sync your iPhone like a digital camera through the Apple Photos app, and a special directory on the iPhone called "Files" (presented on the iPhone as a home-screen app) is available to be accessed like any other flash drive or external hard drive.
 
 
-## Backups (Pop!\_OS)
+## [Backups (Pop!\_OS)](#iphone-backups-popos)
 
 - Local backups
-Pop!\_OS does not have a built in feature to make a local snapshot backup of your iPhone.
-- iCloud backups.
-Since your iPhone connects directly to iCloud over WiFi, iCloud backups will continue as normal, and can be managed from either your iPhone or your iCloud account on icloud.com.
+Because the backup features in macOS Finder/iOS relies on proprietary code, Pop!\_OS does not have a built-in feature to make a local snapshot backup of your iPhone.
 
-## Files/Photos (Pop!\_OS)
-Like in macOS, you can also access image files, and files stored in the Files folder on your iPhone through the Pop!\_OS Files application. Files can be copied back and forth to the iPhone like any other flash drive or external drive.
+- iCloud backups.
+Since your iPhone connects directly to iCloud over WiFi, iCloud backups will continue as usual, and can be managed from either your iPhone or your iCloud account on icloud.com.
+
+## [Files/Photos (Pop!\_OS)](#iphone-files-photos-popos)
+Like in macOS, you can also access image files, and files stored in the "Files" folder on your iPhone through the Pop!\_OS Files application. Files can be copied back and forth to the iPhone like any other flash drive or external drive.
+
+[Return to Table of Contents](#Contents)

@@ -69,7 +69,7 @@ After the system powers off, **press the power button** to turn it back on. On m
 
 ### Disabling the ME
 
-For machines not running Open Firmware, a few extra steps may be required after an update to ensure the Intel ME is disabled. 
+For laptops not running Open Firmware, a few extra steps may be required after an update to ensure the Intel ME is disabled. 
 
 Depending on the model, two blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one. The system may also power off and on again at this point.
 

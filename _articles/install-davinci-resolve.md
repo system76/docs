@@ -27,7 +27,17 @@ DaVinci Resolve requires either CUDA or OpenCL. If you are using an NVIDIA GPU, 
 sudo apt install system76-cuda-latest
 ```
 
-If you are using an AMD GPU, install the AMDGPU-PRO driver from AMD's website [here](https://www.amd.com/en/support) for OpenCL support.
+If you are using an AMD GPU, install the AMDGPU-PRO driver from AMD's website [here](https://www.amd.com/en/support) for OpenCL support. In order to add OpenCL support the following command will need to be used when installing the AMDGPU Pro driver:
+
+```
+sudo ./amdgpu-pro-install -y --opencl=legacy,pal
+```
+
+Then reboot the system once that completes:
+
+```
+sudo systemctl reboot
+```
 
 ### Download DaVinci Resolve and the MakeResolveDeb script
 

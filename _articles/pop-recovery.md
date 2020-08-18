@@ -90,14 +90,14 @@ The EFI partition is usually around 512MB so that would be the partition that we
 
 ```
 sudo mount /dev/sda1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
 ```
 OR for NVMe drives:
 
 ```
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
-```
-
-```
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt

@@ -18,7 +18,9 @@ section: accessories
 
  - Galago Pro (galp4, galp3-c, galp3-b)
  - Darter Pro (darp6, darp5)
- - Lemur Pro (lemp9)
+ - Lemur Pro (lemp9) <sup>*</sup>
+ 
+<sup>*</sup> USB Type-C only, no Thunderbolt support.
 
 ### System76-tested docks:
 

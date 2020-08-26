@@ -18,6 +18,9 @@ section: accessories
 
  - Galago Pro (galp4, galp3-c, galp3-b)
  - Darter Pro (darp6, darp5)
+ - Lemur Pro (lemp9) <sup>*</sup>
+ 
+<sup>*</sup> USB Type-C only, no Thunderbolt support.
 
 ### System76-tested docks:
 
@@ -29,6 +32,7 @@ We have tested the following docks:
 Community members have reported that the following docks work with our products:
  - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/206) on an Intel system] <sup>1</sup>
  - [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [[community-tested](https://github.com/system76/docs/pull/231) on an Intel system]
+ - [Dell DS1000](https://www.dell.com/support/manuals/us/en/04/dell-dockstand-ds1000/ds1000_docking_stand_ug_publication/technical-specifications?guid=guid-1ad58fe1-dd33-4ebc-bac1-8e6a9083eb35&lang=en-us) [[community-tested](https://github.com/system76/docs/pull/431) on an Intel system]
 
 ### For Intel systems
 

@@ -13,6 +13,10 @@ section: software-applications
 
 ---
 
+## Intel GPU's
+
+DaVinci Resolve does not support Intel GPU's due to the lack of OpenCL support. 
+
 ### Install prerequisite packages
 
 The following packages will be needed to build and install DaVinci Resolve:

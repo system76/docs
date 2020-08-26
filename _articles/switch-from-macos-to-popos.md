@@ -379,6 +379,8 @@ While not included by default, there is a very similar program available in the 
 
 Apple merged the functionality of the now discontinued application iPhoto into their new application Photos, which matches functionality with the iOS app of the same name. Photos can be used to import photographs from iCloud, phones, digital cameras or local directories.
 
+![apple-photos](/images/macOS-Screenshots/photos-app.png)
+
 **Pop!\_OS**
 - Shotwell (available in the Pop!\_Shop)
 
@@ -494,7 +496,8 @@ Apple offers two main solutions for video editing. They have a free program call
 Pop!\_OS supports two popular, professional video editing suites. Lightworks and DaVinci Resolve. We have help articles on how to install both, which are listed below:
 
 [Lightworks](https://support.system76.com/articles/install-lightworks/)
-[DaVinci Resolve] (https://support.system76.com/articles/install-davinci-resolve/)
+
+[DaVinci Resolve](https://support.system76.com/articles/install-davinci-resolve/)
 
 There is also a popular open-source video editing program called Kden Live which offers a similar interface and feature-set to iMovie, and is available in the Pop!\_Shop.
 
@@ -728,7 +731,7 @@ Full system iPhone backups are traditionally done in one of two ways.
 Local backups of your iPhone can be created by connecting it to your Apple laptop or desktop computer and using iTunes (for older macOS versions) or Finder (for newer releases) to create a local snapshot of your iPhone data. These backups can be encrypted or unencrypted.
 
 - iCloud backups
-It is also possible to set your iPhone to backup and sync changes to your iCloud account. These are not full-system backups, but do contain most of the data needed to get your iPhone restored to a particular point in time. To read more about what is backed up in iCloud backups visit: https://support.apple.com/en-us/HT207428 
+It is also possible to set your iPhone to backup and sync changes to your iCloud account. These are not full-system backups, but do contain most of the data needed to get your iPhone restored to a particular point in time. To read more about what is backed up in iCloud backups visit: https://support.apple.com/en-us/HT207428
 
 ## [Files/Photos (macOS)](#iphone-files-photos-macos)
 It's also possible to sync your iPhone like a digital camera through the Apple Photos app, and a special directory on the iPhone called "Files" (presented on the iPhone as a home-screen app) is available to be accessed like any other flash drive or external hard drive.

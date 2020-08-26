@@ -101,7 +101,7 @@ Silverback WS | Thelio Massive       |
 To remove the NVIDIA driver, run the following:
 
 ```
-sudo apt purge *nvidia*
+sudo apt purge ~nnvidia
 sudo apt autoremove
 sudo apt clean
 ```

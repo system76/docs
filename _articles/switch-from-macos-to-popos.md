@@ -127,7 +127,7 @@ Both macOS and Pop!\_OS have a quick method for showing you your installed appli
 ![show-applications](/images/pop-os-screenshots/show-applications.png)
 
 
-  In Pop!\_OS, you can show this same overview by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
+In Pop!\_OS, you can show this same overview by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
 
   [Return to Table of Contents](#Contents)
 
@@ -168,7 +168,7 @@ Since 20.04, The Pop!\_Shop has also offered the ability to install flatpak vers
 
 ### [A note about the Applications folder:](#application-folders)
 
-  One key difference between macOS and Pop!\_OS is how and where applications are installed. in macOS, with a few exceptions, all installed applications go into a dedicated folder located under /path/to/Applications folder. Applications are self-contained items and can be moved or deleted by acting on the file for the application itself.
+  One key difference between macOS and Pop!\_OS is how and where applications are installed. in macOS, with a few exceptions, all installed applications go into a dedicated folder located under the /Applications folder. Applications are self-contained items and can be moved or deleted by acting on the file for the application itself.
 
   In Pop!\_OS, and other Ubuntu-based distributions, there are certain parts of applications that are used by enough other applications that they are installed separately and referenced as needed. These smaller applications and parts of applications are called libraries or dependencies. Due to this structure of software installation, and depending on how a program is installed, it may be stored in one of a few locations.
 
@@ -180,7 +180,7 @@ Since 20.04, The Pop!\_Shop has also offered the ability to install flatpak vers
 
   /opt/
 
-<!--SAY MORE ABOUT THESE-->
+The placement of applications in Pop!\_OS is handled transparently by the operating system. You don't need to memorize these locations or, in most cases, modify them in any way. They are provided here for reference purposes.
 
 [Return to Table of Contents](#Contents)
 
@@ -204,10 +204,12 @@ In Pop!\_OS you press the SUPER key to enter "overview" and show all workspaces.
 
 ### [Pop!\_Shell](#pop-shell)
 
-Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called Pop!\_Shell, and allows for even easier window organization and keyboard navigation among windows and applications. You can read more about Pop!\_Shell here:
+Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called pop-shell, and allows for even easier window organization and keyboard navigation among windows and applications. You can read more about Pop!\_Shell here:
 
 [Pop!\_OS 20.04 Release Notes](https://support.system76.com/articles/Pop!_OS-20.04-LTS-Release-Notes/)
+
 [Pop-Shell Keyboard Shortcuts](https://support.system76.com/articles/pop-keyboard-shortcuts/)
+
 
 [Return to Table of Contents](#Contents)
 
@@ -317,7 +319,7 @@ Microsoft now also offers in-browser versions of the Microsoft Office suite as p
 
 ## [Calls and Video Chat](#calls-and-video-chat)
 
-Pop!\_OS does not offer a default messaging app as we prefer users choose whichever ones they would like to use and install only what they need/want. However, many popular 3rd-party applications have Linux versions available.There are also many lesser-known, but feature-rich solutions that work cross-platform.
+Pop!\_OS does not offer a default messaging app as we prefer users choose whichever ones they would like to use and install only what they need/want. However, many popular 3rd-party applications have Linux versions available. There are also many lesser-known, but feature-rich solutions that work cross-platform.
 
 **macOS**
      - FaceTime/iMessage
@@ -364,7 +366,7 @@ macOS has an included application called Photobooth which allows you and your fr
 **Pop!\_OS**
 - Cheese (available in the Pop!\_Shop)
 
-While not included by default, there is a very similar program available in the Pop!\_Shop called "Cheese." Cheese also allows you to take webcam selfies, and apply fun filters.
+While not included by default, there is a very similar program available in the Pop!\_Shop called "Cheese." Cheese also allows you to take webcam selfies, and apply image filters.
 
 ![cheese](/images/pop-os-screenshots/cheese.png)
 
@@ -375,9 +377,14 @@ While not included by default, there is a very similar program available in the 
 **macOS**
 - Photos (default)
 
+Apple merged the functionality of the now discontinued application iPhoto into their new application Photos, which matches functionality with the iOS app of the same name. Photos can be used to import photographs from iCloud, phones, digital cameras or local directories.
+
 **Pop!\_OS**
 - Shotwell (available in the Pop!\_Shop)
 
+Pop!\_OS comes with a generic photo viewing application called Image Viewer which handles displaying pictures that are opened from the Files application for file previews, similar to the Apple application Preview.
+
+There are also several applications available in the Pop!\_Shop for more in-depth photo management. One such app, Shotwell, is highlighted here. Shotwell offers a similar organizational strategy to Apple Photos and allows for importing, viewing, and sorting your photographs.
 
 ![shotwell](/images/pop-os-screenshots/shotwell.png)
 
@@ -453,13 +460,13 @@ Another popular alternative is VLC Media Player. This software is available in t
 
 ![apple-music](/images/macOS-Screenshots/apple-music.png)
 
-In recent releases, Apple has merged the functionality of their iTunes program with their music streaming platform Apple Music. The app is now known simply as "Music" or "Apple Music." The program can play your local iTunes library or stream music from the streaming service.
+In recent releases, Apple has merged the functionality of their iTunes program with their music streaming platform Apple Music. The app is now known simply as "Music" or "Apple Music." The program can play your local iTunes library or stream music from the Apple Music streaming service.
 
 **Pop!_OS**
   - Lollypop (available in the Pop!\_Shop)
   - Spotify (available in the Pop!\_Shop)
 
-There are many music player apps available for Linux. One of the older/more popular ones is Clementine. Clementine has a similar layout to iTunes and can also play music stored locally on your computer or stream internet radio channels.
+There are many music player apps available for Linux. One polished and versatile example is Lollypop. Lollypop has a similar layout to iTunes and can also play music stored locally on your computer or stream internet radio channels.
 
 ![Lollypop](/images/pop-os-screenshots/lollypop.png)
 
@@ -533,10 +540,24 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 **macOS**
   - Xcode (avaiable in the App Store)
 
+Apple offers a development application called Xcode for developers to build and test macOS and iOS compatible applications. They also allow installation of common development tools such as Atom.
+
+![Xcode](/images/macOS-Screenshots/xcode.png)
+
 **Pop!\_OS**
   - Text Editer (default)
   - Atom (available in the Pop!\_Shop)
   - Microsoft VSCode (available in the Pop!\_Shop)
+
+Pop!\_OS does not have a proprietary coding language, but supports a variety of languages and tools for development. The built in text editing program Text Editor supports markdown formatting, and other text editor modelines.
+
+Common development tools like Atom and Microsoft Visual Studio Code are also available in the Pop!\_Shop.
+
+![text-editor](/images/pop-os-screenshots/text-editor.png)
+
+![atom](/images/pop-os-screenshots/atom.png)
+
+![vscode](/images/pop-os-screenshots/vs-studio.png)
 
 [Return to Table of Contents](#Contents)
 
@@ -546,12 +567,26 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
      - App Store/Arcade
      - Steam
 
+Apple offers games through their App Store from a variety of developers. Apple has also expanded their focus on gaming through their Arcade section of the App Store and their Arcade+ subscription service.
+There is also a version of the Steam client available for macOS, however, it can only download and play macOS compatible games.
+
 ![appstore-arcade](/images/macOS-Screenshots/arcade.png)
 
 **Pop!_OS**
      - Pop!\_Shop
      - [Steam](https://store.steampowered.com/)
      - [Lutris](https://lutris.net/) (also available in the Pop!\_Shop)
+
+There are many ways to game on Linux.
+
+Developers offer a variety of open-source titles through the Pop!\_Shop, and there are large numbers of Linux native games available through Steam.
+A large number of Windows games have become available on Linux through the WINE compatibility layer (a recursive acronym which stands for Wine Is Not an Emulator) with more being added constantly. Valve, the company behind Steam, now actively contributes improvements to the WINE project and have forked their own version of it, called Proton, for even greater compatibility.
+
+Lutris is a community created, open-source program which helps you organize your games library and offers turnkey installer scripts for a variety of popular games, emulators and compatibility software.
+
+With these ongoing improvements there are many more games available on Linux than on macOS.
+
+The website [ProtonDB (Proton Database)](https://www.protondb.com/) is an unofficial repository of user-tested games with notes about how well they work on Linux.
 
 ![popshop-games](/images/pop-os-screenshots/popshop-games.png)
 
@@ -588,8 +623,8 @@ While there's no direct equivalent offered by System76, there are several cloud 
 ## [Kill Programs](#kill-programs)
 
 **macOS**
-  - Force Quit
-  - Activity Monitor
+  - Force Quit (default)
+  - Activity Monitor (default)
 
 On macOS there are two main ways to kill unresponsive programs. The force-quit menu and the Activity Monitor application.
 
@@ -599,11 +634,11 @@ Force-quit is launched by clicking on the Apple menu in the upper-left-hand corn
 
 You can also get an overview of running processes and stop or kill them from the Activity Monitor.
 
-You can also kill processes in the Terminal if you know the process ID.
+It is also possible to kill processes in the Terminal if you know the process ID.
 
 **Pop!\_OS**
-  - System Monitor
-  - Terminal
+  - System Monitor (default)
+  - Terminal (default)
 
 ![system-monitor-terminal](/images/pop-os-screenshots/system-monitor-terminal.png)
 
@@ -637,7 +672,7 @@ Once you know the offending process' Process ID (PID) (either from System Monito
 
 macOS and Pop!\_OS manage network menus and settings almost identically. Both have a drop-down menu in the upper right corner of the screen to quickly connect to an available network.
 
-Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) to edit saved connections, IP settings and configure things like proxy settings or Virtual Private Networks (VPN).
+Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) to edit saved connections, IP settings, and to configure things like proxy settings or Virtual Private Networks (VPNs).
 
 [Return to Table of Contents](#Contents)
 
@@ -690,10 +725,10 @@ Déjà Dup Backups is closer in functionality to Time Machine. It offers local h
 
 Full system iPhone backups are traditionally done in one of two ways.
 - Local backups (formerly iTunes, now Finder)
-Local backups of your iPhone can be created by connecting it to you Apple laptop or desktop computer and using iTunes (for older macOS versions) or Finder (for newer releases) to create a local snapshot of your iPhone data. These backups can be encrypted or unencrypted.
+Local backups of your iPhone can be created by connecting it to your Apple laptop or desktop computer and using iTunes (for older macOS versions) or Finder (for newer releases) to create a local snapshot of your iPhone data. These backups can be encrypted or unencrypted.
 
 - iCloud backups
-It is also possible to set your iPhone to backup and sync changes to your iCloud account. These are not full-system backups, but do contain most of the data needed to get your iPhone restored to a particular point in time. To read more about what is backed up in iCloud backups visit: [LINK]
+It is also possible to set your iPhone to backup and sync changes to your iCloud account. These are not full-system backups, but do contain most of the data needed to get your iPhone restored to a particular point in time. To read more about what is backed up in iCloud backups visit: https://support.apple.com/en-us/HT207428 
 
 ## [Files/Photos (macOS)](#iphone-files-photos-macos)
 It's also possible to sync your iPhone like a digital camera through the Apple Photos app, and a special directory on the iPhone called "Files" (presented on the iPhone as a home-screen app) is available to be accessed like any other flash drive or external hard drive.

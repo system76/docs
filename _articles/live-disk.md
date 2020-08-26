@@ -21,8 +21,8 @@ section: hardware-drivers
 
 - [Overview](#overview)
 - [Make Bootable drive](#make-bootable-drive)
-  - [For Ubuntu/Pop!_OS](#for-ubuntu\/pop\!_os)
-  - [For Windows/MacOS](#for-windows\/macos)
+  - [For Ubuntu/Pop!_OS](#for-ubuntupop_os)
+  - [For Windows/MacOS](#for-windowsmacos)
 - [Booting From Live Disk](#booting-from-live-disk)
 - [Using Live Environment](#using-live-environment)
   - [Repairing Existing Operating System](#repairing-existing-operating-system)
@@ -46,7 +46,7 @@ A live disk is a handy tool to have around!
 
 ### For Ubuntu/Pop!_OS
 
-In order to install Pop!_OS or Ubuntu, we must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](http://pop.system76.com), [Ubuntu 18.04 here](https://www.ubuntu.com/download/desktop/thank-you?version=18.04.4&architecture=amd64), or [Ubuntu 19.10 here](https://ubuntu.com/download/desktop/thank-you/?version=19.10&architecture=amd64).
+In order to install Pop!_OS or Ubuntu, we must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](http://pop.system76.com) or [Ubuntu 20.04 here](https://www.ubuntu.com/download/desktop/thank-you?version=20.04.1&architecture=amd64).
 
 In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use the Disks applicaton for Ubuntu and Etcher for Windows/MacOS.
 

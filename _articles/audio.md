@@ -19,7 +19,13 @@ Sound settings or packages related to the sound system can become corrupt or bro
 
 ## Reset PulseAudio
 
-If the system is not playing audio, you can remove the user configuration files for <u>PulseAudio</u>:
+If the system is not playing audio, first try reseting the pulseaudio daemon:
+
+```
+systemctl --user restart pulseaudio
+```
+
+Applications may need to be restarted. If this fails then try removing the user configuration files for <u>PulseAudio</u>:
 
 ```
 rm -r ~/.config/pulse

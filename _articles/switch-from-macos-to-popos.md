@@ -68,7 +68,7 @@ Pop!\_OS offers many convenient and similar workflows and applications to those 
 **macOS**
 - Spotlight Search
 
-![spotlight-search](/images/macOS-Screenshots/spolight-search.png)
+![spotlight-search](/images/macOS-Screenshots/spotlight-search.png)
 
 On macOS, Spotlight Search can be launched by clicking the magnifying glass in the upper right-hand corner of the screen, or by pressing CMD+SPACE.
 
@@ -378,6 +378,9 @@ While not included by default, there is a very similar program available in the 
 **Pop!\_OS**
 - Shotwell (available in the Pop!\_Shop)
 
+
+![shotwell](/images/pop-os-screenshots/shotwell.png)
+
 [Return to Table of Contents](#Contents)
 
 ## [Email](#email)
@@ -437,7 +440,7 @@ You can add additional codecs with the following commands:
     sudo add-apt-repository multiverse
     sudo apt install ubuntu-restricted-extras
 
-
+We also have a help article for installing codecs [here](https://support.system76.com/articles/codecs/)
 
 Another popular alternative is VLC Media Player. This software is available in the Pop!\_Shop, and offers many customizable features.
 
@@ -458,11 +461,11 @@ In recent releases, Apple has merged the functionality of their iTunes program w
 
 There are many music player apps available for Linux. One of the older/more popular ones is Clementine. Clementine has a similar layout to iTunes and can also play music stored locally on your computer or stream internet radio channels.
 
-![Lollypop](/path/to/file.png)
+![Lollypop](/images/pop-os-screenshots/lollypop.png)
 
 There is also a Linux client for the popular streaming service Spotify, available in the Pop!\_Shop.
 
-![Spotify](path/to/file.png)
+![Spotify](/images/pop-os-screenshots/spotify.png)
 
 [Return to Table of Contents](#Contents)
 
@@ -528,7 +531,7 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 ## [Development](#development)
 
 **macOS**
-  - Xcode
+  - Xcode (avaiable in the App Store)
 
 **Pop!\_OS**
   - Text Editer (default)

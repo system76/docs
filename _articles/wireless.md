@@ -180,6 +180,8 @@ sudo apt install --reinstall network-manager
 
 This will reinstall network-manager, which can fix some network issues.
 
+**NOTE:** After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
+
 ## Additional Info
 
 Wifi Speeds and Frequencies:

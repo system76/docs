@@ -14,7 +14,7 @@ section: security-encryption
 
 ### Live Disk or Pop Recovery 
 
-
+In order to format the drive that has your OS on it we will need to boot from either a live disk or the Pop Recovery 
 
 ### Disks application
 

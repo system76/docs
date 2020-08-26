@@ -30,6 +30,14 @@ Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, and type the wor
 
 ### Install Packages
 
+Ubuntu and Pop!\_OS both have a package available which will install all available proprietary media codecs. Because of legal restrictions, this package cannot be installed automatically, but if you live in a territory where it is legal to do so, you can copy and paste the following line, followed by <kbd>Enter</kbd>:
+
+```
+sudo apt install -y ubuntu-restricted-extras
+```
+
+If it is not legal for you to do so, or if you only want the minimum required codecs, you may do so manually.
+
 Copy and paste the following line for Ubuntu/Pop 18.04, followed by <kbd>Enter</kbd>:
 
 ```
@@ -39,7 +47,7 @@ sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libavcode
 Copy and paste the following line for Ubuntu/Pop 18.10 and up, followed by <kbd>Enter</kbd>:
 
 ```
-sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good libavcodec-extra gstreamer1.0-libav chromium-codecs-ffmpeg-extra libdvd-pkg
+sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good libavcodec-extra gstreamer1.0-libav chromium-codecs-ffmpeg-extra libdvd-pkg libavcodec-extra58
 ```
 
 To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>

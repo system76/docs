@@ -61,7 +61,7 @@ Install Directly From the Pop!\_Shop
 
 ### Natron
 
-Natron is a powerful Digital Compositor that can handle of your 2D/2.5D needs. Its robust OIIO file formats and OpenFX architecture is what make Natron the most flexible open source compositor for the visual effects community.
+Natron is a powerful Digital Compositor that can handle your 2D/2.5D needs. Its robust OIIO file formats and OpenFX architecture is what make Natron the most flexible open source compositor for the visual effects community.
 
 Install Directly From the Pop!\_Shop
 

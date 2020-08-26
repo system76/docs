@@ -576,7 +576,6 @@ There is also a version of the Steam client available for macOS, however, it can
 ![appstore-arcade](/images/macOS-Screenshots/arcade.png)
 
 **Pop!_OS**
-
     - Pop!\_Shop
     - [Steam](https://store.steampowered.com/)
     - [Lutris](https://lutris.net/) (also available in the Pop!\_Shop)

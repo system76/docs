@@ -21,7 +21,7 @@ section: getting-started
 - Document Version: 1.0.0
 - Date: (8-1-2020)
 - Author: Nathaniel Warburton
-- Contributing Editor(s): Emma Marshall
+- Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal
 
 #### [Table of Contents](#Contents)
 - [Navigation](#navigation)
@@ -39,6 +39,7 @@ section: getting-started
   - [Office Work](#office-work)
   - [Calls and Video Chat](#calls-and-video-chat)
   - [Take Selfies](#take-selfies)
+  - [Manage Photos](#manage-photos)
   - [Email](#email)
   - [Watching Videos](#watching-videos)
   - [Listening to Music](#listening-to-music)
@@ -354,7 +355,7 @@ There are also Linux clients for popular apps like Discord, Skype and Zoom.
 ## [Take Selfies](#take-selfies)
 
 **macOS**
-- Photobooth
+- Photobooth (default)
 
 macOS has an included application called Photobooth which allows you and your friends to take webcam photos and videos from your computer's webcam. It also offers the ability to apply various filters to the images and videos.
 
@@ -366,6 +367,16 @@ macOS has an included application called Photobooth which allows you and your fr
 While not included by default, there is a very similar program available in the Pop!\_Shop called "Cheese." Cheese also allows you to take webcam selfies, and apply fun filters.
 
 ![cheese](/images/pop-os-screenshots/cheese.png)
+
+[Return to Table of Contents](#Contents)
+
+## [Manage Photos](#manage-photos)
+
+**macOS**
+- Photos (default)
+
+**Pop!\_OS**
+- Shotwell (available in the Pop!\_Shop)
 
 [Return to Table of Contents](#Contents)
 
@@ -442,14 +453,16 @@ Another popular alternative is VLC Media Player. This software is available in t
 In recent releases, Apple has merged the functionality of their iTunes program with their music streaming platform Apple Music. The app is now known simply as "Music" or "Apple Music." The program can play your local iTunes library or stream music from the streaming service.
 
 **Pop!_OS**
-  - Clementine (available in the Pop!\_Shop)
+  - Lollypop (available in the Pop!\_Shop)
   - Spotify (available in the Pop!\_Shop)
 
 There are many music player apps available for Linux. One of the older/more popular ones is Clementine. Clementine has a similar layout to iTunes and can also play music stored locally on your computer or stream internet radio channels.
 
-![clementine](/images/pop-os-screenshots/clementine.png)
+![Lollypop](/path/to/file.png)
 
 There is also a Linux client for the popular streaming service Spotify, available in the Pop!\_Shop.
+
+![Spotify](path/to/file.png)
 
 [Return to Table of Contents](#Contents)
 

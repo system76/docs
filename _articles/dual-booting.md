@@ -15,7 +15,7 @@ section: pop
 
 ### If Pop!\_OS is installed first
 
-To dual boot Pop!\_OS alongside another OS install Pop!\_OS first. Then once booted into Pop!\_OS use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required).  
+To dual boot Pop!\_OS alongside another OS install Pop!\_OS first. Then once booted into Pop!\_OS use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). Resizing the partition will only work if Pop!\_OS is not encrypted and if the OS is encrypted then it will need to be reinstalled with that option not enabled. 
 
 ![GParted](/images/dual-booting/gparted.png)
 
@@ -66,6 +66,10 @@ Windows 8 and later uses a "Fast Startup" setting which prevents Windows from fu
 In your Windows install, open Control Panel and head to "Power Options" Select "Choose what the power buttons do", select "Change settings that are currently unavailable", then disable the "fast startup" setting. Note that Windows updates may occasionally turn this setting back on without asking, so if you are unable to boot into Pop!\_OS, check this setting first. (If the checkbox for 'Turn on fast startup' is grayed out, you can enable it by click 'Change settings that are currently unavailable' near the top of the power buttons settings page)
 
 Once in the BIOS change the Boot Order to boot Pop!\_OS first that way when the <kbd>Spacebar</kbd> is pressed systemd-boot will appear and then the Windows Boot Manager can be selected for booting Windows 10. Steps for accessing the BIOS and changing the Boot Order are found [here](/articles/boot-menu/).
+
+## Windows Drivers
+
+There are a few devices that will not have drivers and that includes the Thelio Io board as it is a simple pass-through for the drives when using Windows, there are also no ACPI table entries. 
 
 ## Fix your clock
 

@@ -127,7 +127,7 @@ In macOS this feature is called Launchpad and is represented by the rocket-ship 
 ![show-applications](/images/pop-os-screenshots/show-applications-edited.png)
 
 
-In Pop!\_OS, you can show the apps overview by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
+In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
 
   [Return to Table of Contents](#Contents)
 
@@ -144,7 +144,7 @@ In Pop!\_OS, you can show the apps overview by clicking on the icon resembling a
 
 ![application-install-window](/images/macOS-Screenshots/application-install-window.png)
 
-  In macOS you can install applications from two (2) main sources. The Apple App Store, and directly from developer websites.
+  In macOS applications are installed from two (2) main sources. The Apple App Store, and directly from developer websites.
 
   Applications downloaded and installed from the internet make use of .dmg files or .pkg files which run installer programs and guide users in moving Applications to the Applications folder.
 
@@ -163,7 +163,7 @@ In Pop!\_OS. The Pop!\_Shop functions as an app store. The Pop!\_Shop highlights
 
 Debian/Ubuntu based distributions like Pop!\_OS can install applications from .deb files. These files function like .dmg files on macOS; opening a downloaded .deb file launches the installer program "Eddy" and puts the installed application in the correct folder.
 
-Since 20.04, The Pop!\_Shop has offered the ability to install flatpak versions of apps instead of, or alongside .deb files. Flatpaks are self-contained (or containerized) versions of apps that hold everything that program needs in one package. This allows you to run multiple versions of an application, and for the application to be sand-boxed from the main OS.
+Since 20.04, The Pop!\_Shop has offered the ability to install flatpak versions of apps instead of, or alongside .deb files. Flatpaks are self-contained (or containerized) versions of apps that hold everything that program needs in one package. This allows users to run multiple versions of an application, and for the application to be sand-boxed from the main OS.
 
 [Return to Table of Contents](#Contents)
 
@@ -195,9 +195,9 @@ Both macOS and Pop!\_OS use workspaces to organize open application windows
 
 ![activities-overview](/images/pop-os-screenshots/activities-pop-os.png)
 
-In macOS you use multi-touch gestures, or hold down CTRL+[up arrow] or [down arrow], to launch "Mission Control" and CTRL+[left arrow] or [right arrow] are used to navigate between workspaces.
+macOS uses multi-touch gestures, or CTRL+[up arrow] or [down arrow], to launch "Mission Control" and CTRL+[left arrow] or [right arrow] are used to navigate between workspaces.
 
-In Pop!\_OS you press the SUPER key to enter "Overview" and show all workspaces. You can also use CTRL+SUPER+[up arrow] or [down arrow] to navigate between workspaces.
+In Pop!\_OS users press the SUPER key to enter "Overview" and show all workspaces. They can also use CTRL+SUPER+[up arrow] or [down arrow] to navigate between workspaces.
 
 
 [Return to Table of Contents](#Contents)
@@ -205,7 +205,9 @@ In Pop!\_OS you press the SUPER key to enter "Overview" and show all workspaces.
 
 ### [Pop!\_Shell](#pop-shell)
 
-Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called pop-shell, and allows for window organization and keyboard navigation among windows and applications. You can read more about Pop!\_Shell here:
+Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called pop-shell, and allows for window organization and keyboard navigation among windows and applications.
+
+More info about Pop!\_Shell here:
 
 [Pop!\_OS 20.04 Release Notes](https://support.system76.com/articles/Pop!_OS-20.04-LTS-Release-Notes/)
 
@@ -269,7 +271,7 @@ Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 
   However, there are cross-platform password managers available, and they also offer the option to save and auto-fill payment methods.
 
-  Most modern browsers also offer the ability to create an account that will save and sync your logins.
+  Most modern browsers also offer the ability to create an account that will save and sync user logins.
 
 Examples include:
 
@@ -384,7 +386,7 @@ There is a program available in the Pop!\_Shop called "Cheese." Cheese allows us
 Pop!\_OS comes with a photo viewing application called Image Viewer which previews pictures that are opened from the Files application, similar to the Apple application "Preview."
 
 There are several applications available in the Pop!\_Shop for more in-depth photo management. One such app, Shotwell, is highlighted here.
-Shotwell organizes photos by albums and event dates, and allows for importing, viewing, and sorting your photographs.
+Shotwell organizes photos by albums and event dates, and allows for importing, viewing, and sorting photographs.
 
 ![shotwell](/images/pop-os-screenshots/shotwell.png)
 
@@ -410,7 +412,7 @@ For users more accustomed to Microsoft Outlook, there's an alternative, open-sou
 
 ![thunderbird](/images/pop-os-screenshots/thunderbird.png)
 
-**NOTE:** Regardless of platform or client, many email accounts (e.g. Google) have implemented a security policy where a single-use password must be created for each email app you want to sync with your account. These passwords have to be created from your email provider's account website.
+**NOTE:** Regardless of platform or client, many email accounts (e.g. Google) have implemented a security policy where a single-use password must be created for each email app users want to sync with their account. These passwords have to be created from the email provider's account website.
 
 **Other Options**
   - [Outlook Web](https://outlook.live.com/owa/)
@@ -418,7 +420,7 @@ For users more accustomed to Microsoft Outlook, there's an alternative, open-sou
 
 Microsoft also offers a web-based version of Outlook mail which can be accessed from a web browser.
 
-In addition, most modern Email Service Providers (ESPs) have an online version of their inbox which can be accessed by signing into your ESP account in a browser.
+In addition, most modern Email Service Providers (ESPs) have an online version of their inbox which can be accessed by signing into the ESP account in a browser.
 
 [Return to Table of Contents](#Contents)
 
@@ -439,7 +441,7 @@ The Pop!\_OS default video player is GNOME Videos. It can play local media or fe
 
 Due to copyright reasons, not all video formats are supported out of the box, but many codecs can be installed as needed. Linux defaults to not including non-free software, and users can opt-in if they need additional software support.
 
-You can add additional codecs with the following commands:
+Additional codecs can be added with the following commands:
 
     sudo add-apt-repository multiverse
     sudo apt install ubuntu-restricted-extras
@@ -460,7 +462,7 @@ Another popular alternative is VLC Media Player. This software is available in t
   - [Lollypop](https://wiki.gnome.org/Apps/Lollypop) (available in the Pop!\_Shop)
   - [Spotify](https://www.spotify.com/us/) (available in the Pop!\_Shop)
 
-There are many music player apps available for Linux. One polished and versatile example is Lollypop. Lollypop has a similar layout to iTunes and can play music stored locally on your computer or stream internet radio channels.
+There are many music player apps available for Linux. One polished and versatile example is Lollypop. Lollypop has a similar layout to iTunes and can play music stored local to the computer or stream internet radio channels.
 
 ![Lollypop](/images/pop-os-screenshots/lollypop.png)
 
@@ -487,7 +489,7 @@ Pop!\_OS supports two (2) professional video editing suites. Lightworks and DaVi
 
 [DaVinci Resolve](https://support.system76.com/articles/install-davinci-resolve/)
 
-There is also an open-source video editing program called Kden Live which offers a similar interface and feature-set to iMovie, and is available in the Pop!\_Shop.
+There is also an open-source video editing program called Kden Live which offers a comparable interface and feature-set to iMovie, and is available in the Pop!\_Shop.
 
 ![kden-live](/images/pop-os-screenshots/kden-live.png)
 
@@ -505,7 +507,7 @@ There is also an open-source video editing program called Kden Live which offers
   - [Audacity](https://www.audacityteam.org/) (also available in the Pop!\_Shop)
   - [Ardour](https://ardour.org/) (also available in the Pop!\_Shop)
 
-Linux does not have a direct, 1:1 equivalent to Garageband, however there are several useful applications that can be used for similar purposes.
+Linux does not have a direct, 1:1 equivalent to Garageband, however there are several applications that can be used for similar purposes.
 
 ![LMMS](/images/pop-os-screenshots/lmms.png)
 
@@ -566,7 +568,7 @@ Many Windows games have become available on Linux through the WINE compatibility
 
 Valve, the company behind Steam, now actively contributes improvements to the WINE project and have forked their own version of it, called Proton, for even greater compatibility.
 
-Lutris is a community created, open-source program which helps you organize your games library and offers turnkey installer scripts for a variety of popular games, emulators and compatibility software.
+Lutris is a community created, open-source program which helps users organize their games library and offers turnkey installer scripts for a variety of popular games, emulators and compatibility software.
 
 With these ongoing improvements there are many more games available on Linux than on macOS.
 
@@ -615,9 +617,9 @@ On macOS there are two main ways to kill unresponsive programs. The force-quit m
 
 Force-quit is launched by clicking on the Apple menu in the upper-left-hand corner of the screen, or by pressing Opt+Cmd+Esc, selecting the application, and then "force-quit."
 
-You can also get an overview of running processes and stop or kill them from the Activity Monitor.
+Users can also get an overview of running processes and stop or kill them from the Activity Monitor.
 
-It is also possible to kill processes in the Terminal if you know the process ID.
+It is also possible to kill processes in the Terminal if process ID is known.
 
 **Pop!\_OS**
   - System Monitor (default)
@@ -625,7 +627,7 @@ It is also possible to kill processes in the Terminal if you know the process ID
 
 ![system-monitor-terminal](/images/pop-os-screenshots/system-monitor-terminal.png)
 
-Pop!\_OS also has options for killing misbehaving processes. System Monitor (equivalent to Activity Monitor), displays running processes and allows you to stop or kill them.
+Pop!\_OS also has options for killing misbehaving processes. System Monitor (equivalent to Activity Monitor), displays running processes and allows users to stop or kill them.
 
 While Pop!\_OS does not have a force-quit menu, when applications freeze, the OS will show a pop-up window asking if users want to wait on the program or force-quit it.
 
@@ -635,9 +637,9 @@ Running the command:
 
     top
 
-will show you a similar output to what's displayed in the System Monitor.
+will show a similar output to what's displayed in the System Monitor.
 
-Once you know the offending process' Process ID (PID) (either from System Monitor or the Terminal) the process can be killed with the terminal command:
+Once the offending process' Process ID (PID) is known (either from System Monitor or the Terminal) the process can be killed with the terminal command:
 
     sudo kill -pid ####
 
@@ -706,24 +708,26 @@ Déjà Dup Backups is closer in functionality to Time Machine. It offers local h
 
 Full system iPhone backups are traditionally done in one of two ways.
 - Local backups (formerly iTunes, now Finder)
-Local backups of your iPhone can be created by connecting it to your Apple laptop or desktop computer and using iTunes (for older macOS versions) or Finder (for newer releases) to create a local snapshot of your iPhone data. These backups can be encrypted or unencrypted.
+
+Local backups of an iPhone can be created by connecting it to an Apple laptop or desktop computer and using iTunes (for older macOS versions) or Finder (for newer releases) to create a local snapshot of iPhone data. These backups can be encrypted or unencrypted.
 
 - iCloud backups
-It is also possible to set your iPhone to backup and sync changes to your iCloud account. These are not full-system backups, but do contain most of the data needed to get your iPhone restored to a particular point in time. To read more about what is backed up in iCloud backups visit: https://support.apple.com/en-us/HT207428
+
+It is also possible to backup and sync iPhone changes to an iCloud account. These are not full-system backups, but do contain most of the data needed to restore and iPhone to a particular point in time. To read more about what is backed up in iCloud backups visit: https://support.apple.com/en-us/HT207428
 
 ## [Files/Photos (macOS)](#iphone-files-photos-macos)
-It's also possible to sync your iPhone like a digital camera through the Apple Photos app, and a special directory on the iPhone called "Files" (presented on the iPhone as a home-screen app) is available to be accessed like any other flash drive or external hard drive.
+An iPhone can be synced like a digital camera through the Apple Photos app, and a special directory on the iPhone called "Files" (presented on the iPhone as a home-screen app) is available to be accessed like any other flash drive or external hard drive.
 
 
 ## [Backups (Pop!\_OS)](#iphone-backups-popos)
 
 - Local backups
-Because the backup features in macOS Finder/iOS relies on proprietary code, Pop!\_OS does not have a built-in feature to make a local snapshot backup of your iPhone.
+Because the backup features in macOS Finder/iOS relies on proprietary code, Pop!\_OS does not have a built-in feature to make a local snapshot backup of an iPhone.
 
 - iCloud backups.
-Since your iPhone connects directly to iCloud over WiFi, iCloud backups will continue as usual, and can be managed from either your iPhone or your iCloud account on icloud.com.
+Since iPhones connect directly to iCloud over WiFi, iCloud backups will continue as usual, and can be managed from either the iPhone or users' iCloud accounts on icloud.com.
 
 ## [Files/Photos (Pop!\_OS)](#iphone-files-photos-popos)
-Like in macOS, you can also access image files, and files stored in the "Files" folder on your iPhone through the Pop!\_OS Files application. Files can be copied back and forth to the iPhone like any other flash drive or external drive.
+Like in macOS, users can also access image files, and files stored in the "Files" folder on the iPhone through the Pop!\_OS Files application. Files can be copied back and forth to the iPhone like any other flash drive or external drive.
 
 [Return to Table of Contents](#Contents)

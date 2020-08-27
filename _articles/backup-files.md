@@ -6,7 +6,7 @@ description: >
 keywords:
  - files
  - backup
- - deja-dupe
+ - deja-dup
  - rsync
  - Nextcloud
 image: http://support.system76.com/images/system76.png

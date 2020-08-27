@@ -293,9 +293,6 @@ For users accustomed to Chrome, Chrome is available for Linux, as well as Chrome
 **macOS**
   - Pages/Numbers/Keynote (iWork)
 
-![dock-icon-close](/images/macOS-Screenshots/iwork-dock-icons.png)
-
-![iwork](/images/macOS-Screenshots/pages-numbers-keynote-windows.png)
 
 The software suite formerly known as "iWork" contains Apple's equivalent to Microsoft Office. It contains Pages (word processing), Numbers (spreadsheets) and Keynote (presentations). These apps are all capable of reading and saving files in outside formats like those used in Microsoft Office, but by default, they save files in formats specific to the iWorks suite: .pages, .numbers, and .keynote respectively.
 
@@ -330,7 +327,6 @@ Recommendations provided here are suggestions for open-source alternatives.
 **macOS**
      - FaceTime/iMessage
 
-![Facetime-iMessage](/images/macOS-Screenshots/facetime-imessage.png)
 
 For video and instant messaging, macOS provides FaceTime and iMessage. Both of these applications are Apple exclusive, and require an Apple ID to use most of the features.
 
@@ -366,7 +362,6 @@ Linux clients are available for popular apps like Discord, Skype and Zoom.
 - Photobooth (default)
 
 
-![photobooth](/images/macOS-Screenshots/photobooth.png)
 
 **Pop!\_OS**
 - [Cheese](https://wiki.gnome.org/Apps/Cheese) (available in the Pop!\_Shop)
@@ -382,7 +377,6 @@ There is a program available in the Pop!\_Shop called "Cheese." Cheese allows us
 **macOS**
 - Photos (default)
 
-![apple-photos](/images/macOS-Screenshots/photos-app.png)
 
 **Pop!\_OS**
 - [Shotwell](https://wiki.gnome.org/Apps/Shotwell) (available in the Pop!\_Shop)
@@ -401,8 +395,6 @@ Shotwell organizes photos by albums and event dates, and allows for importing, v
 **macOS**
   - Apple Mail (default)
 
-
-![apple-mail](/images/macOS-Screenshots/apple-mail.png)
 
 **Pop!\_OS**
   - [Geary](https://wiki.gnome.org/Apps/Geary) (default)
@@ -435,7 +427,6 @@ In addition, most modern Email Service Providers (ESPs) have an online version o
 **macOS**
   - Quicktime
 
-![quicktime](/images/macOS-Screenshots/quicktime.png)
 
 
 **Pop!\_OS**
@@ -464,8 +455,6 @@ Another popular alternative is VLC Media Player. This software is available in t
 **macOS**
   - Apple Music (formerly iTunes)
 
-![apple-music](/images/macOS-Screenshots/apple-music.png)
-
 
 **Pop!_OS**
   - [Lollypop](https://wiki.gnome.org/Apps/Lollypop) (available in the Pop!\_Shop)
@@ -486,8 +475,6 @@ There is also a Linux client for the popular streaming service Spotify, availabl
 **macOS**
 - iMovie
 - Final Cut
-
-![imovie](/images/macOS-Screenshots/imovie.png)
 
 **Pop!_OS**
 - [Lightworks](https://www.lwks.com/)
@@ -512,8 +499,6 @@ There is also an open-source video editing program called Kden Live which offers
   - Garageband
   - Logic Pro
 
-
-![garageband](/images/macOS-Screenshots/garageband.png)
 
 **Pop!\_OS**
   - [LMMS](https://lmms.io/) (also available in the Pop!\_Shop)
@@ -544,8 +529,6 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
   - Xcode (avaiable in the App Store)
 
 
-![Xcode](/images/macOS-Screenshots/xcode.png)
-
 **Pop!\_OS**
   - Text Editer (default)
   - [Atom](https://atom.io/) (available in the Pop!\_Shop)
@@ -568,8 +551,6 @@ Common development tools like Atom and Microsoft Visual Studio Code are also ava
 **macOS**
      - App Store/Arcade
      - Steam
-
-![appstore-arcade](/images/macOS-Screenshots/arcade.png)
 
 
 **Pop!_OS**
@@ -704,8 +685,6 @@ On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS 
 
 **macOS**
 - Time Machine
-
-![time-machine](/images/macOS-Screenshots/time-machine.png)
 
 
 **Pop!\_OS**

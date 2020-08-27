@@ -114,9 +114,7 @@ For more information on GNOME extensions, refer to the following support article
 **macOS**
   - Launchpad
 
-![launchpad](/images/macOS-Screenshots/launchpad.png)
-
-![launchpad open](/images/macOS-Screenshots/launchpad-open.png)
+![launchpad](/images/macOS-Screenshots/lauchpad-edited.png)
 
 Both macOS and Pop!\_OS have a method for showing installed applications in an icon grid.
 
@@ -125,9 +123,8 @@ In macOS this feature is called Launchpad and is represented by the rocket-ship 
 **Pop!\_OS**
   - Show Applications
 
-![show-applications-close-up](/images/pop-os-screenshots/show-applications-close.png)
 
-![show-applications](/images/pop-os-screenshots/show-applications.png)
+![show-applications](/images/pop-os-screenshots/show-applications-edited.png)
 
 
 In Pop!\_OS, you can show the apps overview by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
@@ -223,23 +220,19 @@ Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GN
 The file-systems layouts in macOS and Pop!\_OS both feature location shortcuts on the left side, tabbed browsing, list vs. icon views, and various sorting options.
 
 **Apple**
-     Finder
+     - Finder
 
-![finder](/images/macOS-Screenshots/finder.png)
 
  In macOS, Finder displays files and directories (folders), and is represented by the two-tone, blue face icon in the dock.
 
-<!-- [CLOSE UP IMAGE] -->
 
 **Pop!\_OS**
-     Files
+     - Files
 
-
-![files](/images/pop-os-screenshots/files.png)
 
  In Pop!\_OS, the Files application serves the same purpose. It is represented by a gray icon that looks like a tabbed folder from a filing cabinet.
 
-![files-close](/images/pop-os-screenshots/files-close.png)
+![files-finder](/images/pop-os-mac-screenshots/files-edited.png)
 
  [Return to Table of Contents](#Contents)
 

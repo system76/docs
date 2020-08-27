@@ -665,8 +665,6 @@ Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) 
 **macOS**
 - Filevault
 
-![filevault](/images/macOS-Screenshots/filevault.png)
-
 On macOS, the hard drive can be encrypted using a utility called FileVault. It can be configured during setup of the OS, or later in settings. Encrypting or decrypting the drive can be a lengthy process as the OS has to methodically add or remove encryption hashing for all the files. With FileVault encryption can be added or removed at any point.
 
 **Pop!\_OS**

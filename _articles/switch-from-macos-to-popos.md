@@ -2,7 +2,7 @@
 layout: article
 title: Switching to Pop!\_OS From Apple
 description: >
-  If you are coming from Apple's operating system and just using Pop!\_OS for the first time, we can help make the transition a little smoother.
+  If you are coming from Apple's operating system using Pop!\_OS for the first time, we can help make the transition smoother.
 keywords:
   - System76
   - Apple

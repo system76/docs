@@ -38,7 +38,7 @@ Deja-dup is a popular, straight-forward backup option. It can be used to backup 
 
 #### Installation
 
-To install deja-dup, download it from the Pop!_Shop, or run this command:
+To install deja-dup, download it from the Pop!\_Shop, or run this command:
 
 ```
 sudo apt install deja-dup
@@ -54,7 +54,7 @@ With Deja-Dup open, you can select the folders you wish to save, as well as any 
 
 #### Choosing a Backup Location
 
-By selecting the **Storage location** item in the list, you can configure the location with which you would like to store your backup
+By selecting the **Storage location** item in the list, you can configure the location in which you would like to store your backup
 
 ![Selecting a backup location in Deja-Dup](/images/backup/deja-location.png)
 
@@ -125,7 +125,7 @@ Manual, so may miss updates and changes to data over time. Geographically centri
 
 ### Terminal Only (Advanced)
 
-In certain situations, you may only have access to a command-line interface. To copy files using the command-line, you can use a program called rsync. 
+In certain situations, you may only have access to a command-line interface. To copy files using the command-line, you can use a program called rsync.
 
 An example of a the rsync command would be:
 
@@ -145,7 +145,7 @@ If all access to email is through a web browser, there is little to worry about,
 All data is always on a remote server.
 
 <u>Cons:</u>
-None
+Requires internet access.
 
 **IMAP**
 
@@ -153,7 +153,7 @@ None
 Data is synchronized between the remote server and local devices. No single failure point.
 
 <u>Cons:</u>
-None
+Requires internet access.
 
 **POP**
 

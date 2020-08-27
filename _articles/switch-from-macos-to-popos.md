@@ -309,7 +309,7 @@ The software suite formerly known as "iWork" contains Apple's equivalent to Micr
 
 
 **Pop!\_OS**
-  - Writer/Calc/Impress (LibreOffice)
+  - [Writer/Calc/Impress (LibreOffice)](https://www.libreoffice.org/)
 
 ![libreoffice-icons](/images/pop-os-screenshots/libreoffice-icons.png)
 
@@ -377,7 +377,7 @@ Linux clients are available for popular apps like Discord, Skype and Zoom.
 ![photobooth](/images/macOS-Screenshots/photobooth.png)
 
 **Pop!\_OS**
-- Cheese (available in the Pop!\_Shop)
+- [Cheese](https://wiki.gnome.org/Apps/Cheese) (available in the Pop!\_Shop)
 
 There is a program available in the Pop!\_Shop called "Cheese." Cheese allows users to take webcam selfies, and apply image filters.
 
@@ -393,7 +393,7 @@ There is a program available in the Pop!\_Shop called "Cheese." Cheese allows us
 ![apple-photos](/images/macOS-Screenshots/photos-app.png)
 
 **Pop!\_OS**
-- Shotwell (available in the Pop!\_Shop)
+- [Shotwell](https://wiki.gnome.org/Apps/Shotwell) (available in the Pop!\_Shop)
 
 Pop!\_OS comes with a photo viewing application called Image Viewer which previews pictures that are opened from the Files application, similar to the Apple application "Preview."
 
@@ -413,8 +413,8 @@ Shotwell organizes photos by albums and event dates, and allows for importing, v
 ![apple-mail](/images/macOS-Screenshots/apple-mail.png)
 
 **Pop!\_OS**
-  - Geary (default)
-  - Thunderbird (available in the Pop!\_Shop)
+  - [Geary](https://wiki.gnome.org/Apps/Geary) (default)
+  - [Thunderbird](https://www.thunderbird.net/en-US/) (available in the Pop!\_Shop)
 
 Pop!\_OS offers the GNOME "Geary" email client by default. Geary makes use of a column view, and supports adding a variety of email accounts.
 
@@ -447,8 +447,8 @@ In addition, most modern Email Service Providers (ESPs) have an online version o
 
 
 **Pop!\_OS**
-  - GNOME Videos (default)
-  - VLC (available in the Pop!\_Shop)
+  - [GNOME Videos](https://wiki.gnome.org/Apps/Videos) (default)
+  - [VLC](https://www.videolan.org/vlc/index.html) (available in the Pop!\_Shop)
 
 ![gnome-video](/images/pop-os-screenshots/gnome-videos.png)
 
@@ -476,8 +476,8 @@ Another popular alternative is VLC Media Player. This software is available in t
 
 
 **Pop!_OS**
-  - Lollypop (available in the Pop!\_Shop)
-  - Spotify (available in the Pop!\_Shop)
+  - [Lollypop](https://wiki.gnome.org/Apps/Lollypop) (available in the Pop!\_Shop)
+  - [Spotify](https://www.spotify.com/us/) (available in the Pop!\_Shop)
 
 There are many music player apps available for Linux. One polished and versatile example is Lollypop. Lollypop has a similar layout to iTunes and can play music stored locally on your computer or stream internet radio channels.
 
@@ -556,8 +556,8 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
 **Pop!\_OS**
   - Text Editer (default)
-  - Atom (available in the Pop!\_Shop)
-  - Microsoft VSCode (available in the Pop!\_Shop)
+  - [Atom](https://atom.io/) (available in the Pop!\_Shop)
+  - [Microsoft VSCode](https://code.visualstudio.com/) (available in the Pop!\_Shop)
 
 Pop!\_OS does not have a proprietary coding language, but supports a variety of languages and tools for development. The built in program Text Editor supports markdown formatting, and other text editor modelines.
 
@@ -717,8 +717,8 @@ On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS 
 
 
 **Pop!\_OS**
-- Timeshift (available in the Pop!\_Shop)
-- Déjà Dup Backups (available in the Pop!\_Shop)
+- [Timeshift](https://github.com/teejee2008/timeshift) (available in the Pop!\_Shop)
+- [Déjà Dup Backups](https://wiki.gnome.org/Apps/DejaDup) (available in the Pop!\_Shop)
 
 ![pop-backups](/images/pop-os-screenshots/pop-backups.png)
 

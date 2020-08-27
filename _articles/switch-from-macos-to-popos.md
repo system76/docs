@@ -68,7 +68,7 @@ Pop!\_OS offers corresponding workflows and applications to those available in m
 **macOS**
 - Spotlight Search
 
-![spotlight-search](/images/macOS-Screenshots/spotlight-search.png)
+![search](/images/pop-os-mac-screenshots/search.png)
 
 On macOS, Spotlight Search can be launched by clicking the magnifying glass in the upper right-hand corner of the screen, or by pressing CMD+SPACE.
 
@@ -76,8 +76,6 @@ On macOS, Spotlight Search can be launched by clicking the magnifying glass in t
 - Activities Overview
 
 ![activities-overview](/images/pop-os-screenshots/activities-pop-os.png)
-
-![activities-search](/images/pop-os-screenshots/activities-search-pop-os.png)
 
 
 In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of the screen opens the Activities Overview. Overview has a search bar situated in the top-center of the screen which will search file names and applications.

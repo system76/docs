@@ -106,7 +106,7 @@ sudo dpkg -i linux-firmware_1.167.1_all.deb
 
 #### File Transfer
 
-Sometimes, additional programs need installed for mobile equipment file transfer.  Please install the transfer tool with this command:
+Sometimes, additional programs need to be installed for mobile equipment file transfer.  Please install the transfer tool with this command:
 
 ```
 sudo apt install obexfs obexftp

@@ -92,14 +92,8 @@ The Activities Overview screen can also be launched by pressing the SUPER key. O
 **macOS**
   - Dock
 
-![mac-os-dock](/images/macOS-Screenshots/dock.png)
-
-![dock-icon-close](/images/macOS-Screenshots/iwork-dock-icons.png)
-
 **Pop!\_OS**
   - Dock
-
-![dock-pop-os](/images/pop-os-screenshots/dock-pop-os.png)
 
 In both macOS and Pop!\_OS, a tray of application shortcuts is provided for convenience.
 
@@ -229,7 +223,7 @@ Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GN
 
 ## [File Management](#file-management)
 
-The file-systems layouts in macOS and Pop!\_OS both feature location shortcuts on the left side, as well as tabbed browsing, list vs. icon views and various sorting options.
+The file-systems layouts in macOS and Pop!\_OS both feature location shortcuts on the left side, tabbed browsing, list vs. icon views, and various sorting options.
 
 **Apple**
      Finder
@@ -255,7 +249,7 @@ The file-systems layouts in macOS and Pop!\_OS both feature location shortcuts o
 
 ## [Light Mode vs. Dark Mode](#light-mode-vs-dark-mode)
 
-As of macOS 10.14 (Mojave) users have the option of using a default "dark mode" for the look and feel of their OS.
+As of macOS 10.14 (Mojave), users have the option of using a default "dark mode" for the look and feel of their OS.
 
 Pop!\_OS has had a dark mode since 19.10. There were dark mode options available previously, but the official "Dark Mode" of Pop!\_OS was added in Pop!\_OS 19.10.
 
@@ -341,7 +335,7 @@ Microsoft offers in-browser versions of the Microsoft Office suite as part of Of
 Pop!\_OS does not offer a default messaging app. The preference is that users choose their own and install only what they need/want.
 However, many popular 3rd-party applications have Linux versions available.
 
-Recommendations provided here are suggestions of open-source alternatives.
+Recommendations provided here are suggestions for open-source alternatives.
 
 **macOS**
      - FaceTime/iMessage
@@ -403,10 +397,10 @@ There is a program available in the Pop!\_Shop called "Cheese." Cheese allows us
 **Pop!\_OS**
 - Shotwell (available in the Pop!\_Shop)
 
-Pop!\_OS comes with a photo viewing application called Image Viewer which previews pictures that are opened from the Files application, similar to the Apple application Preview.
+Pop!\_OS comes with a photo viewing application called Image Viewer which previews pictures that are opened from the Files application, similar to the Apple application "Preview."
 
 There are several applications available in the Pop!\_Shop for more in-depth photo management. One such app, Shotwell, is highlighted here.
-Shotwell organizes photos by albums and event dates and allows for importing, viewing, and sorting your photographs.
+Shotwell organizes photos by albums and event dates, and allows for importing, viewing, and sorting your photographs.
 
 ![shotwell](/images/pop-os-screenshots/shotwell.png)
 
@@ -510,7 +504,7 @@ There is also a Linux client for the popular streaming service Spotify, availabl
 - [DaVinci Resolve/DaVinci Resolve Studio](https://www.blackmagicdesign.com/products/davinciresolve/)
 - [Kden Live](https://kdenlive.org/en/)  (also available in the Pop!\Shop)
 
-Pop!\_OS supports two popular, professional video editing suites. Lightworks and DaVinci Resolve. We have help articles on how to install both, which are listed below:
+Pop!\_OS supports two (2) professional video editing suites. Lightworks and DaVinci Resolve. We have help articles on how to install both, which are listed below:
 
 [Lightworks](https://support.system76.com/articles/install-lightworks/)
 

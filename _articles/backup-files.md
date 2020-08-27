@@ -50,13 +50,13 @@ Once Deja-Dup is installed, the program will be labeled "Backups," and can be se
 
 With Deja-Dup open, you can select the folders you wish to save, as well as any folders you wish to ignore. To do this, select either option from the list on the left. By default, Deja-Dup will backup your entire Home directory, which includes your Documents, Pictures, Music, and Videos. It ignores your Downloads folder, as well as any items in the Trash can. Use the plus and minus buttons as needed to modify both categories.
 
-![Selecting data to backup in Deja-Dup](/images/backup/deja-selection.png)
+![Selecting data to backup in Deja-Dup](/images/backup/deja_selection.png)
 
 #### Choosing a Backup Location
 
 By selecting the **Storage location** item in the list, you can configure the location in which you would like to store your backup
 
-![Selecting a backup location in Deja-Dup](/images/backup/deja-location.png)
+![Selecting a backup location in Deja-Dup](/images/backup/deja_location.png)
 
 **Local Folder** - Backup data to another internal or external hard drive, or USB disk.
 
@@ -90,13 +90,13 @@ Will be slower to back up, depending on your Internet speed
 
 To schedule backups to run automatically, select **Scheduling** from the list on the left, then flip the switch to enable automatic backups, and set it on a schedule that makes sense for you. You'll want to schedule it for when you know that the location you selected will be available (for example, when you know you'll have the USB drive plugged in). Many people choose to let their backups run overnight, or on weekends.
 
-![Scheduling backups in Deja-Dup](/images/backup/deja-scheduling.png)
+![Scheduling backups in Deja-Dup](/images/backup/deja_scheduling.png)
 
 #### Restoring Your Data
 
 To restore your data with Deja-Dup, select the **Overview** item from the list, then click the **Restore** button. Doing this will allow you to select the location containing the Deja-Dup backup folder, and will copy the data into the appropriate directories based on the location from the last backup.
 
-![Restoring data in Deja-Dup](/images/backup/deja-overview.png)
+![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
 
 ### Cloud Desktop Clients
 

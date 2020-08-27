@@ -15,6 +15,14 @@ section: software-applications
 
 ---
 
+# Backup Files
+
+- Document Version: 2.0.0
+- Date: (8-1-2020)
+- Author: Nathan Dyer, James Gross
+- Contributing Editor(s): Nathaniel Warburton
+
+
 There are many ways to backup important files on your computer. The choice of what one to use is largely a personal one based on habits, preferences, and what is being backed up. We will outline a few options here, but the final solution may be a mix of several of these options.
 
 ## Data Policy

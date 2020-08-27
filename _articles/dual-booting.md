@@ -15,7 +15,7 @@ section: pop
 
 ### If Pop!\_OS is installed first
 
-To dual boot Pop!\_OS alongside another OS install Pop!\_OS first. Then once booted into Pop!\_OS use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). Resizing the partition will only work if Pop!\_OS is not encrypted and if the OS is encrypted then it will need to be reinstalled with that option not enabled. 
+To dual boot Pop!\_OS alongside another OS install Pop!\_OS first. Then once booted into Pop!\_OS use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). Resizing the partition will only work if Pop!\_OS is not encrypted. If the OS is encrypted then it will need to be reinstalled with that option not enabled. 
 
 ![GParted](/images/dual-booting/gparted.png)
 
@@ -69,7 +69,7 @@ Once in the BIOS change the Boot Order to boot Pop!\_OS first that way when the 
 
 ## Windows Drivers
 
-There are a few devices that will not have drivers and that includes the Thelio Io board as it is a simple pass-through for the drives when using Windows, there are also no ACPI table entries. 
+There are a few devices that will not have Windows driver support. That includes the Thelio I/O board. It doesn't need any Windows drivers, howefver, as it is a simple pass-through for the drives when using Windows. There are also no ACPI table entries. 
 
 ## Fix your clock
 

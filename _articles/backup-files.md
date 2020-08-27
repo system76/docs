@@ -19,7 +19,7 @@ section: software-applications
 
 - Document Version: 2.0.0
 - Date: (8-1-2020)
-- Author: Nathan Dyer, James Gross
+- Author: Nathan Dyer, James Gross (initial)
 - Contributing Editor(s): Nathaniel Warburton
 
 

@@ -71,14 +71,12 @@ Pop!\_OS offers corresponding workflows and applications to those available in m
 ![search](/images/pop-os-mac-screenshots/search.png)
 
 On macOS, Spotlight Search can be launched by clicking the magnifying glass in the upper right-hand corner of the screen, or by pressing CMD+SPACE.
+In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of the screen opens the Activities Overview. Overview has a search bar situated in the top-center of the screen which will search file names and applications.
 
 **Pop!\_OS**
 - Activities Overview
 
 ![activities-overview](/images/pop-os-screenshots/activities-pop-os.png)
-
-
-In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of the screen opens the Activities Overview. Overview has a search bar situated in the top-center of the screen which will search file names and applications.
 
 The Activities Overview screen can also be launched by pressing the SUPER key. Once Overview is launched, users can begin typing to search their computer.
 
@@ -263,15 +261,15 @@ Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 **Pop\_OS**
   - Firefox (Default)
 
-  Web browsing experiences translate closely in macOS or Pop!\_OS.
+  The default web browser in macOS is Safari. Pop!\_OS features the Firefox browser.
 
   Both Safari and Firefox offer privacy features like "do not track" requests, other blockers, and customizeable search-engine defaults.
 
-  Users accustomed to using Apple Pay or iCloud Keychain for payments and password management will require workflow adjustments as these are Apple proprietary services.
+  Users accustomed to using Apple Pay or iCloud Keychain for payments and password management will require workflow adjustments, as these are Apple proprietary   services.
 
-  However, there are cross-platform password managers available, and they also offer the option to save and auto-fill payment methods.
+  There are cross-platform password managers available, which offer the option to save and auto-fill payment methods.
 
-  Most modern browsers also offer the ability to create an account that will save and sync user logins.
+  Most modern browsers offer the ability to create an account that will save and sync user logins.
 
 Examples include:
 
@@ -340,7 +338,7 @@ Chat
 
 Element (formerly Riot.im) is an open-source instant messaging client which makes use of the matrix network. The client offers end-to-end encryption, multiple chat rooms and communities, and can be used on the decentralized matrix network or self-hosted. It offers integrations with other applications and platforms like IRC, Slack, and Jitsi.
 
-There are also Linux versions of Slack and its open-source alternative Mattermost.
+Linux versions of Slack and its open-source alternative Mattermost are available in Pop!\_Shop.
 
 ![element](/images/pop-os-screenshots/element.png)
 
@@ -385,7 +383,7 @@ There is a program available in the Pop!\_Shop called "Cheese." Cheese allows us
 
 Pop!\_OS comes with a photo viewing application called Image Viewer which previews pictures that are opened from the Files application, similar to the Apple application "Preview."
 
-There are several applications available in the Pop!\_Shop for more in-depth photo management. One such app, Shotwell, is highlighted here.
+There are several applications available in the Pop!\_Shop for more in-depth photo management. Shotwell is highlighted below.
 Shotwell organizes photos by albums and event dates, and allows for importing, viewing, and sorting photographs.
 
 ![shotwell](/images/pop-os-screenshots/shotwell.png)
@@ -507,19 +505,19 @@ There is also an open-source video editing program called Kden Live which offers
   - [Audacity](https://www.audacityteam.org/) (also available in the Pop!\_Shop)
   - [Ardour](https://ardour.org/) (also available in the Pop!\_Shop)
 
-Linux does not have a direct, 1:1 equivalent to Garageband, however there are several applications that can be used for similar purposes.
+There are several applications that can be used for music editing and sound recording.
 
 ![LMMS](/images/pop-os-screenshots/lmms.png)
 
-The closest match would likely be LMMS (Let's Make Music Software). It's an open-source music mixer which can record and loop inputs from midi-keyboards.
+LMMS (Let's Make Music Software) is an open-source music mixer which can record and loop inputs from midi-keyboards.
 
 ![audacity](/images/pop-os-screenshots/audacity.png)
 
-Audacity is an open-source cross-platform appication used for recording and editing voice tracks for things like podcasts and memos.
+Audacity can be used for recording and editing voice tracks for things like podcasts and memos.
 
 ![ardour](/images/pop-os-screenshots/ardour.png)
 
-Similar to LMMS, but more targeted to audio engineering professionals rather than hobbyists, is Ardour. A multi-channel track and midi mixing program.
+Ardour is for more advanced audo engineering. It contains a multi-channel track and midi mixing program.
 
 LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
@@ -562,15 +560,13 @@ Common development tools like Atom and Microsoft Visual Studio Code are also ava
 
 There are many ways to game on Linux.
 
-Developers offer a variety of open-source titles through the Pop!\_Shop, and there are large numbers of Linux native games available through Steam.
-
-Many Windows games have become available on Linux through the WINE compatibility layer (a recursive acronym which stands for Wine Is Not an Emulator) with more being added constantly.
+Developers offer a variety of game titles through the Pop!\_Shop, and there are large numbers of Linux native games available through Steam.
 
 Valve, the company behind Steam, now actively contributes improvements to the WINE project and have forked their own version of it, called Proton, for even greater compatibility.
 
 Lutris is a community created, open-source program which helps users organize their games library and offers turnkey installer scripts for a variety of popular games, emulators and compatibility software.
 
-With these ongoing improvements there are many more games available on Linux than on macOS.
+With these ongoing improvements, there are many more games available on Linux than on macOS.
 
 The website [ProtonDB (Proton Database)](https://www.protondb.com/) is an unofficial repository of user-tested games with notes about how well they work on Linux.
 
@@ -666,8 +662,6 @@ Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) 
 
 **macOS**
 - Filevault
-
-On macOS, the hard drive can be encrypted using a utility called FileVault. It can be configured during setup of the OS, or later in settings. Encrypting or decrypting the drive can be a lengthy process as the OS has to methodically add or remove encryption hashing for all the files. With FileVault encryption can be added or removed at any point.
 
 **Pop!\_OS**
 

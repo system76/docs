@@ -19,7 +19,7 @@ section: getting-started
 
 # **Switching from macOS to Pop!\_OS**
 - Document Version: 1.0.0
-- Date: (8-1-2020)
+- Date: (9-3-2020)
 - Author: Nathaniel Warburton
 - Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal
 
@@ -53,11 +53,6 @@ section: getting-started
   - [Networking](#networking)
   - [Disk Encryption](#disk-encryption)
   - [System Backups](#system-backups)
-- [What if I have an iPhone?](#iphone)
-  - [Backups (macOS)](#iphone-backups-macos)
-  - [Files/Photos (macOS)](#iphone-files-photos-macos)
-  - [Backups (Pop!\_OS)](#iphone-backups-popos)
-  - [Files/Photos (Pop!\_OS)](#iphone-files-photos-popos)
 
 Pop!\_OS offers corresponding workflows and applications to those available in macOS. Users will find UI elements where they expect them to be as well as some additional features.
 
@@ -112,11 +107,6 @@ For more information on GNOME extensions, refer to the following support article
 **macOS**
   - Launchpad
 
-  Launchpad             |  Show Applications
-  :-------------------------:|:-------------------------:
-  ![launchpad](/images/macOS-Screenshots/lauchpad-edited.png)  |  ![show-applications](/images/pop-os-screenshots/show-applications-edited.png)
-
-
 
 Both macOS and Pop!\_OS have a method for showing installed applications in an icon grid.
 
@@ -125,7 +115,7 @@ In macOS this feature is called Launchpad and is represented by the rocket-ship 
 **Pop!\_OS**
   - Show Applications
 
-
+![launchpad-show-applications](/images/pop-os-mac-screenshots/launchpad-show-applications.png)
 
 
 In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
@@ -150,13 +140,9 @@ In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a
   - .deb Files
   - flatpaks
 
-Apple App Store | Pop!\_OS
-:----------------:|:---------------:
-![apple-app-store](/images/macOS-Screenshots/appstore.png)|![pop-shop](/images/pop-os-screenshots/pop-shop.png)
 
+![appstore-popshop](/images/pop-os-mac-screenshots/appstore-popshop.png)
 
-![eddy](/images/pop-os-screenshots/eddy.png)
-![flatpak](/images/pop-os-screenshots/flatpak-example.png)
 
 In Pop!\_OS. The Pop!\_Shop functions as an app store. The Pop!\_Shop highlights popular applications and lets users install them with a click and password authentication.
 
@@ -190,9 +176,7 @@ The placement of applications in Pop!\_OS is handled transparently by the operat
 
 Both macOS and Pop!\_OS use workspaces to organize open application windows
 
-![workspaces-overview](/images/macOS-Screenshots/workspaces-overview.png)
-
-![activities-overview](/images/pop-os-screenshots/activities-pop-os.png)
+![workspaces-overivew-activities-overview](/images/pop-os-mac-screenshots/workspaces-activites-overview.png)
 
 macOS uses multi-touch gestures, or CTRL+[up arrow] or [down arrow], to launch "Mission Control" and CTRL+[left arrow] or [right arrow] are used to navigate between workspaces.
 
@@ -563,7 +547,7 @@ There are many ways to game on Linux.
 
 Developers offer a variety of game titles through the Pop!\_Shop, and there are large numbers of Linux native games available through Steam.
 
-Valve, the company behind Steam, now actively contributes improvements to the WINE project and have forked their own version of it, called Proton, for even greater compatibility.
+Valve, the company behind Steam, now actively contributes improvements to the WINE project and have forked their own version of it, called Proton, for even greater compatibility for Windows games on Linux.
 
 Lutris is a community created, open-source program which helps users organize their games library and offers turnkey installer scripts for a variety of popular games, emulators and compatibility software.
 
@@ -645,12 +629,13 @@ Once the offending process' Process ID (PID) is known (either from System Monito
 ## [Networking](#networking)
 
 **macOS**
-
-![newtork-preferences](/images/macOS-Screenshots/network-preferences2.png)
+- System Preferences
 
 **Pop!\_OS**
+- Settings
 
-![network-settings-pop](/images/pop-os-screenshots/wifi-settings-pop.png)
+![network-setting-pop-mac](/images/pop-os-mac-screenshots/network-settings-pop-mac.png)
+
 
 macOS and Pop!\_OS manage network menus and settings almost identically. Both have a drop-down menu in the upper right corner of the screen to quickly connect to an available network.
 
@@ -668,7 +653,7 @@ Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) 
 
 - LUKS (during Install)
 
-![encryption-pop](/images/install-pop/5_encrypt_notice.png)
+![encryption-pop](/images/install-pop/5_encrypt_notice-cropped.png)
 
 On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS partition is encrypted using the LUKS disk layout. This tool adds a decryption screen so that every time the computer boots, it requires a decryption password before moving to the login screen. With an encrypted drive, if hardware is stolen, the only way to remove the encryption is to erase the disk.
 
@@ -695,34 +680,10 @@ The snapshot feature is comparable to snapshots offered by virtual machine manag
 
 Déjà Dup Backups is closer in functionality to Time Machine. It offers local hardware backups, or backups to network locations. Folders and files can be added to the backup list manually, and it backs up the Home folder by default. Automatic backups can also be run on a schedule.
 
-[Return to Table of Contents](#Contents)
-
-# [What if I have an iPhone?](#iphone)
-
-## [Backups (macOS)](#iphone-backups-macos)
-
-Full system iPhone backups are traditionally done in one of two ways.
-- Local backups (formerly iTunes, now Finder)
-
-Local backups of an iPhone can be created by connecting it to an Apple laptop or desktop computer and using iTunes (for older macOS versions) or Finder (for newer releases) to create a local snapshot of iPhone data. These backups can be encrypted or unencrypted.
-
-- iCloud backups
-
-It is also possible to backup and sync iPhone changes to an iCloud account. These are not full-system backups, but do contain most of the data needed to restore and iPhone to a particular point in time. To read more about what is backed up in iCloud backups visit: https://support.apple.com/en-us/HT207428
-
-## [Files/Photos (macOS)](#iphone-files-photos-macos)
-An iPhone can be synced like a digital camera through the Apple Photos app, and a special directory on the iPhone called "Files" (presented on the iPhone as a home-screen app) is available to be accessed like any other flash drive or external hard drive.
-
-
-## [Backups (Pop!\_OS)](#iphone-backups-popos)
-
-- Local backups
-Because the backup features in macOS Finder/iOS relies on proprietary code, Pop!\_OS does not have a built-in feature to make a local snapshot backup of an iPhone.
-
-- iCloud backups.
-Since iPhones connect directly to iCloud over WiFi, iCloud backups will continue as usual, and can be managed from either the iPhone or users' iCloud accounts on icloud.com.
-
-## [Files/Photos (Pop!\_OS)](#iphone-files-photos-popos)
-Like in macOS, users can also access image files, and files stored in the "Files" folder on the iPhone through the Pop!\_OS Files application. Files can be copied back and forth to the iPhone like any other flash drive or external drive.
+To read more about methods of backing up your system visit our help article: [Backup Files](https://support.system76.com/articles/backup-files/)
 
 [Return to Table of Contents](#Contents)
+
+<!-- # [What if I have an iPhone?](#iphone)
+
+For more details about how to manage files and backups between iPhone and Pop!\_OS, visit our help article: [Use an iPhone with Pop!\_OS](https://support.system76.com/articles/use-iphone-with-linux) -->

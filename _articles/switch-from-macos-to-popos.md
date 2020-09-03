@@ -112,7 +112,11 @@ For more information on GNOME extensions, refer to the following support article
 **macOS**
   - Launchpad
 
-![launchpad](/images/macOS-Screenshots/lauchpad-edited.png)
+  Launchpad             |  Show Applications
+  :-------------------------:|:-------------------------:
+  ![launchpad](/images/macOS-Screenshots/lauchpad-edited.png)  |  ![show-applications](/images/pop-os-screenshots/show-applications-edited.png)
+
+
 
 Both macOS and Pop!\_OS have a method for showing installed applications in an icon grid.
 
@@ -122,7 +126,6 @@ In macOS this feature is called Launchpad and is represented by the rocket-ship 
   - Show Applications
 
 
-![show-applications](/images/pop-os-screenshots/show-applications-edited.png)
 
 
 In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
@@ -136,11 +139,7 @@ In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a
   - App Store
   - .dmg Files
 
-![macos-appstore](/images/macOS-Screenshots/appstore.png)
 
-![opening-dmg](/images/macOS-Screenshots/opening-dmg.png)
-
-![application-install-window](/images/macOS-Screenshots/application-install-window.png)
 
   In macOS applications are installed from two (2) main sources. The Apple App Store, and directly from developer websites.
 
@@ -151,10 +150,12 @@ In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a
   - .deb Files
   - flatpaks
 
-![pop-shop](/images/pop-os-screenshots/pop-shop.png)
+Apple App Store | Pop!\_OS
+:----------------:|:---------------:
+![apple-app-store](/images/macOS-Screenshots/appstore.png)|![pop-shop](/images/pop-os-screenshots/pop-shop.png)
+
 
 ![eddy](/images/pop-os-screenshots/eddy.png)
-
 ![flatpak](/images/pop-os-screenshots/flatpak-example.png)
 
 In Pop!\_OS. The Pop!\_Shop functions as an app store. The Pop!\_Shop highlights popular applications and lets users install them with a click and password authentication.

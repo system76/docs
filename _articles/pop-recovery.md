@@ -33,7 +33,7 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 
 If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
-To access to the existing OS drive and run the package manager [repair commands](/articles/package-manager/), the following commands will need to be run:
+To access to the existing OS drive and run the package manager [repair commands](/articles/package-manager-pop/), the following commands will need to be run:
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
@@ -87,8 +87,17 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
+
 ```
 sudo mount /dev/sda1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+```
+OR for NVMe drives:
+
+```
+sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt

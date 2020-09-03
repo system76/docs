@@ -19,7 +19,13 @@ Congratulations on receiving your System76 Thelio Desktop! Read this article to 
 
 ### Connect Your Monitor
 
+#### Thelio R1/B1 Ports:
+
 ![Ports](/images/desktop-quickstart/thelio-r1_b1.png)
+
+#### Thelio R2/B2 Ports:
+
+![Ports](/images/desktop-quickstart/thelio-r2_ports-diagram_back.png)
 
 If you ordered a dedicated graphics card, plug your monitor into one of the horizontal ports on the back of the machine. Do not connect your display to the vertical ports if you have a graphics card. The vertical ports are directly connected to the motherboard and are disabled by default if there is a dedicated graphics card.
 

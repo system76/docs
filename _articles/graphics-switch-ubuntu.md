@@ -2,13 +2,16 @@
 layout: article
 title: Switching Graphics in Ubuntu
 description: >
-   How to switch between Intel, NVIDIA, and Hybrid graphics
+   How to switch between integrated, NVIDIA, and Hybrid graphics
 keywords:
   - System76
   - Ubuntu
   - 18.04
+  - 19.10
+  - 20.04
   - NVIDIA
-  - Intel
+  - Hybrid
+  - Integrated
 image: http://support.system76.com/images/ubuntu.png
 hidden: false
 section: ubuntu
@@ -17,15 +20,15 @@ section: ubuntu
 
 The following laptops have switchable graphics:
 
-- Oryx Pro (oryp4, oryp4-b, oryp5)
-- Gazelle (gaze14)
-- Adder Workstation (addw1)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
+- Gazelle (gaze14, gaze15)
+- Adder Workstation (addw1, addw2)
 
 ### Graphics modes
 
-#### Intel
+#### Integrated
 
-Intel graphics mode uses the integrated Intel GPU only and turns off the NVIDIA
+Integrated graphics mode uses the integrated GPU only and turns off the NVIDIA
 GPU. This mode uses less power, leading to a longer battery life and less fan
 noise.
 
@@ -38,14 +41,33 @@ Gazelle, may also have external ports connected to the integrated GPU.)
 
 #### Hybrid
 
-Hybrid graphics mode uses both the integrated Intel GPU and the discrete NVIDIA GPU.
+Hybrid graphics mode uses both the integrated GPU and the discrete NVIDIA GPU.
 Applications will use the integrated GPU unless explicitly requested to use the
 discrete GPU.
+
+Vulkan applications must be launched with the following command to be rendered on the dGPU (NVIDIA):
+
+```
+__NV_PRIME_RENDER_OFFLOAD=1 <application>
+```
+
+GLX applications must be launched with the following command to be rendered on the dGPU (NVIDIA):
+
+```
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia <application>
+```
+
+Hybrid graphics mode is available on 19.10 and later.
+
+#### Compute
+
+Compute graphics mode uses the integrated GPU for all rendering. The NVIDIA
+GPU is left available, allowing it to be used as a compute node.
 
 ### Switch graphics
 
 Pop!_OS by System76 includes the system76-power package, which includes the
-ability to switch between Intel, NVIDIA, and hybrid graphics modes.
+ability to switch between integrated, NVIDIA, and hybrid graphics modes.
 
 You'll only need to install this software manually if you did a fresh install of Ubuntu,
 as our installations will include these packages by default. You can do this
@@ -71,7 +93,7 @@ switching.
 
 ![Graphics](/images/graphics-switch-ubuntu/system-menu.png)
 
-Click on NVIDIA, Intel, or Hybrid, depending on your use case.
+Click on NVIDIA, Integrated, Hybrid, or Compute depending on your use case.
 
 Once you select a mode, you will be prompted to reboot.
 
@@ -96,16 +118,22 @@ For switching to NVIDIA Graphics:
 sudo system76-power graphics nvidia
 ```
 
-For switching to Intel Graphics:
+For switching to integrated Graphics:
 
 ```
-sudo system76-power graphics intel
+sudo system76-power graphics integrated
 ```
 
 For switching to hybrid graphics:
 
 ```
 sudo system76-power graphics hybrid
+```
+
+For switching to compute mode:
+
+```
+sudo system76-power graphics compute
 ```
 
 ### Sources

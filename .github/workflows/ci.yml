@@ -2,7 +2,7 @@
 
 name: CI
 
-on: push
+on: [push, pull_request]
 
 jobs:
   Build:
@@ -16,7 +16,7 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+          jekyll/builder:3 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
 
   Deploy_Github_Pages:
     name: Deploy (Github Pages)
@@ -34,11 +34,11 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+          jekyll/builder:3 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
         env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_KEY }}
+          PERSONAL_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./_site

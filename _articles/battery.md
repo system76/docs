@@ -44,7 +44,9 @@ Save and exit the BIOS
 -  It is particularly useful when your laptop is plugged into AC power adapter for extended periods of time
 - FlexiCharger can be disabled at any time in the BIOS, which reverts the charging profile to factory defaults. Before heading out into the wild blue yonder, disable FlexiCharger to charge your laptop battery to 100%.
 
+#### Open Firmware 
 
+Laptops that ship with our Open Firmware do not have FlexiCharger.
 
 ## Useful Programs
 

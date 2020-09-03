@@ -173,6 +173,8 @@ For more information on LTS support and the Hardware Enablement Stack, please se
 
 Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
 
+Most upgrades proceed without issues, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then these steps can help repair your broken OS.
+
 ### Stuck Upgrades
 
 If your upgrade appears to hang in place for an extended period of time, click on the **Terminal** item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support and we'll be able to provide assistance.

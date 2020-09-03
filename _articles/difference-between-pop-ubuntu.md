@@ -2,7 +2,7 @@
 layout: article
 title: Differences between Pop!_OS and Ubuntu
 description: >
-  What are the differences between these two OSes?
+  Discover the differences between these two Operating Systems
 keywords:
    - Ubuntu
    - Pop
@@ -10,7 +10,7 @@ keywords:
    - 19.04
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop-ubuntu
+section: pop
 
 ---
 
@@ -51,7 +51,7 @@ With encryption enabled by default, and reporting through Ubuntu disabled, Pop!_
 ## Custom Keyboard Shortcuts
 
 After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to make some shortcuts more efficient for common user behaviors. The shortcut for switching workspaces, for example, is <kbd>Super</kbd> + <kbd>Arrow</kbd> <kbd>Up</kbd> or <kbd>Down</kbd>.
-[See all keyboard shortcuts](https://pop.system76.com/docs/keyboard-shortcuts/)
+[See all keyboard shortcuts](/articles/pop-keyboard-shortcuts/)
 
 <br>
 ## Default Apps: Slimming down on bloatware 
@@ -65,7 +65,7 @@ Pop!_OS includes a selection of apps intended to be comprehensive, but relativel
 
 ![Power Profiles/Graphics toggle](/images/difference-between-pop-ubuntu/system-menu.png)
 
-Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](https://pop.system76.com/docs/roadmap/) offers a more extensive outline of these changes, we’ve highlighted some of our major improvements below:
+Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](https://support.system76.com/articles/roadmap/) offers a more extensive outline of these changes, we’ve highlighted some of our major improvements below:
  * Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!_OS on install also downloads the NVIDIA drivers by default.
  * The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.
  * For scientific workloads, installing [CUDA](https://support.system76.com/articles/cuda/) and [TensorFlow](https://support.system76.com/articles/install-tensorflow/) is made simple with a single command line.

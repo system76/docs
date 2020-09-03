@@ -28,7 +28,7 @@ To advance keyboard driven control, keyboard shortcuts have been modified in Pop
 Lock Screen                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>ESC</kbd> |
 Move to Workspace Up or Down | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> |
 Close Window                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>W</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd>
-Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
+Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
 
 ### New Features
 
@@ -57,7 +57,6 @@ Pop!\_Shop now loads up to 20 Pop!\_Picks making highlighted applications more a
 Dark mode is enabled by default. Default desktop wallpaper has a new design. Both defaults can be changed within the Appearance settings.
 
 ### GNOME 3.36
-<<<<<<< HEAD:_articles/Pop!_OS-20.04-LTS-Release-Notes.md
 * New lockscreen
 * Additional performance improvements
 * New Extensions application to GNOME Shell Extensions and their settings
@@ -81,4 +80,4 @@ Dark mode is enabled by default. Default desktop wallpaper has a new design. Bot
 ** The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
 
 * Linux Kernel 5.4
->>>>>>> goelashwin36-master:_articles/Pop!_OS-20.04-LTS-Release-Notes
+=======

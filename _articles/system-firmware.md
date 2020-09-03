@@ -18,52 +18,95 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 ### Before You Begin
 
-* Make sure the laptop is **plugged into the AC Adapter as USB Type-C charging is not supported** for the entire firmware updating process.
-
+* Make sure the laptop is **plugged into the AC Adapter** for the entire firmware updating process. USB Type-C charging is **not** supported during firmware updates on the following models: Galago Pro (galp3-c, galp4), Darter Pro (darp5, darp6)
 * **Disconnect external devices**, including any displays or USB devices.
+* **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
+* During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
 
 * **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
 
-* During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
+### Starting the Update (GUI)
 
-### Performing the Update
+In Pop!_OS, you can check for firmware updates using **Settings -> Firmware**.
 
-1. For Pop!_OS or Ubuntu you can start the firmware update using **Settings -> Devices -> Firmware**.
-2. Select **Restart Now** from the notification or **Update** from the Settings application.
-3. The System76 Firmware updater will start on reboot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
-4. The firmware update process will begin, then the system will restart back into the System76 Firmware updater. The fans on the system will be on full blast.
-5. The firmware update process will finish. When prompted, **press any key to shutdown**.
-6. After the system powers off, **press the power button** to turn it back on.
-7. Two small blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one.
-8. The machine will then reboot. Repeatedly press or hold the <kbd>F2</kbd> key to boot into the BIOS settings. Using the arrow keys, go over to the **Exit** tab.
- - If the BIOS settings do not launch, reboot the machine and try again.
-9. Once in the BIOS move to the Exit tab and select then confirm **Load Setup Defaults** or **Load Optimal Defaults**. (This step does not apply to Open Firmware machines)
-10. Select and confirm **Save changes and reset** in that same tab.
-11. Once the system restarts, the firmware will be up to date!
+![Firmware settings in Pop!_OS](/images/system-firmware/gui-pop.jpg)
 
-The following commands can be used to schedule the firmware update for the next reboot and then reboot the system:
+In Ubuntu, you can check for firmware updates using the **Firmware Manager** application.
+
+![Firmware Manager in Ubuntu](/images/system-firmware/gui-ubuntu.jpg)
+
+If a green **Update** button is present, then a firmware update is available. Click the **Update** button, then click **Reboot and Install** to begin the update.
+
+![Starting a firmware update (Pop!_OS)](/images/system-firmware/install-pop.jpg)
+
+![Starting a firmware update (Ubuntu)](/images/system-firmware/install-ubuntu.jpg)
+
+### Starting the Update (CLI)
+
+The command-line firmware utility can be installed using this command:
+
+```
+sudo apt install system76-firmware
+```
+
+Once installed, the following command can be used to schedule a firmware update for the next reboot (if the firmware is already up-to-date, this command will schedule a re-installation of the current firmware):
 
 ```
 sudo system76-firmware-cli schedule
-sudo reboot
 ```
+
+Reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
+
+### Performing the Update
+
+The System76 Firmware Updater will start on the next boot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
+
+![Press Enter to commence flashing](/images/system-firmware/press-enter.jpg)
+
+Depending on the model, the system may reboot at this point. The system's fans may spin at full speed while the new firmware is being written. Once the firmware update process is complete, you may see a prompt to **press any key** to shut down.
+
+![Press any key to shut down](/images/system-firmware/press-any-key.jpg)
+
+After the system powers off, **press the power button** to turn it back on. On machines running Open Firmware, the system should boot normally.
+
+### Disabling the ME
+
+For laptops not running Open Firmware, a few extra steps may be required after an update to ensure the Intel ME is disabled. 
+
+Depending on the model, two blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one. The system may also power off and on again at this point.
+
+On some laptops, the UEFI menu will display automatically. (If it doesn't, you can also access this menu by holding down <kbd>F2</kbd> during boot.) Select **Setup Utility** to enter the UEFI setup utility.
+
+![Setup Utility](/images/system-firmware/setup-utility.jpg)
+
+Navigate to the **Advanced** section in the left sidebar, then select **Advanced Chipset Control**.
+
+![Advanced Chipset Control](/images/system-firmware/advanced-chipset-control.jpg)
+
+If there is an **ME State** option at the bottom of the list, select it, then select **Disabled** to ensure the ME is disabled.
+
+![ME State (enabled)](/images/system-firmware/me-state-enabled.jpg)
+
+![Disabling the ME](/images/system-firmware/disabling-me.jpg)
+
+![ME State (disabled)](/images/system-firmware/me-state-disabled.jpg)
+
+Navigate to the **Exit** section in the left sidebar, then select **Exit Saving Changes** and **Yes** to save and exit the setup utility. The system may power off and back on again, then it should boot normally.
 
 ### Updating on Other OS's
 
-Your system firmware can be updated using a live disk when running on another Linux based OS. First a live disk will need to be created using one of our following articles:
+If your system is running another Linux-based OS installed with an EFI System Partition (ESP), then you can update your firmware using a live disk of Pop!_OS. First, create a live disk using one of the following articles:
 
 - [Live Disk creation on Pop!_OS](/articles/pop-live-disk/)
 - [Live Disk creation on Other OS's](/articles/live-disk/)
 
-Once the system is booted from the live disk by plugging in the disk, reboot the laptop and hold the <kbd>F7</kbd> key, if it's a desktop it is <kbd>F12</kbd>. The brand name of the flash drive used will be show on that list and can be selected with the arrow keys and then press <kbd>Enter</kbd>.
-
-Next open a terminal with <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd> or on Ubuntu with <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>. Now enter this command to list the partition layout for your installed OS:
+After creating the live disk, [access the boot menu](/articles/boot-menu/) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
 
 ```
 lsblk
 ```
 
-Now depending on the partition layout these commands will change. The EFI partition is around 512MB in size but may be smaller and it is usually the first partition on the drive.
+Identify the EFI partition in the list. (The EFI partition is usually the first partition on one of the drives, and is around 512MB in size or slightly smaller.) Once you have identified the EFI partition, use the following commands to set up the system for a firmware update:
 
 #### For NVMe Drives:
 
@@ -73,6 +116,8 @@ sudo mkdir -p /boot/efi
 sudo mount /dev/nvme0n1p1 /boot/efi
 gnome-control-center firmware
 ```
+
+Where `/dev/nvme0n1p1` is the EFI system partition.
 
 #### For SATA Drives:
 
@@ -88,3 +133,11 @@ After the above commands are ran depending on the drive that the OS is installed
 ### Firmware Notifications for Laptops
 
 If you’re receiving the firmware update notification after a firmware update, then your system’s Intel ME may be turned on. Let’s reboot the laptop and hold F2 to get to the BIOS. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. That should stop the notifications about a firmware update and you're all set.
+
+Where `/dev/sda1` is the EFI system partition.
+
+After the System76 Driver is installed and the EFI partition has been mounted using the above commands, you can use the above instructions to [update the firmware](#starting-the-update-gui) normally.
+
+### Firmware Notifications for Laptops
+
+If you’re receiving the firmware update notification but there are no updates available, then your system’s Intel ME may be turned on. Follow the above instructions to [disable the ME](#disabling-the-me).

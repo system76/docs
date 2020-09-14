@@ -86,7 +86,7 @@ You can switch between each CUDA version with the following command:
 sudo update-alternatives --config cuda
 ```
 
-To verify installation, run this command to see the current version of the NVIDIA CUDA compiler:
+To verify installation, add the install location to your path variable and run this command to see the current version of the NVIDIA CUDA compiler:
 
 ```
 nvcc -V

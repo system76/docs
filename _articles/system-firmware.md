@@ -41,9 +41,10 @@ If a green **Update** button is present, then a firmware update is available. Cl
 
 ### Starting the Update (CLI)
 
-The command-line firmware utility can be installed using this command:
+The command-line firmware utility can be installed using these commands:
 
 ```
+sudo apt update
 sudo apt install system76-firmware
 ```
 
@@ -54,6 +55,14 @@ sudo system76-firmware-cli schedule
 ```
 
 Reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
+
+### Transitioning to Open Firmware
+
+If you are currently running proprietary firmware but would like to transition to [System76 Open Firmware](https://github.com/system76/firmware-open) (and have a model that supports Open Firmware), follow the [steps above](#starting-the-update-cli) to start the update from the command line, but use the `--open` option when scheduling the update:
+
+```
+sudo system76-firmware-cli schedule --open
+```
 
 ### Performing the Update
 

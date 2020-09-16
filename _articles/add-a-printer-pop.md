@@ -53,7 +53,7 @@ To look at the CUPS (Common Unix Printing System) configuration and status windo
 
 [localhost:631](http://localhost:631)
 
-The status window will show current sudo apt install --reinstall ~n^system-config-printerprint jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer. When there is a prompt for your username and password, use your user name, and password used to login.
+The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer. When there is a prompt for your username and password, use your user name, and password used to login.
 
 ## Useful Commands:
 

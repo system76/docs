@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Switching to Pop!\_OS From Apple
+title: Switching to Pop!_OS From Apple
 description: >
   If you are coming from Apple's operating system using Pop!\_OS for the first time, we can help make the transition smoother.
 keywords:
@@ -23,19 +23,19 @@ section: getting-started
 - Author: Nathaniel Warburton
 - Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal
 
-#### [Table of Contents](#Contents)
+#### [Table of Contents](#contents)
 - [Navigation](#navigation)
   -  [Finding Programs and Files](#finding-programs-and-files)
     - [Application Shortcuts](#application-shortcuts)
     - [View Installed applications](#view-installed-applications)
     - [Install/Manage Software](#manage-software)
-    - [A note about the Applications folder:](#application-folders)
-  - [Workspaces and Window Management](#workspaces-window-management)
-    - [Pop!\_Shell](#pop-shell)
+    - [Applications Folders](#application-folders)
+  - [Workspaces and Window Management](#workspaces-and-window-management)
+    - [Pop Shell](#pop!-shell)
   - [File Management](#file-management)
   - [Light Mode vs. Dark Mode](#light-mode-vs-dark-mode)
 - [Software](#software)
-  - [Web Browsing & Password Management](#web-browsing-and-password-management)
+  - [Web Browsing and Password Management](#web-browsing-and-password-management)
   - [Office Work](#office-work)
   - [Calls and Video Chat](#calls-and-video-chat)
   - [Take Selfies](#take-selfies)
@@ -75,7 +75,7 @@ In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of 
 
 The Activities Overview screen can also be launched by pressing the SUPER key. Once Overview is launched, users can begin typing to search their computer.
 
-[Return to Table of Contents](#Contents)
+[Return to Table of Contents](#return-to-table-of-contents)
 
 
 ## [Application Shortcuts](#application-shortcuts)
@@ -153,7 +153,7 @@ Since 20.04, The Pop!\_Shop has offered the ability to install flatpak versions 
 [Return to Table of Contents](#Contents)
 
 
-### [A note about the Applications folder:](#application-folders)
+### [Application Folders](#application-folders)
 
   One key difference between macOS and Pop!\_OS is how and where applications are installed. in macOS, with a few exceptions, all installed applications go into a dedicated folder located under the /Applications folder. Applications are self-contained items and can be moved or deleted by acting on the file for the application itself.
 
@@ -172,7 +172,7 @@ The placement of applications in Pop!\_OS is handled transparently by the operat
 [Return to Table of Contents](#Contents)
 
 
-## [Workspaces and Window Management](#workspaces-window-management)
+## [Workspaces and Window Management](#workspaces-and-window-management)
 
 Both macOS and Pop!\_OS use workspaces to organize open application windows
 
@@ -186,7 +186,7 @@ In Pop!\_OS users press the SUPER key to enter "Overview" and show all workspace
 [Return to Table of Contents](#Contents)
 
 
-### [Pop!\_Shell](#pop-shell)
+### [Pop Shell](#pop-shell)
 
 Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called pop-shell, and allows for window organization and keyboard navigation among windows and applications.
 
@@ -238,7 +238,7 @@ Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 
 # [Software](#software)
 
-## [Web Browsing & Password Management](#web-browsing-and-password-management)
+## [Web Browsing and Password Management](#web-browsing-and-password-management)
 
 **macOS**
   - Safari (Default)

@@ -56,14 +56,6 @@ sudo system76-firmware-cli schedule
 
 Reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
 
-### Transitioning to Open Firmware
-
-If you are currently running proprietary firmware but would like to transition to [System76 Open Firmware](https://github.com/system76/firmware-open) (and have a model that supports Open Firmware), follow the [steps above](#starting-the-update-cli) to start the update from the command line, but use the `--open` option when scheduling the update:
-
-```
-sudo system76-firmware-cli schedule --open
-```
-
 ### Performing the Update
 
 The System76 Firmware Updater will start on the next boot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
@@ -142,3 +134,53 @@ After the System76 Driver is installed and the EFI partition has been mounted us
 ### Firmware Notifications for Laptops
 
 If you’re receiving the firmware update notification but there are no updates available, then your system’s Intel ME may be turned on. Follow the above instructions to [disable the ME](#disabling-the-me).
+
+## Switching Between Open and Proprietary Firmware
+
+Some models shipped with proprietary firmware, but later received support for [System76 Open Firmware](https://github.com/system76/firmware-open). A list of models that support Open Firmware can be found [here](https://github.com/system76/firmware-open/#supported-models).
+
+### Differences between Open and Proprietary Firmware
+
+Open Firmware is open-source, meaning the source code is available for users and developers to read and modify as they please. Proprietary firmware is developed by the upstream motherboard manufacturers, and its source code is not available for viewing or modification. You can read about the benefits of using open-source firmware [here](https://blog.system76.com/post/623810010985742337/open-up-benefits-of-open-source-firmware).
+
+Because Open Firmware is intended to be lightweight and simple to use, there are less options available in the UEFI setup menu for Open Firmware than for proprietary firmware. Notably:
+
+* Many features are enabled by default in Open Firmware, but are not present in the UEFI setup menu. This includes:
+  * Hardware virtualization (Intel VT-D/AMD-V) - can be disabled by the OS via a kernel boot option.
+  * Hyperthreading - can be disabled by the OS via a kernel boot option.
+  * Thunderbolt security - devices must be allowed by the user within the OS.
+  * Battery thresholds - can be set by the user within the OS.
+* Some features are present in proprietary firmware but are not available in Open Firmware, including:
+  * Intel ME - always disabled.
+  * Secure Boot - always disabled.
+  * Self-encryptiong storage drives - not supported (note that the full-disk encryption used in Pop!_OS does not require this firmware-level feature.)
+
+Below is a comparison between the UEFI setup menu on proprietary firmware (left) and Open Firmware (right):
+
+![Proprietary vs. Open Firmware](/images/system-firmware/proprietary-vs-open.webp)
+
+### Transitioning to Open Firmware
+
+If you are currently running proprietary firmware and would like to transition to Open Firmware, follow the [steps above](#starting-the-update-cli) to start the update from the command line, but use the `--open` option when scheduling the update:
+
+```
+sudo system76-firmware-cli schedule --open
+```
+
+### Reverting to Proprietary Firmware
+
+If you are running Open Firmware and need to revert to proprietary firmware (for example, if you require a specific feature not yet present in Open Firmware), you can transition back to proprietary firmware using the `--proprietary` option:
+
+```
+sudo system76-firmware-cli schedule --proprietary
+```
+
+### Checking the Current Firmware Version
+
+You can check your current firmware version using this command:
+
+```
+sudo dmidecode | grep Version:
+```
+
+If the first line of output is a short, decimal-separated number such as `1.07.05`, then you are running proprietary firmware. If the output is a longer, date-based number such as `2020-09-03_9c310f0`, then you are running Open Firmware.

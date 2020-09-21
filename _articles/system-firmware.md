@@ -137,4 +137,4 @@ If you’re receiving the firmware update notification but there are no updates 
 
 ### Switching Between Proprietary Firmware and System76 Open Firmware
 
-If you would like to transition from proprietary firmware to System76 Open Firmware, on a supported model, please view [this article](/articles/transition-firmware/)
+If you would like to transition from proprietary firmware to System76 Open Firmware (on a supported model), please view [this article](/articles/transition-firmware/).

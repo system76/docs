@@ -16,13 +16,11 @@ section: software-applications
 Some models shipped with proprietary firmware, but later received support for [System76 Open Firmware](https://github.com/system76/firmware-open) and [System76 Open EC](https://github.com/system76/ec). Below is a list of these models:
 
 - Adder WS (addw2)
-    - Was shipped with proprietary firmware. Switching will install System76 Open Firmware and System76 Open EC.
-- Darter Pro (darp6)
-    - Was shipped with System76 Open Firmware, but proprietary EC. Switching will install System76 Open EC.
 - Gazelle (gaze15)
-    - Was shipped with proprietary firmware. Switching will install System76 Open Firmware and System76 Open EC.
 
-### Differences between Open and Proprietary Firmware
+This list may expand in the future, as more models are ported.
+
+### Differences between System76 Open Firmware and Proprietary Firmware
 
 System76 Open Firmware is primarily open-source, meaning the source code is available for users and developers to read and modify as they please. Proprietary firmware is developed by the upstream motherboard manufacturers, and its source code is not available for viewing or modification. You can read about the benefits of using open-source firmware [here](https://blog.system76.com/post/623810010985742337/open-up-benefits-of-open-source-firmware).
 

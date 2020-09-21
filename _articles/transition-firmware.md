@@ -24,17 +24,17 @@ This list may expand in the future as more models are ported.
 
 System76 Open Firmware is primarily open-source, meaning the source code is available for users and developers to read and modify as they please. Proprietary firmware is developed by the upstream motherboard manufacturers, and its source code is not available for viewing or modification. You can read about the benefits of using open-source firmware [here](https://blog.system76.com/post/623810010985742337/open-up-benefits-of-open-source-firmware).
 
-Because System76 Open Firmware is intended to be lightweight and simple to use, there are less options available in the UEFI setup menu than for proprietary firmware. Notably:
+System76 Open Firmware is designed to be lightweight and performant with a simple and straightforward user interface.
 
-* Many features are enabled by default in Open Firmware, but are not present in the UEFI setup menu. This includes:
-  * Hardware virtualization (Intel VT-D/AMD-V) - can be disabled by the OS via a kernel boot option.
-  * Hyperthreading - can be disabled by the OS via a kernel boot option.
-  * Thunderbolt security - devices must be allowed by the user within the OS.
-  * Battery thresholds - can be set by the user within the OS.
+* Many features are configured by default in System76 Open Firmware
+  * Enabled: Hardware virtualization (Intel VT-x and VT-d/AMD-V). Can be disabled by the OS via a kernel boot option.
+  * Enabled: Hyperthreading. Can be disabled by the OS via a kernel boot option.
+  * Enabled: Thunderbolt security. Devices must be allowed by the user within the OS.
+  * Disabled: Intel ME (Management Engine)
+  * Disabled: Secure Boot
 * Some features are present in proprietary firmware but are not available in Open Firmware, including:
-  * Intel ME - always disabled.
-  * Secure Boot - always disabled.
-  * Self-encryptiong storage drives - not supported (note that the full-disk encryption used in Pop!\_OS does not require this firmware-level feature.)
+  * Flexicharger (battery threshold). This feature is currently in development for System76 Open Firmware.
+  * Self-encryptiong storage drives. Not supported (note that the full-disk encryption used in Pop!\_OS does not require this firmware-level feature.)
 
 Below is a comparison between the UEFI setup menu on proprietary firmware (left) and System76 Open Firmware (right):
 

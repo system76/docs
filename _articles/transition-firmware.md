@@ -18,7 +18,7 @@ Some models shipped with proprietary firmware, but later received support for [S
 - Adder WS (addw2)
 - Gazelle (gaze15)
 
-This list may expand in the future, as more models are ported.
+This list may expand in the future as more models are ported.
 
 ### Differences between System76 Open Firmware and Proprietary Firmware
 

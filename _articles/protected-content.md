@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Watch Flash Content and Netflix
+title: Watch Protected Content from Netflix, Amazon Prime, and Other Streaming Services
 description: >
-    How to install Google Chrome or Pepperflash to watch Netflix, Hulu, and other Flash Videos.
+    How to view DRM-protected video content from online streaming services such as Netflix and Amazon Prime
 keywords:
   - Support
   - google
@@ -12,7 +12,6 @@ keywords:
   - netflix
   - amazon
   - hulu
-  - flash
   - videos
   - restricted
   - System76
@@ -25,13 +24,12 @@ section: software-applications
 
 ---
 
-To watch Flash videos with <u>Firefox</u>, <u>Chromium</u>, and <u>Opera</u>, we recommend using <u>Pepperflash</u>, rather than <u>Adobe Flash</u>, for security reasons.  <u>Pepperflash</u> is maintained by Google and included in the <u>Chrome</u> browser by default, and can be downloaded separately to be used in other browsers.  Please run this command to install <u>Pepperflash</u>:
+Video content from online streaming services such as Netflix and Amazon Prime is typically protected using various encryption schemes to prevent copying. This is known as digital rights management (DRM). In order to play DRM-encumbered content, you will need to use a browser that supports playback of DRM-controlled content. Please note that not all vendors use a a DRM encryption method that is compatible with Linux (for instance, HBO and HBO Max).
 
-```
-sudo apt install browser-plugin-freshplayer-pepperflash
-```
 
-Otherwise, to install <u>Google Chrome</u>, follow these instructions:
+## Google Chrome
+
+Google Chrome has support for DRM-encumbered playback out-of-the-box, without the need for any additional configuration.
 
 ### Download Chrome
 
@@ -80,3 +78,17 @@ You can click on <u>Chrome</u> here to run it. For easy access, you can add <u>C
 ![Chrome added to favorites](/images/flash/step8.png)
 
 <u>Chrome</u> will automatically be updated through the package manager.
+
+## Firefox
+
+Mozilla Firefox is installed by default in both Ubuntu and Pop!\_OS, and can be configured to play DRM-encumbered media.
+
+### Enable DRM Playback
+
+To enable playback of DRM content, open Firefox, then click the menu button and click on **Preferences**.
+
+Under the General section, scroll down until you see **Digital Rights Management (DRM) Content**, and then tick the checkbox to enable playback:
+
+![Enable DRM in Firefox by ticking the checkbox](/images/flash/firefox_drm.png)
+
+After that, playback of DRM-encumbered content should be functional.

@@ -27,6 +27,14 @@ If you wish to install Pop!\_OS here is a [link](/articles/install-pop/) to it.
 
 ## Install Windows 10
 
+### Create Install Media
+
+To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0). Once you have WoeUSB installed, download [the Windows ISO file](https://www.microsoft.com/en-us/software-download/windows10ISO).
+
+![WoeUSB](/images/dual-booting/woeusb.png)
+
+Select the Windows ISO file as the **Source**, set the **File system** as NTFS, then select the USB drive **Target device** and hit the **Install** button. 
+
 Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that Windows boot efi files will be placed in the ESP partition.
 
 ![Windows](/images/dual-booting/windows-partitioning.png)
@@ -55,7 +63,7 @@ This will prevent Windows (or Pop!_OS) from changing the boot partitions of the 
 
 Windows 8 and later uses a "Fast Startup" setting which prevents Windows from fully shutting down and allowing other OSes to use the disk. Before you can properly dual boot with Windows, you must disable this setting in Windows.
 
-In your Windows install, open Control Panel and head to "Power Options" Select "Choose what the power buttons do", select "Change settings that are currently unavailable", then disable the "fast startup" setting. Note that Windows updates may occasionally turn this setting back on without asking, so if you are unable to boot into Pop!\_OS, check this setting first.
+In your Windows install, open Control Panel and head to "Power Options" Select "Choose what the power buttons do", select "Change settings that are currently unavailable", then disable the "fast startup" setting. Note that Windows updates may occasionally turn this setting back on without asking, so if you are unable to boot into Pop!\_OS, check this setting first. (If the checkbox for 'Turn on fast startup' is grayed out, you can enable it by click 'Change settings that are currently unavailable' near the top of the power buttons settings page)
 
 Once in the BIOS change the Boot Order to boot Pop!\_OS first that way when the <kbd>Spacebar</kbd> is pressed systemd-boot will appear and then the Windows Boot Manager can be selected for booting Windows 10. Steps for accessing the BIOS and changing the Boot Order are found [here](/articles/boot-menu/).
 

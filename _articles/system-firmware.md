@@ -66,7 +66,7 @@ Depending on the model, the system may reboot at this point. The system's fans m
 
 ![Press any key to shut down](/images/system-firmware/press-any-key.jpg)
 
-After the system powers off, **press the power button** to turn it back on. On machines running Open Firmware, the system should boot normally.
+After the system powers off, **press the power button** to turn it back on. It may be necessary to power on more than once after a firmware update. On machines running Open Firmware, the system should then boot normally.
 
 ### Disabling the ME
 

@@ -25,7 +25,7 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 ### Starting the Update (GUI)
 
-In Pop!_OS, you can check for firmware updates using **Settings -> Firmware**.
+In Pop!\_OS, you can check for firmware updates using **Settings -> Firmware**.
 
 ![Firmware settings in Pop!_OS](/images/system-firmware/gui-pop.jpg)
 
@@ -41,9 +41,10 @@ If a green **Update** button is present, then a firmware update is available. Cl
 
 ### Starting the Update (CLI)
 
-The command-line firmware utility can be installed using this command:
+The command-line firmware utility can be installed using these commands:
 
 ```
+sudo apt update
 sudo apt install system76-firmware
 ```
 
@@ -69,7 +70,7 @@ After the system powers off, **press the power button** to turn it back on. On m
 
 ### Disabling the ME
 
-For laptops not running Open Firmware, a few extra steps may be required after an update to ensure the Intel ME is disabled. 
+For laptops not running Open Firmware, a few extra steps may be required after an update to ensure the Intel ME is disabled.
 
 Depending on the model, two blue boxes may appear in succession with a message about the CMOS. **Press <kbd>Enter</kbd>** to dismiss each one. The system may also power off and on again at this point.
 
@@ -93,7 +94,7 @@ Navigate to the **Exit** section in the left sidebar, then select **Exit Saving 
 
 ### Updating on Other OS's
 
-If your system is running another Linux-based OS installed with an EFI System Partition (ESP), then you can update your firmware using a live disk of Pop!_OS. First, create a live disk using one of the following articles:
+If your system is running another Linux-based OS installed with an EFI System Partition (ESP), then you can update your firmware using a live disk of Pop!\_OS. First, create a live disk using one of the following articles:
 
 - [Live Disk creation on Pop!_OS](/articles/pop-live-disk/)
 - [Live Disk creation on Other OS's](/articles/live-disk/)
@@ -133,3 +134,7 @@ After the System76 Driver is installed and the EFI partition has been mounted us
 ### Firmware Notifications for Laptops
 
 If you’re receiving the firmware update notification but there are no updates available, then your system’s Intel ME may be turned on. Follow the above instructions to [disable the ME](#disabling-the-me).
+
+### Switching Between Proprietary Firmware and System76 Open Firmware
+
+If you would like to transition from proprietary firmware to System76 Open Firmware (on a supported model), please view [this article](/articles/transition-firmware/).

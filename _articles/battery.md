@@ -27,26 +27,46 @@ With the <u>system76-power</u> package there are **Power Profiles** that can be 
 
 ![Battery](/images/battery/system-menu.png)
 
-### FlexiCharger
+### Charging Thresholds
 
-On several models of our laptops, FlexiCharger can be used to change the charging behavior of the battery.  A general consensus is that charging a battery to 100% every time will shorten its overall lifespan.
+Configuring charging thresholds will allow your System76 laptop to disable the
+charger and run off the AC connection when the battery reaches a specified
+capacity. This is particularly useful when your laptop is plugged into AC power
+adapter for extended periods of time as it prevents unnecessary micro-charging
+which reduces battery longevity.
 
-To adjust the top charge, reboot the computer and enter into BIOS by holding down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control, and set Flexicharger to Enabled. Two new sub-menus will appear, and can be set to the user's desired percentages. The longevity of lithium batteries is dependent on the number of charge cycles they go through. The larger the percentage of spread between Top and Bottom charge percentages, the longer the physical battery will last. For optimal longevity, charge cycles of 40%~80% are a good idea:
+The longevity of lithium batteries is dependent on the number of charge cycles
+they go through. The larger the percentage of spread between start and end
+charge percentages, the longer the physical battery will last. For optimal
+longevity, charge cycles of 40%~80% are a good idea.
 
-```
-Start Charge 40%
-Stop Charge 80%
-```
-Save and exit the BIOS
+Before heading out into the wild blue yonder, disable this feature to charge
+your laptop battery to 100%.
 
-- FlexiCharger will allow your System76 laptop to run solely off the AC power connection, and leave the battery alone while the computer is operating normally
-- This prevents unnecessary micro-charging which reduces battery longevity
--  It is particularly useful when your laptop is plugged into AC power adapter for extended periods of time
-- FlexiCharger can be disabled at any time in the BIOS, which reverts the charging profile to factory defaults. Before heading out into the wild blue yonder, disable FlexiCharger to charge your laptop battery to 100%.
+#### Open Firmware
 
-#### Open Firmware 
+On laptops with System76 Open Firmware, charging thresholds are exposed through
+ACPI. The `system76_acpi` kernel module then makes these available through
+standard sysfs entries.
 
-Laptops that ship with our Open Firmware do not have FlexiCharger.
+- `/sys/class/power_supply/BAT0/charge_control_start_threshold`
+- `/sys/class/power_supply/BAT0/charge_control_end_threshold`
+
+The default values of 0 for the start threshold and 100 for the end threshold
+disable the feature.
+
+#### FlexiCharger
+
+FlexiCharger is the implementation of charging thresholds in proprietary
+firmware, made available as a BIOS setting.
+
+To adjust the top charge, reboot the computer and enter into BIOS by holding
+down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control,
+and set Flexicharger to Enabled. Two new sub-menus will appear, and can be set
+to the user's desired percentages. Once configured, save and exit the BIOS.
+
+FlexiCharger can be disabled at any time in the BIOS, which reverts the
+charging profile to factory defaults.
 
 ## Useful Programs
 

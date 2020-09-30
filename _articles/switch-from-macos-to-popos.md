@@ -28,10 +28,10 @@ section: getting-started
   -  [Finding Programs and Files](#finding-programs-and-files)
     - [Application Shortcuts](#application-shortcuts)
     - [View Installed applications](#view-installed-applications)
-    - [Install/Manage Software](#manage-software)
+    - [Install and Manage Software](#install-and-manage-software)
     - [Applications Folders](#application-folders)
   - [Workspaces and Window Management](#workspaces-and-window-management)
-    - [Pop Shell](#pop!-shell)
+    - [Pop Shell](#pop-shell)
   - [File Management](#file-management)
   - [Light Mode vs. Dark Mode](#light-mode-vs-dark-mode)
 - [Software](#software)
@@ -123,7 +123,7 @@ In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a
   [Return to Table of Contents](#Contents)
 
 
-## [Install/Manage Software](#manage-software)
+## [Install and Manage Software](#install-and-manage-software)
 
 **macOS**
   - App Store
@@ -681,6 +681,10 @@ The snapshot feature is comparable to snapshots offered by virtual machine manag
 Déjà Dup Backups is closer in functionality to Time Machine. It offers local hardware backups, or backups to network locations. Folders and files can be added to the backup list manually, and it backs up the Home folder by default. Automatic backups can also be run on a schedule.
 
 To read more about methods of backing up your system visit our help article: [Backup Files](https://support.system76.com/articles/backup-files/)
+
+### Give Pop!_OS a try!
+
+If you want to try Pop!_OS yourself you can grab the OS image (ISO) from this [link](/articles/live-disk).
 
 [Return to Table of Contents](#Contents)
 

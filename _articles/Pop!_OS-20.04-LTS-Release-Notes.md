@@ -80,3 +80,4 @@ Dark mode is enabled by default. Default desktop wallpaper has a new design. Bot
 ** The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
 
 * Linux Kernel 5.4
+=======

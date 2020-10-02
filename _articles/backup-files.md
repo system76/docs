@@ -100,6 +100,10 @@ To schedule backups to run automatically, select **Scheduling** from the list on
 
 ![Scheduling backups in Deja-Dup](/images/backup/deja_scheduling.png)
 
+[Dropbox](https://www.dropbox.com)
+[Box.com](https://www.box.com)
+[Mega.nz](https://www.mega.nz)
+
 #### Restoring Your Data
 
 To restore your data with Deja-Dup, select the **Overview** item from the list, then click the **Restore** button. Doing this will allow you to select the location containing the Deja-Dup backup folder, and will copy the data into the appropriate directories based on the location from the last backup.

@@ -24,17 +24,17 @@ section: accessories
 <td style="height: 23px;">Supports Thunderbolt?</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">galp4</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">addw2</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">No (DisplayPort over USB-C)</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">galp3-c</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">bonw14</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">No (DisplayPort over USB-C)</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">galp3-b</td>
+<td style="height: 23px;">darp5</td>
 <td style="height: 23px;">No</td>
 <td style="height: 23px;">Yes</td>
 </tr>
@@ -44,13 +44,28 @@ section: accessories
 <td style="height: 23px;">Yes</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">darp5</td>
+<td style="height: 23px;">galp3-b</td>
 <td style="height: 23px;">No</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp3-c</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp4</td>
+<td style="height: 23px;">Yes</td>
 <td style="height: 23px;">Yes</td>
 </tr>
 <tr style="height: 23px;">
 <td style="height: 23px;">lemp9</td>
 <td style="height: 23px;">Yes</td>
+<td style="height: 23px;">No (DisplayPort over USB-C)</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">serw12</td>
+<td style="height: 23px;">No</td>
 <td style="height: 23px;">No (DisplayPort over USB-C)</td>
 </tr>
 </tbody>

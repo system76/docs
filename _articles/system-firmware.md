@@ -23,6 +23,8 @@ These instructions are for System76 owners who have been prompted for a firmware
 * **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
 * During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
 
+* **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
+
 ### Starting the Update (GUI)
 
 In Pop!\_OS, you can check for firmware updates using **Settings -> Firmware**.
@@ -66,7 +68,7 @@ Depending on the model, the system may reboot at this point. The system's fans m
 
 ![Press any key to shut down](/images/system-firmware/press-any-key.jpg)
 
-After the system powers off, **press the power button** to turn it back on. On machines running Open Firmware, the system should boot normally.
+After the system powers off, **press the power button** to turn it back on. It may be necessary to power on more than once after a firmware update. On machines running Open Firmware, the system should then boot normally.
 
 ### Disabling the ME
 
@@ -126,6 +128,12 @@ sudo mkdir -p /boot/efi
 sudo mount /dev/sda1 /boot/efi
 gnome-control-center firmware
 ```
+
+After the above commands are ran depending on the drive that the OS is installed on, you can use the above instructions to update your firmware.
+
+### Firmware Notifications for Laptops
+
+If you’re receiving the firmware update notification after a firmware update, then your system’s Intel ME may be turned on. Let’s reboot the laptop and hold F2 to get to the BIOS. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. That should stop the notifications about a firmware update and you're all set.
 
 Where `/dev/sda1` is the EFI system partition.
 

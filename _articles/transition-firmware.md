@@ -16,7 +16,10 @@ section: software-applications
 Some models shipped with proprietary firmware, but later received support for [System76 Open Firmware](https://github.com/system76/firmware-open) and [System76 Open EC](https://github.com/system76/ec). Below is a list of these models:
 
 - Adder WS (addw2)
+- Darter Pro (darp6)
+  - Model shipped wih System76 Open Firmware and proprietary EC. Firmware transition installs System76 Open EC.
 - Gazelle (gaze15)
+  - Firmware transition is temporarily disabled to investigate touchpad issues
 
 This list may expand in the future as more models are ported.
 

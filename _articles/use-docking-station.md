@@ -16,11 +16,45 @@ section: accessories
 
 ### Compatible Intel systems
 
- - Galago Pro (galp4, galp3-c, galp3-b)
- - Darter Pro (darp6, darp5)
- - Lemur Pro (lemp9) <sup>*</sup>
- 
-<sup>*</sup> USB Type-C only, no Thunderbolt support.
+<table>
+<tbody>
+<tr style="height: 23px;">
+<td style="height: 23px;">System </td>
+<td style="height: 23px;">Supports USB-C Charging?</td>
+<td style="height: 23px;">Supports Thunderbolt?</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp4</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp3-c</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp3-b</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">darp6</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">darp5</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">lemp9</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">No (DisplayPort over USB-C)</td>
+</tr>
+</tbody>
+</table>
 
 ### System76-tested docks:
 

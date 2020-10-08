@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create a User If Initial User Setup Fails in Pop
+title: Create a User If Initial User Setup Fails in Pop!_OS
 description: >
   Sometimes, the first boot user creation fails and leaves only a Guest session. You can fix this by following the steps here.
 keywords:
@@ -15,6 +15,13 @@ hidden: false
 section: pop
 
 ---
+
+# Create a User If Initial User Setup Fails in Pop!\_OS
+
+- Document Version: 2.0.0
+- Date: (8-28-2020)
+- Author: Aaron Honeycutt, Nathan Dyer
+- Contributing Editor(s): Nathaniel Warburton
 
 A lot of work goes in to making your System76 experience fantastic right out of the box. Getting running needs just a little bit of information like a username and password. Every now and then, something goes wrong with the new user creator. If there is only a Guest Session, follow these instructions to fix the issue.
 
@@ -62,8 +69,9 @@ Choose **root** and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> u
 Once you're at the root shell, identified with the prompt `root@ubuntu:~#`, enter the commands below:
 
 ```
-oem-config-prepare
-reboot
+cd /usr/local/bin/
+./system76-preparetoship
+sudo reboot
 ```
 
 The system will reboot into the first-user System Configuration.

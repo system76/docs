@@ -511,7 +511,7 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 ## [Development](#development)
 
 **macOS**
-  - Xcode (avaiable in the App Store)
+  - Xcode (available in the App Store)
 
 
 **Pop!\_OS**

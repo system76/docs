@@ -48,20 +48,20 @@ And then look for the name of your main hard drive. It could be `/dev/sda` or `/
 
 Ubuntu 20.04 LTS
 ```
-Number  Start   End     Size    File system     Name      Flags
- 1      2097kB  524MB   522MB   fat32                     boot, esp
- 3      524MB   496GB   491GB
- 4      496GB   500GB   4295MB  linux-swap(v1)            swap
+      Number  Start   End     Size    File system     Name      Flags
+       1      2097kB  524MB   522MB   fat32                     boot, esp
+root   3      524MB   496GB   491GB
+       4      496GB   500GB   4295MB  linux-swap(v1)            swap
 ```
 
 Pop!_OS 20.04 LTS
 
 ```
-Number  Start   End     Size    File system     Name      Flags
- 1      2097kB  524MB   522MB   fat32                     boot, esp
- 2      524MB   4819MB  4295MB  fat32           recovery  msftdata
- 3      4819MB  496GB   491GB
- 4      496GB   500GB   4295MB  linux-swap(v1)            swap
+      Number  Start   End     Size    File system     Name      Flags
+       1      2097kB  524MB   522MB   fat32                     boot, esp
+       2      524MB   4819MB  4295MB  fat32           recovery  msftdata
+root   3      4819MB  496GB   491GB
+       4      496GB   500GB   4295MB  linux-swap(v1)            swap
 ```
 
 ---

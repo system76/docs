@@ -6,6 +6,7 @@ description: >
 keywords:
   - Support
   - Grub
+  - systemd-boot
   - Bootloader
   - Refresh
   - Reinstall
@@ -42,7 +43,26 @@ Once the desktop is shown, connect the computer to the Internet.  Next, open a t
 sudo parted -ls
 ```
 
-And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive.
+And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. Here are some OS partition layout examples:
+
+
+Ubuntu 20.04 LTS
+```
+      Number  Start   End     Size    File system     Name      Flags
+       1      2097kB  524MB   522MB   fat32                     boot, esp
+root   3      524MB   496GB   491GB
+       4      496GB   500GB   4295MB  linux-swap(v1)            swap
+```
+
+Pop!_OS 20.04 LTS
+
+```
+      Number  Start   End     Size    File system     Name      Flags
+       1      2097kB  524MB   522MB   fat32                     boot, esp
+       2      524MB   4819MB  4295MB  fat32           recovery  msftdata
+root   3      4819MB  496GB   491GB
+       4      496GB   500GB   4295MB  linux-swap(v1)            swap
+```
 
 ---
 

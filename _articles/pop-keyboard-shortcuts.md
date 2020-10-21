@@ -57,6 +57,7 @@ Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kb
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>G</kbd> | Toggle floating mode |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd> | Close Window |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd> | Toggle Maximize |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>S</kbd> | Toggle Stacking |
 
 #### Navigate applications and windows
 

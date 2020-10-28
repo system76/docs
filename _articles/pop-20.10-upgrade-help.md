@@ -30,26 +30,28 @@ sudo gedit /etc/fstab
 ```
 For example:
 
-/dev/disk/by-id/usb-ST1000LM_02123AD2-0:0-part1 /media/myname/game_drive auto 
+```
+/dev/disk/by-id/usb-ST1000LM_02123AD2-0:0-part1 /media/system76/game_drive auto 
 nosuid,nodev,nofail,x-gvfs-show 0 0
+```
 
 would become:
 
 ```
-#/dev/disk/by-id/usb-ST1000LM_02123AD2-0:0-part1 /media/myname/game_drive auto nosuid,nodev,nofail,x-gvfs-show 0 0
+#/dev/disk/by-id/usb-ST1000LM_02123AD2-0:0-part1 /media/system76/game_drive auto nosuid,nodev,nofail,x-gvfs-show 0 0
 ```
 
 If it is showing by UUID, the example would be:
 From:
 
 ```
-/dev/disk/by-uuid/ed6c6976-973f-40e5-969b-9d4238fb7e00 /media/aaronh/ExtraDrive auto nosuid,nodev,nofail,x-gvfs-show 0 0
+/dev/disk/by-uuid/ed6c6976-973f-40e5-969b-9d4238fb7e00 /media/system76/ExtraDrive auto nosuid,nodev,nofail,x-gvfs-show 0 0
 ```
 
 To:
 
 ```
-#/dev/disk/by-uuid/ed6c6976-973f-40e5-969b-9d4238fb7e00 /media/aaronh/ExtraDrive auto nosuid,nodev,nofail,x-gvfs-show 0 0
+#/dev/disk/by-uuid/ed6c6976-973f-40e5-969b-9d4238fb7e00 /media/system76/ExtraDrive auto nosuid,nodev,nofail,x-gvfs-show 0 0
 ```
 
 After you have made the edit, save the file and start the upgrade again.

@@ -129,5 +129,7 @@ sudo apt autoremove --purge
 
 5. If there are no errors, run the next commands to exit the terminal and reboot.
 
+```
 exit
 reboot
+```

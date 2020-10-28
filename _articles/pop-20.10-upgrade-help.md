@@ -18,6 +18,9 @@ hidden: false
 section: pop
 ---
 
+### Backup Your Files
+The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+
 ### FStab Error Message
 
 This can be caused by the `pop-upgrade` command checking for an /etc/fstab' file and finding an entry that it does not understand. If you have manually added drives to your fstab, adding a '#' to comment out the drive while the upgrade is ongoing should work.  You would then remove the comment after the upgrade is complete to have access to those drive paths again. To edit this file, run the following command in a terminal:

@@ -9,6 +9,7 @@ keywords:
   - Pop!_OS 18.10
   - Pop!_OS 19.04
   - Pop!_OS 19.10
+  - Pop!_OS 20.04
   - Pop!_OS 20.10
   - LTS
   - Non-LTS
@@ -22,7 +23,7 @@ hidden: false
 section: pop
 
 ---
-Pop!\_OS 20.10 LTS was released October 23, 2020.
+Pop!\_OS 20.10 was released October 23, 2020.
 
 ### Upgrading Pop!\_OS to 20.10 from 20.04 (For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)
 

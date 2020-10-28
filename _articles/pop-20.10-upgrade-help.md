@@ -24,7 +24,6 @@ This can be caused by the `pop-upgrade` command checking for an /etc/fstab' file
 
 ```
 sudo gedit /etc/fstab
-
 ```
 For example:
 
@@ -54,8 +53,8 @@ sudo dpkg --configure -a
 sudo apt install -f
 sudo apt dist-upgrade
 sudo apt autoremove --purge
-
 ```
+
 If you are not able to get to the desktop to run those commands, try to get to a TTY (Ctrl+Alt+F5). Enter the username and password as requested and proceed with the commands above.
 
 If you cannot access the desktop or TTY, we can run the package repair commands in Pop Recovery instead. To do this, 

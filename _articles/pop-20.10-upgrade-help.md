@@ -119,12 +119,17 @@ sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```
+Next we will mount the now decrypted drive:
+
+**Note** Pay attention to what the cryptdata group is called. If it is named something other than ‘data-root’ then you will need to substitute the correct info into this next command. Make sure that -root is on the end.
+```
+sudo mount /dev/mapper/data-root /mnt
+```
 
 Next we will need to mount the required paths for the chroot to function.
 
 **For SATA Drives**:
 ```
-sudo mount /dev/sda3 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
@@ -133,7 +138,6 @@ sudo chroot /mnt
 
 **For NVMe Drives**:
 ```
-sudo mount /dev/nvme0n1p3 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/

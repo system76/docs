@@ -113,7 +113,7 @@ sudo lvscan
 sudo vgchange -ay
 ```
 
-**For for NVMe Drives**:
+**For NVMe Drives**:
 ```
 sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
 sudo lvscan

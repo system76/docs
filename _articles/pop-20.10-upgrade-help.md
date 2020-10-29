@@ -81,7 +81,7 @@ If you cannot access the desktop or TTY, we can run the package repair commands 
 
 2. Connect to your network
 
-3. Mount the installed OS and  "chroot" into the main OS. Chroot or "change root" lets us run commands as if we were logged in normally.
+3. Mount the installed OS and "chroot" into the main OS. Chroot or "change root" lets us run commands as if we were logged in normally.
 
 To mount the OS, make note of what type of drive your OS is installed on. Is it an NVME or a SATA drive? You can run the following command to confirm:
 

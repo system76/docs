@@ -23,7 +23,7 @@ The upgrade process will leave your files intact, but it's always a good idea to
 
 ### FStab Error Message
 
-This can be caused by the `pop-upgrade` command checking for an /etc/fstab' file and finding an entry that it does not understand. If you have manually added drives to your fstab, adding a '#' to comment out the drive while the upgrade is ongoing should work.  You would then remove the comment after the upgrade is complete to have access to those drive paths again. To edit this file, run the following command in a terminal:
+This can be caused by the `pop-upgrade` command checking for an `/etc/fstab` file and finding an entry that it does not understand. If you have manually added drives to your fstab, adding a '#' to comment out the drive while the upgrade is ongoing should work.  You would then remove the comment after the upgrade is complete to have access to those drive paths again. To edit this file, run the following command in a terminal:
 
 ```
 sudo gedit /etc/fstab
@@ -31,8 +31,7 @@ sudo gedit /etc/fstab
 For example:
 
 ```
-/dev/disk/by-id/usb-ST1000LM_02123AD2-0:0-part1 /media/system76/game_drive auto 
-nosuid,nodev,nofail,x-gvfs-show 0 0
+/dev/disk/by-id/usb-ST1000LM_02123AD2-0:0-part1 /media/system76/game_drive auto nosuid,nodev,nofail,x-gvfs-show 0 0
 ```
 
 would become:
@@ -41,8 +40,7 @@ would become:
 #/dev/disk/by-id/usb-ST1000LM_02123AD2-0:0-part1 /media/system76/game_drive auto nosuid,nodev,nofail,x-gvfs-show 0 0
 ```
 
-If it is showing by UUID, the example would be:
-From:
+If it is showing by UUID, the example would change from:
 
 ```
 /dev/disk/by-uuid/ed6c6976-973f-40e5-969b-9d4238fb7e00 /media/system76/ExtraDrive auto nosuid,nodev,nofail,x-gvfs-show 0 0
@@ -58,7 +56,7 @@ After you have made the edit, save the file and start the upgrade again.
 
 ### Repair Package Manager after Failed/Incomplete Upgrade
 
-If you’re able to log in and have a graphical interface, let’s try running a set of commands in a terminal (click your activities menu and type ‘t’ for ‘terminal’) to clean up the installed packages:
+1. If you’re able to log in and have a graphical interface, let’s try running a set of commands in a terminal (click your activities menu and type ‘t’ for ‘terminal’) to clean up the installed packages:
 
 **If this is your first time running commands, just a heads up- after each command, press the enter key. When the system prompts you for your password, type it in the terminal and press the enter key. The password will not show in the terminal, but it is taking the password)**
 
@@ -73,7 +71,8 @@ sudo apt autoremove --purge
 
 If you are not able to get to the desktop to run those commands, try to get to a TTY (Ctrl+Alt+F5). Enter the username and password as requested and proceed with the commands above.
 
-If you cannot access the desktop or TTY, we can run the package repair commands in Pop Recovery instead. To do this, 
+If you cannot access the desktop or TTY, we can run the package repair commands in Pop Recovery instead. To do this,
+ 
 1A. Turn your computer off, then turn it back on and hold down the space bar immediately. In the menu that appears, select Pop!_OS Recovery, and let it boot.
  
 1B. Once it boots, close out of the installation window or choose “Try Demo Mode” (be sure not to choose any install or repair options, as this could result in data loss). 

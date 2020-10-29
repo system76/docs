@@ -92,21 +92,36 @@ sudo parted -ls
 
 Look for the name of your main hard drive. It could be /dev/sda or /dev/nvme0n1, depending on if you have a standard SATA drive, or an NVMe drive, respectively. Input the following commands based on your drive type:
 
-***If disk is encrypted, start with these first 3 commands using the correct drive name in the /dev filepath:
+***If disk is encrypted, start with these first 3 commands using the correct drive name in the /dev filepath**:
 
+**For SATA Drives**:
+```
+sudo mount /dev/sda3 /mnt
+```
+
+**For NVMe Drives**:
+```
+sudo mount /dev/nvme0n1p3 /mnt
+```
+
+If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.
+
+**For SATA Drives**:
 ```
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```
-**For NVMe Drives**:
+
+**For for NVMe Drives**:
 ```
-sudo mount /dev/nvme0n1p3 /mnt
-sudo mount /dev/nvme0n1p1 /mnt/boot/efi
-for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
+sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
+sudo lvscan
+sudo vgchange -ay
 ```
+
+Next we will need to mount the required paths for the chroot to function.
+
 **For SATA Drives**:
 ```
 sudo mount /dev/sda3 /mnt
@@ -115,6 +130,16 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
+
+**For NVMe Drives**:
+```
+sudo mount /dev/nvme0n1p3 /mnt
+sudo mount /dev/nvme0n1p1 /mnt/boot/efi
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+sudo cp /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+```
+
 ***If you get an error about the /etc/resolv/conf file being the same, you can safely ignore it.
 
 4. Once the installed OS is mounted, we can attempt to repair it by running the following commands:

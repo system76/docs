@@ -189,7 +189,7 @@ Next, follow the steps to repair grub first:
 
 And then the steps to repair the package manager next:
 
-[Repair Package Manager](/articles/package-manager/)
+[Repair Package Manager](/articles/package-manager-ubuntu/)
 
 And continue the upgrade with this command:
 

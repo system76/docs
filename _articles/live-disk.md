@@ -89,7 +89,7 @@ After creating the live disk, insert the USB into your computer, then reboot or 
 Laptops                             | Desktops                            
 ----------------------------------- | ------------------------------------
 Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
-Open Firmware <kbd>esc</kbd>        |
+Open Firmware <kbd>Esc</kbd>        |
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 

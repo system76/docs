@@ -34,9 +34,9 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> Details -> About.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> OS Upgrade.
 
-On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.10 is available with a "Download" button.
+On the system's "OS Upgrade" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.10 is available with a "Download" button.
 
 Click the "Download" button and the download will begin.
 
@@ -44,7 +44,7 @@ Once the download is complete, you will receive a second notification saying the
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.04!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.10!
 
 ### Backup Your Files
 

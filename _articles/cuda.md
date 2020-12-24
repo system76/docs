@@ -30,13 +30,13 @@ sudo apt install system76-cudnn-10.2
 
 ### For older releases of The NVIDIA CUDA Toolkit
 
-To install CUDA 10.0:
+To install CUDA 10.0: 
 
 ```
 sudo apt install system76-cuda-10.0
 ```
 
-For the respective cuDNN library:
+For the respective cuDNN library (cuDNN - 7.6.5):
 
 ```
 sudo apt install system76-cudnn-10.0

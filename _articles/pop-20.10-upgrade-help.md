@@ -131,7 +131,7 @@ Next we will need to mount the required paths for the chroot to function.
 ```
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
@@ -139,7 +139,7 @@ sudo chroot /mnt
 ```
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 

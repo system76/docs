@@ -70,7 +70,7 @@ A message will appear informing you of the availability of the new release. Clic
 
 #### Install The System76 Driver
 
-Once you've upgraded Ubuntu, you'll need to download and install the current System76 Driver. Open the Terminal app (search <u>Terminal</u> from the Activities Overview <i class="fl-ubuntu"></i> or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've upgraded Ubuntu, you'll need to download and install the current System76 Driver. Open the Terminal app (search <u>Terminal</u> from the Activities Overview or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
 ```
 sudo apt-add-repository ppa:system76-dev/stable

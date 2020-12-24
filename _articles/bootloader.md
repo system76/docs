@@ -83,7 +83,8 @@ Run these commands based on what type of disk you have:
 sudo mount /dev/nvme0n1p2 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
+
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -96,7 +97,8 @@ sudo update-grub
 sudo mount /dev/sda2 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
+
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -120,7 +122,8 @@ Run these commands based on what type of disk you have:
 ```
 sudo mount /dev/nvme0n1p2 /mnt
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
+
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -132,7 +135,8 @@ sudo update-grub
 ```
 sudo mount /dev/sda2 /mnt
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
+
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -157,7 +161,8 @@ Run these commands based on what type of disk you have:
 sudo mount /dev/nvme0n1p3 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
+
 sudo chroot /mnt
 apt install --reinstall linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -171,7 +176,8 @@ sudo bootctl --path=/mnt/boot/efi install
 sudo mount /dev/sda3 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
+sudo cp -n /etc/resolv.conf /mnt/etc/
+
 sudo chroot /mnt
 apt install --reinstall linux-generic linux-headers-generic
 update-initramfs -c -k all

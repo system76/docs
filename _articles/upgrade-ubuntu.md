@@ -36,13 +36,13 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 #### Open Software Updater
 
-Open the Overview by clicking on the Activities button in the top left and then search for <u>Software Updater</u>.
+Open the Activities Overview by clicking on the Activities button in the top left and then search for <u>Software Updater</u>.
 
 ![Updater in Overview](/images/upgrade-ubuntu/Step-1.png)
 
 #### Configure Version Updates
 
-Click on **Settings...** and then select **Updates**. You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labeled "Notify me of a new Ubuntu version".
+Click on **Settings…** and then select **Updates**. You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labeled "Notify me of a new Ubuntu version".
 
 Option | Result
 ------ | ------
@@ -64,13 +64,13 @@ The system will automatically check for updates. You may need to update (and som
 
 #### Install The Upgrade
 
-A message will appear informing you of the availability of the new release. Click **Yes, Upgrade Now**  or **Upgrade...** depending on the window that you have and follow the on-screen instructions.
+A message will appear informing you of the availability of the new release. Click **Yes, Upgrade Now**  or **Upgrade…** depending on the window that you have and follow the on-screen instructions.
 
 ![Upgrade Message](/images/upgrade-ubuntu/Step-3.png)
 
 #### Install The System76 Driver
 
-Once you've upgraded Ubuntu, you'll need to download and install the current System76 Driver. Open the Terminal app (search <u>Terminal</u> from the Overview <i class="fl-ubuntu"></i> or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've upgraded Ubuntu, you'll need to download and install the current System76 Driver. Open the Terminal app (search <u>Terminal</u> from the Activities Overview <i class="fl-ubuntu"></i> or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
 ```
 sudo apt-add-repository ppa:system76-dev/stable

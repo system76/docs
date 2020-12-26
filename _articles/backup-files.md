@@ -101,7 +101,6 @@ To schedule backups to run automatically, select **Scheduling** from the list on
 ![Scheduling backups in Deja-Dup](/images/backup/deja_scheduling.png)
 
 [Dropbox](https://www.dropbox.com)
-[Box.com](https://www.box.com)
 [Mega.nz](https://www.mega.nz)
 
 #### Restoring Your Data

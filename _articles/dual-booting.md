@@ -39,7 +39,9 @@ Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition 
 
 ![Windows](/images/dual-booting/windows-partitioning.png)
 
-With the 'Unallocated Space' selected new press the 'Apply' button. Note if the whole partition is being used for this installation then the size property won't need to be changed.
+With the 'Unallocated Space' selected, you can press 'New' to create a partition with a size of your preference out of the 'Unallocated Space', by specifying a size in MB and confirming with the 'Apply' button.  Select the newly made partition and press 'Next' to continue the Windows installation.
+
+Alternatively you can immediately press the 'Next' button to use the entire 'Unallocated Space' for this Windows installation.
 
 ![Windows](/images/dual-booting/windows-partitioning-2.png)
 

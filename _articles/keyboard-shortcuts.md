@@ -42,7 +42,7 @@ Enter the information about your shortcut, including what the name will be, the 
 
 Then click "Add", and your shortcut will be active.
 
-*Note*: For executing shell script, use absolute path instead of relative path. Example: `sh /home/username/Documents/script.sh` instead of `sh ~/Documents/script.sh`
+*Note*: In order to execute a shell script, use its absolute path instead of its relative path. Example: `sh /home/username/Documents/script.sh` instead of `sh ~/Documents/script.sh`
 
 You can see all your custom shortcuts at the bottom of the shortcut list, and can click on any of them to modify them.
 

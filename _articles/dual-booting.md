@@ -15,7 +15,8 @@ section: pop
 
 ### If Pop!\_OS is installed first
 
-To dual boot Pop!\_OS alongside another OS install Pop!\_OS first. You'd first need to boot your computer in Recovery mode, which you can select during the boot. Then once booted into Pop!\_OS recovery mode, use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required).  
+To dual boot Pop!\_OS alongside another OS install Pop!\_OS first. Upon completing the installation of Pop!\_OS, reboot your computer in Recovery mode by holding down the spacebar during boot, which allows you to select Recovery mode in the systemd-boot list. Alternatively you can use your Installer USB Key to boot into a Pop!\_OS Live Environment. Then once booted into Pop!\_OS recovery mode or Live Environment, use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). 
+
 
 ![GParted](/images/dual-booting/gparted.png)
 

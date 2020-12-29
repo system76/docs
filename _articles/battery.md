@@ -27,6 +27,7 @@ With the <u>system76-power</u> package there are **Power Profiles** that can be 
 
 ![Battery](/images/battery/system-menu.png)
 
+<!--
 ### Charging Thresholds
 
 Configuring charging thresholds will allow your System76 laptop to disable the
@@ -54,6 +55,7 @@ standard sysfs entries.
 
 The default values of 0 for the start threshold and 100 for the end threshold
 disable the feature.
+-->
 
 #### FlexiCharger
 

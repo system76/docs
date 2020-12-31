@@ -188,7 +188,7 @@ This new configuration will take effect after a reboot. To disable the interface
 sudo ifconfig enp4s0f2 down
 ```
 
-Then, if Ethernet needs used, this command can be run to enable it for the session:
+Then, if Ethernet needs to be used, this command can be run to enable it for the session:
 
 ```
 sudo ifconfig enp4s0f2 up

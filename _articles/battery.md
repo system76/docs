@@ -182,7 +182,7 @@ And add this line to the file:
 
 > iface enp4s0f2 inet manual
 
-This change will reflect after reboot. Till then run this command:
+This new configuration will take effect after a reboot. To disable the interface immediately, run this command:
 
 ```
 sudo ifconfig enp4s0f2 down

@@ -57,6 +57,13 @@ GLX applications must be launched with this command to be rendered on the dGPU (
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia <application>
 ```
 
+Hybrid graphics mode is available on 19.10 and later.
+
+#### Compute
+
+Compute graphics mode uses the integrated GPU for all rendering. The NVIDIA
+GPU is left available, allowing it to be used as a compute node.
+
 ### Switch graphics
 
 Pop!_OS by System76 includes the system76-power package, which includes the
@@ -69,7 +76,7 @@ switching.
 
 ![Graphics](/images/graphics-switch-pop/system-menu.png)
 
-Click on NVIDIA, Intel, or Hybrid, depending on your use case.
+Click on NVIDIA, Integrated, Hybrid, or Compute depending on your use case.
 
 Once you select a mode, you will be prompted to reboot.
 
@@ -104,6 +111,12 @@ For switching to hybrid graphics:
 
 ```
 sudo system76-power graphics hybrid
+```
+
+For switching to compute mode:
+
+```
+sudo system76-power graphics compute
 ```
 
 ### Sources

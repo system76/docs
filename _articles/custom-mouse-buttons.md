@@ -65,11 +65,11 @@ This will cause the forward mouse button and the <kbd>Ctrl</kbd> key to emulate 
 
 ```
 # Workspace Up
-"xte 'keydown Control' 'keydown Super_L' 'key Up' 'keyup Super_L' 'keyup Control'"
+"xte 'keydown Control_L' 'keydown Super_L' 'key Up' 'keyup Super_L' 'keyup Control_L'"
    b:9
 
 # Workspace Down
-"xte 'keydown Control' 'keydown Super_L' 'key Down' 'keyup Super_L' 'keyup Control'"
+"xte 'keydown Control_L' 'keydown Super_L' 'key Down' 'keyup Super_L' 'keyup Control_L'"
    b:8
 ```
 

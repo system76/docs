@@ -182,7 +182,13 @@ And add this line to the file:
 
 > iface enp4s0f2 inet manual
 
-Then, if Ethernet needs used, this command can be run to enable it for the session:
+This new configuration will take effect after a reboot. To disable the interface immediately, run this command:
+
+```
+sudo ifconfig enp4s0f2 down
+```
+
+Then, if Ethernet needs to be used, this command can be run to enable it for the session:
 
 ```
 sudo ifconfig enp4s0f2 up

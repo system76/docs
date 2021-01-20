@@ -145,7 +145,7 @@ iwevent
 Run this command to watch what the Wifi hardware is doing.  Pay attention to the disconnect reasons, and ignore the scans.
 
 ```
-sudo systemctl restart network-manager
+sudo systemctl restart NetworkManager
 ```
 
 This command will restart the service that manages all Internet traffic on the computer, which is usually easier than restarting the computer.
@@ -179,6 +179,8 @@ sudo apt install --reinstall network-manager
 ```
 
 This will reinstall network-manager, which can fix some network issues.
+
+**NOTE:** After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
 
 ## Additional Info
 

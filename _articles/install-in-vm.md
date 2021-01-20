@@ -79,7 +79,7 @@ In order to run, it needs a startup disk, in this case the Pop!_OS iso file that
 
 Go to your Downloads area and select the ISO image you downloaded and click "Open".
 
-### step 10
+### Step 10
 
 ![Ready to run](/images/install-in-a-vm/Ready_to_run.png)
 

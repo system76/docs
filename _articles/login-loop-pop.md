@@ -91,17 +91,18 @@ If your system is equipped with NVIDIA graphics, a recent update might be causin
 
 Always        | Maybe                | Never
 :-------------|:---------------------|:-----
-Oryx Pro      | Wild Dog Pro         | Lemur
+Oryx Pro      | Wild Dog Pro         | Lemur (Pro)
 Adder WS      | Ratel                | Kudu
 Serval WS     | Gazelle              | Meerkat
 Bonobo WS     | Thelio               | Galago Pro
 Leopard WS    | Thelio Major         | Darter Pro
-Silverback WS | Thelio Massive       |
+Silverback WS | Thelio Massive       | Pangolin
+Thelio Mega   |                      |
 
 To remove the NVIDIA driver, run the following:
 
 ```
-sudo apt purge *nvidia*
+sudo apt purge ~nnvidia
 sudo apt autoremove
 sudo apt clean
 ```

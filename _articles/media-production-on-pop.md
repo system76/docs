@@ -61,7 +61,7 @@ Install Directly From the Pop!\_Shop
 
 ### Natron
 
-Natron is a powerful Digital Compositor that can handle of your 2D/2.5D needs. Its robust OIIO file formats and OpenFX architecture is what make Natron the most flexible open source compositor for the visual effects community.
+Natron is a powerful Digital Compositor that can handle your 2D/2.5D needs. Its robust OIIO file formats and OpenFX architecture is what make Natron the most flexible open source compositor for the visual effects community.
 
 Install Directly From the Pop!\_Shop
 
@@ -74,5 +74,11 @@ Install Directly From the Pop!\_Shop
 ### GIMP
 
 GIMP is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
+
+Install Directly From the Pop!\_Shop
+
+### Flowblade
+
+Flowblade is a multitrack non-linear video editor with a set of industry standard editing tools suitable for beginners and masters alike to help make your vision a reality of image and sound. 
 
 Install Directly From the Pop!\_Shop

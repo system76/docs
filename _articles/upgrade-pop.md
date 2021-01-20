@@ -34,9 +34,9 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> Details -> About.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> OS Upgrade.
 
-On the system's "About" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.10 is available with a "Download" button.
+On the system's "OS Upgrade" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.10 is available with a "Download" button.
 
 Click the "Download" button and the download will begin.
 
@@ -44,7 +44,7 @@ Once the download is complete, you will receive a second notification saying the
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.04!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.10!
 
 ### Backup Your Files
 
@@ -95,7 +95,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 Upgrading Pop!\_OS 18.10, 19.04 or 19.10 will require upgrading to Pop!\_OS 20.04 LTS before upgrading to 20.10.
 
-These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10 or 19.04.
+These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 
 1) Get your current system fully updated:
 ```
@@ -114,21 +114,21 @@ sudo mv /etc/apt/sources.list.d/* /etc/apt/sources.list.d/backup
 sudo apt-add-repository -yn ppa:system76-dev/stable
 sudo apt-add-repository -yn ppa:system76/pop
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
-sudo sed -i 's/disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 
-3) Now,do the upgrade! This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
+3) Now, do the upgrade! This will have three phases, and once the download is complete, you can't change your mind. This works from a fresh installation, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using the "maintainer's" version of configuration files, and using that new version is also very likely what you want to do (and the default answer will work):
 ```
 sudo apt update
 sudo apt install dpkg apt
 sudo apt full-upgrade | tee ~/upgrade.log
 ```
 
-4) Now put the PPAs back; You will want to take a look at the files that end in "list" in "/etc/apt/sources.list.d/backup" to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.
+4) Now put the PPAs back; you will want to take a look at the files that end in "list" in `/etc/apt/sources.list.d/backup` to see if you want to enable them again by moving them back to the `/etc/apt/sources.list.d/` directory.
 
 5) After the 20.04 Pop upgrade is complete, reboot.
 
-6) Run the command to upgrade to Pop 20.10
+6) Run the command to upgrade to Pop 20.10:
 ```
 pop-upgrade release upgrade
 ```

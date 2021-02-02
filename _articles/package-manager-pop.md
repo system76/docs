@@ -41,7 +41,7 @@ This command reinstalls the package. This can be convenient when the package has
 sudo apt purge <package name>
 ```
 
-This will remove a package and its system-wide configuration files. Use this command to remove a package that is causing issues, and reinstall it with this command:
+This command will remove a package and its system-wide configuration files. Use it to remove a package that is causing issues, and reinstall it with this command:
 
 ```
 sudo apt install <package name>

@@ -27,19 +27,19 @@ sudo apt full-upgrade
 sudo apt autoremove --purge
 ```
 
-Sometimes, you may see some packages that are still broken and need to be installed manually or purged manually.  There may be broken dependencies or cyclical dependencies.  If so, these commands can help:
+Sometimes, you may see some packages that are still broken and need to be installed manually or purged manually. There may be broken dependencies or cyclical dependencies. If so, these commands can help:
 
 ```
 sudo apt install --reinstall <packagename>
 ```
 
-This command reinstalls the package.  This can be convenient when the package has many reverse dependencies.
+This command reinstalls the package. This can be convenient when the package has many reverse dependencies.
 
 ```
 sudo apt purge <package name>
 ```
 
-This will remove a package and its configuration files.  Use this command to remove a package that is causing issues, and reinstall it with this command:
+This will remove a package and its system-wide configuration files. Use this command to remove a package that is causing issues, and reinstall it with this command:
 
 ```
 sudo apt install <package name>

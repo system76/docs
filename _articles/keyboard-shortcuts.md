@@ -11,42 +11,46 @@ hidden: false
 section: community
 
 ---
+You can view and change keyboard shortcuts in Pop!\_OS using the Settings app.
 
-### Modifying existing keyboard shortcuts in Pop!_OS.
+### Viewing Keyboard Shortcuts
 
-To view keyboard shortcuts open keyboard settings by pressing super and typing "settings", then from the menu on the left select "Keyboard"
+To view keyboard shortcuts, open Settings and select the "Keyboard" page on the left.
 
-![Keyboard]({{site.baseurl}}/images/keyboard-shortcuts/settings.png)
+![Settings]({{site.baseurl}}/images/keyboard-shortcuts/settings.png)
 
-Next click "Customize Shortcuts"
+Click on "Customize Shortcuts" (at the bottom of the settings page) to view all active shortcuts.
 
-From here, use the search box to find the shortcut you want to modify, in this example we'll change the shortcut used to open Terminal. Once you have found the shortcut, click the verticle elipsis and select Remove
+![Keyboard Shortcuts dialog]({{site.baseurl}}/images/keyboard-shortcuts/shortcuts.png)
 
-![Remove existing]({{site.baseurl}}/images/keyboard-shortcuts/remove-existing.png)
+### Modifying Keyboard Shortcuts
 
-Click the verticle elipsis again and this time select "Add Shortcut". You will be presented with a window to enter your key combination.
+To modify an existing shortcut, locate the shortcut by browsing to its category or using the search box, then click on the three dots next to it and select `Remove` to remove the existing keybinding.
 
-![Key combination]({{site.baseurl}}/images/keyboard-shortcuts/add-shortcut.png)
+![Removing an existing shortcut]({{site.baseurl}}/images/keyboard-shortcuts/remove-existing.png)
 
-Press your desired key combination then click set. If the key combination exists for another shortcut you will be given the option to replace it.
+Next, click the three dots again and select `Add shortcut` (or `Add another shortcut` if you're adding more than one keybinding for the same action.) This will open a window where you can enter your new keybinding.
+
+![New shortcut entry]({{site.baseurl}}/images/keyboard-shortcuts/shortcut-entry.png)
+
+After entering your desired key combination, click `Set`. If the key combination is already bound to another shortcut, you will be given the option to replace the old shortcut or cancel.
+
+### Adding Keyboard Shortcuts
+
+Select the `Custom Shortcuts` category at the bottom of the Keyboard Shortcuts list.
+
+![Custom Shortcuts category]({{site.baseurl}}/images/keyboard-shortcuts/custom-shortcuts.png)
+
+Click the `Add Shortcut` button.
+
+![Custom Shortcuts list](/images/keyboard-shortcuts/custom-shortcuts-list.png)
+
+Enter a name for the shortcut, the application or command to launch, and the key combination, then click `Add`.
+
+![Adding a custom shortcut](/images/keyboard-shortcuts/add-custom-shortcut.png)
+
+**Note:** In order to execute a shell script, use its absolute path instead of its relative path. For example: `sh /home/username/Documents/script.sh` instead of `sh ~/Documents/script.sh`.
 
 ---
 
-### Adding custom keyboard shortcuts in Pop!_OS.
-
-From the Keyboard Shortcuts list, select "Custom Shortcuts" at the bottom
-
-![Add Custom shortcut window]({{site.baseurl}}/images/keyboard-shortcuts/custom-shortcut.png)
-
-Then select "Add Shortcut".
-
-![Add Custom shortcut window]({{site.baseurl}}/images/keyboard-shortcuts/add-custom-shortcut-window.png)
-
-Enter a name for the shortcut, the application to launch and your key combination then click "Add" 
-
-![Custom shortcut]({{site.baseurl}}/images/keyboard-shortcuts/add-custom-shortcut.png)
-
-Note: In order to execute a shell script, use its absolute path instead of its relative path. Example: `sh /home/$USER/Documents/script.sh` instead of `sh ~/Documents/script.sh`
-
----
 This article was contributed by [kylecorry31](https://github.com/kylecorry31) and updated by [Mark Pendlebury](https://github.com/markpendlebury).

@@ -16,7 +16,7 @@ section: pop
 
 ---
 
-## Apt/Dpkg (system-wide packages)
+### Apt/Dpkg (system-wide packages)
 
 If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems. Some package manager issues can be resolved with the graphical update program, but many require the command line. Try running these commands to fix your package manager:
 
@@ -55,7 +55,7 @@ sudo apt install pop-desktop
 
 If the Pop!_Shop indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
 
-## Flatpak
+### Flatpak
 
 If the Pop!_Shop is showing an update available, but there are no updates listed on the update page, there may be a Flatpak runtime (a backend program that another Flatpak depends on) with an update available. Run these commands to update all Flatpaks and remove any Flatpak runtimes that are no longer required by any installed programs:
 
@@ -64,7 +64,7 @@ flatpak update
 flatpak uninstall --unused
 ```
 
-## Useful Programs
+### Useful Programs
 
 The program <u>Synaptic Package Manager</u> is a very powerful GUI frontend for the package manager. Packages can be installed, removed, selectively upgraded, or pinned, and information can be gained about their purpose and dependencies. It also provides a comprehensive list of available packages and programs that can be downloaded. It can be installed in the <u>Pop!_Shop</u> or with this command:
 

@@ -17,21 +17,21 @@ You can view and change keyboard shortcuts in Pop!\_OS using the Settings app.
 
 To view keyboard shortcuts, open Settings and select the "Keyboard" page on the left.
 
-![Settings]({{site.baseurl}}/images/keyboard-shortcuts/settings.png)
+![Settings](/images/keyboard-shortcuts/settings.png)
 
 Click on "Customize Shortcuts" (at the bottom of the settings page) to view all active shortcuts.
 
-![Keyboard Shortcuts dialog]({{site.baseurl}}/images/keyboard-shortcuts/shortcuts.png)
+![Keyboard Shortcuts dialog](/images/keyboard-shortcuts/shortcuts.png)
 
 ### Modifying Keyboard Shortcuts
 
 To modify an existing shortcut, locate the shortcut by browsing to its category or using the search box, then click on the three dots next to it and select `Remove` to remove the existing keybinding.
 
-![Removing an existing shortcut]({{site.baseurl}}/images/keyboard-shortcuts/remove-existing.png)
+![Removing an existing shortcut](/images/keyboard-shortcuts/remove-existing.png)
 
 Next, click the three dots again and select `Add shortcut` (or `Add another shortcut` if you're adding more than one keybinding for the same action.) This will open a window where you can enter your new keybinding.
 
-![New shortcut entry]({{site.baseurl}}/images/keyboard-shortcuts/shortcut-entry.png)
+![New shortcut entry](/images/keyboard-shortcuts/shortcut-entry.png)
 
 After entering your desired key combination, click `Set`. If the key combination is already bound to another shortcut, you will be given the option to replace the old shortcut or cancel.
 
@@ -39,7 +39,7 @@ After entering your desired key combination, click `Set`. If the key combination
 
 Select the `Custom Shortcuts` category at the bottom of the Keyboard Shortcuts list.
 
-![Custom Shortcuts category]({{site.baseurl}}/images/keyboard-shortcuts/custom-shortcuts.png)
+![Custom Shortcuts category](/images/keyboard-shortcuts/custom-shortcuts.png)
 
 Click the `Add Shortcut` button.
 

@@ -55,7 +55,7 @@ If the Pop!_Shop indicates that some remote repositories can't be reached, open 
 
 ## Useful Programs
 
-The program <u>Synaptic</u> is a very powerful GUI of the package manager.  Packages can be installed, removed, selectively upgraded, pinned, and information gained about their purpose and dependencies.  It also provides a comprehensive list of available packages and programs to be downloaded.  It can be installed in the <u>Software Center</u> or with this command:
+The program <u>Synaptic Package Manager</u> is a very powerful GUI of the package manager.  Packages can be installed, removed, selectively upgraded, pinned, and information gained about their purpose and dependencies. It also provides a comprehensive list of available packages and programs to be downloaded. It can be installed in the <u>Software Center</u> or with this command:
 
 ```
 sudo apt install synaptic

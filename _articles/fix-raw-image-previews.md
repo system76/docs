@@ -2,7 +2,7 @@
 layout: article
 title: Fix raw image previews
 description: >
-   Add a custom thumbnail generator to display raw image formats in files.
+   Add a custom thumbnail generator to display thumbnails for raw image in Files.
 keywords:
   - Image Preview
   - Raw
@@ -16,7 +16,7 @@ section: pop
 
 ## Install RawTherapee
 
-RawTherapee can handle a large array of raw image formats. We can use RawTherapee's ability to convert raw images into pngs to create thumbnails for other programs.
+The Files app doesn't display thumbnails for raw images by default, but RawTherapee can handle a large array of raw image formats. We can use RawTherapee's ability to convert raw images into PNGs to create thumbnails for other programs.
 
 ```
 sudo apt install rawtherapee

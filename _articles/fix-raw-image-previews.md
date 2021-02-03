@@ -47,13 +47,13 @@ sudo mv <pathtofile>/rawtherapee.thumbnailer /usr/share/thumbnailers
 
 ## Clearing previous thumbnails
 
-Though sometimes unnessesary, it's always a good idea to start fresh with the thumbnail creation. To do this, we will delete the thumbnailer cache shown below.
+Though sometimes unnessesary, it's always a good idea to start fresh with the thumbnail creation. To do this, we will delete the thumbnailer cache using this command:
 
 ```
 rm -r ~/.cache/thumbnails/*
 ```
 
-**Note:** If you have a lot of images, this will force Nautilus to recreate their thumbnails. Depending on the size of the file and its format, this can cause some lag the first time visiting a image heavy directory. 
+**Note:** If you have a lot of images, this will force Nautilus to recreate their thumbnails. Depending on the size of the files and their formats, this can cause some lag the first time visiting an image-heavy directory. 
 
 ## Considerations
 

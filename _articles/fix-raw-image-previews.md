@@ -47,9 +47,7 @@ sudo mv <pathtofile>/rawtherapee.thumbnailer /usr/share/thumbnailers
 
 ## Clearing previous thumbnails
 
-Though sometimes unnessesary its always a good idea to start fresh with the thumbnail creation. To do this we will delete the thumbnailer cache shown below.
-
-
+Though sometimes unnessesary, it's always a good idea to start fresh with the thumbnail creation. To do this we will delete the thumbnailer cache shown below.
 
 ```
 rm -r ~/.cache/thumbnails/*

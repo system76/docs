@@ -2,7 +2,7 @@
 layout: article
 title: Fix raw image previews
 description: >
-   Add a custom thumbnail generator to display RAW image formats in files.
+   Add a custom thumbnail generator to display raw image formats in files.
 keywords:
   - Image Preview
   - Raw
@@ -16,7 +16,7 @@ section: pop
 
 ## Install RawTherapee
 
-RawTherapee can handle a large array of RAW image formats. We will be using RawTherapee's ability export raw images into pngs for this howto.
+RawTherapee can handle a large array of raw image formats. We will be using RawTherapee's ability export raw images into pngs for this howto.
 
 ```
 sudo apt install rawtherapee
@@ -24,7 +24,7 @@ sudo apt install rawtherapee
 
 ## Create a custom thumbnailer
 
-Nautilus uses thumbnailer scripts to create the images. We will need to create one for our RAW images. 
+Nautilus uses thumbnailer scripts to create the images. We will need to create one for our raw images. 
 
 ```
 [Thumbnailer Entry]

@@ -58,5 +58,4 @@ rm -r ~/.cache/thumbnails/*
 ## Considerations
 
 1. Not all raw images are supported by RawTherapee.
-
 2. Converting raw images to a more suitable format can take some time (~1 second per file in most cases.)

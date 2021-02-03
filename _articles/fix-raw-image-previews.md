@@ -39,15 +39,11 @@ Save the text file as `rawtherapee.thumbnailer`. We will move this new file into
 
 ## Moving to thumbnailer folder
 
-As with most files outside of your home directory you will need elevated privilages to move this file to the proper location.
+As with most files outside of your home directory, you will need elevated privilages to move this file to the proper location. Run the following command to move the thumbnailer file into place (replacing `<pathtofile>` with the actual path):
 
 ```
 sudo mv <pathtofile>/rawtherapee.thumbnailer /usr/share/thumbnailers
 ```
-
- Be sure to change <pathtofile> to the actual path.
-
-
 
 ## Clearing previous thumbnails
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Howto fix raw image previews
+title: Fix raw image previews
 description: >
    Add a custom thumbnail generator to display RAW image formats in files.
 keywords:

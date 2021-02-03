@@ -14,9 +14,9 @@ section: pop
 
 ---
 
-## Install Rawtherapee
+## Install RawTherapee
 
-Raw Therapee can handle a large array of RAW image formats. We will be using rawtherapee's ability export raw images into pngs for this howto.
+RawTherapee can handle a large array of RAW image formats. We will be using RawTherapee's ability export raw images into pngs for this howto.
 
 ```
 sudo apt install rawtherapee

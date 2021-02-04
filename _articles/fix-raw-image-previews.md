@@ -51,7 +51,7 @@ Though sometimes unnessesary, it's always a good idea to start fresh with thumbn
 rm -r ~/.cache/thumbnails/*
 ```
 
-**Note:** If you have a lot of images, this will force Nautilus to recreate their thumbnails. Depending on the size of the files and their formats, this can cause some lag the first time visiting an image-heavy directory. 
+**Note:** This will force Nautilus to recreate the thumbnails for all of your files. Depending on the number, size, and format of your images, this can cause some lag the first time visiting an image-heavy directory. 
 
 ## Considerations
 

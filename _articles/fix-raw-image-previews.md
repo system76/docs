@@ -29,7 +29,7 @@ sudo apt install rawtherapee
 Nautilus uses thumbnailer scripts to generate thumbnails for images. Create a thumbnailer for raw images using this command:
 
 ```
-gedit admin:///usr/share/thumbnailers/rawtherapee.thumbnailer
+sudo gedit /usr/share/thumbnailers/rawtherapee.thumbnailer
 ```
 
 Copy and paste the following text into the file:

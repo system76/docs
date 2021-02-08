@@ -56,3 +56,28 @@ standard sysfs entries.
 
 The default values of 0 for the start threshold and 100 for the end threshold
 disable the feature.
+
+### Using the command line
+
+You can see the thresholds that are currently set using this command:
+
+```
+system76-power charge-thresholds
+```
+
+To set thresholds use this command:
+
+```
+system76-power charge-thresholds <start> <end>
+```
+
+Here are some examples:
+
+```
+system76-power charge-thresholds 70 90
+```
+
+```
+system76-power charge-thresholds 85 60
+```
+

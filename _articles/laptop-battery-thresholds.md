@@ -65,6 +65,12 @@ You can see the thresholds that are currently set using this command:
 system76-power charge-thresholds
 ```
 
+You can view the current profiles using this command:
+
+```
+system76-power charge-thresholds --list-profiles
+```
+
 To set thresholds use this command:
 
 ```

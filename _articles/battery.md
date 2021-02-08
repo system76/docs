@@ -57,19 +57,6 @@ The default values of 0 for the start threshold and 100 for the end threshold
 disable the feature.
 -->
 
-#### FlexiCharger
-
-FlexiCharger is the implementation of charging thresholds in proprietary
-firmware, made available as a BIOS setting.
-
-To adjust the top charge, reboot the computer and enter into BIOS by holding
-down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control,
-and set Flexicharger to Enabled. Two new sub-menus will appear, and can be set
-to the user's desired percentages. Once configured, save and exit the BIOS.
-
-FlexiCharger can be disabled at any time in the BIOS, which reverts the
-charging profile to factory defaults.
-
 ## Useful Programs
 
 <u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. Its default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.

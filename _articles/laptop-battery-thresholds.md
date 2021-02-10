@@ -12,9 +12,9 @@ section: hardware-drivers
 
 ---
 
-## What are Battery Thresholds?
+## Some additional notes	
 
-
+This feature is not completely finished as of this articles publish date. For the change is removed when the system shutsdown (the EC resets) and there is not a Graphical Client (GUI) for making these changes. Once the feature is complete there will be a GUI to make these changes and they will be persistent. 
 
 ### FlexiCharger
 

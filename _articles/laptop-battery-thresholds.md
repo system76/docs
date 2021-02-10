@@ -14,7 +14,7 @@ section: hardware-drivers
 
 ## Some additional notes	
 
-This feature is not completely finished as of this articles publish date, currently the change is removed when the system shutsdown (the EC resets) and there is not a Graphical Client (GUI) for making these changes. Once the feature is complete there will be a GUI to make these changes and they will be persistent. The article [here](/articles/open-firmware-system-list.md) lists our current Open Firmware and Open EC systems, note only Open EC supported systems support Battery Thresholds.
+This feature is not completely finished as of this articles publish date, currently the change is removed when the system shutsdown (the EC resets) and there is not a Graphical Client (GUI) for making these changes. Once the feature is complete there will be a GUI to make these changes and they will be persistent. The article [here](/articles/open-firmware-systems.md) lists our current Open Firmware and Open EC systems, note only Open EC supported systems support Battery Thresholds.
 
 ### FlexiCharger
 

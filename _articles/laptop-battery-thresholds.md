@@ -2,7 +2,7 @@
 layout: article
 title: Laptop Battery Thresholds
 description: >
-  Set battery thresholds on your System76 laptop.
+  Set battery charging thresholds on your System76 laptop.
 keywords:
   - Battery
   - Battery Life
@@ -12,52 +12,15 @@ section: hardware-drivers
 
 ---
 
-## Some additional notes	
+Charging thresholds allow your System76 laptop to avoid charging the battery until it has dropped below a lower bound (the start threshold), and to stop charging when it reaches an upper bound (the end threshold). This is useful when your laptop is plugged into an AC power adapter for extended periods of time, as it prevents unnecessary micro-charging that would reduce battery longevity.
 
-This feature is not completely finished as of this articles publish date, currently the change is removed when the system shutsdown (the EC resets) and there is not a Graphical Client (GUI) for making these changes. Once the feature is complete there will be a GUI to make these changes and they will be persistent. The article [here](/articles/open-firmware-systems.md) lists our current Open Firmware and Open EC systems, note only Open EC supported systems support Battery Thresholds.
+To determine if your laptop has Open Firmware or proprietary firmware, see [this article](/articles/open-firmware-systems.md). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
 
-### FlexiCharger
+## Configuring Charging Thresholds (Open Firmware)
 
-FlexiCharger is the implementation of charging thresholds in proprietary
-firmware, made available as a BIOS setting.
+**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them.
 
-To adjust the top charge, reboot the computer and enter into BIOS by holding
-down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control,
-and set Flexicharger to Enabled. Two new sub-menus will appear, and can be set
-to the user's desired percentages. Once configured, save and exit the BIOS.
-
-FlexiCharger can be disabled at any time in the BIOS, which reverts the
-charging profile to factory defaults.
-
-### Charging Thresholds
-
-Configuring charging thresholds will allow your System76 laptop to disable the
-charger and run off the AC connection when the battery reaches a specified
-capacity. This is particularly useful when your laptop is plugged into AC power
-adapter for extended periods of time as it prevents unnecessary micro-charging
-which reduces battery longevity.
-
-The longevity of lithium batteries is dependent on the number of charge cycles
-they go through. The larger the percentage of spread between start and end
-charge percentages, the longer the physical battery will last. For optimal
-longevity, charge cycles of 40%~80% are a good idea.
-
-Before heading out into the wild blue yonder, disable this feature to charge
-your laptop battery to 100%.
-
-#### Open Firmware
-
-On laptops with System76 Open Firmware, charging thresholds are exposed through
-ACPI. The `system76_acpi` kernel module then makes these available through
-standard sysfs entries.
-
-- `/sys/class/power_supply/BAT0/charge_control_start_threshold`
-- `/sys/class/power_supply/BAT0/charge_control_end_threshold`
-
-The default values of 0 for the start threshold and 100 for the end threshold
-disable the feature.
-
-### Using the command line
+### Using the terminal:
 
 You can see the thresholds that are currently set using this command:
 
@@ -65,13 +28,13 @@ You can see the thresholds that are currently set using this command:
 system76-power charge-thresholds
 ```
 
-You can view the current profiles using this command:
+You can list the available charging profiles using this command:
 
 ```
 system76-power charge-thresholds --list-profiles
 ```
 
-You can also view the other profiles directly with these commands:
+Then, you can select a profile using one of these commands:
 
 ```
 system76-power charge-thresholds --profile full_charge
@@ -79,15 +42,27 @@ system76-power charge-thresholds --profile balanced
 system76-power charge-thresholds --profile max_lifespan
 ```
 
-To set thresholds use this command:
+You can also set custom thresholds without using a profile. For example, this command will set the start threshold to `40` and the end threshold to `80`:
 
 ```
-system76-power charge-thresholds <start> <end>
+system76-power charge-thresholds 40 80
 ```
 
-Here are some examples:
+### Via sysfs:
 
-```
-system76-power charge-thresholds 70 90
-```
+Charging thresholds are exposed by the firmware through ACPI, and the `system76_acpi` kernel module makes them available through standard sysfs entries:
 
+- `/sys/class/power_supply/BAT0/charge_control_start_threshold`
+- `/sys/class/power_supply/BAT0/charge_control_end_threshold`
+
+The thresholds can be controlled by reading from and writing to these sysfs files.
+
+## Configuring FlexiCharger (proprietary firmware)
+
+FlexiCharger is an implementation of charging thresholds in proprietary firmware, made available as a UEFI setting.
+
+To adjust the thresholds, reboot the computer and enter the UEFI setup utility by holding down <kbd>F2</kbd> and selecting `Setup Utility`. Navigate to Advanced, then Advanced Chipset Control, and set FlexiCharger to Enabled. Two new options will appear where you can set the start and stop thresholds.
+
+![Enabling FlexiCharger](/images/laptop-charging-thresholds/flexicharger.jpg)
+
+Once configured, save and exit the setup utility. The thresholds can be disabled at any time by setting FlexiCharger back to Disabled.

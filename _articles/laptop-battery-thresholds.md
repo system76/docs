@@ -14,7 +14,7 @@ section: hardware-drivers
 
 ## Some additional notes	
 
-This feature is not completely finished as of this articles publish date. For the change is removed when the system shutsdown (the EC resets) and there is not a Graphical Client (GUI) for making these changes. Once the feature is complete there will be a GUI to make these changes and they will be persistent. 
+This feature is not completely finished as of this articles publish date, currently the change is removed when the system shutsdown (the EC resets) and there is not a Graphical Client (GUI) for making these changes. Once the feature is complete there will be a GUI to make these changes and they will be persistent. 
 
 ### FlexiCharger
 
@@ -81,9 +81,5 @@ Here are some examples:
 
 ```
 system76-power charge-thresholds 70 90
-```
-
-```
-system76-power charge-thresholds 85 60
 ```
 

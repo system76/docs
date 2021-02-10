@@ -71,6 +71,14 @@ You can view the current profiles using this command:
 system76-power charge-thresholds --list-profiles
 ```
 
+You can also view the other profiles directly with these commands:
+
+```
+system76-power charge-thresholds --profile full_charge
+system76-power charge-thresholds --profile balanced
+system76-power charge-thresholds --profile max_lifespan
+```
+
 To set thresholds use this command:
 
 ```

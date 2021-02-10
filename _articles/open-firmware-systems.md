@@ -33,45 +33,45 @@ Here is a [link](https://github.com/system76/ec) to the source code for our Open
 
 <table>
 <tbody>
-<tr style="height: 23px;">
-<td style="height: 23px;">System </td>
-<td style="height: 23px;">Open Firmware</td>
-<td style="height: 23px;">Open EC</td>
+<tr>
+<td>System </td>
+<td>Open Firmware</td>
+<td>Open EC</td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp5</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
+<tr>
+<td>galp5</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp4</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">No</td>
+<tr>
+<td>galp4</td>
+<td>Yes</td>
+<td>No</td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">lemp10</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
+<tr>
+<td>lemp10</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">lemp9</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
+<tr>
+<td>lemp9</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">darp7</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
+<tr>
+<td>darp7</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">darp6</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">No</td>
+<tr>
+<td>darp6</td>
+<td>Yes</td>
+<td>No</td>
 </tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">bonw14</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
+<tr>
+<td>bonw14</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>

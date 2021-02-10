@@ -31,47 +31,12 @@ When we say Open EC we are talking about the <b>E</b>mbedded <b>C</b>ontroller f
 
 Here is a [link](https://github.com/system76/ec) to the source code for our Open EC.
 
-<table>
-<tbody>
-<tr>
-<td>System </td>
-<td>Open Firmware</td>
-<td>Open EC</td>
-</tr>
-<tr>
-<td>galp5</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>galp4</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td>lemp10</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>lemp9</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>darp7</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>darp6</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td>bonw14</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| System | Open Firmware | Open EC |
+|:------:|:-------------:|:-------:| 
+| bonw14 | Yes           | Yes     |
+| darp7  | Yes           | Yes     |
+| darp6  | Yes           | Yes     |
+| galp5  | Yes           | Yes     |
+| galp4  | Yes           | No      |
+| lemp10 | Yes           | Yes     |
+| lemp9  | Yes           | Yes     |

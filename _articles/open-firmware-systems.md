@@ -33,6 +33,7 @@ Here is a [link](https://github.com/system76/ec) to the source code for our Open
 
 | System | Open Firmware | Open EC |
 |:------:|:-------------:|:-------:| 
+| addw2  | Yes           |         |
 | bonw14 | Yes           | Yes     |
 | darp7  | Yes           | Yes     |
 | darp6  | Yes           | Yes     |
@@ -40,3 +41,4 @@ Here is a [link](https://github.com/system76/ec) to the source code for our Open
 | galp4  | Yes           | No      |
 | lemp10 | Yes           | Yes     |
 | lemp9  | Yes           | Yes     |
+| oryp6  | Yes           | Yes     |

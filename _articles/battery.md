@@ -21,41 +21,11 @@ Every running program consumes the battery. This could be a program that is part
 
 The biggest consumer of power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.
 
-### Power Profiles
+## Power Profiles
 
 With the <u>system76-power</u> package there are **Power Profiles** that can be accessed in the **System Menu** in the image below.
 
 ![Battery](/images/battery/system-menu.png)
-
-<!--
-### Charging Thresholds
-
-Configuring charging thresholds will allow your System76 laptop to disable the
-charger and run off the AC connection when the battery reaches a specified
-capacity. This is particularly useful when your laptop is plugged into AC power
-adapter for extended periods of time as it prevents unnecessary micro-charging
-which reduces battery longevity.
-
-The longevity of lithium batteries is dependent on the number of charge cycles
-they go through. The larger the percentage of spread between start and end
-charge percentages, the longer the physical battery will last. For optimal
-longevity, charge cycles of 40%~80% are a good idea.
-
-Before heading out into the wild blue yonder, disable this feature to charge
-your laptop battery to 100%.
-
-#### Open Firmware
-
-On laptops with System76 Open Firmware, charging thresholds are exposed through
-ACPI. The `system76_acpi` kernel module then makes these available through
-standard sysfs entries.
-
-- `/sys/class/power_supply/BAT0/charge_control_start_threshold`
-- `/sys/class/power_supply/BAT0/charge_control_end_threshold`
-
-The default values of 0 for the start threshold and 100 for the end threshold
-disable the feature.
--->
 
 ## Useful Programs
 

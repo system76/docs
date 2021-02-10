@@ -2,7 +2,7 @@
 layout: article
 title: Laptop Battery Thresholds
 description: >
-  Switch between battery thresholds on your system76 laptop
+  Set battery thresholds on your System76 laptop.
 keywords:
   - Battery
   - Battery Life

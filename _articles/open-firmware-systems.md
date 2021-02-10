@@ -42,3 +42,7 @@ Here is a [link](https://github.com/system76/ec) to the source code for our Open
 | lemp10 | Yes           | Yes     |
 | lemp9  | Yes           | Yes     |
 | oryp6  | Yes           | Yes     |
+
+#### Additional Notes
+
+Both the `addw2` and `darp6` shipped with Closed Firmware/EC but have since been updated to Open Firmware/EC. This [article](/articles/transition-firmware) can be used to move your system from Closed to Open Firmware/EC.

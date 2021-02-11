@@ -31,9 +31,11 @@ If you wish to install Pop!\_OS here is a [link](/articles/install-pop/) to it.
 
 To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0). Once you have WoeUSB installed, download [the Windows ISO file](https://www.microsoft.com/en-us/software-download/windows10ISO).
 
-![WoeUSB](/images/dual-booting/woeusb.png)
+![WoeUSB](/images/dual-booting/woeusb2.png)
 
-Select the Windows ISO file as the **Source**, set the **File system** as NTFS, then select the USB drive **Target device** and hit the **Install** button. 
+1. Select the Windows ISO file as the **Source**, set the **File system** as **NTFS**
+2. Select the USB drive **Target device** and 
+3. Press the **Install** button. 
 
 Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that Windows boot efi files will be placed in the ESP partition.
 

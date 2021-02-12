@@ -91,3 +91,7 @@ If you need to revert it, just set it to 0:
 ```
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```
+
+## Windows Drivers
+
+The Windows drivers for some of our laptop systems [here](https://github.com/system76/windows-drivers). We recommend downloading all of the drivers for your model and make sure to follow the steps for installing the driver below the driver link.

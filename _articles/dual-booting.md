@@ -13,7 +13,7 @@ section: pop
 
 ---
 
-### Step 1: Create Install Media
+## Step 1: Create Install Media
 
 To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0). Once you have WoeUSB installed, download [the Windows ISO file](https://www.microsoft.com/en-us/software-download/windows10ISO).
 
@@ -37,7 +37,7 @@ To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After comple
 
 If you wish to install Pop!\_OS here is a [link](/articles/install-pop/) to it.
 
-## Using another drive
+### Using another drive
 
 Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for automatically created partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops, ESC for our Open Firmware systems and F10/F12/Del for our desktops).
 
@@ -45,7 +45,7 @@ NOTE: If you feel comfortable opening your machine, it may be helpful to remove 
 
 This will prevent Windows (or Pop!_OS) from changing the boot partitions of the opposite drive. This is an extra precaution and not usually necessary; however, Windows does not always "play well with others," and removing drives you do not want changed during installation insures against this.
 
-### Step 2a: Windows Setup
+## Step 2a: Windows Setup
 
 Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that Windows boot efi files will be placed in the ESP partition.
 

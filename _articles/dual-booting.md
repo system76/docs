@@ -13,6 +13,18 @@ section: pop
 
 ---
 
+### Step 1: Create Install Media
+
+To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0). Once you have WoeUSB installed, download [the Windows ISO file](https://www.microsoft.com/en-us/software-download/windows10ISO).
+
+![WoeUSB](/images/dual-booting/woeusb2.png)
+
+1. Select the Windows ISO file as the **Source**, set the **File system** as **NTFS**
+2. Select the USB drive **Target device** and 
+3. Press the **Install** button. 
+
+## Step 2: Install Windows 10
+
 ### If Pop!\_OS is installed first
 
 To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After completing the installation of Pop!\_OS, boot your computer in Recovery mode by holding down the spacebar during boot and selecting **Pop!\_OS Recovery** in the systemd-boot menu. (Alternatively, you can boot into your Pop!\_OS installation media, such as a USB flash drive.) Once booted into Pop!\_OS Recovery (or the live USB environment), use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required).
@@ -25,17 +37,15 @@ To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After comple
 
 If you wish to install Pop!\_OS here is a [link](/articles/install-pop/) to it.
 
-## Install Windows 10
+## Using another drive
 
-### Create Install Media
+Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for automatically created partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops, ESC for our Open Firmware systems and F10/F12/Del for our desktops).
 
-To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0). Once you have WoeUSB installed, download [the Windows ISO file](https://www.microsoft.com/en-us/software-download/windows10ISO).
+NOTE: If you feel comfortable opening your machine, it may be helpful to remove whichever drive is not undergoing changes while you install the OS on the opposite drive. For example, removing "drive 1," while installing Windows on "drive 2."
 
-![WoeUSB](/images/dual-booting/woeusb2.png)
+This will prevent Windows (or Pop!_OS) from changing the boot partitions of the opposite drive. This is an extra precaution and not usually necessary; however, Windows does not always "play well with others," and removing drives you do not want changed during installation insures against this.
 
-1. Select the Windows ISO file as the **Source**, set the **File system** as **NTFS**
-2. Select the USB drive **Target device** and 
-3. Press the **Install** button. 
+### Step 2a: Windows Setup
 
 Once Windows 10 is loaded and the 'Windows Setup' window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that Windows boot efi files will be placed in the ESP partition.
 
@@ -53,15 +63,11 @@ This message can be safely ignored and it is caused by Windows not being the fir
 
 ![Windows](/images/dual-booting/windows-partitioning-4.png)
 
-## Using another drive
+### Windows Drivers
 
-Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for automatically created partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops and F10/F12/Del for our desktops).
+The Windows drivers for some of our laptop systems [here](https://github.com/system76/windows-drivers). We recommend downloading all of the drivers for your model and make sure to follow the steps for installing the driver below the driver link.
 
-NOTE: If you feel comfortable opening your machine, it may be helpful to remove whichever drive is not undergoing changes while you install the OS on the opposite drive. For example, removing "drive 1," while installing Windows on "drive 2."
-
-This will prevent Windows (or Pop!_OS) from changing the boot partitions of the opposite drive. This is an extra precaution and not usually necessary; however, Windows does not always "play well with others," and removing drives you do not want changed during installation insures against this.
-
-## Windows Caveats
+### Windows Caveats
 
 Windows 8 and later uses a "Fast Startup" setting which prevents Windows from fully shutting down and allowing other OSes to use the disk. Before you can properly dual boot with Windows, you must disable this setting in Windows.
 
@@ -69,7 +75,7 @@ In your Windows install, open Control Panel and head to "Power Options" Select "
 
 Once in the BIOS change the Boot Order to boot Pop!\_OS first that way when the <kbd>Spacebar</kbd> is pressed systemd-boot will appear and then the Windows Boot Manager can be selected for booting Windows 10. Steps for accessing the BIOS and changing the Boot Order are found [here](/articles/boot-menu/).
 
-## Fix your clock
+#### Fix your clock
 
 Windows and Linux store their time in the BIOS differently, this will cause your clock to be desynchronized when you switch from one OS to the other.
 
@@ -91,7 +97,3 @@ If you need to revert it, just set it to 0:
 ```
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```
-
-## Windows Drivers
-
-The Windows drivers for some of our laptop systems [here](https://github.com/system76/windows-drivers). We recommend downloading all of the drivers for your model and make sure to follow the steps for installing the driver below the driver link.

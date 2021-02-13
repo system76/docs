@@ -25,6 +25,14 @@ To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https:
 
 ## Step 2: Install Windows 10
 
+### Using another drive
+
+Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for automatically created partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops, ESC for our Open Firmware systems and F10/F12/Del for our desktops).
+
+NOTE: If you feel comfortable opening your machine, it may be helpful to remove whichever drive is not undergoing changes while you install the OS on the opposite drive. For example, removing "drive 1," while installing Windows on "drive 2."
+
+This will prevent Windows (or Pop!_OS) from changing the boot partitions of the opposite drive. This is an extra precaution and not usually necessary; however, Windows does not always "play well with others," and removing drives you do not want changed during installation insures against this.
+
 ### If Pop!\_OS is installed first
 
 To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After completing the installation of Pop!\_OS, boot your computer in Recovery mode by holding down the spacebar during boot and selecting **Pop!\_OS Recovery** in the systemd-boot menu. (Alternatively, you can boot into your Pop!\_OS installation media, such as a USB flash drive.) Once booted into Pop!\_OS Recovery (or the live USB environment), use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required).
@@ -36,14 +44,6 @@ To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After comple
 ### If Pop!\_OS is not installed
 
 If you wish to install Pop!\_OS here is a [link](/articles/install-pop/) to it.
-
-### Using another drive
-
-Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for automatically created partitions and won't require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops, ESC for our Open Firmware systems and F10/F12/Del for our desktops).
-
-NOTE: If you feel comfortable opening your machine, it may be helpful to remove whichever drive is not undergoing changes while you install the OS on the opposite drive. For example, removing "drive 1," while installing Windows on "drive 2."
-
-This will prevent Windows (or Pop!_OS) from changing the boot partitions of the opposite drive. This is an extra precaution and not usually necessary; however, Windows does not always "play well with others," and removing drives you do not want changed during installation insures against this.
 
 ## Step 2a: Windows Setup
 
@@ -66,6 +66,8 @@ This message can be safely ignored and it is caused by Windows not being the fir
 ### Windows Drivers
 
 The Windows drivers for some of our laptop systems [here](https://github.com/system76/windows-drivers). We recommend downloading all of the drivers for your model and make sure to follow the steps for installing the driver below the driver link.
+
+NOTE: The Windows Device Manager may show that some devices are missing drivers, that is normal, and can be disregarded.
 
 ### Windows Caveats
 
@@ -97,3 +99,12 @@ If you need to revert it, just set it to 0:
 ```
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```
+
+## DISCLAIMER
+
+System76 is not a licensed reseller or installer of the Windows Operating System. This article is provided for information purposes only. 
+
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows. 
+
+The contents of this support article include the **total extent of support and troubleshooting that System76 can provide for Windows** 
+Any troubleshooting or software support questions not covered in this article are outside the scope of support and should be referred to Microsoft.

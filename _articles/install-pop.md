@@ -24,6 +24,9 @@ The following guide describes how to download the Pop!\_OS.iso image, write it t
 
 Requirements: At the time of this writing Pop!\_OS only runs on 64-bit x86 architecture, 2 GB of RAM is required, 4 GB of RAM is recommended and 20 GB of storage is recommended.
 
+## Download the Pop!\_OS.iso image
+From https://pop.system76.com/, choose **DOWNLOAD**, and then choose from the current release (default), or the Long Term Support (LTS) image. The dowonload dialog includes the current _Requirements_, and download _Filesize_, as well as the image checksums used to verify the file once downloaded.
+
 ## Make Bootable Drive
 
 Please see our instructions for making and booting from a live disk of Pop!\_OS [here](/articles/live-disk/).

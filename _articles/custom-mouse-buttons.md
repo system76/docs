@@ -65,15 +65,15 @@ This will cause the forward mouse button and the <kbd>Ctrl</kbd> key to emulate 
 
 ```
 # Workspace Up
-"xte 'keydown Super_L' 'key Up' 'keyup Super_L'"
+"xte 'keydown Control_L' 'keydown Super_L' 'key Up' 'keyup Super_L' 'keyup Control_L'"
    b:9
 
 # Workspace Down
-"xte 'keydown Super_L' 'key Down' 'keyup Super_L'"
+"xte 'keydown Control_L' 'keydown Super_L' 'key Down' 'keyup Super_L' 'keyup Control_L'"
    b:8
 ```
 
-This will cause the forward and back mouse button to emulate pressing the <kbd><span class="fl-pop-key"></span></kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>. This is useful for switching workspaces very quickly while leaving your hand on the mouse. This will be the same as pressing <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>
+This will cause the forward and back mouse button to emulate pressing the <kbd>Ctrl</kbd>+<kbd><span class="fl-pop-key"></span></kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>. This is useful for switching workspaces very quickly while leaving your hand on the mouse.
 
 ### Changes
 

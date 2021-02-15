@@ -13,6 +13,15 @@ section: pop
 
 ---
 
+## DISCLAIMER
+
+System76 is not a licensed reseller or installer of the Windows Operating System. This article is provided for information purposes only. 
+
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows. 
+
+The contents of this support article include the **total extent of support and troubleshooting that System76 can provide for Windows** 
+Any troubleshooting or software support questions not covered in this article are outside the scope of support and should be referred to Microsoft.
+
 ## Step 1: Create Install Media
 
 To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0). Once you have WoeUSB installed, download [the Windows ISO file](https://www.microsoft.com/en-us/software-download/windows10ISO).
@@ -99,12 +108,3 @@ If you need to revert it, just set it to 0:
 ```
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```
-
-## DISCLAIMER
-
-System76 is not a licensed reseller or installer of the Windows Operating System. This article is provided for information purposes only. 
-
-System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows. 
-
-The contents of this support article include the **total extent of support and troubleshooting that System76 can provide for Windows** 
-Any troubleshooting or software support questions not covered in this article are outside the scope of support and should be referred to Microsoft.

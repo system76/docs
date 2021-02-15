@@ -96,7 +96,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 20.10 (groovy).
 
-These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 19.04 (disco).
+These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 
 ### 1. Get your current system fully updated:
 ```bash
@@ -115,7 +115,7 @@ sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
 sudo apt-add-repository -yn ppa:system76-dev/stable
 sudo apt-add-repository -yn ppa:system76/pop
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
-sudo sed -i 's/disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 *Note to change 'disco' to your release that you are trying to update*
 

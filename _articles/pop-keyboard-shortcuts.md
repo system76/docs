@@ -50,14 +50,14 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 
 #### Manipulate windows
 
-| Shortcut                                                   | Action                                     |
-| ---------------------------------------------------------- | ------------------------------------------ |
-| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>S</kbd> | Toggle stacking                            |
-| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>O</kbd> | Change window orientation (while stacking) |
-| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>G</kbd> | Float/unfloat window (while stacking)      |
-| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd> | Maximize/unmaximize window                 |
-| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd>/<kbd>→</kbd> | Snap window to left/right side of display |
-| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd> | Close window                               |
+| Shortcut                                                                                  | Action                                     |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------ |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>S</kbd>                                | Toggle stacking                            |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>O</kbd>                                | Change window orientation (while stacking) |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>G</kbd>                                | Float/unfloat window (while stacking)      |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>                                | Maximize/unmaximize window                 |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd>/<kbd>→</kbd> | Snap window to left/right side of display  |
+| <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd>                                | Close window                               |
 
 #### Manage workspaces and displays
 

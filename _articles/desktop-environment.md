@@ -179,7 +179,7 @@ sudo apt install lxqt
 
 Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment's appearance can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
-#### Change Notification Dialog
+#### Customize Notification Dialog
 
 Xfce will change the notification dialog to its own. It can be configured with this command:
 
@@ -187,71 +187,31 @@ Xfce will change the notification dialog to its own. It can be configured with t
 xfce4-notifyd-config
 ```
 
-Or changed back to Unity's with this command:
-
-```
-sudo gedit /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service
-```
-
-And replace this line:
-
-> Exec=/usr/lib/xfce4/notifyd/xfce4-notifyd
-
-With this one:
-
-> Exec=/usr/lib/x86_64-linux-gnu/notify-osd
-
-#### Fix Broken Desktop Background
-
-If your background turns to black or white, or stops changing when you select a new background, re-enable it with this command:
-
-```
-gsettings set org.gnome.settings-daemon.plugins.background active true
-```
-
 #### Remove Duplicate Options From Login Screen
 
-Many desktop environments supply both a bare-bones environment, a full featured environment, or other options. Cinnamon provides both a 2d and 3d environment. Some of the extra options aren't needed, and don't have to be presented as options. The options available at login are in the `/usr/share/xsessions` folder. Simply rename or delete the files to remove them as options.
-
-Lubuntu's extra options:
+Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
 
 ```
-/usr/share/xsessions/Lubuntu-Netbook.desktop
-/usr/share/xsessions/LXDE.desktop
-/usr/share/xsessions/openbox.desktop
-```
-
-Xubuntu's extra option:
-
-```
-/usr/share/xsessions/xfce.desktop
-```
-
-Cinnamon's extra option:
-
-```
-/usr/share/xsessions/cinnamon2d.desktop
+sudo rm /usr/share/xsessions/cinnamon2d.desktop
 ```
 
 #### Change Automatic Startup Programs
 
-Some desktop environments add addition programs to be started at boot. To change them, run the <u>Startup Applications</u> program, and turn off any additional startup programs that were undesirably added.
+Some desktop environments configure additional programs to start at boot. To change them, run the <u>Startup Applications</u> program and turn off any unwanted startup programs.
 
 #### Double Lock Screen Passwords
 
-Sometimes the GNOME screensaver presents a second password unlock screen after suspending or locking the screen. It can be disabled with this command:
+GNOME does not use a screensaver (only a lock screen), but other desktop environments may install the classic GNOME screensaver package as a dependency. If you're being prompted for a password twice after suspending or locking the screen, disable the second prompt with this command:
 
 ```
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 ```
 
-Or, if that doesn't stop the 2nd prompt, the screensaver can be removed with this command:
+Or, if that doesn't stop the second prompt, uninstall the redundant screensaver with this command:
 
 ```
 sudo apt purge gnome-screensaver
 ```
-
-When using GNOME, the lock screens will still function normally even with the screensaver disabled.
 
 #### Enable Cinnamon Lock Screen
 
@@ -261,37 +221,16 @@ If Cinnamon's desktop lock screen isn't functioning, this command will re-enable
 gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false
 ```
 
-#### Managing Multiple Desktop Environments
-
-Ubuntu's unity greeter signin screen will only accommodate a certain number of desktop environments. If the list is too large, then extra options can be deleted from this folder:
-
-`/usr/share/xsessions/`
-
-Another solution is to switch to the lightdm-gtk-greeter following the instructions above. This secondary greeter is installed with GNOME, or can be installed manually with this command:
-
-```
-sudo apt install lightdm-gtk-greeter
-```
-
 #### Removing Desktop Environments
 
 If you no longer want to use a desktop environment, it can be removed by using:
 
 ```
-sudo apt purge ...
-sudo apt autoremove
+sudo apt autoremove --purge ...
 ```
 
 For example, to remove KDE:
 
 ```
-sudo apt purge kde-*
-sudo apt autoremove
-```
-
-Or to remove Unity:
-
-```
-sudo apt purge ubuntu-desktop
-sudo apt autoremove
+sudo apt autoremove --purge kde-standard
 ```

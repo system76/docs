@@ -128,7 +128,7 @@ sudo apt full-upgrade | tee ~/upgrade.log
 ```
 
 ### 4. Now put the PPAs back
-You will want to take a look at the files that end in "list" in "/etc/apt/sources.list.d/backup" to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.
+You will want to take a look at the files that end in "list" in "/etc/apt/backup" to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.
 
 ### 5. After the 20.04 Pop upgrade is complete, **reboot**.
 

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Dual Boot Windows 10 Alongside Pop!_OS
-description: Learn how to install Windows OS alongside Pop!\_OS
+description: Learn how to install Windows alongside Pop!\_OS.
 keywords:
   - System76
   - dual boot
@@ -10,27 +10,60 @@ keywords:
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: pop
-
 ---
 
-## DISCLAIMER
+## Disclaimer
 
-System76 is not a licensed reseller or installer of the Windows Operating System. This article is provided for information purposes only. 
+System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for informational purposes only. 
 
-System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows. 
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
 
-The contents of this support article include the **total extent of support and troubleshooting that System76 can provide for Windows** 
-Any troubleshooting or software support questions not covered in this article are outside the scope of support and should be referred to Microsoft.
+The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
 
-## Step 1: Create Install Media
+## Creating Install Media
 
-To create the Install Media on Pop!\_OS and Ubuntu, use the [WoeUSB tool](https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0). Once you have WoeUSB installed, download [the Windows ISO file](https://www.microsoft.com/en-us/software-download/windows10ISO).
+Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software-download/windows10ISO) from Microsoft's website. Plug in a USB flash drive (8GB or larger) to use as an installation disk. The USB drive will be wiped during this process.
 
-![WoeUSB](/images/dual-booting/woeusb2.png)
+On Pop!_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
 
-1. Select the Windows ISO file as the **Source**, set the **File system** as **NTFS**
-2. Select the USB drive **Target device** and 
-3. Press the **Install** button. 
+```
+sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common
+sudo pip3 install WoeUSB-ng
+```
+
+Once installed, open the WoeUSB-ng application (entering your password when prompted) and perform the following steps:
+
+1. Select the Windows .iso file as the source.
+  - To find the file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
+2. Select the USB flash drive as the target device.
+3. Click `Install`.
+
+![WoeUSB-ng](/images/dual-booting/woeusb.png)
+
+It may take several minutes or more for the process to finish-- wait until the `Installation succeeded!` message appears.
+
+## Installing on a Dedicated Drive
+
+The easiest way to dual boot is to install Windows on a separate physical drive from Pop!_OS. This allows both Windows and Pop!_OS to use their default partition schemes, and allows you to select the OS using the UEFI firmware menu. If you want to use full-disk encryption in Pop!_OS, this is the only option.
+
+For the safest experience, power off your machine, [open the case](https://tech-docs.system76.com/), and remove the drive with Pop!_OS prior to installing Windows. This is not required, but it ensures Windows won't overwrite the Pop!_OS bootloader, and helps avoid accidentally overwriting Pop!_OS.
+
+### Starting the installer
+
+Plug the [install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
+
+- `Esc` for laptops with Open Firmware
+- `F7` for laptops with proprietary firmware
+- `F8` or `F12` for Thelio desktops
+- `F10` for Meerkat desktops
+
+Select the drive containing the Windows installer. Eventually, the Windows installer should appear:
+
+
+
+### Performing the installation
+
+<hr/>
 
 ## Step 2: Install Windows 10
 

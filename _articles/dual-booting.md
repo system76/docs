@@ -44,7 +44,7 @@ This will prevent Windows (or Pop!_OS) from changing the boot partitions of the 
 
 ### If Pop!\_OS is installed first
 
-To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After completing the installation of Pop!\_OS, boot your computer in Recovery mode by holding down the spacebar during boot and selecting **Pop!\_OS Recovery** in the systemd-boot menu. (Alternatively, you can boot into your Pop!\_OS installation media, such as a USB flash drive.) Once booted into Pop!\_OS Recovery (or the live USB environment), use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). Resizing the partition will only work if Pop!\_OS is not encrypted and if the OS is encrypted then it will need to be reinstalled with that option not enabled. 
+To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After completing the installation of Pop!\_OS, boot your computer in Recovery mode by holding down the spacebar during boot and selecting **Pop!\_OS Recovery** in the systemd-boot menu. (Alternatively, you can boot into your Pop!\_OS installation media, such as a USB flash drive.) Once booted into Pop!\_OS Recovery (or the live USB environment), use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). Resizing the partition will only work if Pop!_OS is not encrypted. If the OS is encrypted then it will need to be reinstalled with encryption not enabled.
 
 ![GParted](/images/dual-booting/gparted.png)
 

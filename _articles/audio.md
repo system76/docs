@@ -19,13 +19,13 @@ Sound settings or packages related to the sound system can become corrupt or bro
 
 ## Reset PulseAudio
 
-If the system is not playing audio, first try reseting the pulseaudio daemon:
+If the system is not playing audio, first try restarting the PulseAudio daemon:
 
 ```
 systemctl --user restart pulseaudio
 ```
 
-Applications may need to be restarted. If this fails then try removing the user configuration files for <u>PulseAudio</u>:
+After restarting the daemon, applications may need to be restarted to re-connect to PulseAudio. If the system still isn't playing sound, then try removing the user configuration files for PulseAudio:
 
 ```
 rm -r ~/.config/pulse
@@ -126,14 +126,47 @@ This command will start PulseAudio after it's been stopped (this is not usually 
 ```
 pulseaudio --start
 ```
-## Fix PCI/internal sound card not detected (dummy output) with Ubuntu kernel 5.3.0-41 and newer in Ubuntu 19.10  
-```
-echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-base.conf  
-echo "blacklist snd_soc_skl" | sudo tee -a /etc/modprobe.d/blacklist.conf  
-```
-Reboot after making the changes.  
 
-Credit of ![Linux-Uprising](https://www.linuxuprising.com/2018/06/fix-no-sound-dummy-output-issue-in.html)  
+## Configuration Tweaks
+
+Some particular problems may be solved by tweaks to ALSA or PulseAudio configuration.
+
+### Audio crackling or hardware clicking
+
+If you hear audio crackling (especially when you start or stop playing audio), PulseAudio may be putting your audio card to sleep too often. This is known to happen on the [serw12](/articles/serval-dac/) and some [Thunderbolt docks](https://github.com/system76/docs/issues/491).
+
+These two commands will disable this behavior and restart PulseAudio:
+
+```
+sudo sed -i 's/load-module module-suspend-on-idle/#load-module module-suspend-on-idle/' /etc/pulse/default.pa
+pulseaudio -k
+```
+
+This change can be undone using these commands:
+
+```
+sudo sed -i 's/#load-module module-suspend-on-idle/load-module module-suspend-on-idle/' /etc/pulse/default.pa
+pulseaudio -k
+```
+
+### PCI/internal sound card not detected (dummy output)
+
+With hardware that uses the `snd_hda_intel` kernel module, rare [bugs](https://bugs.launchpad.net/ubuntu/+source/linux-oem-osp1/+bug/1864061) can cause the sound card to not be detected. If you're having this issue, try running these commands to force the usage of a specific audio driver:
+
+```
+echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-base.conf
+echo "blacklist snd_soc_skl" | sudo tee -a /etc/modprobe.d/blacklist.conf
+```
+
+Reboot after making the changes. If this doesn't solve the issue, undo the changes using these commands:
+
+```
+sudo sed -i 's/options snd-hda-intel dmic_detect=0//' /etc/modprobe.d/alsa-base.conf
+sudo sed -i 's/blacklist snd_soc_skl//' /etc/modprobe.d/blacklist.conf
+```
+
+Then reboot again.
+
 ## Gather Information for Support
 
 The `alsa-info` command will gather a number of outputs, including some of the above-listed outputs, and package them so they can be shared easily. In a terminal, run the command:

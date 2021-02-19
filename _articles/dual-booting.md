@@ -76,7 +76,7 @@ This message can be safely ignored and it is caused by Windows not being the fir
 
 The Windows drivers for some of our laptop systems [here](https://github.com/system76/windows-drivers). We recommend downloading all of the drivers for your model and make sure to follow the steps for installing the driver below the driver link.
 
-NOTE: The Windows Device Manager may show that some devices are missing drivers, that is normal, and can be disregarded. That includes the Thelio I/O board. It doesn't need any Windows drivers, howefver, as it is a simple pass-through for the drives when using Windows. There are also no ACPI table entries. 
+NOTE: The Windows Device Manager may show that some devices are missing drivers, that is normal, and can be disregarded. That includes the Thelio I/O board. It doesn't need any Windows drivers. It is a simple pass-through for the drives when using Windows. There are also no ACPI table entries.
 
 ### Windows Caveats
 

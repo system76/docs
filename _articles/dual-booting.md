@@ -44,7 +44,7 @@ This will prevent Windows (or Pop!_OS) from changing the boot partitions of the 
 
 ### If Pop!\_OS is installed first
 
-To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After completing the installation of Pop!\_OS, boot your computer in Recovery mode by holding down the spacebar during boot and selecting **Pop!\_OS Recovery** in the systemd-boot menu. (Alternatively, you can boot into your Pop!\_OS installation media, such as a USB flash drive.) Once booted into Pop!\_OS Recovery (or the live USB environment), use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required).
+To dual boot Pop!\_OS alongside another OS, install Pop!\_OS first. After completing the installation of Pop!\_OS, boot your computer in Recovery mode by holding down the spacebar during boot and selecting **Pop!\_OS Recovery** in the systemd-boot menu. (Alternatively, you can boot into your Pop!\_OS installation media, such as a USB flash drive.) Once booted into Pop!\_OS Recovery (or the live USB environment), use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). Resizing the partition will only work if Pop!_OS is not encrypted. If the OS is encrypted then it will need to be reinstalled with encryption not enabled.
 
 ![GParted](/images/dual-booting/gparted.png)
 
@@ -76,7 +76,7 @@ This message can be safely ignored and it is caused by Windows not being the fir
 
 The Windows drivers for some of our laptop systems [here](https://github.com/system76/windows-drivers). We recommend downloading all of the drivers for your model and make sure to follow the steps for installing the driver below the driver link.
 
-NOTE: The Windows Device Manager may show that some devices are missing drivers, that is normal, and can be disregarded.
+NOTE: The Windows Device Manager may show that some devices are missing drivers, that is normal, and can be disregarded. That includes the Thelio I/O board. It doesn't need any Windows drivers. It is a simple pass-through for the drives when using Windows. There are also no ACPI table entries.
 
 ### Windows Caveats
 

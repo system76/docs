@@ -30,13 +30,23 @@ In order to add another user to the system follow these steps:
 
 ![Settings-About-Users-Unlock](/images/other-accounts/gnome-control-center-3.png)
 
+![Settings-About-Users-Add](/images/other-accounts/gnome-control-center-4.png)
+
+Be sure to set the new user as an Administrator so that you can make system-wide changes.
+
 4. Close Settings and Log Out of your current session
 5. Log into the newly created user
 
 You can also create a new account using the command below if the issue is causing you to only be able to access the TTY/Terminal:
 
 ```bash
-sudo adduser username
+sudo adduser bob
+```
+
+Then add the user to the Administrator group:
+
+```bash
+usermod -aG sudo bob
 ```
 
 If the new user doesn't have any of the issues as your main user then log out of the new account and then back into the original account. From there open a <u>Terminal</u> and run this command:

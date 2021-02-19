@@ -17,7 +17,7 @@ section: software-applications
 
 If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/articles/use-tensorman/) for managing TensorFlow containers.
 
-## Install on Pop!_OS 20.04 LTS
+## Install on Pop!_OS 20.04 LTS and Pop!_OS 20.10
 
 ### Installing TensorFlow with CUDA
 

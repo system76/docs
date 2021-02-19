@@ -515,7 +515,7 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
 
 **Pop!\_OS**
-  - Text Editer (default)
+  - Text Editor (default)
   - [Atom](https://atom.io/) (available in the Pop!\_Shop)
   - [Microsoft VSCode](https://code.visualstudio.com/) (available in the Pop!\_Shop)
 

@@ -45,7 +45,13 @@ Press the circular button on the front of the machine after all components are p
 
 When you power on, you'll be prompted to create a user account, which is an administrative account (in the sudo group). The password you set for this account will be the main password for when you install applications or updates, or add new users to the computer. In Pop!_OS, you can choose to encrypt your hard drive while setting up the user account. If Ubuntu was picked during configuration reinstalling the OS will be needed to set up encryption and instructions for that can be found [here](/articles/install-ubuntu).
 
-You will be prompted for the encryption passphrase first if you select that option during the account creation process. After the encryption passphrase is set, you will proceed to set up a user account and be prompted to set the administrator password. If you encrypt your hard drive, you will be prompted for the encryption passphrase every time you power on. It's important to write this password down and keep it somewhere safe. If the password is lost or forgotten, you will lose access to the contents of the drive.
+If you selected the option to encrypt during the setup process, you will be prompted to set the encryption passphrase first. If you encrypt your hard drive, you will be prompted for the encryption passphrase every time you power on. It's important to write this password down and keep it somewhere safe. If the password is lost or forgotten, you will lose access to the contents of the drive.
+
+After the encryption passphrase is set, you will proceed to set up a user account and be prompted to set the administrator password.
+
+NOTE: The administrator password and the encryption passphrase are separate. Users can set them to have the same characters, but to the OS they are different items. It is good security practice to make the encryption passphrase and the administrative password different. However, this means that when prompted for the admin password, the encryption passphrase will not work, and vice-versa.
+
+This administrator account has sudo rights, but it is not the root account. Some distributions (like Debian) have you set up a separate root account. Ubuntu and Pop!_OS do not.
 
 ### Looking for your additional drives?
 

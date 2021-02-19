@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Adding other users to your OS
+title: Adding Other Users to Your OS
 description: >
   How to add other users to your installation
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: hardware-drivers
+section: pop
 
 ---
 
@@ -32,6 +32,12 @@ In order to add another user to the system follow these steps:
 
 4. Close Settings and Log Out of your current session
 5. Log into the newly created user
+
+You can also create a new account using the command below if the issue is causing you to only be able to access the TTY/Terminal:
+
+```bash
+sudo adduser username
+```
 
 If the new user doesn't have any of the issues as your main user then log out of the new account and then back into the original account. From there open a <u>Terminal</u> and run this command:
 

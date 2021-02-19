@@ -21,32 +21,11 @@ Every running program consumes the battery. This could be a program that is part
 
 The biggest consumer of power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.
 
-### Power Profiles
+## Power Profiles
 
 With the <u>system76-power</u> package there are **Power Profiles** that can be accessed in the **System Menu** in the image below.
 
 ![Battery](/images/battery/system-menu.png)
-
-### FlexiCharger
-
-On several models of our laptops, FlexiCharger can be used to change the charging behavior of the battery.  A general consensus is that charging a battery to 100% every time will shorten its overall lifespan.
-
-To adjust the top charge, reboot the computer and enter into BIOS by holding down <kbd>F2</kbd>, and navigate to Advanced, then Advanced Chipset Control, and set Flexicharger to Enabled. Two new sub-menus will appear, and can be set to the user's desired percentages. The longevity of lithium batteries is dependent on the number of charge cycles they go through. The larger the percentage of spread between Top and Bottom charge percentages, the longer the physical battery will last. For optimal longevity, charge cycles of 40%~80% are a good idea:
-
-```
-Start Charge 40%
-Stop Charge 80%
-```
-Save and exit the BIOS
-
-- FlexiCharger will allow your System76 laptop to run solely off the AC power connection, and leave the battery alone while the computer is operating normally
-- This prevents unnecessary micro-charging which reduces battery longevity
--  It is particularly useful when your laptop is plugged into AC power adapter for extended periods of time
-- FlexiCharger can be disabled at any time in the BIOS, which reverts the charging profile to factory defaults. Before heading out into the wild blue yonder, disable FlexiCharger to charge your laptop battery to 100%.
-
-#### Open Firmware 
-
-Laptops that ship with our Open Firmware do not have FlexiCharger.
 
 ## Useful Programs
 
@@ -160,7 +139,13 @@ And add this line to the file:
 
 > iface enp4s0f2 inet manual
 
-Then, if Ethernet needs used, this command can be run to enable it for the session:
+This new configuration will take effect after a reboot. To disable the interface immediately, run this command:
+
+```
+sudo ifconfig enp4s0f2 down
+```
+
+Then, if Ethernet needs to be used, this command can be run to enable it for the session:
 
 ```
 sudo ifconfig enp4s0f2 up

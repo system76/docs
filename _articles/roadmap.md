@@ -59,16 +59,6 @@ The current goal is to use this for:
 * Fetching the recovery ISO, which would benefit from resumable downloads
 * Creating a useful tool for our open source community
 
-### Flatpak Support
-
-With the open source ecosystem increasingly relying upon Flatpak as a distribution model by application developers on the Linux desktop, it is important to bring that support to Pop!_OS out of the box. This entails:
-
-* Having Flatpak installed by default, with the Flathub source repository
-* Adding Flatpak repo support in Repoman, our tool for managing apt repositories
-* Ensuring that the Pop!_OS Repo is listed as a 1st party in Repoman
-* Updating the Pop!_Shop to bring in Flatpak support from elementary
-* Fixing the display of app sources so that Pop's repository has higher priority
-
 ### GNOME Online Accounts
 
 * Add additional providers to GNOME Initial Setup (CalDav & CardDav)
@@ -110,6 +100,8 @@ With the open source ecosystem increasingly relying upon Flatpak as a distributi
 * Remove System76 driver for System76 hardware customers. Integrate necessary information and features into the desktop.
 * Pop features in GNOME Settings > About for the new GNOME 3.36 panel design
 * Transition Thelio I/O firmware updates to LVFS
+* Battery threshold settings for System76 hardware with open firmware
+* Keyboard configuration utility for System76 hardware with open firmware
 
 [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
 
@@ -221,6 +213,17 @@ New Rust crates that we've developed and released
 
 * Upgraded from `dbus-rs` 0.6 to 0.7 (adds support for async I/O)
 * Support for hybrid graphics switching, to keep the GPU powered off until an application requests it
+
+
+### Flatpak Support
+
+With the open source ecosystem increasingly relying upon Flatpak as a distribution model by application developers on the Linux desktop, it is important to bring that support to Pop!_OS out of the box. This entails:
+
+* Having Flatpak installed by default, with the Flathub source repository
+* Adding Flatpak repo support in Repoman, our tool for managing apt repositories
+* Ensuring that the Pop!_OS Repo is listed as a 1st party in Repoman
+* Updating the Pop!_Shop to bring in Flatpak support from elementary
+* Fixing the display of app sources so that Pop's repository has higher priority
 
 ---
 

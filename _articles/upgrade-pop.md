@@ -117,7 +117,7 @@ sudo apt-add-repository -yn ppa:system76/pop
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
 sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
-*Note to change 'disco' to your release that you are trying to update*
+*Note to change 'disco' to your release that you are trying to update from*
 
 ### 3. Now, do the upgrade! 
 This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
@@ -128,7 +128,7 @@ sudo apt full-upgrade | tee ~/upgrade.log
 ```
 
 ### 4. Now put the PPAs back
-You will want to take a look at the files that end in "list" in "/etc/apt/sources.list.d/backup" to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.
+You will want to take a look at the files that end in "list" in "/etc/apt/backup" to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.
 
 ### 5. After the 20.04 Pop upgrade is complete, **reboot**.
 

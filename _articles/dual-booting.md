@@ -32,6 +32,7 @@ The contents of this support article are the **total extent of support and troub
   - [Disabling Fast Startup](#disabling-fast-startup)
   - [Switching between Pop!_OS and Windows](#switching-between-pop_os-and-windows)
   - [Repairing the Pop!_OS Bootloader](#repairing-the-pop_os-bootloader)
+  - [Fixing the System Clock](#fixing-the-system-clock)
 
 ## Creating Install Media
 
@@ -335,3 +336,25 @@ Depending on how you installed Windows and which firmware your computer is runni
 ### Repairing the Pop!_OS Bootloader
 
 If Pop!_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](https://support.system76.com/articles/bootloader/) for information on repairing the Pop!_OS bootloader.
+
+### Fixing the System Clock
+
+Windows and Linux store their time in the UEFI firmware differently. This can cause the clock to become desynchronized when you switch from one OS to the other.
+
+If you're affected by this, the easiest solution is to fix it in Linux, forcing it to work the same way as Windows. Set the option using this command:
+
+```
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+You can verify that the change was successful using this command:
+
+```
+timedatectl
+```
+
+You should see `RTC in local TZ: yes` in the output. If you need to revert this setting, turn it back off with this command:
+
+```
+timedatectl set-local-rtc 0 --adjust-system-clock
+```

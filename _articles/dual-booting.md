@@ -325,7 +325,7 @@ Depending on how you installed Windows and which firmware your computer is runni
 - **Using systemd-boot**:
   - This menu is part of Pop!_OS, so in order to use it effectively, Pop!_OS must be set as the default OS in the firmware settings as described in the previous section.
   - **Change the default OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
-    - Highlight the desired default OS using the arrow keys, then press `d` to make it the default.
+    - Highlight the desired default OS using the arrow keys, then press <kbd>d</kbd> to make it the default.
   - **Boot the secondary OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
     - Highlight the selected OS, then press <kbd>Enter</kbd> to boot.
   - **Get prompted to choose the OS on every boot** using the `systemd-boot` menu.

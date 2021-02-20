@@ -14,7 +14,7 @@ keywords:
   - System76
   - apt
 image:  http://support.system76.com/images/pop-icon.png
-hidden: false
+hidden: true
 section: pop
 ---
 

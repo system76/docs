@@ -14,7 +14,7 @@ keywords:
   - HTML/CSS
   - digital marketing
   - System76
-hidden: false
+hidden: true
 section: case-studies
 
 ---

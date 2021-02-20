@@ -9,7 +9,7 @@ keywords:
   - Pop 20.04 LTS
   - Thumbnails
 image: http://support.system76.com/images/system76.png
-hidden: false
+hidden: true
 section: pop
 
 ---

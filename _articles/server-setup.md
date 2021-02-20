@@ -10,7 +10,7 @@ keywords:
   - setup
   - System76
 image: http://support.system76.com/images/system76.png
-hidden: false
+hidden: true
 redirect_from:
   - /serversetup
   - /serverSetup

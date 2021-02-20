@@ -10,7 +10,7 @@ keywords:
   - ubuntu
   - System76
 image: https://system76.com/images/system76.png
-hidden: false
+hidden: true
 section: accessories
 ---
 

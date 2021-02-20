@@ -14,7 +14,7 @@ keywords:
   - CodeWeavers
   - CrossOver
   - System76
-hidden: false
+hidden: true
 section: case-studies
 
 ---

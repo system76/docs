@@ -11,7 +11,7 @@ keywords:
   - hyperboria
   - encryption
   - github
-hidden: false
+hidden: true
 section: community
 
 ---

@@ -7,7 +7,7 @@ keywords:
   - Minecraft
   - Mojang
   - Games
-hidden: false
+hidden: true
 section: community
 
 ---

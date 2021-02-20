@@ -8,7 +8,7 @@ keywords:
   - drive
   - mount
   - network
-hidden: false
+hidden: true
 section: community
 
 ---

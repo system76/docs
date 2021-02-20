@@ -12,8 +12,8 @@ keywords:
   - GNOME
   - Mint
 image: http://support.system76.com/images/system76.png
-hidden: false
-section: software-applications
+hidden: true
+section: learn-about-your-computer
 
 ---
 

@@ -20,29 +20,42 @@ layout: default
 		</div>
 	</div>
 
-	<!--
-	<div class="row">
-		<nav class="small-12 columns">
-
-			<a class="button" href="#getting-started">Getting Started</a>
-
-		</nav>
-	</div>
-	-->
-
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="getting-started">Getting Started</h1>
+			<h1 id="learn">LEARN</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns support-excerpts getting-started">
+		<div class="small-12 columns support-excerpts learn"c>
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
-					{% if article.section == 'getting-started' %}
+					{% if article.section == 'learn' %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+						</article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="small-12 columns">
+			<hr />
+			<h2 id="switching">Switching to Linux</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts switching"c>
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.section == 'switching' %}
 						<article>
 							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
 							{{ article.description | markdownify }}
@@ -53,15 +66,16 @@ layout: default
 		</div>
 	</div>
 
+
 	<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="pop">Pop!_OS</h1>
+			<h1 id="manage">MANAGE</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns support-excerpts pop">
+		<div class="small-12 columns support-excerpts manage">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
@@ -76,15 +90,38 @@ layout: default
 		</div>
 	</div>
 	
-	<div class="row">
+		<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="ubuntu">Ubuntu</h1>
+			<h2 id="software">Software</h2>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns support-excerpts ubuntu">
+		<div class="small-12 columns support-excerpts software">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.section == 'software' %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+						</article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="small-12 columns">
+			<hr />
+			<h1 id="troubleshoot">TROUBLESHOOT</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts troubleshoot">
 			{% assign articles = site.articles | sort:"title" %}
 			{% for article in articles %}
 				{% if article.hidden != true %}
@@ -98,149 +135,12 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-
-	<div class="row">
+	
+		<div class="row">
 		<div class="small-12 columns">
 			<hr />
-			<h1 id="software-applications">Software & Applications</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts software-applications">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'software-applications' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="hardware-drivers">Hardware & Drivers</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts hardware-drivers">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'hardware-drivers' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="wifi-bluetooth">WiFi & Bluetooth</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts wifi-bluetooth">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'wifi-bluetooth' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="graphics-audio-video">Graphics, Audio and Video</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts graphics-audio-video">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'graphics-audio-video' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="security-encryption">Security & Encryption</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts security-encryption">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'security-encryption' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="accessories">Accessories</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts accessories">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'accessories' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="repairs-returns">Repairs and Returns</h1>
+			
+			<h2 id="repairs-returns">Repairs and Returns</h2>
 		</div>
 	</div>
 
@@ -259,33 +159,6 @@ layout: default
 			{% endfor %}
 		</div>
 	</div>
-
-	<!--
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="known">Known Solutions</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts known">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'solutions' %}
-							<article>
-								<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-								{{ article.description | markdownify }}
-								{% if article.more %}
-								{% endif %}
-						  </article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-    -->
 
 	<div class="row">
 		<div class="small-12 columns">

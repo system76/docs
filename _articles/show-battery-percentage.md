@@ -7,7 +7,7 @@ keywords:
   - battery percentage
   - gnome tweak tool
   - battery
-hidden: false
+hidden: true
 section: community
 
 ---

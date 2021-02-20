@@ -10,7 +10,7 @@ keywords:
  - rsync
  - Nextcloud
 image: http://support.system76.com/images/system76.png
-hidden: false
+hidden: true
 section: software-applications
 
 ---

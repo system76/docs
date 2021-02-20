@@ -13,7 +13,7 @@ keywords:
   - Hybrid
   - Integrated
 image: http://support.system76.com/images/pop.png
-hidden: false
+hidden: true
 section: pop
 
 ---

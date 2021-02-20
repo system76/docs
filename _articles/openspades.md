@@ -9,7 +9,7 @@ keywords:
   - Games
   - OpenSpades
   - Multiplayer
-hidden: false
+hidden: true
 section: community
 ---
 

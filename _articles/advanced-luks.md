@@ -10,7 +10,7 @@ keywords:
   - LUKS
   - FDE
 image: http://support.system76.com/images/pop.png
-hidden: false
+hidden: true
 section: security-encryption
 
 ---

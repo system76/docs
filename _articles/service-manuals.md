@@ -10,7 +10,7 @@ keywords:
   - Repair
   - System76
 image: http://support.system76.com/images/system76.png
-hidden: false
+hidden: true
 section: repairs-returns
 
 ---

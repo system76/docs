@@ -8,7 +8,7 @@ keywords:
   - power
   - button
 image: http://support.system76.com/images/system76.png
-hidden: false
+hidden: true
 section: hardware-drivers
 
 ---

@@ -11,8 +11,8 @@ keywords:
   - Beginner
   - System76
 image: http://support.system76.com/images/system76.png
-hidden: false
-section: getting-started
+hidden: true
+section: learn-about-your-computer
 
 ---
 Congratulations on receiving your System76 Thelio Desktop! Read this article to get started quickly.

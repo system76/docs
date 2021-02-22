@@ -160,7 +160,7 @@ If you need to install both operating systems on a single drive (for example, if
 
 Start by [installing Pop!_OS](/articles/install-pop/), making sure to select `Don't Encrypt` during the installation process.
 
-(System76-imaged computers give you the option of whether or not to encrypt on first boot. If you chose to encrypt at first boot, or if you reinstalled and chose to encrypt, you will need to reinstall without encrypting before proceeding. If you want to dual boot and also use full-disk encryption, you will need to [use a dedicated drive](#installing-on-a-dedicated-drive) instead.)
+(System76 computers shipped with Pop!_OS give you the option of whether or not to encrypt on first boot. If you chose to encrypt at first boot, or if you reinstalled and chose to encrypt, you will need to reinstall without encrypting before proceeding. If you want to dual boot and also use full-disk encryption, you will need to [use a dedicated drive](#installing-on-a-dedicated-drive) instead.)
 
 ### Shrinking Pop!_OS
 

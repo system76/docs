@@ -13,9 +13,9 @@ section: software-applications
 
 ---
 
-## Intel GPU's
+### GPU requirements
 
-DaVinci Resolve does not support Intel GPU's due to the lack of OpenCL support. 
+DaVinci Resolve requires an NVIDIA GPU to run. (Intel GPUs lack the necessary OpenCL support. For AMD GPUs, the proprietary AMDGPU-PRO driver that Resolve depends on does not support the newer kernel versions that Pop!\_OS ships.)
 
 ### Install prerequisite packages
 
@@ -29,12 +29,6 @@ DaVinci Resolve requires either CUDA or OpenCL. If you are using an NVIDIA GPU, 
 
 ```
 sudo apt install system76-cuda-latest
-```
-
-If you are using an AMD GPU, install the AMDGPU-PRO driver from AMD's website [here](https://www.amd.com/en/support) for OpenCL support. In order to add OpenCL support the following command will need to be used when installing the AMDGPU Pro driver:
-
-```
-sudo ./amdgpu-pro-install -y --opencl=legacy,pal
 ```
 
 Then reboot the system once that completes:

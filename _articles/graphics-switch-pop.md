@@ -20,10 +20,10 @@ section: pop
 
 The following laptops have switchable graphics:
 
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
+- Adder WS (addw1, addw2)
+- Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15)
-- Adder Workstation (addw1, addw2)
-- Galago (galp5 with NVIDIA GPU)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
 
 ### Graphics modes
 

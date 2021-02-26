@@ -29,41 +29,40 @@ Please download the zip file for your sytem and unzip the files within to a FAT3
 
 ### Bonobo WS (bonw14)
 
-https://s76.co/bonw14-76ec
-https://tech-docs.system76.com/models/bonw14/repairs.html#replacing-an-m2nvme-ssd
+[Patched Firmware](https://s76.co/bonw14-76ec) <br>
+[Tech Docs](https://tech-docs.system76.com/models/bonw14/repairs.html#replacing-an-m2nvme-ssd)
 
 ### Darter Pro (darp7)
 
-https://s76.co/darp7-76ec
-https://tech-docs.system76.com/models/darp7/repairs.html#replacing-an-m2nvme-ssd
+[Patched Firmware](https://s76.co/darp7-76ec) <br>
+[Tech Docs](https://tech-docs.system76.com/models/darp7/repairs.html#replacing-an-m2nvme-ssd)
 
 ### Galago Pro (galp5)
 
-https://s76.co/galp5-76ec
-https://tech-docs.system76.com/models/galp5/repairs.html#replacing-an-m2nvme-ssd
+[Patched Firmware](https://s76.co/galp5-76ec) <br>
+[Tech Docs](https://tech-docs.system76.com/models/galp5/repairs.html#replacing-an-m2nvme-ssd)
 
 ### Lemur Pro (lemp9)
 
-https://tech-docs.system76.com/models/lemp9/repairs.html#replacing-an-m2nvme-ssd
+[Patched Firmware]() <br>
+[Tech Docs](https://tech-docs.system76.com/models/lemp9/repairs.html#replacing-an-m2nvme-ssd)
 
 ### Lemur Pro (lemp10)
 
-https://s76.co/lemp10-76ec
-https://tech-docs.system76.com/models/lemp10/repairs.html#replacing-an-m2nvme-ssd
+[Patched Firmware](https://s76.co/lemp10-76ec) <br>
+[Tech Docs](https://tech-docs.system76.com/models/lemp10/repairs.html#replacing-an-m2nvme-ssd)
 
 ### Oryx Pro (oryp6)
 
-https://s76.co/oryp6-76ec
-https://tech-docs.system76.com/models/oryp6/repairs.html#replacing-an-m2nvme-ssd
+[Patched Firmware](https://s76.co/oryp6-76ec) ::
+[Tech Docs](https://tech-docs.system76.com/models/oryp6/repairs.html#replacing-an-m2nvme-ssd)
+
+**Note:** to download the file from the Dropbox link click on the three dots on the far right menu and then click *Download*.
 
 With the NVMe drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the NVMe drive(s).
 
 Once the system is put back together we'll need to boot with a live image in order to repair the boot loader. We provide step by step instructions on how to do this in our support article in the link below:
+
 https://support.system76.com/articles/bootloader/
 
-If at any point you run into any errors during this process please paste / attach photos of the errors.
-
-Please let me know if you have any questions, or if there's anything I can clarify. Thanks!
-
-Here is a link to this ticket for your reference:
-https://system76.com/my-account/ticket/55795
+If at any point you run into any errors during this process please paste / attach photos of the errors in a support ticket. 

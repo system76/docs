@@ -23,7 +23,7 @@ errored while installing system: command failed with exit status: exit code: 5
 calling Schedule method failed: "failed to add boot entry: exit code: 5
 ```
 
-We may need to clear the SMMSTORE ROM by re-flashing a patched firmware using a flash drive with a custom firmware file. Here are the steps to perform that action. After flashing, this will remove any custom EFI variables (such as those installed by boot managers)
+We may need to clear the SMMSTORE ROM by re-flashing a patched firmware using a flash drive with a custom firmware file. Here are the steps to perform that action. After flashing, this will remove any custom EFI variables (such as those installed by boot managers).
 
 Please download the zip file for your sytem and unzip the files within to a FAT32 formatted USB drive. Then shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system:
 

@@ -29,11 +29,13 @@ If the system boots, but takes a long time to boot, crashes, or reports other ra
 
 #### Memory
 
-To run a memory test on your computer, we need to use a [live disk](/articles/live-disk/) with Ubuntu. We also need to change the BIOS settings from UEFI mode to BIOS mode.  If you press the key indicated on boot to get into BIOS (<kbd>F2</kbd> for laptops, and <kbd>DEL</kbd> for most desktops), there will be a toggle between the two modes.
+```
+sudo apt install memtester
+sudo memtester 6G 5
+```
+Memory test can take a number of hours. While this will not put all of memory under test, it will make any memory error likely to cause instability if not part of the tested memory or show up clearly with errors in the `memtester` run
 
-Once you switch to BIOS mode, restart, and use the key to boot from other drives (<kbd>F7</kbd> for laptops, and <kbd>F12</kbd> for most desktops) to select the USB.  Right after you select the USB for boot, start tapping the <kbd>ESC</kbd> key to get into the GRUB boot menu.  If you accidentally get to a GRUB command prompt, type in the word `normal`, press <kbd>Enter</kbd>, then immediately press <kbd>ESC</kbd>.  Grub is available for only a second, so if you miss the opportunity, turn your computer off and try again.
-
-In the grub boot menu, choose **Memory test (memtest86+)**.  Right as memtest loads (blue screen), press <kbd>F2</kbd> to enable multi-core mode.  Wait at least 20 minutes for the tests to run, or until any errors are shown in red.  If any errors are found, please run it again in single core mode, and let it run overnight to check for any memory errors.  6 to 8 passes are minimally recommended.  If memory errors show up, the memory stick should be replaced.
+[Memtest86++](https://www.memtest86.com/) also has ISO downloads for personal use. You would boot from a USB drive made with the ISO.  Right as memtest loads (blue screen), press <kbd>F2</kbd> to enable multi-core mode.  Wait at least 20 minutes for the tests to run, or until any errors are shown in red.  If any errors are found, please run it again in single core mode, and let it run overnight to check for any memory errors.  6 to 8 passes are minimally recommended.  If memory errors show up, the memory stick should be replaced.
 
 #### Hard Drive
 

@@ -45,7 +45,7 @@ Please download the zip file for your sytem and unzip the files within to a FAT3
 | Lemur Pro (lemp10)  | [lemp10-76ec.zip](/files/clear-smmstore/bonw14-76ec.zip) | [lemp10](https://tech-docs.system76.com/models/bonw14/repairs.html#replacing-an-m2nvme-ssd) |
 | Oryx Pro (oryp6)    | [oryp6-76ec.zip](/files/clear-smmstore/bonw14-76ec.zip)  | [oryp6](https://tech-docs.system76.com/models/bonw14/repairs.html#replacing-an-m2nvme-ssd)  |
 
-With all drives removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the NVMe drive(s).
+With all drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the drive(s).
 
 Once the system is put back together we'll need to boot with a live image in order to repair the boot loader. We provide step by step instructions on how to do this in our support article in the link below:
 

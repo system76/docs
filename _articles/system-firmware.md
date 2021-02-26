@@ -56,7 +56,20 @@ Once installed, the following command can be used to schedule a firmware update 
 sudo system76-firmware-cli schedule
 ```
 
-Reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
+If you are able not able to schedule the update and receive error messages similar to these:
+
+```
+configuring bootloader error: command failed with exit status: exit code: 5
+errored while installing system: command failed with exit status: exit code: 5
+calling Schedule method failed: "failed to add boot entry: exit code: 5
+system76-firmware: failed to schedule: failed to add boot entry: exit code: 5
+```
+
+Please refer to this [support article](/articles/open-firmware-smmstore). If you see the message below then you can reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
+
+```
+Firmware update scheduled. Reboot your machine to install.
+```
 
 ### Performing the Update
 

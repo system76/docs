@@ -60,8 +60,17 @@ If you are able not able to schedule the update and receive error messages simil
 
 ```
 configuring bootloader error: command failed with exit status: exit code: 5
+```
+
+```
 errored while installing system: command failed with exit status: exit code: 5
+```
+
+```
 calling Schedule method failed: "failed to add boot entry: exit code: 5
+```
+
+```
 system76-firmware: failed to schedule: failed to add boot entry: exit code: 5
 ```
 

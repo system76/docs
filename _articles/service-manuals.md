@@ -17,9 +17,9 @@ section: repairs-returns
 
 | Laptops      | PDF | Tech Docs |
 | -------------| ----| ----------|
-| Adder WS     | [addw1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Adder/addw1-service-manual.pdf) | [addw1](https://tech-docs.system76.com/models/addw1/repairs.html)
+| Adder WS     | [addw1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Adder/addw1-service-manual.pdf) | [addw1](https://tech-docs.system76.com/models/addw1/repairs.html), [addw2](https://tech-docs.system76.com/models/addw2/repairs.html)
 | Bonobo WS    |     | [bonw14](https://tech-docs.system76.com/models/bonw14/repairs.html)
-| Darter Pro   | [darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | [darp6](https://tech-docs.system76.com/models/darp6/repairs.html)
+| Darter Pro   | [darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | [darp6](https://tech-docs.system76.com/models/darp6/repairs.html), [darp7](https://tech-docs.system76.com/models/darp7/repairs.html)
 | Galago Pro   | [galp2](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf), [galp3](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf) | [galp4](https://tech-docs.system76.com/models/galp4/repairs.html), [galp5](https://tech-docs.system76.com/models/galp5/repairs.html)
 | Gazelle      | [gaze14](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf) | [gaze15](https://tech-docs.system76.com/models/gaze15/repairs.html)
 | Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf), [lemp9](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemp9-service-manual.pdf) | [lemp9](https://tech-docs.system76.com/models/lemp9/repairs.html), [lemp10](https://tech-docs.system76.com/models/lemp10/repairs.html)

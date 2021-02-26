@@ -63,6 +63,18 @@ sudo adduser USERNAME vrui-grp
 
 - Reboot your computer so all of the above changes take effect.
 
+## Enable Touchpad While Typing
+
+During the setup process there will be times when you will need to hold down a key while moving your cursor, however by default the touchpad is disabled while typing. In order for this to work correctly, you will want to go ahead and modify that setting.
+
+To do this, please install the GNOME Tweaks tool from the Pop!\_Shop or Ubuntu Software Center, or from the Terminal by running:
+
+```
+sudo apt install gnome-tweak-tool
+```
+
+After that, open the Tweaks app from the Activities overview, then navigation to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
+
 ## Calibrate Kinect
 
 - Plug in your first-generation Kinect device, then open a terminal and run:
@@ -148,6 +160,8 @@ You should end up with a first line something like this:
 
 - Save the file and close `gedit`.
 
+- NOTE: If you receive an error message regarding an "invalid taken character," please double-check to make sure the equal sign in `BoxLayout.txt` has been replaced with a comma as described above.
+
 ## Measure 3D extents of sand surface
 
 - This step requires you to have filed your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
@@ -196,7 +210,7 @@ Note there is no feedback from the UI when you press the 1 key.
 
 - Hit Esc to exit `RawKinectViewer`.
 
-- In the terminal you'll see four lines printed. You need to highlight these four lines as shown below, then right click and select Copy:
+- In the terminal you'll see four lines printed (if you don't see this output, repeat this step, making sure to choose points within the green rectangle). You need to highlight these four lines as shown below, then right click and select Copy:
 
 ![RawKinectViewer Output](/images/ar-sandbox/5-C-terminal-output-bfe04cf344.png)
 

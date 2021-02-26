@@ -10,15 +10,15 @@ hidden: false
 section: software-applications
 ---
 
-#### For Ubuntu-based distros
+#### For Ubuntu-Based Distros
 
-In order to build Pop Shell from source we'll first need to install the build dependencies and <u>git</u> to clone the repository:
+In order to build Pop Shell from source, we'll first need to install the build dependencies and <u>git</u> to clone the repository:
 
 ```bash
 sudo apt install git typescript make
 ```
 
-**Note:** these instructions work for Ubuntu-based distros.
+**Note:** these instructions assume an Ubuntu-based distro; other distributions (see examples below) will use different package managers, and may have different package names.
 
 Next we'll clone the repository using this command:
 
@@ -26,14 +26,12 @@ Next we'll clone the repository using this command:
 git clone https://github.com/pop-os/shell.git
 ```
 
-Now we'll enter the directory for <u>Pop Shell</u> and build the package:
+Now we'll enter the directory for <u>Pop Shell</u> (called "shell") and build the package:
 
 ```bash
 cd shell
 make local-install
 ```
-
-**Note:** the directory's name is 'shell'.
 
 ---
 
@@ -55,15 +53,13 @@ In order to build Pop Shell from source we'll first need to install the build de
 sudo pacman -S git typescript make
 ```
 
-**Note:** these instructions work for Ubuntu-based distros.
-
 Next we'll clone the repository using this command:
 
 ```bash
 git clone https://github.com/pop-os/shell.git
 ```
 
-Now we'll enter the directory for <u>Pop Shell</u> and build the package:
+Now we'll enter the directory for <u>Pop Shell</u> (called "shell") and build the package:
 
 ```bash
 cd shell

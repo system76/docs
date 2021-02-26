@@ -103,3 +103,9 @@ sudo apt update -m
 sudo apt full-upgrade
 sudo apt install gdm3 pop-desktop
 ```
+
+## Season 1 Episode 2
+
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/J1gD2NaRNvw" frameborder="0" allowfullscreen="true" width="750" height="450"> </iframe>
+</figure>

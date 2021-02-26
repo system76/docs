@@ -13,9 +13,9 @@ section: software-applications
 
 ---
 
-## Intel GPU's
+### GPU requirements
 
-DaVinci Resolve does not support Intel GPU's due to the lack of OpenCL support. 
+DaVinci Resolve requires an NVIDIA GPU to run. (Intel GPUs lack the necessary OpenCL support. For AMD GPUs, the proprietary AMDGPU-PRO driver that Resolve depends on does not support the newer kernel version that Pop!\_OS includes.)
 
 ### Install prerequisite packages
 
@@ -23,24 +23,6 @@ The following packages will be needed to build and install DaVinci Resolve:
 
 ```
 sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
-```
-
-DaVinci Resolve requires either CUDA or OpenCL. If you are using an NVIDIA GPU, install CUDA using this command:
-
-```
-sudo apt install system76-cuda-latest
-```
-
-If you are using an AMD GPU, install the AMDGPU-PRO driver from AMD's website [here](https://www.amd.com/en/support) for OpenCL support. In order to add OpenCL support the following command will need to be used when installing the AMDGPU Pro driver:
-
-```
-sudo ./amdgpu-pro-install -y --opencl=legacy,pal
-```
-
-Then reboot the system once that completes:
-
-```
-sudo systemctl reboot
 ```
 
 ### Download DaVinci Resolve and the MakeResolveDeb script
@@ -67,13 +49,9 @@ Next, extract the MakeResolveDeb zip file into the same directory where the DaVi
 
 Open the DaVinci Resolve directory, right click on an empty space between/below the file icons, and select 'Open in Terminal.'
 
-In the new **Terminal** window, run this command if you are using the free-of-cost version of DaVinci Resolve:
+In the new **Terminal** window, run this command to convert the `.run` file into a `.deb` package:
 
-```./makeresolvedeb*.sh lite```
-
-Or this command if you are using the paid Studio version of DaVinci Resolve:
-
-```./makeresolvedeb*.sh studio```
+```./makeresolvedeb*.sh DaVinci_Resolve_*_Linux.run```
 
 Once the script finishes running and the terminal prompt returns, run this command to install DaVinci Resolve:
 

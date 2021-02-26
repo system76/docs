@@ -17,11 +17,11 @@ section: software-applications
 
 - 1-2 flash drives (1GB and up)
 - Philips Screwdriver
-- 30 mins or so
+- Approx. 30 mins.
 
-## The error message
+## The error messages
 
-If you are seeing messages like these on your Open Firmware system:
+If you are seeing any of these messages on your Open Firmware system:
 
 ```
 configuring bootloader error: command failed with exit status: exit code: 5
@@ -39,7 +39,7 @@ calling Schedule method failed: "failed to add boot entry: exit code: 5
 system76-firmware: failed to schedule: failed to add boot entry: exit code: 5
 ```
 
-we may need to clear the SMMSTORE ROM by re-flashing a patched firmware using a flash drive with a custom firmware file. Here are the steps to perform that action. After flashing, this will remove any custom EFI variables (such as those installed by boot managers).
+we may need to clear the SMMSTORE ROM by re-flashing a patched firmware using a flash drive with a custom firmware file. Here are the steps to perform that action. After flashing, this will remove any custom EFI variables (such as those installed by boot managers). We have information on repairing the bootloader at the end of this article. 
 
 Please download the zip file for your sytem and unzip the files within to a FAT32 formatted USB drive. Then shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system:
 
@@ -56,7 +56,7 @@ Please download the zip file for your sytem and unzip the files within to a FAT3
 
 With all drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the drive(s).
 
-Once the system is put back together we'll need to boot with a live image in order to repair the boot loader. We provide step by step instructions on how to do this in our support article in the links below:
+Once the system is put back together we'll need to boot with a live image in order to repair the boot loader. We provide step by step instructions on how to do this in our support articles in the links below:
 
 [http://support.system76.com/articles/live-disk/](http://support.system76.com/articles/live-disk/)
 

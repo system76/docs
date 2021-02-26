@@ -51,9 +51,27 @@ sudo > /var/log/syslog
 ```
 
 ### Human 3 Show Notes [Nathaniel]
+
 Problem: Screen sharing on Wayland
-Troubleshooting Steps:  Asked which programs were running and whether screen sharing was working.
-Solution:  Advised switch to X11.                          
+
+With so many of us working from home during COVID-19, many users are spending most of their work days in video and screen-sharing applications. One of our customers was interested in using the Wayland display server instead of X11. The results were mixed.
+
+Troubleshooting Steps:  Assess which programs were running and whether screen sharing was working.
+- Microsoft Teams: could only share selected application windows.
+- Zoom: sent a disclaimer to use x11
+- Discord: could only share selected application windows.
+- Web-Based Apps (meet, skype, etc) : could only share selected application windows.
+- Skype (Microsoft): did not work at all in Wayland.    
+
+Solution:  Advised switch to X11 for work cases where screen-sharing was required.
+
+If you’d like to learn more about X11 and Wayland, see below:
+
+Wayland:
+https://wayland.freedesktop.org/
+
+X11:
+https://x.org/wiki/                                   
 
 ### Human 4 Show Notes [Aaron]
 Problem: Installing Arch with LUKS and systemd-boot

@@ -6,6 +6,7 @@ description: >
 keywords:
   - Firmware
   - Open Firmware
+  - UEFI
   - SMMSTORE
 image: http://support.system76.com/images/system76.png
 hidden: false

@@ -1,11 +1,10 @@
 ---
 layout: article
-title: Install Pop!_OS On Your System76 Computer
+title: Install Pop!_OS On Your Computer
 description: >
   Full instructions on installing Pop!_OS your computer.
 keywords:
   - Pop!\_OS
-  - 18.04
   - Restore
   - Reinstall
   - Installation
@@ -13,7 +12,6 @@ keywords:
   - system76-driver
   - system76-driver-nvidia
   - Release
-  - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
 section: pop

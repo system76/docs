@@ -57,7 +57,7 @@ Please download the zip file for your sytem and unzip the files within to a FAT3
 
 With all drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the drive(s).
 
-Once the system is put back together we'll need to boot with a live image in order to repair the boot loader. We provide step by step instructions on how to do this in our support articles in the links below:
+Once the system is put back together we may need to boot with a live image in order to repair the boot loader if you dual-booting with Windows 10. We provide step by step instructions on how to do this in our support articles in the links below:
 
 [http://support.system76.com/articles/live-disk/](http://support.system76.com/articles/live-disk/)
 

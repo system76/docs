@@ -53,6 +53,11 @@ section: accessories
 <td style="height: 23px;">Yes</td>
 <td style="height: 23px;">No (DisplayPort over USB-C)</td>
 </tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">lemp10</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
 </tbody>
 </table>
 

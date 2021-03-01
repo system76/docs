@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Setup Your New AR Sandbox
+title: Set Up Your New AR Sandbox
 description: Calibrate and use your new AR Sandbox
 keywords:
  - AR
@@ -230,7 +230,7 @@ gedit /etc/SARndbox-1.6/BoxLayout.txt
 
 - If you haven't already, turn on your projector and plug it into your computer.
 
-- If you have a dedicated display in addition to the projector, you'll find it easier if you setup the two displays to be mirrored:
+- If you have a dedicated display in addition to the projector, you'll find it easier if you set up the two displays to be mirrored:
 
 ![Mirror settings](/images/ar-sandbox/6-A-mirror-displays-9275bf68e0.png)
 

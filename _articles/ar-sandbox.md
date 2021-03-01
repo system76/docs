@@ -67,13 +67,13 @@ sudo adduser USERNAME vrui-grp
 
 During the setup process there will be times when you will need to hold down a key while moving your cursor, however by default the touchpad is disabled while typing. In order for this to work correctly, you will want to go ahead and modify that setting.
 
-To do this, please install the GNOME Tweaks tool from the Pop!\_Shop or Ubuntu Software Center, or from the Terminal by running:
+To do this, please install the <u>GNOME Tweaks tool</u> from the Pop!\_Shop or Ubuntu Software Center, or from the Terminal by running:
 
 ```
 sudo apt install gnome-tweak-tool
 ```
 
-After that, open the Tweaks app from the Activities overview, then navigation to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
+After that, open the <u>Tweaks</u> app from the Activities overview, then navigation to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
 
 ## Calibrate Kinect
 

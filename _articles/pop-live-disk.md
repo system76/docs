@@ -2,7 +2,7 @@
 layout: article
 title: Live Disk Creation (Pop!_OS)
 description: >
-  Create and Use Bootable Media on Pop!_OS.
+  Create and use bootable media on Pop!_OS.
 keywords:
   - Pop_OS!
   - USB

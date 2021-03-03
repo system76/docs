@@ -2,7 +2,7 @@
 layout: article
 title: Live Disk Creation (Other Operating Systems)
 description: >
-  Create and use bootable media on other operating ystems.
+  Create and use bootable media on other operating systems.
 keywords:
   - Pop_OS!
   - USB

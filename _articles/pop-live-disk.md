@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Create and Use Bootable Media on Pop!_OS
+title: Live Disk Creation (Pop!_OS)
 description: >
-  You can run Pop!_OS from a USB drive for hardware testing, recovery, and installation/re-installation.
+  Create and Use Bootable Media on Pop!_OS.
 keywords:
   - Pop_OS!
   - USB

@@ -43,6 +43,7 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 | galp4  | Yes           | No      |
 | lemp10 | Yes           | Yes     |
 | lemp9  | Yes           | Yes     |
+| oryp7  | Yes           | Yes     |
 | oryp6  | Yes           | Yes     |
 
 #### Additional Notes

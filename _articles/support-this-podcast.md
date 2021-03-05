@@ -13,9 +13,7 @@ section: community
 
 ## Season 1 Episode 1
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/53s7MmwNv8E" frameborder="0" allowfullscreen="true" width="750" height="450"> </iframe>
-</figure>
+<iframe width="750" height="450" src="https://www.youtube.com/embed/53s7MmwNv8E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Human 1 Show Notes [Nathan]
 Problem: Customer reported getting small electric shocks each time they touched the edge of their laptop
@@ -128,6 +126,12 @@ sudo apt install gdm3 pop-desktop
 
 ## Season 1 Episode 2
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/J1gD2NaRNvw" frameborder="0" allowfullscreen="true" width="750" height="450"> </iframe>
-</figure>
+<iframe width="750" height="450" src="https://www.youtube.com/embed/J1gD2NaRNvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Human 1 Show Notes [Support Human]
+
+### Human 2 Show Notes [Support Human]
+
+### Human 3 Show Notes [Support Human]
+
+### Human 4 Show Notes [Support Human]

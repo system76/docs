@@ -13,6 +13,10 @@ section: community
 
 ## Season 1 Episode 1
 
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/53s7MmwNv8E" frameborder="0" allowfullscreen="true" width="750" height="450"> </iframe>
+</figure>
+
 ### Human 1 Show Notes [Nathan]
 Problem: Customer reported getting small electric shocks each time they touched the edge of their laptop
 Troubleshooting Steps: “Does it happen when your system is connected to the wall power (AC adapter) and on battery both? Or just one of them? Are you using the original AC adapter that shipped with your system?

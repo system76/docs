@@ -24,6 +24,26 @@ section: accessories
 <td style="height: 23px;">Supports Thunderbolt?</td>
 </tr>
 <tr style="height: 23px;">
+<td style="height: 23px;">darp7</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">darp6</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">darp5</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp5</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
 <td style="height: 23px;">galp4</td>
 <td style="height: 23px;">Yes</td>
 <td style="height: 23px;">Yes</td>
@@ -39,13 +59,8 @@ section: accessories
 <td style="height: 23px;">Yes</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">darp6</td>
+<td style="height: 23px;">lemp10</td>
 <td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">darp5</td>
-<td style="height: 23px;">No</td>
 <td style="height: 23px;">Yes</td>
 </tr>
 <tr style="height: 23px;">

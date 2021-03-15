@@ -15,7 +15,7 @@ section: software-applications
 In order to build Pop Shell from source, we'll first need to install the build dependencies and <u>git</u> to clone the repository:
 
 ```bash
-sudo apt install git typescript make
+sudo apt install git node-typescript make
 ```
 
 **Note:** these instructions assume an Ubuntu-based distro; other distributions (see examples below) will use different package managers, and may have different package names.

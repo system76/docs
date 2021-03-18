@@ -66,13 +66,13 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Bonobo |
 | -------|
-| [bown10](https://system76.com/guides/bown10) | [bown11](https://system76.com/guides/bown11) | [bown12](https://system76.com/guides/bown12) |
-| [bown13](https://system76.com/guides/bown13) | [bown14](https://system76.com/guides/bonw14) | [bonx8](https://system76.com/guides/bonx8) |
+| [bonw10](https://system76.com/guides/bonw10) | [bonw11](https://system76.com/guides/bonw11) | [bonw12](https://system76.com/guides/bonw12) |
+| [bonw13](https://system76.com/guides/bonw13) | [bonw14](https://system76.com/guides/bown14) | [bonx8](https://system76.com/guides/bonx8) |
 
 | Darter |
 | -------|
 | [darp5](https://system76.com/guides/darp5) | [darp6](https://system76.com/guides/darp6)  | [darp7](https://system76.com/guides/darp7) |
-| [daru4](https://system76.com/guides/daru4) |
+| [daru4](/images/guides/daru4.pdf) |
 
 | Galago |
 | -------|
@@ -83,11 +83,11 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 | --------|
 | [gaze10](https://system76.com/guides/gaze10) | [gaze11](https://system76.com/guides/gaze11) | [gaze12](https://system76.com/guides/gaze12) |
 | [gaze13](https://system76.com/guides/gaze13) | [gaze14](https://system76.com/guides/gaze14) | [gaze15](https://system76.com/guides/gaze15/15a) |
-| [gazp9](https://system76.com/guides/gazep9) | 
+| [gazp9](/images/guides/gazp9.pdf) | 
 
 | Kudu |
 | -----|
-| [kudp1](https://system76.com/guides/kudp1) | [kudu2](https://system76.com/guides/kudu2) | [kudu3](https://system76.com/guides/kudu3) |
+| [kudp1](/images/guides/kudp1.pdf) | [kudu2](https://system76.com/guides/kudu2) | [kudu3](https://system76.com/guides/kudu3) |
 | [kudu4](https://system76.com/guides/kudu4) | [kudu5](https://system76.com/guides/) |
 
 | Lemur |
@@ -97,7 +97,7 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Oryx |
 | -----|
-| [oryx1](https://system76.com/guides/oryx1) | [oryp2](https://system76.com/guides/oryp2) | [oryp3](https://system76.com/guides/oryp3) |
+| [orxp1](https://system76.com/guides/orxp1) | [oryp2](https://system76.com/guides/oryp2) | [oryp3](https://system76.com/guides/oryp3) |
 | [oryp4](https://system76.com/guides/oryp4) | [oryp5](https://system76.com/guides/oryp5) | [oryp6](https://system76.com/guides/oryp6) |
 | [oryp7](https://system76.com/guides/oryp7/15) |
 
@@ -107,7 +107,7 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Serwal |
 | -------|
-| [serw8](https://system76.com/guides/serw8) | [serw9](https://system76.com/guides/serw9) | [serw10](https://system76.com/guides/serw10) |
+| [serw8](/images/guides/serw8.pdf) | [serw9](https://system76.com/guides/serw9) | [serw10](https://system76.com/guides/serw10) |
 | [serw11](https://system76.com/guides/serw11) | [serw12](https://system76.com/guides/serw12)
 
 ### Desktops
@@ -119,23 +119,23 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Meerkat |
 | --------|
-| [meer1](https://system76.com/guides/meer1) | [meer2](https://system76.com/guides/meer2) | [meer3b](https://system76.com/guides/meer3b) |
+| [meer1](/images/guides/meer1.pdf) | [meer2](https://system76.com/guides/meer2) | [meer3b](https://system76.com/guides/meer3b) |
 | [meer3](https://system76.com/guides/meer3) | [meer4](https://system76.com/guides/meer4) | [meer5](https://system76.com/guides/meer5/short)
 
 | Ratel |
 | ------|
-| [ratp2](https://system76.com/guides/ratp2) | [ratp3](https://system76.com/guides/ratp3) | [ratp4](https://system76.com/guides/ratp4) |
+| [ratp2](/images/guides/ratp2.pdf) | [ratp3](https://system76.com/guides/ratp3) | [ratp4](https://system76.com/guides/ratp4) |
 | [ratp5](https://system76.com/guides/ratp5) |
 
 | Sable |
 | ------|
-| [sabc2](https://system76.com/guides/sabc2) | [sabl4](https://system76.com/guides/sabl4) | [sabl5](https://system76.com/guides/sabl5) |
+| [sabc2](/images/guides/sabc2.pdf) | [sabl4](https://system76.com/guides/sabl4) | [sabl5](https://system76.com/guides/sabl5) |
 | [sabl6](https://system76.com/guides/sabl6) | [sabt1](https://system76.com/guides/sabt1) | [sabt2](https://system76.com/guides/sabt2) | 
-| [sabt3](https://system76.com/guides/sabt3) | 
+| [sabt3](/images/guides/sabt3.pdf) | 
 
 | Wild Dog |
 | ---------|
-| [wilp10](https://system76.com/guides/wilp10) | [wilp11](https://system76.com/guides/wilp11) | [wilp12](https://system76.com/guides/wilp12) |
+| [wilp10](/images/guides/wilp10.pdf) | [wilp11](https://system76.com/guides/wilp11) | [wilp12](https://system76.com/guides/wilp12) |
 | [wilp13](https://system76.com/guides/wilp13) | [wilp14](https://system76.com/guides/wilp14) | 
 
 | Thelio |

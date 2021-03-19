@@ -23,7 +23,7 @@ section: repairs-returns
 | Galago Pro   | [galp2](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf), [galp3](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf) | [galp4](https://tech-docs.system76.com/models/galp4/repairs.html), [galp5](https://tech-docs.system76.com/models/galp5/repairs.html)
 | Gazelle      | [gaze14](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf) | [gaze15](https://tech-docs.system76.com/models/gaze15/repairs.html)
 | Lemur        | [lemu7](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf), [lemp9](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemp9-service-manual.pdf) | [lemp9](https://tech-docs.system76.com/models/lemp9/repairs.html), [lemp10](https://tech-docs.system76.com/models/lemp10/repairs.html)
-| Oryx Pro     | [oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf)  | [oryp6](https://tech-docs.system76.com/models/oryp6/repairs.html)
+| Oryx Pro     | [oryp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf)  | [oryp6](https://tech-docs.system76.com/models/oryp6/repairs.html), [oryp7](https://tech-docs.system76.com/models/oryp7/repairs.html)
 | Serval WS    | [serw11](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Serval/serw11-service-manual.pdf) | [serw12](https://tech-docs.system76.com/models/serw12/repairs.html)
 
 | Desktops       | PDF | Tech Docs |

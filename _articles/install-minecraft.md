@@ -12,34 +12,11 @@ section: community
 
 ---
 
-Alright! Hitch on and let's go on!
+# Dependencies
 
-### Pop!_OS 20.04
-First, open the Pop!_Shop.
-![Open Pop_Shop](/images/minecraft/popshop.png)
+You'll need Java 8 to run the game, no other versions of java work with Minecraft.
 
-Next, type "Minecraft" into the search bar, and click "Minecraft".
-![Search Page](/images/minecraft/searchforminecraft.png)
-
-
-Next, click install.
-![Open Minecraft page](/images/minecraft/minecraftapppage.png)
-
-
-Now you will have installed Minecraft! Open Minecraft and log in with your username and password to start playing!
-![Minecraft Installed](/images/minecraft/minecraftinstalled.png)
-
-
-### Debian and Ubuntu
-  
-First, you will need Java runtime.  
-  
-```bash
-sudo apt-get install openjdk-8-jre
-```
-
-So, you want oracle runtime instead? But.... fine....  
-Get the repository and install the package.  
+For Ubuntu, you can install Java 8 in the terminal like so:
 
 ```bash
 sudo apt-add-repository ppa:webupd8team/java
@@ -47,14 +24,20 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 ```
 
-You will then download the launcher. Go to the [minecraft.net](https://minecraft.net/en-us/download/) page to download or...
+# Download Minecraft
 
-```bash
-wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
-```
+Download minecraft from this selection screen:
 
-Now run the file! Log in with your username and password and start playing!
+https://www.minecraft.net/en-us/download/alternative/
+
+Click on Minecraft.deb if you're using Debian / Ubuntu
+
+# Install Minecraft
+
+Run the Minecraft.deb file to install it with Eddy, Pop! OS's default installer.
+
+If that doesn't work, You can install it in the terminal via `sudo dpkg -i Minecraft.deb`, remember to replace Minecraft.deb with wherever the downloaded installer is.
 
 ---
 
-This article was contributed by [kylerschin](https://github.com/kylerschin).
+This article was contributed by [kylerchin](https://github.com/kylerchin).

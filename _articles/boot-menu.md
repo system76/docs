@@ -22,18 +22,32 @@ To enter the BIOS menu for desktops (besides the Meerkat), hold down the <kbd>DE
 
 For the Meerkat, hold the <kbd>F2</kbd> key for the BIOS, or the <kbd>F10</kbd> key for the boot menu.
 
+<hr/>
+
+### Open Firmware Screenshots
+
 The following screenshots show the menus in System76 Open Firmware with Coreboot:
 
-### Boot Default
+#### Main Menu
 
-![Main menu](/images/boot-menu/homepage.png)
+Displays the computer model, firmware version, and available options.
 
-### One Time Boot
+![Main menu](/images/boot-menu/homepage.jpg)
 
-![One Time Boot](/images/boot-menu/one-time-boot.png)
+#### One Time Boot
 
-### Change Boot Order
+Allows booting to a non-default boot device.
 
-![Change Boot Order](/images/boot-menu/change-boot-order.png)
+![One Time Boot](/images/boot-menu/one-time-boot.jpg)
 
-![Change Boot Order Menu](/images/boot-menu/change-boot-order_changing.png)
+#### Change Boot Order
+
+Allows changing the order for selecting the default boot device.
+
+![Change Boot Order](/images/boot-menu/change-boot-order.jpg)
+
+#### Firmware Configuration Information
+
+Displays information about the firmware's build-time configuration.
+
+![Configuration info](/images/boot-menu/configuration-info.jpg)

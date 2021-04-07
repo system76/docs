@@ -21,7 +21,7 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 ## Configuring Charging Thresholds (Open Firmware)
 
-**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them.
+**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them. To work around this limitation in the short term, you can use `cron` to set thresholds after each reboot (see below).
 
 ### Using the terminal:
 
@@ -49,6 +49,15 @@ You can also set custom thresholds without using a profile. For example, this co
 
 ```bash
 system76-power charge-thresholds 40 80
+```
+
+#### Set thresholds at reboot
+
+To work around the limitation with the open firmware, in which the thresholds are reset when the system
+is shutdown and unplugged, you can set the thresholds via `cron` at every reboot:
+
+```
+echo -e "`sudo crontab -l 2>/dev/null`\n@reboot system76-power charge-thresholds 40 80" | sudo crontab -
 ```
 
 ### Via sysfs:

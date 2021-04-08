@@ -30,7 +30,7 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 | [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) | [thelio-r2](https://system76.com/guides/thelio/r2) |
 | [darp7](https://tech-docs.system76.com/models/darp7/README.html) | [thelio-major-r2](https://system76.com/guides/thelio-major/r2) |
 | [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) | [meer5](https://system76.com/guides/meer5/short) |
-| [oryp7](https://system76.com/guides/oryp7/15) | []() |
+| [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) | []() |
 | [serw12](https://tech-docs.system76.com/models/serw12/README.html) | []() |
 | [bown14](https://tech-docs.system76.com/models/bonw14/README.html) | []() |
 
@@ -66,40 +66,41 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Bonobo |
 | -------|
-| [bonx8](https://system76.com/guides/bonx8) | [bonw10](https://system76.com/guides/bonw10) | [bonw11](https://system76.com/guides/bonw11) |
-| [bonw12](https://system76.com/guides/bonw12) | [bonw13](https://system76.com/guides/bonw13) | [bonw14](https://tech-docs.system76.com/models/bonw14/README.html) |
+| [bonx8](/images/guides/bonx8.pdf) | [bonw10](/images/guides/bonw10.png) | [bonw11](/images/guides/bonw11.png) |
+| [bonw12](/images/guides/bonw12.png) | [bonw13](/images/guides/bonw13.png) | [bonw14](https://tech-docs.system76.com/models/bonw14/README.html) |
 
 | Darter |
 | -------|
-| [darp5](https://system76.com/guides/darp5) | [darp6](https://tech-docs.system76.com/models/darp6/README.html)  | [darp7](https://tech-docs.system76.com/models/darp7/README.html) |
+| [darp5](/images/guides/darp5.png) | [darp6](https://tech-docs.system76.com/models/darp6/README.html)  | [darp7](https://tech-docs.system76.com/models/darp7/README.html) |
 | [daru4](/images/guides/daru4.pdf) |
 
 | Galago |
 | -------|
-| [galp2](https://system76.com/guides/galp2) | [galp3b](https://system76.com/guides/galp3b) | [galp3](https://system76.com/guides/galp3) |
-| [galp4](https://tech-docs.system76.com/models/galp4/README.html) | [galp5](https://tech-docs.system76.com/models/galp5/README.html) | [galu1](https://system76.com/guides/galu1) |
+| [galp2](/images/guides/galp2.png) | [galp3](https://system76.com/guides/galp3) | [galp4](https://tech-docs.system76.com/models/galp4/README.html) | 
+| [galp5](https://tech-docs.system76.com/models/galp5/README.html) | [galu1](/images/guides/galu1.pdf) |
 
 | Gazelle |
 | --------|
-| [gaze10](https://system76.com/guides/gaze10) | [gaze11](https://system76.com/guides/gaze11) | [gaze12](https://system76.com/guides/gaze12) |
-| [gaze13](https://system76.com/guides/gaze13) | [gaze14](https://system76.com/guides/gaze14) | [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) |
+| [gaze10](/images/guides/gaze10.pdf) | [gaze11](/images/guides/gaze11.png) | [gaze12](/images/guides/gaze12.png) |
+| [gaze13](/images/guides/gaze13.png) | [gaze14-15a](/images/guides/gaze14-15a.png) | [gaze14-15b](/images/guides/gaze14-15b.png) | 
+| [gaze14-17a](/images/guides/gaze14-17a.png) | [gaze14-17b](/images/guides/gaze14-17b.png) | [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) |
 | [gazp9](/images/guides/gazp9.pdf) | 
 
 | Kudu |
 | -----|
-| [kudp1](/images/guides/kudp1.pdf) | [kudu2](https://system76.com/guides/kudu2) | [kudu3](https://system76.com/guides/kudu3) |
-| [kudu4](https://system76.com/guides/kudu4) | [kudu5](https://system76.com/guides/) |
+| [kudp1](/images/guides/kudp1.pdf) | [kudu2](/images/guides/kudu2.png) | [kudu3](/images/guides/kudu3.png) |
+| [kudu4](/images/guides/kudu4.png) | [kudu5](/images/guides/kudu5.png) |
 
 | Lemur |
 | ------|
-| [lemu5](https://system76.com/guides/lemu5) | [lemu6](https://system76.com/guides/lemu6) | [lemu7](https://system76.com/guides/lemp7) |
-| [lemu8](https://system76.com/guides/lemu8) | [lemp9](https://tech-docs.system76.com/models/lemp9/README.html) | [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) |
+| [lemu5](/images/guides/lemu5.pdf) | [lemu6](/images/guides/lemu6.pdf) | [lemu7](/images/guides/lemp7.png) |
+| [lemu8](/images/guides/lemu8.png) | [lemp9](https://tech-docs.system76.com/models/lemp9/README.html) | [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) |
 
 | Oryx |
 | -----|
-| [orxp1](https://system76.com/guides/orxp1) | [oryp2](https://system76.com/guides/oryp2) | [oryp3](https://system76.com/guides/oryp3) |
-| [oryp4](https://system76.com/guides/oryp4) | [oryp5](https://system76.com/guides/oryp5) | [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) |
-| [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
+| [orxp1](/images/guides/orxp1.pdf) | [oryp2](/images/guides/oryp2.png) | [oryp3-15](/images/guides/oryp3-15.png) |
+| [oryp3-17](/images/guides/oryp3-17.png) | [oryp4](https://system76.com/guides/oryp4) | [oryp5-16](https://system76.com/guides/oryp5-16.png) | 
+| [oryp5-17](/images/guides/oryp5-17.png) | [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) | [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
 
 | Pangolin |
 | ---------|
@@ -107,40 +108,42 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Serwal |
 | -------|
-| [serw8](/images/guides/serw8.pdf) | [serw9](https://system76.com/guides/serw9) | [serw10](https://system76.com/guides/serw10) |
-| [serw11](https://system76.com/guides/serw11) | [serw12](https://tech-docs.system76.com/models/serw12/README.html)
+| [serw8](/images/guides/serw8.pdf) | [serw9](/images/guides/serw9.png) | [serw10-15](/images/guides/serw10-15.png) |
+| [serw10-17](/images/guides/serw10-17.png) | [serw11-15](/images/guides/serw11-15.png) | [serw11-17](/images/guides/serw11-17.png) | 
+| [serw12](https://tech-docs.system76.com/models/serw12/README.html)
 
 ### Desktops
 
 | Leopard |
 | --------|
-| [leox4](https://system76.com/guides/leox4) | [leox5](https://system76.com/guides/leox5) | [leow6](https://system76.com/guides/leow6) | 
-| [leow7](https://system76.com/guides/leow7) | [leow8](https://system76.com/guides/leow8) | [leow9](https://system76.com/guides/leow9) |
+| [leox4](/images/guides/leox4.pdf) | [leox5](/images/guides/leox5.pdf) | [leow6](/images/guides/leow6.png) | 
+| [leow7](/images/guides/leow7.png) | [leow8](/images/guides/leow8.png) | [leow9-core-x](/images/guides/leow9-core-x) |
+| [leow9-core-xb](/images/guides/leow9-core-xb.png) | [leow9-xeon-w](/images/guides/leow9-xeon-w.png) |
 
 | Meerkat |
 | --------|
-| [meer1](/images/guides/meer1.pdf) | [meer2](https://system76.com/guides/meer2) | [meer3b](https://system76.com/guides/meer3b) |
-| [meer3](https://system76.com/guides/meer3) | [meer4](https://system76.com/guides/meer4) | [meer5](https://system76.com/guides/meer5/short)
+| [meer1](/images/guides/meer1.pdf) | [meer2](/images/guides/meer2.png) | [meer3/meer3b](/images/guides/meer3.png) |
+| [meer4](/images/guides/meer4.png) | [meer5](https://tech-docs.system76.com/models/meer5/README.html)
 
 | Ratel |
 | ------|
-| [ratp2](/images/guides/ratp2.pdf) | [ratp3](https://system76.com/guides/ratp3) | [ratp4](https://system76.com/guides/ratp4) |
-| [ratp5](https://system76.com/guides/ratp5) |
+| [ratp2](/images/guides/ratp2.pdf) | [ratp3](/images/guides/ratp3.pdf) | [ratp4](/images/guides/ratp4.pdf) |
+| [ratp5](/images/guides/ratp5.png) |
 
 | Sable |
 | ------|
-| [sabc2](/images/guides/sabc2.pdf) | [sabl4](https://system76.com/guides/sabl4) | [sabl5](https://system76.com/guides/sabl5) |
-| [sabl6](https://system76.com/guides/sabl6) | [sabt1](https://system76.com/guides/sabt1) | [sabt2](https://system76.com/guides/sabt2) | 
+| [sabc2](/images/guides/sabc2.pdf) | [sabl4](/images/guides/sabl4.pdf) | [sabl5](/images/guides/sabl5.png) |
+| [sabl6](/images/guides/sabl6.pdf) | [sabt1](/images/guides/sabt1.pdf) | [sabt2](/images/guides/sabt2.pdf) | 
 | [sabt3](/images/guides/sabt3.pdf) | 
 
 | Wild Dog |
 | ---------|
-| [wilp10](/images/guides/wilp10.pdf) | [wilp11](https://system76.com/guides/wilp11) | [wilp12](https://system76.com/guides/wilp12) |
-| [wilp13](https://system76.com/guides/wilp13) | [wilp14](https://system76.com/guides/wilp14) | 
+| [wilp10](/images/guides/wilp10.pdf) | [wilp11](/images/guides/wilp11.pdf) | [wilp12](/images/guides/wilp12.png) |
+| [wilp13](/images/guides/wilp13.png) | [wilp14](/images/guides/wilp14.png) | 
 
 | Thelio |
 | -------|
-| [thelio-r1](https://system76.com/guides/thelio/r1) | [thelio-r2](https://system76.com/guides/thelio/r2) | [thelio-b1](https://system76.com/guides/thelio/b1)  
+| [thelio-r1](/images/guides/thelio-r1.png) | [thelio-r2](/images/guides/thelio-r2.png) | [thelio-b1](/images/guides/thelio-b1.png)  
 
 | Thelio Mira |
 | ------------|

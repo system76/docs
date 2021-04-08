@@ -25,11 +25,11 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Laptops   | Desktops |  
 | ----------| ---------|
-| [pang10](https://tech-docs.system76.com/models/pang10/README.html) | [thelio-r1](https://system76.com/guides/thelio/r1) |
-| [galp5](https://tech-docs.system76.com/models/galp5/README.html) | [thelio-b1](https://system76.com/guides/thelio/b1) |
-| [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) | [thelio-r2](https://system76.com/guides/thelio/r2) |
-| [darp7](https://tech-docs.system76.com/models/darp7/README.html) | [thelio-major-r2](https://system76.com/guides/thelio-major/r2) |
-| [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) | [meer5](https://system76.com/guides/meer5/short) |
+| [pang10](https://tech-docs.system76.com/models/pang10/README.html) | [thelio-r1](/images/guides/thelio-r1.png) |
+| [galp5](https://tech-docs.system76.com/models/galp5/README.html) | [thelio-b1](/images/guides/thelio-b1.png) |
+| [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) | [thelio-r2](/images/guides/thelio-r2.png) |
+| [darp7](https://tech-docs.system76.com/models/darp7/README.html) | [thelio-major-r2](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) |
+| [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) | [meer5](https://tech-docs.system76.com/models/meer5/README.html) |
 | [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) | []() |
 | [serw12](https://tech-docs.system76.com/models/serw12/README.html) | []() |
 | [bown14](https://tech-docs.system76.com/models/bonw14/README.html) | []() |
@@ -38,7 +38,7 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Thelio |
 | -------|
-| [thelio-r1](https://system76.com/guides/thelio/r1) | [thelio-r2](https://system76.com/guides/thelio/r2) | [thelio-b1](https://system76.com/guides/thelio/b1)  
+| [thelio-r1](/images/guides/thelio-r1.png) | [thelio-r2](/images/guides/thelio-r2.png) | [thelio-b1](/images/guides/thelio-b1.png)  
 
 | Thelio Mira |
 | ------------|

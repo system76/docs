@@ -46,7 +46,7 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 
 | Thelio Major |
 | -------------|
-| [thelio-major-r1](https://system76.com/guides/thelio-major/r1) | [thelio-major-r2](https://system76.com/guides/thelio-major/r2) | [thelio-major-b1](https://system76.com/guides/thelio-major/b1)  
+| [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) 
 
 | Thelio Mega |
 | ------------|

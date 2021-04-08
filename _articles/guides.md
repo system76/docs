@@ -99,7 +99,7 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 | Oryx |
 | -----|
 | [orxp1](/images/guides/orxp1.pdf) | [oryp2](/images/guides/oryp2.png) | [oryp3-15](/images/guides/oryp3-15.png) |
-| [oryp3-17](/images/guides/oryp3-17.png) | [oryp4](https://system76.com/guides/oryp4) | [oryp5-16](https://system76.com/guides/oryp5-16.png) | 
+| [oryp3-17](/images/guides/oryp3-17.png) | [oryp4](https://system76.com/guides/oryp4) | [oryp5-16](/images/guides/oryp5-16.png) | 
 | [oryp5-17](/images/guides/oryp5-17.png) | [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) | [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
 
 | Pangolin |
@@ -133,7 +133,7 @@ To view the guide page for a product you ordered, log into [<i class="fa fa-user
 | Sable |
 | ------|
 | [sabc2](/images/guides/sabc2.pdf) | [sabl4](/images/guides/sabl4.pdf) | [sabl5](/images/guides/sabl5.png) |
-| [sabl6](/images/guides/sabl6.pdf) | [sabt1](/images/guides/sabt1.pdf) | [sabt2](/images/guides/sabt2.pdf) | 
+| [sabl6](/images/guides/sabl6.png) | [sabt1](/images/guides/sabt1.pdf) | [sabt2](/images/guides/sabt2.pdf) | 
 | [sabt3](/images/guides/sabt3.pdf) | 
 
 | Wild Dog |

@@ -54,7 +54,7 @@ Take the following Docker invocation as an example:
 
 ```
 docker run -u $UID:$UID -v $PWD:/project -w /project \
-    --runtime=nvidia --it --rm tensorflow/tensorflow:latest-gpu \
+    --runtime=nvidia --init --rm tensorflow/tensorflow:latest-gpu \
     python ./script.py
 ```
 

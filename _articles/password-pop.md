@@ -24,7 +24,7 @@ First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or
 
 ![systemd-boot](/images/password/systemd-boot.png)
 
-Once the recovery operating system has opened, click **Install Pop!_OS** in the top left, and choose **quit**.  Then, press <kbd><span class="fl-pop-key"></span></kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
+Once the recovery operating system boots, close out of the installation window or choose **“try demo mode”** (be sure not to choose any install or repair options, as this could result in data loss).   Then, press <kbd><span class="fl-pop-key"></span></kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
 
 ```
 lsblk

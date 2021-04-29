@@ -18,12 +18,15 @@ section: pop
 
 ---
 
-The following laptops have switchable graphics:
+Many laptops these days have _switchable graphics_, which allow users to switch between high performance and battery saving modes (as well as an intermediate "balanced" mode).
+The following System76 laptops have these switchable graphics capabilities:
 
 - Adder WS (addw1, addw2)
 - Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15)
 - Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
+
+Pop!_OS includes utilities for switching between these modes, which you can learn more about below.
 
 ### Graphics modes
 

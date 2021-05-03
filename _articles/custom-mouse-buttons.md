@@ -16,6 +16,8 @@ section: software-applications
 
 ### Software
 
+#### xbindkeys
+
 For using <u>xbindkeys</u> open a terminal with the following keys:
 
 Pop!_OS : <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>
@@ -90,6 +92,14 @@ By default xbindkeys does not start on reboot and you will need to add it using 
 
 Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application which is 'xbindkeys'. Now click the **Add** button and your done!
 
+#### Piper
+
+![Piper Buttons](/images/custom-mouse-buttons/Piper-2.png) 
+
+<u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 mouse that we sell and this section will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
+
 ### Caveats
+
+#### xbindkeys
 
 Once the mouse buttons for forward and back are set to a different action they will no longer work in a web browser for going back and forth between web pages.

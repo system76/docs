@@ -94,9 +94,13 @@ Once the application is opened then click the **Add** button then name the progr
 
 #### Piper
 
-![Piper Buttons](/images/custom-mouse-buttons/Piper-2.png) 
+![Piper Buttons Window](/images/custom-mouse-buttons/Piper-2.png) 
 
 <u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 mouse that we sell and this section will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
+
+![Piper Buttons Assign Window](/images/custom-mouse-buttons/Piper-3.png)
+
+In this window the button that has been clicked can be reassigned to a differet function like changing the Left-click to the Right-click or swapping the Forward button to the Back button for web pages.
 
 ### Caveats
 

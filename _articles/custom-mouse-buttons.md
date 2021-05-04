@@ -102,6 +102,21 @@ Once the application is opened then click the **Add** button then name the progr
 
 In this window the button that has been clicked can be reassigned to a differet function like changing the Left-click to the Right-click or swapping the Forward button to the Back button for web pages.
 
+#### Solaar
+
+![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png) 
+
+![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png) 
+
+<u>Solaar</u> is a graphical tool to for adding more devices to your Logitech receiver and information like the following:
+
+- Battery life
+- Firmware and Bootloader version
+- Serial number
+- Sensitivity (DPI) settings
+
+You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/releases/tag/1.0.5) and more information about <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar).
+
 ### Caveats
 
 #### xbindkeys

@@ -115,7 +115,7 @@ In this window the button that has been clicked can be reassigned to a differet 
 - Serial number
 - Sensitivity (DPI) settings
 
-You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/releases/tag/1.0.5) and more information about <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar).
+You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/) and more information about <u>Solaar</u> [here](https://pwr-solaar.github.io/Solaar/devices).
 
 ### Caveats
 

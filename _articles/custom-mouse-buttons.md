@@ -2,12 +2,14 @@
 layout: article
 title: Setting Custom Mouse Actions
 description: >
-   How to set custom mouse actions with xbindkeys
+   How to custom the buttons on your mouse
 keywords:
   - Support
   - Pop
   - Ubuntu
   - xbindkeys
+  - solaar
+  - Piper
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: software-applications

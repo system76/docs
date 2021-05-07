@@ -16,7 +16,7 @@ section: software-applications
 
 ---
 
-### Software
+### Graphical Software
 
 #### Piper
 
@@ -27,6 +27,23 @@ section: software-applications
 ![Piper Buttons Assign Window](/images/custom-mouse-buttons/Piper-3.png)
 
 In this window the button that has been clicked can be reassigned to a differet function like changing the Left-click to the Right-click or swapping the Forward button to the Back button for web pages.
+
+#### Solaar
+
+![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png) 
+
+![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png) 
+
+<u>Solaar</u> is a graphical tool to for adding more devices to your Logitech receiver and information like the following:
+
+- Battery life
+- Firmware and Bootloader version
+- Serial number
+- Sensitivity (DPI) settings
+
+You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/) and more information about <u>Solaar</u> [here](https://pwr-solaar.github.io/Solaar/devices).
+
+### Command Line Software
 
 #### xbindkeys
 
@@ -103,22 +120,6 @@ By default xbindkeys does not start on reboot and you will need to add it using 
 ![Startup Applications Pref](/images/custom-mouse-buttons/startup-applications-pref.png)
 
 Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application which is 'xbindkeys'. Now click the **Add** button and your done!
-
-
-#### Solaar
-
-![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png) 
-
-![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png) 
-
-<u>Solaar</u> is a graphical tool to for adding more devices to your Logitech receiver and information like the following:
-
-- Battery life
-- Firmware and Bootloader version
-- Serial number
-- Sensitivity (DPI) settings
-
-You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/) and more information about <u>Solaar</u> [here](https://pwr-solaar.github.io/Solaar/devices).
 
 ### Caveats
 

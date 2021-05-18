@@ -15,6 +15,12 @@ section: wifi-bluetooth
 
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
+For restarting the bluetooth service, run the command:
+
+```
+sudo service bluetooth restart
+```
+
 Then, try reinstalling Bluetooth related software with this command:
 
 ```

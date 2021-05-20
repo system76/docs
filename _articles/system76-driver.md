@@ -56,6 +56,19 @@ sudo apt install system76-driver
 
 This installs the System76 driver and related utilities which are needed to enable full functionality for your system. 
 
+### Install System76 Driver on Other OSes
+
+#### Arch
+
+Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Driver</u> :
+
+```bash
+sudo pacman -S --needed base-devel git linux-headers
+git clone https://aur.archlinux.org/system76-driver.git
+cd system76-driver
+makepkg -srcif
+sudo systemctl enable --now system76
+```
 #### Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs 
 
 If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:

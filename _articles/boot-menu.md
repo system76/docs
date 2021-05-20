@@ -14,15 +14,46 @@ section: hardware-drivers
 
 ---
 
-To enter the UEFI setup menu (or BIOS menu) on laptops with System76 Open Firmware, press the <kbd>ESC</kbd> key immediately after powering the system on.
+<table border=1>
+  <tbody>
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Firmware</td>
+      <td style="height: 23px;">BIOS key</td>
+      <td style="height: 23px;">Boot menu key</td>
+    </tr>
 
-To enter the BIOS menu on System76 laptops with proprietary firmware, hold the <kbd>F2</kbd> key immediately after turning your computer on. To go directly to the boot menu, hold down the <kbd>F7</kbd> key. For older laptops, hold the <kbd>F1</kbd> key.
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Laptops - Open Firmware</td>
+      <td style="height: 23px;">ESC</td>
+      <td style="height: 23px;">ESC (select one time boot option)</td>
+    </tr>
 
-To enter the BIOS menu for desktops (besides the Meerkat), hold down the <kbd>DEL</kbd> key. To show the boot menu, hold the <kbd>F8</kbd> or <kbd>F12</kbd> key.
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Laptops - Proprietary</td>
+      <td style="height: 23px;">F2</td>
+      <td style="height: 23px;">F7</td>
+    </tr>
 
-For the Meerkat, hold the <kbd>F2</kbd> key for the BIOS, or the <kbd>F10</kbd> key for the boot menu.
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Older laptops</td>
+      <td style="height: 23px;">depends on system</td>
+      <td style="height: 23px;">F1</td>
+    </tr>
 
-<hr/>
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Thelio</td>
+      <td style="height: 23px;">Del</td>
+      <td style="height: 23px;">F8 or F12</td>
+    </tr>
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Meerkat</td>
+      <td style="height: 23px;">F2</td>
+      <td style="height: 23px;">F10</td>
+    </tr>
+
+
+  </tbody>
+</table>
 
 ### Open Firmware Screenshots
 

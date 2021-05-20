@@ -63,7 +63,6 @@ Change directory to where you downloaded the driver, then unzip it. This is usua
 
 ```
 cd Downloads
-
 gunzip linux-brprinter-installer-*.*.*-*.gz
 ```
 

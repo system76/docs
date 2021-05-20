@@ -17,9 +17,9 @@ section: software-applications
 
 If you are not able to boot into your installed OS then we will want to boot from a live disk or if you have Pop installed we can use the Pop Recovery.
 
-For more information about doing this process in the Pop Recovery see [here](/articles/pop-recovery).
+### Creating the live disk (Bootable OS)
 
-For more information about doing this process in a live disk see [here](/articles/bootlaoder).
+We can use this [article](/articles/live-disk) to create a live disk of Ubuntu if you aren't using Pop. For more information about doing this process in the Pop Recovery see [here](/articles/pop-recovery) and for Ubuntu see [here](/articles/bootlaoder).
 
 We do not need to chroot into the installed OS and only need to mount the OS. Once this is done we can install the software that we will use for this process which is `Deja Dup`. 
 
@@ -56,4 +56,8 @@ On the **Storage location** page, you can configure the location where your back
 Once we have our data backed up we can reinstall the OS if we are ready to do that step. Now that we reinstalled the OS we can start restoring our data. To restore your data with Deja Dup, select the **Overview** page, then click the **Restore...** button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.
 
 ![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
+
+## Future Steps
+
+Now that we have our data and a clean install of the OS let's prepare so that we will be ready if this issue happens again using our backup article [here](/articles/backup-files).
 

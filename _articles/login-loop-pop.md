@@ -89,15 +89,15 @@ After reinstalling those packages and rebooting, try logging in again.
 
 If your system is equipped with NVIDIA graphics, a recent update might be causing the login issues. (Usually, NVIDIA driver issues will prevent the login screen from loading at all; however, it's still worth reinstalling if you are unable to log in after the above steps.) Refer to the table below to determine if your system contains NVIDIA graphics:
 
-Always        | Maybe                | Never
-:-------------|:---------------------|:-----
-Oryx Pro      | Wild Dog Pro         | Lemur (Pro)
-Adder WS      | Ratel                | Kudu
-Serval WS     | Gazelle              | Meerkat
-Bonobo WS     | Thelio               | Galago Pro
-Leopard WS    | Thelio Major         | Darter Pro
-Silverback WS | Thelio Massive       | Pangolin
-Thelio Mega   |                      |
+| Always        | Maybe          | Never       |
+|:------------- |:-------------- |:----------- |
+| Oryx Pro      | Wild Dog Pro   | Lemur (Pro) |
+| Adder WS      | Ratel          | Kudu        |
+| Serval WS     | Gazelle        | Meerkat     |
+| Bonobo WS     | Thelio         | Galago Pro  |
+| Leopard WS    | Thelio Mira    | Darter Pro  |
+| Silverback WS | Thelio Major   | Pangolin    |
+| Thelio Mega   | Thelio Massive |             |
 
 To remove the NVIDIA driver, run the following:
 

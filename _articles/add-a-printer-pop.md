@@ -61,9 +61,11 @@ Click Activities in the top left of your display, and search "Terminal" then cli
 
 Change directory to where you downloaded the driver, then unzip it. This is usually the downloads directory.
 
-`cd Downloads`
+```
+cd Downloads
 
-`gunzip linux-brprinter-installer-*.*.*-*.gz`
+gunzip linux-brprinter-installer-*.*.*-*.gz
+```
 
 After this, run the installer, but with your printer model appended to the end. For this example, we will use the model HL-L5000D.
 Note that your installer version may differ from this guide. It is best to type the first portion of the installer name, and then hit TAB to complete the installer name.
@@ -74,7 +76,7 @@ Example:
 
 `sudo bash linux-brprinter-installer-2.2.2-2 HL-L5000D`
 
-If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings.
+If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties.
 
 ## Troubleshooting
 

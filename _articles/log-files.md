@@ -42,7 +42,7 @@ If for some reason you are unable to access the <u>System76 Driver</u> applicati
 
 From there, you can enter the following commands:
 
-```
+```bash
 cd ~/
 mkdir ~/system76
 journalctl > ~/system76/journal.log

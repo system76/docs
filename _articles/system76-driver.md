@@ -69,7 +69,6 @@ cd system76-driver
 makepkg -srcif
 sudo systemctl enable --now system76
 ```
-
 #### Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs 
 
 If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:

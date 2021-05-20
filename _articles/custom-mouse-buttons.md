@@ -2,7 +2,7 @@
 layout: article
 title: Customizing Your Mouse
 description: >
-   How to custom the buttons on your mouse
+   How to customize the buttons on your mouse
 keywords:
   - Support
   - Pop

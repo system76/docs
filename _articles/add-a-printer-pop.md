@@ -69,14 +69,18 @@ gunzip linux-brprinter-installer-*.*.*-*.gz
 
 After this, run the installer, but with your printer model appended to the end. For this example, we will use the model HL-L5000D.
 Note that your installer version may differ from this guide. It is best to type the first portion of the installer name, and then hit TAB to complete the installer name.
-
-`sudo bash linux-brprinter-installer` hit TAB after that for the installer name to be autocompleted, and add your printer name at the end.
+```
+sudo bash linux-brprinter-installer
+```
+When typing the above command, hit TAB after that for the installer name to be autocompleted, and then add your printer name, after a space, at the end.
 
 Example:
 
 `sudo bash linux-brprinter-installer-2.2.2-2 HL-L5000D`
 
-If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties.
+If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties as seen in the screenshot below.
+
+![Printer Properties](/images/add-a-printer-pop/printerprops.png)
 
 ## Troubleshooting
 

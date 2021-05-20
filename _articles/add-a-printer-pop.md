@@ -78,7 +78,7 @@ Example:
 
 `sudo bash linux-brprinter-installer-2.2.2-2 HL-L5000D`
 
-If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties as seen in the screenshot below.
+If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
 
 ![Printer Properties](/images/add-a-printer-pop/printerprops.png)
 

@@ -33,4 +33,4 @@ We can instead use the <u>Terminal</u> application to perform the same behavior 
 
 |         SATA          |           NVMe            |
 |:---------------------:|:-------------------------:|
-| sudo fsck -y /dev/sda | sudo fsck -y /dev/nvme0n1 |
+| sudo fsck -Cy /dev/sda | sudo fsck -Cy /dev/nvme0n1 |

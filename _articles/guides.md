@@ -76,7 +76,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Galago |
 | -------|
-| [galp2](/images/guides/galp2.png) | [galp3](https://system76.com/guides/galp3) | [galp4](https://tech-docs.system76.com/models/galp4/README.html) | 
+| [galp2](/images/guides/galp2.png) | [galp3](/images/guides/galp3.png) | [galp4](https://tech-docs.system76.com/models/galp4/README.html) | 
 | [galp5](https://tech-docs.system76.com/models/galp5/README.html) | [galu1](/images/guides/galu1.pdf) |
 
 | Gazelle |
@@ -99,7 +99,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Oryx |
 | -----|
 | [orxp1](/images/guides/orxp1.pdf) | [oryp2](/images/guides/oryp2.png) | [oryp3-15](/images/guides/oryp3-15.png) |
-| [oryp3-17](/images/guides/oryp3-17.png) | [oryp4](https://system76.com/guides/oryp4) | [oryp5-16](/images/guides/oryp5-16.png) | 
+| [oryp3-17](/images/guides/oryp3-17.png) | [oryp4](/images/guides/oryp4.png) | [oryp5-16](/images/guides/oryp5-16.png) | 
 | [oryp5-17](/images/guides/oryp5-17.png) | [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) | [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
 
 | Pangolin |

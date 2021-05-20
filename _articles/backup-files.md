@@ -40,7 +40,7 @@ User files are the most common data to back up. This includes documents, picture
 
 #### Installation
 
-To install Deja Dup, search for it in the Pop!\_Shop, or run this command:
+To install Deja Dup, search for it in the Pop!\_Shop, Ubuntu Software or run this command:
 
 ```
 sudo apt install deja-dup

@@ -73,7 +73,7 @@ To do this, please install the <u>GNOME Tweaks tool</u> from the Pop!\_Shop or U
 sudo apt install gnome-tweak-tool
 ```
 
-After that, open the <u>Tweaks</u> app from the Activities overview, then navigation to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
+After that, open the <u>Tweaks</u> app from the Activities overview, then navigate to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
 
 ## Calibrate Kinect
 
@@ -84,6 +84,8 @@ KinectUtil getCalib 0
 ```
 
 This will download the intrinsic calibration parameters directly from your Kinect's firmware and then write the result to a file in `/etc/Vrui-3.1/Kinect-2.8/.`
+
+Note: if you receive a "Kinect Error 13" message, you may need to power-cycle the Kinect, the computer, or both.
 
 ## Align Kinect above sandbox
 
@@ -129,12 +131,12 @@ RawKinectViewer -compress 0
 
 ![Right Click Menu](/images/ar-sandbox/4-B-average-frames-1ba827544a.png)
 
-- Press and hold the 1 key, move your cursor over Extract Planes, then release the 1 key:
+- Press and hold the 1 key, move your cursor over Extract Planes, then release the 1 key (releasing this key will trigger this action, so clicking with the mouse is not necessary):
 
 ![Extract Planes](/images/ar-sandbox/4-C-extract-plane-1cbd8abb5e.png)
 
 - You now need to draw a rectangle that fits within the interior of your flat surface (in the depth view). You want some space between your rectangle and the edges of your flat surface.
-Start with your cursor near the top-left corner of your flat surface. Press and hold the 1 key, drag out a rectangle toward the bottom-right corner, then release the 1 key:
+Start with your cursor near the top-left corner of your flat surface. Press and hold the 1 key, drag out a rectangle toward the bottom-right corner using the right mouse button, then release the 1 key:
 
 ![Kinect Area View](/images/ar-sandbox/4-D-drag-rectangle-a8b53ecc87.png)
 

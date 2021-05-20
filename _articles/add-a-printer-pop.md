@@ -45,6 +45,42 @@ Automatically installed printers will work fine, but if you need to make changes
 sudo usermod -aG lpadmin $USER
 ```
 
+#### Brother Printers
+
+Search for your printer on this page https://www.brother-usa.com/brother-support/driver-downloads
+
+Once you find your printer, click the downloads link, and select the "Linux" option under "Select OS Family"
+
+Select Linux (deb) for your "OS Version"
+
+Click the Driver Install Tool under utilities on that page.
+
+Click "Agree to the EULA and Download"
+
+Click Activities in the top left of your display, and search "Terminal" then click the Terminal application to open it.
+
+Change directory to where you downloaded the driver, then unzip it. This is usually the downloads directory.
+
+```
+cd Downloads
+gunzip linux-brprinter-installer-*.*.*-*.gz
+```
+
+After this, run the installer, but with your printer model appended to the end. For this example, we will use the model HL-L5000D.
+Note that your installer version may differ from this guide. It is best to type the first portion of the installer name, and then hit TAB to complete the installer name.
+```
+sudo bash linux-brprinter-installer
+```
+When typing the above command, hit TAB after that for the installer name to be autocompleted, and then add your printer name, after a space, at the end.
+
+Example:
+
+`sudo bash linux-brprinter-installer-2.2.2-2 HL-L5000D`
+
+If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
+
+![Printer Properties](/images/add-a-printer-pop/printerprops.png)
+
 ## Troubleshooting
 
 If the printer stops working, open the <u>Printers</u> Application again and click the gear icon, and select **Remove Printer** to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.

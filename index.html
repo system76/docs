@@ -21,142 +21,40 @@ layout: default
 	</div>
 
 	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="learn">LEARN</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts learn">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'learn' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
+		<div class="column">
+			<div class="small-12 columns">
+				<hr />
+				<h1 id="learn">Learn</h1>
+			</div>
 	
-		<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h2 id="switching">Switching to Linux</h2>
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="switching">Switching to Linux</h2>
+			</div>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts switching">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'switching' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-
-
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="manage">MANAGE</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts manage">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'pop' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
 	
-		<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h2 id="software">Software</h2>
+		<div class="column">
+			<div class="small-12 columns">
+				<hr />
+				<h1 id="manage">Manage</h1>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="small-12 columns support-excerpts software">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'software' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
 	
-	<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			<h1 id="troubleshoot">TROUBLESHOOT</h1>
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="switching">Software</h2>
+			</div>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="small-12 columns support-excerpts troubleshoot">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'ubuntu' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
-	
-		<div class="row">
-		<div class="small-12 columns">
-			<hr />
-			
-			<h2 id="repairs-returns">Repairs and Returns</h2>
-		</div>
-	</div>
+		<div class="column">
+			<div class="small-12 columns">
+				<hr />
+				<h1 id="troubleshoot">Troubleshoot</h1>
+			</div>
 
-	<div class="row">
-		<div class="small-12 columns support-excerpts repairs-returns">
-			{% assign articles = site.articles | sort:"title" %}
-			{% for article in articles %}
-				{% if article.hidden != true %}
-					{% if article.section == 'repairs-returns' %}
-						<article>
-							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
-							{{ article.description | markdownify }}
-						</article>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="switching">Something Something</h2>
+			</div>
 		</div>
 	</div>
 

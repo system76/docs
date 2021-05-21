@@ -58,7 +58,7 @@ Boot Menu: https://support.system76.com/articles/boot-menu/
 
 NOTE: The following instructions can be used in either Ubuntu or PopOS.
 
-You can open the terminal by clicking Activities in the upper-left corner and searching for "Terminal", or by pressing <kbd> SUPER </kbd>
+You can open the terminal by clicking Activities in the upper-left corner and searching for "Terminal", or by pressing <kbd><span class="fl-ubuntu"></span></kbd> <kbd><span class="fl-pop-key"></span></kbd> 
 When you run the first command with "sudo" it will ask you to enter your password. 
 Typing your password will not show anything in the Terminal window. That is normal and for security. 
 Just enter your password as you normally would and then hit enter. You'll also need to hit enter after each command.

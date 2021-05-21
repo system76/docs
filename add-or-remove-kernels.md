@@ -19,10 +19,10 @@ section: software-applications
 
 # Add or Remove Kernels
 
-Document Version: 1.0.0
-Date: (5-20-2021)
-Author: Nathaniel Warburton
-Contributing Editor(s): 
+- Document Version: 1.0.0
+- Date: (5-20-2021)
+- Author: Nathaniel Warburton
+- Contributing Editor(s): 
 
 Both Ubuntu and PopOS are capable of installing multiple kernel versions. The OS only boots to, and uses, one kernel at a time. Until removed through automatic updates, or manual deletion, some older kernels will be kept on the drive's boot partition. These older kernels can be used for testing software compatibility, providing a rescue environment, or for changing the way the system peforms scheduling. For example, the community maintained "Zen" version of the Linux Kernel (see below) is specfically focused on gaming peformance. The Zen kernel modifies it's CPU clock and scheduling alogorithms to try to improve OS speed. This may work better for some activities than others (gaming vs. machine learning). 
 

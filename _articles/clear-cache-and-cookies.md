@@ -19,10 +19,12 @@ section: getting-started
 
 # Clear Cache and Cookies in Firefox and Chrome
 
+<!-- 
 - Document Version: 1.0.0
 - Date: (5-21-2021)
 - Author: Nathaniel Warburton, Emma Marshall
 - Contributing Editor(s): Zach Gangwer
+-->
 
 If you are having trouble logging into your account or opening a support ticket, a good first troubleshooting step is to clear your browser's cache and cookies.
 

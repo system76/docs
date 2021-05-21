@@ -21,8 +21,20 @@ section: getting-started
 
 # Before You Open a Support Ticket
 
+This article is designed to provided a range of self-help resources from our other support article, all in one place. Please review this article and familiarize yourself with the kind of information we will need to help diagnose your issue. Instructions for some of the testing we perform on support tickets is included. 
 
-If you’ve already done some of these items, and you haven’t already mentioned it, just let us know! Otherwise feel free to skip that item, and check the others. 
+Any information or test results you can provide to us when opening your support case, will help us resolve your issue faster.
+If you’ve already done some of these items, just let us know! Otherwise feel free to skip that item in this list, and check the others. Please do provide the outcomes of any testing you've already done.
+
+
+**NOTE**
+
+You can use this article as a guide for your messaging opening a support case. Please answer as many of the questions as you can. 
+The first message sent on a ticket does not support file attachments, however the second message will.
+
+If you're having difficulty attaching a file, you can also email it to info@system76.com. Please be sure to tell us on the ticket if you have sent an email attachment.
+
+If you encounter problems signing into your account, or opening a ticket, please [follow these steps](https://support.system76.com/articles/clear-cache-and-cookies/)
 
 ## Before We Begin:
 
@@ -37,6 +49,8 @@ We have a help article on [backups here](https://support.system76.com/articles/b
 This will allow us an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary. 
 
 We have a help article on creating [Live USBs here](https://support.system76.com/articles/live-disk/)
+
+# Common Issue Sources
 
 ## Software
 
@@ -76,7 +90,7 @@ sudo apt full-upgrade
 reboot
 ```
 
-[Fix Package Manager](https://support.system76.com/articles/package-manager-pop/) 
+Source: [Fix Package Manager](https://support.system76.com/articles/package-manager-pop/) 
 
 ### 5. Have you tried creating an administrative Test User account to see if the issue is present in a different user?
 
@@ -186,7 +200,7 @@ You can read the details of our warranty coverage [here](https://system76.com/wa
  
 ---
  
-- Document Version: 1.0.1
+- Document Version: 1.2.0
 - Date: (5-21-2021)
 - Author: Nathaniel Warburton
 - Contributing Editor(s): Aaron Honeycutt

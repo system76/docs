@@ -117,23 +117,27 @@ These updates may directly or indirectly resolve your issue.
 
 We are happy to provide instructions on how to do that if need be. Just let us know which program(s) are misbehaving and we can explain how to uninstall it/them.
 
+NOTE: the apt package manager is used in both PopOS and Ubuntu. PopOS also offers flatpak variations of programs in the Pop!\_Shop. 
+If you need to remove flatpak packages you can also remove or reinstall them from the "Installed" tab of the Pop!\_Shop. Ubuntu uses snap packages for some programs by default, and snapd can be installed manually on Pop!\_OS as well.
+
 Typically the Terminal commands to reinstall a program are:
 
 ```bash
 sudo apt remove <packagename>
 ```
-OR:
+OR: 
 
 ```bash
 flatpak uninstall <packagename>
 ```
+
 OR:
 
 ```bash
 sudo snap remove <packagename>
 ```
-
 Where <packagename> is replaced with the program name.
+
   
 You can also inspect and edit your software sources using the instructions in this help article: 
 

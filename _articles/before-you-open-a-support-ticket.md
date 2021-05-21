@@ -21,11 +21,6 @@ section: getting-started
 
 # Before You Open a Support Ticket
 
-- Document Version: 1.0.0
-- Date: (5-20-2021)
-- Author: Nathaniel Warburton
-- Contributing Editor(s): 
-
 
 If you’ve already done some of these items, and you haven’t already mentioned it, just let us know! Otherwise feel free to skip that item, and check the others. 
 
@@ -35,13 +30,13 @@ If you’ve already done some of these items, and you haven’t already mentione
 
 Depending on how time sensitive your issue is, the fastest resolution may be to reinstall the operating system. That is much easier to do if we know that your important files are safe. 
 
-We have a help article on backups which can be found here: https://support.system76.com/articles/backup-files/ 
+We have a help article on [backups here](https://support.system76.com/articles/backup-files/)
 
 ### 2. Do you have a Live USB drive with a copy of either Ubuntu or PopOS available in case we need to use it as a rescue disk? 
 
 This will allow us an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary. 
 
-We have a help article on creating Live USBs which can be found here: https://support.system76.com/articles/live-disk/ 
+We have a help article on creating [Live USBs here](https://support.system76.com/articles/live-disk/)
 
 ## Software
 
@@ -49,9 +44,9 @@ We have a help article on creating Live USBs which can be found here: https://su
 
 We have help articles on the Recovery Partition and how to access the Boot Menu listed below.
 
-Recovery Partition: https://support.system76.com/articles/pop-recovery/ 
+[Recovery Partition](https://support.system76.com/articles/pop-recovery/)
 
-Boot Menu: https://support.system76.com/articles/boot-menu/ 
+[Boot Menu](https://support.system76.com/articles/boot-menu/)
 
 
 ### 4. Is your system fully up to date?
@@ -81,7 +76,7 @@ sudo apt full-upgrade
 reboot
 ```
 
-Source: https://support.system76.com/articles/package-manager-pop/ 
+[Fix Package Manager](https://support.system76.com/articles/package-manager-pop/) 
 
 ### 5. Have you tried creating an administrative Test User account to see if the issue is present in a different user?
 
@@ -94,15 +89,15 @@ That can be done by:
 - Make sure click the "Administrator" option for the user.
 - Reboot and log into the new user.
 
-Source: https://support.system76.com/articles/other-accounts/ 
+[Creating User Accounts](https://support.system76.com/articles/other-accounts/)
 
 ### 6. Is there a new OS version available? 
 Upgrading to the latest OS version usually includes newer kernel modules and software packages as well as security updates and bug-fixes. 
 These updates may directly or indirectly resolve your issue.
 
-Upgrade Pop: https://support.system76.com/articles/upgrade-pop/ 
+[Upgrade Pop](https://support.system76.com/articles/upgrade-pop/)
 
-Upgrade Ubuntu: https://support.system76.com/articles/upgrade-ubuntu/ 
+[Upgrade Ubuntu](https://support.system76.com/articles/upgrade-ubuntu/)
 
 ### 7. Have you tried reinstalling the packages or programs that are giving you trouble? 
 
@@ -128,9 +123,9 @@ Where <packagename> is replaced with the program name.
   
 You can also inspect and edit your software sources using the instructions in this help article: 
 
-Pop!\_OS: https://support.system76.com/articles/manage-repos-pop/ 
+[Manage Repositories in Pop!\_OS](https://support.system76.com/articles/manage-repos-pop/)
   
-Ubuntu: https://support.system76.com/articles/manage-repos-ubuntu/ 
+[Manage Repositories in Ubuntu](https://support.system76.com/articles/manage-repos-ubuntu/) 
 
 
 ### 8. Let’s collect some system logs to get more information on what’s happening with your system.
@@ -140,7 +135,7 @@ To generate the logs we need, please click on Activities in the top left of your
 
 Then click on the 'Create Log Files' button and the log file will be in your home directory when you first open the Files application.
 
-For more information, please see this support article: https://support.system76.com/articles/log-files/ 
+For more information, please see this support article: [Creating Log Files](https://support.system76.com/articles/log-files/) 
 
 ## Environment
 
@@ -160,7 +155,7 @@ For more information, please see this support article: https://support.system76.
 
 ### 15. If this is a hardware issue, steps 3 and 5 will help confirm it. 
 
-We also have an article on diagnosing hardware failures which can be found here: https://support.system76.com/articles/hardware-failure/ 
+We also have an article on diagnosing hardware failures which can be found [here](https://support.system76.com/articles/hardware-failure/)
 
 We have several repair or replacement options available depending on the circumstances.
 
@@ -168,7 +163,7 @@ We have several repair or replacement options available depending on the circums
 We build and ship a replacement system with the same configuration, and have you return the defective system once the new one is received. More details will be provided if this process is requested.
 
 ### Advance Replacement Part - Within Warranty Period
-We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available service manuals here: https://support.system76.com/articles/service-manuals/ and here: https://tech-docs.system76.com/ 
+We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available [service manuals here](https://support.system76.com/articles/service-manuals/) and [here](https://tech-docs.system76.com/)
 
 More details will be provided if this process is requested.
 
@@ -186,4 +181,12 @@ More details will be provided if this process is requested.
 
 # Warranty Information
 
-You can read the details of our warranty coverage here: https://system76.com/warranty 
+You can read the details of our warranty coverage [here](https://system76.com/warranty)
+
+ 
+---
+ 
+- Document Version: 1.0.1
+- Date: (5-21-2021)
+- Author: Nathaniel Warburton
+- Contributing Editor(s): Aaron Honeycutt

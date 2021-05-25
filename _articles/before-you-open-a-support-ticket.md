@@ -13,7 +13,7 @@ keywords:
  - tech-support
  - troubleshooting
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 section: getting-started
 
 ---

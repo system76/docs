@@ -45,14 +45,10 @@ This will show you the name of the main internal drive, which will have 4 partit
 
 Next, run this command:
 
-```
-sudo mount /dev/sda3 /mnt
-```
-OR for NVMe drives:
+| **SATA Drives**           | **NVMe Drives**                |
+| sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
 
-```
-sudo mount /dev/nvme0n1p3 /mnt
-```
+**Note:** Each box is one single command.
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  
 
@@ -60,20 +56,12 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-```
-sudo cryptsetup luksOpen /dev/sda3 cryptdata
-sudo lvscan
-sudo vgchange -ay
-```
-OR for NVMe drives:
+| **SATA Drives**                              | **NVMe Drives**                                   |
+| sudo cryptsetup luksOpen /dev/sda3 cryptdata | sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata |
+| sudo lvscan                                  | sudo lvscan                                       |
+| sudo vgchange -ay                            | sudo vgchange -ay                                 |
 
-```
-sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
-sudo lvscan
-sudo vgchange -ay
-```
-
-**Note** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
+**Note:** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
 ```
 sudo mount /dev/mapper/data-root /mnt
@@ -87,21 +75,11 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
-
-```
-sudo mount /dev/sda1 /mnt/boot/efi
-for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
-```
-OR for NVMe drives:
-
-```
-sudo mount /dev/nvme0n1p1 /mnt/boot/efi
-for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
-```
+| **SATA Drives**                                                          | **NVMe Drives**                                                          |
+| sudo mount /dev/sda1 /mnt/boot/efi                                       | sudo mount /dev/nvme0n1p1 /mnt/boot/efi                                  |
+| for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done | for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done |
+| sudo cp -n /etc/resolv.conf /mnt/etc/                                    | sudo cp -n /etc/resolv.conf /mnt/etc/                                    |
+| sudo chroot /mnt                                                         | sudo chroot /mnt                                                         |
 
 To exit from the <u>chroot</u> and reboot the computer, run these commands:
 

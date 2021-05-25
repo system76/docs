@@ -16,46 +16,57 @@ section: pop
 
 ---
 
-If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems.  Some package manager issues can be resolved with the graphical update program, but many require the command line.  If you get the red circle in the status bar, run these commands to fix your package manager:
+### Apt/Dpkg (system-wide packages)
+
+If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems. Some package manager issues can be resolved with the graphical update program, but many require the command line. Try running these commands to fix your package manager:
 
 ```
 sudo apt clean
 sudo apt update -m
 sudo dpkg --configure -a
 sudo apt install -f
-sudo apt dist-upgrade
+sudo apt full-upgrade
 sudo apt autoremove --purge
 ```
 
-Sometimes, you may see some packages that are still broken and need to be installed manually or purged manually.  There may be broken dependencies or cyclical dependencies.  If so, these commands can help:
+Sometimes, you may see some packages that are still broken and need to be installed manually or purged manually. There may be broken dependencies or cyclical dependencies. If so, these commands can help:
 
 ```
 sudo apt install --reinstall <packagename>
 ```
 
-This command reinstalls the package.  This can be convenient when the package has many reverse dependencies.
+This command reinstalls the package. This can be convenient when the package has many reverse dependencies.
 
 ```
 sudo apt purge <package name>
 ```
 
-This will remove a package and its configuration files.  Use this command to remove a package that is causing issues, and reinstall it with this command:
+This command will remove a package and its system-wide configuration files. Use it to remove a package that is causing issues, and reinstall it with this command:
 
 ```
 sudo apt install <package name>
 ```
 
-**Important:** Please pay attention when using a purge command.  If the command looks like it will remove several additional packages besides the one you are trying to fix, don't run it!  If it's only a few packages, most likely it's safe.  If additional packages are removed, make sure to install them again before restarting the computer.  This command will make sure the core Pop!_OS components are installed after any purge commands:
+**Important:** Please pay attention when using a purge command. If the command looks like it will remove several additional packages besides the one you are trying to fix, don't run it! If it's only a few packages, it's most likely safe. If additional packages are removed, make sure to install them again before restarting the computer. This command will make sure the core Pop!_OS components are installed after any purge commands:
 
 ```
 sudo apt install pop-desktop
 ```
 
-If <u>Software Updater</u> indicates that some remote repositories can't be reached, open the <u>Software & Updates</u> program and look in the **Other Software** tab for the broken repository.  Either remove the repository, or search for the software vendor to determine what has happened to their software server.  Sometimes the version of the repo (xenial, yakkety, zesty, artful, etc) needs changing to match the current version of the operating system.
+If the Pop!_Shop indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
 
-## Useful Programs
+### Flatpak
 
-The program <u>Synaptic</u> is a very powerful GUI of the package manager.  Packages can be installed, removed, selectively upgraded, pinned, and information gained about their purpose and dependencies.  It also provides a comprehensive list of available packages and programs to be downloaded.  It can be installed in the <u>Software Center</u> or with this command:
+If the Pop!_Shop is showing an update available, but there are no updates listed on the update page, there may be a Flatpak runtime (a backend program that another Flatpak depends on) with an update available. Run these commands to update all Flatpaks and remove any Flatpak runtimes that are no longer required by any installed programs:
+
+```
+flatpak update
+flatpak uninstall --unused
+```
+
+### Useful Programs
+
+The program <u>Synaptic Package Manager</u> is a very powerful GUI frontend for the package manager. Packages can be installed, removed, selectively upgraded, or pinned, and information can be gained about their purpose and dependencies. It also provides a comprehensive list of available packages and programs that can be downloaded. It can be installed in the <u>Pop!_Shop</u> or with this command:
 
 ```
 sudo apt install synaptic

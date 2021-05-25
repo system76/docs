@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Create and Use Bootable Media from Other OS's
+title: Live Disk Creation (Other Operating Systems)
 description: >
-  You can run Pop!_OS from a USB drive for hardware testing, recovery, and installation/re-installation.
+  Create and use bootable media on other operating systems.
 keywords:
   - Pop_OS!
   - USB
@@ -46,7 +46,7 @@ A live disk is a handy tool to have around!
 
 ### For Ubuntu/Pop!_OS
 
-In order to install Pop!_OS or Ubuntu, we must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](http://pop.system76.com) or [Ubuntu 20.04 here](https://www.ubuntu.com/download/desktop/thank-you?version=20.04.1&architecture=amd64).
+In order to install Pop!_OS or Ubuntu, we must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](http://pop.system76.com) or [Ubuntu 20.04 here](https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64).
 
 In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use the Disks applicaton for Ubuntu and Etcher for Windows/MacOS.
 
@@ -86,9 +86,10 @@ Once the flash is complete (should look like the screenshot above), it's time to
 
 After creating the live disk, insert the USB into your computer, then reboot or power on your system. You'll need to tell the computer to boot from the live disk by holding a key right as you power on:
 
-Laptops                             | Desktops
------------------------------------ | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
+ Firmware              | Laptops                                                               | Desktops                                              |
+ -------------------- | --------------------------------------------------------------------- | ----------------------------------------------------- |
+ Proprietary Firmware | Hold <kbd>F7</kbd>/<kbd>F1</kbd>/<kbd>F2</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>                        |
+ Open Firmware        | Hold <kbd>Esc</kbd>                                                   |                                                       |
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 

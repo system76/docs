@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Ubuntu Keyboard Shortcuts
-description: Learn how master using Ubuntu with your keyboard
+description: Learn how master using Ubuntu with your keyboard.
 keywords:
   - keyboard
   - shortcuts

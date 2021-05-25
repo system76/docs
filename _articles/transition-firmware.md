@@ -19,7 +19,6 @@ Some models shipped with proprietary firmware, but later received support for [S
 - Darter Pro (darp6)
   - Model shipped wih System76 Open Firmware and proprietary EC. Firmware transition installs System76 Open EC.
 - Gazelle (gaze15)
-  - Firmware transition is temporarily disabled to investigate touchpad issues
 
 This list may expand in the future as more models are ported.
 
@@ -38,6 +37,8 @@ System76 Open Firmware is designed to be lightweight and performant with a simpl
 * Some features are present in proprietary firmware but are not available in Open Firmware, including:
   * Flexicharger (battery threshold). This feature is currently in development for System76 Open Firmware.
   * Self-encryptiong storage drives. Not supported (note that the full-disk encryption used in Pop!\_OS does not require this firmware-level feature.)
+* Some features behave differently in System76 Open Firmware
+  * Galago Pro units running System76 EC require pressing the <kbd>Fn</kbd> key to use the number pad, regardless of <kbd>Num Lk</kbd> state
 
 Below is a comparison between the UEFI setup menu on proprietary firmware (left) and System76 Open Firmware (right):
 

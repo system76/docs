@@ -259,7 +259,7 @@ Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 Examples include:
 
 - [Bitwarden](https://bitwarden.com/)
-- [1Password](https://1password.com/) (Terminal app or Browser Extension)
+- [1Password](https://1password.com/)
 - [LastPass](https://www.lastpass.com/)
 
 ![bitwarden](/images/pop-os-screenshots/bitwarden.png)
@@ -511,11 +511,11 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 ## [Development](#development)
 
 **macOS**
-  - Xcode (avaiable in the App Store)
+  - Xcode (available in the App Store)
 
 
 **Pop!\_OS**
-  - Text Editer (default)
+  - Text Editor (default)
   - [Atom](https://atom.io/) (available in the Pop!\_Shop)
   - [Microsoft VSCode](https://code.visualstudio.com/) (available in the Pop!\_Shop)
 

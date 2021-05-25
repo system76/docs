@@ -2,7 +2,7 @@
 layout: article
 title: Install the System76 Driver
 description: >
-    Learn how to add the System76 Driver to your System76 computer after reinstalling Ubuntu
+    Learn how to add the System76 Driver to your System76 computer after reinstalling your OS
 keywords:
   - system76
   - driver

@@ -36,7 +36,7 @@ makepkg -srcif
 
 ### System76 DKMS
 
-This package is needed for the keyboard backlight key combos to work on Closed Firmware systems:
+This package is needed for hotkeys and fan(s) on Closed Firmware systems:
 
 ```bash
 git clone https://aur.archlinux.org/system76-dkms.git
@@ -46,7 +46,7 @@ makepkg -srcif
 
 ### System76 ACPI DKMS
 
-This package is needed for the keyboard backlight key combos to work on Open Firmware systems:
+This package is needed for hotkeys and fan(s) on Open Firmware systems:
 
 ```bash
 git clone https://aur.archlinux.org/system76-acpi-dkms.git
@@ -92,4 +92,4 @@ cd system76-acpi-oled
 makepkg -srcif
 ```
 
-NOTE: This package is only needed for systems with OLED displays.
+NOTE: This package is only needed for systems with OLED displays to control the brightness.

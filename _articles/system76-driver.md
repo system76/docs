@@ -80,4 +80,4 @@ makepkg -srcif
 sudo systemctl enable --now system76
 ``` 
 
-NOTE: For other featues like keyboard backlight support and firmware updates other packages will need to be installed.
+NOTE: For other featues like keyboard backlight support and firmware updates other packages will need to be installed. Refer to this [article](/articles/system76-software) to install that software.

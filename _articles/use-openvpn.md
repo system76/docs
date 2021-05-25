@@ -20,15 +20,25 @@ section: security-encryption
 
 ![Log into ProtonVPN website](/images/use-openvpn/Logged-In.png)
 
+Once signed in make sure to click the **Download .deb** file for Ubuntu and Pop!_OS.
+
 ![Download debian file part 1](/images/use-openvpn/Debian-file-download.png)
 
+Next be sure to leave **Open with Eddy (default)** selected so that the next window pops up.
+
 ![Download debian file part 2](/images/use-openvpn/Downloaded-debian-file.png)
+
+Now click the **Install** button to install <u>ProtonVPN</u> using <u>Eddy</u>.
 
 ### Installing the .deb package
 
 ![Installing the debian file](/images/use-openvpn/Installing-debian-file.png)
 
+Finally close the <u>Eddy</u> window.
+
 ### Install the package:
+
+Open a <u>Terminal</u> window to install the actual package as the .deb file that we installed added the repository so that our system knows where to find the real <u>ProtonVPN</u> package.
 
 ### Pop!_OS
 
@@ -49,9 +59,15 @@ sudo apt install protonvpn
 
 ![ProtonVPN Main Window](/images/use-openvpn/ProtonVPN-main-window.png)
 
+Open the <u>ProtonVPN</u> client by clicking Activites on the top left of your desktop and search for <u>ProtonVPN</u> in the search box. Enter your login information which should be the same as the information that you used to sign into the ProtonVPN website. If that doesn't work you will need to reach out to ProtonVPN support.
+
 ![ProtonVPN signed in](/images/use-openvpn/ProtonVPN-signed-in.png)
 
+Now that we are signed into the service with the <u>ProtonVPN</u> client we can connect to any server that we have access to in our plan though ProtonVPN.
+
 ![ProtonVPN connected to a server](/images/use-openvpn/ProtonVPN-connected.png)
+
+From this window we can see our Upload and Download speeds including the load that the server is under (how much it is being used currently) and our IP address.
 
 ## Install a VPN using OpenVPN files
 

@@ -12,3 +12,33 @@ section: hardware-drivers
 
 ---
 
+## Arch
+
+Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). 
+
+### System76 Firmware CLI
+
+```bash
+git clone https://aur.archlinux.org/system76-firmware.git
+cd system76-firmware-daemon
+makepkg -srcif
+sudo systemctl enable --now system76-firmware-daemon
+```
+
+### System76 Firmware Manager
+
+```bash
+git clone https://aur.archlinux.org/firmware-manager.git
+cd firmware-manager
+makepkg -srcif
+```
+
+### System76 DKMS
+
+This package is needed for the keyboard backlight key combos to work and the system will need to be rebooted for it to work:
+
+```bash
+git clone https://aur.archlinux.org/system76-dkms.git
+cd system76-dkms
+makepkg -srcif
+```

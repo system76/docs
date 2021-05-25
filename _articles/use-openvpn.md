@@ -20,21 +20,21 @@ section: security-encryption
 
 ![Log into ProtonVPN website](/images/use-openvpn/Logged-In.png)
 
-Once signed in make sure to click the **Download .deb** file for Ubuntu and Pop!_OS.
+Once signed in click the **Downloads** tab on the left side of the website and click on the **Download** button for GNU/Linux.
 
 ![Download debian file part 1](/images/use-openvpn/Debian-file-download.png)
 
-Next be sure to leave **Open with Eddy (default)** selected so that the next window pops up.
+Click the **Download .deb** button for Ubuntu and Pop!_OS.
 
 ![Download debian file part 2](/images/use-openvpn/Downloaded-debian-file.png)
 
-Now click the **Install** button to install <u>ProtonVPN</u> using <u>Eddy</u>.
+Next be sure to leave **Open with Eddy (default)** selected so that the next window pops up.
 
 ### Installing the .deb package
 
 ![Installing the debian file](/images/use-openvpn/Installing-debian-file.png)
 
-Finally close the <u>Eddy</u> window.
+Now click the **Install** button to install <u>ProtonVPN</u> using <u>Eddy</u>. Once that is down close the <u>Eddy</u> window.
 
 ### Install the package:
 

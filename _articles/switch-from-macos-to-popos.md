@@ -259,7 +259,7 @@ Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 Examples include:
 
 - [Bitwarden](https://bitwarden.com/)
-- [1Password](https://1password.com/) (Terminal app or Browser Extension)
+- [1Password](https://1password.com/)
 - [LastPass](https://www.lastpass.com/)
 
 ![bitwarden](/images/pop-os-screenshots/bitwarden.png)

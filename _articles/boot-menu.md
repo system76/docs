@@ -14,24 +14,71 @@ section: hardware-drivers
 
 ---
 
-To enter BIOS for most System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.
+<table border=1>
+  <tbody>
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Firmware</td>
+      <td style="height: 23px;">BIOS key</td>
+      <td style="height: 23px;">Boot menu key</td>
+    </tr>
 
-To enter BIOS for desktops (besides the Meerkat), hold down the <kbd>DEL</kbd> key.  To show the boot menu, hold the <kbd>F8</kbd> or <kbd>F12</kbd> key. 
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Laptops - Open Firmware</td>
+      <td style="height: 23px;">ESC</td>
+      <td style="height: 23px;">ESC (select one time boot option)</td>
+    </tr>
 
-For the Meerkat, hold the <kbd>F2</kbd> key for the BIOS, or the <kbd>F10</kbd> key for the boot menu.
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Laptops - Proprietary</td>
+      <td style="height: 23px;">F2</td>
+      <td style="height: 23px;">F7</td>
+    </tr>
 
-The newest Darter Pro (darp6) and Galago Pro (galp4) contain System76 Open Firmware with Coreboot. The BIOS menu can be accessed by tapping the <kbd>ESC</kbd> key immediately after powering the system on. The following screenshots show what the menus look like:
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Older laptops</td>
+      <td style="height: 23px;">depends on system</td>
+      <td style="height: 23px;">F1</td>
+    </tr>
 
-### Boot Default
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Thelio</td>
+      <td style="height: 23px;">Del</td>
+      <td style="height: 23px;">F8 or F12</td>
+    </tr>
+    <tr style="height: 23px;">
+      <td style="height: 23px;">Meerkat</td>
+      <td style="height: 23px;">F2</td>
+      <td style="height: 23px;">F10</td>
+    </tr>
 
-![Main menu](/images/boot-menu/homepage.png)
 
-### One Time Boot
+  </tbody>
+</table>
 
-![One Time Boot](/images/boot-menu/one-time-boot.png)
+### Open Firmware Screenshots
 
-### Change Boot Order
+The following screenshots show the menus in System76 Open Firmware with Coreboot:
 
-![Change Boot Order](/images/boot-menu/change-boot-order.png)
+#### Main Menu
 
-![Change Boot Order Menu](/images/boot-menu/change-boot-order_changing.png)
+Displays the computer model, firmware version, and available options.
+
+![Main menu](/images/boot-menu/homepage.jpg)
+
+#### One Time Boot
+
+Allows booting to a non-default boot device.
+
+![One Time Boot](/images/boot-menu/one-time-boot.jpg)
+
+#### Change Boot Order
+
+Allows changing the order for selecting the default boot device.
+
+![Change Boot Order](/images/boot-menu/change-boot-order.jpg)
+
+#### Firmware Configuration Information
+
+Displays information about the firmware's build-time configuration.
+
+![Configuration info](/images/boot-menu/configuration-info.jpg)

@@ -157,18 +157,18 @@ For more information, please see this support article: [Creating Log Files](http
 
 ## Environment
 
-9. Are any other machines or users in your home or workspace experiencing the same issue?
+### 9. Are any other machines or users in your home or workspace experiencing the same issue?
 
-10. If the issue involves networking, have you tried resetting your modem/router? 
+### 10. If the issue involves networking, have you tried resetting your modem/router? 
  **NOTE:** Please try this again, even if it appears no other devices are affected.
 
-11. Are there any devices in proximity with your system that could be causing Wi-Fi or Bluetooth interference? 
+### 11. Are there any devices in proximity with your system that could be causing Wi-Fi or Bluetooth interference? 
 
-12. Is your work environment a stable temperature or has it been particularly warm or cold lately?
+### 12. Is your work environment a stable temperature or has it been particularly warm or cold lately?
 
-13. Have you added any external devices or accessories to your machine and workflow lately?
+### 13. Have you added any external devices or accessories to your machine and workflow lately?
 
-14. Has the machine ever suffered any fall or liquid damage?
+### 14. Has the machine ever suffered any fall or liquid damage?
 
 ## Hardware
 

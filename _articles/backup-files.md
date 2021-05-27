@@ -183,3 +183,10 @@ sudo apt install gnome-tweak-tool mousepad aptitude thunar
 ## Program Configuration Files
 
 System-wide program configuration files can be found in many locations of the OS. The most common location is the `/etc` folder. Most of these can be backed up in the same ways that user configuration files can, with the same caveat about changes in configuration format when restoring these files. (Unless you have modified system-wide configuration files manually, most configuration is usually stored per-user in the home directory.)
+
+
+---
+- Document Version: 2.0.0
+- Date: (Jan 21, 2021)
+- Author: James Gross
+- Contributing Editor(s): AJ Jordan, Aaron Honeycutt, Ashwin Goel, Nathan Dyer, Nathaniel Warburton,  Anderson Laverde

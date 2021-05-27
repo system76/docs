@@ -40,7 +40,49 @@ layout: default
 			<div class="small-12 columns">
 				<hr />
 				<h2 id="switching">Switching to Linux</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts switching">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'switching' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
 			</div>
+
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="software">Learn About Your Computer</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts learn-about-your-computer">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'learn-about-your-computer' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
 		</div>
 	
 		<div class="col-sm manage">
@@ -51,7 +93,50 @@ layout: default
 	
 			<div class="small-12 columns">
 				<hr />
-				<h2 id="switching">Software</h2>
+				<h2 id="software">Software</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts software">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'software' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+				<div class="small-12 columns">
+					<hr />
+					<h2 id="software">Hardware</h2>
+	
+					<div class="row">
+						<div class="small-12 columns support-excerpts hardware">
+							{% assign articles = site.articles | sort:"title" %}
+							{% for article in articles %}
+								{% if article.hidden != true %}
+									{% if article.section == 'hardware' %}
+											<article>
+												<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+												{{ article.description | markdownify }}
+												{% if article.more %}
+												{% endif %}
+										  </article>
+									{% endif %}
+								{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
@@ -63,9 +148,28 @@ layout: default
 
 			<div class="small-12 columns">
 				<hr />
-				<h2 id="switching">Something Something</h2>
+				<h2 id="repairs-returns">Repairs and Returns</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts repairs-returns">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'repairs-returns' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
 			</div>
 		</div>
+		
 	</div>
 </div>
 

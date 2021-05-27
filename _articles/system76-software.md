@@ -98,13 +98,12 @@ NOTE: This package is only needed for systems with OLED displays to control the 
 
 Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). 
 
-### System76 Firmware Manager and Daemon
+### System76 Firmware Manager
 
 Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u> then enable the service:
 
 ```bash
-sudo dnf install system76-driver system76-firmware firmware-manager
-sudo systemctl start system76-firmware-daemon
+sudo dnf installfirmware-manager
 ```
 
 ### System76 Power

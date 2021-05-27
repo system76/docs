@@ -12,10 +12,10 @@ keywords:
   - VM
   - System76
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 redirect_from:
   - /windows
-section: software-applications
+section: windows
 
 ---
 

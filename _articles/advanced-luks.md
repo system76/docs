@@ -52,3 +52,10 @@ sudo cryptsetup luksDump /dev/sda3
 ```
 
 You should see that Key Slot 1 is now enabled so this confirms the new password is set.
+
+
+---
+- Document Version: 1.0.0
+- Date: (Apr 17, 2019)
+- Author: Aaron Honeycutt
+- Contributing Editor(s):

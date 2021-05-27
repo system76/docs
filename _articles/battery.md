@@ -164,3 +164,10 @@ sudo rm /var/lib/upower/*
 ```
 
 If the battery life indicator is inaccurate, this will remove the stored statistics. After a few charge/discharge cycles the indicator should be more accurate.
+
+---
+- Document Version: 1.0.0
+- Date: (Feb 10, 2021)
+- Author: James Gross
+- Contributing Editor(s): Cassidy James, 筑梦师.五月花号, Aaron Honeycutt, Nicholaus Ames,, Emma Marshall, Andrew (truefackts), Craig Law, Levi Portenier, Tim Crawford, John Wiggins, Jacob Kauffmann, Thomas Zimmerman, 
+Pranshu Jethmalani, Nathaniel Warburton.

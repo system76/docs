@@ -83,13 +83,36 @@ layout: default
 				</div>
 			</div>
 
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="software">Learn About Your Operating System</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts learn-about-your-os">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'learn-about-your-os' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
 		</div>
 	
 		<div class="col-sm manage">
 			<div class="small-12 columns">
 				<hr />
 				<h1 id="manage">Manage</h1>
-		</div>
+			</div>
 	
 			<div class="small-12 columns">
 				<hr />
@@ -136,9 +159,7 @@ layout: default
 						</div>
 					</div>
 				</div>
-
 			</div>
-		</div>
 
 		<div class="col-sm troubleshoot">
 			<div class="small-12 columns">
@@ -168,8 +189,32 @@ layout: default
 					</div>
 				</div>
 			</div>
+
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="windows">Windows</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts windows">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'windows' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
 		</div>
-		
+
 	</div>
 </div>
 

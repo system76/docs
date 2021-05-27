@@ -116,7 +116,7 @@ sudo systemctl start system76-power
 
 ### System76 DKMS
 
-This command will be used to install the <u>System76 DKMS</u> package which is for Non Open Firmware systems:
+This command will be used to install the <u>System76 DKMS</u> package which is for Proprietary Firmware systems:
 
 ```bash
 sudo dnf install system76-dkms

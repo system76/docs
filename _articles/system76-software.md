@@ -103,7 +103,7 @@ Be sure to install the <u>System76 Driver</u> first and the steps to do that are
 Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u> then enable the service:
 
 ```bash
-sudo dnf installfirmware-manager
+sudo dnf install firmware-manager
 ```
 
 ### System76 Power

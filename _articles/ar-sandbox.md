@@ -408,3 +408,9 @@ Thanks again to [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) for develop
 
 Be sure to check out the [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) website for more details.
 
+
+---
+- Document Version: 1.0.5
+- Date: (May 20, 2021)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathan Dyer, Nathaniel Warburton

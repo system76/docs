@@ -14,7 +14,7 @@ section: hardware-drivers
 
 # Notes about these instructions
 
-They were tested on a Galago Pro (galp3-b) and a Pangolin (pang10) and both systems do not have NVIDIA GPU's so this process doesn't go over installing the NVIDIA Driver. Due to this your system may not have working switchable graphics.
+NOTE: These instructions were tested on a Galago Pro (galp3-b) and Pangolin (pang10). Neither system have NVIDIA GPUs, so this process doesn't go over installing the NVIDIA driver (system76-driver-nvidia). Due to these limitations, switchable graphics may not work on NVIDIA systems.
 
 ## Arch
 

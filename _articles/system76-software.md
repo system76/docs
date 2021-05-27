@@ -16,7 +16,7 @@ section: hardware-drivers
 
 Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). 
 
-### System76 Firmware CLI
+### System76 Firmware Daemon
 
 ```bash
 git clone https://aur.archlinux.org/system76-firmware.git
@@ -98,10 +98,14 @@ NOTE: This package is only needed for systems with OLED displays to control the 
 
 Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u> then enable the service:
 
+### System76 Firmware Manager and Daemon
+
 ```bash
 sudo dnf install system76-driver system76-firmware firmware-manager
 sudo systemctl start system76-firmware-daemon
 ```
+
+### System76 Power
 
 Use these commands to install the <u>System76 Power</u> package and enable the service:
 
@@ -110,8 +114,34 @@ sudo systemctl enable system76-power system76-power-wake
 sudo systemctl start system76-power
 ```
 
-This command will be used to install the <u>System76 DKMS</u> and <u>System76 ACPI DKMS</u> packages:
+### System76 DKMS
+
+This command will be used to install the <u>System76 DKMS</u> package which is for Non Open Firmware systems:
 
 ```bash
-sudo dnf install system76-dkms system76-acpi-dkms
+sudo dnf install system76-dkms
+```
+
+### System76 ACPI DKMS
+
+This command will be used to install the <u>System76 ACPI DKMS<u> package which is for Open Firmware systems:
+
+```bash
+sudo dnf install system76-acpi-dkms
+```
+
+### System76 Thelio Io DKMS
+
+This command will be used to install the <u>System76 Io DKMS</u> which is used for the Thelio Io board:
+
+```bash
+sudo dnf install system76-io-dkms
+```
+
+### System76 OLED
+
+This command will be used to install the <u>System76 OLED</u> which is used for systems with OLED panels:
+
+```bash
+sudo dnf install system76-oled
 ```

@@ -60,10 +60,23 @@ This installs the System76 driver and related utilities which are needed to enab
 
 #### Arch
 
-Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Driver</u> :
+First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:
 
 ```bash
 sudo pacman -S --needed base-devel git linux-headers
+```
+
+Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Firmware Daemon</u>:
+
+```bash
+git clone https://aur.archlinux.org/system76-firmware.git
+makepkg -srcif
+sudo systemctl enable --now system76-firmware-daemon
+```
+
+Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
+
+```bash
 git clone https://aur.archlinux.org/system76-driver.git
 cd system76-driver
 makepkg -srcif

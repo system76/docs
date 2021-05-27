@@ -18,7 +18,7 @@ They were tested on a Galago Pro (galp3-b) and a Pangolin (pang10) and both syst
 
 ## Arch
 
-Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). 
+Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver). 
 
 ### System76 Firmware Daemon
 

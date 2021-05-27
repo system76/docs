@@ -10,8 +10,8 @@ keywords:
   - Pop!_OS Beginner
   - System76
 image: http://support.system76.com/images/pop-icon.png
-hidden: true
-section: getting-started
+hidden: false
+section: learn-about-your-os
 
 ---
 

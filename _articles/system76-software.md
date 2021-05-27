@@ -93,3 +93,25 @@ makepkg -srcif
 ```
 
 NOTE: This package is only needed for systems with OLED displays to control the brightness.
+
+## Fedora
+
+Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u> then enable the service:
+
+```bash
+sudo dnf install system76-driver system76-firmware firmware-manager
+sudo systemctl start system76-firmware-daemon
+```
+
+Use these commands to install the <u>System76 Power</u> package and enable the service:
+
+```bash
+sudo systemctl enable system76-power system76-power-wake 
+sudo systemctl start system76-power
+```
+
+This command will be used to install the <u>System76 DKMS</u> and <u>System76 ACPI DKMS</u> packages:
+
+```bash
+sudo dnf install system76-dkms system76-acpi-dkms
+```

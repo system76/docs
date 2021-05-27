@@ -61,4 +61,8 @@ Once Universal Access is open you will have options for the following sections.
 Pop!_OS also provides many keyboard shortcuts to help users with navigating their system from the keyboard. The documentation for the keyboard shortcuts can be found by clicking this link [here](https://pop.system76.com/docs/keyboard-shortcuts/).
 
 
-
+---
+- Document Version: 1.0.0
+- Date: (Apr 17, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s):

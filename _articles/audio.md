@@ -184,4 +184,4 @@ When the script is finished gathering information, type <kbd>y</kbd> and press E
 - Document Version: 1.0.0
 - Date: (May 20, 2021)
 - Author: James Gross
-- Contributing Editor(s): Cassidy James, Evan Kepner, Aaron Honeycutt, Jacob, Kauffmann, Gary Yang, Corey O'Connor
+- Contributing Editor(s): Cassidy James, Evan Kepner, Aaron Honeycutt, Jacob Kauffmann, Gary Yang, Corey O'Connor

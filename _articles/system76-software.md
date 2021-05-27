@@ -96,9 +96,11 @@ NOTE: This package is only needed for systems with OLED displays to control the 
 
 ## Fedora
 
-Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u> then enable the service:
+Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). 
 
 ### System76 Firmware Manager and Daemon
+
+Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u> then enable the service:
 
 ```bash
 sudo dnf install system76-driver system76-firmware firmware-manager

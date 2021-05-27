@@ -147,3 +147,10 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 7. Reboot the computer. At the login screen, you can click the "Not listed?" link, and type the username of any domain user. After logging in with a domain user for the first time, that user will appear on the login screen's user list.
 
     ![Login Screen](/images/active-directory-client/login-screen-not-listed.png)
+
+
+---
+- Document Version: 1.0.0
+- Date: (Apr 17, 2020)
+- Author: Jacob Kauffmann
+- Contributing Editor(s):

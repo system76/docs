@@ -22,3 +22,10 @@ On some products the **order accessories** button is on the Order Detail page wh
 ![Order Accessories](/images/accessories/button2.png)
 
 Then the **order accessories** button can be accessed under the diagram of your laptop. 
+
+
+---
+- Document Version: 1.0.0
+- Date: (Apr 4, 2019)
+- Author: Aaron Honeycutt
+- Contributing Editor(s):

@@ -178,3 +178,10 @@ alsa-info
 When the script is finished gathering information, type <kbd>y</kbd> and press Enter to upload your output to the ALSA website, then send the link to Support.
 
 ![alsa-info](/images/audio/alsa-info.png)
+
+
+---
+- Document Version: 1.0.0
+- Date: (May 20, 2021)
+- Author: James Gross
+- Contributing Editor(s): Cassidy James, Evan Kepner, Aaron Honeycutt, Jacob, Kauffmann, Gary Yang, Corey O'Connor

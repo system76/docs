@@ -69,6 +69,16 @@ cd system76-driver
 makepkg -srcif
 sudo systemctl enable --now system76
 ```
+
+#### Fedora
+Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](https://copr.fedorainfracloud.org/coprs/szydell/system76/) and install the <u>System76 Driver</u> :
+
+```bash
+sudo dnf copr enable szydell/system76
+sudo dnf install system76-driver
+```
+
+
 #### Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs 
 
 If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:

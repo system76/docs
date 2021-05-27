@@ -2,7 +2,7 @@
 layout: article
 title: Install the System76 Driver
 description: >
-    Learn how to add the System76 Driver to your System76 computer after reinstalling your OS
+    Learn how to add the System76 Driver to your System76 computer after reinstalling Ubuntu
 keywords:
   - system76
   - driver
@@ -56,6 +56,42 @@ sudo apt install system76-driver
 
 This installs the System76 driver and related utilities which are needed to enable full functionality for your system. 
 
+### Install System76 Driver on Other OSes
+
+#### Arch
+
+First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:
+
+```bash
+sudo pacman -S --needed base-devel git linux-headers
+```
+
+Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Firmware Daemon</u>:
+
+```bash
+git clone https://aur.archlinux.org/system76-firmware.git
+makepkg -srcif
+sudo systemctl enable --now system76-firmware-daemon
+```
+
+Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
+
+```bash
+git clone https://aur.archlinux.org/system76-driver.git
+cd system76-driver
+makepkg -srcif
+sudo systemctl enable --now system76
+```
+
+#### Fedora
+Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](https://copr.fedorainfracloud.org/coprs/szydell/system76/) and install the <u>System76 Driver</u> :
+
+```bash
+sudo dnf copr enable szydell/system76
+sudo dnf install system76-driver
+```
+
+
 #### Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs 
 
 If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:
@@ -64,20 +100,4 @@ If your system has an NVIDIA graphics card, you will want to go ahead and use th
 sudo apt-get install system76-driver-nvidia
 ```
 
-In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card.
-
-### Install System76 Driver on Other OSes
-
-#### Arch
-
-Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Driver</u> :
-
-```bash
-sudo pacman -S --needed base-devel git linux-headers
-git clone https://aur.archlinux.org/system76-driver.git
-cd system76-driver
-makepkg -srcif
-sudo systemctl enable --now system76
-``` 
-
-NOTE: For other featues like keyboard backlight support and firmware updates other packages will need to be installed. Refer to this [article](/articles/system76-software) to install that software.
+In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card. 

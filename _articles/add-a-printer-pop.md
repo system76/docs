@@ -104,3 +104,10 @@ sudo apt install --reinstall ~n^system-config-printer
 ```
 
 This will reinstall the system control panel if the settings are not available.
+
+
+---
+- Document Version: 1.5.0
+- Date: (Apr 17, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Thomas Zimmerman, Jacob Kauffmann, Alexander Seibenick

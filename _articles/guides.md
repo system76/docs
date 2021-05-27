@@ -10,8 +10,8 @@ keywords:
   - Setup
   - System76
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: getting-started
+hidden: false
+section: learn-about-your-computer
 
 ---
 

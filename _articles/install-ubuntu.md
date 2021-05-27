@@ -17,8 +17,8 @@ keywords:
   - Release
   - System76
 image: http://support.system76.com/images/upgrade/Ubuntu-18-04.jpg
-hidden: true
-section: ubuntu
+hidden: false
+section: software
 
 ---
 

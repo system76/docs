@@ -60,15 +60,38 @@ This installs the System76 driver and related utilities which are needed to enab
 
 #### Arch
 
-Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Driver</u> :
+First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:
 
 ```bash
 sudo pacman -S --needed base-devel git linux-headers
+```
+
+Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Firmware Daemon</u>:
+
+```bash
+git clone https://aur.archlinux.org/system76-firmware.git
+makepkg -srcif
+sudo systemctl enable --now system76-firmware-daemon
+```
+
+Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
+
+```bash
 git clone https://aur.archlinux.org/system76-driver.git
 cd system76-driver
 makepkg -srcif
 sudo systemctl enable --now system76
 ```
+
+#### Fedora
+Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](https://copr.fedorainfracloud.org/coprs/szydell/system76/) and install the <u>System76 Driver</u> :
+
+```bash
+sudo dnf copr enable szydell/system76
+sudo dnf install system76-driver
+```
+
+
 #### Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs 
 
 If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:

@@ -127,6 +127,7 @@ This command will be used to install the <u>System76 DKMS</u> package which is f
 
 ```bash
 sudo dnf install system76-dkms
+sudo systemctl enable dkms
 ```
 
 ### System76 ACPI DKMS
@@ -135,6 +136,13 @@ This command will be used to install the <u>System76 ACPI DKMS<u> package which 
 
 ```bash
 sudo dnf install system76-acpi-dkms
+sudo systemctl enable dkms
+```
+
+NOTE: After enabling the dkms systemd service for either the <u>System76 DKMS</u> or the <u>System76 ACPI DKMS</u> package you will need to reboot the system:
+
+```bash
+sudo systemctl reboot
 ```
 
 ### System76 Thelio Io DKMS

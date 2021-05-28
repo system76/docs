@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install OpenVPN
+title: Install and Use VPNs
 description: >
   This page will go over setting up and using OpenVPN to browse the internet more securely in places like airports, cafe shops and more.
 keywords:

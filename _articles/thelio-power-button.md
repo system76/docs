@@ -17,14 +17,16 @@ section: hardware-drivers
 # General Troubleshooting
 
 1. Check that the power cable is connected securely at the computer input and the electrical outlet
-  - 1a. Confirm the surge protector is turned on
-  - 1b. Turn the surge protector off and on again
+  - 1a. Confirm the surge protector is turned on if that applies
+  - 1b. Confirm that the power strip is turned on if that applies
+  - 1c. Turn the surge protector off and on again
 2. Confirm the outlet works by plugging in another device.
-3. Desktops have a button on the power supply located at the back of the computer. Toggle that button and make sure it is in the 'On' position though it may be labeled as a '1' to note that it is powered on, then attempt to turn the desktop on.
-4. If the power button lights up, the power supply is providing power to the machine. It is recommended to check the display connections next.
-  - 4a. If the display connections are not at fault, investigate internal components using steps outlined in this article: https://support.system76.com/articles/hardware-failure/
-5. If the power button does not light up, the computer may need a new power button or power supply. To troubleshoot the power button on a Thelio desktop, visit this [link](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html#troubleshooting-the-power-button).
-6. Does the computer turn on when using the power switch on the Thelio IO board instead of the button? The backup power button is located on the IO board near the power button on the internal part of the case. 
+3. Be sure that the system is on a flat surface
+4. Desktops have a button on the power supply located at the back of the computer. Toggle that button and make sure it is in the 'On' position though it may be labeled as a '1' to note that it is powered on, then attempt to turn the desktop on.
+5. If the power button lights up, the power supply is providing power to the machine. It is recommended to check the display connections next.
+  - 5a. If the display connections are not at fault, investigate internal components using steps outlined in this article: https://support.system76.com/articles/hardware-failure/
+6. If the power button does not light up, the computer may need a new power button or power supply. To troubleshoot the power button on a Thelio desktop, visit this [link](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html#troubleshooting-the-power-button).
+7. Does the computer turn on when using the power switch on the Thelio IO board instead of the button? The backup power button is located on the IO board near the power button on the internal part of the case. 
 
 ![Thelio Io power button](/images/thelio-power-button/thelio-io-power-button.png)
 

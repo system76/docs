@@ -28,7 +28,12 @@ section: hardware-drivers
 
 ## Troubleshooting using the Thelio Io board
 
-To locate the Thelio Io board power button use this [link](https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html#replacing-the-thelio-io-board) for the Thelio Mira line, this [link](https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html#replacing-the-thelio-io-boards) for the Thelio Mega line.
+To locate the Thelio Io board power button use these links:
+
+- [Thelio Mira](https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html#replacing-the-thelio-io-board) 
+- [Thelio Mega](https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html#replacing-the-thelio-io-boards)
+- [Thelio R1/R2 - Page 15](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf)
+- [Thelio B1/B2 - Page 15](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf)
 
 If you've purchased a new top case for your Thelio (or received one for a support case), you may need to move the power button from your old top case to the new one. Conversely, if you've received a replacement power button, you may need to remove the old power button from your top case and install the new one.
 

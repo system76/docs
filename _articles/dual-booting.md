@@ -24,9 +24,15 @@ The contents of this support article are the **total extent of support and troub
 
 ## Table of Contents
 - [Creating Install Media](#creating-install-media)
+  - [Ejecting](#ejecting)
 - [Planning the Installation](#planning-the-installation)
 - [Installing on a Dedicated Drive](#installing-on-a-dedicated-drive)
-- [Installing on a Shared Drive](#installing-on-a-shared-drive-starting-with-pop_os)
+  - [Starting the installer](#starting-the-installer)
+  - [Performing the installation](#performing-the-installation)
+- [Installing on a Shared Drive (Starting with Pop!_OS)](#installing-on-a-shared-drive-starting-with-pop_os)
+  - [Shrinking Pop!_OS](#shrinking-pop_os)
+  - [Starting the Windows installer](#starting-the-windows-installer)
+  - [Performing the Windows installation](#performing-the-windows-installation)
 - [Additional Setup for Windows](#additional-setup-for-windows)
   - [Installing Drivers](#installing-drivers)
   - [Disabling Fast Startup](#disabling-fast-startup)
@@ -55,6 +61,12 @@ Once installed, open the WoeUSB-ng application (entering your password when prom
 ![WoeUSB-ng](/images/dual-booting/woeusb.png)
 
 It may take several minutes or more for the process to finish-- wait until the `Installation succeeded!` message appears.
+
+### Ejecting
+
+For WoeUSB-ng to work properly, you must eject the mounted partition instead of the device. Open the `Disks` application, select the installationdevice on the left, and click the rounded square on the lower left of the selected partition.
+
+![eject-partition](/images/dual-booting/eject-partition.png)
 
 ## Planning the Installation
 

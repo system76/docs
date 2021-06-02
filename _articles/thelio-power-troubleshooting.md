@@ -32,8 +32,8 @@ section: hardware-drivers
 
 Instructions to remove the top case and access this button can be found here: 
 
-- [Thelio Mira](https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html#replacing-the-thelio-io-board) 
-- [Thelio Mega](https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html#replacing-the-thelio-io-boards)
+- [Thelio Mira](https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html#troubleshooting-the-power-button) 
+- [Thelio Mega](https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html#troubleshooting-the-power-button)
 - [Thelio R1/R2 - Page 15](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf)
 - [Thelio B1/B2 - Page 15](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf)
 

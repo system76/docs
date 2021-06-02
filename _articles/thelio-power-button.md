@@ -35,8 +35,6 @@ Instructions to remove the top case and access this button can be found here:
 - [Thelio R1/R2 - Page 15](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf)
 - [Thelio B1/B2 - Page 15](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf)
 
-If you've purchased a new top case for your Thelio (or received one for a support case), you may need to move the power button from your old top case to the new one. Conversely, if you've received a replacement power button, you may need to remove the old power button from your top case and install the new one.
-
 ## How to Replace Thelio Power button
 
 ### Removing the Power Button

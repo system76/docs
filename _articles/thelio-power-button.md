@@ -1,10 +1,11 @@
 ---
 layout: article
-title: Replace the Thelio Power Button
+title: Power on Failure - Desktop
 description: >
-  Here are a few easy steps to replace the power button in your Thelio.
+  Troubleshoot if your Thelio is not powering on
 keywords:
   - Thelio
+  - Thelio Io board
   - power
   - button
 image: http://support.system76.com/images/system76.png
@@ -13,9 +14,25 @@ section: hardware-drivers
 
 ---
 
+# General Troubleshooting
+
+1. Check that the power cable is connected securely at the computer input and the electrical outlet
+  - 1a. Confirm the surge protector is turned on
+  - 1b. Turn the surge protector off and on again
+2. Confirm the outlet works by plugging in another device.
+3. Desktops have a button on the power supply located at the back of the computer. Toggle that button and make sure it is in the 'On' position though it may be labeled as a '1' to note that it is powered on, then attempt to turn the desktop on.
+4. If the power button lights up, the power supply is providing power to the machine. It is recommended to check the display connections next.
+  - 4a. If the display connections are not at fault, investigate internal components using steps outlined in this article: https://support.system76.com/articles/hardware-failure/
+5. If the power button does not light up, the computer may need a new power button or power supply. To troubleshoot the power button on a Thelio desktop, visit this [link](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html#troubleshooting-the-power-button).
+6. Does the computer turn on when using the power switch on the Thelio Io board instead of the button? 
+
+## Troubleshooting using the Thelio Io board
+
+To locate the Thelio Io board power button use this [link](https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html#replacing-the-thelio-io-board) for the Thelio Mira line, this [link](https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html#replacing-the-thelio-io-boards) for the Thelio Mega line.
+
 If you've purchased a new top case for your Thelio (or received one for a support case), you may need to move the power button from your old top case to the new one. Conversely, if you've received a replacement power button, you may need to remove the old power button from your top case and install the new one.
 
-# Removing the Power Button
+## Removing the Power Button
 
 The power button assembly is held on by a single nut inside the case. First, unplug the power button's wire from the 90-degree connector.
 
@@ -41,7 +58,7 @@ With the wire unplugged and the nut removed, the power button can be pushed out 
 
 The black plastic rectangle inside of the case will also be loose at this point, and can be removed.
 
-# Installing the Power Button
+## Installing the Power Button
 
 First, line up the black plastic rectangle with the hole inside of the case.
 

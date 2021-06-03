@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Failure to Power on - Desktop
+title: Power on Failure - Desktop
 description: >
   Troubleshoot if your Thelio is not powering on
 keywords:

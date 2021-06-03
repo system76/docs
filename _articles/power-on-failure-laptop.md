@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Failure to Power on - Laptop
+title: Power on Failure - Laptop
 description: >
   Troubleshoot if your Laptop is not powering on
 keywords:

@@ -22,7 +22,7 @@ section: software-applications
 
 ![Piper Buttons Window](/images/custom-mouse-buttons/Piper-2.png) 
 
-<u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 mouse that we sell and this section will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
+<u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 (sold by System76). In this section we will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
 
 ![Piper Buttons Assign Window](/images/custom-mouse-buttons/Piper-3.png)
 
@@ -34,7 +34,7 @@ In this window the button that has been clicked can be reassigned to a differet 
 
 ![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png) 
 
-<u>Solaar</u> is a graphical tool to for adding more devices to your Logitech receiver and information like the following:
+<u>Solaar</u> is a graphical tool for adding more devices to your Logitech USB Unify receiver. It also provides information on the following:
 
 - Battery life
 - Firmware and Bootloader version

@@ -11,24 +11,39 @@ layout: default
 		<div class="small-12 medium-8 medium-offset-2 columns">
 			<h3>Support Tickets</h3>
 			<p>Can't find what you're looking for in the articles below? Our team is here to help. After logging into your account, submit a support ticket and our Customer Happiness Team will be on the case!</p>
+
+				<div class="row">
+		<div class="small-12 columns">
+			<hr />
+			<h1 id="getting-help">Getting Help</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns support-excerpts getting-help">
+			{% assign articles = site.articles | sort:"title" %}
+			{% for article in articles %}
+				{% if article.hidden != true %}
+					{% if article.section == 'getting-help' %}
+						<article>
+							<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+							{{ article.description | markdownify }}
+						</article>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
 			<a class="button" href="https://system76.com/my-account/support-tickets/new">Submit a ticket</a>
 		</div>
 	</div>
+
 	<div class="row support-actions push-down">
 		<div class="small-12 medium-8 medium-offset-2 columns">
 			<p>Having trouble submitting a support ticket? Contact our office at <strong>(720) 226-9269</strong> between 8am-5pm MST and we'll help you out! </p>
 		</div>
 	</div>
-
-	<!--
-	<div class="row">
-		<nav class="small-12 columns">
-
-			<a class="button" href="#getting-started">Getting Started</a>
-
-		</nav>
-	</div>
-	-->
 
 	<div class="row">
 		<div class="small-12 columns">

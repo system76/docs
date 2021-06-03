@@ -1,0 +1,22 @@
+---
+layout: article
+title: Failure to Power on - Laptop
+description: >
+  Troubleshoot if your Laptop is not powering on
+keywords:
+  - Laptop
+image: http://support.system76.com/images/system76.png
+hidden: false
+section: hardware-drivers
+
+---
+
+# General Troubleshooting
+
+1. Is the laptop operating on battery power when it fails to power on? If the laptop does not power on when running on battery power, but is turning on when plugged in, the battery may require replacement.
+2. Unplug all connected devices.
+3. Confirm the outlet you are connecting to works by plugging in another device.
+4. Plug in the ac adapter to the wall and computer. Laptops have a charging indicator in front with a light. Please provide the light color(s) and icon underneath it to the support team. 
+   * 4A. If the battery is removable, unplug the machine, remove the battery, and plug the machine back into the power source without the battery installed. Please provide the light status to the support team. 
+5. To perform a hardware reset, unplug the system. Disconnect the CMOS battery for 30 seconds. Reconnect the CMOS battery and turn the computer on with the battery installed and the AC adapter plugged in. Instructions to disconnect the CMOS battery can be found for your model [here](https://tech-docs.system76.com/models/README.html). 
+6. If the laptop fails to power on after initial troubleshooting, sending in your laptop for repair is the next recommended step.

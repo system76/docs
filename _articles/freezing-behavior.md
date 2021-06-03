@@ -18,10 +18,7 @@ Freezing behaviors tend to occur when a piece of hardware is defective.  Let's c
 Run Memory Test
 To begin, we need to determine how much memory your system has. Open Settings, then navigate to the About pane. Look for the item marked 'Memory.' It should have a number, such as 16GB though it may be 15.5GB as well.
 
-Settings -> About
-
-Round up to the nearest whole number, then subtract 4. Make note of this new value. 
-Close out of all running applications. 
+Round up to the nearest whole number, then subtract 4. Make note of this new value. Close out of all running applications. 
 
 Open a Terminal by pressing <kbd><span class="fl-ubuntu"></span></kbd>/<kbd><span class="fl-pop-key"></span></kbd>/<kbd>Super</kbd> and run the following set of commands:
 
@@ -46,7 +43,7 @@ Before performing a hard drive check, you'll need to determine which type of dri
 3. Click Start Self-test and choose the Extended test. This test takes a few hours to run and will will give you a large amount of info about the health of the drive.
 4. Take a screenshot or a picture of  the results and attach it to the support ticket
 
-#### Check NVMe Drive for Errors
+### Check NVMe Drive for Errors
 NVMe drives can't be checked with a SMART Test through the <u>Disks</u> application but the package nvme-cli can be used for this. It can be installed with this command:
 
 ```bash

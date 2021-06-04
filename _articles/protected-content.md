@@ -16,11 +16,11 @@ keywords:
   - restricted
   - System76
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 redirect_from:
   - /chromeFlash
   - /chromeflash
-section: software-applications
+section: learn-about-your-os
 
 ---
 

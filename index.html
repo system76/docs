@@ -62,7 +62,7 @@ layout: default
 
 			<div class="small-12 columns">
 				<hr />
-				<h2 id="software">Learn About Your Computer</h2>
+				<h2 id="learn-about-your-computer">Learn About Your Computer</h2>
 
 				<div class="row">
 					<div class="small-12 columns support-excerpts learn-about-your-computer">
@@ -85,7 +85,7 @@ layout: default
 
 			<div class="small-12 columns">
 				<hr />
-				<h2 id="software">Learn About Your Operating System</h2>
+				<h2 id="learn-about-your-os">Learn About Your Operating System</h2>
 
 				<div class="row">
 					<div class="small-12 columns support-excerpts learn-about-your-os">
@@ -104,6 +104,54 @@ layout: default
 						{% endfor %}
 					</div>
 				</div>
+			</div>	
+
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="Pop">Learn About Pop!_OS</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts pop">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'pop' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>	
+
+				<div class="small-12 columns">
+					<hr />
+					<h2 id="Ubuntu">Learn About Ubuntu</h2>
+	
+					<div class="row">
+						<div class="small-12 columns support-excerpts ubuntu">
+							{% assign articles = site.articles | sort:"title" %}
+							{% for article in articles %}
+								{% if article.hidden != true %}
+									{% if article.section == 'ubuntu' %}
+											<article>
+												<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+												{{ article.description | markdownify }}
+												{% if article.more %}
+												{% endif %}
+										  </article>
+									{% endif %}
+								{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 		</div>
@@ -139,7 +187,7 @@ layout: default
 
 				<div class="small-12 columns">
 					<hr />
-					<h2 id="software">Hardware</h2>
+					<h2 id="hardware">Hardware</h2>
 	
 					<div class="row">
 						<div class="small-12 columns support-excerpts hardware">

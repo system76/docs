@@ -35,7 +35,7 @@ Where to start troubleshooting is situation-dependent. For example, if you can S
 
 With that background out of the way, let's jump to the command line and start troubleshooting.
 
-[]{#anchor-1}Layer 1: The physical layer
+##Layer 1: The physical layer
 ----------------------------------------
 
 We often take the physical layer for granted (\"did you make sure the cable is plugged in?\"), but we can easily troubleshoot physical layer problems from the Linux command line. That is if you have console connectivity to the host, which might not be the case for some remote systems.
@@ -76,7 +76,7 @@ It looks like **ip link set eth0 up** did the trick, and eth0 is back in busines
 
 These commands are great for troubleshooting obvious physical issues, but what about more insidious issues? Interfaces can negotiate at the incorrect speed, or collisions and physical layer problems can cause packet loss or corruption that results in costly retransmissions.
 
-How do we start troubleshooting those issues?
+##How do we start troubleshooting those issues?
 
 We can use the **-s** flag with the **ip** command to print additional statistics about an interface. The output below shows a mostly clean interface, with only a few dropped receive packets and no other signs of physical layer issues:
 
@@ -103,7 +103,7 @@ RX: bytes packets errors dropped overrun mcast
 TX: bytes packets errors dropped carrier collsns
 636200 4239 0 0 0 0
 
-[]{#anchor-1}Layer 2: The data link layer
+##Layer 2: The data link layer
 -----------------------------------------
 
 The data link layer is responsible for **local** network connectivity; essentially, the communication of frames between hosts on the same Layer 2 domain (commonly called a local area network).
@@ -130,7 +130,7 @@ Note that the gateway's MAC address is populated. If there was a problem with AR
 
 Another common use of the **ip neighbor** command involves manipulating the ARP table. Imagine that your networking team just replaced the upstream router (which is your server's default gateway). The MAC address may have changed as well since MAC addresses are hardware addresses that are assigned at the factory.
 
-[]{#anchor-1}Layer 3: The network/internet layer
+##Layer 3: The network/internet layer
 ------------------------------------------------
 
 Layer 3 involves working with IP addresses, which should be familiar to any sysadmin. IP addressing provides hosts with a way to reach other hosts that are outside of their local network (though we often use them on local networks as well). One of the first steps to troubleshooting is checking a machine's local IP address, which can be done with the **ip address** command, again making use of the **-br** flag to simplify the output:
@@ -255,7 +255,7 @@ A telltale sign of DNS trouble is the ability to connect to a remote host by IP 
 
 The output above shows the resulting IPv4 addresses as well as IPv6.
 
-[]{#anchor-1}Layer 4: The transport layer
+##Layer 4: The transport layer
 -----------------------------------------
 
 The transport layer consists of the TCP and UDP protocols, with TCP being a connection-oriented protocol and UDP being connectionless.  Applications listen on **sockets**, which consist of an IP address and a port. Traffic destined to an IP address on a specific port will be directed to the listening application by the kernel. A full discussion of these protocols is beyond the scope of this article, so we'll focus on how to troubleshoot connectivity issues at these layers.

@@ -31,8 +31,7 @@ The layers in the TCP/IP network model, in order, include:
 -   **Layer 1:** Physical
 
 We will assume that you are familiar with this model, and will proceed by discussing ways to troubleshoot issues at stack Layers 1 through 4.
-Where to start troubleshooting is situation-dependent. For example, if you can SSH to a server, but the server can't connect to a MySQL database, the problem is unlikely to be the physical or data link layers
-on the local server. In general, it's a good idea to work your way down the stack. Start with the application, and then gradually troubleshoot each lower layer until you've isolated the problem.
+Where to start troubleshooting is situation-dependent. For example, if you can SSH to a server, but the server can't connect to a MySQL database, the problem is unlikely to be the physical or data link layers on the local server. In general, it's a good idea to work your way down the stack. Start with the application, and then gradually troubleshoot each lower layer until you've isolated the problem.
 
 With that background out of the way, let's jump to the command line and start troubleshooting.
 

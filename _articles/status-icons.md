@@ -6,8 +6,8 @@ keywords:
   - legacy icons
   - status icons
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: pop
+hidden: false
+section: software
 
 ---
 

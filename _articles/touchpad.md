@@ -11,8 +11,8 @@ keywords:
   - support
   - System76
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: hardware-drivers
+hidden: false
+section: hardware
 
 ---
 

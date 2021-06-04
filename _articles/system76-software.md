@@ -22,6 +22,8 @@ Be sure to install the <u>System76 Driver</u> first. The steps to do that are [h
 
 ### System76 Firmware Daemon
 
+These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
+
 ```bash
 git clone https://aur.archlinux.org/system76-firmware.git
 cd system76-firmware-daemon
@@ -31,6 +33,8 @@ sudo gpasswd -a $USER adm
 ```
 
 ### System76 Firmware Manager
+
+These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
 
 ```bash
 git clone https://aur.archlinux.org/firmware-manager.git
@@ -121,9 +125,23 @@ sudo systemctl enable system76-power system76-power-wake
 sudo systemctl start system76-power
 ```
 
+#### System76 Power GNOME Shell Extension
+
+These commands will download the source code for the application, build it, install it and install the <u>Extensions</u> application:
+
+```bash
+git clone https://github.com/pop-os/gnome-shell-extension-system76-power.git
+cd gnome-shell-extension-system76-power
+sudo dnf install nodejs-typescript
+make
+make install
+```
+
+Now log out and use the <u>Extensions</u> to enable the extenstion. 
+
 ### System76 DKMS
 
-This command will be used to install the <u>System76 DKMS</u> package which is for Proprietary Firmware systems:
+These commands will be used to install the <u>System76 DKMS</u> package which is for Proprietary Firmware systems:
 
 ```bash
 sudo dnf install system76-dkms
@@ -132,7 +150,7 @@ sudo systemctl enable dkms
 
 ### System76 ACPI DKMS
 
-This command will be used to install the <u>System76 ACPI DKMS<u> package which is for Open Firmware systems:
+These commands will be used to install the <u>System76 ACPI DKMS<u> package which is for Open Firmware systems:
 
 ```bash
 sudo dnf install system76-acpi-dkms

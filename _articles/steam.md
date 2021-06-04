@@ -64,7 +64,7 @@ sudo apt update
 sudo apt install python3-pip
 ```
 
-Now, let's install `protonup` via pip.
+Now, let's install protonup via pip.
 ```
 pip3 install protonup
 ```

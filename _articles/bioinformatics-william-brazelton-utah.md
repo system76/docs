@@ -15,7 +15,7 @@ keywords:
   - The Lost City
   - System76
   - computer
-hidden: true
+hidden: false
 section: case-studies
 
 ---

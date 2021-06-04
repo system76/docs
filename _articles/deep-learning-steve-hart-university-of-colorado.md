@@ -14,7 +14,7 @@ keywords:
   - research university
   - University of Colorado
   - System76
-hidden: true
+hidden: false
 section: case-studies
 
 ---

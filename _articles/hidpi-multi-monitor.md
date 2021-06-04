@@ -12,8 +12,8 @@ keywords:
   - X11
   - xorg
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: graphics-audio-video
+hidden: false
+section: software
 
 ---
 

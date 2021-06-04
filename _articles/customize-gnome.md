@@ -11,7 +11,7 @@ keywords:
   - Desktop
   - Tweaks
 image: http://support.system76.com/images/pop-icon.png
-hidden: true
+hidden: false
 section: learn-about-your-computer
 
 ---

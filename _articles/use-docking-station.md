@@ -10,8 +10,8 @@ keywords:
   - ubuntu
   - System76
 image: https://system76.com/images/system76.png
-hidden: true
-section: accessories
+hidden: false
+section: hardware
 ---
 
 ### Compatible Intel systems

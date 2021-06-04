@@ -8,8 +8,8 @@ keywords:
   - mouse
   - audio
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: wifi-bluetooth
+hidden: false
+section: software
 
 ---
 

@@ -8,8 +8,8 @@ keywords:
   - CUDA
   - TensorFlow
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: software-applications
+hidden: false
+section: software
 
 ---
 

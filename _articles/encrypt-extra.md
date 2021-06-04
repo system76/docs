@@ -9,8 +9,8 @@ keywords:
   - Extra Drive
   - Linux
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: security-encryption
+hidden: false
+section: software
 
 ---
 

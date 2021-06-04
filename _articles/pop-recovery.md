@@ -12,7 +12,7 @@ keywords:
   - refresh
   - repair
 image: http://support.system76.com/images/pop-icon.png
-hidden: true
+hidden: false
 section: pop
 
 ---

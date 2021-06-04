@@ -10,7 +10,7 @@ keywords:
   - Server
   - Multiplayer
   - Notch
-hidden: true
+hidden: false
 section: community
 
 ---

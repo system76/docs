@@ -14,7 +14,7 @@ keywords:
   - school
   - education
   - System76
-hidden: true
+hidden: false
 section: case-studies
 
 ---

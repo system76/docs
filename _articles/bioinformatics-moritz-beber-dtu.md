@@ -16,7 +16,7 @@ keywords:
   - Kubernetes
   - K8s
   - System76
-hidden: true
+hidden: false
 section: case-studies
 
 ---

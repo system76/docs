@@ -12,8 +12,8 @@ keywords:
   - Installation
   - System76
 image: http://support.system76.com/images/pop-icon.png
-hidden: true
-section: hardware-drivers
+hidden: false
+section: hardware
 
 ---
 

@@ -25,6 +25,31 @@ section: pop
 ---
 Pop!\_OS 20.10 was released October 23, 2020.
 
+
+# Before You Upgrade
+
+Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete.
+
+That being said, from time to time, unexpected complications can arise. The liklihood of complications during the upgrade process increases on systems that are:
+
+* upgrading more than one release at a time
+* running older releases that have already reached the end-of-life period
+* using a large number of third-party software repositories (PPAs)
+
+Our goal is to make the upgrade process as consistent and reliable as possible, and make sure you are prepared for anything that may occur during the upgrade should something not go according to plan.
+
+### Backing Up Your Data
+
+The upgrade process will leave your files in place, but no matter which system version you are running, we always recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.
+
+Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+
+### Create Installation USB (Optional)
+
+Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB disk with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
+
+
+
 # Upgrading Pop!\_OS to 20.10 from 20.04 
 ### (For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)
 
@@ -46,14 +71,6 @@ Once the download is complete, you will receive a second notification saying the
 Click on the notification and your computer will restart to the upgrade screen.
 
 After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.10!
-
-### Backup Your Files
-
-The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
-
-### Create Installation USB (Optional)
-
-Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
 
 ### Advanced Install (Terminal)
 

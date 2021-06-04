@@ -54,3 +54,29 @@ Then click the **install button**.
 Proton is a way to enable support for some Windows games using Wine and some tweaks and additions that Valve have been working on. You can enable it using the the <u>Steam</u> Settings to download and install Proton.
 
 ![Steam Settings](/images/steam/enable-steam-play_proton.png)
+
+#### Install Protonup to Manage Custom Proton Versions
+Protonup is an easy tool, written in Python, to install the newest-available version of ProtonGE into Steam's proton directory. ProtonGE is a fork of Proton, maintained by GloriousEggroll on github [here](https://github.com/GloriousEggroll/proton-ge-custom). Protonup is maintained by Naseef in the PyPi project directory [here](https://pypi.org/project/protonup/).
+
+First, we'll need the Python package manager, pip.
+```
+sudo apt update
+sudo apt install python3-pip
+```
+
+Now, let's install `protonup` via pip.
+```
+pip3 install protonup
+```
+
+Now, after steam is installed, you can run protonup in terminal, and it will grab you the newest custom ProtonGE. This tool will also pull hotfixes. Below is an example run of the tool.
+
+```
+➜  ~ protonup 
+Ready to download Proton-6.9-GE-2-github-actions-test 
+Size      : 370.27 MiB 
+Published : 2021-05-30
+Continue? (Y/N): y
+Downloaded 100.0% - 370.31 MiB/370.27 MiB
+[INFO] Installed in: /home/s31bz/.steam/root/compatibilitytools.d/Proton-6.9-GE-2-github-actions-test
+```

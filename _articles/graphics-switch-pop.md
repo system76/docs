@@ -48,13 +48,13 @@ discrete GPU.
 
 Vulkan applications must be launched with this command to be rendered on the dGPU (NVIDIA):
 
-```
+```bash
 __NV_PRIME_RENDER_OFFLOAD=1 <application>
 ```
 
 GLX applications must be launched with this command to be rendered on the dGPU (NVIDIA):
 
-```
+```bash
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia <application>
 ```
 
@@ -86,37 +86,37 @@ Once you select a mode, you will be prompted to reboot.
 If you are not using the GNOME Desktop Environment, you can use the system76-power 
 command line tool. You can see the options with this command:
 
-```
+```bash
 system76-power help
 ```
 
 For seeing which graphics mode the system is using:
 
-```
+```bash
 sudo system76-power graphics
 ```
 
 For switching to NVIDIA graphics:
 
-```
+```bash
 sudo system76-power graphics nvidia
 ```
 
 For switching to integrated graphics:
 
-```
+```bash
 sudo system76-power graphics integrated
 ```
 
 For switching to hybrid graphics:
 
-```
+```bash
 sudo system76-power graphics hybrid
 ```
 
 For switching to compute mode:
 
-```
+```bash
 sudo system76-power graphics compute
 ```
 
@@ -126,3 +126,11 @@ The source code for the system76-power utility and the GNOME Shell extension can
 
  - [system76-power](https://github.com/pop-os/system76-power)
  - [gnome-shell-extension-system76-power](https://github.com/pop-os/gnome-shell-extension-system76-power)
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Jun 5, 2018)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Levi Portenier, Tim Crawford, Jacob Kauffmann, Nathaniel Warburton, Benjamin Shpurker.

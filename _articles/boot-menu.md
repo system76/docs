@@ -14,6 +14,8 @@ section: hardware-drivers
 
 ---
 
+# Access BIOS or Boot Menu 
+
 <table border=1>
   <tbody>
     <tr style="height: 23px;">
@@ -82,3 +84,10 @@ Allows changing the order for selecting the default boot device.
 Displays information about the firmware's build-time configuration.
 
 ![Configuration info](/images/boot-menu/configuration-info.jpg)
+
+
+---
+- Document Version: 1.0.0
+- Date: (Aug 1, 2016)
+- Author: Cassidy James Blaede
+- Contributing Editor(s): James Gross, Emma Marshall, Jacob Kauffmann, John Wiggins, Nathaniel Warburton.

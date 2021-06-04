@@ -14,6 +14,8 @@ section: software-applications
 
 ---
 
+# Setting Custom Mouse Actions 
+
 ### Software
 
 For using <u>xbindkeys</u> open a terminal with the following keys:
@@ -24,13 +26,13 @@ Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 
 Then install the following packages:
 
-```
+```bash
 sudo apt install xbindkeys xautomation
 ```
 
 Then create the default config file for <u>xbindkeys</u> with this command:
 
-```
+```bash
 xbindkeys --defaults > $HOME/.xbindkeysrc
 ```
 
@@ -38,7 +40,7 @@ xbindkeys --defaults > $HOME/.xbindkeysrc
 
 Now let's open the config file with this command:
 
-```
+```bash
 gedit ~/.xbindkeysrc
 ```
 
@@ -53,7 +55,7 @@ From here you can add your own custom actions like the ones below.
 
 #### Examples
 
-Below are some examples that you can do:
+Below are some examples that you can add to the `xbindkeysrc` file:
 
 ```
 # Refresh
@@ -79,7 +81,7 @@ This will cause the forward and back mouse button to emulate pressing the <kbd>C
 
 If any changes are made to the config file then xbindkeys need to be restarted with these commands:
 
-```
+```bash
 killall xbindkeys
 xbindkeys
 ```
@@ -93,3 +95,10 @@ Once the application is opened then click the **Add** button then name the progr
 ### Caveats
 
 Once the mouse buttons for forward and back are set to a different action they will no longer work in a web browser for going back and forth between web pages.
+
+---
+
+- Document Version: 1.0.0
+- Date: (Jun 6, 2018)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Bruno Drugowick Muniz, Jacob Kaufmann, Nathaniel Warburton.

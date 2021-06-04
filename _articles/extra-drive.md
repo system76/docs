@@ -77,3 +77,11 @@ The red box shows the item we don't want to change and the green box shows the i
 ### Save And Restart
 
 Once the mount options are set up correctly, click **OK** to save the changes and then restart your computer. After the computer starts back up, ensure that there are no error messages during the boot, and that the drive is mounted when booting. You can check this by opening your home folder and ensure that you see the **eject icon (⏏)** next to the drive *before* you click on the drive.
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Aug 1, 2016)
+- Author: Cassidy James Blaede
+- Contributing Editor(s): James Gross, Aaron Honeycutt.

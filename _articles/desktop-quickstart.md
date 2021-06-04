@@ -56,3 +56,11 @@ This administrator account has sudo rights, but it is not the root account. Some
 ### Looking for your additional drives?
 
 This article can be used to [auto-mount the Extra Drives](/articles/extra-drive/).
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Feb 24, 2017)
+- Author: James Gross
+- Contributing Editor(s): Emma Marshall, Aaron Honeycutt, Benjamin Shpurker, Thomas Zimmerman, Nathaniel Warburton.

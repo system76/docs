@@ -12,7 +12,9 @@ section: community
 
 ---
 
-Alright! Hitch on and let's go on!
+# Install Minecraft!
+
+So you want some of that blocky goodness? Well, get Java and some graphics cards and let's go!
 
 ### Pop!_OS 20.04
 First, open the Pop!_Shop.
@@ -58,3 +60,10 @@ Now run the file! Log in with your username and password and start playing!
 ---
 
 This article was contributed by [kylerschin](https://github.com/kylerschin).
+
+---
+
+- Document Version: 1.5.0
+- Date: (May 1, 2020)
+- Author: Kyler Schin
+- Contributing Editor(s): James Gross, Bobby Youstra, kolgza, Nathaniel Warburton.

@@ -77,3 +77,11 @@ Pop!_OS is built from Ubuntu repositories, meaning you get the same access to so
 ## Recovery Partition
 
 The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of either Pop!_OS 19.04 or 18.04 (not through upgrading).
+
+---
+
+- Document Version: 1.0.0
+- Date: (Jul 10, 2019)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Eduardo
+(Eduardo06sp), Gabriel LaCroix.

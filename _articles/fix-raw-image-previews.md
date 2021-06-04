@@ -20,7 +20,7 @@ The Files app doesn't display thumbnails for raw images by default, but RawThera
 
 First, install RawTherapee using this command:
 
-```
+```bash
 sudo apt install rawtherapee
 ```
 
@@ -28,7 +28,7 @@ sudo apt install rawtherapee
 
 Nautilus uses thumbnailer scripts to generate thumbnails for images. Create a thumbnailer for raw images using this command:
 
-```
+```bash
 sudo gedit /usr/share/thumbnailers/rawtherapee.thumbnailer
 ```
 
@@ -47,7 +47,7 @@ Then save the file and close Gedit.
 
 Though sometimes unnessesary, it's always a good idea to start fresh with thumbnail creation. To do this, delete the thumbnailer cache using this command:
 
-```
+```bash
 rm -r ~/.cache/thumbnails/*
 ```
 
@@ -57,3 +57,10 @@ rm -r ~/.cache/thumbnails/*
 
 1. Not all raw images are supported by RawTherapee.
 2. Converting raw images to a more suitable format can take some time (~1 second per file in most cases.)
+
+---
+
+- Document Version: 1.0.0
+- Date: (Feb 4, 2021)
+- Author: Jacob Kauffmann
+- Contributing Editor(s): Benjamin Flanagin.

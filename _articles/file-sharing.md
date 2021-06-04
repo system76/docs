@@ -21,7 +21,7 @@ First let's open a terminal using either <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</
 
 Then run this command:
 
-```
+```bash
 sudo apt install gnome-user-share
 ```
 
@@ -36,3 +36,11 @@ Next we will open the <u>Settings</u> application and go to **Sharing**. Then cl
 On the computer that you want to share to, open the <u>Files</u> application (Nautilus) and click on **Other Locations** on the left side panel. In this example you will see the machine that we are using as "system76's public files on pop-os". Click the name that matches the name of the computer that you are sharing from and you will see the folders and files that are on the other computer's Public Folder.
 
 ![Nautilus](/images/file-sharing/connecting-to-public-folder.png)
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Apr 17, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton.

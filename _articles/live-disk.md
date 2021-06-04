@@ -17,7 +17,9 @@ section: hardware-drivers
 
 ---
 
-# Contents
+# Live Disk Creation (Other Operating Systems)
+
+## Contents
 
 - [Overview](#overview)
 - [Make Bootable drive](#make-bootable-drive)
@@ -29,7 +31,7 @@ section: hardware-drivers
   - [Backup Files](backup-files)
 
 
-# Overview
+## Overview
 
 Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_OS or Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
@@ -112,3 +114,11 @@ Since the live environment is a full Pop!_OS installation, it works just like th
 ### Backup Files
 
 Perhaps you're reinstalling, or maybe you can't boot but you want to try and recover and back up your files? The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar <u>Files</u> utility.
+
+
+---
+
+- Document Version: 2.0.0
+- Date: (Jan 13, 2019)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Carl Richell, James Gross, Jacob Kauffmann, Brent Goodrick, Swapnil Joshi, Yuriy Vidineev, Thomas Zimmmerman, Emma Marshall, Nathaniel Warburton.

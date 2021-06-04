@@ -35,3 +35,11 @@ If we would like to decrypt the drive on login into the system there are setting
 #### Editing Mount Options
 
 The Extra Drive [article](/articles/extra-drive/) goes over changing the mounting options for the drive.
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Aug 31, 2018)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton.

@@ -17,6 +17,10 @@ section: software-applications
 
 ---
 
+# Repair the Bootloader 
+
+<!-- Add table of contents-->
+
 Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB/systemd-boot can break, and it may not let you boot into your computer to fix the problem.
 
 #### Important Note
@@ -39,7 +43,7 @@ Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F8</kbd> or <kbd>F10</kbd>
 
 Once the desktop is shown, connect the computer to the Internet.  Next, open a terminal (search <u>Terminal</u> after pressing the Super Key) and run the following command:
 
-```
+```bash
 sudo parted -ls
 ```
 
@@ -72,14 +76,14 @@ root   3      4819MB  496GB   491GB
 
 Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
 
-```
+```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
 Run these commands based on what type of disk you have:
 
 #### For NVMe Drives:
 
-```
+```bash
 sudo mount /dev/nvme0n1p2 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
@@ -93,7 +97,7 @@ sudo update-grub
 
 #### For SATA Drives:
 
-```
+```bash
 sudo mount /dev/sda2 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
@@ -111,7 +115,7 @@ sudo update-grub
 
 If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
 
-```
+```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
 
@@ -119,7 +123,7 @@ Run these commands based on what type of disk you have:
 
 #### For NVMe Drives:
 
-```
+```bash
 sudo mount /dev/nvme0n1p2 /mnt
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
@@ -132,7 +136,7 @@ sudo update-grub
 
 #### For SATA Drives:
 
-```
+```bash
 sudo mount /dev/sda2 /mnt
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
@@ -149,7 +153,7 @@ sudo update-grub
 
 Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
 
-```
+```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
 
@@ -157,7 +161,7 @@ Run these commands based on what type of disk you have:
 
 #### For NVMe Drives:
 
-```
+```bash
 sudo mount /dev/nvme0n1p3 /mnt
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
@@ -172,7 +176,7 @@ sudo bootctl --path=/mnt/boot/efi install
 
 #### For SATA Drives:
 
-```
+```bash
 sudo mount /dev/sda3 /mnt
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
@@ -192,14 +196,16 @@ sudo bootctl --path=/mnt/boot/efi install
 To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
 #### For NVMe Drives:
-```
+
+```bash
 sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```
 
 #### For SATA Drives:
-```
+
+```bash
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
 sudo vgchange -ay
@@ -207,7 +213,7 @@ sudo vgchange -ay
 
 And take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
-```
+```bash
 sudo mount /dev/mapper/data-root /mnt
 ```
 
@@ -219,7 +225,7 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
-```
+```bash
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo chroot /mnt
@@ -227,7 +233,7 @@ sudo chroot /mnt
 
 To exit from the <u>chroot</u> and reboot the computer, run these commands:
 
-```
+```bash
 exit
 reboot
 ```
@@ -253,3 +259,10 @@ If the system boots into a `BusyBox` environment, try `exit` to show potential f
 A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates an issue with the loader entry in `systemd-boot`.
 
 Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct UUID for the disk. For an encrypted setup, the line `options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash` should match the UUID reported by `lsblk -f` for the `data-root` partition on a standard installation with LUKS. 
+
+
+---
+- Document Version: 1.0.0
+- Date: (Jan 13, 2019)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Emma Marshall, Thomas Zimmerman, Christian Hollinger.

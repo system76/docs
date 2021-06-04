@@ -15,6 +15,8 @@ section: community
 
 ---
 
+# Install Minecraft Server
+
 With no fuss with specific desktop environments and stuff, Installing a Minecraft Server is an easy task on the command line. The hard part is what you will build.
 
 Make sure you have a powerful server machine above 3.7Ghz and 8G of RAM.
@@ -27,7 +29,7 @@ For this Tutorial, We will be using openjdk and a command line window separator 
 
 To install OpenJDK:  
 
-```
+```bash
 sudo yum install java-1.8.0-openjdk screen
 ```
 
@@ -50,13 +52,13 @@ pacman -S jre8-openjdk screen
 
 Now let's make a directory, because it's about to get messy.
 
-```
+```bash
 mkdir minecraft && cd minecraft
 ```
 
 Now let's get the latest version. You can update your server by stopping it, downloading the new server, and restarting it. You can download the latest version at [mcversions.net](https://mcversions.net) There are two types of servers, snapshot and stable.
 
-```
+```bash
 wget -O THE_URL.RANSOM.jar
 ```
 
@@ -80,3 +82,11 @@ For more info, see the [Minecraft Wiki](https://minecraft.gamepedia.com/Tutorial
 ---
 
 This article was contributed by [kylerschin](https://github.com/kylerschin).
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (May 1, 2020)
+- Author: Kyler Schin
+- Contributing Editor(s): kolgza, Nathaniel Warburton.

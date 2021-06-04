@@ -12,6 +12,8 @@ section: software-applications
 
 ---
 
+# Install Pop!_OS in VirtualBox
+
 This is a quick tutorial on getting Pop!_OS to run on a virtual machine.  Especially useful if you want to play around with Pop!_OS and see what it can do without having to commit to installing it somewhere.
 
 First things first. Please ensure that you have:
@@ -94,3 +96,11 @@ If you notice that the installer for Pop!_OS is too large to fit into the defaul
 Move the installation window slightly (but not completely) out of the way, right-click on the desktop and select "Display Settings". From here you will be able to change the virtual machine's screen resolution. Increase the virtual machine resolution from the default 800x600 to 1024x768 or above, then click Apply in the top right-hand corner.
 
 You will now be able to continue with the installation.
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (May 2, 2018)
+- Author: James Gross
+- Contributing Editor(s): Aaron Honeycutt, OtterGauze. 

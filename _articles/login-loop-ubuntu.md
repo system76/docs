@@ -18,6 +18,8 @@ section: ubuntu
 
 ---
 
+# Can't Log In or Black Screen After Logging In with Ubuntu 
+
 Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Pop!_OS brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
 
 * Configuration files in your home directory are not compatible with new versions of software
@@ -27,7 +29,7 @@ Sometimes after an upgrade, your system might not bring you to the desktop after
 
 Each cause has a different solution, and certain items (such as NVIDIA) might not be applicable to your system. In most cases, you can switch to a full-screen terminal (called a *TTY*) to log in and fix the issue.
 
-### Switch to a Terminal
+## Switch to a Terminal
 
 At the login screen, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd> to switch to a TTY. You'll be prompted to enter a login. At the `login` prompt, enter your username and press <kbd>Enter</kbd>. You'll then be prompted for your password. You will not see your password as you are typing it; just type it and press "Enter."
 
@@ -116,7 +118,17 @@ After the installation has completed, type `sudo systemctl reboot` and try loggi
 
 If you are using an AMD graphics card, the radeon driver might be causing issues as it does not support newer versions of Ubuntu.  The amdgpu driver that comes with the kernel does however. To blacklist the radeon driver and ensure amdgpu is loaded:
 
-Open `/etc/modprobe.d/blacklist.conf` for editing and add `blacklist radeon` to the file. Then run:
+Open `/etc/modprobe.d/blacklist.conf` for editing and add `blacklist radeon` to the file. To do this, run the command:
+
+```bash
+sudo gedit /etc/modprobe.d/blacklist.conf
+```
+
+Then add this to the file:
+
+> blacklist radeon
+
+Next, run:
 
 ```bash
 sudo update-initramfs -c -k all
@@ -126,3 +138,10 @@ sudo shutdown -r now
 ### If these steps don't work...
 
 Contact Support! We have a few more things to try. There are a significant number of processes and files required for your graphical desktop environment to be loaded, and much fewer for the terminal login. As such, you can usually recover your desktop using the command line interface!
+
+---
+
+- Document Version: 1.5.0
+- Date: (Dec 24, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): CodeStardust, Nathaniel Warburton Jacob Kauffmann, Zach Gangwer.

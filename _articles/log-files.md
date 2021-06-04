@@ -15,7 +15,7 @@ section: software-applications
 
 ---
 
-### Creating Log Files
+# Creating Log Files
 
 Log files help our support team learn more about your system, and can be a great benefit during troubleshooting. 
 
@@ -64,3 +64,11 @@ As with the <u>System76 Driver</u> application, the log files will be stored wit
 #### Sending the Logs to the Support Team
 
 Once the logs are created, you can either attach them directly to the support case, or you can email them to [info@system76.com](mailto:info@system76.com) and reference your case number.
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (May 20, 2021)
+- Author: Nathan Dyer
+- Contributing Editor(s): Nathaniel Warburton, Aaron Honeycutt.

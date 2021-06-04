@@ -57,13 +57,13 @@ Using the Displays panel in the System Settings center to change resolution or l
 
 Ubuntu 18.04/19.10
 
-```
+```bash
 gsettings set com.system76.hidpi enable false
 ```
 
 Pop!_OS 18.04/19.10
 
-```
+```bash
 gsettings set com.system76.hidpi enable false
 ```
 
@@ -72,3 +72,10 @@ You can also open <u>Gnome Control Center</u> and go to the `Displays` panel und
 ---
 
 The content for the "What is HiDPI" section of this article was borrowed from [Cassidy James Blaede](https://medium.com/@cassidyjames) under the [CC BY-SA 3.0 US](https://creativecommons.org/licenses/by-sa/3.0/us/) license. Links provided where appropriate.
+
+---
+
+- Document Version: 1.5.0
+- Date: (Feb 6, 2020)
+- Author: David Jordan
+- Contributing Editor(s): April Elizabeth, James Gross, Aaron Honeycutt, Emma Marshall, Nathaniel Warburton.

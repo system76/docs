@@ -40,7 +40,7 @@ Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software
 
 On Pop!_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
 
-```
+```bash
 sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common
 sudo pip3 install WoeUSB-ng
 ```
@@ -343,18 +343,27 @@ Windows and Linux store their time in the UEFI firmware differently. This can ca
 
 If you're affected by this, the easiest solution is to fix it in Linux, forcing it to work the same way as Windows. Set the option using this command:
 
-```
+```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 You can verify that the change was successful using this command:
 
-```
+```bash
 timedatectl
 ```
 
 You should see `RTC in local TZ: yes` in the output. If you need to revert this setting, turn it back off with this command:
 
-```
+```bash
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```
+
+
+---
+
+- Document Version: 2.0.0
+- Date: (Feb 22, 2021)
+- Author: Aaron Honeycutt, Nathaniel Warburton
+- Contributing Editor(s): Thomas Zimmerman, Romain Théry, Ivar Vasara, Akira K.
+(kirameister), Anner (anneris), Jacob Kauffmann.

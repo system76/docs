@@ -21,13 +21,13 @@ Pop!_OS and Ubuntu both include the GNOME desktop environment by default. A desk
 
 You can install an alternative desktop environment using the instructions below. If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!_OS, install the `pop-desktop` package:
 
-```
+```bash
 sudo apt install pop-desktop
 ```
 
 For Ubuntu, install the `ubuntu-desktop` package instead:
 
-```
+```bash
 sudo apt install ubuntu-desktop
 ```
 
@@ -47,7 +47,7 @@ MATE is a simple and attractive desktop using traditional concepts. MATE is a fo
 
 This command will install MATE and its dependencies:
 
-```
+```bash
 sudo apt install mate-desktop-environment mate-desktop-environment-extras ubuntu-mate-themes
 ```
 
@@ -61,7 +61,7 @@ Cinnamon is used in Linux Mint by default. Cinnamon strives to provide a traditi
 
 Cinnamon is installed with:
 
-```
+```bash
 sudo apt install cinnamon-desktop-environment
 ```
 
@@ -75,7 +75,7 @@ While Pop and Ubuntu contain GNOME by default, both include a number of customiz
 
 You can install the vanilla GNOME session using this command:
 
-```
+```bash
 sudo apt install gnome-session
 ```
 
@@ -89,7 +89,7 @@ The KDE Plasma desktop environment is a familiar working environment and looks s
 
 The KDE Plasma desktop and its dependencies can be installed with this command:
 
-```
+```bash
 sudo apt install kde-standard
 ```
 
@@ -111,7 +111,7 @@ UKUI is a lightweight desktop environment based on a pluggable framework for Lin
 
 UKUI can be installed with:
 
-```
+```bash
 sudo apt install ukui-desktop-environment
 ```
 
@@ -125,7 +125,7 @@ XFCE embodies the traditional UNIX philosophy of modularity and re-usability. Th
 
 You can install XFCE and its dependencies with this command:
 
-```
+```bash
 sudo apt install xfce4 xfce4-goodies
 ```
 
@@ -147,7 +147,7 @@ The Lightweight X11 Desktop Environment is a fast and energy-saving desktop envi
 
 LXDE can be installed with:
 
-```
+```bash
 sudo apt install lxde
 ```
 
@@ -169,7 +169,7 @@ LXQt is a lightweight Qt desktop environment. It's being developed as a successo
 
 LXQt can be installed with:
 
-```
+```bash
 sudo apt install lxqt
 ```
 
@@ -183,7 +183,7 @@ Desktop environments can interfere with each other or change system-wide setting
 
 Xfce will change the notification dialog to its own. It can be configured with this command:
 
-```
+```bash
 xfce4-notifyd-config
 ```
 
@@ -191,7 +191,7 @@ xfce4-notifyd-config
 
 Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
 
-```
+```bash
 sudo rm /usr/share/xsessions/cinnamon2d.desktop
 ```
 
@@ -203,13 +203,13 @@ Some desktop environments configure additional programs to start at boot. To cha
 
 GNOME does not use a screensaver (only a lock screen), but other desktop environments may install the classic GNOME screensaver package as a dependency. If you're being prompted for a password twice after suspending or locking the screen, disable the second prompt with this command:
 
-```
+```bash
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 ```
 
 Or, if that doesn't stop the second prompt, uninstall the redundant screensaver with this command:
 
-```
+```bash
 sudo apt purge gnome-screensaver
 ```
 
@@ -217,7 +217,7 @@ sudo apt purge gnome-screensaver
 
 If Cinnamon's desktop lock screen isn't functioning, this command will re-enable it:
 
-```
+```bash
 gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false
 ```
 
@@ -225,12 +225,19 @@ gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false
 
 If you no longer want to use a desktop environment, it can be removed by using:
 
-```
+```bash
 sudo apt autoremove --purge ...
 ```
 
 For example, to remove KDE:
 
-```
+```bash
 sudo apt autoremove --purge kde-standard
 ```
+
+---
+
+- Document Version: 1.0.0
+- Date: (Apr 15, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Aaron Honeycutt, Nathaniel Warburton.

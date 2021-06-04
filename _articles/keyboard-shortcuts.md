@@ -11,6 +11,9 @@ hidden: false
 section: community
 
 ---
+
+# Pop!\_OS - View and Modify Keyboard Shortcuts
+
 You can view and change keyboard shortcuts in Pop!\_OS using the Settings app.
 
 ### Viewing Keyboard Shortcuts
@@ -54,3 +57,11 @@ Enter a name for the shortcut, the application or command to launch, and the key
 ---
 
 This article was contributed by [kylecorry31](https://github.com/kylecorry31) and updated by [Mark Pendlebury](https://github.com/markpendlebury).
+
+
+---
+
+- Document Version: 2.0.0
+- Date: (Feb 1, 2021)
+- Author: Kyle Corry, Mark Pendlebury
+- Contributing Editor(s): Trung Le, Jacob Kauffmann, Nathaniel Warburton.

@@ -38,7 +38,7 @@ The <u>PulseAudio Volume Control</u> utility also allows you to change the sound
 
 <u>PulseAudio Volume Control</u> can be installed using this command: 
 
-```
+```bash
 sudo apt install pavucontrol
 ```
 
@@ -55,3 +55,11 @@ You can set a device as default by clicking the green checkmark next to it.
 On the "Playback" tab, each application that's playing audio will be listed. You can change which output device a specific application is using by selecting it under the drop-down box next to that application.
 
 ![Set per-app output device in pavucontrol](/images/hdmi-audio/pavucontrol-per-application.png)
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Aug 1, 2016)
+- Author: Cassidy James Blaede
+- Contributing Editor(s): Aaron Honeycutt, Ian Santopietro, James Gross, Jacob Kauffmann.

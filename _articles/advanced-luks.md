@@ -15,19 +15,21 @@ section: security-encryption
 
 ---
 
+# Full Disk Encryption Passwords
+
 With Full Disk Encryption more than one password to decrypt the drive may be needed if more then one person is using the computer. In this situation seven extra passwords can be added with the instructions below.
 
 #### List Partitions
 
 First let's list the partitions of all of the installed drives:
 
-```
+```bash
 lsblk -f
 ```
 
 The output may be different based on the drive setup and partition table. You can see the root partition at mountpoint '/'. From there we can use that output to run this command:
 
-```
+```bash
 sudo cryptsetup luksDump /dev/sda3
 ```
 
@@ -37,7 +39,7 @@ Replacing '/dev/sda3' with the location of the root partition on your system. Wi
 
 Following the partition scheme from the previous command we can form the next command to add a new key to the open Key Slot:
 
-```
+```bash
 sudo cryptsetup luksAddKey /dev/sda3
 ```
 
@@ -47,7 +49,7 @@ This command will require the current encryption password before new password ca
 
 Let's run this command again to confirm that the additional password is set:
 
-```
+```bash
 sudo cryptsetup luksDump /dev/sda3
 ```
 
@@ -58,4 +60,4 @@ You should see that Key Slot 1 is now enabled so this confirms the new password 
 - Document Version: 1.0.0
 - Date: (Apr 17, 2019)
 - Author: Aaron Honeycutt
-- Contributing Editor(s):
+- Contributing Editor(s): Nathaniel Warburton

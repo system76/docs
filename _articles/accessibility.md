@@ -13,6 +13,8 @@ section: pop
 
 ---
 
+#   Accessibility options for Pop!\_OS
+
 ### Pop!\_OS: This document describes some of the applications and utilities that can be used. 
 
 Pop!_OS shares many of the same accessibility options as Gnome. These accessibility options allow for Pop!_OS to be used by as many people in the community as possible. If there are additional tools or options that you would like to see added to Pop!_OS in the future please let us know and we will see if implementation is possible. 
@@ -65,4 +67,4 @@ Pop!_OS also provides many keyboard shortcuts to help users with navigating thei
 - Document Version: 1.0.0
 - Date: (Apr 17, 2020)
 - Author: Aaron Honeycutt
-- Contributing Editor(s):
+- Contributing Editor(s): Nathaniel Warburton

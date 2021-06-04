@@ -13,6 +13,8 @@ section: accessories
 
 ---
 
+# How to order accessories for your laptop
+
 To order an extra or new AC Adapter for your laptop, log into [<i class="fa fa-user"></i> My Account](https://system76.com/my-account/orders) and select the **order accessories** button beneath your product.
 
 ![View Order Detail](/images/accessories/button1.png)
@@ -28,4 +30,4 @@ Then the **order accessories** button can be accessed under the diagram of your 
 - Document Version: 1.0.0
 - Date: (Apr 4, 2019)
 - Author: Aaron Honeycutt
-- Contributing Editor(s):
+- Contributing Editor(s): Nathaniel Warburton

@@ -12,6 +12,8 @@ section: hardware-drivers
 
 ---
 
+# Laptop Battery Thresholds 
+
 Charging thresholds allow your System76 laptop to avoid charging the battery until it has dropped below a lower bound (the start threshold), and to stop charging when it reaches an upper bound (the end threshold). This is useful when your laptop is plugged into an AC power adapter for extended periods of time, as it prevents unnecessary micro-charging that would reduce battery longevity.
 
 To determine if your laptop has Open Firmware or proprietary firmware, see [this article](/articles/open-firmware-systems). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
@@ -24,19 +26,19 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 You can see the thresholds that are currently set using this command:
 
-```
+```bash
 system76-power charge-thresholds
 ```
 
 You can list the available charging profiles using this command:
 
-```
+```bash
 system76-power charge-thresholds --list-profiles
 ```
 
 Then, you can select a profile using one of these commands:
 
-```
+```bash
 system76-power charge-thresholds --profile full_charge
 system76-power charge-thresholds --profile balanced
 system76-power charge-thresholds --profile max_lifespan
@@ -44,7 +46,7 @@ system76-power charge-thresholds --profile max_lifespan
 
 You can also set custom thresholds without using a profile. For example, this command will set the start threshold to `40` and the end threshold to `80`:
 
-```
+```bash
 system76-power charge-thresholds 40 80
 ```
 
@@ -66,3 +68,10 @@ To adjust the thresholds, reboot the computer and enter the UEFI setup utility b
 ![Enabling FlexiCharger](/images/laptop-charging-thresholds/flexicharger.jpg)
 
 Once configured, save and exit the setup utility. The thresholds can be disabled at any time by setting FlexiCharger back to Disabled.
+
+---
+
+- Document Version: 1.0.0
+- Date: (Feb 8, 2021)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Jacob Kauffmann, Jeremy Soller.

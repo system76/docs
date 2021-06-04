@@ -15,25 +15,27 @@ section: graphics-audio-video
 
 ---
 
+# Fix Audio Issues
+
 Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and reloading ALSA and/or PulseAudio can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
 
 ## Reset PulseAudio
 
 If the system is not playing audio, first try restarting the PulseAudio daemon:
 
-```
+```bash
 systemctl --user restart pulseaudio
 ```
 
 After restarting the daemon, applications may need to be restarted to re-connect to PulseAudio. If the system still isn't playing sound, then try removing the user configuration files for PulseAudio:
 
-```
+```bash
 rm -r ~/.config/pulse
 ```
 
 Then, kill all instances of PulseAudio:
 
-```
+```bash
 pulseaudio -k
 ```
 
@@ -43,7 +45,7 @@ When PulseAudio starts again (which it should do automatically), it will create 
 
 The program <u>PulseAudio Volume Control</u> is helpful in figuring out which program is producing audio, where that audio is being routed, what the default input/output devices are, and what the volume levels are set to.  It can be installed using the Pop!\_Shop, or with this command:
 
-```
+```bash
 sudo apt install pavucontrol
 ```
 
@@ -73,19 +75,19 @@ Under "Configuration," each sound card should be listed.
 
 PulseAudio sits on top of ALSA. If PulseAudio is not seeing any input/output devices, check what playback devices ALSA is detecting:
 
-```
+```bash
 aplay -l
 ```
 
 Or, check what recording devices ALSA is detecting:
 
-```
+```bash
 arecord -l
 ```
 
 A device may be muted in the ALSA mixer, which will override any PulseAudio volume settings. You can open the ALSA mixer with this command:
 
-```
+```bash
 alsamixer
 ```
 
@@ -101,7 +103,7 @@ If your system has more than one sound card (for example, an Intel sound card an
 
 If ALSA doesn't list a sound card, it may not be physically detected by the system at all. If the Linux kernel sees a sound card, it will show up in your `lspci` output. This command will list every sound card your system detects, and show the driver being used for each one:
 
-```
+```bash
 lspci -v | grep -A6 Audio
 ```
 
@@ -111,19 +113,19 @@ If the output from that command is blank, then your system isn't detecting any s
 
 This command will reinstall ALSA and some of the other core audio packages:
 
-```
+```bash
 sudo apt install --reinstall alsa-base alsa-utils pulseaudio linux-sound-base libasound2
 ```
 
 This command will reload the sound driver modules:
 
-```
+```bash
 sudo alsa force-reload
 ```
 
 This command will start PulseAudio after it's been stopped (this is not usually needed, because PulseAudio will usually restart itself when it's stopped):
 
-```
+```bash
 pulseaudio --start
 ```
 
@@ -137,14 +139,14 @@ If you hear audio crackling (especially when you start or stop playing audio), P
 
 These two commands will disable this behavior and restart PulseAudio:
 
-```
+```bash
 sudo sed -i 's/load-module module-suspend-on-idle/#load-module module-suspend-on-idle/' /etc/pulse/default.pa
 pulseaudio -k
 ```
 
 This change can be undone using these commands:
 
-```
+```bash
 sudo sed -i 's/#load-module module-suspend-on-idle/load-module module-suspend-on-idle/' /etc/pulse/default.pa
 pulseaudio -k
 ```
@@ -153,14 +155,14 @@ pulseaudio -k
 
 With hardware that uses the `snd_hda_intel` kernel module, rare [bugs](https://bugs.launchpad.net/ubuntu/+source/linux-oem-osp1/+bug/1864061) can cause the sound card to not be detected. If you're having this issue, try running these commands to force the usage of a specific audio driver:
 
-```
+```bash
 echo "options snd-hda-intel dmic_detect=0" | sudo tee -a /etc/modprobe.d/alsa-base.conf
 echo "blacklist snd_soc_skl" | sudo tee -a /etc/modprobe.d/blacklist.conf
 ```
 
 Reboot after making the changes. If this doesn't solve the issue, undo the changes using these commands:
 
-```
+```bash
 sudo sed -i 's/options snd-hda-intel dmic_detect=0//' /etc/modprobe.d/alsa-base.conf
 sudo sed -i 's/blacklist snd_soc_skl//' /etc/modprobe.d/blacklist.conf
 ```
@@ -171,7 +173,7 @@ Then reboot again.
 
 The `alsa-info` command will gather a number of outputs, including some of the above-listed outputs, and package them so they can be shared easily. In a terminal, run the command:
 
-```
+```bash
 alsa-info
 ```
 

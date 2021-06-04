@@ -14,13 +14,13 @@ section: security-encryption
 
 ---
 
-#### Join an Active Directory Domain
+# Join an Active Directory Domain
 
 Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows users to log in with their existing network credentials.
 
 1. Install the necessary packages:
 
-    ```
+    ```bash
     sudo apt install sssd heimdal-clients msktutil
     ```
 
@@ -34,7 +34,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
 2. Move the default Kerberos configuration file to a backup, and create a fresh file to use:
 
-    ```
+    ```bash
     sudo mv /etc/krb5.conf /etc/krb5.conf.default
     sudo nano /etc/krb5.conf
     ```
@@ -57,7 +57,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
 3. Initialize Kerberos and generate a keytab file. The first command requires the username of a domain administrator, and our computer's hostname is "pop-os" in this example:
 
-    ```
+    ```bash
     kinit administrator
     klist
     msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os.system76.local -k my-keytab.keytab ‑‑computer-name POP-OS ‑‑upn POP-OS$ ‑‑server adserver.system76.local ‑‑user-creds-only
@@ -67,7 +67,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
 4. Move the keytab to the /etc/sssd directory, and configure SSSD:
 
-    ```
+    ```bash
     sudo mv my-keytab.keytab /etc/sssd/my-keytab.keytab
     sudo nano /etc/sssd/sssd.conf
     ```
@@ -110,13 +110,13 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
     After saving, set the appropriate permissions on that configuration file:
 
-    ```
+    ```bash
     sudo chmod 0600 /etc/sssd/sssd.conf
     ```
 
 5. Configure PAM:
 
-    ```
+    ```bash
     sudo nano /etc/pam.d/common-session
     ```
 
@@ -128,19 +128,19 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
     After saving that file, restart SSSD:
 
-    ```
+    ```bash
     sudo systemctl restart sssd
     ```
 
 6. Add the domain administrator to the local sudo group:
 
-    ```
+    ```bash
     sudo adduser administrator sudo
     ```
 
     Then, test a login with the domain administrator:
 
-    ```
+    ```bash
     su -l administrator
     ```
 
@@ -153,4 +153,4 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 - Document Version: 1.0.0
 - Date: (Apr 17, 2020)
 - Author: Jacob Kauffmann
-- Contributing Editor(s):
+- Contributing Editor(s): Nathaniel Warburton

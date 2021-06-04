@@ -18,6 +18,11 @@ section: pop
 
 ---
 
+# Install Pop!_OS On Your Computer 
+
+<!-- Add table of contents--> 
+
+
 The following guide describes how to download the Pop!\_OS.iso image, write it to a flash drive, and install it on the hardware of your choice.
 
 Requirements: At the time of this writing Pop!\_OS only runs on 64-bit x86 architecture, 2 GB of RAM is required, 4 GB of RAM is recommended and 20 GB of storage is recommended.
@@ -70,6 +75,13 @@ Pop!\_OS has been successfully installed on your computer! Awesome work! You can
 
 If you installed from the Intel/AMD ISO and your system has discrete NVIDIA graphics card or if you added one later on, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command in a command terminal to install the driver:
 
-```
+```bash
 sudo apt install system76-driver-nvidia
 ```
+
+---
+
+- Document Version: 2.0.0
+- Date: ( Apr 19, 2018)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): James Gross, Carl Richell, Thomas Zimmerman, Mario Burgos, Nathaniel Warburton.

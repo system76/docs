@@ -130,3 +130,10 @@ This extension will check the various installed extensions and present a notific
 ![lock keys](/images/customize-gnome/lock-keys.png)
 
 The lock keys extension notifies you when you press the Caps Lock or the Num Lock and let's you know at all times if you have either button active.
+
+---
+
+- Document Version: 1.0.0
+- Date: (Jun 5, 2018)
+- Author: James Gross
+- Contributing Editor(s): Aaron Honeycutt, P Trottier, Omar Jair Purata Funes.

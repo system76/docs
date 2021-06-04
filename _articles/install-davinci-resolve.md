@@ -21,7 +21,7 @@ DaVinci Resolve requires an NVIDIA GPU to run. (Intel GPUs lack the necessary Op
 
 The following packages will be needed to build and install DaVinci Resolve:
 
-```
+```bash
 sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
 ```
 
@@ -51,11 +51,15 @@ Open the DaVinci Resolve directory, right click on an empty space between/below 
 
 In the new **Terminal** window, run this command to convert the `.run` file into a `.deb` package:
 
-```./makeresolvedeb*.sh DaVinci_Resolve_*_Linux.run```
+```bash
+./makeresolvedeb*.sh DaVinci_Resolve_*_Linux.run
+```
 
 Once the script finishes running and the terminal prompt returns, run this command to install DaVinci Resolve:
 
-```sudo dpkg -i davinci-resolve*_amd64.deb```
+```bash
+sudo dpkg -i davinci-resolve*_amd64.deb
+```
 
 After installing, DaVinci Resolve will be ready to launch from your Activities menu:
 
@@ -64,3 +68,10 @@ After installing, DaVinci Resolve will be ready to launch from your Activities m
 ![DaVinci Loading Screen](/images/davinci-resolve/davinci-loading-screen.png)
 
 ![DaVinci App Open](/images/davinci-resolve/davinci-app-open.png)
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton, Jacob Kauffmann.

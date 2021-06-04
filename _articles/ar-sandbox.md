@@ -13,6 +13,8 @@ section: software-applications
 
 ---
 
+# Set Up Your New AR Sandbox 
+
 [AR Sandbox Video](https://www.youtube.com/watch?v=uTPOE2XceEA)
 
 The [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) was developed by [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) at [UC Davis](https://www.ucdavis.edu/).
@@ -43,7 +45,7 @@ In terms of System76 computers we recommend the [Oryx Pro](https://system76.com/
 
 - Add the needed PPA and install the software by opening a terminal and running these three commands:
 
-```
+```bash
 sudo add-apt-repository -ys ppa:system76-dev/weekend-project
 sudo apt-get update
 sudo apt-get install arsandbox
@@ -51,13 +53,13 @@ sudo apt-get install arsandbox
 
 - Find out what your username is by running this command in the terminal:
 
-```
+```bash
 whoami
 ```
 
 - Add yourself to the vrui-grp group with this command, replacing USERNAME with the user-name returned by the whoami command above:
 
-```
+```bash
 sudo adduser USERNAME vrui-grp
 ```
 
@@ -69,7 +71,7 @@ During the setup process there will be times when you will need to hold down a k
 
 To do this, please install the <u>GNOME Tweaks tool</u> from the Pop!\_Shop or Ubuntu Software Center, or from the Terminal by running:
 
-```
+```bash
 sudo apt install gnome-tweak-tool
 ```
 
@@ -79,7 +81,7 @@ After that, open the <u>Tweaks</u> app from the Activities overview, then naviga
 
 - Plug in your first-generation Kinect device, then open a terminal and run:
 
-```
+```bash
 KinectUtil getCalib 0
 ```
 
@@ -91,7 +93,7 @@ Note: if you receive a "Kinect Error 13" message, you may need to power-cycle th
 
 - Open a terminal and run:
 
-```
+```bash
 RawKinectViewer -compress 0
 ```
 
@@ -119,7 +121,7 @@ On the other hand, if you've already filed your sandbox with sand, you can calcu
 
 - From a terminal, launch the RawKinectViewer:
 
-```
+```bash
 RawKinectViewer -compress 0
 ```
 
@@ -148,7 +150,7 @@ Start with your cursor near the top-left corner of your flat surface. Press and 
 
 - Edit the BoxLayout.txt file by running this command from the terminal:
 
-```
+```bash
 gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
@@ -172,7 +174,7 @@ If you placed a piece of poster board (or another flat surface) on top of your s
 
 - From a terminal, again launch the RawKinectViewer:
 
-```
+```bash
 RawKinectViewer -compress 0
 ```
 
@@ -218,7 +220,7 @@ Note there is no feedback from the UI when you press the 1 key.
 
 - Edit the `BoxLayout.txt` file by running this command from the terminal:
 
-```
+```bash
 gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
@@ -238,7 +240,7 @@ gedit /etc/SARndbox-1.6/BoxLayout.txt
 
 - Launch the XBackgroud tool from a terminal like this:
 
-```
+```bash
 XBackground
 ```
 
@@ -264,7 +266,7 @@ At each height, you'll capture 12 tie-points. For a decent calibration, you'll n
 
 - Launch `CalibrateProjector` from a terminal like this:
 
-```
+```bash
 CalibrateProjector -s WIDTH HEIGHT
 ```
 
@@ -272,7 +274,7 @@ Replacing WIDTH and HEIGHT with the settings for your projector. The Kinect itse
 
 To match the resolution of the laptop we used in this tutorial, we set our projector to 1920x1080, but our particular BenQ projector allows us to force a 4:3 aspect ratio even when the resolution is a 16:9 aspect ratio. So in our case, we launched `CalibrateProjector` like this:
 
-```
+```bash
 CalibrateProjector -s 1920 1080
 ```
 
@@ -342,7 +344,7 @@ On the other hand, if in step 4 you calculated the base plane when your sandbox 
 
 - To adjust the sea level, edit the `/etc/SARndbox-1.6/BoxLayout.txt` by running this command from the terminal:
 
-```
+```bash
 gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
@@ -384,7 +386,7 @@ As long as you don't change the physical setup of your sandbox (in particular, t
 
 This is a shortcut to launch `SARndbox` with the following arguments (which you can also do directly from a terminal):
 
-```
+```bash
 SARndbox -uhm -fpv -evr -0.01
 ```
 
@@ -394,13 +396,13 @@ So you typically want to set an evaporation rate, especially when deploying the 
 
 - If our recommended evaporation rate seems too fast for your tastes, try:
 
-```
+```bash
 SARndbox -uhm -fpv -evr -0.005
 ```
 
 If our recommended evaporation rate seems too slow for your tastes, try:
 
-```
+```bash
 SARndbox -uhm -fpv -evr -0.02
 ```
 
@@ -414,3 +416,6 @@ Be sure to check out the [Augmented Reality Sandbox](https://arsandbox.ucdavis.e
 - Date: (May 20, 2021)
 - Author: Aaron Honeycutt
 - Contributing Editor(s): Nathan Dyer, Nathaniel Warburton
+
+
+<!--TODO Add section on how to manually backup the files that have already been configured so the process doesn't have to start all over. -->

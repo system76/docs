@@ -15,7 +15,7 @@ section: software-applications
 
 Finding out why your system is having network issues can be a daunting task.  We'll explore some useful commands 
 
-[]{#anchor}A quick review of the TCP/IP model
+A quick review of the TCP/IP model
 ---------------------------------------------
 
 First, let's take a moment to review the fundamentals of the TCP/IP network model.

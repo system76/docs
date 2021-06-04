@@ -7,7 +7,7 @@ keywords:
   - keyboard shortcuts
   - pop
   - settings
-hidden: true
+hidden: false
 section: community
 
 ---

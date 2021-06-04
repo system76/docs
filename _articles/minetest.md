@@ -7,7 +7,7 @@ keywords:
   - Games
   - minetest
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 section: community
 ---
 

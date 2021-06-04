@@ -12,7 +12,7 @@ keywords:
   - GNOME
   - Mint
 image: http://support.system76.com/images/system76.png
-hidden: true
+hidden: false
 section: learn-about-your-computer
 
 ---

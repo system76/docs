@@ -12,8 +12,8 @@ keywords:
   - PopOS
   - Pop!\_OS
 image: http://support.system76.com/images/system76.png
-hidden: true
-section: getting-started
+hidden: false
+section: software
 
 ---
 

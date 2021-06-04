@@ -14,7 +14,7 @@ keywords:
   - software development
   - Odoo
   - System76
-hidden: true
+hidden: false
 section: case-studies
 
 ---

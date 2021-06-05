@@ -12,6 +12,9 @@ hidden: false
 section: community
 
 ---
+
+# Map a network drive using Files in Pop!_OS
+
 If you have a storage location on a network drive, you can easily map the location using Files in Pop!\_OS.
 
 ### Navigate to Other Locations
@@ -46,3 +49,11 @@ Once this is done, hit "Connect" in the top right and you can access the files o
 ---
 
 This article was contributed by [kylecorry31](https://github.com/kylecorry31).
+
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: Kyle Corry
+- Contributing Editor(s):

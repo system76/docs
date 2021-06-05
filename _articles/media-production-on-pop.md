@@ -12,7 +12,7 @@ keywords:
   - Natron
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop
+section: media
 
 ---
 ## Bring Your Imagination to Life

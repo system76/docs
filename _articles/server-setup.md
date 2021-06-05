@@ -14,7 +14,7 @@ hidden: false
 redirect_from:
   - /serversetup
   - /serverSetup
-section: software
+section: learn-about-your-computer
 
 ---
 

@@ -20,7 +20,7 @@ hidden: false
 redirect_from:
   - /chromeFlash
   - /chromeflash
-section: learn-about-your-os
+section: media
 
 ---
 

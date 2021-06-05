@@ -20,7 +20,7 @@ keywords:
   - apt
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop
+section: software
 
 ---
 Pop!\_OS 20.10 was released October 23, 2020.

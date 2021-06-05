@@ -13,7 +13,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: hardware
+section: hardware-troubleshooting
 
 ---
 

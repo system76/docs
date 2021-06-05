@@ -11,7 +11,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: learn-about-your-os
+section: pop
 
 ---
 

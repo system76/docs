@@ -14,7 +14,7 @@ keywords:
   - Integrated
 image: http://support.system76.com/images/ubuntu.png
 hidden: false
-section: ubuntu
+section: software
 
 ---
 

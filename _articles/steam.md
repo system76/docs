@@ -9,7 +9,7 @@ keywords:
   - steam
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: learn-about-your-os
+section: media
 
 ---
 

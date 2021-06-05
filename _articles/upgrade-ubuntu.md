@@ -16,7 +16,7 @@ keywords:
   - apt
 image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-18-04.jpg
 hidden: false
-section: ubuntu
+section: software
 
 ---
 

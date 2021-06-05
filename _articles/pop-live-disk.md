@@ -17,6 +17,8 @@ section: hardware-drivers
 
 ---
 
+# Live Disk Creation (Pop!_OS) 
+
 Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
 - [Installing Pop!_OS](/articles/install-pop/)
@@ -35,7 +37,7 @@ In order to make a live disk of Pop!_OS you must have a bootable flash drive. Yo
 
 Popsicle is an open source app for Linux that allows you to "burn images to USB drives safely and easily", it is installed in Pop!_OS 18.04 and up. If you are running Pop!_OS 17.10 you can install it like so in a terminal:
 
-```
+```bash
 sudo apt install popsicle-gtk
 ```
 
@@ -88,3 +90,11 @@ Since the live environment is a full Pop!_OS installation, it works just like th
 ### Backup Files
 
 Perhaps you're reinstalling, or maybe you can't boot but you want to try and recover and back up your files? The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar <u>Files</u> utility.
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Mar 3, 2021)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Emma Marshall, sgmarc, Nathaniel Warburton.

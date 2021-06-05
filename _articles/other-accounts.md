@@ -14,6 +14,8 @@ section: pop
 
 ---
 
+# Adding Other Users to Your OS
+
 There are a few reasons to have more then one account on your system. They include allowing the system to be used by other people in your home or office or troubleshooting issues with your user account.
 
 In order to add another user to the system follow these steps:
@@ -57,3 +59,9 @@ mv ~/.config ~/.config.bk
 
 Then log out and back into the main account. 
 
+---
+
+- Document Version: 1.0.0
+- Date: (Feb 19, 2021)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton.

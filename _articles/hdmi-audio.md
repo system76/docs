@@ -14,6 +14,8 @@ section: graphics-audio-video
 
 ---
 
+# Configure HDMI Audio 
+
 If you're using an HDMI display with its own built-in speakers, you can configure your system to output audio over the HDMI connection. (These steps should also work for DisplayPort connections.)
 
 ## Using the Sound Settings

@@ -17,6 +17,8 @@ section: graphics-audio-video
 
 ---
 
+# HiDPI Multi-Monitor Support 
+
 ### What Is HiDPI?
 
 With 4K monitors becoming more prominent in the marketplace, it's crucial to define the difference between a high resolution display and a true HiDPI display. There's a great series of [articles](https://medium.com/elementaryos/what-is-hidpi-and-why-does-it-matter-b024eabea20d) explaining the difference between high resolution and HiDPI.

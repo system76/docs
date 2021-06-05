@@ -68,7 +68,7 @@ Choose **root** and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> u
 
 Once you're at the root shell, identified with the prompt `root@ubuntu:~#`, enter the commands below:
 
-```
+```bash
 cd /usr/local/bin/
 ./system76-preparetoship
 sudo reboot
@@ -80,6 +80,15 @@ The system will reboot into the first-user System Configuration.
 
 Lastly, we need your help in tracking down this bug. When you get logged in, open a terminal and run this command, then send us the 'log.tgz' file it creates.
 
-`sudo tar -cvz -f ~/log.tgz /var/log`
+```bash
+sudo tar -cvz -f ~/log.tgz /var/log
+```
 
 Please open a support ticket and attach the log file.
+
+---
+
+- Document Version: 1.0.0
+- Date: (Apr 17, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathan Dyer, Nathaniel Warburton.

@@ -15,6 +15,9 @@ hidden: false
 section: pop
 
 ---
+
+# Media Production on Pop!_OS
+
 ## Bring Your Imagination to Life
 
 There's something special about telling stories. And the more tools you have at your disposal, the more vivid and dynamic your story telling can be. 
@@ -82,3 +85,11 @@ Install Directly From the Pop!\_Shop
 Flowblade is a multitrack non-linear video editor with a set of industry standard editing tools suitable for beginners and masters alike to help make your vision a reality of image and sound. 
 
 Install Directly From the Pop!\_Shop
+
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: Carl Richell
+- Contributing Editor(s): Simon C., Martin Rohde, Nathaniel Warburton.

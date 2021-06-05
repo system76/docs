@@ -18,6 +18,8 @@ section: getting-started
 
 ---
 
+# Configure Your System76 Server
+
 **Initial Server Settings** | **Value**
 ----------------------------|------------------
 Username                    | oem
@@ -29,11 +31,11 @@ Connect your server to a monitor to determine the IP addresses assigned to your 
 
 The following commands will determine the server's IP address:
 
-```
+```bash
 ifconfig
 ```
 
-```
+```bash
 ip link show
 ```
 
@@ -43,7 +45,7 @@ In the directions below replace `IPADDRESS` with the server's IP address.
 
 To configure the hostname and domain, run these commands:
 
-```
+```bash
 sudo nano /etc/hosts
 sudo nano /etc/hostname
 ```
@@ -71,13 +73,13 @@ Example `/etc/hostname` file:
 
 Verify the correct hostname and domain with this command:
 
-```
+```bash
 hostname -f
 ```
 
 ### Configure Time Zone
 
-```
+```bash
 sudo dpkg-reconfigure tzdata
 ```
 
@@ -85,13 +87,13 @@ sudo dpkg-reconfigure tzdata
 
 Ubuntu Server 18.04 is shipping with netplan, so the system file will need to be edited for networking. With this command, we will edit the file:
 
-```
+```bash
 sudo nano /etc/netplan/50-cloud-int.yaml
 ```
 
 This command will list the network interfaces:
 
-```
+```bash
 ip link show
 ```
 
@@ -117,13 +119,13 @@ Now if the router has DHCP setup you will get an IP address for the port that ha
 
 To change the IP address of the server, run these commands:
 
-```
+```bash
 sudo nano /etc/network/interfaces
 ```
 
 Adjust as necessary & press <kbd>Ctrl</kbd>+<kbd>X</kbd> → <kbd>Y</kbd> → <kbd>Enter</kbd> to save.  Next, restart network services (this will drop your ssh connection):
 
-```
+```bash
 sudo systemctl restart networking
 ```
 
@@ -156,25 +158,25 @@ Example `/etc/network/interfaces` file:
 
 To remotely administer the server, a secure shell program needs installed to accept incoming SSH connections.  Install the program with this command:
 
-```
+```bash
 sudo apt install openssh-server
 ```
 
 And then configure the program by editing its settings file with this command:
 
-```
+```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
 And to use the new settings, restart the SSH daemon with this command (or restart the server):
 
-```
+```bash
 sudo systemctl restart sshd
 ```
 
 Then, from another Linux client terminal:
 
-```
+```bash
 ssh oem@IPADDRESS
 ```
 
@@ -185,7 +187,7 @@ Download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
 
 To add another user, enter these commands:
 
-```
+```bash
 ssh oem@IPADDRESS
 sudo adduser [new username]
 sudo adduser [new username] adm
@@ -195,13 +197,13 @@ exit
 
 Log back in by typing:
 
-```
+```bash
 ssh [new username]@IPADDRESS
 ```
 
 Remove the OEM User:
 
-```
+```bash
 sudo deluser oem
 ```
 
@@ -209,14 +211,14 @@ sudo deluser oem
 
 Download and install updates:
 
-```
+```bash
 sudo apt update
 sudo apt dist-upgrade
 ```
 
 Reboot may be required for the changes to take effect:
 
-```
+```bash
 sudo reboot
 ```
 
@@ -230,7 +232,7 @@ See Intel's user guide for configuring the BMC here:
 
 To run the jwviewer.jnlp file on the viewing computer, please install this program:
 
-```
+```bash
 sudo apt install icedtea-netx
 ```
 
@@ -253,3 +255,11 @@ For this machine, the default BMC username is `admin` and the default password i
 ### Troubleshooting
 
 If the Jackal 2U server is fully loaded with 8 spinning drives, and will not boot, staggered drive startup may be needed.  Enter into BIOS, and in the 'Setup Mass Storage Controller Configuration' screen, enable 'AHCI HDD Staggered Spin-Up'.
+
+
+---
+
+- Document Version: 2.0.0
+- Date: (Jan 22, 2020)
+- Author: Cassidy James Blaede
+- Contributing Editor(s): James Gross, Aaron Honeycutt,, Emma Marshall, Craig Law, Alex Gerber, Jacob Kauffmann.

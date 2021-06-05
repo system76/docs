@@ -15,6 +15,8 @@ section: getting-started
 
 ---
 
+# Pop!_OS Basics
+
 The Pop!_OS operating system provides all the features you would expect from a modern desktop.
 
 ### Getting to Know The Pop!_OS Desktop
@@ -50,3 +52,11 @@ For many applications, additional options are available in a separate menu withi
 The top right menu can be used to adjust volume and screen brightness, connect to WiFi networks, and log out/restart/shut down the computer. You can open the system settings using the gear icon in this menu.
 
 ![Top right menu](/images/pop-basics/pop-settings.png)
+
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: Jacob Kauffmann
+- Contributing Editor(s): James Gross, Carl Richell, Emma Marshall, Aaron Honeycutt, Nathaniel Warburton.

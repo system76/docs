@@ -10,6 +10,8 @@ hidden: false
 section: software-applications
 ---
 
+# Using Pop Shell on other GNOME Desktops
+
 #### For Ubuntu-Based Distros
 
 In order to build Pop Shell from source, we'll first need to install the build dependencies and <u>git</u> to clone the repository:
@@ -71,3 +73,11 @@ make local-install
 <u>Pop Shell</u> is already installed by default on the Manjaro GNOME edition but it needs to be enabled in the <u>Extenstions</u> application.
 
 To learn about <u>Pop Shell</u>'s keyboard shortcuts you can view this [support article](/articles/pop-keyboard-shortcuts/). You can also view <u>Pop Shell</u>'s source code [here](https://github.com/pop-os/shell).
+
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton, Shohei Yoshida.

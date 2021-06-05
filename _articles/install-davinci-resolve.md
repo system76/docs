@@ -13,6 +13,8 @@ section: software-applications
 
 ---
 
+# Install DaVinci Resolve
+
 ### GPU requirements
 
 DaVinci Resolve requires an NVIDIA GPU to run. (Intel GPUs lack the necessary OpenCL support. For AMD GPUs, the proprietary AMDGPU-PRO driver that Resolve depends on does not support the newer kernel version that Pop!\_OS includes.)

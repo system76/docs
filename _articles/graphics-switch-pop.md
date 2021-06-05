@@ -18,6 +18,8 @@ section: pop
 
 ---
 
+# Switching Graphics in Pop!_OS 
+
 The following laptops have switchable graphics:
 
 - Adder WS (addw1, addw2)

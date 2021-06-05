@@ -15,6 +15,8 @@ section: pop
 
 ---
 
+# Manage Repositories in Pop!_OS 
+
 ### Accessing Repoman
 
 Pop!_OS' tool for adding, removing and editing repositiories is called <u>Repoman</u> which is a part of the Pop!_Shop.
@@ -27,58 +29,65 @@ Click on the gear icon in the top right of the <u>Pop!_Shop</u> window. Once <u>
 
 <u>Repoman</u> can be also be used to add, remove and edit Flatpak Sources starting with Pop!_OS 20.04 LTS. For command-line use of Flatpak the following commands can be used:
 
-```
+```bash
 flatpak remotes
 ```
 
 This is used to list the remote/sources configured on your system.
 
-```
+```bash
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 This command is used to add a remote/source if it doesn't exist on your system and in this example the Flathub remove/source is being added. 
 
-```
+```bash
 flatpak remote-delete flathub
 ```
 
 If we want to remove a remote/source the following command can be used.
 
-```
+```bash
 flatpak search inkscape
 ```
 
 This command is used to search for a certain package (inkscape in this case) in the coufigured remotes/sources on this system.
 
-```
+```bash
 flatpak install flathub org.inkscape.Inkscape
 ```
 
 Here we are installing inkscape using the Flathub remote/source.
 
-```
+```bash
 flatpak uninstall org.inkscape.Inkscape
 ```
 
 This will remove the inkscape package from this system.
 
-```
+```bash
 flatpak run org.inkscape.Inkscape
 ```
 
 This command will run inkscape once it is installed on the system.
 
-```
+```bash
 flatpak update
 ```
 
 This will update all of your installed Flatpak applications and runtimes to their latest versions.
 
-```
+```bash
 flatpak list
 ```
 
 This will list all of the installed applications and runtimes.
 
 For more information about Flatpak commands look [here.](https://docs.flatpak.org/en/latest/using-flatpak.html)
+
+---
+
+- Document Version: 1.0.0
+- Date: (Apr 30, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton.

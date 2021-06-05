@@ -16,6 +16,8 @@ section: getting-started
 
 ---
 
+# Switching to Ubuntu from Apple
+
 If you are just coming to [Ubuntu](https://www.ubuntu.com/) from [Apple](https://www.apple.com/), it can be a little confusing where everything is. Some software will have the same names, while some tasks need different software. Generally, all operating systems accomplish the same functions: running programs, managing files, installing software, watching funny cat videos, sending email, and low-level functions, such as networking, keyboard input, and displaying images.
 
 Ubuntu, included software, and Ubuntu's default desktop environment, [GNOME Shell](https://www.gnome.org/gnome-3/), will handle most needs. Additional software can be installed, and the desktop environment can be changed to make the experience quite different. We will go through some of the most common operating system tasks, and show where they are located in GNOME Shell.
@@ -199,3 +201,11 @@ If you are used to an Apple terminal, Ubuntu's terminal will feel right at home.
 ---
 
 ![ubuntu-terminal](/images/switch/ubuntu-terminal.png)
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Nov 17, 2016)
+- Author: James Gross
+- Contributing Editor(s): Cassidy James Blaede, Richard Fuhr, Aaron Honeycutt, Timo, Nathaniel Warburton.

@@ -16,6 +16,8 @@ section: ubuntu
 
 ---
 
+# Create a User If Initial User Setup Fails in Ubuntu
+
 A lot of work goes in to making your System76 experience fantastic right out of the box. Getting running needs just a little bit of information like a username and password. Every now and then, something goes wrong with the new user creator. If there is only a Guest Session, follow these instructions to fix the issue.
 
 ### Overview
@@ -61,7 +63,7 @@ Choose **root** and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> u
 
 Once you're at the root shell, identified with the prompt `root@ubuntu:~#`, enter the commands below:
 
-```
+```bash
 oem-config-prepare
 reboot
 ```
@@ -72,6 +74,15 @@ The system will reboot into the first-user System Configuration.
 
 Lastly, we need your help in tracking down this bug. When you get logged in, open a terminal and run this command, then send us the 'log.tgz' file it creates.
 
-`sudo tar -cvz -f ~/log.tgz /var/log`
+```bash
+sudo tar -cvz -f ~/log.tgz /var/log
+```
 
 Please open a support ticket and attach the log file.
+
+---
+
+- Document Version: 1.0.0
+- Date: (Apr 17, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton.

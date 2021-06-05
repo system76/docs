@@ -18,6 +18,8 @@ hidden: false
 section: pop
 ---
 
+# Fix Pop!_OS 20.10 Incomplete Upgrade
+
 ### Backup Your Files
 The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
@@ -25,7 +27,7 @@ The upgrade process will leave your files intact, but it's always a good idea to
 
 This can be caused by the `pop-upgrade` command checking for an `/etc/fstab` file and finding an entry that it does not understand. If you have manually added drives to your fstab, adding a '#' to comment out the drive while the upgrade is ongoing should work.  You would then remove the comment after the upgrade is complete to have access to those drive paths again. To edit this file, run the following command in a terminal:
 
-```
+```bash
 sudo gedit /etc/fstab
 ```
 For example:
@@ -60,7 +62,7 @@ After you have made the edit, save the file and start the upgrade again.
 
 **If this is your first time running commands, just a heads up- after each command, press the enter key. When the system prompts you for your password, type it in the terminal and press the enter key. The password will not show in the terminal, but it is taking the password)**
 
-```
+```bash
 sudo apt clean
 sudo apt update -m
 sudo dpkg --configure -a
@@ -85,7 +87,7 @@ If you cannot access the desktop or TTY, we can run the package repair commands 
 
 To mount the OS, make note of what type of drive your OS is installed on. Is it an NVME or a SATA drive? You can run the following command to confirm:
 
-```
+```bash
 sudo parted -ls
 ```
 
@@ -94,26 +96,30 @@ Look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0
 **If disk is encrypted, start with these first 3 commands using the correct drive name in the /dev filepath**:
 
 **For SATA Drives**:
-```
+
+```bash
 sudo mount /dev/sda3 /mnt
 ```
 
 **For NVMe Drives**:
-```
+
+```bash
 sudo mount /dev/nvme0n1p3 /mnt
 ```
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.
 
 **For SATA Drives**:
-```
+
+```bash
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```
 
 **For NVMe Drives**:
-```
+
+```bash
 sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
 sudo lvscan
 sudo vgchange -ay
@@ -121,14 +127,16 @@ sudo vgchange -ay
 Next we will mount the now decrypted drive:
 
 **NOTE:** Pay attention to what the cryptdata group is called. If it is named something other than ‘data-root’ then you will need to substitute the correct info into this next command. Make sure that -root is on the end.
-```
+
+```bash
 sudo mount /dev/mapper/data-root /mnt
 ```
 
 Next we will need to mount the required paths for the chroot to function.
 
 **For SATA Drives**:
-```
+
+```bash
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
@@ -136,7 +144,8 @@ sudo chroot /mnt
 ```
 
 **For NVMe Drives**:
-```
+
+```bash
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
@@ -146,7 +155,8 @@ sudo chroot /mnt
 **If you get an error about the `/etc/resolv/conf` file being the same, you can safely ignore it.**
 
 4. Once the installed OS is mounted, we can attempt to repair it by running the following commands:
-```
+
+```bash
 sudo apt clean
 sudo apt update -m
 sudo dpkg --configure -a
@@ -157,7 +167,14 @@ sudo apt autoremove --purge
 
 5. If there are no errors, run the next commands to exit the terminal and reboot.
 
-```
+```bash
 exit
 reboot
 ```
+
+---
+
+- Document Version: 1.0.0
+- Date: (Dec 24, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): John Wiggins, Nathaniel Warburton.

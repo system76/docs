@@ -10,6 +10,9 @@ hidden: false
 section: getting-started
 ---
 
+# Pop!_OS Keyboard Shortcuts
+
+
 ## Notable Keys
 
 #### Super key
@@ -112,3 +115,10 @@ The launcher allows searching through open windows and installed applications, a
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Alt</kbd> + <kbd>8</kbd>              | Toggle magnifier                        |
 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Alt</kbd> + <kbd>+</kbd>/<kbd>-</kbd> | Zoom in/out (when magnifier is enabled) |
 
+
+---
+
+- Document Version: 2.0.0
+- Date: (Apr 17, 2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): James Gross, Emma Marshall, Jacob Kauffmann, Levi Portenier, Nathaniel Warburton.

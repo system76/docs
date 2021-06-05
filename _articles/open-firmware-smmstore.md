@@ -14,6 +14,8 @@ section: software-applications
 
 ---
 
+# Firmware Flash to Clear the SMMSTORE ROM (Error code 5) 
+
 ## Things that you will need
 
 - 1-2 flash drives (1GB and up)
@@ -64,3 +66,11 @@ Once the system is put back together we may need to boot with a live image in or
 [https://support.system76.com/articles/bootloader/](https://support.system76.com/articles/bootloader/)
 
 If at any point you run into any errors during this process please paste / attach photos of the errors in a support ticket. 
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Mar 1, 2021)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton.

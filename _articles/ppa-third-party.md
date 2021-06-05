@@ -16,6 +16,8 @@ section: software-applications
 
 ---
 
+# Keep PPAs Enabled when Upgrading Releases 
+
 Normally, all Person Package Archives (PPAs) and third-party repositories are disabled when updating to a new release of the operating system.  This helps keep upgrades simpler and prevents PPAs that haven't been properly updated for the new release from breaking the upgrade.
 
 There are two ways to tell update-manager to keep PPAs enabled. The `AllowThirdParty = yes` configuration option tells update-manager to keep *all* third-party software repositories (repos) enabled. While useful for some users, this option is quite dangerous for a PPA maintainer to use, since it's impossible to test all combinations of repos a user may have added.
@@ -41,3 +43,11 @@ To keep one specific ppa/repo enabled, create a key = value pair inside a `[Thir
 > myppa = http://ppa.launchpad.net/myppa/stable/ubuntu/  
 
 The key can be any string as long as it's unique within the section. The value is the url of the ppa you want to keep enabled.  You can find this url in the `.list` file for the PPA, which can be found in `/etc/apt/sources.list.d/`.
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Feb 12, 2019)
+- Author: David Jordan
+- Contributing Editor(s): James Gross, Aaron Honeycutt, Nathaniel Warburton.

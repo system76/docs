@@ -12,6 +12,8 @@ hidden: false
 section: pop
 ---
 
+# Dual Boot Windows 10 Alongside Pop!_OS 
+
 ## Disclaimer
 
 This article explains how to install Windows on a System76 computer (with UEFI firmware) alongside Pop!_OS.

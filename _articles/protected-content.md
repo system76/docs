@@ -24,6 +24,8 @@ section: software-applications
 
 ---
 
+# Watch Protected Content from Netflix, Amazon Prime, and Other Streaming Services
+
 Video content from online streaming services such as Netflix and Amazon Prime is typically protected using various encryption schemes to prevent copying. This is known as digital rights management (DRM). In order to play DRM-encumbered content, you will need to use a browser that supports playback of DRM-controlled content. Please note that not all vendors use a a DRM encryption method that is compatible with Linux (for instance, HBO and HBO Max).
 
 
@@ -57,7 +59,7 @@ When prompted, enter your password and wait for the installation to finish. When
 
 If <u>Eddy</u> isn't working, re-download <u>Chrome</u> and choose **Save File** to the `Downloads` folder, and then run this command:
 
-```
+```bash
 sudo apt install ~/Downloads/google-chrome-stable_current_amd64.deb
 ```
 
@@ -92,3 +94,11 @@ Under the General section, scroll down until you see **Digital Rights Management
 ![Enable DRM in Firefox by ticking the checkbox](/images/flash/firefox_drm.png)
 
 After that, playback of DRM-encumbered content should be functional.
+
+
+---
+
+- Document Version: 2.0.0
+- Date: ( Aug 26, 2020)
+- Author: Nathan Dyer
+- Contributing Editor(s): Nathaniel Warburton.

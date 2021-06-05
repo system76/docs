@@ -18,6 +18,8 @@ section: ubuntu
 
 ---
 
+# Switching Graphics in Ubuntu 
+
 The following laptops have switchable graphics:
 
 - Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)

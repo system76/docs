@@ -17,6 +17,8 @@ section: pop
 
 ---
 
+# Use The Recovery Partition
+
 The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
 
 To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting. On the menu, choose **Pop!_OS Recovery**.
@@ -37,7 +39,7 @@ To access to the existing OS drive and run the package manager [repair commands]
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
-```
+```bash
 lsblk
 ```
 
@@ -63,7 +65,7 @@ To get access to an encrypted disk, these additional commands need to be run in 
 
 **Note:** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
-```
+```bash
 sudo mount /dev/mapper/data-root /mnt
 ```
 
@@ -83,7 +85,7 @@ The EFI partition is usually around 512MB so that would be the partition that we
 
 To exit from the <u>chroot</u> and reboot the computer, run these commands:
 
-```
+```bash
 exit
 reboot
 ```
@@ -99,3 +101,11 @@ Starting with new installations of Pop!\_OS 19.04 (not through upgrading) the in
 Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
 
 If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions above.
+
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: James Gross
+- Contributing Editor(s): Aaron Honeycutt, Trinitrotoluene, Thomas Zimmerman, John William Davis, Jacob Kauffmann, Nathaniel Warburton, MikeT, Simon C.

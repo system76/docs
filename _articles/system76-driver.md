@@ -14,6 +14,8 @@ section: hardware-drivers
 
 ---
 
+# Install the System76 Driver
+
 ### System76 Driver
 
 This guide will show you how to add the System76 software repository and install the driver on Ubuntu.
@@ -26,7 +28,7 @@ If you are running Ubuntu 19.10 or later, you will need to manually add an apt p
 
 Create the apt preferences file here:
 
-```
+```bash
 sudo gedit /etc/apt/preferences.d/system76-apt-preferences
 ```
 
@@ -48,7 +50,7 @@ Save the file. Now you should be able to install the System76 Driver as describe
 
 To install our Driver you need to run the following commands in the Terminal:
 
-```
+```bash
 sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt-get update
 sudo apt install system76-driver
@@ -73,8 +75,15 @@ sudo systemctl enable --now system76
 
 If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:
 
-```
+```bash
 sudo apt-get install system76-driver-nvidia
 ```
 
 In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card. 
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Jacob Kauffmann, Nathaniel Warburton.

@@ -14,7 +14,7 @@ section: security-encryption
 
 ---
 
-#### Encrypt the Extra Drive
+# Encrypt the Extra Drive
 
 The <u>Disks</u> application can be used to encrypt the extra drive and it comes pre-installed on Pop!_OS and Ubuntu.
 

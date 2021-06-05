@@ -14,6 +14,8 @@ section: community
 
 ---
 
+# Install Numba  on Python3
+
 ## Install on Pop!_OS
 
 ### Prerequisits
@@ -24,7 +26,7 @@ These instructions assume that the CUDA toolkit is already set up and working on
 
 To install Numba, please run this command:
 
-```
+```bash
 sudo apt install python3-numba
 ```
 
@@ -43,13 +45,14 @@ export NUMBAPRO_LIBDEVICE=/usr/lib/cuda/nvvm/libdevice
 # path to CUDA libraries
 export NUMBAPRO_CUDALIB=/usr/lib/cuda/lib64
 ```
+
 Finally, restart your computer to complete setup. 
 
 ### Test installation
 
 To test your new Numba installation, from the commandline type:
 
-```
+```bash
 numba -s
 ```
 Details of the installation should be returned.
@@ -58,3 +61,11 @@ Details of the installation should be returned.
 
 For further details on Numba, please see:
 [http://numba.pydata.org/](http://numba.pydata.org/)
+
+
+---
+
+- Document Version: 1.0.0
+- Date: (Apr 13, 2019)
+- Author: Simon Watson
+- Contributing Editor(s): Aaron Honeycutt, Nathaniel Warburton.

@@ -15,6 +15,8 @@ section: getting-started
 
 ---
 
+# Find Your Quickstart Guide 
+
 To see ports, keyboard layouts, function keys, and product quickstart guides, find your model below.
 
 <!-- To find information on a product you ordered, log into [<i class="fa fa-user"></i> My Account](https://system76.com/my-account/orders) and select the **quickstart guide** button beneath your product. THIS BUTTON WILL BE CHANGING -->

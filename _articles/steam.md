@@ -13,6 +13,8 @@ section: pop
 
 ---
 
+# Install Steam
+
 ### Install Steam From Command Line
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><i class="fl-ubuntu"></i></kbd>, <kbd><span class="fl-pop-key"></span></kbd>.
@@ -21,7 +23,7 @@ Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pres
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
-```
+```bash
 apt search steam
 ```
 
@@ -29,7 +31,7 @@ apt search steam
 
 Once we find the right name for <u>Steam</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
-```
+```bash
 sudo apt install steam
 ```
 
@@ -54,3 +56,11 @@ Then click the **install button**.
 Proton is a way to enable support for some Windows games using Wine and some tweaks and additions that Valve have been working on. You can enable it using the the <u>Steam</u> Settings to download and install Proton.
 
 ![Steam Settings](/images/steam/enable-steam-play_proton.png)
+
+
+---
+
+- Document Version: 2.0.0
+- Date: ()
+- Author: Aaron Honeycutt
+- Contributing Editor(s): James Gross, Cassidy James Blaede, Jermey Soller, Alex Seibenick, Nathaniel Warburton.

@@ -15,6 +15,8 @@ section: hardware-drivers
 
 ---
 
+# Diagnose Hardware Failures 
+
 ### Won't Power On
 
 If a computer won't turn on, this could be any number of component failures.  The only way to know for sure which one has failed, is to test the system without anything attached.  We need to disconnect anything that can be removed.  This includes: the hard drives, Wifi card, RAM, and video cards (desktop, with on-board graphics).

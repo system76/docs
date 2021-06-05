@@ -14,6 +14,8 @@ section: software-applications
 
 ---
 
+# Update System Firmware
+
 These instructions are for System76 owners who have been prompted for a firmware update. Firmware updates may be issued to fix security vulnerabilities or to improve hardware functionality.
 
 ### Before You Begin
@@ -45,14 +47,14 @@ If a green **Update** button is present, then a firmware update is available. Cl
 
 The command-line firmware utility can be installed using these commands:
 
-```
+```bash
 sudo apt update
 sudo apt install system76-firmware
 ```
 
 Once installed, the following command can be used to schedule a firmware update for the next reboot (if the firmware is already up-to-date, this command will schedule a re-installation of the current firmware):
 
-```
+```bash
 sudo system76-firmware-cli schedule
 ```
 
@@ -74,7 +76,17 @@ calling Schedule method failed: "failed to add boot entry: exit code: 5
 system76-firmware: failed to schedule: failed to add boot entry: exit code: 5
 ```
 
-Please refer to this [support article](/articles/open-firmware-smmstore). If you see the message below then you can reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
+Please refer to this [support article](/articles/open-firmware-smmstore). If you see the message below then you can reboot the system using 
+
+```bash
+sudo systemctl reboot
+``` 
+to proceed with the update, or use 
+
+```bash
+sudo system76-firmware-cli unschedule
+``` 
+to cancel the update.
 
 ```
 Firmware update scheduled. Reboot your machine to install.
@@ -125,7 +137,7 @@ If your system is running another Linux-based OS installed with an EFI System Pa
 
 After creating the live disk, [access the boot menu](/articles/boot-menu/) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
 
-```
+```bash
 lsblk
 ```
 
@@ -133,7 +145,7 @@ Identify the EFI partition in the list. (The EFI partition is usually the first 
 
 #### For NVMe Drives:
 
-```
+```bash
 sudo apt install system76-driver
 sudo mkdir -p /boot/efi
 sudo mount /dev/nvme0n1p1 /boot/efi
@@ -144,7 +156,7 @@ Where `/dev/nvme0n1p1` is the EFI system partition.
 
 #### For SATA Drives:
 
-```
+```bash
 sudo apt install system76-driver
 sudo mkdir -p /boot/efi
 sudo mount /dev/sda1 /boot/efi
@@ -168,3 +180,11 @@ If you’re receiving the firmware update notification but there are no updates 
 ### Switching Between Proprietary Firmware and System76 Open Firmware
 
 If you would like to transition from proprietary firmware to System76 Open Firmware (on a supported model), please view [this article](/articles/transition-firmware/).
+
+
+---
+
+- Document Version: 1.0.0
+- Date: ()
+- Author: Aaon Honeycutt
+- Contributing Editor(s): Ashwin Goel, Jacob Kauffmann, Jeremy Soller, Nathaniel Warburton.

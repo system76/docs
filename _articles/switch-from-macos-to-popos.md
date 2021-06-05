@@ -18,10 +18,7 @@ section: getting-started
 ---
 
 # **Switching from macOS to Pop!\_OS**
-- Document Version: 1.0.0
-- Date: (9-3-2020)
-- Author: Nathaniel Warburton
-- Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal
+
 
 #### [Table of Contents](#contents)
 - [Navigation](#navigation)
@@ -426,8 +423,13 @@ Due to copyright reasons, not all video formats are supported out of the box, bu
 
 Additional codecs can be added with the following commands:
 
-    sudo add-apt-repository multiverse
-    sudo apt install ubuntu-restricted-extras
+```bash
+sudo add-apt-repository multiverse
+```
+
+```bash
+sudo apt install ubuntu-restricted-extras
+```
 
 We also have a help article for installing codecs [here](https://support.system76.com/articles/codecs/)
 
@@ -616,13 +618,17 @@ The same Terminal commands available in macOS can also be used in Pop!\_OS.
 
 Running the command:
 
-    top
+```bash
+top
+```
 
 will show a similar output to what's displayed in the System Monitor.
 
 Once the offending process' Process ID (PID) is known (either from System Monitor or the Terminal) the process can be killed with the terminal command:
 
-    sudo kill -pid ####
+```bash
+ sudo kill -pid ####
+```
 
 [Return to Table of Contents](#Contents)
 
@@ -691,3 +697,10 @@ If you want to try Pop!_OS yourself you can grab the OS image (ISO) from this [l
 <!-- # [What if I have an iPhone?](#iphone)
 
 For more details about how to manage files and backups between iPhone and Pop!\_OS, visit our help article: [Use an iPhone with Pop!\_OS](https://support.system76.com/articles/use-iphone-with-linux) -->
+
+
+---
+- Document Version: 1.0.5
+- Date: (6-3-2021)
+- Author: Nathaniel Warburton
+- Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal

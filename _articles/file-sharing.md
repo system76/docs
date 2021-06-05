@@ -14,6 +14,8 @@ section: pop
 
 ---
 
+#  Sharing files between your Pop!_OS Computers
+
 ## Install the needed package
 
 First let's open a terminal using either <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu)

@@ -54,6 +54,6 @@ This article was contributed by [kylecorry31](https://github.com/kylecorry31).
 ---
 
 - Document Version: 1.0.0
-- Date: ()
+- Date: (Dec 13, 2017)
 - Author: Kyle Corry
-- Contributing Editor(s):
+- Contributing Editor(s): Nathaniel Warburton.

@@ -58,6 +58,14 @@ This installs the System76 driver and related utilities which are needed to enab
 
 ### Install System76 Driver on Other OSes
 
+This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
+
+The System76 QA and Engineering do not test other OSes on our hardare. This section is provided for informational purposes only.
+
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing other OSes.
+
+The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for other OSe.** Any troubleshooting or other OSes support questions not covered in this article are outside the scope of System76 and should be referred to that Operating System support forums.
+
 #### Arch
 
 First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:

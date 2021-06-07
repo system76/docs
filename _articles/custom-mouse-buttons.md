@@ -1,20 +1,51 @@
 ---
 layout: article
-title: Setting Custom Mouse Actions
+title: Customizing Your Mouse
 description: >
-   How to set custom mouse actions with xbindkeys
+   How to customize the buttons on your mouse
 keywords:
   - Support
   - Pop
   - Ubuntu
   - xbindkeys
+  - Solaar
+  - Piper
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: software-applications
 
 ---
 
-### Software
+### Graphical Software
+
+#### Piper
+
+![Piper Buttons Window](/images/custom-mouse-buttons/Piper-2.png) 
+
+<u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 (sold by System76). In this section we will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
+
+![Piper Buttons Assign Window](/images/custom-mouse-buttons/Piper-3.png)
+
+In this window the button that has been clicked can be reassigned to a differet function like changing the Left-click to the Right-click or swapping the Forward button to the Back button for web pages.
+
+#### Solaar
+
+![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png) 
+
+![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png) 
+
+<u>Solaar</u> is a graphical tool for adding more devices to your Logitech USB Unify receiver. It also provides information on the following:
+
+- Battery life
+- Firmware and Bootloader version
+- Serial number
+- Sensitivity (DPI) settings
+
+You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/) and more information about <u>Solaar</u> [here](https://pwr-solaar.github.io/Solaar/devices).
+
+### Command Line Software
+
+#### xbindkeys
 
 For using <u>xbindkeys</u> open a terminal with the following keys:
 
@@ -91,5 +122,7 @@ By default xbindkeys does not start on reboot and you will need to add it using 
 Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application which is 'xbindkeys'. Now click the **Add** button and your done!
 
 ### Caveats
+
+#### xbindkeys
 
 Once the mouse buttons for forward and back are set to a different action they will no longer work in a web browser for going back and forth between web pages.

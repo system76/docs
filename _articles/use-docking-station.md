@@ -24,8 +24,18 @@ section: accessories
 <td style="height: 23px;">Supports Thunderbolt?</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">darp7</td>
-<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">addw2</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">No (DisplayPort over USB-C)</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">bonw14</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">No (DisplayPort over USB-C)</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">darp5</td>
+<td style="height: 23px;">No</td>
 <td style="height: 23px;">Yes</td>
 </tr>
 <tr style="height: 23px;">
@@ -34,22 +44,7 @@ section: accessories
 <td style="height: 23px;">Yes</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">darp5</td>
-<td style="height: 23px;">No</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp5</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp4</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp3-c</td>
+<td style="height: 23px;">darp7</td>
 <td style="height: 23px;">Yes</td>
 <td style="height: 23px;">Yes</td>
 </tr>
@@ -59,7 +54,17 @@ section: accessories
 <td style="height: 23px;">Yes</td>
 </tr>
 <tr style="height: 23px;">
-<td style="height: 23px;">lemp10</td>
+<td style="height: 23px;">galp3-c</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp4</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">galp5</td>
 <td style="height: 23px;">Yes</td>
 <td style="height: 23px;">Yes</td>
 </tr>
@@ -68,8 +73,24 @@ section: accessories
 <td style="height: 23px;">Yes</td>
 <td style="height: 23px;">No (DisplayPort over USB-C)</td>
 </tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">lemp10</td>
+<td style="height: 23px;">Yes</td>
+<td style="height: 23px;">Yes</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">serw12</td>
+<td style="height: 23px;">No</td>
+<td style="height: 23px;">No (DisplayPort over USB-C)</td>
+</tr>
 </tbody>
 </table>
+
+## A Note About Multi-Monitor Support
+
+Many docking stations offer multiple video-out ports on the dock device itself. However, our systems typically only have one video stream per port; so, even if a docking station supports multiple video ports, only one at a time will be active. For example, connecting a docking station with two Displayport ports to the Thunderbolt port on a System76 laptop will only activate one Displayport monitor. To chain two monitors together from the same docking station requires the monitor hardware to support daisy-chaining, and both monitors will need to be connected to each other, rather than to the docking station.
+
+Laptop -> Docking Station -> Monitor 1 -> DisplayPort Cable or Thunderbolt Cable -> Monitor 2
 
 ### System76-tested docks:
 

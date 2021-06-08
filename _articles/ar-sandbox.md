@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Setup your new AR Sandbox
+title: Set Up Your New AR Sandbox
 description: Calibrate and use your new AR Sandbox
 keywords:
  - AR
@@ -63,6 +63,18 @@ sudo adduser USERNAME vrui-grp
 
 - Reboot your computer so all of the above changes take effect.
 
+## Enable Touchpad While Typing
+
+During the setup process there will be times when you will need to hold down a key while moving your cursor, however by default the touchpad is disabled while typing. In order for this to work correctly, you will want to go ahead and modify that setting.
+
+To do this, please install the <u>GNOME Tweaks tool</u> from the Pop!\_Shop or Ubuntu Software Center, or from the Terminal by running:
+
+```
+sudo apt install gnome-tweak-tool
+```
+
+After that, open the <u>Tweaks</u> app from the Activities overview, then navigate to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
+
 ## Calibrate Kinect
 
 - Plug in your first-generation Kinect device, then open a terminal and run:
@@ -72,6 +84,8 @@ KinectUtil getCalib 0
 ```
 
 This will download the intrinsic calibration parameters directly from your Kinect's firmware and then write the result to a file in `/etc/Vrui-3.1/Kinect-2.8/.`
+
+Note: if you receive a "Kinect Error 13" message, you may need to power-cycle the Kinect, the computer, or both.
 
 ## Align Kinect above sandbox
 
@@ -117,12 +131,12 @@ RawKinectViewer -compress 0
 
 ![Right Click Menu](/images/ar-sandbox/4-B-average-frames-1ba827544a.png)
 
-- Press and hold the 1 key, move your cursor over Extract Planes, then release the 1 key:
+- Press and hold the 1 key, move your cursor over Extract Planes, then release the 1 key (releasing this key will trigger this action, so clicking with the mouse is not necessary):
 
 ![Extract Planes](/images/ar-sandbox/4-C-extract-plane-1cbd8abb5e.png)
 
 - You now need to draw a rectangle that fits within the interior of your flat surface (in the depth view). You want some space between your rectangle and the edges of your flat surface.
-Start with your cursor near the top-left corner of your flat surface. Press and hold the 1 key, drag out a rectangle toward the bottom-right corner, then release the 1 key:
+Start with your cursor near the top-left corner of your flat surface. Press and hold the 1 key, drag out a rectangle toward the bottom-right corner using the right mouse button, then release the 1 key:
 
 ![Kinect Area View](/images/ar-sandbox/4-D-drag-rectangle-a8b53ecc87.png)
 
@@ -147,6 +161,8 @@ You should end up with a first line something like this:
 ![Gedit BoxLayout.txt](/images/ar-sandbox/4-F-gedit-eb460dffb4.png)
 
 - Save the file and close `gedit`.
+
+- NOTE: If you receive an error message regarding an "invalid taken character," please double-check to make sure the equal sign in `BoxLayout.txt` has been replaced with a comma as described above.
 
 ## Measure 3D extents of sand surface
 
@@ -196,7 +212,7 @@ Note there is no feedback from the UI when you press the 1 key.
 
 - Hit Esc to exit `RawKinectViewer`.
 
-- In the terminal you'll see four lines printed. You need to highlight these four lines as shown below, then right click and select Copy:
+- In the terminal you'll see four lines printed (if you don't see this output, repeat this step, making sure to choose points within the green rectangle). You need to highlight these four lines as shown below, then right click and select Copy:
 
 ![RawKinectViewer Output](/images/ar-sandbox/5-C-terminal-output-bfe04cf344.png)
 
@@ -216,7 +232,7 @@ gedit /etc/SARndbox-1.6/BoxLayout.txt
 
 - If you haven't already, turn on your projector and plug it into your computer.
 
-- If you have a dedicated display in addition to the projector, you'll find it easier if you setup the two displays to be mirrored:
+- If you have a dedicated display in addition to the projector, you'll find it easier if you set up the two displays to be mirrored:
 
 ![Mirror settings](/images/ar-sandbox/6-A-mirror-displays-9275bf68e0.png)
 

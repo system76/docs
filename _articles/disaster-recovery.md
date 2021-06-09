@@ -33,7 +33,7 @@ We do not need to chroot into the installed OS and only need to mount the OS. On
 
 To install Deja Dup, search for it in the Pop!\_Shop, Ubuntu Software or run this command:
 
-```
+```bash
 sudo apt install deja-dup
 ```
 
@@ -59,5 +59,5 @@ Once we have our data backed up we can reinstall the OS if we are ready to do th
 
 ## Future Steps
 
-Now that we have our data and a clean install of the OS let's prepare so that we will be ready if this issue happens again using our backup article [here](/articles/backup-files).
+Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help.
 

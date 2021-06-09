@@ -21,7 +21,7 @@ If you are not able to boot into your installed OS then we will want to boot fro
 
 We can use this [article](/articles/live-disk) to create a live disk of Ubuntu if you aren't using Pop. For more information about doing this process in the Pop Recovery see [here](/articles/pop-recovery) and for Ubuntu see [here](/articles/bootlaoder).
 
-We do not need to chroot into the installed OS and only need to mount the OS. Once this is done we can install the software that we will use for this process which is `Deja Dup`. 
+We do not need to chroot into the installed OS and only need to mount the OS. Once this is done we can install the software that we will use for this process which is <u>Deja Dup</u> using the steps below. 
 
 ## Software 
 
@@ -50,6 +50,14 @@ With Deja Dup (Backups) open, you can select the folders you wish to save or ign
 On the **Storage location** page, you can configure the location where your backup will be stored.
 
 ![Selecting a backup location in Deja-Dup](/images/backup/deja_location.png)
+
+## Hardware
+
+An external or internal drive can be used as a local backup location. For external drives see the list below for an idea on what to look for:
+
+- [Amazon - SeaGate Portable External 2TB](https://www.amazon.com/Seagate-Portable-External-Hard-Drive/dp/B07CRG94G3)
+- [Amazon - WD Elements Portable External 2TB](https://www.amazon.com/Western-Digital-Elements-Portable-External/dp/B06W55K9N6)
+- [Newegg - SeaGate Portable External 4TB](https://www.newegg.com/seagate-model-stea4000400-4tb/p/N82E16822178817)
 
 #### Restoring Your Data
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Fix Pop!_OS 20.10 Incomplete Upgrade
+title: Pop!_OS 20.10 Incomplete Upgrade
 description: >
   What to do if you get an FStab error or if your upgrade is incomplete.
 keywords:
@@ -17,6 +17,8 @@ image:  http://support.system76.com/images/pop-icon.png
 hidden: false
 section: software-troubleshooting
 ---
+
+# Pop!_OS 20.10 Incomplete Upgrade
 
 ### Backup Your Files
 The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.

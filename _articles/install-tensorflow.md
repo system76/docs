@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install TensorFlow
+title: TensorFlow (Install)
 description: >
   Complete instructions on installing TensorFlow
 keywords:

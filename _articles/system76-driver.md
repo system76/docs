@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install the System76 Driver
+title: System76 Driver (Install)
 description: >
     Our System76 Driver can generate system logs, we'll also go over how to reinstall the NVIDIA Driver.
 keywords:
@@ -14,7 +14,7 @@ section: software
 
 ---
 
-### System76 Driver
+# System76 Driver (Install)
 
 #### Apt Preferences File
 

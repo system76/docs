@@ -12,6 +12,8 @@ section: community
 
 ---
 
+# Install Minecraft! 
+
 Alright! Hitch on and let's go on!
 
 ### Pop!_OS 20.04

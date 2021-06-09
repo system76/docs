@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Switching to Pop!_OS From Apple
+title: Switching from macOS to Pop!_OS
 description: >
   If you are coming from Apple's operating system using Pop!\_OS for the first time, we can help make the transition smoother.
 keywords:
@@ -18,10 +18,10 @@ section: switching
 ---
 
 # **Switching from macOS to Pop!\_OS**
-- Document Version: 1.0.0
+<!--- Document Version: 1.0.0
 - Date: (9-3-2020)
 - Author: Nathaniel Warburton
-- Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal
+- Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal-->
 
 #### [Table of Contents](#contents)
 - [Navigation](#navigation)

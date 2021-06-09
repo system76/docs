@@ -18,19 +18,19 @@ section: software
 
 <u>Tensorman</u> is a tool for managing TensorFlow toolchains in Pop!_OS. It can be installed with this command:
 
-```
+```bash
 sudo apt install tensorman
 ```
 
 For NVIDIA CUDA support the following package must be installed:
 
-```
+```bash
 sudo apt install nvidia-container-runtime
 ```
 
 The user account working with Tensorman must be added to the `docker` group if that hasn't been done already:
 
-```
+```bash
 sudo usermod -aG docker $USER
 ```
 
@@ -48,7 +48,7 @@ However, configuring and managing Docker containers for Tensorflow using the `do
 
 Take the following Docker invocation as an example:
 
-```
+```bash
 docker run -u $UID:$UID -v $PWD:/project -w /project \
     --runtime=nvidia --it --rm tensorflow/tensorflow:latest-gpu \
     python ./script.py
@@ -56,7 +56,7 @@ docker run -u $UID:$UID -v $PWD:/project -w /project \
 
 This designates for the latest version of Tensorflow with GPU support to be used, mounting the working directory to `/project`, launching the container with the current user account, and and executing `script.py` with the Python binary in the container. With `tensorman`, we can achieve the same with:
 
-```
+```bash
 tensorman run --gpu python -- ./script.py
 ```
 
@@ -64,7 +64,7 @@ Which defaults to the latest version, and whose version and tag variants can be 
 
 # Install TensorMan
 
-```
+```bash
 sudo apt install tensorman
 ```
 
@@ -72,7 +72,7 @@ sudo apt install tensorman
 
 The following commands can be used for installing either the latest version of a container or a certain version:
 
-```
+```bash
 tensorman pull latest
 tensorman pull 1.14.0
 ```
@@ -81,7 +81,7 @@ tensorman pull 1.14.0
 
 Commands are executed within the container using the `run` command.
 
-```
+```bash
 # Default container version with Bash prompt
 tensorman run bash
 
@@ -99,13 +99,13 @@ tensorman run --gpu --python3 --jupyter bash
 
 If a certain version is specified with the `+` argument, <u>tensorman</u> will use that version instead.
 
-```
+```bash
 tensorman +1.14.0 run --python3 --gpu bash
 ```
 
 Custom images may be specified with a `=` argument.
 
-```
+```bash
 tensorman =custom-image run --gpu bash
 ```
 
@@ -117,13 +117,13 @@ There are two files that can be used for configuring Tensorman locally: `tensorf
 
 This file overrides the tensorflow image, defined either in `Tensorman.toml`, or the user-wide configuration file.
 
-```
+```bash
 1.14.0 gpu python3
 ```
 
 Or specifying a custom image:
 
-```
+```bash
 =custom-image gpu
 ```
 
@@ -151,7 +151,7 @@ variants = ['gpu']
 
 The default version user-wide can be changed using the `default` subcommand. This version of <u>TensorFlow</u> will be launched whenever the `tensorman run` command is used:
 
-```
+```bash
 tensorman default 1.14.0
 tensorman default latest gpu python3
 tensorman default nightly
@@ -164,7 +164,7 @@ tensorman default =custom-image gpu
 
 If the active containers from the current working directory need to be listed the `show` command can be used:
 
-```
+```bash
 tensorman show
 ```
 
@@ -183,7 +183,7 @@ tensorman remove =custom-image
 
 To find installed containers the `list` command can be used:
 
-```
+```bash
 tensorman list
 ```
 
@@ -197,13 +197,13 @@ To do so, you will need to build the container in one terminal, and save it from
 
 First launch a terminal where you will begin configuring the docker image:
 
-```
+```bash
 tensorman run --gpu --python3 --root --name CONTAINER_NAME bash
 ```
 
 Once you've made the changes needed, open another terminal and save it as a new image:
 
-```
+```bash
 tensorman save CONTAINER_NAME IMAGE_NAME
 ```
 
@@ -211,7 +211,7 @@ tensorman save CONTAINER_NAME IMAGE_NAME
 
 You should then be able to specify that container with <u>tensorman<u>, like so:
 
-```
+```bash
 tensorman =IMAGE_NAME run --gpu bash
 ```
 
@@ -221,7 +221,7 @@ tensorman =IMAGE_NAME run --gpu bash
 
 Images saved through <u>tensorman<u> are manageable through <u>tensorman<u>. Listing and removing works the same:
 
-```
+```bash
 tensorman remove IMAGE_NAME
 ```
 

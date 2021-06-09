@@ -15,6 +15,7 @@ section: community
 Alright! Hitch on and let's go on!
 
 ### Pop!_OS 20.04
+
 First, open the Pop!_Shop.
 ![Open Pop_Shop](/images/minecraft/popshop.png)
 

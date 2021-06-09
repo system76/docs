@@ -23,13 +23,13 @@ If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/arti
 
 To install the latest Tensorflow with the CUDA Toolkit, please run the command:
 
-```
+```bash
 sudo apt install tensorflow-cuda-latest
 ```
 
 This will install the following packages:
 
-```
+```bash
 system76-cuda-10.2 system76-cudnn-10.2 
 ```
 

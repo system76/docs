@@ -28,7 +28,7 @@ Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal w
 
 Enter the following command followed by <kbd>Enter</kbd>:
 
-```
+```bash
 sudo apt install network-manager-openvpn-gnome
 ```
 

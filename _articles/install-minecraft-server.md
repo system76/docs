@@ -27,7 +27,7 @@ For this Tutorial, We will be using openjdk and a command line window separator 
 
 To install OpenJDK:  
 
-```
+```bash
 sudo yum install java-1.8.0-openjdk screen
 ```
 

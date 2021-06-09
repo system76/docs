@@ -25,13 +25,13 @@ The packaging of TensorFlow for Pop!_OS contains libraries for the Python, C and
 
 All of the TensorFlow packages are built to support concurrent installations using the Debian alternatives system. A symbolic link at `/usr/lib/tensorflow` points to another symbolic link at `/etc/alternatives/tensorflow`, which finally points to the location of the actual library path, which could be at a location such as `/usr/lib/tensorflow1.13-cpu`, or `/usr/lib/tensorflow1.31-cuda10.0`. To change the active toolkit, the `update-alternatives` command may be called like so:
 
-```
+```bash
 sudo update-alternatives --config tensorflow
 ```
 
 This will display a list of available TensorFlow libraries to choose from:
 
-```
+```bash
 There are 2 choices for the alternative tensorflow (providing /usr/lib/tensorflow).
 
   Selection    Path                               Priority   Status
@@ -45,7 +45,7 @@ Press <enter> to keep the current choice[*], or type selection number:
 
 After setting the active version, you can verify that it is set with:
 
-```
+```bash
 readlink -f /etc/alternatives/tensorflow
 ```
 

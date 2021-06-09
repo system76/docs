@@ -64,7 +64,7 @@ Now, the Lightworks launcher will appear in the Activities menu.
 
 Once the .deb file is downloaded, instead of using Eddy, it can also be installed from a terminal by running the following commands:
 
-```
+```bash
 cd ~/Downloads
 sudo apt install ./Lightworks*.deb
 ```

@@ -12,6 +12,7 @@ hidden: false
 section: community
 
 ---
+
 If you have a storage location on a network drive, you can easily map the location using Files in Pop!\_OS.
 
 ### Navigate to Other Locations

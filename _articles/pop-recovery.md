@@ -37,7 +37,7 @@ To access to the existing OS drive and run the package manager [repair commands]
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
-```
+```bash
 lsblk
 ```
 
@@ -45,12 +45,12 @@ This will show you the name of the main internal drive, which will have 4 partit
 
 Next, run this command:
 
-```
+```bash
 sudo mount /dev/sda3 /mnt
 ```
 OR for NVMe drives:
 
-```
+```bash
 sudo mount /dev/nvme0n1p3 /mnt
 ```
 
@@ -60,14 +60,14 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-```
+```bash
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
 sudo lvscan
 sudo vgchange -ay
 ```
 OR for NVMe drives:
 
-```
+```bash
 sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
 sudo lvscan
 sudo vgchange -ay
@@ -75,7 +75,7 @@ sudo vgchange -ay
 
 **Note** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
-```
+```bash
 sudo mount /dev/mapper/data-root /mnt
 ```
 
@@ -88,7 +88,7 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
 
-```
+```bash
 sudo mount /dev/sda1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
@@ -96,7 +96,7 @@ sudo chroot /mnt
 ```
 OR for NVMe drives:
 
-```
+```bash
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
@@ -105,7 +105,7 @@ sudo chroot /mnt
 
 To exit from the <u>chroot</u> and reboot the computer, run these commands:
 
-```
+```bash
 exit
 reboot
 ```

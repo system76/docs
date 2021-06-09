@@ -264,6 +264,29 @@ layout: default
 
 			<div class="small-12 columns">
 				<hr />
+				<h2 id="network-troubleshooting">Network Troubleshooting</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts network-troubleshooting">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'network-troubleshooting' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+			<div class="small-12 columns">
+				<hr />
 				<h2 id="hardware-troubleshooting">Hardware Troubleshooting</h2>
 
 				<div class="row">

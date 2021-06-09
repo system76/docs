@@ -19,9 +19,19 @@ If you are not able to boot into your installed OS then we will want to boot fro
 
 ### Creating the live disk (Bootable OS)
 
-We can use this [article](/articles/live-disk) to create a live disk of Ubuntu if you aren't using Pop. For more information about doing this process in the Pop Recovery see [here](/articles/pop-recovery) and for Ubuntu see [here](/articles/bootlaoder).
+We can use this [article](/articles/live-disk) to create a live disk of Ubuntu if you aren't using Pop. For more information about doing this process in the Pop Recovery see [here](/articles/pop-recovery) and for Ubuntu see [here](/articles/bootloader).
 
 We do not need to chroot into the installed OS and only need to mount the OS. Once this is done we can install the software that we will use for this process which is <u>Deja Dup</u> using the steps below. 
+
+### Connect to the Internet
+
+![Top Left Menu](/images/disaster-recovery/Dialog.png)
+
+Use the top left menu like in the screenshot above to connect to your Wi-Fi once booted into the live disk. 
+
+### Mount the installed OS
+
+Once connected to the Internet open <u>Firefox</u>, log into your System76 account to access your ticket (if you have our hardware) and/or the [bootloader](/articles/bootloader) to copy and paste the encryption commands (if the OS is encrypted) and the mount commands.
 
 ## Software 
 
@@ -31,7 +41,7 @@ We do not need to chroot into the installed OS and only need to mount the OS. On
 
 #### Installation
 
-To install Deja Dup, search for it in the Pop!\_Shop, Ubuntu Software or run this command:
+To install <u>Deja Dup</u>, search for it in the <u>Pop!\_Shop</u>, <u>Ubuntu Software</u> or run this command:
 
 ```bash
 sudo apt install deja-dup

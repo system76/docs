@@ -241,6 +241,52 @@ layout: default
 
 			<div class="small-12 columns">
 				<hr />
+				<h2 id="software-troubleshooting">Software Troubleshooting</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts software-troubleshooting">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'software-troubleshooting' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+			<div class="small-12 columns">
+				<hr />
+				<h2 id="hardware-troubleshooting">Software Troubleshooting</h2>
+
+				<div class="row">
+					<div class="small-12 columns support-excerpts hardware-troubleshooting">
+						{% assign articles = site.articles | sort:"title" %}
+						{% for article in articles %}
+							{% if article.hidden != true %}
+								{% if article.section == 'hardware-troubleshooting' %}
+										<article>
+											<h3><a href="{{ article.url | prepend: site.baseurl }}">{{ article.title }}</a></h3>
+											{{ article.description | markdownify }}
+											{% if article.more %}
+											{% endif %}
+									  </article>
+								{% endif %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+			<div class="small-12 columns">
+				<hr />
 				<h2 id="repairs-returns">Repairs and Returns</h2>
 
 				<div class="row">

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Manage Repositories in Ubuntu
+title: Manage Repositories (Ubuntu)
 description: >
   Add, remove and edit repositories in Ubuntu
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - apt
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: ubuntu
+section: software
 
 ---
 

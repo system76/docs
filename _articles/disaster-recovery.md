@@ -67,11 +67,10 @@ An external or internal drive can be used as a local backup location.
 
 ### External
 
-For external drives see the list below for an idea on what to look for:
+For external drives see the specs below for an idea on what to look for:
 
-- [Amazon - SeaGate Portable External 2TB](https://www.amazon.com/Seagate-Portable-External-Hard-Drive/dp/B07CRG94G3)
-- [Amazon - WD Elements Portable External 2TB](https://www.amazon.com/Western-Digital-Elements-Portable-External/dp/B06W55K9N6)
-- [Newegg - SeaGate Portable External 4TB](https://www.newegg.com/seagate-model-stea4000400-4tb/p/N82E16822178817)
+- USB 3.0/2.0
+- Match your OS drive size or larger
 
 ### Internal
 

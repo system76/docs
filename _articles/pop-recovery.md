@@ -37,7 +37,7 @@ To access to the existing OS drive and run the package manager [repair commands]
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
-```
+```bash
 lsblk
 ```
 
@@ -56,14 +56,17 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-| **SATA Drives**                              | **NVMe Drives**                                   |
-| sudo cryptsetup luksOpen /dev/sda3 cryptdata | sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata |
-| sudo lvscan                                  | sudo lvscan                                       |
-| sudo vgchange -ay                            | sudo vgchange -ay                                 |
+| **SATA Drives**                                    | **NVMe Drives**                                         |
+| ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
+
+```bash
+sudo lvscan
+sudo vgchange -ay
+```
 
 **Note:** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
-```
+```bash
 sudo mount /dev/mapper/data-root /mnt
 ```
 
@@ -76,14 +79,17 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
 | **SATA Drives**                                                          | **NVMe Drives**                                                          |
-| sudo mount /dev/sda1 /mnt/boot/efi                                       | sudo mount /dev/nvme0n1p1 /mnt/boot/efi                                  |
-| for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done | for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done |
-| sudo cp -n /etc/resolv.conf /mnt/etc/                                    | sudo cp -n /etc/resolv.conf /mnt/etc/                                    |
-| sudo chroot /mnt                                                         | sudo chroot /mnt                                                         |
+| ```sudo mount /dev/sda1 /mnt/boot/efi```                                 | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```                            |
 
-To exit from the <u>chroot</u> and reboot the computer, run these commands:
-
+```bash
+for i in dev dev/pts proc sys run; do sudo mount -B $i /mnt/$i; done 
+sudo cp -n /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
 ```
+
+With this last command you will have root access to your installed system. You can also access your files with 'files' via "Other Locations" > Computer > /mnt. Once you are done accessing file or running commands in your installed OS, you can exit from the <u>chroot</u> and reboot the computer, run these commands:
+
+```bash
 exit
 reboot
 ```

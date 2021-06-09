@@ -14,14 +14,17 @@ section: community
 To show the battery percentage in the top bar in Pop!\_OS, you will need to use the GNOME Tweak Tool.
 
 ### Installing the GNOME Tweak Tool
+
 To get started with showing the battery percentage, you need to install the GNOME Tweak Tool using the following command:
-```shell
+
+```bash
 sudo apt install gnome-tweak-tool
 ```
 
 Once it is installed, open it up.
 
 ### Showing the battery percentage
+
 In the GNOME Tweak Tool, navigate to the "Top Bar" section, and toggle the "Battery Percentage" on.
 
 ![Top Bar Settings]({{site.baseurl}}/images/show-battery-percentage/top-bar.png)

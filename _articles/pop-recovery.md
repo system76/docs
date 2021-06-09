@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Use The Recovery Partition
+title: Recovery Partition
 description: >
     Here is how to use the recovery partition to repair, refresh or reinstall your operating system.
 keywords:
@@ -13,9 +13,11 @@ keywords:
   - repair
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop
+section: software-troubleshooting
 
 ---
+
+# Recovery Partition
 
 The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
 
@@ -37,7 +39,7 @@ To access to the existing OS drive and run the package manager [repair commands]
 
 First, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
-```
+```bash
 lsblk
 ```
 
@@ -63,7 +65,7 @@ To get access to an encrypted disk, these additional commands need to be run in 
 
 **Note:** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
-```
+```bash
 sudo mount /dev/mapper/data-root /mnt
 ```
 
@@ -83,7 +85,7 @@ The EFI partition is usually around 512MB so that would be the partition that we
 
 To exit from the <u>chroot</u> and reboot the computer, run these commands:
 
-```
+```bash
 exit
 reboot
 ```

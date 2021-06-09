@@ -14,6 +14,8 @@ hidden: false
 section: general-hardware-info
 ---
 
+# Docking Station Support
+
 ### Compatible Intel systems
 
 <table>

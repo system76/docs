@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install OpenVPN
+title: OpenVPN (Install)
 description: >
   This page will go over setting up and using OpenVPN to browse the internet more securely in places like airports, cafe shops and more.
 keywords:
@@ -13,6 +13,8 @@ hidden: false
 section: software
 
 ---
+
+# OpenVPN (Install) 
 
 ### Open A Terminal
 

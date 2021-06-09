@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install Steam
+title: Steam (Install)
 description: >
    Want to game on your super awesome new System76 machine?  Take a look at these instructions to install Steam, a marketplace for hundreds of Linux games.
 keywords:
@@ -12,6 +12,8 @@ hidden: false
 section: media
 
 ---
+
+# Steam (Install)
 
 ### Install Steam From Command Line
 

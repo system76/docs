@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Fix Package Manager Issues in Pop!_OS
+title: Package Manager Issues (Pop!_OS)
 description: >
   Here are ways to fix update, upgrade, and other package manager issues.
 keywords:
@@ -15,6 +15,8 @@ hidden: false
 section: software-troubleshooting
 
 ---
+
+# Package Manager Issues (Pop!_OS) 
 
 ### Apt/Dpkg (system-wide packages)
 

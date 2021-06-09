@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create and Use Bootable Media on Pop!_OS
+title: Live Disk Creation (Pop!_OS)
 description: >
   You can run Pop!_OS from a USB drive for hardware testing, recovery, and installation/re-installation.
 keywords:
@@ -16,6 +16,8 @@ hidden: false
 section: hardware-troubleshooting
 
 ---
+
+# Live Disk Creation (Pop!_OS)
 
 Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 

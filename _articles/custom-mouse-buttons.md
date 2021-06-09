@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Setting Custom Mouse Actions
+title: Mouse Customization
 description: >
    How to set custom mouse actions with xbindkeys
 keywords:
@@ -14,6 +14,8 @@ section: hardware
 
 ---
 
+# Mouse Customization 
+
 ### Software
 
 For using <u>xbindkeys</u> open a terminal with the following keys:
@@ -24,13 +26,13 @@ Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 
 Then install the following packages:
 
-```
+```bash
 sudo apt install xbindkeys xautomation
 ```
 
 Then create the default config file for <u>xbindkeys</u> with this command:
 
-```
+```bash
 xbindkeys --defaults > $HOME/.xbindkeysrc
 ```
 
@@ -38,7 +40,7 @@ xbindkeys --defaults > $HOME/.xbindkeysrc
 
 Now let's open the config file with this command:
 
-```
+```bash
 gedit ~/.xbindkeysrc
 ```
 
@@ -79,7 +81,7 @@ This will cause the forward and back mouse button to emulate pressing the <kbd>C
 
 If any changes are made to the config file then xbindkeys need to be restarted with these commands:
 
-```
+```bash
 killall xbindkeys
 xbindkeys
 ```

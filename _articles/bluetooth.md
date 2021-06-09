@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Troubleshoot Bluetooth Issues
+title: Bluetooth Troubleshooting
 description: >
   Here is how to fix several common Bluetooth issues with your computer.
 keywords:
@@ -13,11 +13,13 @@ section: network-troubleshooting
 
 ---
 
+# Bluetooth Troubleshooting 
+
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
 Then, try reinstalling Bluetooth related software with this command:
 
-```
+```bash
 sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudio-module-bluetooth
 ```
 
@@ -25,7 +27,7 @@ sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudi
 
 If `tlp` is installed, then there may be settings interfering with Bluetooth functionality.  Edit this file and disable Wifi and Bluetooth power saving features:
 
-```
+```bash
 sudo gedit /etc/default/tlp
 ```
 
@@ -33,7 +35,7 @@ sudo gedit /etc/default/tlp
 
 There is a program called <u>Bluetooth Manager</u> which is included with <u>XFCE</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
 
-```
+```bash
 sudo apt install blueman
 ```
 
@@ -41,39 +43,39 @@ Then, run <u>Bluetooth Manager</u>. Check for the device being trusted, and also
 
 ## Useful Commands
 
-```
+```bash
 lsmod | grep bluetooth
 dmesg | grep Bluetooth
 ```
 
 These will show if the Bluetooth module (driver) is loaded, and what the system messages are.
 
-```
+```bash
 sudo systemctl status bluetooth
 ```
 
 This will check to see if the service that handles Bluetooth is running.
 
-```
+```bash
 rfkill list
 sudo rfkill unblock bluetooth
 ```
 
 If both Bluetooth and Wireless are soft blocked or if the Wireless is soft blocked run this command to unblock:
 
-```
+```bash
 sudo rfkill unblock all
 ```
 
 This will check to see Bluetooth is blocked, and if so, unblock it.
 
-```
+```bash
 pactl load-module module-bluetooth-discover
 ```
 
 This will load the PulseAudio module responsible for Bluetooth Audio.  Typically, it's loaded by default, but sometimes a manual loading can get Bluetooth headsets working again.
 
-```
+```bash
 sudo btmon
 ```
 
@@ -86,7 +88,8 @@ Here are a few additional tidbits about the Bluetooth system that may help with 
 #### Controlling audio
 
 Once you are connected to a Bluetooth speaker, you may need to change where your current audio is "routed". You can get a more advanced interface to settings on audio with the program called PulseAudio Volume Control. To install, run this command:
-```
+
+```bash
 sudo apt install pavucontrol
 ```
 There will be a drop-down in the Playback tab for each of your applications that is outputting sound that you should be able to change to your Bluetooth speaker.
@@ -100,7 +103,7 @@ Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, ne
 
 Then they can be installed with this command:
 
-```
+```bash
 sudo dpkg -i linux-firmware_1.167.1_all.deb
 ```
 
@@ -108,7 +111,7 @@ sudo dpkg -i linux-firmware_1.167.1_all.deb
 
 Sometimes, additional programs need to be installed for mobile equipment file transfer.  Please install the transfer tool with this command:
 
-```
+```bash
 sudo apt install obexfs obexftp
 ```
 

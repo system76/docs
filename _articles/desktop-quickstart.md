@@ -15,6 +15,9 @@ hidden: false
 section: learn-about-your-computer
 
 ---
+
+# Desktop Quickstart 
+
 Congratulations on receiving your System76 Thelio Desktop! Read this article to get started quickly.
 
 ### Connect Your Monitor

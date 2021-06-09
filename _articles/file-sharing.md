@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Sharing files between your Pop!_OS Computers
+title: File Sharing Between Pop!_OS Computers
 description: >
     How to share files with the Public Folder.
 keywords:
@@ -14,6 +14,8 @@ section: software
 
 ---
 
+# File Sharing Between Pop!_OS Computers 
+
 ## Install the needed package
 
 First let's open a terminal using either <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu)
@@ -21,7 +23,7 @@ First let's open a terminal using either <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</
 
 Then run this command:
 
-```
+```bash
 sudo apt install gnome-user-share
 ```
 

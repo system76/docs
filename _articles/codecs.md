@@ -22,6 +22,8 @@ section: media
 
 ---
 
+# Watch Videos and Play Music (MP3, DVD, etc.)
+
 Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these medias, please follow the instructions below.
 
 ### Open A Terminal

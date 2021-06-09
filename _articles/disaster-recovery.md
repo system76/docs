@@ -53,11 +53,19 @@ On the **Storage location** page, you can configure the location where your back
 
 ## Hardware
 
-An external or internal drive can be used as a local backup location. For external drives see the list below for an idea on what to look for:
+An external or internal drive can be used as a local backup location. 
+
+### External
+
+For external drives see the list below for an idea on what to look for:
 
 - [Amazon - SeaGate Portable External 2TB](https://www.amazon.com/Seagate-Portable-External-Hard-Drive/dp/B07CRG94G3)
 - [Amazon - WD Elements Portable External 2TB](https://www.amazon.com/Western-Digital-Elements-Portable-External/dp/B06W55K9N6)
 - [Newegg - SeaGate Portable External 4TB](https://www.newegg.com/seagate-model-stea4000400-4tb/p/N82E16822178817)
+
+### Internal
+
+For internal drives if your system included a second drive besides the OS drive we have this [article](/articles/extra-drive/) that goes over setting up the drive to auto-mount once the OS is either repaired or reinstalled. If we have the installed OS mounted in the live disk open the <u>Files</u> application then go to ***Other Locations*** to access the drive which is labeled "ExtraDrive" on System76 systems.
 
 #### Restoring Your Data
 

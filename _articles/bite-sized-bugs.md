@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Getting Started with Bitesize Bugs
+title: Bitesize Bugs
 description: >
     Get started contributing quickly with bitesize bugs!
 keywords:
@@ -9,9 +9,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop
+section: software-troubleshooting
 
 ---
+
+# Bitesize Bugs
 
 Some bugs are determined by the maintainer of Pop\! projects to be easy to fix, these bugs are referred to as "bitesize" bugs and will show up in the project's issue tracker as such.
 
@@ -51,7 +53,9 @@ Once you have forked the project, you should have a copy in your own GitHub acco
 
 See the name there? Since this is my account (Ryan), you see the repo is beside my name, and under it says "forked from system76/pop-default-settings". Now we can clone the repository down to our own computer and make the necessary changes. First, you should install git.
 
-`sudo apt install git`
+```bash
+sudo apt install git
+```
 
 Once you've done that take a look at the "Clone or Download" button, give it a click and copy the link it displays. If you don't have an SSH key associated with your GitHub account [here's how](https://help.github.com/articles/connecting-to-github-with-ssh/). If you don't want to do that right now, you can pull down the code with HTTPS, you'll have to enter your username and password - to do that click the "Use HTTPS in the corner of the Clone box" (pictured below).
 
@@ -59,7 +63,9 @@ Once you've done that take a look at the "Clone or Download" button, give it a c
 
 Once you have copied the link in the clone box, run the following command(shown with https).
 
-`git clone https://github.com/ryanleesipes/pop-default-settings.git`
+```bash
+git clone https://github.com/ryanleesipes/pop-default-settings.git
+```
 
 Enter any information requested (with HTTPS it should just be your GitHub username and password). Following that it should download the files for the project and put them in a folder in the directory you are currently sitting in within your terminal.
 
@@ -81,7 +87,9 @@ Now that the change is made, the file needs to be saved. Once it is saved we can
 
 I'll run the following command:
 
-`git commit -am "Updated the default palette settings in terminal, changed a color for better visibility."`
+```bash
+git commit -am "Updated the default palette settings in terminal, changed a color for better visibility."
+```
 
 If you'd like to know why the commit command has the arguments, the Git/GitHub documentation can explain that better than most. You can go through a [Git tutorial here](https://try.github.io/levels/1/challenges/1).
 
@@ -91,7 +99,9 @@ The output should look like this:
 
 Now you can run the following command to push your changes from your local machine to your forked repository on GitHub:
 
-`git push`
+```bash
+git push
+```
 
 If it's your first time pushing to a remote repository, you might be asked to setup who you are. That's fine, follow the instructions in your terminal.
 

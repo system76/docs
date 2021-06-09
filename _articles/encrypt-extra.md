@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Encrypt Extra Drive
-description: Learn how to encrypt the extra drive
+description: Encrypt Extra Drive(s)
 keywords:
   - System76
   - Security
@@ -10,11 +10,11 @@ keywords:
   - Linux
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: security-encryption
+section: software
 
 ---
 
-#### Encrypt the Extra Drive
+# Encrypt Extra Drive(s)
 
 The <u>Disks</u> application can be used to encrypt the extra drive and it comes pre-installed on Pop!_OS and Ubuntu.
 

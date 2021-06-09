@@ -20,6 +20,8 @@ section: software
 
 ---
 
+# Upgrade Ubuntu 
+
 First, we recommend having Ubuntu installation media (a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu from [ubuntu.com](http://www.ubuntu.com/download/desktop).
 
 ### Create Install Media

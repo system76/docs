@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configure Your System76 Server
+title: System76 Server Setup
 description: >
   Instructions on setting up a System76 server, including initial login credentials.
 keywords:

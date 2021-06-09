@@ -29,7 +29,7 @@ If the system boots, but takes a long time to boot, crashes, or reports other ra
 
 #### Memory
 
-e can test memory in your running OS with the 'memtest' package. You want to put *most* of your memory under test but still leave enough space for your normal workload and the OS to continue running. On a 8 GB system, testing 6 GB would be tested like this:
+We can test memory in your running OS with the 'memtest' package. You want to put *most* of your memory under test but still leave enough space for your normal workload and the OS to continue running. On a 8 GB system, testing 6 GB would be tested like this:
 ```
 sudo apt install memtester
 sudo memtester 6G 5

@@ -23,6 +23,9 @@ hidden: false
 section: software
 
 ---
+
+# Upgrade Pop!_OS
+
 Pop!\_OS 20.10 was released October 23, 2020.
 
 # Upgrading Pop!\_OS to 20.10 from 20.04 

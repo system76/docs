@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Manage Repositories in Pop!_OS
+title: Manage Repositories (Pop!_OS)
 description: >
   Add, remove and edit repositories in Pop!_OS
 keywords:
@@ -14,6 +14,8 @@ hidden: false
 section: software
 
 ---
+
+# Manage Repositories (Pop!_OS) 
 
 ### Accessing Repoman
 

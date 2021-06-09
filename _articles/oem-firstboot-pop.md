@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create a User If Initial User Setup Fails in Pop!_OS
+title: Guest User Only (After Initial Setup - Pop!_OS)
 description: >
   Sometimes, the first boot user creation fails and leaves only a Guest session. You can fix this by following the steps here.
 keywords:
@@ -15,6 +15,8 @@ hidden: false
 section: software-troubleshooting
 
 ---
+
+# Guest User Only (After Initial Setup - Pop!_OS) 
 
 # Create a User If Initial User Setup Fails in Pop!\_OS
 

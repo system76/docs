@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Can't Log In or Black Screen After Logging In with Ubuntu
+title: Black Screen Or Login Issues (Ubuntu)
 description: >
   Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
 keywords:
@@ -17,6 +17,8 @@ hidden: false
 section: software-troubleshooting
 
 ---
+
+# Black Screen Or Login Issues (Ubuntu)
 
 Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Pop!_OS brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
 

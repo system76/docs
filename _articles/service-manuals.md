@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Service Manuals for your System76 machines
+title: Service Manuals for System76 machines
 description: >
   Instructions on how to take apart your System76 machines for upgrading or repairs.
 keywords:

@@ -11,6 +11,8 @@ hidden: false
 section: community
 ---
 
+# Install and Play Minetest 
+
 Did you get sick of Minecraft? Microsoft controlling it and ripping apart our beloved game? Well fear no more!  Minetest is a game similar to Minecraft but is truly infinite voxel game, but is written in C++ for speed, easy cross-compatiblity with other platforms, and seamless modding and addition of new game types, mods, texture packs, and much more, all licensed under the LGPL.
 
 ### Installation

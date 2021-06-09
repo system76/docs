@@ -14,7 +14,7 @@ section: software
 
 ---
 
-# Using Tensorman
+# Use Tensorman
 
 <u>Tensorman</u> is a tool for managing TensorFlow toolchains in Pop!_OS. It can be installed with this command:
 

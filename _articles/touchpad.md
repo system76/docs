@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configure Or Disable Touchpad
+title: Touchpad (Configure or Disable)
 description: >
   Learn how to turn on and configure touchpad functions.
 keywords:
@@ -15,6 +15,8 @@ hidden: false
 section: hardware
 
 ---
+
+# Touchpad (Configure or Disable)
 
 Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.
 

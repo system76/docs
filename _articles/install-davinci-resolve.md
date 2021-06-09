@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install DaVinci Resolve
+title: DaVinci Resolve (Install)
 description: >
    Want to up your video editing skills? Try DaVinci Resolve
 keywords:
@@ -12,6 +12,8 @@ hidden: false
 section: software
 
 ---
+
+# DaVinci Resolve (Install)
 
 ## Intel GPU's
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install Lightworks
+title: Lightworks (Install)
 description: >
   Complete instructions on installing Lightworks
 keywords:

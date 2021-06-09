@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install Pop!_OS On Your System76 Computer
+title: Pop!_OS (Install)
 description: >
   Full instructions on installing Pop!_OS your computer.
 keywords:
@@ -19,6 +19,8 @@ hidden: false
 section: pop
 
 ---
+
+# Pop!_OS (Install)
 
 The following guide describes how to download the Pop!\_OS.iso image, write it to a flash drive, and install it on the hardware of your choice.
 

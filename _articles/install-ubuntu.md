@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install Ubuntu On Your System76 Computer
+title: Ubuntu (Install)
 description: >
   Full instructions on installing Ubuntu your computer.
 keywords:
@@ -21,6 +21,8 @@ hidden: false
 section: ubuntu
 
 ---
+
+# Ubuntu (Install) 
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.
 

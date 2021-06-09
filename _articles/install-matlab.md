@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install MATLAB on Pop!_OS 20.04 LTS
+title: MATLAB (Install - Pop!_OS 20.04 LTS)
 description: >
    How to install MATLAB
 keywords:
@@ -11,6 +11,8 @@ hidden: false
 section: software
 
 ---
+
+# MATLAB (Install - Pop!_OS 20.04 LTS) 
 
 Visit the MatLab website with this [link](https://www.mathworks.com/downloads/web_downloads/7318751?elqsid=1588205421341&potential_use=Home&s_tid=tfa_packageTrial_download.html) and click the blue box titled Linux.Save the file.
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Switching Between Proprietary Firmware and System76 Open Firmware
+title: Firmware Switching (Proprietary Firmware or System76 Open Firmware)
 description: >
   How to transition from proprietary firmware to System76 Open Firmware on supported models.
 keywords:
@@ -11,7 +11,7 @@ section: software
 
 ---
 
-## Switching Between Proprietary Firmware and System76 Open Firmware
+## Firmware Switching (Proprietary Firmware or System76 Open Firmware)
 
 Some models shipped with proprietary firmware, but later received support for [System76 Open Firmware](https://github.com/system76/firmware-open) and [System76 Open EC](https://github.com/system76/ec). Below is a list of these models:
 

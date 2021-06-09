@@ -13,6 +13,8 @@ section: hardware
 
 ---
 
+# Replace the Thelio Power Button
+
 If you've purchased a new top case for your Thelio (or received one for a support case), you may need to move the power button from your old top case to the new one. Conversely, if you've received a replacement power button, you may need to remove the old power button from your top case and install the new one.
 
 # Removing the Power Button

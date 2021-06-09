@@ -16,6 +16,8 @@ section: software
 
 ---
 
+# Keep PPAs Enabled when Upgrading Releases 
+
 Normally, all Person Package Archives (PPAs) and third-party repositories are disabled when updating to a new release of the operating system.  This helps keep upgrades simpler and prevents PPAs that haven't been properly updated for the new release from breaking the upgrade.
 
 There are two ways to tell update-manager to keep PPAs enabled. The `AllowThirdParty = yes` configuration option tells update-manager to keep *all* third-party software repositories (repos) enabled. While useful for some users, this option is quite dangerous for a PPA maintainer to use, since it's impossible to test all combinations of repos a user may have added.

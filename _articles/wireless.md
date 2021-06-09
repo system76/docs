@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Solve Wireless Issues
+title: Wireless Troubleshooting
 description: >
   If you’re having problems with your wireless Internet connection, take a look at the suggestions in this article.
 keywords:
@@ -13,6 +13,8 @@ hidden: false
 section: network-troubleshooting
 
 ---
+
+# Wireless Troubleshooting
 
 WiFi issues are influenced by many different factors, including:
 

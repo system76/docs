@@ -10,6 +10,8 @@ hidden: false
 section: pop
 ---
 
+# Pop!_OS Keyboard Shortcuts
+
 ## Notable Keys
 
 #### Super key

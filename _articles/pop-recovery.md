@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Use The Recovery Partition
+title: Recovery Partition
 description: >
     Here is how to use the recovery partition to repair, refresh or reinstall your operating system.
 keywords:
@@ -16,6 +16,8 @@ hidden: false
 section: software-troubleshooting
 
 ---
+
+# Recovery Partition
 
 The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
 

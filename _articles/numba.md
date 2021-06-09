@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install Numba  on Python3
+title: Numba (Install - Python3)
 description: >
   Complete instructions on setting up the Numba library in Python for fast, parallel computing using the NVIDIA CUDA toolkit.
 keywords:

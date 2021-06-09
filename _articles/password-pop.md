@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Change Your Password in Pop!_OS
+title: Change User Password (Pop!_OS)
 description: >
     Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change both!
 keywords:
@@ -13,6 +13,8 @@ hidden: false
 section: software
 
 ---
+
+# Change User Password (Pop!_OS)
 
 If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
 

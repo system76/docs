@@ -31,7 +31,7 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 - [Refresh Install](/articles/pop-recovery/#refresh-install)
 - [Reinstall](/articles/pop-recovery/#reinstall)
 
-### Repair
+## Repair
 
 If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
@@ -58,10 +58,13 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-| **SATA Drives**                              | **NVMe Drives**                                   |
-| sudo cryptsetup luksOpen /dev/sda3 cryptdata | sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata |
-| sudo lvscan                                  | sudo lvscan                                       |
-| sudo vgchange -ay                            | sudo vgchange -ay                                 |
+| **SATA Drives**                                    | **NVMe Drives**                                         |
+| ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
+
+```bash
+sudo lvscan
+sudo vgchange -ay
+```
 
 **Note:** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
@@ -71,26 +74,33 @@ sudo mount /dev/mapper/data-root /mnt
 
 And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to '+ Other Locations' -> 'Computer' and then click on the `/mnt` folder.
 
-### Chroot
+## Chroot
 
 <u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.
 
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
 | **SATA Drives**                                                          | **NVMe Drives**                                                          |
-| sudo mount /dev/sda1 /mnt/boot/efi                                       | sudo mount /dev/nvme0n1p1 /mnt/boot/efi                                  |
-| for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done | for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done |
-| sudo cp -n /etc/resolv.conf /mnt/etc/                                    | sudo cp -n /etc/resolv.conf /mnt/etc/                                    |
-| sudo chroot /mnt                                                         | sudo chroot /mnt                                                         |
+| ```sudo mount /dev/sda1 /mnt/boot/efi```                                 | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```                            |
 
-To exit from the <u>chroot</u> and reboot the computer, run these commands:
+```bash
+for i in dev dev/pts proc sys run; do sudo mount -B $i /mnt/$i; done 
+sudo cp -n /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+```
+
+With this last command you will have root access to your installed system. You can also access your files with <u>files</u> via "Other Locations" > Computer > /mnt. 
+
+### After Chroot
+
+Once you are done accessing files or running commands in your installed OS, you can exit from the <u>chroot</u> and reboot the computer, run these commands:
 
 ```bash
 exit
 reboot
 ```
 
-### Refresh Install
+## Refresh Install
 
 Starting with new installations of Pop!\_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled.
 

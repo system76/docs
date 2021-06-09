@@ -31,7 +31,7 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 - [Refresh Install](/articles/pop-recovery/#refresh-install)
 - [Reinstall](/articles/pop-recovery/#reinstall)
 
-### Repair
+## Repair
 
 If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
 
@@ -74,7 +74,7 @@ sudo mount /dev/mapper/data-root /mnt
 
 And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to '+ Other Locations' -> 'Computer' and then click on the `/mnt` folder.
 
-### Chroot
+## Chroot
 
 <u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.
 
@@ -89,14 +89,18 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command you will have root access to your installed system. You can also access your files with <u>files</u> via "Other Locations" > Computer > /mnt. Once you are done accessing file or running commands in your installed OS, you can exit from the <u>chroot</u> and reboot the computer, run these commands:
+With this last command you will have root access to your installed system. You can also access your files with <u>files</u> via "Other Locations" > Computer > /mnt. 
+
+### After Chroot
+
+Once you are done accessing files or running commands in your installed OS, you can exit from the <u>chroot</u> and reboot the computer, run these commands:
 
 ```bash
 exit
 reboot
 ```
 
-### Refresh Install
+## Refresh Install
 
 Starting with new installations of Pop!\_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled.
 

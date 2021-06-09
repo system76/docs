@@ -1,12 +1,13 @@
 ---
 layout: article
-title: Install Steam
+title: Install Steam 
 description: >
    Want to game on your super awesome new System76 machine?  Take a look at these instructions to install Steam, a marketplace for hundreds of Linux games.
 keywords:
   - gaming
   - support
   - steam
+  - proton
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: pop
@@ -54,3 +55,31 @@ Then click the **install button**.
 Proton is a way to enable support for some Windows games using Wine and some tweaks and additions that Valve have been working on. You can enable it using the the <u>Steam</u> Settings to download and install Proton.
 
 ![Steam Settings](/images/steam/enable-steam-play_proton.png)
+
+#### Install Protonup to Manage Custom Proton Versions
+<u>Protonup</u> is an easy tool, written in Python, to install the newest-available version of ProtonGE into Steam's proton directory. <u>ProtonGE</u> is a fork of <u>Proton</u>, maintained by GloriousEggroll on Github [here](https://github.com/GloriousEggroll/proton-ge-custom). <u>Protonup</u> is maintained by Naseef in the PyPi project directory [here](https://pypi.org/project/protonup/).
+
+First, we'll need the Python package manager, pip.
+
+```bash
+sudo apt update
+sudo apt install python3-pip
+```
+
+Now, let's install protonup via pip.
+
+```bash
+pip3 install protonup
+```
+
+Now, after <u>Steam</u> is installed, you can run protonup in terminal, and it will grab the newest ProtonGE build. This tool will also pull hotfixes. Below is an example of the tools output:
+
+```bash
+➜  ~ protonup 
+Ready to download Proton-6.9-GE-2-github-actions-test 
+Size      : 370.27 MiB 
+Published : 2021-05-30
+Continue? (Y/N): y
+Downloaded 100.0% - 370.31 MiB/370.27 MiB
+[INFO] Installed in: /home/s31bz/.steam/root/compatibilitytools.d/Proton-6.9-GE-2-github-actions-test
+```

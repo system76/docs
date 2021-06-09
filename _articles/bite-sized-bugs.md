@@ -54,7 +54,7 @@ Once you have forked the project, you should have a copy in your own GitHub acco
 See the name there? Since this is my account (Ryan), you see the repo is beside my name, and under it says "forked from system76/pop-default-settings". Now we can clone the repository down to our own computer and make the necessary changes. First, you should install git.
 
 ```bash
-sudo apt install git`
+sudo apt install git
 ```
 
 Once you've done that take a look at the "Clone or Download" button, give it a click and copy the link it displays. If you don't have an SSH key associated with your GitHub account [here's how](https://help.github.com/articles/connecting-to-github-with-ssh/). If you don't want to do that right now, you can pull down the code with HTTPS, you'll have to enter your username and password - to do that click the "Use HTTPS in the corner of the Clone box" (pictured below).
@@ -64,7 +64,7 @@ Once you've done that take a look at the "Clone or Download" button, give it a c
 Once you have copied the link in the clone box, run the following command(shown with https).
 
 ```bash
-git clone https://github.com/ryanleesipes/pop-default-settings.git`
+git clone https://github.com/ryanleesipes/pop-default-settings.git
 ```
 
 Enter any information requested (with HTTPS it should just be your GitHub username and password). Following that it should download the files for the project and put them in a folder in the directory you are currently sitting in within your terminal.

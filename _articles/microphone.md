@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Use The Microphone
+title: Microphone Use
 description: >
   Here is how to enable and adjust the microphone.
 keywords:
@@ -8,9 +8,11 @@ keywords:
   - volume settings
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: graphics-audio-video
+section: hardware
 
 ---
+
+# Microphone Use
 
 Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, <kbd><span class="fl-pop-key"></span></kbd> and search for <u>Sound</u>, then click on **Sound**. Scroll down to the **Input** section and make sure that the correct audio device is selected. Adjust the volume until you see activity under the **Input Device** drop-down box.
 

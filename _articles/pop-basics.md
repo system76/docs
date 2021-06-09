@@ -11,9 +11,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: getting-started
+section: pop
 
 ---
+
+# Pop!_OS Basics
 
 The Pop!_OS operating system provides all the features you would expect from a modern desktop.
 

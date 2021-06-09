@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Full Disk Encryption Passwords
+title: Disk Encryption Passwords
 description: >
    How to add extra passwords for your Full Disk Encryption setup
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - FDE
 image: http://support.system76.com/images/pop.png
 hidden: false
-section: security-encryption
+section: software
 
 ---
 

@@ -16,17 +16,17 @@ section: community
 
 ---
 
-### Install
+# Install cjdns
 
-Install Dependencies
+## Install Dependencies
 
-```  
+```bash 
 sudo apt-get install nodejs git build-essential python2.7
 ```  
 
 Next, clone the repo and build!
 
-```
+```bash
 cd /opt/
 git clone https://github.com/cjdelisle/cjdns.git
 cd cjdns
@@ -36,14 +36,14 @@ cd cjdns
 Now, check `bash ./cjdroute`  
 Make sure you got the swag.  
 
-```
+```bash
 LANG=C cat /dev/net/tun
 ```
 
 If it says: `cat: /dev/net/tun: File descriptor in bad state` Good!  
 If it says: `cat: /dev/net/tun: No such file or directory`, create it using:  
 
-```
+```bash
 sudo mkdir -p /dev/net &&
 sudo mknod /dev/net/tun c 10 200 &&
 sudo chmod 0666 /dev/net/tun
@@ -51,7 +51,7 @@ sudo chmod 0666 /dev/net/tun
 
 After a little wait, the build should finish successfully. Now we want to configure cjdns to run as a daemon, so let’s create a link to the binary, generate a configuration file, and copy over the service file.
 
-```
+```bash
 ln -s /opt/cjdns/cjdroute /usr/bin
 (umask 077 && ./cjdroute --genconf > /etc/cjdroute.conf)
 cp contrib/systemd/cjdns.service /etc/systemd/system/
@@ -59,7 +59,7 @@ cp contrib/systemd/cjdns.service /etc/systemd/system/
 
 Now that we have that, we can configure it in nano /etc/cjdroute.conf and enable it for automatic start on boot.
 
-```
+```bash
 systemctl enable cjdns
 systemctl start cjdns
 ```

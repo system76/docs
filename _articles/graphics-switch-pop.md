@@ -85,37 +85,37 @@ Once you select a mode, you will be prompted to reboot.
 If you are not using the GNOME Desktop Environment, you can use the system76-power 
 command line tool. You can see the options with this command:
 
-```
+```bash
 system76-power help
 ```
 
 For seeing which graphics mode the system is using:
 
-```
+```bash
 sudo system76-power graphics
 ```
 
 For switching to NVIDIA graphics:
 
-```
+```bash
 sudo system76-power graphics nvidia
 ```
 
 For switching to integrated graphics:
 
-```
+```bash
 sudo system76-power graphics integrated
 ```
 
 For switching to hybrid graphics:
 
-```
+```bash
 sudo system76-power graphics hybrid
 ```
 
 For switching to compute mode:
 
-```
+```bash
 sudo system76-power graphics compute
 ```
 

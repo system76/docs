@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Move or Customize the Dock
+title: Dock (Move or Customize)
 description: >
     How to move the Dock to different areas of the screen and customize other settings.
 keywords:
@@ -16,9 +16,11 @@ redirect_from:
   - /moveLauncher
   - /movelauncher
   - /articles/move-launcher/
-section: pop
+section: software
 
 ---
+
+# Dock (Move or Customize) 
 
 Pop!\_OS and Ubuntu both contain an application dock on the left side of the screen. In Pop!\_OS, the dock is only visible when the Activities menu is open. In Ubuntu, the dock is always visible. By installing a GNOME extension called Dash to Dock, you can adjust this preference, move the dock to the bottom of the screen, and more.
 
@@ -64,7 +66,7 @@ Ubuntu includes a lightweight version of Dash to Dock, which is why the dock alr
 
 To install Dash to Dock on Ubuntu, you will first need to install the "native host connector," which allows Firefox to install and remove GNOME Shell extensions. This component is installed by default in Pop!\_OS, but it is not installed by default in Ubuntu. Open a terminal and run this command to install the native host connector:
 
-```
+```bash
 sudo apt install chrome-gnome-shell
 ```
 
@@ -108,7 +110,7 @@ In the Dash to Dock Settings window, you can choose which screen edge to display
 
 Ubuntu 16.04 LTS includes its own dock as part of the Unity desktop environment. If you'd like to put the dock at the bottom of the screen in 16.04, enter this command in a terminal:
 
-```
+```bash
 gsettings set com.canonical.Unity.Launcher launcher-position 'Bottom'
 ```
 
@@ -120,7 +122,7 @@ This will set the dock to the bottom of the screen:
 
 To reset the position of the dock to the left, run this command:
 
-```
+```bash
 gsettings set com.canonical.Unity.Launcher launcher-position 'Left'
 ```
 

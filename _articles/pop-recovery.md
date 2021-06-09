@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Use The Recovery Partition
+title: Recovery Partition
 description: >
     Here is how to use the recovery partition to repair, refresh or reinstall your operating system.
 keywords:
@@ -13,9 +13,11 @@ keywords:
   - repair
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop
+section: software-troubleshooting
 
 ---
+
+# Recovery Partition
 
 The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
 
@@ -87,7 +89,7 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command you will have root access to your installed system. You can also access your files with 'files' via "Other Locations" > Computer > /mnt. Once you are done accessing file or running commands in your installed OS, you can exit from the <u>chroot</u> and reboot the computer, run these commands:
+With this last command you will have root access to your installed system. You can also access your files with <u>files</u> via "Other Locations" > Computer > /mnt. Once you are done accessing file or running commands in your installed OS, you can exit from the <u>chroot</u> and reboot the computer, run these commands:
 
 ```bash
 exit

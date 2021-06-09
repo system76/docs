@@ -42,7 +42,7 @@ User files are the most common data to back up. This includes documents, picture
 
 To install Deja Dup, search for it in the Pop!\_Shop, or run this command:
 
-```
+```bash
 sudo apt install deja-dup
 ```
 
@@ -132,7 +132,7 @@ In certain situations, you may only have access to a command-line interface. The
 
 An example of the rsync command would be:
 
-```
+```bash
 rsync -a ~/ OUTPUT_DIRECTORY
 ```
 
@@ -176,7 +176,7 @@ Most user configuration files can be found in the home directory, and begin with
 
 Because programs are readily available online (usually through software repositories), we don't recommend backing them up. They are spread throughout the file system and are difficult to restore properly. To back up programs, we recommend keeping a list of package names for the programs that you use so they can be reinstalled with a single package manager command, like so:
 
-```
+```bash
 sudo apt install gnome-tweak-tool mousepad aptitude thunar
 ```
 

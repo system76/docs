@@ -13,6 +13,8 @@ section: windows
 
 ---
 
+# Dual Boot Windows 10 Alongside Pop!_OS
+
 ## DISCLAIMER
 
 System76 is not a licensed reseller or installer of the Windows Operating System. This article is provided for information purposes only. 
@@ -92,19 +94,19 @@ Windows and Linux store their time in the BIOS differently, this will cause your
 
 The easiest solution for it is to fix it in Linux, forcing it to work the same way as Windows. You can do this through the terminal:
 
-```
+```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 You can verify if the change has been successful, by running this command:
 
-```
+```bash
 timedatectl
 ```
 
 You should see `RTC in local TZ: yes`. 
 If you need to revert it, just set it to 0:
 
-```
+```bash
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```

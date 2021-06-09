@@ -17,6 +17,8 @@ section: hardware
 
 ---
 
+# Battery Life Improvements 
+
 Every running program consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
 
 The biggest consumer of power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.
@@ -33,32 +35,32 @@ With the <u>system76-power</u> package there are **Power Profiles** that can be 
 
 To install TLP, run this command:
 
-```
+```bash
 sudo apt install tlp tlp-rdw --no-install-recommends
 ```
 
 TLP will take effect upon restart. To see current configuration settings, run this command:
 
-```
+```bash
 sudo tlp-stat
 ```
 
 The program is highly configurable by editing the settings file. Run this command to edit the file:
 
-```
+```bash
 sudo gedit /etc/default/tlp
 ```
 
 Starting with <u>TLP</u> 1.3 the default configuration file has changed so the command for that version is below:
 
-```
+```bash
 sudo gedit /etc/tlp.conf
 ```
 The `/etc/tlp.conf` file is for user configuration while `/etc/tlp.d/*.conf` file is for drop-in customization snippets.
 
 All of the info about the program can be found with these 2 commands:
 
-```
+```bash
 man tlp
 man tlp-stat
 ```
@@ -67,25 +69,25 @@ man tlp-stat
 
 To install <u>powertop</u>, please open a terminal and run this command:
 
-```
+```bash
 sudo apt install powertop
 ```
 
 After installing the program, reboot your computer and calibrate the readings on battery power with this command:
 
-```
+```bash
 sudo powertop -c
 ```
 
 This will take about 15 minutes to run the calibration. The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process.  Powertop can be run just by itself to see what is using resources on your system.  It needs to be left open for a little amount of time to gather statistics, and be more accurate.  Run it with this command:
 
-```
+```bash
 powertop
 ```
 
 Powertop can also generate HTML reports with this command:
 
-```
+```bash
 sudo powertop --html=report
 ```
 
@@ -103,13 +105,13 @@ After looking at running software, head over to the 'Tuning' tab. We recommend i
 
 <u>powertop</u> provides many suggestions to increase battery life. To test enabling of all of the suggested tunings, please run this command:
 
-```
+```bash
 sudo powertop --auto-tune
 ```
 
 Please test the settings and make sure they don't introduce any instability or oddities. The above command will only last until reboot. The most likely problem with the auto-tune command is that external USB devices have delays after inactivity. To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
 
-```
+```bash
 sudo gedit /etc/rc.local
 ```
 
@@ -125,13 +127,13 @@ above the 'exit 0' line, or add the individual tuning options.
 
 If Ethernet is never used, or is only used irregularly, then it can be disabled to save power.  Please run this command:
 
-```
+```bash
 ifconfig
 ```
 
 And note the name of the interface.  It will probably be `enp4s0f2` or similar.  Disable it by running this command:
 
-```
+```bash
 sudo gedit /etc/network/interfaces
 ```
 
@@ -141,25 +143,25 @@ And add this line to the file:
 
 This new configuration will take effect after a reboot. To disable the interface immediately, run this command:
 
-```
+```bash
 sudo ifconfig enp4s0f2 down
 ```
 
 Then, if Ethernet needs to be used, this command can be run to enable it for the session:
 
-```
+```bash
 sudo ifconfig enp4s0f2 up
 ```
 
 ## Useful Commands
 
-```
+```bash
 upower -d
 ```
 
 This will show the information that your computer can read about the battery.
 
-```
+```bash
 sudo rm /var/lib/upower/*
 ```
 

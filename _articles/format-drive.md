@@ -13,10 +13,10 @@ section: software
 ---
 # Format Your Drive
 
-- Document Version: 1.0.0
+<!---- Document Version: 1.0.0
 - Date: (8-27-2020)
 - Author: Aaron Honeycutt
-- Contributing Editor(s): Nathaniel Warburton
+- Contributing Editor(s): Nathaniel Warburton--->
 
 
 

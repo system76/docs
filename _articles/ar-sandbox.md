@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Setup your new AR Sandbox
+title: AR Sandbox
 description: Calibrate and use your new AR Sandbox
 keywords:
  - AR

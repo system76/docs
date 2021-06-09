@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Add a Printer in Ubuntu
+title: Printer Setup (Ubuntu)
 description: >
   Here is how to add a printer in Ubuntu.
 keywords:
@@ -14,6 +14,8 @@ section: hardware
 
 ---
 
+# Printer Setup (Ubuntu) 
+
 To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printers* then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
 ![Add Printer](/images/add-a-printer-ubuntu/selectcorrectprinter.png)
@@ -24,24 +26,24 @@ Select the correct printer and click **Forward**. The computer will search for t
 
 First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command for HP:
 
-```
+```bash 
 sudo apt install hplip
 ```
 If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
-```
+```bash 
 sudo apt install python3-pyqt5
 hp-setup
 ```
 Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
-```
+```bash
 sudo apt install lsb printer-driver-escpr
 ```
 
 Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command:
 
-```
+```bash
 sudo usermod -aG lpadmin $USER
 ```
 
@@ -59,13 +61,13 @@ The status window will show current print jobs, detected printers, and other inf
 
 ## Useful Commands:
 
-```
+```bash
 sudo apt install --reinstall cups cups-client
 ```
 
 This will reinstall <u>CUPS</u>, the main printing software, which can help with generic issues.
 
-```
+```bash
 sudo apt install --reinstall ~n^system-config-printer
 ```
 

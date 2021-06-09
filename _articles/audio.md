@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Fix Audio Issues
+title: Audio Troubleshooting
 description: >
   Here is how to fix several common audio issues with your computer.
 keywords:

@@ -23,12 +23,10 @@ hidden: false
 section: pop
 
 ---
-Pop!\_OS 20.10 was released October 23, 2020.
-
 
 # Before You Upgrade
 
-Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete.
+Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete (depending on download speeds and the speed of the components in the system you are upgrading).
 
 That being said, from time to time, unexpected complications can arise. The liklihood of complications during the upgrade process increases on systems that are:
 
@@ -46,7 +44,7 @@ Please read our article on [how to backup your files](/articles/backup-files/) f
 
 ### Create Installation USB (Optional)
 
-Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB disk with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
+Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall or repair the operating system. Instructions on creating a USB disk with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
 
 
 

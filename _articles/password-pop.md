@@ -26,7 +26,7 @@ First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or
 
 Once the recovery operating system has opened, click **Install Pop!_OS** in the top left, and choose **quit**.  Then, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd> to open a terminal, and type in these commands:
 
-```
+```bash
 lsblk
 ```
 
@@ -34,13 +34,13 @@ This will show what the main internal drive is named, which will have 4 partitio
 
 Next, run this command:
 
-```
+```bash
 sudo mount /dev/sda3 /mnt
 ```
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  If the command succeeds (no output), then skip these next steps:
 
-```
+```bash
 sudo cryptsetup luksOpen /dev/sda3 volume
 sudo lvscan
 sudo vgchange -ay
@@ -48,26 +48,26 @@ sudo vgchange -ay
 
 Take note as to what the volume group is called, substituting the correct info into this command.  Make sure that '-root' is on the end:
 
-```
+```bash
 sudo mount /dev/mapper/data-root /mnt
 ```
 
 Next, regardless of whether the drive is encrypted or not, run these commands:
 
-```
+```bash
 sudo chroot /mnt
 ls /home
 ```
 
 Take note of the users on this computer, then run this command to change a user's password:
 
-```
+```bash
 passwd john
 ```
 
 Type in your new password, and then enter these commands:
 
-```
+```bash
 exit
 reboot
 ```
@@ -102,19 +102,19 @@ At the recovery menu, choose the **root** option, then press <kbd>Enter</kbd> to
 
 Now, type this command to make your hard drive editable:
 
-```
+```bash
 mount -o rw,remount /
 ```
 
 Then type this command to show what usernames are present on the computer:
 
-```
+```bash
 ls /home
 ```
 
 Then, to change your password, type in this command:
 
-```
+```bash
 passwd april
 ```
 
@@ -130,7 +130,7 @@ If successful, you will see a message confirming `passwd: password updated succe
 
 You can now reboot:
 
-```
+```bash
 reboot
 ```
 
@@ -140,13 +140,13 @@ This can be done in the operating system or in the recovery mode/partition.
 
 First list the drives and partitions with this command:
 
-```
+```bash
 lsblk
 ```
 
 Then to change the passphrase:
 
-```
+```bash
 sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 ```
 

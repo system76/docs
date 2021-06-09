@@ -22,13 +22,13 @@ If you are running Ubuntu 19.10 or later, you will need to manually add an apt p
 
 Create the apt preferences file here:
 
-```
+```bash
 sudo gedit /etc/apt/preferences.d/system76-apt-preferences
 ```
 
 Add the following six lines (seven if you count the space in the middle):
 
-```
+```bash
 Package: *
 Pin: release o=LP-PPA-system76-dev-stable
 Pin-Priority: 1001
@@ -42,7 +42,7 @@ Save the file. Now you should be able to install the System76 Driver as describe
 
 To install our Driver you need to run the following commands in the Terminal:
 
-```
+```bash
 sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt-get update
 sudo apt-get install -y system76-driver
@@ -60,6 +60,6 @@ Next click on the button outlined in red in the <u>System76 Driver</u> applicati
 
 Follow the above steps as well as this additional command if you have a NVIDIA GPU:
 
-```
+```bash
 sudo apt-get install system76-driver-nvidia
 ```

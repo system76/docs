@@ -19,13 +19,17 @@ Do you love Minecraft and First Person Shooters? Then you'll love [OpenSpades](h
 
 To install on Ubuntu/Pop OS using snaps:
 
-`sudo snap install openspades`
+```bash
+sudo snap install openspades
+```
 
 To build and install from source (terminal):
 
 1. Install the necessary dependencies:
 
-`sudo apt-get install pkg-config libglew-dev libcurl3-openssl-dev libsdl2-dev libsdl2-image-dev libalut-dev xdg-utils libfreetype6-dev libopus-dev libopusfile-dev libjpeg-dev libxinerama-dev libxft-dev git cmake imagemagick`
+```bash
+sudo apt-get install pkg-config libglew-dev libcurl3-openssl-dev libsdl2-dev libsdl2-image-dev libalut-dev xdg-utils libfreetype6-dev libopus-dev libopusfile-dev libjpeg-dev libxinerama-dev libxft-dev git cmake imagemagick
+```
 
 Enter your password when prompted.
 
@@ -33,19 +37,19 @@ When asked whether you want to install the applications, type `y` and hit the `<
 
 2. Clone the GitHub repiository:
 
-`git clone https://github.com/yvt/openspades`
-
-`cd openspades`
-
-`mkdir openspades.mk`
-
-`cd openspades.mk`
+```bash
+git clone https://github.com/yvt/openspades
+cd openspades
+mkdir openspades.mk
+cd openspades.mk
+```
 
 3. Build OpenSpades:
 
-`cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo`
-
-`make`
+```bash
+cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
+make
+```
 
 4. Copy the **Resources** folder into **bin**:
 
@@ -53,7 +57,9 @@ When asked whether you want to install the applications, type `y` and hit the `<
 
 5. Install OpenSpades:
 
-`sudo make install`
+```bash
+sudo make install
+```
 
 6. Launch OpenSpades:
 

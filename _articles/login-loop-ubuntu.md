@@ -49,14 +49,14 @@ Note that you can always return to the graphical login screen by pressing <kbd>C
 
 To determine whether configuration in your home directory is causing the issue, you can create a new user account for testing purposes:
 
-```
+```bash
 sudo adduser test
 sudo systemctl reboot
 ```
 
 If you're able to log in with the test user, the issue is somewhere in your regular user's home folder. Log into the full-screen terminal with your regular user again, and move some of the common configuration files out of the way:
 
-```
+```bash
 mv ~/.config ~/.config.old
 mv ~/.local ~/.local.old
 mv ~/.cache ~/.cache.old
@@ -71,14 +71,14 @@ After moving those files and rebooting, try logging in again. (There may be file
 
 You can reinstall GNOME Display Manager (which handles the login screen), along with the desktop environment. On Pop!_OS:
 
-```
+```bash
 sudo apt install --reinstall gdm3 pop-desktop gnome-shell
 sudo systemctl reboot
 ```
 
 Or on Ubuntu:
 
-```
+```bash
 sudo apt install --reinstall gdm3 ubuntu-desktop gnome-shell
 sudo systemctl reboot
 ```
@@ -101,7 +101,7 @@ Thelio Mega   |                      |
 
 To remove the NVIDIA driver, run the following:
 
-```
+```bash
 sudo apt purge ~nnvidia
 sudo apt autoremove
 sudo apt clean
@@ -111,7 +111,7 @@ sudo apt clean
 
 After the NVIDIA driver has been removed, add it back using the following commands:
 
-```
+```bash
 sudo apt update
 sudo apt full-upgrade
 sudo apt install system76-driver-nvidia
@@ -125,7 +125,7 @@ If you are using an AMD graphics card, the radeon driver might be causing issues
 
 Open `/etc/modprobe.d/blacklist.conf` for editing and add `blacklist radeon` to the file. Then run:
 
-```
+```bash
 sudo update-initramfs -c -k all
 sudo shutdown -r now
 ```

@@ -28,6 +28,6 @@ To configure your touchpad, press the Super Key <kbd><span class="fl-ubuntu"></s
 
 <u>GNOME Tweaks</u> can be installed from the <u>Pop!_Shop</u> (Pop!_OS), <u>Ubuntu Software Center</u> (Ubuntu) or from the <u>Terminal</u> with this command:
 
-```
+```bash
 sudo apt install gnome-tweaks
 ```

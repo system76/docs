@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Switching Graphics in Pop!_OS
+title: Graphics switching (Pop!_OS)
 description: >
-   How to switch between integrated, NVIDIA, and Hybrid graphics
+   How to use systems with switchable graphics
 keywords:
   - System76
   - Pop

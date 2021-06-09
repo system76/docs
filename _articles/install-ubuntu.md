@@ -124,7 +124,7 @@ This section of the installation will show you a few of the preinstalled applica
 
 Once you've reinstalled Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<i class="fl-ubuntu"></i>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
-```
+```bash
 sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt update
 sudo apt install system76-driver
@@ -134,7 +134,7 @@ sudo apt install system76-driver
 
 If you ordered a system with a discrete NVIDIA graphics card or if you added one later on, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command after the above commands to install the driver:
 
-```
+```bash
 sudo apt install system76-driver-nvidia
 ```
 
@@ -144,13 +144,13 @@ If you are running Ubuntu 19.10 or later, you will need to manually add an apt p
 
 Create the apt preferences file here:
 
-```
+```bash
 sudo gedit /etc/apt/preferences.d/system76-apt-preferences
 ```
 
 Add the following six lines (seven if you count the space in the middle):
 
-```
+```bash
 Package: *
 Pin: release o=LP-PPA-system76-dev-stable
 Pin-Priority: 1001
@@ -166,7 +166,7 @@ Save the file. Now you should be able to install the System76 Driver as describe
 
 The `nouveau.modeset=0` modifier should be made default if your machine has NVIDIA hardware. Please run this command to edit the startup options file:
 
-```
+```bash
 sudo gedit /etc/default/grub
 ```
 
@@ -180,7 +180,7 @@ to:
 
 Then save the file, exit the editor, and run this command to make the change permanent:  
 
-```
+```bash
 sudo update-grub
 ```
 

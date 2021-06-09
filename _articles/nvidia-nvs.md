@@ -18,7 +18,7 @@ section: software-applications
 
 To install the NVIDIA driver that System76 provides use this command:
 
-```
+```bash
 sudo apt install system76-driver-nvidia
 ```
 

@@ -23,7 +23,7 @@ You can't stop the DAC from clicking when the machine powers on, but you _can_ s
 
 These two commands will make the necessary configuration change and restart PulseAudio so it goes into effect immediately:
 
-```
+```bash
 sudo sed -i 's/load-module module-suspend-on-idle/#load-module module-suspend-on-idle/' /etc/pulse/default.pa
 pulseaudio -k
 ```

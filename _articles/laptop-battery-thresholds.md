@@ -24,19 +24,19 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 You can see the thresholds that are currently set using this command:
 
-```
+```bash
 system76-power charge-thresholds
 ```
 
 You can list the available charging profiles using this command:
 
-```
+```bash
 system76-power charge-thresholds --list-profiles
 ```
 
 Then, you can select a profile using one of these commands:
 
-```
+```bash
 system76-power charge-thresholds --profile full_charge
 system76-power charge-thresholds --profile balanced
 system76-power charge-thresholds --profile max_lifespan
@@ -44,7 +44,7 @@ system76-power charge-thresholds --profile max_lifespan
 
 You can also set custom thresholds without using a profile. For example, this command will set the start threshold to `40` and the end threshold to `80`:
 
-```
+```bash
 system76-power charge-thresholds 40 80
 ```
 

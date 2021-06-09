@@ -68,7 +68,7 @@ Choose **root** and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> u
 
 Once you're at the root shell, identified with the prompt `root@ubuntu:~#`, enter the commands below:
 
-```
+```bash
 cd /usr/local/bin/
 ./system76-preparetoship
 sudo reboot

@@ -38,7 +38,7 @@ The <u>PulseAudio Volume Control</u> utility also allows you to change the sound
 
 <u>PulseAudio Volume Control</u> can be installed using this command: 
 
-```
+```bash
 sudo apt install pavucontrol
 ```
 

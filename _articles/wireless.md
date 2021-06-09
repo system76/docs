@@ -40,7 +40,7 @@ Some router settings can cause problems. Try adjusting your access point to thes
 
 If the issues started after you applied updates, try running this command to make sure a bad WiFi driver has not been installed, then reboot your computer:
 
-```
+```bash
 sudo apt remove backport-iwlwifi-dkms
 ```
 
@@ -52,7 +52,7 @@ If the above steps aren't working, or you would like to fine tune and improve yo
 
 In many cases, it's recommended to explicitly set the WiFi regulatory domain. Check yours with this command:
 
-```
+```bash
 sudo iw reg get
 ```
 
@@ -60,7 +60,7 @@ If you get 00, that is a one-size-maybe-fits-all setting. Find yours here: [ISO_
 
 And set it permanently with this command:
 
-```
+```bash
 sudo gedit /etc/default/crda
 ```
 
@@ -78,14 +78,14 @@ Unless specifically required, you can set IPv6 to Ignore in Network Manager. Go 
 
 If these changes do not help, you can try enabling antenna aggregation:
 
-```
+```bash
 sudo modprobe -r iwlwifi
 sudo modprobe iwlwifi 11n_disable=8
 ```
 
 Then, test to see if that helps. To make it permanent:
 
-```
+```bash
 sudo gedit /etc/modprobe.d/iwlwifi.conf
 ```
 
@@ -118,7 +118,7 @@ And change the file to read (effective upon reboot):
 
 If `tlp` is installed, take a look at the settings file found here for additional Wifi power saving being enabled:
 
-```
+```bash
 sudo gedit /etc/default/tlp
 ```
 
@@ -126,55 +126,55 @@ sudo gedit /etc/default/tlp
 
 The program <u>wavemon</u> can be used to see info about nearby access points, such as power levels, channels, and BSSIDs.  It can be installed with this command:
 
-```
+```bash
 sudo apt install wavemon
 ```
 
 And run with this command:
 
-```
+```bash
 sudo wavemon
 ```
 
 ## Useful Commands
 
-```
+```bash
 iwevent
 ```
 
 Run this command to watch what the Wifi hardware is doing.  Pay attention to the disconnect reasons, and ignore the scans.
 
-```
+```bash
 sudo systemctl restart NetworkManager
 ```
 
 This command will restart the service that manages all Internet traffic on the computer, which is usually easier than restarting the computer.
 
-```
+```bash
 dmesg | grep iwlwifi
 ```
 
 This will check the hardware startup and driver loading messages.
 
-```
+```bash
 lspci | grep Network
 ```
 
 This will check if the hardware is being detected by the kernel.
 
-```
+```bash
 lsmod | grep iwlwifi
 ```
 
 This will check to see if the device driver (module) is loaded.
 
-```
+```bash
 sudo rm /etc/NetworkManager/system-connections/*
 ```
 
 This will erase the stored information about all wireless access points.
 
-```
+```bash
 sudo apt install --reinstall network-manager
 ```
 

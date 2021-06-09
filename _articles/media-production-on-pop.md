@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Media Production on Pop!_OS
+title: Media Production (Pop!_OS)
 description: Learn about media production tools on Pop!\_OS
 keywords:
   - Blender
@@ -12,9 +12,12 @@ keywords:
   - Natron
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop
+section: media
 
 ---
+
+# Media Production (Pop!_OS) 
+
 ## Bring Your Imagination to Life
 
 There's something special about telling stories. And the more tools you have at your disposal, the more vivid and dynamic your story telling can be. 

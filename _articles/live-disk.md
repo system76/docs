@@ -13,9 +13,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: hardware-drivers
+section: hardware-troubleshooting
 
 ---
+
+# Live Disk Creation (Other Operating Systems) 
 
 # Contents
 

@@ -18,9 +18,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: media
 
 ---
+
+# Watch Videos and Play Music (MP3, DVD, etc.)
 
 Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these medias, please follow the instructions below.
 

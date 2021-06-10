@@ -12,9 +12,12 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: getting-started
+section: learn-about-your-computer
 
 ---
+
+# Desktop Quickstart 
+
 Congratulations on receiving your System76 Thelio Desktop! Read this article to get started quickly.
 
 ### Connect Your Monitor

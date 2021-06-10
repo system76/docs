@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Add a Printer in Pop!_OS
+title: Printer Setup (Pop!_OS)
 description: >
   Here is how to add a printer in Pop!_OS.
 keywords:
@@ -10,9 +10,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: hardware-drivers
+section: hardware
 
 ---
+
+# Printer Setup (Pop!_OS) 
 
 Most printers will be automatically added to the computer.  If not, to add a printer to your System76 Computer, press the super key and type the word *Printers*, then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add a Printer...** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
@@ -24,24 +26,24 @@ Select the correct printer and click **Add**.
 
 HP printers are supported with the **hplip** package, which is installed by default in Pop!_OS_
 
-```
+```bash
 sudo apt install hplip
 ```
 If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
-```
+```bash
 sudo apt install python3-pyqt5
 hp-setup
 ```
 
 Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
-```
+```bash
 sudo apt install lsb printer-driver-escpr
 ```
 Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command:
 
-```
+```bash
 sudo usermod -aG lpadmin $USER
 ```
 
@@ -93,13 +95,13 @@ The status window will show current print jobs, detected printers, and other inf
 
 ## Useful Commands:
 
-```
+```bash
 sudo apt install --reinstall cups cups-client
 ```
 
 This will reinstall <u>CUPS</u>, the main printing software, which can help with generic issues.
 
-```
+```bash
 sudo apt install --reinstall ~n^system-config-printer
 ```
 

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Auto-Mounting Second Hard Drive
+title: Auto-Mount Second Hard Drive(s)
 description: >
   If you ordered your computer with additional storage, it comes pre-formatted and ready for use. For instructions on automatically mounting an additional hard drive, check out this extra drive documentation.
 keywords:
@@ -15,9 +15,11 @@ hidden: false
 redirect_from:
   - /extraDrive
   - /extradrive
-section: hardware-drivers
+section: software
 
 ---
+
+# Auto-Mount Second Hard Drive(s) 
 
 If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the **eject (⏏) icon**. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes.  
 

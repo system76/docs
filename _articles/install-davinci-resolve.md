@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install DaVinci Resolve
+title: DaVinci Resolve (Install)
 description: >
    Want to up your video editing skills? Try DaVinci Resolve
 keywords:
@@ -9,7 +9,7 @@ keywords:
   - Pop 20.04 LTS
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: software
 
 ---
 
@@ -21,7 +21,7 @@ DaVinci Resolve requires an NVIDIA GPU to run. (Intel GPUs lack the necessary Op
 
 The following packages will be needed to build and install DaVinci Resolve:
 
-```
+```bash
 sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
 ```
 
@@ -49,13 +49,23 @@ Next, extract the MakeResolveDeb zip file into the same directory where the DaVi
 
 Open the DaVinci Resolve directory, right click on an empty space between/below the file icons, and select 'Open in Terminal.'
 
-In the new **Terminal** window, run this command to convert the `.run` file into a `.deb` package:
+In the new **Terminal** window, run this command if you are using the free-of-cost version of DaVinci Resolve:
 
-```./makeresolvedeb*.sh DaVinci_Resolve_*_Linux.run```
+```bash
+./makeresolvedeb*.sh lite
+```
+
+Or this command if you are using the paid Studio version of DaVinci Resolve:
+
+```bash
+./makeresolvedeb*.sh studio
+```
 
 Once the script finishes running and the terminal prompt returns, run this command to install DaVinci Resolve:
 
-```sudo dpkg -i davinci-resolve*_amd64.deb```
+```bash
+sudo dpkg -i davinci-resolve*_amd64.deb
+```
 
 After installing, DaVinci Resolve will be ready to launch from your Activities menu:
 

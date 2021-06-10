@@ -18,7 +18,7 @@ There is a bug in the program that manages networking, <u>network-manager</u>, w
 
 To join an access point, the computer can be restarted, or this command can be run:
 
-```
+```bash
 sudo systemctl restart NetworkManager.service
 ```
 

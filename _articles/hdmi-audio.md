@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configure HDMI Audio
+title: HDMI Audio Configuration
 description: >
   Here is how to play audio over an HDMI or DisplayPort connection.
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: graphics-audio-video
+section: software
 
 ---
 
@@ -38,7 +38,7 @@ The <u>PulseAudio Volume Control</u> utility also allows you to change the sound
 
 <u>PulseAudio Volume Control</u> can be installed using this command: 
 
-```
+```bash
 sudo apt install pavucontrol
 ```
 

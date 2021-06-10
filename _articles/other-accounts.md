@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Adding Other Users to Your OS
+title: Users (Manage User Accounts)
 description: >
   How to add other users to your installation
 keywords:
@@ -10,9 +10,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop
+section: software
 
 ---
+
+# Users (Manage User Accounts) 
 
 There are a few reasons to have more then one account on your system. They include allowing the system to be used by other people in your home or office or troubleshooting issues with your user account.
 

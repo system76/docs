@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Customizing Your Mouse
+title: Mouse Customization
 description: >
    How to customize the buttons on your mouse
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - Piper
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: hardware
 
 ---
 
@@ -55,13 +55,13 @@ Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 
 Then install the following packages:
 
-```
+```bash
 sudo apt install xbindkeys xautomation
 ```
 
 Then create the default config file for <u>xbindkeys</u> with this command:
 
-```
+```bash
 xbindkeys --defaults > $HOME/.xbindkeysrc
 ```
 
@@ -69,7 +69,7 @@ xbindkeys --defaults > $HOME/.xbindkeysrc
 
 Now let's open the config file with this command:
 
-```
+```bash
 gedit ~/.xbindkeysrc
 ```
 
@@ -110,7 +110,7 @@ This will cause the forward and back mouse button to emulate pressing the <kbd>C
 
 If any changes are made to the config file then xbindkeys need to be restarted with these commands:
 
-```
+```bash
 killall xbindkeys
 xbindkeys
 ```

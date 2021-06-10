@@ -18,6 +18,8 @@ section: pop
 
 ---
 
+# Pop!_OS (Install)
+
 The following guide describes how to download the Pop!\_OS.iso image, write it to a flash drive, and install it on the hardware of your choice.
 
 Requirements: At the time of this writing Pop!\_OS only runs on 64-bit x86 architecture, 2 GB of RAM is required, 4 GB of RAM is recommended and 20 GB of storage is recommended.

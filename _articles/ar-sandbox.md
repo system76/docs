@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Set Up Your New AR Sandbox
+title: AR Sandbox
 description: Calibrate and use your new AR Sandbox
 keywords:
  - AR
@@ -9,7 +9,7 @@ keywords:
  - Pop!_OS
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: hardware
 
 ---
 

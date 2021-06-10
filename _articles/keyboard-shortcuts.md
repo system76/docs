@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Pop! - View and Modify Keyboard Shortcuts
+title: Modify Keyboard Shortcuts (Pop!_OS)
 description:
   View, add, or modify keyboard shortcuts in Pop!_OS.
 keywords:
@@ -11,6 +11,9 @@ hidden: false
 section: community
 
 ---
+
+# Modify Keyboard Shortcuts (Pop!_OS)
+
 You can view and change keyboard shortcuts in Pop!\_OS using the Settings app.
 
 ### Viewing Keyboard Shortcuts

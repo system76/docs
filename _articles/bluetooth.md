@@ -13,7 +13,67 @@ section: network-troubleshooting
 
 ---
 
+# Important Notes About Bluetooth
+
+Bluetooth is a bit odd. 
+There are a lot of factors that go into whether Bluetooth devices work as expected.
+
+
+## Bluetooth version:
+
+Bluetooth 5.0 is backwards compatible with older Bluetooth versions but, older bluetooth versioned devices are not always compatible with newer devices.
+
+
+## Signal Interference:
+
+Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in most of our machines it is on the same chip as the Wi-Fi module. They usually have two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues.
+
+
+## Device Specific Differences:
+
+Every Bluetooth device is different. They use the same or similar protocols, but the printed circuit boards (PCBs), are specific to each device, and the firmware they are running is often custom designed, and closed-source.
+
+Some of the code and technologies that make Bluetooth work reliably are patented, and only device vendors who have licensed the permission to use that patented technology will be able to experience the full benefits (see "audio input/output" section below.)
+
+
+## Kernel Versions
+
+As the Linux kernel develops, support for more devices are added. Sometimes Bluetooth devices will work better in a different kernel version.
+
+
+## OS Versions
+
+Similar to the kernel versions. Improvements are often made in newer versions of Ubuntu and PopOS. Running software updates is always a good idea, followed by a reboot.
+
+<!--## Bluez Versions-->
+
+## Configuration Issues:
+
+Sometimes Bluetooth devices are working correctly, but something in settings needs to be reset.
+
+The easiest way to test this is to "forget" the paired Bluetooth device, and pair it again.
+
+A more thorough way of testing this would be to create a [test user](https://support.system76.com/articles/other-accounts/), or boot from a [Live Disk](https://support.system76.com/articles/live-disk/) to see if Bluetooth works in either case. 
+If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem. 
+Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
+
+
+# Setting Expectations:
+
+Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, The issue may not be resolved at all. 
+Or, in a future update or change to the system, the devices may start working again. In some cases (many cases) users will not experience any issue with Bluetooth at all.
+
+## Audio Input/Output
+
+Bluetooth audio devices, such as headphones, usually default to the A2DP protocol, which works effectively as an audio output source.
+
+Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in. 
+This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny" or at a lower volume. That is expected Behavior.
+
+---
+
 # Bluetooth Troubleshooting 
+
 
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
@@ -81,11 +141,11 @@ sudo btmon
 
 This will show all Bluetooth related messages.  Try leaving this command running while pairing or using a device to see any error messages or failures.
 
-## Additional Info
+# Additional Info
 
 Here are a few additional tidbits about the Bluetooth system that may help with troubleshooting.
 
-#### Controlling audio
+## Controlling audio
 
 Once you are connected to a Bluetooth speaker, you may need to change where your current audio is "routed". You can get a more advanced interface to settings on audio with the program called PulseAudio Volume Control. To install, run this command:
 
@@ -95,7 +155,7 @@ sudo apt install pavucontrol
 There will be a drop-down in the Playback tab for each of your applications that is outputting sound that you should be able to change to your Bluetooth speaker.
 
 
-#### Linux Firmware
+## Linux Firmware
 
 Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
 
@@ -107,7 +167,7 @@ Then they can be installed with this command:
 sudo dpkg -i linux-firmware_1.167.1_all.deb
 ```
 
-#### File Transfer
+## File Transfer
 
 Sometimes, additional programs need to be installed for mobile equipment file transfer.  Please install the transfer tool with this command:
 

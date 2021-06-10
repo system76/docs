@@ -28,7 +28,7 @@ While it is possible to downgrade, it's not recommended due to the nature of the
 
 We've developed a solution that has been released in our driver.  Please run updates to get the current system76 driver for this fix.
 
-```
+```bash
 sudo apt update
 sudo apt upgrade
 ```
@@ -37,7 +37,7 @@ sudo apt upgrade
 
 You can pull in an updated Nvidia driver using this method:
 
-```
+```bash
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
 sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
 sudo apt update

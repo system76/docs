@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Create a User If Initial User Setup Fails in Ubuntu
+title: Guest User Only (After Initial Setup - Ubuntu)
 description: >
   Sometimes, the first boot user creation fails and leaves only a Guest session. You can fix this by following the steps here.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - First boot
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: ubuntu
+section: software-troubleshooting
 
 ---
 
@@ -61,7 +61,7 @@ Choose **root** and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> u
 
 Once you're at the root shell, identified with the prompt `root@ubuntu:~#`, enter the commands below:
 
-```
+```bash
 oem-config-prepare
 reboot
 ```

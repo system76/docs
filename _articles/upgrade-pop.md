@@ -20,9 +20,34 @@ keywords:
   - apt
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop
+section: software
 
 ---
+
+# Before You Upgrade
+
+Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete (depending on download speeds and the speed of the components in the system you are upgrading).
+
+That being said, from time to time, unexpected complications can arise. The liklihood of complications during the upgrade process increases on systems that are:
+
+* upgrading more than one release at a time
+* running older releases that have already reached the end-of-life period
+* using a large number of third-party software repositories (PPAs)
+
+Our goal is to make the upgrade process as consistent and reliable as possible, and make sure you are prepared for anything that may occur during the upgrade should something not go according to plan.
+
+### Backing Up Your Data
+
+The upgrade process will leave your files in place, but no matter which system version you are running, we always recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.
+
+Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+
+### Create Installation USB (Optional)
+
+Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall or repair the operating system. Instructions on creating a USB disk with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
+
+# Upgrade Pop!_OS
+
 Pop!\_OS 20.10 was released October 23, 2020.
 
 # Upgrading Pop!\_OS to 20.10 from 20.04 
@@ -30,7 +55,7 @@ Pop!\_OS 20.10 was released October 23, 2020.
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
-```
+```bash
 sudo apt update
 sudo apt full-upgrade
 ```
@@ -47,30 +72,22 @@ Click on the notification and your computer will restart to the upgrade screen.
 
 After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.10!
 
-### Backup Your Files
-
-The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
-
-### Create Installation USB (Optional)
-
-Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
-
 ### Advanced Install (Terminal)
 
 Users wishing to use the Terminal to apply the upgrade may do so by running the following commands:
 
-```
+```bash
 sudo apt update
 ```
 You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.
 
-```
+```bash
 sudo apt full-upgrade
 ```
 
 Once any updates are applied, initiate the upgrade with this command:
 
-```
+```bash
 pop-upgrade release upgrade
 ```
 
@@ -99,6 +116,7 @@ Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) 
 These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 
 ### 1. Get your current system fully updated:
+
 ```bash
 sudo sed -i 's/us.archive/old-releases/g' /etc/apt/sources.list
 sudo apt update -m
@@ -109,6 +127,7 @@ sudo apt install pop-desktop
 ```
 
 ### 2. Move any PPA additions out of the way, and get all of the sources pointed at the 20.04 versions:
+
 ```bash
 sudo mkdir -p /etc/apt/backup
 sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
@@ -121,6 +140,7 @@ sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/source
 
 ### 3. Now, do the upgrade! 
 This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
+
 ```bash
 sudo apt update
 sudo apt install dpkg apt
@@ -133,9 +153,11 @@ You will want to take a look at the files that end in "list" in "/etc/apt/backup
 ### 5. After the 20.04 Pop upgrade is complete, **reboot**.
 
 ### 6. Run the command to upgrade to Pop 20.10
+
 ```bash
 pop-upgrade release upgrade
 ```
+
 # Troubleshooting
 
 Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then the following steps can help repair your broken OS.
@@ -148,7 +170,7 @@ If your upgrade appears to hang in place for an extended period of time, click o
 
 If the upgrade fails it will most likely be due to a package manager issue.  First, run an alternative upgrade manager with this command, and see if it will manage further:
 
-```
+```bash
 do-release-upgrade
 ```
 

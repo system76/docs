@@ -16,9 +16,11 @@ keywords:
   - apt
 image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-18-04.jpg
 hidden: false
-section: ubuntu
+section: software
 
 ---
+
+# Upgrade Ubuntu 
 
 First, we recommend having Ubuntu installation media (a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu from [ubuntu.com](http://www.ubuntu.com/download/desktop).
 
@@ -72,7 +74,7 @@ A message will appear informing you of the availability of the new release. Clic
 
 Once you've upgraded Ubuntu, you'll need to download and install the current System76 Driver. Open the Terminal app (search <u>Terminal</u> from the Activities Overview or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
-```
+```bash
 sudo apt-add-repository ppa:system76-dev/stable
 sudo apt update
 sudo apt install system76-driver
@@ -80,7 +82,7 @@ sudo apt install system76-driver
 
 For NVIDIA Graphics: If you ordered a system with a discrete NVIDIA graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Please run the following command:
 
-```
+```bash
 sudo apt install system76-driver-nvidia
 ```
 
@@ -130,7 +132,7 @@ And then the steps to repair the package manager next:
 
 And continue the upgrade with this command:
 
-```
+```bash
 do-release-upgrade
 ```
 

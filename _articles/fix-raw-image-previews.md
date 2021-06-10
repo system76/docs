@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Fix raw image previews
+title: Fix Raw Image Previews
 description: >
    Add a custom thumbnail generator to display thumbnails for raw image in Files.
 keywords:
@@ -10,9 +10,11 @@ keywords:
   - Thumbnails
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop
+section: software-troubleshooting
 
 ---
+
+# Fix Raw Image Previews
 
 The Files app doesn't display thumbnails for raw images by default, but RawTherapee can handle a large array of raw image formats. We can use RawTherapee's ability to convert raw images into PNGs to create thumbnails for other programs.
 
@@ -20,7 +22,7 @@ The Files app doesn't display thumbnails for raw images by default, but RawThera
 
 First, install RawTherapee using this command:
 
-```
+```bash 
 sudo apt install rawtherapee
 ```
 
@@ -28,7 +30,7 @@ sudo apt install rawtherapee
 
 Nautilus uses thumbnailer scripts to generate thumbnails for images. Create a thumbnailer for raw images using this command:
 
-```
+```bash
 sudo gedit /usr/share/thumbnailers/rawtherapee.thumbnailer
 ```
 
@@ -47,7 +49,7 @@ Then save the file and close Gedit.
 
 Though sometimes unnessesary, it's always a good idea to start fresh with thumbnail creation. To do this, delete the thumbnailer cache using this command:
 
-```
+```bash
 rm -r ~/.cache/thumbnails/*
 ```
 

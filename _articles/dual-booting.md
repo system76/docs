@@ -343,18 +343,18 @@ Windows and Linux store their time in the UEFI firmware differently. This can ca
 
 If you're affected by this, the easiest solution is to fix it in Linux, forcing it to work the same way as Windows. Set the option using this command:
 
-```
+```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 You can verify that the change was successful using this command:
 
-```
+```bash
 timedatectl
 ```
 
 You should see `RTC in local TZ: yes` in the output. If you need to revert this setting, turn it back off with this command:
 
-```
+```bash
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```

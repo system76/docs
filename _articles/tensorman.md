@@ -10,11 +10,11 @@ keywords:
   - Tensorman
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
 redirect_from:
   - /articles/install-tensorflow
   - /articles/use-tensorflow
   - /articles/use-tensorman
+section: software
 
 ---
 

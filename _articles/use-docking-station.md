@@ -12,6 +12,7 @@ keywords:
 image: https://system76.com/images/system76.png
 hidden: false
 section: general-hardware-info
+
 ---
 
 # Docking Station Support

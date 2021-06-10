@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install System76 Software in other OSes
+title: System76 Software (Install - Other Operating Systems)
 description: >
     Learn what software is needed to use other OSes and install them
 keywords:
@@ -11,6 +11,8 @@ hidden: false
 section: software
 
 ---
+
+# System76 Software (Install - Other Operating Systems)
 
 # Notes about these instructions
 

@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Switching Graphics in Ubuntu
+title: Graphics switching (Ubuntu)
 description: >
-   How to switch between integrated, NVIDIA, and Hybrid graphics
+   How to use systems with switchable graphics
 keywords:
   - System76
   - Ubuntu
@@ -14,16 +14,16 @@ keywords:
   - Integrated
 image: http://support.system76.com/images/ubuntu.png
 hidden: false
-section: ubuntu
+section: software
 
 ---
 
 The following laptops have switchable graphics:
 
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6)
+- Adder WS (addw1, addw2)
+- Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15)
-- Adder Workstation (addw1, addw2)
-- Galago (galp5 with NVIDIA GPU)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7)
 
 ### Graphics modes
 
@@ -48,13 +48,13 @@ discrete GPU.
 
 Vulkan applications must be launched with the following command to be rendered on the dGPU (NVIDIA):
 
-```
+```bash
 __NV_PRIME_RENDER_OFFLOAD=1 <application>
 ```
 
 GLX applications must be launched with the following command to be rendered on the dGPU (NVIDIA):
 
-```
+```bash
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia <application>
 ```
 
@@ -74,14 +74,14 @@ You'll only need to install this software manually if you did a fresh install of
 as our installations will include these packages by default. You can do this
 with the following commands:
 
-```
+```bash
 sudo apt-add-repository ppa:system76-dev/stable
 sudo apt install gnome-shell-extension-system76-power system76-power
 ```
 
 Then we need to load the extension with this command:
 
-```
+```bash
 gnome-shell-extension-prefs
 ```
 
@@ -103,37 +103,37 @@ Once you select a mode, you will be prompted to reboot.
 If you are not using the GNOME Desktop Environment, you can use the system76-power 
 command line tool. You can see the options with this command:
 
-```
+```bash
 system76-power help
 ```
 
 For seeing which graphics mode the system is using:
 
-```
+```bash
 sudo system76-power graphics
 ```
 
 For switching to NVIDIA Graphics:
 
-```
+```bash
 sudo system76-power graphics nvidia
 ```
 
 For switching to integrated Graphics:
 
-```
+```bash
 sudo system76-power graphics integrated
 ```
 
 For switching to hybrid graphics:
 
-```
+```bash
 sudo system76-power graphics hybrid
 ```
 
 For switching to compute mode:
 
-```
+```bash
 sudo system76-power graphics compute
 ```
 

@@ -27,13 +27,15 @@ Support typically makes best-efforts to offer direction or troubleshooting for o
 
 We may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those Operating System(s)' support forums.
 
-> **NOTE:** These instructions were tested on a Galago Pro (galp3-b) and Pangolin (pang10). Neither system have NVIDIA GPUs, so this process doesn't go over installing the NVIDIA driver (system76-driver-nvidia). Due to these limitations, switchable graphics may not work on NVIDIA systems.
+**NOTE:** These instructions were tested on a Galago Pro (galp3-b) and Pangolin (pang10). Neither system have NVIDIA GPUs, so this process doesn't go over installing the NVIDIA driver (system76-driver-nvidia). Due to these limitations, switchable graphics may not work on NVIDIA systems.
 
-## Arch
+# Arch
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver). 
 
-### System76 Firmware Daemon
+## System76 Firmware Daemon
+
+These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
 
 ```bash
 git clone https://aur.archlinux.org/system76-firmware.git
@@ -43,7 +45,9 @@ sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
-### System76 Firmware Manager
+## System76 Firmware Manager
+
+These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
 
 ```bash
 git clone https://aur.archlinux.org/firmware-manager.git
@@ -51,7 +55,7 @@ cd firmware-manager
 makepkg -srcif
 ```
 
-### System76 DKMS
+## System76 DKMS
 
 This package is needed for hotkeys and fan(s) on Closed Firmware systems:
 
@@ -61,7 +65,7 @@ cd system76-dkms
 makepkg -srcif
 ```
 
-### System76 ACPI DKMS
+## System76 ACPI DKMS
 
 This package is needed for hotkeys and fan(s) on Open Firmware systems:
 
@@ -71,7 +75,7 @@ cd system76-acpi-dkms
 makepkg -srcif
 ```
 
-### System76 Power
+## System76 Power
 
 ```bash
 git clone https://aur.archlinux.org/system76-power.git
@@ -81,7 +85,7 @@ sudo systemctl enable --now system76-power
 sudo gpasswd -a $USER adm
 ```
 
-#### System76 Power GNOME Shell Extension
+## System76 Power GNOME Shell Extension
 
 ```bash
 git clone https://aur.archlinux.org/gnome-shell-extension-system76-power-git.git
@@ -89,7 +93,7 @@ cd gnome-shell-extension-system76-power
 makepkg -srcif
 ```
 
-NOTE: As of this writing the GNOME Shell Extension doesn't support GNOME 40.
+> **NOTE:** As of this writing the GNOME Shell Extension doesn't support GNOME 40.
 
 ### System76 Thelio Io DKMS
 
@@ -99,7 +103,7 @@ cd system76-io-dkms
 makepkg -srcif
 ```
 
-NOTE: This package is only needed for Thelio desktops.
+> **NOTE:** This package is only needed for Thelio desktops.
 
 ### System76 OLED 
 
@@ -109,13 +113,13 @@ cd system76-acpi-oled
 makepkg -srcif
 ```
 
-NOTE: This package is only needed for systems with OLED displays to control the brightness.
+> **NOTE:** This package is only needed for systems with OLED displays to control the brightness.
 
-## Fedora
+# Fedora
 
 Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). 
 
-### System76 Firmware Manager
+## System76 Firmware Manager
 
 Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>,enable the service and add your user to the adm group:
 
@@ -125,7 +129,7 @@ sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
-### System76 Power
+## System76 Power
 
 Use these commands to install the <u>System76 Power</u> package and enable the service:
 
@@ -134,25 +138,39 @@ sudo systemctl enable system76-power system76-power-wake
 sudo systemctl start system76-power
 ```
 
-### System76 DKMS
+## System76 Power GNOME Shell Extension
 
-This command will be used to install the <u>System76 DKMS</u> package which is for Proprietary Firmware systems:
+These commands will download the source code for the application, build it, install it and install the <u>Extensions</u> application:
+
+```bash
+git clone https://github.com/pop-os/gnome-shell-extension-system76-power.git
+cd gnome-shell-extension-system76-power
+sudo dnf install nodejs-typescript
+make
+make install
+```
+
+Now log out and use the <u>Extensions</u> to enable the extenstion. 
+
+## System76 DKMS
+
+These commands will be used to install the <u>System76 DKMS</u> package which is for Proprietary Firmware systems:
 
 ```bash
 sudo dnf install system76-dkms
 sudo systemctl enable dkms
 ```
 
-### System76 ACPI DKMS
+## System76 ACPI DKMS
 
-This command will be used to install the <u>System76 ACPI DKMS<u> package which is for Open Firmware systems:
+These commands will be used to install the <u>System76 ACPI DKMS</u> package which is for Open Firmware systems:
 
 ```bash
 sudo dnf install system76-acpi-dkms
 sudo systemctl enable dkms
 ```
 
-NOTE: After enabling the dkms systemd service for either the <u>System76 DKMS</u> or the <u>System76 ACPI DKMS</u> package you will need to reboot the system:
+> **NOTE:** After enabling the dkms systemd service for either the <u>System76 DKMS</u> or the <u>System76 ACPI DKMS</u> package you will need to reboot the system:
 
 ```bash
 sudo systemctl reboot

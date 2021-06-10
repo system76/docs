@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Fix Audio Issues
+title: Audio Troubleshooting
 description: >
   Here is how to fix several common audio issues with your computer.
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - pulse audio
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: graphics-audio-video
+section: software-troubleshooting
 
 ---
 

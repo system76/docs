@@ -10,7 +10,7 @@ keywords:
   - Update
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: software
 
 ---
 
@@ -45,14 +45,14 @@ If a green **Update** button is present, then a firmware update is available. Cl
 
 The command-line firmware utility can be installed using these commands:
 
-```
+```bash
 sudo apt update
 sudo apt install system76-firmware
 ```
 
 Once installed, the following command can be used to schedule a firmware update for the next reboot (if the firmware is already up-to-date, this command will schedule a re-installation of the current firmware):
 
-```
+```bash
 sudo system76-firmware-cli schedule
 ```
 
@@ -125,7 +125,7 @@ If your system is running another Linux-based OS installed with an EFI System Pa
 
 After creating the live disk, [access the boot menu](/articles/boot-menu/) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
 
-```
+```bash
 lsblk
 ```
 
@@ -133,7 +133,7 @@ Identify the EFI partition in the list. (The EFI partition is usually the first 
 
 #### For NVMe Drives:
 
-```
+```bash
 sudo apt install system76-driver
 sudo mkdir -p /boot/efi
 sudo mount /dev/nvme0n1p1 /boot/efi
@@ -144,7 +144,7 @@ Where `/dev/nvme0n1p1` is the EFI system partition.
 
 #### For SATA Drives:
 
-```
+```bash
 sudo apt install system76-driver
 sudo mkdir -p /boot/efi
 sudo mount /dev/sda1 /boot/efi

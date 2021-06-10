@@ -8,7 +8,7 @@ keywords:
   - support
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: hardware-drivers
+section: software
 
 ---
 

@@ -15,6 +15,8 @@ section: community
 
 ---
 
+# Install Minecraft Server
+
 With no fuss with specific desktop environments and stuff, Installing a Minecraft Server is an easy task on the command line. The hard part is what you will build.
 
 Make sure you have a powerful server machine above 3.7Ghz and 8G of RAM.
@@ -27,7 +29,7 @@ For this Tutorial, We will be using openjdk and a command line window separator 
 
 To install OpenJDK:  
 
-```
+```bash
 sudo yum install java-1.8.0-openjdk screen
 ```
 

@@ -1,8 +1,12 @@
 <template>
   <main>
-    <h1 class="text-6xl mb-4">
-      Buy a computer. Don't talk to one.
-    </h1>
+    <header class="w-full bg-cover bg-center">
+      <nuxt-img
+        src="/images/website/robot-type.png"
+        alt="Buy a computer - Don't talk to one. - Lifetime support from 100% real humans"
+        class="py-20 mx-auto"
+      />
+    </header>
 
     <div>
       <h3>Getting Help</h3>
@@ -29,6 +33,12 @@
     </div>
   </main>
 </template>
+
+<style scoped>
+  header {
+    background-image: radial-gradient(rgba(87, 79, 74, 0.5), #574f4a), url("/images/website/robot.jpg");
+  }
+</style>
 
 <script>
 export default {

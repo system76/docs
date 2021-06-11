@@ -59,6 +59,7 @@ export default {
   ],
 
   buildModules: [
+    '@nuxt/image',
     '@nuxtjs/tailwindcss'
   ],
 

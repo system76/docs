@@ -19,17 +19,17 @@ Bluetooth is a bit odd.
 There are a lot of factors that go into whether Bluetooth devices work as expected.
 
 
-## Bluetooth version:
+## Bluetooth version
 
 Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer devices.
 
 
-## Signal Interference:
+## Signal Interference
 
 Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in most of our machines it is on the same chip as the Wi-Fi module. They usually have two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues.
 
 
-## Device Specific Differences:
+## Device Specific Differences
 
 Every Bluetooth device is different. They use the same or similar protocols, but the printed circuit boards (PCBs), are specific to each device, and the firmware they are running is often custom designed, and closed-source.
 
@@ -47,7 +47,7 @@ Similar to the kernel versions. Improvements are often made in newer versions of
 
 <!--## Bluez Versions-->
 
-## Configuration Issues:
+## Configuration Issues
 
 Sometimes Bluetooth devices are working correctly, but something in settings needs to be reset.
 
@@ -58,7 +58,7 @@ If it does, config files may need deleted. If it doesn't (especially in the Live
 Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
 
 
-# Setting Expectations:
+# Setting Expectations
 
 Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, the issue may not be resolved at all. 
 Or, in a future update or change to the system, the devices may start working again. In some cases (many cases) users will not experience any issue with Bluetooth at all.

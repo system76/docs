@@ -1,17 +1,18 @@
 ---
 layout: article
-title: Install MATLAB on Pop!_OS 20.04 LTS
+title: MATLAB (Install - Pop!_OS 20.04 LTS)
 description: >
    How to install MATLAB
 keywords:
   - MATLAB
   - Pop
-  
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: software
 
 ---
+
+# MATLAB (Install - Pop!_OS 20.04 LTS) 
 
 Visit the MatLab website with this [link](https://www.mathworks.com/downloads/web_downloads/7318751?elqsid=1588205421341&potential_use=Home&s_tid=tfa_packageTrial_download.html) and click the blue box titled Linux.Save the file.
 
@@ -19,19 +20,15 @@ Visit the MatLab website with this [link](https://www.mathworks.com/downloads/we
 
 Create a new directory to install MATLAB. Open a terminal and execute the following commands. The second command is the file name of the MATLAB download.
 
-```
-
-$ mkdir matlab
-$ unzip -q matlab_R2020a_glnxa64.zip -d matlab
-
+```bash
+mkdir matlab
+unzip -q matlab_R2020a_glnxa64.zip -d matlab
 ```
 
 Create an installation directory for MATLAB.
 
-```
-
-$ sudo mkdir -p /usr/local/MATLAB/R2020a
-
+```bash
+sudo mkdir -p /usr/local/MATLAB/R2020a
 ```
 
 Navigate to the main MATLAB directory and begin the installation process. Do not close the terminal until the installation is complete.
@@ -76,10 +73,8 @@ Confirm your license information to complete the activation. Click Finish when t
 
 Open a terminal to launch MATLAB
 
-```
-
-$ matlab
-
+```bash
+matlab
 ```
 
 ![MATLAB installed on Pop!\_OS 20.04 LTS](/images/MATLAB/matlabexample.png)

@@ -16,25 +16,26 @@ section: network-troubleshooting
 # Important Notes About Bluetooth
 
 Bluetooth is a bit odd. 
-There are a lot of factors that go into whether Bluetooth devices work as expected.
+There are a lot of factors that go into whether Bluetooth devices work together as expected.
 
 
 ## Bluetooth version
 
-Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer devices.
+Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer versions or devices.
 
 
 ## Signal Interference
 
-Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in most of our machines it is on the same chip as the Wi-Fi module. They usually have two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues.
+Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in most of our machines it is on the same chip as the Wi-Fi module. They usually have two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues. If users are in an area crowded with other Wi-Fi networks or devices, the interference from these outside sources can impact performance and range.
 
 
 ## Device Specific Differences
 
 Every Bluetooth device is different. They use the same or similar protocols, but the printed circuit boards (PCBs), are specific to each device, and the firmware they are running is often custom designed, and closed-source.
 
-Some of the code and technologies that make Bluetooth work reliably are patented, and only device vendors who have licensed the permission to use that patented technology will be able to experience the full benefits (see "audio input/output" section below.)
+Some of the code and technologies that make Bluetooth work reliably are patented, and only device vendors who have licensed the permission to use that patented technology will be able to experience the full benefits (for more information see the "Audio Input/Output" section below.)
 
+> **NOTE:** Some devices, such as Apple or Sony headphones, particularly take advantage of these patents and technologies to ensure they work well with similar devices. Often these devices are not tested against Linux machines. That doesn't mean these devices will not work, only that behavior or performance may vary.
 
 ## Kernel Versions
 
@@ -65,10 +66,10 @@ Or, in a future update or change to the system, the devices may start working ag
 
 ## Audio Input/Output
 
-Bluetooth audio devices, such as headphones, usually default to the A2DP protocol, which works effectively as an audio output source.
+Bluetooth audio devices, such as headphones and speakers, usually default to the A2DP protocol, which works effectively as an audio output source.
 
 Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in. 
-This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny" or at a lower volume. That is expected behavior.
+This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny," compressed (lower-fidelity), or at a lower volume. That is expected behavior.
 
 ---
 
@@ -164,9 +165,9 @@ Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, ne
 Then they can be installed with this command:
 
 ```bash
-sudo dpkg -i linux-firmware_1.167.1_all.deb
+sudo dpkg -i linux-firmware_#.###.#_all.deb
 ```
-
+> **NOTE:** You'll need to replace the nubmers/file name with the most current version after downloading it.
 ## File Transfer
 
 Sometimes, additional programs need to be installed for mobile equipment file transfer.  Please install the transfer tool with this command:

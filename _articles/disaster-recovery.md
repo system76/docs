@@ -108,6 +108,6 @@ Refer to your models [service manual](/articles/service-manuals) for removing th
 
 Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help. 
 
-> **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two copies on-site, and one copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
+> **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two (2) copies on-site, and one (1) copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
 
 <!--Rsync/Your Script? Let's also link to the service manuals page in case they need to pull the drive.-->

@@ -68,10 +68,5 @@ export default {
 
   loading: {
     color: '#6ACAD8'
-  },
-
-  content: {
-    dir: './_jekyll/_articles',
-    fullTextSearchFields: ['title', 'description']
   }
 }

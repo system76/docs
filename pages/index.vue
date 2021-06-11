@@ -9,7 +9,9 @@
     </header>
 
     <section class="max-w-7xl mx-auto mt-12 px-4 text-center sm:px-6 lg:px-8">
-      <h2 class="text-4xl">Support Articles</h2>
+      <h2 class="text-4xl">
+        Support Articles
+      </h2>
 
       <div>
         <nuxt-link to="#learn">
@@ -34,7 +36,7 @@
       </p>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="getting-help">
+    <section id="getting-help" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1>Getting Help</h1>
 
       <ul>
@@ -52,12 +54,13 @@
 
       <p>
         Having trouble submitting a support ticket? Contact our office at <a
-        href="tel:+17202269269">(720) 226-9269</a> between 8am-5pm MST and we'll
+          href="tel:+17202269269"
+        >(720) 226-9269</a> between 8am-5pm MST and we'll
         help you out!
       </p>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="learn">
+    <section id="learn" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1>Learn</h1>
 
       <section>
@@ -75,12 +78,6 @@
     </section>
   </main>
 </template>
-
-<style scoped>
-  header {
-    background-image: radial-gradient(rgba(87, 79, 74, 0.5), #574f4a), url("/images/website/robot.jpg");
-  }
-</style>
 
 <script>
 export default {
@@ -101,3 +98,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  header {
+    background-image: radial-gradient(rgba(87, 79, 74, 0.5), #574f4a), url("/images/website/robot.jpg");
+  }
+</style>

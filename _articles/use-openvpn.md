@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install OpenVPN
+title: OpenVPN (Install)
 description: >
   This page will go over setting up and using OpenVPN to browse the internet more securely in places like airports, cafe shops and more.
 keywords:
@@ -10,9 +10,11 @@ keywords:
   - ProtonVPN
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: security-encryption
+section: software
 
 ---
+
+# OpenVPN (Install) 
 
 ### Open A Terminal
 
@@ -28,7 +30,7 @@ Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal w
 
 Enter the following command followed by <kbd>Enter</kbd>:
 
-```
+```bash
 sudo apt install network-manager-openvpn-gnome
 ```
 

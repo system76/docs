@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Watch Protected Content from Netflix, Amazon Prime, and Other Streaming Services
+title: Watch Protected Content on Streaming Services
 description: >
     How to view DRM-protected video content from online streaming services such as Netflix and Amazon Prime
 keywords:
@@ -20,9 +20,11 @@ hidden: false
 redirect_from:
   - /chromeFlash
   - /chromeflash
-section: software-applications
+section: media
 
 ---
+
+# Watch Protected Content on Streaming Services
 
 Video content from online streaming services such as Netflix and Amazon Prime is typically protected using various encryption schemes to prevent copying. This is known as digital rights management (DRM). In order to play DRM-encumbered content, you will need to use a browser that supports playback of DRM-controlled content. Please note that not all vendors use a a DRM encryption method that is compatible with Linux (for instance, HBO and HBO Max).
 

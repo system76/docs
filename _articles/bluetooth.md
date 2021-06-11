@@ -21,7 +21,7 @@ There are a lot of factors that go into whether Bluetooth devices work as expect
 
 ## Bluetooth version:
 
-Bluetooth 5.0 is backwards compatible with older Bluetooth versions but, older bluetooth versioned devices are not always compatible with newer devices.
+Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer devices.
 
 
 ## Signal Interference:
@@ -43,7 +43,7 @@ As the Linux kernel develops, support for more devices are added. Sometimes Blue
 
 ## OS Versions
 
-Similar to the kernel versions. Improvements are often made in newer versions of Ubuntu and PopOS. Running software updates is always a good idea, followed by a reboot.
+Similar to the kernel versions. Improvements are often made in newer versions of Ubuntu and Pop!\_OS. Running software updates is always a good idea, followed by a reboot.
 
 <!--## Bluez Versions-->
 
@@ -60,7 +60,7 @@ Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and 
 
 # Setting Expectations:
 
-Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, The issue may not be resolved at all. 
+Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, the issue may not be resolved at all. 
 Or, in a future update or change to the system, the devices may start working again. In some cases (many cases) users will not experience any issue with Bluetooth at all.
 
 ## Audio Input/Output
@@ -68,7 +68,7 @@ Or, in a future update or change to the system, the devices may start working ag
 Bluetooth audio devices, such as headphones, usually default to the A2DP protocol, which works effectively as an audio output source.
 
 Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in. 
-This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny" or at a lower volume. That is expected Behavior.
+This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny" or at a lower volume. That is expected behavior.
 
 ---
 

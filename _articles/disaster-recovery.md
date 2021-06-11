@@ -92,6 +92,10 @@ Now that we reinstalled the OS we can start restoring our data. To restore your 
 
 ![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
 
+## If the system doesn't power on
+
+Refer to your models [service manual](/articles/service-manuals) for removing the drive(s) to move the data on another system with the steps in our [backup article](/articles/backup-files).
+
 ## Future Steps
 
 Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help.

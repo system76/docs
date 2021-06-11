@@ -102,10 +102,12 @@ Now that we reinstalled the OS we can start restoring our data. To restore your 
 
 ## If the system doesn't power on
 
-Refer to your models [service manual](/articles/service-manuals) for removing the drive(s) to move the data on another system with the steps in our [backup article](/articles/backup-files).
+Refer to your models [service manual](/articles/service-manuals) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
 
 ## Future Steps
 
-Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help.
+Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help. 
+
+> **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two copies on-site, and one copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
 
 <!--Rsync/Your Script? Let's also link to the service manuals page in case they need to pull the drive.-->

@@ -13,13 +13,32 @@
 
 <script>
 export default {
-  asyncData: async ({ $content, error, params }) => ({
-    article: await $content(params.path)
+  async asyncData ({ $content, error, params, redirect }) {
+    const article = await $content(params.path)
       .fetch()
-      .catch(() => {
-        error({ statusCode: 404, message: 'Article not found' })
+      .catch(() => null)
+
+    if (article != null) {
+      return { article }
+    }
+
+    const [redirectedArticle] = await $content()
+      .only(['slug'])
+      .where({
+        redirect_from: { $contains: `/articles/${params.path}` }
       })
-  }),
+      .fetch()
+      .catch(() => [])
+
+    if (redirectedArticle != null) {
+      return redirect(`/articles/${redirectedArticle.slug}`)
+    }
+
+    return error({
+      statusCode: 404,
+      message: 'Article not found'
+    })
+  },
 
   head () {
     return {

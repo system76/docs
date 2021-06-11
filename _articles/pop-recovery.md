@@ -21,7 +21,11 @@ section: software-troubleshooting
 
 The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or tapping the recovery key (usually <kbd>F11</kbd> or <kbd>F12</kbd>) if Pop!\_OS is the only OS running on your system, while the system is booting. On the menu, choose **Pop!_OS Recovery**.
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](https://support.system76.com/articles/boot-menu/) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>) 
+
+> **NOTE:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
+
+Once the menu is shown, choose **Pop!_OS Recovery**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
@@ -48,9 +52,7 @@ This will show you the name of the main internal drive, which will have 4 partit
 Next, run this command:
 
 | **SATA Drives**           | **NVMe Drives**                |
-| sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
-
-**Note:** Each box is one single command.
+| ```sudo mount /dev/sda3 /mnt``` | ```sudo mount /dev/nvme0n1p3 /mnt``` |
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  
 

@@ -13,7 +13,6 @@
 
 <script>
 export default {
-
   asyncData: async ({ $content, error, params }) => ({
     article: await $content(params.path)
       .fetch()
@@ -21,6 +20,7 @@ export default {
         error({ statusCode: 404, message: 'Article not found' })
       })
   }),
+
   head () {
     return {
       title: this.article.title,

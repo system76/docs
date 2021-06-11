@@ -10,9 +10,13 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: hardware-drivers
+section: software
 
 ---
+
+# Access BIOS or Boot Menu
+
+To enter BIOS for most System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.
 
 <table border=1>
   <tbody>

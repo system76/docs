@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col">
     <sys-omnibar>
-      <template v-slot:global>
+      <template #global>
         <a href="https://system76.com/specials">
           Special Offers
         </a>
@@ -14,17 +14,12 @@
       url-desktops="https://system76.com/desktops"
       url-mini="https://system76.com/desktops/meerkat"
       url-servers="https://system76.com/servers"
-      url-pop-os="/"
+      url-pop-os="https://pop.system76.com"
       url-contact="https://system76.com/contact"
-      url-account="https://system76.com/my-account"
-      url-admin="https://joshua.system76.com/admin"
-      url-login="/auth/login"
-      url-logout="/auth/logout"
-      :admin="false"
-      :authenticated="false"
+      url-login="https://system76.com/login"
     />
 
-    <Nuxt />
+    <nuxt class="flex-auto" />
 
     <sys-footerbar
       url-contact="https://system76.com/contact"
@@ -40,3 +35,12 @@
     />
   </div>
 </template>
+
+<style>
+html,
+body,
+#__nuxt,
+#__layout {
+  min-height: 100vh;
+}
+</style>

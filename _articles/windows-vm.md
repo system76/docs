@@ -15,9 +15,11 @@ image: http://support.system76.com/images/system76.png
 hidden: false
 redirect_from:
   - /windows
-section: software-applications
+section: windows
 
 ---
+
+# Install Windows 10 in VirtualBox
 
 Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.
 

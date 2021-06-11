@@ -12,9 +12,11 @@ keywords:
   - release upgrade
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: software-applications
+section: software
 
 ---
+
+# Keep PPAs Enabled when Upgrading Releases 
 
 Normally, all Person Package Archives (PPAs) and third-party repositories are disabled when updating to a new release of the operating system.  This helps keep upgrades simpler and prevents PPAs that haven't been properly updated for the new release from breaking the upgrade.
 

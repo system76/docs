@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Install the System76 Driver
+title: System76 Driver (Install)
 description: >
-    Our System76 Driver can generate system logs, we'll also go over how to reinstall the NVIDIA Driver.
+    Learn how to add the System76 Driver to your System76 computer after reinstalling Ubuntu
 keywords:
   - system76
   - driver
@@ -10,25 +10,29 @@ keywords:
   - support
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: hardware-drivers
+section: software
 
 ---
 
-### System76 Driver
+# System76 Driver (Install)
 
-#### Apt Preferences File
+This guide will show you how to add the System76 software repository and install the driver on Ubuntu.
+
+Please note these steps are not necessary in Pop!\_OS, which includes the repository and the appropriate drivers installed by default. 
+
+#### Adding the Apt Preferences File
 
 If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
 
 Create the apt preferences file here:
 
-```
+```bash
 sudo gedit /etc/apt/preferences.d/system76-apt-preferences
 ```
 
 Add the following six lines (seven if you count the space in the middle):
 
-```
+```bash
 Package: *
 Pin: release o=LP-PPA-system76-dev-stable
 Pin-Priority: 1001
@@ -40,26 +44,72 @@ Pin-Priority: 1001
 
 Save the file. Now you should be able to install the System76 Driver as described below.
 
+#### Installing the Driver 
+
 To install our Driver you need to run the following commands in the Terminal:
 
-```
+```bash
 sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt-get update
-sudo apt-get install -y system76-driver
+sudo apt install system76-driver
 ```
 
-#### Generate Log Files
+This installs the System76 driver and related utilities which are needed to enable full functionality for your system. 
 
-The System76 Driver can be opened by pressing the Ubuntu or Pop key and then search for 'system76', then click on the System76 Driver. 
+### Install System76 Driver on Other Operating Systems
 
-Next click on the button outlined in red in the <u>System76 Driver</u> application and there will be a file called `system76-logs.tgz` placed in your Home directory (/home/username)
+**DISCLAIMER**
 
-![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
+This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
 
-### System76 NVIDIA Driver
+Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardare. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. 
 
-Follow the above steps as well as this additional command if you have a NVIDIA GPU:
+However, System76 does not guarantee the success or quality of experience when installing other Operating Systems. 
+Support typically makes best-efforts to offer direction or troubleshooting for other distributions. 
 
+We may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those Operating System(s)' support forums.
+
+
+## Arch
+
+First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:
+
+```bash
+sudo pacman -S --needed base-devel git linux-headers
 ```
+
+Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Firmware Daemon</u>:
+
+```bash
+git clone https://aur.archlinux.org/system76-firmware.git
+makepkg -srcif
+sudo systemctl enable --now system76-firmware-daemon
+```
+
+Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
+
+```bash
+git clone https://aur.archlinux.org/system76-driver.git
+cd system76-driver
+makepkg -srcif
+sudo systemctl enable --now system76
+```
+
+## Fedora
+Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](https://copr.fedorainfracloud.org/coprs/szydell/system76/) and install the <u>System76 Driver</u> :
+
+```bash
+sudo dnf copr enable szydell/system76
+sudo dnf install system76-driver
+```
+
+
+## Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs 
+
+If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:
+
+```bash
 sudo apt-get install system76-driver-nvidia
 ```
+
+In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card. 

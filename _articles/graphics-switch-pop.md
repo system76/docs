@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Switching Graphics in Pop!_OS
+title: Graphics Switching (Pop!_OS)
 description: >
-   How to switch between integrated, NVIDIA, and Hybrid graphics
+   How to use systems with switchable graphics
 keywords:
   - System76
   - Pop
@@ -14,9 +14,11 @@ keywords:
   - Integrated
 image: http://support.system76.com/images/pop.png
 hidden: false
-section: pop
+section: software
 
 ---
+
+# Graphics Switching (Pop!\_OS)
 
 Many laptops these days have _switchable graphics_, which allow users to switch between several GPU modes spanning power use and performance.
 The following System76 laptops have these switchable graphics capabilities:
@@ -26,7 +28,7 @@ The following System76 laptops have these switchable graphics capabilities:
 - Gazelle (gaze14, gaze15)
 - Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7)
 
-Pop!_OS includes utilities for switching between these modes, which you can learn more about below.
+Pop!\_OS includes utilities for switching between these modes, which you can learn more about below.
 
 ### Graphics modes
 
@@ -89,37 +91,37 @@ Once you select a mode, you will be prompted to reboot.
 If you are not using the GNOME Desktop Environment, you can use the system76-power 
 command line tool. You can see the options with this command:
 
-```
+```bash
 system76-power help
 ```
 
 For seeing which graphics mode the system is using:
 
-```
+```bash
 sudo system76-power graphics
 ```
 
 For switching to NVIDIA graphics:
 
-```
+```bash
 sudo system76-power graphics nvidia
 ```
 
 For switching to integrated graphics:
 
-```
+```bash
 sudo system76-power graphics integrated
 ```
 
 For switching to hybrid graphics:
 
-```
+```bash
 sudo system76-power graphics hybrid
 ```
 
 For switching to compute mode:
 
-```
+```bash
 sudo system76-power graphics compute
 ```
 

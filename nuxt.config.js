@@ -1,5 +1,4 @@
 export default {
-  ssr: false,
   target: 'static',
 
   components: true,
@@ -49,7 +48,7 @@ export default {
   },
 
   css: [
-    '@system76/design/dist/index.common.css',
+    '@system76/design/dist/minimal.common.css',
     '@system76/components/dist/index.common.css'
   ],
 

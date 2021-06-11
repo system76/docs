@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4>
-      <nuxt-link :to="path">
+      <nuxt-link :to="`/articles/${article.slug}`">
         {{ article.title }} >>
       </nuxt-link>
     </h4>
@@ -18,12 +18,6 @@ export default {
     article: {
       type: Object,
       default: () => ({})
-    }
-  },
-
-  computed: {
-    path () {
-      return `/articles${this.article.path}`
     }
   }
 }

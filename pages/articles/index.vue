@@ -10,7 +10,7 @@
           v-for="article in articles"
           :key="article.path"
         >
-          <nuxt-link :to="path(article)">
+          <nuxt-link :to="`/articles/${article.slug}`">
             {{ article.title }}
           </nuxt-link>
         </li>
@@ -23,16 +23,10 @@
 export default {
   asyncData: async ({ $content }) => ({
     articles: await $content()
-      .only(['title'])
+      .only(['title', 'slug'])
       .where({ hidden: false })
       .sortBy('title')
       .fetch()
-  }),
-
-  methods: {
-    path (article) {
-      return `/articles${article.path}`
-    }
-  }
+  })
 }
 </script>

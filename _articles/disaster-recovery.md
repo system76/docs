@@ -46,6 +46,14 @@ Once the drive is mounted, we can install software to back up files.
 
 [Déjà Dup](https://wiki.gnome.org/Apps/DejaDup) is a popular, straightforward backup option. It can be used to back up user data locally, remotely, or to a cloud server. It can also be set up to run automatically on a regular basis.
 
+[rsync]() is a popular command-line tool to copy data while keeping the permissions. It is useful if the system is powering down or if you want a command-line tool to copy the files. 
+
+```bash
+rsync -avxP \
+/path/to/directory/to/backup \
+/path/to/directory/for/storing/backup
+```
+
 #### Installation
 
 To install <u>Deja Dup</u>, search for it in the <u>Pop!\_Shop</u>, <u>Ubuntu Software</u> or run this command:

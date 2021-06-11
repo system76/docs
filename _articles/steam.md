@@ -10,9 +10,11 @@ keywords:
   - proton
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop
+section: media
 
 ---
+
+# Steam (Install)
 
 ### Install Steam From Command Line
 
@@ -22,7 +24,7 @@ Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pres
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
-```
+```bash
 apt search steam
 ```
 
@@ -30,7 +32,7 @@ apt search steam
 
 Once we find the right name for <u>Steam</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
-```
+```bash
 sudo apt install steam
 ```
 

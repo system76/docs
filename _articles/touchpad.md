@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configure Or Disable Touchpad
+title: Touchpad (Configure or Disable)
 description: >
   Learn how to turn on and configure touchpad functions.
 keywords:
@@ -12,9 +12,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: hardware-drivers
+section: hardware
 
 ---
+
+# Touchpad (Configure or Disable)
 
 Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.
 
@@ -28,6 +30,6 @@ To configure your touchpad, press the Super Key <kbd><span class="fl-ubuntu"></s
 
 <u>GNOME Tweaks</u> can be installed from the <u>Pop!_Shop</u> (Pop!_OS), <u>Ubuntu Software Center</u> (Ubuntu) or from the <u>Terminal</u> with this command:
 
-```
+```bash
 sudo apt install gnome-tweaks
 ```

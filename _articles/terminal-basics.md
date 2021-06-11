@@ -11,9 +11,11 @@ keywords:
   - Technical Support
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: getting-started
+section: learn-about-your-os
 
 ---
+
+# Linux Terminal Basics 
 
 The <u>Terminal</u> is an interactive, text-based interface for your Operating System. When you type a command, you're basically telling your computer to do something very specific. Many commands will print information to the screen. Some will ask for input, and others may just return you to a prompt.
 
@@ -56,44 +58,43 @@ When you run a command with `sudo` in front of it, you'll be prompted for your p
 
 ## Useful Commands:
 
-```
+```bash
 sudo apt update
 ```
 
 This command will tell your system to search for potential updates and advise if there are any available, but this command does not install them.
 
-```
+```bash
 sudo apt upgrade
 ```
 
 This command will download and apply any updates to your System76 computer.
 
-```
+```bash
 sudo apt full-upgrade
 ```
 
 This command will upgrade your packages and installs or remove packages to resolve dependencies so everything is up-to-date.
 
-
-```
+```bash
 sudo apt install [application]
 ```
 
 This will install a particular application and its dependencies on your computer.
 
-```
+```bash
 sudo apt purge [application]
 ```
 
 This will remove a program and its configuration files from your computer.
 
-```
+```bash
 sudo apt policy [application]
 ```
 
 This will list information about the package. Such as where it is coming from, the version and if an updated version is available.
 
-```
+```bash
 man sudo
 ```
 

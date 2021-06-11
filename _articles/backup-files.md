@@ -28,7 +28,7 @@ The key to good backups is having the data automatically backed up, accessible, 
 -  Secure: Data needs to be accessible only by the owner. Cloud solutions are convenient, but additional steps may be required to make sure the data is private.
 -  Distributed: Data needs to be in multiple places. If all the copies are in one location, the risk for data loss increases (for example, if your data is saved to a USB disk in your house, but there is a fire, both the computer and the backup disk could potentially be lost at the same time.)
 
-As a rule of thumb, a good backup consists of three copies: the original copy, a quickly accessible copy, and an off-site copy.
+> **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two (2) copies on-site, and one (1) copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
 
 ## User Files
 
@@ -40,7 +40,7 @@ User files are the most common data to back up. This includes documents, picture
 
 #### Installation
 
-To install Deja Dup, search for it in the Pop!\_Shop, or run this command:
+To install Deja Dup, search for it in the Pop!\_Shop, Ubuntu Software or run this command:
 
 ```bash
 sudo apt install deja-dup

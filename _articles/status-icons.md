@@ -7,7 +7,7 @@ keywords:
   - status icons
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: pop
+section: software
 
 ---
 
@@ -19,7 +19,7 @@ If you are running a Pop!_OS version older than 20.04, some apps you use (like D
 
 The extension `gnome-shell-extension-appindicator` works well for this and is what we recommend users of Pop!\_OS install if they need status icons. To install, open the **Terminal** app (<kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>) and type:
 
-```
+```bash
 sudo apt install gnome-shell-extension-appindicator
 ```
 
@@ -29,7 +29,7 @@ sudo apt install gnome-shell-extension-appindicator
 
 In the **Terminal** app or from the **Enter a command** dialog (<kbd>Alt</kbd>+<kbd>F2</kbd>), type:
 
-```
+```bash
 gnome-shell-extension-prefs
 ```
 

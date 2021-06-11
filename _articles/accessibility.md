@@ -9,9 +9,11 @@ keywords:
   - System76
 image: http://support.system76.com/images/pop-icon.png
 hidden: false
-section: pop
+section: software
 
 ---
+
+# Accessibility
 
 ### Pop!\_OS: This document describes some of the applications and utilities that can be used. 
 

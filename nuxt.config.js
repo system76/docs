@@ -8,7 +8,7 @@ export default {
     description: 'Official System76 Support and useful documentation',
     color: '#4e4540',
 
-    titleTemplate: (title) => (title !== '') ? `${title} - System76 Support` : 'System76 Support',
+    titleTemplate: title => (title !== '') ? `${title} - System76 Support` : 'System76 Support',
 
     htmlAttrs: {
       lang: 'en',
@@ -17,9 +17,16 @@ export default {
 
     meta: [
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1' },
+
       { charset: 'utf-8' },
+
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Official System76 Support and useful documentation' }
+
+      { hid: 'description', name: 'description', content: 'Official System76 Support and useful documentation' },
+      { hid: 'og:title', property: 'og:title', content: 'System76 Support' },
+      { hid: 'og:description', property: 'og:description', content: 'Official System76 Support and useful documentation' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'System76 Support' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'Official System76 Support and useful documentation' }
     ],
 
     link: [
@@ -47,7 +54,8 @@ export default {
   ],
 
   plugins: [
-    '~/plugins/components'
+    '~/plugins/components',
+    '~/plugins/custom-tags'
   ],
 
   buildModules: [

@@ -3,54 +3,49 @@
     <h1 class="text-6xl mb-4">
       Buy a computer. Don't talk to one.
     </h1>
-    <nuxt-link to="/articles">
-      All articles
-    </nuxt-link>
+
+    <div>
+      <h3>Getting Help</h3>
+
+      <article-listing
+        v-for="article in articlesForSection('getting-help')"
+        :key="article.path"
+        :article="article"
+      />
+    </div>
+
+    <div>
+      <h3>Learn</h3>
+
+      <div>
+        <h4>Switching to Linux</h4>
+
+        <article-listing
+          v-for="article in articlesForSection('switching')"
+          :key="article.path"
+          :article="article"
+        />
+      </div>
+    </div>
   </main>
 </template>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<script>
+export default {
+  asyncData: async ({ $content }) => ({
+    articles: await $content()
+      .only(['title', 'description', 'keywords', 'section'])
+      .where({ hidden: false })
+      .sortBy('title')
+      .fetch()
+  }),
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  computed: {
+    articlesForSection () {
+      return section => this.articles.filter((article) => {
+        return (article.section === section)
+      })
+    }
+  }
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+</script>

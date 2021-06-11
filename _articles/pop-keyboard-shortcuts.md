@@ -7,8 +7,10 @@ keywords:
   - shortcuts
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: getting-started
+section: pop
 ---
+
+# Pop!_OS Keyboard Shortcuts
 
 ## Notable Keys
 

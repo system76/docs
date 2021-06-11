@@ -11,8 +11,11 @@ keywords:
   - System76
 image: https://system76.com/images/system76.png
 hidden: false
-section: accessories
+section: general-hardware-info
+
 ---
+
+# Docking Station Support
 
 ### Compatible Intel systems
 
@@ -119,7 +122,7 @@ Community members have reported that the following docks work with our products:
 
 You'll need to install the 'dkms' package to install DisplayLink Driver. The NVIDIA Driver installs this package automatically.
 
-```
+```bash
 sudo apt install dkms
 ```
 
@@ -129,7 +132,7 @@ To download the newest [DisplayLink driver](http://www.displaylink.com/downloads
 
 To install the DisplayLink Driver, open the Terminal and move to the Downloads directory (the version for the driver may change, so look at the file name and change it accordingly):
 
-```
+```bash
 cd Downloads
 unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 5.2.zip
 sudo chmod +x displaylink-driver-5.2.14.run
@@ -138,7 +141,7 @@ sudo ./displaylink-driver-5.2.14.run
 
 To uninstall the DisplayLink driver this command will be used:
 
-```
+```bash
 sudo displaylink-installer uninstall
 ```
 

@@ -11,7 +11,7 @@ keywords:
   - System76
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: getting-started
+section: learn-about-your-computer
 
 ---
 

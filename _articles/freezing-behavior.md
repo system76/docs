@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Freezing behavior on your System
+title: Freezing Systems
 description: >
   Troubleshoot if your system is freezing
 keywords:
@@ -9,20 +9,42 @@ keywords:
   - Desktop
 image: http://support.system76.com/images/system76.png
 hidden: false
-section: hardware-drivers
+section: hardware-troubleshooting
 
 ---
 
-Freezing behaviors tend to occur when a piece of hardware is defective.  Let's check the health of your hard drive and run a memory test. Please respond to your support ticket if you have one with your troubleshooting results.
+# Freezing Systems
 
-Run Memory Test
-To begin, we need to determine how much memory your system has. Open Settings, then navigate to the About pane. Look for the item marked 'Memory.' It should have a number, such as 16GB though it may be 15.5GB as well.
+Freezing behaviors tend to occur when a piece of hardware is defective.  
+More common culprits are the hard drive or memory modules. This article covers checking the health of your hard drive and running a memory test. 
 
-Round up to the nearest whole number, then subtract 4. Make note of this new value. Close out of all running applications. 
+> **NOTE:** If you have a support ticket open, please respond with your troubleshooting outputs from the below commands.
 
-Open a Terminal by pressing <kbd><span class="fl-ubuntu"></span></kbd>/<kbd><span class="fl-pop-key"></span></kbd>/<kbd>Super</kbd> and run the following set of commands:
+## Run Memory Test
+To begin, we need to determine how much memory your system has. Open <u>Settings</u>, then navigate to the "About" pane. Look for the item marked "Memory." It should have a number, such as 16GB though it may be 15.5GB, or something similar as some of the memory is used up by the OS itself. 
 
-NOTE: If this is your first time running commands, just a heads up- after each command, press the enter key. When the system prompts you for your password, type it in the terminal and press the enter key. The password will not show in the terminal, but it is taking the password)
+You can also run the following <u>Terminal</u> command to print your total RAM. Open a Terminal by pressing <kbd><span class="fl-ubuntu"></span></kbd>/<kbd><span class="fl-pop-key"></span></kbd>/<kbd>Super</kbd> and run the following set of commands:
+
+Command:
+
+```bash
+free -h
+```
+
+Example Output:
+
+```bash
+              total        used        free      shared  buff/cache   available
+Mem:           15Gi       6.8Gi       2.3Gi       869Mi       6.4Gi       7.5Gi
+Swap:         4.0Gi       3.0Mi       4.0Gi
+```
+
+In this example, the system has 16GB of RAM (`15Gi`).
+
+Once we know the total RAM, round up to the nearest whole number, then subtract 4. Make note of this new value. Close out of all running applications. 
+
+
+> **NOTE:** When the system prompts you for your password, type it in the terminal and press the enter key. The password will not show in the terminal, but it is taking the password)
 
 ```bash
 sudo apt update
@@ -62,7 +84,7 @@ Under 'Node' you will see a mount path for each drive. For example, if the path 
 sudo nvme smart-log /dev/nvme0n1
 ```
 
-If there are no errors indicated on the memory or hard drive, we will need to review a set of log files to determine the next steps to take.
+> **Note** If the freezing does not occur in a Live Disk, the problem is likely software, rather than hardware. If there are no errors indicated on the memory or hard drive, we will need to review a set of log files to determine the next steps to take.
 
 ## Collect Logs
 

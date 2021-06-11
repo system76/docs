@@ -4,10 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nuxt dev",
-    "build": "nuxt build",
-    "build:staging": "DEPLOY_ENV=staging NODE_ENV=production nuxt build",
-    "build:production": "DEPLOY_ENV=production NODE_ENV=production nuxt build",
-    "generate": "nuxt generate",
+    "build": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js"
   },
@@ -16,6 +13,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@nuxt/content": "^1.14.0",
     "@system76/components": "^1.2.0",
+    "@system76/design": "^5.3.0",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
     "vue-fontawesome": "0.0.2"

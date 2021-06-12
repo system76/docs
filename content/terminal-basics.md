@@ -21,7 +21,7 @@ The <u>Terminal</u> is an interactive, text-based interface for your Operating S
 
 The quickest way to install, remove or update applications is through the <u>Terminal</u>. The <u>Terminal</u> is also referred to as the shell, command line, prompt, or command prompt.
 
-To open a <u>Terminal</u>, tap the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, <kbd><span class="fl-pop-key"></span></kbd> to search your computer and type the word <u>Terminal</u>.
+To open a <u>Terminal</u>, tap the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> to search your computer and type the word <u>Terminal</u>.
 
 A box like the one below will appear:
 

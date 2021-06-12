@@ -109,17 +109,19 @@ When linking to files, please use the absolute path, i.e.
 
 ## Icons
 
-The Ubuntu logo can be included in a doc using the following span:
+The Ubuntu logo can be included in a doc using the following HTML tag:
 
 ```html
-<span class="fl-ubuntu-inverse"></span>
+<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>
 ```
 
 You can embed this in other Markdown and Tags, for example, you can create an
-Ubuntu (Super) key:
+Pop!_OS (Super) key:
 
 ```html
-<kbd><span class="fl-ubuntu-inverse"></span></kbd>
+<kbd>
+  <font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon>
+</kbd>
 ```
 
 ## Local Development

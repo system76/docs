@@ -20,7 +20,7 @@ section: software
 
 #### Pop!_OS
 
-Press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
+Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
 #### Ubuntu
 

@@ -25,10 +25,10 @@ To advance keyboard driven control, keyboard shortcuts have been modified in Pop
 
 |          Action            |     Old Shortcut      |      New Shortcut  |
 |:---------------------------| :-------------------- |--------------------|
-Lock Screen                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>ESC</kbd> |
-Move to Workspace Up or Down | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> |
-Close Window                 | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>W</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd>
-Toggle Maximize              | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd>
+Lock Screen                 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>L</kbd> | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>ESC</kbd> |
+Move to Workspace Up or Down | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> |
+Close Window                 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>W</kbd> | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>Q</kbd>
+Toggle Maximize              | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>M</kbd>
 
 ### New Features
 

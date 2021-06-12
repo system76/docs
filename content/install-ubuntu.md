@@ -124,7 +124,7 @@ This section of the installation will show you a few of the preinstalled applica
 
 ### Install System76 Driver
 
-Once you've reinstalled Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<i class="fl-ubuntu"></i>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've reinstalled Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
 ```bash
 sudo apt-add-repository -y ppa:system76-dev/stable

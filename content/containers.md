@@ -15,7 +15,7 @@ section: software
 
 ---
 
-# Containers on Linux 
+# Containers on Linux
 
 Sometimes an older version of a library or libraries for an application is needed for development. It is faster and easier to use LXC/LXD to setup a Container of that release and work in that Container.
 
@@ -23,7 +23,7 @@ Sometimes an older version of a library or libraries for an application is neede
 
 First open a terminal like so:
 
-Pop!_OS : <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>
+Pop!_OS : <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd>
 
 Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 

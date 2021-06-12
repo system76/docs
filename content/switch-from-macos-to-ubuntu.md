@@ -58,7 +58,7 @@ Ubuntu has [Workspaces](https://help.ubuntu.com/stable/ubuntu-help/shell-workspa
 
 ### Finding Programs And Files
 
-Ubuntu has a [Dash](https://help.gnome.org/misc/release-notes/3.6/users-activities-overview.html.en) much like Apple's [Spotlight](https://support.apple.com/en-us/HT204014) search. If you press the Super key <kbd><span class="fl-ubuntu"></span></kbd> all graphical software and files can be searched for easily.
+Ubuntu has a [Dash](https://help.gnome.org/misc/release-notes/3.6/users-activities-overview.html.en) much like Apple's [Spotlight](https://support.apple.com/en-us/HT204014) search. If you press the Super key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> all graphical software and files can be searched for easily.
 
 ![apple-software](/images/switch/apple-search.png)
 

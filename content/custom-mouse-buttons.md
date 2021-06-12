@@ -20,7 +20,7 @@ section: hardware
 
 #### Piper
 
-![Piper Buttons Window](/images/custom-mouse-buttons/Piper-2.png) 
+![Piper Buttons Window](/images/custom-mouse-buttons/Piper-2.png)
 
 <u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 (sold by System76). In this section we will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
 
@@ -30,9 +30,9 @@ In this window the button that has been clicked can be reassigned to a differet 
 
 #### Solaar
 
-![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png) 
+![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png)
 
-![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png) 
+![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png)
 
 <u>Solaar</u> is a graphical tool for adding more devices to your Logitech USB Unify receiver. It also provides information on the following:
 
@@ -49,7 +49,7 @@ You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Sola
 
 For using <u>xbindkeys</u> open a terminal with the following keys:
 
-Pop!_OS : <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>
+Pop!_OS : <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd>
 
 Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 
@@ -104,7 +104,7 @@ This will cause the forward mouse button and the <kbd>Ctrl</kbd> key to emulate 
    b:8
 ```
 
-This will cause the forward and back mouse button to emulate pressing the <kbd>Ctrl</kbd>+<kbd><span class="fl-pop-key"></span></kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>. This is useful for switching workspaces very quickly while leaving your hand on the mouse.
+This will cause the forward and back mouse button to emulate pressing the <kbd>Ctrl</kbd>+<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>. This is useful for switching workspaces very quickly while leaving your hand on the mouse.
 
 ### Changes
 
@@ -115,7 +115,7 @@ killall xbindkeys
 xbindkeys
 ```
 
-By default xbindkeys does not start on reboot and you will need to add it using the <u>Startup Application Preferences</u>. 
+By default xbindkeys does not start on reboot and you will need to add it using the <u>Startup Application Preferences</u>.
 
 ![Startup Applications Pref](/images/custom-mouse-buttons/startup-applications-pref.png)
 

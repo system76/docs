@@ -22,7 +22,7 @@ The Ubuntu operating system provides all the features you would expect from a so
 
 Use the Launcher on the left hand side of the screen to start your favorite apps. You can switch between running apps by clicking on their icons. Right click on an icon in the Launcher to show a menu of actions. Actions include adding, removing application icons, opening new tabs, switching multiple windows of the same app and much more.
 
-Use the grid icon on the bottom of the launcher to list all of the installed applications. This screen can also be accessed by pressing <kbd><span class="fl-ubuntu"></span></kbd> + <kbd>A</kbd> or <kbd><span class="fl-pop-key"></span></kbd> + <kbd>A</kbd>.
+Use the grid icon on the bottom of the launcher to list all of the installed applications. This screen can also be accessed by pressing <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>A</kbd> or <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>A</kbd>.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-search.png)
 

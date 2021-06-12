@@ -48,13 +48,15 @@ export default {
   },
 
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
     '@system76/design/dist/minimal.common.css',
     '@system76/components/dist/index.common.css'
   ],
 
   plugins: [
     '~/plugins/components',
-    '~/plugins/custom-tags'
+    '~/plugins/custom-tags',
+    '~/plugins/font-awesome'
   ],
 
   buildModules: [

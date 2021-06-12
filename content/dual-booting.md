@@ -170,7 +170,7 @@ Once Pop!_OS is installed (and not encrypted), boot into Recovery mode by holdin
 
 Once Recovery mode has finished loading, select your language and keyboard layout, then select `Try Demo Mode` in the bottom left to exit the installer.
 
-Next, open GParted by searching for it in the Activities menu (<kbd><span class="fl-pop-key"></span></kbd>) or the Pop!_Shell launcher (<kbd><span class="fl-pop-key"></span></kbd> + <kbd>/</kbd>).
+Next, open GParted by searching for it in the Activities menu (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>) or the Pop!_Shell launcher (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>).
 
 If you're booted from Recovery mode on the only drive in the computer, GParted should automatically show the drive that Pop!_OS is installed to; otherwise, if GParted is showing a different drive (such as a flash drive), select the correct drive in the GParted -> Devices menu.
 

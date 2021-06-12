@@ -56,6 +56,8 @@ rsync -avxP \
 /path/to/directory/for/storing/backup
 ```
 
+> **NOTE:** Depending on your ISP/Cloud Provider or physical location. Upload speeds may vary or even be throttled. If possible, connect via Ethernet for a faster, more stable connection when transferring files.
+
 #### Installation
 
 To install <u>Deja Dup</u>, search for it in the <u>Pop!\_Shop</u>, <u>Ubuntu Software</u> or run this command:

@@ -19,7 +19,7 @@ section: software
 ## Install the needed package
 
 First let's open a terminal using either <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu)
- or <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd> (Pop_OS).
+ or <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd> (Pop_OS).
 
 Then run this command:
 

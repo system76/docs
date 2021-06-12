@@ -35,7 +35,7 @@ Once you've made a mount point, double click it to open it and ensure that it is
 
 ### Locate The Drive
 
-Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>/<kbd><span class="fl-pop-key"></span></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
+Press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
 
 ![Disks Application](/images/extra-drive/Step1.png)
 
@@ -47,7 +47,7 @@ If this is a new drive, and it is not formatted, it will need to be formatted be
 
 ### Open Extra Drive Mount Options
 
-Press the Super key <kbd><span class="fl-ubuntu"></span></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. Click on the Extra Drive Partition under "Volumes", then click on the Gear icon <i class="fa fa-cog"></i> to open the options menu for the Volume. Then click on **Edit Mount Options**.
+Press the Super key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. Click on the Extra Drive Partition under "Volumes", then click on the Gear icon <i class="fa fa-cog"></i> to open the options menu for the Volume. Then click on **Edit Mount Options**.
 
 ![Volume Options Menu](/images/extra-drive/Step2.png)
 

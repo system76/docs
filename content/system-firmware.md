@@ -123,7 +123,7 @@ If your system is running another Linux-based OS installed with an EFI System Pa
 - [Live Disk creation on Pop!_OS](/articles/pop-live-disk/)
 - [Live Disk creation on Other OS's](/articles/live-disk/)
 
-After creating the live disk, [access the boot menu](/articles/boot-menu/) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
+After creating the live disk, [access the boot menu](/articles/boot-menu/) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
 
 ```bash
 lsblk

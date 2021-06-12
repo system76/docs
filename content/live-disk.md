@@ -17,7 +17,7 @@ section: hardware-troubleshooting
 
 ---
 
-# Live Disk Creation (Other Operating Systems) 
+# Live Disk Creation (Other Operating Systems)
 
 # Contents
 
@@ -52,7 +52,7 @@ In order to install Pop!_OS or Ubuntu, we must first download the .iso image. Th
 
 In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use the Disks applicaton for Ubuntu and Etcher for Windows/MacOS.
 
-Press the <kbd><span class="fl-pop-key"></span></kbd>/<kbd><span class="fl-ubuntu"></span></kbd> key then type 'disks' to launch the Disks application.
+Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'disks' to launch the Disks application.
 
 ![Disks](/images/live-disk/disks.png)
 

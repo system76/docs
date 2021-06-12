@@ -55,7 +55,7 @@ Windows 10 can be downloaded from [here](https://www.microsoft.com/en-us/softwar
 
 ### Create Virtual Machine
 
-Once you have <u>VirtualBox</u> installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Super Key on your keyboard <kbd><span class="fl-ubuntu"></span></kbd>, <kbd><span class="fl-pop-key"></span></kbd> and then enter *virtualbox* in the search field.
+Once you have <u>VirtualBox</u> installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Super Key on your keyboard <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and then enter *virtualbox* in the search field.
 
 ![Opening VirtualBox through the Dash](/images/windows/step3.png)  
 

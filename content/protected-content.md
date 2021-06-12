@@ -65,7 +65,7 @@ sudo apt install ~/Downloads/google-chrome-stable_current_amd64.deb
 
 ### Run Chrome
 
-Press the Super Key <kbd><i class="fl-ubuntu"></i></kbd> button to open the Activities Overview, then search for <u>Chrome</u>:
+Press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> button to open the Activities Overview, then search for <u>Chrome</u>:
 
 ![Searching for Chrome](/images/flash/step6.png)
 

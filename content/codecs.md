@@ -28,7 +28,7 @@ Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't inclu
 
 ### Open A Terminal
 
-Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>, and type the word *terminal*, then press <kbd>Enter</kbd>.  A <u>Terminal</u> window should open up.
+Press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, and type the word *terminal*, then press <kbd>Enter</kbd>.  A <u>Terminal</u> window should open up.
 
 ### Install Packages
 

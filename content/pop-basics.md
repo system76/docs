@@ -25,7 +25,7 @@ The Pop!_OS operating system provides all the features you would expect from a m
 
 Welcome to the Pop!_OS desktop! By default, it's clean and ready for action.
 
-To navigate within the desktop, either click the <u>Activities</u> button in the top left, or press the <kbd><span class="fl-pop-key"></span></kbd> key on the keyboard.  This will show an overview of all open windows and provide a text box to search your system.
+To navigate within the desktop, either click the <u>Activities</u> button in the top left, or press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> key on the keyboard.  This will show an overview of all open windows and provide a text box to search your system.
 
 ![Activities Menu](/images/pop-basics/activities-view.png)
 

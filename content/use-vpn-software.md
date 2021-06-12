@@ -42,7 +42,7 @@ Open a <u>Terminal</u> window to install the actual package as the .deb file tha
 
 ### Pop!_OS
 
-Press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
+Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
 ### Ubuntu
 
@@ -73,7 +73,7 @@ From this window we can see our Upload and Download speeds including the load th
 
 ### Pop!_OS
 
-Press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
+Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
 ### Ubuntu
 

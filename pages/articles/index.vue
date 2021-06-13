@@ -21,7 +21,7 @@
 
     <nav class="max-w-7xl px-4 py-24 mx-auto">
       <ul>
-        <ul class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12">
+        <ul class="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-6">
           <article-listing
             v-for="article in articles"
             :key="article.path"

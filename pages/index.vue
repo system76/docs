@@ -2,9 +2,11 @@
   <main>
     <header class="w-full bg-cover bg-center">
       <nuxt-img
-        src="/images/website/robot-type.png"
         alt="Buy a computer - Don't talk to one. Lifetime support from 100% real humans"
         class="px-4 py-8 lg:py-10 mx-auto"
+        height="440"
+        src="/images/website/robot-type.png"
+        width="1207"
       />
       <h1 class="hidden">
         Buy a computer - Don't talk to one. Lifetime support from 100% real humans
@@ -71,6 +73,98 @@
     </section>
 
     <section
+      id="search"
+      class="max-w-4xl mx-auto my-16 px-4"
+    >
+      <div class="relative">
+        <!--
+          This whole dropdown search can be upgraded to Headless UI once
+          Nuxt moves to Vue 3.0
+        -->
+        <form
+          class="relative flex items-center pr-4 border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-white focus-within:ring-orange-500 focus-within:shadow-sm"
+          novalidate
+          role="search"
+          @submit.prevent="$fetch"
+        >
+          <input
+            id="search-box"
+            v-model="search"
+            type="search"
+            aria-autocomplete="list"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="none"
+            spellcheck="false"
+            class="flex-auto -mr-9 appearance-none bg-transparent pl-4 pr-12 py-4 rounded-md text-md font-medium text-gray-700 focus:outline-none"
+            placeholder="Search..."
+            aria-label="Search articles"
+            :aria-expanded="search !== ''"
+            aria-haspopup="true"
+            aria-controls="search-results"
+            @keyup.passive="debouncedFetch"
+            @blur.passive="debouncedFetch"
+          >
+
+          <font-awesome-icon icon="search" />
+        </form>
+
+        <div
+          v-show="search !== ''"
+          id="search-results"
+          aria-labelledby="search-box"
+          aria-orientation="vertical"
+          class="origin-top absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          role="listbox"
+          tabindex="-1"
+        >
+          <div class="py-1" role="none">
+            <span
+              v-if="$fetchState.error != null"
+              class="text-gray-400 block px-4 py-2 text-sm"
+              role="option"
+              tabindex="-1"
+            >
+              An error occured while fetching search results
+            </span>
+            <span
+              v-else-if="results.length === 0 && $fetchState.pending"
+              class="text-gray-400 block px-4 py-2 text-sm"
+              role="option"
+              tabindex="-1"
+            >
+              Loading...
+            </span>
+            <span
+              v-else-if="results.length === 0"
+              class="text-gray-400 block px-4 py-2 text-sm"
+              role="option"
+              tabindex="-1"
+            >
+              No Results
+            </span>
+
+            <nuxt-link
+              v-for="article in results"
+              v-else
+              :key="article.slug"
+              :to="`/articles/${article.slug}`"
+              class="text-gray-700 block px-4 py-2 group hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+              role="option"
+            >
+              <div class="text-md leading-6 font-semibold group-hover:text-gray-900 group-hover:underline group-focus:text-gray-900 group-focus:underline">
+                {{ article.title }}
+              </div>
+              <div class="text-sm mt-1 text-sm text-gray-400">
+                {{ article.description }}
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
       v-for="listing in listings"
       :key="listing.id"
       class="max-w-7xl mx-auto my-16 px-4 divide-y-2 divide-gray-100 sm:my-24 sm:px-6 md:my-24 lg:px-8 xl:my-32"
@@ -131,8 +225,9 @@
 </template>
 
 <script>
-export default {
+import throttle from 'lodash/throttle'
 
+export default {
   asyncData: async ({ $content }) => ({
     articles: await $content()
       .only(['title', 'description', 'keywords', 'section', 'slug'])
@@ -140,7 +235,11 @@ export default {
       .sortBy('title')
       .fetch()
   }),
+
   data: () => ({
+    search: '',
+    results: [],
+
     listings: [{
       title: 'Getting Help',
       section: 'getting-help'
@@ -208,12 +307,30 @@ export default {
     }]
   }),
 
+  async fetch () {
+    if (this.search === '') {
+      this.results = []
+    } else {
+      this.results = await this.$content()
+        .only(['title', 'description', 'slug'])
+        .limit(10)
+        .search(this.search)
+        .fetch()
+    }
+  },
+
   computed: {
     articlesForSection () {
       return section => this.articles.filter((article) => {
         return (article.section === section)
       })
     }
+  },
+
+  methods: {
+    debouncedFetch: throttle(function () {
+      this.$fetch()
+    }, 400)
   }
 }
 </script>

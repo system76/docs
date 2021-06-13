@@ -187,9 +187,9 @@
 
       <div
         v-if="listing.section != null && articlesForSection(listing.section).length > 0"
-        class="mt-8 pt-8"
+        class="mt-6 pt-6"
       >
-        <ul class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12">
+        <ul class="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-6">
           <article-listing
             v-for="article in articlesForSection(listing.section)"
             :key="article.path"
@@ -201,7 +201,7 @@
       <div
         v-for="nestedListing in listing.listings"
         :key="nestedListing.section"
-        class="mt-8 pt-8"
+        class="mt-6 pt-6"
       >
         <h3
           :id="nestedListing.id"
@@ -211,7 +211,7 @@
         </h3>
 
         <div class="mt-2 pt-6">
-          <ul class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12">
+          <ul class="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-6">
             <article-listing
               v-for="article in articlesForSection(nestedListing.section)"
               :key="article.path"

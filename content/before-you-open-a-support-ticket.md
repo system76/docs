@@ -68,8 +68,8 @@ We have help articles on the Recovery Partition and how to access the Boot Menu 
 NOTE: The following instructions can be used in either Ubuntu or Pop!\_OS.
 
 You can open the terminal by clicking Activities in the upper-left corner and searching for "Terminal", by pressing
-<keyboard-key><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></keyboard-key>, or
-<keyboard-key><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></keyboard-key>
+<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, or
+<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>
 When you run the first command with "sudo" it will ask you to enter your password.
 Typing your password will not show anything in the Terminal window. That is normal and for security.
 Just enter your password as you normally would, and then hit <kbd>ENTER</kbd>. You'll also need to hit <kbd>ENTER</kbd> after each command.

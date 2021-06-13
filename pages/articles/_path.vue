@@ -1,13 +1,47 @@
 <template>
-  <main class="px-4">
-    <nuxt-content
-      class="prose prose-sm max-w-screen sm:prose sm:max-w-screen-sm lg:prose-lg lg:max-w-screen-lg mx-auto"
-      :document="article"
-    />
+  <main>
+    <article>
+      <header class="bg-blue-500 text-white">
+        <div class="max-w-7xl mx-auto py-3 px-2">
+          <div class="flex items-center justify-between flex-wrap">
+            <div class="w-0 flex-1 flex items-center">
+              <nuxt-link
+                to="/"
+                class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg"
+              >
+                <font-awesome-icon icon="arrow-left" />
+              </nuxt-link>
 
-    <h6 class="text-center mx-auto">
-      Article last modified: {{ updatedAt }}
-    </h6>
+              <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:font-extralight md:text-3xl">
+                {{ article.title }}
+              </h1>
+            </div>
+
+            <div class="flex-shrink-0 ml-3">
+              <a
+                :href="`https://github.com/system76/docs/edit/master/_articles/${article.slug}.md`"
+                class="flex items-center p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg md:px-3"
+                target="_blank"
+              >
+                <font-awesome-icon :icon="['fab', 'github']" />
+                <span class="hidden md:inline md:ml-2">Edit On GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nuxt-content
+        class="prose prose-sm max-w-screen my-6 sm:prose sm:max-w-screen-sm lg:prose-lg lg:max-w-screen-lg lg:my-12 mx-auto px-4"
+        :document="article"
+      />
+
+      <h6
+        class="text-center mx-auto my-4 px-4"
+      >
+        Article last modified: <time :datetime="article.updatedAt">{{ updatedAt }}</time>
+      </h6>
+    </article>
   </main>
 </template>
 

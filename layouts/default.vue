@@ -6,6 +6,10 @@
           Special Offers
         </a>
       </template>
+
+      <template #local>
+        <span :class="$style.hidden" />
+      </template>
     </sys-omnibar>
 
     <sys-headerbar
@@ -42,5 +46,12 @@ body,
 #__nuxt,
 #__layout {
   min-height: 100vh;
+}
+</style>
+
+<style module>
+/** This fixes an issue with the specials offers button hidden on tablet size **/
+.hidden {
+  display: none !important;
 }
 </style>

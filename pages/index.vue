@@ -74,7 +74,7 @@
 
     <section
       id="search"
-      class="max-w-4xl mx-auto my-16 px-4"
+      class="max-w-4xl mx-auto my-8 px-4"
     >
       <div class="relative">
         <!--
@@ -167,7 +167,7 @@
     <section
       v-for="listing in listings"
       :key="listing.id"
-      class="max-w-7xl mx-auto my-16 px-4 divide-y-2 divide-gray-100 sm:my-24 sm:px-6 md:my-24 lg:px-8 xl:my-32"
+      class="max-w-7xl mx-auto my-8 px-4 divide-y-2 divide-gray-100 sm:my-9 sm:px-6 md:my-10 lg:px-8 xl:my-12"
     >
       <div>
         <h2

@@ -22,6 +22,7 @@
     "@nuxt/image": "^0.4.14",
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/tailwindcss": "^4.0.1",
+    "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",

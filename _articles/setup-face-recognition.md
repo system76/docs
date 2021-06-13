@@ -103,6 +103,21 @@ To make howdy more forgiving, rise that number a bit, to 3.8, for example. Be aw
 When that's done, exit and save the config file by pressing <kbd>ctrl</kbd>+<kbd>X</kbd>, <kbd>Y</kbd> and then <kbd>enter</kbd>.
 Now Howdy is more likely to identify you in different conditions.
 
+### Removing a saved face print.
+You can delete existing face print you added. For that, you will need to get a list of all prints you got:
+```
+sudo howdy list
+```
+You might be requested to enter your sudo password and press <kbd>enter</kbd>.
+After you decide what print to delete, memorize it's ID. A number on the left.
+Now all you need to delete it from Howdy is to execute this little command in the terminal:
+```
+sudo howdy remove ID
+```
+But replacing ID with number you memorized a step before.
+
+
+
 ---
 
 This article was contributed by [Vega](https://github.com/smth-0).

@@ -1,0 +1,34 @@
+{
+  "name": "@system76/docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nuxt dev",
+    "build": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@nuxt/content": "^1.14.0",
+    "@system76/components": "^1.2.1",
+    "@system76/design": "^5.4.0",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.4.14",
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.11.0",
+    "lodash": "^4.17.21",
+    "postcss": "^8.3.2"
+  }
+}

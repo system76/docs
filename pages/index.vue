@@ -35,7 +35,7 @@
 
         <nuxt-link
           class="inline-block my-2 mx-2 bg-gray-100 text-black rounded px-4 py-2 uppercase font-serif tracking-wider hover:bg-gray-200 focus:bg-gray-200"
-          to="#troubleshooot"
+          to="#troubleshoot"
         >
           Troubleshoot
         </nuxt-link>

@@ -32,9 +32,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npx nuxt generate
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: production
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

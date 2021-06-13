@@ -4,20 +4,16 @@
       <div class="max-w-7xl mx-auto py-3 px-4">
         <div class="flex items-center justify-between flex-wrap">
           <div class="w-0 flex-1 flex items-center">
-            <h1 class="my-0 font-sans italic text-lg truncate md:font-extralight md:text-3xl">
-              Support Docs
-            </h1>
-          </div>
-
-          <div class="flex-shrink-0 ml-3">
-            <a
-              href="https://github.com/system76/docs/tree/master/_articles"
-              class="flex items-center p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg md:px-3"
-              target="_blank"
+            <nuxt-link
+              to="/"
+              class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg"
             >
-              <font-awesome-icon :icon="['fab', 'github']" />
-              <span class="hidden md:inline md:ml-2">View on GitHub</span>
-            </a>
+              <font-awesome-icon icon="arrow-left" />
+            </nuxt-link>
+
+            <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:font-extralight md:text-3xl">
+              Support Articles
+            </h1>
           </div>
         </div>
       </div>

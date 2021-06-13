@@ -1,3 +1,5 @@
+import githubContributors from './modules/github-contributors'
+
 export default {
   target: 'static',
 
@@ -70,5 +72,9 @@ export default {
 
   loading: {
     color: '#6ACAD8'
+  },
+
+  hooks: {
+    'content:file:beforeInsert': githubContributors
   }
 }

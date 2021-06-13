@@ -32,7 +32,7 @@
       </header>
 
       <nuxt-content
-        class="prose prose-sm max-w-screen my-6 sm:prose sm:max-w-screen-sm lg:prose-lg lg:max-w-screen-lg lg:my-12 mx-auto px-4"
+        class="prose prose-sm max-w-screen my-6 sm:prose sm:max-w-screen-sm md:my-12 lg:prose-lg lg:max-w-screen-lg mx-auto px-4"
         :document="article"
       />
 

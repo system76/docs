@@ -116,7 +116,23 @@ sudo howdy remove ID
 ```
 But replacing ID with number you memorized a step before.
 
-
+### Uninstalling Howdy.
+If you, for some reason, want to uninstall Howdy.
+Open a terminal window by pressing <kbd>super</kbd>+<kbd>T</kbd> or searching for a Terminal app in your applications menu. Type in:
+```
+sudo howdy clear
+```
+And press enter to delete all face prints. Entering sudo password may be required.
+Then, execute:
+```
+sudo apt purge howdy
+```
+To delete Howdy itself.
+And lastly, remove Howdy PPA repository: 
+```
+sudo add-apt-repository ppa:boltgolt/howdy --remove
+```
+After that's done, there should be nothing left of Howdy on your computer.
 
 ---
 

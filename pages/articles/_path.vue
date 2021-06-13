@@ -24,7 +24,7 @@
                 target="_blank"
               >
                 <font-awesome-icon :icon="['fab', 'github']" />
-                <span class="hidden md:inline md:ml-2">Edit On GitHub</span>
+                <span class="hidden md:inline md:ml-2">Edit on GitHub</span>
               </a>
             </div>
           </div>

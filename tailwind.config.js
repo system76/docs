@@ -15,6 +15,7 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      hyperlink: '#AF5C02',
 
       gray: {
         50: '#f6f6f6',
@@ -152,6 +153,10 @@ module.exports = {
           css: {
             maxWidth: null,
 
+            a: {
+              color: theme('colors.hyperlink')
+            },
+
             kbd: {
               backgroundColor: theme('colors.gray.800'),
               borderRadius: theme('borderRadius.DEFAULT'),
@@ -160,6 +165,30 @@ module.exports = {
               lineHeight: '1',
               margin: '0',
               padding: theme('spacing.2')
+            },
+
+            h1: {
+              fontWeight: theme('fontWeight.normal')
+            },
+
+            h2: {
+              fontWeight: theme('fontWeight.light')
+            },
+
+            h3: {
+              fontWeight: theme('fontWeight.light')
+            },
+
+            h4: {
+              fontWeight: theme('fontWeight.light')
+            },
+
+            h5: {
+              fontWeight: theme('fontWeight.light')
+            },
+
+            h6: {
+              fontWeight: theme('fontWeight.light')
             },
 
             '> ul': {

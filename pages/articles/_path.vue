@@ -73,7 +73,7 @@
 
           <div class="flex mt-4 md:mt-0 md:ml-4">
             <a
-              :href="`https://github.com/system76/docs/edit/master/_articles/${article.slug}.md`"
+              :href="`https://github.com/system76/docs/edit/master/content/${article.slug}.md`"
               class="flex items-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500 md:text-lg md:px-3"
               target="_blank"
             >

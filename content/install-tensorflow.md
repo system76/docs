@@ -15,7 +15,7 @@ section: software
 
 # Tensorman
 
-If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/articles/use-tensorman/) for managing TensorFlow containers.
+If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/articles/use-tensorman) for managing TensorFlow containers.
 
 ## Install on Pop!_OS 20.04 LTS and Pop!_OS 20.10
 
@@ -30,7 +30,7 @@ sudo apt install tensorflow-cuda-latest
 This will install the following packages:
 
 ```bash
-system76-cuda-10.2 system76-cudnn-10.2 
+system76-cuda-10.2 system76-cudnn-10.2
 ```
 
 When the package with '-latest' is installed then when a new version if packaged and released an update will be available. When the system is updated these packages will be updated as well.
@@ -57,8 +57,8 @@ sudo apt update
 
 *These packages have been tested with the System76 NVIDIA driver only.
 
-The following [article](https://support.system76.com/articles/system76-driver/) will go over installing the System76 NVIDIA driver.
+The following [article](/articles/system76-driver) will go over installing the System76 NVIDIA driver.
 
 ## Using TensorFlow
 
-The following [article](https://support.system76.com/articles/use-tensorflow/) will go over using TensorFlow.
+The following [article](/articles/use-tensorflow) will go over using TensorFlow.

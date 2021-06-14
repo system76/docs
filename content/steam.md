@@ -74,6 +74,12 @@ Now, let's install protonup via pip.
 pip3 install protonup
 ```
 
+The `protonup` command will be available after a reboot, or you can run the below command to add it to your `PATH` for immediate use.
+
+```bash
+source ~/.profile
+```
+
 Now, after <u>Steam</u> is installed, you can run protonup in terminal, and it will grab the newest ProtonGE build. This tool will also pull hotfixes. Below is an example of the tools output:
 
 ```bash

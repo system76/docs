@@ -100,7 +100,7 @@ Laptop -> Docking Station -> Monitor 1 -> DisplayPort Cable or Thunderbolt Cable
 We have tested the following docks:
  - [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] <sup>1,2,3</sup>
    - All features work.
- 
+
 ### Community-tested docks:
 
 Community members have reported that the following docks work with our products:
@@ -115,7 +115,7 @@ Community members have reported that the following docks work with our products:
    - Requires extra configuration for suspend/resume to work.
  - [Lenovo ThinkPad Thunderbolt 3 Workstation Dock Gen 2](https://www.lenovo.com/us/en/accessories-and-monitors/docking/universal-cable-docks-thunderbolt/TBT-WS-Dock-Gen-2/p/40ANY230US) [[community-tested](https://github.com/system76/docs/pull/517) on an Intel sytem] <sup>1</sup>
  - [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
-   - Ethernet and DVI ports not tested. 
+   - Ethernet and DVI ports not tested.
  - [Plugable UD-ULTCDL Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
 
 ### For Intel systems
@@ -145,7 +145,7 @@ To uninstall the DisplayLink driver this command will be used:
 sudo displaylink-installer uninstall
 ```
 
-For installing the NVIDIA Driver that we provide you can use this support article: [System76 NVIDIA Driver](http://support.system76.com/articles/system76-driver/).
+For installing the NVIDIA Driver that we provide you can use this support article: [System76 NVIDIA Driver](/articles/system76-driver).
 
 <sup>1</sup> Does not need the DisplayLink Driver installed to work.  
 <sup>2</sup> On the Gazelle 15 (gaze15), requires GTX 1660 Ti graphics for video output via DisplayPort over USB-C.  

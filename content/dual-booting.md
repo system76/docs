@@ -335,7 +335,7 @@ Depending on how you installed Windows and which firmware your computer is runni
 
 ### Repairing the Pop!_OS Bootloader
 
-If Pop!_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](https://support.system76.com/articles/bootloader/) for information on repairing the Pop!_OS bootloader.
+If Pop!_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](/articles/bootloader) for information on repairing the Pop!_OS bootloader.
 
 ### Fixing the System Clock
 

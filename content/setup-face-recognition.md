@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Setup facial recognition for authentication (howdy).
-description: 
+description:
   Want to forever forget about typing in a sudo password?
 keywords:
   - howdy
@@ -16,11 +16,11 @@ section: community
 # Facial recognition for authentication (howdy).
 
 In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open source face authentication tool.
-Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](https://support.system76.com/articles/webcam/).
+Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/articles/webcam).
 
 
 ### Installation on Pop!_OS, Ubutnu or any other Ubuntu based distribution.
-  
+
 Firstly, we will need a terminal. You can open it by pressing <kbd>super</kbd>+<kbd>T</kbd> on your keyboard or searching for terminal app in your application menu.
 
 Then, adding a Howdy PPA is needed so our system knows where to get the app:
@@ -60,7 +60,7 @@ S: Secure.
 The safest option, but will take much longer to authenticate you.
 
 You can always change this setting in the config.
-What profile would you like to use? [f/b/s]: 
+What profile would you like to use? [f/b/s]:
 ```
 After that Howdy will download and install required dependencies for face recognition.
 
@@ -82,7 +82,7 @@ Open a terminal window if you don't have one already and execute:
 ls /dev | grep "video."
 ```
 This will show you all video inputs you have on your system.
-Now, we need to test what of them work for you. 
+Now, we need to test what of them work for you.
 For that, we can use `ffplay` command. Use it as such:
 ```bash
 ffplay /dev/INPUT
@@ -117,7 +117,7 @@ and press <kbd>enter</kbd>. That will open a configuration file for Howdy in CLI
 Find an option called certainty level. It should look something like that:
 > certainty = 2.8
 
-To make howdy more forgiving, rise that number a bit, to 3.8, for example. Be aware, values over 5 are not reccommended. 
+To make howdy more forgiving, rise that number a bit, to 3.8, for example. Be aware, values over 5 are not reccommended.
 When that's done, exit and save the config file by pressing <kbd>ctrl</kbd>+<kbd>X</kbd>, <kbd>Y</kbd> and then <kbd>enter</kbd>.
 Now Howdy is more likely to identify you in different conditions.
 
@@ -146,7 +146,7 @@ Then, execute:
 sudo apt purge howdy
 ```
 To delete Howdy itself.
-And lastly, remove Howdy PPA repository: 
+And lastly, remove Howdy PPA repository:
 ```bash
 sudo add-apt-repository ppa:boltgolt/howdy --remove
 ```

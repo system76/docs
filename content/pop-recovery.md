@@ -52,7 +52,8 @@ This will show you the name of the main internal drive, which will have 4 partit
 Next, run this command:
 
 | **SATA Drives**           | **NVMe Drives**                |
-| ```sudo mount /dev/sda3 /mnt``` | ```sudo mount /dev/nvme0n1p3 /mnt``` |
+|:-------------------------:|:------------------------------:|
+| sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  
 
@@ -60,8 +61,9 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-| **SATA Drives**                                    | **NVMe Drives**                                         |
-| ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
+| **SATA Drives**                                    | **NVMe Drives**                                   |
+|:--------------------------------------------------:|:-------------------------------------------------:|
+| sudo cryptsetup luksOpen /dev/sda3 cryptdata       | sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata |
 
 ```bash
 sudo lvscan
@@ -82,8 +84,9 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
-| **SATA Drives**                                                          | **NVMe Drives**                                                          |
-| ```sudo mount /dev/sda1 /mnt/boot/efi```                                 | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```                            |
+| **SATA Drives**                       | **NVMe Drives**                          |
+|:-------------------------------------:|:----------------------------------------:|
+| sudo mount /dev/sda1 /mnt/boot/efi    | sudo mount /dev/nvme0n1p1 /mnt/boot/efi  |
 
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B $i /mnt/$i; done

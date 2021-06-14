@@ -1,41 +1,21 @@
 ---
 
-name: CI
+name: Deploy
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+  push:
+    branches:
+      - master
 
 jobs:
-  Lint:
+  Deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
-      - name: Install
-        run: npm ci
-
-      - name: Lint
-        run: npm run lint
-
-  Build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
+      - name: Setup
         uses: actions/setup-node@v2
         with:
           node-version: 14
@@ -52,4 +32,14 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npx nuxt generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: production
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          cname: support.system76.com
+          github_token: ${{ secrets.RELEASE_TOKEN }}
+          publish_dir: ./dist

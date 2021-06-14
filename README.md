@@ -1,30 +1,35 @@
 # System76 Support Docs
 
-The docs system is powered by [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). If you don't know what Markdown is (or need a refresher), take a minute to look over [the basics](https://help.github.com/articles/markdown-basics/).
+The docs system is powered by [NuxtJS][1] with [`@nuxtjs/content`][2],
+[tailwindcss][3], and some other packages. It uses Markdown in the `/content/`
+folder to render every article. If you don't know what Markdown is (or need a
+refresher), take a minute to look over [the basics][4].
 
-It is also powered by GitHub itself. If you know how to use git locally with GitHub, feel free to update the docs that way. Otherwise, we'll assume you will be using the GitHub website to update the docs.
+## Adding Articles
 
+All articles are stored as Markdown files under [`/content/`][5]. For example,
+take a look at the [`/content/upgrade-pop.md`][6] file.
 
-## 1. The Basics
+To create a new support article, click the **+** icon at the top of the
+[`/content/`][5] page.
 
-The docs articles are stored as Markdown files under [/_articles/](https://github.com/system76/docs/tree/gh-pages/_articles). For example, take a look at [/_articles/upgrade-pop.md](https://github.com/system76/docs/blob/gh-pages/_articles/upgrade-pop.md). You can use the GitHub website itself to navigate to, create, edit, and delete pages.
+Name the file something short but descriptive. This will be part of the URL, for
+example `server-setup.md` will become
+https://support.system76.com/articles/server-setup. Don't use spaces; instead,
+use dashes (`-`).
 
-
-### Create an article
-
-To create a new support article, click the **+** icon at the top of the /\_articles/ page.
-
-\> docs / \_articles / **+**
-
-Name the file something short but descriptive (this will be the part of the URL after `support.system76.com/articles/`) with the `.md` filetype (i.e. `server-setup.md`). Don't use spaces; instead, use dashes (`-`). Then include the following (called **frontmatter**) at the very top of the file (including the `---`es):
+Then include the following text at the very top of the file (including the
+`---`es).
 
 ```yaml
 ---
-layout: article
 title: Do the thing
-description: >
-  A more descriptive sentence or two about the page; will show up in search engines and on the support home page.
 image: https://system76.com/images/foo.jpg
+
+description: >
+  A more descriptive sentence or two about the page; will show up in search
+  engines and on the support home page.
+
 keywords:
   - List
   - of
@@ -33,78 +38,112 @@ keywords:
   - this
   - page
   - System76
+
 hidden: true
-section: 
+section:
 ---
 ```
 
 A couple of notes:
 
-- The `image` is a full URL to an image and will show up on social media, when shared in Slack, etc.
+- The `image` is a full URL to the image and will show up on social media,
+when shared in Slack, etc.
 
-After that, it's just the contents of the article in markdown. Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other markdown to make the page look awesome.
+- After the `---` line, you can type the contents of the article in markdown.
+Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other
+markdown to make the page look awesome.
 
-For keyboard shortcuts, use the HTML tag `<kbd>`, i.e. `<kbd>Alt</kbd>+<kbd>F4</kbd>`.
+- For keyboard shortcuts, use the HTML tag `<kbd>`, i.e.
+`<kbd>Alt</kbd>+<kbd>F4</kbd>`.
 
-The default publication status is set to `true`, which is hidden. To make your 
-article visible, change this to `false`. There is no section included by 
-default. To make your article visible within a section, add it.
+- The default publication status is set to `hidden: true`. To make your article
+visible, change the `hidden: true` to `hidden: false` in the top of the file.
 
-When you're all done, fill out the "Commit new file" form at the bottom with the description of your changes and press the "Commit changes" button.
+- To make your article visible within a section, write the section name in the
+`section: ` line. For instance, to add an article to the "Switching to Linux"
+section, the line should be `section: switching`.
 
+When you're all done, fill out the "Commit new file" form at the bottom with the
+description of your changes and press the "Commit changes" button.
 
-### Edit an article
+## Editing an Article
 
-To edit or update an article, click on the article's file in [GitHub](https://github.com/system76/docs/tree/gh-pages/_articles). Then click the pencil "Edit this file" icon on the top-right. You can now edit the contents right on GitHub. To see what it will look like before you save it, click the "Preview changes" tab at the top.
+To edit or update an article, click on the article's file in [GitHub][5]. Then
+click the pencil "Edit this file" icon on the top-right. You can now edit the
+contents right on GitHub. To see what it will look like before you save it,
+click the "Preview changes" tab at the top.
 
-When you're all done, fill out the "Commit changes" form at the bottom with the description of your changes and press the "Commit changes" button.
+When you're all done, fill out the "Commit changes" form at the bottom with the
+description of your changes and press the "Commit changes" button.
 
+## Sections
 
-### Index page
+Articles will only show up under the section they are configured for. If you
+set `hidden: true` in an article, it will not be visible on any of the index
+pages, and you will need to know the direct URL to view it.
 
-Articles will only show up under the section they are configured for. To prevent an article from showing on the index page, set `hidden: true` in its frontmatter. To get it to show up under **Frequently Answered Questions**, set `section: faq` in its frontmatter. To get it to show up under **Known Solutions**, set `section: solutions`, and to put it in the **Articles** section, set `section: articles`.
+If you want an article to **not** show up on the index page, but be visible
+on `/articles`, set `hidden: false` and remove the `section: ` line from the
+article.
 
+To get an article to show up under **Frequently Answered Questions**, set
+`section: faq`.
 
-## 2. Files, Images, & Links
+To get an article to show up under **Known Solutions**, set
+`section: solutions`.
 
-### Files
+To get an article to show up under **Articles**, set `section: articles`.
 
-To store files (i.e. BIOS updates), put them in the `/files` folder. If it's a BIOS/firmware update, it goes in the `/files/firmware` folder and should be named like `model-version.bio.zip`, i.e. `meer1-0358.bio.zip`.
+## Files, Images, and Links
 
+To store files (i.e. BIOS updates), put them in the `/static/files` folder. If
+it's a BIOS/fireware update, it goes in the `/static/files/firmware` folder and
+should be named like `model-version.bio.zip`, i.e. `meer1-0358.bio.zip`.
 
-### Images & Links
+Anything in the `static/` folder will be available at the base URL. For
+instance, `/static/files/firmware/meer1-0358.bio.zip` will be downloadable at
+https://support.system76.com/files/firmware/meer1-0358.bio.zip.
 
-When linking to files or images, prepend the link with `{{site.baseurl}}`, i.e. `{{site.baseurl}}/files/firmware/meer1-0358.bio.zip`. This ensures links continue to work even if we move the docs site elsewhere.
+When linking to files, please use the absolute path, i.e.
+`/files/firmware/meer1-0358.bio.zip`.
 
+## Icons
 
-## 3. More advanced stuff
-
-The Ubuntu logo can be included in a doc using the following span:
+The Ubuntu logo can be included in a doc using the following HTML tag:
 
 ```html
-<span class="fl-ubuntu-inverse"></span>
+<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>
 ```
 
-You can embed this in other Markdown and Tags, for example, you can create an Ubuntu (Super) key:
+You can embed this in other Markdown and Tags, for example, you can create an
+Pop!_OS (Super) key:
 
 ```html
-<kbd><span class="fl-ubuntu-inverse"></span></kbd>
+<kbd>
+  <font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon>
+</kbd>
 ```
 
+## Local Development
 
-### Local Development
+This site is built with [NuxtJS][1] and [`@nuxtjs/content`][2]. To get started,
+you will need to clone this repository to your local computer.
 
-To run a local copy of the site to see changes without pushing, install Ruby, Nodejs, and Bundler (for more info, see [this GitHub Documentation](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)):
+Next, you will need to setup `node` `14 <=` and `npm`. The [nodejs website][7]
+has great documentation on how to do this.
 
-```shell
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -           # Add stable NodeJS repo
-sudo apt install -y build-essential nodejs ruby ruby-dev zlib1g-dev      # Install dev tools, NodeJS, Rudy, and zlib
-sudo gem install bundler                                                 # Install Bundler to manage site dependencies
-bundle install                                                           # Install gems to run Jekyll
-```
+After that, you can run `npm ci` to install the needed packages, and `npm start`
+to start the development site. You will then see a `Listening:
+http://localhost:3000/` line in your console showing where you can access the
+development site.
 
-Then run jekyll:
+To deploy changes, simply make a PR to the [`system76/docs` GitHub
+repository][5] and once it's merged, it will be deployed to the live site!
 
-```shell
-bundle exec jekyll serve # Run Jekyll with Bundler
-```
+[1]: https://nuxtjs.org/
+[2]: https://content.nuxtjs.org/
+[3]: https://tailwindcss.com/
+[4]: https://help.github.com/articles/markdown-basics/
+[5]: https://github.com/system76/docs/tree/master/content
+[6]: https://github.com/system76/docs/blob/master/content/upgrade-pop.md
+[7]: https://nodejs.org/en/download/package-manager/

@@ -15,7 +15,7 @@ section: software-troubleshooting
 
 # Disaster Data Recovery
 
-This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](https://support.system76.com/articles/login-loop-pop/) may be helpful instead.
+This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](/articles/login-loop-pop) may be helpful instead.
 ## If you can't boot your installed OS
 
 If you are not able to boot into your installed OS, then we will want to boot from a live disk. If you have Pop!\_OS installed we can use the Pop!\_OS Recovery Partition.
@@ -30,7 +30,7 @@ We do not need to chroot into the installed OS to back up data, only mount the O
 
 ![Top Left Menu](/images/disaster-recovery/Dialog.png)
 
-Use the top-right menu (as shown above) to connect to your Wi-Fi once booted into the live disk. 
+Use the top-right menu (as shown above) to connect to your Wi-Fi once booted into the live disk.
 
 ### Mount the installed OS
 
@@ -39,7 +39,7 @@ Then copy and paste the encryption commands (if the OS is encrypted) and the mou
 
 > **NOTE:** If you own System76 hardware and/or have a System76 Account, this will also allow you to access Support Tickets, copy/paste commands from those tickets or upload log files, etc.
 
-## Software 
+## Software
 
 Once the drive is mounted, we can install software to back up files.
 ### Deja Dup
@@ -48,7 +48,7 @@ Once the drive is mounted, we can install software to back up files.
 
 ### Rsync
 
-[rsync](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories) is a popular command-line tool to copy data while keeping the permissions. It is useful if the system is powering down or if you want a command-line tool to copy the files. 
+[rsync](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories) is a popular command-line tool to copy data while keeping the permissions. It is useful if the system is powering down or if you want a command-line tool to copy the files.
 
 ```bash
 rsync -avxP \
@@ -82,7 +82,7 @@ On the **Storage location** page, you can configure the location where your back
 
 ## Hardware
 
-An external or internal drive can be used as a local backup location. 
+An external or internal drive can be used as a local backup location.
 
 ### External
 
@@ -93,12 +93,12 @@ The specs below offer an idea on what to look for when purchasing external stora
 
 ### Internal
 
-If your system included a second drive beside the OS drive, we have this [article](/articles/extra-drive/) that goes over setting up the drive to auto-mount once the OS is either repaired or reinstalled. 
+If your system included a second drive beside the OS drive, we have this [article](/articles/extra-drive/) that goes over setting up the drive to auto-mount once the OS is either repaired or reinstalled.
 If we have the installed OS mounted in the live disk open the <u>Files</u> application then go to ***Other Locations*** to access the secondary drive. Unless you've changed the name of your drive, System76 systems ship with secondary drives labelled "Extra Drive" or "Extra Drive #."
 
 #### Restoring Your Data
 
-Once we have our data backed up we can reinstall the OS. This [article](https://support.system76.com/articles/install-pop/) goes over the usual install process whether you're intalling from Recovery or a Live Disk:
+Once we have our data backed up we can reinstall the OS. This [article](/articles/install-pop) goes over the usual install process whether you're intalling from Recovery or a Live Disk:
 
 Now that we reinstalled the OS we can start restoring our data. To restore your data with Deja Dup, select the **Overview** page, then click the **Restore...** button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.
 
@@ -115,7 +115,7 @@ If signs are pointing to the drive itself being the issue, and your files are co
 
 # Future Steps
 
-Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help. 
+Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help.
 
 > **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two (2) copies on-site, and one (1) copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
 

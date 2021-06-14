@@ -15,7 +15,7 @@ section: network-troubleshooting
 
 # Important Notes About Bluetooth
 
-Bluetooth is a bit odd. 
+Bluetooth is a bit odd.
 There are a lot of factors that go into whether Bluetooth devices work together as expected.
 
 
@@ -54,26 +54,26 @@ Sometimes Bluetooth devices are working correctly, but something in settings nee
 
 The easiest way to test this is to "forget" the paired Bluetooth device, and pair it again.
 
-A more thorough way of testing this would be to create a [test user](https://support.system76.com/articles/other-accounts/), or boot from a [Live Disk](https://support.system76.com/articles/live-disk/) to see if Bluetooth works in either case. 
-If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem. 
+A more thorough way of testing this would be to create a [test user](/articles/other-accounts), or boot from a [Live Disk](/articles/live-disk) to see if Bluetooth works in either case. 
+If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem.
 Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
 
 
 # Setting Expectations
 
-Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, the issue may not be resolved at all. 
+Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, the issue may not be resolved at all.
 Or, in a future update or change to the system, the devices may start working again. In some cases (many cases) users will not experience any issue with Bluetooth at all.
 
 ## Audio Input/Output
 
 Bluetooth audio devices, such as headphones and speakers, usually default to the A2DP protocol, which works effectively as an audio output source.
 
-Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in. 
+Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in.
 This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny," compressed (lower-fidelity), or at a lower volume. That is expected behavior.
 
 ---
 
-# Bluetooth Troubleshooting 
+# Bluetooth Troubleshooting
 
 
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.

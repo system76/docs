@@ -96,8 +96,8 @@ macOS' default is to place the Dock at the bottom of the screen.
 The Dock can be moved in both OSes. macOS has this feature in System Preferences; Pop!\_OS accomplishes this change with a GNOME extension.
 
 For more information on GNOME extensions, refer to the following support articles:
-[Customize Pop!\_OS](https://support.system76.com/articles/customize-gnome/)
-[Dock Customization](https://support.system76.com/articles/dash-to-dock/)
+[Customize Pop!\_OS](/articles/customize-gnome)
+[Dock Customization](/articles/dash-to-dock)
 
 [Return to Table of Contents](#Contents)
 
@@ -192,9 +192,9 @@ Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GN
 
 More info about Pop!\_Shell here:
 
-[Pop!\_OS 20.04 Release Notes](https://support.system76.com/articles/Pop!_OS-20.04-LTS-Release-Notes/)
+[Pop!\_OS 20.04 Release Notes](/articles/Pop!_OS-20.04-LTS-Release-Notes)
 
-[Pop-Shell Keyboard Shortcuts](https://support.system76.com/articles/pop-keyboard-shortcuts/)
+[Pop-Shell Keyboard Shortcuts](/articles/pop-keyboard-shortcuts)
 
 
 [Return to Table of Contents](#Contents)
@@ -429,7 +429,7 @@ Additional codecs can be added with the following commands:
     sudo add-apt-repository multiverse
     sudo apt install ubuntu-restricted-extras
 
-We also have a help article for installing codecs [here](https://support.system76.com/articles/codecs/)
+We also have a help article for installing codecs [here](/articles/codecs)
 
 Another popular alternative is VLC Media Player. This software is available in the Pop!\_Shop, and offers many customizable features.
 
@@ -468,9 +468,9 @@ There is also a Linux client for the popular streaming service Spotify, availabl
 
 Pop!\_OS supports two (2) professional video editing suites. Lightworks and DaVinci Resolve. We have help articles on how to install both, which are listed below:
 
-[Lightworks](https://support.system76.com/articles/install-lightworks/)
+[Lightworks](/articles/install-lightworks)
 
-[DaVinci Resolve](https://support.system76.com/articles/install-davinci-resolve/)
+[DaVinci Resolve](/articles/install-davinci-resolve)
 
 There is also an open-source video editing program called Kden Live which offers a comparable interface and feature-set to iMovie, and is available in the Pop!\_Shop.
 
@@ -680,7 +680,7 @@ The snapshot feature is comparable to snapshots offered by virtual machine manag
 
 Déjà Dup Backups is closer in functionality to Time Machine. It offers local hardware backups, or backups to network locations. Folders and files can be added to the backup list manually, and it backs up the Home folder by default. Automatic backups can also be run on a schedule.
 
-To read more about methods of backing up your system visit our help article: [Backup Files](https://support.system76.com/articles/backup-files/)
+To read more about methods of backing up your system visit our help article: [Backup Files](/articles/backup-files)
 
 ### Give Pop!_OS a try!
 
@@ -690,4 +690,4 @@ If you want to try Pop!_OS yourself you can grab the OS image (ISO) from this [l
 
 <!-- # [What if I have an iPhone?](#iphone)
 
-For more details about how to manage files and backups between iPhone and Pop!\_OS, visit our help article: [Use an iPhone with Pop!\_OS](https://support.system76.com/articles/use-iphone-with-linux) -->
+For more details about how to manage files and backups between iPhone and Pop!\_OS, visit our help article: [Use an iPhone with Pop!\_OS](/articles/use-iphone-with-linux) -->

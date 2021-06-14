@@ -18,46 +18,13 @@ section: software
 
 To enter BIOS for most System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.
 
-<table border=1>
-  <tbody>
-    <tr style="height: 23px;">
-      <td style="height: 23px;">Firmware</td>
-      <td style="height: 23px;">BIOS key</td>
-      <td style="height: 23px;">Boot menu key</td>
-    </tr>
-
-    <tr style="height: 23px;">
-      <td style="height: 23px;">Laptops - Open Firmware</td>
-      <td style="height: 23px;">ESC</td>
-      <td style="height: 23px;">ESC (select one time boot option)</td>
-    </tr>
-
-    <tr style="height: 23px;">
-      <td style="height: 23px;">Laptops - Proprietary</td>
-      <td style="height: 23px;">F2</td>
-      <td style="height: 23px;">F7</td>
-    </tr>
-
-    <tr style="height: 23px;">
-      <td style="height: 23px;">Older laptops</td>
-      <td style="height: 23px;">depends on system</td>
-      <td style="height: 23px;">F1</td>
-    </tr>
-
-    <tr style="height: 23px;">
-      <td style="height: 23px;">Thelio</td>
-      <td style="height: 23px;">Del</td>
-      <td style="height: 23px;">F8 or F12</td>
-    </tr>
-    <tr style="height: 23px;">
-      <td style="height: 23px;">Meerkat</td>
-      <td style="height: 23px;">F2</td>
-      <td style="height: 23px;">F10</td>
-    </tr>
-
-
-  </tbody>
-</table>
+| Firmware | BIOS key | Boot Menu key |
+|:--------:|:--------:|:-------------:| 
+| Laptop - Open Firmware | ESC | ESC(select one time boot option) |
+| Laptop - Proprietary | F2 | F7 |
+| Older Laptops | Depends on the system | F1 |
+| Thelio | Del | F8 or F12 |
+| Meerkat | F2 | F10 |
 
 ### Open Firmware Screenshots
 

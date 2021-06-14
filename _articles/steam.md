@@ -68,10 +68,11 @@ sudo apt update
 sudo apt install python3-pip
 ```
 
-Now, let's install protonup via pip.
+Now, let's install protonup via pip, and add it to your `PATH`.
 
 ```bash
 pip3 install protonup
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc
 ```
 
 Now, after <u>Steam</u> is installed, you can run protonup in terminal, and it will grab the newest ProtonGE build. This tool will also pull hotfixes. Below is an example of the tools output:

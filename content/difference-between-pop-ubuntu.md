@@ -25,10 +25,10 @@ Pop!_OS has evolved quite a bit since its 17.10 release. While the easiest way t
 
 This is a common question to come up, and one that makes our engineers cringe. Yes, Pop!_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)
 
-To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our [Roadmap](https://support.system76.com/articles/roadmap/) documentation and the [This Week in Pop!](https://pop-planet.info/forums/forums/project-updates.28/) series on [Pop!_Planet](https://pop-planet.info/). Below, you’ll find a general list of improvements that make Pop!_OS stand out.
+To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our [Roadmap](/articles/roadmap) documentation and the [This Week in Pop!](https://pop-planet.info/forums/forums/project-updates.28/) series on [Pop!_Planet](https://pop-planet.info/). Below, you’ll find a general list of improvements that make Pop!_OS stand out.
 
 <br>
-## First impressions: The Installer 
+## First impressions: The Installer
 
 ![Installer Images: Download screen](/images/difference-between-pop-ubuntu/Installer-Screenshot.png)
 
@@ -54,21 +54,21 @@ After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to m
 [See all keyboard shortcuts](/articles/pop-keyboard-shortcuts/)
 
 <br>
-## Default Apps: Slimming down on bloatware 
+## Default Apps: Slimming down on bloatware
 
 ![Pop Shop](/images/difference-between-pop-ubuntu/Pop!_Shop-Screenshot.png)
 
 Pop!_OS includes a selection of apps intended to be comprehensive, but relatively lightweight. Because Pop!_OS is optimized for your workflow, we avoid providing some larger programs by default that slow down your computer. This is especially true for library applications, such as one for storing your photos, which we opt to replace with image viewers or similar apps that are smaller in size. However, if you’re in need of a photo manager, Steam, or a music streaming app such as Spotify, these applications are still available in the Pop!_Shop for a quick install.
 
 <br>
-## Features across the board 
+## Features across the board
 
 ![Power Profiles/Graphics toggle](/images/difference-between-pop-ubuntu/system-menu.png)
 
-Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](https://support.system76.com/articles/roadmap/) offers a more extensive outline of these changes, we’ve highlighted some of our major improvements below:
+Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](/articles/roadmap) offers a more extensive outline of these changes, we’ve highlighted some of our major improvements below:
  * Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!_OS on install also downloads the NVIDIA drivers by default.
  * The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.
- * For scientific workloads, installing [CUDA](https://support.system76.com/articles/cuda/) and [TensorFlow](https://support.system76.com/articles/install-tensorflow/) is made simple with a single command line.
+ * For scientific workloads, installing [CUDA](/articles/cuda) and [TensorFlow](/articles/install-tensorflow) is made simple with a single command line.
 	![CUDA/Tensorflow command](/images/difference-between-pop-ubuntu/Tensorflow.png)
  * Do Not Disturb mode silences notifications to help you focus on your work.
  * systemd-boot bootloader and the automatic configuration tool we’ve created for it called kernelstub replace the outdated GRUB bootloader used on Ubuntu. The systemd-boot bootloader is faster and smaller in size, increasing your computer’s startup speed.

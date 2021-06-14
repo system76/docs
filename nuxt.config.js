@@ -1,4 +1,5 @@
 import githubContributors from './modules/github-contributors'
+import linkFixes from './modules/link-fixes'
 
 export default {
   target: 'static',
@@ -75,6 +76,9 @@ export default {
   },
 
   hooks: {
-    'content:file:beforeInsert': githubContributors
+    'content:file:beforeInsert': doc => Promise.all([
+      githubContributors(doc),
+      linkFixes(doc)
+    ])
   }
 }

@@ -112,4 +112,4 @@ sudo apt update
 
 *These packages have been tested with the System76 NVIDIA driver only.
 
-The following [article](https://support.system76.com/articles/system76-driver/) will go over installing the System76 NVIDIA driver.
+The following [article](/articles/system76-driver) will go over installing the System76 NVIDIA driver.

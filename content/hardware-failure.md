@@ -19,7 +19,7 @@ section: hardware-troubleshooting
 
 If a computer won't turn on, this could be any number of component failures.  The only way to know for sure which one has failed, is to test the system without anything attached.  We need to disconnect anything that can be removed.  This includes: the hard drives, Wifi card, RAM, and video cards (desktop, with on-board graphics).
 
-The only thing the system needs to boot is one stick of RAM in slot 0. Try different RAM sticks in slot 0 if it doesn't boot (to test for failed RAM).  Also, remove the CMOS battery and disconnect the main battery (laptops), and any AC input, for one minute.  We don't recommend removing the CPU as a test. The following key combo may also be handled at boot time to reset the CMOS as well <kbd>Fn</kbd>+<kbd>D</kbd>. 
+The only thing the system needs to boot is one stick of RAM in slot 0. Try different RAM sticks in slot 0 if it doesn't boot (to test for failed RAM).  Also, remove the CMOS battery and disconnect the main battery (laptops), and any AC input, for one minute.  We don't recommend removing the CPU as a test. The following key combo may also be handled at boot time to reset the CMOS as well <kbd>Fn</kbd>+<kbd>D</kbd>.
 
 If the system will boot with everything removed, then add components back one by one and see which one is causing the problem.  If everything works fine after removing and replacing all of the hardware, a loose connection is most likely the culprit.  If the system won't boot with everything disconnected, then the motherboard has likely failed, and needs replacing.
 
@@ -73,13 +73,13 @@ There are a few tools that we can use to confirm whether there is an issue with 
 There is a free download link for Linux on the home page and once that is pressed the download will start. There should be a `Unigine_Heaven-4.0.run` file in the Downloads directory and from a terminal let's run this command:
 
 ```bash
-chmod +x Unigine_Heaven-4.0.run 
+chmod +x Unigine_Heaven-4.0.run
 ```
 
 Then the application can be extracted:
 
 ```bash
-./Unigine_Heaven-4.0.run 
+./Unigine_Heaven-4.0.run
 ```
 
 Then let's move to the new directory that was created:
@@ -149,4 +149,4 @@ If there is no log or the log is empty, then the crash isn't related to a hardwa
 
 #### Support
 
-Please contact [support](https://support.system76.com/) by opening a ticket to get the system repaired or to have failed components replaced.
+Please contact [support](/) by opening a ticket to get the system repaired or to have failed components replaced.

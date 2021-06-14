@@ -74,14 +74,20 @@ Now, let's install protonup via pip.
 pip3 install protonup
 ```
 
+The `protonup` command will be available after a reboot, or you can run the below command to add it to your `PATH` for immediate use.
+
+```bash
+source ~/.profile
+```
+
 Now, after <u>Steam</u> is installed, you can run protonup in terminal, and it will grab the newest ProtonGE build. This tool will also pull hotfixes. Below is an example of the tools output:
 
 ```bash
-➜  ~ protonup 
-Ready to download Proton-6.9-GE-2-github-actions-test 
-Size      : 370.27 MiB 
-Published : 2021-05-30
+protonup
+Ready to download Proton-6.10-GE-1 
+Size      : 370.81 MiB 
+Published : 2021-06-07
 Continue? (Y/N): y
-Downloaded 100.0% - 370.31 MiB/370.27 MiB
-[INFO] Installed in: /home/s31bz/.steam/root/compatibilitytools.d/Proton-6.9-GE-2-github-actions-test
+Downloaded 100.0% - 370.81 MiB/370.81 MiB
+[INFO] Installed in: /home/aaronh/.steam/root/compatibilitytools.d/Proton-6.10-GE-1
 ```

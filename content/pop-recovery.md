@@ -120,7 +120,9 @@ If files need to be copied off before reinstall, open the <u>Files</u> program t
 
 ## Upgrade
 
-The Recovery Partition can be upgrade from within the OS in Settings -> OS Upgrade like in the screenshot below:
+It is important to keep the Recovery Partition updated as it is not updated with the installed OS. This will allow you to reinstall the OS to the currently installed version if something went wrong in your install.
+
+The Recovery Partition can be upgraded from within the OS in Settings -> OS Upgrade like in the screenshot below:
 
 ![Pop Recovery Update Available](/images/pop-recovery/pop-recovery-update.png)
 

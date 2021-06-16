@@ -1,9 +1,10 @@
 ---
 layout: article
-title: Pop!_OS 20.10 Incomplete Upgrade
+title: Pop!_OS Incomplete Upgrade
 description: >
-  What to do if you get an FStab error or if your upgrade is incomplete.
+  What to do if your upgrade is incomplete or not working correctly
 keywords:
+  - Pop!_OS 21.04
   - Pop!_OS 20.10
   - Pop!_OS 20.04
   - LTS
@@ -18,10 +19,15 @@ hidden: false
 section: software-troubleshooting
 ---
 
-# Pop!_OS 20.10 Incomplete Upgrade
+# Pop!_OS Incomplete Upgrade
 
 ### Backup Your Files
+
 The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+
+### If you can't boot the OS
+
+Refer to the [disaster recovery article](/articles/disaster-recovery) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
 
 ### FStab Error Message
 
@@ -59,7 +65,7 @@ After you have made the edit, save the file and start the upgrade again.
 
 ### Repair Package Manager after Failed/Incomplete Upgrade
 
-1. If you’re able to log in and have a graphical interface, let’s try running a set of commands in a terminal (click your activities menu and type ‘t’ for ‘terminal’) to clean up the installed packages:
+1. If you’re able to log in and have a graphical interface, let’s try running a set of commands in a terminal (click your Activities menu and type ‘t’ for ‘terminal’) to clean up the installed packages:
 
 **If this is your first time running commands, just a heads up- after each command, press the enter key. When the system prompts you for your password, type it in the terminal and press the enter key. The password will not show in the terminal, but it is taking the password)**
 
@@ -72,7 +78,7 @@ sudo apt dist-upgrade
 sudo apt autoremove --purge
 ```
 
-If you are not able to get to the desktop to run those commands, try to get to a TTY (Ctrl+Alt+F5). Enter the username and password as requested and proceed with the commands above.
+If you are not able to get to the desktop to run those commands, try to get to a TTY (Ctrl+Alt+F5). Enter the username and password as requested and proceed with the commands above. Note that your username would be your first and last name combined though all lower case unless it was changed during the initial setup. 
 
 If you cannot access the desktop or TTY, we can run the package repair commands in Pop Recovery instead. To do this,
  
@@ -94,21 +100,13 @@ sudo parted -ls
 
 Look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. Input the following commands based on your drive type:
 
-**If disk is encrypted, start with these first 3 commands using the correct drive name in the /dev filepath**:
-
-**For SATA Drives**:
-
-```bash
-sudo mount /dev/sda3 /mnt
-```
-
-**For NVMe Drives**:
-
-```bash
-sudo mount /dev/nvme0n1p3 /mnt
-```
+| **SATA Drives**           | **NVMe Drives**                |
+|:-------------------------:|:------------------------------:|
+| sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.
+
+**If disk is encrypted, start with these first 3 commands using the correct drive name in the /dev filepath**:
 
 **For SATA Drives**:
 
@@ -172,3 +170,13 @@ sudo apt autoremove --purge
 exit
 reboot
 ```
+
+# If you are still not able to upgrade
+
+If the system is still not able to upgrade and you have a System76 system please open a support ticket and include this file:
+
+```bash
+journal -u pop-upgrade > ~/pop-upgrade.log
+```
+
+If it is not a System76 system go to our Pop!\_OS Mattermost chat for community support [here](chat.pop-os.org).

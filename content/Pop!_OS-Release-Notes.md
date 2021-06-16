@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Pop!_OS 20.04 LTS Release Notes
+title: Pop!_OS Release Notes
 description: >
-  Discover what's new in Pop!\_OS 20.04 LTS
+  Discover what's new in these Pop!_OS Releases
 keywords:
   - Pop
   - 20.04
@@ -15,7 +15,13 @@ section: pop
 
 ---
 
-Pop!\_OS 20.04 was released April 30, 2020.
+Pop!\_OS 21.04 was released on TBA.
+
+## Pop!\_OS 21.04 Release Notes
+
+
+
+Pop!\_OS 20.04 was released on April 30, 2020.
 
 ## Pop!\_OS 20.04 Release Notes
 

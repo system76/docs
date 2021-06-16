@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Switching from macOS to Ubuntu - System76 Support</title>
+    <meta property="og:title" content="Switching from macOS to Ubuntu - System76 Support">
+    <meta itemprop="name" content="Switching from macOS to Ubuntu - System76 Support">
+    <meta name="twitter:title" content="Switching from macOS to Ubuntu - System76 Support">
+
+    <meta name="description" content="If you are coming from Apple's operating system and just using Ubuntu for the first time, we can help make the transition a little smoother.
+">
+    <meta property="og:description" content="If you are coming from Apple's operating system and just using Ubuntu for the first time, we can help make the transition a little smoother.
+">
+    <meta itemprop="description" content="If you are coming from Apple's operating system and just using Ubuntu for the first time, we can help make the transition a little smoother.
+">
+    <meta name="twitter:description" content="If you are coming from Apple's operating system and just using Ubuntu for the first time, we can help make the transition a little smoother.
+">
+
+    <meta name="keywords" content="System76 Apple OS X macOS switch Ubuntu">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Switching from macOS to Ubuntu
+        <a href="https://github.com/system76/docs/edit/master/_articles/switch-from-macos-to-ubuntu.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="switching-from-macos-to-ubuntu">Switching from macOS to Ubuntu</h1>
+
+<p>If you are just coming to <a href="https://www.ubuntu.com/">Ubuntu</a> from <a href="https://www.apple.com/">Apple</a>, it can be a little confusing where everything is. Some software will have the same names, while some tasks need different software. Generally, all operating systems accomplish the same functions: running programs, managing files, installing software, watching funny cat videos, sending email, and low-level functions, such as networking, keyboard input, and displaying images.</p>
+
+<p>Ubuntu, included software, and Ubuntu’s default desktop environment, <a href="https://www.gnome.org/gnome-3/">GNOME Shell</a>, will handle most needs. Additional software can be installed, and the desktop environment can be changed to make the experience quite different. We will go through some of the most common operating system tasks, and show where they are located in GNOME Shell.</p>
+
+<h3 id="running-and-managing-programs">Running And Managing Programs</h3>
+
+<p>GNOME Shell defaults to having its launcher on the left side of the screen. GNOME Shell’s launcher handles programs nearly identical to Apple’s dock. To run a program, click on it. To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher. And to see if programs are open, look for the arrows around the icon.</p>
+
+<p><img src="/images/switch/apple-launcher.png" alt="apple-launcher" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-launcher.png" alt="ubuntu-launcher" /></p>
+
+<p>If the GNOME desktop environment isn’t for you, it can be changed easily. Please see this article for how to change desktop environments:</p>
+
+<p><a href="/articles/desktop-environment/">Desktop Environment</a></p>
+
+<h3 id="installing-software">Installing Software</h3>
+
+<p>Ubuntu comes with a full featured <a href="https://wiki.gnome.org/Apps/Software">GNOME Software</a> to search for new software, games, programs, and other applications for your computer.</p>
+
+<p><img src="/images/switch/apple-software.png" alt="apple-software" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-software.png" alt="ubuntu-software" /></p>
+
+<h3 id="workspaces-and-window-management">Workspaces And Window Management</h3>
+
+<p>Ubuntu has <a href="https://help.ubuntu.com/stable/ubuntu-help/shell-workspaces.html">Workspaces</a> and they are dynamically created which means more can be created when needed. Each workspace can be switched to, and windows can be moved between workspaces.</p>
+
+<p><img src="/images/switch/apple-window.png" alt="apple-window" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-window.png" alt="ubuntu-window" /></p>
+
+<h3 id="finding-programs-and-files">Finding Programs And Files</h3>
+
+<p>Ubuntu has a <a href="https://help.gnome.org/misc/release-notes/3.6/users-activities-overview.html.en">Dash</a> much like Apple’s <a href="https://support.apple.com/en-us/HT204014">Spotlight</a> search. If you press the Super key <kbd><span class="fl-ubuntu"></span></kbd> all graphical software and files can be searched for easily.</p>
+
+<p><img src="/images/switch/apple-search.png" alt="apple-software" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-search.png" alt="ubuntu-software" /></p>
+
+<h3 id="file-management">File Management</h3>
+
+<p>The file managers are largely the same. Each file manager starts with a standard set of shortcuts, and additional shortcuts can be added by dragging a folder to the left panel. The way files are shown is customizable in both operating systems. In Ubuntu, there is an “Applications” folder that contains shortcuts to all GUI applications on your computer. Navigate to <code class="language-plaintext highlighter-rouge">/usr/share/applications</code> and drag the folder to the left panel to have a list of currently installed programs readily available.</p>
+
+<p><img src="/images/switch/apple-file.png" alt="apple-file" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-file.png" alt="ubuntu-file" /></p>
+
+<h3 id="cloud-storage">Cloud Storage</h3>
+
+<p><a href="https://www.dropbox.com">Dropbox</a> and <a href="https://mega.nz">Mega.nz</a> currently have desktop integrations for Ubuntu, while <a href="https://www.google.com/drive/">Google Drive</a> and <a href="https://www.box.com">Box.com</a> currently do not. All four major cloud storage solutions can be accessed from a web browser in Ubuntu.</p>
+
+<p><img src="/images/switch/apple-cloud.png" alt="apple-cloud" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-cloud.png" alt="ubuntu-cloud" /></p>
+
+<h3 id="watching-videos">Watching Videos</h3>
+
+<p>The open source video player, <a href="https://www.videolan.org/vlc/">VLC</a>, can be downloaded for both Apple and Ubuntu, and will play just about anything. Ubuntu doesn’t come with proprietary decoders for DVDs and some audio, but they can be installed with ease.</p>
+
+<p><img src="/images/switch/apple-video.png" alt="apple-video" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-video.png" alt="ubuntu-video" /></p>
+
+<p>Please see this article for steps to install software for DVD playback:</p>
+
+<p><a href="/articles/codecs/">Codecs</a></p>
+
+<h3 id="networking">Networking</h3>
+
+<p>Networking is adjusted in very similar ways. A drop-down menu in the top right allows for picking WiFi access points and changing network access. There are also system settings to configure more advanced networking, including VPN, Proxy, DNS settings, and more.</p>
+
+<p><img src="/images/switch/apple-networking.png" alt="apple-networking" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-networking.png" alt="ubuntu-networking" /></p>
+
+<h3 id="web-browsing">Web Browsing</h3>
+
+<p>Ubuntu comes with <a href="https://www.mozilla.org/en-US/firefox/products/">Firefox</a> by default. Most major web browsers are universally available and look nearly identical between operating systems. <a href="https://www.apple.com/safari/">Safari</a> is an Apple only web browser, and is not available in Ubuntu.</p>
+
+<p><img src="/images/switch/apple-web.png" alt="apple-web" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-web.png" alt="ubuntu-web" /></p>
+
+<h3 id="emailing">Emailing</h3>
+
+<p>Ubuntu comes with <a href="https://www.mozilla.org/en-US/thunderbird/">Thunderbird</a> as its default email program. It has similar functionality to Apple’s Mail program, and is highly configurable with plugins. A calendar can be added, address books can be synced, and the look and feel can be customized. The plugins <a href="https://www.mozilla.org/en-US/projects/calendar/">Lightning</a>, <a href="https://addons.mozilla.org/en-US/thunderbird/addon/gmail-conversation-view/">Thunderbird Conversations</a>, and <a href="https://addons.mozilla.org/en-US/thunderbird/addon/gcontactsync/">GContactSync</a>, are a few of the common ones installed. <a href="https://wiki.gnome.org/Apps/Evolution">Evolution</a> is another free E-mail client that looks and feels like Apple’s Mail program.</p>
+
+<p><img src="/images/switch/apple-email.png" alt="apple-email" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-email.png" alt="ubuntu-email" /></p>
+
+<h3 id="communicating-with-friendsco-workers">Communicating With Friends/Co-workers</h3>
+
+<p>Many communication programs are available for both operating systems. <a href="https://www.skype.com/en/">Skype</a>, <a href="https://slack.com">Slack</a>, <a href="https://hangouts.google.com">Google Hangouts</a>, <a href="https://www.hipchat.com">Hip Chat</a>, and others are available on Ubuntu. There is also a program called <a href="https://www.pidgin.im/">Pidgin</a> included with Ubuntu to connect to IRC, AOL IM, and many others, all within the same program.</p>
+
+<p><img src="/images/switch/apple-chat.png" alt="apple-chat" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-chat.png" alt="ubuntu-chat" /></p>
+
+<h3 id="working-with-images">Working With Images</h3>
+
+<p>Ubuntu has several powerful image manipulation programs. <a href="https://www.gimp.org">Gimp</a>, <a href="http://www.darktable.org/">darktable</a>, and <a href="https://inkscape.org/en/">Inkscape</a> will do what <a href="https://www.adobe.com/">Adobe</a> products can. Plus, they are free, which is a huge bonus. Adobe products don’t currently run on Ubuntu, but there are plenty of replacement software options.</p>
+
+<p><img src="/images/switch/apple-images.png" alt="apple-images" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-images.png" alt="ubuntu-images" /></p>
+
+<h3 id="document-editing">Document Editing</h3>
+
+<p><a href="https://www.libreoffice.org">Libre Office</a> is included by default in Ubuntu, and is very similar to <a href="https://www.openoffice.org">Open Office</a>. There is a bit of a learning curve if coming from <a href="https://www.office.com">Microsoft</a> programs, but the functionality is the same. Libre Office will open and save documents, spreadsheets, and presentations in Microsoft formats. Documents saved in the open document format will translate better both directions than the proprietary format, but the issues are fewer and fewer over time.</p>
+
+<p><img src="/images/switch/apple-documents.png" alt="apple-documents" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-documents.png" alt="ubuntu-documents" /></p>
+
+<h3 id="managing-music">Managing Music</h3>
+
+<p><a href="https://www.spotify.com/">Spotify</a> is fully supported in the Ubuntu operating system, along with other web based players such as <a href="https://www.pandora.com/">Pandora</a> and <a href="https://play.google.com/music/listen">Google Music</a>. Ubuntu also comes with <a href="https://wiki.gnome.org/Apps/Rhythmbox">Rhythmbox</a> which is a replacement for <a href="https://www.apple.com/itunes/">Apple iTunes</a>, and <a href="https://www.clementine-player.org">Clementine</a> is another open source, cross platform tool that provides an awesome music library experience. Although iTunes doesn’t run on Ubuntu, music libraries can be moved. Several programs are available for music editing, mixing, and DJ-ing as well, including <a href="http://www.audacityteam.org/">Audacity</a>, <a href="https://www.mixxx.org/">Mixxx</a>, and <a href="https://ardour.org">Ardour</a>.</p>
+
+<p><img src="/images/switch/apple-music.png" alt="apple-music" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-music.png" alt="ubuntu-music" /></p>
+
+<h3 id="playing-games">Playing Games</h3>
+
+<p><a href="https://store.steampowered.com/">Steam</a> on Ubuntu is gaining more and more games in its library every day. Many popular games can be found in the Steam program, including several you won’t find anywhere else. It may not have every top game, but there is no shortage of entertainment to be found!  The Ubuntu Software Center also has a collection of free games for every level of gamer.</p>
+
+<p><img src="/images/switch/apple-games.png" alt="apple-games" /></p>
+
+<p><a href="/articles/steam">Installing Steam</a></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-games.png" alt="ubuntu-games" /></p>
+
+<h3 id="writing-software">Writing Software</h3>
+
+<p>Anyone familiar with writing software on a Mac will be at home with writing software on Ubuntu. <a href="https://atom.io">Atom</a>, <a href="https://www.sublimetext.com">Sublime</a>, and other editors are available for both systems. Compilers can be used directly, and many web applications including <a href="https://httpd.apache.org">Apache</a> can be run natively in Ubuntu, without the need for <a href="https://www.virtualbox.org">Virtual Machines</a>.</p>
+
+<p><img src="/images/switch/apple-code.png" alt="apple-code" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-code.png" alt="ubuntu-code" /></p>
+
+<h3 id="working-in-the-terminal">Working In The Terminal</h3>
+
+<p>If you are used to an Apple terminal, Ubuntu’s terminal will feel right at home. The <a href="http://brew.sh/">brew</a> package manager quickly translates to the <a href="https://wiki.debian.org/Apt">apt</a> package manager, and many commands are the same or only slightly different.</p>
+
+<p><img src="/images/switch/apple-terminal.png" alt="apple-terminal" /></p>
+
+<hr />
+
+<p><img src="/images/switch/ubuntu-terminal.png" alt="ubuntu-terminal" /></p>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

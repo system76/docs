@@ -1,0 +1,41 @@
+<h2 id="install-on-pop_os">Install on Pop!_OS</h2>
+
+<h3 id="prerequisits">Prerequisits</h3>
+
+<p>These instructions assume that the CUDA toolkit is already set up and working on your installation of Pop_OS.</p>
+
+<h3 id="install-the-latest-numba-library">Install The latest Numba library</h3>
+
+<p>To install Numba, please run this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install python3-numba
+</code></pre></div></div>
+
+<h3 id="environmental-variable-setup">Environmental Variable setup</h3>
+<p>To make changes on the system level, add the below in  /etc/environment .
+To make changes on user level (assuming you have the default bash shell), add in ~/.bashrc.
+Note the system level approach is not dependendent on your choice of shell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># path to CUDA driver shared library file.
+export NUMBAPRO_CUDA_DRIVER=/usr/lib/x86_64-linux-gnu/libcuda.so
+# path to CUDA libNVVM shared library file
+export NUMBAPRO_NVVM=/usr/lib/cuda/nvvm/lib64/libnvvm.so
+# path to CUDA libNVVM libdevice directory which contains .bc files.
+export NUMBAPRO_LIBDEVICE=/usr/lib/cuda/nvvm/libdevice
+# path to CUDA libraries
+export NUMBAPRO_CUDALIB=/usr/lib/cuda/lib64
+</code></pre></div></div>
+<p>Finally, restart your computer to complete setup.</p>
+
+<h3 id="test-installation">Test installation</h3>
+
+<p>To test your new Numba installation, from the commandline type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>numba -s
+</code></pre></div></div>
+<p>Details of the installation should be returned.</p>
+
+<h3 id="further-information">Further information</h3>
+
+<p>For further details on Numba, please see:
+<a href="http://numba.pydata.org/">http://numba.pydata.org/</a></p>

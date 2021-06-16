@@ -1,0 +1,127 @@
+<p>Pop!_OS 20.10 was released October 23, 2020.</p>
+
+<h1 id="upgrading-pop_os-to-2010-from-2004">Upgrading Pop!_OS to 20.10 from 20.04</h1>
+<h3 id="for-all-other-operating-system-versions-scroll-down-to-the-instructions-for-upgrading-from-an-earlier-release">(For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)</h3>
+
+<p>First, make sure you have applied all updates to your system. You can do this through the Pop!_Shop, or through the terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+sudo apt full-upgrade
+</code></pre></div></div>
+
+<p>Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -&gt; OS Upgrade.</p>
+
+<p>On the system’s “OS Upgrade” page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!_OS 20.10 is available with a “Download” button.</p>
+
+<p>Click the “Download” button and the download will begin.</p>
+
+<p>Once the download is complete, you will receive a second notification saying the upgrade is ready.</p>
+
+<p>Click on the notification and your computer will restart to the upgrade screen.</p>
+
+<p>After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!_OS 20.10!</p>
+
+<h3 id="backup-your-files">Backup Your Files</h3>
+
+<p>The upgrade process will leave your files intact, but it’s always a good idea to play it safe and create a backup of any important files. Please read our article on <a href="/articles/backup-files/">how to backup your files</a> for helpful instructions.</p>
+
+<h3 id="create-installation-usb-optional">Create Installation USB (Optional)</h3>
+
+<p>Some users may prefer to have Pop!_OS installation media handy before starting any upgrades in case they need to reinstall the operating system. Instructions on creating a USB with Pop!_OS are located in our <a href="/articles/live-disk/">live disk</a> article.</p>
+
+<h3 id="advanced-install-terminal">Advanced Install (Terminal)</h3>
+
+<p>Users wishing to use the Terminal to apply the upgrade may do so by running the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+</code></pre></div></div>
+<p>You’ll be prompted to enter your system password, but when you type it, the letters won’t show. Just continue typing the password and press <kbd>Enter</kbd>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt full-upgrade
+</code></pre></div></div>
+
+<p>Once any updates are applied, initiate the upgrade with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pop-upgrade release upgrade
+</code></pre></div></div>
+
+<p>Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.</p>
+
+<p>If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue.</p>
+
+<p>Type <kbd>Y</kbd> and press enter when prompted about starting the upgrade.</p>
+
+<p>If you have your lock screen set to enabled, you will receive a prompt about the screen being disabled during the update. Press <kbd>Enter</kbd> to continue.</p>
+
+<p>Near the end of the upgrade process, you’ll be prompted to remove obsolete packages. Type <kbd>Y</kbd> and press <kbd>Enter</kbd>  when prompted.</p>
+
+<p>You may receive a notice about the keyboard layout and the option to use the package maintainer’s version of a certain package. If you haven’t specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer’s version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.</p>
+
+<p>Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing <code class="language-plaintext highlighter-rouge">[sudo] reboot</code> and pressing <kbd>Enter</kbd>. If you prefer, you can also use the graphical interface to reboot.</p>
+
+<hr />
+
+<p>Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.</p>
+
+<h1 id="upgrading-older-releases">Upgrading older releases</h1>
+
+<p>Upgrading Pop!_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!_OS 20.04 (focal) LTS before upgrading to the current Pop!_OS 20.10 (groovy).</p>
+
+<p>These older Pop!_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!_OS 18.10, 19.04, or 19.10.</p>
+
+<h3 id="1-get-your-current-system-fully-updated">1. Get your current system fully updated:</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/us.archive/old-releases/g'</span> /etc/apt/sources.list
+<span class="nb">sudo </span>apt update <span class="nt">-m</span>
+<span class="nb">sudo </span>dpkg <span class="nt">--configure</span> <span class="nt">-a</span>
+<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-f</span>
+<span class="nb">sudo </span>apt full-upgrade
+<span class="nb">sudo </span>apt <span class="nb">install </span>pop-desktop
+</code></pre></div></div>
+
+<h3 id="2-move-any-ppa-additions-out-of-the-way-and-get-all-of-the-sources-pointed-at-the-2004-versions">2. Move any PPA additions out of the way, and get all of the sources pointed at the 20.04 versions:</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /etc/apt/backup
+<span class="nb">sudo mv</span> /etc/apt/sources.list.d/<span class="k">*</span> /etc/apt/backup
+<span class="nb">sudo </span>apt-add-repository <span class="nt">-yn</span> ppa:system76-dev/stable
+<span class="nb">sudo </span>apt-add-repository <span class="nt">-yn</span> ppa:system76/pop
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/old-releases/us.archive/g'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-Ei</span> <span class="s1">'s/cosmic|eoan|disco/focal/g'</span> /etc/apt/sources.list /etc/apt/sources.list.d/<span class="k">*</span>.list
+</code></pre></div></div>
+<p><em>Note to change ‘disco’ to your release that you are trying to update from</em></p>
+
+<h3 id="3-now-do-the-upgrade">3. Now, do the upgrade!</h3>
+<p>This will have a three phases and once the download is complete, you can’t change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer “Yes”. There may be some questions about using “maintainer” version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>dpkg apt
+<span class="nb">sudo </span>apt full-upgrade | <span class="nb">tee</span> ~/upgrade.log
+</code></pre></div></div>
+
+<h3 id="4-now-put-the-ppas-back">4. Now put the PPAs back</h3>
+<p>You will want to take a look at the files that end in “list” in “/etc/apt/backup” to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.</p>
+
+<h3 id="5-after-the-2004-pop-upgrade-is-complete-reboot">5. After the 20.04 Pop upgrade is complete, <strong>reboot</strong>.</h3>
+
+<h3 id="6-run-the-command-to-upgrade-to-pop-2010">6. Run the command to upgrade to Pop 20.10</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pop-upgrade release upgrade
+</code></pre></div></div>
+<h1 id="troubleshooting">Troubleshooting</h1>
+
+<p>Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won’t start, then the following steps can help repair your broken OS.</p>
+
+<h3 id="stuck-upgrades">Stuck Upgrades</h3>
+
+<p>If your upgrade appears to hang in place for an extended period of time, click on the <strong>Terminal</strong> item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support and we’ll be able to provide assistance.</p>
+
+<h3 id="broken-upgrade">Broken Upgrade</h3>
+
+<p>If the upgrade fails it will most likely be due to a package manager issue.  First, run an alternative upgrade manager with this command, and see if it will manage further:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>do-release-upgrade
+</code></pre></div></div>
+
+<p>If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about <a href="/articles/package-manager-pop/">repairing the package manager</a></p>
+
+<p>Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:</p>
+
+<blockquote>
+  <p>0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.</p>
+</blockquote>

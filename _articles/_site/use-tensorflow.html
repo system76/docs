@@ -1,0 +1,76 @@
+<h1 id="tensorman">Tensorman</h1>
+
+<p>If your system is running Pop!_OS 19.10, see the <a href="/articles/use-tensorman/">Tensorman documentation</a> for managing TensorFlow containers.</p>
+
+<h1 id="using-tensorflow">Using Tensorflow</h1>
+
+<p>The packaging of TensorFlow for Pop!_OS contains libraries for the Python, C and C++ APIs. Other languages, such as Rust, bind to the C API for their support.</p>
+
+<h2 id="switching-between-versions">Switching Between Versions</h2>
+
+<p>All of the TensorFlow packages are built to support concurrent installations using the Debian alternatives system. A symbolic link at <code class="language-plaintext highlighter-rouge">/usr/lib/tensorflow</code> points to another symbolic link at <code class="language-plaintext highlighter-rouge">/etc/alternatives/tensorflow</code>, which finally points to the location of the actual library path, which could be at a location such as <code class="language-plaintext highlighter-rouge">/usr/lib/tensorflow1.13-cpu</code>, or <code class="language-plaintext highlighter-rouge">/usr/lib/tensorflow1.31-cuda10.0</code>. To change the active toolkit, the <code class="language-plaintext highlighter-rouge">update-alternatives</code> command may be called like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo update-alternatives --config tensorflow
+</code></pre></div></div>
+
+<p>This will display a list of available TensorFlow libraries to choose from:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>There are 2 choices for the alternative tensorflow (providing /usr/lib/tensorflow).
+
+  Selection    Path                               Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/tensorflow1.13-cuda10.0/   100       auto mode
+  1            /usr/lib/tensorflow1.13-cpu/        100       manual mode
+  2            /usr/lib/tensorflow1.13-cuda10.0/   100       manual mode
+
+Press &lt;enter&gt; to keep the current choice[*], or type selection number:
+</code></pre></div></div>
+
+<p>After setting the active version, you can verify that it is set with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>readlink -f /etc/alternatives/tensorflow
+</code></pre></div></div>
+
+<h2 id="c-api">C API</h2>
+
+<p>Given the following example.c file:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;tensorflow/c/c_api.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"TF version: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">TF_Version</span><span class="p">());</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You may compile it with:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="s2">"/usr/lib/tensorflow/lib:</span><span class="nv">$LD_LIBRARY_PATH</span><span class="s2">"</span>
+gcc <span class="nt">-I</span>/usr/lib/tensorflow/include/ <span class="nt">-L</span>/usr/lib/tensorflow/lib example.c <span class="nt">-ltensorflow</span> <span class="nt">-o</span> example
+./example
+</code></pre></div></div>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code> must point to the location of the lib directory for the toolkit that you wish to use, which can be the active toolkit, or defined as the path to the specific version to use with that project.</p>
+
+<h2 id="c-api-1">C++ API</h2>
+
+<p>See the provided C++ example in the <code class="language-plaintext highlighter-rouge">examples/cc</code> directory. CMake is required to build your TensorFlow C++ project. Bazel is NOT required.</p>
+
+<h2 id="python-api">Python API</h2>
+
+<p>Given the following example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="n">hello</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">constant</span><span class="p">(</span><span class="s">'Hello, TensorFlow!'</span><span class="p">)</span>
+<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">Session</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sess</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">hello</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>You may build a project with Python API by setting your PYTHONPATH when building it, like so:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">env </span><span class="nv">PYTHONPATH</span><span class="o">=</span>/usr/lib/tensorflow/lib/python3.7:<span class="nv">$PYTHONPATH</span> <span class="se">\</span>
+    python3 example.py
+</code></pre></div></div>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">python3.7</code> should be changed to the version of Python that the version of TensorFlow supports.</p>

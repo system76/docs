@@ -1,0 +1,12 @@
+<p>There is a bug in the program that manages networking, <u>network-manager</u>, which prevents wireless networks from being shown the first time the computer is used. This issue is present even if a WiFi access point was joined during the new user setup.</p>
+
+<p>To join an access point, the computer can be restarted, or this command can be run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl restart NetworkManager.service
+</code></pre></div></div>
+
+<p>There is a bug report filed here:</p>
+
+<p><a href="https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1576024">Bug 1576024</a></p>
+
+<p>Any additional people that mark <span style="color: #093;">Does this bug affect you?</span> on that bug report will help gain additional traction from developers to get this issue resolved.</p>

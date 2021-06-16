@@ -1,0 +1,40 @@
+<p>If you’re using an HDMI display with its own built-in speakers, you can configure your system to output audio over the HDMI connection. (These steps should also work for DisplayPort connections.)</p>
+
+<h2 id="using-the-sound-settings">Using the Sound Settings</h2>
+
+<p>To make all sound play over HDMI, open the menu in the top right of the screen, then click the <i class="fa fa-gear"></i> icon in the bottom left of the menu.</p>
+
+<p><img src="/images/hdmi-audio/top-right-menu.png" alt="Opening the Settings app" /></p>
+
+<p>Choose the Sound page using the left sidebar.</p>
+
+<p><img src="/images/hdmi-audio/sound-settings.png" alt="Sound settings" /></p>
+
+<p>Under the “Output” section, click the dropdown box to display a list of output devices, then select the HDMI device you wish to use for audio output.</p>
+
+<p><img src="/images/hdmi-audio/output-device.png" alt="Output device" /></p>
+
+<p>After selecting the appropriate device, sound should play through the HDMI connection. You can use the “Test” button to test the HDMI-connected speakers.</p>
+
+<h2 id="using-pulseaudio-volume-control">Using PulseAudio Volume Control</h2>
+
+<p>The <u>PulseAudio Volume Control</u> utility also allows you to change the sound output. In addition to changing the default output device, you can also set the output device (and volume) on a per-application basis.</p>
+
+<p><u>PulseAudio Volume Control</u> can be installed using this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install pavucontrol
+</code></pre></div></div>
+
+<p>Then, open the utility by running <code class="language-plaintext highlighter-rouge">pavucontrol</code> in a terminal, or by opening the <u>PulseAudio Volume Control</u> app using the Activities menu.</p>
+
+<p>On the “Output Devices” tab, the output device with the green checkmark selected is the default (or “fallback”) audio device.</p>
+
+<p><img src="/images/hdmi-audio/pavucontrol-output-devices.png" alt="pavucontrol Output Devices" /></p>
+
+<p>You can set a device as default by clicking the green checkmark next to it.</p>
+
+<p><img src="/images/hdmi-audio/pavucontrol-set-default.png" alt="Set default output device in pavucontrol" /></p>
+
+<p>On the “Playback” tab, each application that’s playing audio will be listed. You can change which output device a specific application is using by selecting it under the drop-down box next to that application.</p>
+
+<p><img src="/images/hdmi-audio/pavucontrol-per-application.png" alt="Set per-app output device in pavucontrol" /></p>

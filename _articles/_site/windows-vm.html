@@ -1,0 +1,137 @@
+<p>Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.</p>
+
+<p>Virtual machines do impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot. Setting up a Windows-Pop!_OS Dual Boot is beyond the scope of this support.</p>
+
+<h3 id="understand-virtual-machines">Understand Virtual Machines</h3>
+
+<p>Virtual Machines are a method of running multiple OSes on your computer simultaneously. It’s conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.</p>
+
+<h3 id="enable-amd-v">Enable AMD-V</h3>
+
+<p>For the Thelio (thelio-r1) and Thelio Major (thelio-major-r1) you will need to enable AMD-V in the BIOS by rebooting and holding the Del key. Then enable SVM mode with the following path:</p>
+
+<p>M.I.T tab -&gt; Advanced Frequency Settings -&gt; Advanced CPU Core Settings -&gt; SVM mode -&gt; Enabled.</p>
+
+<p><img src="/images/windows/AMD-BIOS.png" alt="AMD BIOS Settings" /></p>
+
+<h3 id="install-virtualbox">Install VirtualBox</h3>
+
+<p>Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it’s easy to set up and use, and available for free. It’s available in the <u>Pop!_Shop</u>.</p>
+
+<p>Open up the <u>Pop!_Shop</u>, then enter <em>virtualbox</em> in the search field. Click on the <u>VirtualBox</u> result with the blue icon. You should see the window below:</p>
+
+<p><img src="/images/windows/step1.png" alt="VirtualBox Listing in USC" /></p>
+
+<p>Click on the Install button, then wait for the download and install process to complete.</p>
+
+<h3 id="obtain-windows-image">Obtain Windows Image</h3>
+
+<p>You will need to obtain a Windows Installation disk image. If you have a DVD drive, an Installation DVD will also work. If you get a disk image file, be sure that it’s an ISO format file, as this is what <u>VirtualBox</u> will work with. Save the ISO file somewhere on your computer: the <code class="language-plaintext highlighter-rouge">Documents</code> folder in your home folder would be a good place.</p>
+
+<p>Windows 10 can be downloaded from <a href="https://www.microsoft.com/en-us/software-download/windows10ISO">here</a>.</p>
+
+<h3 id="create-virtual-machine">Create Virtual Machine</h3>
+
+<p>Once you have <u>VirtualBox</u> installed, we’ll need to create the virtual computer upon which we’ll install Windows later. Press the Super Key on your keyboard <kbd><span class="fl-ubuntu"></span></kbd>, <kbd><span class="fl-pop-key"></span></kbd> and then enter <em>virtualbox</em> in the search field.</p>
+
+<p><img src="/images/windows/step3.png" alt="Opening VirtualBox through the Dash" /></p>
+
+<p><img src="/images/windows/step4.png" alt="VirtualBox Main Window" /></p>
+
+<p>Click on the <strong>New</strong> button in the toolbar, then give your machine a name you can remember it by. If it isn’t already filled out, set the machine “Type” to <strong>Microsoft Windows</strong> and the “Version” to <strong>Windows 10 64-bit</strong>, and click <strong>Next</strong>.</p>
+
+<p><img src="/images/windows/step5.png" alt="Setting up the Virtual Machine" /></p>
+
+<p>Increase the Virtual Machine Memory Size to half of the total RAM available. For the Hard Drive, you’ll want to choose to <strong>Create a virtual hard drive now</strong>.</p>
+
+<p><img src="/images/windows/step6.png" alt="Creating a virtual hard drive" /></p>
+
+<p>For the options in creating the virtual hard drive, create a <strong>VHD (Virtual Hard Disk)</strong>, <strong>Fixed size</strong>, at least 16 GB, or larger.</p>
+
+<h3 id="install-windows">Install Windows</h3>
+
+<p>Once you’ve created the new VM, you should see it listed in the <u>VirtualBox</u> window:</p>
+
+<p><img src="/images/windows/step7.png" alt="VM listed in the VirtualBox Window" /></p>
+
+<p>The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the <strong>Start</strong> button. This is equivalent to pressing the power button on the virtual computer.</p>
+
+<p><u>VirtualBox</u> will now ask you to select a start-up disk. We recommend finding a digital download (ISO File), since Windows 10 is not distributed on DVD.</p>
+
+<p>Click the small folder icon next to the dropdown, then point <u>VirtualBox</u> at your ISO file and open it. <u>VirtualBox</u> will insert the virtual DVD into the virtual optical drive, then boot the disk.</p>
+
+<p><img src="/images/windows/step8.png" alt="Start-up disk selection" /></p>
+
+<p><img src="/images/windows/step9.png" alt="Windows booting up" /></p>
+
+<p>After Windows finishes booting from the DVD, you should see the Windows Setup window. Select Language, Time and Currency, and Keyboard preferences, then click <strong>Next</strong>.</p>
+
+<p><img src="/images/windows/step10.png" alt="Windows Setup window" /></p>
+
+<p>On the next screen, click <strong>Install Now</strong> to start the installation.</p>
+
+<p><img src="/images/windows/step11.png" alt="Click Install Now to start the installation" /></p>
+
+<p>You’ll next need to enter your product key for the copy of windows you got. Be sure to enter this exactly as it’s listed on the sticker or in your email.  Windows 10 can be run without a product key for a rather long time without issues.  If you don’t have a product key, select <strong>I don’t have a key</strong>.  Otherwise, click <strong>Next</strong>.</p>
+
+<p><img src="/images/windows/step12.png" alt="Enter your Product Key" /></p>
+
+<p>Review the terms of the EULA, then check the box to accept the license terms and click <strong>Next</strong>.</p>
+
+<p><img src="/images/windows/step13.png" alt="Accept the EULA" /></p>
+
+<p>You are required to accept the terms of the EULA before completing the installation. Checking the box and clicking <strong>Next</strong> assumes you do accept the terms and agree to be bound by them. Do not continue with the installation if you don’t agree to the terms in the EULA.</p>
+
+<p>Make sure you select <strong>Custom: Install Windows only (advanced)</strong>, as this is a new installation of Windows.</p>
+
+<p><img src="/images/windows/step14.png" alt="Select the Custom: Install Windows only option" /></p>
+
+<p>Select the <strong>Drive 0 Unallocated Space</strong> area, then click <strong>Next</strong>.</p>
+
+<p><img src="/images/windows/step15.png" alt="Selecting Partition 2 for installation" /></p>
+
+<p>Windows will next begin copying over the installation files onto the virtual hard disk. This step may take a while, so feel free to work in the background while it’s running. The virtual machine will automatically reboot when it’s time to continue.</p>
+
+<p><img src="/images/windows/step16.png" alt="Installing Windows" /></p>
+
+<p>When the VM reboots, you may be prompted to “Press any key to boot from CD or DVD…”. Do not press any keys here, or the installation will start over.</p>
+
+<p><img src="/images/windows/step17.png" alt="Do not press any key. Seriously." /></p>
+
+<p>Windows will now finish installing files and get the system ready to be set up. The virtual machine may reboot again. Remember not to press any keys to boot from the CD or DVD.</p>
+
+<p><img src="/images/windows/step18.png" alt="Getting ready" /></p>
+
+<p>After the process is finalized, you’ll be able to begin the set up process.</p>
+
+<h3 id="set-up-windows">Set Up Windows</h3>
+
+<p>Set up will begin with the following screen:</p>
+
+<p><img src="/images/windows/step19.png" alt="Get Going Fast" /></p>
+
+<p>You may select either express settings, or you can customize the settings to suit your preferences. Windows will next download updates to ensure you’re on the latest version of the OS. This step may take a while, depending on your Internet connection. When it’s finished, Windows will ask you who owns this PC. It’s recommended to select <strong>I own it</strong> and click <strong>Next</strong>.</p>
+
+<p><img src="/images/windows/step20.png" alt="Who owns this PC?" /></p>
+
+<p>Next, you’ll be prompted to sign in with your Microsoft Account. This step is recommended as it can allow for resetting your password remotely if you forget it. It can also sync your settings, apps, and files to other Window’s PCs. If you don’t have a Microsoft account, you can create one with the supplied link.</p>
+
+<p>If you prefer to use a local account, you can skip this step.</p>
+
+<p><img src="/images/windows/step21.png" alt="Sign into your Microsoft Account" /></p>
+
+<p>Windows 10 allows you to set a PIN for logging in instead of a password. If you’d like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you’ll be able to log in using the PIN or password. You’ll then be presented with the desktop.</p>
+
+<p><img src="/images/windows/step22.png" alt="Windows 10 Desktop" /></p>
+
+<h3 id="use-virtual-machine">Use Virtual Machine</h3>
+
+<p>The virtual machine will be presented through a window, and can be interacted with similarly to any other application. Note that the Virtual Machine window will capture the keyboard input (The mouse is automatically captured or uncaptured depending on whether it’s currently on top of the Virtual Machine window or not). If the input is currently captured, and you need to send input to the desktop (or a window outside of your Virtual Machine window), you’ll need to tap the Right-hand <kbd>Ctrl</kbd> first, which will release the keyboard from the Virtual machine, and allow it to work in the desktop again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.</p>
+
+<h3 id="add-network-printer">Add Network Printer</h3>
+
+<p>In the Virtual Machine, click your virtual machine so it’s highlighted in orange. Select <strong>Settings</strong> in the top menu. Select Network and make sure the <strong>Enable Network Adapter</strong> is checked and the “Attached to” option is <strong>Bridged Adapter</strong>. The Name is the name of the network you wish to connect to.</p>
+
+<p>Select <strong>OK</strong> and power on your virtual machine. Go to the Printer menu and select the option to <strong>Add a Printer</strong>. Windows should automatically find your printer. Select it and follow the prompts to finish the installation. Print the test page to confirm the connection worked.</p>
+
+<p><img src="/images/windows/vmsettings.png" alt="Windows 10 Desktop" /></p>

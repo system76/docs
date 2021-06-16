@@ -18,15 +18,13 @@ section: software
 - Author: Aaron Honeycutt
 - Contributing Editor(s): Nathaniel Warburton--->
 
-
-
-### Live Disk or Pop Recovery
+## Live Disk or Pop Recovery
 
 In order to format the drive that has your OS on it we will need to boot from either a live disk or the Pop Recovery partition.
 
-**NOTE** Formatting the entire OS drive (including the Recovery partition) requires booting from a live disk or another drive.
+> **NOTE** Formatting the entire OS drive (including the Recovery partition) requires booting from a live disk or another drive.
 
-### Disks application
+## Disks application
 
 The <u>Disks</u> application can be used to format the drive to remove any personal data. Disks comes pre-installed on Pop!\_OS and Ubuntu.
 

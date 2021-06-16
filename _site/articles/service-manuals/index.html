@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Service Manuals for System76 machines - System76 Support</title>
+    <meta property="og:title" content="Service Manuals for System76 machines - System76 Support">
+    <meta itemprop="name" content="Service Manuals for System76 machines - System76 Support">
+    <meta name="twitter:title" content="Service Manuals for System76 machines - System76 Support">
+
+    <meta name="description" content="Instructions on how to take apart your System76 machines for upgrading or repairs.
+">
+    <meta property="og:description" content="Instructions on how to take apart your System76 machines for upgrading or repairs.
+">
+    <meta itemprop="description" content="Instructions on how to take apart your System76 machines for upgrading or repairs.
+">
+    <meta name="twitter:description" content="Instructions on how to take apart your System76 machines for upgrading or repairs.
+">
+
+    <meta name="keywords" content="Support Service Manual Repair System76">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Service Manuals for System76 machines
+        <a href="https://github.com/system76/docs/edit/master/_articles/service-manuals.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <table>
+  <thead>
+    <tr>
+      <th>Laptops</th>
+      <th>PDF</th>
+      <th>Tech Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adder WS</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Adder/addw1-service-manual.pdf">addw1</a></td>
+      <td><a href="https://tech-docs.system76.com/models/addw1/repairs.html">addw1</a>, <a href="https://tech-docs.system76.com/models/addw2/repairs.html">addw2</a></td>
+    </tr>
+    <tr>
+      <td>Bonobo WS</td>
+      <td> </td>
+      <td><a href="https://tech-docs.system76.com/models/bonw14/repairs.html">bonw14</a></td>
+    </tr>
+    <tr>
+      <td>Darter Pro</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf">darp5</a></td>
+      <td><a href="https://tech-docs.system76.com/models/darp6/repairs.html">darp6</a>, <a href="https://tech-docs.system76.com/models/darp7/repairs.html">darp7</a></td>
+    </tr>
+    <tr>
+      <td>Galago Pro</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp2-service-manual.pdf">galp2</a>, <a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Galago/galp3-service-manual.pdf">galp3</a></td>
+      <td><a href="https://tech-docs.system76.com/models/galp4/repairs.html">galp4</a>, <a href="https://tech-docs.system76.com/models/galp5/repairs.html">galp5</a></td>
+    </tr>
+    <tr>
+      <td>Gazelle</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf">gaze14</a></td>
+      <td><a href="https://tech-docs.system76.com/models/gaze15/repairs.html">gaze15</a></td>
+    </tr>
+    <tr>
+      <td>Lemur</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf">lemu7</a>, <a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Lemur/lemp9-service-manual.pdf">lemp9</a></td>
+      <td><a href="https://tech-docs.system76.com/models/lemp9/repairs.html">lemp9</a>, <a href="https://tech-docs.system76.com/models/lemp10/repairs.html">lemp10</a></td>
+    </tr>
+    <tr>
+      <td>Oryx Pro</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf">oryp5</a></td>
+      <td><a href="https://tech-docs.system76.com/models/oryp6/repairs.html">oryp6</a>, <a href="https://tech-docs.system76.com/models/oryp7/repairs.html">oryp7</a></td>
+    </tr>
+    <tr>
+      <td>Pangolin</td>
+      <td> </td>
+      <td><a href="https://tech-docs.system76.com/models/pang10/repairs.html">pang10</a></td>
+    </tr>
+    <tr>
+      <td>Serval WS</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Serval/serw11-service-manual.pdf">serw11</a></td>
+      <td><a href="https://tech-docs.system76.com/models/serw12/repairs.html">serw12</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Desktops</th>
+      <th>PDF</th>
+      <th>Tech Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Meerkat</td>
+      <td> </td>
+      <td><a href="https://tech-docs.system76.com/models/meer5/repairs.html">meer5</a></td>
+    </tr>
+    <tr>
+      <td>Thelio</td>
+      <td><a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf">thelio-r1</a>, <a href="https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf">thelio-b1</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Thelio Major</td>
+      <td> </td>
+      <td><a href="https://tech-docs.system76.com/models/thelio-major-intel-and-amd/repairs.html">thelio-major</a></td>
+    </tr>
+    <tr>
+      <td>Thelio Massive</td>
+      <td> </td>
+      <td><a href="https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html">thelio-massive</a></td>
+    </tr>
+    <tr>
+      <td>Thelio Mega</td>
+      <td> </td>
+      <td><a href="https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html">thelio-mega</a></td>
+    </tr>
+    <tr>
+      <td>Thelio Mira</td>
+      <td> </td>
+      <td><a href="https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html">thelio-mira</a></td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-05-27</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

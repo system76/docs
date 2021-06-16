@@ -1,0 +1,96 @@
+<p>If you’ve added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the <strong>eject (⏏) icon</strong>. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes.</p>
+
+<p>Auto-mounting is a per user configuration, and is optional.  Extra drives can always be accessed by clicking on them in the file explorer, which will mount the drive if not currently mounted.</p>
+
+<h3 id="create-mount-point">Create Mount Point</h3>
+
+<p>Extra drives require a folder on your primary drive where the drive’s contents will be made available. This folder is called a mount point. You’ll need to create an empty folder in your home folder to serve as this mount point. Navigate to a location for the mount point (e.g. your Documents folder), then right click and choose <strong>New Folder</strong>, then name the folder appropriately; something like <em>ExtraDrive</em> would work. It’s recommended not to include any spaces in your mount point name.</p>
+
+<h3 id="copy-mount-point-location">Copy Mount Point Location</h3>
+
+<p>Once you’ve made a mount point, double click it to open it and ensure that it is empty. Any contents within the mount point will be inaccessible while the drive is mounted. Press <kbd>Ctrl</kbd> + <kbd>L</kbd> on your keyboard, then select all of the text in the location bar that appears and press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy it. We’ll need it later.</p>
+
+<h3 id="locate-the-drive">Locate The Drive</h3>
+
+<p>Press the Super Key <kbd><span class="fl-ubuntu"></span></kbd>/<kbd><span class="fl-pop-key"></span></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:</p>
+
+<p><img src="/images/extra-drive/Step1.png" alt="Disks Application" /></p>
+
+<p>Click on your extra drive in the list. You can identify it by size, or by the label; the extra drive is usually <code class="language-plaintext highlighter-rouge">/dev/sdb</code> or <code class="language-plaintext highlighter-rouge">/dev/sdc</code>.</p>
+
+<h3 id="optionally-format-the-drive">(Optionally) Format The Drive</h3>
+
+<p>If this is a new drive, and it is not formatted, it will need to be formatted before use. If the drive has formatting from the manufacturer, it is usually best to format it to the standard format (Ext4). First, delete the existing partition by clicking the <strong>minus button</strong>. Then click the <strong>plus icon</strong>, change the type to <em>(Ext4)</em>, give your drive a name, such as <em>Extra Drive</em>, and click <strong>Create</strong>.</p>
+
+<h3 id="open-extra-drive-mount-options">Open Extra Drive Mount Options</h3>
+
+<p>Press the Super key <kbd><span class="fl-ubuntu"></span></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. Click on the Extra Drive Partition under “Volumes”, then click on the Gear icon <i class="fa fa-cog"></i> to open the options menu for the Volume. Then click on <strong>Edit Mount Options</strong>.</p>
+
+<p><img src="/images/extra-drive/Step2.png" alt="Volume Options Menu" /></p>
+
+<p><img src="/images/extra-drive/Step3.png" alt="Mount Options Dialog" /></p>
+
+<h3 id="set-mount-options">Set Mount Options</h3>
+
+<p>Turn off the Automatic Mount Options switch, then set the fields as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mount at startup</td>
+      <td>Checked ☑</td>
+    </tr>
+    <tr>
+      <td>Show in user interface</td>
+      <td>Checked ☑</td>
+    </tr>
+    <tr>
+      <td>Require additional authorization to mount</td>
+      <td>Unchecked ☐</td>
+    </tr>
+    <tr>
+      <td>Display Name</td>
+      <td><em>{leave blank}</em></td>
+    </tr>
+    <tr>
+      <td>Icon Name</td>
+      <td><em>{leave blank}</em></td>
+    </tr>
+    <tr>
+      <td>Symbolic Icon Name</td>
+      <td><em>{leave blank}</em></td>
+    </tr>
+    <tr>
+      <td><em>{unlabeled field}</em></td>
+      <td><code class="language-plaintext highlighter-rouge">nosuid,nodev,nofail,x-gvfs-show</code></td>
+    </tr>
+    <tr>
+      <td>Mount Point</td>
+      <td><code class="language-plaintext highlighter-rouge">/home/...</code><em>{from step 2}</em></td>
+    </tr>
+    <tr>
+      <td>Identify As</td>
+      <td><code class="language-plaintext highlighter-rouge">/dev/disk/by-uuid/...</code></td>
+    </tr>
+    <tr>
+      <td>Filesystem Type</td>
+      <td><code class="language-plaintext highlighter-rouge">ext4</code>*</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small>* This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.</small></p>
+
+<p><img src="/images/extra-drive/Step4-updated.png" alt="Mount Options Set Correctly" /></p>
+
+<p>The red box shows the item we don’t want to change and the green box shows the item we want to change.</p>
+
+<h3 id="save-and-restart">Save And Restart</h3>
+
+<p>Once the mount options are set up correctly, click <strong>OK</strong> to save the changes and then restart your computer. After the computer starts back up, ensure that there are no error messages during the boot, and that the drive is mounted when booting. You can check this by opening your home folder and ensure that you see the <strong>eject icon (⏏)</strong> next to the drive <em>before</em> you click on the drive.</p>

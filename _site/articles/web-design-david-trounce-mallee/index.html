@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Web Design and Site Management at Mallee Blue Media - System76 Support</title>
+    <meta property="og:title" content="Web Design and Site Management at Mallee Blue Media - System76 Support">
+    <meta itemprop="name" content="Web Design and Site Management at Mallee Blue Media - System76 Support">
+    <meta name="twitter:title" content="Web Design and Site Management at Mallee Blue Media - System76 Support">
+
+    <meta name="description" content="Web development, content marketing, and conversion optimization with Linux.
+">
+    <meta property="og:description" content="Web development, content marketing, and conversion optimization with Linux.
+">
+    <meta itemprop="description" content="Web development, content marketing, and conversion optimization with Linux.
+">
+    <meta name="twitter:description" content="Web development, content marketing, and conversion optimization with Linux.
+">
+
+    <meta name="keywords" content="web design website management web development web dev Linux Ubuntu HTML/CSS digital marketing System76">
+
+    
+    <meta property="og:image" content="https://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="https://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Web Design and Site Management at Mallee Blue Media
+        <a href="https://github.com/system76/docs/edit/master/_articles/web-design-david-trounce-mallee.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <p>Mallee Blue Media is a web design, site management, and content marketing 
+company with a focus on conversion optimization, founded by David Trounce and 
+his wife in 2004. They help their clients be more efficient and effective in 
+growing their own businesses. To lead by example, David needs the right 
+equipment to get his work done.</p>
+
+<blockquote>
+  <p>“People like me have limited time to play around. When I start a machine, I 
+just want to get to my work. As someone involved in marketing, my goal is to 
+remove obstacles for users. System76 does a solid, reliable job of taking 
+care of me as a user.”</p>
+</blockquote>
+
+<p>The company started with an interest in e-commerce. Over time, it became clear 
+that how they marketed their business was an opportunity in and of itself. 
+Mallee Blue Media redirected their focus to offering these services to other 
+small- and medium-sized businesses, growing alongside their customers over the 
+last 15 years.</p>
+
+<p>Mallee Blue Media now houses half a dozen writers, two editors, and a few 
+designers, and provides a combination of website and design services to their 
+clients in Australia, Canada, and the United States.</p>
+
+<blockquote>
+  <p>“We are a professional web design company providing quality site management 
+services to small business wanting to increase their reputation and brand 
+awareness online.”</p>
+</blockquote>
+
+<p>The team offers content creation, HTML/CSS development, CMS integration, guest 
+publishing, and more for businesses and digital marketing agencies. With all 
+this going on, David had high expectations when he switched to running his web 
+development company with Linux.</p>
+
+<blockquote>
+  <p>“Linux had to prove itself to me first. Since I switched to Linux, I’ve 
+never had a crisis. I don’t worry about viruses, slow machines, software that 
+collapses on me. Instead, I have found the open source community to be 
+helpful and constructive.”</p>
+</blockquote>
+
+<p>Today, David uses a variety of programs and plug-ins on Ubuntu, such as: 
+SEORush, Colorzilla, Thunderbird, CrossOver by CodeWeavers, Skype, VLC, and 
+LibreOffice, to help him craft long-term campaigns for his clients that they 
+can later run themselves. For design, he uses a mix of Canva and GIMP, while 
+OpenShot handles his video creation projects.</p>
+
+<p>Linux has the professional-grade software and tools that David needs to get 
+his work done, and System76 completes the picture with high-performance 
+hardware. System76 ships the latest components vetted for quality, 
+performance, and Linux compatibility.</p>
+
+<blockquote>
+  <p>“If you want professional, business-ready machines, there are certain brands 
+that reflect that, like System76.”</p>
+</blockquote>
+
+<p>When web developers need a reliable machine that comes with Linux 
+pre-installed and dedicated Linux support, they choose System76. Connect with 
+an expert today to learn more about System76’s Linux laptops, desktops, and 
+servers and how they can help you develop and deploy your work.</p>
+
+<p><a href="https://system76.com/contact/">Contact System76 Today →</a></p>
+
+<hr />
+
+<p><a href="https://github.com/system76/docs/raw/gh-pages/pdfs/case-studies/system76-case-study_web-design-david-trounce-mallee.pdf">Click here to download a PDF copy of this case study ↓</a></p>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

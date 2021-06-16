@@ -204,10 +204,11 @@ More details will be provided if this process is requested.
 
 You can read the details of our warranty coverage [here](https://system76.com/warranty)
 
-
+<!--
 ---
 
 - Document Version: 1.2.0
 - Date: (5-21-2021)
 - Author: Nathaniel Warburton
 - Contributing Editor(s): Aaron Honeycutt
+-->

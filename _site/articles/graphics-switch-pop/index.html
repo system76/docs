@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Graphics switching (Pop!_OS) - System76 Support</title>
+    <meta property="og:title" content="Graphics switching (Pop!_OS) - System76 Support">
+    <meta itemprop="name" content="Graphics switching (Pop!_OS) - System76 Support">
+    <meta name="twitter:title" content="Graphics switching (Pop!_OS) - System76 Support">
+
+    <meta name="description" content="How to use systems with switchable graphics
+">
+    <meta property="og:description" content="How to use systems with switchable graphics
+">
+    <meta itemprop="description" content="How to use systems with switchable graphics
+">
+    <meta name="twitter:description" content="How to use systems with switchable graphics
+">
+
+    <meta name="keywords" content="System76 Pop 18.04 19.1 20.04 NVIDIA Hybrid Integrated">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/pop.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/pop.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Graphics switching (Pop!_OS)
+        <a href="https://github.com/system76/docs/edit/master/_articles/graphics-switch-pop.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <p>The following laptops have switchable graphics:</p>
+
+<ul>
+  <li>Adder WS (addw1, addw2)</li>
+  <li>Galago Pro (galp5 - NVIDIA models only)</li>
+  <li>Gazelle (gaze14, gaze15)</li>
+  <li>Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7)</li>
+</ul>
+
+<h3 id="graphics-modes">Graphics modes</h3>
+
+<h4 id="integrated">Integrated</h4>
+
+<p>Integrated graphics mode uses the integrated GPU only and turns off the NVIDIA
+GPU. This mode uses less power, leading to a longer battery life and less fan
+noise.</p>
+
+<h4 id="nvidia">NVIDIA</h4>
+
+<p>NVIDIA graphics mode uses the discrete NVIDIA GPU only. This provides a better
+graphical experience, but reduces battery life. Most external display ports on
+System76 laptops are connected to the NVIDIA GPU only. (Some models, such as the
+Gazelle, may also have external ports connected to the integrated GPU.)</p>
+
+<h4 id="hybrid">Hybrid</h4>
+
+<p>Hybrid graphics mode uses both the integrated GPU and the discrete NVIDIA GPU.
+Applications will use the integrated GPU unless explicitly requested to use the
+discrete GPU.</p>
+
+<p>Vulkan applications must be launched with this command to be rendered on the dGPU (NVIDIA):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>__NV_PRIME_RENDER_OFFLOAD=1 &lt;application&gt;
+</code></pre></div></div>
+
+<p>GLX applications must be launched with this command to be rendered on the dGPU (NVIDIA):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia &lt;application&gt;
+</code></pre></div></div>
+
+<p>Hybrid graphics mode is available on 19.10 and later.</p>
+
+<h4 id="compute">Compute</h4>
+
+<p>Compute graphics mode uses the integrated GPU for all rendering. The NVIDIA
+GPU is left available, allowing it to be used as a compute node.</p>
+
+<h3 id="switch-graphics">Switch graphics</h3>
+
+<p>Pop!_OS by System76 includes the system76-power package, which includes the
+ability to switch between integrated, NVIDIA, and hybrid graphics modes.</p>
+
+<h4 id="from-gnome-desktop">From GNOME Desktop</h4>
+
+<p>Click the system menu in the top right corner of your screen to access graphics
+switching.</p>
+
+<p><img src="/images/graphics-switch-pop/system-menu.png" alt="Graphics" /></p>
+
+<p>Click on NVIDIA, Integrated, Hybrid, or Compute depending on your use case.</p>
+
+<p>Once you select a mode, you will be prompted to reboot.</p>
+
+<h4 id="from-the-command-line">From the command line</h4>
+
+<p>If you are not using the GNOME Desktop Environment, you can use the system76-power 
+command line tool. You can see the options with this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>system76-power <span class="nb">help</span>
+</code></pre></div></div>
+
+<p>For seeing which graphics mode the system is using:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>system76-power graphics
+</code></pre></div></div>
+
+<p>For switching to NVIDIA graphics:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>system76-power graphics nvidia
+</code></pre></div></div>
+
+<p>For switching to integrated graphics:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>system76-power graphics integrated
+</code></pre></div></div>
+
+<p>For switching to hybrid graphics:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>system76-power graphics hybrid
+</code></pre></div></div>
+
+<p>For switching to compute mode:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>system76-power graphics compute
+</code></pre></div></div>
+
+<h3 id="sources">Sources</h3>
+
+<p>The source code for the system76-power utility and the GNOME Shell extension can be found on GitHub:</p>
+
+<ul>
+  <li><a href="https://github.com/pop-os/system76-power">system76-power</a></li>
+  <li><a href="https://github.com/pop-os/gnome-shell-extension-system76-power">gnome-shell-extension-system76-power</a></li>
+</ul>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<h4 id="encrypt-the-extra-drive">Encrypt the Extra Drive</h4>
+
+<p>The <u>Disks</u> application can be used to encrypt the extra drive and it comes pre-installed on Pop!_OS and Ubuntu.</p>
+
+<p>In this screenshot the extra drive can be seen and then select the <strong>Gear icon</strong> under Volumes. Then select the <strong>Format Partition…</strong> option to open the ‘Format Volume’ window.</p>
+
+<p><img src="/images/encrypt-extra/Disk-Menu.png" alt="Disks" /></p>
+
+<p>Then use the ‘Format Volume’ window to format the volume with the options to name the volume and use the Ext4 partition with LUKS.</p>
+
+<p><img src="/images/encrypt-extra/Disk-Encrypt.png" alt="Disks" /></p>
+
+<h3 id="decrypt-on-login">Decrypt on Login</h3>
+
+<p>If we would like to decrypt the drive on login into the system there are settings for the encryption. In the <u>Disks</u> application on the drive that is encrypted then click on the LUKS partition and then the <strong>Gear icons</strong> on the bottom of the Volumes table. Then click on <strong>Edit Encryption Options…</strong> then unclick <strong>User Session Defaults</strong>. Now enter the Passphrase for the encrypted drive and hit <strong>OK</strong> button. It will ask for your password and once it is entered the drive will be decrypted on login.</p>
+
+<p><img src="/images/encrypt-extra/Encrypt-Options.png" alt="Disks" /></p>
+
+<h4 id="editing-mount-options">Editing Mount Options</h4>
+
+<p>The Extra Drive <a href="/articles/extra-drive/">article</a> goes over changing the mounting options for the drive.</p>

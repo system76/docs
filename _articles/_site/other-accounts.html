@@ -1,0 +1,48 @@
+<p>There are a few reasons to have more then one account on your system. They include allowing the system to be used by other people in your home or office or troubleshooting issues with your user account.</p>
+
+<p>In order to add another user to the system follow these steps:</p>
+
+<ol>
+  <li>Navigate to Settings -&gt; Users</li>
+</ol>
+
+<p><img src="/images/other-accounts/gnome-control-center.png" alt="Settings" /></p>
+
+<ol>
+  <li>Click the “Unlock” button and enter your password</li>
+</ol>
+
+<p><img src="/images/other-accounts/gnome-control-center-2.png" alt="Settings-About-Users" /></p>
+
+<ol>
+  <li>Click on the “Add User” button at the top of the window</li>
+</ol>
+
+<p><img src="/images/other-accounts/gnome-control-center-3.png" alt="Settings-About-Users-Unlock" /></p>
+
+<p><img src="/images/other-accounts/gnome-control-center-4.png" alt="Settings-About-Users-Add" /></p>
+
+<p>Be sure to set the new user as an Administrator so that you can make system-wide changes.</p>
+
+<ol>
+  <li>Close Settings and Log Out of your current session</li>
+  <li>Log into the newly created user</li>
+</ol>
+
+<p>You can also create a new account using the command below if the issue is causing you to only be able to access the TTY/Terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>adduser bob
+</code></pre></div></div>
+
+<p>Then add the user to the Administrator group:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usermod <span class="nt">-aG</span> <span class="nb">sudo </span>bob
+</code></pre></div></div>
+
+<p>If the new user doesn’t have any of the issues as your main user then log out of the new account and then back into the original account. From there open a <u>Terminal</u> and run this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv</span> ~/.config ~/.config.bk
+</code></pre></div></div>
+
+<p>Then log out and back into the main account.</p>
+

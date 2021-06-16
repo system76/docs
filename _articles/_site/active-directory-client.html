@@ -1,0 +1,130 @@
+<h4 id="join-an-active-directory-domain">Join an Active Directory Domain</h4>
+
+<p>Pop!_OS and Ubuntu can be joined to an Active Directory domain, which allows users to log in with their existing network credentials.</p>
+
+<ol>
+  <li>
+    <p>Install the necessary packages:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo apt install sssd heimdal-clients msktutil
+</code></pre></div>    </div>
+
+    <p>While installing those packages, you will be prompted for the following information. These are sample responses. Our domain is called “system76.local” and our Active Directory server is called “adserver” in this example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Forest name: SYSTEM76
+ Domain controller hostname: ADSERVER.system76.local
+ Administrative server for your Kerberos realm: ADSERVER.system76.local
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Move the default Kerberos configuration file to a backup, and create a fresh file to use:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo mv /etc/krb5.conf /etc/krb5.conf.default
+ sudo nano /etc/krb5.conf
+</code></pre></div>    </div>
+
+    <p>Edit the /etc/krb5.conf file with the following contents:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [libdefaults]
+ default_realm = SYSTEM76.LOCAL
+ rdns = no
+ dns_lookup_kdc = true
+ dns_lookup_realm = true
+
+ [realms]
+ SYSTEM76.LOCAL = {
+ kdc = ADSERVER.system76.local
+ admin_server = ADSERVER.system76.local
+ }
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Initialize Kerberos and generate a keytab file. The first command requires the username of a domain administrator, and our computer’s hostname is “pop-os” in this example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> kinit administrator
+ klist
+ msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os.system76.local -k my-keytab.keytab ‑‑computer-name POP-OS ‑‑upn POP-OS$ ‑‑server adserver.system76.local ‑‑user-creds-only
+ msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os -k my-keytab.keytab ‑‑computer-name POP-OS ‑‑upn POP-OS$ ‑‑server adserver.system76.local ‑‑user-creds-only
+ kdestroy
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Move the keytab to the /etc/sssd directory, and configure SSSD:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo mv my-keytab.keytab /etc/sssd/my-keytab.keytab
+ sudo nano /etc/sssd/sssd.conf
+</code></pre></div>    </div>
+
+    <p>The SSSD configuration file should contain the following:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [sssd]
+ services = nss, pam
+ config_file_version = 2
+ domains = system76.local
+
+ [nss]
+ entry_negative_timeout = 0
+ #debug_level = 5
+
+ [pam]
+ #debug_level = 5
+
+ [domain/system76.local]
+ #debug_level = 10
+ enumerate = false
+ id_provider = ad
+ auth_provider = ad
+ chpass_provider = ad
+ access_provider = ad
+ dyndns_update = false
+ ad_hostname = pop-os.system76.local
+ ad_server = adserver.system76.local
+ ad_domain = system76.local
+ ldap_schema = ad
+ ldap_id_mapping = true
+ fallback_homedir = /home/%u
+ default_shell = /bin/bash
+ ldap_sasl_mech = gssapi
+ ldap_sasl_authid = POP-OS$
+ krb5_keytab = /etc/sssd/my-keytab.keytab
+ ldap_krb5_init_creds = true
+</code></pre></div>    </div>
+
+    <p>After saving, set the appropriate permissions on that configuration file:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo chmod 0600 /etc/sssd/sssd.conf
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Configure PAM:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo nano /etc/pam.d/common-session
+</code></pre></div>    </div>
+
+    <p>Look for the line that contains “session required pam_unix.so” and add this line immediately below it:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> session required pam_mkhomedir.so skel=/etc/skel umask=0077
+</code></pre></div>    </div>
+
+    <p>After saving that file, restart SSSD:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo systemctl restart sssd
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add the domain administrator to the local sudo group:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo adduser administrator sudo
+</code></pre></div>    </div>
+
+    <p>Then, test a login with the domain administrator:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> su -l administrator
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Reboot the computer. At the login screen, you can click the “Not listed?” link, and type the username of any domain user. After logging in with a domain user for the first time, that user will appear on the login screen’s user list.</p>
+
+    <p><img src="/images/active-directory-client/login-screen-not-listed.png" alt="Login Screen" /></p>
+  </li>
+</ol>

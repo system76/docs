@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Pop!_OS 20.04 LTS Release Notes - System76 Support</title>
+    <meta property="og:title" content="Pop!_OS 20.04 LTS Release Notes - System76 Support">
+    <meta itemprop="name" content="Pop!_OS 20.04 LTS Release Notes - System76 Support">
+    <meta name="twitter:title" content="Pop!_OS 20.04 LTS Release Notes - System76 Support">
+
+    <meta name="description" content="Discover what's new in Pop!\_OS 20.04 LTS
+">
+    <meta property="og:description" content="Discover what's new in Pop!\_OS 20.04 LTS
+">
+    <meta itemprop="description" content="Discover what's new in Pop!\_OS 20.04 LTS
+">
+    <meta name="twitter:description" content="Discover what's new in Pop!\_OS 20.04 LTS
+">
+
+    <meta name="keywords" content="Pop 20.04 LTS Updates New Features">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Pop!_OS 20.04 LTS Release Notes
+        <a href="https://github.com/system76/docs/edit/master/_articles/Pop!_OS-20.04-LTS-Release-Notes.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <p>Pop!_OS 20.04 was released April 30, 2020.</p>
+
+<h2 id="pop_os-2004-release-notes">Pop!_OS 20.04 Release Notes</h2>
+
+<p>To advance keyboard driven control, keyboard shortcuts have been modified in Pop!_OS 20.04.</p>
+
+<h3 id="notable-shortcut-changes">Notable Shortcut Changes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Action</th>
+      <th style="text-align: left">Old Shortcut</th>
+      <th>New Shortcut</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Lock Screen</td>
+      <td style="text-align: left"><kbd><span class="fl-pop-key"></span></kbd> + <kbd>L</kbd></td>
+      <td><kbd><span class="fl-pop-key"></span></kbd> + <kbd>ESC</kbd></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Move to Workspace Up or Down</td>
+      <td style="text-align: left"><kbd><span class="fl-pop-key"></span></kbd> + <kbd>↑</kbd>/<kbd>↓</kbd></td>
+      <td><kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Close Window</td>
+      <td style="text-align: left"><kbd><span class="fl-pop-key"></span></kbd> + <kbd>W</kbd></td>
+      <td><kbd><span class="fl-pop-key"></span></kbd> + <kbd>Q</kbd></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Toggle Maximize</td>
+      <td style="text-align: left"><kbd><span class="fl-pop-key"></span></kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd></td>
+      <td><kbd><span class="fl-pop-key"></span></kbd> + <kbd>M</kbd></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="new-features">New Features</h3>
+
+<h4 id="pop-shell-automatic-window-tiling">Pop Shell Automatic Window Tiling</h4>
+<p>Pop!_OS 20.04 features automatic window tiling. To activate tiling mode, click the tiling menu icon at the top right of the screen and toggle on Tile Windows. Open and newly launched windows will be automatically tiled. Toggling off Tile Windows will revert to floating mode. Click the tiling menu icon again and choose Keyboard Shortcuts. This help application will show you how to navigate, move, and resize windows all with your keyboard.</p>
+
+<h4 id="new-application-switcher-and-launcher">New Application Switcher and Launcher</h4>
+<p>Type <code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">/</code> to activate the new application switcher and launcher. Instead of <code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Tabbing</code> through application icons, simply type <code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">/</code> and start typing the name of the application you want to switch to or launch.</p>
+
+<h4 id="flatpak-support-with-the-flathub">Flatpak support with the Flathub</h4>
+<p>Pop!_Shop now includes Flatpak application support and the Flathub application repository by default. The source of applications is visible when viewing application details. System76 continues to curate and package key applications such as Steam, Atom, and VS Code. Pop!_OS repositories are prioritized to provide the best user experience for these applications.</p>
+
+<h4 id="hybrid-graphics">Hybrid Graphics</h4>
+<p>Customers with integrated and discrete graphics can now choose Hybrid Graphics from the battery section of the user menu. While in Hybrid Graphics mode, right clicking an application in the Activities overview offers a “Launch Using Dedicated Graphics Card” option. This enables customers to use battery-saving integrated graphics while launching specific apps on the dedicated GPU.</p>
+
+<h4 id="offline-upgrades">Offline Upgrades</h4>
+<p>Version upgrades allow you to download the upgrade in the background and then apply it offline when you’re ready to perform the upgrade.</p>
+
+<h4 id="application-indicators-in-top-bar">Application Indicators in Top Bar</h4>
+<p>Application indicators are now present at the top right of the desktop by default.</p>
+
+<h4 id="more-accessible-pop_picks">More Accessible Pop!_Picks</h4>
+<p>Pop!_Shop now loads up to 20 Pop!_Picks making highlighted applications more accessible. These are curated and preferred applications tested to provide the best experience.</p>
+
+<h4 id="theme-updates">Theme Updates</h4>
+<p>Dark mode is enabled by default. Default desktop wallpaper has a new design. Both defaults can be changed within the Appearance settings.</p>
+
+<h3 id="gnome-336">GNOME 3.36</h3>
+<ul>
+  <li>New lockscreen.</li>
+  <li>Additional performance improvements.</li>
+  <li>New Extensions application to GNOME Shell Extensions and their settings.</li>
+  <li>Better organized power off / logout section in the user menu.</li>
+  <li>Most password dialogs now have the option to reveal the password by clicking the “eye” icon.</li>
+  <li>App folders in the application overview can now be renamed.</li>
+  <li>GNOME Settings sections have been rearranged for easier navigation.</li>
+  <li>The privacy section now lists applications that have been granted permission to access location services, camera and microphone. Access can be revoked on a per-app basis.</li>
+  <li>The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.</li>
+</ul>
+
+<h3 id="linux-kernel-54">Linux Kernel 5.4</h3>
+
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

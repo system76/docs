@@ -1,0 +1,52 @@
+<p>Charging thresholds allow your System76 laptop to avoid charging the battery until it has dropped below a lower bound (the start threshold), and to stop charging when it reaches an upper bound (the end threshold). This is useful when your laptop is plugged into an AC power adapter for extended periods of time, as it prevents unnecessary micro-charging that would reduce battery longevity.</p>
+
+<p>To determine if your laptop has Open Firmware or proprietary firmware, see <a href="/articles/open-firmware-systems">this article</a>. (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See <a href="#configuring-charging-thresholds-open-firmware">Charging Thresholds</a> for Open Firmware systems or <a href="#configuring-flexicharger-proprietary-firmware">FlexiCharger</a> for proprietary firmware systems.</p>
+
+<h2 id="configuring-charging-thresholds-open-firmware">Configuring Charging Thresholds (Open Firmware)</h2>
+
+<p><strong>Note:</strong> This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them.</p>
+
+<h3 id="using-the-terminal">Using the terminal:</h3>
+
+<p>You can see the thresholds that are currently set using this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>system76-power charge-thresholds
+</code></pre></div></div>
+
+<p>You can list the available charging profiles using this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>system76-power charge-thresholds --list-profiles
+</code></pre></div></div>
+
+<p>Then, you can select a profile using one of these commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>system76-power charge-thresholds --profile full_charge
+system76-power charge-thresholds --profile balanced
+system76-power charge-thresholds --profile max_lifespan
+</code></pre></div></div>
+
+<p>You can also set custom thresholds without using a profile. For example, this command will set the start threshold to <code class="language-plaintext highlighter-rouge">40</code> and the end threshold to <code class="language-plaintext highlighter-rouge">80</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>system76-power charge-thresholds 40 80
+</code></pre></div></div>
+
+<h3 id="via-sysfs">Via sysfs:</h3>
+
+<p>Charging thresholds are exposed by the firmware through ACPI, and the <code class="language-plaintext highlighter-rouge">system76_acpi</code> kernel module makes them available through standard sysfs entries:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">/sys/class/power_supply/BAT0/charge_control_start_threshold</code></li>
+  <li><code class="language-plaintext highlighter-rouge">/sys/class/power_supply/BAT0/charge_control_end_threshold</code></li>
+</ul>
+
+<p>The thresholds can be controlled by reading from and writing to these sysfs files.</p>
+
+<h2 id="configuring-flexicharger-proprietary-firmware">Configuring FlexiCharger (proprietary firmware)</h2>
+
+<p>FlexiCharger is an implementation of charging thresholds in proprietary firmware, made available as a UEFI setting.</p>
+
+<p>To adjust the thresholds, reboot the computer and enter the UEFI setup utility by holding down <kbd>F2</kbd> and selecting <code class="language-plaintext highlighter-rouge">Setup Utility</code>. Navigate to Advanced, then Advanced Chipset Control, and set FlexiCharger to Enabled. Two new options will appear where you can set the start and stop thresholds.</p>
+
+<p><img src="/images/laptop-charging-thresholds/flexicharger.jpg" alt="Enabling FlexiCharger" /></p>
+
+<p>Once configured, save and exit the setup utility. The thresholds can be disabled at any time by setting FlexiCharger back to Disabled.</p>

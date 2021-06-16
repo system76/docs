@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Differences between Pop!_OS and Ubuntu - System76 Support</title>
+    <meta property="og:title" content="Differences between Pop!_OS and Ubuntu - System76 Support">
+    <meta itemprop="name" content="Differences between Pop!_OS and Ubuntu - System76 Support">
+    <meta name="twitter:title" content="Differences between Pop!_OS and Ubuntu - System76 Support">
+
+    <meta name="description" content="Discover the differences between these two Operating Systems
+">
+    <meta property="og:description" content="Discover the differences between these two Operating Systems
+">
+    <meta itemprop="description" content="Discover the differences between these two Operating Systems
+">
+    <meta name="twitter:description" content="Discover the differences between these two Operating Systems
+">
+
+    <meta name="keywords" content="Ubuntu Pop 18.04 19.04">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Differences between Pop!_OS and Ubuntu
+        <a href="https://github.com/system76/docs/edit/master/_articles/difference-between-pop-ubuntu.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="pop_os-and-ubuntu-whats-the-difference">Pop!_OS and Ubuntu: What’s the difference?</h1>
+
+<p>Pop!_OS has evolved quite a bit since its 17.10 release. While the easiest way to tell the difference between the two is by testing them out, let’s dive into how we differentiate Pop_OS from Ubuntu.</p>
+
+<p><img src="/images/difference-between-pop-ubuntu/pop-desktop-screenshot.png" alt="General look of desktop" /></p>
+
+<p><br /></p>
+<h2 id="isnt-it-just-a-re-skinned-ubuntu">“Isn’t it just a re-skinned Ubuntu?”</h2>
+
+<p>This is a common question to come up, and one that makes our engineers cringe. Yes, Pop!_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)</p>
+
+<p>To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our <a href="https://support.system76.com/articles/roadmap/">Roadmap</a> documentation and the <a href="https://pop-planet.info/forums/forums/project-updates.28/">This Week in Pop!</a> series on <a href="https://pop-planet.info/">Pop!_Planet</a>. Below, you’ll find a general list of improvements that make Pop!_OS stand out.</p>
+
+<p><br /></p>
+<h2 id="first-impressions-the-installer">First impressions: The Installer</h2>
+
+<p><img src="/images/difference-between-pop-ubuntu/Installer-Screenshot.png" alt="Installer Images: Download screen" /></p>
+
+<p>While Pop!_OS is designed to be <a href="https://www.forbes.com/sites/jasonevangelho/2018/11/14/a-linux-noob-reviews-the-pop_os-installer-from-system76/#144a421310d4">easy to use</a> for Linux beginners, it’s also developed with the tech-savvy professional in mind. Pop!’s installer sets the tone for our philosophy behind the OS: to provide snappy functionality inside a desktop environment that promotes creative thinking.</p>
+
+<p>The installer offers encryption out of the box and takes care of setting up your user preferences (language, keyboard layout, installation method). On first use, the installer also makes it easy to select your time zone and integrate any online accounts into your desktop.</p>
+
+<p><img src="/images/difference-between-pop-ubuntu/Intel&amp;AMD-NVIDIA-1904.png" alt="Intel/AMD + NVIDIA" /></p>
+
+<p>Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings and the proprietary NVIDIA driver for NVIDIA systems, ensuring the best performance and use of CUDA tools one command away. On Oryx Pro systems, you can even switch between Intel and Nvidia graphics using a toggle in the top right corner of your screen.</p>
+
+<p><br /></p>
+<h2 id="privacy">Privacy</h2>
+
+<p><img src="/images/difference-between-pop-ubuntu/Encryption-Screenshot.png" alt="Encryption, in-progress screen" /></p>
+
+<p>With encryption enabled by default, and reporting through Ubuntu disabled, Pop!_OS believes that your data should truly be yours. Communications with a third party does not occur by default, and will only occur with user consent.</p>
+
+<p><br /></p>
+<h2 id="custom-keyboard-shortcuts">Custom Keyboard Shortcuts</h2>
+
+<p>After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to make some shortcuts more efficient for common user behaviors. The shortcut for switching workspaces, for example, is <kbd>Super</kbd> + <kbd>Arrow</kbd> <kbd>Up</kbd> or <kbd>Down</kbd>.
+<a href="/articles/pop-keyboard-shortcuts/">See all keyboard shortcuts</a></p>
+
+<p><br /></p>
+<h2 id="default-apps-slimming-down-on-bloatware">Default Apps: Slimming down on bloatware</h2>
+
+<p><img src="/images/difference-between-pop-ubuntu/Pop!_Shop-Screenshot.png" alt="Pop Shop" /></p>
+
+<p>Pop!_OS includes a selection of apps intended to be comprehensive, but relatively lightweight. Because Pop!_OS is optimized for your workflow, we avoid providing some larger programs by default that slow down your computer. This is especially true for library applications, such as one for storing your photos, which we opt to replace with image viewers or similar apps that are smaller in size. However, if you’re in need of a photo manager, Steam, or a music streaming app such as Spotify, these applications are still available in the Pop!_Shop for a quick install.</p>
+
+<p><br /></p>
+<h2 id="features-across-the-board">Features across the board</h2>
+
+<p><img src="/images/difference-between-pop-ubuntu/system-menu.png" alt="Power Profiles/Graphics toggle" /></p>
+
+<p>Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our <a href="https://support.system76.com/articles/roadmap/">Roadmap</a> offers a more extensive outline of these changes, we’ve highlighted some of our major improvements below:</p>
+<ul>
+  <li>Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!_OS on install also downloads the NVIDIA drivers by default.</li>
+  <li>The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.</li>
+  <li>For scientific workloads, installing <a href="https://support.system76.com/articles/cuda/">CUDA</a> and <a href="https://support.system76.com/articles/install-tensorflow/">TensorFlow</a> is made simple with a single command line.
+ <img src="/images/difference-between-pop-ubuntu/Tensorflow.png" alt="CUDA/Tensorflow command" /></li>
+  <li>Do Not Disturb mode silences notifications to help you focus on your work.</li>
+  <li>systemd-boot bootloader and the automatic configuration tool we’ve created for it called kernelstub replace the outdated GRUB bootloader used on Ubuntu. The systemd-boot bootloader is faster and smaller in size, increasing your computer’s startup speed.</li>
+</ul>
+
+<p><br /></p>
+<h2 id="recovery-partition">Recovery Partition</h2>
+
+<p>The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of either Pop!_OS 19.04 or 18.04 (not through upgrading).</p>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

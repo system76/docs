@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Back Up Files - System76 Support</title>
+    <meta property="og:title" content="Back Up Files - System76 Support">
+    <meta itemprop="name" content="Back Up Files - System76 Support">
+    <meta name="twitter:title" content="Back Up Files - System76 Support">
+
+    <meta name="description" content="Guidelines and tips for making backups of your important files.
+">
+    <meta property="og:description" content="Guidelines and tips for making backups of your important files.
+">
+    <meta itemprop="description" content="Guidelines and tips for making backups of your important files.
+">
+    <meta name="twitter:description" content="Guidelines and tips for making backups of your important files.
+">
+
+    <meta name="keywords" content="files backup deja-dup rsync Nextcloud">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Back Up Files
+        <a href="https://github.com/system76/docs/edit/master/_articles/backup-files.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="back-up-files">Back Up Files</h1>
+
+<p>There are many ways to back up important files on your computer. It’s a personal choice which one to use based on habits, preferences, and what is being backed up. We will outline a few options here, but the final solution may be a mix of several of these options.</p>
+
+<h2 id="data-policy">Data Policy</h2>
+
+<p>The key to good backups is having the data automatically backed up, accessible, secure, and distributed. All backup solutions should be evaluated against these 4 criteria:</p>
+
+<ul>
+  <li>Automatic: Data is automatically backed up. Manual copies work well in some cases, but automatic backups makes sure it’s always fresh, and that nothing is lost if a manual backup isn’t performed.</li>
+  <li>Accessible: Data needs to be retrievable and easily restorable if the original is lost.</li>
+  <li>Secure: Data needs to be accessible only by the owner. Cloud solutions are convenient, but additional steps may be required to make sure the data is private.</li>
+  <li>Distributed: Data needs to be in multiple places. If all the copies are in one location, the risk for data loss increases (for example, if your data is saved to a USB disk in your house, but there is a fire, both the computer and the backup disk could potentially be lost at the same time.)</li>
+</ul>
+
+<p>As a rule of thumb, a good backup consists of three copies: the original copy, a quickly accessible copy, and an off-site copy.</p>
+
+<h2 id="user-files">User Files</h2>
+
+<p>User files are the most common data to back up. This includes documents, pictures, and other personal files. Typically, these documents are all saved in your home directory (<code class="language-plaintext highlighter-rouge">/home/username</code>).</p>
+
+<h3 id="deja-dup">Deja Dup</h3>
+
+<p><a href="https://wiki.gnome.org/Apps/DejaDup">Déjà Dup</a> is a popular, straightforward backup option. It can be used to back up user data locally, remotely, or to a cloud server. It can also be set up to run automatically on a regular basis.</p>
+
+<h4 id="installation">Installation</h4>
+
+<p>To install Deja Dup, search for it in the Pop!_Shop, or run this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>deja-dup
+</code></pre></div></div>
+
+<p>Once Deja Dup is installed, it will be labeled as “Backups” in the Activities overview.</p>
+
+<h4 id="selecting-data-to-backup">Selecting Data to Backup</h4>
+
+<p>With Deja Dup (Backups) open, you can select the folders you wish to save or ignore using the pages listed on the left. By default, Deja Dup will backup your entire home directory, which includes your Documents, Pictures, Music, and Videos folders. It ignores your Downloads folder and any items in the Trash. Use the plus and minus buttons as needed to modify both categories.</p>
+
+<p><img src="/images/backup/deja_selection.png" alt="Selecting data to backup in Deja-Dup" /></p>
+
+<h4 id="choosing-a-backup-location">Choosing a Backup Location</h4>
+
+<p>On the <strong>Storage location</strong> page, you can configure the location where your backup will be stored.</p>
+
+<p><img src="/images/backup/deja_location.png" alt="Selecting a backup location in Deja-Dup" /></p>
+
+<p>The available options are:</p>
+
+<p><strong>Local Folder</strong> - Back up data to an internal or external hard drive, SSD, or USB flash drive.</p>
+
+<p><u>Pros:</u>
+Easy to set up, automatic, accessible, and secure. Backups typically happen quickly because they’re using a high-speed direct connection.</p>
+
+<p><u>Cons:</u>
+Single point of failure. If the computer is lost or if both drives fail, the data is lost.</p>
+
+<p><strong>Network Server</strong> - Back up data to another computer or storage device (NAS) on your network.</p>
+
+<p><u>Pros:</u>
+Same advantages as the local backup, but with less of a single point of failure.</p>
+
+<p><u>Cons:</u>
+Requires some networking knowledge and the ability to set up another computer or storage device to hold the data.
+Backups typically take longer because of slower transfer speeds over the network (but still faster than internet storage.)</p>
+
+<p><strong>Google Drive</strong> - Back up to Google’s cloud service.</p>
+
+<p><u>Pros:</u>
+Remote (off-site) location provides geographical redundancy, and is accessible anywhere there is an internet connection.</p>
+
+<p><u>Cons:</u>
+Requires a Google account.
+Your data could be accessible by Google or third parties (including law enforcement.)
+Will be slower to back up (depending on your internet speed), and uses your data transfer/bandwidth.</p>
+
+<h4 id="scheduling-regular-backups">Scheduling Regular Backups</h4>
+
+<p>To schedule backups to run automatically, select <strong>Scheduling</strong> from the list on the left, then flip the switch to enable automatic backups. Schedule the backup for a time when you know the location will be available (for example, when you know you’ll have the USB drive plugged in). Many people choose to let their backups run overnight or on weekends.</p>
+
+<p><img src="/images/backup/deja_scheduling.png" alt="Scheduling backups in Deja-Dup" /></p>
+
+<h4 id="restoring-your-data">Restoring Your Data</h4>
+
+<p>To restore your data with Deja Dup, select the <strong>Overview</strong> page, then click the <strong>Restore…</strong> button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.</p>
+
+<p><img src="/images/backup/deja_overview.png" alt="Restoring data in Deja-Dup" /></p>
+
+<h3 id="cloud-desktop-clients">Cloud Desktop Clients</h3>
+
+<p>Many online services offer small amounts of free storage and desktop cliens with automatic synchronization. A few examples of companies that offer cross-platform cloud storage are:</p>
+
+<ul>
+  <li><a href="https://www.dropbox.com">Dropbox</a></li>
+  <li><a href="https://www.mega.nz">Mega.nz</a></li>
+  <li><a href="https://www.box.com">Box.com (CLI only)</a></li>
+</ul>
+
+<p><a href="https://drive.google.com">Google Drive</a> does not have a native Linux client, but there is built-in support within Pop!_OS and Ubuntu. However, the built-in support does not automatically copy and keep files locally as the above desktop clients do.</p>
+
+<p>One solution to keep the data from being read by cloud storage providers is to keep all of the files in password-protected archives. A .zip or .7z file with a password is encrypted, and can’t be easily accessed by anyone without the password.</p>
+
+<p>Another option is <a href="https://nextcloud.com/">Nextcloud</a>. Nextcloud is an open-source cloud solution that is completely controlled by the user. The remote server needs to be set up manually (or a trusted third party could be paid to set up and maintain the server.)</p>
+
+<h3 id="copy-data-manually-using-the-files-app">Copy Data Manually Using the Files App</h3>
+
+<p>With an external drive attached, data can be manually copied to an external drive. Use the file browser to copy data from the internal drive to the external drive.</p>
+
+<p><u>Pros:</u>
+Easy and straightforward to copy data from one place to another.</p>
+
+<p><u>Cons:</u>
+Because the process is manual, updates and changes to the data may be missed over time. No geographic redundancy.</p>
+
+<h3 id="terminal-only-advanced">Terminal Only (Advanced)</h3>
+
+<p>In certain situations, you may only have access to a command-line interface. The command-line <code class="language-plaintext highlighter-rouge">rsync</code> program verifies data integrity and avoids re-copying files that are already backed up.</p>
+
+<p>An example of the rsync command would be:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-a</span> ~/ OUTPUT_DIRECTORY
+</code></pre></div></div>
+
+<p>…where <code class="language-plaintext highlighter-rouge">-a</code> tells rsync to output as an archive, <code class="language-plaintext highlighter-rouge">~/</code> refers to your home directory as the source location, and <code class="language-plaintext highlighter-rouge">OUTPUT_DIRECTORY</code> should be replaced with the location of your external disk or your remotely mounted server.</p>
+
+<h2 id="e-mail">E-mail</h2>
+
+<p>If you access your email through a web browser, manual backup is likely unnecessary, as the data is always being held on a remote computer. If you use a local client such as Thunderbird or Evolution, then the data may be stored in multiple locations (such the email server and other client devices), or only in one. If the IMAP protocol is used, the data is synchronized between all clients; if the POP protocol is used, then the data is only stored on the client where the email was viewed.</p>
+
+<p><strong>Web Browser</strong></p>
+
+<p><u>Pros:</u>
+All data is always on a remote server.</p>
+
+<p><u>Cons:</u>
+Requires internet access. Email providers may have access to data.</p>
+
+<p><strong>IMAP</strong></p>
+
+<p><u>Pros:</u>
+Data is synchronized between the remote server and local devices. No single point of failure.</p>
+
+<p><u>Cons:</u>
+Requires internet access. Email providers may have access to data.</p>
+
+<p><strong>POP/POP3</strong></p>
+
+<p><u>Pros:</u>
+Data is more secure, as it’s only in one location at any time.</p>
+
+<p><u>Cons:</u>
+The client storing data is a single point of failure.</p>
+
+<h2 id="user-configuration-files">User Configuration Files</h2>
+
+<p>Most user configuration files are stored in the home folder. These can generally be copied and saved just like any other file, but restoring these files may not always work. Occasionally, programs change how, where, or in what format their configuration files are stored. This means they won’t always be restorable, or may not function as intended. It’s recommended to back these up as needed, but remember that they may not restore correctly.</p>
+
+<p>Most user configuration files can be found in the home directory, and begin with a period (for example, the <code class="language-plaintext highlighter-rouge">.config</code> directory.)</p>
+
+<h2 id="programs">Programs</h2>
+
+<p>Because programs are readily available online (usually through software repositories), we don’t recommend backing them up. They are spread throughout the file system and are difficult to restore properly. To back up programs, we recommend keeping a list of package names for the programs that you use so they can be reinstalled with a single package manager command, like so:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>gnome-tweak-tool mousepad aptitude thunar
+</code></pre></div></div>
+
+<h2 id="program-configuration-files">Program Configuration Files</h2>
+
+<p>System-wide program configuration files can be found in many locations of the OS. The most common location is the <code class="language-plaintext highlighter-rouge">/etc</code> folder. Most of these can be backed up in the same ways that user configuration files can, with the same caveat about changes in configuration format when restoring these files. (Unless you have modified system-wide configuration files manually, most configuration is usually stored per-user in the home directory.)</p>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

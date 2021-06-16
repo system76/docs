@@ -1,0 +1,102 @@
+<p>Pop!_OS and Ubuntu both contain an application dock on the left side of the screen. In Pop!_OS, the dock is only visible when the Activities menu is open. In Ubuntu, the dock is always visible. By installing a GNOME extension called Dash to Dock, you can adjust this preference, move the dock to the bottom of the screen, and more.</p>
+
+<h1 id="dash-to-dock-on-pop_os">Dash to Dock on Pop!_OS</h1>
+
+<p>To install Dash to Dock on Pop!_OS, visit <a href="https://extensions.gnome.org/extension/307/dash-to-dock/">the extension’s page</a> in Firefox.</p>
+
+<p><img src="/images/dash-to-dock/pop-firefox1.png" alt="Dash to Dock page in Firefox" /></p>
+
+<p>If you see a purple message at the top about GNOME Shell integration, click the link to install the Firefox browser extension, then click the blue “Continue to Installation” button, and finally the blue “Add” button.</p>
+
+<p><img src="/images/dash-to-dock/pop-firefox2.png" alt="Installing the Firefox extension" /></p>
+
+<p><img src="/images/dash-to-dock/pop-firefox3.png" alt="Installing the Firefox extension" /></p>
+
+<p>After refreshing the web page, you should see an On/Off switch at the top right of the page. Click the switch to toggle it to the “On” position.</p>
+
+<p><img src="/images/dash-to-dock/pop-firefox4.png" alt="Enabling Dash to Dock" /></p>
+
+<p>On the resulting pop-up, click Install to download and install the extension.</p>
+
+<p><img src="/images/dash-to-dock/pop-install-extension.png" alt="Enabling Dash to Dock" /></p>
+
+<p>At this point, Firefox can be closed. The dock will display on the left side of the screen.</p>
+
+<p><img src="/images/dash-to-dock/pop-launcher1.png" alt="Dock on left side" /></p>
+
+<p>To customize the dock’s settings, right-click on the “Show Applications” button and click “Dash to Dock Settings.”</p>
+
+<p><img src="/images/dash-to-dock/pop-launcher2.png" alt="Dash to Dock Settings" /></p>
+
+<p>In the Dash to Dock Settings window, you can choose which screen edge to display the launcher on, such as the bottom of the screen:</p>
+
+<p><img src="/images/dash-to-dock/pop-launcher3.png" alt="Dock at bottom of screen" /></p>
+
+<p>You can also choose to extend the dock into “Panel mode,” which looks similar to Ubuntu:</p>
+
+<p><img src="/images/dash-to-dock/pop-launcher4.png" alt="Dock with Panel Mode" /></p>
+
+<h1 id="dash-to-dock-on-ubuntu">Dash to Dock on Ubuntu</h1>
+
+<p>Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. When you enable the full version of Dash to Dock, it will override the built-in version.</p>
+
+<p>To install Dash to Dock on Ubuntu, you will first need to install the “native host connector,” which allows Firefox to install and remove GNOME Shell extensions. This component is installed by default in Pop!_OS, but it is not installed by default in Ubuntu. Open a terminal and run this command to install the native host connector:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install chrome-gnome-shell
+</code></pre></div></div>
+
+<p>Enter your password and press “y” to confirm if necessary.</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-native-host-connector.png" alt="Installing the native host connector" /></p>
+
+<p>Next, visit <a href="https://extensions.gnome.org/extension/307/dash-to-dock/">the extension’s page</a> in Firefox.</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-firefox1.png" alt="Dash to Dock page in Firefox" /></p>
+
+<p>If you see a purple message at the top about GNOME Shell integration, click the link to install the Firefox browser extension, then click the blue “Continue to Installation” button, and finally the blue “Add” button.</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-firefox2.png" alt="Installing the Firefox extension" /></p>
+
+<p><img src="/images/dash-to-dock/ubuntu-firefox3.png" alt="Installing the Firefox extension" /></p>
+
+<p>After refreshing the web page, you should see an On/Off switch at the top right of the page. Click the switch to toggle it to the “On” position.</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-firefox4.png" alt="Enabling Dash to Dock" /></p>
+
+<p>On the resulting pop-up, click Install to download and install the extension.</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-install-extension.png" alt="Enabling Dash to Dock" /></p>
+
+<p>At this point, Firefox can be closed. The dock will now display on the left side of the screen, but not in Panel mode.</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-launcher1.png" alt="Dock on left side" /></p>
+
+<p>To customize the dock’s settings, right-click on the “Show Applications” button and click “Dash to Dock Settings.”</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-launcher2.png" alt="Dash to Dock Settings" /></p>
+
+<p>In the Dash to Dock Settings window, you can choose which screen edge to display the dock on, such as the bottom of the screen:</p>
+
+<p><img src="/images/dash-to-dock/ubuntu-launcher3.png" alt="Dock at bottom of screen" /></p>
+
+<hr />
+
+<h1 id="moving-the-application-launcher-in-ubuntu-1604-lts">Moving the Application Launcher in Ubuntu 16.04 LTS</h1>
+
+<p>Ubuntu 16.04 LTS includes its own dock as part of the Unity desktop environment. If you’d like to put the dock at the bottom of the screen in 16.04, enter this command in a terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings set com.canonical.Unity.Launcher launcher-position 'Bottom'
+</code></pre></div></div>
+
+<p><img src="/images/dash-to-dock/unity1.png" alt="Setting the Launcher to the bottom" /></p>
+
+<p>This will set the dock to the bottom of the screen:</p>
+
+<p><img src="/images/dash-to-dock/unity2.png" alt="Lanncher on the bottom" /></p>
+
+<p>To reset the position of the dock to the left, run this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings set com.canonical.Unity.Launcher launcher-position 'Left'
+</code></pre></div></div>
+
+<p><img src="/images/dash-to-dock/unity3.png" alt="Resetting the Launcher" /></p>

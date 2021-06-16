@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Bootloader Repair - System76 Support</title>
+    <meta property="og:title" content="Bootloader Repair - System76 Support">
+    <meta itemprop="name" content="Bootloader Repair - System76 Support">
+    <meta name="twitter:title" content="Bootloader Repair - System76 Support">
+
+    <meta name="description" content="How to repair and reinstall the bootloader.
+">
+    <meta property="og:description" content="How to repair and reinstall the bootloader.
+">
+    <meta itemprop="description" content="How to repair and reinstall the bootloader.
+">
+    <meta name="twitter:description" content="How to repair and reinstall the bootloader.
+">
+
+    <meta name="keywords" content="Support Grub systemd-boot Bootloader Refresh Reinstall System76">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Bootloader Repair
+        <a href="https://github.com/system76/docs/edit/master/_articles/bootloader.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="bootloader-repair">Bootloader Repair</h1>
+
+<p>Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB/systemd-boot can break, and it may not let you boot into your computer to fix the problem.</p>
+
+<h4 id="important-note">Important Note</h4>
+
+<p>If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to <code class="language-plaintext highlighter-rouge">/dev/sda</code> <em>not</em> <code class="language-plaintext highlighter-rouge">/dev/sda1</code>. Installing everywhere will break the bootloader.</p>
+
+<p>On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page.</p>
+
+<h3 id="create-live-disk">Create Live Disk</h3>
+
+<p>Please see our instructions for making a live disk of Pop!_OS <a href="/articles/live-disk/">here</a>.</p>
+
+<h3 id="reinstall-grub-bootloader">Reinstall GRUB Bootloader</h3>
+
+<p>Once you have the disk made, reboot your system. You’ll need to tell the computer to boot from the Live Disk. When you see the System76 logo on the screen:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Laptops</th>
+      <th>Desktops</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hold <kbd>F7</kbd> or <kbd>F1</kbd></td>
+      <td>Hold <kbd>F8</kbd> or <kbd>F10</kbd></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Once the desktop is shown, connect the computer to the Internet.  Next, open a terminal (search <u>Terminal</u> after pressing the Super Key) and run the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>parted <span class="nt">-ls</span>
+</code></pre></div></div>
+
+<p>And then look for the name of your main hard drive. It could be <code class="language-plaintext highlighter-rouge">/dev/sda</code> or <code class="language-plaintext highlighter-rouge">/dev/nvme0n1</code>, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the <code class="language-plaintext highlighter-rouge">linux-swap</code> partition to help identify the main OS drive. Here are some OS partition layout examples:</p>
+
+<p>Ubuntu 20.04 LTS</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Number  Start   End     Size    File system     Name      Flags
+       1      2097kB  524MB   522MB   fat32                     boot, esp
+root   3      524MB   496GB   491GB
+       4      496GB   500GB   4295MB  linux-swap(v1)            swap
+</code></pre></div></div>
+
+<p>Pop!_OS 20.04 LTS</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Number  Start   End     Size    File system     Name      Flags
+       1      2097kB  524MB   522MB   fat32                     boot, esp
+       2      524MB   4819MB  4295MB  fat32           recovery  msftdata
+root   3      4819MB  496GB   491GB
+       4      496GB   500GB   4295MB  linux-swap(v1)            swap
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="grub">GRUB</h2>
+
+<h3 id="efi-boot">EFI Boot</h3>
+
+<p>Most computers sold after 2014 use UEFI mode.  If <code class="language-plaintext highlighter-rouge">boot, esp</code> is listed under <code class="language-plaintext highlighter-rouge">flags</code>, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span> <span class="nt">-d</span> /sys/firmware/efi <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Installed in UEFI mode"</span> <span class="o">||</span> <span class="nb">echo</span> <span class="s2">"Installed in Legacy mode"</span>
+</code></pre></div></div>
+<p>Run these commands based on what type of disk you have:</p>
+
+<h4 id="for-nvme-drives">For NVMe Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/nvme0n1p2 /mnt
+<span class="nb">sudo </span>mount /dev/nvme0n1p1 /mnt/boot/efi
+<span class="k">for </span>i <span class="k">in</span> /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>mount <span class="nt">-B</span> <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo cp</span> <span class="nt">-n</span> /etc/resolv.conf /mnt/etc/
+
+<span class="nb">sudo chroot</span> /mnt
+apt <span class="nb">install</span> <span class="nt">--reinstall</span> grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs <span class="nt">-c</span> <span class="nt">-k</span> all
+<span class="nb">sudo </span>update-grub
+</code></pre></div></div>
+
+<h4 id="for-sata-drives">For SATA Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/sda2 /mnt
+<span class="nb">sudo </span>mount /dev/sda1 /mnt/boot/efi
+<span class="k">for </span>i <span class="k">in</span> /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>mount <span class="nt">-B</span> <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo cp</span> <span class="nt">-n</span> /etc/resolv.conf /mnt/etc/
+
+<span class="nb">sudo chroot</span> /mnt
+apt <span class="nb">install</span> <span class="nt">--reinstall</span> grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs <span class="nt">-c</span> <span class="nt">-k</span> all
+<span class="nb">sudo </span>update-grub
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="bios-boot">BIOS Boot</h3>
+
+<p>If <code class="language-plaintext highlighter-rouge">bios_grub</code> is listed under <code class="language-plaintext highlighter-rouge">flags</code>, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span> <span class="nt">-d</span> /sys/firmware/efi <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Installed in UEFI mode"</span> <span class="o">||</span> <span class="nb">echo</span> <span class="s2">"Installed in Legacy mode"</span>
+</code></pre></div></div>
+
+<p>Run these commands based on what type of disk you have:</p>
+
+<h4 id="for-nvme-drives-1">For NVMe Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/nvme0n1p2 /mnt
+<span class="k">for </span>i <span class="k">in</span> /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>mount <span class="nt">-B</span> <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo cp</span> <span class="nt">-n</span> /etc/resolv.conf /mnt/etc/
+
+<span class="nb">sudo chroot</span> /mnt
+apt <span class="nb">install</span> <span class="nt">--reinstall</span> grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs <span class="nt">-c</span> <span class="nt">-k</span> all
+<span class="nb">sudo </span>update-grub
+</code></pre></div></div>
+
+<h4 id="for-sata-drives-1">For SATA Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/sda2 /mnt
+<span class="k">for </span>i <span class="k">in</span> /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>mount <span class="nt">-B</span> <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo cp</span> <span class="nt">-n</span> /etc/resolv.conf /mnt/etc/
+
+<span class="nb">sudo chroot</span> /mnt
+apt <span class="nb">install</span> <span class="nt">--reinstall</span> grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs <span class="nt">-c</span> <span class="nt">-k</span> all
+<span class="nb">sudo </span>update-grub
+</code></pre></div></div>
+
+<h2 id="systemd-boot">systemd-boot</h2>
+
+<h3 id="efi-boot-1">EFI Boot</h3>
+
+<p>Most computers sold after 2014 use UEFI mode.  If <code class="language-plaintext highlighter-rouge">boot, esp</code> is listed under <code class="language-plaintext highlighter-rouge">flags</code>, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span> <span class="nt">-d</span> /sys/firmware/efi <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Installed in UEFI mode"</span> <span class="o">||</span> <span class="nb">echo</span> <span class="s2">"Installed in Legacy mode"</span>
+</code></pre></div></div>
+
+<p>Run these commands based on what type of disk you have:</p>
+
+<h4 id="for-nvme-drives-2">For NVMe Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/nvme0n1p3 /mnt
+<span class="nb">sudo </span>mount /dev/nvme0n1p1 /mnt/boot/efi
+<span class="k">for </span>i <span class="k">in</span> /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>mount <span class="nt">-B</span> <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo cp</span> <span class="nt">-n</span> /etc/resolv.conf /mnt/etc/
+
+<span class="nb">sudo chroot</span> /mnt
+apt <span class="nb">install</span> <span class="nt">--reinstall</span> linux-generic linux-headers-generic
+update-initramfs <span class="nt">-c</span> <span class="nt">-k</span> all
+<span class="nb">exit
+sudo </span>bootctl <span class="nt">--path</span><span class="o">=</span>/mnt/boot/efi <span class="nb">install</span>
+</code></pre></div></div>
+
+<h4 id="for-sata-drives-2">For SATA Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/sda3 /mnt
+<span class="nb">sudo </span>mount /dev/sda1 /mnt/boot/efi
+<span class="k">for </span>i <span class="k">in</span> /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>mount <span class="nt">-B</span> <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo cp</span> <span class="nt">-n</span> /etc/resolv.conf /mnt/etc/
+
+<span class="nb">sudo chroot</span> /mnt
+apt <span class="nb">install</span> <span class="nt">--reinstall</span> linux-generic linux-headers-generic
+update-initramfs <span class="nt">-c</span> <span class="nt">-k</span> all
+<span class="nb">exit
+sudo </span>bootctl <span class="nt">--path</span><span class="o">=</span>/mnt/boot/efi <span class="nb">install</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="encrypted-disk">Encrypted Disk</h3>
+
+<p>To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the <code class="language-plaintext highlighter-rouge">lsblk</code> command described above to determine the correct drive and partition.</p>
+
+<h4 id="for-nvme-drives-3">For NVMe Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
+<span class="nb">sudo </span>lvscan
+<span class="nb">sudo </span>vgchange <span class="nt">-ay</span>
+</code></pre></div></div>
+
+<h4 id="for-sata-drives-3">For SATA Drives:</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>cryptsetup luksOpen /dev/sda3 cryptdata
+<span class="nb">sudo </span>lvscan
+<span class="nb">sudo </span>vgchange <span class="nt">-ay</span>
+</code></pre></div></div>
+
+<p>And take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that <code class="language-plaintext highlighter-rouge">-root</code> is on the end:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/mapper/data-root /mnt
+</code></pre></div></div>
+
+<p>And now the existing hard drive can be accessed by going to the <code class="language-plaintext highlighter-rouge">/mnt</code> folder.  To use the <u>Files</u> program, go to ‘+ Other Locations’ -&gt; ‘Computer’ and then click on the <code class="language-plaintext highlighter-rouge">/mnt</code> folder.</p>
+
+<h3 id="chroot">Chroot</h3>
+
+<p><u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.</p>
+
+<p>The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>mount /dev/sda1 /mnt/boot/efi
+<span class="k">for </span>i <span class="k">in</span> /dev /dev/pts /proc /sys /run<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>mount <span class="nt">-B</span> <span class="nv">$i</span> /mnt<span class="nv">$i</span><span class="p">;</span> <span class="k">done
+</span><span class="nb">sudo chroot</span> /mnt
+</code></pre></div></div>
+
+<p>To exit from the <u>chroot</u> and reboot the computer, run these commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">exit
+</span>reboot
+</code></pre></div></div>
+
+<hr />
+
+<p>After this, reboot your computer, removing the disk when prompted, and the computer should boot.</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="chroot-1">chroot</h3>
+<p>If the <code class="language-plaintext highlighter-rouge">chroot</code> command returns with the error: <code class="language-plaintext highlighter-rouge">chroot: cannot run command '/bin/bash': Exec format error</code>, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system.</p>
+
+<p>For example, the error is most frequently seen when trying to <code class="language-plaintext highlighter-rouge">chroot</code> to a 64-bit system (amd64) from a 32-bit Install CD (x86).</p>
+
+<p>The solution is to use an Install CD which is using the same architecture as the installed system (32-bit Install CD for 32-bit targets / 64-bit Install CD for 64-bit targets).</p>
+
+<p>Make sure to use <code class="language-plaintext highlighter-rouge">/dev/sda1</code> (the partition) and <code class="language-plaintext highlighter-rouge">/dev/sda</code> (the disk) or <code class="language-plaintext highlighter-rouge">/dev/nvme0n1p1</code> (the partition) and <code class="language-plaintext highlighter-rouge">/dev/nvme0n1</code> (the disk) correctly in the commands above.</p>
+
+<h3 id="systemd-boot-fails-to-start-the-os">systemd-boot fails to start the OS</h3>
+<p>If the system boots into a <code class="language-plaintext highlighter-rouge">BusyBox</code> environment, try <code class="language-plaintext highlighter-rouge">exit</code> to show potential failure causes.</p>
+
+<p>A message like <code class="language-plaintext highlighter-rouge">ALERT! UUID:xxx does not exist. Dropping to a shell!</code> indicates an issue with the loader entry in <code class="language-plaintext highlighter-rouge">systemd-boot</code>.</p>
+
+<p>Ensure that <code class="language-plaintext highlighter-rouge">/boot/efi/loader/entries/Pop_OS-current.conf</code> contains the correct UUID for the disk. For an encrypted setup, the line <code class="language-plaintext highlighter-rouge">options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash</code> should match the UUID reported by <code class="language-plaintext highlighter-rouge">lsblk -f</code> for the <code class="language-plaintext highlighter-rouge">data-root</code> partition on a standard installation with LUKS.</p>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

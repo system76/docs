@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Desktop Environment (Change) - System76 Support</title>
+    <meta property="og:title" content="Desktop Environment (Change) - System76 Support">
+    <meta itemprop="name" content="Desktop Environment (Change) - System76 Support">
+    <meta name="twitter:title" content="Desktop Environment (Change) - System76 Support">
+
+    <meta name="description" content="Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
+">
+    <meta property="og:description" content="Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
+">
+    <meta itemprop="description" content="Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
+">
+    <meta name="twitter:description" content="Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
+">
+
+    <meta name="keywords" content="desktop environment MATE KDE XFCE Cinnamon GNOME Mint">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Desktop Environment (Change)
+        <a href="https://github.com/system76/docs/edit/master/_articles/desktop-environment.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="desktop-environment-change">Desktop Environment (Change)</h1>
+
+<p>Pop!_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.</p>
+
+<p>You can install an alternative desktop environment using the instructions below. If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!_OS, install the <code class="language-plaintext highlighter-rouge">pop-desktop</code> package:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>pop-desktop
+</code></pre></div></div>
+
+<p>For Ubuntu, install the <code class="language-plaintext highlighter-rouge">ubuntu-desktop</code> package instead:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ubuntu-desktop
+</code></pre></div></div>
+
+<p>The desktop environment is basically the top graphical layer of the OS. The desktop environment is launched by a display manager; Pop!_OS and Ubuntu both use GDM (GNOME Display Manager) by default.</p>
+
+<p>If multiple desktop environments are installed, GDM will display a gear icon, which will allow you to select the desktop environment you want to launch. You will need to either reboot or restart your display manager using <code class="language-plaintext highlighter-rouge">sudo systemctl restart gdm</code> before a newly-installed desktop environment will show up in the list of options.</p>
+
+<p><img src="/images/desktop-environment/Login2.png" alt="Login2" /></p>
+
+<hr />
+
+<h3 id="mate">MATE</h3>
+
+<p>MATE is a simple and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.</p>
+
+<p><img src="/images/desktop-environment/MATE.png" alt="MATE" /></p>
+
+<p>This command will install MATE and its dependencies:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>mate-desktop-environment mate-desktop-environment-extras ubuntu-mate-themes
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="cinnamon">Cinnamon</h3>
+
+<p>Cinnamon is used in Linux Mint by default. Cinnamon strives to provide a traditional experience and is a fork of GNOME 3.</p>
+
+<p><img src="/images/desktop-environment/Cinnamon.png" alt="Cinnamon" /></p>
+
+<p>Cinnamon is installed with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>cinnamon-desktop-environment
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="gnome">GNOME</h3>
+
+<p>While Pop and Ubuntu contain GNOME by default, both include a number of customizations to GNOME. You can also install a vanilla GNOME session to get the upstream GNOME experience.</p>
+
+<p><img src="/images/desktop-environment/GNOME.png" alt="GNOME" /></p>
+
+<p>You can install the vanilla GNOME session using this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>gnome-session
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="kde-plasma">KDE Plasma</h3>
+
+<p>The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows’ desktop. It is highly customizable and looks clean.</p>
+
+<p><img src="/images/desktop-environment/Plasma.png" alt="KDE Plasma" /></p>
+
+<p>The KDE Plasma desktop and its dependencies can be installed with this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>kde-standard
+</code></pre></div></div>
+
+<p>While installing KDE, you’ll be prompted to choose a display manager:</p>
+
+<p><img src="/images/desktop-environment/sddm-1.png" alt="Display Manager Section" /></p>
+
+<p>Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:</p>
+
+<p><img src="/images/desktop-environment/sddm-2.png" alt="Display Manager Section" /></p>
+
+<hr />
+
+<h3 id="ukui">UKUI</h3>
+
+<p>UKUI is a lightweight desktop environment based on a pluggable framework for Linux and other UNIX-like distributions. It provides a simple experience for browsing, searching, and managing your computer. It is developed using GTK and Qt.</p>
+
+<p><img src="/images/desktop-environment/UKUI.png" alt="UKUI" /></p>
+
+<p>UKUI can be installed with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ukui-desktop-environment
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="xfce">XFCE</h3>
+
+<p>XFCE embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good amount of conformity for the programs written for it. XFCE also provides a highly customizable environment, while being leaner on resources.</p>
+
+<p><img src="/images/desktop-environment/XFCE.png" alt="Xfce" /></p>
+
+<p>You can install XFCE and its dependencies with this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>xfce4 xfce4-goodies
+</code></pre></div></div>
+
+<p>While installing XFCE, you’ll see a prompt to select your default display manager:</p>
+
+<p><img src="/images/desktop-environment/lightdm-1.png" alt="Display Manager Section" /></p>
+
+<p>Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:</p>
+
+<p><img src="/images/desktop-environment/lightdm-2.png" alt="Display Manager Section" /></p>
+
+<hr />
+
+<h3 id="lxde">LXDE</h3>
+
+<p>The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment. It looks similar to older versions of Windows. This is a lean desktop environment and can help extend battery life in laptops.</p>
+
+<p><img src="/images/desktop-environment/LXDE.png" alt="LXDE" /></p>
+
+<p>LXDE can be installed with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>lxde
+</code></pre></div></div>
+
+<p>While installing LXDE, you’ll see a prompt to select your default display manager:</p>
+
+<p><img src="/images/desktop-environment/lightdm-1.png" alt="Display Manager Section" /></p>
+
+<p>Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:</p>
+
+<p><img src="/images/desktop-environment/lightdm-2.png" alt="Display Manager Section" /></p>
+
+<hr />
+
+<h3 id="lxqt">LXQt</h3>
+
+<p>LXQt is a lightweight Qt desktop environment. It’s being developed as a successor to LXDE. It is focused on being a classic desktop with a modern look and feel.</p>
+
+<p><img src="/images/desktop-environment/LXQt.png" alt="LXQt" /></p>
+
+<p>LXQt can be installed with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>lxqt
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment’s appearance can generally be fixed by changing the theme in the <u>Appearance</u> control panel.</p>
+
+<h4 id="customize-notification-dialog">Customize Notification Dialog</h4>
+
+<p>Xfce will change the notification dialog to its own. It can be configured with this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xfce4-notifyd-config
+</code></pre></div></div>
+
+<h4 id="remove-duplicate-options-from-login-screen">Remove Duplicate Options From Login Screen</h4>
+
+<p>Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the <code class="language-plaintext highlighter-rouge">/usr/share/xessions</code> directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon’s extra option:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo rm</span> /usr/share/xsessions/cinnamon2d.desktop
+</code></pre></div></div>
+
+<h4 id="change-automatic-startup-programs">Change Automatic Startup Programs</h4>
+
+<p>Some desktop environments configure additional programs to start at boot. To change them, run the <u>Startup Applications</u> program and turn off any unwanted startup programs.</p>
+
+<h4 id="double-lock-screen-passwords">Double Lock Screen Passwords</h4>
+
+<p>GNOME does not use a screensaver (only a lock screen), but other desktop environments may install the classic GNOME screensaver package as a dependency. If you’re being prompted for a password twice after suspending or locking the screen, disable the second prompt with this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings <span class="nb">set </span>org.gnome.desktop.screensaver lock-enabled <span class="nb">false</span>
+</code></pre></div></div>
+
+<p>Or, if that doesn’t stop the second prompt, uninstall the redundant screensaver with this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt purge gnome-screensaver
+</code></pre></div></div>
+
+<h4 id="enable-cinnamon-lock-screen">Enable Cinnamon Lock Screen</h4>
+
+<p>If Cinnamon’s desktop lock screen isn’t functioning, this command will re-enable it:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gsettings <span class="nb">set </span>org.cinnamon.desktop.lockdown disable-lock-screen <span class="nb">false</span>
+</code></pre></div></div>
+
+<h4 id="removing-desktop-environments">Removing Desktop Environments</h4>
+
+<p>If you no longer want to use a desktop environment, it can be removed by using:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt autoremove <span class="nt">--purge</span> ...
+</code></pre></div></div>
+
+<p>For example, to remove KDE:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt autoremove <span class="nt">--purge</span> kde-standard
+</code></pre></div></div>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<p>Sometimes an older version of a library or libraries for an application is needed for development. It is faster and easier to use LXC/LXD to setup a Container of that release and work in that Container.</p>
+
+<h3 id="software">Software</h3>
+
+<p>First open a terminal like so:</p>
+
+<p>Pop!_OS : <kbd><span class="fl-pop-key"></span></kbd> + <kbd>T</kbd></p>
+
+<p>Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd></p>
+
+<p>Install the software with this command in the terminal.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install lxd lxd-client
+</code></pre></div></div>
+
+<h3 id="setup">Setup</h3>
+
+<p>Tell LXD what storage and network is needed with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo lxd init
+</code></pre></div></div>
+
+<h3 id="create-a-container">Create a container</h3>
+
+<p>Now create our first container with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc launch ubuntu:16.04 first
+</code></pre></div></div>
+
+<p>This will create a container based on Ubuntu 16.04 with the name ‘first’.</p>
+
+<p>List and confirm that the container was created with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc list
+</code></pre></div></div>
+
+<p>The container can be stopped with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc stop first
+</code></pre></div></div>
+
+<p>Or the container can be deleted:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc delete first
+</code></pre></div></div>
+
+<h3 id="enter-the-container">Enter the container</h3>
+
+<p>Enter the container with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc exec first -- /bin/bash
+</code></pre></div></div>
+
+<p>Or just one command can be issued without entering the container:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc exec first -- apt update
+</code></pre></div></div>
+
+<h3 id="sharing-files">Sharing files</h3>
+
+<p>For pushing a file to the container:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc file push filename first/tmp/
+</code></pre></div></div>
+
+<p>For pulling a file from the container:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc file pull first/tmp/filename .
+</code></pre></div></div>

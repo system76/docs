@@ -1,0 +1,45 @@
+<h3 id="system76-driver">System76 Driver</h3>
+
+<h4 id="apt-preferences-file">Apt Preferences File</h4>
+
+<p>If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to “pin” the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.</p>
+
+<p>Create the apt preferences file here:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gedit /etc/apt/preferences.d/system76-apt-preferences
+</code></pre></div></div>
+
+<p>Add the following six lines (seven if you count the space in the middle):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Package: *
+Pin: release o=LP-PPA-system76-dev-stable
+Pin-Priority: 1001
+
+Package: *
+Pin: release o=LP-PPA-system76-dev-pre-stable
+Pin-Priority: 1001
+</code></pre></div></div>
+
+<p>Save the file. Now you should be able to install the System76 Driver as described below.</p>
+
+<p>To install our Driver you need to run the following commands in the Terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-add-repository -y ppa:system76-dev/stable
+sudo apt-get update
+sudo apt-get install -y system76-driver
+</code></pre></div></div>
+
+<h4 id="generate-log-files">Generate Log Files</h4>
+
+<p>The System76 Driver can be opened by pressing the Ubuntu or Pop key and then search for ‘system76’, then click on the System76 Driver.</p>
+
+<p>Next click on the button outlined in red in the <u>System76 Driver</u> application and there will be a file called <code class="language-plaintext highlighter-rouge">system76-logs.tgz</code> placed in your Home directory (/home/username)</p>
+
+<p><img src="/images/system76-driver/CreateLogFiles.png" alt="CreateLogFiles" /></p>
+
+<h3 id="system76-nvidia-driver">System76 NVIDIA Driver</h3>
+
+<p>Follow the above steps as well as this additional command if you have a NVIDIA GPU:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install system76-driver-nvidia
+</code></pre></div></div>

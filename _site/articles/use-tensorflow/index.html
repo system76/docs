@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Use TensorFlow - System76 Support</title>
+    <meta property="og:title" content="Use TensorFlow - System76 Support">
+    <meta itemprop="name" content="Use TensorFlow - System76 Support">
+    <meta name="twitter:title" content="Use TensorFlow - System76 Support">
+
+    <meta name="description" content="Complete instructions on setting up TensorFlow
+">
+    <meta property="og:description" content="Complete instructions on setting up TensorFlow
+">
+    <meta itemprop="description" content="Complete instructions on setting up TensorFlow
+">
+    <meta name="twitter:description" content="Complete instructions on setting up TensorFlow
+">
+
+    <meta name="keywords" content="NVIDIA CUDA TensorFlow">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Use TensorFlow
+        <a href="https://github.com/system76/docs/edit/master/_articles/use-tensorflow.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="use-tensorflow">Use TensorFlow</h1>
+
+<h1 id="tensorman">Tensorman</h1>
+
+<p>If your system is running Pop!_OS 19.10, see the <a href="/articles/use-tensorman/">Tensorman documentation</a> for managing TensorFlow containers.</p>
+
+<h1 id="using-tensorflow">Using Tensorflow</h1>
+
+<p>The packaging of TensorFlow for Pop!_OS contains libraries for the Python, C and C++ APIs. Other languages, such as Rust, bind to the C API for their support.</p>
+
+<h2 id="switching-between-versions">Switching Between Versions</h2>
+
+<p>All of the TensorFlow packages are built to support concurrent installations using the Debian alternatives system. A symbolic link at <code class="language-plaintext highlighter-rouge">/usr/lib/tensorflow</code> points to another symbolic link at <code class="language-plaintext highlighter-rouge">/etc/alternatives/tensorflow</code>, which finally points to the location of the actual library path, which could be at a location such as <code class="language-plaintext highlighter-rouge">/usr/lib/tensorflow1.13-cpu</code>, or <code class="language-plaintext highlighter-rouge">/usr/lib/tensorflow1.31-cuda10.0</code>. To change the active toolkit, the <code class="language-plaintext highlighter-rouge">update-alternatives</code> command may be called like so:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update-alternatives <span class="nt">--config</span> tensorflow
+</code></pre></div></div>
+
+<p>This will display a list of available TensorFlow libraries to choose from:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>There are 2 choices <span class="k">for </span>the alternative tensorflow <span class="o">(</span>providing /usr/lib/tensorflow<span class="o">)</span><span class="nb">.</span>
+
+  Selection    Path                               Priority   Status
+<span class="nt">------------------------------------------------------------</span>
+<span class="k">*</span> 0            /usr/lib/tensorflow1.13-cuda10.0/   100       auto mode
+  1            /usr/lib/tensorflow1.13-cpu/        100       manual mode
+  2            /usr/lib/tensorflow1.13-cuda10.0/   100       manual mode
+
+Press &lt;enter&gt; to keep the current choice[<span class="k">*</span><span class="o">]</span>, or <span class="nb">type </span>selection number:
+</code></pre></div></div>
+
+<p>After setting the active version, you can verify that it is set with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">readlink</span> <span class="nt">-f</span> /etc/alternatives/tensorflow
+</code></pre></div></div>
+
+<h2 id="c-api">C API</h2>
+
+<p>Given the following example.c file:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;tensorflow/c/c_api.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"TF version: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">TF_Version</span><span class="p">());</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You may compile it with:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="s2">"/usr/lib/tensorflow/lib:</span><span class="nv">$LD_LIBRARY_PATH</span><span class="s2">"</span>
+gcc <span class="nt">-I</span>/usr/lib/tensorflow/include/ <span class="nt">-L</span>/usr/lib/tensorflow/lib example.c <span class="nt">-ltensorflow</span> <span class="nt">-o</span> example
+./example
+</code></pre></div></div>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code> must point to the location of the lib directory for the toolkit that you wish to use, which can be the active toolkit, or defined as the path to the specific version to use with that project.</p>
+
+<h2 id="c-api-1">C++ API</h2>
+
+<p>See the provided C++ example in the <code class="language-plaintext highlighter-rouge">examples/cc</code> directory. CMake is required to build your TensorFlow C++ project. Bazel is NOT required.</p>
+
+<h2 id="python-api">Python API</h2>
+
+<p>Given the following example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="n">hello</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">constant</span><span class="p">(</span><span class="s">'Hello, TensorFlow!'</span><span class="p">)</span>
+<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">Session</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sess</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">hello</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>You may build a project with Python API by setting your PYTHONPATH when building it, like so:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">env </span><span class="nv">PYTHONPATH</span><span class="o">=</span>/usr/lib/tensorflow/lib/python3.7:<span class="nv">$PYTHONPATH</span> <span class="se">\</span>
+    python3 example.py
+</code></pre></div></div>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">python3.7</code> should be changed to the version of Python that the version of TensorFlow supports.</p>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

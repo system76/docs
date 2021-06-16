@@ -1,0 +1,116 @@
+<h1 id="login-with-yubikey">Login with Yubikey</h1>
+
+<p>If you have a Yubikey, you can use it to login or unlock  your system.</p>
+
+<p>To do this you must install the yubikey-luks package, configure a challenge-response slot on the Yubikey, and then configure the necessary PAM modules.</p>
+
+<p><strong>This guide assumes you are running Pop!_OS</strong></p>
+
+<h2 id="install-packages">Install Packages</h2>
+
+<p>To install the necessary packages, run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y libpam-yubico yubikey-personalization
+</code></pre></div></div>
+
+<p>You may get a question about the PAM configuration line. If so, enter this line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mode=challenge-response
+</code></pre></div></div>
+
+<p>Don’t enable any PAM modules yet.  We’ll do that at the end.</p>
+
+<p>If you have already installed the package or want to reconfigure it, use this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dpkg-reconfigure libpam-yubico
+</code></pre></div></div>
+
+<h2 id="configure-challenge-response-for-your-yubikey">Configure Challenge-Response for your Yubikey</h2>
+
+<p>To enable challenge-response on your Yubikey, type the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -oserial-api-visible
+</code></pre></div></div>
+
+<p>This configures slot 2 for challenge-response, and leaves slot 1 alone.</p>
+
+<p>Next we need to create some challenge response files, move them to a system wide directory, and secure those files:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir /var/yubico
+sudo chown root.root /var/yubico
+sudo chmod 700 /var/yubico
+ykpamcfg -2 -v
+</code></pre></div></div>
+
+<p>You should receive a message similar to:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Stored initial challenge and expected response in '$HOME/.yubico/challenge-123456'.</code></p>
+
+<p>You should receive a unique <em>challenge-123456</em> in your output.</p>
+
+<p>Now, to finish up:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mv ~/.yubico/challenge-123456 /var/yubico/alice-123456
+sudo chown root.root /var/yubico/alice-123456
+sudo chmod 600 /var/yubico/alice-123456
+</code></pre></div></div>
+
+<p>Pay close attention when copying/pasting the commands above.  The <em>challenge-123456</em> and <em>alice-123456</em> needs to match whatever your output is.**</p>
+
+<h2 id="configure-plugable-authentication-modules">Configure Plugable Authentication Modules</h2>
+
+<p><strong>Before making any changes to the files listed below, I highly recommend backing up each file, and having a sudo/root session open in case you need to roll-back.</strong></p>
+
+<p>You need to add the following line to each of the files listed below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auth sufficient pam_yubico.so mode=challenge-response chalresp_path=/var/yubico
+</code></pre></div></div>
+
+<p>This configures your system to accept your Yubikey as an acceptable login alternative.  In other words, you can login without a password, just plug the key into a USB port. <strong>You can still use your password to login with this setup</strong>.</p>
+
+<p>If you want your Yubiky to be <strong>required to login</strong>, then you need to change <em>sufficient</em> to <em>required</em>.  For example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auth required pam_yubico.so mode=challenge-response chalresp_path=/var/yubico
+</code></pre></div></div>
+
+<p>There a a number of other options for PAM.  Check the man pages for more information.  Also, the <a href="https://developers.yubico.com/yubico-pam/">Yubico PAM module</a> page has a pretty good breakdown.</p>
+
+<ul>
+  <li>/etc/pam.d/common-auth</li>
+  <li>/etc/pam.d/login</li>
+  <li>/etc/pam.d/gdm-password</li>
+</ul>
+
+<h3 id="etcpamdcommon-auth">/etc/pam.d/common-auth</h3>
+
+<p>At a minimum you need to modify this file.</p>
+
+<p>Add the auth line to the top of this file (after the comment block).</p>
+
+<p>You may need to run <code class="language-plaintext highlighter-rouge">pam-auth-update</code> afterwards.</p>
+
+<h3 id="etcpamdlogin">/etc/pam.d/login</h3>
+
+<p>Modifying this file is optional.  This allows you to authenticate to the Linux terminal with your Yubikey.</p>
+
+<p>Add the auth line to the top of this file (after the comment block).</p>
+
+<h3 id="etcpamdgdm-password">/etc/pam.d/gdm-password</h3>
+
+<p>Modifying this file is also optional.  If you want to login to your Desktop Environment, (e.g. GNOME), you will need to add the auth line to the /etc/pam.d/gdm-password file.</p>
+
+<p>Add the auth line immediately below the <strong>@include common-auth</strong> line.</p>
+
+<p><strong>NOTE: This will allow you to login to your desktop without a password, but you may still be asked to use a password to unlock your keyring.  This prompt should only appear once upon initial login.</strong></p>
+
+<h2 id="references">References</h2>
+
+<p>The following sites were used to build this guide:</p>
+<ul>
+  <li><a href="https://developers.yubico.com/yubico-pam/Authentication_Using_Challenge-Response.html">Authentication Using Challenge Response</a> (From Yubikey).</li>
+  <li><a href="https://developers.yubico.com/yubico-pam/">Yubico PAM Module</a> (From Yubikey).</li>
+</ul>
+
+<hr />
+
+<p>This article was contributed by <a href="https://github.com/71nuxadd1ct">71nuxadd1ct</a>.</p>

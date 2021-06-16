@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Black Screen or Login Issues (Pop!_OS) - System76 Support</title>
+    <meta property="og:title" content="Black Screen or Login Issues (Pop!_OS) - System76 Support">
+    <meta itemprop="name" content="Black Screen or Login Issues (Pop!_OS) - System76 Support">
+    <meta name="twitter:title" content="Black Screen or Login Issues (Pop!_OS) - System76 Support">
+
+    <meta name="description" content="Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
+">
+    <meta property="og:description" content="Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
+">
+    <meta itemprop="description" content="Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
+">
+    <meta name="twitter:description" content="Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
+">
+
+    <meta name="keywords" content="Support Guides Login NVIDIA Loop Password session greeter">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/system76.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/system76.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Black Screen or Login Issues (Pop!_OS)
+        <a href="https://github.com/system76/docs/edit/master/_articles/login-loop-pop.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="bblack-screen-or-login-issues-pop_os">BBlack Screen or Login Issues (Pop!_OS)</h1>
+
+<p>Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Pop!_OS brings you back to the login screen, you’re experiencing a login loop. There are several causes for login loops:</p>
+
+<ul>
+  <li>Configuration files in your home directory are not compatible with new versions of software</li>
+  <li>The display/login manager is not working correctly</li>
+  <li>The NVIDIA driver has been updated and is causing an issue</li>
+  <li>The AMD radeon driver is being loaded and causing issues</li>
+</ul>
+
+<p>Each cause has a different solution, and certain items (such as NVIDIA) might not be applicable to your system. In most cases, you can switch to a full-screen terminal (called a <em>TTY</em>) to log in and fix the issue.</p>
+
+<h3 id="switch-to-a-terminal">Switch to a Terminal</h3>
+
+<p>At the login screen, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd> to switch to a TTY. You’ll be prompted to enter a login. At the <code class="language-plaintext highlighter-rouge">login</code> prompt, enter your username and press <kbd>Enter</kbd>. You’ll then be prompted for your password. You will not see your password as you are typing it; just type it and press “Enter.”</p>
+
+<p>If you’re not able to log in, the reason could be:</p>
+
+<ul>
+  <li><strong>Wrong username</strong>: your username may not be the same as your display name. It is often your first name all lowercase, first and last name all lowercase, or first initial and last name all lowercase.</li>
+  <li><strong>Wrong password</strong>: you’re notified of this at the graphical login screen.</li>
+  <li>Something else is blocking the login.</li>
+</ul>
+
+<p>The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running <code class="language-plaintext highlighter-rouge">ls</code> in the <code class="language-plaintext highlighter-rouge">/home</code> directory, as outlined in the <a href="/articles/password/">Password Reset</a> article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and <a href="/articles/install-pop/">Reinstalling Pop!_OS</a> or contacting Support for more assistance.</p>
+
+<p>After logging in, you’ll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.</p>
+
+<p><img src="/images/login-loop/login-initial.png" alt="Login and initial prompt" /></p>
+
+<p>Note that you can always return to the graphical login screen by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>, or by typing <code class="language-plaintext highlighter-rouge">sudo systemctl restart gdm</code>.</p>
+
+<h3 id="move-old-configuration-files-out-of-the-way">Move old configuration files out of the way</h3>
+
+<p>To determine whether configuration in your home directory is causing the issue, you can create a new user account for testing purposes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>adduser <span class="nb">test
+sudo </span>systemctl reboot
+</code></pre></div></div>
+
+<p>If you’re able to log in with the test user, the issue is somewhere in your regular user’s home folder. Log into the full-screen terminal with your regular user again, and move some of the common configuration files out of the way:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv</span> ~/.config ~/.config.old
+<span class="nb">mv</span> ~/.local ~/.local.old
+<span class="nb">mv</span> ~/.cache ~/.cache.old
+<span class="nb">mv</span> ~/.nvidia-settings-rc ~/.nvidia-settings-rc.old
+<span class="nb">mv</span> ~/.nv ~/.nv.old
+<span class="nb">sudo </span>systemctl reboot
+</code></pre></div></div>
+
+<p>After moving those files and rebooting, try logging in again. (There may be files you need to move other than the common ones listed above.)</p>
+
+<h3 id="reinstall-the-login-manager">Reinstall the login manager</h3>
+
+<p>You can reinstall GNOME Display Manager (which handles the login screen), along with the desktop environment. On Pop!_OS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">--reinstall</span> gdm3 pop-desktop gnome-shell
+<span class="nb">sudo </span>systemctl reboot
+</code></pre></div></div>
+
+<p>Or on Ubuntu:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">--reinstall</span> gdm3 ubuntu-desktop gnome-shell
+<span class="nb">sudo </span>systemctl reboot
+</code></pre></div></div>
+
+<p>After reinstalling those packages and rebooting, try logging in again.</p>
+
+<h3 id="reinstall-nvidia-driver">Reinstall NVIDIA Driver</h3>
+
+<p>If your system is equipped with NVIDIA graphics, a recent update might be causing the login issues. (Usually, NVIDIA driver issues will prevent the login screen from loading at all; however, it’s still worth reinstalling if you are unable to log in after the above steps.) Refer to the table below to determine if your system contains NVIDIA graphics:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Always</th>
+      <th style="text-align: left">Maybe</th>
+      <th style="text-align: left">Never</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Oryx Pro</td>
+      <td style="text-align: left">Wild Dog Pro</td>
+      <td style="text-align: left">Lemur (Pro)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Adder WS</td>
+      <td style="text-align: left">Ratel</td>
+      <td style="text-align: left">Kudu</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Serval WS</td>
+      <td style="text-align: left">Gazelle</td>
+      <td style="text-align: left">Meerkat</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Bonobo WS</td>
+      <td style="text-align: left">Thelio</td>
+      <td style="text-align: left">Galago Pro</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Leopard WS</td>
+      <td style="text-align: left">Thelio Mira</td>
+      <td style="text-align: left">Darter Pro</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Silverback WS</td>
+      <td style="text-align: left">Thelio Major</td>
+      <td style="text-align: left">Pangolin</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Thelio Mega</td>
+      <td style="text-align: left">Thelio Massive</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To remove the NVIDIA driver, run the following:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt purge ~nnvidia
+<span class="nb">sudo </span>apt autoremove
+<span class="nb">sudo </span>apt clean
+</code></pre></div></div>
+
+<p><img src="/images/login-loop/purge-nvidia.png" alt="Removing NVIDIA" /></p>
+
+<p>After the NVIDIA driver has been removed, add it back using the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt full-upgrade
+<span class="nb">sudo </span>apt <span class="nb">install </span>system76-driver-nvidia
+</code></pre></div></div>
+
+<p>After the installation has completed, type <code class="language-plaintext highlighter-rouge">sudo systemctl reboot</code> and try logging in again.</p>
+
+<h3 id="blacklist-radeon-driver">Blacklist Radeon Driver</h3>
+
+<p>If you are using an AMD graphics card, the radeon driver might be causing issues as it does not support newer versions of Ubuntu.  The amdgpu driver that comes with the kernel does however. To blacklist the radeon driver and ensure amdgpu is loaded:</p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">/etc/modprobe.d/blacklist.conf</code> for editing and add <code class="language-plaintext highlighter-rouge">blacklist radeon</code> to the file. Then run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>update-initramfs <span class="nt">-c</span> <span class="nt">-k</span> all
+<span class="nb">sudo </span>shutdown <span class="nt">-r</span> now
+</code></pre></div></div>
+
+<h3 id="if-these-steps-dont-work">If these steps don’t work…</h3>
+
+<p>Contact Support! We have a few more things to try. There are a significant number of processes and files required for your graphical desktop environment to be loaded, and much fewer for the terminal login. As such, you can usually recover your desktop using the command line interface!</p>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

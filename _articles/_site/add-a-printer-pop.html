@@ -1,0 +1,48 @@
+<p>Most printers will be automatically added to the computer.  If not, to add a printer to your System76 Computer, press the super key and type the word <em>Printers</em>, then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the <strong>Add a Printer…</strong> button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.</p>
+
+<p><img src="/images/add-a-printer-pop/printer-settings.png" alt="Add Printer" /></p>
+
+<p>Select the correct printer and click <strong>Add</strong>.</p>
+
+<h4 id="hp-and-epson-printers">HP and Epson Printers</h4>
+
+<p>HP printers are supported with the <strong>hplip</strong> package, which is installed by default in Pop!<em>OS</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install hplip
+</code></pre></div></div>
+<p>If you would like to use a guided GUI application from HP, you will need to install a python dependency:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install python3-pyqt5
+hp-setup
+</code></pre></div></div>
+
+<p>Epson printer drivers are in the <strong>printer-driver-escpr</strong> package and is also installed by default. You may need to install the <strong>lsb</strong> package for some printer versions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install lsb printer-driver-escpr
+</code></pre></div></div>
+<p>Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the ‘lpadmin’ group. To do that run the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo usermod -aG lpadmin $USER
+</code></pre></div></div>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>If the printer stops working, open the <u>Printers</u> Application again and click the gear icon, and select <strong>Remove Printer</strong> to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.</p>
+
+<p>To look at the CUPS (Common Unix Printing System) configuration and status window, please open this webpage:</p>
+
+<p><a href="http://localhost:631">localhost:631</a></p>
+
+<p>The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the ‘Admin’ link, under Server, click on the “Share printers connected to this system” and save the changes. Other computers on your network should than see that printer. When there is a prompt for your username and password, use your user name, and password used to login.</p>
+
+<h2 id="useful-commands">Useful Commands:</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install --reinstall cups cups-client
+</code></pre></div></div>
+
+<p>This will reinstall <u>CUPS</u>, the main printing software, which can help with generic issues.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install --reinstall ~n^system-config-printer
+</code></pre></div></div>
+
+<p>This will reinstall the system control panel if the settings are not available.</p>

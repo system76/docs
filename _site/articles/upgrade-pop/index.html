@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#574e4a">
+
+    <title>Upgrade Pop!_OS - System76 Support</title>
+    <meta property="og:title" content="Upgrade Pop!_OS - System76 Support">
+    <meta itemprop="name" content="Upgrade Pop!_OS - System76 Support">
+    <meta name="twitter:title" content="Upgrade Pop!_OS - System76 Support">
+
+    <meta name="description" content="Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
+">
+    <meta property="og:description" content="Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
+">
+    <meta itemprop="description" content="Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
+">
+    <meta name="twitter:description" content="Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
+">
+
+    <meta name="keywords" content="Pop!_OS 17.10 Pop!_OS 18.04 Pop!_OS 18.10 Pop!_OS 19.04 Pop!_OS 19.10 Pop!_OS 20.04 Pop!_OS 20.10 LTS Non-LTS Upgrade Update Release System76 apt">
+
+    
+    <meta property="og:image" content="http://support.system76.com/images/pop-icon.png" />
+    <meta name="twitter:image:src" content="http://support.system76.com/images/pop-icon.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@system76">
+    <meta name="twitter:creator" content="@system76">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://system76.com/images/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://system76.com/images/touch-icon-ipad-retina.png">
+    <link rel="touch-icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+    <link rel="icon" sizes="196x196" href="https://system76.com/images/icon-196.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="https://system76.com/stylesheets/app.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!--[if lt IE 10]><script>document.documentElement.className += " legacy";</script><![endif]-->
+
+        <script>
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        </script>
+
+        <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+
+        <script>
+        var fbSent = false;
+
+        function facebookStatusChangeCallback(response) {
+            if (response.status === 'connected' && fbSent) {
+                window.oauthSuccess('facebook', response.authResponse.accessToken);
+            }
+        }
+
+        function facebookCheckLoginState() {
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        }
+
+        function facebookLogin() {
+            fbSent = true;
+            FB.login(
+                facebookCheckLoginState,
+                {
+                    scope: 'email'
+                }
+            );
+        }
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '346948125501334',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.1'
+            });
+
+            FB.getLoginStatus(function(response) {
+                facebookStatusChangeCallback(response);
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+        function githubLogin() {
+            var gitHubWindow = popupCenter(
+                "https://github.com/login/oauth/authorize?" +
+                "client_id=dc1b6955f316f6f4633b" +
+                "&scope=user,user:email",
+                "GitHub"+Date.now(),
+                1024,
+                600
+            );
+        }
+        </script>
+
+        <meta name="google-signin-clientid" content="118911812273-tsqn79u4hm451chlbhm1gkkt63ttgoq9.apps.googleusercontent.com" />
+        <meta name="google-signin-scope" content="email" />
+        <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+        <script src="https://apis.google.com/js/client:platform.js?onload=googleRender" async defer></script>
+
+        <script>
+        function googleLogin() {
+            gapi.auth.signIn({
+                'callback': googleSigninCallback
+            });
+        }
+
+        function googleSigninCallback(authResult) {
+            if (authResult['status']['signed_in']) {
+                if( authResult['status']['method'] == 'PROMPT' ) {
+                    window.oauthSuccess("google", authResult['access_token']);
+                }
+            }
+        }
+        </script>
+
+        <link href="https://cdn.rawgit.com/Lukas-W/font-linux/v0.5/assets/font-linux.css" rel="stylesheet">
+
+</head>
+
+  <body class="path-support">
+    <div id="page-container">
+        <header id="masthead" class="main">
+	<nav>
+		<a id="logo" class="home" href="https://system76.com"></a>
+
+		<ul class="quick" id="nav-links">
+			<li>
+				<a id="link-contact" href="https://system76.com/contact" title="Contact">
+					<i class="fa fa-comments"></i>
+					Contact
+				</a>
+			</li>
+
+			<li>
+				<a id="link-support" href="https://support.system76.com" title="Support">
+					<i class="fa fa-life-ring"></i>
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a id="link-account" href="https://system76.com/my-account" title="Account">
+					<i class="fa fa-user"></i>
+					Account
+				</a>
+			</li>
+		</ul>
+
+		<ul id="nav-links" class="categories">
+			<li><a href="https://system76.com/laptops">Laptops</a></li>
+			<li><a href="https://system76.com/desktops">Desktops</a></li>
+			<li><a href="https://system76.com/desktops/meerkat">Mini</a></li>
+			<li><a href="https://system76.com/servers">Servers</a></li>
+			<li><a href="https://system76.com/pop">Pop!_OS</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+  <header id="page-title">
+    <div class="row">
+      <h1 class="small-12 columns greeting">
+        <a href="/" title="Back to Support"><i class="fa fa-arrow-left"></i></a>
+        Upgrade Pop!_OS
+        <a href="https://github.com/system76/docs/edit/master/_articles/upgrade-pop.md" class="button"><i class="fa fa-github"></i> Edit on GitHub</a>
+      </h1>
+    </div>
+  </header>
+
+
+        <div class="row">
+    <div class="small-12 small-centered medium-10 large-8 columns">
+        <h1 id="before-you-upgrade">Before You Upgrade</h1>
+
+<p>Every release of Pop!_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!_OS to a newer release is a smooth transition that takes only an hour or so to complete (depending on download speeds and the speed of the components in the system you are upgrading).</p>
+
+<p>That being said, from time to time, unexpected complications can arise. The liklihood of complications during the upgrade process increases on systems that are:</p>
+
+<ul>
+  <li>upgrading more than one release at a time</li>
+  <li>running older releases that have already reached the end-of-life period</li>
+  <li>using a large number of third-party software repositories (PPAs)</li>
+</ul>
+
+<p>Our goal is to make the upgrade process as consistent and reliable as possible, and make sure you are prepared for anything that may occur during the upgrade should something not go according to plan.</p>
+
+<h3 id="backing-up-your-data">Backing Up Your Data</h3>
+
+<p>The upgrade process will leave your files in place, but no matter which system version you are running, we always recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.</p>
+
+<p>Please read our article on <a href="/articles/backup-files/">how to backup your files</a> for helpful instructions.</p>
+
+<h3 id="create-installation-usb-optional">Create Installation USB (Optional)</h3>
+
+<p>Some users may prefer to have Pop!_OS installation media handy before starting any upgrades in case they need to reinstall or repair the operating system. Instructions on creating a USB disk with Pop!_OS are located in our <a href="/articles/live-disk/">live disk</a> article.</p>
+
+<h1 id="upgrade-pop_os">Upgrade Pop!_OS</h1>
+
+<p>Pop!_OS 20.10 was released October 23, 2020.</p>
+
+<h1 id="upgrading-pop_os-to-2010-from-2004">Upgrading Pop!_OS to 20.10 from 20.04</h1>
+<h3 id="for-all-other-operating-system-versions-scroll-down-to-the-instructions-for-upgrading-from-an-earlier-release">(For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)</h3>
+
+<p>First, make sure you have applied all updates to your system. You can do this through the Pop!_Shop, or through the terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt full-upgrade
+</code></pre></div></div>
+
+<p>Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -&gt; OS Upgrade.</p>
+
+<p>On the system’s “OS Upgrade” page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!_OS 20.10 is available with a “Download” button.</p>
+
+<p>Click the “Download” button and the download will begin.</p>
+
+<p>Once the download is complete, you will receive a second notification saying the upgrade is ready.</p>
+
+<p>Click on the notification and your computer will restart to the upgrade screen.</p>
+
+<p>After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!_OS 20.10!</p>
+
+<h3 id="advanced-install-terminal">Advanced Install (Terminal)</h3>
+
+<p>Users wishing to use the Terminal to apply the upgrade may do so by running the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+</code></pre></div></div>
+<p>You’ll be prompted to enter your system password, but when you type it, the letters won’t show. Just continue typing the password and press <kbd>Enter</kbd>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt full-upgrade
+</code></pre></div></div>
+
+<p>Once any updates are applied, initiate the upgrade with this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pop-upgrade release upgrade
+</code></pre></div></div>
+
+<p>Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.</p>
+
+<p>If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue.</p>
+
+<p>Type <kbd>Y</kbd> and press enter when prompted about starting the upgrade.</p>
+
+<p>If you have your lock screen set to enabled, you will receive a prompt about the screen being disabled during the update. Press <kbd>Enter</kbd> to continue.</p>
+
+<p>Near the end of the upgrade process, you’ll be prompted to remove obsolete packages. Type <kbd>Y</kbd> and press <kbd>Enter</kbd>  when prompted.</p>
+
+<p>You may receive a notice about the keyboard layout and the option to use the package maintainer’s version of a certain package. If you haven’t specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer’s version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.</p>
+
+<p>Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing <code class="language-plaintext highlighter-rouge">[sudo] reboot</code> and pressing <kbd>Enter</kbd>. If you prefer, you can also use the graphical interface to reboot.</p>
+
+<hr />
+
+<p>Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.</p>
+
+<h1 id="upgrading-older-releases">Upgrading older releases</h1>
+
+<p>Upgrading Pop!_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!_OS 20.04 (focal) LTS before upgrading to the current Pop!_OS 20.10 (groovy).</p>
+
+<p>These older Pop!_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!_OS 18.10, 19.04, or 19.10.</p>
+
+<h3 id="1-get-your-current-system-fully-updated">1. Get your current system fully updated:</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/us.archive/old-releases/g'</span> /etc/apt/sources.list
+<span class="nb">sudo </span>apt update <span class="nt">-m</span>
+<span class="nb">sudo </span>dpkg <span class="nt">--configure</span> <span class="nt">-a</span>
+<span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-f</span>
+<span class="nb">sudo </span>apt full-upgrade
+<span class="nb">sudo </span>apt <span class="nb">install </span>pop-desktop
+</code></pre></div></div>
+
+<h3 id="2-move-any-ppa-additions-out-of-the-way-and-get-all-of-the-sources-pointed-at-the-2004-versions">2. Move any PPA additions out of the way, and get all of the sources pointed at the 20.04 versions:</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /etc/apt/backup
+<span class="nb">sudo mv</span> /etc/apt/sources.list.d/<span class="k">*</span> /etc/apt/backup
+<span class="nb">sudo </span>apt-add-repository <span class="nt">-yn</span> ppa:system76-dev/stable
+<span class="nb">sudo </span>apt-add-repository <span class="nt">-yn</span> ppa:system76/pop
+<span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'s/old-releases/us.archive/g'</span> /etc/apt/sources.list
+<span class="nb">sudo sed</span> <span class="nt">-Ei</span> <span class="s1">'s/cosmic|eoan|disco/focal/g'</span> /etc/apt/sources.list /etc/apt/sources.list.d/<span class="k">*</span>.list
+</code></pre></div></div>
+<p><em>Note to change ‘disco’ to your release that you are trying to update from</em></p>
+
+<h3 id="3-now-do-the-upgrade">3. Now, do the upgrade!</h3>
+<p>This will have a three phases and once the download is complete, you can’t change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer “Yes”. There may be some questions about using “maintainer” version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>dpkg apt
+<span class="nb">sudo </span>apt full-upgrade | <span class="nb">tee</span> ~/upgrade.log
+</code></pre></div></div>
+
+<h3 id="4-now-put-the-ppas-back">4. Now put the PPAs back</h3>
+<p>You will want to take a look at the files that end in “list” in “/etc/apt/backup” to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.</p>
+
+<h3 id="5-after-the-2004-pop-upgrade-is-complete-reboot">5. After the 20.04 Pop upgrade is complete, <strong>reboot</strong>.</h3>
+
+<h3 id="6-run-the-command-to-upgrade-to-pop-2010">6. Run the command to upgrade to Pop 20.10</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pop-upgrade release upgrade
+</code></pre></div></div>
+
+<h1 id="troubleshooting">Troubleshooting</h1>
+
+<p>Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won’t start, then the following steps can help repair your broken OS.</p>
+
+<h3 id="stuck-upgrades">Stuck Upgrades</h3>
+
+<p>If your upgrade appears to hang in place for an extended period of time, click on the <strong>Terminal</strong> item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support and we’ll be able to provide assistance.</p>
+
+<h3 id="broken-upgrade">Broken Upgrade</h3>
+
+<p>If the upgrade fails it will most likely be due to a package manager issue.  First, run an alternative upgrade manager with this command, and see if it will manage further:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span><span class="nt">-release-upgrade</span>
+</code></pre></div></div>
+
+<p>If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about <a href="/articles/package-manager-pop/">repairing the package manager</a></p>
+
+<p>Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:</p>
+
+<blockquote>
+  <p>0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.</p>
+</blockquote>
+
+    </div>
+    <div class="small-12 small-centered medium-10 large-8 columns timestamp">
+        <p>Article last modified: 2021-06-04</p>
+    </div>
+</div>
+
+    </div>
+    <footer id="foot">
+    <div id="foot-links" class="row">
+        <ul class="small-5 medium-2 columns">
+            <li><a href="https://system76.com/contact">Contact</a></li>
+            <li><a href="https://system76.com/support">Support</a></li>
+            <li><a href="https://system76.com/about">About Us</a></li>
+            <li><a href="http://blog.system76.com">Blog</a></li>
+            <li><a href="https://system76.com/careers">Careers</a></li>
+        </ul>
+        <ul class="small-7 medium-4 columns">
+            <li><a href="https://system76.com/shipping">Shipping Information</a></li>
+            <li><a href="https://system76.com/warranty">Warranty &amp; Returns</a></li>
+            <li><a href="https://system76.com/privacy">Privacy Policy</a></li>
+            <li><a href="https://system76.com/disclaimer">Disclaimer</a></li>
+            <li><a href="https://system76.com/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <ul id="social-links" class="small-12 medium-6 columns">
+            <li><a href="https://www.facebook.com/system76/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/system76/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/system76/"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div>
+    <div id="copyright" class="text-center">Copyright &copy; 2021 System76, Inc. </div>
+
+    <div class="disclaimer text-center">* All financing prices are based on the advertised price at 10% APR paid over 12 months.</div>
+
+    <div id="trademarks" class="text-center">Intel, the Intel Logo, Intel Core, and Xeon are trademarks of Intel Corporation in the U.S. and/or other countries.</div>
+</footer>
+
+<script src="https://system76.com/scripts/thinkbott1k.js"></script>
+
+<!--[if lt IE 10]>
+<div id="legacy-warning">
+<h1>System76 is built on modern web technologies your browser doesn&rsquo;t support.</h1>
+<p>This version of Internet Explorer is out of date and may contain bugs or security vulnerabilities. Please <a href="http://browsehappy.com/">upgrade</a> to IE 11 or an alternative web browser.</p>
+<p>If you have questions about an order or require support, feel free to <a href="/contact">contact us</a>.</p>
+<div id="legacy-warning-buttons">
+<a href="#" onClick="document.getElementById('legacy-warning').style.display = 'none';">Dismiss</a>
+<a class="primary" href="http://browsehappy.com/">Learn More</a>
+</div>
+</div>
+<![endif]-->
+
+  </body>
+</html>

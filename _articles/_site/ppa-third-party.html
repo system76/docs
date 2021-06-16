@@ -1,0 +1,29 @@
+<p>Normally, all Person Package Archives (PPAs) and third-party repositories are disabled when updating to a new release of the operating system.  This helps keep upgrades simpler and prevents PPAs that haven’t been properly updated for the new release from breaking the upgrade.</p>
+
+<p>There are two ways to tell update-manager to keep PPAs enabled. The <code class="language-plaintext highlighter-rouge">AllowThirdParty = yes</code> configuration option tells update-manager to keep <em>all</em> third-party software repositories (repos) enabled. While useful for some users, this option is quite dangerous for a PPA maintainer to use, since it’s impossible to test all combinations of repos a user may have added.</p>
+
+<p>The other option, which until now has been little documented, is to add the repo you want to keep enabled in the <code class="language-plaintext highlighter-rouge">[ThirdPartyMirrors]</code> configuration section. This is useful for PPA and third-party repo maintainers who want or need to keep it enabled through upgrades. Be careful to test your PPA/repo and packages upgrade to make sure everything transitions correctly. Turning this on when your PPA/repo doesn’t properly support the new release can break the upgrade.</p>
+
+<h3 id="creating-your-config-file">Creating Your Config File</h3>
+
+<p>Create a file in <code class="language-plaintext highlighter-rouge">/etc/update-manager/release-upgrades.d/</code> with a <code class="language-plaintext highlighter-rouge">.cfg</code> extension. You should give it a descriptive and unique name since other packages may provide their own config files.</p>
+
+<h3 id="enable-all-ppasrepos-on-upgrade">Enable All PPAs/Repos on Upgrade</h3>
+
+<p>Users who want to keep all PPAs/repos enabled can put the following into their <code class="language-plaintext highlighter-rouge">.cfg</code> file:</p>
+
+<blockquote>
+  <p>[Sources]<br />
+AllowThirdParty = yes</p>
+</blockquote>
+
+<h3 id="enable-one-specific-pparepo">Enable One Specific PPA/Repo</h3>
+
+<p>To keep one specific ppa/repo enabled, create a key = value pair inside a <code class="language-plaintext highlighter-rouge">[ThirdPartyMirrors]</code> section:</p>
+
+<blockquote>
+  <p>[ThirdPartyMirrors]<br />
+myppa = http://ppa.launchpad.net/myppa/stable/ubuntu/</p>
+</blockquote>
+
+<p>The key can be any string as long as it’s unique within the section. The value is the url of the ppa you want to keep enabled.  You can find this url in the <code class="language-plaintext highlighter-rouge">.list</code> file for the PPA, which can be found in <code class="language-plaintext highlighter-rouge">/etc/apt/sources.list.d/</code>.</p>

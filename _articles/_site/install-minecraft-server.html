@@ -1,0 +1,59 @@
+<p>With no fuss with specific desktop environments and stuff, Installing a Minecraft Server is an easy task on the command line. The hard part is what you will build.</p>
+
+<p>Make sure you have a powerful server machine above 3.7Ghz and 8G of RAM.</p>
+
+<h3 id="install-java--screen">Install Java + Screen</h3>
+
+<p>For this Tutorial, We will be using openjdk and a command line window separator called screen.</p>
+
+<h4 id="fedora--rhel--centos">Fedora / RHEL / CentOS</h4>
+
+<p>To install OpenJDK:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo yum install java-1.8.0-openjdk screen
+</code></pre></div></div>
+
+<h4 id="debianubuntu">Debian/Ubuntu</h4>
+
+<p>First, update your apt repo package list, then get openjdk8.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>openjdk-7-jre screen
+</code></pre></div></div>
+
+<h4 id="arch-linux">Arch Linux</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-S</span> jre8-openjdk screen
+</code></pre></div></div>
+
+<h3 id="installation-and-configuration">Installation and Configuration</h3>
+
+<p>Now let’s make a directory, because it’s about to get messy.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir minecraft &amp;&amp; cd minecraft
+</code></pre></div></div>
+
+<p>Now let’s get the latest version. You can update your server by stopping it, downloading the new server, and restarting it. You can download the latest version at <a href="https://mcversions.net">mcversions.net</a> There are two types of servers, snapshot and stable.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget -O THE_URL.RANSOM.jar
+</code></pre></div></div>
+
+<p>Now we make a bash startup script. If it crashes, it auto restarts. Let’s name it <code class="language-plaintext highlighter-rouge">start.sh</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> :
+java <span class="nt">-Xmx1024M</span> <span class="nt">-Xms1024M</span> <span class="nt">-jar</span> THE_URL.RANSOM.jar nogui
+<span class="k">done</span>
+</code></pre></div></div>
+
+<p>We can start the server with <code class="language-plaintext highlighter-rouge">screen -S start.sh</code> and exit the window with <kbd>CTRL + A</kbd> then push <kbd>D</kbd> directly after. This causes it to run in the background. We can resume it using <code class="language-plaintext highlighter-rouge">screen -r</code> to view the available screens, then <code class="language-plaintext highlighter-rouge">screen -r PID</code> to get back in.</p>
+
+<p>The server will crash on the first run, so first change the eula.txt text from <code class="language-plaintext highlighter-rouge">eula=false</code> to <code class="language-plaintext highlighter-rouge">eula.true</code> and save.</p>
+
+<p>Then, Re-start by stopping the server and restarting.<br />
+We can also configure the world and other settings in <code class="language-plaintext highlighter-rouge">server.properties</code></p>
+
+<p>For more info, see the <a href="https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server">Minecraft Wiki</a> on this issue.</p>
+
+<hr />
+
+<p>This article was contributed by <a href="https://github.com/kylerschin">kylerschin</a>.</p>

@@ -1,0 +1,94 @@
+<h2 id="disclaimer">DISCLAIMER</h2>
+
+<p>System76 is not a licensed reseller or installer of the Windows Operating System. This article is provided for information purposes only.</p>
+
+<p>System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.</p>
+
+<p>The contents of this support article include the <strong>total extent of support and troubleshooting that System76 can provide for Windows</strong> 
+Any troubleshooting or software support questions not covered in this article are outside the scope of support and should be referred to Microsoft.</p>
+
+<h2 id="step-1-create-install-media">Step 1: Create Install Media</h2>
+
+<p>To create the Install Media on Pop!_OS and Ubuntu, use the <a href="https://www.dropbox.com/s/8emsfrqkqmf9km9/woeusb_3.3.1a_amd64.deb?dl=0">WoeUSB tool</a>. Once you have WoeUSB installed, download <a href="https://www.microsoft.com/en-us/software-download/windows10ISO">the Windows ISO file</a>.</p>
+
+<p><img src="/images/dual-booting/woeusb2.png" alt="WoeUSB" /></p>
+
+<ol>
+  <li>Select the Windows ISO file as the <strong>Source</strong>, set the <strong>File system</strong> as <strong>NTFS</strong></li>
+  <li>Select the USB drive <strong>Target device</strong> and</li>
+  <li>Press the <strong>Install</strong> button.</li>
+</ol>
+
+<h2 id="step-2-install-windows-10">Step 2: Install Windows 10</h2>
+
+<h3 id="using-another-drive">Using another drive</h3>
+
+<p>Another way to set up a dual boot is to install another drive for the other OS of your choice. This is one of the easiest ways to dual boot as each OS will set up the whole drive for automatically created partitions and won’t require you to resize any partitions. To access each OS you would reboot and hold the boot menu key (F7 for our laptops, ESC for our Open Firmware systems and F10/F12/Del for our desktops).</p>
+
+<p>NOTE: If you feel comfortable opening your machine, it may be helpful to remove whichever drive is not undergoing changes while you install the OS on the opposite drive. For example, removing “drive 1,” while installing Windows on “drive 2.”</p>
+
+<p>This will prevent Windows (or Pop!_OS) from changing the boot partitions of the opposite drive. This is an extra precaution and not usually necessary; however, Windows does not always “play well with others,” and removing drives you do not want changed during installation insures against this.</p>
+
+<h3 id="if-pop_os-is-installed-first">If Pop!_OS is installed first</h3>
+
+<p>To dual boot Pop!_OS alongside another OS, install Pop!_OS first. After completing the installation of Pop!_OS, boot your computer in Recovery mode by holding down the spacebar during boot and selecting <strong>Pop!_OS Recovery</strong> in the systemd-boot menu. (Alternatively, you can boot into your Pop!_OS installation media, such as a USB flash drive.) Once booted into Pop!_OS Recovery (or the live USB environment), use GParted to resize the root partition (the largest partition) to make room for Windows 10 (35GB is the minimum required). Resizing the partition will only work if Pop!_OS is not encrypted. If the OS is encrypted then it will need to be reinstalled with encryption not enabled.</p>
+
+<p><img src="/images/dual-booting/gparted.png" alt="GParted" /></p>
+
+<p><img src="/images/dual-booting/gparted-resize.png" alt="GParted Resize" /></p>
+
+<h3 id="if-pop_os-is-not-installed">If Pop!_OS is not installed</h3>
+
+<p>If you wish to install Pop!_OS here is a <a href="/articles/install-pop/">link</a> to it.</p>
+
+<h2 id="step-2a-windows-setup">Step 2a: Windows Setup</h2>
+
+<p>Once Windows 10 is loaded and the ‘Windows Setup’ window is shown the partition that was created earlier for Windows can be selected. When installing Windows 10 it will use the Pop EFI system partition (ESP) so that Windows boot efi files will be placed in the ESP partition.</p>
+
+<p><img src="/images/dual-booting/windows-partitioning.png" alt="Windows" /></p>
+
+<p>With the ‘Unallocated Space’ selected, you can press the ‘Next’ button to use the entire ‘Unallocated Space’ for this Windows installation. Alternatively, you can press ‘New’ to create a partition by specifying a size in MB and confirming with the ‘Apply’ button.</p>
+
+<p><img src="/images/dual-booting/windows-partitioning-2.png" alt="Windows" /></p>
+
+<p>Select the newly made partition and press ‘Next’ to continue the Windows installation. Windows may automatically create additional partitions that it needs for some features.</p>
+
+<p><img src="/images/dual-booting/windows-partitioning-3.png" alt="Windows" /></p>
+
+<p>This message can be safely ignored and it is caused by Windows not being the first OS in the boot order.</p>
+
+<p><img src="/images/dual-booting/windows-partitioning-4.png" alt="Windows" /></p>
+
+<h3 id="windows-drivers">Windows Drivers</h3>
+
+<p>The Windows drivers for some of our laptop systems <a href="https://github.com/system76/windows-drivers">here</a>. We recommend downloading all of the drivers for your model and make sure to follow the steps for installing the driver below the driver link.</p>
+
+<p>NOTE: The Windows Device Manager may show that some devices are missing drivers, that is normal, and can be disregarded. That includes the Thelio I/O board. It doesn’t need any Windows drivers. It is a simple pass-through for the drives when using Windows. There are also no ACPI table entries.</p>
+
+<h3 id="windows-caveats">Windows Caveats</h3>
+
+<p>Windows 8 and later uses a “Fast Startup” setting which prevents Windows from fully shutting down and allowing other OSes to use the disk. Before you can properly dual boot with Windows, you must disable this setting in Windows.</p>
+
+<p>In your Windows install, open Control Panel and head to “Power Options” Select “Choose what the power buttons do”, select “Change settings that are currently unavailable”, then disable the “fast startup” setting. Note that Windows updates may occasionally turn this setting back on without asking, so if you are unable to boot into Pop!_OS, check this setting first. (If the checkbox for ‘Turn on fast startup’ is grayed out, you can enable it by click ‘Change settings that are currently unavailable’ near the top of the power buttons settings page)</p>
+
+<p>Once in the BIOS change the Boot Order to boot Pop!_OS first that way when the <kbd>Spacebar</kbd> is pressed systemd-boot will appear and then the Windows Boot Manager can be selected for booting Windows 10. Steps for accessing the BIOS and changing the Boot Order are found <a href="/articles/boot-menu/">here</a>.</p>
+
+<h4 id="fix-your-clock">Fix your clock</h4>
+
+<p>Windows and Linux store their time in the BIOS differently, this will cause your clock to be desynchronized when you switch from one OS to the other.</p>
+
+<p>The easiest solution for it is to fix it in Linux, forcing it to work the same way as Windows. You can do this through the terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>timedatectl set-local-rtc 1 --adjust-system-clock
+</code></pre></div></div>
+
+<p>You can verify if the change has been successful, by running this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>timedatectl
+</code></pre></div></div>
+
+<p>You should see <code class="language-plaintext highlighter-rouge">RTC in local TZ: yes</code>. 
+If you need to revert it, just set it to 0:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>timedatectl set-local-rtc 0 --adjust-system-clock
+</code></pre></div></div>

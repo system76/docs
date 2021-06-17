@@ -13,56 +13,65 @@ section: servers
 
 # Hosting A Minecraft Server
 
+Minecraft 1.17 droped on June 8, 2021. In this article we will be going over how to setup a minecraft server on your Pop!_OS or Ubuntu install. For a Minecraft System76 recomends having a minumue of 8gb of RAM but for a good exprince 16gb of RAM is recomended.  Any harddriver over 128gb for a bassic server but if you want to backups 1TB to 2TB is recomeneded.
+
 ## Updating and Installing Software Needed
+
+To install the Minecraft server we will need to install Java (listed as `default-jdk`), `wget`, `screen`, and `nmap`.  Java is what minecraft runs in and is required for the server to run - we are also marking it as hold so no future updates are applied (some java updates can break the server). `wget` will allow us to download the Minecrafter Server from a URL hosted by Mojang, this way we can put the file in the direcorty directly instead of using a web brouswer.  `screen` will allow us to run commands and the server in an envirment we do not need to have open or be connected to - think of it as a virtial terminal terminal instance you can connect and disconnect form.  `nmap` is a network scanner that we will use for testing and network configuration.
+
+To open a terminal window go the to the activites button in the upper left corner of the screen and click it then use the search funtion to search for `Terminal`.  Click to open it and then run the following commands to update your system:
 
 ```bash
 sudo apt clean  
 sudo apt update -m  
 sudo dpkg --configure -a  
 sudo apt install -f  
-sudo apt full-upgrade  
-flatpak update  
-flatpak update --appstream  
-flatpak repair --user  
-sudo flatpak repair --system  
-flatpak update  
-flatpak uninstall --unused
-sudo apt install wget screen default-jdk nmap
+sudo apt full-upgrade -y
+sudo apt install wget screen default-jdk nmap -y
+sudo apt-mark hold default-jdk
 ```
 
+*Please note not all of these commands will output something.*
+
 ## Make The Mincraft Group & User & Minecraft Direcory
+The Minecraft server will make a lot of files for the world, settings, plugins, and other resourses.  The following commands are to make the directory for the servers to exsist in.  We will want to make a group and a user for the server to operate in and use.  We will need to then make a directory files to live in and make sure that the new server user has ownership on the direcory.
 
 ```bash
-mkdir /mchost/
-sudo adduser --home /mchost/ --shell /bin/bash --no-create-home --ingroup  mchost mc17
-Adding user `mc17' ...
-Adding new user `mc17' (1002) with group `mchost' ...
-Not creating home directory `/mchost/'.
-New password:
-Retype new password:
-passwd: password updated successfully
-Changing the user information for demouser
-Enter the new value, or press ENTER for the default
-        Full Name []: Minecraft 1.17
-        Room Number []:
-        Work Phone []:
-        Home Phone []:
-        Other []:
-Is the information correct? [Y/n] y
+sudo addgroup mchost
+sudo useradd -M -s /usr/bin/false
+sudo mkdir /mchost/v-1-17/
+sudo mkdir /mchost/v-1-17/live
+sudo mkdir /mchost/v-1-17/backups
+sudo chown -Rv mchost /mchost/~
 ```
 ## Installing Minecaft Server
 
 ```bash
-sudo mkdir /mchost/1-17/current
-sudo mkdir /mchost/1-17/backups
 sudo wget -O /mchost/1-17/current/minecraft_server.jar https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar
 sudo bash -c "echo eula=true > /mchost/1-7/current/eula.txt"
 sudo chown -R mc17 /mchost/1-7/
 ```
+*Please note the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
+
+## Running The Server
+
+```bash
+screen
+su mchost
+java -Xms4G -Xmx4G -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+AlwaysPreTouch -jar server.jar
+```
+
+The Lower Bound: `-Xms4G`
+The Upper Bound: `-Xmx4G`
+
+These values can be changed up to around 10GB, if you need to go over 10GB.  This rarely needs to be done on smaller servers unless you have complex datapacks, a large world file, or lost of players (around 100+).  If you need these valuses to be higher please change the G1 Max and New Size Percent to the following:
+
+```bash
+-XX:G1MaxNewSizePercent=60
+-XX:G1NewSizePercent=35
+```
 
 ## Optimization
-<https://github.com/YouHaveTrouble/minecraft-optimization>
-<https://www.spigotmc.org/threads/guide-server-optimization%E2%9A%A1.283181/?__cf_chl_jschl_tk__=d882805489003f065a99dcd85ed601f21024776c-1623945314-0-ARichCRBAkP6pRCWxZFLlip3a3XQcAWMwbNl-M54GKsEqTiWKuCVGh4gfM3oXTte1vcwIU-I0QhKQla-fRe4E6urB4JweVMEr21RnCaLKw5ffq2tvcntsEQVUiUAnak2yDdxTAEREts1VWfjY43-mTtoSZ5dmKAlxvcUpoPJ7EbR8S0VMX8fWhodhHwe1tWtGgpjAo_4EzfAf3REBgMjbgUGAl7ss3ihyJgsgUM9OP-KlH7DdAi2JLiH2ll7cupUr0HM6gNFmBmzcuPkrif6SWKKs-oU6XZh-_oTbU6wqKl0qA_IcgG2cR1VZwB5lb3RBI3o26mm5vNBEttywNiSTCeUurFPtB6gEIuz8rJHA7LitAcgD9yWXCrPFAsX7414lCESGJG2KSuRce7CxEHfkTRzmzMdxXFYoLjfRdgo1DsLIOBaw4FQukYBlVOa2FFYDqhpR1-5RDfuHtzZlkRtACo>
 
 ### Sᴇʀᴠᴇʀ.Pʀᴏᴘᴇʀᴛɪᴇs
 `network-compression-threshold: -1`
@@ -114,3 +123,4 @@ WantedBy=multi-user.target
 
 [YouHaveTrouble's MC Server Optimization](https://github.com/YouHaveTrouble/minecraft-optimization)
 [Spigot Server Optimization](https://www.spigotmc.org/threads/guide-server-optimization%E2%9A%A1.283181/?__cf_chl_jschl_tk__=d882805489003f065a99dcd85ed601f21024776c-1623945314-0-ARichCRBAkP6pRCWxZFLlip3a3XQcAWMwbNl-M54GKsEqTiWKuCVGh4gfM3oXTte1vcwIU-I0QhKQla-fRe4E6urB4JweVMEr21RnCaLKw5ffq2tvcntsEQVUiUAnak2yDdxTAEREts1VWfjY43-mTtoSZ5dmKAlxvcUpoPJ7EbR8S0VMX8fWhodhHwe1tWtGgpjAo_4EzfAf3REBgMjbgUGAl7ss3ihyJgsgUM9OP-KlH7DdAi2JLiH2ll7cupUr0HM6gNFmBmzcuPkrif6SWKKs-oU6XZh-_oTbU6wqKl0qA_IcgG2cR1VZwB5lb3RBI3o26mm5vNBEttywNiSTCeUurFPtB6gEIuz8rJHA7LitAcgD9yWXCrPFAsX7414lCESGJG2KSuRce7CxEHfkTRzmzMdxXFYoLjfRdgo1DsLIOBaw4FQukYBlVOa2FFYDqhpR1-5RDfuHtzZlkRtACo)
+[Java Flags for MC](https://forums.spongepowered.org/t/optimized-startup-flags-for-consistent-garbage-collection/13239)

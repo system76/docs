@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Install Pop!_OS On Your Computer
+title: Pop!_OS (Install)
 description: >
   Full instructions on installing Pop!_OS your computer.
 keywords:

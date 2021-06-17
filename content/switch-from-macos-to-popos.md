@@ -2,7 +2,7 @@
 layout: article
 title: Switching from macOS to Pop!_OS
 description: >
-  If you are coming from Apple's operating system using Pop!\_OS for the first time, we can help make the transition smoother.
+  If you are coming from Apple's operating system using Pop!_OS for the first time, we can help make the transition smoother.
 keywords:
   - System76
   - Apple
@@ -10,7 +10,7 @@ keywords:
   - macOS
   - switch
   - PopOS
-  - Pop!\_OS
+  - Pop!_OS
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: switching
@@ -56,7 +56,7 @@ section: switching
 
 Pop!\_OS offers corresponding workflows and applications to those available in macOS. Users will find UI elements where they expect them to be as well as some additional features.
 
-#[Navigation](#navigation)
+[Navigation](#navigation)
 
 ## [Finding Programs and Files](#finding-programs-and-files)
 
@@ -76,7 +76,6 @@ In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of 
 The Activities Overview screen can also be launched by pressing the SUPER key. Once Overview is launched, users can begin typing to search their computer.
 
 [Return to Table of Contents](#return-to-table-of-contents)
-
 
 ## [Application Shortcuts](#application-shortcuts)
 

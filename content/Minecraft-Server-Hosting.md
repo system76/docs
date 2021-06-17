@@ -8,7 +8,7 @@ keywords:
   - Mojang
   - Games
 hidden: false
-section: servers
+section: software
 ---
 
 # Hosting A Minecraft Server
@@ -47,9 +47,9 @@ sudo chown -Rv mchost /mchost/~
 ## Installing Minecaft Server
 
 ```bash
-sudo wget -O /mchost/1-17/current/minecraft_server.jar https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar
-sudo bash -c "echo eula=true > /mchost/1-7/current/eula.txt"
-sudo chown -R mc17 /mchost/1-7/
+sudo wget -O /mchost/v-1-17/live/minecraft_server.jar https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar
+sudo bash -c "echo eula=true > /mchost/v-1-17/live/eula.txt"
+sudo chown -R mchost /mchost/
 ```
 *Please note the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
 

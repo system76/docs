@@ -34,6 +34,7 @@ Once the menu is shown, choose **Pop!_OS Recovery**.
 - [Repair](/articles/pop-recovery/#repair)
 - [Refresh Install](/articles/pop-recovery/#refresh-install)
 - [Reinstall](/articles/pop-recovery/#reinstall)
+- [Upgrade](/articles/pop-recovery/#upgrade)
 
 ## Repair
 
@@ -52,7 +53,8 @@ This will show you the name of the main internal drive, which will have 4 partit
 Next, run this command:
 
 | **SATA Drives**           | **NVMe Drives**                |
-| ```sudo mount /dev/sda3 /mnt``` | ```sudo mount /dev/nvme0n1p3 /mnt``` |
+|:-------------------------:|:------------------------------:|
+| sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  
 
@@ -60,8 +62,9 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-| **SATA Drives**                                    | **NVMe Drives**                                         |
-| ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
+| **SATA Drives**                                    | **NVMe Drives**                                   |
+|:--------------------------------------------------:|:-------------------------------------------------:|
+| sudo cryptsetup luksOpen /dev/sda3 cryptdata       | sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata |
 
 ```bash
 sudo lvscan
@@ -82,8 +85,9 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
 
-| **SATA Drives**                                                          | **NVMe Drives**                                                          |
-| ```sudo mount /dev/sda1 /mnt/boot/efi```                                 | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```                            |
+| **SATA Drives**                       | **NVMe Drives**                          |
+|:-------------------------------------:|:----------------------------------------:|
+| sudo mount /dev/sda1 /mnt/boot/efi    | sudo mount /dev/nvme0n1p1 /mnt/boot/efi  |
 
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B $i /mnt/$i; done
@@ -113,3 +117,19 @@ Starting with new installations of Pop!\_OS 19.04 (not through upgrading) the in
 Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
 
 If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions above.
+
+## Upgrade
+
+It is important to keep the Recovery Partition updated as it is not updated with the installed OS. This will allow you to reinstall the OS to the currently installed version if something went wrong in your install.
+
+The Recovery Partition can be upgraded from within the OS in Settings -> OS Upgrade like in the screenshot below:
+
+![Pop Recovery Update Available](/images/pop-recovery/pop-recovery-update.png)
+
+Once the **Update** button is pressed you will see the below screenshot:
+
+![Pop Recovery Updating](/images/pop-recovery/pop-recovery-update-updating.png)
+
+The screenshot below shows that the Recovery Partition has been upgrade successfully:
+
+![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)

@@ -35,17 +35,16 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 
 | System | Open Firmware | Open EC |
 |:------:|:-------------:|:-------:| 
-| addw2  | Yes           | Yes     |
+| addw2  | Yes\*         | Yes\*   |
 | bonw14 | Yes           | Yes     |
 | darp7  | Yes           | Yes     |
-| darp6  | Yes           | Yes     |
+| darp6  | Yes           | Yes\*   |
 | galp5  | Yes           | Yes     |
 | galp4  | Yes           | No      |
+| gaze15 | Yes\*         | Yes\*   |
 | lemp10 | Yes           | Yes     |
 | lemp9  | Yes           | Yes     |
 | oryp7  | Yes           | Yes     |
 | oryp6  | Yes           | Yes     |
 
-#### Additional Notes
-
-Both the `addw2` and `darp6` shipped with closed firmware/EC, but have since been updated to Open Firmware/EC. [This article](/articles/transition-firmware) can be used to move your system from closed to Open Firmware/EC.
+\* These models shipped with closed firmware/EC, but have since been updated to Open Firmware/EC. [This article](/articles/transition-firmware) can be used to move your system from closed to Open Firmware/EC.

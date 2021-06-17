@@ -34,6 +34,7 @@ Once the menu is shown, choose **Pop!_OS Recovery**.
 - [Repair](/articles/pop-recovery/#repair)
 - [Refresh Install](/articles/pop-recovery/#refresh-install)
 - [Reinstall](/articles/pop-recovery/#reinstall)
+- [Upgrade](/articles/pop-recovery/#upgrade)
 
 ## Repair
 
@@ -116,3 +117,19 @@ Starting with new installations of Pop!\_OS 19.04 (not through upgrading) the in
 Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
 
 If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions above.
+
+## Upgrade
+
+It is important to keep the Recovery Partition updated as it is not updated with the installed OS. This will allow you to reinstall the OS to the currently installed version if something went wrong in your install.
+
+The Recovery Partition can be upgraded from within the OS in Settings -> OS Upgrade like in the screenshot below:
+
+![Pop Recovery Update Available](/images/pop-recovery/pop-recovery-update.png)
+
+Once the **Update** button is pressed you will see the below screenshot:
+
+![Pop Recovery Updating](/images/pop-recovery/pop-recovery-update-updating.png)
+
+The screenshot below shows that the Recovery Partition has been upgrade successfully:
+
+![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)

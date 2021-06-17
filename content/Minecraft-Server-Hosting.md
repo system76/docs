@@ -13,7 +13,7 @@ section: servers
 
 # Hosting A Minecraft Server
 
-Minecraft 1.17 droped on June 8, 2021. In this article we will be going over how to setup a minecraft server on your Pop!_OS or Ubuntu install. For a Minecraft System76 recomends having a minumue of 8gb of RAM but for a good exprince 16gb of RAM is recomended.  Any harddriver over 128gb for a bassic server but if you want to backups 1TB to 2TB is recomeneded.
+Minecraft 1.17 droped on June 8, 2021. In this article we will be going over how to setup a minecraft server on your Pop!_OS or Ubuntu install. For a Minecraft System76 recomends having a minumue of 8gb of RAM but for a good exprince 16gb of RAM is recomended.  Any harddriver over 128gb for a bassic server but if you want to backups 1TB to 2TB is recomeneded.  This article will live mostly in the terminal, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).
 
 ## Updating and Installing Software Needed
 

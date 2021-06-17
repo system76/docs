@@ -82,7 +82,7 @@ If all of your files are backed up, or if you are installing from scratch, pick 
 
 ![Download Updates](/images/install-ubuntu/ubuntu-install-screen2.png)
 
-### Install Ubuntu
+## Install Ubuntu
 
 Option             | Action
 ------------------ | ----------------
@@ -92,63 +92,63 @@ Option             | Action
 **Erase Disk** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, select **Use LVM with the new Ubuntu Installation** option for flexibility with partitions later.
 **Something Else** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
 
-#### Language and Keyboard layout
+### Language and Keyboard layout
 
 ![Keyboard Layout](/images/install-ubuntu/install-ubuntu-21.04-2.png)
 
-#### Installation type
+### Installation type
 
 ![Installation Type](/images/install-ubuntu/install-ubuntu-21.04-3.png)
 
-#### Advanced Features
+### Advanced Features
 
 ![Advanced Features](/images/install-ubuntu/install-ubuntu-21.04-3.5.png)
 
-#### Disk encryption
+### Disk encryption
 
 ![Disk Encryption](/images/install-ubuntu/install-ubuntu-21.04-3.6.png)
 
-#### Write changes to the drive/disk
+### Write changes to the drive/disk
 
 ![Write to Disk](/images/install-ubuntu/install-ubuntu-21.04-3.7.png)
 
-#### Location 
+### Location 
 
 ![Location](/images/install-ubuntu/install-ubuntu-21.04-5.png)
 
 This option will effect your timezone.
 
-#### User creation
+### User creation
 
 ![User Creation](/images/install-ubuntu/install-ubuntu-21.04-6.png)
 
 This is when you will create your first user in your new install of Ubuntu.
 
-#### Slideshow
+### Slideshow
 
 ![Slideshow](/images/install-ubuntu/install-ubuntu-21.04-7.png)
 
 This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved. 
 
-#### Restart
+### Restart
 
 ![Restart](/images/install-ubuntu/install-ubuntu-21.04-8.png)
 
 Once the installation is finished, the system will prompt you to reboot.
 
-#### Remove Install Media
+### Remove Install Media
 
 ![Remove Install Media](/images/install-ubuntu/install-ubuntu-21.04-9.png)
 
 Before completing the reboot, the system will prompt you to make sure the install media has been removed.
 
-#### Decrypt Drive
+### Decrypt Drive
 
 ![Decryption Screen](/images/install-ubuntu/ubuntu-decryption-screen.png)
 
 If you chose to encrypt your drive, this screen will be shown on reboot. Enter the decryption passphrase, and press <kbd>ENTER</kbd>
 
-#### Login Screen
+### Login Screen
 
 ![Login Screen 1](/images/install-ubuntu/ubuntu-login-screen-1.png)
 
@@ -156,17 +156,19 @@ If you chose to encrypt your drive, this screen will be shown on reboot. Enter t
 
 Select your User from the login screen and enter your user passphrase.
 
-#### Online Accounts
+### Online Accounts
+
+![Online Accounts](/images/install-ubuntu/ubuntu-online-accounts.png)
 
 Ubuntu asks users if they would like to sign into online accounts after the first login. This can be done now, or later, in <u>Settings.</u>
 
-#### Telemetry
+### Telemetry
 
 ![Telemetry](/images/install-ubuntu/ubuntu-21.04-telemetry.png)
 
 Canonical asks you if you would like to send some system information to them to improve Ubuntu. Opting in or out of this option will not affect your Ubuntu features or experience.
 
-#### Ready to Go
+### Ready to Go
 
 ![Ready](/images/install-ubuntu/ubuntu-ready-to-go.png)
 
@@ -201,7 +203,7 @@ sudo apt update
 sudo apt install system76-driver
 ```
 
-#### NVIDIA Graphics
+### NVIDIA Graphics
 
 If you ordered a system with a discrete NVIDIA graphics card or if you added one later on, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command after the above commands to install the driver:
 
@@ -209,7 +211,7 @@ If you ordered a system with a discrete NVIDIA graphics card or if you added one
 sudo apt install system76-driver-nvidia
 ```
 
-#### Apt Preferences File
+### Apt Preferences File
 
 If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
 
@@ -233,7 +235,7 @@ Pin-Priority: 1001
 
 Save the file. Now you should be able to install the System76 Driver as described above.
 
-#### If 'nouveau.modeset=0' Was Used
+### If 'nouveau.modeset=0' Was Used
 
 The `nouveau.modeset=0` modifier should be made default if your machine has NVIDIA hardware. Please run this command to edit the startup options file:
 

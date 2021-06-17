@@ -16,7 +16,7 @@ section: community
 # Facial recognition for authentication (howdy).
 
 In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open source face authentication tool.
-Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/articles/webcam).
+Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/content/webcam).
 
 
 ### Installation on Pop!_OS, Ubutnu or any other Ubuntu based distribution.
@@ -37,15 +37,11 @@ sudo apt install -y howdy
 Please refer to first party instructions [here](https://github.com/Boltgolt/howdy#installation).
 
 ### Configuring Howdy.
-During the configuration of <u>howdy>, you will be asked "What profile would you like to use?". Eg:
+During the configuration of Howdy, you will be asked "What profile would you like to use?". Eg:
 ```
 Preparing to unpack .../106-howdy_2.6.1_all.deb ...
 
-WARNING: Could not automatically find the right webcam, manual configuration after installation required
-
-
 Starting certainty auto config...
-
 
 After detection, Howdy knows how certain it is that the match is correct.
 How certain Howdy needs to be before authenticating you can be customized.
@@ -62,13 +58,14 @@ The safest option, but will take much longer to authenticate you.
 You can always change this setting in the config.
 What profile would you like to use? [f/b/s]:
 ```
+Select profile you want to use by typing <kbd>f</kbd>, <kbd>b</kbd>, <kbd>s</kbd> for Fast, Balanced or Secure profiles, accordingly, and pressing <kbd>Enter</kbd>.
 After that Howdy will download and install required dependencies for face recognition.
 
 When everything is done you will be returned to terminal. Now it's time to add a face for login. For that, run:
 ```bash
 sudo howdy add
 ```
-You will be asked for your sudo password, type it in and press <kbd>enter</kbd>. You will be asked to label the new model. It's similar to how you're asked to label a fingerprint you're adding on your phone. Something like 'face1' or 'John's face' will suffice.
+You will be asked for your sudo password, type it in and press <kbd>Enter</kbd>. You will be asked to label the new model. It's similar to how you're asked to label a fingerprint you're adding on your phone. Something like 'face1' or 'John's face' will suffice.
 
 Once that's done you successfully finished setting up howdy. Try it out by locking your screen and pressing any button to open login. If everything is setup correctly - you will be logged in by <u>handy</u> with your face.
 

@@ -18,13 +18,13 @@ The Ubuntu operating system provides all the features you would expect from a so
 
 ### Getting to Know The Ubuntu Desktop
 
-![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-launcher.png)
+![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-21.04-files.png) 
 
 Use the Launcher on the left hand side of the screen to start your favorite apps. You can switch between running apps by clicking on their icons. Right click on an icon in the Launcher to show a menu of actions. Actions include adding, removing application icons, opening new tabs, switching multiple windows of the same app and much more.
 
 Use the grid icon on the bottom of the launcher to list all of the installed applications. This screen can also be accessed by pressing <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>A</kbd> or <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>A</kbd>.
 
-![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-search.png)
+![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-21.04-activities-search.png) 
 
 Type in any word to search your computer for installed programs, files, and items in <u>Ubuntu Software</u>.
 

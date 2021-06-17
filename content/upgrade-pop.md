@@ -11,6 +11,7 @@ keywords:
   - Pop!_OS 19.10
   - Pop!_OS 20.04
   - Pop!_OS 20.10
+  - Pop!_OS 21.04
   - LTS
   - Non-LTS
   - Upgrade
@@ -50,7 +51,8 @@ Some users may prefer to have Pop!\_OS installation media handy before starting 
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
-# Upgrading Pop!\_OS to 20.10 from 20.04 
+# Upgrading Pop!\_OS to 21.04 from 20.10 
+
 ### (For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
@@ -62,7 +64,7 @@ sudo apt full-upgrade
 
 Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> OS Upgrade.
 
-On the system's "OS Upgrade" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.10 is available with a "Download" button.
+On the system's "OS Upgrade" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a "Download" button.
 
 Click the "Download" button and the download will begin.
 
@@ -70,7 +72,7 @@ Once the download is complete, you will receive a second notification saying the
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.10!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.04!
 
 ### Advanced Install (Terminal)
 
@@ -111,7 +113,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 # Upgrading older releases
 
-Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 20.10 (groovy).
+Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.04 (hirsute).
 
 These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 
@@ -152,7 +154,7 @@ You will want to take a look at the files that end in "list" in "/etc/apt/backup
 
 ### 5. After the 20.04 Pop upgrade is complete, **reboot**.
 
-### 6. Run the command to upgrade to Pop 20.10
+### 6. Run the command to upgrade to Pop 21.04
 
 ```bash
 pop-upgrade release upgrade

@@ -211,7 +211,7 @@ To change the Proton version:
 
 ## Using Steam on GameHub
 
-Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be displayed. Note that games will be slightly discolored if they aren't installed. Notice,in this example, that the two top left games are installed on this system.
+Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be displayed. Note that games will be slightly discolored if they aren't installed. Notice, in this example, that the two, top left games are installed on this system.
 
 ![Using Steam with GameHub](/images/linux-gaming/gamehub-steam.png)
 

@@ -23,6 +23,11 @@ section: media
     - [Steam](#steam)
     - [GameHub](#gamehub)
     - [Lutris](#lutris)
+- [Using Steam](#using-steam)
+    - [Using Proton](#using-proton)
+    - [Using Native](#using-native)
+- [Using GameHub](#using-gamehub)
+    - [Steam](#using-steam-on-gamehub)
 - [Using Lutris](#using-lutris)
     - [Using the website](#using-the-website)
 
@@ -156,11 +161,33 @@ sudo apt install lutris
 
 ### Install Lutris From the Pop!_Shop
 
-Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. Now click the **Install** button.
+Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicking the <u>Lutris</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
 ![Pop!_Shop Lutris](/images/linux-gaming/pop-lutris.png)
 
 Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+
+# Using Steam
+
+## Using Proton
+
+This game is an example of using Proton to run a Windows only game. You can also tell when you see the "This game will launch with Steam Play" message.
+
+![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
+
+## Using Native
+
+This game is an example of running a Linux native game.
+
+![Playing a native game](/images/linux-gaming/playing-native-game.png)
+
+# Using GameHub
+
+## Using Steam on GameHub
+
+Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be displayed. Note that games will be slightly discolored if they aren't installed which you will see that the two top left games are installed on this system.
+
+![Using Steam with GameHub](/images/linux-gaming/gamehub-steam.png)
 
 # Using Lutris
 

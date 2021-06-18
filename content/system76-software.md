@@ -16,8 +16,6 @@ section: software
 
 # Notes about these instructions
 
-This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
-
 **DISCLAIMER**
 
 Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only.System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. 

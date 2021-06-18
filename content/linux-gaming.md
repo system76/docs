@@ -131,7 +131,7 @@ sudo apt install com.github.tkashkin.gamehub
 
 Open the <u>Pop!_Shop</u> application then either search for GameHub or by clicking the <u>GameHub</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
-![Pop!_Shop Steam](/images/linux-gaming/pop-shop_gamehub.png)
+![Pop!_Shop GameHub](/images/linux-gaming/pop-shop_gamehub.png)
 
 Once installed, use the Activities Overview to search for and run <u>GameHub</u>.
 
@@ -146,7 +146,7 @@ Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pres
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
 ```bash
-apt search steam
+apt search lutris
 ```
 
 ![Terminal](/images/linux-gaming/terminal-steam-lutris.png)

@@ -210,3 +210,6 @@ You will need to install some WINE packages during the installation of <u>Battle
 It is *very* important to close <u>Battle.net</u> to complete the installation then reopen it to sign into your account. Now that <u>Battle.net</u> is installed you can launch it with the **Play** button once it is selected in <u>Lutris</u>.
 
 ![Lutris Installed Game](/images/linux-gaming/lutris-wow-installed.png)
+
+## Using exe files
+

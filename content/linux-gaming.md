@@ -211,5 +211,8 @@ It is *very* important to close <u>Battle.net</u> to complete the installation t
 
 ![Lutris Installed Game](/images/linux-gaming/lutris-wow-installed.png)
 
-## Using exe files
+## Using .exe files
 
+![Lutris Add Game Info](/images/linux-gaming/lutris-add-game-info.png)
+
+![Lutris Add Game Options](/images/linux-gaming/lutris-add-game-options.png)

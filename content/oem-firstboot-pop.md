@@ -20,10 +20,11 @@ section: software-troubleshooting
 
 # Create a User If Initial User Setup Fails in Pop!\_OS
 
+<!-- 
 - Document Version: 2.0.0
 - Date: (8-28-2020)
 - Author: Aaron Honeycutt, Nathan Dyer
-- Contributing Editor(s): Nathaniel Warburton
+- Contributing Editor(s): Nathaniel Warburton -->
 
 A lot of work goes in to making your System76 experience fantastic right out of the box. Getting running needs just a little bit of information like a username and password. Every now and then, something goes wrong with the new user creator. If there is only a Guest Session, follow these instructions to fix the issue.
 

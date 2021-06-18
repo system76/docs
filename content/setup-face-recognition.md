@@ -21,7 +21,7 @@ Please make sure your webcam works before you start installation. An article abo
 
 ### Installation on Pop!_OS, Ubutnu or any other Ubuntu based distribution.
 
-Firstly, we will need a terminal. You can open it by pressing <kbd>super</kbd>+<kbd>T</kbd> on your keyboard or searching for terminal app in your application menu.
+Firstly, we will need a terminal. You can open it by pressing <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd> on your keyboard or searching for terminal app in your application menu.
 
 Then, adding a Howdy PPA is needed so our system knows where to get the app:
 ```bash
@@ -105,7 +105,7 @@ sudo howdy add
 ```
 
 ### Howdy always says "Timeout is reached" and never identifies you.
-You can try lowering certainty level of howdy--in a terminal <kbd>super</kbd>+<kbd>T</kbd>.
+You can try lowering certainty level of howdy--in a terminal <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd>.
 Once you get to a terminal window, type in:
 ```bash
 sudo howdy config
@@ -133,7 +133,7 @@ But replacing ID with number you memorized a step before.
 
 ### Uninstalling Howdy.
 If you, for some reason, want to uninstall Howdy.
-Open a terminal window by pressing <kbd>super</kbd>+<kbd>T</kbd> or searching for a Terminal app in your applications menu. Type in:
+Open a terminal window by pressing <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd> or searching for a Terminal app in your applications menu. Type in:
 ```bash
 sudo howdy clear
 ```

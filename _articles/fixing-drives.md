@@ -38,4 +38,4 @@ We can instead use the <u>Terminal</u> application to perform the same behavior 
 | ``` sudo fsck -Cy /dev/sda```      |```sudo fsck -Cy /dev nvme0n1```|
 
 If the commands complete without errors, or with errors corrected, reboot back into the installed OS. 
-If errors are reported and not corrected, your drive may be experiencing hardware issues. You'll want to use your live environemnt (Live Disk or Recovery) to back up your files to another drive. <!--We have an article on this process [here](disaster recovery article).-->
+If errors are reported and not corrected, your drive may be experiencing hardware issues. You'll want to use your live environemnt (Live Disk or Recovery) to back up your files to another drive. We have an article on this process [here](https://support.system76.com/articles/disaster-recovery).

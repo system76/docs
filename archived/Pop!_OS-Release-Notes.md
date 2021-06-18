@@ -6,6 +6,7 @@ description: >
 keywords:
   - Pop
   - 20.04
+  - 21.04
   - LTS
   - Updates
   - New Features

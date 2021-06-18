@@ -53,7 +53,7 @@ Once we find the right name for <u>Steam</u> we can install it with `apt` as wel
 sudo apt install steam
 ```
 
-**Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.**
+> **IMPORTANT NOTE:** Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.
 
 ### Install Steam From the Pop!_Shop
 
@@ -65,21 +65,30 @@ Once installed, use the Activities Overview to search for and run <u>Steam</u>.
 
 ### Enable Steam Play (Proton)
 
-Proton is a way to enable support for some Windows games using Wine and some tweaks and additions that Valve have been working on. You can enable it using the the <u>Steam</u> Settings to download and install Proton.
+Proton is a compatibility layer tool which enables support for some Windows games on Linux. It's based on the WINE project with some tweaks and additions by Valve. You can enable Proton in: 
+
+Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supported titles AND "Enable Steam Play for all other titles" as pictured below:
 
 ![Steam Settings](/images/linux-gaming/enable-steam-play_proton.png)
 
-#### Install Protonup to Manage Custom Proton Versions
-<u>Protonup</u> is an easy tool, written in Python, to install the newest-available version of ProtonGE into Steam's proton directory. <u>ProtonGE</u> is a fork of <u>Proton</u>, maintained by GloriousEggroll on Github [here](https://github.com/GloriousEggroll/proton-ge-custom). <u>Protonup</u> is maintained by Naseef in the PyPi project directory [here](https://pypi.org/project/protonup/).
+## Install Protonup to Manage Custom Proton Versions
 
-First, we'll need the Python package manager, pip.
+<u>Protonup</u> is a tool, written in Python, used to install the newest-available version of ProtonGE into Steam's proton directory. <u>ProtonGE</u> is a fork of <u>Proton</u>, maintained by GloriousEggroll on Github.
+
+Glorious Eggroll often does testing of newer games and is often able to implement bug fixes before the team at Valve does. If a game is not working with mainline or experimental versions of Proton, trying ProtonGE is a good troubleshooting step.
+
+You can view Glorious Eggroll's Github [here](https://github.com/GloriousEggroll/proton-ge-custom). 
+
+The <u>Protonup</u> tool is maintained by Naseef in the PyPi project directory [here](https://pypi.org/project/protonup/).
+
+First, to install `protonup` we'll need the Python package manager, `pip`.
 
 ```bash
 sudo apt update
 sudo apt install python3-pip
 ```
 
-Now, let's install protonup via pip.
+Now, let's install `protonup` via `pip`.
 
 ```bash
 pip3 install protonup
@@ -91,7 +100,7 @@ The `protonup` command will be available after a reboot, or you can run the belo
 source ~/.profile
 ```
 
-Now, after <u>Steam</u> is installed, you can run protonup in terminal, and it will grab the newest ProtonGE build. This tool will also pull hotfixes. Below is an example of the tools output:
+After <u>Steam</u> is installed, you can run protonup in a terminal. The command will fetch the newest ProtonGE build. This tool will also pull hotfixes. Below is an example of the tools output:
 
 ```bash
 protonup
@@ -125,11 +134,9 @@ Once we find the right name for <u>GameHub</u> we can install it with `apt` as w
 sudo apt install com.github.tkashkin.gamehub
 ```
 
-**Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.**
-
 ### Install GameHub From the Pop!_Shop
 
-Open the <u>Pop!_Shop</u> application then either search for GameHub or by clicking the <u>GameHub</u> icon on the Pop!_Shop home page. Now click the **Install** button.
+Open the <u>Pop!_Shop</u> application then either search for GameHub, or navigate to the GameHub page by clicking the <u>GameHub</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
 ![Pop!_Shop GameHub](/images/linux-gaming/pop-shop_gamehub.png)
 
@@ -157,35 +164,54 @@ Once we find the right name for <u>Lutris</u> we can install it with `apt` as we
 sudo apt install lutris
 ```
 
-**Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.**
-
 ### Install Lutris From the Pop!_Shop
 
 Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicking the <u>Lutris</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
 ![Pop!_Shop Lutris](/images/linux-gaming/pop-lutris.png)
 
-Once installed, use the Activities Overview to search for and run <u>Steam</u>.
-
 # Using Steam
 
-## Using Proton
-
-This game is an example of using Proton to run a Windows only game. You can also tell when you see the "This game will launch with Steam Play" message.
+Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+## Proton vs. Native
 
 ![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
 
-## Using Native
-
-This game is an example of running a Linux native game.
-
 ![Playing a native game](/images/linux-gaming/playing-native-game.png)
 
+From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
+Once you've enabled Steam Play, they both present the usual green "Play" button. 
+
+> **NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
+
+If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
+
+![Skyrim 1](/images/linux-gaming/skyrim-info-pane.png)
+
+![Skyrim Detail](/images/linux-gaming/steamplay-detail.png)
+
+## Changing the Proton Version for a Specific Game
+
+It's possible to specify a certain Proton version on per game basis. You can switch between older and newer Proton versions installed on your system by the Steam client, or select custom versions of proton like ProtonGE. 
+
+To change the Proton version: 
+
+1. Click on the "Gear" icon in the top-right corner of the game info page.
+
+2. In the drop-down menu, select "Properties." 
+
+3. Once the properties window opens, click "Compatibility" from the left menu pane. 
+
+4. Check the box to "Force the use of a specific Steam Play compatibility tool." 
+
+5. Select the desired Proton version from the drop down menu (as pictured below).
+
+![Compatibility Menu](/images/linux-gaming/skyrim-proton-version.png)
 # Using GameHub
 
 ## Using Steam on GameHub
 
-Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be displayed. Note that games will be slightly discolored if they aren't installed which you will see that the two top left games are installed on this system.
+Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be displayed. Note that games will be slightly discolored if they aren't installed. Notice,in this example, that the two top left games are installed on this system.
 
 ![Using Steam with GameHub](/images/linux-gaming/gamehub-steam.png)
 
@@ -193,21 +219,29 @@ Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be display
 
 ## Using the website
 
-Some games like WoW (World of Warcraft) have installers on the Lutris website like the screenshot below. With <u>Lutris</u> installed you can click the **Install** button to install the game which will open <u>Lutris</u>.
+Some games like World of Warcraft (WoW) have installers on Lutris' website (see screenshot below). 
+
+With <u>Lutris</u> installed you can click the **Install** button to start the installer script. A pop-up window will appear asking to use Lutris as the application to run the installer.
 
 ![Lutris Install Button](/images/linux-gaming/lutris-install-button.png)
 
-From there open the link with <u>Lutris</u> to open the <u>Lutris</u> to access the installer like the screenshot below. From there click the **Install** button to start the installation. 
+Use <u>Lutris</u> to open the installer (shown below). From there click the **Install** button to start the installation. 
 
 ![Lutris Installer](/images/linux-gaming/lutris-installer.png)
 
-Then click the **Continue** button to start the installation of <u>Battle.net</u> like in the screenshot below.
+Next, click the **Continue** button to start the installation of <u>Battle.net</u>
 
 ![Lutris Installer 2](/images/linux-gaming/lutris-installer2.png)
 
 You will need to install some WINE packages during the installation of <u>Battle.net</u>
 
-It is *very* important to close <u>Battle.net</u> to complete the installation then reopen it to sign into your account. Now that <u>Battle.net</u> is installed you can launch it with the **Play** button once it is selected in <u>Lutris</u>.
+> **IMPORTANT NOTE:** close <u>Battle.net</u> to complete the installation then reopen it to sign into your account. 
+
+Now that <u>Battle.net</u> is installed, you can select Wow from your Games and launch Battle.net with the **Play** button.
+
+Once <u>Battle.net</u> launches you can finish the World of Warcraft installation. 
+
+> **NOTE:** If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two seperate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.
 
 ![Lutris Installed Game](/images/linux-gaming/lutris-wow-installed.png)
 

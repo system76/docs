@@ -17,81 +17,31 @@ section: general-hardware-info
 
 # Docking Station Support
 
+**Disclaimer:**
+This article is provided for information purposes only. System76 cannot guarantee that all vendors will follow USB-C or Thunderbolt specs, nor that a manufacturer won't have made hardware or firmware changes since this article was created.
+Not all docks will work on all hardware. Be sure you purchase docking stations from a reputable vendor, with a flexible return policy.
+
 ### Compatible Intel systems
 
-<table>
-<tbody>
-<tr style="height: 23px;">
-<td style="height: 23px;">System </td>
-<td style="height: 23px;">Supports USB-C Charging?</td>
-<td style="height: 23px;">Supports Thunderbolt?</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">addw2</td>
-<td style="height: 23px;">No</td>
-<td style="height: 23px;">No (DisplayPort over USB-C)</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">bonw14</td>
-<td style="height: 23px;">No</td>
-<td style="height: 23px;">No (DisplayPort over USB-C)</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">darp5</td>
-<td style="height: 23px;">No</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">darp6</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">darp7</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp3-b</td>
-<td style="height: 23px;">No</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp3-c</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp4</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">galp5</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">lemp9</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">No (DisplayPort over USB-C)</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">lemp10</td>
-<td style="height: 23px;">Yes</td>
-<td style="height: 23px;">Yes</td>
-</tr>
-<tr style="height: 23px;">
-<td style="height: 23px;">serw12</td>
-<td style="height: 23px;">No</td>
-<td style="height: 23px;">No (DisplayPort over USB-C)</td>
-</tr>
-</tbody>
-</table>
+| System  | Supports USB-C Charging? | Supports Thunderbolt?       |
+|:-------:|:------------------------:|:---------------------------:|
+| addw2   | No                       | No (DisplayPort over USB-C) |
+| bonw14  | No                       | No (DisplayPort over USB-C) |
+| darp5   | No                       | Yes                         |
+| darp6   | Yes                      | Yes                         |
+| darp7   | Yes                      | Yes                         |
+| galp3-b | No                       | Yes                         |
+| galp3-c | Yes                      | Yes                         |
+| galp4   | Yes                      | Yes                         |
+| galp5   | Yes                      | Yes                         |
+| lemp9   | Yes                      | No (DisplayPort over USB-C) |
+| lemp10  | Yes                      | Yes                         |    
+| serw12  | No                       | No (DisplayPort over USB-C) |
+
 
 ## A Note About Multi-Monitor Support
 
-Many docking stations offer multiple video-out ports on the dock device itself. However, our systems typically only have one video stream per port; so, even if a docking station supports multiple video ports, only one at a time will be active. For example, connecting a docking station with two Displayport ports to the Thunderbolt port on a System76 laptop will only activate one Displayport monitor. To chain two monitors together from the same docking station requires the monitor hardware to support daisy-chaining, and both monitors will need to be connected to each other, rather than to the docking station.
+Many docking stations offer multiple video-out ports on the dock device itself. However, our systems typically only have one video stream per port; so, even if a docking station supports multiple video ports, only one at a time will be active. For example, connecting a docking station with two DisplayPort ports to the Thunderbolt port on a System76 laptop will only activate one DisplayPort monitor. To chain two monitors together from the same docking station requires the monitor hardware to support daisy-chaining, and both monitors will need to be connected to each other, rather than to the docking station.
 
 Laptop -> Docking Station -> Monitor 1 -> DisplayPort Cable or Thunderbolt Cable -> Monitor 2
 

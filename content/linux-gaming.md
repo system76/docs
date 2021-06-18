@@ -1,12 +1,14 @@
 ---
 layout: article
-title: Gaming on Linux 
+title: Gaming on Pop!_OS
 description: >
    Want to game on your super awesome new System76 machine?  Take a look at these instructions to set your system up for gaming!
 keywords:
   - gaming
   - support
   - steam
+  - lutris
+  - gamehub
   - proton
 image: http://support.system76.com/images/system76.png
 hidden: false
@@ -14,13 +16,23 @@ section: media
 
 ---
 
-# Steam (Install)
+# Gaming on Pop!\_OS
 
-## Install Steam From Command Line
+#### [Table of Contents](#contents)
+- [Game Launchers](#game-launchers)
+    - [Steam](#steam)
+    - [GameHub](#gamehub)
+    - [Lutris](#lutris)
+- [Using Lutris](#using-lutris)
+    - [Using the website](#using-the-website)
 
-Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
+## Steam (Install)
 
-![Activities Overview](/images/steam/search.png)
+### Install Steam From Command Line
+
+Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
+
+![Activities Overview](/images/linux-gaming/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -28,7 +40,7 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search steam
 ```
 
-![Terminal](/images/steam/steam1.png)
+![Terminal](/images/linux-gaming/terminal-steam-search.png)
 
 Once we find the right name for <u>Steam</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
@@ -36,27 +48,21 @@ Once we find the right name for <u>Steam</u> we can install it with `apt` as wel
 sudo apt install steam
 ```
 
-![Terminal](/images/steam/steam2.png)
-
 **Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.**
 
+### Install Steam From the Pop!_Shop
+
+Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. Now click the **Install** button.
+
+![Pop!_Shop Steam](/images/linux-gaming/pop-shop_steam.png)
+
 Once installed, use the Activities Overview to search for and run <u>Steam</u>.
-
-## Install Steam From the Pop!_Shop
-
-Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. 
-
-![Pop!_Shop](/images/steam/pop_shop1.png)
-
-Then click the **install button**.
-
-![Pop!_Shop](/images/steam/pop_shop2.png)
 
 ### Enable Steam Play (Proton)
 
 Proton is a way to enable support for some Windows games using Wine and some tweaks and additions that Valve have been working on. You can enable it using the the <u>Steam</u> Settings to download and install Proton.
 
-![Steam Settings](/images/steam/enable-steam-play_proton.png)
+![Steam Settings](/images/linux-gaming/enable-steam-play_proton.png)
 
 #### Install Protonup to Manage Custom Proton Versions
 <u>Protonup</u> is an easy tool, written in Python, to install the newest-available version of ProtonGE into Steam's proton directory. <u>ProtonGE</u> is a fork of <u>Proton</u>, maintained by GloriousEggroll on Github [here](https://github.com/GloriousEggroll/proton-ge-custom). <u>Protonup</u> is maintained by Naseef in the PyPi project directory [here](https://pypi.org/project/protonup/).
@@ -92,13 +98,13 @@ Downloaded 100.0% - 370.81 MiB/370.81 MiB
 [INFO] Installed in: /home/aaronh/.steam/root/compatibilitytools.d/Proton-6.10-GE-1
 ```
 
-# Gamehub (Install)
+## Gamehub (Install)
 
-## Install Gamehub From Command Line
+### Install Gamehub From Command Line
 
-Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
+Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Activities Overview](/images/steam/search.png)
+![Activities Overview](/images/linux-gaming/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -106,13 +112,74 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search gamehub
 ```
 
-![Terminal](/images/steam/steam1.png)
+![Terminal](/images/linux-gaming/terminal-gamehub-search.png)
 
-Once we find the right name for <u>Steam</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
+Once we find the right name for <u>GameHub</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
 ```bash
-sudo apt install steam
+sudo apt install com.github.tkashkin.gamehub
 ```
 
-## Install Gamehub From the Pop!_Shop
+**Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.**
 
+### Install GameHub From the Pop!_Shop
+
+Open the <u>Pop!_Shop</u> application then either search for GameHub or by clicking the <u>GameHub</u> icon on the Pop!_Shop home page. Now click the **Install** button.
+
+![Pop!_Shop Steam](/images/linux-gaming/pop-shop_gamehub.png)
+
+Once installed, use the Activities Overview to search for and run <u>GameHub</u>.
+
+## Lutris (Install)
+
+### Install Lutris From Command Line
+
+Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
+
+![Activities Overview](/images/linux-gaming/search-terminal.png)
+
+Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
+
+```bash
+apt search steam
+```
+
+![Terminal](/images/linux-gaming/terminal-steam-lutris.png)
+
+Once we find the right name for <u>Lutris</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
+
+```bash
+sudo apt install lutris
+```
+
+**Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.**
+
+### Install Lutris From the Pop!_Shop
+
+Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. Now click the **Install** button.
+
+![Pop!_Shop Lutris](/images/linux-gaming/pop-lutris.png)
+
+Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+
+# Using Lutris
+
+## Using the website
+
+Some games like WoW (World of Warcraft) have installers on the Lutris website like the screenshot below. With <u>Lutris</u> installed you can click the **Install** button to install the game which will open <u>Lutris</u>.
+
+![Lutris Install Button](/images/linux-gaming/lutris-install-button.png)
+
+From there open the link with <u>Lutris</u> to open the <u>Lutris</u> to access the installer like the screenshot below. From there click the **Install** button to start the installation. 
+
+![Lutris Installer](/images/linux-gaming/lutris-installer.png)
+
+Then click the **Continue** button to start the installation of <u>Battle.net</u> like in the screenshot below.
+
+![Lutris Installer 2](/images/linux-gaming/lutris-installer2.png)
+
+You will need to install some WINE packages during the installation of <u>Battle.net</u>
+
+It is *very* important to close <u>Battle.net</u> to complete the installation then reopen it to sign into your account. Now that <u>Battle.net</u> is installed you can launch it with the **Play** button once it is selected in <u>Lutris</u>.
+
+![Lutris Installed Game](/images/linux-gaming/lutris-wow-installed.png)

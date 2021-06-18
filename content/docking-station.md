@@ -17,6 +17,10 @@ section: general-hardware-info
 
 # Docking Station Support
 
+> **Disclaimer:**
+This article is provided for information purposes only. System76 cannot guarantee that all vendors will follow USB-C or Thunderbolt specs, nor that a manufacturer won't have made hardware or firmware changes since this article was created.
+Not all docks will work on all hardware. Be sure you purchase docking stations from a reputable vendor, with a flexible return policy.
+
 ### Compatible Intel systems
 
 <table>

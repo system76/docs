@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Switching from macOS to Pop!_OS
 description: >
   If you are coming from Apple's operating system using Pop!\_OS for the first time, we can help make the transition smoother.
@@ -11,10 +10,12 @@ keywords:
   - switch
   - PopOS
   - Pop!\_OS
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: switching
-
 ---
 
 # **Switching from macOS to Pop!\_OS**

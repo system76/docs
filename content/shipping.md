@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Shipping Your Computer
 description: >
   Instructions for preparing your computer for shipping to System76.
@@ -7,10 +6,12 @@ keywords:
   - shipping
   - repair
   - return
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: repairs-returns
-
 ---
 
 When shipping a computer to us for any reason, several steps need followed before sending it in.

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Mouse Customization
 description: >
    How to customize the buttons on your mouse
@@ -10,10 +9,12 @@ keywords:
   - xbindkeys
   - Solaar
   - Piper
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
 ### Graphical Software

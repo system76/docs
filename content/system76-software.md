@@ -1,15 +1,16 @@
 ---
-layout: article
 title: System76 Software (Install - Other Operating Systems)
 description: >
-    Learn what software is needed to use other OSes and install them
+  Learn what software is needed to use other OSes and install them
 keywords:
   - system76
   - support
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # System76 Software (Install - Other Operating Systems)
@@ -18,10 +19,10 @@ section: software
 
 **DISCLAIMER**
 
-Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only.System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. 
+Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only.System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
 
-However, System76 does not guarantee the success or quality of experience when installing other Operating Systems. 
-Support typically makes best-efforts to offer direction or troubleshooting for other distributions. 
+However, System76 does not guarantee the success or quality of experience when installing other Operating Systems.
+Support typically makes best-efforts to offer direction or troubleshooting for other distributions.
 
 We may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those Operating System(s)' support forums.
 
@@ -29,7 +30,7 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 # Arch
 
-Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver). 
+Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
 ## System76 Firmware Daemon
 
@@ -103,7 +104,7 @@ makepkg -srcif
 
 > **NOTE:** This package is only needed for Thelio desktops.
 
-### System76 OLED 
+### System76 OLED
 
 ```bash
 git clone https://aur.archlinux.org/system76-oled.git
@@ -115,7 +116,7 @@ makepkg -srcif
 
 # Fedora
 
-Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver). 
+Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver).
 
 ## System76 Firmware Manager
 
@@ -132,7 +133,7 @@ sudo gpasswd -a $USER adm
 Use these commands to install the <u>System76 Power</u> package and enable the service:
 
 ```bash
-sudo systemctl enable system76-power system76-power-wake 
+sudo systemctl enable system76-power system76-power-wake
 sudo systemctl start system76-power
 ```
 
@@ -148,7 +149,7 @@ make
 make install
 ```
 
-Now log out and use the <u>Extensions</u> to enable the extenstion. 
+Now log out and use the <u>Extensions</u> to enable the extenstion.
 
 ## System76 DKMS
 

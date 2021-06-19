@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Pop!_OS 20.04 LTS Release Notes
 description: >
   Discover what's new in Pop!\_OS 20.04 LTS
@@ -9,10 +8,12 @@ keywords:
   - LTS
   - Updates
   - New Features
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: pop
-
 ---
 
 Pop!\_OS 20.04 was released April 30, 2020.
@@ -68,5 +69,3 @@ Dark mode is enabled by default. Default desktop wallpaper has a new design. Bot
 * The user and about sections both received an interface redesign. Both are more explicit in their presentation of information, and make changing settings easier.
 
 ### Linux Kernel 5.4
-
-

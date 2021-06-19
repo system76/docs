@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Switching from macOS to Ubuntu
 description: >
   If you are coming from Apple's operating system and just using Ubuntu for the first time, we can help make the transition a little smoother.
@@ -10,10 +9,12 @@ keywords:
   - macOS
   - switch
   - Ubuntu
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: switching
-
 ---
 
 # Switching from macOS to Ubuntu
@@ -24,7 +25,7 @@ Ubuntu, included software, and Ubuntu's default desktop environment, [GNOME Shel
 
 ### Running And Managing Programs
 
-GNOME Shell defaults to having its launcher on the left side of the screen. GNOME Shell's launcher handles programs nearly identical to Apple's dock. To run a program, click on it. To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher. And to see if programs are open, look for the arrows around the icon. 
+GNOME Shell defaults to having its launcher on the left side of the screen. GNOME Shell's launcher handles programs nearly identical to Apple's dock. To run a program, click on it. To run a program not in the launcher, search for it, and then right-click on the program to keep in launcher. And to see if programs are open, look for the arrows around the icon.
 
 ![apple-launcher](/images/switch/apple-launcher.png)
 

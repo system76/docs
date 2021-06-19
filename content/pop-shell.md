@@ -1,11 +1,13 @@
 ---
-layout: article
 title: Using Pop Shell on other GNOME Desktops
 description: Learn how to build Pop Shell from source.
 keywords:
   - GNOME
   - Github
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
 ---
@@ -35,7 +37,7 @@ make local-install
 
 ---
 
-#### For Fedora-based distros 
+#### For Fedora-based distros
 
 <u>Pop Shell</u> is already packaged in the Fedora repostitories:
 
@@ -66,7 +68,7 @@ cd shell
 make local-install
 ```
 
-#### For Manjaro 
+#### For Manjaro
 
 <u>Pop Shell</u> is already installed by default on the Manjaro GNOME edition but it needs to be enabled in the <u>Extenstions</u> application.
 

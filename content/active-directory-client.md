@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Active Directory Domain
 description: Learn how to join Pop!_OS to an Active Directory domain
 keywords:
@@ -8,10 +7,12 @@ keywords:
   - Linux
   - Active Directory
   - Authentication
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Join an Active Directory Domain

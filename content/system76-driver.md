@@ -1,24 +1,25 @@
 ---
-layout: article
 title: System76 Driver (Install)
 description: >
-    Learn how to add the System76 Driver to your System76 computer after reinstalling Ubuntu
+  Learn how to add the System76 Driver to your System76 computer after reinstalling Ubuntu
 keywords:
   - system76
   - driver
   - NVIDIA
   - support
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # System76 Driver (Install)
 
 This guide will show you how to add the System76 software repository and install the driver on Ubuntu.
 
-Please note these steps are not necessary in Pop!\_OS, which includes the repository and the appropriate drivers installed by default. 
+Please note these steps are not necessary in Pop!\_OS, which includes the repository and the appropriate drivers installed by default.
 
 #### Adding the Apt Preferences File
 
@@ -44,7 +45,7 @@ Pin-Priority: 1001
 
 Save the file. Now you should be able to install the System76 Driver as described below.
 
-#### Installing the Driver 
+#### Installing the Driver
 
 To install our Driver you need to run the following commands in the Terminal:
 
@@ -54,7 +55,7 @@ sudo apt-get update
 sudo apt install system76-driver
 ```
 
-This installs the System76 driver and related utilities which are needed to enable full functionality for your system. 
+This installs the System76 driver and related utilities which are needed to enable full functionality for your system.
 
 ### Install System76 Driver on Other Operating Systems
 
@@ -62,10 +63,10 @@ This installs the System76 driver and related utilities which are needed to enab
 
 This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
 
-Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardare. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. 
+Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardare. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
 
-However, System76 does not guarantee the success or quality of experience when installing other Operating Systems. 
-Support typically makes best-efforts to offer direction or troubleshooting for other distributions. 
+However, System76 does not guarantee the success or quality of experience when installing other Operating Systems.
+Support typically makes best-efforts to offer direction or troubleshooting for other distributions.
 
 We may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those Operating System(s)' support forums.
 
@@ -104,7 +105,7 @@ sudo dnf install system76-driver
 ```
 
 
-## Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs 
+## Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs
 
 If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:
 
@@ -112,4 +113,4 @@ If your system has an NVIDIA graphics card, you will want to go ahead and use th
 sudo apt-get install system76-driver-nvidia
 ```
 
-In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card. 
+In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card.

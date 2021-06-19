@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Install Windows 10 in VirtualBox
 description: >
   Instructions on how to install Windows 10 in a virtual machine using VirtualBox
@@ -11,12 +10,15 @@ keywords:
   - Windows 10
   - VM
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
-redirect_from:
-  - /windows
 section: windows
 
+redirect_from:
+  - /windows
 ---
 
 # Install Windows 10 in VirtualBox
@@ -33,7 +35,7 @@ Virtual Machines are a method of running multiple OSes on your computer simultan
 
 For the Thelio (thelio-r1) and Thelio Major (thelio-major-r1) you will need to enable AMD-V in the BIOS by rebooting and holding the Del key. Then enable SVM mode with the following path:
 
-M.I.T tab -> Advanced Frequency Settings -> Advanced CPU Core Settings -> SVM mode -> Enabled. 
+M.I.T tab -> Advanced Frequency Settings -> Advanced CPU Core Settings -> SVM mode -> Enabled.
 
 ![AMD BIOS Settings](/images/windows/AMD-BIOS.png)
 
@@ -45,7 +47,7 @@ Open up the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click
 
 ![VirtualBox Listing in USC](/images/windows/step1.png)
 
-Click on the Install button, then wait for the download and install process to complete. 
+Click on the Install button, then wait for the download and install process to complete.
 
 ### Obtain Windows Image
 

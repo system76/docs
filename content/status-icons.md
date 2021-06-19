@@ -1,14 +1,15 @@
 ---
-layout: article
 title: Using Legacy Status Icons in Pop!_OS
 description: Use legacy status icons (system tray/AppIndicators) with a GNOME extension
 keywords:
   - legacy icons
   - status icons
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 Pop!\_OS uses GNOME Shell for launching apps, switching windows, managing workspaces, etc. Ubuntu and previous versions of GNOME Shell supported "status icons" or "AppIndicators" where installed apps could add arbitrary icons to the shell. In GNOME Shell 3.26, this functionality was [removed in favor of other APIs](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-gnome/). This extension was added into the default install of Pop!_OS starting with 20.04 LTS.

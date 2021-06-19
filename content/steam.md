@@ -1,6 +1,5 @@
 ---
-layout: article
-title: Install Steam 
+title: Install Steam
 description: >
    Want to game on your super awesome new System76 machine?  Take a look at these instructions to install Steam, a marketplace for hundreds of Linux games.
 keywords:
@@ -8,10 +7,12 @@ keywords:
   - support
   - steam
   - proton
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: media
-
 ---
 
 # Steam (Install)
@@ -44,7 +45,7 @@ Once installed, use the Activities Overview to search for and run <u>Steam</u>.
 
 ### Install Steam From the Pop!_Shop
 
-Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. 
+Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page.
 
 ![Pop!_Shop](/images/steam/pop_shop1.png)
 
@@ -84,8 +85,8 @@ Now, after <u>Steam</u> is installed, you can run protonup in terminal, and it w
 
 ```bash
 protonup
-Ready to download Proton-6.10-GE-1 
-Size      : 370.81 MiB 
+Ready to download Proton-6.10-GE-1
+Size      : 370.81 MiB
 Published : 2021-06-07
 Continue? (Y/N): y
 Downloaded 100.0% - 370.81 MiB/370.81 MiB

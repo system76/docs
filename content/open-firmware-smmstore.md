@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Firmware Flash to Clear the SMMSTORE ROM (Error code 5)
 description: >
   How to fix the failed with exit status: exit code: 5 message
@@ -8,10 +7,12 @@ keywords:
   - Open Firmware
   - UEFI
   - SMMSTORE
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 ## Things that you will need

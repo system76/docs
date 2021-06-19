@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Install and Use Tensorman
 description: >
   Use Tensorman to manage TensorFlow containers.
@@ -8,14 +7,17 @@ keywords:
   - CUDA
   - TensorFlow
   - Tensorman
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
+section: software
+
 redirect_from:
   - /articles/install-tensorflow
   - /articles/use-tensorflow
   - /articles/use-tensorman
-section: software
-
 ---
 
 # Installing Tensorman

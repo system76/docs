@@ -1,14 +1,15 @@
 ---
-layout: article
 title: Power on Failure - Laptop
 description: >
   Troubleshoot if your Laptop is not powering on
 keywords:
   - Laptop
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware-troubleshooting
-
 ---
 
 # General Troubleshooting

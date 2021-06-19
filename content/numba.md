@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Numba (Install - Python3)
 description: >
   Complete instructions on setting up the Numba library in Python for fast, parallel computing using the NVIDIA CUDA toolkit.
@@ -8,10 +7,12 @@ keywords:
   - NUMBA
   - NVIDIA
   - CUDA
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
 
 ## Install on Pop!_OS
@@ -31,7 +32,7 @@ sudo apt install python3-numba
 ### Environmental Variable setup
 To make changes on the system level, add the below in  /etc/environment .
 To make changes on user level (assuming you have the default bash shell), add in ~/.bashrc.
-Note the system level approach is not dependendent on your choice of shell. 
+Note the system level approach is not dependendent on your choice of shell.
 
 ```bash
 # path to CUDA driver shared library file.
@@ -44,7 +45,7 @@ export NUMBAPRO_LIBDEVICE=/usr/lib/cuda/nvvm/libdevice
 export NUMBAPRO_CUDALIB=/usr/lib/cuda/lib64
 ```
 
-Finally, restart your computer to complete setup. 
+Finally, restart your computer to complete setup.
 
 ### Test installation
 

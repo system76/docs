@@ -1,17 +1,18 @@
 ---
-layout: article
 title: Differences between Pop!_OS and Ubuntu
 description: >
   Discover the differences between these two Operating Systems
 keywords:
-   - Ubuntu
-   - Pop
-   - 18.04
-   - 19.04
-image: http://support.system76.com/images/system76.png
+  - Ubuntu
+  - Pop
+  - 18.04
+  - 19.04
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: learn-about-your-os
-
 ---
 
 # Pop!_OS and Ubuntu: What’s the difference?

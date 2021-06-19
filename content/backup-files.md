@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Back Up Files
 description: >
  Guidelines and tips for making backups of your important files.
@@ -9,10 +8,12 @@ keywords:
  - deja-dup
  - rsync
  - Nextcloud
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Back Up Files

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Live Disk Creation (Pop!_OS)
 description: >
   Create and use bootable media on Pop!_OS.
@@ -11,10 +10,12 @@ keywords:
   - Reinstall
   - Installation
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware-troubleshooting
-
 ---
 
 # Live Disk Creation (Pop!_OS)
@@ -56,7 +57,7 @@ Next, select the drive that you want to use; the name of the drive most likely w
 Now hit the *Flash* button and watch the magic happen!
 
 ![Flashing Pop!_OS...](/images/pop-live-disk/popsicle-progress.png)
-  
+
 ![Flash Complete](/images/pop-live-disk/popsicle-finished.png)
 
 Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!

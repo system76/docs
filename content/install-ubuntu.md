@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Ubuntu (Install)
 description: >
   Full instructions on installing Ubuntu your computer.
@@ -16,13 +15,15 @@ keywords:
   - system76-driver-nvidia
   - Release
   - System76
-image: http://support.system76.com/images/upgrade/Ubuntu-18-04.jpg
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: ubuntu
-
 ---
 
-# Ubuntu (Install) 
+# Ubuntu (Install)
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.
 
@@ -66,7 +67,7 @@ From the menu shown the 'nomodeset' option can be selected during this boot. -->
 
 ![grub](/images/install-ubuntu/ubuntu-grub.png)
 
-Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**. 
+Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
 
 >**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The restore process is designed to leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
@@ -111,7 +112,7 @@ Option             | Action
 
 ![Write to Disk](/images/install-ubuntu/install-ubuntu-21.04-3.7.png)
 
-### Location 
+### Location
 
 ![Location](/images/install-ubuntu/install-ubuntu-21.04-5.png)
 
@@ -127,7 +128,7 @@ This is when you will create your first user in your new install of Ubuntu.
 
 ![Slideshow](/images/install-ubuntu/install-ubuntu-21.04-7.png)
 
-This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved. 
+This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved.
 
 ### Restart
 

@@ -1,15 +1,16 @@
 ---
-layout: article
 title: Install Pop!_OS in VirtualBox
 description: Install Pop!_OS in a virtual machine like VirtualBox
 keywords:
   - VirtualBox
   - VMWare
   - Virtual Machine
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 This is a quick tutorial on getting Pop!_OS to run on a virtual machine.  Especially useful if you want to play around with Pop!_OS and see what it can do without having to commit to installing it somewhere.

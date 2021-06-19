@@ -1,5 +1,4 @@
 ---
-layout: article
 title: AR Sandbox
 description: Calibrate and use your new AR Sandbox
 keywords:
@@ -7,10 +6,12 @@ keywords:
  - Sandbox
  - Ubuntu
  - Pop!_OS
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
 [AR Sandbox Video](https://www.youtube.com/watch?v=uTPOE2XceEA)
@@ -407,4 +408,3 @@ SARndbox -uhm -fpv -evr -0.02
 Thanks again to [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) for developing such an incredible, inspiring piece of software!
 
 Be sure to check out the [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) website for more details.
-

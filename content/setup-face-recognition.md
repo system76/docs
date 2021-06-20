@@ -13,15 +13,15 @@ section: community
 
 ---
 
-# Facial recognition for authentication (howdy).
+# Facial recognition for authentication (howdy)
 
 In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open source face authentication tool.
 Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/content/webcam).
 
 
-### Installation on Pop!_OS, Ubutnu or any other Ubuntu based distribution.
+### Installation on Pop!_OS, Ubutnu or any other Ubuntu based distribution
 
-Firstly, we will need a terminal. You can open it by pressing <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd> on your keyboard or searching for terminal app in your application menu.
+Firstly, we will need a terminal. You can open it by pressing Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> on your keyboard or searching for terminal app in your application menu.
 
 Then, adding a Howdy PPA is needed so our system knows where to get the app:
 ```bash
@@ -33,10 +33,10 @@ Now that we added Howdy repository to your system we can proceed to installing h
 sudo apt install -y howdy
 ```
 
-### Installation on other distributions (Debian, Arch, Fedora, openSUSE).
+### Installation on other distributions (Debian, Arch, Fedora, openSUSE)
 Please refer to first party instructions [here](https://github.com/Boltgolt/howdy#installation).
 
-### Configuring Howdy.
+### Configuring Howdy
 During the configuration of Howdy, you will be asked "What profile would you like to use?". Eg:
 ```
 Preparing to unpack .../106-howdy_2.6.1_all.deb ...
@@ -67,13 +67,13 @@ sudo howdy add
 ```
 You will be asked for your sudo password, type it in and press <kbd>Enter</kbd>. You will be asked to label the new model. It's similar to how you're asked to label a fingerprint you're adding on your phone. Something like 'face1' or 'John's face' will suffice.
 
-Once that's done you successfully finished setting up howdy. Try it out by locking your screen and pressing any button to open login. If everything is setup correctly - you will be logged in by <u>handy</u> with your face.
+Once that's done you successfully finished setting up howdy. Try it out by locking your screen and pressing any button to open login. If everything is setup correctly - you will be logged in by <u>Howdy</u> with your face.
 
-## Troubleshooting.
+## Troubleshooting
 
 ### "Camera path is not configured correctly, please edit the 'device_path' config value." error when adding a face:
 
-#### Finding out what webcam to use:
+#### Finding out what webcam to use
 Open a terminal window if you don't have one already and execute:
 ```bash
 ls /dev | grep "video."
@@ -86,7 +86,7 @@ ffplay /dev/INPUT
 ```
 Replace `INPUT` with results you had from previous command.
 
-#### Configuring Howdy to use webcam you want:
+#### Configuring Howdy to use webcam you want
 Once you find a webcam you want to use for Howdy, type in:
 ```bash
 sudo howdy config
@@ -104,9 +104,9 @@ After you exit the config file and get back to terminal, try adding your face to
 sudo howdy add
 ```
 
-### Howdy always says "Timeout is reached" and never identifies you.
-You can try lowering certainty level of howdy--in a terminal <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd>.
-Once you get to a terminal window, type in:
+### Howdy always says "Timeout is reached" and never identifies you
+You can try lowering certainty level of howdy--in by editing it's configuration file. Hit the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and <kbd>T</kbd> to open a terminal window.
+Once you get there, type in:
 ```bash
 sudo howdy config
 ```
@@ -118,7 +118,7 @@ To make howdy more forgiving, rise that number a bit, to 3.8, for example. Be aw
 When that's done, exit and save the config file by pressing <kbd>ctrl</kbd>+<kbd>X</kbd>, <kbd>Y</kbd> and then <kbd>enter</kbd>.
 Now Howdy is more likely to identify you in different conditions.
 
-### Removing a saved face print.
+### Removing a saved face print
 You can delete existing face print you added. For that, you will need to get a list of all prints you got:
 ```bash
 sudo howdy list
@@ -131,9 +131,9 @@ sudo howdy remove ID
 ```
 But replacing ID with number you memorized a step before.
 
-### Uninstalling Howdy.
+### Uninstalling Howdy
 If you, for some reason, want to uninstall Howdy.
-Open a terminal window by pressing <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd> or searching for a Terminal app in your applications menu. Type in:
+Open a terminal window by pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and <kbd>T</kbd> or searching for a Terminal app in your applications menu. Type in:
 ```bash
 sudo howdy clear
 ```

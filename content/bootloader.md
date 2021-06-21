@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Bootloader Repair
 description: >
    How to repair and reinstall the bootloader.
@@ -11,10 +10,12 @@ keywords:
   - Refresh
   - Reinstall
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 # Bootloader Repair
@@ -252,8 +253,8 @@ The solution is to use an Install CD which is using the same architecture as the
 Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk) correctly in the commands above.
 
 ### systemd-boot fails to start the OS
-If the system boots into a `BusyBox` environment, try `exit` to show potential failure causes. 
+If the system boots into a `BusyBox` environment, try `exit` to show potential failure causes.
 
 A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates an issue with the loader entry in `systemd-boot`.
 
-Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct UUID for the disk. For an encrypted setup, the line `options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash` should match the UUID reported by `lsblk -f` for the `data-root` partition on a standard installation with LUKS. 
+Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct UUID for the disk. For an encrypted setup, the line `options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash` should match the UUID reported by `lsblk -f` for the `data-root` partition on a standard installation with LUKS.

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Docking Station Support
 description: >
   A Docking Station makes it easy to use multi monitors. It also adds an ethernet port, multi USB ports and more while only using one USB 3.0 port on your laptop.
@@ -9,10 +8,12 @@ keywords:
   - popos
   - ubuntu
   - System76
-image: https://system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: general-hardware-info
-
 ---
 
 # Docking Station Support

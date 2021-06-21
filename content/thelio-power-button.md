@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Replace the Thelio Power Button
 description: >
   Here are a few easy steps to replace the power button in your Thelio.
@@ -7,10 +6,12 @@ keywords:
   - Thelio
   - power
   - button
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
 # Replace the Thelio Power Button

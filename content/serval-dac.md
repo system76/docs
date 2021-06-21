@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Serval DAC Clicking
 description: >
   Certain models of the Serval WS will "click" when the DAC turns on and off, but the frequency can be decreased.
@@ -11,10 +10,12 @@ keywords:
   - clicking
   - sound
   - audio
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware-troubleshooting
-
 ---
 
 # Serval DAC Clicking

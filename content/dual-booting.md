@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Dual Boot Windows 10 Alongside Pop!_OS
 description: Learn how to install Windows alongside Pop!\_OS.
 keywords:
@@ -7,7 +6,10 @@ keywords:
   - dual boot
   - Windows
   - Linux
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: windows
 tableOfContents: true

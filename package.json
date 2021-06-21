@@ -29,6 +29,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.11.0",
     "lodash": "^4.17.21",
+    "nuxt-dynamic-images": "0.0.1",
     "postcss": "^8.3.2"
   }
 }

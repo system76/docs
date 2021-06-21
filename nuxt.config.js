@@ -64,7 +64,8 @@ export default {
 
   buildModules: [
     '@nuxt/image',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-dynamic-images'
   ],
 
   modules: [

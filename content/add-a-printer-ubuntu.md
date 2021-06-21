@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Printer Setup (Ubuntu)
 description: >
   Here is how to add a printer in Ubuntu.
@@ -8,13 +7,15 @@ keywords:
   - Printing
   - Printer
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
-# Printer Setup (Ubuntu) 
+# Printer Setup (Ubuntu)
 
 To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printers* then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
@@ -26,12 +27,12 @@ Select the correct printer and click **Forward**. The computer will search for t
 
 First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command for HP:
 
-```bash 
+```bash
 sudo apt install hplip
 ```
 If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
-```bash 
+```bash
 sudo apt install python3-pyqt5
 hp-setup
 ```

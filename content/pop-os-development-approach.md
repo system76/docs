@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Development Approach
 description: >
     Learn about the Pop!_OS development methodology.
@@ -7,10 +6,12 @@ keywords:
   - Support
   - Development
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: pop
-
 ---
 
 Pop!\_OS will adhere to the System76 product development process. This is an extended version of the process we’ve developed with our hardware product design project. There are seven parts.

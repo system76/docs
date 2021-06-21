@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Black Screen or Login Issues (Pop!_OS)
 description: >
   Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
@@ -12,10 +11,12 @@ keywords:
   - Password
   - session
   - greeter
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 # BBlack Screen or Login Issues (Pop!_OS)

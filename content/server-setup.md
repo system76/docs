@@ -1,5 +1,4 @@
 ---
-layout: article
 title: System76 Server Setup
 description: >
   Instructions on setting up a System76 server, including initial login credentials.
@@ -9,13 +8,15 @@ keywords:
   - initial
   - setup
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
-redirect_from:
-  - /serversetup
-  - /serverSetup
 section: learn-about-your-computer
 
+redirect_from:
+  - /serversetup
 ---
 
 **Initial Server Settings** | **Value**

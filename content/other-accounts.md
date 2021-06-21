@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Users (Manage User Accounts)
 description: >
   How to add other users to your installation
@@ -8,13 +7,15 @@ keywords:
   - menu
   - support
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# Users (Manage User Accounts) 
+# Users (Manage User Accounts)
 
 There are a few reasons to have more then one account on your system. They include allowing the system to be used by other people in your home or office or troubleshooting issues with your user account.
 
@@ -57,5 +58,4 @@ If the new user doesn't have any of the issues as your main user then log out of
 mv ~/.config ~/.config.bk
 ```
 
-Then log out and back into the main account. 
-
+Then log out and back into the main account.

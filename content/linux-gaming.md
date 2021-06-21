@@ -136,9 +136,9 @@ Once installed, use the Activities Overview to search for and run <u>GameHub</u>
 
 ## Lutris (Install)
 
-<u>Lutris</u> is a game launcher that is very similar to <u>GameHub</u> though it also has a community that right installer scripts like the WoW installer that we'll talk about later on in this article. 
+<u>Lutris</u> is a game launcher, written in Python, that is very similar to <u>GameHub</u>, though it also has its own community that writes installer scripts like the WoW installer (covered later on in this article). 
 
-It is written in Python and you can read more about it [here](https://lutris.net/).
+You can read more about Lutris [here](https://lutris.net/).
 
 ### Install Lutris From Command Line
 
@@ -249,29 +249,39 @@ In this example we'll be using the Windows build of Firefox to show the power of
 
 ![Lutris Add Game Info](/images/linux-gaming/lutris-add-game-info.png)
 
-In the Game Options tab we'll set the path to the Executable (which is what the .exe file name is for) and we'll point to the `Firefox.exe` file from the Firefox website. For this example we can leave the rest of the boxes empty in the other tabs and close this window. 
+In the Game Options tab we'll set the path to the Executable (the .exe file extensions is short for executable) and we'll choose the `firefox setup [version].exe` file downloaded from the Firefox website (it will be in your ~/Downloads folder by default). For this example, we can leave the rest of the boxes empty in the other tabs and close this window. 
 
 ![Lutris Add Game Options](/images/linux-gaming/lutris-add-game-options.png)
 
-Now click on the Firefox item in <u>Lutris</u> and then press the **Play** button. Once the install is finished be sure to unclick the checkbox at the end of the installer. Once the installer closes right-click on the Firefox item and hit the **Configure** button. Now change the Executable path to `~/.wine/drive_c/Program Files/Mozilla Firefox/firefox.exe` using the **Browse...** button.
+Now click on the Firefox item in <u>Lutris</u> and then press the **Play** button. Once the install is finished be sure to unclick the checkbox at the end of the installer. Once the installer closes, right-click on the Firefox item and hit the **Configure** button. Now change the Executable path to `~/.wine/drive_c/Program Files/Mozilla Firefox/firefox.exe` using the **Browse...** button. Otherwise, every time you launch Firefox, it will run the setup wizard again, intead of the newly installed `Firefox.exe`.
 
-**NOTE:** You will need to hit <kbd>Ctrl</kbd>+<kbd>H</kbd> to show the hidden `.wine` folder when setting the Executable path first.
+> **NOTE:** You will need to hit <kbd>Ctrl</kbd>+<kbd>H</kbd> to show the hidden `.wine` folder when setting the Executable path first.
 
 Now save and launch Firefox again with the **Play** button. After waiting for a few seconds a <u>Firefox</u> window should open. 
 
 ## Open Source Games
 
-<u>Unvanquished</u> is a free, open-source first-person strategy game shooter written in C++. You can read more about it and about installing it on their website [here](https://unvanquished.net/).
+### Unvanquished
+
+<u>Unvanquished</u> is a free, open-source first-person strategy game/shooter written in C++. You can read more about Unvanquished, and how to install it on their website [here](https://unvanquished.net/).
 
 ![Unvanquished One](/images/linux-gaming/unvanquished-game_play.png)
+
+### Veloren
 
 <u>Veloren</u> is a multiplayer RPG which is written in Rust. You can read more about it and about installing it on their website [here](https://veloren.net/).
 
 ![Veloren](/images/linux-gaming/veloren-game_play.png)
 
-<u>Oad</u> is a free, open-source game of ancient warfare written in C++. You can read more about it and about installing it on their website [here](https://play0ad.com/download/linux/#Ubuntu).
+### 0 A.D.
+
+<u>O A.D.</u> is a free, open-source game of ancient warfare written in C++. You can read more about it and about installing it on their website [here](https://play0ad.com/download/linux/#Ubuntu).
+
+
 
 ![0ad](/images/linux-gaming/0ad-game_play.png)
+
+### Battle for Wesnoth
 
 <u>Battle for Wesnoth</u> is an open source, turn-based strategy game with a high fantasy theme. You can read more about it and about installing it on their website [here](https://wiki.wesnoth.org/WesnothBinariesLinux).
 

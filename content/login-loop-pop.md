@@ -41,7 +41,7 @@ If entering your decryption passphrase does not unlock your disk, one of two thi
 1. The decryption passphrase is incorrect.
 2. Your keyfile has been corrupted (rare).
 
-![bad-password](static/images/login-loop/bad-password.png) 
+![bad-password](static/images/login-loop/bad-password.png)
 
 In either case, unless you have set an [alternative decryption key](https://support.system76.com/articles/advanced-luks), the drive will need to be erased and re-imaged to regain acess. This is the cost/benefit of drives secured by encryption. It's important to have current [backups](https://support.system76.com/articles/backup-files) of your files to avoid data-loss.
 
@@ -179,12 +179,17 @@ sudo apt autoremove --purge
 Then:
 
 ```bash
-sudo apt install --reinstall plymouth gdm3 gnome-shell pop-desktop
+sudo apt install --reinstall plymouth gdm3 gnome-shell pop-desktop linux-generic linux-headers-generic
 ```
 
-The command above is one line, and will reinstall plymouth (the graphical encryption screen), gnome display manager (gdm3), gnome-shell and the pop-desktop environment.
+The command above is one line, and will reinstall plymouth (the graphical encryption screen), gnome display manager (gdm3), gnome-shell, the pop-desktop environment, and the linux-kernel.
 
 Once the reinstallation has finsihed, we'll want to run:
+
+```bash
+update-initramfs -c -k all
+```
+And finally:
 
 ```bash
 exit

@@ -1,17 +1,19 @@
 ---
-layout: article
 title: Install and Play Minetest
 description: >
    Minetest, an open source infinite-world block sandbox game with survival and crafting.
 keywords:
   - Games
   - minetest
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
 ---
 
-# Install and Play Minetest 
+# Install and Play Minetest
 
 Did you get sick of Minecraft? Microsoft controlling it and ripping apart our beloved game? Well fear no more!  Minetest is a game similar to Minecraft but is truly infinite voxel game, but is written in C++ for speed, easy cross-compatiblity with other platforms, and seamless modding and addition of new game types, mods, texture packs, and much more, all licensed under the LGPL.
 

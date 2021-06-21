@@ -1,17 +1,18 @@
 ---
-layout: article
 title: System76 Open Firmware Models
 description: >
   A list of systems that run our Open Firmware and Open EC.
 keywords:
   - Laptop
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: general-hardware-info
-
 ---
 
-### System76 Open Firmware 
+### System76 Open Firmware
 
 When we say Open Firmware, we're referring to open-source firmware that uses the following technologies:
 
@@ -26,7 +27,7 @@ The source code for our Open Firmware can be found [here](https://github.com/sys
 When we say Open EC, we're talking about the <b>E</b>mbedded <b>C</b>ontroller firmware, which handles components on the system such as:
 
 - Keyboard
-- Touchpad 
+- Touchpad
 - Power Button
 
 The source code for our Open EC can be found [here](https://github.com/system76/ec).
@@ -34,7 +35,7 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 ### Hardware utilizing Open Firmware/Open EC:
 
 | System | Open Firmware | Open EC |
-|:------:|:-------------:|:-------:| 
+|:------:|:-------------:|:-------:|
 | addw2  | Yes\*         | Yes\*   |
 | bonw14 | Yes           | Yes     |
 | darp7  | Yes           | Yes     |

@@ -24,12 +24,9 @@ Then include the following text at the very top of the file (including the
 ```yaml
 ---
 title: Do the thing
-image: https://system76.com/images/foo.jpg
-
 description: >
   A more descriptive sentence or two about the page; will show up in search
   engines and on the support home page.
-
 keywords:
   - List
   - of
@@ -39,15 +36,15 @@ keywords:
   - page
   - System76
 
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: true
 section:
 ---
 ```
 
 A couple of notes:
-
-- The `image` is a full URL to the image and will show up on social media,
-when shared in Slack, etc.
 
 - After the `---` line, you can type the contents of the article in markdown.
 Feel free to use `# Heading1`, `## Heading2`, `**bold**`, `_italic_`, and other

@@ -1,26 +1,27 @@
 ---
-layout: article
 title: Dock (Move or Customize)
 description: >
-    How to move the Dock to different areas of the screen and customize other settings.
+  How to move the Dock to different areas of the screen and customize other settings.
 keywords:
-    - Launcher
-    - Bottom
-    - Left
-    - Moving
-    - Dock
-    - Dash to Dock
-image: http://support.system76.com/images/system76.png
+  - Launcher
+  - Bottom
+  - Left
+  - Moving
+  - Dock
+  - Dash to Dock
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
-redirect_from:
-  - /moveLauncher
-  - /movelauncher
-  - /articles/move-launcher/
 section: software
 
+redirect_from:
+  - /movelauncher
+  - /articles/move-launcher
 ---
 
-# Dock (Move or Customize) 
+# Dock (Move or Customize)
 
 Pop!\_OS and Ubuntu both contain an application dock on the left side of the screen. In Pop!\_OS, the dock is only visible when the Activities menu is open. In Ubuntu, the dock is always visible. By installing a GNOME extension called Dash to Dock, you can adjust this preference, move the dock to the bottom of the screen, and more.
 

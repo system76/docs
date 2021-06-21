@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Linux Terminal Basics
 description: >
   Linux offers users a lot of flexibility. Use the terminal to accomplish tasks faster
@@ -9,13 +8,15 @@ keywords:
   - Linux Terminal
   - System76
   - Technical Support
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: learn-about-your-os
-
 ---
 
-# Linux Terminal Basics 
+# Linux Terminal Basics
 
 The <u>Terminal</u> is an interactive, text-based interface for your Operating System. When you type a command, you're basically telling your computer to do something very specific. Many commands will print information to the screen. Some will ask for input, and others may just return you to a prompt.
 

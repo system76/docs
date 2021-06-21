@@ -1,7 +1,6 @@
 ---
-layout: article
 title: Install Minecraft Server
-description: 
+description:
   Install Minecraft Server and play with your friends!
 keywords:
   - Minecraft
@@ -10,9 +9,12 @@ keywords:
   - Server
   - Multiplayer
   - Notch
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
 
 # Install Minecraft Server

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Pop!_OS 20.10 Incomplete Upgrade
 description: >
   What to do if you get an FStab error or if your upgrade is incomplete.
@@ -13,7 +12,10 @@ keywords:
   - Release
   - System76
   - apt
-image:  http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
 ---
@@ -75,10 +77,10 @@ sudo apt autoremove --purge
 If you are not able to get to the desktop to run those commands, try to get to a TTY (Ctrl+Alt+F5). Enter the username and password as requested and proceed with the commands above.
 
 If you cannot access the desktop or TTY, we can run the package repair commands in Pop Recovery instead. To do this,
- 
+
 1A. Turn your computer off, then turn it back on and hold down the space bar immediately. In the menu that appears, select Pop!_OS Recovery, and let it boot.
- 
-1B. Once it boots, close out of the installation window or choose “Try Demo Mode” (be sure not to choose any install or repair options, as this could result in data loss). 
+
+1B. Once it boots, close out of the installation window or choose “Try Demo Mode” (be sure not to choose any install or repair options, as this could result in data loss).
 
 **If you do not have a Pop Recovery option, you can create a live disk image of the OS and follow the next steps to mount the installed OS while running in a live disk. To create a live disk, use the instructions in the following [article](/articles/live-disk), then proceed to the next step.**
 

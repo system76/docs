@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Containers on Linux
 description: >
    How to setup and use LXC/LXD
@@ -9,10 +8,12 @@ keywords:
   - Ubuntu
   - LXC
   - LXD
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Containers on Linux

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Networking Diagnosis (TCP/IP Stack)
 description: Instructions on how to help diagnose networking issues.
 keywords:
@@ -7,13 +6,15 @@ keywords:
   - networking
   - command line
   - diagnosis
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: network-troubleshooting
-
 ---
 
-# Networking Diagnosis (TCP/IP Stack) 
+# Networking Diagnosis (TCP/IP Stack)
 
 When your internet goes down at home most people would call up their internet provider and go through a list of things to check before (usually) admitting that the problem is on their end.
 
@@ -67,7 +68,7 @@ Let's break down some of these options:
 -   **-4** - Show only IPv4 sockets.
 
 
- SS Command: 
+ SS Command:
 
 ```bash
 ss -tunlp4
@@ -102,7 +103,7 @@ For UDP we will want to use the **netcat** tool.  This tool gives a simple way t
 
 NOTE: the **netcat** utility can be used for many other things, including testing TCP connectivity. Note that **netcat** may not be installed on your system, and it's often considered a security risk to leave lying around. You may want to consider uninstalling it when you're done troubleshooting.
 
-Netcat Command: 
+Netcat Command:
 
 ```bash
 nc 192.168.122.1 -u 80
@@ -139,7 +140,7 @@ Users can go to "https://google.com" instead of "https://###.###.##.##:####"
 
 In this 3rd layer, one of the first steps to troubleshooting is checking a computer's IP address, which can be done with the command **ip address**, again making use of the **-br** flag to simplify the output:
 
-IP Command: 
+IP Command:
 
 ```bash
 ip -br address show
@@ -153,7 +154,7 @@ enp57s0f1 UP 10.0.0.88/24 2601:280:c201:62e0::d739/128 2601:280:c201:62e0:faf5:8
 wlp0s20f3 UP 192.168.0.110/24 2601:280:c201:62e0::b250/128 2601:280:c201:62e0:ad8d:4de2:cdd9:6386/64 2601:280:c201:62e0:173:f8b7:1973:5e25/64 fe80::b9d0:8c20:e248:7bf5/64
 ```
 
-We can see that our enp57s0f1 (ethernet) interface has an IPv4 address of 10.0.0.88. If we didn't have an IP address (or if we had an invalid, self-assigned IP address), then we'd want to troubleshoot that issue. 
+We can see that our enp57s0f1 (ethernet) interface has an IPv4 address of 10.0.0.88. If we didn't have an IP address (or if we had an invalid, self-assigned IP address), then we'd want to troubleshoot that issue.
 
 The lack of an IP address can be caused by a local misconfiguration, such as an incorrect network interface config file, or it can be caused by problems with the DHCP server. The wlp0s20f3 interface (Wi-Fi) has a different IP address on the local network.
 
@@ -162,7 +163,7 @@ The lack of an IP address can be caused by a local misconfiguration, such as an 
 The most common tool used to troubleshoot Layer 3 is the **ping** utility. Ping sends an ICMP Echo Request packet to a remote host, and it expects an ICMP Echo Reply in return. ICMP stands for Internet Control Message Protocol and only lives in Layer 3.
 If you're having connectivity issues to a remote computer, **ping** is a common utility to begin your troubleshooting. Executing a simple ping from the command line sends ICMP echoes to the remote host indefinitely; you'll need to <kbd>CTRL</kbd> + <kbd>C</kbd> to end the ping or pass the `-c #` flag, like so:
 
-Ping Command: 
+Ping Command:
 
 ```bash
 ping -c 4 www.system76.com
@@ -183,7 +184,7 @@ rtt min/avg/max/mdev = 11.833/14.465/16.401/1.653 ms
 
 ```
 
-Notice that each ping includes the amount of time it took to a response back. 
+Notice that each ping includes the amount of time it took to a response back.
 
 > **NOTE:** many network components (such as routers) block ICMP packets as a security precaution. Another common pitfall is relying on the time field as an proof of network latency however ICMP packets can be rate limited by network components between you and the destination, and they shouldn't be relied upon to provide accurate application latency values.
 
@@ -197,7 +198,7 @@ Mtr takes advantage of the Time to Live (TTL) field in IP packets to determine t
 
 The resulting output is a list of intermediate routers that a packet traversed on its way to the destination:
 
-MTR Command: 
+MTR Command:
 
 ```bash
 mtr -r -c 1 www.system76.com
@@ -227,7 +228,7 @@ Another common issue that you'll likely run into is a lack of a gateway for a pa
 
 We can print the routing table using the **ip route show** command:
 
-IP Route Show Command: 
+IP Route Show Command:
 
 ```bash
 ip route show
@@ -249,7 +250,7 @@ Simple networks often just have a default gateway configured, represented by the
 
 If our network is more complex then we will require different routes for different networks.  We can check the route for a specific prefix with the `ip route show [address]` command:
 
-IP Route (with IP Address) Command: 
+IP Route (with IP Address) Command:
 
 ```bash
 ip route show 10.0.0.0/24
@@ -270,7 +271,7 @@ In the example above, we are sending all traffic destined to the 10.0.0.0/24 net
 
 A telltale sign of DNS trouble is the ability to connect to a remote host by IP address but not its hostname. Performing a quick `host` on the hostname can tell us quite a bit (`host` is part of the `bind9-host` package on Ubuntu / Pop!\_OS Linux based systems):
 
-Host Command: 
+Host Command:
 ```bash
 host www.system76.com
 ```
@@ -302,7 +303,7 @@ A common problem you might encounter is an ARP entry that won't populate, partic
 
 We can check the entries in our ARP table with the **ip neighbor** command:
 
-IP Neighbor Command: 
+IP Neighbor Command:
 
 ```bash
 ip neighbor show
@@ -336,7 +337,7 @@ Let's start with the most asked question: Is our physical interface up? For this
 
 The `ip link show` command tells us:
 
-IP Link Command: 
+IP Link Command:
 
 ```bash
 ip link show
@@ -365,7 +366,7 @@ ip link set enp57s0f1 up
 
 The output of `ip link show` can be difficult to parse at a quick glance. Luckily, the `-br` switch prints this output in a much more readable table format:
 
-Command: 
+Command:
 
 ```bash
 ip -br link show
@@ -385,7 +386,7 @@ These commands are great for troubleshooting obvious physical problems, but what
 
 We can use the `-s` flag with the `ip` command to print additional statistics about an interface. The output below shows an interface, with only a few dropped receive packets and no other signs of physical layer issues:
 
-Command: 
+Command:
 
 ```bash
 ip -s link show

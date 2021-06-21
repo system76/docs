@@ -1,16 +1,17 @@
 ---
-layout: article
 title: Roadmap for Pop!_OS
 description: >
-    Focus and features for each release!
+  Focus and features for each release!
 keywords:
   - Support
   - Development
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: pop
-
 ---
 
 # Pop!_OS Roadmap

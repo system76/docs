@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Graphics switching (Ubuntu)
 description: >
    How to use systems with switchable graphics
@@ -12,10 +11,12 @@ keywords:
   - NVIDIA
   - Hybrid
   - Integrated
-image: http://support.system76.com/images/ubuntu.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 The following laptops have switchable graphics:
@@ -100,7 +101,7 @@ Once you select a mode, you will be prompted to reboot.
 
 #### From the command line
 
-If you are not using the GNOME Desktop Environment, you can use the system76-power 
+If you are not using the GNOME Desktop Environment, you can use the system76-power
 command line tool. You can see the options with this command:
 
 ```bash

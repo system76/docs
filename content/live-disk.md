@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Live Disk Creation (Other Operating Systems)
 description: >
   Create and use bootable media on other operating systems.
@@ -11,10 +10,12 @@ keywords:
   - Reinstall
   - Installation
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware-troubleshooting
-
 ---
 
 # Live Disk Creation (Other Operating Systems)

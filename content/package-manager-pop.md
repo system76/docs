@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Package Manager Issues (Pop!_OS)
 description: >
   Here are ways to fix update, upgrade, and other package manager issues.
@@ -10,13 +9,15 @@ keywords:
   - apt-get
   - upgrades
   - updates
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
-# Package Manager Issues (Pop!_OS) 
+# Package Manager Issues (Pop!_OS)
 
 ### Apt/Dpkg (system-wide packages)
 

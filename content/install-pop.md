@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Pop!_OS (Install)
 description: >
   Full instructions on installing Pop!_OS your computer.
@@ -12,10 +11,12 @@ keywords:
   - system76-driver
   - system76-driver-nvidia
   - Release
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: pop
-
 ---
 
 # Pop!_OS (Install)

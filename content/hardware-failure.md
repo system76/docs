@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Diagnose Hardware Failures
 description: >
   If the computer won't start, boot, or otherwise operate normally, there may be a hardware issue.  Follow these steps to diagnose hardware failures.
@@ -9,10 +8,12 @@ keywords:
   - won't boot
   - won't post
   - hardware
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware-troubleshooting
-
 ---
 
 ### Won't Power On

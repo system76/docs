@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Change User Password (Pop!_OS)
 description: >
     Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change both!
@@ -8,10 +7,12 @@ keywords:
   - reset
   - locked out
   - crash
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Change User Password (Pop!_OS)

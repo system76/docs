@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Use 8 displays with NVIDIA NVS GPU
 description: >
   Use 8 displays with a NVIDIA NVS GPU
@@ -8,10 +7,12 @@ keywords:
   - Guides
   - System76
   - NVIDIA
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: true
 section: software
-
 ---
 
 ### Install the NVIDIA driver

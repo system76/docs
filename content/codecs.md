@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Watch Videos and Play Music (MP3, DVD, etc.)
 description: >
   Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these media, please see this document.
@@ -16,10 +15,12 @@ keywords:
   - aac
   - wma
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: media
-
 ---
 
 # Watch Videos and Play Music (MP3, DVD, etc.)

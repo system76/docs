@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Lightworks (Install)
 description: >
   Complete instructions on installing Lightworks
@@ -8,10 +7,12 @@ keywords:
   - Lightworks
   - Film
   - Media Creation
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Install Lightworks on Pop!\_OS

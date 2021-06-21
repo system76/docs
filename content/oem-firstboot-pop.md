@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Guest User Only (After Initial Setup - Pop!_OS)
 description: >
   Sometimes, the first boot user creation fails and leaves only a Guest session. You can fix this by following the steps here.
@@ -10,21 +9,23 @@ keywords:
   - Guest Session
   - OEM
   - First boot
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
-# Guest User Only (After Initial Setup - Pop!_OS) 
+# Guest User Only (After Initial Setup - Pop!_OS)
 
 # Create a User If Initial User Setup Fails in Pop!\_OS
 
-<!-- 
+<!--
 - Document Version: 2.0.0
 - Date: (8-28-2020)
 - Author: Aaron Honeycutt, Nathan Dyer
-- Contributing Editor(s): Nathaniel Warburton 
+- Contributing Editor(s): Nathaniel Warburton
 -->
 
 A lot of work goes in to making your System76 experience fantastic right out of the box. Getting running needs just a little bit of information like a username and password. Every now and then, something goes wrong with the new user creator. If there is only a Guest Session, follow these instructions to fix the issue.

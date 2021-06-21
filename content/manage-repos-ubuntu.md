@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Manage Repositories (Ubuntu)
 description: >
   Add, remove and edit repositories in Ubuntu
@@ -8,10 +7,12 @@ keywords:
   - Ubuntu 19.10
   - System76
   - apt
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 ### Accessing Software & Updates

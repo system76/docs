@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Install and Use VPNs
 description: >
   This page will go over setting up and using OpenVPN to browse the internet more securely in places like airports, cafe shops and more.
@@ -8,10 +7,12 @@ keywords:
   - Security
   - Privacy
   - ProtonVPN
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 ## Install ProtonVPN Graphcial Client

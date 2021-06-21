@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Black Screen or Login Issues (Pop!_OS)
 description: >
   Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
@@ -12,10 +11,12 @@ keywords:
   - Password
   - session
   - greeter
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 # Black Screen or Login Issues (Pop!_OS)
@@ -40,7 +41,7 @@ If entering your decryption passphrase does not unlock your disk, one of two thi
 1. The decryption passphrase is incorrect.
 2. Your keyfile has been corrupted (rare).
 
-![bad-password](static/images/login-loop/bad-password.png) 
+![bad-password](static/images/login-loop/bad-password.png)
 
 In either case, unless you have set an [alternative decryption key](https://support.system76.com/articles/advanced-luks), the drive will need to be erased and re-imaged to regain acess. This is the cost/benefit of drives secured by encryption. It's important to have current [backups](https://support.system76.com/articles/backup-files) of your files to avoid data-loss.
 

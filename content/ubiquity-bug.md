@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Problems With WPA2-Enterprise During User Configuration
 description: >
   If you try to join a WPA-Enterprise or WPA2-Enterprise while setting up your computer, the installer may crash.
@@ -11,10 +10,12 @@ keywords:
   - wifi
   - WPA2-Enterprise
   - crash
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: true
 section: solutions
-
 ---
 
 There is a bug in the installer program, Ubiquity, which may crash the initial setup of your computer if a WPA-Enterprise or WPA2-Enterprise access point is joined. WPA Enterprise access points can be joined after the system is finished being setup.

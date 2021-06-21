@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Modify Keyboard Shortcuts (Pop!_OS)
 description:
   View, add, or modify keyboard shortcuts in Pop!_OS.
@@ -7,9 +6,12 @@ keywords:
   - keyboard shortcuts
   - pop
   - settings
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
 
 # Modify Keyboard Shortcuts (Pop!_OS)

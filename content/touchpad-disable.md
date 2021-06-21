@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Disable Touchpad While Typing
 description: Learn how to disable the touchpad while typing.
 keywords:
@@ -9,10 +8,12 @@ keywords:
   - mouse settings
   - disable
   - typing
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
 # Disable Touchpad While Typing

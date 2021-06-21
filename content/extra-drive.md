@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Auto-Mount Second Hard Drive(s)
 description: >
   If you ordered your computer with additional storage, it comes pre-formatted and ready for use. For instructions on automatically mounting an additional hard drive, check out this extra drive documentation.
@@ -10,16 +9,18 @@ keywords:
   - boot
   - support
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
-redirect_from:
-  - /extraDrive
-  - /extradrive
 section: software
 
+redirect_from:
+  - /extradrive
 ---
 
-# Auto-Mount Second Hard Drive(s) 
+# Auto-Mount Second Hard Drive(s)
 
 If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the **eject (⏏) icon**. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes.  
 
@@ -74,7 +75,7 @@ Filesystem Type                            | `ext4`*
 
 ![Mount Options Set Correctly](/images/extra-drive/Step4-updated.png)
 
-The red box shows the item we don't want to change and the green box shows the item we want to change. 
+The red box shows the item we don't want to change and the green box shows the item we want to change.
 
 ### Save And Restart
 

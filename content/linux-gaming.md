@@ -153,7 +153,7 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search lutris
 ```
 
-![Terminal](/images/linux-gaming/terminal-steam-lutris.png)
+![Terminal](/images/linux-gaming/terminal-lutris-search.png)
 
 Once we find the right name for <u>Lutris</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
@@ -165,7 +165,7 @@ sudo apt install lutris
 
 Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicking the <u>Lutris</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
-![Pop!_Shop Lutris](/images/linux-gaming/pop-lutris.png)
+![Pop!_Shop Lutris](/images/linux-gaming/pop-shop_lutris.png)
 
 # Using Steam
 

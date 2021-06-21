@@ -10,6 +10,7 @@ keywords:
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: windows
+tableOfContents: true
 ---
 
 ## Disclaimer
@@ -21,18 +22,6 @@ System76 is not a licensed reseller or installer of the Windows operating system
 System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
 
 The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
-
-## Table of Contents
-- [Creating Install Media](#creating-install-media)
-- [Planning the Installation](#planning-the-installation)
-- [Installing on a Dedicated Drive](#installing-on-a-dedicated-drive)
-- [Installing on a Shared Drive](#installing-on-a-shared-drive-starting-with-pop_os)
-- [Additional Setup for Windows](#additional-setup-for-windows)
-  - [Installing Drivers](#installing-drivers)
-  - [Disabling Fast Startup](#disabling-fast-startup)
-  - [Switching between Pop!_OS and Windows](#switching-between-pop_os-and-windows)
-  - [Repairing the Pop!_OS Bootloader](#repairing-the-pop_os-bootloader)
-  - [Fixing the System Clock](#fixing-the-system-clock)
 
 ## Creating Install Media
 

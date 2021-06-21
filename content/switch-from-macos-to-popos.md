@@ -14,7 +14,7 @@ keywords:
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: switching
-
+tableOfContents: true
 ---
 
 # **Switching from macOS to Pop!\_OS**
@@ -23,42 +23,11 @@ section: switching
 - Author: Nathaniel Warburton
 - Contributing Editor(s): Emma Marshall, Nathan Dyer, Nick Neal-->
 
-#### [Table of Contents](#contents)
-- [Navigation](#navigation)
-  -  [Finding Programs and Files](#finding-programs-and-files)
-    - [Application Shortcuts](#application-shortcuts)
-    - [View Installed applications](#view-installed-applications)
-    - [Install and Manage Software](#install-and-manage-software)
-    - [Applications Folders](#application-folders)
-  - [Workspaces and Window Management](#workspaces-and-window-management)
-    - [Pop Shell](#pop-shell)
-  - [File Management](#file-management)
-  - [Light Mode vs. Dark Mode](#light-mode-vs-dark-mode)
-- [Software](#software)
-  - [Web Browsing and Password Management](#web-browsing-and-password-management)
-  - [Office Work](#office-work)
-  - [Calls and Video Chat](#calls-and-video-chat)
-  - [Take Selfies](#take-selfies)
-  - [Manage Photos](#manage-photos)
-  - [Email](#email)
-  - [Watching Videos](#watching-videos)
-  - [Listening to Music](#listening-to-music)
-  - [Video Editing](#video-editing)
-  - [Sound Recording](#sound-recording)
-  - [Development](#development)
-  - [Gaming](#gaming)
-  - [Cloud Storage](#cloud-storage)
-- [System Management](#system-management)
-  - [Kill Programs](#kill-programs)
-  - [Networking](#networking)
-  - [Disk Encryption](#disk-encryption)
-  - [System Backups](#system-backups)
-
 Pop!\_OS offers corresponding workflows and applications to those available in macOS. Users will find UI elements where they expect them to be as well as some additional features.
 
-#[Navigation](#navigation)
+# Navigation
 
-## [Finding Programs and Files](#finding-programs-and-files)
+## Finding Programs and Files
 
 **macOS**
 - Spotlight Search
@@ -75,10 +44,7 @@ In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of 
 
 The Activities Overview screen can also be launched by pressing the SUPER key. Once Overview is launched, users can begin typing to search their computer.
 
-[Return to Table of Contents](#return-to-table-of-contents)
-
-
-## [Application Shortcuts](#application-shortcuts)
+## Application Shortcuts
 
 **macOS**
   - Dock
@@ -99,10 +65,7 @@ For more information on GNOME extensions, refer to the following support article
 [Customize Pop!\_OS](/articles/customize-gnome)
 [Dock Customization](/articles/dash-to-dock)
 
-[Return to Table of Contents](#Contents)
-
-
-## [View Installed applications](#view-installed-applications)
+## View Installed applications
 
 **macOS**
   - Launchpad
@@ -120,15 +83,11 @@ In macOS this feature is called Launchpad and is represented by the rocket-ship 
 
 In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
 
-  [Return to Table of Contents](#Contents)
-
-
-## [Install and Manage Software](#install-and-manage-software)
+## Install and Manage Software
 
 **macOS**
   - App Store
   - .dmg Files
-
 
 
   In macOS applications are installed from two (2) main sources. The Apple App Store, and directly from developer websites.
@@ -150,10 +109,7 @@ Debian/Ubuntu based distributions like Pop!\_OS can install applications from .d
 
 Since 20.04, The Pop!\_Shop has offered the ability to install flatpak versions of apps instead of, or alongside .deb files. Flatpaks are self-contained (or containerized) versions of apps that hold everything that program needs in one package. This allows users to run multiple versions of an application, and for the application to be sand-boxed from the main OS.
 
-[Return to Table of Contents](#Contents)
-
-
-### [Application Folders](#application-folders)
+### Application Folders
 
   One key difference between macOS and Pop!\_OS is how and where applications are installed. in macOS, with a few exceptions, all installed applications go into a dedicated folder located under the /Applications folder. Applications are self-contained items and can be moved or deleted by acting on the file for the application itself.
 
@@ -169,10 +125,7 @@ Since 20.04, The Pop!\_Shop has offered the ability to install flatpak versions 
 
 The placement of applications in Pop!\_OS is handled transparently by the operating system. Users don't need to memorize these locations or, in most cases, modify them in any way. They are provided here for reference purposes.
 
-[Return to Table of Contents](#Contents)
-
-
-## [Workspaces and Window Management](#workspaces-and-window-management)
+## Workspaces and Window Management
 
 Both macOS and Pop!\_OS use workspaces to organize open application windows
 
@@ -182,11 +135,7 @@ macOS uses multi-touch gestures, or CTRL+[up arrow] or [down arrow], to launch "
 
 In Pop!\_OS users press the SUPER key to enter "Overview" and show all workspaces. They can also use CTRL+SUPER+[up arrow] or [down arrow] to navigate between workspaces.
 
-
-[Return to Table of Contents](#Contents)
-
-
-### [Pop Shell](#pop-shell)
+### Pop Shell
 
 Starting in version 20.04, Pop!\_OS now includes a tiling window-manager as a GNOME extension. The window manager is called pop-shell, and allows for window organization and keyboard navigation among windows and applications.
 
@@ -196,11 +145,7 @@ More info about Pop!\_Shell here:
 
 [Pop-Shell Keyboard Shortcuts](/articles/pop-keyboard-shortcuts)
 
-
-[Return to Table of Contents](#Contents)
-
-
-## [File Management](#file-management)
+## File Management
 
 The file-systems layouts in macOS and Pop!\_OS both feature location shortcuts on the left side, tabbed browsing, list vs. icon views, and various sorting options.
 
@@ -219,10 +164,7 @@ The file-systems layouts in macOS and Pop!\_OS both feature location shortcuts o
 
 ![files-finder](/images/pop-os-mac-screenshots/files-edited.png)
 
- [Return to Table of Contents](#Contents)
-
-
-## [Light Mode vs. Dark Mode](#light-mode-vs-dark-mode)
+## Light Mode vs. Dark Mode
 
 As of macOS 10.14 (Mojave), users have the option of using a default "dark mode" for the look and feel of their OS.
 
@@ -234,11 +176,9 @@ Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 
 ![appearance-settings](/images/pop-os-screenshots/appearance-settings.png)
 
-[Return to Table of Contents](#Contents)
+# Software
 
-# [Software](#software)
-
-## [Web Browsing and Password Management](#web-browsing-and-password-management)
+## Web Browsing and Password Management
 
 **macOS**
   - Safari (Default)
@@ -271,10 +211,8 @@ Examples include:
 
 For users accustomed to Chrome, Chrome is available for Linux, as well as Chrome-based alternative options like Chromium and Brave.
 
-[Return to Table of Contents](#Contents)
+## Office Work
 
-
-## [Office Work](#office-work)
 **macOS**
   - Pages/Numbers/Keynote (iWork)
 
@@ -300,9 +238,7 @@ If exporting iWork files is not an option, users can also visit iCloud.com in a 
 
 Microsoft offers in-browser versions of the Microsoft Office suite as part of Office365. Those with subscriptions can access Word, Excel, Powerpoint, Teams, Outlook and others. In most cases, there's no need to install Windows to access Microsoft Office apps.
 
-[Return to Table of Contents](#Contents)
-
-## [Calls and Video Chat](#calls-and-video-chat)
+## Calls and Video Chat
 
 Pop!\_OS does not offer a default messaging app. The preference is that users choose their own and install only what they need/want.
 However, many popular 3rd-party applications have Linux versions available.
@@ -335,18 +271,14 @@ Video/Calls
 
 ![jitsi](/images/pop-os-screenshots/jitsi.png)
 
-
-
 Jitsi is a multi-user video chat program which runs in a browser. It allows password protected rooms, phone-dial-in and IM-ing alongside video-chat. All calls are encrypted by default using HTTPS, with additional end-to-end encryption options also offered. The System76 team makes daily use of the Jitsi platform.
 
 Linux clients are available for popular apps like Discord, Skype and Zoom.
 
-## [Take Selfies](#take-selfies)
+## Take Selfies
 
 **macOS**
 - Photobooth (default)
-
-
 
 **Pop!\_OS**
 - [Cheese](https://wiki.gnome.org/Apps/Cheese) (available in the Pop!\_Shop)
@@ -355,9 +287,7 @@ There is a program available in the Pop!\_Shop called "Cheese." Cheese allows us
 
 ![cheese](/images/pop-os-screenshots/cheese.png)
 
-[Return to Table of Contents](#Contents)
-
-## [Manage Photos](#manage-photos)
+## Manage Photos
 
 **macOS**
 - Photos (default)
@@ -373,9 +303,7 @@ Shotwell organizes photos by albums and event dates, and allows for importing, v
 
 ![shotwell](/images/pop-os-screenshots/shotwell.png)
 
-[Return to Table of Contents](#Contents)
-
-## [Email](#email)
+## Email
 
 **macOS**
   - Apple Mail (default)
@@ -405,14 +333,10 @@ Microsoft also offers a web-based version of Outlook mail which can be accessed 
 
 In addition, most modern Email Service Providers (ESPs) have an online version of their inbox which can be accessed by signing into the ESP account in a browser.
 
-[Return to Table of Contents](#Contents)
-
-## [Watching Videos](#watching-videos)
+## Watching Videos
 
 **macOS**
   - Quicktime
-
-
 
 **Pop!\_OS**
   - [GNOME Videos](https://wiki.gnome.org/Apps/Videos) (default)
@@ -433,9 +357,7 @@ We also have a help article for installing codecs [here](/articles/codecs)
 
 Another popular alternative is VLC Media Player. This software is available in the Pop!\_Shop, and offers many customizable features.
 
-[Return to Table of Contents](#Contents)
-
-## [Listening to Music](#listening-to-music)
+## Listening to Music
 
 **macOS**
   - Apple Music (formerly iTunes)
@@ -453,9 +375,7 @@ There is also a Linux client for the popular streaming service Spotify, availabl
 
 ![Spotify](/images/pop-os-screenshots/spotify.png)
 
-[Return to Table of Contents](#Contents)
-
-## [Video Editing](#video-editing)
+## Video Editing
 
 **macOS**
 - iMovie
@@ -476,9 +396,7 @@ There is also an open-source video editing program called Kden Live which offers
 
 ![kden-live](/images/pop-os-screenshots/kden-live.png)
 
-[Return to Table of Contents](#Contents)
-
-## [Sound Recording](#sound-recording)
+## Sound Recording
 
 **macOS**
   - Garageband
@@ -506,9 +424,7 @@ Ardour is for more advanced audo engineering. It contains a multi-channel track 
 
 LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 
-[Return to Table of Contents](#Contents)
-
-## [Development](#development)
+## Development
 
 **macOS**
   - Xcode (available in the App Store)
@@ -529,9 +445,7 @@ Common development tools like Atom and Microsoft Visual Studio Code are also ava
 
 ![vscode](/images/pop-os-screenshots/vs-studio.png)
 
-[Return to Table of Contents](#Contents)
-
-## [Gaming](#gaming)
+## Gaming
 
 **macOS**
      - App Store/Arcade
@@ -561,9 +475,7 @@ The website [ProtonDB (Proton Database)](https://www.protondb.com/) is an unoffi
 
 ![lutris](/images/pop-os-screenshots/lutris.png)
 
-[Return to Table of Contents](#Contents)
-
-## [Cloud Storage](#cloud-storage)
+## Cloud Storage
 
 **macOS**
 - iCloud
@@ -582,11 +494,9 @@ There are several cloud options that can be used for backups and file syncing on
   - [Dropbox](https://www.dropbox.com) (desktop and web client, also avilable in the Pop!\_Shop)
   - [Google Drive](https://drive.google.com/) (Files integration and web client)
 
-[Return to Table of Contents](#Contents)
+# System Management
 
-# [System Management](#system-management)
-
-## [Kill Programs](#kill-programs)
+## Kill Programs
 
 **macOS**
   - Force Quit (default)
@@ -624,9 +534,7 @@ Once the offending process' Process ID (PID) is known (either from System Monito
 
     sudo kill -pid ####
 
-[Return to Table of Contents](#Contents)
-
-## [Networking](#networking)
+## Networking
 
 **macOS**
 - System Preferences
@@ -641,10 +549,7 @@ macOS and Pop!\_OS manage network menus and settings almost identically. Both ha
 
 Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) to edit saved connections, IP settings, and to configure things like proxy settings or Virtual Private Networks (VPNs).
 
-[Return to Table of Contents](#Contents)
-
-## [Disk Encryption](#disk-encryption)
-
+## Disk Encryption
 
 **macOS**
 - Filevault
@@ -659,9 +564,7 @@ On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS 
 
 **NOTE:** Because of the way encryption is implemented on Pop!\_OS, and the delicate work involved in encrypting or decrypting the drive, encryption is only offered during intial set up. If users choose not to use encryption, and want to add it later, it will require a full erase and reinstall. Create backups accordingly.
 
-[Return to Table of Contents](#Contents)
-
-## [System Backups](#system-backups)
+## System Backups
 
 **macOS**
 - Time Machine
@@ -682,11 +585,9 @@ Déjà Dup Backups is closer in functionality to Time Machine. It offers local h
 
 To read more about methods of backing up your system visit our help article: [Backup Files](/articles/backup-files)
 
-### Give Pop!_OS a try!
+## Give Pop!_OS a try!
 
 If you want to try Pop!_OS yourself you can grab the OS image (ISO) from this [link](/articles/live-disk).
-
-[Return to Table of Contents](#Contents)
 
 <!-- # [What if I have an iPhone?](#iphone)
 

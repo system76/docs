@@ -21,14 +21,12 @@ Pop!_OS has evolved quite a bit since its 17.10 release. While the easiest way t
 
 ![General look of desktop](/images/difference-between-pop-ubuntu/pop-desktop-screenshot.png)
 
-<br>
 ## “Isn’t it just a re-skinned Ubuntu?”
 
 This is a common question to come up, and one that makes our engineers cringe. Yes, Pop!_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)
 
 To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our [Roadmap](/articles/roadmap) documentation and the [This Week in Pop!](https://pop-planet.info/forums/forums/project-updates.28/) series on [Pop!_Planet](https://pop-planet.info/). Below, you’ll find a general list of improvements that make Pop!_OS stand out.
 
-<br>
 ## First impressions: The Installer
 
 ![Installer Images: Download screen](/images/difference-between-pop-ubuntu/Installer-Screenshot.png)
@@ -41,27 +39,23 @@ The installer offers encryption out of the box and takes care of setting up your
 
 Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings and the proprietary NVIDIA driver for NVIDIA systems, ensuring the best performance and use of CUDA tools one command away. On Oryx Pro systems, you can even switch between Intel and Nvidia graphics using a toggle in the top right corner of your screen.
 
-<br>
 ## Privacy
 
 ![Encryption, in-progress screen](/images/difference-between-pop-ubuntu/Encryption-Screenshot.png)
 
 With encryption enabled by default, and reporting through Ubuntu disabled, Pop!_OS believes that your data should truly be yours. Communications with a third party does not occur by default, and will only occur with user consent.
 
-<br>
 ## Custom Keyboard Shortcuts
 
 After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to make some shortcuts more efficient for common user behaviors. The shortcut for switching workspaces, for example, is <kbd>Super</kbd> + <kbd>Arrow</kbd> <kbd>Up</kbd> or <kbd>Down</kbd>.
 [See all keyboard shortcuts](/articles/pop-keyboard-shortcuts/)
 
-<br>
 ## Default Apps: Slimming down on bloatware
 
 ![Pop Shop](/images/difference-between-pop-ubuntu/Pop!_Shop-Screenshot.png)
 
 Pop!_OS includes a selection of apps intended to be comprehensive, but relatively lightweight. Because Pop!_OS is optimized for your workflow, we avoid providing some larger programs by default that slow down your computer. This is especially true for library applications, such as one for storing your photos, which we opt to replace with image viewers or similar apps that are smaller in size. However, if you’re in need of a photo manager, Steam, or a music streaming app such as Spotify, these applications are still available in the Pop!_Shop for a quick install.
 
-<br>
 ## Features across the board
 
 ![Power Profiles/Graphics toggle](/images/difference-between-pop-ubuntu/system-menu.png)
@@ -74,7 +68,6 @@ Pop!_OS is built from Ubuntu repositories, meaning you get the same access to so
  * Do Not Disturb mode silences notifications to help you focus on your work.
  * systemd-boot bootloader and the automatic configuration tool we’ve created for it called kernelstub replace the outdated GRUB bootloader used on Ubuntu. The systemd-boot bootloader is faster and smaller in size, increasing your computer’s startup speed.
 
-<br>
 ## Recovery Partition
 
 The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of either Pop!_OS 19.04 or 18.04 (not through upgrading).

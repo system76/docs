@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Pop!_OS Customization
 description: >
   Pop with the GNOME desktop is highly customizable!  See here to get started making your desktop just right for you.
@@ -10,13 +9,15 @@ keywords:
   - Customize
   - Desktop
   - Tweaks
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# Pop!_OS Customization 
+# Pop!_OS Customization
 
 The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 

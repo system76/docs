@@ -1,16 +1,17 @@
 ---
-layout: article
 title: Disaster Data Recovery
 description: >
- How to backup your files if your OS doesn't boot
+  How to backup your files if your OS doesn't boot
 keywords:
- - files
- - backup
- - deja-dup
-image: http://support.system76.com/images/system76.png
+  - files
+  - backup
+  - deja-dup
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 # Disaster Data Recovery

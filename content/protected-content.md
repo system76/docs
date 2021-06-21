@@ -1,8 +1,7 @@
 ---
-layout: article
 title: Watch Protected Content on Streaming Services
 description: >
-    How to view DRM-protected video content from online streaming services such as Netflix and Amazon Prime
+  How to view DRM-protected video content from online streaming services such as Netflix and Amazon Prime
 keywords:
   - Support
   - google
@@ -15,13 +14,15 @@ keywords:
   - videos
   - restricted
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
-redirect_from:
-  - /chromeFlash
-  - /chromeflash
 section: media
 
+redirect_from:
+  - /chromeflash
 ---
 
 # Watch Protected Content on Streaming Services

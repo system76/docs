@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Encrypt Extra Drive
 description: Encrypt Extra Drive(s)
 keywords:
@@ -8,10 +7,12 @@ keywords:
   - Encrypt
   - Extra Drive
   - Linux
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Encrypt Extra Drive(s)

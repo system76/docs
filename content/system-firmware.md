@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Update System Firmware
 description: >
   How to update System76 firmware.
@@ -8,10 +7,12 @@ keywords:
   - Intel ME
   - Management Engine
   - Update
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 These instructions are for System76 owners who have been prompted for a firmware update. Firmware updates may be issued to fix security vulnerabilities or to improve hardware functionality.

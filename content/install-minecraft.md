@@ -1,18 +1,20 @@
 ---
-layout: article
 title: Install Minecraft!
-description: 
+description:
   So you want some of that blocky goodness? Well, get Java and some graphics cards and let's go!
 keywords:
   - Minecraft
   - Mojang
   - Games
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
 
-# Install Minecraft! 
+# Install Minecraft!
 
 Alright! Hitch on and let's go on!
 
@@ -36,7 +38,7 @@ Now you will have installed Minecraft! Open Minecraft and log in with your usern
 ### Debian and Ubuntu
   
 First, you will need Java runtime.  
-  
+
 ```bash
 sudo apt-get install openjdk-8-jre
 ```

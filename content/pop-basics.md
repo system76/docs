@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Pop!_OS Basics
 description: >
   Learn how to navigate your new Pop!_OS desktop environment with a few easy tips.
@@ -9,10 +8,12 @@ keywords:
   - Pop!_OS
   - Pop!_OS Beginner
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: pop
-
 ---
 
 # Pop!_OS Basics

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Recovery Partition
 description: >
     Here is how to use the recovery partition to repair, refresh or reinstall your operating system.
@@ -11,7 +10,10 @@ keywords:
   - reinstall
   - refresh
   - repair
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
 tableOfContents: true

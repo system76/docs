@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Gaming on Pop!_OS
 description: >
    Want to game on your super awesome new System76 machine?  Take a look at these instructions to set your system up for gaming!
@@ -10,11 +9,13 @@ keywords:
   - lutris
   - gamehub
   - proton
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: media
 tableOfContents: true
-
 ---
 
 # Gaming on Pop!\_OS

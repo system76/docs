@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Bitesize Bugs
 description: >
     Get started contributing quickly with bitesize bugs!
@@ -7,10 +6,12 @@ keywords:
   - Support
   - Contribution
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 # Bitesize Bugs

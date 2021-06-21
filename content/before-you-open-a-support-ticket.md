@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Before You Open a Ticket
 description: >
  A troubleshooting triage to help you self-diagnose a variety of issues.
@@ -12,10 +11,12 @@ keywords:
  - self-help
  - tech-support
  - troubleshooting
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: getting-help
-
 ---
 
 # Before You Open a Support Ticket
@@ -205,9 +206,9 @@ You can read the details of our warranty coverage [here](https://system76.com/wa
 
 ---
 
-<!-- 
+<!--
 - Document Version: 1.2.0
 - Date: (5-21-2021)
 - Author: Nathaniel Warburton
-- Contributing Editor(s): Aaron Honeycutt 
+- Contributing Editor(s): Aaron Honeycutt
 -->

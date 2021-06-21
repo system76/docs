@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Creating Log Files
 description: >
     Learn how to create log files for sending to System76 support
@@ -9,15 +8,17 @@ keywords:
   - logs
   - syslog
   - support
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 ### Creating Log Files
 
-Log files help our support team learn more about your system, and can be a great benefit during troubleshooting. 
+Log files help our support team learn more about your system, and can be a great benefit during troubleshooting.
 
 Among the information collected by the log files includes:
 
@@ -30,7 +31,7 @@ Among the information collected by the log files includes:
 
 #### Generating Log Files Using the System76 Driver Application
 
-The System76 Driver can be opened by clicking the <u>Activities</u> button in the top left (or pressing the Ubuntu or Pop key), then searching for 'System76.' Among the applications listed should be the <u>System76 Driver</u> application. Go ahead and click the icon to launch the application, and enter your password when prompted to do so. 
+The System76 Driver can be opened by clicking the <u>Activities</u> button in the top left (or pressing the Ubuntu or Pop key), then searching for 'System76.' Among the applications listed should be the <u>System76 Driver</u> application. Go ahead and click the icon to launch the application, and enter your password when prompted to do so.
 
 Next click on the button outlined in red in the <u>System76 Driver</u> application and there will be a file called `system76-logs.tgz` placed in your Home directory (/home/username)
 

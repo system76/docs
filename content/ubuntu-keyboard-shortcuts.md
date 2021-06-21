@@ -1,14 +1,15 @@
 ---
-layout: article
 title: Ubuntu Keyboard Shortcuts
 description: Learn how master using Ubuntu with your keyboard.
 keywords:
   - keyboard
   - shortcuts
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: ubuntu
-
 ---
 
 ## Super Key

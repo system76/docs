@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Drives - Map a Network Drive
 description:
   Map a network drive using Files in Pop!_OS.
@@ -8,12 +7,15 @@ keywords:
   - drive
   - mount
   - network
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
 
-# Drives - Map a Network Drive 
+# Drives - Map a Network Drive
 
 If you have a storage location on a network drive, you can easily map the location using Files in Pop!\_OS.
 

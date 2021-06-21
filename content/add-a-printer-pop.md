@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Printer Setup (Pop!_OS)
 description: >
   Here is how to add a printer in Pop!_OS.
@@ -8,13 +7,15 @@ keywords:
   - Printing
   - Printer
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
-# Printer Setup (Pop!_OS) 
+# Printer Setup (Pop!_OS)
 
 Most printers will be automatically added to the computer.  If not, to add a printer to your System76 Computer, press the super key and type the word *Printers*, then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add a Printer...** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 

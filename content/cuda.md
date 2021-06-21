@@ -1,15 +1,16 @@
 ---
-layout: article
 title: CUDA and cuDNN (Install)
 description: >
   Complete instructions on setting up the NVIDIA CUDA toolkit and cuDNN libraries
 keywords:
   - NVIDIA
   - CUDA
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # CUDA and cuDNN (Install)

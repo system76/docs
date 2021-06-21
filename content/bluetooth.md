@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Bluetooth Troubleshooting
 description: >
   Here is how to fix several common Bluetooth issues with your computer.
@@ -7,10 +6,12 @@ keywords:
   - bluetooth
   - mouse
   - audio
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: network-troubleshooting
-
 ---
 
 # Important Notes About Bluetooth
@@ -54,7 +55,7 @@ Sometimes Bluetooth devices are working correctly, but something in settings nee
 
 The easiest way to test this is to "forget" the paired Bluetooth device, and pair it again.
 
-A more thorough way of testing this would be to create a [test user](/articles/other-accounts), or boot from a [Live Disk](/articles/live-disk) to see if Bluetooth works in either case. 
+A more thorough way of testing this would be to create a [test user](/articles/other-accounts), or boot from a [Live Disk](/articles/live-disk) to see if Bluetooth works in either case.
 If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem.
 Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
 

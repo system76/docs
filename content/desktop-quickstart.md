@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Desktop Quickstart
 description: >
   Getting started on your new System76 Desktop.
@@ -10,13 +9,15 @@ keywords:
   - Thelio
   - Beginner
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: learn-about-your-computer
-
 ---
 
-# Desktop Quickstart 
+# Desktop Quickstart
 
 Congratulations on receiving your System76 Thelio Desktop! Read this article to get started quickly.
 
@@ -34,7 +35,7 @@ If you ordered a dedicated graphics card, plug your monitor into one of the hori
 
 ### Connect Keyboard and Mouse
 
-Keyboards and mice can connect via USB ports or wirelessly. Bluetooth devices can only be paired and used after new user setup. If your keyboard/mouse connects wirelessly, you should have a small USB device, called a receiver, that connects to the desktop and communicates with your keyboard and mouse via radio frequency. This should be included when you purchase a wireless keyboard or mouse. 
+Keyboards and mice can connect via USB ports or wirelessly. Bluetooth devices can only be paired and used after new user setup. If your keyboard/mouse connects wirelessly, you should have a small USB device, called a receiver, that connects to the desktop and communicates with your keyboard and mouse via radio frequency. This should be included when you purchase a wireless keyboard or mouse.
 
 ### Connect Power Supply
 

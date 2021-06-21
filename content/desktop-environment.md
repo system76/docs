@@ -1,8 +1,7 @@
 ---
-layout: article
 title: Desktop Environment (Change)
 description: >
-    Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
+  Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
 keywords:
   - desktop environment
   - MATE
@@ -11,10 +10,12 @@ keywords:
   - Cinnamon
   - GNOME
   - Mint
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Desktop Environment (Change)

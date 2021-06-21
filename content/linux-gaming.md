@@ -53,7 +53,7 @@ Once we find the right name for <u>Steam</u> we can install it with `apt` as wel
 sudo apt install steam
 ```
 
-> **IMPORTANT NOTE:** Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.
+**IMPORTANT NOTE:** Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.
 
 ### Install Steam From the Pop!_Shop
 
@@ -191,7 +191,7 @@ Once installed, use the Activities Overview to search for and run <u>Steam</u>.
 From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
 Once you've enabled Steam Play, they both present the usual green "Play" button. 
 
-> **NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
+**NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
 
 If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
 
@@ -245,18 +245,28 @@ Next, click the **Continue** button to start the installation of <u>Battle.net</
 
 You will need to install some WINE packages during the installation of <u>Battle.net</u>
 
-> **IMPORTANT NOTE:** close <u>Battle.net</u> to complete the installation then reopen it to sign into your account. 
+**IMPORTANT NOTE:** close <u>Battle.net</u> to complete the installation then reopen it to sign into your account. 
 
 Now that <u>Battle.net</u> is installed, you can select Wow from your Games and launch Battle.net with the **Play** button.
 
 Once <u>Battle.net</u> launches you can finish the World of Warcraft installation. 
 
-> **NOTE:** If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two seperate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.
+**NOTE:** If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two seperate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.
 
 ![Lutris Installed Game](/images/linux-gaming/lutris-wow-installed.png)
 
 ## Using .exe files
 
+In this example we'll be using the Windows build of Firefox to show the power of both Wine/Proton and Lutris. From the Game Info screen when adding a game we'll set the Name and Runner (you can read more about Runners [here](https://lutris.net/runners/)). 
+
 ![Lutris Add Game Info](/images/linux-gaming/lutris-add-game-info.png)
 
+In the Game Options tab we'll set the path to the Executable (which is what the .exe file name is for) and we'll point to the `Firefox.exe` file from the Firefox website. For this example we can leave the rest of the boxes empty in the other tabs and close this window. 
+
 ![Lutris Add Game Options](/images/linux-gaming/lutris-add-game-options.png)
+
+Now click on the Firefox item in <u>Lutris</u> and then press the **Play** button. Once the install is finished be sure to unclick the checkbox at the end of the installer. Once the installer closes right-click on the Firefox item and hit the **Configure** button. Now change the Executable path to `~/.wine/drive_c/Program Files/Mozilla Firefox/firefox.exe` using the **Browse...** button.
+
+**NOTE:** You will need to hit <kbd>Ctrl</kbd>+<kbd>H</kbd> to show the hidden `.wine` folder when setting the Executable path first.
+
+Now save and launch Firefox again with the **Play** button. After waiting for a few seconds a <u>Firefox</u> window should open. 

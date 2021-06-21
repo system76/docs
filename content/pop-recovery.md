@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 # Recovery Partition
@@ -29,13 +30,6 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 Once the menu is shown, choose **Pop!_OS Recovery**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
-
-## Table of Contents
-
-- [Repair](/articles/pop-recovery/#repair)
-- [Refresh Install](/articles/pop-recovery/#refresh-install)
-- [Reinstall](/articles/pop-recovery/#reinstall)
-- [Upgrade](/articles/pop-recovery/#upgrade)
 
 ## Repair
 

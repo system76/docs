@@ -261,12 +261,18 @@ Now save and launch Firefox again with the **Play** button. After waiting for a 
 
 ## Open Source Games
 
-<u>Unvanquished</u> is a free, open-source first-person strategy game shooter. You can read more about it and about installing it on their website [here](https://unvanquished.net/)
+<u>Unvanquished</u> is a free, open-source first-person strategy game shooter written in C++. You can read more about it and about installing it on their website [here](https://unvanquished.net/).
 
-![Unvanquished One](/images/linux-gaming/unvanquished-1.png)
+![Unvanquished One](/images/linux-gaming/unvanquished-game_play.png)
 
-![Unvanquished Two](/images/linux-gaming/unvanquished-2.png)
+<u>Veloren</u> is a multiplayer RPG which is written in Rust. You can read more about it and about installing it on their website [here](https://veloren.net/).
 
-<u>Veloren</u> is a multiplayer RPG which is written in Rust. You can read more about it and about installing it on their website [here](https://veloren.net/)
+![Veloren](/images/linux-gaming/veloren-game_play.png)
 
-![Veloren](/images/linux-gaming/)
+<u>Oad</u> is a free, open-source game of ancient warfare written in C++. You can read more about it and about installing it on their website [here](https://play0ad.com/download/linux/#Ubuntu).
+
+![0ad](/images/linux-gaming/0ad-game_play.png)
+
+<u>Battle for Wesnoth</u> is an open source, turn-based strategy game with a high fantasy theme. You can read more about it and about installing it on their website [here](https://wiki.wesnoth.org/WesnothBinariesLinux).
+
+![Battle for Wesnoth](/images/linux-gaming/wesnoth-game_play.png)

@@ -259,10 +259,14 @@ Now click on the Firefox item in <u>Lutris</u> and then press the **Play** butto
 
 Now save and launch Firefox again with the **Play** button. After waiting for a few seconds a <u>Firefox</u> window should open. 
 
-# Open Source Games
+## Open Source Games
 
+<u>Unvanquished</u> is a free, open-source first-person strategy game shooter. You can read more about it and about installing it on their website [here](https://unvanquished.net/)
 
+![Unvanquished One](/images/linux-gaming/unvanquished-1.png)
 
-https://unvanquished.net/
+![Unvanquished Two](/images/linux-gaming/unvanquished-2.png)
 
-https://veloren.net/
+<u>Veloren</u> is a multiplayer RPG which is written in Rust. You can read more about it and about installing it on their website [here](https://veloren.net/)
+
+![Veloren](/images/linux-gaming/)

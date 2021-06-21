@@ -179,12 +179,17 @@ sudo apt autoremove --purge
 Then:
 
 ```bash
-sudo apt install --reinstall plymouth gdm3 gnome-shell pop-desktop
+sudo apt install --reinstall plymouth gdm3 gnome-shell pop-desktop linux-generic linux-headers-generic
 ```
 
-The command above is one line, and will reinstall plymouth (the graphical encryption screen), gnome display manager (gdm3), gnome-shell and the pop-desktop environment.
+The command above is one line, and will reinstall plymouth (the graphical encryption screen), gnome display manager (gdm3), gnome-shell, the pop-desktop environment, and the linux-kernel.
 
 Once the reinstallation has finsihed, we'll want to run:
+
+```bash
+update-initramfs -c -k all
+```
+And finally:
 
 ```bash
 exit

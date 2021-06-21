@@ -114,6 +114,10 @@ Downloaded 100.0% - 370.81 MiB/370.81 MiB
 
 ## Gamehub (Install)
 
+<u>GameHub</u> is a game launcher that can use different compatibility layers like Wine/Proton, DOSBox and other tools. It can hook into Steam, GOG and other sources.
+
+It is written in Vala and you can read more about it [here](https://tkashkin.tk/projects/gamehub/).
+
 ### Install Gamehub From Command Line
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
@@ -144,6 +148,10 @@ Once installed, use the Activities Overview to search for and run <u>GameHub</u>
 
 ## Lutris (Install)
 
+<u>Lutris</u> is a game launcher that is very similar to <u>GameHub</u> though it also has a community that right installer scripts like the WoW installer that we'll talk about later on in this article. 
+
+It is written in Python and you can read more about it [here](https://lutris.net/).
+
 ### Install Lutris From Command Line
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
@@ -173,6 +181,7 @@ Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicki
 # Using Steam
 
 Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+
 ## Proton vs. Native
 
 ![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
@@ -207,6 +216,7 @@ To change the Proton version:
 5. Select the desired Proton version from the drop down menu (as pictured below).
 
 ![Compatibility Menu](/images/linux-gaming/skyrim-proton-version.png)
+
 # Using GameHub
 
 ## Using Steam on GameHub
@@ -219,7 +229,7 @@ Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be display
 
 ## Using the website
 
-Some games like World of Warcraft (WoW) have installers on Lutris' website (see screenshot below). 
+Some games like World of Warcraft (WoW) have installers on Lutris' [website](https://lutris.net/games) (see screenshot below). 
 
 With <u>Lutris</u> installed you can click the **Install** button to start the installer script. A pop-up window will appear asking to use Lutris as the application to run the installer.
 

@@ -13,23 +13,11 @@ keywords:
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: media
+tableOfContents: true
 
 ---
 
 # Gaming on Pop!\_OS
-
-#### [Table of Contents](#contents)
-- [Game Launchers](#game-launchers)
-    - [Steam](#steam)
-    - [GameHub](#gamehub)
-    - [Lutris](#lutris)
-- [Using Steam](#using-steam)
-    - [Using Proton](#using-proton)
-    - [Using Native](#using-native)
-- [Using GameHub](#using-gamehub)
-    - [Steam](#using-steam-on-gamehub)
-- [Using Lutris](#using-lutris)
-    - [Using the website](#using-the-website)
 
 ## Steam (Install)
 
@@ -270,3 +258,11 @@ Now click on the Firefox item in <u>Lutris</u> and then press the **Play** butto
 **NOTE:** You will need to hit <kbd>Ctrl</kbd>+<kbd>H</kbd> to show the hidden `.wine` folder when setting the Executable path first.
 
 Now save and launch Firefox again with the **Play** button. After waiting for a few seconds a <u>Firefox</u> window should open. 
+
+# Open Source Games
+
+
+
+https://unvanquished.net/
+
+https://veloren.net/

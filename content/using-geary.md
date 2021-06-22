@@ -16,6 +16,24 @@ tableOfContents: false
 
 # Geary
 
+## Gmail
+
+1. Add the account to <u>Geary</u>
+
+![Geary Menu Button](/images/using-email/geary-menu-button.png)
+
+Select the Gmail option in the window below.
+
+![](/images/using-email/geary-add-gmail1.png)
+
+Enter your Gmail address and your password.
+
+![](/images/using-email/geary-add-gmail2.png)
+
+Now sign into your Gmail account again using the same Gmail address and password to add your account to <u>Geary</u>.
+
+![](/images/using-email/geary-add-gmail3.png)
+
 ## ProtonMail
 
 **NOTE:** Using ProtonMail with a 3rd Party Email Client is only supported on Paid plans
@@ -56,11 +74,11 @@ Once signed into <u>Protonmail Bridge</u> click the menu icon in the top left of
 
 Next click the **Other email providers** button to add the ProtonMail account.
 
-![Geary Add Account Step1](/images/using-email/geary-add-account1.png)
+![Geary Add Account Step1](/images/using-email/geary-add-protonmail1.png)
 
 Now enter the information from the **Mailbox Configuration** window and note that we are entering the hostname then the port number like `127.0.0.1:1143`. 
 
-![Geary Add Account Step2](/images/using-email/geary-add-account2.png)
+![Geary Add Account Step2](/images/using-email/geary-add-protonmail2.png)
 
 Once that has been entered and the **Create** button has been pressed (you may need to do that a few times for the **Connection security** dropdown to show) then you will see the window below. Finally click the **Always Trust This Server** button then the **Create** button again to add the account. 
 

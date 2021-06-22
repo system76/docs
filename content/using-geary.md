@@ -11,10 +11,10 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
-tableOfContents: false
+tableOfContents: true
 ---
 
-# Geary
+# Using Geary
 
 ## Gmail
 
@@ -36,7 +36,7 @@ Now sign into your Gmail account again using the same Gmail address and password
 
 ## ProtonMail
 
-**NOTE:** Using ProtonMail with a 3rd Party Email Client is only supported on Paid plans
+> **NOTE:** Using ProtonMail with a 3rd Party Email Client is only supported on Paid plans
 
 1. Download the <u>ProtonMail Bridge</u> from [here](https://protonmail.com/bridge/).
 
@@ -54,15 +54,15 @@ Once the `.deb` file has been opened by <u>Eddy</u> click the **Install** button
 
 3. Setup <u>Protonmail Bridge</u>
 
-Once you open <u>Protonmail Bridge</u> from the Activities menu in the top left you will see the screen below. From here enter your username and password that you using to sign into the ProtonMail website.
+Once you open <u>Protonmail Bridge</u> from the Activities menu (in the top left) you will see the screen below. From here enter your username and password that you using to sign into the ProtonMail website.
 
 ![Setup ProtonMail Bridge Step1](/images/using-email/protonmail-bridge-setup1.png)
 
-Once signed in you can review the configurating steps for <u>Thunderbird</u> at the link in the <u>Protonmail Bridge</u>.
+Once signed in, you can review the configuration steps for <u>Thunderbird</u> at the link in the <u>Protonmail Bridge</u>. The steps for Thunderbird will work in Geary.
 
 ![Setup ProtonMail Bridge Step2](/images/using-email/protonmail-bridge-setup2.png)
 
-Click on the arrow on the left side of your username and then click on the **Mailbox Configuration** button to open the Email Settings window which will have your password (which is different then your ProtonmMail password), port numbers for IMAP and SMTP as well as the security method for both IMAP and SMTP. 
+Click on the arrow to the left of your username and then click on the **Mailbox Configuration** button to open the Email Settings window. This window will have your password (which is different then your ProtonmMail password), port numbers for IMAP and SMTP, as well as the security method for both IMAP and SMTP. 
 
 ![Setup ProtonMail Bridge Step3](/images/using-email/protonmail-bridge-setup3.png)
 
@@ -76,12 +76,18 @@ Next click the **Other email providers** button to add the ProtonMail account.
 
 ![Geary Add Account Step1](/images/using-email/geary-add-protonmail1.png)
 
-Now enter the information from the **Mailbox Configuration** window and note that we are entering the hostname then the port number like `127.0.0.1:1143`. 
+Now enter the information from the **Mailbox Configuration** window and note that we are entering the hostname IP address, followed by the port number like this: `127.0.0.1:1143`. 
 
 ![Geary Add Account Step2](/images/using-email/geary-add-protonmail2.png)
 
-Once that has been entered and the **Create** button has been pressed (you may need to do that a few times for the **Connection security** dropdown to show) then you will see the window below. Finally click the **Always Trust This Server** button then the **Create** button again to add the account. 
+Once that has been entered and the **Create** button has been pressed (you may need to do that a few times for the **Connection security** dropdown to show) you will see the window below. Finally click the **Always Trust This Server** button then the **Create** button again to add the account. 
 
-**NOTE:** You may need to close <u>Geary</u> and reopen it a bit later before your email starts showing up in <u>Geary</u>.
+> **NOTE:** You may need to close <u>Geary</u> and reopen it a bit later before your email starts showing up in <u>Geary</u>.
 
 ![Geary Add Account Step3](/images/using-email/trust-window.png)
+
+## Fastmail
+
+## Gmail
+
+## iCloud Mail

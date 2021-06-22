@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Upgrade Ubuntu
 description: >
   Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
@@ -14,13 +13,15 @@ keywords:
   - Release
   - System76
   - apt
-image: http://support.system76.com/images/upgrade-ubuntu/Ubuntu-18-04.jpg
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# Upgrade Ubuntu 
+# Upgrade Ubuntu
 
 First, we recommend having Ubuntu installation media (a DVD or USB drive) handy before starting any upgrades in case something goes wrong. You'll need to download a copy of Ubuntu from [ubuntu.com](http://www.ubuntu.com/download/desktop).
 

@@ -1,8 +1,7 @@
 ---
-layout: article
 title: Keep PPAs Enabled when Upgrading Releases
 description: >
-    Upgrading to a new releases disables PPAs and third party repos.  Learn how to keep your PPA or third party repo enabled during upgrades.
+  Upgrading to a new releases disables PPAs and third party repos.  Learn how to keep your PPA or third party repo enabled during upgrades.
 keywords:
   - ppa
   - disabled
@@ -10,13 +9,15 @@ keywords:
   - upgrade
   - dist upgrade
   - release upgrade
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# Keep PPAs Enabled when Upgrading Releases 
+# Keep PPAs Enabled when Upgrading Releases
 
 Normally, all Person Package Archives (PPAs) and third-party repositories are disabled when updating to a new release of the operating system.  This helps keep upgrades simpler and prevents PPAs that haven't been properly updated for the new release from breaking the upgrade.
 

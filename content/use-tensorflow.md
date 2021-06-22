@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Use TensorFlow
 description: >
   Complete instructions on setting up TensorFlow
@@ -7,10 +6,12 @@ keywords:
   - NVIDIA
   - CUDA
   - TensorFlow
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Use TensorFlow

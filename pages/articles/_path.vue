@@ -1,29 +1,103 @@
 <template>
   <main>
     <article>
-      <header class="bg-blue-500 text-white">
-        <div class="max-w-7xl mx-auto py-3 px-4">
-          <div class="flex items-center justify-between flex-wrap">
-            <div class="w-0 flex-1 flex items-center">
-              <nuxt-link
-                to="/"
-                class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg"
-              >
-                <font-awesome-icon icon="arrow-left" />
-              </nuxt-link>
+      <header>
+        <div class="bg-blue-500 text-white">
+          <div class="max-w-7xl mx-auto py-3 px-4">
+            <div class="flex items-center justify-between flex-wrap">
+              <div class="w-0 flex-1 flex items-center">
+                <nuxt-link
+                  to="/"
+                  class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg"
+                >
+                  <font-awesome-icon icon="arrow-left" />
+                </nuxt-link>
 
-              <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:font-extralight md:text-3xl">
-                {{ article.title }}
-              </h1>
+                <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:font-extralight md:text-3xl">
+                  {{ article.title }}
+                </h1>
+              </div>
             </div>
           </div>
         </div>
+
+        <div
+          v-if="article.tableOfContents"
+          class="bg-gray-50 text-gray-600 lg:hidden"
+        >
+          <div class="max-w-7xl mx-auto py-2 px-4">
+            <div class="flex items-center justify-between flex-wrap">
+              <div class="w-0 flex-1 flex items-center">
+                <h2 class="flex-1 my-0 ml-3 text-md truncate">
+                  Table of Contents
+                </h2>
+
+                <a
+                  href="#"
+                  class="flex mr-2 p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  @click.prevent="tableOfContents = !tableOfContents"
+                >
+                  <font-awesome-icon icon="bars" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav
+          v-if="article.tableOfContents"
+          v-show="tableOfContents"
+          class="bg-gray-50 text-gray-600 border-t border-gray-200 lg:hidden"
+        >
+          <ul class="max-w-7xl mx-auto py-2 px-4">
+            <li
+              v-for="toc in article.toc"
+              :key="toc.id"
+            >
+              <nuxt-link
+                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :to="`#${toc.id}`"
+                class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                @click="tableOfContents = false"
+              >
+                {{ toc.text }}
+              </nuxt-link>
+            </li>
+          </ul>
+        </nav>
       </header>
 
-      <nuxt-content
-        class="prose prose-sm max-w-screen my-6 sm:prose sm:max-w-screen-sm md:my-12 lg:prose-lg lg:max-w-screen-lg mx-auto px-4"
-        :document="article"
-      />
+      <div class="flex justify-center my-6 mx-auto px-4 max-w-full sm:max-w-screen-sm md:my-12 lg:max-w-7xl">
+        <nuxt-content
+          class="prose prose-sm max-w-full flex-1 sm:prose xl:prose-lg lg:max-w-4xl"
+          :document="article"
+        />
+
+        <nav
+          v-if="article.tableOfContents"
+          class="hidden ml-8 lg:block lg:flex-none lg:w-1/4"
+        >
+          <h1 class="mt-0 mx-7 font-bold text-sm uppercase">
+            Table of Contents
+          </h1>
+
+          <ul class="max-w-7xl mx-auto py-2 px-4">
+            <li
+              v-for="toc in article.toc"
+              :key="toc.id"
+            >
+              <nuxt-link
+                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :to="`#${toc.id}`"
+                class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                @click="tableOfContents = false"
+              >
+                {{ toc.text }}
+              </nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <footer class="bg-gray-50 border-t border-gray-100 mt-16">
         <div class="max-w-7xl py-4 px-4 mx-auto md:flex md:items-center md:justify-between">
@@ -116,21 +190,44 @@ export default {
     })
   },
 
+  data: () => ({
+    tableOfContents: false
+  }),
+
   head () {
     return {
       title: this.article.title,
 
       meta: [
         { hid: 'description', name: 'description', content: this.article.description },
+
+        { hid: 'og:site_name', property: 'og:site_name', content: 'System76 Support' },
         { hid: 'og:title', property: 'og:title', content: this.article.title },
         { hid: 'og:description', property: 'og:description', content: this.article.description },
+        { hid: 'og:url', property: 'og:url', content: `https://support.system76.com/articles/${this.article.slug}` },
+        { hid: 'og:image', property: 'og:image', content: `https://support.system76.com${this.article.facebookImage}` },
+        { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+        { hid: 'og:image:height', property: 'og:image:height', content: '600' },
+        { hid: 'og:image:alt', property: 'og:image:alt', content: this.article.title },
+
         { hid: 'twitter:title', name: 'twitter:title', content: this.article.title },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.article.description }
+        { hid: 'twitter:description', name: 'twitter:description', content: this.article.description },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@system76' },
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: 'twitter:image:src', name: 'twitter:image:src', content: `https://support.system76.com${this.article.twitterImage}` }
       ]
     }
   },
 
   computed: {
+    firstTocDepth () {
+      const [first] = this.article.toc
+        .map(toc => toc.depth)
+        .sort()
+
+      return first || 1
+    },
+
     updatedAt () {
       return (new Date(this.article.updatedAt)).toLocaleDateString('en-US', {
         timeZone: 'MST'

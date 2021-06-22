@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Find Your Quickstart Guide
 description: >
   Diagrams and component guides for your computer.
@@ -9,10 +8,12 @@ keywords:
   - Quickstart
   - Setup
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: learn-about-your-computer
-
 ---
 
 To see ports, keyboard layouts, function keys, and product quickstart guides, find your model below.
@@ -46,7 +47,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Thelio Major |
 | -------------|
-| [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) 
+| [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html)
 
 | Thelio Mega |
 | ------------|
@@ -61,7 +62,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 ### Laptops
 
 | Adder WS |
-| ---------| 
+| ---------|
 | [addw1](https://tech-docs.system76.com/models/addw1/README.html) | [addw2](https://tech-docs.system76.com/models/addw2/README.html) |
 
 | Bonobo |
@@ -76,15 +77,15 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Galago |
 | -------|
-| [galp2](/images/guides/galp2.png) | [galp3](/images/guides/galp3.png) | [galp4](https://tech-docs.system76.com/models/galp4/README.html) | 
+| [galp2](/images/guides/galp2.png) | [galp3](/images/guides/galp3.png) | [galp4](https://tech-docs.system76.com/models/galp4/README.html) |
 | [galp5](https://tech-docs.system76.com/models/galp5/README.html) | [galu1](/images/guides/galu1.pdf) |
 
 | Gazelle |
 | --------|
 | [gaze10](/images/guides/gaze10.pdf) | [gaze11](/images/guides/gaze11.png) | [gaze12](/images/guides/gaze12.png) |
-| [gaze13](/images/guides/gaze13.png) | [gaze14-15a](/images/guides/gaze14-15a.png) | [gaze14-15b](/images/guides/gaze14-15b.png) | 
+| [gaze13](/images/guides/gaze13.png) | [gaze14-15a](/images/guides/gaze14-15a.png) | [gaze14-15b](/images/guides/gaze14-15b.png) |
 | [gaze14-17a](/images/guides/gaze14-17a.png) | [gaze14-17b](/images/guides/gaze14-17b.png) | [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) |
-| [gazp9](/images/guides/gazp9.pdf) | 
+| [gazp9](/images/guides/gazp9.pdf) |
 
 | Kudu |
 | -----|
@@ -99,7 +100,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Oryx |
 | -----|
 | [orxp1](/images/guides/orxp1.pdf) | [oryp2](/images/guides/oryp2.png) | [oryp3-15](/images/guides/oryp3-15.png) |
-| [oryp3-17](/images/guides/oryp3-17.png) | [oryp4](/images/guides/oryp4.png) | [oryp5-16](/images/guides/oryp5-16.png) | 
+| [oryp3-17](/images/guides/oryp3-17.png) | [oryp4](/images/guides/oryp4.png) | [oryp5-16](/images/guides/oryp5-16.png) |
 | [oryp5-17](/images/guides/oryp5-17.png) | [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) | [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
 
 | Pangolin |
@@ -109,14 +110,14 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Serwal |
 | -------|
 | [serw8](/images/guides/serw8.pdf) | [serw9](/images/guides/serw9.png) | [serw10-15](/images/guides/serw10-15.png) |
-| [serw10-17](/images/guides/serw10-17.png) | [serw11-15](/images/guides/serw11-15.png) | [serw11-17](/images/guides/serw11-17.png) | 
+| [serw10-17](/images/guides/serw10-17.png) | [serw11-15](/images/guides/serw11-15.png) | [serw11-17](/images/guides/serw11-17.png) |
 | [serw12](https://tech-docs.system76.com/models/serw12/README.html)
 
 ### Desktops
 
 | Leopard |
 | --------|
-| [leox4](/images/guides/leox4.pdf) | [leox5](/images/guides/leox5.pdf) | [leow6](/images/guides/leow6.png) | 
+| [leox4](/images/guides/leox4.pdf) | [leox5](/images/guides/leox5.pdf) | [leow6](/images/guides/leow6.png) |
 | [leow7](/images/guides/leow7.png) | [leow8](/images/guides/leow8.png) | [leow9-core-x](/images/guides/leow9-core-x) |
 | [leow9-core-xb](/images/guides/leow9-core-xb.png) | [leow9-xeon-w](/images/guides/leow9-xeon-w.png) |
 
@@ -133,13 +134,13 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Sable |
 | ------|
 | [sabc2](/images/guides/sabc2.pdf) | [sabl4](/images/guides/sabl4.pdf) | [sabl5](/images/guides/sabl5.png) |
-| [sabl6](/images/guides/sabl6.png) | [sabt1](/images/guides/sabt1.pdf) | [sabt2](/images/guides/sabt2.pdf) | 
-| [sabt3](/images/guides/sabt3.pdf) | 
+| [sabl6](/images/guides/sabl6.png) | [sabt1](/images/guides/sabt1.pdf) | [sabt2](/images/guides/sabt2.pdf) |
+| [sabt3](/images/guides/sabt3.pdf) |
 
 | Wild Dog |
 | ---------|
 | [wilp10](/images/guides/wilp10.pdf) | [wilp11](/images/guides/wilp11.pdf) | [wilp12](/images/guides/wilp12.png) |
-| [wilp13](/images/guides/wilp13.png) | [wilp14](/images/guides/wilp14.png) | 
+| [wilp13](/images/guides/wilp13.png) | [wilp14](/images/guides/wilp14.png) |
 
 | Thelio |
 | -------|
@@ -151,7 +152,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Thelio Major |
 | -------------|
-| [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) 
+| [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html)
 
 | Thelio Mega |
 | ------------|
@@ -164,4 +165,3 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 ### More information
 
 If you are looking for even more information about your system you can find the tech-docs for your product [here.](/articles/service-manuals/)
-

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Format Your Drive
 description: >
  Learn how to format your drive
@@ -7,19 +6,21 @@ keywords:
   - System76
   - Security
   - Linux
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Format Your Drive
 
-<!-- 
+<!--
 - Document Version: 1.0.0
 - Date: (8-27-2020)
 - Author: Aaron Honeycutt
-- Contributing Editor(s): Nathaniel Warburton 
+- Contributing Editor(s): Nathaniel Warburton
 -->
 
 ## Live Disk or Pop Recovery

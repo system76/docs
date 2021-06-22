@@ -1,15 +1,16 @@
 ---
-layout: article
 title: Battery Thresholds
 description: >
   Set battery charging thresholds on your System76 laptop.
 keywords:
   - Battery
   - Battery Life
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
 # Battery Thresholds

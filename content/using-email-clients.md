@@ -50,3 +50,13 @@ Once signed in you can review the configurating steps for <u>Thunderbird</u> at 
 Click on the arrow on the left side of your username and then click on the **Mailbox Configuration** button to open the Email Settings window which will have your password (which is different then your ProtonmMail password), port numbers for IMAP and SMTP as well as the security method for both IMAP and SMTP. 
 
 ![Setup Protonmail Bridge Step3](/images/using-email/protonmail-bridge-setup3.png)
+
+4. Add the account to <u>Geary</u>
+
+Once signed into <u>Protonmail Bridge</u> click the menu icon in the top left of <u>Geary</u> then click **Accounts**.
+
+![Geary Menu Button](/images/using-email/geary-menu-button.png)
+
+![Geary Add Account Step1](/images/using-email/geary-add-account1.png)
+
+![Geary Add Account Step2](/images/using-email/geary-add-account2.png)

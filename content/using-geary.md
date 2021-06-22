@@ -88,6 +88,4 @@ Once that has been entered and the **Create** button has been pressed (you may n
 
 ## Fastmail
 
-## Gmail
-
 ## iCloud Mail

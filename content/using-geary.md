@@ -57,6 +57,16 @@ Once signed into <u>Protonmail Bridge</u> click the menu icon in the top left of
 
 ![Geary Menu Button](/images/using-email/geary-menu-button.png)
 
+Next click the **Other email providers** button to add the ProtonMail account.
+
 ![Geary Add Account Step1](/images/using-email/geary-add-account1.png)
 
+Now enter the information from the **Mailbox Configuration** window and note that we are entering the hostname then the port number like `127.0.0.1:1143`. 
+
 ![Geary Add Account Step2](/images/using-email/geary-add-account2.png)
+
+Once that has been entered and the **Create** button has been pressed (you may need to do that a few times for the **Connection security** dropdown to show) then you will see the window below. Finally click the **Always Trust This Server** button then the **Create** button again to add the account. 
+
+**NOTE:** You may need to close Geary and reopen it a bit later before your email starts showing up in <u>Geary</u>.
+
+![Geary Add Account Step3](/images/using-email/trust-window.png)

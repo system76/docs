@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Upgrade Pop!_OS
 description: >
   Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
@@ -18,10 +17,12 @@ keywords:
   - Release
   - System76
   - apt
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 # Before You Upgrade
@@ -50,7 +51,7 @@ Some users may prefer to have Pop!\_OS installation media handy before starting 
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
-# Upgrading Pop!\_OS to 20.10 from 20.04 
+# Upgrading Pop!\_OS to 20.10 from 20.04
 ### (For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
@@ -138,7 +139,7 @@ sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/source
 ```
 *Note to change 'disco' to your release that you are trying to update from*
 
-### 3. Now, do the upgrade! 
+### 3. Now, do the upgrade!
 This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
 
 ```bash

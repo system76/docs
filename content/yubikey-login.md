@@ -1,15 +1,16 @@
 ---
-layout: article
 title: Login with Yubikey
 description: >
    Configure Pop!_OS to accept a Yubikey for login and unlock.
 keywords:
   - Yubikey
   - Administration
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
 
 

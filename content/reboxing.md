@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Laptop Repackaging Instructions
 description: >
   Step by step instructions for repackaging your laptop for repair or return
@@ -7,10 +6,12 @@ keywords:
   - shipping
   - repair
   - laptop
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: repairs-returns
-
 ---
 
 ### Step 1: Open Box
@@ -33,13 +34,13 @@ section: repairs-returns
 
 ![Step 5](/images/reboxing/Step5.jpg)
 
-### Step 6: Insert Power Cord 
+### Step 6: Insert Power Cord
 
 ![Step 6](/images/reboxing/Step6.jpg)
 
 Make sure that you have aligned the power cord within the center area.
 
-### Step 7: Fold Along Edge 
+### Step 7: Fold Along Edge
 
 ![Step 7](/images/reboxing/Step7.jpg)
 

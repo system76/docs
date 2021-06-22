@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Disk Encryption Passwords
 description: >
    How to add extra passwords for your Full Disk Encryption setup
@@ -9,10 +8,12 @@ keywords:
   - Ubuntu
   - LUKS
   - FDE
-image: http://support.system76.com/images/pop.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 With Full Disk Encryption more than one password to decrypt the drive may be needed if more then one person is using the computer. In this situation seven extra passwords can be added with the instructions below.

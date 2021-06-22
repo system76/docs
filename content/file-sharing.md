@@ -1,20 +1,21 @@
 ---
-layout: article
 title: File Sharing Between Pop!_OS Computers
 description: >
-    How to share files with the Public Folder.
+  How to share files with the Public Folder.
 keywords:
   - Support
   - Nautilus
   - Files
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# File Sharing Between Pop!_OS Computers 
+# File Sharing Between Pop!_OS Computers
 
 ## Install the needed package
 
@@ -33,7 +34,7 @@ Next we will open the <u>Settings</u> application and go to **Sharing**. Then cl
 
 ![Settings](/images/file-sharing/settings.png)
 
-### Connecting to the Public Folder 
+### Connecting to the Public Folder
 
 On the computer that you want to share to, open the <u>Files</u> application (Nautilus) and click on **Other Locations** on the left side panel. In this example you will see the machine that we are using as "system76's public files on pop-os". Click the name that matches the name of the computer that you are sharing from and you will see the folders and files that are on the other computer's Public Folder.
 

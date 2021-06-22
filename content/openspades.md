@@ -1,7 +1,6 @@
 ---
-layout: article
 title: Install OpenSpades
-description: 
+description:
   Use Snap or build OpenSpades from source to enjoy a voxel-based first person shooter.
 keywords:
   - FPS
@@ -9,6 +8,10 @@ keywords:
   - Games
   - OpenSpades
   - Multiplayer
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
 ---

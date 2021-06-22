@@ -1,5 +1,5 @@
 ---
-title: Setting up Email Clients
+title: Using Geary 
 description: >
   Using services like Fastmail and ProtonMail with Geary
 keywords:

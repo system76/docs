@@ -20,13 +20,13 @@ tableOfContents: false
 
 **NOTE:** Using ProtonMail with a 3rd Party Email Client is only supported on Paid plans
 
-1. Download the <u>ProtonMail Bridge</u> from [here](https://protonmail.com/bridge/)
+1. Download the <u>ProtonMail Bridge</u> from [here](https://protonmail.com/bridge/).
 
 ![ProtonMail Bridge Step1](/images/using-email/protonmail-bridge-step1.png)
 
 ![Download ProtonMail Bridge](/images/using-email/protonmail-bridge-deb.png)
 
-2. Install the <u>Protonmail Bridge</u>
+2. Install <u>Protonmail Bridge</u>
 
 ![Download ProtonMail Bridge2 Step2](/images/using-email/protonmail-bridge-download.png)
 

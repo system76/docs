@@ -31,7 +31,7 @@ sudo apt install wget screen default-jdk nmap -y
 sudo apt-mark hold default-jdk
 ```
 
-***NOTE:** not all these commands will produce output.*
+> ***NOTE:** not all these commands will produce output.*
 
 ## Make The Mincraft Group & User & Minecraft Direcory
 The Minecraft server will make a lot of files for the world, settings, plugins, and other resources.  The following commands make the directories for the servers.  We will want to make a group and a user for the server to operate in and use.  We will need to then make a directory file to live in and make sure that the new server user has ownership of the directory.
@@ -46,21 +46,37 @@ sudo chown -Rv mchost /mchost/~
 ```
 ## Installing Minecaft Server
 
+### Installing Mojan's Minecraft Server Jar
+
 ```bash
 sudo wget -O /mchost/v-1-17/live/minecraft_server.jar https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar
 sudo bash -c "echo eula=true > /mchost/v-1-17/live/eula.txt"
 sudo chown -R mchost /mchost/
 ```
-***NOTE:** the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
+> ***NOTE:** the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
+
+### Installing PaperMC's Minecraft Server Jar
+[PaperMC](https://papermc.io) 
+[PaperMC's GitHub](https://github.com/PaperMC/Paper)
+
+```bash
+sudo wget -O /mchost/v-1-17/live/minecraft_server.jar https://papermc.io/api/v2/projects/paper/versions/1.17/builds/39/downloads/paper-1.17-39.jar 
+sudo bash -c "echo eula=true > /mchost/v-1-17/live/eula.txt"
+sudo chown -R mchost /mchost/
+```
+
+> ***NOTE:** the server Jar will change over time and you will want to go to Paper's Website to grab the newest Jar.*
 
 ## Running The Server
 
 ```bash
 screen
 su mchost
+cd /mchost/v-1-17/live/
 java -Xms4G -Xmx4G -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:G1MixedGCLiveThresholdPercent=50 -XX:+AlwaysPreTouch -jar server.jar
 ```
 
+### How Much RAM To Use
 ```
 The Lower Bound: -Xms4G
 The Upper Bound: -Xmx4G
@@ -79,6 +95,145 @@ These values can be changed up to around 10GB if you need to go over 10GB.  This
 `network-compression-threshold: -1`
 `view-distance:4`
 
+### PaperMC Changes 
+After Paper runs for the first time you will see a file called `paper.yml`, this a config file.  Editing it will changes how Paper runs the server.  We will note what the changes do and what they may affect.  This section mostly comes from the work of [Celebrimbor](https://www.spigotmc.org/members/celebrimbor.48474/) with some changes and updates for some of the settings.
+
+#### `max-auto-save-chunks-per-tick`
+Max Auto Chunks Per Tick is how fast the incremental chunk saving is during the world save the task.  Do not go lower than 6 for the value, it may result in unsaved or corrupted chunks.
+
+Default: `24`
+Optimized: `6` to `12`
+
+#### `optimize-explosions`
+Paper has its algorithm for explosions that has no effect on gameplay but is not as impactful on the server.  Performance improvements are not as impactful as others on this list.
+
+Default: `false`
+Optimized: `true`
+
+#### `mob-spawner-tick-rate`
+Mob spawners like the ones that spawn in classic dungeons are often used as a source for mob grinders.  This value changes the delay of the spawner's spawning.  Changing this to 2 minorly improves server performance, but this is a good number to be aware of if users take advantage of the spawners. 
+
+Default: `1`
+Optimized: `2`
+
+#### `disable-chest-cat-detection`
+We get it, Mojang loves having the Minecraft cat be like your IRL cats with them getting in our way.  Every tick all chests in Minecraft check to see if a cat is sitting on top of them, this rarely is used in gameplay.  Turning it off results in minor performance improvements.
+
+Default: `false`
+Optimized: `true`
+
+#### `container-update-tick-rate`
+This value changes how often inventories are refreshed when opened, any value above 4 will result in visual bugs.
+
+Default: `1`
+Optimized: `3`
+
+#### `max-entity-collisions`
+Mob farms and player traps cause collitions, this value will effect how often and how much entities collide.  This has a moderate effect on performance. 
+
+Default: `8`
+Optimized: `2`
+
+#### `grass-spread-tick-rate`
+Typically I keep this default for the server till Silk Touch becomes more common and the economy grows, as it can be frustrating to wait 4 times longers for the grass to spread.  This can have a moderate effect on perforance.
+
+Default: `1`
+Optimized: `4`
+
+#### `despawn-ranges`
+This sets how far a player has to be from a mob for them to despawn.  The `soft` value is the distance in blocks from the player where they are removed.  The `hard` value is the value that mobs are removed instantly.  Setting these to be slightly lower will reduce the spawn of the computer.
+
+Default: `soft: 32, hard: 128`
+Optimized: `soft: 28, hard: 96`
+
+#### `hopper.disable-move-event`
+Hoppers are great for item transport but they can cause lag and this otimisation will grealy redusing the `InventoryMoveItemEvent`s that occure on hoppers.
+
+Default: `false`
+Optimized: `true`
+Impact: Heavy
+
+> ***NOTE:** Plugins that listen for `InventoryMoveItemEvent` will break or cause them to crash the server.
+
+#### `non-player-arrow-despawn-rate`
+Skeleton fired arrows are not retrievable making this a cosmetic change, by default they will never despawn.  Three seconds, or 60 ticks, is a good amount to still be able to tell where the arrow came from when being ambushed.
+
+Default: `-1`
+Optimized: `60`
+
+#### `creative-arrow-despawn-rate`
+This value changes how long none retrivibale arrows stay around.  Infinity bows and bows used in creative mode are the only ones effected by this. 
+
+Default: `-1`
+Optimized: `60`
+
+#### `prevent-moving-into-unloaded-chunks`
+When lag hits your server or a user is pushing the boundries of rendered chunks, a player can cause issues.  This will prevent them from moving into a chunk that is unloaded and will teleport them instead to a nearby location that is safe.  This settings has a moderate effect on performance.
+
+Default: `false`
+Optimized: `true`
+
+> ***NOTE:** If you are using a world without a world boarder or pre-generation then this setting is critical.
+
+#### `use-faster-eigencraft-redstone`
+Eigencraft Redstone is a redstone implitation that takes out a lot of the reduentent logic from 
+
+Default: `false`
+Optimized: `true`
+Impact: Heavy
+
+➫ This setting reduces redundant redstone updates by as much as 95% without breaking vanilla devices. Empirical testing shows a speedup by as much as 10x!
+
+Note: If you use a plugin to change redstone algorithms, consider replacing them with this option as plugins tend to break redstone behavior.
+
+armor-stands-tick
+Def: true
+Opt: false
+Impact: Minor
+
+➫ Some items are viewed as entities (require ticking) since they interact with the world. Unticked armor stands will not get pushed by water (do you care?)
+
+Note: Paper also offsets item frame ticking instead of ticking all frames at once. This is not configurable, just enjoy the TPS savings with no gameplay impact.
+
+per-player-mob-spawns
+Def: false
+Opt: true
+Impact: Minor
+
+➫ This implements singleplayer spawning behavior instead of Bukkit's random algorithms. This prevents the actions of others (i.e. Massive farms) from impacting the server's spawn rates.
+
+Note: If you lowered spawn-limits in Bukkit and notice shortages of animals and monsters, consider bumping those back up until you find a happy place.
+
+alt-item-despawn-rate
+Def: false
+Opt: true
+Impact: Medium
+
+➫ Remove certain item drops faster (or slower) than the item-despawn-rate set in Spigot. This lets you avoid ticking massive piles of garbage.
+
+Example of despawning cobblestone and netherrack in 15 seconds:
+Code (Text):
+      enabled: true
+      items:
+        COBBLESTONE: 300
+        NETHERRACK: 300
+Note: Use the Spigot material list when adding items.
+
+no-tick-view-distance
+Def: -1
+Opt: # > view-distance setting
+Impact: N/A
+
+➫ This is the distance at which chunks are loaded, but will still not be ticked outside your view-distance.
+
+Note: If you had to set your view-distance really low (like 3 or 4), you might set this at 5 or 6 to improve your gameplay experience.
+
+anti-xray.enabled
+Def: false
+Opt: true
+Impact: N/A
+
+➫ While this setting will actually cost TPS, Paper's anti-xray is the most efficient in existence! Engine 1 might be less heavy (mainly for clients), but mode 2 is by far more effective.
 
 ## Startup
 

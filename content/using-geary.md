@@ -1,7 +1,7 @@
 ---
-title: Using Geary 
+title: Using Geary
 description: >
-  Using services like Fastmail and ProtonMail with Geary
+  Using services like ProtonMail with Geary
 keywords:
   - geary
   - protonmail
@@ -12,44 +12,42 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
-tableOfContents: true
+tableOfContents: false
 ---
 
 # Geary
 
-## Fastmail
+## ProtonMail
 
-## Protonmail
+**NOTE:** Using ProtonMail with a 3rd Party Email Client is only supported on Paid plans
 
-**NOTE:** Using Protonmail with a 3rd Party Email Client is only supported on Paid plans
+1. Download the <u>ProtonMail Bridge</u> from [here](https://protonmail.com/bridge/)
 
-1. Download the <u>Protonmail Bridge</u> from [here](https://protonmail.com/bridge/)
+![ProtonMail Bridge Step1](/images/using-email/protonmail-bridge-step1.png)
 
-![Protonmail Bridge Step1](/images/using-email/protonmail-bridge-step1.png)
-
-![Download Protonmail Bridge](/images/using-email/protonmail-bridge-deb.png)
+![Download ProtonMail Bridge](/images/using-email/protonmail-bridge-deb.png)
 
 2. Install the <u>Protonmail Bridge</u>
 
-![Download Protonmail Bridge2 Step2](/images/using-email/protonmail-bridge-download.png)
+![Download ProtonMail Bridge2 Step2](/images/using-email/protonmail-bridge-download.png)
 
 Once the `.deb` file has been opened by <u>Eddy</u> click the **Install** button to install the application. 
 
-![Install Protonmail Bridge](/images/using-email/protonmail-bridge-install.png)
+![Install ProtonMail Bridge](/images/using-email/protonmail-bridge-install.png)
 
 3. Setup <u>Protonmail Bridge</u>
 
 Once you open <u>Protonmail Bridge</u> from the Activities menu in the top left you will see the screen below. From here enter your username and password that you using to sign into the ProtonMail website.
 
-![Setup Protonmail Bridge Step1](/images/using-email/protonmail-bridge-setup1.png)
+![Setup ProtonMail Bridge Step1](/images/using-email/protonmail-bridge-setup1.png)
 
 Once signed in you can review the configurating steps for <u>Thunderbird</u> at the link in the <u>Protonmail Bridge</u>.
 
-![Setup Protonmail Bridge Step2](/images/using-email/protonmail-bridge-setup2.png)
+![Setup ProtonMail Bridge Step2](/images/using-email/protonmail-bridge-setup2.png)
 
 Click on the arrow on the left side of your username and then click on the **Mailbox Configuration** button to open the Email Settings window which will have your password (which is different then your ProtonmMail password), port numbers for IMAP and SMTP as well as the security method for both IMAP and SMTP. 
 
-![Setup Protonmail Bridge Step3](/images/using-email/protonmail-bridge-setup3.png)
+![Setup ProtonMail Bridge Step3](/images/using-email/protonmail-bridge-setup3.png)
 
 4. Add the account to <u>Geary</u>
 
@@ -67,6 +65,6 @@ Now enter the information from the **Mailbox Configuration** window and note tha
 
 Once that has been entered and the **Create** button has been pressed (you may need to do that a few times for the **Connection security** dropdown to show) then you will see the window below. Finally click the **Always Trust This Server** button then the **Create** button again to add the account. 
 
-**NOTE:** You may need to close Geary and reopen it a bit later before your email starts showing up in <u>Geary</u>.
+**NOTE:** You may need to close <u>Geary</u> and reopen it a bit later before your email starts showing up in <u>Geary</u>.
 
 ![Geary Add Account Step3](/images/using-email/trust-window.png)

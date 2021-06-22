@@ -13,11 +13,11 @@ section: software
 
 # Hosting A Minecraft Server
 
-Minecraft 1.17 dropped on June 8, 2021. In this article, we will be going over how to set up a Minecraft server on your Pop!_OS or Ubuntu install. A Minecraft System76 recommends having a minimum of 8Gb of RAM but for a good experience, 16Gb of RAM is recommended. Any hard drive over 128GB for a basic server but if you want to backups 1TB to 2TB is recommended. This article will live mostly in the terminal, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).
+Minecraft 1.17 dropped on June 8, 2021. In this article, we will be going over how to set up a Minecraft server on your Pop!_OS or Ubuntu install. System76 or Mojang recommends having a 8GB minimum but 16GB is preferred. Any hard drive over 128GB will work for a basic minecraft server, a drive of 1TB to 2TB is recommended for having backups.  This article will use mostly Terminal commands, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).
 
 ## Updating and Installing Software Needed
 
-To install the Minecraft server we will need to install Java (listed as default-jdk), wget, screen, and nmap.  Java is what Minecraft runs in and is required for the server to run - we are also marking it as hold so no future updates are applied (some java updates can break the server). wget will allow us to download the Minecrafter Server from a URL hosted by Mojang, this way we can put the file in the directory directly instead of using a web browser.  screen will allow us to run commands and the server in an environment we do not need to have open or be connected to - think of it as a virtual terminal instance you can connect and disconnect from.  nmap is a network scanner that we will use for testing and network configuration.
+To install the Minecraft server we will need to install Java (listed as default-jdk), wget, screen, and nmap. Java is what Minecraft runs in - we are also marking it as held so no future updates are applied (some java updates can break the server). wget will allow us to download the Minecrafter Server from a URL hosted by Mojang.  Downloading the Minecraft Server Jar we put the file in the directory directly instead of using a web browser. Screen will allow us to run commands and the server in an environment we do not need to have open or be connected to - think of it as a virtual terminal instance you can connect and disconnect from. nmap is a network scanner that we will use for testing and network configuration.
 
 To open a terminal window go to the activities button in the upper left corner of the screen and click it then use the search function to search for Terminal.  Click to open it and then run the following commands to update your system:
 
@@ -31,10 +31,10 @@ sudo apt install wget screen default-jdk nmap -y
 sudo apt-mark hold default-jdk
 ```
 
-*Please note not all of these commands will output something.*
+***NOTE:** not all these commands will produce output.*
 
 ## Make The Mincraft Group & User & Minecraft Direcory
-The Minecraft server will make a lot of files for the world, settings, plugins, and other resources.  The following commands are to make the directory for the servers to exist in.  We will want to make a group and a user for the server to operate in and use.  We will need to then make a directory file to live in and make sure that the new server user has ownership of the directory.
+The Minecraft server will make a lot of files for the world, settings, plugins, and other resources.  The following commands make the directories for the servers.  We will want to make a group and a user for the server to operate in and use.  We will need to then make a directory file to live in and make sure that the new server user has ownership of the directory.
 
 ```bash
 sudo addgroup mchost
@@ -51,7 +51,7 @@ sudo wget -O /mchost/v-1-17/live/minecraft_server.jar https://launcher.mojang.co
 sudo bash -c "echo eula=true > /mchost/v-1-17/live/eula.txt"
 sudo chown -R mchost /mchost/
 ```
-*Please note the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
+***NOTE:** the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
 
 ## Running The Server
 
@@ -66,7 +66,7 @@ The Lower Bound: -Xms4G
 The Upper Bound: -Xmx4G
 ```
 
-These values can be changed up to around 10GB if you need to go over 10GB.  This rarely needs to be done on smaller servers unless you have complex data packs, a large world file, or a loss of players (around 100+).  If you need these values to be higher please change the G1 Max and New Size Percent to the following:
+These values can be changed up to around 10GB if you need to go over 10GB.  This rarely needs to be done on smaller servers unless you have complex data packs, a large world file, or a lots of players (around 100+).  If you need these values to be higher please change the G1 Max and New Size Percent to the following:
 
 ```bash
 -XX:G1MaxNewSizePercent=60

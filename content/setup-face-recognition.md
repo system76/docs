@@ -19,7 +19,7 @@ In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open 
 Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/content/webcam).
 
 
-### Installation on Pop!_OS, Ubutnu or any other Ubuntu based distribution
+### Installation on Pop!_OS, Ubuntu or any other Ubuntu based distribution
 
 Firstly, we will need a terminal. You can open it by pressing Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> on your keyboard or searching for terminal app in your application menu.
 

@@ -176,40 +176,32 @@ Optimized: `true`
 > ***NOTE:** If you are using a world without a world boarder or pre-generation then this setting is critical.
 
 #### `use-faster-eigencraft-redstone`
-Eigencraft Redstone is a redstone implitation that takes out a lot of the reduentent logic from 
+Eigencraft Redstone is a redstone implitation that takes out a lot of the reduentent logic and greatly impacts the effect.  It can boost redstone performance by %1000 and does not break about %95 to %99 of the vinilla device.
 
 Default: `false`
 Optimized: `true`
-Impact: Heavy
 
-➫ This setting reduces redundant redstone updates by as much as 95% without breaking vanilla devices. Empirical testing shows a speedup by as much as 10x!
+> ***NOTE**: If you are using a diffrent redstone algorithm do not change this setting, it will break or crash minecraft.
 
-Note: If you use a plugin to change redstone algorithms, consider replacing them with this option as plugins tend to break redstone behavior.
+#### `armor-stands-tick`
+Some entities require ticking since they are interactive.  Unticked armor stands will not get pushed by water, if you plan to use a contraption that uses this leave it set to true.  This has minor to major performance improvement.
 
-armor-stands-tick
-Def: true
-Opt: false
-Impact: Minor
+Default: `true`
+Optimized: `false`
 
-➫ Some items are viewed as entities (require ticking) since they interact with the world. Unticked armor stands will not get pushed by water (do you care?)
+> ***Note:** Paper offests item frame ticking instead of doing them all at once to prevent lag spikes.  This helps with people with map rooms or people who use them as wallpaper or custom paintings.
 
-Note: Paper also offsets item frame ticking instead of ticking all frames at once. This is not configurable, just enjoy the TPS savings with no gameplay impact.
+#### `per-player-mob-spawns`
+Changing this will switch the spawning behavior from Bukkit's random algorithm to sigleplayer's spawning behavior.  This will prevent things like massive farms from effecting the whole server's spawn rate.
 
-per-player-mob-spawns
-Def: false
-Opt: true
-Impact: Minor
+Default: `false`
+Optimized: `true`
 
-➫ This implements singleplayer spawning behavior instead of Bukkit's random algorithms. This prevents the actions of others (i.e. Massive farms) from impacting the server's spawn rates.
+#### `alt-item-despawn-rate`
+This enables items to have diffrent despawn rates that you can set. Some items do not need to be around do long when they are common.
 
-Note: If you lowered spawn-limits in Bukkit and notice shortages of animals and monsters, consider bumping those back up until you find a happy place.
-
-alt-item-despawn-rate
-Def: false
-Opt: true
-Impact: Medium
-
-➫ Remove certain item drops faster (or slower) than the item-despawn-rate set in Spigot. This lets you avoid ticking massive piles of garbage.
+Default: `false`
+Optimized: `true`
 
 Example of despawning cobblestone and netherrack in 15 seconds:
 Code (Text):

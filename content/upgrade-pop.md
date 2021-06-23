@@ -19,33 +19,37 @@ keywords:
   - Release
   - System76
   - apt
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# Before You Upgrade
+## When Should I Upgrade?
 
-Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete (depending on download speeds and the speed of the components in the system you are upgrading).
+Before upgrading, it can be helpful to ask yourself the following environment questions: 
 
-That being said, from time to time, unexpected complications can arise. The liklihood of complications during the upgrade process increases on systems that are:
+1. **Do I have a backup of my data (see next section).**
+  - YES? - Proceed.
+  - NO? - Make a Backup.
+2. **Is this a mission critical machine?**
+  - YES? - Wait until upgrading will not stop work.
+  - NO? - Proceed.
+3. **Do I have a backup/alternate machine if this one goes down temporarily?**
+  - YES? - Proceed.
+  - NO? - Make a backup, assess your comfort level, proceed if comfortable.
+4. **How recently was this upgrade issued? Have any stability issues been reported?**
+  - YES? - Wait a week (or two), check again, then upgrade.
+  - NO? - Proceed. 
 
-* upgrading more than one release at a time
-* running older releases that have already reached the end-of-life period
-* using a large number of third-party software repositories (PPAs)
+# Backing Up Your Data
 
-Our goal is to make the upgrade process as consistent and reliable as possible, and make sure you are prepared for anything that may occur during the upgrade should something not go according to plan.
-
-### Backing Up Your Data
-
-The upgrade process will leave your files in place, but no matter which system version you are running, we always recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.
+> **IMPORTANT NOTE:** The upgrade process will leave your files in place, but no matter which system version you are running, we **always** recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.
 
 Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
-### Create Installation USB (Optional)
-
-Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall or repair the operating system. Instructions on creating a USB disk with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
 
 # Upgrade Pop!_OS
 

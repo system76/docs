@@ -205,27 +205,24 @@ Optimized: `true`
 
 Example of despawning cobblestone and netherrack in 15 seconds:
 Code (Text):
+```
       enabled: true
       items:
         COBBLESTONE: 300
         NETHERRACK: 300
-Note: Use the Spigot material list when adding items.
+```
 
-no-tick-view-distance
-Def: -1
-Opt: # > view-distance setting
-Impact: N/A
+#### `no-tick-view-distance`
+This should be set to your view distence.  If the view distence is bellow 4 you should set it to 5 to impove gameplay exprince.
 
-➫ This is the distance at which chunks are loaded, but will still not be ticked outside your view-distance.
+Default: `-1`
+Optimized: # > view-distance setting
 
-Note: If you had to set your view-distance really low (like 3 or 4), you might set this at 5 or 6 to improve your gameplay experience.
+#### `anti-xray.enabled`
+This will cause some perofmance loss but Paper has a solid and effecient anti xray cheat system.  This will prevent players from using xray mods or cheats.
 
-anti-xray.enabled
-Def: false
-Opt: true
-Impact: N/A
-
-➫ While this setting will actually cost TPS, Paper's anti-xray is the most efficient in existence! Engine 1 might be less heavy (mainly for clients), but mode 2 is by far more effective.
+Default: `false`
+Optimized: `true`
 
 ## Startup
 

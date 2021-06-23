@@ -74,11 +74,11 @@ Once signed into <u>Protonmail Bridge</u> click the menu icon in the top left of
 
 Next click the **Other email providers** button to add the ProtonMail account.
 
-![Geary Add Account Step1](/images/using-email/geary-add-protonmail1.png)
+![Geary Add Account Step1](/images/using-email/geary-add-other-account.png)
 
 Now enter the information from the **Mailbox Configuration** window and note that we are entering the hostname IP address, followed by the port number like this: `127.0.0.1:1143`. 
 
-![Geary Add Account Step2](/images/using-email/geary-add-protonmail2.png)
+![Geary Add Account Step2](/images/using-email/geary-add-protonmail.png)
 
 Once that has been entered and the **Create** button has been pressed (you may need to do that a few times for the **Connection security** dropdown to show) you will see the window below. Finally click the **Always Trust This Server** button then the **Create** button again to add the account. 
 
@@ -87,5 +87,21 @@ Once that has been entered and the **Create** button has been pressed (you may n
 ![Geary Add Account Step3](/images/using-email/trust-window.png)
 
 ## Fastmail
+
+1. Click the menu icon in the top left of <u>Geary</u> then click **Accounts**.
+
+![Geary Menu Button](/images/using-email/geary-menu-button.png)
+
+2. Click the **Other email providers** button to add the Fastmail account.
+
+![Geary Add Account Step1](/images/using-email/geary-add-other-account.png)
+
+3. Next create an App password using the Fastmail website [here](https://www.fastmail.help/hc/en-us/articles/1500000279921-IMAP-POP-and-SMTP).
+
+> **NOTE:** Save the App password in your Password Manager as you may not be able to see it again after creating it for security. 
+
+4. Take note of the IMAP/POP, SMTP addresses and the port numbers from the Fastmail website for the next window as well.
+
+5. Add the new App password, IMAP/POP, SMTP address and their port numbers in the next <u>Geary</u> window.
 
 ## iCloud Mail

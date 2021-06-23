@@ -2,7 +2,7 @@
 layout: article
 title: Disaster Data Recovery
 description: >
- How to backup your files if your OS doesn't boot
+ How to back up your files if your OS doesn't boot
 keywords:
  - files
  - backup

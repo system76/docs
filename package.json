@@ -31,6 +31,7 @@
     "lodash": "^4.17.21",
     "nuxt-dynamic-images": "0.0.1",
     "postcss": "^8.3.2",
+    "shiki": "^0.9.3",
     "unist-util-visit": "^2.0.3"
   }
 }

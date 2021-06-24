@@ -21,7 +21,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
 1. Install the necessary packages:
 
-    ```sh
+    ```bash
     sudo apt install sssd heimdal-clients msktutil
     ```
 
@@ -42,7 +42,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
     Edit the /etc/krb5.conf file with the following contents:
 
-    ```text
+    ```
     [libdefaults]
     default_realm = SYSTEM76.LOCAL
     rdns = no
@@ -58,7 +58,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
 3. Initialize Kerberos and generate a keytab file. The first command requires the username of a domain administrator, and our computer's hostname is "pop-os" in this example:
 
-    ```text
+    ```
     kinit administrator
     klist
     msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os.system76.local -k my-keytab.keytab ‑‑computer-name POP-OS ‑‑upn POP-OS$ ‑‑server adserver.system76.local ‑‑user-creds-only
@@ -75,7 +75,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
     The SSSD configuration file should contain the following:
 
-    ```text
+    ```
     [sssd]
     services = nss, pam
     config_file_version = 2
@@ -123,7 +123,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
 
     Look for the line that contains "session required pam_unix.so" and add this line immediately below it:
 
-    ```text
+    ```
     session required pam_mkhomedir.so skel=/etc/skel umask=0077
     ```
 

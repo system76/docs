@@ -10,6 +10,7 @@ keywords:
   - Pop!_OS 19.10
   - Pop!_OS 20.04
   - Pop!_OS 20.10
+  - Pop!_OS 21.04
   - LTS
   - Non-LTS
   - Upgrade
@@ -25,33 +26,36 @@ hidden: false
 section: software
 ---
 
-# Before You Upgrade
+## When Should I Upgrade?
 
-Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete (depending on download speeds and the speed of the components in the system you are upgrading).
+Before upgrading, it can be helpful to ask yourself the following environment questions: 
 
-That being said, from time to time, unexpected complications can arise. The liklihood of complications during the upgrade process increases on systems that are:
+1. **Do I have a backup of my data (see next section).**
+  - YES? - Proceed.
+  - NO? - Make a Backup.
+2. **Is this a mission critical machine?**
+  - YES? - Wait until upgrading will not stop work.
+  - NO? - Proceed.
+3. **Do I have a backup/alternate machine if this one goes down temporarily?**
+  - YES? - Proceed.
+  - NO? - Make a backup, assess your comfort level, proceed if comfortable.
+4. **How recently was this upgrade issued? Have any stability issues been reported?**
+  - YES? - Wait a week (or two), check again, then upgrade.
+  - NO? - Proceed. 
 
-* upgrading more than one release at a time
-* running older releases that have already reached the end-of-life period
-* using a large number of third-party software repositories (PPAs)
+# Backing Up Your Data
 
-Our goal is to make the upgrade process as consistent and reliable as possible, and make sure you are prepared for anything that may occur during the upgrade should something not go according to plan.
-
-### Backing Up Your Data
-
-The upgrade process will leave your files in place, but no matter which system version you are running, we always recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.
+<alert> **IMPORTANT NOTE:** The upgrade process will leave your files in place, but no matter which system version you are running, we **always** recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.</alert>
 
 Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
-### Create Installation USB (Optional)
-
-Some users may prefer to have Pop!\_OS installation media handy before starting any upgrades in case they need to reinstall or repair the operating system. Instructions on creating a USB disk with Pop!\_OS are located in our [live disk](/articles/live-disk/) article.
 
 # Upgrade Pop!_OS
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
-# Upgrading Pop!\_OS to 20.10 from 20.04
+# Upgrading Pop!\_OS to 21.04 from 20.10 
+
 ### (For all other operating system versions, scroll down to the instructions for upgrading from an earlier release)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
@@ -63,7 +67,7 @@ sudo apt full-upgrade
 
 Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> OS Upgrade.
 
-On the system's "OS Upgrade" page, you will notice a new feature has been added. The System76 upgrade package will display a message that Pop!\_OS 20.10 is available with a "Download" button.
+The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a "Download" button.
 
 Click the "Download" button and the download will begin.
 
@@ -71,7 +75,7 @@ Once the download is complete, you will receive a second notification saying the
 
 Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 20.10!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.04!
 
 ### Advanced Install (Terminal)
 
@@ -112,7 +116,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 # Upgrading older releases
 
-Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 20.10 (groovy).
+Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.04 (hirsute).
 
 These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 
@@ -153,7 +157,7 @@ You will want to take a look at the files that end in "list" in "/etc/apt/backup
 
 ### 5. After the 20.04 Pop upgrade is complete, **reboot**.
 
-### 6. Run the command to upgrade to Pop 20.10
+### 6. Run the command to upgrade to Pop 21.04
 
 ```bash
 pop-upgrade release upgrade

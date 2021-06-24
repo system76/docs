@@ -22,6 +22,7 @@ The Super key is the OS key on your keyboard.
 
 - On recent System76 products, it's the Pop key (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>).
 - On older System76 products, it's the Ubuntu key (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
+- On the Launch keyboard it is the <kbd>SUPER</kbd> key.
 - On generic third-party products, it may be labeled with a Windows logo.
 - On Mac accessories, it may be labeled `command`.
 
@@ -78,7 +79,8 @@ The launcher allows searching through open windows and installed applications, a
 
 | Shortcut/command                                           | Action                          |
 | ---------------------------------------------------------- | ------------------------------- |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd> | Activate the launcher           |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                 | Activate the launcher on Pop 21.04+ |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>  | Activate the launcher on Pop 20.10 and below |
 | `d:`                                                       | Browse and search recent files  |
 | `/` or `~`                                                 | Browse the filesystem           |
 | `t:`                                                       | Execute a command in a terminal |

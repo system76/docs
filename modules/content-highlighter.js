@@ -17,8 +17,8 @@ export default async function highlighter () {
 
     return Object.entries(REPLACE_MAP).reduce((text, [a, b]) => {
       return text
-        .replaceAll(`color:${a}`, `color:${b}`)
-        .replaceAll(`color: ${a}`, `color: ${b}`)
+        .replace(new RegExp(`color:${a}`, 'g'), `color:${b}`)
+        .replace(new RegExp(`color: ${a}`, 'g'), `color: ${b}`)
     }, highlighted)
   }
 }

@@ -84,13 +84,13 @@
 
 <script>
 export default {
-
   props: {
     error: {
       type: [Object, Error],
       default: () => new Error('Internal Server Error')
     }
   },
+
   head: {
     title: 'Error!'
   },

@@ -50,6 +50,14 @@ export default {
     __dangerouslyDisableSanitizers: ['script']
   },
 
+  content: {
+    markdown: {
+      rehypePlugins: [
+        '~/plugins/content-replace'
+      ]
+    }
+  },
+
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@system76/design/dist/minimal.common.css',
@@ -81,5 +89,17 @@ export default {
       githubContributors(doc),
       linkFixes(doc)
     ])
+  },
+
+  image: {
+    // Mirrored to tailwind breakpoints + some extra
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      '2xl': 1536
+    }
   }
 }

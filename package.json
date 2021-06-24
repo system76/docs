@@ -19,7 +19,7 @@
     "nuxt": "^2.4.5"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.4.14",
+    "@nuxt/image": "^0.4.17",
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/tailwindcss": "^4.1.1",
     "@tailwindcss/line-clamp": "^0.2.1",
@@ -30,6 +30,7 @@
     "eslint-plugin-vue": "^7.11.0",
     "lodash": "^4.17.21",
     "nuxt-dynamic-images": "0.0.1",
-    "postcss": "^8.3.2"
+    "postcss": "^8.3.2",
+    "unist-util-visit": "^2.0.3"
   }
 }

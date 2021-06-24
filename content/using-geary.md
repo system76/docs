@@ -135,4 +135,4 @@ Photo source: https://support.apple.com/en-us/HT202304
 
 > **NOTE:** You will need to adjust the settings on this server login page. Change the drop down in "Sending" to "Use a different login" even though the information will be the same. It's likely you'll receive an error at first. If that's the case, switch <u>TLS</u> to <u>StartTLS</u>.
 
-6. Finally, click **Create** and your iCloud account will be added to Geary.
+6. Finally, click the **Create** button and your iCloud account will be added to Geary.

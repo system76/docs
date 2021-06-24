@@ -562,7 +562,7 @@ Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) 
 
 - LUKS (during Install)
 
-![encryption-pop](/images/install-pop/5_encrypt_notice-cropped.png)
+![encryption-pop](/images/install-pop/5_encrypt_notice-cropped-20-04.png)
 
 On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS partition is encrypted using the LUKS disk layout. This tool adds a decryption screen so that every time the computer boots, it requires a decryption password before moving to the login screen. With an encrypted drive, if hardware is stolen, the only way to remove the encryption is to erase the disk.
 

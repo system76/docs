@@ -9,7 +9,10 @@ export default async () => ({
 
   content: {
     markdown: {
-      highlighter: await contentHighlighter()
+      highlighter: await contentHighlighter(),
+      rehypePlugins: [
+        '~/plugins/content-replace'
+      ]
     }
   },
 
@@ -55,14 +58,6 @@ export default async () => ({
     ],
 
     __dangerouslyDisableSanitizers: ['script']
-  },
-
-  content: {
-    markdown: {
-      rehypePlugins: [
-        '~/plugins/content-replace'
-      ]
-    }
   },
 
   css: [

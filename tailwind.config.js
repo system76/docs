@@ -174,16 +174,6 @@ module.exports = {
               color: theme('colors.hyperlink')
             },
 
-            kbd: {
-              backgroundColor: theme('colors.gray.800'),
-              borderRadius: theme('borderRadius.DEFAULT'),
-              color: theme('colors.gray.100'),
-              display: 'inline-block',
-              lineHeight: '1',
-              margin: '0',
-              padding: theme('spacing.2')
-            },
-
             h1: {
               fontWeight: theme('fontWeight.normal')
             },
@@ -206,6 +196,42 @@ module.exports = {
 
             h6: {
               fontWeight: theme('fontWeight.light')
+            },
+
+            'blockquote p:first-of-type::before': {
+              content: null
+            },
+
+            'blockquote p:last-of-type::after': {
+              content: null
+            },
+
+            kbd: {
+              backgroundColor: theme('colors.black'),
+              borderColor: theme('colors.gray.800'),
+              borderRadius: theme('borderRadius.DEFAULT'),
+              borderWidth: 1,
+              color: theme('colors.gray.100'),
+              display: 'inline-block',
+              lineHeight: '1',
+              margin: '0',
+              padding: theme('spacing.2')
+            },
+
+            code: {
+              backgroundColor: theme('colors.gray.800'),
+              borderRadius: theme('borderRadius.DEFAULT'),
+              color: theme('colors.gray.100'),
+              fontWeight: '400',
+              padding: theme('spacing.2')
+            },
+
+            'code::before': {
+              content: null
+            },
+
+            'code::after': {
+              content: null
             },
 
             '> ul': {

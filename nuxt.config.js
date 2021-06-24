@@ -1,10 +1,17 @@
+import contentHighlighter from './modules/content-highlighter'
 import githubContributors from './modules/github-contributors'
 import linkFixes from './modules/link-fixes'
 
-export default {
+export default async () => ({
   target: 'static',
 
   components: true,
+
+  content: {
+    markdown: {
+      highlighter: await contentHighlighter()
+    }
+  },
 
   head: {
     description: 'Official System76 Support and useful documentation',
@@ -53,7 +60,8 @@ export default {
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@system76/design/dist/minimal.common.css',
-    '@system76/components/dist/index.common.css'
+    '@system76/components/dist/index.common.css',
+    '~/assets/styles/code-highlighting.css'
   ],
 
   plugins: [
@@ -82,4 +90,4 @@ export default {
       linkFixes(doc)
     ])
   }
-}
+})

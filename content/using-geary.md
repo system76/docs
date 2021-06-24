@@ -54,7 +54,7 @@ Once the `.deb` file has been opened by <u>Eddy</u> click the **Install** button
 
 3. Setup <u>Protonmail Bridge</u>
 
-Once you open <u>Protonmail Bridge</u> from the Activities menu (in the top left) you will see the screen below. From here enter your username and password that you using to sign into the ProtonMail website.
+Once you open <u>Protonmail Bridge</u> from the Activities menu (in the top left) you will see the screen below. From here, enter your username and password that you using to sign into the ProtonMail website.
 
 ![Setup ProtonMail Bridge Step1](/images/using-email/protonmail-bridge-setup1.png)
 
@@ -105,3 +105,34 @@ Once that has been entered and the **Create** button has been pressed (you may n
 5. Add the new App password, IMAP/POP, SMTP address and their port numbers in the next <u>Geary</u> window.
 
 ## iCloud Mail
+
+Apple publishes the server settings for linking your iCloud email to other mail clients (see screenshot below).
+
+![icloud mail settings](/images/using-email/icloud-email-settings.png)
+Photo source: https://support.apple.com/en-us/HT202304 
+
+1. Click the menu icon in the top left of <u>Geary</u> then click **Accounts**.
+
+![Geary Menu Button](/images/using-email/geary-menu-button.png)
+
+2. Click the **Other email providers** button to add the iCloud account.
+
+![Geary Add Account Step1](/images/using-email/geary-add-other-account.png)
+
+3. Next create an App password using the steps on this Apple Support page: https://support.apple.com/en-us/HT204397 
+
+> **NOTE:** Step 3 will also require you to sign into your Apple ID Account page. You'll need to have two-factor authentication enabled to create an app-specific password. Once the app-specific password is created, it **won't** be shown again. Be sure to write it down or add it to your password manager.
+
+![Apple ID Security Page](/images/using-email/apple-id-app-password.png)
+
+![app password](/images/using-email/gear-app-password.png) 
+
+4. Take note of the IMAP/POP, SMTP addresses and the port numbers from Apple Article HT202304 (above) for the next window.
+
+5. Add the new App password, IMAP, SMTP address, and in the next <u>Geary</u> window.
+
+![icloud setup](/images/using-email/icloud-email-setup2.png)
+
+> **NOTE:** You will need to adjust the settings on this server login page. Change the drop down in "Sending" to "Use a different login" even though the information will be the same. It's likely you'll receive an error at first. If that's the case, switch <u>TLS</u> to <u>StartTLS</u>.
+
+6. Finally, click the **Create** button and your iCloud account will be added to Geary.

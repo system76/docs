@@ -110,7 +110,7 @@ If you have trouble with a Bluetooth headset and keeping a steady downlink speed
 
 Another way to help with Wifi issues is to turn off power management for the hardware. To do so, edit the configuration file with this command:
 
-```
+```bash
 sudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 ```
 

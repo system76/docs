@@ -65,6 +65,26 @@ Under 'Node' you will see a mount path for each drive something like '/dev/nvme0
 sudo nvme smart-log /dev/nvme0n1
 ```
 
+#### Testing the CPU
+
+### Using the stress-ng program
+
+Run this command to install <u>stress-ng</u>:
+
+```bash
+sudo apt -y install stress-ng s-tui
+```
+
+### Using the s-tui program
+
+Now this command:
+
+```bash
+s-tui
+```
+
+From here use the <kbd>Down</kbd> to switch from Monitor to Stress by pressing the <kbd>Enter</kbd>. Now watch the CPU temperatures raise as the system's CPU is tested.  
+
 #### Testing the GPU
 
 ### Benchmarking
@@ -95,7 +115,7 @@ Then the application can be started:
 ./heaven
 ```
 
-### GPU Burn
+### GPU Burn (for NVIDIA GPU's only)
 
 We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need to install git with this command:
 

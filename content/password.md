@@ -1,5 +1,5 @@
 ---
-title: Change User Password (Pop!_OS)
+title: Change User Password
 description: >
     Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change both!
 keywords:
@@ -7,6 +7,8 @@ keywords:
   - reset
   - locked out
   - crash
+  - pop
+  - ubuntu
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -15,7 +17,7 @@ hidden: false
 section: software
 ---
 
-# Change User Password (Pop!_OS)
+# Change User Password
 
 If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
 
@@ -27,7 +29,15 @@ First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or
 
 ![systemd-boot](/images/password/systemd-boot.png)
 
-Once the recovery operating system boots, close out of the installation window or choose **“try demo mode”** (be sure not to choose any install or repair options, as this could result in data loss).   Then, press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
+Once the recovery operating system boots, close out of the installation window or choose **“try demo mode”** (be sure not to choose any install or repair options, as this could result in data loss).   
+
+### Ubuntu
+
+If you are using Ubuntu we can boot from a live disk and [here](/articles/live-disk) are instructions for creating the live disk. Once the live disk has been created refer to this [article](/articles/boot-menu) for booting from the live disk. 
+
+#### Mounting the Installed OS
+
+Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
 
 ```bash
 lsblk

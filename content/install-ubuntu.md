@@ -184,7 +184,7 @@ You can opt to install the updates later, or install them now by clicking **Inst
 
 Installing the updates will produce this screen asking for an administrative user's password:
 
-![Authorization](images/install-ubuntu/ubuntu-21.04-installing-updates.png)
+![Authorization](/images/install-ubuntu/ubuntu-21.04-installing-updates.png)
 
 The system will display the progress of updates through this screen:
 

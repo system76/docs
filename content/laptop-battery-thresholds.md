@@ -21,7 +21,7 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 ## Configuring Charging Thresholds (Open Firmware)
 
-**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them. To work around this limitation in the short term, you can use systemd to set thresholds at boot (see below).
+**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them. To work around this limitation in the short term, you can [use systemd to set thresholds at boot](#at-boot).
 
 ### Using the terminal:
 
@@ -51,10 +51,19 @@ You can also set custom thresholds without using a profile. For example, this co
 system76-power charge-thresholds 40 80
 ```
 
-#### Set thresholds at reboot
+### Via sysfs:
 
-To work around the limitation with the open firmware, in which the thresholds are reset when the system
-is shutdown and unplugged, you can set the thresholds via systemd at boot. To do so, create a file called
+Charging thresholds are exposed by the firmware through ACPI, and the `system76_acpi` kernel module makes them available through standard sysfs entries:
+
+- `/sys/class/power_supply/BAT0/charge_control_start_threshold`
+- `/sys/class/power_supply/BAT0/charge_control_end_threshold`
+
+The thresholds can be controlled by reading from and writing to these sysfs files.
+
+### At boot:
+
+To work around the limitation in open firmware causing the thresholds to be reset when the system
+is shut down and unplugged, you can set the thresholds at boot via systemd. To do so, create a file called
 `/etc/systemd/system/charge-thresholds.service` with the following contents:
 
 ```
@@ -70,14 +79,13 @@ ExecStart=system76-power charge-thresholds 40 80
 WantedBy=default.target
 ```
 
-### Via sysfs:
+Then, enable the service using this command:
 
-Charging thresholds are exposed by the firmware through ACPI, and the `system76_acpi` kernel module makes them available through standard sysfs entries:
+```
+sudo systemctl enable charge-thresholds.service
+```
 
-- `/sys/class/power_supply/BAT0/charge_control_start_threshold`
-- `/sys/class/power_supply/BAT0/charge_control_end_threshold`
-
-The thresholds can be controlled by reading from and writing to these sysfs files.
+Finally, start the service using `sudo systemctl start charge-thresholds.service` or reboot to apply the thresholds.
 
 ## Configuring FlexiCharger (proprietary firmware)
 

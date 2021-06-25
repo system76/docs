@@ -68,7 +68,7 @@ Pop!\_OS extracts the files correctly by default (see screenshots below), but ot
 
 ![unzipping](/images/open-firmware-smmstore/unzip-in-progress.png) 
 
-The files pictured (the hash will change based on file and model) below are the two items that should be in the root of the USB drive.
+The highlighted files pictured below (the hash will change based on file and model) are the two items that should be in the root of the USB drive.
 
 ![files-unzipped](/images/open-firmware-smmstore/files-unzipped.png)
 

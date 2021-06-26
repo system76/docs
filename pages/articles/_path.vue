@@ -126,16 +126,18 @@
               <template v-if="article.authors.length > 0">
                 <a
                   :href="article.authors[0].commitUrl"
-                  target="_blank"
                   class="hover:underline focus:underline"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
                 >
                   last edited at <time :datetime="article.updatedAt">{{ updatedAt }}</time>
                 </a>
                 by
                 <a
                   :href="article.authors[0].profileUrl"
-                  target="_blank"
                   class="hover:underline focus:underline"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
                 >
                   @{{ article.authors[0].username }}
                 </a>
@@ -150,8 +152,8 @@
             <a
               :href="`https://github.com/system76/docs/edit/master/content/${article.slug}.md`"
               class="flex items-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500 md:text-lg md:px-3"
-              target="_blank"
               rel="nofollow noopener noreferrer"
+              target="_blank"
             >
               <font-awesome-icon :icon="['fab', 'github']" />
               <span class="inline ml-2">Edit on GitHub</span>

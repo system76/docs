@@ -13,7 +13,7 @@
                   <font-awesome-icon icon="arrow-left" />
                 </nuxt-link>
 
-                <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:font-extralight md:text-3xl">
+                <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:text-3xl">
                   {{ article.title }}
                 </h1>
               </div>

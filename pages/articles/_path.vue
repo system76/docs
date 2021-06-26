@@ -2,15 +2,16 @@
   <main>
     <article>
       <header>
-        <div class="bg-blue-500 text-white">
+        <div class="bg-blue-500 text-blue-900">
           <div class="max-w-7xl mx-auto py-3 px-4">
             <div class="flex items-center justify-between flex-wrap">
               <div class="w-0 flex-1 flex items-center">
                 <nuxt-link
                   to="/"
-                  class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg"
+                  class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-900 md:text-lg"
                 >
                   <font-awesome-icon icon="arrow-left" />
+                  <span class="sr-only">All Articles</span>
                 </nuxt-link>
 
                 <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:text-3xl">
@@ -150,6 +151,7 @@
               :href="`https://github.com/system76/docs/edit/master/content/${article.slug}.md`"
               class="flex items-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500 md:text-lg md:px-3"
               target="_blank"
+              rel="nofollow noopener noreferrer"
             >
               <font-awesome-icon :icon="['fab', 'github']" />
               <span class="inline ml-2">Edit on GitHub</span>

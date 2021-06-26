@@ -169,7 +169,7 @@ module.exports = {
             maxWidth: null,
 
             a: {
-              color: theme('colors.hyperlink')
+              color: theme('colors.orange.700')
             },
 
             h1: {

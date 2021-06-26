@@ -5,8 +5,7 @@
   "scripts": {
     "start": "nuxt dev",
     "build": "nuxt generate --fail-on-error",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
+    "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore ."
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",

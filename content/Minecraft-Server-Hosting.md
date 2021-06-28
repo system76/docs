@@ -265,7 +265,13 @@ WantedBy=multi-user.target
 `sudo systemctl enable minecraft17@survival`
 `nmap -p 25565 localhost`
 
-## Further Reading
+## Port Forwarding
+> ***Note**: Opening ports to the internet makes you more suseptible to networking attacks and vunerabailities and may not be allowed by your Internet Service Provider.* 
+
+To make your Minecraft server available outside of your LAN, you will need to forward the port to your routers.  Each brand, system, and ISP will have a diffrent configuration.  We recommend you reach out to your ISP for assistance with this.  The address you will give your users is your public IP.
+
+
+## Further Reading And Sources
 
 [YouHaveTrouble's MC Server Optimization](https://github.com/YouHaveTrouble/minecraft-optimization)
 [Spigot Server Optimization](https://www.spigotmc.org/threads/guide-server-optimization%E2%9A%A1.283181/?__cf_chl_jschl_tk__=d882805489003f065a99dcd85ed601f21024776c-1623945314-0-ARichCRBAkP6pRCWxZFLlip3a3XQcAWMwbNl-M54GKsEqTiWKuCVGh4gfM3oXTte1vcwIU-I0QhKQla-fRe4E6urB4JweVMEr21RnCaLKw5ffq2tvcntsEQVUiUAnak2yDdxTAEREts1VWfjY43-mTtoSZ5dmKAlxvcUpoPJ7EbR8S0VMX8fWhodhHwe1tWtGgpjAo_4EzfAf3REBgMjbgUGAl7ss3ihyJgsgUM9OP-KlH7DdAi2JLiH2ll7cupUr0HM6gNFmBmzcuPkrif6SWKKs-oU6XZh-_oTbU6wqKl0qA_IcgG2cR1VZwB5lb3RBI3o26mm5vNBEttywNiSTCeUurFPtB6gEIuz8rJHA7LitAcgD9yWXCrPFAsX7414lCESGJG2KSuRce7CxEHfkTRzmzMdxXFYoLjfRdgo1DsLIOBaw4FQukYBlVOa2FFYDqhpR1-5RDfuHtzZlkRtACo)

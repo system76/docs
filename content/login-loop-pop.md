@@ -41,7 +41,7 @@ If entering your decryption passphrase does not unlock your disk, one of two thi
 1. The decryption passphrase is incorrect.
 2. Your keyfile has been corrupted (rare).
 
-![bad-password](static/images/login-loop/bad-password.png)
+![bad-password](/images/login-loop/bad-password.png)
 
 In either case, unless you have set an [alternative decryption key](https://support.system76.com/articles/advanced-luks), the drive will need to be erased and re-imaged to regain acess. This is the cost/benefit of drives secured by encryption. It's important to have current [backups](https://support.system76.com/articles/backup-files) of your files to avoid data-loss.
 
@@ -62,7 +62,7 @@ If you're not able to log in, the reason could be:
 * **Wrong password**: you're notified of this at the graphical login screen.
 * Something else is blocking the login.
 
-The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password-pop/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
+The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 
@@ -184,7 +184,7 @@ sudo apt install --reinstall plymouth gdm3 gnome-shell pop-desktop linux-generic
 
 The command above is one line, and will reinstall plymouth (the graphical encryption screen), gnome display manager (gdm3), gnome-shell, the pop-desktop environment, and the linux-kernel.
 
-Once the reinstallation has finsihed, we'll want to run:
+Once the reinstallation has finished, we'll want to run:
 
 ```bash
 update-initramfs -c -k all

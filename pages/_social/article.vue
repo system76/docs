@@ -2,21 +2,29 @@
   <div>
     <div
       id="image"
-      class="bg-white text-gray-900 border-b-18 border-orange-500 flex flex-col relative"
+      class="bg-white text-gray-900 flex flex-col relative"
     >
-      <div class="flex-auto flex flex-col justify-center px-16 py-12">
-        <h1 class="text-8xl font-bold my-0">
+      <div class="flex-none px-16 pt-12">
+        <h1 class="text-7xl font-bold leading-tight">
           {{ article.title }}
         </h1>
       </div>
 
-      <div class="px-16 pt-4 pb-12">
-        <h2 class="text-3xl text-gray-400 font-normal my-0">
+      <div class="flex-auto px-16 pt-8">
+        <p class="text-4xl text-gray-600 leading-snug line-clamp-3">
+          {{ article.description }}
+        </p>
+      </div>
+
+      <div class="px-16 pt-16 pb-12">
+        <h2 class="text-3xl text-gray-400 font-normal">
           Last Updated {{ updatedAt }}
         </h2>
       </div>
 
-      <div class="h-32 w-32 absolute right-12 bottom-8">
+      <div class="h-8 bg-orange-500 flex-none" />
+
+      <div class="h-32 w-32 absolute right-12 bottom-16">
         <sys-logo />
       </div>
     </div>

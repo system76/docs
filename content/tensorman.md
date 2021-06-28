@@ -91,7 +91,7 @@ tensorman run python -- script.py
 # Default container version with GPU support
 tensorman run --gpu bash
 
-# With GPU, Python3, and Juypyter support
+# With GPU, Python3, and Jupyter support
 tensorman run --gpu --python3 --jupyter bash
 ```
 

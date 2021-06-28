@@ -13,11 +13,11 @@ section: software
 
 # Hosting A Minecraft Server
 
-Minecraft 1.17 dropped on June 8, 2021. In this article, we will be going over how to set up a Minecraft server on your Pop!_OS or Ubuntu install. System76 or Mojang recommends having a 8GB minimum but 16GB is preferred. Any hard drive over 128GB will work for a basic minecraft server, a drive of 1TB to 2TB is recommended for having backups.  This article will use mostly Terminal commands, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).
+Minecraft 1.17 dropped on June 8, 2021. In this article, we will be going over how to set up a Minecraft server on your Pop!_OS or Ubuntu install. System76 or Mojang recommends having an 8GB minimum but 16GB is preferred. Any hard drive over 128GB will work for a basic Minecraft server, a drive of 1TB to 2TB is recommended for having backups.  This article will use mostly Terminal commands, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).
 
 ## Updating and Installing Software Needed
 
-To install the Minecraft server we will need to install Java (listed as default-jdk), wget, screen, and nmap. Java is what Minecraft runs in - we are also marking it as held so no future updates are applied (some java updates can break the server). wget will allow us to download the Minecrafter Server from a URL hosted by Mojang.  Downloading the Minecraft Server Jar we put the file in the directory directly instead of using a web browser. Screen will allow us to run commands and the server in an environment we do not need to have open or be connected to - think of it as a virtual terminal instance you can connect and disconnect from. nmap is a network scanner that we will use for testing and network configuration.
+To install the Minecraft server we will need to install Java (listed as default-JDK), wget, screen, and nmap. Java is what Minecraft runs in - we are also marking it as held so no future updates are applied (some java updates can break the server). wget will allow us to download the Minecrafter Server from a URL hosted by Mojang.  Downloading the Minecraft Server Jar we put the file in the directory directly instead of using a web browser. Screen will allow us to run commands and the server in an environment we do not need to have open or be connected to - think of it as a virtual terminal instance you can connect and disconnect from. nmap is a network scanner that we will use for testing and network configuration.
 
 To open a terminal window go to the activities button in the upper left corner of the screen and click it then use the search function to search for Terminal.  Click to open it and then run the following commands to update your system:
 
@@ -33,7 +33,7 @@ sudo apt-mark hold default-jdk
 
 > ***NOTE:** not all these commands will produce output.*
 
-## Make The Mincraft Group & User & Minecraft Direcory
+## Make The Minecraft Group & User & Minecraft Directory
 The Minecraft server will make a lot of files for the world, settings, plugins, and other resources.  The following commands make the directories for the servers.  We will want to make a group and a user for the server to operate in and use.  We will need to then make a directory file to live in and make sure that the new server user has ownership of the directory.
 
 ```bash
@@ -44,7 +44,7 @@ sudo mkdir /mchost/v-1-17/live
 sudo mkdir /mchost/v-1-17/backups
 sudo chown -Rv mchost /mchost/~
 ```
-## Installing Minecaft Server
+## Installing Minecraft Server
 
 ### Installing Mojan's Minecraft Server Jar
 
@@ -82,7 +82,7 @@ The Lower Bound: -Xms4G
 The Upper Bound: -Xmx4G
 ```
 
-These values can be changed up to around 10GB if you need to go over 10GB.  This rarely needs to be done on smaller servers unless you have complex data packs, a large world file, or a lots of players (around 100+).  If you need these values to be higher please change the G1 Max and New Size Percent to the following:
+These values can be changed up to around 10GB if you need to go over 10GB.  This rarely needs to be done on smaller servers unless you have complex data packs, a large world file, or a lot of players (around 100+).  If you need these values to be higher please change the G1 Max and New Size Percent to the following:
 
 ```bash
 -XX:G1MaxNewSizePercent=60
@@ -129,13 +129,13 @@ Default: `1`
 Optimized: `3`
 
 #### `max-entity-collisions`
-Mob farms and player traps cause collitions, this value will effect how often and how much entities collide.  This has a moderate effect on performance. 
+Mob farms and player traps cause collisions, this value will affect how often and how much entities collide.  This has a moderate effect on performance. 
 
 Default: `8`
 Optimized: `2`
 
 #### `grass-spread-tick-rate`
-Typically I keep this default for the server till Silk Touch becomes more common and the economy grows, as it can be frustrating to wait 4 times longers for the grass to spread.  This can have a moderate effect on perforance.
+Typically I keep this default for the server till Silk Touch becomes more common and the economy grows, as it can be frustrating to wait 4 times longers for the grass to spread.  This can have a moderate effect on performance.
 
 Default: `1`
 Optimized: `4`
@@ -147,7 +147,7 @@ Default: `soft: 32, hard: 128`
 Optimized: `soft: 28, hard: 96`
 
 #### `hopper.disable-move-event`
-Hoppers are great for item transport but they can cause lag and this otimisation will grealy redusing the `InventoryMoveItemEvent`s that occure on hoppers.
+Hoppers are great for item transport but they can cause lag and this optimisation will greatly reducing the `InventoryMoveItemEvent`s that occurs on hoppers.
 
 Default: `false`
 Optimized: `true`
@@ -162,43 +162,43 @@ Default: `-1`
 Optimized: `60`
 
 #### `creative-arrow-despawn-rate`
-This value changes how long none retrivibale arrows stay around.  Infinity bows and bows used in creative mode are the only ones effected by this. 
+This value changes how long none retrievable arrows stay around.  Infinity bows and bows used in creative mode are the only ones affected by this. 
 
 Default: `-1`
 Optimized: `60`
 
 #### `prevent-moving-into-unloaded-chunks`
-When lag hits your server or a user is pushing the boundries of rendered chunks, a player can cause issues.  This will prevent them from moving into a chunk that is unloaded and will teleport them instead to a nearby location that is safe.  This settings has a moderate effect on performance.
+When lag hits your server or a user is pushing the boundaries of rendered chunks, a player can cause issues.  This will prevent them from moving into a chunk that is unloaded and will teleport them instead to a nearby safe location.  This setting has a moderate effect on performance.
 
 Default: `false`
 Optimized: `true`
 
-> ***NOTE:** If you are using a world without a world boarder or pre-generation then this setting is critical.
+> ***NOTE:** If you are using a world without a world border or pre-generation then this setting is critical.
 
 #### `use-faster-eigencraft-redstone`
-Eigencraft Redstone is a redstone implitation that takes out a lot of the reduentent logic and greatly impacts the effect.  It can boost redstone performance by %1000 and does not break about %95 to %99 of the vinilla device.
+Eigencraft Redstone is a Redstone implication that takes out a lot of the redundant logic and greatly impacts the effect.  It can boost Redstone performance by %1000 and does not break about %95 to %99 of the vanilla device.
 
 Default: `false`
 Optimized: `true`
 
-> ***NOTE**: If you are using a diffrent redstone algorithm do not change this setting, it will break or crash minecraft.
+> ***NOTE**: If you are using a diffrent Redstone algorithm do not change this setting, it will break or crash Minecraft.
 
 #### `armor-stands-tick`
-Some entities require ticking since they are interactive.  Unticked armor stands will not get pushed by water, if you plan to use a contraption that uses this leave it set to true.  This has minor to major performance improvement.
+Some entities require ticking since they are interactive.  Unticked armour stands will not get pushed by water, if you plan to use a contraption that uses this leave it set to true.  This has minor to major performance improvement.
 
 Default: `true`
 Optimized: `false`
 
-> ***Note:** Paper offests item frame ticking instead of doing them all at once to prevent lag spikes.  This helps with people with map rooms or people who use them as wallpaper or custom paintings.
+> ***Note:** Paper offers item frame ticking instead of doing them all at once to prevent lag spikes.  This helps with people with map rooms or people who use them as wallpaper or custom paintings.
 
 #### `per-player-mob-spawns`
-Changing this will switch the spawning behavior from Bukkit's random algorithm to sigleplayer's spawning behavior.  This will prevent things like massive farms from effecting the whole server's spawn rate.
+Changing this will switch the spawning behaviour from Bukkit's random algorithm to single-player spawning behaviour.  This will prevent things like massive farms from affecting the whole server's spawn rate.
 
 Default: `false`
 Optimized: `true`
 
 #### `alt-item-despawn-rate`
-This enables items to have diffrent despawn rates that you can set. Some items do not need to be around do long when they are common.
+This enables items to have diffrent despawn rates that you can set. Some items do not need to around do long when they are common.
 
 Default: `false`
 Optimized: `true`
@@ -213,13 +213,13 @@ Code (Text):
 ```
 
 #### `no-tick-view-distance`
-This should be set to your view distence.  If the view distence is bellow 4 you should set it to 5 to impove gameplay exprince.
+This should be set to your view distance.  If the view distance is below 4 you should set it to 5 to improve the gameplay experience.
 
 Default: `-1`
 Optimized: # > view-distance setting
 
 #### `anti-xray.enabled`
-This will cause some perofmance loss but Paper has a solid and effecient anti xray cheat system.  This will prevent players from using xray mods or cheats.
+This will cause some performance loss but Paper has a solid and efficient anti-x-ray cheat system.  This will prevent players from using x-ray mods or cheats.
 
 Default: `false`
 Optimized: `true`
@@ -266,7 +266,7 @@ WantedBy=multi-user.target
 `nmap -p 25565 localhost`
 
 ## Port Forwarding
-> ***Note**: Opening ports to the internet makes you more suseptible to networking attacks and vunerabailities and may not be allowed by your Internet Service Provider.* 
+> ***Note**: Opening ports to the internet makes you more susceptible to networking attacks and vulnerabilities and may not be allowed by your Internet Service Provider.* 
 
 To make your Minecraft server available outside of your LAN, you will need to forward the port to your routers.  Each brand, system, and ISP will have a diffrent configuration.  We recommend you reach out to your ISP for assistance with this.  The address you will give your users is your public IP.
 

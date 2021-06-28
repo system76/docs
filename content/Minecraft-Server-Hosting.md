@@ -225,11 +225,13 @@ Default: `false`
 Optimized: `true`
 
 ## Startup
+For the server we want to make it a service and have it starts with the system and can log events.  This is not mandatory but can be nice if you want to make sure it is running via serice commands.
 
+First we will want to make the service file.
 ```bash
 sudo nano /etc/systemd/system/minecraft17@.service`
 ```
-
+This is the contents of the service we are making, you will want to also copyo ver your server startup file.
 ```
 [Unit]
 Description=Minecraft Server: %i
@@ -266,6 +268,7 @@ WantedBy=multi-user.target
 `nmap -p 25565 localhost`
 
 ## Port Forwarding
+
 > ***Note**: Opening ports to the internet makes you more susceptible to networking attacks and vulnerabilities and may not be allowed by your Internet Service Provider.* 
 
 To make your Minecraft server available outside of your LAN, you will need to forward the port to your routers.  Each brand, system, and ISP will have a diffrent configuration.  We recommend you reach out to your ISP for assistance with this.  The address you will give your users is your public IP.

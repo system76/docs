@@ -19,8 +19,6 @@ tableOfContents: true
 
 # Diagnose Hardware Failures
 
-## If the System Boots
-
 > **NOTE**: If the System will not power on, skip to the end of this article.
 
 If the system boots, but takes a long time to boot, crashes, or reports other random, hard to track down errors, then the individual hardware components can be checked for failure.
@@ -165,17 +163,12 @@ journalctl -f -u rasdaemon
 
 If there is no log or the log is empty, then the crash isn't related to a hardware failure.  The log will stay empty until a MCE happens.  Take a look for "uncorrected" errors, as most "corrected" errors can be ignored.  If there are a consistent number of "uncorrected" errors, the hardware should be examined.
 
-### Won't Power On
+## Won't Power On
 
-> **NOTE:** We have specific articles to reference for Laptops and Desktops that won't power on.
+> **NOTE:** If the system fails to power on, please use the following articles to troubleshoot: 
 ![Desktops](https://support.system76.com/articles/power-on-failure-desktop) 
 ![Laptops](https://support.system76.com/articles/power-on-failure-laptop) 
 
-If a computer won't turn on, this could be any number of component failures.  The only way to know for sure which one has failed, is to test the system without anything attached.  We need to disconnect anything that can be removed.  This includes: the hard drives, Wifi card, RAM, and video cards (desktop, with on-board graphics).
-
-The only thing the system needs to boot is one stick of RAM in slot 0. Try different RAM sticks in slot 0 if it doesn't boot (to test for failed RAM).  Also, remove the CMOS battery and disconnect the main battery (laptops), and any AC input, for one minute.  We don't recommend removing the CPU as a test. The following key combo may also be handled at boot time to reset the CMOS as well <kbd>Fn</kbd>+<kbd>D</kbd>.
-
-If the system will boot with everything removed, then add components back one by one and see which one is causing the problem.  If everything works fine after removing and replacing all of the hardware, a loose connection is most likely the culprit.  If the system won't boot with everything disconnected, then the motherboard has likely failed, and needs replacing.
 
 ## Support
 

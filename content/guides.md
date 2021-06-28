@@ -13,7 +13,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: learn-about-your-computer
+section: about-your-computer
 ---
 
 To see ports, keyboard layouts, function keys, and product quickstart guides, find your model below.

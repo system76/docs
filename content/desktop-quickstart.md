@@ -14,7 +14,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: learn-about-your-computer
+section: about-your-computer
 ---
 
 # Desktop Quickstart

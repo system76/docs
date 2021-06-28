@@ -12,7 +12,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: learn-about-your-os
+section: about-your-os
 ---
 
 # Pop!_OS and Ubuntu: What’s the difference?

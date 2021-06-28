@@ -17,8 +17,6 @@ section: hardware-troubleshooting
 tableOfContents: true
 ---
 
-# Diagnose Hardware Failures
-
 > **NOTE**: If the System will not power on, skip to the end of this article.
 
 If the system boots, but takes a long time to boot, crashes, or reports other random, hard to track down errors, then the individual hardware components can be checked for failure.
@@ -168,10 +166,9 @@ If there is no log or the log is empty, then the crash isn't related to a hardwa
 
 ## Won't Power On
 
-> **NOTE:** If the system fails to power on, please use the following articles to troubleshoot: 
-![Desktops](https://support.system76.com/articles/power-on-failure-desktop) 
-![Laptops](https://support.system76.com/articles/power-on-failure-laptop) 
-
+> **NOTE:** If the system fails to power on, please use the following articles to troubleshoot:
+![Desktops](https://support.system76.com/articles/power-on-failure-desktop)
+![Laptops](https://support.system76.com/articles/power-on-failure-laptop)
 
 ## Support
 

@@ -41,7 +41,7 @@
         </nuxt-link>
       </div>
 
-      <h2 class="text-3xl mt-7">
+      <h2 class="text-3xl mt-7 font-bold">
         Support Tickets
       </h2>
 

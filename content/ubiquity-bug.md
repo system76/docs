@@ -28,4 +28,4 @@ There is a bug report filed here:
 
 [Bug 1249295](https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1249295)
 
-Any additional people that mark <span style="color: #093;">Does this bug affect you?</span> on that bug report will help gain additional traction from developers to get this issue resolved.
+Any additional people that mark "Does this bug affect you?" on that bug report will help gain additional traction from developers to get this issue resolved.

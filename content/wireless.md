@@ -15,15 +15,13 @@ hidden: false
 section: network-troubleshooting
 ---
 
-# Wireless Troubleshooting
-
 WiFi issues are influenced by many different factors, including:
 
 - Hardware (WiFi card, access point)
 - Settings at both ends of the connection
 - The local environment
 
-### Basic Troubleshooting
+## Basic Troubleshooting
 
 If you’re having problems, try these steps first:
 
@@ -47,11 +45,11 @@ If the issues started after you applied updates, try running this command to mak
 sudo apt remove backport-iwlwifi-dkms
 ```
 
-### Advanced Troubleshooting
+## Advanced Troubleshooting
 
 If the above steps aren't working, or you would like to fine tune and improve you connection, see the following steps.
 
-#### Regulatory Domain
+### Regulatory Domain
 
 In many cases, it's recommended to explicitly set the WiFi regulatory domain. Check yours with this command:
 
@@ -73,11 +71,11 @@ Change the last line to read:
 
 Save and close the text editor.
 
-#### IPv6
+### IPv6
 
 Unless specifically required, you can set IPv6 to Ignore in Network Manager. Go to **System Settings** → **Network** and click the orange arrow next to your network, then click **Settings** → **Network** → **Ethernet** → **Gear Icon** → **IPv6 Settings** then change **Automatic** to **Disable**.
 
-#### Antenna Aggregation
+### Antenna Aggregation
 
 If these changes do not help, you can try enabling antenna aggregation:
 
@@ -96,17 +94,17 @@ Then, add this line to the bottom (effective upon reboot):
 
 > options iwlwifi 11n_disable=8  
 
-#### N Mode
+### N Mode
 
 You can try disabling N mode completely by using `11n_disable=1` in the previous settings. N mode can be more unstable than G mode, and the speed gained isn't typically useful as total bandwidth available in/out from/to the Internet is less than N speeds.
 
-#### Bluetooth Coexistence
+### Bluetooth Coexistence
 
 If you have trouble with a Bluetooth headset and keeping a steady downlink speed, try disabling Bluetooth coexistence in the configuration file above:
 
 > options iwlwifi bt_coex_active=0  
 
-#### Power Management
+### Power Management
 
 Another way to help with Wifi issues is to turn off power management for the hardware. To do so, edit the configuration file with this command:
 

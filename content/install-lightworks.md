@@ -15,8 +15,6 @@ hidden: false
 section: software
 ---
 
-# Install Lightworks on Pop!\_OS
-
 Lightworks is a powerful video-editing tool used by industry professionals. This tutorial provides steps on installing Lightworks in Pop!\_OS.
 
 **NOTE:** The stable version of Lightworks will not install correctly on current OS versions because it requires an obsolete ```libssl``` package. Instead, select the Beta download from the Linux download page [here](https://www.lwks.com/get-linux).
@@ -61,7 +59,7 @@ Now, the Lightworks launcher will appear in the Activities menu.
 
 ![Eddy Launces](/images/lightworks/lightworks-installed.png)
 
-# Terminal Instructions
+### Terminal Instructions
 
 Once the .deb file is downloaded, instead of using Eddy, it can also be installed from a terminal by running the following commands:
 

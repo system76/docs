@@ -20,7 +20,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 <!-- To find information on a product you ordered, log into [<i class="fa fa-user"></i> My Account](https://system76.com/my-account/orders) and select the **quickstart guide** button beneath your product. THIS BUTTON WILL BE CHANGING -->
 
-## Recent Models:
+## Recent Models
 
 ### Laptops
 
@@ -31,9 +31,9 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) | [thelio-r2](/images/guides/thelio-r2.png) |
 | [darp7](https://tech-docs.system76.com/models/darp7/README.html) | [thelio-major-r2](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) |
 | [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) | [meer5](https://tech-docs.system76.com/models/meer5/README.html) |
-| [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) | []() |
-| [serw12](https://tech-docs.system76.com/models/serw12/README.html) | []() |
-| [bown14](https://tech-docs.system76.com/models/bonw14/README.html) | []() |
+| [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) | |
+| [serw12](https://tech-docs.system76.com/models/serw12/README.html) | |
+| [bown14](https://tech-docs.system76.com/models/bonw14/README.html) | |
 
 ### Desktops
 
@@ -57,9 +57,9 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | ---------------|
 | [thelio-massive-b1](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
 
-## All Models:
+## All Models
 
-### Laptops
+### Older Laptops
 
 | Adder WS |
 | ---------|
@@ -113,7 +113,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | [serw10-17](/images/guides/serw10-17.png) | [serw11-15](/images/guides/serw11-15.png) | [serw11-17](/images/guides/serw11-17.png) |
 | [serw12](https://tech-docs.system76.com/models/serw12/README.html)
 
-### Desktops
+### Older Desktops
 
 | Leopard |
 | --------|
@@ -162,6 +162,6 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | ---------------|
 | [thelio-massive-b1](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
 
-### More information
+## More information
 
 If you are looking for even more information about your system you can find the tech-docs for your product [here.](/articles/service-manuals/)

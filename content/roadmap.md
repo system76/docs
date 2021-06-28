@@ -14,8 +14,6 @@ hidden: false
 section: pop
 ---
 
-# Pop!_OS Roadmap
-
 This roadmap details features which are currently-planned to be implemented in Pop!_OS, as well
 as major features which were added to Pop!_OS during previous release cycles. Only features
 specific to Pop!_OS will be listed here. To see how features are chosen, see the
@@ -215,7 +213,6 @@ New Rust crates that we've developed and released
 * Upgraded from `dbus-rs` 0.6 to 0.7 (adds support for async I/O)
 * Support for hybrid graphics switching, to keep the GPU powered off until an application requests it
 
-
 ### Flatpak Support
 
 With the open source ecosystem increasingly relying upon Flatpak as a distribution model by application developers on the Linux desktop, it is important to bring that support to Pop!_OS out of the box. This entails:
@@ -360,17 +357,17 @@ installations, integration of the Pop!\_Shop, the addition of a multiple USB fil
 
 ### HiDPI Displays
 
-* Package the system76-driver HiDPI daemon separately for Pop!_OS (https://github.com/pop-os/pop/issues/98)
-* Create a setting toggle in GNOME Settings Display (https://github.com/pop-os/pop/issues/97)
-* Correct the projector shortcut issue (https://github.com/pop-os/pop/issues/96)
+* Package the system76-driver HiDPI daemon separately for Pop!_OS (<https://github.com/pop-os/pop/issues/98>)
+* Create a setting toggle in GNOME Settings Display (<https://github.com/pop-os/pop/issues/97>)
+* Correct the projector shortcut issue (<https://github.com/pop-os/pop/issues/96>)
 
 ### Installation
 
 Develop a simple and fast installer that introduces users to Pop!_OS and enables System76 to ship full disk encryption on hardware out of the box.
 
-* Installer backend (https://github.com/pop-os/distinst)
-* Installer frontend (https://github.com/pop-os/installer)
-* GNOME Intial Setup (https://github.com/pop-os/gnome-initial-setup)
+* Installer backend (<https://github.com/pop-os/distinst>)
+* Installer frontend (<https://github.com/pop-os/installer>)
+* GNOME Intial Setup (<https://github.com/pop-os/gnome-initial-setup>)
 * On detection of system76 hardware, the `system76-driver` package is installed.
 * With the NVIDIA ISO on non-NVIDIA hardware, the nvidia drivers are removed.
 
@@ -380,7 +377,7 @@ Develop a simple and fast installer that introduces users to Pop!_OS and enables
 * Setup a server for curated apps
 * Determine best-of-class applications and tools for each category
 * Button to launch applications after installing
-* Fix issue - applications are listed in reverse order (https://github.com/pop-os/shop/issues/7)
+* Fix issue - applications are listed in reverse order (<https://github.com/pop-os/shop/issues/7>)
 
 ### System76 Power
 

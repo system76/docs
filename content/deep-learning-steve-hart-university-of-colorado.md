@@ -30,7 +30,7 @@ reliable hardware.
 > “I provide complete on-site IT support for all Faculty within CCAR,
 > including Desktop support, Server support, data storage, and any other IT
 > services,” Steve explains as he introduces himself.
-
+>
 > “This includes hardware purchasing and configuration to fit the specific
 > research needs of the user in question.”
 

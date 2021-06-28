@@ -32,7 +32,6 @@ In the GNOME Tweak Tool, navigate to the "Top Bar" section, and toggle the "Batt
 
 ![Top Bar Settings](/images/show-battery-percentage/top-bar.png)
 
-
 You should now see your battery percentage in the top bar.
 
 ![Percentage](/images/show-battery-percentage/battery-percentage.png)

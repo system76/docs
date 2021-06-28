@@ -279,16 +279,16 @@ export default {
         title: 'Switching To Linux',
         section: 'switching'
       }, {
-        title: 'Learn About Your Computer',
-        section: 'learn-about-your-computer'
+        title: 'About Your Computer',
+        section: 'about-your-computer'
       }, {
-        title: 'Learn About Your Operating System',
-        section: 'learn-about-your-os'
+        title: 'About Your Operating System',
+        section: 'about-your-os'
       }, {
-        title: 'Learn About Pop!_OS',
+        title: 'About Pop!_OS',
         section: 'pop'
       }, {
-        title: 'Learn About Ubuntu',
+        title: 'About Ubuntu',
         section: 'ubuntu'
       }, {
         title: 'Media',

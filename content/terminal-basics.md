@@ -13,7 +13,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: learn-about-your-os
+section: about-your-os
 ---
 
 # Linux Terminal Basics

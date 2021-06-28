@@ -244,6 +244,35 @@ export default {
       title: 'Getting Help',
       section: 'getting-help'
     }, {
+      title: 'Troubleshoot',
+      section: 'troubleshoot',
+      listings: [{
+        title: 'Software Troubleshooting',
+        section: 'software-troubleshooting'
+      }, {
+        title: 'Network Troubleshooting',
+        section: 'network-troubleshooting'
+      }, {
+        title: 'Hardware Troubleshooting',
+        section: 'hardware-troubleshooting'
+      }, {
+        title: 'Repairs and Returns',
+        section: 'repairs-returns'
+      }]
+    }, {
+      title: 'Tune',
+      section: 'tune',
+      listings: [{
+        title: 'Software',
+        section: 'software'
+      }, {
+        title: 'Hardware',
+        section: 'hardware'
+      }, {
+        title: 'Windows',
+        section: 'windows'
+      }]
+    }, {
       title: 'Learn',
       section: 'learn',
       listings: [{
@@ -267,35 +296,6 @@ export default {
       }, {
         title: 'General Hardware Information',
         section: 'general-hardware-info'
-      }]
-    }, {
-      title: 'Tune',
-      section: 'tune',
-      listings: [{
-        title: 'Software',
-        section: 'software'
-      }, {
-        title: 'Hardware',
-        section: 'hardware'
-      }, {
-        title: 'Windows',
-        section: 'windows'
-      }]
-    }, {
-      title: 'Troubleshoot',
-      section: 'troubleshoot',
-      listings: [{
-        title: 'Software Troubleshooting',
-        section: 'software-troubleshooting'
-      }, {
-        title: 'Network Troubleshooting',
-        section: 'network-troubleshooting'
-      }, {
-        title: 'Hardware Troubleshooting',
-        section: 'hardware-troubleshooting'
-      }, {
-        title: 'Repairs and Returns',
-        section: 'repairs-returns'
       }]
     }, {
       title: 'Community Articles',

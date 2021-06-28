@@ -297,7 +297,7 @@ The output above shows the resulting IPv4 addresses as well as IPv6.
 ## Layer 2: The data link layer
 
 The data link layer is responsible for **local** network connectivity; the communication of frames between hosts on the same Layer 2 (commonly called a local area network, or LAN).
-The most relevant Layer 2 protocol for most sysadmins is the [Address Resolution Protocol (ARP)] (https://en.wikipedia.org/wiki/Address_Resolution_Protocol), which maps Layer 3 IP addresses to Layer 2 Ethernet MAC addresses. When a host tries to contact another host on its local network (such as the default gateway, e.g. the router), it will more than likely have the other host's IP address, but it doesn't know the other host's MAC address. ARP resolves this issue and figures out the MAC address for us.
+The most relevant Layer 2 protocol for most sysadmins is the [Address Resolution Protocol (ARP)](https://en.wikipedia.org/wiki/Address_Resolution_Protocol), which maps Layer 3 IP addresses to Layer 2 Ethernet MAC addresses. When a host tries to contact another host on its local network (such as the default gateway, e.g. the router), it will more than likely have the other host's IP address, but it doesn't know the other host's MAC address. ARP resolves this issue and figures out the MAC address for us.
 
 A common problem you might encounter is an ARP entry that won't populate, particularly for your host's default gateway. If your localhost can't successfully resolve its gateway's Layer 2 MAC address, then it won't be able to send any traffic to remote networks. This problem might be caused by having the wrong IP address configured for the gateway, or it may be another issue, such as a mis-configured switch port.
 

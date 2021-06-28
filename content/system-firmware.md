@@ -121,8 +121,8 @@ Navigate to the **Exit** section in the left sidebar, then select **Exit Saving 
 
 If your system is running another Linux-based OS installed with an EFI System Partition (ESP), then you can update your firmware using a live disk of Pop!\_OS. First, create a live disk using one of the following articles:
 
-- [Live Disk creation on Pop!_OS](/articles/pop-live-disk/)
-- [Live Disk creation on Other OS's](/articles/live-disk/)
+* [Live Disk creation on Pop!_OS](/articles/pop-live-disk/)
+* [Live Disk creation on Other OS's](/articles/live-disk/)
 
 After creating the live disk, [access the boot menu](/articles/boot-menu/) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
 
@@ -132,7 +132,7 @@ lsblk
 
 Identify the EFI partition in the list. (The EFI partition is usually the first partition on one of the drives, and is around 512MB in size or slightly smaller.) Once you have identified the EFI partition, use the following commands to set up the system for a firmware update:
 
-#### For NVMe Drives:
+#### For NVMe Drives
 
 ```bash
 sudo apt install system76-driver
@@ -143,7 +143,7 @@ gnome-control-center firmware
 
 Where `/dev/nvme0n1p1` is the EFI system partition.
 
-#### For SATA Drives:
+#### For SATA Drives
 
 ```bash
 sudo apt install system76-driver
@@ -161,10 +161,6 @@ If you’re receiving the firmware update notification after a firmware update, 
 Where `/dev/sda1` is the EFI system partition.
 
 After the System76 Driver is installed and the EFI partition has been mounted using the above commands, you can use the above instructions to [update the firmware](#starting-the-update-gui) normally.
-
-### Firmware Notifications for Laptops
-
-If you’re receiving the firmware update notification but there are no updates available, then your system’s Intel ME may be turned on. Follow the above instructions to [disable the ME](#disabling-the-me).
 
 ### Switching Between Proprietary Firmware and System76 Open Firmware
 

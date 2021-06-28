@@ -17,8 +17,6 @@ hidden: false
 section: software
 ---
 
-# Pop!_OS Customization
-
 The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 
 To install a customization, simply head to [extensions.gnome.org](https://extensions.gnome.org) to install, remove, and configure currently installed customizations.  A web browser plugin is needed to interact with the site, and it will prompt for installation if needed.  Remember to refresh the page after the plugin is installed.
@@ -27,7 +25,7 @@ We will share some of the more popular extensions, but there are many more to ch
 
 ---
 
-### User Themes
+## User Themes
 
 [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
@@ -35,7 +33,7 @@ This extension allows for the desktop to be themed in further ways than default.
 
 ---
 
-### Dash to Dock
+## Dash to Dock
 
 [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
@@ -45,7 +43,7 @@ This extension brings a launcher similar to the Unity launcher on the left side,
 
 ---
 
-### Backslide
+## Backslide
 
 [Backslide](https://extensions.gnome.org/extension/543/backslide/)
 
@@ -55,7 +53,7 @@ This extension is a wallpaper slideshow for your desktop.  After choosing a fold
 
 ---
 
-### Window List
+## Window List
 
 [Window List](https://extensions.gnome.org/extension/602/window-list/)
 
@@ -65,7 +63,7 @@ This extension adds a window list to the bottom of the monitors.  This shows wha
 
 ---
 
-### Gnomenu
+## Gnomenu
 
 [Gnomenu](https://extensions.gnome.org/extension/608/gnomenu/)
 
@@ -75,7 +73,7 @@ This extension adds a traditionally styled, full featured menu to GNOME.  This m
 
 ---
 
-### Appindicator Support and TopIcons Plus
+## Appindicator Support and TopIcons Plus
 
 [Appindicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)  
 [Top Icons](https://extensions.gnome.org/extension/1031/topicons/)  
@@ -88,7 +86,7 @@ See [blogs.gnome.org](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-g
 
 ---
 
-### Internet Radio
+## Internet Radio
 
 [Internet Radio](https://extensions.gnome.org/extension/836/internet-radio/)
 
@@ -98,7 +96,7 @@ Internet Radio adds a quick menu integration to play various radios stations fou
 
 ---
 
-### Sound Output Device Chooser
+## Sound Output Device Chooser
 
 [Sound Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
@@ -108,7 +106,7 @@ The Sound Output Chooser adds a quick change option to the system menu in the to
 
 ---
 
-### CPU Power Manager
+## CPU Power Manager
 
 [CPU Power Manager](https://extensions.gnome.org/extension/945/cpu-power-manager/)
 
@@ -118,7 +116,7 @@ CPU power meter allows for quick switching of various CPU frequency settings.
 
 ---
 
-### Extension Update Notifier
+## Extension Update Notifier
 
 [Extension Update Notifier](https://extensions.gnome.org/extension/1166/extension-update-notifier/)
 
@@ -126,7 +124,7 @@ This extension will check the various installed extensions and present a notific
 
 ---
 
-### Lock Keys
+## Lock Keys
 
 [Lock keys](https://extensions.gnome.org/extension/36/lock-keys/)
 

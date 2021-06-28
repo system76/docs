@@ -30,6 +30,7 @@ sudo apt install python3-numba
 ```
 
 ### Environmental Variable setup
+
 To make changes on the system level, add the below in  /etc/environment .
 To make changes on user level (assuming you have the default bash shell), add in ~/.bashrc.
 Note the system level approach is not dependendent on your choice of shell.

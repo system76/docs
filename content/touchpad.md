@@ -17,8 +17,6 @@ hidden: false
 section: hardware
 ---
 
-# Touchpad (Configure or Disable)
-
 Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.
 
 To configure your touchpad, press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> then type <u>Mouse & Touchpad</u> and click on the result. The touchpad settings are under the **Touchpad** tab.

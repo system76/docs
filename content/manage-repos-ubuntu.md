@@ -15,7 +15,7 @@ hidden: false
 section: software
 ---
 
-### Accessing Software & Updates
+## Accessing Software & Updates
 
 Ubuntu's tool for adding, removing and editing repositories is called <u>Software & Updates</u>.
 

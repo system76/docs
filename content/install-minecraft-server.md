@@ -17,17 +17,15 @@ hidden: false
 section: community
 ---
 
-# Install Minecraft Server
-
 With no fuss with specific desktop environments and stuff, Installing a Minecraft Server is an easy task on the command line. The hard part is what you will build.
 
 Make sure you have a powerful server machine above 3.7Ghz and 8G of RAM.
 
-### Install Java + Screen
+## Install Java + Screen
 
 For this Tutorial, We will be using openjdk and a command line window separator called screen.
 
-#### Fedora / RHEL / CentOS
+### Fedora / RHEL / CentOS
 
 To install OpenJDK:  
 
@@ -35,7 +33,7 @@ To install OpenJDK:
 sudo yum install java-1.8.0-openjdk screen
 ```
 
-#### Debian/Ubuntu
+### Debian/Ubuntu
 
 First, update your apt repo package list, then get openjdk8.
 
@@ -44,13 +42,13 @@ sudo apt-get update
 sudo apt-get install openjdk-7-jre screen
 ```
 
-#### Arch Linux
+### Arch Linux
 
 ```bash
 pacman -S jre8-openjdk screen
 ```
 
-### Installation and Configuration
+## Installation and Configuration
 
 Now let's make a directory, because it's about to get messy.
 

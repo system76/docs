@@ -37,19 +37,19 @@ Next be sure to leave **Open with Eddy (default)** selected so that the next win
 
 Now click the **Install** button to install <u>ProtonVPN</u> using <u>Eddy</u>. Once that is down close the <u>Eddy</u> window.
 
-### Install the package:
+### Install the package
 
 Open a <u>Terminal</u> window to install the actual package as the .deb file that we installed added the repository so that our system knows where to find the real <u>ProtonVPN</u> package.
 
-### Pop!_OS
+On **Pop!_OS**:
 
 Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
-### Ubuntu
+On **Ubuntu**:
 
 Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
-Next enter the following commands followed by <kbd>Enter</kbd>:
+**Next** enter the following commands followed by <kbd>Enter</kbd>:
 
 ```bash
 sudo apt update
@@ -72,15 +72,17 @@ From this window we can see our Upload and Download speeds including the load th
 
 ## Install a VPN using OpenVPN files
 
-### Pop!_OS
+### Open Terminal
+
+If you are on **Pop!_OS**:
 
 Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
-### Ubuntu
+If you are on **Ubuntu**:
 
 Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
-#### Install Packages
+### Install Packages
 
 Enter the following command followed by <kbd>Enter</kbd>:
 

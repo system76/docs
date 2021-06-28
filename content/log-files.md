@@ -37,7 +37,6 @@ Next click on the button outlined in red in the <u>System76 Driver</u> applicati
 
 ![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
 
-
 #### Manually Generating Log Files
 
 If for some reason you are unable to access the <u>System76 Driver</u> application, you can manually create a set of logs files by running a series of commands via the Terminal application. To do this, click <u>Activities</u> in the top left of your system, search for <u>Terminal</u>, then open the application that appears.

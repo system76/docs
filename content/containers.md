@@ -16,11 +16,9 @@ hidden: false
 section: software
 ---
 
-# Containers on Linux
-
 Sometimes an older version of a library or libraries for an application is needed for development. It is faster and easier to use LXC/LXD to setup a Container of that release and work in that Container.
 
-### Software
+## Software
 
 First open a terminal like so:
 
@@ -34,7 +32,7 @@ Install the software with this command in the terminal.
 sudo apt install lxd lxd-client
 ```
 
-### Setup
+## Setup
 
 Tell LXD what storage and network is needed with this command:
 
@@ -42,7 +40,7 @@ Tell LXD what storage and network is needed with this command:
 sudo lxd init
 ```
 
-### Create a container
+## Create a container
 
 Now create our first container with this command:
 
@@ -70,7 +68,7 @@ Or the container can be deleted:
 lxc delete first
 ```
 
-### Enter the container
+## Enter the container
 
 Enter the container with this command:
 
@@ -84,7 +82,7 @@ Or just one command can be issued without entering the container:
 lxc exec first -- apt update
 ```
 
-### Sharing files
+## Sharing files
 
 For pushing a file to the container:
 

@@ -1,0 +1,16 @@
+{
+  "default": true,
+
+  "MD013": false,
+
+  "MD033": {
+    "allowed_elements": [
+      "font-awesome-icon",
+      "kbd",
+      "sup",
+      "u"
+    ]
+  },
+
+  "MD040": false
+}

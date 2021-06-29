@@ -1,5 +1,4 @@
 ---
-layout: article
 title: System76 Server Setup
 description: >
   Instructions on setting up a System76 server, including initial login credentials.
@@ -9,13 +8,15 @@ keywords:
   - initial
   - setup
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
-redirect_from:
-  - /serversetup
-  - /serverSetup
 section: learn-about-your-computer
 
+redirect_from:
+  - /serversetup
 ---
 
 **Initial Server Settings** | **Value**
@@ -138,17 +139,17 @@ Example `/etc/network/interfaces` file:
 > \# Primary Network Interface  
 > auto eth0  
 > iface eth0 inet static  
->   address 10.13.15.10  
->   netmask 255.255.255.0  
->   gateway 10.13.15.1  
->   dns-nameservers 8.8.8.8 8.8.4.4  
+> address 10.13.15.10  
+> netmask 255.255.255.0  
+> gateway 10.13.15.1  
+> dns-nameservers 8.8.8.8 8.8.4.4  
 >
 > auto eth1  
 > iface eth1 inet static  
->   address 10.13.15.11  
->   netmask 255.255.255.0  
->   gateway 10.13.15.1  
->   dns-nameservers 8.8.8.8 8.8.4.4  
+> address 10.13.15.11  
+> netmask 255.255.255.0  
+> gateway 10.13.15.1  
+> dns-nameservers 8.8.8.8 8.8.4.4  
 
 ---
 

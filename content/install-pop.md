@@ -1,6 +1,5 @@
 ---
-layout: article
-title: Install Pop!_OS On Your Computer
+title: Pop!_OS (Install)
 description: >
   Full instructions on installing Pop!_OS your computer.
 keywords:
@@ -12,13 +11,13 @@ keywords:
   - system76-driver
   - system76-driver-nvidia
   - Release
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: pop
-
 ---
-
-# Pop!_OS (Install)
 
 The following guide describes how to download the Pop!\_OS.iso image, write it to a flash drive, and install it on the hardware of your choice.
 
@@ -79,7 +78,6 @@ Now Pop!\_OS will begin installing!
 Pop!\_OS has been successfully installed on your computer! Awesome work! You can choose to reboot your computer to create your new user for the OS or you can shut down and setup the new user later:
 
 ![Success](/images/install-pop/10_success.png)
-
 
 #### NVIDIA Graphics
 

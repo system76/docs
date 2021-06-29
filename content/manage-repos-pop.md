@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Manage Repositories (Pop!_OS)
 description: >
   Add, remove and edit repositories in Pop!_OS
@@ -9,19 +8,19 @@ keywords:
   - repoman
   - System76
   - apt
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# Manage Repositories (Pop!_OS) 
-
-### Accessing Repoman
+## Accessing Repoman
 
 Pop!_OS' tool for adding, removing and editing repositiories is called <u>Repoman</u> which is a part of the Pop!_Shop.
 
-![Pop!_OS Shop](/images/manage-repos/Pop!_Shop-button.png)
+![Pop!_OS Shop](/images/manage-repos/pop-shop-button.png)
 
 Click on the gear icon in the top right of the <u>Pop!_Shop</u> window. Once <u>Repoman</u> is opened, click on the **Extra Sources** tab there will be options to add repositories with the **Plus** button (on the bottom left). Select a repository from the list and then click on the **Edit** button (next to the **Plus** button) to edit the selected repository.
 
@@ -39,7 +38,7 @@ This is used to list the remote/sources configured on your system.
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
-This command is used to add a remote/source if it doesn't exist on your system and in this example the Flathub remove/source is being added. 
+This command is used to add a remote/source if it doesn't exist on your system and in this example the Flathub remove/source is being added.
 
 ```bash
 flatpak remote-delete flathub

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Battery Life Improvements
 description: >
   Stretch the battery life and create amazing things for longer.
@@ -11,13 +10,13 @@ keywords:
   - Screen
   - Display
   - Power
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
-
-# Battery Life Improvements 
 
 Every running program consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
 
@@ -56,6 +55,7 @@ Starting with <u>TLP</u> 1.3 the default configuration file has changed so the c
 ```bash
 sudo gedit /etc/tlp.conf
 ```
+
 The `/etc/tlp.conf` file is for user configuration while `/etc/tlp.d/*.conf` file is for drop-in customization snippets.
 
 All of the info about the program can be found with these 2 commands:
@@ -97,7 +97,7 @@ Open the report located at `~/report.html` to see the results.
 
 It's useful to create a baseline by running <u>powertop</u> after a cold startup, without opening any applications, and then run it a few more times throughout the day to get a comparison of different workloads. Make sure to specify a different filename each time for comparison. Look at running software and see if programs can be uninstalled or if the settings of high resource using programs can be changed.
 
-#### Tuning
+### Tuning
 
 After looking at running software, head over to the 'Tuning' tab. We recommend install <u>TLP</u> first, and then seeing if <u>powertop</u> finds any other tuning suggestions.
 

@@ -1,14 +1,15 @@
 ---
-layout: article
 title: Ubuntu Keyboard Shortcuts
 description: Learn how master using Ubuntu with your keyboard.
 keywords:
   - keyboard
   - shortcuts
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: ubuntu
-
 ---
 
 ## Super Key
@@ -17,7 +18,7 @@ The Super Key is the OS key on your keyboard and is the Ubuntu or Pop key (<kbd>
 
 In Ubuntu, <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> handles the majority of OS and window actions.
 
-#### Primary Actions
+### Primary Actions
 
 Tapping <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> on its own brings up the **Activities overview**, which is the core way of launching apps and managing your workflow.
 
@@ -27,7 +28,7 @@ Tapping <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></
 
 ## All Shortcuts
 
-#### Window & Workspace Management
+### Window & Workspace Management
 
 Windows can be switched between, moved around, tiled, and closed all with the keyboard. <kbd>Shift</kbd> acts as a modifier that lets you do a variation on the action, too.
 
@@ -44,7 +45,7 @@ Windows can be switched between, moved around, tiled, and closed all with the ke
 | <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>/<kbd>→</kbd>/<kbd>↑</kbd>/<kbd>↓</kbd> | Move window to display to the left, right, top, or bottom | |
 | <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + Right-drag | Resize window | |
 
-#### Operating System
+### Operating System
 
 | Shortcut | Action |
 | -------- | ------ |
@@ -62,7 +63,7 @@ Windows can be switched between, moved around, tiled, and closed all with the ke
 | <kbd>Alt</kbd> + <kbd>F2</kbd> | Run command |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> | Log out |
 
-#### Accessibility
+### Accessibility
 
 Accessibility shortcuts use <kbd>Alt</kbd> + <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> as their base.
 

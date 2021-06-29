@@ -15,8 +15,6 @@ hidden: false
 section: software
 ---
 
-# Access BIOS or Boot Menu
-
 To enter BIOS for most System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.
 
 | Firmware               | BIOS key | Boot Menu key                    |
@@ -27,29 +25,29 @@ To enter BIOS for most System76 laptops, hold the <kbd>F2</kbd> key immediately 
 | Thelio                 | Del      |  F8 or F12                       |
 | Meerkat                | F2       | F10                              |
 
-### Open Firmware Screenshots
+## Open Firmware Screenshots
 
 The following screenshots show the menus in System76 Open Firmware with Coreboot:
 
-#### Main Menu
+### Main Menu
 
 Displays the computer model, firmware version, and available options.
 
 ![Main menu](/images/boot-menu/homepage.jpg)
 
-#### One Time Boot
+### One Time Boot
 
 Allows booting to a non-default boot device.
 
 ![One Time Boot](/images/boot-menu/one-time-boot.jpg)
 
-#### Change Boot Order
+### Change Boot Order
 
 Allows changing the order for selecting the default boot device.
 
 ![Change Boot Order](/images/boot-menu/change-boot-order.jpg)
 
-#### Firmware Configuration Information
+### Firmware Configuration Information
 
 Displays information about the firmware's build-time configuration.
 

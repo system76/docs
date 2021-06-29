@@ -14,23 +14,20 @@ hidden: false
 section: network-troubleshooting
 ---
 
-# Important Notes About Bluetooth
+## Important Notes About Bluetooth
 
 Bluetooth is a bit odd.
 There are a lot of factors that go into whether Bluetooth devices work together as expected.
 
-
-## Bluetooth version
+### Bluetooth version
 
 Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer versions or devices.
 
-
-## Signal Interference
+### Signal Interference
 
 Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in most of our machines it is on the same chip as the Wi-Fi module. They usually have two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues. If users are in an area crowded with other Wi-Fi networks or devices, the interference from these outside sources can impact performance and range.
 
-
-## Device Specific Differences
+### Device Specific Differences
 
 Every Bluetooth device is different. They use the same or similar protocols, but the printed circuit boards (PCBs), are specific to each device, and the firmware they are running is often custom designed, and closed-source.
 
@@ -38,18 +35,17 @@ Some of the code and technologies that make Bluetooth work reliably are patented
 
 > **NOTE:** Some devices, such as Apple or Sony headphones, particularly take advantage of these patents and technologies to ensure they work well with similar devices. Often these devices are not tested against Linux machines. That doesn't mean these devices will not work, only that behavior or performance may vary.
 
-## Kernel Versions
+### Kernel Versions
 
 As the Linux kernel develops, support for more devices are added. Sometimes Bluetooth devices will work better in a different kernel version.
 
-
-## OS Versions
+### OS Versions
 
 Similar to the kernel versions. Improvements are often made in newer versions of Ubuntu and Pop!\_OS. Running software updates is always a good idea, followed by a reboot.
 
 <!--## Bluez Versions-->
 
-## Configuration Issues
+### Configuration Issues
 
 Sometimes Bluetooth devices are working correctly, but something in settings needs to be reset.
 
@@ -59,23 +55,19 @@ A more thorough way of testing this would be to create a [test user](/articles/o
 If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem.
 Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
 
-
-# Setting Expectations
+## Setting Expectations
 
 Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, the issue may not be resolved at all.
 Or, in a future update or change to the system, the devices may start working again. In some cases (many cases) users will not experience any issue with Bluetooth at all.
 
-## Audio Input/Output
+### Audio Input/Output
 
 Bluetooth audio devices, such as headphones and speakers, usually default to the A2DP protocol, which works effectively as an audio output source.
 
 Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in.
 This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny," compressed (lower-fidelity), or at a lower volume. That is expected behavior.
 
----
-
-# Bluetooth Troubleshooting
-
+## Bluetooth Troubleshooting
 
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
@@ -93,7 +85,7 @@ If `tlp` is installed, then there may be settings interfering with Bluetooth fun
 sudo gedit /etc/default/tlp
 ```
 
-## Useful Programs
+### Useful Programs
 
 There is a program called <u>Bluetooth Manager</u> which is included with <u>XFCE</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
 
@@ -103,7 +95,7 @@ sudo apt install blueman
 
 Then, run <u>Bluetooth Manager</u>. Check for the device being trusted, and also try re-pairing in that program.
 
-## Useful Commands
+### Useful Commands
 
 ```bash
 lsmod | grep bluetooth
@@ -143,21 +135,21 @@ sudo btmon
 
 This will show all Bluetooth related messages.  Try leaving this command running while pairing or using a device to see any error messages or failures.
 
-# Additional Info
+## Additional Info
 
 Here are a few additional tidbits about the Bluetooth system that may help with troubleshooting.
 
-## Controlling audio
+### Controlling audio
 
 Once you are connected to a Bluetooth speaker, you may need to change where your current audio is "routed". You can get a more advanced interface to settings on audio with the program called PulseAudio Volume Control. To install, run this command:
 
 ```bash
 sudo apt install pavucontrol
 ```
+
 There will be a drop-down in the Playback tab for each of your applications that is outputting sound that you should be able to change to your Bluetooth speaker.
 
-
-## Linux Firmware
+### Linux Firmware
 
 Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
 
@@ -168,8 +160,10 @@ Then they can be installed with this command:
 ```bash
 sudo dpkg -i linux-firmware_#.###.#_all.deb
 ```
+
 > **NOTE:** You'll need to replace the nubmers/file name with the most current version after downloading it.
-## File Transfer
+
+### File Transfer
 
 Sometimes, additional programs need to be installed for mobile equipment file transfer.  Please install the transfer tool with this command:
 

@@ -28,7 +28,7 @@ require powerful computers to keep up:
 > good CPU and RAM resources to deal with large datasets. Many bioinformatics
 > tools are written to use multiple cores and some, such as transcriptomic
 > assemblers, can use 50+ GB of RAM...
-
+>
 > Similarly, disk space is also important, as individual files can be more than
 > 1 TB in size. The ideal layout is having the OS and supporting files on a fast
 > solid-state disk, then also have a second larger (but slower) spinning disk

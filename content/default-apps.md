@@ -14,11 +14,9 @@ hidden: false
 section: pop
 ---
 
-# Default Apps in Pop!_OS
+Pop!\_OS: Productive out of the box. Easy to modify to meet individual needs
 
-### Pop!\_OS: Productive out of the box. Easy to modify to meet individual needs.
-
-#### Principles for default app inclusion.
+## Principles for default app inclusion
 
 1. Include apps that create a cohesive desktop experience
 

@@ -14,8 +14,6 @@ hidden: false
 section: software-troubleshooting
 ---
 
-# Bitesize Bugs
-
 Some bugs are determined by the maintainer of Pop\! projects to be easy to fix, these bugs are referred to as "bitesize" bugs and will show up in the project's issue tracker as such.
 
 ![Bitesize Bugs](/images/bite-sized-bugs/bsb-github-screenshot.png)
@@ -26,7 +24,7 @@ Solving these bugs often contributes to better polish for the overall project. A
 
 [Bitesize bugs for Pop\!\_OS (distro)](https://github.com/pop-os/pop/labels/bite-sized).
 
-### Bitesize Bug Example
+## Bitesize Bug Example
 
 Let's go through how to contribute via a bitesize bug fix. First take a look at what is listed as a [bitesize bug via the issue tracker](https://github.com/pop-os/pop/labels/bite-sized).
 

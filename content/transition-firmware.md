@@ -29,17 +29,17 @@ System76 Open Firmware is primarily open-source, meaning the source code is avai
 
 System76 Open Firmware is designed to be lightweight and performant with a simple and straightforward user interface.
 
-* Many features are configured by default in System76 Open Firmware
-  * Enabled: Hardware virtualization (Intel VT-x and VT-d/AMD-V). Can be disabled by the OS via a kernel boot option.
-  * Enabled: Hyperthreading. Can be disabled by the OS via a kernel boot option.
-  * Enabled: Thunderbolt security. Devices must be allowed by the user within the OS.
-  * Disabled: Intel ME (Management Engine)
-  * Disabled: Secure Boot
-* Some features are present in proprietary firmware but are not available in Open Firmware, including:
-  * Flexicharger (battery threshold). This feature is currently in development for System76 Open Firmware.
-  * Self-encryptiong storage drives. Not supported (note that the full-disk encryption used in Pop!\_OS does not require this firmware-level feature.)
-* Some features behave differently in System76 Open Firmware
-  * Galago Pro units running System76 EC require pressing the <kbd>Fn</kbd> key to use the number pad, regardless of <kbd>Num Lk</kbd> state
+- Many features are configured by default in System76 Open Firmware
+  - Enabled: Hardware virtualization (Intel VT-x and VT-d/AMD-V). Can be disabled by the OS via a kernel boot option.
+  - Enabled: Hyperthreading. Can be disabled by the OS via a kernel boot option.
+  - Enabled: Thunderbolt security. Devices must be allowed by the user within the OS.
+  - Disabled: Intel ME (Management Engine)
+  - Disabled: Secure Boot
+- Some features are present in proprietary firmware but are not available in Open Firmware, including:
+  - Flexicharger (battery threshold). This feature is currently in development for System76 Open Firmware.
+  - Self-encryptiong storage drives. Not supported (note that the full-disk encryption used in Pop!\_OS does not require this firmware-level feature.)
+- Some features behave differently in System76 Open Firmware
+  - Galago Pro units running System76 EC require pressing the <kbd>Fn</kbd> key to use the number pad, regardless of <kbd>Num Lk</kbd> state
 
 Below is a comparison between the UEFI setup menu on proprietary firmware (left) and System76 Open Firmware (right):
 

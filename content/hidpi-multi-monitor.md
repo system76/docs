@@ -54,7 +54,7 @@ Using the Displays panel in the System Settings center to change resolution or l
 
 ![X Server Display Configuration](/images/hidpi-multi-monitor/nvidia-display-settings.png)
 
-#### Disable HiDPI Daemon:
+#### Disable HiDPI Daemon
 
 Ubuntu/Pop!_OS 18.04 and up
 

@@ -20,7 +20,7 @@ redirect_from:
   - /articles/use-tensorman
 ---
 
-# Installing Tensorman
+## Installing Tensorman
 
 <u>Tensorman</u> is a tool for managing TensorFlow toolchains in Pop!_OS. It can be installed with this command:
 
@@ -42,7 +42,7 @@ sudo usermod -aG docker $USER
 
 If Docker was just installed, then a reboot will be needed before Tensorman can be used.
 
-# Tensorman
+## About Tensorman
 
 Packaging Tensorflow for Linux distributions is notoriously difficult, if not impossible. Every release of Tensorflow is accommodated by a myriad of possible build configurations, which requires building many variants of Tensorflow for each Tensorflow release. To make matters worse, each new version of Tensorflow will depend on a wide number of shared dependencies, which may not be supported on older versions of a Linux distribution, even if that distribution is actively supported by the distribution maintainers.
 
@@ -50,7 +50,7 @@ To solve this problem, the Tensorflow project provides official Docker container
 
 However, configuring and managing Docker containers for Tensorflow using the `docker` command line is currently tedious, and managing multiple versions for different projects is even more-so. To solve this problem for our users, we have developed `tensorman` as a convenient tool to manage the installation and execution of Tensorflow Docker containers. It condenses the command-line soup into a set of simple commands that are easy to memorize.
 
-# Comparison to Docker Command
+## Comparison to Docker Command
 
 Take the following Docker invocation as an example:
 
@@ -68,7 +68,7 @@ tensorman run --gpu python -- ./script.py
 
 Which defaults to the latest version, and whose version and tag variants can be set as defaults per-run, per-project, or user-wide.
 
-# Updating and installing containers
+## Updating and installing containers
 
 The following commands can be used for installing either the latest version of a container or a certain version:
 
@@ -77,7 +77,7 @@ tensorman pull latest
 tensorman pull 1.14.0
 ```
 
-# Running commands in containers
+## Running commands in containers
 
 Commands are executed within the container using the `run` command.
 
@@ -95,11 +95,11 @@ tensorman run --gpu bash
 tensorman run --gpu --python3 --jupyter bash
 ```
 
-### Python API example
+## Python API example
 
 Given the following example, which will print a "Hello World" message, the TensorFlow version, and the output of a calculation made using the GPU:
 
-```
+```python
 #!/usr/bin/python3
 import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
@@ -118,7 +118,7 @@ If the Python file is named `hello-world.py`, it can be run with TensorFlow usin
 tensorman run --gpu python ./hello-world.py
 ```
 
-# Setting per-run
+## Setting per-run
 
 If a certain version is specified with the `+` argument, Tensorman will use that version instead.
 
@@ -132,11 +132,11 @@ Custom images may be specified with an `=` argument.
 tensorman =custom-image run --gpu bash
 ```
 
-# Setting per-project
+## Setting per-project
 
 There are two files that can be used for configuring Tensorman locally: `tensorflow-toolchain`, and `Tensorman.toml`. These files will be automatically detected if they can be found in a parent directory.
 
-## tensorflow-toolchain
+### tensorflow-toolchain
 
 This file overrides the tensorflow image, defined in either `Tensorman.toml` or the user-wide configuration file.
 
@@ -150,7 +150,7 @@ Or specifying a custom image:
 =custom-image gpu
 ```
 
-## Tensorman.toml
+### Tensorman.toml
 
 This file supports additional configuration parameters, with a user-wide configuration located at `~/.config/tensorman/config.toml`, and a project-wide location at `Tensorman.toml`. One of the reasons you may want to use this file is to declare some additional Docker flags, with the `docker_flags` key.
 
@@ -170,7 +170,7 @@ image = 'custom-image'
 variants = ['gpu']
 ```
 
-# Setting per-user
+## Setting per-user
 
 The default version user-wide can be changed using the `default` subcommand. This version of <u>TensorFlow</u> will be launched whenever the `tensorman run` command is used:
 
@@ -181,9 +181,9 @@ tensorman default nightly
 tensorman default =custom-image gpu
 ```
 
-<small>\* By default, Tensorman will use the latest as the default per-user version tag.</small>
+By default, Tensorman will use the latest as the default per-user version tag.
 
-# Listing active container version
+## Listing active container version
 
 If the active containers from the current working directory need to be listed, the `show` command can be used:
 
@@ -191,7 +191,7 @@ If the active containers from the current working directory need to be listed, t
 tensorman show
 ```
 
-# Removing containers
+## Removing containers
 
 Having many containers installed at the same time can use a lot of disk space. If some need to be removed, the `remove` command can be used:
 
@@ -202,7 +202,7 @@ tensorman remove 481cb7ea88260404
 tensorman remove =custom-image
 ```
 
-# Listing installed containers
+## Listing installed containers
 
 To find installed containers, the `list` command can be used:
 
@@ -210,13 +210,13 @@ To find installed containers, the `list` command can be used:
 tensorman list
 ```
 
-# Creating a custom image
+## Creating a custom image
 
 In most projects, you will need to pull in more dependencies than the base TensorFlow image has. To do this, you will need to create the image by running a TensorFlow container as root, installing and setting up the environment how you need it, and then saving those changes as a new custom image.
 
 To do so, you will need to build the container in one terminal, and save it from another.
 
-## Build new image
+### Build new image
 
 First, launch a terminal where you will begin configuring the Docker image:
 
@@ -230,7 +230,7 @@ Once you've made the changes needed, open another terminal and save it as a new 
 tensorman save CONTAINER_NAME IMAGE_NAME
 ```
 
-## Running the custom image
+### Running the custom image
 
 You should then be able to specify that container with Tensorman, like so:
 
@@ -240,7 +240,7 @@ tensorman =IMAGE_NAME run --gpu bash
 
 > The `--python3` and `--jupyter` flags do nothing for custom containers, but `--gpu` is required to enable runtime support for the GPU.
 
-## Removing the custom image
+### Removing the custom image
 
 Images saved through Tensorman are manageable through Tensorman. Listing and removing work the same way:
 
@@ -248,6 +248,6 @@ Images saved through Tensorman are manageable through Tensorman. Listing and rem
 tensorman remove IMAGE_NAME
 ```
 
-# Pull requests welcome!
+## Pull requests welcome
 
 To see the source code and suggest features, visit the project on [GitHub](https://github.com/pop-os/tensorman).

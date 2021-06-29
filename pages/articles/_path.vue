@@ -15,7 +15,7 @@
                 </nuxt-link>
 
                 <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:text-3xl">
-                  {{ article.title }}
+                  Support Articles
                 </h1>
               </div>
             </div>
@@ -69,10 +69,10 @@
       </header>
 
       <div class="flex justify-center my-6 mx-auto px-4 max-w-full sm:max-w-screen-sm md:my-12 lg:max-w-7xl">
-        <nuxt-content
-          class="prose prose-sm max-w-full flex-1 sm:prose xl:prose-lg lg:max-w-4xl"
-          :document="article"
-        />
+        <div class="prose prose-sm max-w-full flex-1 sm:prose xl:prose-lg lg:max-w-4xl">
+          <h1>{{ article.title }}</h1>
+          <nuxt-content :document="article" />
+        </div>
 
         <nav
           v-if="article.tableOfContents"

@@ -15,11 +15,9 @@ hidden: false
 section: ubuntu
 ---
 
-# Ubuntu Basics
-
 The Ubuntu operating system provides all the features you would expect from a sophisticated desktop.
 
-### Getting to Know The Ubuntu Desktop
+## Getting to Know The Ubuntu Desktop
 
 ![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-21.04-files.png)
 
@@ -47,12 +45,12 @@ Clicking on the orange briefcase icon in the Dock, opens Ubuntu Software. This a
 Date, Time, Calendar and app notifications appear in the top-middle of the screen, and can be reviewed in the drop-down menu.
 
 ![Notifications](/images/ubuntu-basics/ubuntu-gnome-notifciations.png)
+
 ## Top Right Menu
 
 The top-right menu offers shortcuts for networking, battery/power and shutdown commands.
 
 ![Top Right](/images/ubuntu-basics/ubuntu-21.04-top-right.png)
-
 
 ## Application Top Bar Menu
 

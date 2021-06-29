@@ -39,7 +39,9 @@ sudo pip3 install WoeUSB-ng
 Once installed, open the WoeUSB-ng application (entering your password when prompted) and perform the following steps:
 
 1. Select the Windows .iso file as the source.
-  - To find the file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
+
+    - To find the file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
+
 2. Select the USB flash drive as the target device.
 3. Click `Install`.
 

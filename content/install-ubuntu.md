@@ -23,8 +23,6 @@ hidden: false
 section: ubuntu
 ---
 
-# Ubuntu (Install)
-
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.
 
 > **NOTE: Oryx Pro (oryp2) Touchpad** On our second generation Oryx Pro (oryp2), the System76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
@@ -70,7 +68,6 @@ From the menu shown the 'nomodeset' option can be selected during this boot. -->
 Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
 
 >**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The restore process is designed to leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
-
 
 ![Try or Install](/images/install-ubuntu/ubuntu-install-try-install.png)
 
@@ -193,6 +190,7 @@ The system will display the progress of updates through this screen:
 And often will prompt for a restart once complete:
 
 ![Updates Complete](/images/install-ubuntu/ubuntu-21.04-updates-finished.png)
+
 ### Install System76 Driver
 
 Once you've reinstalled Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:

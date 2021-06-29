@@ -14,11 +14,9 @@ hidden: false
 section: community
 ---
 
-# Install Minecraft!
-
 Alright! Hitch on and let's go on!
 
-### Pop!_OS 20.04
+## Pop!_OS 20.04
 
 First, open the Pop!_Shop.
 ![Open Pop_Shop](/images/minecraft/popshop.png)
@@ -26,16 +24,13 @@ First, open the Pop!_Shop.
 Next, type "Minecraft" into the search bar, and click "Minecraft".
 ![Search Page](/images/minecraft/searchforminecraft.png)
 
-
 Next, click install.
 ![Open Minecraft page](/images/minecraft/minecraftapppage.png)
-
 
 Now you will have installed Minecraft! Open Minecraft and log in with your username and password to start playing!
 ![Minecraft Installed](/images/minecraft/minecraftinstalled.png)
 
-
-### Debian and Ubuntu
+## Debian and Ubuntu
   
 First, you will need Java runtime.  
 

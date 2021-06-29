@@ -13,11 +13,7 @@ hidden: false
 section: software
 ---
 
-# System76 Software (Install - Other Operating Systems)
-
-# Notes about these instructions
-
-**DISCLAIMER**
+## Disclaimer
 
 Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only.System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
 
@@ -28,11 +24,11 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 **NOTE:** These instructions were tested on a Galago Pro (galp3-b) and Pangolin (pang10). Neither system have NVIDIA GPUs, so this process doesn't go over installing the NVIDIA driver (system76-driver-nvidia). Due to these limitations, switchable graphics may not work on NVIDIA systems.
 
-# Arch
+## Arch
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
-## System76 Firmware Daemon
+### System76 Firmware Daemon in Arch
 
 These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
 
@@ -44,7 +40,7 @@ sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
-## System76 Firmware Manager
+### System76 Firmware Manager in Arch
 
 These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
 
@@ -54,7 +50,7 @@ cd firmware-manager
 makepkg -srcif
 ```
 
-## System76 DKMS
+### System76 DKMS in Arch
 
 This package is needed for hotkeys and fan(s) on Closed Firmware systems:
 
@@ -64,7 +60,7 @@ cd system76-dkms
 makepkg -srcif
 ```
 
-## System76 ACPI DKMS
+### System76 ACPI DKMS in Arch
 
 This package is needed for hotkeys and fan(s) on Open Firmware systems:
 
@@ -74,7 +70,7 @@ cd system76-acpi-dkms
 makepkg -srcif
 ```
 
-## System76 Power
+### System76 Power in Arch
 
 ```bash
 git clone https://aur.archlinux.org/system76-power.git
@@ -84,7 +80,7 @@ sudo systemctl enable --now system76-power
 sudo gpasswd -a $USER adm
 ```
 
-## System76 Power GNOME Shell Extension
+### System76 Power GNOME Shell Extension in Arch
 
 ```bash
 git clone https://aur.archlinux.org/gnome-shell-extension-system76-power-git.git
@@ -92,9 +88,9 @@ cd gnome-shell-extension-system76-power
 makepkg -srcif
 ```
 
-> **NOTE:** As of this writing the GNOME Shell Extension doesn't support GNOME 40.
+**NOTE:** As of this writing the GNOME Shell Extension doesn't support GNOME 40.
 
-### System76 Thelio Io DKMS
+### System76 Thelio Io DKMS in Arch
 
 ```bash
 git clone https://aur.archlinux.org/system76-io-dkms.git
@@ -102,9 +98,9 @@ cd system76-io-dkms
 makepkg -srcif
 ```
 
-> **NOTE:** This package is only needed for Thelio desktops.
+**NOTE:** This package is only needed for Thelio desktops.
 
-### System76 OLED
+### System76 OLED in Arch
 
 ```bash
 git clone https://aur.archlinux.org/system76-oled.git
@@ -112,13 +108,13 @@ cd system76-acpi-oled
 makepkg -srcif
 ```
 
-> **NOTE:** This package is only needed for systems with OLED displays to control the brightness.
+**NOTE:** This package is only needed for systems with OLED displays to control the brightness.
 
-# Fedora
+## Fedora
 
 Be sure to install the <u>System76 Driver</u> first and the steps to do that are [here](/articles/system76-driver).
 
-## System76 Firmware Manager
+### System76 Firmware Manager in Fedora
 
 Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>,enable the service and add your user to the adm group:
 
@@ -128,7 +124,7 @@ sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
-## System76 Power
+### System76 Power in Fedora
 
 Use these commands to install the <u>System76 Power</u> package and enable the service:
 
@@ -137,7 +133,7 @@ sudo systemctl enable system76-power system76-power-wake
 sudo systemctl start system76-power
 ```
 
-## System76 Power GNOME Shell Extension
+### System76 Power GNOME Shell Extension in Fedora
 
 These commands will download the source code for the application, build it, install it and install the <u>Extensions</u> application:
 
@@ -151,7 +147,7 @@ make install
 
 Now log out and use the <u>Extensions</u> to enable the extenstion.
 
-## System76 DKMS
+### System76 DKMS in Fedora
 
 These commands will be used to install the <u>System76 DKMS</u> package which is for Proprietary Firmware systems:
 
@@ -160,7 +156,7 @@ sudo dnf install system76-dkms
 sudo systemctl enable dkms
 ```
 
-## System76 ACPI DKMS
+### System76 ACPI DKMS in Fedora
 
 These commands will be used to install the <u>System76 ACPI DKMS</u> package which is for Open Firmware systems:
 
@@ -175,7 +171,7 @@ sudo systemctl enable dkms
 sudo systemctl reboot
 ```
 
-### System76 Thelio Io DKMS
+### System76 Thelio Io DKMS in Fedora
 
 This command will be used to install the <u>System76 Io DKMS</u> which is used for the Thelio Io board:
 
@@ -183,7 +179,7 @@ This command will be used to install the <u>System76 Io DKMS</u> which is used f
 sudo dnf install system76-io-dkms
 ```
 
-### System76 OLED
+### System76 OLED in Fedora
 
 This command will be used to install the <u>System76 OLED</u> which is used for systems with OLED panels:
 

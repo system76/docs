@@ -15,13 +15,11 @@ hidden: false
 section: software
 ---
 
-# System76 Driver (Install)
-
 This guide will show you how to add the System76 software repository and install the driver on Ubuntu.
 
 Please note these steps are not necessary in Pop!\_OS, which includes the repository and the appropriate drivers installed by default.
 
-#### Adding the Apt Preferences File
+## Adding the Apt Preferences File
 
 If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
 
@@ -45,7 +43,7 @@ Pin-Priority: 1001
 
 Save the file. Now you should be able to install the System76 Driver as described below.
 
-#### Installing the Driver
+## Installing the Driver
 
 To install our Driver you need to run the following commands in the Terminal:
 
@@ -59,19 +57,16 @@ This installs the System76 driver and related utilities which are needed to enab
 
 ### Install System76 Driver on Other Operating Systems
 
-**DISCLAIMER**
+**DISCLAIMER:** This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
 
-This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
-
-Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardare. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
+Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
 
 However, System76 does not guarantee the success or quality of experience when installing other Operating Systems.
 Support typically makes best-efforts to offer direction or troubleshooting for other distributions.
 
 We may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those Operating System(s)' support forums.
 
-
-## Arch
+#### Arch
 
 First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:
 
@@ -96,14 +91,14 @@ makepkg -srcif
 sudo systemctl enable --now system76
 ```
 
-## Fedora
+#### Fedora
+
 Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](https://copr.fedorainfracloud.org/coprs/szydell/system76/) and install the <u>System76 Driver</u> :
 
 ```bash
 sudo dnf copr enable szydell/system76
 sudo dnf install system76-driver
 ```
-
 
 ## Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs
 

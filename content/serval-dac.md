@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Serval DAC Clicking
 description: >
   Certain models of the Serval WS will "click" when the DAC turns on and off, but the frequency can be decreased.
@@ -11,13 +10,13 @@ keywords:
   - clicking
   - sound
   - audio
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware-troubleshooting
-
 ---
-
-# Serval DAC Clicking
 
 On some versions of the Serval WS (including the `serw11`), you may notice a "clicking" sound when the machine powers on and when you begin playing audio. This sound is the DAC (Digital-to-Analog Converter) powering on, and is not an indication that anything is wrong with the hardware.
 

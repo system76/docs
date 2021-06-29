@@ -1,5 +1,4 @@
 ---
-layout: article
 title: AR Sandbox
 description: Calibrate and use your new AR Sandbox
 keywords:
@@ -7,10 +6,12 @@ keywords:
  - Sandbox
  - Ubuntu
  - Pop!_OS
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
 [AR Sandbox Video](https://www.youtube.com/watch?v=uTPOE2XceEA)
@@ -244,7 +245,7 @@ XBackground
 
 - You'll need to position the projector so that it fills the interior of your sandbox. It's okay if it overlaps slightly.
 
-![](/images/ar-sandbox/6-C-xbackground-af01671469.jpg)
+![Aligning grid to box](/images/ar-sandbox/6-C-xbackground-af01671469.jpg)
 
 After you're done positioning your projector, hit Esc to close the `XBackgroud` application.
 
@@ -369,7 +370,7 @@ You can experiment with different values for the sea-level to suite your prefere
 
 Note that you can adjust the sea level at any time in the future without recalibrating your sandbox.
 
-## Use the Sandbox!
+## Use the Sandbox
 
 - Whew! You made it through the setup and calibration!
 As long as you don't change the physical setup of your sandbox (in particular, the position of the Kinect, the projector, and the sandbox relative to each other), you never need to calibrate it again. Although now that you have the hang of it, you might want to go through the calibration again in order to achieve a more accurate setup.
@@ -407,4 +408,3 @@ SARndbox -uhm -fpv -evr -0.02
 Thanks again to [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) for developing such an incredible, inspiring piece of software!
 
 Be sure to check out the [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) website for more details.
-

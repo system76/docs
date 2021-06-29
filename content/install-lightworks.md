@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Lightworks (Install)
 description: >
   Complete instructions on installing Lightworks
@@ -8,13 +7,13 @@ keywords:
   - Lightworks
   - Film
   - Media Creation
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
-
-# Install Lightworks on Pop!\_OS
 
 Lightworks is a powerful video-editing tool used by industry professionals. This tutorial provides steps on installing Lightworks in Pop!\_OS.
 
@@ -60,7 +59,7 @@ Now, the Lightworks launcher will appear in the Activities menu.
 
 ![Eddy Launces](/images/lightworks/lightworks-installed.png)
 
-# Terminal Instructions
+### Terminal Instructions
 
 Once the .deb file is downloaded, instead of using Eddy, it can also be installed from a terminal by running the following commands:
 

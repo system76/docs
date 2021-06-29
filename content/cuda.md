@@ -1,18 +1,17 @@
 ---
-layout: article
 title: CUDA and cuDNN (Install)
 description: >
   Complete instructions on setting up the NVIDIA CUDA toolkit and cuDNN libraries
 keywords:
   - NVIDIA
   - CUDA
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
-
-# CUDA and cuDNN (Install)
 
 ## Install on Pop!_OS
 
@@ -80,7 +79,7 @@ For the respective cuDNN library:
 sudo apt install system76-cudnn-9.0
 ```
 
-### Switch between different versions:
+### Switch between different versions
 
 You can switch between each CUDA version with the following command:
 

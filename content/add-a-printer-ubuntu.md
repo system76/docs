@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Printer Setup (Ubuntu)
 description: >
   Here is how to add a printer in Ubuntu.
@@ -8,13 +7,13 @@ keywords:
   - Printing
   - Printer
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
-
-# Printer Setup (Ubuntu) 
 
 To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printers* then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
@@ -22,19 +21,21 @@ To add a printer to your System76 Computer, click the Ubuntu icon at the top lef
 
 Select the correct printer and click **Forward**. The computer will search for the correct Drivers to enable the printer. A box may come up that says 'Installable Options' which you can select any other options available for your printer and then click **Forward** again. Name your printer in the next dialogue box and click **Apply**. A prompt to print a test page will appear next.
 
-#### HP and Epson Printers
+## HP and Epson Printers
 
 First in the <u>Software & Updates</u> settings go to the **Other Software** tab, and check the first item, **Canonical Partners**. Then, after closing the <u>Software & Updates</u> program, add the driver with this command for HP:
 
-```bash 
+```bash
 sudo apt install hplip
 ```
+
 If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
-```bash 
+```bash
 sudo apt install python3-pyqt5
 hp-setup
 ```
+
 Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
 ```bash
@@ -59,7 +60,7 @@ To look at the CUPS (Common Unix Printing System) configuration and status windo
 
 The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer.
 
-## Useful Commands:
+## Useful Commands
 
 ```bash
 sudo apt install --reinstall cups cups-client

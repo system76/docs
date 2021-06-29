@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Replace the Thelio Power Button
 description: >
   Here are a few easy steps to replace the power button in your Thelio.
@@ -7,17 +6,17 @@ keywords:
   - Thelio
   - power
   - button
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
-
-# Replace the Thelio Power Button
 
 If you've purchased a new top case for your Thelio (or received one for a support case), you may need to move the power button from your old top case to the new one. Conversely, if you've received a replacement power button, you may need to remove the old power button from your top case and install the new one.
 
-# Removing the Power Button
+## Removing the Power Button
 
 The power button assembly is held on by a single nut inside the case. First, unplug the power button's wire from the 90-degree connector.
 
@@ -43,7 +42,7 @@ With the wire unplugged and the nut removed, the power button can be pushed out 
 
 The black plastic rectangle inside of the case will also be loose at this point, and can be removed.
 
-# Installing the Power Button
+## Installing the Power Button
 
 First, line up the black plastic rectangle with the hole inside of the case.
 

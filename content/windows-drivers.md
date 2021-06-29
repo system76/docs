@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Windows Drivers
 description: >
   If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
@@ -7,13 +6,13 @@ keywords:
   - Windows
   - Microsoft
   - drivers
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: windows
-
 ---
-
-# Windows Drivers
 
 Most of the hardware in a System76 computer is Intel based, and Windows Update is rather effective at finding drivers. We also recommend using Intel's Driver Update utility, which will automatically detect and install drivers for Intel hardware.
 

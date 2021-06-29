@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Printer Setup (Pop!_OS)
 description: >
   Here is how to add a printer in Pop!_OS.
@@ -8,13 +7,13 @@ keywords:
   - Printing
   - Printer
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
-
-# Printer Setup (Pop!_OS) 
 
 Most printers will be automatically added to the computer.  If not, to add a printer to your System76 Computer, press the super key and type the word *Printers*, then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add a Printer...** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
 
@@ -22,13 +21,14 @@ Most printers will be automatically added to the computer.  If not, to add a pri
 
 Select the correct printer and click **Add**.
 
-#### HP and Epson Printers
+## HP and Epson Printers
 
 HP printers are supported with the **hplip** package, which is installed by default in Pop!_OS_
 
 ```bash
 sudo apt install hplip
 ```
+
 If you would like to use a guided GUI application from HP, you will need to install a python dependency:
 
 ```bash
@@ -41,15 +41,16 @@ Epson printer drivers are in the **printer-driver-escpr** package and is also in
 ```bash
 sudo apt install lsb printer-driver-escpr
 ```
+
 Automatically installed printers will work fine, but if you need to make changes to the configuration of the printers, you will need to add your user to the 'lpadmin' group. To do that run the following command:
 
 ```bash
 sudo usermod -aG lpadmin $USER
 ```
 
-#### Brother Printers
+## Brother Printers
 
-Search for your printer on this page https://www.brother-usa.com/brother-support/driver-downloads
+Search for your printer on this page <https://www.brother-usa.com/brother-support/driver-downloads>
 
 Once you find your printer, click the downloads link, and select the "Linux" option under "Select OS Family"
 
@@ -70,9 +71,11 @@ gunzip linux-brprinter-installer-*.*.*-*.gz
 
 After this, run the installer, but with your printer model appended to the end. For this example, we will use the model HL-L5000D.
 Note that your installer version may differ from this guide. It is best to type the first portion of the installer name, and then hit TAB to complete the installer name.
+
 ```
 sudo bash linux-brprinter-installer
 ```
+
 When typing the above command, hit TAB after that for the installer name to be autocompleted, and then add your printer name, after a space, at the end.
 
 Example:
@@ -93,7 +96,7 @@ To look at the CUPS (Common Unix Printing System) configuration and status windo
 
 The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer. When there is a prompt for your username and password, use your user name, and password used to login.
 
-## Useful Commands:
+## Useful Commands
 
 ```bash
 sudo apt install --reinstall cups cups-client

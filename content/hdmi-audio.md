@@ -19,7 +19,7 @@ If you're using an HDMI display with its own built-in speakers, you can configur
 
 ## Using the Sound Settings
 
-To make all sound play over HDMI, open the menu in the top right of the screen, then click the <i class='fa fa-gear'></i> icon in the bottom left of the menu.
+To make all sound play over HDMI, open the menu in the top right of the screen, then click the <font-awesome-icon icon="cog"></font-awesome-icon> icon in the bottom left of the menu.
 
 ![Opening the Settings app](/images/hdmi-audio/top-right-menu.png)
 

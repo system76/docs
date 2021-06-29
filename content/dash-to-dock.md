@@ -21,11 +21,9 @@ redirect_from:
   - /articles/move-launcher
 ---
 
-# Dock (Move or Customize)
-
 Pop!\_OS and Ubuntu both contain an application dock on the left side of the screen. In Pop!\_OS, the dock is only visible when the Activities menu is open. In Ubuntu, the dock is always visible. By installing a GNOME extension called Dash to Dock, you can adjust this preference, move the dock to the bottom of the screen, and more.
 
-# Dash to Dock on Pop!\_OS
+## Dash to Dock on Pop!\_OS
 
 To install Dash to Dock on Pop!\_OS, visit [the extension's page](https://extensions.gnome.org/extension/307/dash-to-dock/) in Firefox.
 
@@ -61,7 +59,7 @@ You can also choose to extend the dock into "Panel mode," which looks similar to
 
 ![Dock with Panel Mode](/images/dash-to-dock/pop-launcher4.png)
 
-# Dash to Dock on Ubuntu
+## Dash to Dock on Ubuntu
 
 Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. When you enable the full version of Dash to Dock, it will override the built-in version.
 
@@ -107,7 +105,7 @@ In the Dash to Dock Settings window, you can choose which screen edge to display
 
 ---
 
-# Moving the Application Launcher in Ubuntu 16.04 LTS
+## Moving the Application Launcher in Ubuntu 16.04 LTS
 
 Ubuntu 16.04 LTS includes its own dock as part of the Unity desktop environment. If you'd like to put the dock at the bottom of the screen in 16.04, enter this command in a terminal:
 

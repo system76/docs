@@ -18,11 +18,11 @@ hidden: false
 section: software-troubleshooting
 ---
 
-# Bootloader Repair
+## Bootloader Repair
 
 Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu. It takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB/systemd-boot can break, and it may not let you boot into your computer to fix the problem.
 
-#### Important Note
+### Important Note
 
 If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`. Installing everywhere will break the bootloader.
 
@@ -48,8 +48,8 @@ sudo parted -ls
 
 And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. Here are some OS partition layout examples:
 
-
 Ubuntu 20.04 LTS
+
 ```
       Number  Start   End     Size    File system     Name      Flags
        1      2097kB  524MB   522MB   fat32                     boot, esp
@@ -67,8 +67,6 @@ root   3      4819MB  496GB   491GB
        4      496GB   500GB   4295MB  linux-swap(v1)            swap
 ```
 
----
-
 ## GRUB
 
 ### EFI Boot
@@ -78,9 +76,10 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 ```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
+
 Run these commands based on what type of disk you have:
 
-#### For NVMe Drives:
+For NVMe Drives:
 
 ```bash
 sudo mount /dev/nvme0n1p2 /mnt
@@ -94,7 +93,7 @@ update-initramfs -c -k all
 sudo update-grub
 ```
 
-#### For SATA Drives:
+For SATA Drives:
 
 ```bash
 sudo mount /dev/sda2 /mnt
@@ -108,8 +107,6 @@ update-initramfs -c -k all
 sudo update-grub
 ```
 
----
-
 ### BIOS Boot
 
 If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
@@ -120,7 +117,7 @@ If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. Yo
 
 Run these commands based on what type of disk you have:
 
-#### For NVMe Drives:
+For NVMe Drives:
 
 ```bash
 sudo mount /dev/nvme0n1p2 /mnt
@@ -133,7 +130,7 @@ update-initramfs -c -k all
 sudo update-grub
 ```
 
-#### For SATA Drives:
+For SATA Drives:
 
 ```bash
 sudo mount /dev/sda2 /mnt
@@ -146,9 +143,7 @@ update-initramfs -c -k all
 sudo update-grub
 ```
 
-## systemd-boot
-
-### EFI Boot
+## systemd-boot EFI Boot
 
 Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
 
@@ -158,7 +153,7 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 
 Run these commands based on what type of disk you have:
 
-#### For NVMe Drives:
+For NVMe Drives:
 
 ```bash
 sudo mount /dev/nvme0n1p3 /mnt
@@ -173,7 +168,7 @@ exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
 
-#### For SATA Drives:
+For SATA Drives:
 
 ```bash
 sudo mount /dev/sda3 /mnt
@@ -188,13 +183,11 @@ exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
 
----
-
-### Encrypted Disk
+## Encrypted Disk
 
 To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-#### For NVMe Drives:
+For NVMe Drives:
 
 ```bash
 sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata
@@ -202,7 +195,7 @@ sudo lvscan
 sudo vgchange -ay
 ```
 
-#### For SATA Drives:
+For SATA Drives:
 
 ```bash
 sudo cryptsetup luksOpen /dev/sda3 cryptdata
@@ -237,13 +230,12 @@ exit
 reboot
 ```
 
----
-
 After this, reboot your computer, removing the disk when prompted, and the computer should boot.
 
 ## Troubleshooting
 
 ### chroot
+
 If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system.
 
 For example, the error is most frequently seen when trying to `chroot` to a 64-bit system (amd64) from a 32-bit Install CD (x86).
@@ -253,6 +245,7 @@ The solution is to use an Install CD which is using the same architecture as the
 Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk) correctly in the commands above.
 
 ### systemd-boot fails to start the OS
+
 If the system boots into a `BusyBox` environment, try `exit` to show potential failure causes.
 
 A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates an issue with the loader entry in `systemd-boot`.

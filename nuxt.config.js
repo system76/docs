@@ -69,7 +69,6 @@ export default async () => ({
 
   plugins: [
     '~/plugins/components',
-    '~/plugins/custom-tags',
     '~/plugins/font-awesome'
   ],
 

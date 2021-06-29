@@ -13,8 +13,6 @@ hidden: false
 section: software
 ---
 
-# CUDA and cuDNN (Install)
-
 ## Install on Pop!_OS
 
 ### Install The latest NVIDIA CUDA Toolkit
@@ -81,7 +79,7 @@ For the respective cuDNN library:
 sudo apt install system76-cudnn-9.0
 ```
 
-### Switch between different versions:
+### Switch between different versions
 
 You can switch between each CUDA version with the following command:
 

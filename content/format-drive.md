@@ -14,8 +14,6 @@ hidden: false
 section: software
 ---
 
-# Format Your Drive
-
 <!--
 - Document Version: 1.0.0
 - Date: (8-27-2020)

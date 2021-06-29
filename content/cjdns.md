@@ -18,8 +18,6 @@ hidden: false
 section: community
 ---
 
-# Install cjdns
-
 ## Install Dependencies
 
 ```bash

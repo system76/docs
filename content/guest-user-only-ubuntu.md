@@ -23,12 +23,12 @@ A lot of work goes in to making your System76 experience fantastic right out of 
 
 Here are the general steps for creating a user manually:
 
-1.  Reboot into Recovery Mode
-2.  Run a fsck to mount the drive as read-write
-3.  Drop to a root shell
-4.  Run oem-config-prepare
-5.  Reboot the system
-6.  Send logs to System76 to help us track this down
+1. Reboot into Recovery Mode
+2. Run a fsck to mount the drive as read-write
+3. Drop to a root shell
+4. Run oem-config-prepare
+5. Reboot the system
+6. Send logs to System76 to help us track this down
 
 #### Recovery Mode
 

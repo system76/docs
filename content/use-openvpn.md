@@ -15,19 +15,17 @@ hidden: false
 section: software
 ---
 
-# OpenVPN (Install)
+## Open A Terminal
 
-### Open A Terminal
-
-#### Pop!_OS
+### Pop!_OS
 
 Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
-#### Ubuntu
+### Ubuntu
 
 Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
 
-### Install Packages
+## Install Packages
 
 Enter the following command followed by <kbd>Enter</kbd>:
 
@@ -35,13 +33,13 @@ Enter the following command followed by <kbd>Enter</kbd>:
 sudo apt install network-manager-openvpn-gnome
 ```
 
-### Open Network Settings
+## Open Network Settings
 
 Access OpenVPN setting in the <u>Settings</u> application (GNOME Control Center)
 
 ![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
 
-### Getting a .ovpn file
+## Getting a .ovpn file
 
 OpenVPN uses `.ovpn` files for setting up the VPN on your system and includes the servers to contact. Most VPN providers will provide a `.ovpn` file such as the following:
 
@@ -49,7 +47,7 @@ OpenVPN uses `.ovpn` files for setting up the VPN on your system and includes th
 - [NordVPN](https://nordvpn.com/ovpn/)
 - [Private Internet Access](https://www.privateinternetaccess.com/openvpn/openvpn.zip)
 
-### Using a .ovpn file
+## Using a .ovpn file
 
 After getting a `.ovpn` (OpenVPN file type) click the plus icon to the right of the VPN section. A dialog will as show will open. Click 'Import from file...'
 

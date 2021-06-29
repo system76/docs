@@ -16,11 +16,9 @@ hidden: false
 section: pop
 ---
 
-# Pop!_OS Basics
-
 The Pop!_OS operating system provides all the features you would expect from a modern desktop.
 
-### Getting to Know The Pop!_OS Desktop
+## Getting to Know The Pop!_OS Desktop
 
 ![Pop Desktop](/images/pop-basics/pop-desktop.png)
 

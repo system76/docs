@@ -15,8 +15,6 @@ hidden: false
 section: software-troubleshooting
 ---
 
-# File Systems (Mount and Repair)
-
 ## Problem
 
 File Systems can be damaged from events like unexpected power loss or unsafe removal of drive(s). This is where you would run a File System repair tool on your system. There are a few ways to do this and we'll list them below:

@@ -18,8 +18,6 @@ hidden: false
 section: getting-help
 ---
 
-# Clear Cache and Cookies in Firefox and Chrome
-
 <!--
 - Document Version: 1.0.0
 - Date: (5-21-2021)

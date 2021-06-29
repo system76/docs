@@ -142,5 +142,5 @@ sudo system76-power graphics compute
 
 The source code for the system76-power utility and the GNOME Shell extension can be found on GitHub:
 
- - [system76-power](https://github.com/pop-os/system76-power)
- - [gnome-shell-extension-system76-power](https://github.com/pop-os/gnome-shell-extension-system76-power)
+- [system76-power](https://github.com/pop-os/system76-power)
+- [gnome-shell-extension-system76-power](https://github.com/pop-os/gnome-shell-extension-system76-power)

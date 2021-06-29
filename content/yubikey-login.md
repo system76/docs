@@ -14,13 +14,11 @@ section: community
 ---
 
 
-# Login with Yubikey
-
 If you have a Yubikey, you can use it to login or unlock  your system.
 
 To do this you must install the yubikey-luks package, configure a challenge-response slot on the Yubikey, and then configure the necessary PAM modules.
 
-**This guide assumes you are running Pop!_OS**
+**NOTE:** This guide assumes you are running Pop!_OS
 
 ## Install Packages
 
@@ -112,6 +110,7 @@ Add the auth line immediately below the **@include common-auth** line.
 ## References
 
 The following sites were used to build this guide:
+
 - [Authentication Using Challenge Response](https://developers.yubico.com/yubico-pam/Authentication_Using_Challenge-Response.html) (From Yubikey).
 - [Yubico PAM Module](https://developers.yubico.com/yubico-pam/) (From Yubikey).
 

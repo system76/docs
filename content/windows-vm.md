@@ -21,17 +21,15 @@ redirect_from:
   - /windows
 ---
 
-# Install Windows 10 in VirtualBox
-
 Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.
 
 Virtual machines do impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot. Setting up a Windows-Pop!_OS Dual Boot is beyond the scope of this support.
 
-### Understand Virtual Machines
+## Understand Virtual Machines
 
 Virtual Machines are a method of running multiple OSes on your computer simultaneously. It's conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.
 
-### Enable AMD-V
+## Enable AMD-V
 
 For the Thelio (thelio-r1) and Thelio Major (thelio-major-r1) you will need to enable AMD-V in the BIOS by rebooting and holding the Del key. Then enable SVM mode with the following path:
 
@@ -39,7 +37,7 @@ M.I.T tab -> Advanced Frequency Settings -> Advanced CPU Core Settings -> SVM mo
 
 ![AMD BIOS Settings](/images/windows/AMD-BIOS.png)
 
-### Install VirtualBox
+## Install VirtualBox
 
 Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it's easy to set up and use, and available for free. It's available in the <u>Pop!_Shop</u>.
 
@@ -49,13 +47,13 @@ Open up the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click
 
 Click on the Install button, then wait for the download and install process to complete.
 
-### Obtain Windows Image
+## Obtain Windows Image
 
 You will need to obtain a Windows Installation disk image. If you have a DVD drive, an Installation DVD will also work. If you get a disk image file, be sure that it's an ISO format file, as this is what <u>VirtualBox</u> will work with. Save the ISO file somewhere on your computer: the `Documents` folder in your home folder would be a good place.
 
 Windows 10 can be downloaded from [here](https://www.microsoft.com/en-us/software-download/windows10ISO).
 
-### Create Virtual Machine
+## Create Virtual Machine
 
 Once you have <u>VirtualBox</u> installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Super Key on your keyboard <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and then enter *virtualbox* in the search field.
 
@@ -73,7 +71,7 @@ Increase the Virtual Machine Memory Size to half of the total RAM available. For
 
 For the options in creating the virtual hard drive, create a **VHD (Virtual Hard Disk)**, **Fixed size**, at least 16 GB, or larger.
 
-### Install Windows
+## Install Windows
 
 Once you've created the new VM, you should see it listed in the <u>VirtualBox</u> window:
 
@@ -129,7 +127,7 @@ Windows will now finish installing files and get the system ready to be set up. 
 
 After the process is finalized, you'll be able to begin the set up process.
 
-### Set Up Windows
+## Set Up Windows
 
 Set up will begin with the following screen:
 
@@ -149,11 +147,11 @@ Windows 10 allows you to set a PIN for logging in instead of a password. If you'
 
 ![Windows 10 Desktop](/images/windows/step22.png)
 
-### Use Virtual Machine
+## Use Virtual Machine
 
 The virtual machine will be presented through a window, and can be interacted with similarly to any other application. Note that the Virtual Machine window will capture the keyboard input (The mouse is automatically captured or uncaptured depending on whether it's currently on top of the Virtual Machine window or not). If the input is currently captured, and you need to send input to the desktop (or a window outside of your Virtual Machine window), you'll need to tap the Right-hand <kbd>Ctrl</kbd> first, which will release the keyboard from the Virtual machine, and allow it to work in the desktop again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
 
-### Add Network Printer
+## Add Network Printer
 
 In the Virtual Machine, click your virtual machine so it's highlighted in orange. Select **Settings** in the top menu. Select Network and make sure the **Enable Network Adapter** is checked and the "Attached to" option is **Bridged Adapter**. The Name is the name of the network you wish to connect to.
 

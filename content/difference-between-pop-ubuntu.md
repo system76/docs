@@ -15,8 +15,6 @@ hidden: false
 section: about-your-os
 ---
 
-# Pop!_OS and Ubuntu: What’s the difference?
-
 Pop!_OS has evolved quite a bit since its 17.10 release. While the easiest way to tell the difference between the two is by testing them out, let’s dive into how we differentiate Pop_OS from Ubuntu.
 
 ![General look of desktop](/images/difference-between-pop-ubuntu/pop-desktop-screenshot.png)
@@ -61,12 +59,13 @@ Pop!_OS includes a selection of apps intended to be comprehensive, but relativel
 ![Power Profiles/Graphics toggle](/images/difference-between-pop-ubuntu/system-menu.png)
 
 Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](/articles/roadmap) offers a more extensive outline of these changes, we’ve highlighted some of our major improvements below:
- * Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!_OS on install also downloads the NVIDIA drivers by default.
- * The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.
- * For scientific workloads, installing [CUDA](/articles/cuda) and [TensorFlow](/articles/install-tensorflow) is made simple with a single command line.
-	![CUDA/Tensorflow command](/images/difference-between-pop-ubuntu/Tensorflow.png)
- * Do Not Disturb mode silences notifications to help you focus on your work.
- * systemd-boot bootloader and the automatic configuration tool we’ve created for it called kernelstub replace the outdated GRUB bootloader used on Ubuntu. The systemd-boot bootloader is faster and smaller in size, increasing your computer’s startup speed.
+
+* Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!_OS on install also downloads the NVIDIA drivers by default.
+* The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.
+* For scientific workloads, installing [CUDA](/articles/cuda) and [TensorFlow](/articles/install-tensorflow) is made simple with a single command line.
+ ![CUDA/Tensorflow command](/images/difference-between-pop-ubuntu/Tensorflow.png)
+* Do Not Disturb mode silences notifications to help you focus on your work.
+* systemd-boot bootloader and the automatic configuration tool we’ve created for it called kernelstub replace the outdated GRUB bootloader used on Ubuntu. The systemd-boot bootloader is faster and smaller in size, increasing your computer’s startup speed.
 
 ## Recovery Partition
 

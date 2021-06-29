@@ -139,17 +139,17 @@ Example `/etc/network/interfaces` file:
 > \# Primary Network Interface  
 > auto eth0  
 > iface eth0 inet static  
->   address 10.13.15.10  
->   netmask 255.255.255.0  
->   gateway 10.13.15.1  
->   dns-nameservers 8.8.8.8 8.8.4.4  
+> address 10.13.15.10  
+> netmask 255.255.255.0  
+> gateway 10.13.15.1  
+> dns-nameservers 8.8.8.8 8.8.4.4  
 >
 > auto eth1  
 > iface eth1 inet static  
->   address 10.13.15.11  
->   netmask 255.255.255.0  
->   gateway 10.13.15.1  
->   dns-nameservers 8.8.8.8 8.8.4.4  
+> address 10.13.15.11  
+> netmask 255.255.255.0  
+> gateway 10.13.15.1  
+> dns-nameservers 8.8.8.8 8.8.4.4  
 
 ---
 

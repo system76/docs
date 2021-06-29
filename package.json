@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nuxt dev",
     "build": "nuxt generate --fail-on-error",
-    "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore ."
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:md": "markdownlint content/"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
@@ -28,6 +29,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.11.0",
     "lodash": "^4.17.21",
+    "markdownlint-cli": "^0.27.1",
     "nuxt-dynamic-images": "0.0.1",
     "postcss": "^8.3.5",
     "shiki": "^0.9.3",

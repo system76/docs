@@ -77,7 +77,7 @@ Once that's done you successfully finished setting up howdy. Try it out by locki
 
 ## Troubleshooting
 
-### "Camera path is not configured correctly, please edit the 'device_path' config value." error when adding a face:
+### "Camera path is not configured correctly, please edit the 'device_path' config value." error when adding a face
 
 #### Finding out what webcam to use
 

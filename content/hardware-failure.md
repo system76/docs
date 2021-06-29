@@ -166,8 +166,8 @@ If there is no log or the log is empty, then the crash isn't related to a hardwa
 ## Won't Power On
 
 > **NOTE:** If the system fails to power on, please use the following articles to troubleshoot: 
-![Desktops](https://support.system76.com/articles/power-on-failure-desktop) 
-![Laptops](https://support.system76.com/articles/power-on-failure-laptop) 
+[Desktops](https://support.system76.com/articles/power-on-failure-desktop) 
+[Laptops](https://support.system76.com/articles/power-on-failure-laptop) 
 
 
 ## Support

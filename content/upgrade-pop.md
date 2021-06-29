@@ -48,6 +48,8 @@ Some users may prefer to have Pop!\_OS installation media handy before starting 
 
 # Upgrade Pop!_OS
 
+Pop!\_OS 21.04 was released on June 29, 2021..
+
 Pop!\_OS 20.10 was released October 23, 2020.
 
 # Upgrading Pop!\_OS to 20.10 from 20.04 

@@ -49,23 +49,36 @@ We can select to erase the currently installed operating system and install Pop!
 
 ![Disk setup](/images/install-pop/4_disk.png)
 
+### User Account Setup
+
+Once the installation drive has been selected, you can now begin to configure the settings for the initial user account on your new Pop!\_OS installation.
+
+First, you will want to provide a full name (this can include any text you want, uppercase or lowercase), as well as a username (which must be lowercase):
+
+![Username setup](/images/install-pop/5_username.png)
+
+Once the account has been created, you will be prompted to set a new password:
+
+![Password setup](/images/install-pop/6_password.png)
+
+
 ### Full Disk Encryption
 
-You can choose to encrypt your drive or to not encrypt your drive. If you would like to encrypt the drive then push the **Choose Password** button, if you don't want to encrypt click the **Don't Encrypt** button:
+You can choose to encrypt your drive or to not encrypt your drive. If you would like to encrypt the drive, you can either use the same password as the one you assigned for your user account from the previous section by checking the box marked **Encryption password is the same as user account password.** and then pressing **Encrypt**, or to set a different password push the **Set Password** button. If you don't want to encrypt, click the **Don't Encrypt** button:
 
-![Encrypt option](/images/install-pop/5_encrypt_notice.png)
+![Encrypt option](/images/install-pop/7_encrypt_notice.png)
 
-At this step you choose the password that will be used to encrypt your drive and it will be requested every time the system boots:
+If you choose the **Set Password** button, you will see an additional prompt to set your encryption password, which will be requested every time the system boots: 
 
-![Encrypt password](/images/install-pop/6_encrypt_password.png)
+![Encryption password](/images/install-pop/8_encryption_password.png)
 
 Now Pop!\_OS will begin installing!
 
-![Progress](/images/install-pop/7_progress.png)
+![Progress](/images/install-pop/9_progress.png)
 
 Pop!\_OS has been successfully installed on your computer! Awesome work! You can choose to reboot your computer to create your new user for the OS or you can shut down and setup the new user later:
 
-![Success](/images/install-pop/8_success.png)
+![Success](/images/install-pop/10_success.png)
 
 
 #### NVIDIA Graphics

@@ -68,7 +68,7 @@ You can choose to encrypt your drive or to not encrypt your drive. If you would 
 
 ![Encrypt option](/images/install-pop/7_encrypt_notice.png)
 
-If you choose the **Set Password** button, you will see an additional prompt to set your encryption password, which will be requested every time the system boots: 
+If you choose the **Set Password** button, you will see an additional prompt to set your encryption password, which will be requested every time the system boots:
 
 ![Encryption password](/images/install-pop/8_encryption_password.png)
 

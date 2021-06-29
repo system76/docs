@@ -1,7 +1,6 @@
 ---
-layout: article
 title: Install cjdns
-description: 
+description:
   Connect to the meshnet! Cjdns uses an ipv6 allocated space public key encrypted routing system to protect privacy.
 keywords:
   - NSA
@@ -11,16 +10,17 @@ keywords:
   - hyperboria
   - encryption
   - github
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
-
-# Install cjdns
 
 ## Install Dependencies
 
-```bash 
+```bash
 sudo apt-get install nodejs git build-essential python2.7
 ```  
 

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Package Manager Issues (Ubuntu)
 description: >
   Here are ways to fix update, upgrade, and other package manager issues.
@@ -10,13 +9,13 @@ keywords:
   - apt-get
   - upgrades
   - updates
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
-
-# Package Manager Issues (Ubuntu)
 
 If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems.  Some package manager issues can be resolved with the graphical update program, but many require the command line.  If you get the red circle in the status bar, run these commands to fix your package manager:
 

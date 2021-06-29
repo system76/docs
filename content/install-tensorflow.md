@@ -1,5 +1,4 @@
 ---
-layout: article
 title: TensorFlow (Install)
 description: >
   Complete instructions on installing TensorFlow
@@ -7,13 +6,13 @@ keywords:
   - NVIDIA
   - CUDA
   - TensorFlow
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
-
-# Tensorman
 
 If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/articles/use-tensorman) for managing TensorFlow containers.
 

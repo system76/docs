@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Touchpad (Configure or Disable)
 description: >
   Learn how to turn on and configure touchpad functions.
@@ -10,13 +9,13 @@ keywords:
   - mouse settings
   - support
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
-
-# Touchpad (Configure or Disable)
 
 Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.
 

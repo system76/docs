@@ -16,9 +16,8 @@ hidden: false
 section: general-hardware-info
 ---
 
-# Docking Station Support
+## Disclaimer
 
-**Disclaimer:**
 This article is provided for information purposes only. System76 cannot guarantee that all vendors will follow USB-C or Thunderbolt specs, nor that a manufacturer won't have made hardware or firmware changes since this article was created.
 Not all docks will work on all hardware. Be sure you purchase docking stations from a reputable vendor, with a flexible return policy.
 
@@ -36,9 +35,8 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 | galp4   | Yes                      | Yes                         |
 | galp5   | Yes                      | Yes                         |
 | lemp9   | Yes                      | No (DisplayPort over USB-C) |
-| lemp10  | Yes                      | Yes                         |    
+| lemp10  | Yes                      | Yes                         |
 | serw12  | No                       | No (DisplayPort over USB-C) |
-
 
 ## A Note About Multi-Monitor Support
 
@@ -46,30 +44,32 @@ Many docking stations offer multiple video-out ports on the dock device itself. 
 
 Laptop -> Docking Station -> Monitor 1 -> DisplayPort Cable or Thunderbolt Cable -> Monitor 2
 
-### System76-tested docks:
+### System76-tested docks
 
 We have tested the following docks:
- - [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] <sup>1,2,3</sup>
-   - All features work.
 
-### Community-tested docks:
+- [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] <sup>1,2,3</sup>
+  - All features work.
+
+### Community-tested docks
 
 Community members have reported that the following docks work with our products:
- - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [[community-tested](https://github.com/system76/docs/pull/417) on an Intel system] <sup>1</sup>
-   - Downstream (passthrough) Thunderbolt 3 port not tested.
- - [Dell DS1000](https://www.dell.com/support/manuals/us/en/04/dell-dockstand-ds1000/ds1000_docking_stand_ug_publication/technical-specifications?guid=guid-1ad58fe1-dd33-4ebc-bac1-8e6a9083eb35&lang=en-us) [[community-tested](https://github.com/system76/docs/pull/431) on an Intel system]
-   - Ethernet port not tested.
- - [Dell WD19 Dock](https://www.dell.com/en-us/work/shop/dell-dock-wd19-90w-power-delivery-130w-ac/apd/210-ARIO/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system] <sup>1</sup>
-   - Displays sometimes don't wake up from sleep until dock is re-plugged.
- - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/206) on an Intel system] <sup>1</sup>
- - [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [[community-tested](https://github.com/system76/docs/pull/231) on an Intel system]
-   - Requires extra configuration for suspend/resume to work.
- - [Lenovo ThinkPad Thunderbolt 3 Workstation Dock Gen 2](https://www.lenovo.com/us/en/accessories-and-monitors/docking/universal-cable-docks-thunderbolt/TBT-WS-Dock-Gen-2/p/40ANY230US) [[community-tested](https://github.com/system76/docs/pull/517) on an Intel sytem] <sup>1</sup>
- - [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
-   - Ethernet and DVI ports not tested.
- - [Plugable UD-ULTCDL Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
 
-### For Intel systems
+- [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [[community-tested](https://github.com/system76/docs/pull/417) on an Intel system] <sup>1</sup>
+  - Downstream (passthrough) Thunderbolt 3 port not tested.
+- [Dell DS1000](https://www.dell.com/support/manuals/us/en/04/dell-dockstand-ds1000/ds1000_docking_stand_ug_publication/technical-specifications?guid=guid-1ad58fe1-dd33-4ebc-bac1-8e6a9083eb35&lang=en-us) [[community-tested](https://github.com/system76/docs/pull/431) on an Intel system]
+  - Ethernet port not tested.
+- [Dell WD19 Dock](https://www.dell.com/en-us/work/shop/dell-dock-wd19-90w-power-delivery-130w-ac/apd/210-ARIO/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system] <sup>1</sup>
+  - Displays sometimes don't wake up from sleep until dock is re-plugged.
+- [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/206) on an Intel system] <sup>1</sup>
+- [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [[community-tested](https://github.com/system76/docs/pull/231) on an Intel system]
+  - Requires extra configuration for suspend/resume to work.
+- [Lenovo ThinkPad Thunderbolt 3 Workstation Dock Gen 2](https://www.lenovo.com/us/en/accessories-and-monitors/docking/universal-cable-docks-thunderbolt/TBT-WS-Dock-Gen-2/p/40ANY230US) [[community-tested](https://github.com/system76/docs/pull/517) on an Intel sytem] <sup>1</sup>
+- [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
+  - Ethernet and DVI ports not tested.
+- [Plugable UD-ULTCDL Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
+
+## For Intel systems
 
 You'll need to install the 'dkms' package to install DisplayLink Driver. The NVIDIA Driver installs this package automatically.
 
@@ -77,7 +77,7 @@ You'll need to install the 'dkms' package to install DisplayLink Driver. The NVI
 sudo apt install dkms
 ```
 
-### Installing DisplayLink Driver
+## Installing DisplayLink Driver
 
 To download the newest [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) with the link in orange.
 

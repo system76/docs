@@ -17,8 +17,6 @@ hidden: false
 section: media
 ---
 
-# Media Production (Pop!_OS)
-
 ## Bring Your Imagination to Life
 
 There's something special about telling stories. And the more tools you have at your disposal, the more vivid and dynamic your story telling can be.

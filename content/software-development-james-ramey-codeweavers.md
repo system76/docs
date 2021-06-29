@@ -68,7 +68,7 @@ to be seamless.
 > graphics card, backlit keyboard, display), with all the functionality I
 > expected out of a premium laptop. The system is absolutely spot-on in terms
 > of what I was looking for.
-
+>
 > We look to System76 as being the company making hardware more accessible to
 > the same group of users that we serve. Like System76, we are trying to
 > provide a platform that serves users with a commitment to Linux and open

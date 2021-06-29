@@ -17,8 +17,6 @@ section: hardware-troubleshooting
 tableOfContents: true
 ---
 
-# Diagnose Hardware Failures
-
 > **NOTE**: If the System will not power on, skip to the end of this article.
 
 If the system boots, but takes a long time to boot, crashes, or reports other random, hard to track down errors, then the individual hardware components can be checked for failure.
@@ -26,10 +24,12 @@ If the system boots, but takes a long time to boot, crashes, or reports other ra
 ## Memory
 
 We can test memory in your running OS with the 'memtest' package. You want to put *most* of your memory under test but still leave enough space for your normal workload and the OS to continue running. On a 8 GB system, testing 6 GB would be tested like this:
+
 ```
 sudo apt install memtester
 sudo memtester 6G 5
 ```
+
 Memory test can take a number of hours. While this will not put all of memory under test, it will make any memory error likely to cause instability if not part of the tested memory or show up clearly with errors in the `memtester` run
 
 [Memtest86++](https://www.memtest86.com/) also has ISO downloads for personal use. You would boot from a USB drive made with the ISO. Right as memtest loads (blue screen), press <kbd>F2</kbd> to enable multi-core mode.  Wait at least 20 minutes for the tests to run, or until any errors are shown in red.  If any errors are found, please run it again in single core mode, and let it run overnight to check for any memory errors.  6 to 8 passes are minimally recommended.  If memory errors show up, the memory stick should be replaced.
@@ -149,6 +149,7 @@ Machine Check Exceptions are hardware failure events and can be logged with <u>r
 ```bash
 sudo apt install rasdaemon
 ```
+
 verify rasdaemon is active
 
 ```bash
@@ -165,10 +166,9 @@ If there is no log or the log is empty, then the crash isn't related to a hardwa
 
 ## Won't Power On
 
-> **NOTE:** If the system fails to power on, please use the following articles to troubleshoot: 
-![Desktops](https://support.system76.com/articles/power-on-failure-desktop) 
-![Laptops](https://support.system76.com/articles/power-on-failure-laptop) 
-
+> **NOTE:** If the system fails to power on, please use the following articles to troubleshoot:
+[Desktops](https://support.system76.com/articles/power-on-failure-desktop)
+[Laptops](https://support.system76.com/articles/power-on-failure-laptop)
 
 ## Support
 

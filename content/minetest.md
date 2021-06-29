@@ -1,21 +1,21 @@
 ---
-layout: article
 title: Install and Play Minetest
 description: >
    Minetest, an open source infinite-world block sandbox game with survival and crafting.
 keywords:
   - Games
   - minetest
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
 ---
 
-# Install and Play Minetest 
-
 Did you get sick of Minecraft? Microsoft controlling it and ripping apart our beloved game? Well fear no more!  Minetest is a game similar to Minecraft but is truly infinite voxel game, but is written in C++ for speed, easy cross-compatiblity with other platforms, and seamless modding and addition of new game types, mods, texture packs, and much more, all licensed under the LGPL.
 
-### Installation
+## Installation
 
 To install on Ubuntu / PopOS, simply do:
 
@@ -55,17 +55,17 @@ Run it:
 ./bin/minetest
 ```
 
-### Adding Texture Packs, Mods, and Subgames
+## Adding Texture Packs, Mods, and Subgames
 
 [www.minetest.net/customize](http://www.minetest.net/customize/)
 
 The game only comes with a default subgame. To play single player with more features, add a subgame or mod!  To add textures, `cd textures` and do a git clone of a texture pack or put one in!  
 
-### Connecting to servers
+## Connecting to servers
 
 To connect to a server, choose one from the list, then choose a username and password on the right side of the screen.  The server will then connect.  The next time you use the server, simply put in the same username and password!  Custom mods are automatically loaded, so no fuss is needed.
 
-### Resources
+## Resources
 
 Check out Minetest at [minetest.net](https://minetest.net)
 

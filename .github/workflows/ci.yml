@@ -3,14 +3,11 @@
 name: CI
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+  - pull_request
 
 jobs:
-  Lint:
+  Lint_JS:
+    name: Lint (Javascript)
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +23,29 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: npm run lint
+        run: npm run lint:js
+
+  Lint_MD:
+    name: Lint (Markdown)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Setup Markdown
+        uses: xt0rted/markdownlint-problem-matcher@v1
+
+      - name: Install
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint:md
 
   Build:
     runs-on: ubuntu-latest

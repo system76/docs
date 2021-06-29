@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Clear Cache and Cookies in Firefox and Chrome
 description: >
  How to navigate to settings and delete browsing data in Firefox and Chrome.
@@ -11,15 +10,15 @@ keywords:
  - cookies
  - login
  - ticket
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: getting-help
-
 ---
 
-# Clear Cache and Cookies in Firefox and Chrome
-
-<!-- 
+<!--
 - Document Version: 1.0.0
 - Date: (5-21-2021)
 - Author: Nathaniel Warburton, Emma Marshall
@@ -28,11 +27,11 @@ section: getting-help
 
 If you are having trouble logging into your account or opening a support ticket, a good first troubleshooting step is to clear your browser's cache and cookies.
 
-To clear your cookies and web cache, navigate to the Settings menu in your web browser. 
+To clear your cookies and web cache, navigate to the Settings menu in your web browser.
 
-If you are using Firefox or Chrome, you can find settings by looking at the right corner of the navigation bar and clicking the 3 stacked lines (Firefox) or dots (Chrome). 
+If you are using Firefox or Chrome, you can find settings by looking at the right corner of the navigation bar and clicking the 3 stacked lines (Firefox) or dots (Chrome).
 
-The cache and cookies are located in the Privacy and Security settings and will have an option to delete or clear the stored data. 
+The cache and cookies are located in the Privacy and Security settings and will have an option to delete or clear the stored data.
 
 We've included screen captures for both Firefox and Chrome here:
 

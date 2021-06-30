@@ -84,6 +84,7 @@ The launcher allows searching through open windows and installed applications, a
 | `t:`                                                       | Execute a command in a terminal |
 | `:`                                                        | Execute a command in sh         |
 | `=`                                                        | Calculate an equation           |
+| `?`                                                        | Help menu                       |
 
 ### Switch between apps and windows
 

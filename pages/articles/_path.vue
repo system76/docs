@@ -116,6 +116,7 @@
               v-for="author in [...article.authors].reverse()"
               :key="author.username"
               :href="author.profileUrl"
+              rel="nofollow noopener noreferrer"
               target="_blank"
             >
               <img

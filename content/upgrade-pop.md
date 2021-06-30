@@ -73,21 +73,21 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a **Download** button.
 
 ![Settings OS Upgrade](/images/upgrade-pop/setting-os-upgrade.png)
 
-The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a **Download** button. Be sure to update your Recovery partition before upgrading the OS.
+1. Click the **Update** button to update the Recovery partition.
 
-1. Click the **Download** button and the download will begin. Once the download is complete, you will receive a second notification saying the upgrade is ready.
+2. Click the **Download** button and the download will begin. Once the download is complete, you will receive a second notification saying the upgrade is ready.
 
-2. Click on the notification and your computer will restart to the upgrade screen.
+3. Click on the notification and your computer will restart to the upgrade screen.
 
 After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.04!
 
 ### Advanced Install (Terminal)
 
-Users wishing to use the Terminal to apply the upgrade may do so by running the following commands:
+Use the Terminal to apply the upgrade may do so by running the following commands:
 
 ```bash
 sudo apt update
@@ -99,7 +99,13 @@ You'll be prompted to enter your system password, but when you type it, the lett
 sudo apt full-upgrade
 ```
 
-Once any updates are applied, initiate the upgrade with this command:
+Update the Recovery partition with this command:
+
+```
+pop-upgrade recovery upgrade from-release
+```
+
+Once updates have been applied (including the Recovery partition), initiate the upgrade with this command:
 
 ```bash
 pop-upgrade release upgrade

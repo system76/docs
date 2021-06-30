@@ -1,7 +1,7 @@
 ---
 title: Upgrade Pop!_OS
 description: >
-  Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
+  Get the newest version of Pop!_OS on your computer! Check out our upgrade directions.
 keywords:
   - Pop!_OS 17.10
   - Pop!_OS 18.04
@@ -58,13 +58,13 @@ Please read our article on [how to backup your files](/articles/backup-files/) f
 
 ## Upgrade Pop!_OS
 
-Pop!\_OS 21.04 was released on June 29, 2021..
+Pop!\_OS 21.04 was released on June 29, 2021.
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
 ### Upgrading Pop!\_OS to 21.04 from 20.10
 
-**For all other operating system versions:** scroll down to the instructions for upgrading from an earlier release
+> **NOTE:** For all other operating system versions scroll down to the instructions for upgrading from an earlier release
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -73,15 +73,15 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings -> OS Upgrade.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery.
 
-The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a "Download" button.
+![Settings OS Upgrade](/images/upgrade-pop/setting-os-upgrade.png)
 
-Click the "Download" button and the download will begin.
+The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a **Download** button. Be sure to update your Recovery partition before upgrading the OS.
 
-Once the download is complete, you will receive a second notification saying the upgrade is ready.
+1. Click the **Download** button and the download will begin. Once the download is complete, you will receive a second notification saying the upgrade is ready.
 
-Click on the notification and your computer will restart to the upgrade screen.
+2. Click on the notification and your computer will restart to the upgrade screen.
 
 After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.04!
 

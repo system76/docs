@@ -41,7 +41,7 @@
         </nuxt-link>
       </div>
 
-      <h2 class="text-3xl mt-7">
+      <h2 class="text-3xl mt-7 font-bold">
         Support Tickets
       </h2>
 
@@ -244,29 +244,20 @@ export default {
       title: 'Getting Help',
       section: 'getting-help'
     }, {
-      title: 'Learn',
-      section: 'learn',
+      title: 'Troubleshoot',
+      section: 'troubleshoot',
       listings: [{
-        title: 'Switching To Linux',
-        section: 'switching'
+        title: 'Software Troubleshooting',
+        section: 'software-troubleshooting'
       }, {
-        title: 'Learn About Your Computer',
-        section: 'learn-about-your-computer'
+        title: 'Network Troubleshooting',
+        section: 'network-troubleshooting'
       }, {
-        title: 'Learn About Your Operating System',
-        section: 'learn-about-your-os'
+        title: 'Hardware Troubleshooting',
+        section: 'hardware-troubleshooting'
       }, {
-        title: 'Learn About Pop!_OS',
-        section: 'pop'
-      }, {
-        title: 'Learn About Ubuntu',
-        section: 'ubuntu'
-      }, {
-        title: 'Media',
-        section: 'media'
-      }, {
-        title: 'General Hardware Information',
-        section: 'general-hardware-info'
+        title: 'Repairs and Returns',
+        section: 'repairs-returns'
       }]
     }, {
       title: 'Tune',
@@ -282,20 +273,29 @@ export default {
         section: 'windows'
       }]
     }, {
-      title: 'Troubleshoot',
-      section: 'troubleshoot',
+      title: 'Learn',
+      section: 'learn',
       listings: [{
-        title: 'Software Troubleshooting',
-        section: 'software-troubleshooting'
+        title: 'Switching To Linux',
+        section: 'switching'
       }, {
-        title: 'Network Troubleshooting',
-        section: 'network-troubleshooting'
+        title: 'About Your Computer',
+        section: 'about-your-computer'
       }, {
-        title: 'Hardware Troubleshooting',
-        section: 'hardware-troubleshooting'
+        title: 'About Your Operating System',
+        section: 'about-your-os'
       }, {
-        title: 'Repairs and Returns',
-        section: 'repairs-returns'
+        title: 'About Pop!_OS',
+        section: 'pop'
+      }, {
+        title: 'About Ubuntu',
+        section: 'ubuntu'
+      }, {
+        title: 'Media',
+        section: 'media'
+      }, {
+        title: 'General Hardware Information',
+        section: 'general-hardware-info'
       }]
     }, {
       title: 'Community Articles',

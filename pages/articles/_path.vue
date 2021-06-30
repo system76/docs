@@ -56,7 +56,10 @@
               :key="toc.id"
             >
               <nuxt-link
-                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :class="{
+                  'pl-4': (toc.depth === 2),
+                  'pl-8': (toc.depth === 3)
+                }"
                 :to="`#${toc.id}`"
                 class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                 @click="tableOfContents = false"
@@ -88,7 +91,10 @@
               :key="toc.id"
             >
               <nuxt-link
-                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :class="{
+                  'pl-4': (toc.depth === 2),
+                  'pl-8': (toc.depth === 3)
+                }"
                 :to="`#${toc.id}`"
                 class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                 @click="tableOfContents = false"

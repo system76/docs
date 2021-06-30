@@ -79,8 +79,9 @@ The launcher allows searching through open windows and installed applications, a
 | ---------------------------------------------------------- | ------------------------------- |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                 | Activate the launcher on Pop 21.04+ |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>  | Activate the launcher on Pop 20.10 and below |
-| `d:` or `recent filename                                   | Browse and search recent files  |
-| `/` / `~` / file filename                                  | Browse the filesystem           |
+| `recent filename`                                          | Browse and search recent files  |
+| `/` / `~`                                                  | Browse the filesystem           |
+| `file filename`                                            | Search the filesystem for a certain file |
 | `t:`                                                       | Execute a command in a terminal |
 | `:`                                                        | Execute a command in sh         |
 | `=`                                                        | Calculate an equation           |

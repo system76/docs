@@ -12,7 +12,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: learn-about-your-os
+section: about-your-os
 ---
 
 Pop!_OS has evolved quite a bit since its 17.10 release. While the easiest way to tell the difference between the two is by testing them out, let’s dive into how we differentiate Pop_OS from Ubuntu.

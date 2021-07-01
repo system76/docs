@@ -178,7 +178,7 @@ After you have made the edit, save the file and start the upgrade again.
 If the system is still not able to upgrade and you have a System76 system please open a support ticket and include this file:
 
 ```bash
-journal -u pop-upgrade > ~/pop-upgrade.log
+journalctl -u pop-upgrade > ~/pop-upgrade.log
 ```
 
 If it is not a System76 system go to our Pop!\_OS Mattermost chat for community support [here](chat.pop-os.org).

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Watch Videos and Play Music (MP3, DVD, etc.)
 description: >
   Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these media, please see this document.
@@ -16,21 +15,21 @@ keywords:
   - aac
   - wma
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: media
-
 ---
-
-# Watch Videos and Play Music (MP3, DVD, etc.)
 
 Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these medias, please follow the instructions below.
 
-### Open A Terminal
+## Open A Terminal
 
 Press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, and type the word *terminal*, then press <kbd>Enter</kbd>.  A <u>Terminal</u> window should open up.
 
-### Install Packages
+## Install Packages
 
 Ubuntu and Pop!\_OS both have a package available which will install all available proprietary media codecs. Because of legal restrictions, this package cannot be installed automatically, but if you live in a territory where it is legal to do so, you can copy and paste the following line, followed by <kbd>Enter</kbd>:
 
@@ -56,7 +55,7 @@ To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>S
 
 You may be prompted for your `[sudo] password`. If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should see several lines of output in the terminal. The command may take a few minutes to complete.
 
-### Setup DVD Playback <small>_(optional)_</small>
+## Setup DVD Playback (optional)
 
 Once you see the command above has finished, enter in the following command to enable DVD playback:
 
@@ -64,7 +63,7 @@ Once you see the command above has finished, enter in the following command to e
 sudo dpkg-reconfigure libdvd-pkg
 ```
 
-### Restart Your Computer
+## Restart Your Computer
 
 After enabling codec support, it's recommended to restart your computer.
 

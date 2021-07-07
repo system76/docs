@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Media Production (Pop!_OS)
 description: Learn about media production tools on Pop!\_OS
 keywords:
@@ -10,17 +9,17 @@ keywords:
   - Godot
   - Lightworks
   - Natron
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: media
-
 ---
-
-# Media Production (Pop!_OS) 
 
 ## Bring Your Imagination to Life
 
-There's something special about telling stories. And the more tools you have at your disposal, the more vivid and dynamic your story telling can be. 
+There's something special about telling stories. And the more tools you have at your disposal, the more vivid and dynamic your story telling can be.
 
 Pop!\_OS supports world class story-telling tools that when combined with System76 hardware, create an unparalleled system for content creation.
 
@@ -40,7 +39,7 @@ See installation instructions [here](/articles/install-davinci-resolve/).
 
 Godot provides a huge set of common tools, so you can just focus on making your game without reinventing the wheel.
 
-Godot is completely free and open-source under the very permissive MIT license. No strings attached, no royalties, nothing. Your game is yours, down to the last line of engine code. 
+Godot is completely free and open-source under the very permissive MIT license. No strings attached, no royalties, nothing. Your game is yours, down to the last line of engine code.
 
 Install Directly From the Pop!\_Shop
 
@@ -70,7 +69,7 @@ Install Directly From the Pop!\_Shop
 
 ### Inkscape
 
-Inkscape is a free and open-source vector graphics editor. This software can be used to create or edit vector graphics such as illustrations, diagrams, line arts, charts, logos, icons and complex paintings. 
+Inkscape is a free and open-source vector graphics editor. This software can be used to create or edit vector graphics such as illustrations, diagrams, line arts, charts, logos, icons and complex paintings.
 
 Install Directly From the Pop!\_Shop
 
@@ -82,6 +81,6 @@ Install Directly From the Pop!\_Shop
 
 ### Flowblade
 
-Flowblade is a multitrack non-linear video editor with a set of industry standard editing tools suitable for beginners and masters alike to help make your vision a reality of image and sound. 
+Flowblade is a multitrack non-linear video editor with a set of industry standard editing tools suitable for beginners and masters alike to help make your vision a reality of image and sound.
 
 Install Directly From the Pop!\_Shop

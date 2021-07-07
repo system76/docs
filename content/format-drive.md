@@ -1,26 +1,27 @@
 ---
-layout: article
-title: Format Your drive
-description: Learn how to format your drive
+title: Format Your Drive
+description: >
+ Learn how to format your drive
 keywords:
   - System76
   - Security
   - Linux
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
-# Format Your Drive
 
-<!---- Document Version: 1.0.0
+<!--
+- Document Version: 1.0.0
 - Date: (8-27-2020)
 - Author: Aaron Honeycutt
-- Contributing Editor(s): Nathaniel Warburton--->
+- Contributing Editor(s): Nathaniel Warburton
+-->
 
-
-
-### Live Disk or Pop Recovery
+## Live Disk or Pop Recovery
 
 In order to format the drive that has your OS on it we will need to boot from either a live disk or the Pop Recovery partition.
 

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Shipping Your Computer
 description: >
   Instructions for preparing your computer for shipping to System76.
@@ -7,10 +6,12 @@ keywords:
   - shipping
   - repair
   - return
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: repairs-returns
-
 ---
 
 When shipping a computer to us for any reason, several steps need followed before sending it in.
@@ -23,11 +24,11 @@ For repairs of most hardware level failures, such as LCD, motherboard, and power
 
 If the hard drive is included with the shipment, please backup all important data.  We will try our best to not destroy any data, but we are not responsible for any lost data during the repair.  Methods for backing up data include:
 
-| Method | Description |
+| Method  | Description |
 |-------|------------|
 | Cloud Storage | Use a cloud storage system, such as [Google Drive](https://www.google.com/drive/), [Dropbox](https://www.dropbox.com/), or [Mega](https://mega.nz/) to sync your data remotely.  Put all important files into the desktop folder, or use the web interface to backup any important. |
 | File Explorer | Use the built in file explorer to copy important data to an external drive.  Format the external drive either 'ext4' or 'ntfs' using the <u>Disks</u> or <u>GParted</u> programs.  Then, copy the folders over to the extra drive. |
-| Command Line | The command `rsync` is commonly used to make copies of a folder structure to a local, networked, or remote computers.  Please see `man rsync` or this reference [here](https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/). |
+| CLI | The command `rsync` is commonly used to make copies of a folder structure to a local, networked, or remote computers.  Please see `man rsync` or this reference [here](https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/). |
 | Software | For an exact backup of your entire operating system and personal folders as-is, we recommend using [Clonezilla](clonezilla.org/). |
 
 ### Packing Computer

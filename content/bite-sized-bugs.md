@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Bitesize Bugs
 description: >
     Get started contributing quickly with bitesize bugs!
@@ -7,13 +6,13 @@ keywords:
   - Support
   - Contribution
   - System76
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
-
-# Bitesize Bugs
 
 Some bugs are determined by the maintainer of Pop\! projects to be easy to fix, these bugs are referred to as "bitesize" bugs and will show up in the project's issue tracker as such.
 
@@ -25,7 +24,7 @@ Solving these bugs often contributes to better polish for the overall project. A
 
 [Bitesize bugs for Pop\!\_OS (distro)](https://github.com/pop-os/pop/labels/bite-sized).
 
-### Bitesize Bug Example
+## Bitesize Bug Example
 
 Let's go through how to contribute via a bitesize bug fix. First take a look at what is listed as a [bitesize bug via the issue tracker](https://github.com/pop-os/pop/labels/bite-sized).
 

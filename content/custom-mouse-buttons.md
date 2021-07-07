@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Mouse Customization
 description: >
    How to customize the buttons on your mouse
@@ -10,15 +9,17 @@ keywords:
   - xbindkeys
   - Solaar
   - Piper
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware
-
 ---
 
-### Graphical Software
+## Graphical Software
 
-#### Piper
+### Piper
 
 ![Piper Buttons Window](/images/custom-mouse-buttons/Piper-2.png)
 
@@ -28,7 +29,7 @@ section: hardware
 
 In this window the button that has been clicked can be reassigned to a differet function like changing the Left-click to the Right-click or swapping the Forward button to the Back button for web pages.
 
-#### Solaar
+### Solaar
 
 ![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png)
 
@@ -43,9 +44,9 @@ In this window the button that has been clicked can be reassigned to a differet 
 
 You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/) and more information about <u>Solaar</u> [here](https://pwr-solaar.github.io/Solaar/devices).
 
-### Command Line Software
+## Command Line Software
 
-#### xbindkeys
+### xbindkeys
 
 For using <u>xbindkeys</u> open a terminal with the following keys:
 
@@ -65,7 +66,7 @@ Then create the default config file for <u>xbindkeys</u> with this command:
 xbindkeys --defaults > $HOME/.xbindkeysrc
 ```
 
-### Setting custom actions
+## Setting custom actions
 
 Now let's open the config file with this command:
 
@@ -82,7 +83,7 @@ Then scroll down to the bottom of the file right below this line:
 
 From here you can add your own custom actions like the ones below.
 
-#### Examples
+### Examples
 
 Below are some examples that you can do:
 
@@ -106,7 +107,7 @@ This will cause the forward mouse button and the <kbd>Ctrl</kbd> key to emulate 
 
 This will cause the forward and back mouse button to emulate pressing the <kbd>Ctrl</kbd>+<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>Up</kbd> and <kbd>Down</kbd>. This is useful for switching workspaces very quickly while leaving your hand on the mouse.
 
-### Changes
+## Changes
 
 If any changes are made to the config file then xbindkeys need to be restarted with these commands:
 
@@ -121,8 +122,8 @@ By default xbindkeys does not start on reboot and you will need to add it using 
 
 Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application which is 'xbindkeys'. Now click the **Add** button and your done!
 
-### Caveats
+## Caveats
 
-#### xbindkeys
+### xbindkeys while browsing the web
 
 Once the mouse buttons for forward and back are set to a different action they will no longer work in a web browser for going back and forth between web pages.

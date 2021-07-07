@@ -1,21 +1,21 @@
 ---
-layout: article
 title: Disaster Data Recovery
 description: >
- How to backup your files if your OS doesn't boot
+ How to back up your files if your OS doesn't boot
 keywords:
- - files
- - backup
- - deja-dup
-image: http://support.system76.com/images/system76.png
+  - files
+  - backup
+  - deja-dup
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
-# Disaster Data Recovery
-
 This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](/articles/login-loop-pop) may be helpful instead.
+
 ## If you can't boot your installed OS
 
 If you are not able to boot into your installed OS, then we will want to boot from a live disk. If you have Pop!\_OS installed we can use the Pop!\_OS Recovery Partition.
@@ -42,6 +42,7 @@ Then copy and paste the encryption commands (if the OS is encrypted) and the mou
 ## Software
 
 Once the drive is mounted, we can install software to back up files.
+
 ### Deja Dup
 
 [Déjà Dup](https://wiki.gnome.org/Apps/DejaDup) is a popular, straightforward backup option. It can be used to back up user data locally, remotely, or to a cloud server. It can also be set up to run automatically on a regular basis.
@@ -109,11 +110,12 @@ Now that we reinstalled the OS we can start restoring our data. To restore your 
 Refer to your models [service manual](/articles/service-manuals) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
 
 ## What if the Drive is the Problem?
+
 If signs are pointing to the drive itself being the issue, and your files are corrupted, or no longer accessible, a data recovery service may be the only viable option. If that is the case, remove the drive, and stop using it until it can be taken to a data recovery site. Continued use of the drive may exacerbate bad sectors, or overwrite existing, partially retrievable data.
 
 > **NOTE:** Data recovery services are not guarantees of data recovery, and may be cost-prohibitive for some users. System76 is not a data recovery service. Nor do we partner with any. A data recovery service is not a substitute for having robust backups. However, your drive manufacturer may provide data recovery services as part of your service agreement or warranty.
 
-# Future Steps
+## Future Steps
 
 Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help.
 

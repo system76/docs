@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Webcam
 description: >
   Activate and troubleshoot your laptop webcam
@@ -8,10 +7,12 @@ keywords:
   - camera
   - support
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: hardware-troubleshooting
-
 ---
 
 If you can’t see the image from your webcam or you receive a "No device found!" error when you try to use it: press <kbd>Fn</kbd>+<kbd>F10</kbd> to turn cycle the camera on, and then restart a webcam application like <u>Cheese</u>. You will now see the image from the webcam in the app.

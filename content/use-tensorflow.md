@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Use TensorFlow
 description: >
   Complete instructions on setting up TensorFlow
@@ -7,23 +6,23 @@ keywords:
   - NVIDIA
   - CUDA
   - TensorFlow
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
-# Use TensorFlow
-
-# Tensorman
+## Tensorman
 
 If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/articles/use-tensorman/) for managing TensorFlow containers.
 
-# Using Tensorflow
+## Using Tensorflow
 
 The packaging of TensorFlow for Pop!_OS contains libraries for the Python, C and C++ APIs. Other languages, such as Rust, bind to the C API for their support.
 
-## Switching Between Versions
+### Switching Between Versions
 
 All of the TensorFlow packages are built to support concurrent installations using the Debian alternatives system. A symbolic link at `/usr/lib/tensorflow` points to another symbolic link at `/etc/alternatives/tensorflow`, which finally points to the location of the actual library path, which could be at a location such as `/usr/lib/tensorflow1.13-cpu`, or `/usr/lib/tensorflow1.31-cuda10.0`. To change the active toolkit, the `update-alternatives` command may be called like so:
 
@@ -51,7 +50,7 @@ After setting the active version, you can verify that it is set with:
 readlink -f /etc/alternatives/tensorflow
 ```
 
-## C API
+### C API
 
 Given the following example.c file:
 
@@ -75,11 +74,11 @@ gcc -I/usr/lib/tensorflow/include/ -L/usr/lib/tensorflow/lib example.c -ltensorf
 
 Note that `LD_LIBRARY_PATH` must point to the location of the lib directory for the toolkit that you wish to use, which can be the active toolkit, or defined as the path to the specific version to use with that project.
 
-## C++ API
+### C++ API
 
 See the provided C++ example in the `examples/cc` directory. CMake is required to build your TensorFlow C++ project. Bazel is NOT required.
 
-## Python API
+### Python API
 
 Given the following example:
 

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Back Up Files
 description: >
  Guidelines and tips for making backups of your important files.
@@ -9,13 +8,13 @@ keywords:
  - deja-dup
  - rsync
  - Nextcloud
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
-
-# Back Up Files
 
 There are many ways to back up important files on your computer. It's a personal choice which one to use based on habits, preferences, and what is being backed up. We will outline a few options here, but the final solution may be a mix of several of these options.
 
@@ -23,10 +22,10 @@ There are many ways to back up important files on your computer. It's a personal
 
 The key to good backups is having the data automatically backed up, accessible, secure, and distributed. All backup solutions should be evaluated against these 4 criteria:
 
--  Automatic: Data is automatically backed up. Manual copies work well in some cases, but automatic backups makes sure it's always fresh, and that nothing is lost if a manual backup isn't performed.
--  Accessible: Data needs to be retrievable and easily restorable if the original is lost.
--  Secure: Data needs to be accessible only by the owner. Cloud solutions are convenient, but additional steps may be required to make sure the data is private.
--  Distributed: Data needs to be in multiple places. If all the copies are in one location, the risk for data loss increases (for example, if your data is saved to a USB disk in your house, but there is a fire, both the computer and the backup disk could potentially be lost at the same time.)
+- Automatic: Data is automatically backed up. Manual copies work well in some cases, but automatic backups makes sure it's always fresh, and that nothing is lost if a manual backup isn't performed.
+- Accessible: Data needs to be retrievable and easily restorable if the original is lost.
+- Secure: Data needs to be accessible only by the owner. Cloud solutions are convenient, but additional steps may be required to make sure the data is private.
+- Distributed: Data needs to be in multiple places. If all the copies are in one location, the risk for data loss increases (for example, if your data is saved to a USB disk in your house, but there is a fire, both the computer and the backup disk could potentially be lost at the same time.)
 
 > **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two (2) copies on-site, and one (1) copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
 
@@ -125,7 +124,6 @@ Easy and straightforward to copy data from one place to another.
 <u>Cons:</u>
 Because the process is manual, updates and changes to the data may be missed over time. No geographic redundancy.
 
-
 ### Terminal Only (Advanced)
 
 In certain situations, you may only have access to a command-line interface. The command-line `rsync` program verifies data integrity and avoids re-copying files that are already backed up.
@@ -142,7 +140,7 @@ rsync -a ~/ OUTPUT_DIRECTORY
 
 If you access your email through a web browser, manual backup is likely unnecessary, as the data is always being held on a remote computer. If you use a local client such as Thunderbird or Evolution, then the data may be stored in multiple locations (such the email server and other client devices), or only in one. If the IMAP protocol is used, the data is synchronized between all clients; if the POP protocol is used, then the data is only stored on the client where the email was viewed.
 
-**Web Browser**
+### Web Browser
 
 <u>Pros:</u>
 All data is always on a remote server.
@@ -150,7 +148,7 @@ All data is always on a remote server.
 <u>Cons:</u>
 Requires internet access. Email providers may have access to data.
 
-**IMAP**
+### IMAP
 
 <u>Pros:</u>
 Data is synchronized between the remote server and local devices. No single point of failure.
@@ -158,7 +156,7 @@ Data is synchronized between the remote server and local devices. No single poin
 <u>Cons:</u>
 Requires internet access. Email providers may have access to data.
 
-**POP/POP3**
+### POP/POP3
 
 <u>Pros:</u>
 Data is more secure, as it's only in one location at any time.

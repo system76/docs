@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Black Screen or Login Issues (Pop!_OS)
 description: >
   Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
@@ -12,22 +11,44 @@ keywords:
   - Password
   - session
   - greeter
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
-
-# BBlack Screen or Login Issues (Pop!_OS)
 
 Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Pop!_OS brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
 
+* Issues with decryption, or the GUI decryption screen.
 * Configuration files in your home directory are not compatible with new versions of software
 * The display/login manager is not working correctly
 * The NVIDIA driver has been updated and is causing an issue
 * The AMD radeon driver is being loaded and causing issues
 
 Each cause has a different solution, and certain items (such as NVIDIA) might not be applicable to your system. In most cases, you can switch to a full-screen terminal (called a *TTY*) to log in and fix the issue.
+
+## Encryption Screen Issues
+
+### Enryption Passphrase
+
+If entering your decryption passphrase does not unlock your disk, one of two things is likely the cause:
+
+1. The decryption passphrase is incorrect.
+2. Your keyfile has been corrupted (rare).
+
+![bad-password](/images/login-loop/bad-password.png)
+
+In either case, unless you have set an [alternative decryption key](https://support.system76.com/articles/advanced-luks), the drive will need to be erased and re-imaged to regain acess. This is the cost/benefit of drives secured by encryption. It's important to have current [backups](https://support.system76.com/articles/backup-files) of your files to avoid data-loss.
+
+### Correct Passphrase, No Login Screen
+
+If your decryption passphrase is correct, but you're unable to reach the login screen, some of the packages that first run on login may need reinstalled. One symptom of this situation, will be if the screen freezes on "cryptdata setup successfully" (pictured below):
+
+![decryption freeze](/images/login-loop/good-password.png)
+
+To correct this, follow the steps below. If you're unable to reach a Terminal, refer to the "Recovery" section below.
 
 ### Switch to a Terminal
 
@@ -39,7 +60,7 @@ If you're not able to log in, the reason could be:
 * **Wrong password**: you're notified of this at the graphical login screen.
 * Something else is blocking the login.
 
-The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password-pop/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
+The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 
@@ -132,6 +153,50 @@ sudo update-initramfs -c -k all
 sudo shutdown -r now
 ```
 
-### If these steps don't work...
+### Recovery
+
+We have an article on accessing the Recovery Partition [here](https://support.system76.com/articles/pop-recovery/)
+
+To access Recovery, turn your computer off, then turn it back on and hold down the space bar immediately. In the menu that appears, select PopOS Recovery, and let it boot.
+
+Once it boots, close out of the installation window or choose “try demo mode” (be sure not to choose any install or repair options, as this could result in data loss).
+
+With the installation window closed, open a Terminal, mount the drive, and chroot (change to root) into the system (refer to the Repair and Chroot sections of the Recovery article).
+
+Once chrooted in, run the following commands:
+
+```bash
+sudo apt clean
+sudo apt update -m
+sudo dpkg --configure -a
+sudo apt install -f
+sudo apt full-upgrade
+sudo apt autoremove --purge
+```
+
+Then:
+
+```bash
+sudo apt install --reinstall plymouth gdm3 gnome-shell pop-desktop linux-generic linux-headers-generic
+```
+
+The command above is one line, and will reinstall plymouth (the graphical encryption screen), gnome display manager (gdm3), gnome-shell, the pop-desktop environment, and the linux-kernel.
+
+Once the reinstallation has finished, we'll want to run:
+
+```bash
+update-initramfs -c -k all
+```
+
+And finally:
+
+```bash
+exit
+reboot
+```
+
+To exit the chroot environment, and then reboot the system.
+
+### If these steps don't work
 
 Contact Support! We have a few more things to try. There are a significant number of processes and files required for your graphical desktop environment to be loaded, and much fewer for the terminal login. As such, you can usually recover your desktop using the command line interface!

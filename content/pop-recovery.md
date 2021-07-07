@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Recovery Partition
 description: >
     Here is how to use the recovery partition to repair, refresh or reinstall your operating system.
@@ -11,30 +10,24 @@ keywords:
   - reinstall
   - refresh
   - repair
-image: http://support.system76.com/images/pop-icon.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
+tableOfContents: true
 ---
-
-# Recovery Partition
 
 The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>) 
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>)
 
 > **NOTE:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
 
 Once the menu is shown, choose **Pop!_OS Recovery**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
-
-## Table of Contents
-
-- [Repair](/articles/pop-recovery/#repair)
-- [Refresh Install](/articles/pop-recovery/#refresh-install)
-- [Reinstall](/articles/pop-recovery/#reinstall)
-- [Upgrade](/articles/pop-recovery/#upgrade)
 
 ## Repair
 
@@ -90,7 +83,7 @@ The EFI partition is usually around 512MB so that would be the partition that we
 | sudo mount /dev/sda1 /mnt/boot/efi    | sudo mount /dev/nvme0n1p1 /mnt/boot/efi  |
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B $i /mnt/$i; done
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```

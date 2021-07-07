@@ -1,31 +1,32 @@
 ---
-layout: article
 title: Pop!_OS Keyboard Shortcuts
 description: Learn how master using Pop!_OS with your keyboard.
 keywords:
   - keyboard
   - shortcuts
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: pop
 ---
 
-# Pop!_OS Keyboard Shortcuts
-
 ## Notable Keys
 
-#### Super key
+### Super key
 
 The Super key is the OS key on your keyboard.
 
 - On recent System76 products, it's the Pop key (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>).
 - On older System76 products, it's the Ubuntu key (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
+- On the Launch keyboard it is the <kbd>SUPER</kbd> key.
 - On generic third-party products, it may be labeled with a Windows logo.
 - On Mac accessories, it may be labeled `command`.
 
 In Pop!\_OS, the Super key handles the majority of OS and window actions. This key is represented by <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> in the lists below.
 
-#### Direction keys
+### Direction keys
 
 Directional actions can use either the standard arrow keys or their Vim equivalents:
 
@@ -36,7 +37,7 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 
 ## Keyboard Shortcuts
 
-#### Move, resize, and swap windows
+### Move, resize, and swap windows
 
 | Shortcut                                                                | Action                                   |
 | ----------------------------------------------------------------------- | ---------------------------------------- |
@@ -50,7 +51,7 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Left click + Drag         | Move window (without adjustment mode)    |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Right cick + Drag         | Resize window (without adjustment mode)  |
 
-#### Manipulate windows
+### Manipulate windows
 
 | Shortcut                                                                                  | Action                                     |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------ |
@@ -61,7 +62,7 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd>/<kbd>→</kbd> | Snap window to left/right side of display  |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>Q</kbd>                                | Close window                               |
 
-#### Manage workspaces and displays
+### Manage workspaces and displays
 
 | Shortcut                                                                                   | Action                                         |
 | ------------------------------------------------------------------------------------------ | ---------------------------------------------- |
@@ -70,20 +71,23 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>Shift</kbd> + <kbd>Direction keys</kbd> | Move active window between workspaces/displays |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>ESC</kbd>                               | Lock the screen                                |
 
-#### Use the launcher
+### Use the launcher
 
 The launcher allows searching through open windows and installed applications, and also has the additional functions listed below.
 
 | Shortcut/command                                           | Action                          |
 | ---------------------------------------------------------- | ------------------------------- |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd> | Activate the launcher           |
-| `d:`                                                       | Browse and search recent files  |
-| `/` or `~`                                                 | Browse the filesystem           |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                 | Activate the launcher on Pop 21.04+ |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>  | Activate the launcher on Pop 20.10 and below |
+| `recent filename`                                          | Browse and search recent files  |
+| `/` / `~`                                                  | Browse the filesystem           |
+| `file filename`                                            | Search the filesystem for a certain file |
 | `t:`                                                       | Execute a command in a terminal |
 | `:`                                                        | Execute a command in sh         |
 | `=`                                                        | Calculate an equation           |
+| `?`                                                        | Help menu                       |
 
-#### Switch between apps and windows
+### Switch between apps and windows
 
 | Shortcut                                                                        | Action                                         |
 | ------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -92,7 +96,7 @@ The launcher allows searching through open windows and installed applications, a
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>`</kbd>                      | Switch windows of current app                  |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>`</kbd> + <kbd>Shift</kbd>   | Switch windows of current app in reverse order |
 
-#### Miscellaneous OS shortcuts
+### Miscellaneous OS shortcuts
 
 | Shortcut                                                       | Action                                             |
 | -------------------------------------------------------------- | -------------------------------------------------- |
@@ -106,7 +110,7 @@ The launcher allows searching through open windows and installed applications, a
 | <kbd>Alt</kbd> + <kbd>F2</kbd>                                 | Run command                                        |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>              | Log out                                            |
 
-#### Accessibility shortcuts
+### Accessibility shortcuts
 
 | Shortcut                                                                                 | Action                                  |
 | ---------------------------------------------------------------------------------------- | --------------------------------------- |

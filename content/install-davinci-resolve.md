@@ -1,5 +1,4 @@
 ---
-layout: article
 title: DaVinci Resolve (Install)
 description: >
    Want to up your video editing skills? Try DaVinci Resolve
@@ -7,10 +6,12 @@ keywords:
   - Video Editor
   - DaVinci Resolve
   - Pop 20.04 LTS
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 ### GPU requirements

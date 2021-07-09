@@ -124,47 +124,47 @@ module.exports = {
 
     fontFamily: {
       sans: [
-        'Fira Sans',
+        '"Fira Sans"',
         'system-ui',
         '-apple-system',
         'Segoe UI',
         'Roboto',
         'Ubuntu',
         'Cantarell',
-        'Nato Sans',
+        '"Nato Sans"',
         'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
       ],
 
       serif: [
-        'Roboto Slab',
+        '"Roboto Slab"',
         'serif',
         'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
       ],
 
       mono: [
-        'Ubuntu Mono',
-        'Ubuntu Monospace',
+        '"Ubuntu Mono"',
+        '"Ubuntu Monospace"',
         'Menlo',
         'Consolas',
-        'Roboto Mono',
-        'Noto Mono',
-        'Oxygen Mono',
-        'Liberation Mono',
+        '"Roboto Mono"',
+        '"Noto Mono"',
+        '"Oxygen Mono"',
+        '"Liberation Mono"',
         'monospace'
       ]
     },
 
     extend: {
       typography: theme => ({
-        DEFAULT: {
+        DEFAULT: { // prose
           css: {
             maxWidth: null,
 
@@ -172,28 +172,57 @@ module.exports = {
               color: theme('colors.orange.700')
             },
 
+            p: {
+              color: '#574F4A',
+              fontFamily: 'Fira Sans',
+              lineHeight: '28px',
+              fontSize: '16px'
+            },
+
             h1: {
-              fontWeight: theme('fontWeight.normal')
+              color: '#574F4A',
+              fontFamily: 'Fira Sans',
+              fontWeight: theme('fontWeight.extralight'),
+              fontSize: '48px',
+              lineHeight: '54px'
             },
 
             h2: {
-              fontWeight: theme('fontWeight.light')
+              color: '#574F4A',
+              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              fontWeight: theme('fontWeight.normal'),
+              fontSize: '32px',
+              lineHeight: '36px'
             },
 
             h3: {
-              fontWeight: theme('fontWeight.light')
+              color: '#574F4A',
+              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              fontWeight: theme('fontWeight.normal'),
+              fontSize: '24px',
+              lineHeight: '32px'
             },
 
             h4: {
-              fontWeight: theme('fontWeight.light')
+              color: '#574F4A',
+              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: '20px',
+              lineHeight: '24px'
             },
 
             h5: {
-              fontWeight: theme('fontWeight.light')
+              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: '18px',
+              lineHeight: '20px'
             },
 
             h6: {
-              fontWeight: theme('fontWeight.light')
+              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: '16px',
+              lineHeight: '20px'
             },
 
             'blockquote p:first-of-type::before': {
@@ -242,6 +271,85 @@ module.exports = {
                   marginBottom: '0 !important'
                 }
               }
+            }
+          }
+        },
+
+        sm: { //  // prose-sm
+          css: {
+            fontSize: '18px',
+            lineHeight: '32px',
+
+            p: {
+              fontSize: '18px',
+              lineHeight: '32px'
+            },
+
+            h1: {
+              fontSize: '42px',
+              lineHeight: '48px'
+            },
+
+            h2: {
+              fontSize: '36px',
+              lineHeight: '42px'
+            },
+
+            h3: {
+              fontSize: '28px',
+              lineHeight: '36px'
+            },
+
+            h4: {
+              fontSize: '24px',
+              lineHeight: '28px'
+            },
+
+            h5: {
+              fontSize: '20px',
+              lineHeight: '24px'
+            }
+          }
+        },
+
+        xl: { // prose-xl
+          css: {
+            fontSize: '20px',
+            lineHeight: '36px',
+
+            p: {
+              fontSize: '20px',
+              lineHeight: '36px'
+            },
+
+            h1: {
+              fontSize: '48px',
+              lineHeight: '54px'
+            },
+
+            h2: {
+              fontSize: '40px',
+              lineHeight: '48px'
+            },
+
+            h3: {
+              fontSize: '32px',
+              lineHeight: '40px'
+            },
+
+            h4: {
+              fontSize: '28px',
+              lineHeight: '32px'
+            },
+
+            h5: {
+              fontSize: '24px',
+              lineHeight: '28px'
+            },
+
+            h6: {
+              fontSize: '20px',
+              lineHeight: '24px'
             }
           }
         }

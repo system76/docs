@@ -72,8 +72,10 @@
       </header>
 
       <div class="flex justify-center my-6 mx-auto px-4 max-w-full sm:max-w-screen-sm md:my-12 lg:max-w-7xl">
-        <div class="prose prose-sm max-w-full flex-1 sm:prose xl:prose-lg lg:max-w-4xl">
-          <h1>{{ article.title }}</h1>
+        <div class="prose sm:prose-sm xl:prose-xl max-w-full flex-1 lg:max-w-4xl">
+          <h1>
+            {{ article.title }}
+          </h1>
           <nuxt-content :document="article" />
         </div>
 

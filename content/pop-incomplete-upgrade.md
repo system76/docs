@@ -29,6 +29,20 @@ The upgrade process will leave your files intact, but it's always a good idea to
 
 Refer to the [disaster recovery article](/articles/disaster-recovery) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
 
+## Recovery Partition is full
+
+If you see a notification about the Recovery Parititon being full or see it in this output:
+
+```bash
+df -h
+```
+
+You can run this command to empty the Recovery Partition and then redownload the Recovery files to correct the issue:
+
+```bash
+sudo rm -rf /recovery/casper-* && pop-upgrade recovery upgrade from-release
+```
+
 ## FStab Error Message
 
 This can be caused by the `pop-upgrade` command checking for an `/etc/fstab` file and finding an entry that it does not understand. If you have manually added drives to your fstab, adding a '#' to comment out the drive while the upgrade is ongoing should work.  You would then remove the comment after the upgrade is complete to have access to those drive paths again. To edit this file, run the following command in a terminal:

@@ -243,7 +243,7 @@ export default {
 
     updatedAt () {
       return (new Date(this.article.updatedAt)).toLocaleDateString('en-US', {
-        timeZone: 'MST'
+        timeZone: 'America/Denver'
       })
     }
   }

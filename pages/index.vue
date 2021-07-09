@@ -110,8 +110,7 @@
           </h2>
 
           <p class="my-4 text-gray-700">
-            Check out our hand crafted support articles, written by our dedicated
-            support staff.
+            Search helpful documentation for answers to a variety of questions or issues.
           </p>
         </div>
 
@@ -129,7 +128,7 @@
                   Learn
                 </p>
                 <p class="text text-gray-900">
-                  Learn about different things
+                  A general guide for new users. Welcome!
                 </p>
               </div>
             </nuxt-link>
@@ -148,7 +147,7 @@
                   Tune
                 </p>
                 <p class="text text-gray-900">
-                  Upgrade and customize your system
+                  Information on how to upgrade, maintain, and customize your system.
                 </p>
               </div>
             </nuxt-link>
@@ -167,7 +166,7 @@
                   Troubleshoot
                 </p>
                 <p class="text text-gray-900">
-                  Break your system? No problem!
+                  Detailed solutions for prominent issues.
                 </p>
               </div>
             </nuxt-link>
@@ -182,8 +181,7 @@
           </h2>
 
           <p class="my-4 text-gray-700">
-            Can't find what you're looking for in the articles below? Our team
-            is here to help.
+            Can’t find what you’re looking for in our support articles? Our team is here to help.
           </p>
         </div>
 
@@ -200,10 +198,10 @@
               </div>
               <div class="ml-4">
                 <p class="text font-bold text-gray-700">
-                  Create a Ticket
+                  Open a Support Ticket
                 </p>
                 <p class="text text-gray-900">
-                  Create a new support ticket
+                  Get expert help from real support humans. Recommended for most users.
                 </p>
               </div>
             </a>
@@ -219,10 +217,10 @@
               </div>
               <div class="ml-4">
                 <p class="text font-bold text-gray-700">
-                  Phone Call
+                  Call (720) 226-9269
                 </p>
                 <p class="text text-gray-900">
-                  Office hours between 8am-5pm MST
+                  We’re open 8am – 5pm MST. Response time may be limited on weekends and holidays.
                 </p>
               </div>
             </a>
@@ -238,10 +236,10 @@
               </div>
               <div class="ml-4">
                 <p class="text font-bold text-gray-700">
-                  Email
+                  Email Us
                 </p>
                 <p class="text text-gray-900">
-                  Send some text via the interwebs
+                  Send your questions to support@system76.com.
                 </p>
               </div>
             </a>

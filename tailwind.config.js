@@ -1,5 +1,12 @@
 const colors = require('tailwindcss/colors')
 
+const round = num =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, '$1')
+    .replace(/\.0$/, '')
+const rem = px => `${round(px / 16)}rem`
+
 module.exports = {
   plugins: [
     require('@tailwindcss/line-clamp'),
@@ -50,7 +57,7 @@ module.exports = {
         300: '#9f9893',
         400: '#877f7a',
         500: '#6f6762',
-        600: '#57504c',
+        600: '#574f4a',
         700: '#3e3936',
         800: '#262220',
         900: '#0d0c0b'
@@ -164,8 +171,11 @@ module.exports = {
 
     extend: {
       typography: theme => ({
-        DEFAULT: { // prose
+        DEFAULT: {
           css: {
+            color: theme('colors.warmGray.600'),
+            fontSize: rem(16),
+            lineHeight: rem(28),
             maxWidth: null,
 
             a: {
@@ -173,56 +183,58 @@ module.exports = {
             },
 
             p: {
-              color: '#574F4A',
-              fontFamily: 'Fira Sans',
-              lineHeight: '28px',
-              fontSize: '16px'
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.sans').join(','),
+              fontSize: rem(16),
+              lineHeight: rem(28)
             },
 
             h1: {
-              color: '#574F4A',
-              fontFamily: 'Fira Sans',
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.sans').join(','),
               fontWeight: theme('fontWeight.extralight'),
-              fontSize: '48px',
-              lineHeight: '54px'
+              fontSize: rem(36),
+              lineHeight: rem(42)
             },
 
             h2: {
-              color: '#574F4A',
-              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.normal'),
-              fontSize: '32px',
-              lineHeight: '36px'
+              fontSize: rem(32),
+              lineHeight: rem(36)
             },
 
             h3: {
-              color: '#574F4A',
-              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.normal'),
-              fontSize: '24px',
-              lineHeight: '32px'
+              fontSize: rem(24),
+              lineHeight: rem(32)
             },
 
             h4: {
-              color: '#574F4A',
-              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.bold'),
-              fontSize: '20px',
-              lineHeight: '24px'
+              fontSize: rem(20),
+              lineHeight: rem(24)
             },
 
             h5: {
-              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.bold'),
-              fontSize: '18px',
-              lineHeight: '20px'
+              fontSize: rem(18),
+              lineHeight: rem(20)
             },
 
             h6: {
-              fontFamily: 'Roboto Slab, serif, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.bold'),
-              fontSize: '16px',
-              lineHeight: '20px'
+              fontSize: rem(16),
+              lineHeight: rem(20)
             },
 
             'blockquote p:first-of-type::before': {
@@ -249,7 +261,7 @@ module.exports = {
               backgroundColor: theme('colors.gray.800'),
               borderRadius: theme('borderRadius.DEFAULT'),
               color: theme('colors.gray.100'),
-              fontWeight: '400',
+              fontWeight: theme('fontWeight.normal'),
               padding: theme('spacing.2')
             },
 
@@ -275,81 +287,81 @@ module.exports = {
           }
         },
 
-        sm: { //  // prose-sm
+        sm: {
           css: {
-            fontSize: '18px',
-            lineHeight: '32px',
+            fontSize: rem(18),
+            lineHeight: rem(32),
 
             p: {
-              fontSize: '18px',
-              lineHeight: '32px'
+              fontSize: rem(18),
+              lineHeight: rem(32)
             },
 
             h1: {
-              fontSize: '42px',
-              lineHeight: '48px'
+              fontSize: rem(42),
+              lineHeight: rem(48)
             },
 
             h2: {
-              fontSize: '36px',
-              lineHeight: '42px'
+              fontSize: rem(36),
+              lineHeight: rem(42)
             },
 
             h3: {
-              fontSize: '28px',
-              lineHeight: '36px'
+              fontSize: rem(28),
+              lineHeight: rem(36)
             },
 
             h4: {
-              fontSize: '24px',
-              lineHeight: '28px'
+              fontSize: rem(24),
+              lineHeight: rem(28)
             },
 
             h5: {
-              fontSize: '20px',
-              lineHeight: '24px'
+              fontSize: rem(20),
+              lineHeight: rem(24)
             }
           }
         },
 
-        xl: { // prose-xl
+        xl: {
           css: {
-            fontSize: '20px',
-            lineHeight: '36px',
+            fontSize: rem(20),
+            lineHeight: rem(36),
 
             p: {
-              fontSize: '20px',
-              lineHeight: '36px'
+              fontSize: rem(20),
+              lineHeight: rem(36)
             },
 
             h1: {
-              fontSize: '48px',
-              lineHeight: '54px'
+              fontSize: rem(48),
+              lineHeight: rem(54)
             },
 
             h2: {
-              fontSize: '40px',
-              lineHeight: '48px'
+              fontSize: rem(40),
+              lineHeight: rem(48)
             },
 
             h3: {
-              fontSize: '32px',
-              lineHeight: '40px'
+              fontSize: rem(32),
+              lineHeight: rem(40)
             },
 
             h4: {
-              fontSize: '28px',
-              lineHeight: '32px'
+              fontSize: rem(28),
+              lineHeight: rem(32)
             },
 
             h5: {
-              fontSize: '24px',
-              lineHeight: '28px'
+              fontSize: rem(24),
+              lineHeight: rem(28)
             },
 
             h6: {
-              fontSize: '20px',
-              lineHeight: '24px'
+              fontSize: rem(20),
+              lineHeight: rem(24)
             }
           }
         }

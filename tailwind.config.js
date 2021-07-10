@@ -1,5 +1,12 @@
 const colors = require('tailwindcss/colors')
 
+const round = num =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, '$1')
+    .replace(/\.0$/, '')
+const rem = px => `${round(px / 16)}rem`
+
 module.exports = {
   plugins: [
     require('@tailwindcss/line-clamp'),
@@ -50,7 +57,7 @@ module.exports = {
         300: '#9f9893',
         400: '#877f7a',
         500: '#6f6762',
-        600: '#57504c',
+        600: '#574f4a',
         700: '#3e3936',
         800: '#262220',
         900: '#0d0c0b'
@@ -124,40 +131,40 @@ module.exports = {
 
     fontFamily: {
       sans: [
-        'Fira Sans',
+        '"Fira Sans"',
         'system-ui',
         '-apple-system',
         'Segoe UI',
         'Roboto',
         'Ubuntu',
         'Cantarell',
-        'Nato Sans',
+        '"Nato Sans"',
         'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
       ],
 
       serif: [
-        'Roboto Slab',
+        '"Roboto Slab"',
         'serif',
         'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
       ],
 
       mono: [
-        'Ubuntu Mono',
-        'Ubuntu Monospace',
+        '"Ubuntu Mono"',
+        '"Ubuntu Monospace"',
         'Menlo',
         'Consolas',
-        'Roboto Mono',
-        'Noto Mono',
-        'Oxygen Mono',
-        'Liberation Mono',
+        '"Roboto Mono"',
+        '"Noto Mono"',
+        '"Oxygen Mono"',
+        '"Liberation Mono"',
         'monospace'
       ]
     },
@@ -166,34 +173,68 @@ module.exports = {
       typography: theme => ({
         DEFAULT: {
           css: {
+            color: theme('colors.warmGray.600'),
+            fontSize: rem(16),
+            lineHeight: rem(28),
             maxWidth: null,
 
             a: {
               color: theme('colors.orange.700')
             },
 
+            p: {
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.sans').join(','),
+              fontSize: rem(16),
+              lineHeight: rem(28)
+            },
+
             h1: {
-              fontWeight: theme('fontWeight.normal')
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.sans').join(','),
+              fontWeight: theme('fontWeight.extralight'),
+              fontSize: rem(36),
+              lineHeight: rem(42)
             },
 
             h2: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.normal'),
+              fontSize: rem(32),
+              lineHeight: rem(36)
             },
 
             h3: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.normal'),
+              fontSize: rem(24),
+              lineHeight: rem(32)
             },
 
             h4: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: rem(20),
+              lineHeight: rem(24)
             },
 
             h5: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: rem(18),
+              lineHeight: rem(20)
             },
 
             h6: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warmGray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: rem(16),
+              lineHeight: rem(20)
             },
 
             'blockquote p:first-of-type::before': {
@@ -220,7 +261,7 @@ module.exports = {
               backgroundColor: theme('colors.gray.800'),
               borderRadius: theme('borderRadius.DEFAULT'),
               color: theme('colors.gray.100'),
-              fontWeight: '400',
+              fontWeight: theme('fontWeight.normal'),
               padding: theme('spacing.2')
             },
 
@@ -242,6 +283,85 @@ module.exports = {
                   marginBottom: '0 !important'
                 }
               }
+            }
+          }
+        },
+
+        sm: {
+          css: {
+            fontSize: rem(18),
+            lineHeight: rem(32),
+
+            p: {
+              fontSize: rem(18),
+              lineHeight: rem(32)
+            },
+
+            h1: {
+              fontSize: rem(42),
+              lineHeight: rem(48)
+            },
+
+            h2: {
+              fontSize: rem(36),
+              lineHeight: rem(42)
+            },
+
+            h3: {
+              fontSize: rem(28),
+              lineHeight: rem(36)
+            },
+
+            h4: {
+              fontSize: rem(24),
+              lineHeight: rem(28)
+            },
+
+            h5: {
+              fontSize: rem(20),
+              lineHeight: rem(24)
+            }
+          }
+        },
+
+        xl: {
+          css: {
+            fontSize: rem(20),
+            lineHeight: rem(36),
+
+            p: {
+              fontSize: rem(20),
+              lineHeight: rem(36)
+            },
+
+            h1: {
+              fontSize: rem(48),
+              lineHeight: rem(54)
+            },
+
+            h2: {
+              fontSize: rem(40),
+              lineHeight: rem(48)
+            },
+
+            h3: {
+              fontSize: rem(32),
+              lineHeight: rem(40)
+            },
+
+            h4: {
+              fontSize: rem(28),
+              lineHeight: rem(32)
+            },
+
+            h5: {
+              fontSize: rem(24),
+              lineHeight: rem(28)
+            },
+
+            h6: {
+              fontSize: rem(20),
+              lineHeight: rem(24)
             }
           }
         }

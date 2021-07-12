@@ -60,15 +60,15 @@ jobs:
           node-version: 14
 
       - name: Cache
+        id: cache
         uses: actions/cache@v2
         with:
-          path: ~/.npm
+          path: ./node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
 
       - name: Install
         run: npm ci
+        if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Build
         run: npm run build

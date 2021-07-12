@@ -79,11 +79,13 @@ The launcher allows searching through open windows and installed applications, a
 | ---------------------------------------------------------- | ------------------------------- |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                 | Activate the launcher on Pop 21.04+ |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>  | Activate the launcher on Pop 20.10 and below |
-| `d:`                                                       | Browse and search recent files  |
-| `/` or `~`                                                 | Browse the filesystem           |
+| `recent filename`                                          | Browse and search recent files  |
+| `/` / `~`                                                  | Browse the filesystem           |
+| `file filename`                                            | Search the filesystem for a certain file |
 | `t:`                                                       | Execute a command in a terminal |
 | `:`                                                        | Execute a command in sh         |
 | `=`                                                        | Calculate an equation           |
+| `?`                                                        | Help menu                       |
 
 ### Switch between apps and windows
 
@@ -98,7 +100,7 @@ The launcher allows searching through open windows and installed applications, a
 
 | Shortcut                                                       | Action                                             |
 | -------------------------------------------------------------- | -------------------------------------------------- |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                    | Toggle Activities overview                         |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>D</kbd>     | Toggle workspace menu                            |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>A</kbd>     | Toggle applications menu                           |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>V</kbd>     | Toggle notifications menu                          |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd>     | Open a terminal                                    |

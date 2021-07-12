@@ -15,7 +15,7 @@ hidden: false
 section: software
 ---
 
-## Install ProtonVPN Graphcial Client
+## Install ProtonVPN Graphical Client
 
 ### Download the .deb package from their website
 

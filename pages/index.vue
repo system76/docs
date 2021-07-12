@@ -104,7 +104,7 @@
 
     <section class="max-w-md mx-auto my-12 px-4 grid gap-y-6 gap-x-6 grid-cols-1 md:-mt-16 md:max-w-6xl md:grid-cols-2 md:mb-16">
       <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
-        <div class="mx-4 my-4 flex-1">
+        <div class="mx-4 my-4 md:min-h-[4rem]">
           <h2 class="text-3xl font-semibold text-gray-900">
             Support Articles
           </h2>
@@ -155,7 +155,7 @@
 
           <li>
             <nuxt-link
-              to="#tune"
+              to="#troubleshoot"
               class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
               <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
@@ -175,7 +175,7 @@
       </div>
 
       <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
-        <div class="mx-4 my-4 flex-1">
+        <div class="mx-4 my-4 md:min-h-[4rem]">
           <h2 class="text-3xl font-semibold text-gray-900">
             Contact Us
           </h2>
@@ -221,25 +221,6 @@
                 </p>
                 <p class="text text-gray-900">
                   We’re open 8am – 5pm MST. Response time may be limited on weekends and holidays.
-                </p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="mailto:support@system76.com"
-              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
-                <font-awesome-icon icon="paper-plane" />
-              </div>
-              <div class="ml-4">
-                <p class="text font-bold text-gray-700">
-                  Email Us
-                </p>
-                <p class="text text-gray-900">
-                  Send your questions to support@system76.com.
                 </p>
               </div>
             </a>

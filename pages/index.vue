@@ -117,18 +117,18 @@
         <ul class="space-y-4">
           <li>
             <nuxt-link
-              to="#learn"
+              to="#troubleshoot"
               class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
               <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
-                <font-awesome-icon icon="graduation-cap" />
+                <font-awesome-icon icon="search" />
               </div>
               <div class="ml-4">
                 <p class="text font-bold text-gray-700">
-                  Learn
+                  Troubleshoot
                 </p>
                 <p class="text text-gray-900">
-                  A general guide for new users. Welcome!
+                  Detailed solutions for prominent issues.
                 </p>
               </div>
             </nuxt-link>
@@ -155,18 +155,18 @@
 
           <li>
             <nuxt-link
-              to="#troubleshoot"
+              to="#learn"
               class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
               <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
-                <font-awesome-icon icon="search" />
+                <font-awesome-icon icon="graduation-cap" />
               </div>
               <div class="ml-4">
                 <p class="text font-bold text-gray-700">
-                  Troubleshoot
+                  Learn
                 </p>
                 <p class="text text-gray-900">
-                  Detailed solutions for prominent issues.
+                  A general guide for new users. Welcome!
                 </p>
               </div>
             </nuxt-link>

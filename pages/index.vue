@@ -1,6 +1,6 @@
 <template>
   <main>
-    <header class="w-full bg-cover bg-center md:pb-16">
+    <header class="w-full bg-cover bg-center lg:pb-16">
       <nuxt-img
         alt="Buy a computer - Don't talk to one. Lifetime support from 100% real humans"
         class="px-4 py-8 lg:py-10 mx-auto w-full max-w-3xl"
@@ -102,9 +102,9 @@
       </div>
     </header>
 
-    <section class="max-w-md mx-auto my-12 px-4 grid gap-y-6 gap-x-6 grid-cols-1 md:-mt-16 md:max-w-6xl md:grid-cols-2 md:mb-16">
+    <section class="max-w-full mx-auto my-12 px-4 grid gap-y-6 gap-x-6 grid-cols-1 md:max-w-3xl lg:-mt-16 lg:max-w-6xl lg:grid-cols-2 lg:mb-16">
       <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
-        <div class="mx-4 my-4 md:min-h-[4rem]">
+        <div class="mx-2 my-4 md:min-h-[4rem]">
           <h2 class="text-3xl font-semibold text-gray-900">
             Support Articles
           </h2>
@@ -114,7 +114,7 @@
           </p>
         </div>
 
-        <ul class="space-y-4">
+        <ul class="space-y-4 -m-2">
           <li>
             <nuxt-link
               to="#troubleshoot"
@@ -175,7 +175,7 @@
       </div>
 
       <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
-        <div class="mx-4 my-4 md:min-h-[4rem]">
+        <div class="mx-2 my-4 md:min-h-[4rem]">
           <h2 class="text-3xl font-semibold text-gray-900">
             Contact Us
           </h2>
@@ -185,7 +185,7 @@
           </p>
         </div>
 
-        <ul class="space-y-4">
+        <ul class="space-y-4 -m-2">
           <li>
             <a
               href="https://system76.com/my-account/support-tickets/new"

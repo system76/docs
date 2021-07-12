@@ -1,6 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  mode: 'jit',
+
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography')

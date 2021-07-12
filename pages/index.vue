@@ -1,9 +1,9 @@
 <template>
   <main>
-    <header class="w-full bg-cover bg-center">
+    <header class="w-full bg-cover bg-center lg:pb-16">
       <nuxt-img
         alt="Buy a computer - Don't talk to one. Lifetime support from 100% real humans"
-        class="px-4 py-8 lg:py-10 mx-auto"
+        class="px-4 py-8 lg:py-10 mx-auto w-full max-w-3xl"
         height="440"
         src="/images/website/robot-type.png"
         width="1207"
@@ -11,156 +11,221 @@
       <h1 class="hidden">
         Buy a computer - Don't talk to one. Lifetime support from 100% real humans
       </h1>
-    </header>
 
-    <section class="max-w-2xl mx-auto my-12 px-4 text-center sm:px-6 md:mb-24 lg:px-8">
-      <h2 class="text-4xl font-bold">
-        Support Articles
-      </h2>
-
-      <div class="my-4">
-        <nuxt-link
-          class="inline-block my-2 mx-2 bg-gray-100 text-black rounded px-4 py-2 uppercase font-serif tracking-wider hover:bg-gray-200 focus:bg-gray-200"
-          to="#learn"
-        >
-          Learn
-        </nuxt-link>
-
-        <nuxt-link
-          class="inline-block my-2 mx-2 bg-gray-100 text-black rounded px-4 py-2 uppercase font-serif tracking-wider hover:bg-gray-200 focus:bg-gray-200"
-          to="#tune"
-        >
-          Tune
-        </nuxt-link>
-
-        <nuxt-link
-          class="inline-block my-2 mx-2 bg-gray-100 text-black rounded px-4 py-2 uppercase font-serif tracking-wider hover:bg-gray-200 focus:bg-gray-200"
-          to="#troubleshoot"
-        >
-          Troubleshoot
-        </nuxt-link>
-      </div>
-
-      <h2 class="text-3xl mt-7 font-bold">
-        Support Tickets
-      </h2>
-
-      <p class="text-lg mt-4">
-        Can't find what you're looking for in the articles below? Our team is
-        here to help. After logging into your account, submit a support ticket
-        and our Customer Happiness Team will be on the case!
-      </p>
-
-      <div class="my-7 text-center">
-        <a
-          class="inline-block bg-gray-100 text-black rounded px-4 py-2 uppercase font-serif tracking-wider hover:bg-gray-200 focus:bg-gray-200"
-          href="https://system76.com/my-account/support-tickets/new"
-          target="blank"
-        >
-          Submit a Ticket
-        </a>
-      </div>
-
-      <p class="text-lg mx-auto">
-        Having trouble submitting a support ticket? Contact our office at
-        <a
-          class="font-bold whitespace-nowrap"
-          href="tel:+17202269269"
-        >
-          (720) 226-9269
-        </a> between 8am-5pm MST and we'll help you out!
-      </p>
-    </section>
-
-    <section
-      id="search"
-      class="max-w-4xl mx-auto my-8 px-4"
-    >
-      <div class="relative">
-        <!--
-          This whole dropdown search can be upgraded to Headless UI once
-          Nuxt moves to Vue 3.0
-        -->
-        <form
-          class="relative flex items-center pr-4 border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-white focus-within:ring-orange-500 focus-within:shadow-sm"
-          novalidate
-          role="search"
-          @submit.prevent="$fetch"
-        >
-          <input
-            id="search-box"
-            v-model="search"
-            type="search"
-            aria-autocomplete="list"
-            autocomplete="off"
-            autocorrect="off"
-            autocapitalize="none"
-            spellcheck="false"
-            class="flex-auto -mr-9 appearance-none bg-transparent pl-4 pr-12 py-4 rounded-md text-md font-medium text-gray-700 focus:outline-none"
-            placeholder="Search..."
-            aria-label="Search articles"
-            :aria-expanded="search !== ''"
-            aria-haspopup="true"
-            aria-controls="search-results"
-            @keyup.passive="debouncedFetch"
-            @blur.passive="debouncedFetch"
+      <div class="px-4 pb-12 mx-auto max-w-4xl">
+        <div class="relative">
+          <!--
+            This whole dropdown search can be upgraded to Headless UI once
+            Nuxt moves to Vue 3.0
+          -->
+          <form
+            class="relative flex items-center pr-4 border bg-white border-gray-300 rounded-md shadow-sm hover:bg-gray-100 focus-within:outline-none focus-within:ring-2 focus-within:ring-orange-500 focus-within:shadow-sm"
+            novalidate
+            role="search"
+            @submit.prevent="$fetch"
           >
+            <input
+              id="search-box"
+              v-model="search"
+              type="search"
+              aria-autocomplete="list"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="none"
+              spellcheck="false"
+              class="flex-auto -mr-8 appearance-none bg-transparent pl-4 pr-12 py-4 rounded-md text-md font-medium text-gray-700 focus:outline-none"
+              placeholder="Search Support Articles..."
+              aria-label="Search support articles"
+              :aria-expanded="search !== ''"
+              aria-haspopup="true"
+              aria-controls="search-results"
+              @keyup.passive="debouncedFetch"
+              @blur.passive="debouncedFetch"
+            >
 
-          <font-awesome-icon icon="search" />
-        </form>
+            <font-awesome-icon icon="search" />
+          </form>
 
-        <div
-          v-show="search !== ''"
-          id="search-results"
-          aria-labelledby="search-box"
-          aria-orientation="vertical"
-          class="origin-top absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-          role="listbox"
-          tabindex="-1"
-        >
-          <div class="py-1" role="none">
-            <span
-              v-if="$fetchState.error != null"
-              class="text-gray-400 block px-4 py-2 text-sm"
-              role="option"
-              tabindex="-1"
-            >
-              An error occured while fetching search results
-            </span>
-            <span
-              v-else-if="results.length === 0 && $fetchState.pending"
-              class="text-gray-400 block px-4 py-2 text-sm"
-              role="option"
-              tabindex="-1"
-            >
-              Loading...
-            </span>
-            <span
-              v-else-if="results.length === 0"
-              class="text-gray-400 block px-4 py-2 text-sm"
-              role="option"
-              tabindex="-1"
-            >
-              No Results
-            </span>
+          <div
+            v-show="search !== ''"
+            id="search-results"
+            aria-labelledby="search-box"
+            aria-orientation="vertical"
+            class="origin-top absolute z-10 right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="listbox"
+            tabindex="-1"
+          >
+            <div class="py-1" role="none">
+              <span
+                v-if="$fetchState.error != null"
+                class="text-gray-400 block px-4 py-2 text-sm"
+                role="option"
+                tabindex="-1"
+              >
+                An error occured while fetching search results
+              </span>
+              <span
+                v-else-if="results.length === 0 && $fetchState.pending"
+                class="text-gray-400 block px-4 py-2 text-sm"
+                role="option"
+                tabindex="-1"
+              >
+                Loading...
+              </span>
+              <span
+                v-else-if="results.length === 0"
+                class="text-gray-400 block px-4 py-2 text-sm"
+                role="option"
+                tabindex="-1"
+              >
+                No Results
+              </span>
 
-            <nuxt-link
-              v-for="article in results"
-              v-else
-              :key="article.slug"
-              :to="`/articles/${article.slug}`"
-              class="text-gray-700 block px-4 py-2 group hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
-              role="option"
-            >
-              <div class="text-md leading-6 font-semibold group-hover:text-gray-900 group-hover:underline group-focus:text-gray-900 group-focus:underline">
-                {{ article.title }}
-              </div>
-              <div class="text-sm mt-1 text-sm text-gray-400">
-                {{ article.description }}
-              </div>
-            </nuxt-link>
+              <nuxt-link
+                v-for="article in results"
+                v-else
+                :key="article.slug"
+                :to="`/articles/${article.slug}`"
+                class="text-gray-700 block px-4 py-2 group hover:bg-gray-50 focus:bg-gray-50 focus:outline-none"
+                role="option"
+              >
+                <div class="text-md leading-6 font-semibold group-hover:text-gray-900 group-hover:underline group-focus:text-gray-900 group-focus:underline">
+                  {{ article.title }}
+                </div>
+                <div class="text-sm mt-1 text-sm text-gray-400">
+                  {{ article.description }}
+                </div>
+              </nuxt-link>
+            </div>
           </div>
         </div>
+      </div>
+    </header>
+
+    <section class="max-w-full mx-auto my-12 px-4 grid gap-y-6 gap-x-6 grid-cols-1 md:max-w-3xl lg:-mt-16 lg:max-w-6xl lg:grid-cols-2 lg:mb-16">
+      <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
+        <div class="mx-2 my-4 md:min-h-[4rem]">
+          <h2 class="text-3xl font-semibold text-gray-900">
+            Support Articles
+          </h2>
+
+          <p class="my-4 text-gray-700">
+            Search helpful documentation for answers to a variety of questions or issues.
+          </p>
+        </div>
+
+        <ul class="space-y-4 -m-2">
+          <li>
+            <nuxt-link
+              to="#troubleshoot"
+              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            >
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+                <font-awesome-icon icon="search" />
+              </div>
+              <div class="ml-4">
+                <p class="text font-bold text-gray-700">
+                  Troubleshoot
+                </p>
+                <p class="text text-gray-900">
+                  Detailed solutions for prominent issues.
+                </p>
+              </div>
+            </nuxt-link>
+          </li>
+
+          <li>
+            <nuxt-link
+              to="#tune"
+              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            >
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+                <font-awesome-icon icon="wrench" />
+              </div>
+              <div class="ml-4">
+                <p class="text font-bold text-gray-700">
+                  Tune
+                </p>
+                <p class="text text-gray-900">
+                  Information on how to upgrade, maintain, and customize your system.
+                </p>
+              </div>
+            </nuxt-link>
+          </li>
+
+          <li>
+            <nuxt-link
+              to="#learn"
+              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            >
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+                <font-awesome-icon icon="graduation-cap" />
+              </div>
+              <div class="ml-4">
+                <p class="text font-bold text-gray-700">
+                  Learn
+                </p>
+                <p class="text text-gray-900">
+                  A general guide for new users. Welcome!
+                </p>
+              </div>
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+
+      <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
+        <div class="mx-2 my-4 md:min-h-[4rem]">
+          <h2 class="text-3xl font-semibold text-gray-900">
+            Contact Us
+          </h2>
+
+          <p class="my-4 text-gray-700">
+            Can’t find what you’re looking for in our support articles? Our team is here to help.
+          </p>
+        </div>
+
+        <ul class="space-y-4 -m-2">
+          <li>
+            <a
+              href="https://system76.com/my-account/support-tickets/new"
+              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              target="_blank"
+              rel=""
+            >
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+                <font-awesome-icon icon="ticket-alt" />
+              </div>
+              <div class="ml-4">
+                <p class="text font-bold text-gray-700">
+                  Open a Support Ticket
+                </p>
+                <p class="text text-gray-900">
+                  Get expert help from real support humans. Recommended for most users.
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="tel:+17202269269"
+              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            >
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+                <font-awesome-icon icon="phone" />
+              </div>
+              <div class="ml-4">
+                <p class="text font-bold text-gray-700">
+                  Call (720) 226-9269
+                </p>
+                <p class="text text-gray-900">
+                  We’re open 8am – 5pm MST. Response time may be limited on weekends and holidays.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -337,6 +402,6 @@ export default {
 
 <style scoped>
   header {
-    background-image: radial-gradient(rgba(87, 79, 74, 0.5), #574f4a), url("/images/website/robot.jpg");
+    background-image: radial-gradient(rgba(87, 79, 74, 0.75), #574f4a), url("/images/website/robot.jpg");
   }
 </style>

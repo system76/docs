@@ -8,6 +8,8 @@ const round = num =>
 const rem = px => `${round(px / 16)}rem`
 
 module.exports = {
+  mode: 'jit',
+
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography')

@@ -56,7 +56,10 @@
               :key="toc.id"
             >
               <nuxt-link
-                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :class="{
+                  'pl-4': (toc.depth === 2),
+                  'pl-8': (toc.depth === 3)
+                }"
                 :to="`#${toc.id}`"
                 class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                 @click="tableOfContents = false"
@@ -69,8 +72,10 @@
       </header>
 
       <div class="flex justify-center my-6 mx-auto px-4 max-w-full sm:max-w-screen-sm md:my-12 lg:max-w-7xl">
-        <div class="prose prose-sm max-w-full flex-1 sm:prose xl:prose-lg lg:max-w-4xl">
-          <h1>{{ article.title }}</h1>
+        <div class="prose sm:prose-sm xl:prose-xl max-w-full flex-1 lg:max-w-4xl">
+          <h1>
+            {{ article.title }}
+          </h1>
           <nuxt-content :document="article" />
         </div>
 
@@ -88,7 +93,10 @@
               :key="toc.id"
             >
               <nuxt-link
-                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :class="{
+                  'pl-4': (toc.depth === 2),
+                  'pl-8': (toc.depth === 3)
+                }"
                 :to="`#${toc.id}`"
                 class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                 @click="tableOfContents = false"
@@ -110,6 +118,7 @@
               v-for="author in [...article.authors].reverse()"
               :key="author.username"
               :href="author.profileUrl"
+              rel="nofollow noopener noreferrer"
               target="_blank"
             >
               <img
@@ -234,7 +243,7 @@ export default {
 
     updatedAt () {
       return (new Date(this.article.updatedAt)).toLocaleDateString('en-US', {
-        timeZone: 'MST'
+        timeZone: 'America/Denver'
       })
     }
   }

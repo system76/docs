@@ -98,7 +98,7 @@ Access OpenVPN setting in the <u>Settings</u> application (GNOME Control Center)
 
 ### Getting an OpenVPN (.ovpn) file
 
-OpenVPN uses `.ovpn` files for setting up the VPN on your system and includes the servers to contact. Most VPN providers will provide  `.ovpn` files such as the following:
+OpenVPN uses `.ovpn` files for setting up the VPN on your system and includes the servers to contact. Most VPN providers will provide `.ovpn` files such as the following:
 
 - [ProtonVPN](https://protonvpn.com/)
 - [NordVPN](https://nordvpn.com/ovpn/)

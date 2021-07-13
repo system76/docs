@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="bg-gray-100">
     <header class="w-full bg-cover bg-center lg:pb-16">
       <nuxt-img
         alt="Buy a computer - Don't talk to one. Lifetime support from 100% real humans"
@@ -103,31 +103,31 @@
     </header>
 
     <section class="max-w-full mx-auto my-12 px-4 grid gap-y-6 gap-x-6 grid-cols-1 md:max-w-3xl lg:-mt-16 lg:max-w-6xl lg:grid-cols-2 lg:mb-16">
-      <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
-        <div class="mx-2 my-4 md:min-h-[4rem]">
-          <h2 class="text-3xl font-semibold text-gray-900">
+      <div class="px-4 py-3 flex flex-col bg-white rounded-lg">
+        <div class="mx-4 my-4 md:min-h-[4rem]">
+          <h2 class="sys-article-h3">
             Support Articles
           </h2>
 
-          <p class="my-4 text-gray-700">
+          <p class="text-lg my-4 text-warm-gray-600">
             Search helpful documentation for answers to a variety of questions or issues.
           </p>
         </div>
 
-        <ul class="space-y-4 -m-2">
+        <ul class="space-y-2">
           <li>
             <nuxt-link
               to="#troubleshoot"
-              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
                 <font-awesome-icon icon="search" />
               </div>
               <div class="ml-4">
-                <p class="text font-bold text-gray-700">
+                <p class="font-bold text-warm-gray-800">
                   Troubleshoot
                 </p>
-                <p class="text text-gray-900">
+                <p class="text-warm-gray-600">
                   Detailed solutions for prominent issues.
                 </p>
               </div>
@@ -137,16 +137,16 @@
           <li>
             <nuxt-link
               to="#tune"
-              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
                 <font-awesome-icon icon="wrench" />
               </div>
               <div class="ml-4">
-                <p class="text font-bold text-gray-700">
+                <p class="font-bold text-warm-gray-800">
                   Tune
                 </p>
-                <p class="text text-gray-900">
+                <p class="text-warm-gray-600">
                   Information on how to upgrade, maintain, and customize your system.
                 </p>
               </div>
@@ -156,16 +156,16 @@
           <li>
             <nuxt-link
               to="#learn"
-              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
                 <font-awesome-icon icon="graduation-cap" />
               </div>
               <div class="ml-4">
-                <p class="text font-bold text-gray-700">
+                <p class="font-bold text-warm-gray-800">
                   Learn
                 </p>
-                <p class="text text-gray-900">
+                <p class="text-warm-gray-600">
                   A general guide for new users. Welcome!
                 </p>
               </div>
@@ -174,33 +174,33 @@
         </ul>
       </div>
 
-      <div class="px-4 py-4 flex flex-col bg-white border border-gray-300 rounded-lg shadow">
-        <div class="mx-2 my-4 md:min-h-[4rem]">
-          <h2 class="text-3xl font-semibold text-gray-900">
+      <div class="px-4 py-4 flex flex-col bg-white rounded-lg">
+        <div class="mx-4 my-3 md:min-h-[4rem]">
+          <h2 class="sys-article-h3">
             Contact Us
           </h2>
 
-          <p class="my-4 text-gray-700">
+          <p class="text-lg my-4 text-warm-gray-600">
             Can’t find what you’re looking for in our support articles? Our team is here to help.
           </p>
         </div>
 
-        <ul class="space-y-4 -m-2">
+        <ul class="space-y-2 md:space-y-4">
           <li>
             <a
               href="https://system76.com/my-account/support-tickets/new"
-              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
               target="_blank"
               rel=""
             >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
                 <font-awesome-icon icon="ticket-alt" />
               </div>
               <div class="ml-4">
-                <p class="text font-bold text-gray-700">
+                <p class="font-bold text-warm-gray-800">
                   Open a Support Ticket
                 </p>
-                <p class="text text-gray-900">
+                <p class="text-warm-gray-600">
                   Get expert help from real support humans. Recommended for most users.
                 </p>
               </div>
@@ -210,16 +210,16 @@
           <li>
             <a
               href="tel:+17202269269"
-              class="flex items-center p-2 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded bg-orange-500 text-white sm:h-12 sm:w-12">
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
                 <font-awesome-icon icon="phone" />
               </div>
               <div class="ml-4">
-                <p class="text font-bold text-gray-700">
+                <p class="font-bold text-warm-gray-800">
                   Call (720) 226-9269
                 </p>
-                <p class="text text-gray-900">
+                <p class="text-warm-gray-600">
                   We’re open 8am – 5pm MST. Response time may be limited on weekends and holidays.
                 </p>
               </div>
@@ -232,19 +232,19 @@
     <section
       v-for="listing in listings"
       :key="listing.id"
-      class="max-w-7xl mx-auto my-8 px-4 divide-y-2 divide-gray-100 sm:my-9 sm:px-6 md:my-10 lg:px-8 xl:my-12"
+      class="max-w-7xl mx-auto my-10 px-4 divide-y-2 divide-transparent sm:my-12 md:my-16 xl:my-24"
     >
       <div>
         <h2
           :id="listing.section"
-          class="text-4xl md:text-5xl font-bold"
+          class="sys-article-h2"
         >
           {{ listing.title }}
         </h2>
 
         <p
           v-if="listing.description"
-          class="text-lg mt-4"
+          class="sys-article-p mt-4"
         >
           {{ listing.description }}
         </p>
@@ -252,9 +252,9 @@
 
       <div
         v-if="listing.section != null && articlesForSection(listing.section).length > 0"
-        class="mt-6 pt-6"
+        class="mt-4 sm:mt-6 md:mt-8"
       >
-        <ul class="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-6">
+        <ul class="space-y-2 sm:space-y-3 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-4 xl:gap-y-6">
           <article-listing
             v-for="article in articlesForSection(listing.section)"
             :key="article.path"
@@ -266,17 +266,17 @@
       <div
         v-for="nestedListing in listing.listings"
         :key="nestedListing.section"
-        class="mt-6 pt-6"
+        class="mt-4 sm:mt-6 md:mt-8 xl:mt-10"
       >
         <h3
           :id="nestedListing.id"
-          class="text-2xl md:text-3xl"
+          class="sys-article-h3"
         >
           {{ nestedListing.title }}
         </h3>
 
-        <div class="mt-2 pt-6">
-          <ul class="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-6">
+        <div class="mt-4 sm:mt-6 xl:mt-8">
+          <ul class="space-y-2 sm:space-y-3 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-4 xl:gap-y-6">
             <article-listing
               v-for="article in articlesForSection(nestedListing.section)"
               :key="article.path"

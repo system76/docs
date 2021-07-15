@@ -103,5 +103,9 @@ export default async () => ({
       xl: 1280,
       '2xl': 1536
     }
+  },
+
+  tailwindcss: {
+    cssPath: '~assets/styles/tailwind.css'
   }
 })

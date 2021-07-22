@@ -325,6 +325,31 @@ Depending on how you installed Windows and which firmware your computer is runni
     - While booting, hold down <kbd>Spacebar</kbd> to enter the menu.
     - Press the <kbd>+</kbd> key (or <kbd>Shift</kbd> + <kbd>=</kbd>) to increase the number of seconds the system will wait before booting the default OS; press <kbd>-</kbd> to decrease the number of seconds.
     - Once a timer is set, the menu will display on every boot without having to hold down <kbd>Spacebar</kbd>. (To reverse this, press <kbd>-</kbd> until the timer is back to zero.)
+- **Using GRUB:**
+    - GRUB **is not** the **default bootloader** for Pop! OS ! Using GRUB can cause issues!
+    - [Helpful video](https://www.youtube.com/watch?v=wLOZfT0732Y)
+    - **Installing GRUB**
+        - Install packages for GRUB.
+            ```bash
+            sudo apt install grub-efi
+            sudo apt install grub2-common
+            ```
+        - Install GRUB.
+          - Operating systems should be installed before entering the following command!
+            ```bash
+            sudo grub-install
+            ```
+            - ![The response should look like this.](/images/dual-booting/grub-install)
+    - **Setting up GRUB**
+        - Copy the file into the right directory.
+            ```bash
+            sudo cp /boot/grub/x86_64-efi/grub.efi /boot/efi/EFI/pop/grubx64.efi
+            ```
+        - Update GRUB.
+            ```bash
+            sudo update-grub
+            ```
+        - After rebooting the GRUB-Terminal should appear.
 
 ### Repairing the Pop!_OS Bootloader
 

@@ -20,7 +20,7 @@ redirect_from:
 ---
 
 | Laptops      | PDF | Tech Docs |
-| -------------| ----| ----------|
+|:------------:|:---:|:---------:|
 | Adder WS     | [addw1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Adder/addw1-service-manual.pdf) | [addw1](https://tech-docs.system76.com/models/addw1/repairs.html), [addw2](https://tech-docs.system76.com/models/addw2/repairs.html)
 | Bonobo WS    |     | [bonw14](https://tech-docs.system76.com/models/bonw14/repairs.html)
 | Darter Pro   | [darp5](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | [darp6](https://tech-docs.system76.com/models/darp6/repairs.html), [darp7](https://tech-docs.system76.com/models/darp7/repairs.html)
@@ -32,10 +32,14 @@ redirect_from:
 | Serval WS    | [serw11](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Serval/serw11-service-manual.pdf) | [serw12](https://tech-docs.system76.com/models/serw12/repairs.html)
 
 | Desktops       | PDF | Tech Docs |
-| ---------------| ----| ----------|
-| Meerkat        |   | [meer5](https://tech-docs.system76.com/models/meer5/repairs.html)
-| Thelio         | [thelio-r1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf), [thelio-b1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) |
-| Thelio Major   |   | [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/repairs.html)
-| Thelio Massive | | [thelio-massive](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html)
-| Thelio Mega    |   | [thelio-mega](https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html)
-| Thelio Mira    | | [thelio-mira](https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html)
+|:--------------:|:---:|:---------:|
+| Meerkat        |     | [meer5](https://tech-docs.system76.com/models/meer5/repairs.html)
+| Thelio         |     | [thelio-r1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf), [thelio-b1](https://github.com/system76/docs/blob/gh-pages/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) |
+| Thelio Major   |     | [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/repairs.html)
+| Thelio Massive |     | [thelio-massive](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html)
+| Thelio Mega    |     | [thelio-mega](https://tech-docs.system76.com/models/thelio-mega-r1.0/repairs.html)
+| Thelio Mira    |     | [thelio-mira](https://tech-docs.system76.com/models/thelio-mira-r1.0/repairs.html)
+
+| Accessories | PDF | Tech Docs |
+|:-----------:|:---:|:---------:|
+| Launch      |     | [launch_1](https://tech-docs.system76.com/models/launch_1/README.html)

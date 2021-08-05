@@ -58,7 +58,7 @@ Charging thresholds are exposed by the firmware through ACPI, and the `system76_
 
 The thresholds can be controlled by reading from and writing to these sysfs files.
 
-### At boot:
+### At boot
 
 To work around the limitation in open firmware causing the thresholds to be reset when the system
 is shut down and unplugged, you can set the thresholds at boot via systemd. To do so, create a file called

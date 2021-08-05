@@ -48,12 +48,15 @@ cd ~/
 mkdir ~/system76
 journalctl > ~/system76/journal.log
 dmesg > ~/system76/dmesg.log
-cp ~/.local/share/xorg/Xorg.0.log ~/system76/Xorg.0.log
+cp ~/.local/share/xorg/Xorg.0.log ~/system76/Xorg.0.log 2> /dev/null
 sudo dmidecode > ~/system76/demidecode
 sudo lspci -vv > ~/system76/lscpi.log
 sudo lsusb -vv > ~/system76/lsusb.log
 uname -a > ~/system76/uname.log
 cp /etc/os-release ~/system76/os-release
+lsblk -f ~/system76/lsblk.log
+df -h ~/system76/df.log
+cp /etc/fstab ~/system76/fstab.log
 tar czf system76-log.tgz ~/system76/*
 rm ~/system76/*
 rmdir ~/system76

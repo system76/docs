@@ -18,8 +18,6 @@ hidden: false
 section: software
 ---
 
-# Desktop Environment (Change)
-
 Pop!_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
 You can install an alternative desktop environment using the instructions below. If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!_OS, install the `pop-desktop` package:
@@ -40,7 +38,7 @@ If multiple desktop environments are installed, GDM will display a gear icon, wh
 
 ![Login2](/images/desktop-environment/Login2.png)
 
----
+## Different Desktop Environments
 
 ### MATE
 
@@ -182,7 +180,7 @@ sudo apt install lxqt
 
 Desktop environments can interfere with each other or change system-wide settings. Issues with a desktop environment's appearance can generally be fixed by changing the theme in the <u>Appearance</u> control panel.
 
-#### Customize Notification Dialog
+### Customize Notification Dialog
 
 Xfce will change the notification dialog to its own. It can be configured with this command:
 
@@ -190,7 +188,7 @@ Xfce will change the notification dialog to its own. It can be configured with t
 xfce4-notifyd-config
 ```
 
-#### Remove Duplicate Options From Login Screen
+### Remove Duplicate Options From Login Screen
 
 Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
 
@@ -198,11 +196,11 @@ Some desktop environments provide more than one session. For example, Cinnamon p
 sudo rm /usr/share/xsessions/cinnamon2d.desktop
 ```
 
-#### Change Automatic Startup Programs
+### Change Automatic Startup Programs
 
 Some desktop environments configure additional programs to start at boot. To change them, run the <u>Startup Applications</u> program and turn off any unwanted startup programs.
 
-#### Double Lock Screen Passwords
+### Double Lock Screen Passwords
 
 GNOME does not use a screensaver (only a lock screen), but other desktop environments may install the classic GNOME screensaver package as a dependency. If you're being prompted for a password twice after suspending or locking the screen, disable the second prompt with this command:
 
@@ -216,7 +214,7 @@ Or, if that doesn't stop the second prompt, uninstall the redundant screensaver 
 sudo apt purge gnome-screensaver
 ```
 
-#### Enable Cinnamon Lock Screen
+### Enable Cinnamon Lock Screen
 
 If Cinnamon's desktop lock screen isn't functioning, this command will re-enable it:
 
@@ -224,7 +222,7 @@ If Cinnamon's desktop lock screen isn't functioning, this command will re-enable
 gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false
 ```
 
-#### Removing Desktop Environments
+### Removing Desktop Environments
 
 If you no longer want to use a desktop environment, it can be removed by using:
 

@@ -56,6 +56,22 @@ Please download the zip file for your sytem and unzip the files within to a FAT3
 | Lemur Pro (lemp10)  | [lemp10-76ec.zip](/files/clear-smmstore/lemp10-76ec.zip)  | [lemp10](https://tech-docs.system76.com/models/lemp10/repairs.html#replacing-an-m2nvme-ssd) |
 | Oryx Pro (oryp6)    | [oryp6-76ec.zip](/files/clear-smmstore/oryp6-76ec.zip)    | [oryp6](https://tech-docs.system76.com/models/oryp6/repairs.html#replacing-an-m2nvme-ssd)   |
 
+## Unzipping the Files
+
+Depending on the decompression method you're using, you may need to perform an additional step. In some cases, the unzipped file is moved into a folder with the same name. For example, "oryx6-76ec.zip" becomes a directory called "oryx6-76ec" instead.
+
+The mainboard will not know how to access the files inside the directory. The firmware flashing will not work in this case. Instead, move the files outside of the parent directory, delete the parent directory, and try booting again.
+
+Pop!\_OS extracts the files correctly by default (see screenshots below), but other extraction tools or other operating systems such as macOS may behave differently.
+
+![zipfile](/images/open-firmware-smmstore/zipfile.png)
+
+![unzipping](/images/open-firmware-smmstore/unzip-in-progress.png)
+
+The highlighted files pictured below (the hash will change based on file and model) are the two items that should be in the root of the USB drive.
+
+![files-unzipped](/images/open-firmware-smmstore/files-unzipped.png)
+
 With all drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the drive(s).
 
 Once the system is put back together we may need to boot with a live image in order to repair the boot loader if you dual-boot with Windows 10. We provide step by step instructions on how to do this in our support articles in the links below:

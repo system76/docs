@@ -16,9 +16,7 @@ hidden: false
 section: software
 ---
 
-# Manage Repositories (Pop!_OS)
-
-### Accessing Repoman
+## Accessing Repoman
 
 Pop!_OS' tool for adding, removing and editing repositiories is called <u>Repoman</u> which is a part of the Pop!_Shop.
 

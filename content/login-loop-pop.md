@@ -19,8 +19,6 @@ hidden: false
 section: software-troubleshooting
 ---
 
-# Black Screen or Login Issues (Pop!_OS)
-
 Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Pop!_OS brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
 
 * Issues with decryption, or the GUI decryption screen.
@@ -30,7 +28,6 @@ Sometimes after an upgrade, your system might not bring you to the desktop after
 * The AMD radeon driver is being loaded and causing issues
 
 Each cause has a different solution, and certain items (such as NVIDIA) might not be applicable to your system. In most cases, you can switch to a full-screen terminal (called a *TTY*) to log in and fix the issue.
-
 
 ## Encryption Screen Issues
 
@@ -52,6 +49,7 @@ If your decryption passphrase is correct, but you're unable to reach the login s
 ![decryption freeze](/images/login-loop/good-password.png)
 
 To correct this, follow the steps below. If you're unable to reach a Terminal, refer to the "Recovery" section below.
+
 ### Switch to a Terminal
 
 At the login screen, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F5</kbd> to switch to a TTY. You'll be prompted to enter a login. At the `login` prompt, enter your username and press <kbd>Enter</kbd>. You'll then be prompted for your password. You will not see your password as you are typing it; just type it and press "Enter."
@@ -184,11 +182,12 @@ sudo apt install --reinstall plymouth gdm3 gnome-shell pop-desktop linux-generic
 
 The command above is one line, and will reinstall plymouth (the graphical encryption screen), gnome display manager (gdm3), gnome-shell, the pop-desktop environment, and the linux-kernel.
 
-Once the reinstallation has finsihed, we'll want to run:
+Once the reinstallation has finished, we'll want to run:
 
 ```bash
 update-initramfs -c -k all
 ```
+
 And finally:
 
 ```bash
@@ -198,6 +197,6 @@ reboot
 
 To exit the chroot environment, and then reboot the system.
 
-### If these steps don't work...
+### If these steps don't work
 
 Contact Support! We have a few more things to try. There are a significant number of processes and files required for your graphical desktop environment to be loaded, and much fewer for the terminal login. As such, you can usually recover your desktop using the command line interface!

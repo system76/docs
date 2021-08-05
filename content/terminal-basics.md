@@ -13,10 +13,8 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: learn-about-your-os
+section: about-your-os
 ---
-
-# Linux Terminal Basics
 
 The <u>Terminal</u> is an interactive, text-based interface for your Operating System. When you type a command, you're basically telling your computer to do something very specific. Many commands will print information to the screen. Some will ask for input, and others may just return you to a prompt.
 
@@ -28,7 +26,7 @@ A box like the one below will appear:
 
 ![Terminal](/images/terminal/main.png)
 
-### Navigating The Terminal
+## Navigating The Terminal
 
 It might not look like much, and at first glance there might not appear to be much information, but the <u>Terminal</u> is one of the most powerful tools at your disposal. Take a look:
 
@@ -49,7 +47,7 @@ To list all files and folders in the current directory, type `ls` To change dire
 
 ![Moving around](/images/terminal/moving-around.png)
 
-### Running Elevated Commands
+## Running Elevated Commands
 
 In most cases, the <u>Terminal</u> prevents you from damaging your system by requiring authentication or elevated privileges to run certain commands. For example, to check for updates you will need to prepend the command `apt update` with `sudo`. Below is an example of the same command, ran once without `sudo` and once with.
 
@@ -57,7 +55,7 @@ In most cases, the <u>Terminal</u> prevents you from damaging your system by req
 
 When you run a command with `sudo` in front of it, you'll be prompted for your password. When typing your password, you won't see anything. Just enter your password and then press <kbd>Enter</kbd>. If it's entered incorrectly, the <u>Terminal</u> will let you know and give you another chance to enter your password.
 
-## Useful Commands:
+## Useful Commands
 
 ```bash
 sudo apt update

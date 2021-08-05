@@ -13,8 +13,6 @@ hidden: false
 section: hardware
 ---
 
-# Battery Thresholds
-
 Charging thresholds allow your System76 laptop to avoid charging the battery until it has dropped below a lower bound (the start threshold), and to stop charging when it reaches an upper bound (the end threshold). This is useful when your laptop is plugged into an AC power adapter for extended periods of time, as it prevents unnecessary micro-charging that would reduce battery longevity.
 
 To determine if your laptop has Open Firmware or proprietary firmware, see [this article](/articles/open-firmware-systems). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
@@ -23,7 +21,7 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 **Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them. To work around this limitation in the short term, you can [use systemd to set thresholds at boot](#at-boot).
 
-### Using the terminal:
+### Using the terminal
 
 You can see the thresholds that are currently set using this command:
 
@@ -51,7 +49,7 @@ You can also set custom thresholds without using a profile. For example, this co
 system76-power charge-thresholds 40 80
 ```
 
-### Via sysfs:
+### Via sysfs
 
 Charging thresholds are exposed by the firmware through ACPI, and the `system76_acpi` kernel module makes them available through standard sysfs entries:
 

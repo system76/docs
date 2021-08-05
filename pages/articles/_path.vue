@@ -2,19 +2,20 @@
   <main>
     <article>
       <header>
-        <div class="bg-blue-500 text-white">
+        <div class="bg-blue-500 text-blue-900">
           <div class="max-w-7xl mx-auto py-3 px-4">
             <div class="flex items-center justify-between flex-wrap">
               <div class="w-0 flex-1 flex items-center">
                 <nuxt-link
                   to="/"
-                  class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100 md:text-lg"
+                  class="flex p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-900 md:text-lg"
                 >
                   <font-awesome-icon icon="arrow-left" />
+                  <span class="sr-only">All Articles</span>
                 </nuxt-link>
 
-                <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:font-extralight md:text-3xl">
-                  {{ article.title }}
+                <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:text-3xl">
+                  Support Articles
                 </h1>
               </div>
             </div>
@@ -55,7 +56,10 @@
               :key="toc.id"
             >
               <nuxt-link
-                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :class="{
+                  'pl-4': (toc.depth === 2),
+                  'pl-8': (toc.depth === 3)
+                }"
                 :to="`#${toc.id}`"
                 class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                 @click="tableOfContents = false"
@@ -68,10 +72,12 @@
       </header>
 
       <div class="flex justify-center my-6 mx-auto px-4 max-w-full sm:max-w-screen-sm md:my-12 lg:max-w-7xl">
-        <nuxt-content
-          class="prose prose-sm max-w-full flex-1 sm:prose xl:prose-lg lg:max-w-4xl"
-          :document="article"
-        />
+        <div class="prose sm:prose-sm xl:prose-xl max-w-full flex-1 lg:max-w-4xl">
+          <h1>
+            {{ article.title }}
+          </h1>
+          <nuxt-content :document="article" />
+        </div>
 
         <nav
           v-if="article.tableOfContents"
@@ -87,7 +93,10 @@
               :key="toc.id"
             >
               <nuxt-link
-                :class="[`pl-${((toc.depth - firstTocDepth) * 4) + 4}`]"
+                :class="{
+                  'pl-4': (toc.depth === 2),
+                  'pl-8': (toc.depth === 3)
+                }"
                 :to="`#${toc.id}`"
                 class="block px-3 py-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                 @click="tableOfContents = false"
@@ -109,6 +118,7 @@
               v-for="author in [...article.authors].reverse()"
               :key="author.username"
               :href="author.profileUrl"
+              rel="nofollow noopener noreferrer"
               target="_blank"
             >
               <img
@@ -125,16 +135,18 @@
               <template v-if="article.authors.length > 0">
                 <a
                   :href="article.authors[0].commitUrl"
-                  target="_blank"
                   class="hover:underline focus:underline"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
                 >
                   last edited at <time :datetime="article.updatedAt">{{ updatedAt }}</time>
                 </a>
                 by
                 <a
                   :href="article.authors[0].profileUrl"
-                  target="_blank"
                   class="hover:underline focus:underline"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
                 >
                   @{{ article.authors[0].username }}
                 </a>
@@ -149,6 +161,7 @@
             <a
               :href="`https://github.com/system76/docs/edit/master/content/${article.slug}.md`"
               class="flex items-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500 md:text-lg md:px-3"
+              rel="nofollow noopener noreferrer"
               target="_blank"
             >
               <font-awesome-icon :icon="['fab', 'github']" />
@@ -230,7 +243,7 @@ export default {
 
     updatedAt () {
       return (new Date(this.article.updatedAt)).toLocaleDateString('en-US', {
-        timeZone: 'MST'
+        timeZone: 'America/Denver'
       })
     }
   }

@@ -15,8 +15,6 @@ hidden: false
 section: software-troubleshooting
 ---
 
-# Fix Raw Image Previews
-
 The Files app doesn't display thumbnails for raw images by default, but RawTherapee can handle a large array of raw image formats. We can use RawTherapee's ability to convert raw images into PNGs to create thumbnails for other programs.
 
 ## Install RawTherapee

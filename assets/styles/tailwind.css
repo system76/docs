@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sys-article-h1 {
+    @apply text-warm-gray-600 font-sans font-extralight text-5xl leading-8 sm:text-7xl sm:leading-13 xl:text-8xl xl:leading-14;
+  }
+
+  .sys-article-h2 {
+    @apply text-warm-gray-600 font-serif font-normal text-4xl leading-10 sm:text-5xl sm:leading-12 xl:text-6xl xl:leading-13;
+  }
+
+  .sys-article-h3 {
+    @apply text-warm-gray-600 font-serif font-normal text-2xl leading-9 sm:text-3xl sm:leading-10 xl:text-4xl xl:leading-11;
+  }
+
+  .sys-article-h4 {
+    @apply text-warm-gray-600 font-serif font-bold text-xl leading-7 sm:text-2xl sm:leading-8 xl:text-3xl xl:leading-9;
+  }
+
+  .sys-article-h5 {
+    @apply text-warm-gray-600 font-serif font-bold text-lg leading-6 sm:text-xl sm:leading-7 xl:text-2xl xl:leading-8;
+  }
+
+  .sys-article-h6 {
+    @apply text-warm-gray-600 font-serif font-bold text-base leading-6 sm:text-base sm:leading-6 xl:text-xl xl:leading-7;
+  }
+
+  .sys-article-p {
+    @apply text-warm-gray-600 font-sans text-base leading-8 sm:text-lg sm:leading-9 xl:text-xl xl:leading-10;
+  }
+}

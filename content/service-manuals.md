@@ -42,4 +42,4 @@ redirect_from:
 
 | Accessories | PDF | Tech Docs |
 |:-----------:|:---:|:---------:|
-| Launch      |     | [launch_1](https://tech-docs.system76.com/models/launch_1/README.html)
+| Launch      |     | [launch_1](https://tech-docs.system76.com/models/launch_1/repairs.html)

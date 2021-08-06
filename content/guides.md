@@ -1,7 +1,7 @@
 ---
 title: Find Your Quickstart Guide
 description: >
-  Diagrams and component guides for your computer.
+  Diagrams and component guides for your System76 hardware.
 keywords:
   - Support
   - Guides
@@ -22,9 +22,9 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 ## Current Models
 
-| Laptops   | Desktop |
-|:---------:|:-------:|
-| [pang10](https://tech-docs.system76.com/models/pang10/README.html) | [meer6](https://tech-docs.system76.com/models/meer6/README.html) | 
+| Laptops   | Desktop | Accessories |
+|:---------:|:-------:|:------------:|
+| [pang10](https://tech-docs.system76.com/models/pang10/README.html) | [meer6](https://tech-docs.system76.com/models/meer6/README.html) | [launch_1](https://tech-docs.system76.com/models/launch_1/repairs.html)
 | [galp5](https://tech-docs.system76.com/models/galp5/README.html)   | [thelio-r1](/images/guides/thelio-r1.png) |
 | [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) | [thelio-r2](/images/guides/thelio-r2.png) |
 | [darp7](https://tech-docs.system76.com/models/darp7/README.html)   | [thelio-b1](/images/guides/thelio-b1.png) |

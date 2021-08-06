@@ -94,7 +94,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Leopard |
 |:-------:|
 | [leox4](/images/guides/leox4.pdf) [leox5](/images/guides/leox5.pdf) [leow6](/images/guides/leow6.png) |
-| [leow7](/images/guides/leow7.png) [leow8](/images/guides/leow8.png) [leow9-core-x](/images/guides/leow9-core-x) |
+| [leow7](/images/guides/leow7.png) [leow8](/images/guides/leow8.png) [leow9-core-x](/images/guides/leow9-core-x.png) |
 | [leow9-core-xb](/images/guides/leow9-core-xb.png) [leow9-xeon-w](/images/guides/leow9-xeon-w.png) |
 
 | Meerkat |
@@ -137,7 +137,3 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Thelio Massive |
 |:--------------:|
 | [thelio-massive-b1](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
-
-## More information
-
-If you are looking for even more information about your system you can find the tech-docs for your product [here.](/articles/service-manuals/)

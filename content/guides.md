@@ -56,9 +56,9 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | [galp2](/images/guides/galp2.png) [galp3](/images/guides/galp3.png) [galp4](https://tech-docs.system76.com/models/galp4/README.html) |
 | [galp5](https://tech-docs.system76.com/models/galp5/README.html) [galu1](/images/guides/galu1.pdf) |
 
-| Gazelle |     
+| Gazelle |
 |:-------:|
-| [gaze10](/images/guides/gaze10.pdf) [gaze11](/images/guides/gaze11.png) [gaze12](/images/guides/gaze12.png) 
+| [gaze10](/images/guides/gaze10.pdf) [gaze11](/images/guides/gaze11.png) [gaze12](/images/guides/gaze12.png) |
 | [gaze13](/images/guides/gaze13.png) [gaze14-15a](/images/guides/gaze14-15a.png) [gaze14-15b](/images/guides/gaze14-15b.png) |
 | [gaze14-17a](/images/guides/gaze14-17a.png) [gaze14-17b](/images/guides/gaze14-17b.png) [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) |
 | [gaze16](https://tech-docs.system76.com/models/gaze16/README.html) [gazp9](/images/guides/gazp9.pdf) |

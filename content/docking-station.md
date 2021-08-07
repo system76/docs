@@ -62,7 +62,7 @@ Community members have reported that the following docks work with our products:
 - [Dell WD19 Dock](https://www.dell.com/en-us/work/shop/dell-dock-wd19-90w-power-delivery-130w-ac/apd/210-ARIO/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system] <sup>1</sup>
   - Displays sometimes don't wake up from sleep until dock is re-plugged.
 - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/206) on an Intel system] <sup>1</sup>
-- [Dell Docking Station – USB 3.0 (D3100)](https://www.dell.com/en-us/work/shop/dell-docking-station-usb-30-d3100/apd/452-bbpg/pc-accessories) [[community-tested]() on an Intel system]
+- [Dell Docking Station – USB 3.0 (D3100)](https://www.dell.com/en-us/work/shop/dell-docking-station-usb-30-d3100/apd/452-bbpg/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/742) on an Intel system]
 - [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [[community-tested](https://github.com/system76/docs/pull/231) on an Intel system]
   - Requires extra configuration for suspend/resume to work.
 - [Lenovo ThinkPad Thunderbolt 3 Workstation Dock Gen 2](https://www.lenovo.com/us/en/accessories-and-monitors/docking/universal-cable-docks-thunderbolt/TBT-WS-Dock-Gen-2/p/40ANY230US) [[community-tested](https://github.com/system76/docs/pull/517) on an Intel sytem] <sup>1</sup>

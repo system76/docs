@@ -26,11 +26,12 @@ NVIDIA hardware table:
 
 Always        | Maybe                | Never
 :------------:|:--------------------:|:----:
-Oryx Pro      | Wild Dog Pro         | Lemur
-Serval WS     | Ratel                | Gazelle
-Bonobo WS     | Galago Pro (w/ eGPU) | Kudu
-Leopard WS    | Darter Pro (w/ eGPU) | Meerkat
+Bonobo WS     | Darter Pro (w/ eGPU) | Lemur
+Leopard WS    | Galago Pro (w/ eGPU) | Kudu
+Oryx Pro      | Gazelle              | Meerkat
+Serval WS     | Ratel                | 
 Silverback WS | Thelio               |
+<span></span> | Wild Dog Pro         |
 
 [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 

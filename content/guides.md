@@ -1,5 +1,5 @@
 ---
-title: Find Your Quickstart Guide
+title: Find The Service Manual
 description: >
   Diagrams and component guides for your System76 hardware.
 keywords:

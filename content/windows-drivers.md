@@ -29,8 +29,8 @@ Always        | Maybe                | Never
 Adder WS      | Darter Pro (w/ eGPU) | Lemur
 Bonobo WS     | Galago Pro (w/ eGPU) | Kudu
 Leopard WS    | Gazelle              | Meerkat
-Oryx Pro      | Ratel                | 
-Serval WS     | Thelio               | 
+Oryx Pro      | Ratel                |
+Serval WS     | Thelio               |
 Silverback WS | Wild Dog Pro         |
 
 [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)

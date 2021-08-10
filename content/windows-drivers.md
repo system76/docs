@@ -18,7 +18,7 @@ Most of the hardware in a System76 computer is Intel based, and Windows Update i
 
 [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
 
-For our Open Firmware and Open EC systems you can download the Windows drivers [here](https://github.com/system76/windows-drivers).
+For our Open Firmware and Open EC systems, you can download the Windows drivers [here](https://github.com/system76/windows-drivers).
 
 For systems with NVIDIA graphics cards, drivers can be found on their website:
 

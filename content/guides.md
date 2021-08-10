@@ -1,5 +1,5 @@
 ---
-title: Find The Service Manual
+title: Find Your Service Manual
 description: >
   Diagrams and component guides for your System76 hardware.
 keywords:

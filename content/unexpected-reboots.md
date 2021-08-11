@@ -2,7 +2,75 @@
 
 If your system is spontaneously rebooting, this article provides steps to isolate the cause.
 
-> **NOTE:** There is a subtle but important difference between a reboot and a shutdown/power-off. In a reboot, parts of the system are left powered on to faciliate restarting the system. In a shutdown/power-off voltage is removed from all parts of the system except charging circuitry if the AC Adapter is connected.
+> **NOTE:** There is a subtle but important difference between a reboot and a shutdown/power-off. In a reboot, parts of the system are left powered on to faciliate restarting the system. In a shutdown/power-off, hardware from all parts of the system except charging circuitry and capacitors is powered down.
+
+## Troubleshooting (Device Agnostic)
+
+### Software Causes
+
+Anything not directly affected by hardware, is controlled by software. This includes the kernel, drivers, and the desktop environemnt. The Operating System (OS), is essentially a software program that controls other software programs.
+
+If anything running in software causes a large enough cascade effect, it can take the rest of the system down and cause reboots or shut-offs.
+
+Software factors that can cause spontaneous reboots or crashes, include but are not limited to:
+
+1. Kernel Panics
+2. Kernel or Desktop Process Crashes
+3. Application Memory Leaks
+4. Driver Errors
+5. User Configuration Error
+6. Corrupted Operating System Files
+
+### Possible Solutions
+
+**Upgrade or Reinstall the Kernel**
+
+**Check for Memory Leaks - Reinstall Packages**
+
+Terminal
+
+```bash
+top
+```
+
+GUI - System Monitor
+
+[Screenshot]
+
+**Remove or Reinstall Drivers**
+
+```bash
+sudo apt update
+sudo apt install --reinstall [packagename]
+```
+
+To more completely remove the package:
+
+```bash
+sudo apt update
+sudo apt remove [packagename]
+sudo apt clean
+sudo apt autoremove
+```
+
+
+[for more info, link to Package Management Aritcle]
+
+**Test Admin User**
+
+[User Management]
+
+**Upgrade or Reinstall OS**
+
+[Backups]
+
+[Upgrade Pop]
+
+[Upgrade Ubuntu]
+
+[Install Pop]
+
+[Install Ubuntu]
 
 ### RAM Issues
 
@@ -14,7 +82,7 @@ If your system is not POSTing (Power On Self Test), typically you'll get symptom
 
 2. The system gets to a splash screen/logo, but crashes shortly afterwards. 
 
-It may may it to a login screen or desktop, but the system is unstable.
+It may reach a login screen or desktop, but the system is unstable.
 
 This usually indicates an issue with RAM (Random Access Memory). Despite the name, the system tends to use similar areas of RAM when booting (for example, the RAM module in Slot 1 is accessed first). The earlier in the boot process the system hits bad sectors of RAM, the sooner the system will freeze or reboot.
 
@@ -22,7 +90,7 @@ If the system is booting to a desktop, the first troubleshooting step is to run 
 
 **To Test RAM**
 
-The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a Live USB, or the Recovery Partition:
+The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB], or the [Recovery Partition]
 
 1. Install Memtester
 
@@ -48,8 +116,7 @@ sudo memtester 12GB 3 > ~/memtester.txt
 
 This command will run memtester and test 12GB of RAM 3 times, then save the output to a file called "memtester.txt" in your Home folder.
 
-> **NOTE:** Close all applications other than terminal when you run memtester. This will likely take a few hours (the application runs multiple passes over the memory) so it would be best to run it over night.
-
+> **NOTE:** Close all applications other than Terminal when you run memtester. This will likely take a few hours (the application runs multiple passes over the memory) so it would be best to run it overnight.
 
 
 ### Thermals
@@ -58,7 +125,7 @@ Modern hardware is designed to shut systems down when they reach temperatures th
 
 If your system is spontaneously shutting down, this may be caused by overheating. Systems with dedicated GPUs tend to run hot under normal circumstances, so noticing an overheating problem can be challenging from ambient temperature alone. 
 
-The temperatures of your CPU cores and GPU card can be check through software.
+The temperatures of your CPU cores and GPU card can be checked through software.
 
 **Run `lm-sensors`**
 
@@ -141,11 +208,24 @@ Or, to launch through the OS interface, click on "Activities" in the top-left (P
 
 **High Temperatures**
 
-If the system temperatures are abnormally high, the fans may need replaced, and/or the thermal compound may need reapplied to the CPU and GPU cores.
+If the system temperatures are abnormally high, the fans may need replaced, and/or the thermal compound may need re-applied to the CPU and GPU cores.
 
-Specific instruction for working on your hardware model can be found here: [LINK]
+Specific instructions for working on your hardware model can be found here: [LINK]
 
 Quotes for replacement fans and thermal paste can be generated on open support tickets. To open a support ticket, visit: [LINK]
+
+### Drive Issues
+
+1. NVME. vs. M2. SATA or 2.5" SATA.
+2. Drive power consumption.
+3. Drive port issues.
+4. Mainboard and drive interactions.
+
+
+
+## Laptop Specific Troubleshooting
+
+There are several reasons why a laptop may spontanously reboot. Typically it has to do with a thermal or power delivery issue, but it can also be caused by faults in the memory modules or errors with the drive. RAM and disk problems are more likely to cause a spontaneous reboot. Thermals or power delivery-issues are more likely to cause spontaneous shut-offs.
 
 ### Power Delivery
 
@@ -236,7 +316,9 @@ Specific sections to pay attention to are `capacity`, `energy-full`, and `energy
 
 `energy-full` should never be higher than `energy-full-design`. If it is, that indicates a problem with the integrated chip on the battery, and may be why charging reports are incorrect, and why, by extension, the system is shutting off unexpectedly. 
 
-`capacity` is a good way to gauge the age and health of the battery. If capacity is 70% or lower, the battery is showing aging, and won't hold as much charge as it did when new. This number will gradually decrease over time.
+`capacity` is a good way to gauge the age and health of the battery. If capacity is 70% or lower, the battery is showing aging, and won't hold as much charge as it did when new. 
+
+>**NOTE:** This number will gradually decrease over time from ~100% to 0%. Having a capacity of 95% and steadily decreasing as the battery gets older is expected behavior. Sudden drops in capacity, however, can indicate hardware failure.
 
 #### **AC Adapter**
 
@@ -247,33 +329,36 @@ There are four (4) main components that can be the cause of spontaneous shut-off
 3. DC-In Port on the laptop.
 4. Charging circuitry on the mainboard.
 
-Stress to the cabling, or short-circuits on components 1 or 2 can cause shut-offs. If the cable is moved while connected and the damaged part of the cable shifts enough, current into the laptop is interrupted. If the battery is removed, or no longer holding a charge, this can cause the system to power down.
+Stress to the cabling, or short-circuits on components 1 or 2 can cause shut-offs. If the cable is moved while connected and the damaged part of the cable shifts enough, current into the laptop is interrupted. If the battery is removed, or no longer holding a charge, this interruption can cause the system to power down.
 
-Removing the battery, connecting the AC adapter and moving the cable components one section at a time can reveal which part of the cabling may need replaced.
+Removing the battery, connecting the AC adapter and moving or rotating the cable components one section at a time can reveal which part of the cabling may need replaced.
 
 If moving the plug in the DC-In port on the laptop specifically causes the issue, it's more likely that the DC-In port needs replaced or resoldered onto the board.
 
-Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs.
-
-### Drive Issues
-
-### Software Causes
-
-
-## Laptop Specific Troubleshooting
-
-There are several reasons why a laptop may spontanously reboot. Typically it has to do with a thermal or power delivery issue, but it can also be caused by faults in the memory modules or errors with the drive. RAM and disk problems are more likely to cause a spontaneous reboot. Thermals or power delivery-issues are more likely to cause spontaneous shut-offs.
-
-
+Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs. To open a support ticket, visit: [LINK]
 
 ## Desktop Specific Troubleshooting
 
-### RAM Issues
+The main difference in troubleshooting desktop reboots vs. laptop reboots, is the battery, and greater disassembly options (i.e. more parts to troubleshoot). With a desktop computer (excepting the Meerkat), the power delivery system consists of the PSU, and the cable from the PSU to the wall. Unless a battery backup is added via an Uninterrupted Power Supply (UPS) an issue in the power delivery system will shut the system off.
 
-### Thermals
+Unlike most laptops, the GPU card can be removed or re-seated in desktop computers which can help with boot and screen rendering issues.
+
+In the Thelio desktops, there is also a SATA passthrough device called the Thelio I/O board. If that passthrough device, the SATA cables or any of the drives connected through them are having issues this can cause booting/rebooting issues.
+
+On the Meerkats, the Power Supply consists of a power cable similar to a laptop with a wall plug, "brick" and DC-In plug.
+
+Locate [Service Manuals for your Desktop here]
 
 ### Power Supply Unit (PSU)
 
-### Drive Issues
+On most of the Thelio configurations there is some room for changes in power delivery. However, on some larger models like the Thelio Mega, Major or Massive, the GPUs and PSUs draw a greater amount of wattage. 
 
-### Software Causes
+Factors that may influece reboots/power-offs:
+
+1. Thelio is connected to a UPS instead of directly to the wall.
+2. Thelio is connected to the wall, but the outlet is on a circuit with other, large home appliances.
+3. Faulty or disconnected wiring in the cable from the wall to the Thelio PSU.
+4. Failing PSU inside the Thelio.
+5. Faulty or disconnected internal cabling between the PSU and the rest of the Thelio components.
+
+If any of the above factors disconnect power, or reduce overall power reaching the Thelio, the system may reboot or shut off.

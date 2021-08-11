@@ -1,5 +1,5 @@
 ---
-title: Find Your Quickstart Guide
+title: Find Your Service Manual
 description: >
   Diagrams and component guides for your System76 hardware.
 keywords:
@@ -48,19 +48,18 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Darter |
 |:------:|
-| [darp5](/images/guides/darp5.png) [darp6](https://tech-docs.system76.com/models/darp6/README.html) [darp7](https://tech-docs.system76.com/models/darp7/README.html) |
+| [darp5](/service-manuals/pdfs/Darter/darp5-service-manual.pdf) [darp6](https://tech-docs.system76.com/models/darp6/README.html) [darp7](https://tech-docs.system76.com/models/darp7/README.html) |
 | [daru4](/images/guides/daru4.pdf)
 
 | Galago |
 |:------:|
-| [galp2](/images/guides/galp2.png) [galp3](/images/guides/galp3.png) [galp4](https://tech-docs.system76.com/models/galp4/README.html) |
+| [galp2](/service-manuals/pdfs/Galago/galp2-service-manual.pdf) [galp3](/service-manuals/pdfs/Galago/galp3-service-manual.pdf) [galp4](https://tech-docs.system76.com/models/galp4/README.html) |
 | [galp5](https://tech-docs.system76.com/models/galp5/README.html) [galu1](/images/guides/galu1.pdf) |
 
 | Gazelle |
 |:-------:|
 | [gaze10](/images/guides/gaze10.pdf) [gaze11](/images/guides/gaze11.png) [gaze12](/images/guides/gaze12.png) |
-| [gaze13](/images/guides/gaze13.png) [gaze14-15a](/images/guides/gaze14-15a.png) [gaze14-15b](/images/guides/gaze14-15b.png) |
-| [gaze14-17a](/images/guides/gaze14-17a.png) [gaze14-17b](/images/guides/gaze14-17b.png) [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) |
+| [gaze13](/images/guides/gaze13.png) [gaze14](/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf) [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) |
 | [gaze16](https://tech-docs.system76.com/models/gaze16/README.html) [gazp9](/images/guides/gazp9.pdf) |
 
 | Kudu |
@@ -70,14 +69,13 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Lemur |
 |:-----:|
-| [lemu5](/images/guides/lemu5.pdf) [lemu6](/images/guides/lemu6.pdf) [lemu7](/images/guides/lemp7.png) |
+| [lemu5](/images/guides/lemu5.pdf) [lemu6](/images/guides/lemu6.pdf) [lemu7](/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) |
 | [lemu8](/images/guides/lemu8.png) [lemp9](https://tech-docs.system76.com/models/lemp9/README.html) [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) |
 
 | Oryx |
 |:----:|
 | [orxp1](/images/guides/orxp1.pdf) [oryp2](/images/guides/oryp2.png) [oryp3-15](/images/guides/oryp3-15.png) |
-| [oryp3-17](/images/guides/oryp3-17.png) [oryp4](/images/guides/oryp4.png) [oryp5-16](/images/guides/oryp5-16.png) |
-| [oryp5-17](/images/guides/oryp5-17.png) [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
+| [oryp3-17](/images/guides/oryp3-17.png) [oryp4](/images/guides/oryp4.png) [oryp5](/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf) [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
 
 | Pangolin |
 |:--------:|
@@ -86,7 +84,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Serwal |
 |:------:|
 | [serw8](/images/guides/serw8.pdf) [serw9](/images/guides/serw9.png) [serw10-15](/images/guides/serw10-15.png) |
-| [serw10-17](/images/guides/serw10-17.png) [serw11-15](/images/guides/serw11-15.png) [serw11-17](/images/guides/serw11-17.png) |
+| [serw10-17](/images/guides/serw10-17.png) [serw11](/service-manuals/pdfs/Serval/serw11-service-manual.pdf) |
 | [serw12](https://tech-docs.system76.com/models/serw12/README.html) |
 
 ### Desktops
@@ -120,7 +118,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Thelio |
 |:------:|
-| [thelio-r1](/images/guides/thelio-r1.png) [thelio-r2](/images/guides/thelio-r2.png) [thelio-b1](/images/guides/thelio-b1.png)  
+| [thelio-r1](/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf) [thelio-r2](/images/guides/thelio-r2.png) [thelio-b1](/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf)  
 
 | Thelio Mira |
 |:-----------:|

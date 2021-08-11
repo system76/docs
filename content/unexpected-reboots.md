@@ -64,7 +64,7 @@ top
 
 If a GUI tool is preferred, and you are running PopOS or Ubuntu, open "System Monitor":
 
-![system-monitor](/images/unexpected-reboots/system-monitor.png)
+![system-monitor](images/unexpected-reboots/system-monitor.png)
 
 **Remove or Reinstall Drivers**
 
@@ -234,7 +234,7 @@ sudo apt install psensor
 
 2. Install Through Pop!\_Shop
 
-![psensor-pop](/images/unexpected-reboots/psensor.png)
+![psensor-pop](images/unexpected-reboots/psensor.png)
 
 3. Run Psensor:
 
@@ -246,7 +246,7 @@ psensor
 
 Or, to launch through the OS interface, click on "Activities" in the top-left (Pop!\_OS 20.04 LTS, or Ubuntu), or "Applications" (Pop!\_OS COSMIC) and search for "Psensor"
 
-![psensor-running](/images/unexpected-reboots/psensor-running.png)
+![psensor-running](images/unexpected-reboots/psensor-running.png)
 
 **High Temperatures**
 

@@ -46,9 +46,13 @@ Software factors that can cause spontaneous reboots or crashes, include but are 
 
 ### Possible Solutions
 
+<!-- To be added ASAP
+
 **Upgrade or Reinstall the Kernel**
 
 [LINK]
+
+-->
 
 **Check for Memory Leaks**
 
@@ -57,6 +61,8 @@ If an app is taking more than its fair share of system memory, that can have a r
 Applications are available to help diagnose memory leaks.
 
 From the `Terminal` run the `top` command to see which processes are using the most system resources:
+
+Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
 
 ```bash
 top
@@ -86,7 +92,7 @@ sudo apt clean
 sudo apt autoremove
 ```
 
-[for more info, link to Package Management Article]
+for more info, check out our [Package Management Pop!_OS Article](https://support.system76.com/articles/package-manager-pop) or the [Ubuntu Equivalent](https://support.system76.com/articles/package-manager-ubuntu) 
 
 **Test Admin User**
 
@@ -94,25 +100,31 @@ Sometimes an intentional or unintentional change to system configuration files c
 
 To test whether the problem exists at a user-level or system level, create a test admin user and see if the reboots or shutdowns occur there.
 
-[User Management Article]
+For more info, visit our [User Management Article](https://support.system76.com/articles/other-accounts)
 
 **Upgrade or Reinstall OS**
 
 Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles which go over this process:
 
-[Backups]
+0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files) 
 
-[Upgrade Pop]
+1. Upgrade the Current OS:
 
-[Upgrade Ubuntu]
+- Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
 
-[Live Disk]
+- Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 
-[BIOS/Boot Menu]
+2. Boot from a Live Disk for Clean Install:
 
-[Install Pop]
+- Make a [Live Disk](https://support.system76.com/articles/live-disk)
 
-[Install Ubuntu]
+3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
+
+4. Reinstall the OS:
+
+- [Install Pop](https://support.system76.com/articles/install-pop)
+
+- [Install Ubuntu](https://support.system76.com/articles/install-ubuntu) 
 
 ### RAM Issues
 
@@ -132,7 +144,7 @@ If the system is booting to a desktop, the first troubleshooting step is to run 
 
 **To Test RAM**
 
-The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB], or the [Recovery Partition]
+The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](https://support.system76.com/articles/live-disk), or the [Recovery Partition](https://support.system76.com/articles/pop-recovery)
 
 1. Install Memtester
 
@@ -174,6 +186,8 @@ The temperatures of your CPU cores and GPU card can be checked through software.
 `lm-sensors` (installed by default on Pop!\_OS) is a text-based tool that runs in a `Terminal`.
 
 1. Install `lm-sensors` (If not installed)
+
+Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
 
 ```bash
 sudo apt update
@@ -252,9 +266,9 @@ Or, to launch through the OS interface, click on "Activities" in the top-left (P
 
 If the system temperatures are abnormally high, the fans may need replaced, and/or the thermal compound may need re-applied to the CPU and GPU cores.
 
-Specific instructions for working on your hardware model can be found here: [LINK]
+Specific instructions for working on your hardware model can be found [here](https://support.system76.com/articles/guides)
 
-Quotes for replacement fans and thermal paste can be generated on open support tickets. To open a support ticket, visit: [LINK]
+Quotes for replacement fans and thermal paste can be generated on open support tickets. To open a support ticket, visit [this link](https://system76.com/my-account/support-tickets/new)
 
 ### Drive Issues
 
@@ -266,17 +280,17 @@ Different drive types have different specifications and write or transfer data a
 
 There are two types of M.2 style drives that ship in System76 machines. M.2 SATA, and NVMe. Both use M.2 ports on the mainboard, but each have different transfer speeds, power profiles, and connection protocols. 
 
-|NVMe Drives:|:                      M.2 SATA Drives:|
-
-Faster I/O                           Slower I/O than NVMe
-More power consumption               Less power consumption
-Use more PCIe lanes on the board.    Use fewer PCIe lanes.
+|NVMe Drives| M.2 SATA Drives|
+|---|---|
+|Faster I/O | Slower I/O than NVMe|
+|More power consumption | Less power consumption|
+|Uses more I/O resources | Uses fewer I/O resources|
 
 **2.5" SATA Drives**
 
 2.5" SATA drives all use the same form factor, but their internals and power consumption differ whether they are solid state, or RPM ("spinning rust") drives.
 
-The number and age of these drives installed in a system can have an impact on power consumption, or boot/reboot behavior. Boot behavior can be effected especially if there are operating systems installed on the drives, and the boot configurations of those operating systems has been corrupted, or if the drives themselves are failing.
+The number and age of these drives installed in a system can have an impact on power consumption, or boot/reboot behavior. Boot behavior can be affected especially if there are operating systems installed on the drives, and the boot configurations of those operating systems has been corrupted, or if the drives themselves are failing.
 
 A failing drive can do more than cause issues loading things, or when booting. Depending on how the hardware is interacting with the mainboard, it can cause electrical or performance issues for the system as a whole.
 
@@ -402,7 +416,7 @@ Removing the battery, connecting the AC adapter and moving or rotating the cable
 
 If moving the plug in the DC-In port on the laptop specifically causes the issue, it's more likely that the DC-In port needs replaced or re-soldered onto the board.
 
-Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs. To open a support ticket, visit: [LINK]
+Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs. To open a support ticket, visit: [this link](https://system76.com/my-account/support-tickets/new)
 
 
 
@@ -416,7 +430,7 @@ Thelios include a SATA passthrough device called the Thelio I/O board. If that p
 
 On the Meerkats, the Power Supply consists of a power cable similar to a laptop with a wall plug, "brick" and DC-In plug.
 
-Locate [Service Manuals for your Desktop here]
+Locate [Service Manuals for your Desktop here](https://support.system76.com/articles/guides)
 
 ### Power Supply Unit (PSU)
 

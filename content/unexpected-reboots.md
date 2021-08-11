@@ -1,14 +1,37 @@
-# Unexpected Reboots
+---
+title: Reboots (Unexpected)
+description: >
+   If your system is spontaneously rebooting, this article provides steps to isolate the cause.
+keywords:
+  - reboot
+  - shutdown
+  - restart
+  - reset
+  - crash
+  - reinstall
+  - refresh
+  - power-off
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
+hidden: false
+section: hardware-troubleshooting
+tableOfContents: true
+---
+
+
+# Reboots (Unexpected)
 
 If your system is spontaneously rebooting, this article provides steps to isolate the cause.
 
-> **NOTE:** There is a subtle but important difference between a reboot and a shutdown/power-off. In a reboot, parts of the system are left powered on to faciliate restarting the system. In a shutdown/power-off, hardware from all parts of the system except charging circuitry and capacitors is powered down.
+> **NOTE:** There is a subtle but important difference between a reboot and a shutdown/power-off. In a reboot, parts of the system are left powered on to facilitate restarting the system. In a shutdown/power-off, hardware from all parts of the system except charging circuitry and capacitors is powered down.
 
 ## Troubleshooting (Device Agnostic)
 
 ### Software Causes
 
-Anything not directly affected by hardware, is controlled by software. This includes the kernel, drivers, and the desktop environemnt. The Operating System (OS), is essentially a software program that controls other software programs.
+Anything not directly affected by hardware, is controlled by software. This includes the kernel, drivers, and the desktop environment. The Operating System (OS), is essentially a software program that controls other software programs.
 
 If anything running in software causes a large enough cascade effect, it can take the rest of the system down and cause reboots or shut-offs.
 
@@ -25,19 +48,29 @@ Software factors that can cause spontaneous reboots or crashes, include but are 
 
 **Upgrade or Reinstall the Kernel**
 
-**Check for Memory Leaks - Reinstall Packages**
+[LINK]
 
-Terminal
+**Check for Memory Leaks**
+
+If an app is taking more than its fair share of system memory, that can have a runaway affect resulting in shutdowns or restarts.
+
+Applications are available to help diagnose memory leaks.
+
+From the `Terminal` run the `top` command to see which processes are using the most system resources:
 
 ```bash
 top
 ```
 
-GUI - System Monitor
+If a GUI tool is preferred, and you are running PopOS or Ubuntu, open "System Monitor":
 
-[Screenshot]
+![system-monitor](/images/unexpected-reboots/system-monitor.png)
 
 **Remove or Reinstall Drivers**
+
+If a package is misbehaving or corrupted, try reinstalling it, or removing it. This can be done with the following `Terminal` commands.
+
+> **NOTE:** replace [packagename] with the same of the application or driver you are are trying to reinstall. Do not include the "[ ]" around the name.
 
 ```bash
 sudo apt update
@@ -53,20 +86,29 @@ sudo apt clean
 sudo apt autoremove
 ```
 
-
-[for more info, link to Package Management Aritcle]
+[for more info, link to Package Management Article]
 
 **Test Admin User**
 
-[User Management]
+Sometimes an intentional or unintentional change to system configuration files can cause unexpected boot behavior, and is only limited to the user that made the changes.
+
+To test whether the problem exists at a user-level or system level, create a test admin user and see if the reboots or shutdowns occur there.
+
+[User Management Article]
 
 **Upgrade or Reinstall OS**
+
+Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles which go over this process:
 
 [Backups]
 
 [Upgrade Pop]
 
 [Upgrade Ubuntu]
+
+[Live Disk]
+
+[BIOS/Boot Menu]
 
 [Install Pop]
 
@@ -116,7 +158,7 @@ sudo memtester 12GB 3 > ~/memtester.txt
 
 This command will run memtester and test 12GB of RAM 3 times, then save the output to a file called "memtester.txt" in your Home folder.
 
-> **NOTE:** Close all applications other than Terminal when you run memtester. This will likely take a few hours (the application runs multiple passes over the memory) so it would be best to run it overnight.
+> **IMPORTANT NOTE:** Close all applications other than Terminal when you run memtester. This will likely take a few hours (the application runs multiple passes over the memory) so it would be best to run it overnight.
 
 
 ### Thermals
@@ -192,7 +234,7 @@ sudo apt install psensor
 
 2. Install Through Pop!\_Shop
 
-[SCREENSHOT]
+![psensor-pop](/images/unexpected-reboots/psensor.png)
 
 3. Run Psensor:
 
@@ -204,7 +246,7 @@ psensor
 
 Or, to launch through the OS interface, click on "Activities" in the top-left (Pop!\_OS 20.04 LTS, or Ubuntu), or "Applications" (Pop!\_OS COSMIC) and search for "Psensor"
 
-[SCREENSHOT]
+![psensor-running](/images/unexpected-reboots/psensor-running.png)
 
 **High Temperatures**
 
@@ -216,16 +258,41 @@ Quotes for replacement fans and thermal paste can be generated on open support t
 
 ### Drive Issues
 
-1. NVME. vs. M2. SATA or 2.5" SATA.
-2. Drive power consumption.
-3. Drive port issues.
-4. Mainboard and drive interactions.
+When programs and files are not being stored in RAM, they are stored on the drive. Similar issues can occur with a failing hard drive as with memory; If there's a read/write issue, or electrical interference, this can cause unexpected shutdowns.
+
+Different drive types have different specifications and write or transfer data at different speeds. They also have different power requirements, and communicate with mainboards through different ports.
+
+**M.2 Drives**
+
+There are two types of M.2 style drives that ship in System76 machines. M.2 SATA, and NVMe. Both use M.2 ports on the mainboard, but each have different transfer speeds, power profiles, and connection protocols. 
+
+|NVMe Drives:|:                      M.2 SATA Drives:|
+
+Faster I/O                           Slower I/O than NVMe
+More power consumption               Less power consumption
+Use more PCIe lanes on the board.    Use fewer PCIe lanes.
+
+**2.5" SATA Drives**
+
+2.5" SATA drives all use the same form factor, but their internals and power consumption differ whether they are solid state, or RPM ("spinning rust") drives.
+
+The number and age of these drives installed in a system can have an impact on power consumption, or boot/reboot behavior. Boot behavior can be effected especially if there are operating systems installed on the drives, and the boot configurations of those operating systems has been corrupted, or if the drives themselves are failing.
+
+A failing drive can do more than cause issues loading things, or when booting. Depending on how the hardware is interacting with the mainboard, it can cause electrical or performance issues for the system as a whole.
+
+**Troubleshooting**
+
+To troubleshoot drive hardware issues, try booting to a different drive or to the BIOS with some or all of the drives removed.
+
+Try booting with the drives in different drive slots/bays.
+
+Check the drive(s) for errors from a live disk, as outlined here: [Diagnose Hardware]
 
 
 
 ## Laptop Specific Troubleshooting
 
-There are several reasons why a laptop may spontanously reboot. Typically it has to do with a thermal or power delivery issue, but it can also be caused by faults in the memory modules or errors with the drive. RAM and disk problems are more likely to cause a spontaneous reboot. Thermals or power delivery-issues are more likely to cause spontaneous shut-offs.
+There are several reasons why a laptop may spontaneously reboot. Typically it has to do with a thermal or power delivery issue, but it can also be caused by faults in the memory modules or errors with the drive. RAM and disk problems are more likely to cause a spontaneous reboot. Thermals or power delivery-issues are more likely to cause spontaneous shut-offs.
 
 ### Power Delivery
 
@@ -333,9 +400,11 @@ Stress to the cabling, or short-circuits on components 1 or 2 can cause shut-off
 
 Removing the battery, connecting the AC adapter and moving or rotating the cable components one section at a time can reveal which part of the cabling may need replaced.
 
-If moving the plug in the DC-In port on the laptop specifically causes the issue, it's more likely that the DC-In port needs replaced or resoldered onto the board.
+If moving the plug in the DC-In port on the laptop specifically causes the issue, it's more likely that the DC-In port needs replaced or re-soldered onto the board.
 
 Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs. To open a support ticket, visit: [LINK]
+
+
 
 ## Desktop Specific Troubleshooting
 
@@ -343,7 +412,7 @@ The main difference in troubleshooting desktop reboots vs. laptop reboots, is th
 
 Unlike most laptops, the GPU card can be removed or re-seated in desktop computers which can help with boot and screen rendering issues.
 
-In the Thelio desktops, there is also a SATA passthrough device called the Thelio I/O board. If that passthrough device, the SATA cables or any of the drives connected through them are having issues this can cause booting/rebooting issues.
+Thelios include a SATA passthrough device called the Thelio I/O board. If that passthrough device, the SATA cables or any of the drives connected through them are having issues this can cause booting/rebooting issues.
 
 On the Meerkats, the Power Supply consists of a power cable similar to a laptop with a wall plug, "brick" and DC-In plug.
 
@@ -353,7 +422,7 @@ Locate [Service Manuals for your Desktop here]
 
 On most of the Thelio configurations there is some room for changes in power delivery. However, on some larger models like the Thelio Mega, Major or Massive, the GPUs and PSUs draw a greater amount of wattage. 
 
-Factors that may influece reboots/power-offs:
+Factors that may influence reboots/power-offs:
 
 1. Thelio is connected to a UPS instead of directly to the wall.
 2. Thelio is connected to the wall, but the outlet is on a circuit with other, large home appliances.
@@ -362,3 +431,4 @@ Factors that may influece reboots/power-offs:
 5. Faulty or disconnected internal cabling between the PSU and the rest of the Thelio components.
 
 If any of the above factors disconnect power, or reduce overall power reaching the Thelio, the system may reboot or shut off.
+

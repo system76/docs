@@ -18,17 +18,20 @@ Most of the hardware in a System76 computer is Intel based, and Windows Update i
 
 [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
 
+For our Open Firmware and Open EC systems, you can download the Windows drivers [here](https://github.com/system76/windows-drivers).
+
 For systems with NVIDIA graphics cards, drivers can be found on their website:
 
 NVIDIA hardware table:
 
 Always        | Maybe                | Never
 :------------:|:--------------------:|:----:
-Oryx Pro      | Wild Dog Pro         | Lemur
-Serval WS     | Ratel                | Gazelle
+Adder WS      | Darter Pro (w/ eGPU) | Lemur
 Bonobo WS     | Galago Pro (w/ eGPU) | Kudu
-Leopard WS    | Darter Pro (w/ eGPU) | Meerkat
-Silverback WS | Thelio               |
+Leopard WS    | Gazelle              | Meerkat
+Oryx Pro      | Ratel                |
+Serval WS     | Thelio               |
+Silverback WS | Wild Dog Pro         |
 
 [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 

@@ -20,9 +20,6 @@ section: hardware-troubleshooting
 tableOfContents: true
 ---
 
-
-# Reboots (Unexpected)
-
 If your system is spontaneously rebooting, this article provides steps to isolate the cause.
 
 > **NOTE:** There is a subtle but important difference between a reboot and a shutdown/power-off. In a reboot, parts of the system are left powered on to facilitate restarting the system. In a shutdown/power-off, hardware from all parts of the system except charging circuitry and capacitors is powered down.

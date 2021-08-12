@@ -51,7 +51,7 @@ Software factors that can cause spontaneous reboots or crashes, include but are 
 
 -->
 
-**Check for Memory Leaks**
+#### Check for Memory Leaks
 
 If an app is taking more than its fair share of system memory, that can have a runaway affect resulting in shutdowns or restarts.
 
@@ -69,7 +69,7 @@ If a GUI tool is preferred, and you are running PopOS or Ubuntu, open "System Mo
 
 ![system-monitor](/images/unexpected-reboots/system-monitor.png)
 
-**Remove or Reinstall Drivers**
+#### Remove or Reinstall Drivers
 
 If a package is misbehaving or corrupted, try reinstalling it, or removing it. This can be done with the following `Terminal` commands.
 
@@ -89,39 +89,39 @@ sudo apt clean
 sudo apt autoremove
 ```
 
-for more info, check out our [Package Management Pop!_OS Article](https://support.system76.com/articles/package-manager-pop) or the [Ubuntu Equivalent](https://support.system76.com/articles/package-manager-ubuntu) 
+for more info, check out our [Package Management Pop!_OS Article](/articles/package-manager-pop) or the [Ubuntu Equivalent](/articles/package-manager-ubuntu) 
 
-**Test Admin User**
+#### Test Admin User
 
 Sometimes an intentional or unintentional change to system configuration files can cause unexpected boot behavior, and is only limited to the user that made the changes.
 
 To test whether the problem exists at a user-level or system level, create a test admin user and see if the reboots or shutdowns occur there.
 
-For more info, visit our [User Management Article](https://support.system76.com/articles/other-accounts)
+For more info, visit our [User Management Article](/articles/other-accounts)
 
-**Upgrade or Reinstall OS**
+#### Upgrade or Reinstall OS
 
 Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles which go over this process:
 
-0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files) 
+0. Back up your personal files using the steps [here](/articles/backup-files) 
 
 1. Upgrade the Current OS:
 
-- Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
+- Instructions for [Upgrading PopOS](/articles/upgrade-pop)
 
-- Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
+- Instructions for [Upgrading Ubuntu](articles/upgrade-ubuntu)
 
 2. Boot from a Live Disk for Clean Install:
 
-- Make a [Live Disk](https://support.system76.com/articles/live-disk)
+- Make a [Live Disk](/articles/live-disk)
 
-3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
+3. Access the [BIOS/Boot Menu](/articles/boot-menu)
 
 4. Reinstall the OS:
 
-- [Install Pop](https://support.system76.com/articles/install-pop)
+- [Install Pop](/articles/install-pop)
 
-- [Install Ubuntu](https://support.system76.com/articles/install-ubuntu) 
+- [Install Ubuntu](/articles/install-ubuntu) 
 
 ### RAM Issues
 
@@ -139,9 +139,9 @@ This usually indicates an issue with RAM (Random Access Memory). Despite the nam
 
 If the system is booting to a desktop, the first troubleshooting step is to run stress tests on the memory. If the stress test completes, it will show error messages for your RAM. If the test doesn't complete it will likely trigger the issue, and indicate that RAM is to blame.
 
-**To Test RAM**
+#### To Test RAM
 
-The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](https://support.system76.com/articles/live-disk), or the [Recovery Partition](https://support.system76.com/articles/pop-recovery)
+The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](/articles/live-disk), or the [Recovery Partition](/articles/pop-recovery)
 
 1. Install Memtester
 
@@ -178,7 +178,7 @@ If your system is spontaneously shutting down, this may be caused by overheating
 
 The temperatures of your CPU cores and GPU card can be checked through software.
 
-**Run `lm-sensors`**
+#### Run `lm-sensors`
 
 `lm-sensors` (installed by default on Pop!\_OS) is a text-based tool that runs in a `Terminal`.
 
@@ -233,7 +233,7 @@ in0:          12.95 V
 curr1:         0.00 A  
 ```
 
-**Psensor**
+#### Psensor
 
 If you prefer a GUI tool which provides graphing over time. The application Psensor can be installed from the Pop!\_Shop, or through the `Terminal` with this command:
 
@@ -259,7 +259,7 @@ Or, to launch through the OS interface, click on "Activities" in the top-left (P
 
 ![psensor-running](/images/unexpected-reboots/psensor-running.png)
 
-**High Temperatures**
+#### High Temperatures
 
 If the system temperatures are abnormally high, the fans may need replaced, and/or the thermal compound may need re-applied to the CPU and GPU cores.
 
@@ -273,7 +273,7 @@ When programs and files are not being stored in RAM, they are stored on the driv
 
 Different drive types have different specifications and write or transfer data at different speeds. They also have different power requirements, and communicate with mainboards through different ports.
 
-**M.2 Drives**
+#### M.2 Drives
 
 There are two types of M.2 style drives that ship in System76 machines. M.2 SATA, and NVMe. Both use M.2 ports on the mainboard, but each have different transfer speeds, power profiles, and connection protocols. 
 
@@ -283,7 +283,7 @@ There are two types of M.2 style drives that ship in System76 machines. M.2 SATA
 |More power consumption | Less power consumption|
 |Uses more I/O resources | Uses fewer I/O resources|
 
-**2.5" SATA Drives**
+#### 2.5" SATA Drives
 
 2.5" SATA drives all use the same form factor, but their internals and power consumption differ whether they are solid state, or RPM ("spinning rust") drives.
 
@@ -291,15 +291,13 @@ The number and age of these drives installed in a system can have an impact on p
 
 A failing drive can do more than cause issues loading things, or when booting. Depending on how the hardware is interacting with the mainboard, it can cause electrical or performance issues for the system as a whole.
 
-**Troubleshooting**
+### Troubleshooting
 
 To troubleshoot drive hardware issues, try booting to a different drive or to the BIOS with some or all of the drives removed.
 
 Try booting with the drives in different drive slots/bays.
 
-Check the drive(s) for errors from a live disk, as outlined here: [Diagnose Hardware]
-
-
+Check the drive(s) for errors from a live disk, as outlined here: [Diagnose Hardware](/articles/hardware-failure)
 
 ## Laptop Specific Troubleshooting
 
@@ -309,13 +307,13 @@ There are several reasons why a laptop may spontaneously reboot. Typically it ha
 
 On System76 laptops, the charging circuitry, and power circuitry are partially independent from each other. The system will power on and function normally with the battery removed. This means that a spontaneous power-off could be caused by either a problem with the AC Adapter, or the Battery.
 
-#### **Battery**
+#### Battery
 
 As lithium-ion batteries age, their ability to hold a charge, and accurately report charging estimates deteriorates. 
 
 For example, the OS may be reporting that the laptop has enough charge to stay on for another hour, but in reality the battery may fully discharge in 15 minutes. This situation can lead to spontaneous shutoffs that do not immediately appear to be battery related. 
 
-**Battery Statistics**
+#### Battery Statistics
 
 Battery statistics can be retrieved using the following `Terminal` command:
 
@@ -398,7 +396,7 @@ Specific sections to pay attention to are `capacity`, `energy-full`, and `energy
 
 >**NOTE:** This number will gradually decrease over time from ~100% to 0%. Having a capacity of 95% and steadily decreasing as the battery gets older is expected behavior. Sudden drops in capacity, however, can indicate hardware failure.
 
-#### **AC Adapter**
+#### AC Adapter
 
 There are four (4) main components that can be the cause of spontaneous shut-offs related to the AC Adapter:
 
@@ -415,8 +413,6 @@ If moving the plug in the DC-In port on the laptop specifically causes the issue
 
 Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs. To open a support ticket, visit: [this link](https://system76.com/my-account/support-tickets/new)
 
-
-
 ## Desktop Specific Troubleshooting
 
 The main difference in troubleshooting desktop reboots vs. laptop reboots, is the battery, and greater disassembly options (i.e. more parts to troubleshoot). With a desktop computer (excepting the Meerkat), the power delivery system consists of the PSU, and the cable from the PSU to the wall. Unless a battery backup is added via an Uninterrupted Power Supply (UPS) an issue in the power delivery system will shut the system off.
@@ -427,7 +423,7 @@ Thelios include a SATA passthrough device called the Thelio I/O board. If that p
 
 On the Meerkats, the Power Supply consists of a power cable similar to a laptop with a wall plug, "brick" and DC-In plug.
 
-Locate [Service Manuals for your Desktop here](https://support.system76.com/articles/guides)
+Locate [Service Manuals for your Desktop here](/articles/guides)
 
 ### Power Supply Unit (PSU)
 

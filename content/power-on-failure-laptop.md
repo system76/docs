@@ -22,5 +22,5 @@ section: hardware-troubleshooting
 5. To perform a hardware reset, unplug the system. Disconnect the CMOS battery for 30 seconds. Reconnect the CMOS battery and turn the computer on with the battery installed and the AC Adapter plugged in. Instructions to disconnect the CMOS battery can be found for your model [here](https://tech-docs.system76.com/models/README.html).
 6. If the keyboard backlight (both multi color and single color) comes on but nothing is on the display try the following steps:
     - 6a. Connect an external display if possible
-    - 6b. Remove the bottom cover of the system (if you are comfortable) and remove one stick of RAM if you have more then one. This will allow us to test both sticks as a bad stick of RAM can cause a system to not boot. Refer to this [article](/articles/service-manuals) to find the service manual for your system.
+    - 6b. Remove the bottom cover of the system (if you are comfortable) and remove one stick of RAM if you have more then one. This will allow us to test both sticks as a bad stick of RAM can cause a system to not boot. Refer to this [article](/articles/guides) to find the service manual for your system.
 7. If the laptop fails to power on after initial troubleshooting, sending in your laptop for repair is the next recommended step which can be done by opening a support ticket on our website.

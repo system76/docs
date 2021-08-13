@@ -1,7 +1,7 @@
 ---
 title: Live Disk Creation (Other Operating Systems)
 description: >
-  Create and use bootable media on other operating systems and verify the downloaded .iso file.
+  Create and use bootable media on other operating systems.
 keywords:
   - Pop_OS!
   - USB

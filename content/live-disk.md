@@ -40,7 +40,7 @@ A live disk is a handy tool to have around!
 
 Verifying your download is an important step: we generate a "checksum" for Pop!_OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
 
-Assuming you downloaded Pop!_OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:
+*Assuming you downloaded Pop!_OS to your Windows Downloads folder*, open the Command Prompt in Windows and run the following command:
 
 *For Intel/AMD iso*
 ```
@@ -52,20 +52,20 @@ CertUtil -hashfile Downloads\pop-os_21.04_amd64_intel_7.iso sha256
 CertUtil -hashfile Downloads\pop-os_21.04_amd64_nvidia_7.iso sha256
 ```
 
-**Note:** The .iso filenames will change overtime so please make sure you are using the correct .iso filename
+**Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
 
-If the checksum does not match the one in the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
 
 ### For Ubuntu/Pop!_OS
 
-On Ubuntu/Pop!_OS open the Terminal **(Ctrl+Alt+T)** and change your directory to where the .iso file is downloaded
+On Ubuntu/Pop!_OS open the Terminal <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd> and change your directory to where the .iso file is downloaded
 
 ```
 cd Downloads
 ```
-*Assuming you downloaded your .iso file to your Downloads folder*
+*Assuming you downloaded your .iso file to your ~/Downloads folder*
 
-Run the following command in your Terminal
+Run the following command in your Terminal:
 
 *For Intel/AMD iso*
 ```
@@ -77,9 +77,9 @@ sha256sum pop-os_21.04_amd64_intel_7.iso
 sha256sum pop-os_21.04_amd64_nvidia_7.iso
 ```
 
-**Note:** The .iso filenames will change overtime so please make sure you are using the correct .iso filename
+**Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
 
-If the checksum does not match the one in the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
 
 ## Make Bootable drive
 

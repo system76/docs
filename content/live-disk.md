@@ -46,12 +46,14 @@ Verifying your download is an important step: we generate a "checksum" for Pop!_
 
 Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd> on Pop!_OS or <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> on Ubuntu) and run the following command:
 
-*For Intel/AMD iso*
+#### For Intel/AMD iso
+
 ```
 sha256sum Downloads/pop-os_21.04_amd64_intel_7.iso
 ```
 
-*For NVIDIA iso*
+#### For NVIDIA iso
+
 ```
 sha256sum Downloads/pop-os_21.04_amd64_nvidia_7.iso
 ```
@@ -64,12 +66,14 @@ If the checksum does not match the one on the [download page](https://pop.system
 
 Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Prompt and run the following command:
 
-*For Intel/AMD iso*
+#### For Intel/AMD iso
+
 ```
 CertUtil -hashfile Downloads\pop-os_21.04_amd64_intel_7.iso sha256
 ```
 
-*For NVIDIA iso*
+#### For NVIDIA iso
+
 ```
 CertUtil -hashfile Downloads\pop-os_21.04_amd64_nvidia_7.iso sha256
 ```

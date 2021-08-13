@@ -1,7 +1,7 @@
 ---
 title: Live Disk Creation (Other Operating Systems)
 description: >
-  Create and use bootable media on other operating systems.
+  Create and use bootable media on other operating systems and verify the downloaded .iso file.
 keywords:
   - Pop_OS!
   - USB
@@ -10,6 +10,8 @@ keywords:
   - Reinstall
   - Installation
   - System76
+  - Verify
+  - Checksums
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -32,11 +34,58 @@ Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_O
 
 A live disk is a handy tool to have around!
 
+## Verify Your Download
+
+### For Windows
+
+Verifying your download is an important step: we generate a "checksum" for Pop!_OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+
+Assuming you downloaded Pop!_OS to your Windows Downloads folder, open the Command Prompt in Windows and run the following command:
+
+*For Intel/AMD iso*
+```
+CertUtil -hashfile Downloads\pop-os_21.04_amd64_intel_7.iso sha256
+```
+
+*For NVIDIA iso*
+```
+CertUtil -hashfile Downloads\pop-os_21.04_amd64_nvidia_7.iso sha256
+```
+
+**Note:** The .iso filenames will change overtime so please make sure you are using the correct .iso filename
+
+If the checksum does not match the one in the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+
+### For Ubuntu/Pop!_OS
+
+On Ubuntu/Pop!_OS open the Terminal **(Ctrl+Alt+T)** and change your directory to where the .iso file is downloaded
+
+```
+cd Downloads
+```
+*Assuming you downloaded your .iso file to your Downloads folder*
+
+Run the following command in your Terminal
+
+*For Intel/AMD iso*
+```
+sha256sum pop-os_21.04_amd64_intel_7.iso
+```
+
+*For NVIDIA iso*
+```
+sha256sum pop-os_21.04_amd64_nvidia_7.iso
+```
+
+**Note:** The .iso filenames will change overtime so please make sure you are using the correct .iso filename
+
+If the checksum does not match the one in the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+
 ## Make Bootable drive
 
 ### For Ubuntu/Pop!_OS
 
-In order to install Pop!_OS or Ubuntu, we must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](http://pop.system76.com) or [Ubuntu 20.04 here](https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64).
+In order to install Pop!_OS or Ubuntu, we must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](https://pop.system76.com) or [Ubuntu 20.04 here](https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64).
 
 In order to make a live disk of Pop!_OS you must have a bootable flash drive. You'll need a flash drive, of course, and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial we'll use the Disks applicaton for Ubuntu and Etcher for Windows/MacOS.
 

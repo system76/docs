@@ -58,7 +58,7 @@ If the checksum does not match the one on the [download page](https://pop.system
 
 ### For Ubuntu/Pop!_OS
 
-On Ubuntu/Pop!_OS open the Terminal <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd> and change your directory to where the .iso file is downloaded
+On Ubuntu/Pop!_OS open the Terminal <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd> (Pop!_OS) <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> (Ubuntu) and change your directory to where the .iso file is downloaded
 
 ```
 cd Downloads

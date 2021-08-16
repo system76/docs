@@ -112,14 +112,14 @@ Sometimes, a problem is endemic enough that it warrants a new OS version or a cl
 
 2. Boot from a Live Disk for Clean Install:
 
-Make a [Live Disk](https://support.system76.com/articles/live-disk)
+   Make a [Live Disk](https://support.system76.com/articles/live-disk)
 
 3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
 
 4. Reinstall the OS:
 
-[Install Pop](https://support.system76.com/articles/install-pop)
-[Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
+   [Install Pop](https://support.system76.com/articles/install-pop)
+   [Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
 
 ### RAM Issues
 
@@ -131,11 +131,11 @@ If your system is not POSTing (Power On Self Test), typically you'll get symptom
 
 2. The system gets to a splash screen/logo, but crashes shortly afterwards.
 
-It may reach a login screen or desktop, but the system is unstable.
+   It may reach a login screen or desktop, but the system is unstable.
 
-This usually indicates an issue with RAM (Random Access Memory). Despite the name, the system tends to use similar areas of RAM when booting (for example, the RAM module in Slot 1 is accessed first). The earlier in the boot process the system hits bad sectors of RAM, the sooner the system will freeze or reboot.
+   This usually indicates an issue with RAM (Random Access Memory). Despite the name, the system tends to use similar areas of RAM when booting (for example, the RAM module in Slot 1 is accessed first). The earlier in the boot process the system hits bad sectors of RAM, the sooner the system will freeze or reboot.
 
-If the system is booting to a desktop, the first troubleshooting step is to run stress tests on the memory. If the stress test completes, it will show error messages for your RAM. If the test doesn't complete it will likely trigger the issue, and indicate that RAM is to blame.
+   If the system is booting to a desktop, the first troubleshooting step is to run stress tests on the memory. If the stress test completes, it will show error messages for your RAM. If the test doesn't complete it will likely trigger the issue, and indicate that RAM is to blame.
 
 #### To Test RAM
 

@@ -19,8 +19,6 @@ hidden: false
 section: hardware-troubleshooting
 tableOfContents: true
 ---
-
-
 # Reboots (Unexpected)
 
 If your system is spontaneously rebooting, this article provides steps to isolate the cause.
@@ -162,7 +160,6 @@ This command will run memtester and test 12GB of RAM 3 times, then save the outp
 
 > **IMPORTANT NOTE:** Close all applications other than Terminal when you run memtester. This will likely take a few hours (the application runs multiple passes over the memory) so it would be best to run it overnight.
 
-
 ### Thermals
 
 Modern hardware is designed to shut systems down when they reach temperatures that may be damaging to the internal components. Typically, these thresholds are in the upper 80s or 90s Celsius, depending on hardware.
@@ -225,7 +222,6 @@ Adapter: ACPI interface
 in0:          12.95 V  
 curr1:         0.00 A  
 ```
-
 #### Psensor
 
 If you prefer a GUI tool which provides graphing over time, the application Psensor can be installed from the Pop!\_Shop, or through the `Terminal` with this command:
@@ -291,8 +287,6 @@ To troubleshoot drive hardware issues, try booting to a different drive or to th
 Try booting with the drives in different drive slots/bays.
 
 Check the drive(s) for errors from a live disk, as outlined here: [Diagnose Hardware]
-
-
 
 ## Laptop Specific Troubleshooting
 
@@ -384,7 +378,6 @@ Specific sections to pay attention to are `capacity`, `energy-full`, and `energy
     energy-full:         70.1784 Wh
     energy-full-design:  70.68 Wh
 ```
-
 `energy-full` should never be higher than `energy-full-design`. If it is, that indicates a problem with the integrated chip on the battery, and may be why charging reports are incorrect, and why, by extension, the system is shutting off unexpectedly. 
 
 `capacity` is a good way to gauge the age and health of the battery. If capacity is 70% or lower, the battery is showing aging, and won't hold as much charge as it did when new. 
@@ -407,8 +400,6 @@ Removing the battery, connecting the AC adapter and moving or rotating the cable
 If moving the plug in the DC-In port on the laptop specifically causes the issue, it's more likely that the DC-In port needs replaced or re-soldered onto the board.
 
 Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs. To open a support ticket, visit: [this link](https://system76.com/my-account/support-tickets/new)
-
-
 
 ## Desktop Specific Troubleshooting
 
@@ -435,4 +426,3 @@ Factors that may influence reboots/power-offs:
 5. Faulty or disconnected internal cabling between the PSU and the rest of the Thelio components.
 
 If any of the above factors disconnect power, or reduce overall power reaching the Thelio, the system may reboot or shut off.
-

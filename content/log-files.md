@@ -16,8 +16,6 @@ hidden: false
 section: software-troubleshooting
 ---
 
-### Creating Log Files
-
 Log files help our support team learn more about your system, and can be a great benefit during troubleshooting.
 
 Among the information collected by the log files includes:
@@ -29,7 +27,7 @@ Among the information collected by the log files includes:
 * Sensors information showing temperatures and fanspeeds
 * Comprehensive output from `syslog` and `journalctl`
 
-#### Generating Log Files Using the System76 Driver Application
+## Generating Log Files Using the System76 Driver Application
 
 The System76 Driver can be opened by clicking the <u>Activities</u> button in the top left (or pressing the Ubuntu or Pop key), then searching for 'System76.' Among the applications listed should be the <u>System76 Driver</u> application. Go ahead and click the icon to launch the application, and enter your password when prompted to do so.
 
@@ -37,7 +35,7 @@ Next click on the button outlined in red in the <u>System76 Driver</u> applicati
 
 ![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
 
-#### Manually Generating Log Files
+### Manually Generating Log Files
 
 If for some reason you are unable to access the <u>System76 Driver</u> application, you can manually create a set of logs files by running a series of commands via the Terminal application. To do this, click <u>Activities</u> in the top left of your system, search for <u>Terminal</u>, then open the application that appears.
 
@@ -64,6 +62,6 @@ rmdir ~/system76
 
 As with the <u>System76 Driver</u> application, the log files will be stored within your home directory.
 
-#### Sending the Logs to the Support Team
+### Sending the Logs to the Support Team
 
 Once the logs are created, you can either attach them directly to the support case, or you can email them to [info@system76.com](mailto:info@system76.com) and reference your case number.

@@ -112,6 +112,7 @@ Sometimes, a problem is endemic enough that it warrants a new OS version or a cl
 - Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 
 2. Boot from a Live Disk for Clean Install:
+
 - Make a [Live Disk](https://support.system76.com/articles/live-disk)
 
 3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)

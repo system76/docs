@@ -103,7 +103,7 @@ For more information, visit our [User Management Article](https://support.system
 
 Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles that go over this process:
 
-0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files)
+> **NOTE:** Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files)
 
 1. Upgrade the Current OS:
 

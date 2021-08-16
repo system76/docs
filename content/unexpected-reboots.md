@@ -19,7 +19,6 @@ hidden: false
 section: hardware-troubleshooting
 tableOfContents: true
 ---
-# Reboots (Unexpected)
 
 If your system is spontaneously rebooting, this article provides steps to isolate the cause.
 

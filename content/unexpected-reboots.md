@@ -105,12 +105,10 @@ Sometimes, a problem is endemic enough that it warrants a new OS version or a cl
 
 1. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files)
 
-Upgrade the Current OS:
+  Upgrade the Current OS:
 
-Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
-Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
-
-.
+  Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
+  Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 
 2. Boot from a Live Disk for Clean Install:
 

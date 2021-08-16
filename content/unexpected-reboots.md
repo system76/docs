@@ -90,7 +90,7 @@ sudo apt clean
 sudo apt autoremove
 ```
 
-For more information, check out our [Package Management Pop!_OS Article](https://support.system76.com/articles/package-manager-pop) or the [Ubuntu Equivalent](https://support.system76.com/articles/package-manager-ubuntu) 
+For more information, check out our [Package Management Pop!_OS Article](https://support.system76.com/articles/package-manager-pop) or the [Ubuntu Equivalent](https://support.system76.com/articles/package-manager-ubuntu)
 
 #### Test Admin User
 
@@ -104,15 +104,13 @@ For more information, visit our [User Management Article](https://support.system
 
 Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles that go over this process:
 
-0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files) 
+0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files)
 
 1. Upgrade the Current OS:
-
 - Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
 - Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 
 2. Boot from a Live Disk for Clean Install:
-
 - Make a [Live Disk](https://support.system76.com/articles/live-disk)
 
 3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)

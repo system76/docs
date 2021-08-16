@@ -20,6 +20,9 @@ section: hardware-troubleshooting
 tableOfContents: true
 ---
 
+
+# Reboots (Unexpected)
+
 If your system is spontaneously rebooting, this article provides steps to isolate the cause.
 
 > **NOTE:** There is a subtle but important difference between a reboot and a shutdown/power-off. In a reboot, parts of the system are left powered on to facilitate restarting the system. In a shutdown/power-off, hardware from all parts of the system except charging circuitry and capacitors is powered down.
@@ -28,7 +31,7 @@ If your system is spontaneously rebooting, this article provides steps to isolat
 
 ### Software Causes
 
-Anything not directly affected by hardware, is controlled by software. This includes the kernel, drivers, and the desktop environment. The Operating System (OS), is essentially a software program that controls other software programs.
+Anything not directly affected by hardware is controlled by software. This includes the kernel, drivers, and desktop environment. The Operating System (OS), is essentially a software program that controls other software programs.
 
 If anything running in software causes a large enough cascade effect, it can take the rest of the system down and cause reboots or shut-offs.
 
@@ -53,7 +56,7 @@ Software factors that can cause spontaneous reboots or crashes, include but are 
 
 #### Check for Memory Leaks
 
-If an app is taking more than its fair share of system memory, that can have a runaway affect resulting in shutdowns or restarts.
+If an app is taking more than its fair share of system memory, that can have a runaway effect resulting in shutdowns or restarts.
 
 Applications are available to help diagnose memory leaks.
 
@@ -65,13 +68,13 @@ Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kb
 top
 ```
 
-If a GUI tool is preferred, and you are running PopOS or Ubuntu, open "System Monitor":
+If a GUI tool is preferred, and you are running Pop!\_OS or Ubuntu, open "System Monitor":
 
 ![system-monitor](/images/unexpected-reboots/system-monitor.png)
 
-#### Remove or Reinstall Drivers
+#### Remove or Reinstall Drivers**
 
-If a package is misbehaving or corrupted, try reinstalling it, or removing it. This can be done with the following `Terminal` commands.
+If a package is misbehaving or corrupted, try reinstalling it or removing it. This can be done with the following `Terminal` commands.
 
 > **NOTE:** replace [packagename] with the same of the application or driver you are are trying to reinstall. Do not include the "[ ]" around the name.
 
@@ -88,40 +91,30 @@ sudo apt remove [packagename]
 sudo apt clean
 sudo apt autoremove
 ```
-
-for more info, check out our [Package Management Pop!_OS Article](/articles/package-manager-pop) or the [Ubuntu Equivalent](/articles/package-manager-ubuntu) 
+For more information, check out our [Package Management Pop!_OS Article](https://support.system76.com/articles/package-manager-pop) or the [Ubuntu Equivalent](https://support.system76.com/articles/package-manager-ubuntu) 
 
 #### Test Admin User
 
-Sometimes an intentional or unintentional change to system configuration files can cause unexpected boot behavior, and is only limited to the user that made the changes.
+Sometimes, an intentional or unintentional change to system configuration files can cause unexpected boot behavior, and is only limited to the user that made the changes.
 
-To test whether the problem exists at a user-level or system level, create a test admin user and see if the reboots or shutdowns occur there.
+To test whether the problem exists at a user-level or system-level, create a test administrator account and see if the reboots or shutdowns occur there.
 
-For more info, visit our [User Management Article](/articles/other-accounts)
+For more information, visit our [User Management Article](https://support.system76.com/articles/other-accounts)
 
-#### Upgrade or Reinstall OS
+#### Upgrade or Reinstall OS**
 
-Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles which go over this process:
+Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles that go over this process:
 
-0. Back up your personal files using the steps [here](/articles/backup-files) 
-
+0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files) 
 1. Upgrade the Current OS:
-
-- Instructions for [Upgrading PopOS](/articles/upgrade-pop)
-
-- Instructions for [Upgrading Ubuntu](articles/upgrade-ubuntu)
-
+- Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
+- Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 2. Boot from a Live Disk for Clean Install:
-
-- Make a [Live Disk](/articles/live-disk)
-
-3. Access the [BIOS/Boot Menu](/articles/boot-menu)
-
+- Make a [Live Disk](https://support.system76.com/articles/live-disk)
+3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
 4. Reinstall the OS:
-
-- [Install Pop](/articles/install-pop)
-
-- [Install Ubuntu](/articles/install-ubuntu) 
+- [Install Pop](https://support.system76.com/articles/install-pop)
+- [Install Ubuntu](https://support.system76.com/articles/install-ubuntu) 
 
 ### RAM Issues
 
@@ -141,7 +134,7 @@ If the system is booting to a desktop, the first troubleshooting step is to run 
 
 #### To Test RAM
 
-The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](/articles/live-disk), or the [Recovery Partition](/articles/pop-recovery)
+The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](https://support.system76.com/articles/live-disk), or the [Recovery Partition](https://support.system76.com/articles/pop-recovery)
 
 1. Install Memtester
 
@@ -172,7 +165,7 @@ This command will run memtester and test 12GB of RAM 3 times, then save the outp
 
 ### Thermals
 
-Modern hardware is designed to shut systems down when they reach temperatures that may be damaging to the internal components. Typically these thresholds are in the upper 80s or 90s Celsius, depending on hardware.
+Modern hardware is designed to shut systems down when they reach temperatures that may be damaging to the internal components. Typically, these thresholds are in the upper 80s or 90s Celsius, depending on hardware.
 
 If your system is spontaneously shutting down, this may be caused by overheating. Systems with dedicated GPUs tend to run hot under normal circumstances, so noticing an overheating problem can be challenging from ambient temperature alone. 
 
@@ -235,7 +228,7 @@ curr1:         0.00 A
 
 #### Psensor
 
-If you prefer a GUI tool which provides graphing over time. The application Psensor can be installed from the Pop!\_Shop, or through the `Terminal` with this command:
+If you prefer a GUI tool which provides graphing over time, the application Psensor can be installed from the Pop!\_Shop, or through the `Terminal` with this command:
 
 1. Install (`Terminal`):
 
@@ -297,7 +290,9 @@ To troubleshoot drive hardware issues, try booting to a different drive or to th
 
 Try booting with the drives in different drive slots/bays.
 
-Check the drive(s) for errors from a live disk, as outlined here: [Diagnose Hardware](/articles/hardware-failure)
+Check the drive(s) for errors from a live disk, as outlined here: [Diagnose Hardware]
+
+
 
 ## Laptop Specific Troubleshooting
 
@@ -413,9 +408,11 @@ If moving the plug in the DC-In port on the laptop specifically causes the issue
 
 Both the DC-In port and issues with the mainboard charging circuitry require systems to be brought in for repairs. To open a support ticket, visit: [this link](https://system76.com/my-account/support-tickets/new)
 
+
+
 ## Desktop Specific Troubleshooting
 
-The main difference in troubleshooting desktop reboots vs. laptop reboots, is the battery, and greater disassembly options (i.e. more parts to troubleshoot). With a desktop computer (excepting the Meerkat), the power delivery system consists of the PSU, and the cable from the PSU to the wall. Unless a battery backup is added via an Uninterrupted Power Supply (UPS) an issue in the power delivery system will shut the system off.
+The main difference in troubleshooting desktop reboots vs. laptop reboots are the battery, and greater disassembly options (i.e. more parts to troubleshoot). With a desktop computer (excepting the Meerkat), the power delivery system consists of the PSU, and the cable from the PSU to the wall. Unless a battery backup is added via an Uninterrupted Power Supply (UPS) an issue in the power delivery system will shut the system off.
 
 Unlike most laptops, the GPU card can be removed or re-seated in desktop computers which can help with boot and screen rendering issues.
 
@@ -423,7 +420,7 @@ Thelios include a SATA passthrough device called the Thelio I/O board. If that p
 
 On the Meerkats, the Power Supply consists of a power cable similar to a laptop with a wall plug, "brick" and DC-In plug.
 
-Locate [Service Manuals for your Desktop here](/articles/guides)
+Locate [Service Manuals for your Desktop here](https://support.system76.com/articles/guides)
 
 ### Power Supply Unit (PSU)
 

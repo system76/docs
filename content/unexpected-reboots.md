@@ -118,7 +118,7 @@ Sometimes, a problem is endemic enough that it warrants a new OS version or a cl
 4. Reinstall the OS:
 
 - [Install Pop](https://support.system76.com/articles/install-pop)
-- [Install Ubuntu](https://support.system76.com/articles/install-ubuntu) 
+- [Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
 
 ### RAM Issues
 
@@ -128,7 +128,7 @@ If your system is not POSTing (Power On Self Test), typically you'll get symptom
 
 1. The system powers on, but nothing loads.
 
-2. The system gets to a splash screen/logo, but crashes shortly afterwards. 
+2. The system gets to a splash screen/logo, but crashes shortly afterwards.
 
 It may reach a login screen or desktop, but the system is unstable.
 
@@ -170,7 +170,7 @@ This command will run memtester and test 12GB of RAM 3 times, then save the outp
 
 Modern hardware is designed to shut systems down when they reach temperatures that may be damaging to the internal components. Typically, these thresholds are in the upper 80s or 90s Celsius, depending on hardware.
 
-If your system is spontaneously shutting down, this may be caused by overheating. Systems with dedicated GPUs tend to run hot under normal circumstances, so noticing an overheating problem can be challenging from ambient temperature alone. 
+If your system is spontaneously shutting down, this may be caused by overheating. Systems with dedicated GPUs tend to run hot under normal circumstances, so noticing an overheating problem can be challenging from ambient temperature alone.
 
 The temperatures of your CPU cores and GPU card can be checked through software.
 
@@ -212,21 +212,21 @@ system76_acpi-acpi-0
 Adapter: ACPI interface
 CPU fan:        0 RPM
 GPU fan:        0 RPM
-CPU temp:     +55.0°C  
-GPU temp:     +54.0°C  
+CPU temp:     +55.0°C
+GPU temp:     +54.0°C
 
 iwlwifi_1-virtual-0
 Adapter: Virtual device
-temp1:        +69.0°C  
+temp1:        +69.0°C
 
 pch_cometlake-virtual-0
 Adapter: Virtual device
-temp1:        +60.0°C  
+temp1:        +60.0°C
 
 BAT0-acpi-0
 Adapter: ACPI interface
-in0:          12.95 V  
-curr1:         0.00 A  
+in0:          12.95 V
+curr1:         0.00 A
 ```
 
 #### Psensor
@@ -271,7 +271,7 @@ Different drive types have different specifications and write or transfer data a
 
 #### M.2 Drives
 
-There are two types of M.2 style drives that ship in System76 machines. M.2 SATA, and NVMe. Both use M.2 ports on the mainboard, but each have different transfer speeds, power profiles, and connection protocols. 
+There are two types of M.2 style drives that ship in System76 machines. M.2 SATA, and NVMe. Both use M.2 ports on the mainboard, but each have different transfer speeds, power profiles, and connection protocols.
 
 |NVMe Drives| M.2 SATA Drives|
 |---|---|
@@ -305,9 +305,9 @@ On System76 laptops, the charging circuitry, and power circuitry are partially i
 
 #### Battery
 
-As lithium-ion batteries age, their ability to hold a charge, and accurately report charging estimates deteriorates. 
+As lithium-ion batteries age, their ability to hold a charge, and accurately report charging estimates deteriorates.
 
-For example, the OS may be reporting that the laptop has enough charge to stay on for another hour, but in reality the battery may fully discharge in 15 minutes. This situation can lead to spontaneous shutoffs that do not immediately appear to be battery related. 
+For example, the OS may be reporting that the laptop has enough charge to stay on for another hour, but in reality the battery may fully discharge in 15 minutes. This situation can lead to spontaneous shutoffs that do not immediately appear to be battery related.
 
 #### Battery Statistics
 
@@ -317,7 +317,7 @@ Battery statistics can be retrieved using the following `Terminal` command:
 upower -d
 ```
 
-That will generate output like this: 
+That will generate output like this:
 
 ```
 Device: /org/freedesktop/UPower/devices/line_power_AC
@@ -386,9 +386,9 @@ Specific sections to pay attention to are `capacity`, `energy-full`, and `energy
     energy-full-design:  70.68 Wh
 ```
 
-`energy-full` should never be higher than `energy-full-design`. If it is, that indicates a problem with the integrated chip on the battery, and may be why charging reports are incorrect, and why, by extension, the system is shutting off unexpectedly. 
+`energy-full` should never be higher than `energy-full-design`. If it is, that indicates a problem with the integrated chip on the battery, and may be why charging reports are incorrect, and why, by extension, the system is shutting off unexpectedly.
 
-`capacity` is a good way to gauge the age and health of the battery. If capacity is 70% or lower, the battery is showing aging, and won't hold as much charge as it did when new. 
+`capacity` is a good way to gauge the age and health of the battery. If capacity is 70% or lower, the battery is showing aging, and won't hold as much charge as it did when new.
 
 >**NOTE:** This number will gradually decrease over time from ~100% to 0%. Having a capacity of 95% and steadily decreasing as the battery gets older is expected behavior. Sudden drops in capacity, however, can indicate hardware failure.
 
@@ -423,7 +423,7 @@ Locate [Service Manuals for your Desktop here](https://support.system76.com/arti
 
 ### Power Supply Unit (PSU)
 
-On most of the Thelio configurations there is some room for changes in power delivery. However, on some larger models like the Thelio Mega, Major or Massive, the GPUs and PSUs draw a greater amount of wattage. 
+On most of the Thelio configurations there is some room for changes in power delivery. However, on some larger models like the Thelio Mega, Major or Massive, the GPUs and PSUs draw a greater amount of wattage.
 
 Factors that may influence reboots/power-offs:
 

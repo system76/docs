@@ -110,13 +110,13 @@ Sometimes, a problem is endemic enough that it warrants a new OS version or a cl
 Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
 Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 
-1. Boot from a Live Disk for Clean Install:
+2. Boot from a Live Disk for Clean Install:
 
 Make a [Live Disk](https://support.system76.com/articles/live-disk)
 
-1. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
+3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
 
-1. Reinstall the OS:
+4. Reinstall the OS:
 
 [Install Pop](https://support.system76.com/articles/install-pop)
 [Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
@@ -153,7 +153,7 @@ sudo apt install memtester
 The first command will make sure your package lists are up to date.
 The second will install the application memtester.
 
-1. Once memtester is installed, instruct it to test **most** of the RAM, leaving enough for the OS to continue running.
+2. Once memtester is installed, instruct it to test **most** of the RAM, leaving enough for the OS to continue running.
 
 For example, if your system has 16GB of RAM, test 12GB or 14GB.
 
@@ -188,7 +188,7 @@ sudo apt update
 sudo apt install lm-sensors
 ```
 
-1. Get Sensor Output
+2. Get Sensor Output
 
 ```bash
 sensors
@@ -240,11 +240,11 @@ If you prefer a GUI tool which provides graphing over time, the application Psen
 sudo apt install psensor
 ```
 
-1. Install Through Pop!\_Shop
+2. Install Through Pop!\_Shop
 
 ![psensor-pop](/images/unexpected-reboots/psensor.png)
 
-1. Run Psensor:
+3. Run Psensor:
 
 In a `Terminal` run:
 

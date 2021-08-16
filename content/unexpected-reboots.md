@@ -103,12 +103,12 @@ For more information, visit our [User Management Article](https://support.system
 
 Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles that go over this process:
 
-1. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files)
+0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files)
 
-Upgrade the Current OS:
+1. Upgrade the Current OS:
 
-Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
-Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
+   Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
+   Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 
 2. Boot from a Live Disk for Clean Install:
 
@@ -118,8 +118,8 @@ Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrad
 
 4. Reinstall the OS:
 
-[Install Pop](https://support.system76.com/articles/install-pop)
-[Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
+   [Install Pop](https://support.system76.com/articles/install-pop)
+   [Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
 
 ### RAM Issues
 
@@ -131,11 +131,11 @@ If your system is not POSTing (Power On Self Test), typically you'll get symptom
 
 2. The system gets to a splash screen/logo, but crashes shortly afterwards.
 
-It may reach a login screen or desktop, but the system is unstable.
+   It may reach a login screen or desktop, but the system is unstable.
 
-This usually indicates an issue with RAM (Random Access Memory). Despite the name, the system tends to use similar areas of RAM when booting (for example, the RAM module in Slot 1 is accessed first). The earlier in the boot process the system hits bad sectors of RAM, the sooner the system will freeze or reboot.
+   This usually indicates an issue with RAM (Random Access Memory). Despite the name, the system tends to use similar areas of RAM when booting (for example, the RAM module in Slot 1 is accessed first). The earlier in the boot process the system hits bad sectors of RAM, the sooner the system will freeze or reboot.
 
-If the system is booting to a desktop, the first troubleshooting step is to run stress tests on the memory. If the stress test completes, it will show error messages for your RAM. If the test doesn't complete it will likely trigger the issue, and indicate that RAM is to blame.
+   If the system is booting to a desktop, the first troubleshooting step is to run stress tests on the memory. If the stress test completes, it will show error messages for your RAM. If the test doesn't complete it will likely trigger the issue, and indicate that RAM is to blame.
 
 #### To Test RAM
 
@@ -143,25 +143,25 @@ The application Memtester can be used to scan the RAM sticks for bad sectors. Me
 
 1. Install Memtester
 
-Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
+  Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
 
-```bash
-sudo apt update
-sudo apt install memtester
-```
+  ```bash
+  sudo apt update
+  sudo apt install memtester
+  ```
 
-The first command will make sure your package lists are up to date.
-The second will install the application memtester.
+  The first command will make sure your package lists are up to date.
+  The second will install the application memtester.
 
 2. Once memtester is installed, instruct it to test **most** of the RAM, leaving enough for the OS to continue running.
 
-For example, if your system has 16GB of RAM, test 12GB or 14GB.
+  For example, if your system has 16GB of RAM, test 12GB or 14GB.
 
-To start the test, run these `Terminal` commands:
+  To start the test, run these `Terminal` commands:
 
-```bash
-sudo memtester 12GB 3 > ~/memtester.txt
-```
+  ```bash
+  sudo memtester 12GB 3 > ~/memtester.txt
+  ```
 
 This command will run memtester and test 12GB of RAM 3 times, then save the output to a file called "memtester.txt" in your Home folder.
 
@@ -181,18 +181,18 @@ The temperatures of your CPU cores and GPU card can be checked through software.
 
 1. Install `lm-sensors` (If not installed)
 
-Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
+  Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
 
-```bash
-sudo apt update
-sudo apt install lm-sensors
-```
+  ```bash
+  sudo apt update
+  sudo apt install lm-sensors
+  ```
 
 2. Get Sensor Output
 
-```bash
-sensors
-```
+  ```bash
+  sensors
+  ```
 
 This command will generate output like this:
 
@@ -236,23 +236,23 @@ If you prefer a GUI tool which provides graphing over time, the application Psen
 
 1. Install (`Terminal`):
 
-```bash
-sudo apt install psensor
-```
+  ```bash
+  sudo apt install psensor
+  ```
 
 2. Install Through Pop!\_Shop
 
-![psensor-pop](/images/unexpected-reboots/psensor.png)
+  ![psensor-pop](/images/unexpected-reboots/psensor.png)
 
 3. Run Psensor:
 
-In a `Terminal` run:
+  In a `Terminal` run:
 
-```bash
-psensor
-```
+  ```bash
+  psensor
+  ```
 
-Or, to launch through the OS interface, click on "Activities" in the top-left (Pop!\_OS 20.04 LTS, or Ubuntu), or "Applications" (Pop!\_OS COSMIC) and search for "Psensor"
+  Or, to launch through the OS interface, click on "Activities" in the top-left (Pop!\_OS 20.04 LTS, or Ubuntu), or "Applications" (Pop!\_OS COSMIC) and search for "Psensor"
 
 ![psensor-running](/images/unexpected-reboots/psensor-running.png)
 

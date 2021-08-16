@@ -1,6 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  mode: 'jit',
+
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography')
@@ -43,14 +45,14 @@ module.exports = {
         900: '#01141d'
       },
 
-      warmGray: {
+      'warm-gray': {
         50: '#e6e4e2',
         100: '#cfcac7',
         200: '#b7b1ad',
         300: '#9f9893',
         400: '#877f7a',
         500: '#6f6762',
-        600: '#57504c',
+        600: '#574f4a',
         700: '#3e3936',
         800: '#262220',
         900: '#0d0c0b'
@@ -124,76 +126,137 @@ module.exports = {
 
     fontFamily: {
       sans: [
-        'Fira Sans',
+        '"Fira Sans"',
         'system-ui',
         '-apple-system',
         'Segoe UI',
         'Roboto',
         'Ubuntu',
         'Cantarell',
-        'Nato Sans',
+        '"Nato Sans"',
         'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
       ],
 
       serif: [
-        'Roboto Slab',
+        '"Roboto Slab"',
         'serif',
         'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
       ],
 
       mono: [
-        'Ubuntu Mono',
-        'Ubuntu Monospace',
+        '"Ubuntu Mono"',
+        '"Ubuntu Monospace"',
         'Menlo',
         'Consolas',
-        'Roboto Mono',
-        'Noto Mono',
-        'Oxygen Mono',
-        'Liberation Mono',
+        '"Roboto Mono"',
+        '"Noto Mono"',
+        '"Oxygen Mono"',
+        '"Liberation Mono"',
         'monospace'
       ]
     },
 
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.75rem',
+      '4xl': '2rem',
+      '5xl': '2.25rem',
+      '6xl': '2.5rem',
+      '7xl': '2.625rem',
+      '8xl': '3rem'
+    },
+
     extend: {
+      lineHeight: {
+        6: '1.25rem',
+        7: '1.5rem',
+        8: '1.75rem',
+        9: '2rem',
+        10: '2.25rem',
+        11: '2.5rem',
+        12: '2.625rem',
+        13: '3rem',
+        14: '3.375rem'
+      },
+
       typography: theme => ({
         DEFAULT: {
           css: {
+            color: theme('colors.warm-gray.600'),
+            fontSize: theme('fontSize.base'),
+            lineHeight: theme('lineHeight.8'),
             maxWidth: null,
 
             a: {
               color: theme('colors.orange.700')
             },
 
+            p: {
+              color: theme('colors.warm-gray.600'),
+              fontFamily: theme('fontFamily.sans').join(','),
+              fontSize: theme('fontSize.base'),
+              lineHeight: theme('lineHeight.8')
+            },
+
             h1: {
-              fontWeight: theme('fontWeight.normal')
+              color: theme('colors.warm-gray.600'),
+              fontFamily: theme('fontFamily.sans').join(','),
+              fontWeight: theme('fontWeight.extralight'),
+              fontSize: theme('fontSize.5xl'),
+              lineHeight: theme('lineHeight.12')
             },
 
             h2: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warm-gray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.normal'),
+              fontSize: theme('fontSize.4xl'),
+              lineHeight: theme('lineHeight.10')
             },
 
             h3: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warm-gray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.normal'),
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.9')
             },
 
             h4: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warm-gray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.7')
             },
 
             h5: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warm-gray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: theme('fontSize.lg'),
+              lineHeight: theme('lineHeight.6')
             },
 
             h6: {
-              fontWeight: theme('fontWeight.light')
+              color: theme('colors.warm-gray.600'),
+              fontFamily: theme('fontFamily.serif').join(','),
+              fontWeight: theme('fontWeight.bold'),
+              fontSize: theme('fontSize.base'),
+              lineHeight: theme('lineHeight.6')
             },
 
             'blockquote p:first-of-type::before': {
@@ -220,7 +283,7 @@ module.exports = {
               backgroundColor: theme('colors.gray.800'),
               borderRadius: theme('borderRadius.DEFAULT'),
               color: theme('colors.gray.100'),
-              fontWeight: '400',
+              fontWeight: theme('fontWeight.normal'),
               padding: theme('spacing.2')
             },
 
@@ -242,6 +305,90 @@ module.exports = {
                   marginBottom: '0 !important'
                 }
               }
+            }
+          }
+        },
+
+        sm: {
+          css: {
+            fontSize: theme('fontSize.lg'),
+            lineHeight: theme('lineHeight.9'),
+
+            p: {
+              fontSize: theme('fontSize.lg'),
+              lineHeight: theme('lineHeight.9')
+            },
+
+            h1: {
+              fontSize: theme('fontSize.7xl'),
+              lineHeight: theme('lineHeight.13')
+            },
+
+            h2: {
+              fontSize: theme('fontSize.5xl'),
+              lineHeight: theme('lineHeight.12')
+            },
+
+            h3: {
+              fontSize: theme('fontSize.3xl'),
+              lineHeight: theme('lineHeight.10')
+            },
+
+            h4: {
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.8')
+            },
+
+            h5: {
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.7')
+            },
+
+            h6: {
+              fontSize: theme('fontSize.base'),
+              lineHeight: theme('lineHeight.6')
+            }
+          }
+        },
+
+        xl: {
+          css: {
+            fontSize: theme('fontSize.xl'),
+            lineHeight: theme('lineHeight.10'),
+
+            p: {
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.10')
+            },
+
+            h1: {
+              fontSize: theme('fontSize.8xl'),
+              lineHeight: theme('lineHeight.14')
+            },
+
+            h2: {
+              fontSize: theme('fontSize.6xl'),
+              lineHeight: theme('lineHeight.13')
+            },
+
+            h3: {
+              fontSize: theme('fontSize.4xl'),
+              lineHeight: theme('lineHeight.11')
+            },
+
+            h4: {
+              fontSize: theme('fontSize.3xl'),
+              lineHeight: theme('lineHeight.9')
+            },
+
+            h5: {
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.8')
+            },
+
+            h6: {
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.7')
             }
           }
         }

@@ -100,7 +100,7 @@ The launcher allows searching through open windows and installed applications, a
 
 | Shortcut                                                       | Action                                             |
 | -------------------------------------------------------------- | -------------------------------------------------- |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                    | Toggle Activities overview                         |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>D</kbd>     | Toggle workspace menu                            |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>A</kbd>     | Toggle applications menu                           |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>V</kbd>     | Toggle notifications menu                          |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd>     | Open a terminal                                    |

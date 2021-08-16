@@ -15,7 +15,7 @@ hidden: false
 section: software
 ---
 
-## Install ProtonVPN Graphcial Client
+## Install ProtonVPN Graphical Client
 
 ### Download the .deb package from their website
 
@@ -96,17 +96,17 @@ Access OpenVPN setting in the <u>Settings</u> application (GNOME Control Center)
 
 ![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
 
-### Getting a .ovpn file
+### Getting an OpenVPN (.ovpn) file
 
-OpenVPN uses `.ovpn` files for setting up the VPN on your system and includes the servers to contact. Most VPN providers will provide a `.ovpn` file such as the following:
+OpenVPN uses `.ovpn` files for setting up the VPN on your system and includes the servers to contact. Most VPN providers will provide `.ovpn` files such as the following:
 
 - [ProtonVPN](https://protonvpn.com/)
 - [NordVPN](https://nordvpn.com/ovpn/)
 - [Private Internet Access](https://www.privateinternetaccess.com/openvpn/openvpn.zip)
 
-### Using a .ovpn file
+### Using an OpenVPN (.ovpn) file
 
-After getting a `.ovpn` (OpenVPN file type) click the plus icon to the right of the VPN section. A dialog will as show will open. Click 'Import from file...'
+After getting the `.ovpn` (OpenVPN file type) click the plus icon to the right of the VPN section. A dialog will as show will open. Click 'Import from file...'
 
 ![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
 

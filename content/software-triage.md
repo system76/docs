@@ -17,8 +17,6 @@ section: getting-help
 tableOfContents: true
 ---
 
-# Software Troubleshooting Triage
-
 ##  Gather Tools
 
 - [Backups]((/articles/backup-files))
@@ -27,9 +25,9 @@ tableOfContents: true
 
 ## Suspend, Reboot, Shut Down
 
-Do the symptoms go away if the system is suspended, rebooted or shut down and then started up again? Sometimes repeated suspends or reboots are all that are needed to clear an issue out. It's also a good idea to test reboot and shutdown separately as they handle memory and power-management differently. 
+Do the symptoms go away if the system is suspended, rebooted or shut down and then started up again? Sometimes repeated suspends or reboots are all that are needed to clear an issue out. It's also a good idea to test reboot and shutdown separately as they handle memory and power-management differently.
 
-## Symptoms 
+## Symptoms
 
 - System or Applications Crashing or [Freezing](/articles/freezing-behavior)
 - Black Screen or No Login Screen
@@ -103,7 +101,6 @@ You can open the terminal by clicking Activities in the upper-left corner and se
 When you run the first command with "sudo" it will ask you to enter your password.
 Typing your password will not show anything in the Terminal window. That is normal and for security.
 Just enter your password as you normally would, and then hit <kbd>ENTER</kbd>. You'll also need to hit <kbd>ENTER</kbd> after each command.
-
 
 ```bash
 sudo apt update
@@ -238,7 +235,7 @@ These updates may directly or indirectly resolve the issue.
 [Upgrade Ubuntu](/articles/upgrade-ubuntu)
 
 > **NOTE:** Not all OS releases are the same. Every other ##.04 release is a Long Term Release (LTS). Meaning that it continues to receive quality and security updates for 5 years after it is released. All other releases stop receiving support after 6-9 months.
-Some users prefer to run only LTS releases so they don't have to upgrade as often. 
+Some users prefer to run only LTS releases so they don't have to upgrade as often.
 
 <!-- Want to double check my numbers. -->
 

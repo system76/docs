@@ -89,6 +89,7 @@ sudo apt remove [packagename]
 sudo apt clean
 sudo apt autoremove
 ```
+
 For more information, check out our [Package Management Pop!_OS Article](https://support.system76.com/articles/package-manager-pop) or the [Ubuntu Equivalent](https://support.system76.com/articles/package-manager-ubuntu) 
 
 #### Test Admin User
@@ -222,6 +223,7 @@ Adapter: ACPI interface
 in0:          12.95 V  
 curr1:         0.00 A  
 ```
+
 #### Psensor
 
 If you prefer a GUI tool which provides graphing over time, the application Psensor can be installed from the Pop!\_Shop, or through the `Terminal` with this command:
@@ -378,6 +380,7 @@ Specific sections to pay attention to are `capacity`, `energy-full`, and `energy
     energy-full:         70.1784 Wh
     energy-full-design:  70.68 Wh
 ```
+
 `energy-full` should never be higher than `energy-full-design`. If it is, that indicates a problem with the integrated chip on the battery, and may be why charging reports are incorrect, and why, by extension, the system is shutting off unexpectedly. 
 
 `capacity` is a good way to gauge the age and health of the battery. If capacity is 70% or lower, the battery is showing aging, and won't hold as much charge as it did when new. 

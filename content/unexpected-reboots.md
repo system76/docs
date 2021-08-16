@@ -141,27 +141,27 @@ If your system is not POSTing (Power On Self Test), typically you'll get symptom
 
 The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](https://support.system76.com/articles/live-disk), or the [Recovery Partition](https://support.system76.com/articles/pop-recovery)
 
-1. Install Memtester
+  1. Install Memtester
 
-   Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
+     Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
 
-   ```bash
-   sudo apt update
-   sudo apt install memtester
-   ```
+     ```bash
+     sudo apt update
+     sudo apt install memtester
+     ```
 
-  The first command will make sure your package lists are up to date.
-  The second will install the application memtester.
+     The first command will make sure your package lists are up to date.
+     The second will install the application memtester.
 
-2. Once memtester is installed, instruct it to test **most** of the RAM, leaving enough for the OS to continue running.
+  2. Once memtester is installed, instruct it to test **most** of the RAM, leaving enough for the OS to continue running.
 
-   For example, if your system has 16GB of RAM, test 12GB or 14GB.
+     For example, if your system has 16GB of RAM, test 12GB or 14GB.
 
-   To start the test, run these `Terminal` commands:
+     To start the test, run these `Terminal` commands:
 
-   ```bash
-   sudo memtester 12GB 3 > ~/memtester.txt
-   ```
+     ```bash
+     sudo memtester 12GB 3 > ~/memtester.txt
+     ```
 
 This command will run memtester and test 12GB of RAM 3 times, then save the output to a file called "memtester.txt" in your Home folder.
 

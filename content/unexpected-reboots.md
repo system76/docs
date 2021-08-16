@@ -112,7 +112,7 @@ Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrad
 
 2. Boot from a Live Disk for Clean Install:
 
-  Make a [Live Disk](https://support.system76.com/articles/live-disk)
+   Make a [Live Disk](https://support.system76.com/articles/live-disk)
 
 3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
 

@@ -107,7 +107,7 @@ Sometimes, a problem is endemic enough that it warrants a new OS version or a cl
 
 1. Upgrade the Current OS:
 
-   Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
+  Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
    Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
 
 2. Boot from a Live Disk for Clean Install:
@@ -434,4 +434,4 @@ Factors that may influence reboots/power-offs:
 4. Failing PSU inside the Thelio.
 5. Faulty or disconnected internal cabling between the PSU and the rest of the Thelio components.
 
-If any of the above factors disconnect power, or reduce overall power reaching the Thelio, the system may reboot or shut off.
+   If any of the above factors disconnect power, or reduce overall power reaching the Thelio, the system may reboot or shut off.

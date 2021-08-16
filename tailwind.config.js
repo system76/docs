@@ -1,13 +1,8 @@
 const colors = require('tailwindcss/colors')
 
-const round = num =>
-  num
-    .toFixed(7)
-    .replace(/(\.[0-9]+?)0+$/, '$1')
-    .replace(/\.0$/, '')
-const rem = px => `${round(px / 16)}rem`
-
 module.exports = {
+  mode: 'jit',
+
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography')
@@ -50,7 +45,7 @@ module.exports = {
         900: '#01141d'
       },
 
-      warmGray: {
+      'warm-gray': {
         50: '#e6e4e2',
         100: '#cfcac7',
         200: '#b7b1ad',
@@ -169,13 +164,40 @@ module.exports = {
       ]
     },
 
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.75rem',
+      '4xl': '2rem',
+      '5xl': '2.25rem',
+      '6xl': '2.5rem',
+      '7xl': '2.625rem',
+      '8xl': '3rem'
+    },
+
     extend: {
+      lineHeight: {
+        6: '1.25rem',
+        7: '1.5rem',
+        8: '1.75rem',
+        9: '2rem',
+        10: '2.25rem',
+        11: '2.5rem',
+        12: '2.625rem',
+        13: '3rem',
+        14: '3.375rem'
+      },
+
       typography: theme => ({
         DEFAULT: {
           css: {
-            color: theme('colors.warmGray.600'),
-            fontSize: rem(16),
-            lineHeight: rem(28),
+            color: theme('colors.warm-gray.600'),
+            fontSize: theme('fontSize.base'),
+            lineHeight: theme('lineHeight.8'),
             maxWidth: null,
 
             a: {
@@ -183,58 +205,58 @@ module.exports = {
             },
 
             p: {
-              color: theme('colors.warmGray.600'),
+              color: theme('colors.warm-gray.600'),
               fontFamily: theme('fontFamily.sans').join(','),
-              fontSize: rem(16),
-              lineHeight: rem(28)
+              fontSize: theme('fontSize.base'),
+              lineHeight: theme('lineHeight.8')
             },
 
             h1: {
-              color: theme('colors.warmGray.600'),
+              color: theme('colors.warm-gray.600'),
               fontFamily: theme('fontFamily.sans').join(','),
               fontWeight: theme('fontWeight.extralight'),
-              fontSize: rem(36),
-              lineHeight: rem(42)
+              fontSize: theme('fontSize.5xl'),
+              lineHeight: theme('lineHeight.12')
             },
 
             h2: {
-              color: theme('colors.warmGray.600'),
+              color: theme('colors.warm-gray.600'),
               fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.normal'),
-              fontSize: rem(32),
-              lineHeight: rem(36)
+              fontSize: theme('fontSize.4xl'),
+              lineHeight: theme('lineHeight.10')
             },
 
             h3: {
-              color: theme('colors.warmGray.600'),
+              color: theme('colors.warm-gray.600'),
               fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.normal'),
-              fontSize: rem(24),
-              lineHeight: rem(32)
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.9')
             },
 
             h4: {
-              color: theme('colors.warmGray.600'),
+              color: theme('colors.warm-gray.600'),
               fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.bold'),
-              fontSize: rem(20),
-              lineHeight: rem(24)
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.7')
             },
 
             h5: {
-              color: theme('colors.warmGray.600'),
+              color: theme('colors.warm-gray.600'),
               fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.bold'),
-              fontSize: rem(18),
-              lineHeight: rem(20)
+              fontSize: theme('fontSize.lg'),
+              lineHeight: theme('lineHeight.6')
             },
 
             h6: {
-              color: theme('colors.warmGray.600'),
+              color: theme('colors.warm-gray.600'),
               fontFamily: theme('fontFamily.serif').join(','),
               fontWeight: theme('fontWeight.bold'),
-              fontSize: rem(16),
-              lineHeight: rem(20)
+              fontSize: theme('fontSize.base'),
+              lineHeight: theme('lineHeight.6')
             },
 
             'blockquote p:first-of-type::before': {
@@ -289,79 +311,84 @@ module.exports = {
 
         sm: {
           css: {
-            fontSize: rem(18),
-            lineHeight: rem(32),
+            fontSize: theme('fontSize.lg'),
+            lineHeight: theme('lineHeight.9'),
 
             p: {
-              fontSize: rem(18),
-              lineHeight: rem(32)
+              fontSize: theme('fontSize.lg'),
+              lineHeight: theme('lineHeight.9')
             },
 
             h1: {
-              fontSize: rem(42),
-              lineHeight: rem(48)
+              fontSize: theme('fontSize.7xl'),
+              lineHeight: theme('lineHeight.13')
             },
 
             h2: {
-              fontSize: rem(36),
-              lineHeight: rem(42)
+              fontSize: theme('fontSize.5xl'),
+              lineHeight: theme('lineHeight.12')
             },
 
             h3: {
-              fontSize: rem(28),
-              lineHeight: rem(36)
+              fontSize: theme('fontSize.3xl'),
+              lineHeight: theme('lineHeight.10')
             },
 
             h4: {
-              fontSize: rem(24),
-              lineHeight: rem(28)
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.8')
             },
 
             h5: {
-              fontSize: rem(20),
-              lineHeight: rem(24)
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.7')
+            },
+
+            h6: {
+              fontSize: theme('fontSize.base'),
+              lineHeight: theme('lineHeight.6')
             }
           }
         },
 
         xl: {
           css: {
-            fontSize: rem(20),
-            lineHeight: rem(36),
+            fontSize: theme('fontSize.xl'),
+            lineHeight: theme('lineHeight.10'),
 
             p: {
-              fontSize: rem(20),
-              lineHeight: rem(36)
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.10')
             },
 
             h1: {
-              fontSize: rem(48),
-              lineHeight: rem(54)
+              fontSize: theme('fontSize.8xl'),
+              lineHeight: theme('lineHeight.14')
             },
 
             h2: {
-              fontSize: rem(40),
-              lineHeight: rem(48)
+              fontSize: theme('fontSize.6xl'),
+              lineHeight: theme('lineHeight.13')
             },
 
             h3: {
-              fontSize: rem(32),
-              lineHeight: rem(40)
+              fontSize: theme('fontSize.4xl'),
+              lineHeight: theme('lineHeight.11')
             },
 
             h4: {
-              fontSize: rem(28),
-              lineHeight: rem(32)
+              fontSize: theme('fontSize.3xl'),
+              lineHeight: theme('lineHeight.9')
             },
 
             h5: {
-              fontSize: rem(24),
-              lineHeight: rem(28)
+              fontSize: theme('fontSize.2xl'),
+              lineHeight: theme('lineHeight.8')
             },
 
             h6: {
-              fontSize: rem(20),
-              lineHeight: rem(24)
+              fontSize: theme('fontSize.xl'),
+              lineHeight: theme('lineHeight.7')
             }
           }
         }

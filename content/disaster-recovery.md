@@ -107,7 +107,7 @@ Now that we reinstalled the OS we can start restoring our data. To restore your 
 
 ## If the System Doesn't Power On
 
-Refer to your models [service manual](/articles/service-manuals) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
+Refer to your models [service manual](/articles/guides) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
 
 ## What if the Drive is the Problem?
 

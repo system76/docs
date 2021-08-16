@@ -143,12 +143,12 @@ The application Memtester can be used to scan the RAM sticks for bad sectors. Me
 
 1. Install Memtester
 
-  Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
+   Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
 
-  ```bash
-  sudo apt update
-  sudo apt install memtester
-  ```
+   ```bash
+   sudo apt update
+   sudo apt install memtester
+   ```
 
   The first command will make sure your package lists are up to date.
   The second will install the application memtester.
@@ -181,18 +181,18 @@ The temperatures of your CPU cores and GPU card can be checked through software.
 
 1. Install `lm-sensors` (If not installed)
 
-  Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
+   Open a `Terminal` with <kbd>SUPER</kbd>+<kbd>T</kbd> (Pop!\_OS) or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) run the following commands:
 
-  ```bash
-  sudo apt update
-  sudo apt install lm-sensors
-  ```
+   ```bash
+   sudo apt update
+   sudo apt install lm-sensors
+   ```
 
 2. Get Sensor Output
 
-  ```bash
-  sensors
-  ```
+   ```bash
+   sensors
+   ```
 
 This command will generate output like this:
 
@@ -236,21 +236,21 @@ If you prefer a GUI tool which provides graphing over time, the application Psen
 
 1. Install (`Terminal`):
 
-  ```bash
-  sudo apt install psensor
-  ```
+   ```bash
+   sudo apt install psensor
+   ```
 
 2. Install Through Pop!\_Shop
 
-  ![psensor-pop](/images/unexpected-reboots/psensor.png)
+   ![psensor-pop](/images/unexpected-reboots/psensor.png)
 
 3. Run Psensor:
 
-  In a `Terminal` run:
+   In a `Terminal` run:
 
-  ```bash
-  psensor
-  ```
+   ```bash
+   psensor
+   ```
 
   Or, to launch through the OS interface, click on "Activities" in the top-left (Pop!\_OS 20.04 LTS, or Ubuntu), or "Applications" (Pop!\_OS COSMIC) and search for "Psensor"
 

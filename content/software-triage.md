@@ -17,7 +17,7 @@ section: getting-help
 tableOfContents: true
 ---
 
-##  Gather Tools
+## Gather Tools
 
 - [Backups]((/articles/backup-files))
 - [Live Disk]((/articles/live-disk))
@@ -60,27 +60,30 @@ Do the symptoms go away if the system is suspended, rebooted or shut down and th
     If an unneeded or incorrect driver is installed this can cause unexpected side effects.
 - Kernel Bugs
 
-
 ## Solutions
 
-We troubleshoot issues with the approach of small steps then gradually larger steps:
+We troubleshoot issues with the approach of taking small steps, then gradually larger steps:
 
-0. Backups                                |--Preserve
+ 0. Backups - Preserve
+ 1. Get logs - Observe
 
-1. Get logs                               |-- Observe
+    **Non Invasive**
 
-2. Check for updates.                     |
-3. Fix the package manager.               |-- Non Invasive
-4. Update with packages held.             |
-5. Test 2nd Admin User.                   |
-6. Test in a Live Disk                    |
+ 2. Check for updates.
+ 3. Fix the package manager.
+ 4. Update with packages held.
+ 5. Test 2nd Admin User.
+ 6. Test in a Live Disk
 
-7. Remove or install individual packages. |- Surgically Invasive, easy to reverse.
+    **Surgical - Invasive but Reversible**
 
-8. Try a Different Kernel                 |-- System modifications, global changes. Invasive.
-9. Upgrade OS                             |
+ 7. Remove or install individual packages.- Surgically Invasive, easy to reverse.
+ 8. Try a Different Kernel|-- System modifications, global changes. Invasive.
 
-10. Reinstall the OS.                     |-- Globally Invasive, resets to defaults.
+     **Global - Invasive and Irreversible**
+
+ 9. Upgrade OS
+ 10. Reinstall the OS.
 
 ### 1. Get Logs
 
@@ -96,9 +99,7 @@ Make sure the version of the OS that is installed is fully up to date.
 
 NOTE: The following instructions can be used in either Ubuntu or Pop!\_OS.
 
-You can open the terminal by clicking Activities in the upper-left corner and searching for "Terminal", by pressing
-<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, or
-<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>
+You can open the terminal by clicking Activities in the upper-left corner and searching for "Terminal", after pressing <kbd>SUPER</kbd>.
 When you run the first command with "sudo" it will ask you to enter your password.
 Typing your password will not show anything in the Terminal window. That is normal and for security.
 Just enter your password as you normally would, and then hit <kbd>ENTER</kbd>. You'll also need to hit <kbd>ENTER</kbd> after each command.
@@ -224,22 +225,24 @@ sudo dpkg --list | grep linux-image
 ```
 
 ### Install Different Kernel with Mainline
+
 ​
 Installing a newer or older kernel via the "mainline" application can help in diagnosing software issues.
 
 #### Install Mainline
 
-Instructions for adding the Mainline PPA can be found [here](https://github.com/bkw777/mainline) Please follow the instructions under "Downloads & Source Code." 
+Instructions for adding the Mainline PPA can be found [here](https://github.com/bkw777/mainline) Please follow the instructions under "Downloads & Source Code."
 
 ```bash
 sudo add-apt-repository ppa:cappelikan/ppa
 sudo apt update
 sudo apt install mainline
 ```
+
 ​
 After running these three commands to install the mainline app, open the application.
 
->**NOTE:** Mainline is only compatible with Ubuntu, Pop or other debian based distributions at this time. 
+>**NOTE:** Mainline is only compatible with Ubuntu, Pop or other debian based distributions at this time.
 
 - On Ubuntu, or on Pop!\_OS versions (20.04 and earlier) click **Activities** in the top left, then type "Mainline" in the search field and open the "Ubuntu Mainline Kernel Installer" application.
 
@@ -252,15 +255,17 @@ On first launch, the application may take a few moments to refresh its databases
 ​
 2. Once the application alert confirms the kernel version has been installed, press the "Close" button.
 
-3. Close the application. 
+3. Close the application.
 
-4. Reboot your machine. 
+4. Reboot your machine.
 
-5. After reboot, check whether you're on the new kernel. Open a Terminal with Super + T or by searching for "Terminal" in the **Applications** menu. With the Terminal open, run the following command:
+5. After reboot, check whether you're on the new kernel. Open a Terminal with <kbd>Super</kbd> + <kbd>T</kbd> or by searching for "Terminal" in the **Applications** menu. With the Terminal open, run the following command:
 ​
+
 ```bash
 uname -a
 ```
+
 ​
 This will print out the current kernel version the system is running.
 
@@ -273,10 +278,8 @@ These updates may directly or indirectly resolve the issue.
 
 [Upgrade Ubuntu](/articles/upgrade-ubuntu)
 
-> **NOTE:** Not all OS releases are the same. Every other ##.04 release is a Long Term Release (LTS). Meaning that it continues to receive quality and security updates for 5 years after it is released. All other releases stop receiving support after 6-9 months.
+> **NOTE:** Not all OS releases are the same. Every other ##.04 release is a Long Term Release (LTS). Meaning that it continues to receive standard updates for 5 years and security updates for 10 years (total) after it is released. All other releases stop receiving support after 9 months.
 Some users prefer to run only LTS releases so they don't have to upgrade as often.
-
-<!-- Want to double check my numbers. -->
 
 ### 10. Reinstall the OS
 
@@ -307,7 +310,6 @@ Certain packages and library files are so intertwined with the rest of the OS th
 OR
 
 [Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
-
 
 ## Next Steps
 

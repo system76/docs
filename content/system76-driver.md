@@ -78,6 +78,7 @@ Run these commands in a <u>Terminal</u> to clone, build and install the <u>Syste
 
 ```bash
 git clone https://aur.archlinux.org/system76-firmware.git
+cd system76-firmware
 makepkg -srcif
 sudo systemctl enable --now system76-firmware-daemon
 ```

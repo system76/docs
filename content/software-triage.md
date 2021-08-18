@@ -19,9 +19,9 @@ tableOfContents: true
 
 ## Gather Tools
 
-- [Backups]((/articles/backup-files))
-- [Live Disk]((/articles/live-disk))
-- [Logs](articles/create-logs)
+- [Backups](/articles/backup-files)
+- [Live Disk](/articles/live-disk)
+- [Logs](/articles/create-logs)
 
 ## Suspend, Reboot, Shut Down
 
@@ -226,7 +226,7 @@ sudo dpkg --list | grep linux-image
 
 ### Install Different Kernel with Mainline
 
-​
+
 Installing a newer or older kernel via the "mainline" application can help in diagnosing software issues.
 
 #### Install Mainline
@@ -239,20 +239,19 @@ sudo apt update
 sudo apt install mainline
 ```
 
-​
+
 After running these three commands to install the mainline app, open the application.
 
 >**NOTE:** Mainline is only compatible with Ubuntu, Pop or other debian based distributions at this time.
 
 - On Ubuntu, or on Pop!\_OS versions (20.04 and earlier) click **Activities** in the top left, then type "Mainline" in the search field and open the "Ubuntu Mainline Kernel Installer" application.
 
-- ​If on Pop!\_OS 21.04 with the new COSMIC Desktop, click **Applications** in the top left, then type "Ubuntu Mainline" and the app should come up as a selectable option.
-​
+- If on Pop!\_OS 21.04 with the new COSMIC Desktop, click **Applications** in the top left, then type "Ubuntu Mainline" and the app should come up as a selectable option.
 
 On first launch, the application may take a few moments to refresh its databases.
 
 1. Once the application is open, select the desired version number, and then click the Install button. You may be prompted to enter your admin password.
-​
+
 2. Once the application alert confirms the kernel version has been installed, press the "Close" button.
 
 3. Close the application.
@@ -260,13 +259,11 @@ On first launch, the application may take a few moments to refresh its databases
 4. Reboot your machine.
 
 5. After reboot, check whether you're on the new kernel. Open a Terminal with <kbd>Super</kbd> + <kbd>T</kbd> or by searching for "Terminal" in the **Applications** menu. With the Terminal open, run the following command:
-​
 
 ```bash
 uname -a
 ```
 
-​
 This will print out the current kernel version the system is running.
 
 ### 9. Upgrade the OS

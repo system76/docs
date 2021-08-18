@@ -25,7 +25,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
 | Adder WS [(addw1)](https://tech-docs.system76.com/models/addw1/README.html) | Meerkat [(meer5)](https://tech-docs.system76.com/models/meer5/README.html) |
-| Adder WS [(addw2)](https://tech-docs.system76.com/models/addw2/README.html) | Meerkat [(meer6)](https://tech-docs.system76.com/models/meer6/README.html) | 
+| Adder WS [(addw2)](https://tech-docs.system76.com/models/addw2/README.html) | Meerkat [(meer6)](https://tech-docs.system76.com/models/meer6/README.html) |
 | Bonobo WS [(bonw14)](https://tech-docs.system76.com/models/bonw14/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
 | Darter Pro [(darp6)](https://tech-docs.system76.com/models/darp6/README.html) | Thelio Major [(thelio-major)](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) |
 | Darter Pro [(darp7)](https://tech-docs.system76.com/models/darp7/README.html) | Thelio Mega R1[(thelio-mega-r1)](https://tech-docs.system76.com/models/thelio-mega-r1.0/README.html) |
@@ -45,7 +45,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
 | Darter Pro [(darp5)](/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | Thelio R1 [(thelio-r1)](/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf) |
-| Galago Pro [(galp2)](/service-manuals/pdfs/Galago/galp2-service-manual.pdf) | Thelio B1 [(thelio-b1)](/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) | 
+| Galago Pro [(galp2)](/service-manuals/pdfs/Galago/galp2-service-manual.pdf) | Thelio B1 [(thelio-b1)](/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) |
 | Galago Pro [(galp3)](/service-manuals/pdfs/Galago/galp3-service-manual.pdf) |
 | Gazelle [(gaze14)](/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf) |
 | Lemur [(lemu7)](/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) |
@@ -84,4 +84,4 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Serval WS [(serw9)](/images/guides/serw9.png) | Wild Dog Performance [(wilp12)](/images/guides/wilp12.png) |
 | Serval WS [(serw10-15)](/images/guides/serw10-15.png) | Wild Dog Performance [(wilp13)](/images/guides/wilp13.png) |
 | Serval WS [(serw10-17)](/images/guides/serw10-17.png) | Wild Dog Performance [(wilp14)](/images/guides/wilp14.png) |
-| | Thelio R2 [thelio-r2](/images/guides/thelio-r2.png) 
+| | Thelio R2 [thelio-r2](/images/guides/thelio-r2.png) |

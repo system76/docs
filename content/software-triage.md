@@ -21,7 +21,7 @@ tableOfContents: true
 
 - [Backups](/articles/backup-files)
 - [Live Disk](/articles/live-disk)
-- [Logs](/articles/create-logs)
+- [Logs](/articles/log-files)
 
 ## Suspend, Reboot, Shut Down
 

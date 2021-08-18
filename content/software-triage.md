@@ -226,7 +226,6 @@ sudo dpkg --list | grep linux-image
 
 ### Install Different Kernel with Mainline
 
-
 Installing a newer or older kernel via the "mainline" application can help in diagnosing software issues.
 
 #### Install Mainline
@@ -238,7 +237,6 @@ sudo add-apt-repository ppa:cappelikan/ppa
 sudo apt update
 sudo apt install mainline
 ```
-
 
 After running these three commands to install the mainline app, open the application.
 

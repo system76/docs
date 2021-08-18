@@ -1,5 +1,5 @@
 ---
-title: Find The Documentation For Your Model
+title: Find Documentation For Your Model
 description: >
   Diagrams and component guides for your System76 hardware.
 keywords:
@@ -19,19 +19,6 @@ section: about-your-computer
 To see ports, keyboard layouts, function keys, and product quickstart guides, find your model below.
 
 <!-- To find information on a product you ordered, log into [<i class="fa fa-user"></i> My Account](https://system76.com/my-account/orders) and select the **quickstart guide** button beneath your product. THIS BUTTON WILL BE CHANGING -->
-
-<!-- ## Current Models
-
-| Laptops   | Desktops | Accessories |
-|:---------:|:-------:|:------------:|
-| [pang10](https://tech-docs.system76.com/models/pang10/README.html) | [meer6](https://tech-docs.system76.com/models/meer6/README.html) | [launch_1](https://tech-docs.system76.com/models/launch_1/repairs.html)
-| [galp5](https://tech-docs.system76.com/models/galp5/README.html)   | [thelio-r1](/images/guides/thelio-r1.png) |
-| [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) | [thelio-r2](/images/guides/thelio-r2.png) |
-| [darp7](https://tech-docs.system76.com/models/darp7/README.html)   | [thelio-b1](/images/guides/thelio-b1.png) |
-| [gaze16](https://tech-docs.system76.com/models/gaze16/README.html) | [thelio-mira-r1](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
-| [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) | [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) |
-| [serw12](https://tech-docs.system76.com/models/serw12/README.html) | [thelio-mega-r1](https://tech-docs.system76.com/models/thelio-mega-r1.0/README.html) |
-| [bown14](https://tech-docs.system76.com/models/bonw14/README.html) | [thelio-massive-b1](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) | -->
 
 ### Tech Docs
 

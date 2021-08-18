@@ -34,7 +34,7 @@ sudo apt autoremove --purge
 Sometimes, you may see some packages that are still broken and need to be installed manually or purged manually. There may be broken dependencies or cyclical dependencies. If so, these commands can help:
 
 ```bash
-sudo apt install --reinstall <packagename>
+sudo apt install --reinstall [packagename]
 ```
 
 This command reinstalls the package. This can be convenient when the package has many reverse dependencies.

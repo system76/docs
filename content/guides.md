@@ -24,65 +24,65 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
-| [addw1](https://tech-docs.system76.com/models/addw1/README.html) | [meer5](https://tech-docs.system76.com/models/meer5/README.html) |
-| [addw2](https://tech-docs.system76.com/models/addw2/README.html) | [meer6](https://tech-docs.system76.com/models/meer6/README.html) | 
-| [bonw14](https://tech-docs.system76.com/models/bonw14/README.html) | [thelio-mira-r1](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
-| [darp6](https://tech-docs.system76.com/models/darp6/README.html) | [thelio-major](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) |
-| [darp7](https://tech-docs.system76.com/models/darp7/README.html) | [thelio-mega-r1](https://tech-docs.system76.com/models/thelio-mega-r1.0/README.html) |
-| [galp4](https://tech-docs.system76.com/models/galp4/README.html) | [thelio-massive-b1](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
-| [galp5](https://tech-docs.system76.com/models/galp5/README.html) |
-| [gaze15](https://tech-docs.system76.com/models/gaze15/README.html) |
-| [gaze16](https://tech-docs.system76.com/models/gaze16/README.html) |
-| [lemp9](https://tech-docs.system76.com/models/lemp9/README.html) |
-| [lemp10](https://tech-docs.system76.com/models/lemp10/README.html) |
-| [oryp6](https://tech-docs.system76.com/models/oryp6/README.html) |
-| [oryp7](https://tech-docs.system76.com/models/oryp7/README.html) |
-| [pang10](https://tech-docs.system76.com/models/pang10/README.html) |
-| [serw12](https://tech-docs.system76.com/models/serw12/README.html) |
+| Adder WS [(addw1)](https://tech-docs.system76.com/models/addw1/README.html) | Meerkat [(meer5)](https://tech-docs.system76.com/models/meer5/README.html) |
+| Adder WS [(addw2)](https://tech-docs.system76.com/models/addw2/README.html) | Meerkat [(meer6)](https://tech-docs.system76.com/models/meer6/README.html) | 
+| Bonobo WS [(bonw14)](https://tech-docs.system76.com/models/bonw14/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
+| Darter Pro [(darp6)](https://tech-docs.system76.com/models/darp6/README.html) | Thelio Major [(thelio-major)](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) |
+| Darter Pro [(darp7)](https://tech-docs.system76.com/models/darp7/README.html) | Thelio Mega R1[(thelio-mega-r1)](https://tech-docs.system76.com/models/thelio-mega-r1.0/README.html) |
+| Galago Pro [(galp4)](https://tech-docs.system76.com/models/galp4/README.html) | Thelio Massive B1 [(thelio-massive-b1)](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
+| Galago Pro [(galp5)](https://tech-docs.system76.com/models/galp5/README.html) |
+| Gazelle [(gaze15)](https://tech-docs.system76.com/models/gaze15/README.html) |
+| Gazelle [(gaze16)](https://tech-docs.system76.com/models/gaze16/README.html) |
+| Lemur Pro [(lemp9)](https://tech-docs.system76.com/models/lemp9/README.html) |
+| Lemur Pro [(lemp10)](https://tech-docs.system76.com/models/lemp10/README.html) |
+| Oryx Pro [(oryp6)](https://tech-docs.system76.com/models/oryp6/README.html) |
+| Oryx Pro [(oryp7)](https://tech-docs.system76.com/models/oryp7/README.html) |
+| Pangolin Pro [(pang10)](https://tech-docs.system76.com/models/pang10/README.html) |
+| Serval WS [(serw12)](https://tech-docs.system76.com/models/serw12/README.html) |
 
 ### Service Manuals
 
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
-| [darp5](/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | [thelio-r1](/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf) |
-| [galp2](/service-manuals/pdfs/Galago/galp2-service-manual.pdf) | [thelio-b1](/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) | 
-| [galp3](/service-manuals/pdfs/Galago/galp3-service-manual.pdf) |
-| [gaze14](/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf) |
-| [lemu7](/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) |
-| [oryp5](/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf) |
-| [serw11](/service-manuals/pdfs/Serval/serw11-service-manual.pdf) |
+| Darter Pro [(darp5)](/service-manuals/pdfs/Darter/darp5-service-manual.pdf) | Thelio R1 [(thelio-r1)](/service-manuals/pdfs/Thelio/R1/thelio-r1-service-manual.pdf) |
+| Galago Pro [(galp2)](/service-manuals/pdfs/Galago/galp2-service-manual.pdf) | Thelio B1 [(thelio-b1)](/service-manuals/pdfs/Thelio/B1/thelio-b1-service-manual.pdf) | 
+| Galago Pro [(galp3)](/service-manuals/pdfs/Galago/galp3-service-manual.pdf) |
+| Gazelle [(gaze14)](/service-manuals/pdfs/Gazelle/gaze14-service-manual.pdf) |
+| Lemur [(lemu7)](/service-manuals/pdfs/Lemur/lemu7-service-manual.pdf) |
+| Oryx Pro [(oryp5)](/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf) |
+| Serval WS [(serw11)](/service-manuals/pdfs/Serval/serw11-service-manual.pdf) |
 
 ### Quickstart Guides
 
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
-| [bonx8](/images/guides/bonx8.pdf) | [leox4](/images/guides/leox4.pdf) |
-| [bonw10](/images/guides/bonw10.png) | [leox5](/images/guides/leox5.pdf) |
-| [bonw11](/images/guides/bonw11.png) | [leow6](/images/guides/leow6.png) |
-| [bonw12](/images/guides/bonw12.png) | [leow7](/images/guides/leow7.png) |
-| [bonw13](/images/guides/bonw13.png) | [leow8](/images/guides/leow8.png) |
-| [daru4](/images/guides/daru4.pdf) | [leow9-core-x](/images/guides/leow9-core-x.png) |
-| [galu1](/images/guides/galu1.pdf) | [leow9-core-xb](/images/guides/leow9-core-xb.png) |
-| [gaze10](/images/guides/gaze10.pdf) | [leow9-xeon-w](/images/guides/leow9-xeon-w.png) |
-| [gaze11](/images/guides/gaze11.png) | [meer1](/images/guides/meer1.pdf) |
-| [gaze12](/images/guides/gaze12.png) | [meer2](/images/guides/meer2.png) |
-| [gaze13](/images/guides/gaze13.png) | [meer3/meer3b](/images/guides/meer3.png) |
-| [gazp9](/images/guides/gazp9.pdf) | [meer4](/images/guides/meer4.png) |
-| [kudp1](/images/guides/kudp1.pdf) | [ratp2](/images/guides/ratp2.pdf) |
-| [kudu2](/images/guides/kudu2.png) | [ratp3](/images/guides/ratp3.pdf) |
-| [kudu3](/images/guides/kudu3.png) | [ratp4](/images/guides/ratp4.pdf) |
-| [kudu4](/images/guides/kudu4.png) | [ratp5](/images/guides/ratp5.png) |
-| [kudu5](/images/guides/kudu5.png) | [sabc2](/images/guides/sabc2.pdf) |
-| [lemu5](/images/guides/lemu5.pdf) | [sabl4](/images/guides/sabl4.pdf) |
-| [lemu6](/images/guides/lemu6.pdf) | [sabl5](/images/guides/sabl5.png) |
-| [orxp1](/images/guides/orxp1.pdf) | [sabl6](/images/guides/sabl6.png) |
-| [oryp2](/images/guides/oryp2.png) | [sabt1](/images/guides/sabt1.pdf) |
-| [oryp3-15](/images/guides/oryp3-15.png) | [sabt2](/images/guides/sabt2.pdf) |
-| [oryp3-17](/images/guides/oryp3-17.png) | [sabt3](/images/guides/sabt3.pdf) |
-| [oryp4](/images/guides/oryp4.png) | [wilp10](/images/guides/wilp10.pdf) |
-| [serw8](/images/guides/serw8.pdf) | [wilp11](/images/guides/wilp11.pdf) |
-| [serw9](/images/guides/serw9.png) | [wilp12](/images/guides/wilp12.png) |
-| [serw10-15](/images/guides/serw10-15.png) | [wilp13](/images/guides/wilp13.png) |
-| [serw10-17](/images/guides/serw10-17.png) | [wilp14](/images/guides/wilp14.png) |
-| | [thelio-r2](/images/guides/thelio-r2.png) 
+| Bonobo Extreme [(bonx8)](/images/guides/bonx8.pdf) | Leopard Extreme [(leox4)](/images/guides/leox4.pdf) |
+| Bonobo WS [(bonw10)](/images/guides/bonw10.png) | Leopard Extreme [(leox5)](/images/guides/leox5.pdf) |
+| Bonobo WS [(bonw11)](/images/guides/bonw11.png) | Leopard WS [(leow6)](/images/guides/leow6.png) |
+| Bonobo WS [(bonw12)](/images/guides/bonw12.png) | Leopard WS [(leow7)](/images/guides/leow7.png) |
+| Bonobo WS [(bonw13)](/images/guides/bonw13.png) | Leopard WS [(leow8)](/images/guides/leow8.png) |
+| Darter UltraTouch [(daru4)](/images/guides/daru4.pdf) | Leopard WS [(leow9-core-x)](/images/guides/leow9-core-x.png) |
+| Galago UltraPro [(galu1)](/images/guides/galu1.pdf) | Leopard WS [(leow9-core-xb)](/images/guides/leow9-core-xb.png) |
+| Gazelle [(gaze10)](/images/guides/gaze10.pdf) | Leopard WS [(leow9-xeon-w)](/images/guides/leow9-xeon-w.png) |
+| Gazelle [(gaze11)](/images/guides/gaze11.png) | Meerkat [(meer1)](/images/guides/meer1.pdf) |
+| Gazelle [(gaze12)](/images/guides/gaze12.png) | Meerkat [(meer2)](/images/guides/meer2.png) |
+| Gazelle [(gaze13)](/images/guides/gaze13.png) | Meerkat [(meer3/meer3b)](/images/guides/meer3.png) |
+| Gazelle Pro [(gazp9)](/images/guides/gazp9.pdf) | Meerkat [(meer4)](/images/guides/meer4.png) |
+| Kudu [(kudp1)](/images/guides/kudp1.pdf) | Ratel Performance [(ratp2)](/images/guides/ratp2.pdf) |
+| Kudu [(kudu2)](/images/guides/kudu2.png) | Ratel Performance [(ratp3)](/images/guides/ratp3.pdf) |
+| Kudu [(kudu3)](/images/guides/kudu3.png) | Ratel Performance [(ratp4)](/images/guides/ratp4.pdf) |
+| Kudu [(kudu4)](/images/guides/kudu4.png) | Ratel Performance [(ratp5)](/images/guides/ratp5.png) |
+| Kudu [(kudu5)](/images/guides/kudu5.png) | Sable Complete [(sabc2)](/images/guides/sabc2.pdf) |
+| Lemur [(lemu5)](/images/guides/lemu5.pdf) | Sable [(sabl4)](/images/guides/sabl4.pdf) |
+| Lemur [(lemu6)](/images/guides/lemu6.pdf) | Sable [(sabl5)](/images/guides/sabl5.png) |
+| Oryx Pro [(orxp1)](/images/guides/orxp1.pdf) | Sable [(sabl6)](/images/guides/sabl6.png) |
+| Oryx Pro [(oryp2)](/images/guides/oryp2.png) | Sable Touch [(sabt1)](/images/guides/sabt1.pdf) |
+| Oryx Pro [(oryp3-15)](/images/guides/oryp3-15.png) | Sable Touch [(sabt2)](/images/guides/sabt2.pdf) |
+| Oryx Pro [(oryp3-17)](/images/guides/oryp3-17.png) | Sable Touch [(sabt3)](/images/guides/sabt3.pdf) |
+| Oryx Pro [(oryp4)](/images/guides/oryp4.png) | Wild Dog Performance [(wilp10)](/images/guides/wilp10.pdf) |
+| Serval WS [(serw8)](/images/guides/serw8.pdf) | Wild Dog Performance [(wilp11)](/images/guides/wilp11.pdf) |
+| Serval WS [(serw9)](/images/guides/serw9.png) | Wild Dog Performance [(wilp12)](/images/guides/wilp12.png) |
+| Serval WS [(serw10-15)](/images/guides/serw10-15.png) | Wild Dog Performance [(wilp13)](/images/guides/wilp13.png) |
+| Serval WS [(serw10-17)](/images/guides/serw10-17.png) | Wild Dog Performance [(wilp14)](/images/guides/wilp14.png) |
+| | Thelio R2 [thelio-r2](/images/guides/thelio-r2.png) 
 

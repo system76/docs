@@ -85,4 +85,3 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Serval WS [(serw10-15)](/images/guides/serw10-15.png) | Wild Dog Performance [(wilp13)](/images/guides/wilp13.png) |
 | Serval WS [(serw10-17)](/images/guides/serw10-17.png) | Wild Dog Performance [(wilp14)](/images/guides/wilp14.png) |
 | | Thelio R2 [thelio-r2](/images/guides/thelio-r2.png) 
-

@@ -71,19 +71,18 @@ We troubleshoot issues with the approach of taking small steps, then gradually l
 
  2. Check for updates.
  3. Fix the package manager.
- 4. Update with packages held.
- 5. Test 2nd Admin User.
- 6. Test in a Live Disk
+ 4. Test 2nd Admin User.
+ 5. Test in a Live Disk
 
     **Surgical - Invasive but Reversible**
 
- 7. Remove or install individual packages.- Surgically Invasive, easy to reverse.
- 8. Try a Different Kernel|-- System modifications, global changes. Invasive.
+ 6. Remove or install individual packages.
+ 7. Try a Different Kernel
 
      **Global - Invasive and Irreversible**
 
- 9. Upgrade OS
- 10. Reinstall the OS.
+ 8. Upgrade OS
+ 9. Reinstall the OS.
 
 ### 1. Get Logs
 
@@ -124,33 +123,15 @@ reboot
 
 <!--> May want to switch this to the version with extra steps and built in log collecting. -->
 
-Source: [Fix Package Manager](/articles/package-manager-pop)
+For more detailed information on troubleshooting the package manager, or managing software repositories, please refer to the sources below.
 
-### 4. Update with Packages Held
+Sources:
 
-To perform an update while keeping some packages on their current version, use the following Terminal command:
+[Fix Package Manager](/articles/package-manager-pop)
 
-```bash
-sudo apt-mark hold [packagename]
-```
+[Manage Repositories](/articles/manage-repos-pop.md)
 
-If the package is not central to OS functions, it can be held at the current version and the other packages updated around it. If the problem doesn't present itself when a package has been held, it was likely being updated to a newer version that was causing instability.
-
-To remove the hold on an application run:
-
-```bash
-sudo apt-mark unhold [packagename]
-```
-
-Show which packages are currently held with:
-
-```bash
-apt-mark showhold
-```
-
-If the Terminal returns nothing, no packages are held.
-
-### 5. Test Second Admin User
+### 4. Test Second Admin User
 
 That can be done by:
 
@@ -165,7 +146,7 @@ If the problem is not present in the new user, the issue is tied to a specific f
 
 [Users (Manage)](/articles/other-accounts)
 
-### 6. Test in a Live Environment
+### 5. Test in a Live Environment
 
 We have help articles on the Recovery Partition and how to access the Boot Menu listed below.
 
@@ -173,7 +154,7 @@ We have help articles on the Recovery Partition and how to access the Boot Menu 
 
 [Boot Menu](/articles/boot-menu)
 
-### 7. Remove or Reinstall Specific Packages
+### 6. Remove or Reinstall Specific Packages
 
 > **NOTE:** the apt package manager is used in both PopOS and Ubuntu. PopOS also offers flatpak variations of programs in the Pop!\_Shop.
 If you need to remove flatpak packages you can also remove or reinstall them from the **Installed** tab of the Pop!\_Shop. Ubuntu uses snap packages for some programs by default. Snap packages (snapd) can be installed manually on Pop!\_OS.
@@ -210,7 +191,7 @@ You can also inspect and edit your software sources using the instructions in th
 
 [Manage Repositories in Ubuntu](/articles/manage-repos-ubuntu)
 
-### 8. Try a Different Kernel
+### 7. Try a Different Kernel
 
 To see the kernel currently in use, run:
 
@@ -264,7 +245,7 @@ uname -a
 
 This will print out the current kernel version the system is running.
 
-### 9. Upgrade the OS
+### 8. Upgrade the OS
 
 Upgrading to the latest OS version usually includes newer kernel modules and software packages, as well as security updates and bug-fixes.
 These updates may directly or indirectly resolve the issue.
@@ -276,7 +257,7 @@ These updates may directly or indirectly resolve the issue.
 > **NOTE:** Not all OS releases are the same. Every other ##.04 release is a Long Term Release (LTS). Meaning that it continues to receive standard updates for 5 years and security updates for 10 years (total) after it is released. All other releases stop receiving support after 9 months.
 Some users prefer to run only LTS releases so they don't have to upgrade as often.
 
-### 10. Reinstall the OS
+### 9. Reinstall the OS
 
 Certain packages and library files are so intertwined with the rest of the OS that trying to fix or replace them surgically can leave the system in a worse, or even non-booting state. Specifically, anything to do with C libraries (libc) or Python, are particularly sensitive.
 

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Modify Keyboard Shortcuts (Pop!_OS)
 description:
   View, add, or modify keyboard shortcuts in Pop!_OS.
@@ -7,16 +6,17 @@ keywords:
   - keyboard shortcuts
   - pop
   - settings
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: community
-
 ---
-
-# Modify Keyboard Shortcuts (Pop!_OS)
 
 You can view and change keyboard shortcuts in Pop!\_OS using the Settings app.
 
-### Viewing Keyboard Shortcuts
+## Viewing Keyboard Shortcuts
 
 To view keyboard shortcuts, open Settings and select the "Keyboard" page on the left.
 
@@ -26,7 +26,7 @@ Click on "Customize Shortcuts" (at the bottom of the settings page) to view all 
 
 ![Keyboard Shortcuts dialog](/images/keyboard-shortcuts/shortcuts.png)
 
-### Modifying Keyboard Shortcuts
+## Modifying Keyboard Shortcuts
 
 To modify an existing shortcut, locate the shortcut by browsing to its category or using the search box, then click on the three dots next to it and select `Remove` to remove the existing keybinding.
 
@@ -38,7 +38,7 @@ Next, click the three dots again and select `Add shortcut` (or `Add another shor
 
 After entering your desired key combination, click `Set`. If the key combination is already bound to another shortcut, you will be given the option to replace the old shortcut or cancel.
 
-### Adding Keyboard Shortcuts
+## Adding Keyboard Shortcuts
 
 Select the `Custom Shortcuts` category at the bottom of the Keyboard Shortcuts list.
 

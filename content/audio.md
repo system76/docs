@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Audio Troubleshooting
 description: >
   Here is how to fix several common audio issues with your computer.
@@ -9,10 +8,12 @@ keywords:
   - alsa
   - pulseaudio
   - pulse audio
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software-troubleshooting
-
 ---
 
 Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and reloading ALSA and/or PulseAudio can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.

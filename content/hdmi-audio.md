@@ -1,5 +1,4 @@
 ---
-layout: article
 title: HDMI Audio Configuration
 description: >
   Here is how to play audio over an HDMI or DisplayPort connection.
@@ -8,17 +7,19 @@ keywords:
   - audio settings
   - support
   - System76
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: software
-
 ---
 
 If you're using an HDMI display with its own built-in speakers, you can configure your system to output audio over the HDMI connection. (These steps should also work for DisplayPort connections.)
 
 ## Using the Sound Settings
 
-To make all sound play over HDMI, open the menu in the top right of the screen, then click the <i class='fa fa-gear'></i> icon in the bottom left of the menu.
+To make all sound play over HDMI, open the menu in the top right of the screen, then click the <font-awesome-icon icon="cog"></font-awesome-icon> icon in the bottom left of the menu.
 
 ![Opening the Settings app](/images/hdmi-audio/top-right-menu.png)
 
@@ -36,7 +37,7 @@ After selecting the appropriate device, sound should play through the HDMI conne
 
 The <u>PulseAudio Volume Control</u> utility also allows you to change the sound output. In addition to changing the default output device, you can also set the output device (and volume) on a per-application basis.
 
-<u>PulseAudio Volume Control</u> can be installed using this command: 
+<u>PulseAudio Volume Control</u> can be installed using this command:
 
 ```bash
 sudo apt install pavucontrol

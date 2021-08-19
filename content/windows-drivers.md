@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Windows Drivers
 description: >
   If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
@@ -7,17 +6,19 @@ keywords:
   - Windows
   - Microsoft
   - drivers
-image: http://support.system76.com/images/system76.png
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
 hidden: false
 section: windows
-
 ---
-
-# Windows Drivers
 
 Most of the hardware in a System76 computer is Intel based, and Windows Update is rather effective at finding drivers. We also recommend using Intel's Driver Update utility, which will automatically detect and install drivers for Intel hardware.
 
 [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
+
+For our Open Firmware and Open EC systems, you can download the Windows drivers [here](https://github.com/system76/windows-drivers).
 
 For systems with NVIDIA graphics cards, drivers can be found on their website:
 
@@ -25,11 +26,12 @@ NVIDIA hardware table:
 
 Always        | Maybe                | Never
 :------------:|:--------------------:|:----:
-Oryx Pro      | Wild Dog Pro         | Lemur
-Serval WS     | Ratel                | Gazelle
+Adder WS      | Darter Pro (w/ eGPU) | Lemur
 Bonobo WS     | Galago Pro (w/ eGPU) | Kudu
-Leopard WS    | Darter Pro (w/ eGPU) | Meerkat
-Silverback WS | Thelio               |
+Leopard WS    | Gazelle              | Meerkat
+Oryx Pro      | Ratel                |
+Serval WS     | Thelio               |
+Silverback WS | Wild Dog Pro         |
 
 [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 

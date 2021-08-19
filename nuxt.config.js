@@ -1,10 +1,20 @@
+import contentHighlighter from './modules/content-highlighter'
 import githubContributors from './modules/github-contributors'
 import linkFixes from './modules/link-fixes'
 
-export default {
+export default async () => ({
   target: 'static',
 
   components: true,
+
+  content: {
+    markdown: {
+      highlighter: await contentHighlighter(),
+      rehypePlugins: [
+        '~/plugins/content-replace'
+      ]
+    }
+  },
 
   head: {
     description: 'Official System76 Support and useful documentation',
@@ -53,18 +63,19 @@ export default {
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@system76/design/dist/minimal.common.css',
-    '@system76/components/dist/index.common.css'
+    '@system76/components/dist/index.common.css',
+    '~/assets/styles/code-highlighting.css'
   ],
 
   plugins: [
     '~/plugins/components',
-    '~/plugins/custom-tags',
     '~/plugins/font-awesome'
   ],
 
   buildModules: [
     '@nuxt/image',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-dynamic-images'
   ],
 
   modules: [
@@ -80,5 +91,21 @@ export default {
       githubContributors(doc),
       linkFixes(doc)
     ])
+  },
+
+  image: {
+    // Mirrored to tailwind breakpoints + some extra
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      '2xl': 1536
+    }
+  },
+
+  tailwindcss: {
+    cssPath: '~assets/styles/tailwind.css'
   }
-}
+})

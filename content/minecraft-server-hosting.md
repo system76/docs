@@ -21,7 +21,7 @@ To install the Minecraft server, we will need to install Java (listed as default
 
 - `wget` will allow us to download the Minecraft Server from Mojang.  Downloading the Minecraft Server Jar, we put the file in the directory directly, instead of using a web browser.
 
-- `screen` will allow us to run commands on the server in an isolated environment - think of it as a virtual terminal instance you can connect to and disconnect from. 
+- `screen` will allow us to run commands on the server in an isolated environment - think of it as a virtual terminal instance you can connect to and disconnect from.
 
 - `nmap` is a network scanner that we will use for testing and network configuration.
 
@@ -39,7 +39,7 @@ sudo apt-mark hold default-jdk
 
 > ***NOTE:** not all these commands will produce output.*
 
-## Make The Minecraft Group & User & Minecraft Directory
+## Make The Minecraft Group & User & Minecraft Directory 
 The Minecraft server will make a lot of files for the world, settings, plugins, and other resources.  The following commands make the directories for the servers.  We will want to make a group and a user for the server to operate in and use.  We will need to then make a directory file to live in and make sure that the new server user has ownership of the directory.
 
 ```bash
@@ -63,8 +63,8 @@ sudo chown -R mchost /mchost/
 
 > ***NOTE:** the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
 
-### Installing PaperMC's Minecraft Server Jar
-[PaperMC](https://papermc.io) 
+### Installing PaperMC's Minecraft Server Jar 
+[PaperMC](https://papermc.io)
 [PaperMC's GitHub](https://github.com/PaperMC/Paper)
 
 ```bash

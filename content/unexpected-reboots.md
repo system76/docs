@@ -69,7 +69,7 @@ If a GUI tool is preferred, and you are running Pop!\_OS or Ubuntu, open "System
 
 ![system-monitor](/images/unexpected-reboots/system-monitor.png)
 
-#### Remove or Reinstall Drivers**
+#### Remove or Reinstall Drivers
 
 If a package is misbehaving or corrupted, try reinstalling it or removing it. This can be done with the following `Terminal` commands.
 
@@ -99,7 +99,7 @@ To test whether the problem exists at a user-level or system-level, create a tes
 
 For more information, visit our [User Management Article](https://support.system76.com/articles/other-accounts)
 
-#### Upgrade or Reinstall OS**
+#### Upgrade or Reinstall OS
 
 Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles that go over this process:
 

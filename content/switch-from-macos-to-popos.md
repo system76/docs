@@ -337,6 +337,10 @@ There is also a Linux client for the popular streaming service Spotify, availabl
 
 ![Spotify](/images/pop-os-screenshots/spotify.png)
 
+Other options:
+
+- [Apple Music](https://music.apple.com) web client
+
 ### Video Editing
 
 | macOS | Pop!\_OS |

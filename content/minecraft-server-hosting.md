@@ -39,7 +39,8 @@ sudo apt-mark hold default-jdk
 
 > ***NOTE:** not all these commands will produce output.*
 
-## Make The Minecraft Group & User & Minecraft Directory 
+## Make The Minecraft Group & User & Minecraft Directory
+
 The Minecraft server will make a lot of files for the world, settings, plugins, and other resources.  The following commands make the directories for the servers.  We will want to make a group and a user for the server to operate in and use.  We will need to then make a directory file to live in and make sure that the new server user has ownership of the directory.
 
 ```bash
@@ -63,7 +64,8 @@ sudo chown -R mchost /mchost/
 
 > ***NOTE:** the server Jar will change over time and you will want to go to Mojan's website to grab the newest Jar.*
 
-### Installing PaperMC's Minecraft Server Jar 
+### Installing PaperMC's Minecraft Server Jar
+
 [PaperMC](https://papermc.io)
 [PaperMC's GitHub](https://github.com/PaperMC/Paper)
 

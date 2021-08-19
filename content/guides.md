@@ -24,7 +24,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
-| Adder WS [(addw1)](https://tech-docs.system76.com/models/addw1/README.html) | Meerkat [(meer5)](https://tech-docs.system76.com/models/meer5/README.html) | Launch [(launch_1)](https://tech-docs.system76.com/models/launch_1/repairs.html) |
+| Adder WS [(addw1)](https://tech-docs.system76.com/models/addw1/README.html) | Meerkat [(meer5)](https://tech-docs.system76.com/models/meer5/README.html) | Launch [(launch_1)](https://tech-docs.system76.com/models/launch_1/README.html) |
 | Adder WS [(addw2)](https://tech-docs.system76.com/models/addw2/README.html) | Meerkat [(meer6)](https://tech-docs.system76.com/models/meer6/README.html) |
 | Bonobo WS [(bonw14)](https://tech-docs.system76.com/models/bonw14/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
 | Darter Pro [(darp6)](https://tech-docs.system76.com/models/darp6/README.html) | Thelio Major [(thelio-major)](https://tech-docs.system76.com/models/thelio-major-intel-and-amd/README.html) |

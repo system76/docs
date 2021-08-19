@@ -11,7 +11,7 @@ hidden: false
 section: software
 ---
 
-Minecraft 1.17 dropped on June 8, 2021. In this article, we will be going over how to set up a Minecraft server on your Pop!_OS or Ubuntu install. System76 and Mojang recommend having an 8GB minimum but 16GB is preferred. Any hard drive over 128GB will work for a basic Minecraft server, a drive of 1TB to 2TB is recommended for having backups.  This article will use mostly Terminal commands, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).
+Minecraft 1.17 dropped on June 8, 2021. In this article, we will be going over how to set up a Minecraft server on your Pop!_OS or Ubuntu install. System76 and Mojang recommend having an 8GB minimum od system RAM but 16GB is preferred. Any hard drive over 128GB will work for a basic Minecraft server, a drive of 1TB to 2TB is recommended for having backups.  This article will use mostly Terminal commands, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).
 
 ## Updating and Installing Software Needed
 
@@ -56,8 +56,10 @@ sudo chown -Rv mchost /mchost/~
 
 ### Installing Mojan's Minecraft Server Jar
 
+We will want to download the server jar and create a directery for server to operate in. 
+
 ```bash
-sudo wget -O /mchost/v-1-17/live/minecraft_server.jar https://launcher.mojang.com/v1/objects/0a269b5f2c5b93b1712d0f5dc43b6182b9ab254e/server.jar
+sudo wget -O /mchost/v-1-17/live/minecraft_server.jar WEBSITE-URL
 sudo bash -c "echo eula=true > /mchost/v-1-17/live/eula.txt"
 sudo chown -R mchost /mchost/
 ```
@@ -66,11 +68,13 @@ sudo chown -R mchost /mchost/
 
 ### Installing PaperMC's Minecraft Server Jar
 
+Paper is a jar that extends and improves the Bukkit and Spigot APIs meaning if you want to install plugins you can.  PaperMC also ofters more control options for your server.
+
 [PaperMC](https://papermc.io)
 [PaperMC's GitHub](https://github.com/PaperMC/Paper)
 
 ```bash
-sudo wget -O /mchost/v-1-17/live/minecraft_server.jar https://papermc.io/api/v2/projects/paper/versions/1.17/builds/39/downloads/paper-1.17-39.jar 
+sudo wget -O /mchost/v-1-17/live/minecraft_server.jar WEBSITE-URL 
 sudo bash -c "echo eula=true > /mchost/v-1-17/live/eula.txt"
 sudo chown -R mchost /mchost/
 ```
@@ -78,6 +82,8 @@ sudo chown -R mchost /mchost/
 > ***NOTE:** the server Jar will change over time and you will want to go to Paper's Website to grab the newest Jar.*
 
 ## Running The Server
+
+To run the server we will need to open a virtial terminal window using screen and switch users to be your mchost user.
 
 ```bash
 screen
@@ -103,6 +109,8 @@ These values can be changed up to around 10GB if you need to go over 10GB.  This
 ## Optimization
 
 ### Server Properties
+
+In the server.properies files you can change the compression threashold and the default view distance.  I would recomend keeping it at 4 for lower end hardware hosting the server and 10 for higher end.
 
 `network-compression-threshold: -1`
 `view-distance:4`

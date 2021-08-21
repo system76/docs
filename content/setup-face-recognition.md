@@ -15,7 +15,7 @@ section: community
 ---
 
 In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open source face authentication tool.
-Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/content/webcam).
+Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/content/webcam.md).
 
 ## Installation on Pop!\_OS, Ubuntu or any other Ubuntu based distribution
 

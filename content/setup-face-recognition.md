@@ -73,7 +73,7 @@ sudo howdy add
 
 You will be asked for your sudo password, type it in and press <kbd>Enter</kbd>. You will be asked to label the new model. It's similar to how you're asked to label a fingerprint you're adding on your phone. Something like 'face1' or 'John's face' will suffice.
 
-Once that's done you successfully finished setting up howdy. Try it out by locking your screen and pressing any button to open login. If everything is setup correctly - you will be logged in by <u>Howdy</u> with your face.
+Once that's done, you successfully finished setting up howdy. Try it out by locking your screen and pressing any button to open login. If everything is setup correctly - you will be logged in by <u>Howdy</u> with your face.
 
 ## Troubleshooting
 
@@ -88,7 +88,7 @@ ls /dev | grep "video."
 ```
 
 This will show you all video inputs you have on your system.
-Now, we need to test what of them work for you.
+Now, we need to test which of them work for you.
 For that, we can use `ffplay` command. Use it as such:
 
 ```bash

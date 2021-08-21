@@ -181,3 +181,41 @@ sudo apt install gnome-tweak-tool mousepad aptitude thunar
 ## Program Configuration Files
 
 System-wide program configuration files can be found in many locations of the OS. The most common location is the `/etc` folder. Most of these can be backed up in the same ways that user configuration files can, with the same caveat about changes in configuration format when restoring these files. (Unless you have modified system-wide configuration files manually, most configuration is usually stored per-user in the home directory.)
+
+## Create and Restore Disk images using Disks app
+
+Pop!\_OS comes with a disk management utility called GNOME Disks. You can find it in your apps list. 
+
+![Disks app](https://user-images.githubusercontent.com/35414314/130321339-33d80ce0-9045-4c6c-9e88-5b1f7b33e563.png)
+
+Opon opening, on the left, you will see a list of all disks connected to your computer. Choose disk you want to back up, or restore and click on it. 
+
+![drop down menu in Disks app](https://user-images.githubusercontent.com/35414314/130321350-bbc2e2dd-34ec-4317-b66a-d35b010e3db4.png)
+
+Once you select a disk you will have a "Disk options" button appear near the top right corner of the app window. When you press it a drop down menu will appear, allowing you to select an option you want - to create or restore a disk image. 
+
+### Creating a disk image
+
+![image](https://user-images.githubusercontent.com/35414314/130321407-8225e788-e708-4208-8068-cf10c64f321b.png)
+
+When you press a "Create disk image" in the drop-down menu mentioned before, you will have a pop-up appear, presenting you with choice to name disk image you're creating and select where to put it.
+
+![image](https://user-images.githubusercontent.com/35414314/130321417-000beada-73c9-4c2c-ac3c-8eed859dbf6a.png)
+
+After clicking "Start creating" it may ask for your password and then start creating your disk image. Process progress will be shown. You can cancel creating the image any time by pressing a trash can icon on the right from the progress bar.
+
+Upon finishing you will have a disk image file in `.img` format, with the name you chose and in the folder you selected.
+
+### Restoring a disk image
+
+Restoring a disk image to a disk causes complete loss of data on said disk!
+
+![image](https://user-images.githubusercontent.com/35414314/130321768-3538d10e-b847-4911-96aa-eae9c19d148a.png)
+
+When you press a "Restore disk image" in the drop-down menu mentioned before, you will have a pop-up appear, presenting you with a button to select a disk image you want to restore on a disk you selected previously. 
+
+![image](https://user-images.githubusercontent.com/35414314/130321834-ca776204-6ea1-4fe4-9651-675f025d5b91.png)
+
+After you press "Start restoring" it will ask for a confirmation and may ask for a user password. After that, process of restoring a disk image onto your disk will start, showing you restoring progress. You can cancel any time by pressing a trash can icon on the right from the progress bar. However, if you cancel, your data on the disk is already gone. 
+
+Upon finishing you will have your disk image file data on the disk you selected.

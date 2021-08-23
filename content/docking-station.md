@@ -69,6 +69,8 @@ Community members have reported that the following docks work with our products:
 - [i-tec U3DUALHDMIDOCK](https://i-tec.pro/en/produkt/u3dualhdmidock-2/) [[community-tested](https://github.com/system76/docs/pull/749) on an Intel system]
   - HDMI video and USB keyboard input lags when laptop display is closed/disabled.
   - Two HDMI outputs at the same time not tested.
+- [i-tec C31DUALDPDOCKPD](https://i-tec.pro/en/produkt/c31dualdpdockpd-2/) [[community-tested](https://github.com/system76/docs/pull/763) on an Intel system]<sup>1</sup>
+  - Displays sometimes don't power on until dock is re-plugged.
 - [Lenovo ThinkPad Thunderbolt 3 Workstation Dock Gen 2](https://www.lenovo.com/us/en/accessories-and-monitors/docking/universal-cable-docks-thunderbolt/TBT-WS-Dock-Gen-2/p/40ANY230US) [[community-tested](https://github.com/system76/docs/pull/517) on an Intel sytem] <sup>1</sup>
 - [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
   - Ethernet and DVI ports not tested.

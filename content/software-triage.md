@@ -245,6 +245,8 @@ uname -a
 
 This will print out the current kernel version the system is running.
 
+> **IMPORTANT NOTE:** There is NO going back from steps 8 and 9. If you haven't backed up your files yet, do so *now.* Steps 8 and 9 will change/reinstall the entire OS. Use these steps when all other steps have failed. This is the "nuclear" option. It's not a long or complicated process, but it is irreversible.
+
 ### 8. Upgrade the OS
 
 Upgrading to the latest OS version usually includes newer kernel modules and software packages, as well as security updates and bug-fixes.

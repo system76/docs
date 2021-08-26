@@ -55,7 +55,7 @@ sudo apt install <package name>
 sudo apt install pop-desktop
 ```
 
-### 4. Update with Packages Held
+### Update with Packages Held
 
 If a problem presents itself immediately after updating a particular package, sometimes holding that package back temporarily can help narrow down the cause.
 

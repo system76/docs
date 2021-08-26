@@ -17,6 +17,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: getting-help
+tableOfContents: true
 ---
 
 This article is designed to provided a range of self-help resources from our other support articles, all in one place. Please review this article and familiarize yourself with the kind of information we will need to help diagnose your issue. Instructions for some of the testing we perform on support tickets is included.
@@ -50,107 +51,7 @@ We have a help article on creating [Live USBs here](/articles/live-disk)
 
 ### Software
 
-#### 3. Have you tested in either the Recovery Partition or a Live USB to see if the issue is present there?
-
-We have help articles on the Recovery Partition and how to access the Boot Menu listed below.
-
-[Recovery Partition](/articles/pop-recovery)
-
-[Boot Menu](/articles/boot-menu)
-
-#### 4. Is your system fully up to date?
-
-NOTE: The following instructions can be used in either Ubuntu or Pop!\_OS.
-
-You can open the terminal by clicking Activities in the upper-left corner and searching for "Terminal", by pressing
-<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, or
-<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>
-When you run the first command with "sudo" it will ask you to enter your password.
-Typing your password will not show anything in the Terminal window. That is normal and for security.
-Just enter your password as you normally would, and then hit <kbd>ENTER</kbd>. You'll also need to hit <kbd>ENTER</kbd> after each command.
-
-```bash
-sudo apt clean
-sudo apt update -m
-sudo dpkg --configure -a
-sudo apt install -f
-sudo apt dist-upgrade
-sudo apt autoremove --purge
-reboot
-```
-
-Then let's run:
-
-```bash
-sudo apt update
-sudo apt full-upgrade
-reboot
-```
-
-Source: [Fix Package Manager](/articles/package-manager-pop)
-
-#### 5. Have you tried creating an administrative Test User account to see if the issue is present in a different user?
-
-That can be done by:
-
-- Navigate to Settings -> Users
-- Click the Unlock button
-- Click the  **Add User** button that appears.
-- Create a user with whatever name and credentials you want.
-- Make sure click the **Administrator** option for the user.
-- Reboot and log into the new user.
-
-[Creating User Accounts](/articles/other-accounts)
-
-#### 6. Is there a new OS version available?
-
-Upgrading to the latest OS version usually includes newer kernel modules and software packages, as well as security updates and bug-fixes.
-These updates may directly or indirectly resolve your issue.
-
-[Upgrade Pop](/articles/upgrade-pop)
-
-[Upgrade Ubuntu](/articles/upgrade-ubuntu)
-
-#### 7. Have you tried reinstalling the packages or programs that are giving you trouble?
-
-We are happy to provide instructions on how to reinstall packages if need be. Just let us know which program(s) are misbehaving and we can explain how to uninstall it/them.
-
-NOTE: the apt package manager is used in both PopOS and Ubuntu. PopOS also offers flatpak variations of programs in the Pop!\_Shop.
-If you need to remove flatpak packages you can also remove or reinstall them from the **Installed** tab of the Pop!\_Shop. Ubuntu uses snap packages for some programs by default, and snapd can be installed manually on Pop!\_OS as well.
-
-Typically the Terminal commands to reinstall a program are:
-
-```bash
-sudo apt remove [packagename]
-```
-
-OR:
-
-```bash
-flatpak uninstall [packagename]
-```
-
-OR:
-
-```bash
-sudo snap remove [packagename]
-```
-
-Where "[packagename]" is replaced with the program name, without angle-brackets.
-
-You can also inspect and edit your software sources using the instructions in these help articles:
-
-[Manage Repositories in Pop!\_OS](/articles/manage-repos-pop)
-
-[Manage Repositories in Ubuntu](/articles/manage-repos-ubuntu)
-
-#### 8. Let’s collect some system logs to get more information on what’s happening with your system
-
-To generate the logs we need, please click on **Activities** in the top left of your screen, search for System76, and then click on the System76 Driver application.
-
-Then click on the **Create Log Files** button and the log file will be in your home directory when you first open the Files application.
-
-For more information, please see this support article: [Creating Log Files](/articles/log-files)
+We have an article for troubleshooting software issues [here](/articles/software-triage)
 
 ### Environment
 

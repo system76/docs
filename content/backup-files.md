@@ -189,7 +189,7 @@ Pop!\_OS comes with a disk management utility called GNOME Disks. You can find i
 
 ![Disks app](https://user-images.githubusercontent.com/35414314/130321339-33d80ce0-9045-4c6c-9e88-5b1f7b33e563.png)
 
-Upon opening, on the left, you will see a list of all disks connected to your computer. Choose which disk you want to back up or restore and click on it. 
+Upon opening, on the left, you will see a list of all disks connected to your computer. Choose which disk you want to back up or restore and click on it.
 
 ![drop down menu in Disks app](https://user-images.githubusercontent.com/35414314/130321350-bbc2e2dd-34ec-4317-b66a-d35b010e3db4.png)
 
@@ -217,7 +217,7 @@ When you press "Restore disk image" in the drop-down menu mentioned before, a po
 
 ![image](https://user-images.githubusercontent.com/35414314/130321834-ca776204-6ea1-4fe4-9651-675f025d5b91.png)
 
-After you press "Start restoring," it will ask for a confirmation and may ask for a user password. After that, process of restoring a disk image onto your disk will start, showing you restoring progress. You can cancel at any time by pressing the trash can icon on the right from the progress bar. 
+After you press "Start restoring," it will ask for a confirmation and may ask for a user password. After that, process of restoring a disk image onto your disk will start, showing you restoring progress. You can cancel at any time by pressing the trash can icon on the right from the progress bar.
 
 > **NOTE:** Even if you press the button to cancel, your selected disk will already have been erased to make room for the restore image. The data on the disk is  already gone.
 

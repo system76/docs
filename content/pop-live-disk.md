@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware-troubleshooting
+tableOfContents: true
 ---
 
 Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
@@ -64,9 +65,10 @@ Once the flash is complete (should look like the screenshot above), it's time to
 
 After creating the live disk, insert the USB into your computer, then reboot or power on your system. You'll need to tell the computer to boot from the live disk by holding a key right as you power on:
 
-Laptops                             | Desktops
------------------------------------ | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
+ Firmware             | Laptops                                                               | Desktops                                              |
+ -------------------- | --------------------------------------------------------------------- | ----------------------------------------------------- |
+ Proprietary Firmware | Hold <kbd>F7</kbd>/<kbd>F1</kbd>/<kbd>F2</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>                        |
+ [Open Firmware](https://support.system76.com/articles/open-firmware-systems)        | Hold <kbd>Esc</kbd>      
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 

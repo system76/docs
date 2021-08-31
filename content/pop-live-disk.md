@@ -68,7 +68,7 @@ After creating the live disk, insert the USB into your computer, then reboot or 
  Firmware             | Laptops                                                               | Desktops                                              |
  -------------------- | --------------------------------------------------------------------- | ----------------------------------------------------- |
  Proprietary Firmware | Hold <kbd>F7</kbd>/<kbd>F1</kbd>/<kbd>F2</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>                        |
- [Open Firmware](https://support.system76.com/articles/open-firmware-systems)        | Hold <kbd>Esc</kbd>      
+ [Open Firmware](https://support.system76.com/articles/open-firmware-systems)        | Hold <kbd>Esc</kbd>                                            |
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 

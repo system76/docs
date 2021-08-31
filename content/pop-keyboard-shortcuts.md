@@ -75,17 +75,17 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 
 The launcher allows searching through open windows and installed applications, and also has the additional functions listed below.
 
-| Shortcut/command                                           | Action                          |
-| ---------------------------------------------------------- | ------------------------------- |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                 | Activate the launcher on Pop 21.04+ |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>  | Activate the launcher on Pop 20.10 and below |
-| `recent filename`                                          | Browse and search recent files  |
-| `/` / `~`                                                  | Browse the filesystem           |
-| `file filename`                                            | Search the filesystem for a certain file |
-| `t:`                                                       | Execute a command in a terminal |
-| `:`                                                        | Execute a command in sh         |
-| `=`                                                        | Calculate an equation           |
-| `?`                                                        | Help menu                       |
+| Shortcut/command                                           | Action                                                            |
+| ---------------------------------------------------------- | -------------------------------                                   |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                                                   | Activate the launcher on Pop 21.04+ |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>                                    | Activate the launcher on Pop 20.10 and below |
+| `recent filename`                                          | Browse and search recent files (while in the launcher)            |
+| `/` / `~`                                                  | Browse the filesystem (while in the launcher)                     |
+| `file filename`                                            | Search the filesystem for a certain file (while in the launcher)  |
+| `t:`                                                       | Execute a command in a terminal (while in the launcher)           |
+| `:`                                                        | Execute a command in sh (while in the launcher)                   |
+| `=`                                                        | Calculate an equation (while in the launcher)                     |
+| `?`                                                        | Help menu (while in the launcher)                                 |
 
 ### Switch between apps and windows
 

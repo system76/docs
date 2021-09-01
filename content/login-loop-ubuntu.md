@@ -87,11 +87,12 @@ If your system is equipped with NVIDIA graphics, a recent update might be causin
 |:------------- |:-------------- |:----------- |
 | Oryx Pro      | Wild Dog Pro   | Lemur (Pro) |
 | Adder WS      | Ratel          | Kudu        |
-| Serval WS     | Gazelle        | Meerkat     |
-| Bonobo WS     | Thelio         | Galago Pro  |
-| Leopard WS    | Thelio Mira    | Darter Pro  |
-| Silverback WS | Thelio Major   | Pangolin    |
-| Thelio Mega   | Thelio Massive |             |
+| Serval WS     | Galago Pro 5   | Meerkat     |
+| Bonobo WS     | Gazelle        | Galago Pro (4 or older)  |
+| Leopard WS    | Thelio         | Darter Pro  |
+| Silverback WS | Thelio Mira    | Pangolin    |
+| Thelio Mega   | Thelio Major   |             |
+|               | Thelio Massive |             |
 
 To remove the NVIDIA driver, run the following:
 

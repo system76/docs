@@ -23,9 +23,9 @@ tableOfContents: true
 - [Live Disk](/articles/live-disk)
 - [Logs](/articles/log-files)
 
-## Suspend, Reboot, Shut Down
+## Shut Down
 
-Do the symptoms go away if the system is suspended, rebooted or shut down and then started up again? Sometimes repeated suspends or reboots are all that are needed to clear an issue out. It's also a good idea to test reboot and shutdown separately as they handle memory and power-management differently.
+Sometimes turning the machine off and on again is all that's needed to clear an issue out. Shut down your computer and power it back on to see if the issue persists.
 
 ## Symptoms
 
@@ -34,7 +34,7 @@ Do the symptoms go away if the system is suspended, rebooted or shut down and th
     Symptoms like those described [here](/articles/login-loop-pop) or [here](/articles/login-loop-ubuntu)
 - Applications will not open.
     Clicking on the application icon in the Dock does not launch the program, and/or entering the package name in the terminal will not launch the program.
-- Updates will not complete.
+- Updates will not complete. Error messages show in the Pop! Shop or terminal output with the following;
     "Dependency errors"
     "Held broken packages."
     "DKMS Errors"
@@ -46,43 +46,7 @@ Do the symptoms go away if the system is suspended, rebooted or shut down and th
     E.g. windows frozen in place, windows will not resize. Stuck in full-screen mode, etc.
     Mouse freezes intermittently or stutters it moves across the screen, or keyboard input lags.
 
-## Causes
-
-- GNOME Extension bugs.
-- Bugs inherent in applications.
-- Corrupted software updates/installs.
-    Files may have been corrupted as they were downloaded, for example, by a network interruption.
-- Out of date OS libraries.
-    Many applications refer to system libraries. Some programs may be expecting to find a specific version of a library.
-- Out of date drivers.
-    Older kernels may be using out of date driver software.
-- Incorrect Drivers.
-    If an unneeded or incorrect driver is installed this can cause unexpected side effects.
-- Kernel Bugs
-
 ## Solutions
-
-We troubleshoot issues with the approach of taking small steps, then gradually larger steps:
-
- 0. Backups - Preserve
- 1. Get logs - Observe
-
-    **Non Invasive**
-
- 2. Check for updates.
- 3. Fix the package manager.
- 4. Test 2nd Admin User.
- 5. Test in a Live Disk
-
-    **Surgical - Invasive but Reversible**
-
- 6. Remove or install individual packages.
- 7. Try a Different Kernel
-
-     **Global - Invasive and Irreversible**
-
- 8. Upgrade OS
- 9. Reinstall the OS.
 
 ### 1. Get Logs
 

@@ -70,7 +70,8 @@ make local-install
 
 #### For Manjaro
 
-<u>Pop Shell</u> is available in the repository: 
+<u>Pop Shell</u> is available in the repository:
+
 ```bash
 sudo pamac install gnome-shell-extension-pop-shell
 ```

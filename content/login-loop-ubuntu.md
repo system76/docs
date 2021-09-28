@@ -96,7 +96,7 @@ If your system is equipped with NVIDIA graphics, a recent update might be causin
 To remove the NVIDIA driver, run the following:
 
 ```bash
-sudo apt purge ~nnvidia
+sudo apt purge ~nvidia
 sudo apt autoremove
 sudo apt clean
 ```

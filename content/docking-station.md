@@ -62,8 +62,12 @@ Community members have reported that the following docks work with our products:
   - DisplayPort port not tested.
 - [Dell DS1000](https://www.dell.com/support/manuals/us/en/04/dell-dockstand-ds1000/ds1000_docking_stand_ug_publication/technical-specifications?guid=guid-1ad58fe1-dd33-4ebc-bac1-8e6a9083eb35&lang=en-us) [[community-tested](https://github.com/system76/docs/pull/431) on an Intel system]
   - Ethernet port not tested.
-- [Dell WD19 Dock](https://www.dell.com/en-us/work/shop/dell-dock-wd19-90w-power-delivery-130w-ac/apd/210-ARIO/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system] <sup>1</sup>
+- [Dell WD19 Dock](https://www.dell.com/support/home/en-us/product-support/product/dell-wd19-130w-dock/overview) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system] <sup>1</sup>
   - Displays sometimes don't wake up from sleep until dock is re-plugged.
+- [Dell WD19S Dock](https://www.dell.com/en-us/work/shop/dell-dock-wd19s-130w/apd/210-azbg/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/773) on an Intel system] <sup>1</sup>
+  - Displays sometimes don't wake up from sleep until dock is re-plugged to its power source.
+  - At most, two external displays can be used at a time.
+  - Power button does nothing.
 - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/206) on an Intel system] <sup>1</sup>
 - [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [[community-tested](https://github.com/system76/docs/pull/231) on an Intel system]
   - Requires extra configuration for suspend/resume to work.

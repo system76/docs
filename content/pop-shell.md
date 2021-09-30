@@ -71,6 +71,10 @@ make local-install
 
 #### For Manjaro
 
-<u>Pop Shell</u> is already installed by default on the Manjaro GNOME edition but it needs to be enabled in the <u>Extenstions</u> application.
+<u>Pop Shell</u> is available in the repository:
+
+```bash
+sudo pamac install gnome-shell-extension-pop-shell
+```
 
 To learn about <u>Pop Shell</u>'s keyboard shortcuts you can view this [support article](/articles/pop-keyboard-shortcuts/). You can also view <u>Pop Shell</u>'s source code [here](https://github.com/pop-os/shell).

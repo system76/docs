@@ -65,4 +65,4 @@ As with the <u>System76 Driver</u> application, the log files will be stored wit
 
 ### Sending the Logs to the Support Team
 
-Once the logs are created, you can either attach them directly to the support case, or you can email them to [info@system76.com](mailto:info@system76.com) and reference your case number.
+Once the logs are created, you can either attach them directly to the support case, or you can email them to [careteam@system76.com](mailto:careteam@system76.com) and reference your case number.

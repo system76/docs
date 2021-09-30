@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: true
 section: software
+tableOfContents: true
 ---
 
 ### GPU requirements

@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 This guide will show you how to add the System76 software repository and install the driver on Ubuntu.

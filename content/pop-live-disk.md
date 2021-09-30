@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware-troubleshooting
+tableOfContents: true
 ---
 
 Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:

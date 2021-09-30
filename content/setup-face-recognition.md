@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open source face authentication tool.

@@ -1,7 +1,7 @@
 ---
-title: Disaster Data Recovery
+title: Data Recovery
 description: >
- How to back up your files if your OS doesn't boot
+ How to back up your files if your operating system doesn't boot
 keywords:
   - files
   - backup

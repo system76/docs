@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows users to log in with their existing network credentials.

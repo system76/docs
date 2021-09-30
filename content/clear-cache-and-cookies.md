@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: getting-help
+tableOfContents: true
 ---
 
 <!--

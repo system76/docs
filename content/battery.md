@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware
+tableOfContents: true
 ---
 
 Every running program consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.

@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: windows
+tableOfContents: true
 ---
 
 Most of the hardware in a System76 computer is Intel based, and Windows Update is rather effective at finding drivers. We also recommend using Intel's Driver Update utility, which will automatically detect and install drivers for Intel hardware.

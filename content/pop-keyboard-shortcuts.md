@@ -10,6 +10,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: pop
+tableOfContents: true
 ---
 
 ## Notable Keys

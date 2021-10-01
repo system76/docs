@@ -11,6 +11,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 This is a quick tutorial on getting Pop!_OS to run on a virtual machine.  Especially useful if you want to play around with Pop!_OS and see what it can do without having to commit to installing it somewhere.

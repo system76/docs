@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: general-hardware-info
+tableOfContents: true
 ---
 
 ## Disclaimer

@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: true
 section: solutions
+tableOfContents: true
 ---
 
 There is a bug in the installer program, Ubiquity, which may crash the initial setup of your computer if a WPA-Enterprise or WPA2-Enterprise access point is joined. WPA Enterprise access points can be joined after the system is finished being setup.

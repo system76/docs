@@ -18,6 +18,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: case-studies
+tableOfContents: true
 ---
 
 CodeWeavers was founded in 1996 during the advent of Linux with the goal of

@@ -18,6 +18,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: case-studies
+tableOfContents: true
 ---
 
 Mallee Blue Media is a web design, site management, and content marketing

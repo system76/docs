@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware-troubleshooting
+tableOfContents: true
 ---
 
 On some versions of the Serval WS (including the `serw11`), you may notice a "clicking" sound when the machine powers on and when you begin playing audio. This sound is the DAC (Digital-to-Analog Converter) powering on, and is not an indication that anything is wrong with the hardware.

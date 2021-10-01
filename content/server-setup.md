@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: about-your-computer
+tableOfContents: true
 
 redirect_from:
   - /serversetup

@@ -108,7 +108,6 @@ Run these commands based on what type of disk you have:
 | :----------------------------------- | :------------------------------ |
 | ```sudo mount /dev/nvme0n1p2 /mnt``` | ```sudo mount /dev/sda2 /mnt``` |
 
-
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/

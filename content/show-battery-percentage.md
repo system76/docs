@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 To show the battery percentage in the top bar in Pop!\_OS, you will need to use the GNOME Tweak Tool.

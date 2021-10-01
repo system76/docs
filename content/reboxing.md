@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: repairs-returns
+tableOfContents: true
 ---
 
 ### Step 1: Open Box

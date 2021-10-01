@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 If your system is running Pop!_OS 19.10, see the [Tensorman documentation](/articles/use-tensorman) for managing TensorFlow containers.

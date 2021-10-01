@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: network-troubleshooting
+tableOfContents: true
 ---
 
 ## Important Notes About Bluetooth

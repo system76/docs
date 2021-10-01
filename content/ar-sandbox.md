@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware
+tableOfContents: true
 ---
 
 [AR Sandbox Video](https://www.youtube.com/watch?v=uTPOE2XceEA)

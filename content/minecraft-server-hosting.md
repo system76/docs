@@ -9,6 +9,7 @@ keywords:
   - Games
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 Minecraft 1.17 was released on June 8, 2021. In this article, we will be going over how to set up a Minecraft server on your Pop!_OS or Ubuntu install. System76 and Mojang recommend having an 8GB minimum of system RAM but 16GB is preferred. Any hard drive over 128GB will work for a basic Minecraft server, a drive of 1TB to 2TB is recommended for having backups.  This article will use mostly Terminal commands, if you want a refresher on the terminal you can see our article [here](https://support.system76.com/articles/terminal-basics).

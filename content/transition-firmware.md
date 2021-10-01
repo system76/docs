@@ -10,6 +10,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 ## Firmware Switching (Proprietary Firmware or System76 Open Firmware)

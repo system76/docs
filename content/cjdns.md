@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 ## Install Dependencies

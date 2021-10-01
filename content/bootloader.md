@@ -16,10 +16,10 @@ hidden: false
 section: software-troubleshooting
 
 ---
-# Boot-loader Repair
+
 Systemd-boot is the boot-loader for Pop!_OS 18.04 and above while GRUB is the boot-loader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. A boot-loader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.
 
-#### Important Note
+### Important Note
 
 If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
 
@@ -45,8 +45,8 @@ sudo parted -ls
 
 And then look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive, or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. Here are some OS partition layout examples:
 
-
 Ubuntu 20.04 LTS
+
 ```
       Number  Start   End     Size    File system     Name      Flags
        1      2097kB  524MB   522MB   fat32                     boot, esp
@@ -75,6 +75,7 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 ```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
+
 Run these commands based on what type of disk you have:
 
 | NVMe Drives                                  | SATA Drives                            |
@@ -90,7 +91,9 @@ apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
 update-grub
 ```
+
 ---
+
 ### Legacy BIOS Boot
 
 If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
@@ -101,10 +104,10 @@ If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. Yo
 
 Run these commands based on what type of disk you have:
 
-
 | NVMe Drive                           | SATA Drive                      |
 | :----------------------------------- | :------------------------------ |
 | ```sudo mount /dev/nvme0n1p2 /mnt``` | ```sudo mount /dev/sda2 /mnt``` |
+
 
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
@@ -114,6 +117,7 @@ apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
 sudo update-grub
 ```
+
 ## systemd-boot
 
 ### EFI Boot
@@ -123,7 +127,9 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 ```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
+
 The expected output is:
+
 ```bash
 support@pop-os:~$ [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 Installed in UEFI mode
@@ -146,13 +152,13 @@ update-initramfs -c -k all
 exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
+
 ---
 
 ### Encrypted Disk
 
 To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
 
-<<<<<<< HEAD
 | NVMe Drive                                              | SATA Drive                                         |
 | :------------------------------------------------------ | :------------------------------------------------- |
 | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` |
@@ -161,6 +167,7 @@ To get access to an encrypted disk, these additional commands need run to unlock
 sudo lvscan
 sudo vgchange -ay
 ```
+
 And take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
 ```bash
@@ -184,19 +191,21 @@ for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
 sudo chroot /mnt
 ```
 
-You now have a root administer access to your installed OS. If you are trying either fix or undo changes that you made to the system, you now have the access to do so. Once you are done, and to exit from the <u>chroot</u> and reboot the computer, run these commands:
+You now have root administrator access to your installed OS. If you are trying to either fix or undo changes that you made to the system, you now have the access to do so. Once you are done, and to exit from the <u>chroot</u> and reboot the computer, run these commands:
 
 ```bash
 exit
 reboot
 ```
+
 ---
 
-After this, reboot your computer, removing the disk when prompted, and the computer should boot.
+As your system reboots, remove the disk when prompted. The computer should now boot normally.
 
 ## Troubleshooting
 
 ### chroot
+
 If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system.
 
 For example, the error is most frequently seen when trying to `chroot` to a 64-bit system (amd64) from a 32-bit Install CD (x86).
@@ -206,6 +215,7 @@ The solution is to use an Install CD which is using the same architecture as the
 Make sure to use `/dev/sda1` (the partition) and `/dev/sda` (the disk) or `/dev/nvme0n1p1` (the partition) and `/dev/nvme0n1` (the disk) correctly in the commands above.
 
 ### systemd-boot fails to start the OS
+
 If the system boots into a `BusyBox` environment, try `exit` to show potential failure causes.
 
 A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates an issue with the loader entry in `systemd-boot`.

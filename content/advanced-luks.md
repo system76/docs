@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 With Full Disk Encryption more than one password to decrypt the drive may be needed if more then one person is using the computer. In this situation seven extra passwords can be added with the instructions below.

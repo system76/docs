@@ -19,6 +19,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: case-studies
+tableOfContents: true
 ---
 
 A team of academic research scientists recently partnered with the Woods Hole

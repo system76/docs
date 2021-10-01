@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 Log files help our support team learn more about your system, and can be a great benefit during troubleshooting.

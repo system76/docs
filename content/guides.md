@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: about-your-computer
+tableOfContents: true
 ---
 
 To see ports, keyboard layouts, function keys, and product quickstart guides, find your model below.

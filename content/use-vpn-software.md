@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 ## Install ProtonVPN Graphical Client

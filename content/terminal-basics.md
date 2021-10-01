@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: about-your-os
+tableOfContents: true
 ---
 
 The <u>Terminal</u> is an interactive, text-based interface for your Operating System. When you type a command, you're basically telling your computer to do something very specific. Many commands will print information to the screen. Some will ask for input, and others may just return you to a prompt.

@@ -21,6 +21,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: ubuntu
+tableOfContents: true
 ---
 
 System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.

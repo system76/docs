@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: ubuntu
+tableOfContents: true
 ---
 
 The Ubuntu operating system provides all the features you would expect from a sophisticated desktop.

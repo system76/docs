@@ -14,7 +14,7 @@ keywords:
 image: http://support.system76.com/images/system76.png
 hidden: false
 section: software-troubleshooting
-
+tableOfContents: true
 ---
 
 Systemd-boot is the boot-loader for Pop!_OS 18.04 and above while GRUB is the boot-loader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. A boot-loader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.

@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: pop
+tableOfContents: true
 ---
 
 This roadmap details features which are currently-planned to be implemented in Pop!_OS, as well

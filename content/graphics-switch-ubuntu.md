@@ -17,6 +17,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 The following laptops have switchable graphics:

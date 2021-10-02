@@ -18,6 +18,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: case-studies
+tableOfContents: true
 ---
 
 Eficent is an integrator of an Enterprise Resource Planning (ERP) software

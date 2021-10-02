@@ -10,6 +10,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 #### For Ubuntu-Based Distros

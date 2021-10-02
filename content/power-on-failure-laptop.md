@@ -10,6 +10,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware-troubleshooting
+tableOfContents: true
 ---
 
 ## General Troubleshooting

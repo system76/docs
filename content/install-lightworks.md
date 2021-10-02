@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 Lightworks is a powerful video-editing tool used by industry professionals. This tutorial provides steps on installing Lightworks in Pop!\_OS.

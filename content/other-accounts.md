@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 There are a few reasons to have more then one account on your system. They include allowing the system to be used by other people in your home or office or troubleshooting issues with your user account.

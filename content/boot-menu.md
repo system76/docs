@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 To enter BIOS for most System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.

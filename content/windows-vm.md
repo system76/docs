@@ -8,6 +8,7 @@ keywords:
   - machine
   - Windows
   - Windows 10
+  - Windows 11
   - VM
   - System76
 

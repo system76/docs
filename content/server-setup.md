@@ -23,11 +23,11 @@ redirect_from:
 **Initial Server Settings** | **Value**
 ----------------------------|------------------
 Username                    | oem
-Password                    | system serial number
+Password                    | system serial number (if it is 7X1234 then the password would be 7x1234)
 Network Address (eth0)      | Assigned by DHCP
 Network Address (eth1)      | Unconfigured
 
-for example if the serial number is 7X1234 then the password would be 7x1234.
+> For example if the serial number is 7X1234 then the password would be 7x1234.
 
 Connect your server to a monitor to determine the IP addresses assigned to your server. Afterwards you can configure and manage your server from any other computer on your network.
 

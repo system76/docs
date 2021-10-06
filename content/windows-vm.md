@@ -22,6 +22,8 @@ redirect_from:
   - /windows
 ---
 
+> Note: Windows 11 at this time does not support virtualization.  You can still install Windows 10 in a virtualiza machine and is still supported till [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+
 Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.
 
 Virtual machines do impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot. Setting up a Windows-Pop!_OS Dual Boot is beyond the scope of this support.

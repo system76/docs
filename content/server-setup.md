@@ -23,7 +23,7 @@ redirect_from:
 **Initial Server Settings** | **Value**
 ----------------------------|------------------
 Username                    | oem
-Password                    | system serial number (if it is 7X1234 then the password would be 7x1234)
+Password                    | system serial number
 Network Address (eth0)      | Assigned by DHCP
 Network Address (eth1)      | Unconfigured
 

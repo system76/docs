@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 Alright! Hitch on and let's go on!

@@ -15,6 +15,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 Normally, all Personal Package Archives (PPAs) and third-party repositories are disabled when updating to a new release of the operating system.  This helps keep upgrades simpler and prevents PPAs that haven't been properly updated for the new release from breaking the upgrade.

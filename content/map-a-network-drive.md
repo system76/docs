@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 If you have a storage location on a network drive, you can easily map the location using Files in Pop!\_OS.

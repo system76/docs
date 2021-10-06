@@ -56,20 +56,24 @@ sudo nano /etc/hostname
 
 Example `/etc/hosts` file:
 
-> 127.0.0.1       localhost  
-> 10.120.150.5    fileserver.mydomain.com fileserver  
->
-> \# The following lines are desirable for IPv6 capable hosts  
-> ::1     ip6-localhost ip6-loopback  
-> fe00::0 ip6-localnet  
-> ff00::0 ip6-mcastprefix  
-> ff02::1 ip6-allnodes  
-> ff02::2 ip6-allrouters  
-> ff02::3 ip6-allhosts  
+```
+127.0.0.1       localhost  
+10.120.150.5    fileserver.mydomain.com fileserver  
+
+# The following lines are desirable for IPv6 capable hosts  
+::1     ip6-localhost ip6-loopback  
+fe00::0 ip6-localnet  
+ff00::0 ip6-mcastprefix  
+ff02::1 ip6-allnodes  
+ff02::2 ip6-allrouters  
+ff02::3 ip6-allhosts  
+```
 
 Example `/etc/hostname` file:
 
-> fileserver
+```
+fileserver
+```
 
 ---
 
@@ -135,24 +139,26 @@ sudo systemctl restart networking
 
 Example `/etc/network/interfaces` file:
 
-> \# This is the loopback interface - Do not adjust  
-> auto lo  
-> iface lo inet loopback  
->
-> \# Primary Network Interface  
-> auto eth0  
-> iface eth0 inet static  
-> address 10.13.15.10  
-> netmask 255.255.255.0  
-> gateway 10.13.15.1  
-> dns-nameservers 8.8.8.8 8.8.4.4  
->
-> auto eth1  
-> iface eth1 inet static  
-> address 10.13.15.11  
-> netmask 255.255.255.0  
-> gateway 10.13.15.1  
-> dns-nameservers 8.8.8.8 8.8.4.4  
+```
+# This is the loopback interface - Do not adjust  
+auto lo  
+iface lo inet loopback  
+
+# Primary Network Interface  
+auto eth0  
+iface eth0 inet static  
+address 10.13.15.10  
+netmask 255.255.255.0  
+gateway 10.13.15.1  
+dns-nameservers 8.8.8.8 8.8.4.4  
+
+auto eth1  
+iface eth1 inet static  
+address 10.13.15.11  
+netmask 255.255.255.0  
+gateway 10.13.15.1  
+dns-nameservers 8.8.8.8 8.8.4.4  
+```
 
 ---
 

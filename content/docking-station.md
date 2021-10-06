@@ -79,11 +79,12 @@ Community members have reported that the following docks work with our products:
 - [Lenovo ThinkPad Thunderbolt 3 Workstation Dock Gen 2](https://www.lenovo.com/us/en/accessories-and-monitors/docking/universal-cable-docks-thunderbolt/TBT-WS-Dock-Gen-2/p/40ANY230US) [[community-tested](https://github.com/system76/docs/pull/517) on an Intel sytem] <sup>1</sup>
 - [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
   - Ethernet and DVI ports not tested.
-- [Plugable UD-ULTCDL Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
+- [Plugable UD-ULTC4K USB-C Triple 4K Display Dock](https://plugable.com/products/ud-ultc4k) [[community-tested](https://github.com/system76/docs/pull/790) on an NVIDIA system] <sup>2,3</sup>
+- [Plugable UD-ULTCDL USB-C Triple Display Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
 
 <sup>1</sup> Does not need the DisplayLink Driver installed to work.  
-<sup>2</sup> On the Gazelle 15 (gaze15), requires GTX 1660 Ti graphics for video output via DisplayPort over USB-C.  
-<sup>3</sup> NVIDIA cards have some minor graphic issues with what is rendered under the mouse as well as scrollbars.
+<sup>2</sup> For video output via DisplayPort over USB-C, the Gazelle 15 (gaze15) requires GTX 1660 Ti graphics; the Gazelle 16 (gaze16) requires RTX 3060 graphics.  
+<sup>3</sup> NVIDIA cards have some minor graphical issues with what is rendered under the mouse as well as scrollbars.  
 
 ## Installing the DisplayLink Driver
 

@@ -20,7 +20,8 @@ tableOfContents: true
 
 ### Setting your System up for Gaming
 
-Following the steps in [Gaming for Linux](linux-gaming.md) article will ensure your system is setup and ready to use AMD's Fidelity SuperResolution (FSR). The most important steps are: 
+Following the steps in [Gaming for Linux](linux-gaming.md) article will ensure your system is setup and ready to use AMD's Fidelity SuperResolution (FSR). The most important steps are:
+
 1. [Enable Steam Play (Proton)](linux-gaming.md#enable-steam-play-proton)
 2. Get the latest version of Proton-GE via [Protonup](linux-gaming.md#install-protonup-to-manage-custom-proton-versions)
 3. Enable the latest version of Proton-GE by [changing the Proton version for each game](linux-gaming.md#changing-the-proton-version-for-a-specific-game)
@@ -60,6 +61,7 @@ WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_STRENGTH=1 %command%
 ### Setup your In-game Resolution
 
 Once the game is launched, go to the game's Options menu and set the following, typically under "Video Options":
+
 * Set the display to Fullscreen (not Bordered or Borderless Window!)
 * Set the resolution to your quality preset resolution (ex. Ultra-Quality for a 1920 x 1080 monitor would be 1477 x 831)
 * If necessary, restart your game!

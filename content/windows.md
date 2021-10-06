@@ -1,5 +1,5 @@
 ---
-title: Windows
+title: Windows (Install)
 description: >
   If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
 keywords:

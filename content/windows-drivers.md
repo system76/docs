@@ -4,6 +4,8 @@ description: >
   If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
 keywords:
   - Windows
+  - Windows 10
+  - Windows 11
   - Microsoft
   - drivers
 
@@ -14,6 +16,7 @@ hidden: false
 section: windows
 tableOfContents: true
 ---
+> Note: Windows 11 is not supported on all systems, if your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3) try Windows 10.  Windows 10 is still supported till [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).  Driver support on Windows 11 maybe limited.
 
 Most of the hardware in a System76 computer is Intel based, and Windows Update is rather effective at finding drivers. We also recommend using Intel's Driver Update utility, which will automatically detect and install drivers for Intel hardware.
 

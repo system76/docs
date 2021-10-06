@@ -25,6 +25,8 @@ System76 encourages users to take ownership of their machines and install whatev
 
 The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
 
+Windows 11 is not supported on all systems, if your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3) try Windows 10.  Windows 10 is still supported till [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+
 ## Creating Install Media
 
 Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software-download/windows10ISO) from Microsoft's website. Plug in a USB flash drive (8GB or larger) to use as an installation disk. The USB drive will be wiped during this process.

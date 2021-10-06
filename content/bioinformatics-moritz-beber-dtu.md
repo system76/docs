@@ -20,6 +20,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: case-studies
+tableOfContents: true
 ---
 
 From toys to medicine, manufacturing today is highly dependent on oil-based

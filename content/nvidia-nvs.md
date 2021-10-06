@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: true
 section: software
+tableOfContents: true
 ---
 
 ### Install the NVIDIA driver

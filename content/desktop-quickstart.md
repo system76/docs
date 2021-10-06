@@ -15,6 +15,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: about-your-computer
+tableOfContents: true
 ---
 
 Congratulations on receiving your System76 Thelio Desktop! Read this article to get started quickly.

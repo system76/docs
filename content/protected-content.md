@@ -20,6 +20,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: media
+tableOfContents: true
 
 redirect_from:
   - /chromeflash

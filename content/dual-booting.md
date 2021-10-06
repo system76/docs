@@ -5,6 +5,8 @@ keywords:
   - System76
   - dual boot
   - Windows
+  - Windows 10
+  - Windows 11
   - Linux
 
 facebookImage: /_social/article

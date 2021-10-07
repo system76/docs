@@ -28,17 +28,19 @@ section: software
 tableOfContents: true
 ---
 
-> **Disclaimer**
->
->This article explains how to install Windows on a System76 computer (with UEFI firmware) alongside Pop!_OS.
->
->System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for informational purposes only.
->
->System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
->
->The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
->
->**Important Note:** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3) try Windows 10.  Windows 10 is still supported until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+>**Windows 11 Compatibility** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+
+## Disclaimer
+
+This article explains how to install Windows on a System76 computer (with UEFI firmware) alongside Pop!_OS.
+
+System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for informational purposes only.
+
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
+
+### Scope of Support
+
+The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
 
 ## Creating Install Media
 
@@ -54,10 +56,11 @@ sudo pip3 install WoeUSB-ng
 Once installed, open the WoeUSB-ng application (entering your password when prompted) and perform the following steps:
 
 1. Select the Windows .iso file as the source.
+
+    - To find the Windows .iso file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
+
 2. Select the USB flash drive as the target device.
 3. Click `Install`.
-
-> To find the Windows .iso file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
 
 ![WoeUSB-ng](/images/dual-booting/woeusb.png)
 

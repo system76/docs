@@ -1,7 +1,7 @@
 ---
 title: Windows (Install)
 description: >
-  If you are trying to install Windows on a System76 computer, here are some instructions for locating the drivers.
+  This article provides instructions for installing Windows on System76 hardware, in a virtual machine, and for locating Windows drivers.
 keywords:
   - Windows
   - Windows 10
@@ -53,10 +53,11 @@ sudo pip3 install WoeUSB-ng
 
 Once installed, open the WoeUSB-ng application (entering your password when prompted) and perform the following steps:
 
-1.  Select the Windows .iso file as the source.
--   To find the file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
-2.  Select the USB flash drive as the target device.
-3.  Click `Install`.
+1. Select the Windows .iso file as the source.
+2. Select the USB flash drive as the target device.
+3. Click `Install`.
+
+> To find the Windows .iso file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
 
 ![WoeUSB-ng](/images/dual-booting/woeusb.png)
 
@@ -66,8 +67,8 @@ It may take several minutes or more for the process to finish-- wait until the `
 
 There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
 
--   [Installing on a Dedicated Drive (Recommended)](#installing-on-a-dedicated-drive)
--   [Installing on a Shared Drive - Starting with Pop!_OS](#installing-on-a-shared-drive-starting-with-pop_os)
+- [Installing on a Dedicated Drive (Recommended)](#installing-on-a-dedicated-drive)
+- [Installing on a Shared Drive - Starting with Pop!_OS](#installing-on-a-shared-drive-starting-with-pop_os)
 
 ## Installing on a Dedicated Drive
 
@@ -79,10 +80,10 @@ For the safest experience, power off your machine, [open the case](https://tech-
 
 Plug the [install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
 
--   <kbd>Esc</kbd> for laptops with Open Firmware
--   <kbd>F7</kbd> for laptops with proprietary firmware
--   <kbd>F8</kbd> or <kbd>F12</kbd> for Thelio desktops
--   <kbd>F10</kbd> for Meerkat desktops
+- <kbd>Esc</kbd> for laptops with Open Firmware
+- <kbd>F7</kbd> for laptops with proprietary firmware
+- <kbd>F8</kbd> or <kbd>F12</kbd> for Thelio desktops
+- <kbd>F10</kbd> for Meerkat desktops
 
 From the boot menu, select the drive containing the Windows After the system is fully up-to-date, you can find any additional drivers needed for Open Firmware systems [here](https://github.com/system76/windows-drivers).installer, then wait for the installer to boot.
 
@@ -144,11 +145,11 @@ Eventually, the Windows out-of-box experience wizard will start. Select your cou
 
 Follow the wizard to select your preferences:
 
--   Keyboard layout
--   Network setup, if using WiFi
--   Account details
--   Privacy settings
--   Cortana settings
+- Keyboard layout
+- Network setup, if using WiFi
+- Account details
+- Privacy settings
+- Cortana settings
 
 After completing the wizard, Windows will display a slideshow while it finishes setting up. Eventually, you will see the Windows desktop:
 
@@ -210,10 +211,10 @@ Exit out of GParted and use the top-right menu to power off the system.
 
 Plug the [Windows install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
 
--   <kbd>Esc</kbd> for laptops with Open Firmware
--   <kbd>F7</kbd> for laptops with proprietary firmware
--   <kbd>F8</kbd> or <kbd>F12</kbd> for Thelio desktops
--   <kbd>F10</kbd> for Meerkat desktops
+- <kbd>Esc</kbd> for laptops with Open Firmware
+- <kbd>F7</kbd> for laptops with proprietary firmware
+- <kbd>F8</kbd> or <kbd>F12</kbd> for Thelio desktops
+- <kbd>F10</kbd> for Meerkat desktops
 
 From the boot menu, select the drive containing the Windows installer, then wait for the installer to boot.
 
@@ -265,11 +266,11 @@ Eventually, the Windows out-of-box experience wizard will start. Select your cou
 
 Follow the wizard to select your preferences:
 
--   Keyboard layout
--   Network setup, if using WiFi
--   Account details
--   Privacy settings
--   Cortana settings
+- Keyboard layout
+- Network setup, if using WiFi
+- Account details
+- Privacy settings
+- Cortana settings
 
 After completing the wizard, Windows will display a slideshow while it finishes setting up. Eventually, you will see the Windows desktop:
 
@@ -358,23 +359,25 @@ This will ensure Windows fully shuts down and allows other operating systems to 
 Depending on how you installed Windows and which firmware your computer is running, there may be several ways to chooose which OS to boot.
 
 **Using the UEFI firmware:**
--   **Change the default OS** using the [UEFI setup menu](/articles/boot-menu/) (while booting, hold down <kbd>Esc</kbd> on Open Firmware laptops, <kbd>F2</kbd> on closed firmware laptops, <kbd>Del</kbd> on Thelio desktops, or <kbd>F2</kbd> on Meerkat desktops.)
--   Navigate to the boot options and set the desired order, then save and exit.
--   If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
--   **Boot the secondary OS** using the [UEFI boot menu](/articles/boot-menu/) (while booting, hold down <kbd>Esc</kbd> on Open Firmware laptops, <kbd>F7</kbd> on closed firmware laptops, <kbd>F8</kbd> or <kbd>F12</kbd> on Thelio desktops, or <kbd>F10</kbd> on Meerkat desktops.)
--   Select the desired OS (or the drive that it's on.)
--   If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
+
+- **Change the default OS** using the [UEFI setup menu](/articles/boot-menu/) (while booting, hold down <kbd>Esc</kbd> on Open Firmware laptops, <kbd>F2</kbd> on closed firmware laptops, <kbd>Del</kbd> on Thelio desktops, or <kbd>F2</kbd> on Meerkat desktops.)
+- Navigate to the boot options and set the desired order, then save and exit.
+- If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
+- **Boot the secondary OS** using the [UEFI boot menu](/articles/boot-menu/) (while booting, hold down <kbd>Esc</kbd> on Open Firmware laptops, <kbd>F7</kbd> on closed firmware laptops, <kbd>F8</kbd> or <kbd>F12</kbd> on Thelio desktops, or <kbd>F10</kbd> on Meerkat desktops.)
+- Select the desired OS (or the drive that it's on.)
+- If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
 
 **Using systemd-boot**:
--   This menu is part of Pop!_OS, so in order to use it effectively, Pop!_OS must be set as the default OS in the firmware settings as described in the previous section.
--   **Change the default OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
--   Highlight the desired default OS using the arrow keys, then press <kbd>d</kbd> to make it the default.
--   **Boot the secondary OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
--   Highlight the selected OS, then press <kbd>Enter</kbd> to boot.
--   **Get prompted to choose the OS on every boot** using the `systemd-boot` menu.
--   While booting, hold down <kbd>Spacebar</kbd> to enter the menu.
--   Press the <kbd>+</kbd> key (or <kbd>Shift</kbd> + <kbd>=</kbd>) to increase the number of seconds the system will wait before booting the default OS; press <kbd>-</kbd> to decrease the number of seconds.
--   Once a timer is set, the menu will display on every boot without having to hold down <kbd>Spacebar</kbd>. (To reverse this, press <kbd>-</kbd> until the timer is back to zero.)
+
+- This menu is part of Pop!_OS, so in order to use it effectively, Pop!_OS must be set as the default OS in the firmware settings as described in the previous section.
+- **Change the default OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
+- Highlight the desired default OS using the arrow keys, then press <kbd>d</kbd> to make it the default.
+- **Boot the secondary OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
+- Highlight the selected OS, then press <kbd>Enter</kbd> to boot.
+- **Get prompted to choose the OS on every boot** using the `systemd-boot` menu.
+- While booting, hold down <kbd>Spacebar</kbd> to enter the menu.
+- Press the <kbd>+</kbd> key (or <kbd>Shift</kbd> + <kbd>=</kbd>) to increase the number of seconds the system will wait before booting the default OS; press <kbd>-</kbd> to decrease the number of seconds.
+- Once a timer is set, the menu will display on every boot without having to hold down <kbd>Spacebar</kbd>. (To reverse this, press <kbd>-</kbd> until the timer is back to zero.)
 
 ### Repairing the Pop!_OS Bootloader
 
@@ -401,6 +404,7 @@ You should see `RTC in local TZ: yes` in the output. If you need to revert this 
 ```bash
 timedatectl set-local-rtc 0 --adjust-system-clock
 ```
+
 ## Install Windows in a Virtual Machine
 
 Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.

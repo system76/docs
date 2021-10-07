@@ -80,7 +80,7 @@ Run these commands based on what type of disk you have:
 
 | NVMe Drives                                  | SATA Drives                            |
 | :------------------------------------------- | :------------------------------------- |
-| ```sudo mount /dev/mvme0n1p2 /mnt```         | ```sudo mount /dev/sda2 /mnt```        |
+| ```sudo mount /dev/nvme0n1p2 /mnt```         | ```sudo mount /dev/sda2 /mnt```        |
 |```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` |```sudo mount /dev/sda1 /mnt/boot/efi```|
 
 ```bash

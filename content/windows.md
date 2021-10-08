@@ -1,7 +1,7 @@
 ---
 title: Windows (Install)
 description: >
-  This article provides instructions for installing Windows on System76 hardware, in a virtual machine, and for locating Windows drivers.
+  Instructions for installing Windows on System76 hardware or within a virtual machine, and for locating Windows drivers.
 keywords:
   - Windows
   - Windows 10
@@ -28,7 +28,7 @@ section: software
 tableOfContents: true
 ---
 
->**Windows 11 Compatibility** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+>**Windows 11 Compatibility:** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
 
 ## Disclaimer
 
@@ -46,7 +46,7 @@ The contents of this support article are the **total extent of support and troub
 
 Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software-download/windows10ISO) from Microsoft's website. Plug in a USB flash drive (8GB or larger) to use as an installation disk. The USB drive will be wiped during this process.
 
->**NOTE:** A USB Drive and WoeUSB are not necessary for virtual machine installs. The instructions for obtaining the ISO file (above) are the same.
+
 
 On Pop!_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
 
@@ -59,7 +59,7 @@ Once installed, open the WoeUSB-ng application (entering your password when prom
 
 1. Select the Windows .iso file as the source.
 
-    - To find the Windows .iso file, select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
+    - Select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
 
 2. Select the USB flash drive as the target device.
 3. Click `Install`.
@@ -72,41 +72,41 @@ It may take several minutes or more for the process to finish-- wait until the `
 
 There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
 
-- [Installing in a Virtual Machine (Preferred)](#install-windows-in-a-virtual-machine)
+- [Installing in a Virtual Machine](#install-windows-in-a-virtual-machine)
 - [Installing on a Dedicated Drive (Recommended)](#installing-on-a-dedicated-drive)
 - [Installing on a Shared Drive - Starting with Pop!_OS](#installing-on-a-shared-drive-starting-with-pop_os)
 
 ## Install Windows in a Virtual Machine
 
-Setting up a Windows Virtual Machine is easy and makes for a great experience running Windows on System76 computers. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.
+> **Understand Virtual Machines:**
+>
+>Virtual machines are a method of running multiple OSes on your computer simultaneously. It's conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.
 
-Virtual machines do impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot. Setting up a Windows-Pop!_OS Dual Boot is beyond the scope of this support.
+Setting up a Windows virtual machine (VM) allows running Windows on a virtual drive within the OS. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.
 
-### Understand Virtual Machines
-
-Virtual Machines are a method of running multiple OSes on your computer simultaneously. It's conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.
+Virtual machines impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot.
 
 ### Enable AMD-V
 
-For the Thelio (thelio-r1) and Thelio Major (thelio-major-r1) you will need to enable AMD-V in the BIOS by rebooting and holding the Del key. Then enable SVM mode with the following path:
+On some models, for example, Thelio (thelio-r1) and Thelio Major (thelio-major-r1), you will need to enable AMD-V in the BIOS by rebooting and holding the Del key. Then enable SVM mode with the following path:
 
 M.I.T tab -> Advanced Frequency Settings -> Advanced CPU Core Settings -> SVM mode -> Enabled.
 
 ![AMD BIOS Settings](/images/windows/AMD-BIOS.png)
 
+<!-- TO-DO: Create an article on AMD-V and add a hyperlink to this article.-->
+
 ### Install VirtualBox
 
-Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it's easy to set up and use, and available for free. It's available in the <u>Pop!_Shop</u>.
+Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it's free and easy to use. It's available in the <u>Pop!_Shop</u>.
 
-Open up the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click on the <u>VirtualBox</u> result with the blue icon. You should see the window below:
+Open the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click on the <u>VirtualBox</u> result with the blue icon. You should see the window below:
 
-![VirtualBox Listing in USC](/images/windows/step1.png)
+![VirtualBox Listing in USC](/images/windows/virtualbox-popshop.png)
 
-Click on the Install button, then wait for the download and install process to complete.
+Click the `Install` button, then wait for the download and install process to complete.
 
 ### Obtain Windows Image
-
-You will need to obtain a Windows Installation disk image. If you have a DVD drive, an Installation DVD will also work. If you get a disk image file, be sure that it's an ISO format file, as this is what <u>VirtualBox</u> will work with. Save the ISO file somewhere on your computer: the `Documents` folder in your home folder would be a good place.
 
 Windows 10 can be downloaded from [here](https://www.microsoft.com/en-us/software-download/windows10ISO).
 
@@ -118,15 +118,15 @@ Once you have <u>VirtualBox</u> installed, we'll need to create the virtual comp
 
 ![VirtualBox Main Window](/images/windows/step4.png)
 
-Click on the **New** button in the toolbar, then give your machine a name you can remember it by. If it isn't already filled out, set the machine "Type" to **Microsoft Windows** and the "Version" to **Windows 10 64-bit**, and click **Next**.
+Click on the `New` button in the toolbar, then give your machine a name. If it isn't already filled out, set the machine "Type" to `Microsoft Windows` and the "Version" to `Windows 10 64-bit`, and click `Next`.
 
 ![Setting up the Virtual Machine](/images/windows/step5.png)
 
-Increase the Virtual Machine Memory Size to half of the total RAM available. For the Hard Drive, you'll want to choose to **Create a virtual hard drive now**.
+Increase the virtual machine `memory` size to half of the total RAM available. For the Hard Drive, you'll want to choose to `Create a virtual hard drive now`.
 
 ![Creating a virtual hard drive](/images/windows/step6.png)
 
-For the options in creating the virtual hard drive, create a **VHD (Virtual Hard Disk)**, **Fixed size**, at least 16 GB, or larger.
+For the options in creating the virtual hard drive, create a `VHD (Virtual Hard Disk)`, `Fixed size`, 16 GB or larger.
 
 ### Install Windows
 
@@ -134,39 +134,35 @@ Once you've created the new VM, you should see it listed in the <u>VirtualBox</u
 
 ![VM listed in the VirtualBox Window](/images/windows/step7.png)
 
-The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the **Start** button. This is equivalent to pressing the power button on the virtual computer.
+The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the `Start` button. This is equivalent to pressing the power button on the virtual computer.
 
-<u>VirtualBox</u> will now ask you to select a start-up disk. We recommend finding a digital download (ISO File), since Windows 10 is not distributed on DVD.
-
-Click the small folder icon next to the dropdown, then point <u>VirtualBox</u> at your ISO file and open it. <u>VirtualBox</u> will insert the virtual DVD into the virtual optical drive, then boot the disk.
+<u>VirtualBox</u> will now ask you to select a start-up disk. Click the small folder icon next to the dropdown, then point <u>VirtualBox</u> at your ISO file and open it. <u>VirtualBox</u> will then boot the file.
 
 ![Start-up disk selection](/images/windows/step8.png)
 
 ![Windows booting up](/images/windows/step9.png)
 
-After Windows finishes booting from the DVD, you should see the Windows Setup window. Select Language, Time and Currency, and Keyboard preferences, then click **Next**.
+After Windows finishes booting from the DVD, you should see the Windows Setup window. Select Language, Time and Currency, and Keyboard preferences, then click `Next`.
 
 ![Windows Setup window](/images/windows/step10.png)
 
-On the next screen, click **Install Now** to start the installation.
+On the next screen, click `Install Now` to start the installation.
 
 ![Click Install Now to start the installation](/images/windows/step11.png)
 
-You'll next need to enter your product key for the copy of windows you got. Be sure to enter this exactly as it's listed on the sticker or in your email.  Windows 10 can be run without a product key for a rather long time without issues.  If you don't have a product key, select **I don't have a key**.  Otherwise, click **Next**.
+You'll next need to enter your product key for your copy of Windows. Be sure to enter this exactly as it's listed on the sticker or in your email.  Windows 10 can be run without a product key temporarily without issues.  If you don't have a product key, select `I don't have a key`.  Otherwise, click `Next`.
 
 ![Enter your Product Key](/images/windows/step12.png)
 
-Review the terms of the EULA, then check the box to accept the license terms and click **Next**.
+Review the terms of the EULA. You are required to accept the terms of the EULA before completing the installation. Checking the box and clicking `Next` assumes you do accept the terms and agree to be bound by them. Do not continue with the installation if you don't agree to the terms in the EULA.
 
 ![Accept the EULA](/images/windows/step13.png)
 
-You are required to accept the terms of the EULA before completing the installation. Checking the box and clicking **Next** assumes you do accept the terms and agree to be bound by them. Do not continue with the installation if you don't agree to the terms in the EULA.
-
-Make sure you select **Custom: Install Windows only (advanced)**, as this is a new installation of Windows.
+Make sure you select `Custom: Install Windows only (advanced)`, as this is a new installation of Windows.
 
 ![Select the Custom: Install Windows only option](/images/windows/step14.png)
 
-Select the **Drive 0 Unallocated Space** area, then click **Next**.
+Select the `Drive 0 Unallocated Space` area, then click `Next`.
 
 ![Selecting Partition 2 for installation](/images/windows/step15.png)
 
@@ -174,23 +170,23 @@ Windows will next begin copying over the installation files onto the virtual har
 
 ![Installing Windows](/images/windows/step16.png)
 
-When the VM reboots, you may be prompted to "Press any key to boot from CD or DVD...". Do not press any keys here, or the installation will start over.
+When the VM reboots, you may be prompted to "Press any key to boot from CD or DVD...". **Do not press any keys here, or the installation will start over.**
 
 ![Do not press any key. Seriously.](/images/windows/step17.png)
 
-Windows will now finish installing files and get the system ready to be set up. The virtual machine may reboot again. Remember not to press any keys to boot from the CD or DVD.
+Windows will now finish installing files and get the system ready to be set up. The virtual machine may reboot again. **Remember** do not press any keys to boot from the CD or DVD.
 
 ![Getting ready](/images/windows/step18.png)
 
-After the process is finalized, you'll be able to begin the set up process.
+After the process is finalized, you'll be able to begin the setup process.
 
 ### Set Up Windows
 
-Set up will begin with the following screen:
+Setup will begin with the following screen:
 
 ![Get Going Fast](/images/windows/step19.png)
 
-You may select either express settings, or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the latest version of the OS. This step may take a while, depending on your Internet connection. When it's finished, Windows will ask you who owns this PC. It's recommended to select **I own it** and click **Next**.
+You may select either express settings, or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the latest version of the OS. This step may take a while, depending on your Internet connection. When it's finished, Windows will ask you who owns this PC. It's recommended to select `I own it` and click `Next`.
 
 ![Who owns this PC?](/images/windows/step20.png)
 

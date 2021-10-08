@@ -89,7 +89,7 @@ powertop
 Powertop can also generate HTML reports with this command:
 
 ```bash
-sudo powertop --html=report
+sudo powertop --html=report.html
 ```
 
 Open the report located at `~/report.html` to see the results.

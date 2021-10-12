@@ -30,6 +30,38 @@ tableOfContents: true
 
 >**Windows 11 Compatibility:** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
 
+#### Compatibility Table
+---
+| Laptop Model | Windows 10 Support | Windows 11 Support |
+| ------------ | ------------------ | ------------------ |
+| addw1        | Yes                | Yes                |
+| addw2        | Yes                | No                 |
+| bonw14       | Yes                | No                 |
+| darp6        | Yes                | No                 |
+| galp4        | Yes                | No                 |
+| galp5        | Yes                | No                 |
+| gaze15       | Yes                | No                 |
+| gaze16       | Yes                | No                 |
+| lemp9        | Yes                | No                 |
+| lemp10       | Yes                | No                 |
+| oryp6        | Yes                | No                 |
+| oryp7        | Yes                | No                 |
+| pang10       | Yes                | Yes                |
+| pang11       | Yes                | No                   |
+| serw12       | Yes                | Yes                |
+
+| Desktop Model     | Windows 10 Support | Windows 11 Support |
+| ----------------- | ------------------ | ------------------ |
+| meer5             | Yes                | Yes                |
+| meer6             | Yes                | Yes                |
+| thelio-mira-r1    | Yes                | Yes*                |
+| thelio-mira-b1    | Yes                | Yes*                |
+| thelio-major      | Yes                | Yes*                |
+| thelio-mega-r1    | Yes                | Yes*                |
+| thelio-massive-b1 | Yes                | Yes*                |
+
+> Please Note: For desktop computers you will want to confirm you have an 8th Gen Intel Core Proccesor or 2000 Ryzen AMD Proccor, and that you have the TPM enable in the UEFI.
+
 ## Disclaimer
 
 This article explains how to install Windows on a System76 computer (with UEFI firmware) alongside Pop!_OS.

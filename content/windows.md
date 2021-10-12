@@ -60,7 +60,7 @@ tableOfContents: true
 | thelio-mega-r1    | Yes                | Yes*                |
 | thelio-massive-b1 | Yes                | Yes*                |
 
-> Please Note: For desktop computers you will want to confirm you have an 8th Gen Intel Core Proccesor or 2000 Ryzen AMD Proccor, and that you have the TPM enable in the UEFI.
+> Please Note: For desktop computers you will want to confirm you have an 8th Gen Intel Core Proccesor or 2000 Ryzen AMD Proccesor, and that you have the TPM enable in the UEFI.
 
 ## Disclaimer
 

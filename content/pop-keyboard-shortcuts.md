@@ -50,7 +50,7 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 | <kbd>Enter</kbd>                                                        | Apply changes (exit adjustment mode)     |
 | <kbd>ESC</kbd>                                                          | Cancel (exit adjustment mode)            |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Left click + Drag         | Move window (without adjustment mode)    |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Right cick + Drag         | Resize window (without adjustment mode)  |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Right click + Drag         | Resize window (without adjustment mode)  |
 
 ### Manipulate windows
 

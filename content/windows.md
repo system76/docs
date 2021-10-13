@@ -28,9 +28,12 @@ section: software
 tableOfContents: true
 ---
 
+## Windows 11
+
 >**Windows 11 Compatibility:** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
 
-#### Compatibility Table
+### Compatibility Table
+
 ---
 | Laptop Model | Windows 10 Support | Windows 11 Support |
 | ------------ | ------------------ | ------------------ |
@@ -60,13 +63,13 @@ tableOfContents: true
 | thelio-mega-r1    | Yes                | Yes*                |
 | thelio-massive-b1 | Yes                | Yes*                |
 
-> Please Note: For desktop computers you will want to confirm you have an 8th Gen Intel Core Proccesor or 2000 Ryzen AMD Proccesor, and that you have the TPM enable in the UEFI.
+> **NOTE:** For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
 
 ## Disclaimer
 
 This article explains how to install Windows on a System76 computer (with UEFI firmware) alongside Pop!_OS.
 
-System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for informational purposes only.
+System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for information purposes only.
 
 System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
 
@@ -77,8 +80,6 @@ The contents of this support article are the **total extent of support and troub
 ## Creating Install Media
 
 Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software-download/windows10ISO) from Microsoft's website. Plug in a USB flash drive (8GB or larger) to use as an installation disk. The USB drive will be wiped during this process.
-
-
 
 On Pop!_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
 
@@ -98,9 +99,9 @@ Once installed, open the WoeUSB-ng application (entering your password when prom
 
 ![WoeUSB-ng](/images/dual-booting/woeusb.png)
 
-It may take several minutes or more for the process to finish-- wait until the `Installation succeeded!` message appears.
+It may take several minutes or more for the process to finish -- wait until the `Installation succeeded!` message appears.
 
-## Planning the Installation
+### Planning the Installation
 
 There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
 
@@ -130,21 +131,17 @@ M.I.T tab -> Advanced Frequency Settings -> Advanced CPU Core Settings -> SVM mo
 
 ### Install VirtualBox
 
-Running a virtual machine will require a Hypervisor, which is a special application that runs and manages the virtual machine. We recommend installing <u>VirtualBox</u> for your hypervisor, since it's free and easy to use. It's available in the <u>Pop!_Shop</u>.
+To act as your hypervisor, we recommend installing `VirtualBox`, since it's free and easy to use. `VirtualBox` is available from Oracle's website [here](https://www.virtualbox.org) or in the `Pop!_Shop`.
 
-Open the <u>Pop!_Shop</u>, then enter *virtualbox* in the search field. Click on the <u>VirtualBox</u> result with the blue icon. You should see the window below:
+Open the `Pop!_Shop`, then enter "virtualbox" in the search field. Click on the `VirtualBox` result with the blue icon. You should see the window below:
 
 ![VirtualBox Listing in USC](/images/windows/virtualbox-popshop.png)
 
 Click the `Install` button, then wait for the download and install process to complete.
 
-### Obtain Windows Image
-
-Windows 10 can be downloaded from [here](https://www.microsoft.com/en-us/software-download/windows10ISO).
-
 ### Create Virtual Machine
 
-Once you have <u>VirtualBox</u> installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the Super Key on your keyboard <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and then enter *virtualbox* in the search field.
+Once you have `VirtualBox` installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the `SUPER` Key on your keyboard and then enter "virtualbox" in the search field.
 
 ![Opening VirtualBox through the Dash](/images/windows/step3.png)
 
@@ -162,19 +159,19 @@ For the options in creating the virtual hard drive, create a `VHD (Virtual Hard 
 
 ### Install Windows
 
-Once you've created the new VM, you should see it listed in the <u>VirtualBox</u> window:
+Once you've created the new VM, you should see it listed in the `VirtualBox` window:
 
 ![VM listed in the VirtualBox Window](/images/windows/step7.png)
 
-The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlight orange, then click the `Start` button. This is equivalent to pressing the power button on the virtual computer.
+The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlighted orange, then click the `Start` button. This is equivalent to pressing the power button on the virtual computer.
 
-<u>VirtualBox</u> will now ask you to select a start-up disk. Click the small folder icon next to the dropdown, then point <u>VirtualBox</u> at your ISO file and open it. <u>VirtualBox</u> will then boot the file.
+`VirtualBox` will now ask you to select a start-up disk. Click the small folder icon next to the dropdown, then point `VirtualBox` at your ISO file and open it. `VirtualBox` will then boot the file.
 
 ![Start-up disk selection](/images/windows/step8.png)
 
 ![Windows booting up](/images/windows/step9.png)
 
-After Windows finishes booting from the DVD, you should see the Windows Setup window. Select Language, Time and Currency, and Keyboard preferences, then click `Next`.
+After Windows finishes booting from the DVD, you should see the Windows Setup window. Select your desired options for "Language to install," "Time and currency format," and "Keyboard or input method," then click `Next`.
 
 ![Windows Setup window](/images/windows/step10.png)
 
@@ -182,7 +179,7 @@ On the next screen, click `Install Now` to start the installation.
 
 ![Click Install Now to start the installation](/images/windows/step11.png)
 
-You'll next need to enter your product key for your copy of Windows. Be sure to enter this exactly as it's listed on the sticker or in your email.  Windows 10 can be run without a product key temporarily without issues.  If you don't have a product key, select `I don't have a key`.  Otherwise, click `Next`.
+You'll next need to enter your product key for your copy of Windows. Be sure to enter this exactly as it's listed on the sticker or in your email.  Windows 10 can be run without a product key temporarily without issues.  If you don't have a product key, select `I don't have a key` or `Skip`.  Otherwise, click `Next`.
 
 ![Enter your Product Key](/images/windows/step12.png)
 
@@ -202,7 +199,7 @@ Windows will next begin copying over the installation files onto the virtual har
 
 ![Installing Windows](/images/windows/step16.png)
 
-When the VM reboots, you may be prompted to "Press any key to boot from CD or DVD...". **Do not press any keys here, or the installation will start over.**
+When the VM reboots, you may be prompted to "Press any key to boot from CD or DVD..." (pictured below). **Do not press any keys here, or the installation will start over.**
 
 ![Do not press any key. Seriously.](/images/windows/step17.png)
 
@@ -210,7 +207,7 @@ Windows will now finish installing files and get the system ready to be set up. 
 
 ![Getting ready](/images/windows/step18.png)
 
-After the process is finalized, you'll be able to begin the setup process.
+After the process is finalized, you can begin the setup process.
 
 ### Set Up Windows
 
@@ -218,11 +215,11 @@ Setup will begin with the following screen:
 
 ![Get Going Fast](/images/windows/step19.png)
 
-You may select either express settings, or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the latest version of the OS. This step may take a while, depending on your Internet connection. When it's finished, Windows will ask you who owns this PC. It's recommended to select `I own it` and click `Next`.
+You may select either "Use express settings," or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the latest version of the OS. This step may take a while, depending on your Internet connection. When it's finished, Windows will ask you who owns this PC. It's recommended to select `I own it` and click `Next`.
 
 ![Who owns this PC?](/images/windows/step20.png)
 
-Next, you'll be prompted to sign in with your Microsoft Account. This step is recommended as it can allow for resetting your password remotely if you forget it. It can also sync your settings, apps, and files to other Window's PCs. If you don't have a Microsoft account, you can create one with the supplied link.
+Next, you'll be prompted to sign in with your Microsoft account. This step is recommended as it can allow for resetting your password remotely if you forget it. It can also sync your settings, apps, and files to other Window's PCs. If you don't have a Microsoft account, you can create one with the supplied link.
 
 If you prefer to use a local account, you can skip this step.
 
@@ -232,38 +229,44 @@ Windows 10 allows you to set a PIN for logging in instead of a password. If you'
 
 ![Windows 10 Desktop](/images/windows/step22.png)
 
-## Use Virtual Machine
+## Use the Windows Virtual Machine
 
-The virtual machine will be presented through a window, and can be interacted with similarly to any other application. Note that the Virtual Machine window will capture the keyboard input (The mouse is automatically captured or uncaptured depending on whether it's currently on top of the Virtual Machine window or not). If the input is currently captured, and you need to send input to the desktop (or a window outside of your Virtual Machine window), you'll need to tap the Right-hand <kbd>Ctrl</kbd> first, which will release the keyboard from the Virtual machine, and allow it to work in the desktop again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
+The virtual machine will be presented through a window, and can be interacted with similarly to any other application.
 
-## Add Network Printer
+> **NOTE:** that the virtual machine window will capture the keyboard input (The mouse is automatically captured or released depending on whether it's currently on top of the virtual machine window or not). If the input is currently captured, and you need to send input to the desktop (or a window outside of your virtual machine window), you'll need to tap the Right-hand `CTRL` first, which will release the keyboard from the Virtual machine, and allow it to work in the desktop again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
 
-In the Virtual Machine, click your virtual machine so it's highlighted in orange. Select **Settings** in the top menu. Select Network and make sure the **Enable Network Adapter** is checked and the "Attached to" option is **Bridged Adapter**. The Name is the name of the network you wish to connect to.
+### Add Network Printer
 
-Select **OK** and power on your virtual machine. Go to the Printer menu and select the option to **Add a Printer**. Windows should automatically find your printer. Select it and follow the prompts to finish the installation. Print the test page to confirm the connection worked.
+In `VirtualBox`, click your virtual machine so it's highlighted in orange. Select `Settings` in the top menu. Select `Network` and make sure the "Enable Network Adapter" is checked and the "Attached to" option is `Bridged Adapter`. The network `name` (SSID) is the name of the network you wish to connect to.
+
+Select `OK` and power on your virtual machine. Go to the Printer menu and select the option to `Add a Printer`. Windows should automatically find your printer. Select it and follow the prompts to finish the installation. Print a test page to confirm the connection worked.
 
 ![Windows 10 Desktop](/images/windows/vmsettings.png)
 
-## Installing on a Dedicated Drive
+## Dual-Booting Windows
 
-The easiest way to dual boot is to install Windows on a separate physical drive from Pop!_OS. This allows both Windows and Pop!_OS to use their default partition schemes, and allows you to select the OS using the UEFI firmware menu. If you want to use full-disk encryption in Pop!_OS, this is the only option.
+### Installing on a Dedicated Drive
 
-For the safest experience, power off your machine, [open the case](https://tech-docs.system76.com/), and remove the drive with Pop!_OS prior to installing Windows. This is not required, but it ensures Windows won't overwrite the Pop!_OS bootloader, and helps avoid accidentally overwriting Pop!_OS.
+The easiest way to dual-boot Windows is to install it on a separate physical drive from Pop!_OS. This allows both Windows and Pop!_OS to use their default partition schemes, and allows you to select the OS using the UEFI firmware menu.
 
-### Starting the installer
+>**NOTE:** If you want to use full-disk encryption in Pop!_OS, this is the only option.
+
+For the safest experience, power off your machine, [open the case](https://support.system76.com/articles/guides), and remove the drive with Pop!_OS prior to installing Windows. This is not required, but it ensures Windows won't overwrite the Pop!_OS bootloader, and helps avoid accidentally overwriting Pop!_OS.
+
+### Starting the Installer
 
 Plug the [install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
 
-- <kbd>Esc</kbd> for laptops with Open Firmware
-- <kbd>F7</kbd> for laptops with proprietary firmware
-- <kbd>F8</kbd> or <kbd>F12</kbd> for Thelio desktops
-- <kbd>F10</kbd> for Meerkat desktops
+- `Esc` for laptops with Open Firmware
+- `F7` for laptops with proprietary firmware
+- `F8` or `F12` for Thelio desktops
+- `F10` for Meerkat desktops
 
-From the boot menu, select the drive containing the Windows After the system is fully up-to-date, you can find any additional drivers needed for Open Firmware systems [here](https://github.com/system76/windows-drivers).installer, then wait for the installer to boot.
+From the boot menu, select the drive containing the Windows ISO.
 
-### Performing the installation
+### Performing the Installation
 
-Select your language, region, and keyboard settings, then After the system is fully up-to-date, you can find any additional drivers needed for Open Firmware systems [here](https://github.com/system76/windows-drivers).click `Next`.
+Select your language, region, and keyboard settings, then click `Next`.
 
 ![Windows region & language settings](/images/dual-booting/windows-language-settings.jpg)
 
@@ -331,7 +334,7 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 
 See [additional setup](#additional-setup-for-windows) for next steps.
 
-## Installing on a Shared Drive (Starting with Pop!_OS)
+### Installing on a Shared Drive (Starting with Pop!_OS)
 
 If you need to install both operating systems on a single drive (for example, if your computer only supports a single SSD), it is possible to install both OS's using a custom partition scheme. Pop!_OS's full-disk encryption is not supported with this setup.
 
@@ -347,9 +350,9 @@ Once Pop!_OS is installed (and not encrypted), boot into Recovery mode by holdin
 
 Once Recovery mode has finished loading, select your language and keyboard layout, then select `Try Demo Mode` in the bottom left to exit the installer.
 
-Next, open GParted by searching for it in the Activities menu (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>) or the Pop!_Shell launcher (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>).
+Next, open `GParted` by searching for it in the Activities menu (`SUPER`) or the Pop!_Shell launcher (`SUPER` + `/`).
 
-If you're booted from Recovery mode on the only drive in the computer, GParted should automatically show the drive that Pop!_OS is installed to; otherwise, if GParted is showing a different drive (such as a flash drive), select the correct drive in the GParted -> Devices menu.
+The Recovery mode is installed on the same drive as the main Pop!\_OS install. Because of the Recovery location, GParted should automatically show the drive that Pop!_OS is installed to; otherwise, if GParted is showing a different drive (such as a flash drive), select the correct drive in the `GParted` -> `Devices` menu.
 
 The largest partition in an unencrypted, default layout is an ext4 partition. Select this partition from the list, then click the `Resize/Move` button.
 
@@ -385,10 +388,10 @@ Exit out of GParted and use the top-right menu to power off the system.
 
 Plug the [Windows install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
 
-- <kbd>Esc</kbd> for laptops with Open Firmware
-- <kbd>F7</kbd> for laptops with proprietary firmware
-- <kbd>F8</kbd> or <kbd>F12</kbd> for Thelio desktops
-- <kbd>F10</kbd> for Meerkat desktops
+- `Esc` for laptops with Open Firmware
+- `F7` for laptops with proprietary firmware
+- `F8` or `F12` for Thelio desktops
+- `F10` for Meerkat desktops
 
 From the boot menu, select the drive containing the Windows installer, then wait for the installer to boot.
 
@@ -422,7 +425,7 @@ Finally, the installer will ask you to select where you want to install to. In t
 
 Select the partition that matches the size and position in the list of what you created earlier using GParted. (Windows may select this partition automatically.) Click `Next` to install Windows to the partition.
 
-**Warning:** You should not need to format any partitions during this step. If you see a `Windows can't be installed on drive # partition #` message, either you have the wrong partition selected, or you did not select `ntfs` as the partition type when creating the partition in GParted earlier. Try selecting a different partition, or go back to [Shrinking Pop!_OS](#shrinking-pop_os).
+>**Warning:** You should not need to format any partitions during this step. If you see a `Windows can't be installed on drive # partition #` message, either you have the wrong partition selected, or you did not select `NTFS` as the partition type when creating the partition in GParted earlier. Try selecting a different partition, or go back to [Shrinking Pop!_OS](#shrinking-pop_os).
 
 ![Windows selecting a partition](/images/dual-booting/windows-select-partition.jpg)
 
@@ -470,7 +473,7 @@ For our Open Firmware and Open EC systems, you can download the Windows drivers 
 
 For systems with NVIDIA graphics cards, drivers can be found on their website:
 
-**NVIDIA hardware table:**
+### NVIDIA Hardware Table
 
 Always|Maybe|Never
 :----:|:----:|:----:
@@ -483,7 +486,7 @@ Silverback WS|Wild Dog Pro|
 
 [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 
-**Ethernet hardware table:**
+### Ethernet Hardware Table
 
 Realtek RTL8111/8168/8411|Intel I219-V|Atheros/Killer Ethernet E2400|Intel I210
 :----:|:----:|:----:|:----:
@@ -502,7 +505,7 @@ Kudu| | |
 
 Our laptops and desktops use Intel WiFi, which should be found by the Intel Driver Update utility.
 
-If there is a missing driver in the <u>Device Manager</u>, right click on the item with the missing driver, choose **Properties**, then **Details**, and then **Hardware Ids** from the drop-down.  The VEN (vendor) and DEV (device) numbers are unique to every piece of hardware.  Search for the device at the PCI Database:
+If there is a missing driver in the `Device Manager`, right click on the item with the missing driver, choose **Properties**, then **Details**, and then **Hardware Ids** from the drop-down.  The VEN (vendor) and DEV (device) numbers are unique to every piece of hardware.  Search for the device at the PCI Database:
 
 [PCI Lookup](http://www.pcilookup.com/)
 
@@ -532,32 +535,32 @@ This will ensure Windows fully shuts down and allows other operating systems to 
 
 Depending on how you installed Windows and which firmware your computer is running, there may be several ways to chooose which OS to boot.
 
-**Using the UEFI firmware:**
+### Using the UEFI firmware
 
-- **Change the default OS** using the [UEFI setup menu](/articles/boot-menu/) (while booting, hold down <kbd>Esc</kbd> on Open Firmware laptops, <kbd>F2</kbd> on closed firmware laptops, <kbd>Del</kbd> on Thelio desktops, or <kbd>F2</kbd> on Meerkat desktops.)
+- **Change the default OS** using the [UEFI setup menu](/articles/boot-menu/) (while booting, hold down `ESC` on Open Firmware laptops, `F2` on closed firmware laptops, `DEL` on Thelio desktops, or `F2` on Meerkat desktops.)
 - Navigate to the boot options and set the desired order, then save and exit.
 - If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
-- **Boot the secondary OS** using the [UEFI boot menu](/articles/boot-menu/) (while booting, hold down <kbd>Esc</kbd> on Open Firmware laptops, <kbd>F7</kbd> on closed firmware laptops, <kbd>F8</kbd> or <kbd>F12</kbd> on Thelio desktops, or <kbd>F10</kbd> on Meerkat desktops.)
+- **Boot the secondary OS** using the [UEFI boot menu](/articles/boot-menu/) (while booting, hold down `ESC` on Open Firmware laptops, `F7` on closed firmware laptops, `F8` or `F12` on Thelio desktops, or `F10` on Meerkat desktops.)
 - Select the desired OS (or the drive that it's on.)
 - If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
 
-**Using systemd-boot**:
+### Using systemd-boot
 
 - This menu is part of Pop!_OS, so in order to use it effectively, Pop!_OS must be set as the default OS in the firmware settings as described in the previous section.
-- **Change the default OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
-- Highlight the desired default OS using the arrow keys, then press <kbd>d</kbd> to make it the default.
-- **Boot the secondary OS** using the `systemd-boot` menu (while booting, hold down <kbd>Spacebar</kbd>.)
-- Highlight the selected OS, then press <kbd>Enter</kbd> to boot.
+- **Change the default OS** using the `systemd-boot` menu (while booting, hold down `SPACE`.)
+- Highlight the desired default OS using the arrow keys, then press `D` to make it the default.
+- **Boot the secondary OS** using the `systemd-boot` menu (while booting, hold down `SPACE`).
+- Highlight the selected OS, then press `ENTER` to boot.
 - **Get prompted to choose the OS on every boot** using the `systemd-boot` menu.
-- While booting, hold down <kbd>Spacebar</kbd> to enter the menu.
-- Press the <kbd>+</kbd> key (or <kbd>Shift</kbd> + <kbd>=</kbd>) to increase the number of seconds the system will wait before booting the default OS; press <kbd>-</kbd> to decrease the number of seconds.
-- Once a timer is set, the menu will display on every boot without having to hold down <kbd>Spacebar</kbd>. (To reverse this, press <kbd>-</kbd> until the timer is back to zero.)
+- While booting, hold down `SPACE` to enter the menu.
+- Press the `+` key (or `SHIFT` + `=`) to increase the number of seconds the system will wait before booting the default OS; press `-` to decrease the number of seconds.
+- Once a timer is set, the menu will display on every boot without having to hold down `SPACE`. (To reverse this, press `-` until the timer is back to zero.)
 
-### Repairing the Pop!_OS Bootloader
+## Repairing the Pop!_OS Bootloader
 
 If Pop!_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](/articles/bootloader) for information on repairing the Pop!_OS bootloader.
 
-### Fixing the System Clock
+## Fixing the System Clock
 
 Windows and Linux store their time in the UEFI firmware differently. This can cause the clock to become desynchronized when you switch from one OS to the other.
 

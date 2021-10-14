@@ -467,8 +467,6 @@ Click `Restart now` if you are prompted to restart to finish installing any upda
 
 For System76 machines with Intel hardware, Windows Update is rather effective at finding drivers. We also recommend using [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html), which will automatically detect and install drivers for Intel hardware.
 
-
-
 For our Open Firmware and Open EC systems, you can download the Windows drivers [here](https://github.com/system76/windows-drivers).
 
 For systems with NVIDIA graphics cards, drivers can be found here [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)

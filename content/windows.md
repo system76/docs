@@ -67,8 +67,6 @@ tableOfContents: true
 
 ## Disclaimer
 
-This article explains how to install Windows on a System76 computer (with UEFI firmware) alongside Pop!_OS.
-
 System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for information purposes only.
 
 System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
@@ -145,6 +143,8 @@ Once you have `VirtualBox` installed, we'll need to create the virtual computer 
 
 ![Opening VirtualBox through the Dash](/images/windows/step3.png)
 
+<!-- Update Alt Text ^ -->
+
 ![VirtualBox Main Window](/images/windows/step4.png)
 
 Click on the `New` button in the toolbar, then give your machine a name. If it isn't already filled out, set the machine "Type" to `Microsoft Windows` and the "Version" to `Windows 10 64-bit`, and click `Next`.
@@ -171,7 +171,7 @@ The next step is to boot the virtual machine and install an OS on it. Click on t
 
 ![Windows booting up](/images/windows/step9.png)
 
-After Windows finishes booting from the DVD, you should see the Windows Setup window. Select your desired options for "Language to install," "Time and currency format," and "Keyboard or input method," then click `Next`.
+After Windows finishes booting from the ISO, you should see the Windows Setup window. Select your desired options for "Language to install," "Time and currency format," and "Keyboard or input method," then click `Next`.
 
 ![Windows Setup window](/images/windows/step10.png)
 
@@ -233,7 +233,7 @@ Windows 10 allows you to set a PIN for logging in instead of a password. If you'
 
 The virtual machine will be presented through a window, and can be interacted with similarly to any other application.
 
-> **NOTE:** that the virtual machine window will capture the keyboard input (The mouse is automatically captured or released depending on whether it's currently on top of the virtual machine window or not). If the input is currently captured, and you need to send input to the desktop (or a window outside of your virtual machine window), you'll need to tap the Right-hand `CTRL` first, which will release the keyboard from the Virtual machine, and allow it to work in the desktop again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
+> **NOTE:** the virtual machine window will capture the keyboard input (The mouse is automatically captured or released depending on whether it's currently on top of the virtual machine window or not). If the input is currently captured, and you need to send input to the desktop (or a window outside of your virtual machine window), you'll need to tap the Right-hand `CTRL` first, which will release the keyboard from the Virtual machine, and allow it to work in the desktop again. Clicking inside of the Virtual Machine window will re-enable the keyboard capture.
 
 ### Add Network Printer
 
@@ -251,7 +251,7 @@ The easiest way to dual-boot Windows is to install it on a separate physical dri
 
 >**NOTE:** If you want to use full-disk encryption in Pop!_OS, this is the only option.
 
-For the safest experience, power off your machine, [open the case](https://support.system76.com/articles/guides), and remove the drive with Pop!_OS prior to installing Windows. This is not required, but it ensures Windows won't overwrite the Pop!_OS bootloader, and helps avoid accidentally overwriting Pop!_OS.
+For the safest experience, power off your machine, [open the case](https://support.system76.com/articles/guides), and remove the drive with Pop!_OS prior to installing Windows. This ensures Windows won't overwrite the Pop!_OS bootloader, and helps avoid accidentally overwriting Pop!_OS.
 
 ### Starting the Installer
 
@@ -370,7 +370,7 @@ In the "Create new Partition" dialog, change the `File system:` dropdown to `ntf
 
 ![Creating a Windows partition in GParted](/images/dual-booting/gparted-new-partition.jpg)
 
-Finally, click the `Apply All Operations` button (green checkmark) to write the changes to the disk.
+Finally, click the `Apply All Operations` button (green check-mark) to write the changes to the disk.
 
 ![Applying the GParted operations](/images/dual-booting/gparted-apply-1.jpg)
 
@@ -453,7 +453,7 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
-## Additional Setup for Windows
+## Additional Setup for Windows (not in VM)
 
 ### Installing Drivers
 
@@ -463,15 +463,15 @@ After finishing the Windows installation, open Settings -> Update & Security and
 
 Click `Restart now` if you are prompted to restart to finish installing any updates. Repeat this process until no more updates are available.
 
-Keyboard backlight control is not supported within Windows on Open Firmware systems. The Device Manager app may report that some devices are missing drivers; this is normal and can be disregarded.
+> **NOTE:** Keyboard backlight control is not supported within Windows on Open Firmware systems. The Device Manager app may report that some devices are missing drivers; this is normal and can be disregarded.
 
-Most of the hardware in a System76 computer is Intel based, and Windows Update is rather effective at finding drivers. We also recommend using Intel's Driver Update utility, which will automatically detect and install drivers for Intel hardware.
+For System76 machines with Intel hardware, Windows Update is rather effective at finding drivers. We also recommend using [Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html), which will automatically detect and install drivers for Intel hardware.
 
-[Intel Driver Update Utility](http://www.intel.com/content/www/us/en/support/detect.html)
+
 
 For our Open Firmware and Open EC systems, you can download the Windows drivers [here](https://github.com/system76/windows-drivers).
 
-For systems with NVIDIA graphics cards, drivers can be found on their website:
+For systems with NVIDIA graphics cards, drivers can be found here [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 
 ### NVIDIA Hardware Table
 
@@ -483,8 +483,6 @@ Leopard WS|Gazelle|Meerkat|
 Oryx Pro|Ratel|
 Serval WS|Thelio|
 Silverback WS|Wild Dog Pro|
-
-[NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 
 ### Ethernet Hardware Table
 
@@ -503,8 +501,6 @@ Kudu| | |
 
 [Killer Ethernet Drivers](http://www.killernetworking.com/driver-downloads/category/killer-suite)
 
-Our laptops and desktops use Intel WiFi, which should be found by the Intel Driver Update utility.
-
 If there is a missing driver in the `Device Manager`, right click on the item with the missing driver, choose **Properties**, then **Details**, and then **Hardware Ids** from the drop-down.  The VEN (vendor) and DEV (device) numbers are unique to every piece of hardware.  Search for the device at the PCI Database:
 
 [PCI Lookup](http://www.pcilookup.com/)
@@ -517,7 +513,7 @@ It is also recommended to disable "Fast Startup" within Windows to avoid problem
 
 ![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-1.jpg)
 
-This will open another contorl panel. In this panel, click `Choose what the power buttons do` in the left sidebar.
+This will open another control panel. In this panel, click `Choose what the power buttons do` in the left sidebar.
 
 ![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-2.jpg)
 
@@ -533,7 +529,7 @@ This will ensure Windows fully shuts down and allows other operating systems to 
 
 ### Switching between Pop!_OS and Windows
 
-Depending on how you installed Windows and which firmware your computer is running, there may be several ways to chooose which OS to boot.
+Depending on how you installed Windows and which firmware your computer is running, there may be several ways to choose which OS to boot.
 
 ### Using the UEFI firmware
 
@@ -562,7 +558,7 @@ If Pop!_OS stops booting or no longer appears as a boot option after the Windows
 
 ## Fixing the System Clock
 
-Windows and Linux store their time in the UEFI firmware differently. This can cause the clock to become desynchronized when you switch from one OS to the other.
+Windows and Linux store their time in the UEFI firmware differently. This can cause the clock to become de-synchronized when you switch from one OS to the other.
 
 If you're affected by this, the easiest solution is to fix it in Linux, forcing it to work the same way as Windows. Set the option using this command:
 

@@ -45,7 +45,7 @@ A new Rust crate built around asynchronous I/O, using Rust's async / await synta
 * Using multiple concurrent connections per file (as parts) to increase throughput
 * Using multiple mirrors to fetch different parts of the same file from
 * Defining minimum and maximum part size
-* Definining maximum requests per per, and maximum number of files to fetch concurrently
+* Definining maximum requests per peer, and maximum number of files to fetch concurrently
 * Checking modified timestamps and content length to determine when fetching is required
 * Optional checksum validation (MD5 / SHA256)
 * Cancellation, timeout, and retry handling

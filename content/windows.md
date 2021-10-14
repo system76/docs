@@ -75,6 +75,8 @@ System76 encourages users to take ownership of their machines and install whatev
 
 The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
 
+---
+
 ### Planning the Installation
 
 There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
@@ -219,6 +221,8 @@ Select `OK` and power on your virtual machine. Go to the Printer menu and select
 
 ![Windows 10 Desktop](/images/windows/vmsettings.png)
 
+---
+
 ## Dual-Booting Windows
 
 ### Creating Install Media
@@ -244,6 +248,8 @@ Once installed, open the WoeUSB-ng application (entering your password when prom
 ![WoeUSB-ng](/images/dual-booting/woeusb.png)
 
 It may take several minutes or more for the process to finish -- wait until the `Installation succeeded!` message appears.
+
+---
 
 ### Installing on a Dedicated Drive
 
@@ -333,6 +339,8 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
 See [additional setup](#additional-setup-for-windows) for next steps.
+
+---
 
 ### Installing on a Shared Drive (Starting with Pop!_OS)
 
@@ -454,6 +462,8 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
 See [additional setup](#additional-setup-for-windows) for next steps.
+
+---
 
 ## Additional Setup for Windows (not in VM)
 

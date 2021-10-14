@@ -109,7 +109,7 @@ To act as your hypervisor, we recommend installing `VirtualBox`, since it's free
 
 Open the `Pop!_Shop`, then enter "virtualbox" in the search field. Click on the `VirtualBox` result with the blue icon. You should see the window below:
 
-![VirtualBox Listing in USC](/images/windows/virtualbox-popshop.png)
+![VirtualBox Listing in Popshop](/images/windows/virtualbox-popshop.png)
 
 Click the `Install` button, then wait for the download and install process to complete.
 

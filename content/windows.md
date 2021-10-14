@@ -75,30 +75,6 @@ System76 encourages users to take ownership of their machines and install whatev
 
 The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
 
-## Creating Install Media
-
-Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software-download/windows10ISO) from Microsoft's website. Plug in a USB flash drive (8GB or larger) to use as an installation disk. The USB drive will be wiped during this process.
-
-On Pop!_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
-
-```bash
-sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common
-sudo pip3 install WoeUSB-ng
-```
-
-Once installed, open the WoeUSB-ng application (entering your password when prompted) and perform the following steps:
-
-1. Select the Windows .iso file as the source.
-
-    - Select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
-
-2. Select the USB flash drive as the target device.
-3. Click `Install`.
-
-![WoeUSB-ng](/images/dual-booting/woeusb.png)
-
-It may take several minutes or more for the process to finish -- wait until the `Installation succeeded!` message appears.
-
 ### Planning the Installation
 
 There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
@@ -151,7 +127,7 @@ Click on the `New` button in the toolbar, then give your machine a name. If it i
 
 ![Setting up the Virtual Machine](/images/windows/step5.png)
 
-Increase the virtual machine `memory` size to half of the total RAM available. For the Hard Drive, you'll want to choose to `Create a virtual hard drive now`.
+Increase the virtual machine memory size to half of the total RAM available. For the Hard Drive, you'll want to choose to `Create a virtual hard drive now`.
 
 ![Creating a virtual hard drive](/images/windows/step6.png)
 
@@ -215,7 +191,7 @@ Setup will begin with the following screen:
 
 ![Get Going Fast](/images/windows/step19.png)
 
-You may select either "Use express settings," or you can customize the settings to suit your preferences. Windows will next download updates to ensure you're on the latest version of the OS. This step may take a while, depending on your Internet connection. When it's finished, Windows will ask you who owns this PC. It's recommended to select `I own it` and click `Next`.
+You may select either "Use express settings," or you can customize the settings to suit your preferences. Next, Windows will download updates to ensure you're on the latest version of the OS. This step may take a while, depending on your Internet connection. When it's finished, Windows will ask you who owns this PC. Select `I own it`, unless you're setting the VM up for someone else. Click `Next`.
 
 ![Who owns this PC?](/images/windows/step20.png)
 
@@ -244,6 +220,30 @@ Select `OK` and power on your virtual machine. Go to the Printer menu and select
 ![Windows 10 Desktop](/images/windows/vmsettings.png)
 
 ## Dual-Booting Windows
+
+### Creating Install Media
+
+Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software-download/windows10ISO) from Microsoft's website. Plug in a USB flash drive (8GB or larger) to use as an installation disk. The USB drive will be wiped during this process.
+
+On Pop!_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
+
+```bash
+sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common
+sudo pip3 install WoeUSB-ng
+```
+
+Once installed, open the WoeUSB-ng application (entering your password when prompted) and perform the following steps:
+
+1. Select the Windows .iso file as the source.
+
+    - Select `Other Locations` -> `Computer` -> `home` -> `your-username` -> `Downloads`.
+
+2. Select the USB flash drive as the target device.
+3. Click `Install`.
+
+![WoeUSB-ng](/images/dual-booting/woeusb.png)
+
+It may take several minutes or more for the process to finish -- wait until the `Installation succeeded!` message appears.
 
 ### Installing on a Dedicated Drive
 

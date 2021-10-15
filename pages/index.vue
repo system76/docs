@@ -333,9 +333,6 @@ export default {
       }, {
         title: 'Hardware',
         section: 'hardware'
-      }, {
-        title: 'Windows',
-        section: 'windows'
       }]
     }, {
       title: 'Learn',

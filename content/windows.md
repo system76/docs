@@ -24,7 +24,7 @@ redirect_from:
   - /windows
 
 hidden: false
-section: windows
+section: software
 tableOfContents: true
 ---
 

@@ -56,8 +56,7 @@ We have tested the following docks:
 
 Community members have reported that the following docks work with our products:
 
-- [Anker A8392](https://us.anker.com/products/a8392)
-  - Tested with a Lemur Pro. It worked well to connect a keyboard and mouse (USB), Ethernet cable, speakers (audio out) and monitor (DisplayPort). The docking station should be turned off initially and then turned on before starting up the laptop to be sure the monitor is recognized. Otherwise, you will need to open the laptop cover to turn on the monitor.
+- [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/417) on an Intel system]
 - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [[community-tested](https://github.com/system76/docs/pull/417) on an Intel system] <sup>1</sup>
   - Downstream (passthrough) Thunderbolt 3 port not tested.
 - [Dell D3100](https://www.dell.com/en-us/work/shop/dell-docking-station-usb-30-d3100/apd/452-bbpg/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/742) on an Intel system]

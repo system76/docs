@@ -35,103 +35,102 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 1. Boot into [Pop!_OS Recovery](https://support.system76.com/articles/pop-recovery)
 
-Turn your computer off, then turn it back on and hold down the `SPACE` bar immediately. In the menu that appears, select `PopOS Recovery`, and let it boot.
+    Turn your computer off, then turn it back on and hold down the `SPACE` bar immediately. In the menu that appears, select `PopOS Recovery`, and let it boot.
 
-Once it boots, close out of the installation window or choose `try demo mode` (be sure not to choose any install or repair options, as this could result in data loss. It will also mount the drive and make the next steps harder).
+    Once it boots, close out of the installation window or choose `try demo mode` (be sure not to choose any install or repair options, as this could result in data loss. It will also mount the drive and make the next steps harder).
 
-2. Open `Gparted` by clicking `Activities`/`Applications` and searching for "Gparted" or by pressing `SUPER`+`T` to open a Terminal, and running: 
+2. Open `Gparted` by clicking `Activities`/`Applications` and searching for "Gparted" or by pressing `SUPER`+`T` to open a Terminal, and running:
 
-```bash
-gparted
-```
+    ```bash
+    gparted
+    ```
 
 3. Disable and remove the SWAP partition. You can either right-click on the SWAP partition, and select `swapoff` or issue that same command in the Terminal:
 
-```bash
-swapoff
-```
+    ```bash
+    swapoff
+    ```
 
-Then click on the swap partition, click the red `X` to mark it for deletion, and then press the green checkmark to approve the changes.
+    Then click on the swap partition, click the red `X` to mark it for deletion, and then press the green checkmark to approve the changes.
 
-4. Extend the `luks` partition to the end of the drive 
+4. Extend the `luks` partition to the end of the drive.
 
-Click on the encrypted `luks` partition and select the "Resize/Move" button. Use the GUI drag tools, or number fields to make sure the OS partition extends to the end of the drive (after `EFI` and `recovery`).
+    Click on the encrypted `luks` partition and select the "Resize/Move" button. Use the GUI drag tools, or number fields to make sure the OS partition extends to the end of the drive (after `EFI` and `recovery`).
 
-![gparted](/images/hibernation/gparted.png)
+    ![gparted](/images/hibernation/gparted.png)
 
-Open the encrypted partition using these Terminal commands:
+    Open the encrypted partition using these Terminal commands:
 
-| **SATA Drives**                                    | **NVMe Drives**                                   |
-|:--------------------------------------------------:|:-------------------------------------------------:|
-| `sudo cryptsetup luksOpen /dev/sda3 cryptdata`       | `sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata` |
+    | **SATA Drives**                                    | **NVMe Drives**                                   |
+    |:--------------------------------------------------:|:-------------------------------------------------:|
+    | `sudo cryptsetup luksOpen /dev/sda3 cryptdata`       | `sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata` |
 
-> **NOTE:** In this example, the partition is called `/dev/vda3`. Adjust the drive name to your case.
+    > **NOTE:** In this example, the partition is called `/dev/vda3`. Adjust the drive name to your case.
 
-```bash
-sudo lvscan
-sudo vgchange -ay
-```
+    ```bash
+    sudo lvscan
+    sudo vgchange -ay
+    ```
 
 5. Reduce the size of the root volume by the size of main memory. If you have 16GB of memory, reduce the `data-root` volume by 16GB. If you have 32GB reduce by 32GB, etc. Use these Terminal commands:
 
-```bash
-free -h
-sudo lvreduce -r -L-16G /dev/mapper/data-root
-```
+    ```bash
+    free -h
+    sudo lvreduce -r -L-16G /dev/mapper/data-root
+    ```
 
 6. Create a `swap` volume (instead of a drive partition):
 
-```bash
-sudo lvcreate -L 16G --alloc contiguous --name swap data
-sudo mkswap /dev/data/swap
-```
+    ```bash
+    sudo lvcreate -L 16G --alloc contiguous --name swap data
+    sudo mkswap /dev/data/swap
+    ```
 
 7. Mount the `root` filesystem and edit `crypttab` and `fstab` to update for the new `swap` location:
 
-Mount the `data-root` volume:
+    Mount the `data-root` volume:
 
-```bash
-sudo mount /dev/mapper/data-root /mnt
-```
+    ```bash
+    sudo mount /dev/mapper/data-root /mnt
+    ```
 
-Edit `crypttab` to remove the original swap partition entry.
+    Edit `crypttab` to remove the original swap partition entry.
 
-```bash
-sudo nano /mnt/etc/crypttab
-```
+    ```bash
+    sudo nano /mnt/etc/crypttab
+    ```
 
-![crypttab](/images/hibernation/crypttab.png)
+    ![crypttab](/images/hibernation/crypttab.png)
 
-Open `fstab` to copy the UUID of the `swap` volume.
+    Open `fstab` to copy the UUID of the `swap` volume.
 
-```bash
-sudo nano /mnt/etc/fstab
-```
+    ```bash
+    sudo nano /mnt/etc/fstab
+    ```
 
-![fstab](/images/hibernation/fstab.png)
+    ![fstab](/images/hibernation/fstab.png)
 
 8. Add a resume target for the kernel:
 
-Using the UUID retrieved from `fstab` run this command:
+    Using the UUID retrieved from `fstab` run this command:
 
-```bash
-sudo kernelstub -a "resume=UUID=xxxxxxxx-xxxx-xxxx-xxxxxxxx"
-```
+    ```bash
+    sudo kernelstub -a "resume=UUID=xxxxxxxx-xxxx-xxxx-xxxxxxxx"
+    ```
 
->**NOTE:** Replace the UUID `xxx...` with the ID of your new `swap` volume.
+    > **NOTE:** Replace the UUID `xxx...` with the ID of your new `swap` volume.
 
+    ![blkid](/images/hibernation/blkid.png)
 
-![blkid](/images/hibernation/blkid.png)
+    The system is now ready to suspend to, and resume from disk.
 
-The system is now ready to suspend to, and resume from disk.
+    You can test if hibernation works on your system by running:
 
-You can test if hibernation works on your system by running: 
+    ```bash
+    sudo systemctl hibernate
+    ```
 
-```bash
-sudo systemctl hibernate
-```
-
->**CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) onto SSDs, shortening the lifespan of the drives.
+    > **CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) onto SSDs, shortening the lifespan of the drives.
 
 ## Desktop Integration
 
@@ -139,30 +138,30 @@ sudo systemctl hibernate
 
 1. Add Extension:
 
-To add `Hibernate` and `Hybrid Sleep` to the power menu, we'll need to add this GNOME-Shell extension: [Hibernate Status Button](https://extensions.gnome.org/extension/755/hibernate-status-button/)
+    To add `Hibernate` and `Hybrid Sleep` to the power menu, we'll need to add this GNOME-Shell extension: [Hibernate Status Button](https://extensions.gnome.org/extension/755/hibernate-status-button/)
 
 2. Add `.pkla` file:
 
->**NOTE:** For Pop!OS and Ubuntu, we also require a file at `/etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla` 
+    >**NOTE:** For Pop!OS and Ubuntu, we also require a file at `/etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla`
 
-To create this file, run: 
+    To create this file, run:
 
-```bash
-sudo nano /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.pkla
-```
+    ```bash
+    sudo nano /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.pkla
+    ```
 
-Then copy these contents into the newly created file:
+    Then copy these contents into the newly created file:
 
-```bash
-[Enable hibernate in upower]
-Identity=unix-user:*
-Action=org.freedesktop.upower.hibernate
-ResultActive=yes
+    ```bash
+    [Enable hibernate in upower]
+    Identity=unix-user:*
+    Action=org.freedesktop.upower.hibernate
+    ResultActive=yes
 
-[Enable hibernate in logind]
-Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
-ResultActive=yes
-```
+    [Enable hibernate in logind]
+    Identity=unix-user:*
+    Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+    ResultActive=yes
+    ```
 
 Save and close the file.

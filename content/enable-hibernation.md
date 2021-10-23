@@ -20,7 +20,7 @@ section: software
 tableOfContents: true
 ---
 
-## State of Hibernation (Suspend to Disk) on Pop!_OS
+## State of Hibernation on Pop!_OS
 
 Hibernation is not currently enabled on Pop!_OS by default. The factors for this choice are:
 

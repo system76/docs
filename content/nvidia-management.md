@@ -65,15 +65,16 @@ sudo apt full-upgrade
 sudo apt install system76-driver-nvidia
 ```
 
+<!--
 ### Install NVIDIA (from NVIDIA's Site)
 
 > **NOTE:** This method should be used only for experimentation and troubleshooting. The preferred method is to install NVIDIA drivers from the System76 Repo.
 
-If you would need/like to install an NVIDIA driver directly (perhaps to try a beta version) you can do so with these steps.
+If you would need/like to install an NVIDIA driver directly (perhaps to try a beta version) you can do so with these steps. -->
 
 ### Reinstall NVIDIA Driver
 
-If your system is equipped with NVIDIA graphics, a recent update might be causing the graphical or performance issues. it's still worth reinstalling if you are unable to log in after the above steps.) Refer to the table below to determine if your system contains NVIDIA graphics:
+If your system is equipped with NVIDIA graphics, a recent update might be causing the graphical or performance issues. it's still worth reinstalling if you are unable to log in after the above steps.) Refer to the table above to determine if your system contains NVIDIA graphics:
 
 To remove the NVIDIA driver, run the following:
 

@@ -1,7 +1,7 @@
 ---
 title: Enable Hibernation (Suspend to Disk)
 description: >
-    How to partition a drive and set up hibernation in Pop!_OS.
+    How to partition your drive and set up hibernation in Pop!_OS.
 keywords:
   - Suspend
   - Suspend to Disk
@@ -37,7 +37,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     Turn your computer off, then turn it back on and hold down the `SPACE` bar immediately. In the menu that appears, select `PopOS Recovery`, and let it boot.
 
-    Once it boots, close out of the installation window or choose `try demo mode` (be sure not to choose any install or repair options, as this could result in data loss. It will also mount the drive and make the next steps harder).
+    Once it boots, close out of the installation window or choose `Try Demo Mode` (be sure not to choose any install or repair options, as this could result in data loss. It will also mount the drive and make the next steps harder).
 
 2. Open `Gparted` by clicking `Activities`/`Applications` and searching for "Gparted" or by pressing `SUPER`+`T` to open a Terminal, and running:
 
@@ -65,7 +65,7 @@ However, these limitations aside, hibernation is an often requested feature for 
     |:--------------------------------------------------:|:-------------------------------------------------:|
     | `sudo cryptsetup luksOpen /dev/sda3 cryptdata`       | `sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata` |
 
-    > **NOTE:** In this example, the partition is called `/dev/vda3`. Adjust the drive name to your case.
+    **NOTE:** In the screenshot example, the partition is called `/dev/vda3`. Adjust the drive name to your case (sda# or nvme#n#p#).
 
     ```bash
     sudo lvscan
@@ -118,7 +118,7 @@ However, these limitations aside, hibernation is an often requested feature for 
     sudo kernelstub -a "resume=UUID=xxxxxxxx-xxxx-xxxx-xxxxxxxx"
     ```
 
-    > **NOTE:** Replace the UUID `xxx...` with the ID of your new `swap` volume.
+    **NOTE:** Replace everything after `UUID=` with the ID of your new `swap` volume.
 
     ![blkid](/images/hibernation/blkid.png)
 
@@ -130,7 +130,7 @@ However, these limitations aside, hibernation is an often requested feature for 
     sudo systemctl hibernate
     ```
 
-    > **CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) onto SSDs, shortening the lifespan of the drives.
+    **CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) onto SSDs, shortening the lifespan of the drives.
 
 ## Desktop Integration
 
@@ -142,7 +142,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 2. Add `.pkla` file:
 
-    >**NOTE:** For Pop!OS and Ubuntu, we also require a file at `/etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla`
+    **NOTE:** For Pop!OS and Ubuntu, we also require a file at `/etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla`
 
     To create this file, run:
 
@@ -165,3 +165,5 @@ However, these limitations aside, hibernation is an often requested feature for 
     ```
 
 Save and close the file.
+
+Your system is now ready to hibernate!

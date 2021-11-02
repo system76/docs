@@ -27,7 +27,7 @@ Hibernation is not currently enabled on Pop!_OS by default. The factors for this
 - Pop!_OS' Default Partition Layout
 - Use of a non-persistent encryption key for SWAP.
 - Additional drive I/O used on Solid State Drives (SSDs)
-- Depending on alloted RAM in a system, and size of NVMe/SSD drive(s), hibernation could add notable delay on resuming a hibernation session and wear out the OS drive prematurely.
+- Depending on alloted RAM in a system, and size of NVMe/SSD drive(s), hibernation could add notable delay on resuming a hibernation session.
 
 However, these limitations aside, hibernation is an often requested feature for Pop\!_OS. The purpose of this article is to provide steps for enabling hibernation for any users' that would like it.
 
@@ -63,7 +63,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     | **SATA Drives**                                    | **NVMe Drives**                                   |
     |:--------------------------------------------------:|:-------------------------------------------------:|
-    | `sudo cryptsetup luksOpen /dev/sda3 cryptdata`       | `sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata` |
+    | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata```       | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
 
     **NOTE:** In the screenshot example, the partition is called `/dev/vda3`. Adjust the drive name to your case (sda# or nvme#n#p#).
 
@@ -124,7 +124,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     The system is now ready to suspend to, and resume from disk.
 
-    You can test if hibernation works on your system by running:
+    You can test if hibernation works by booting back into your install and running:
 
     ```bash
     sudo systemctl hibernate

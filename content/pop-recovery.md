@@ -44,7 +44,7 @@ The Refresh Install option allows you to reinstall the OS without losing user ac
 
 1. Your drive is encrypted. The Refresh install option may appear after decrypting the drive. A notice about decrypting the drive will be present above the install options.
 
-2. The OS version in Recovery is older than your current OS version. See the [update instructions](#update-recovery-partition)
+2. The Recovery version is out of date. See the [update instructions](#update-recovery-partition)
 
 **NOTE:** user-installed applications are not preserved and will need to be reinstalled.
 

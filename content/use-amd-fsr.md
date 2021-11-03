@@ -1,0 +1,73 @@
+---
+title: Use AMD FidelityFX SuperResolution (FSR) on Pop!_OS
+description: >
+   Want to use AMD's FidelityFX SuperResolution to increase your gaming performance?  Take a look at these instructions to set your games up for FSR!
+keywords:
+  - gaming
+  - support
+  - steam
+  - proton
+
+facebookImage: /_social/article
+twitterImage: /_social/article
+
+hidden: false
+section: media
+tableOfContents: true
+---
+
+## Pre-Requisites
+
+### Setting your System up for Gaming
+
+Following the steps in [Gaming for Linux](linux-gaming.md) article will ensure your system is setup and ready to use AMD's Fidelity SuperResolution (FSR). The most important steps are:
+
+1. [Enable Steam Play (Proton)](linux-gaming.md#enable-steam-play-proton)
+2. Get the latest version of Proton-GE via [Protonup](linux-gaming.md#install-protonup-to-manage-custom-proton-versions)
+3. Enable the latest version of Proton-GE by [changing the Proton version for each game](linux-gaming.md#changing-the-proton-version-for-a-specific-game)
+
+## AMD FSR
+
+### Resolution and Quality
+
+AMD's FSR works by running the game in a lower resolution (thereby increasing performance), then using AI to upscale the image to your output resolution. AMD has recommended specific resolutions at which your game should run, depending on your screen resolution. Here is a handy image.
+
+![Recommmended Resolutions](/static/images/use-amd-fsr/recommended-resolutions.png)
+
+The Quality preset, on the furthest left column, is determined by which resolution you select in-game. The higher the quality, the better the image! Conversely, the lower the quality, the higher your performance gains. Which you choose depends on your own goals and system!
+
+As an example, if your screen is 1920x1080, and you want the Quality preset, you would set your in-game resolution to 1280 x 720. Alternatively, for that same 1920 x 1080 screen, if you want the Ultra Quality preset, your in-game resolution should be 1477 x 831.
+
+### Sharpening
+
+You can optionally add an additional parameter, `WINE_FULLSCREEN_FSR_STRENGTH` to increase the sharpening effect of FSR. The range is 0-5, 0 having the most sharpening, and 5 having the least. If this parameter is not set, it defaults to 2.
+
+More sharpening will increase the quality of the image, but at a slight cost to performance!
+
+### Setup Steam Launch Options
+
+Right-click on the selected game and select "Properties". Then, under the General Tab, input into the Launch Options:
+
+```
+WINE_FULLSCREEN_FSR=1 %command%
+```
+
+If you wish to modify FSR's sharpening strength, add it just before %command%. Example:
+
+```
+WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_STRENGTH=1 %command%
+```
+
+### Setup your In-game Resolution
+
+Once the game is launched, go to the game's Options menu and set the following, typically under "Video Options":
+
+* Set the display to Fullscreen (not Bordered or Borderless Window!)
+* Set the resolution to your quality preset resolution (ex. Ultra-Quality for a 1920 x 1080 monitor would be 1477 x 831)
+* If necessary, restart your game!
+
+Congratulations! You've successfully set up and are using AMD's FidelityFX SuperResolution! Enjoy the increased performance on your Linux-based gaming machine!
+
+### Lutris
+
+Lutris version 0.5.9 will include a toggle for AMD FSR. This is currently in beta, but this guide will be updated when it launches!

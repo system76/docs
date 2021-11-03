@@ -19,7 +19,7 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
+The Recovery Partition is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory. Recovery can also perform a clean install, which resets all OS data.
 
 To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>)
 
@@ -29,9 +29,36 @@ Once the menu is shown, choose **Pop!_OS Recovery**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
+## Clean Install
+
+This option erases the current install along with all user files. It reformats the drive partitions and installs the version of Pop!\_OS contained in the Recovery partition.
+
+Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery)
+
+**NOTE:**
+The Recovery partition OS version will either be the same as the OS version that shipped with your computer, or whichever version to which the Recovery partition has been [updated](#update-recovery-partition)
+
+## Refresh Install
+
+The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory. If the `Refresh Install` option is not present on the install screen, one of two things may be true.
+
+1. Your drive is encrypted. The Refresh install option may appear after decrypting the drive. A notice about decrypting the drive will be present above the install options.
+
+2. The OS version in Recovery is older than your current OS version. See the [update instructions](#update-recovery-partition)
+
+**NOTE:** user-installed applications are not preserved and will need to be reinstalled.
+
+![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
+
+### Reinstall
+
+Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
+
+If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions.
+
 ## Repair
 
-If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**, or choose “try demo mode” after the language and keyboard selection screens. 
+If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**, or choose “try demo mode” after the language and keyboard selection screens.
 
 **NOTE:** be sure not to choose any install or repair options, as this could result in data loss.
 
@@ -101,20 +128,7 @@ exit
 reboot
 ```
 
-## Refresh Install
-
-The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory.
-**NOTE:** user-installed applications are not preserved and will need to be reinstalled.
-
-![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
-
-### Reinstall
-
-Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
-
-If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions above.
-
-## Upgrade
+## Update Recovery Partition
 
 It is important to keep the Recovery Partition up to date as it is not updated with the installed OS. Updating the Recovery partition will allow you to [reinstall](#reinstall) the newest OS, instead of the previous Recovery version.
 
@@ -126,6 +140,6 @@ Once the `Update` button is pressed you will see the below screenshot:
 
 ![Pop Recovery Updating](/images/pop-recovery/pop-recovery-update-updating.png)
 
-The screenshot below shows that the Recovery Partition has been upgrade successfully:
+The screenshot below shows that the Recovery Partition has been upgraded successfully:
 
 ![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)

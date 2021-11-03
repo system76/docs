@@ -29,9 +29,26 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
+If you want to use a AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps below. 
+
+### Install Paru
+
+```bash
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
+
+This command will install all of the packages
+
+```bash
+paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
+```
+
 ### System76 Firmware Daemon in Arch
 
-These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
+These commands will clone, build and install the <u>System76 Firmware Daemon</u> service. 
 
 ```bash
 git clone https://aur.archlinux.org/system76-firmware.git
@@ -41,9 +58,17 @@ sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
+These commands will install it using Paru.
+
+```bash
+paru -s system76-firmware-daemon
+sudo systemctl enable --now system76-firmware-daemon
+sudo gpasswd -a $USER adm
+```
+
 ### System76 Firmware Manager in Arch
 
-These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
+These commands will clone, build and install the <u>System76 Firmware Manager</u> application. 
 
 ```bash
 git clone https://aur.archlinux.org/firmware-manager.git
@@ -51,9 +76,15 @@ cd firmware-manager
 makepkg -srcif
 ```
 
+This command will install it using Paru.
+
+```bash
+paru -s firmware-manager
+```
+
 ### System76 DKMS in Arch
 
-This package is needed for hotkeys and fan(s) on Closed Firmware systems:
+This package is needed for hotkeys and fan(s) on Closed Firmware systems. 
 
 ```bash
 git clone https://aur.archlinux.org/system76-dkms.git
@@ -61,14 +92,26 @@ cd system76-dkms
 makepkg -srcif
 ```
 
+This command will install it using Paru.
+
+```bash
+paru -s system76-dkms
+```
+
 ### System76 ACPI DKMS in Arch
 
-This package is needed for hotkeys and fan(s) on Open Firmware systems:
+This package is needed for hotkeys and fan(s) on Open Firmware systems.
 
 ```bash
 git clone https://aur.archlinux.org/system76-acpi-dkms.git
 cd system76-acpi-dkms
 makepkg -srcif
+```
+
+This command will install it using Paru.
+
+```bash
+paru -s system76-acpi-dkms
 ```
 
 ### System76 Power in Arch
@@ -81,6 +124,14 @@ sudo systemctl enable --now system76-power
 sudo gpasswd -a $USER adm
 ```
 
+These commands will install it using Paru.
+
+```bash
+paru -s system76-power
+sudo systemctl enable --now system76-power
+sudo gpasswd -a $USER adm
+```
+
 ### System76 Power GNOME Shell Extension in Arch
 
 ```bash
@@ -89,7 +140,11 @@ cd gnome-shell-extension-system76-power
 makepkg -srcif
 ```
 
-**NOTE:** As of this writing the GNOME Shell Extension doesn't support GNOME 40.
+This command will install it using Paru.
+
+```bash
+paru -s gnome-shell-extension-system76-power
+```
 
 ### System76 Thelio Io DKMS in Arch
 
@@ -97,6 +152,12 @@ makepkg -srcif
 git clone https://aur.archlinux.org/system76-io-dkms.git
 cd system76-io-dkms
 makepkg -srcif
+```
+
+This command will install it using Paru.
+
+```bash
+paru -s system76-io-dkms
 ```
 
 **NOTE:** This package is only needed for Thelio desktops.
@@ -109,6 +170,12 @@ cd system76-acpi-oled
 makepkg -srcif
 ```
 
+This command will install it using Paru.
+
+```bash
+paru -s system76-acpi-oled
+```
+
 **NOTE:** This package is only needed for systems with OLED displays to control the brightness.
 
 ## Fedora
@@ -117,7 +184,7 @@ Be sure to install the <u>System76 Driver</u> first and the steps to do that are
 
 ### System76 Firmware Manager in Fedora
 
-Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>,enable the service and add your user to the adm group:
+Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>, enable the service and add your user to the adm group. 
 
 ```bash
 sudo dnf install firmware-manager

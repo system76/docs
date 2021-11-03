@@ -56,9 +56,21 @@ sudo apt install system76-driver
 
 This installs the System76 driver and related utilities which are needed to enable full functionality for your system.
 
+## Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs
+
+If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:
+
+```bash
+sudo apt-get install system76-driver-nvidia
+```
+
+In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card.
+
 ### Install System76 Driver on Other Operating Systems
 
 **DISCLAIMER:** This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
+
+**NOTE** at this time it is recommended to use the NVIDIA driver from the Arch and Fedora repositories. 
 
 Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
 
@@ -83,7 +95,7 @@ cd paru
 makepkg -si
 ```
 
->**NOTE** that by default <u>Paru</u> uses vim standards so when you see a ":" press the <kbd>q</kbd> key to continue. You may also need to import some public keys by using the <kbd>y</kbd> key.
+**NOTE** that by default <u>Paru</u> uses vim standards so when you see a ":" press the <kbd>q</kbd> key to continue. You may also need to import some public keys by using the <kbd>y</kbd> key.
 
 Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
 
@@ -94,7 +106,7 @@ makepkg -srcif
 sudo systemctl enable --now system76
 ```
 
->**NOTE** use the first option after running the <u>Paru</u> command.
+**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s system76-driver
@@ -109,13 +121,3 @@ Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](ht
 sudo dnf copr enable szydell/system76
 sudo dnf install system76-driver
 ```
-
-## Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs
-
-If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:
-
-```bash
-sudo apt-get install system76-driver-nvidia
-```
-
-In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card.

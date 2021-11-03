@@ -191,7 +191,7 @@ xfce4-notifyd-config
 
 ### Remove Duplicate Options From Login Screen
 
-Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
+Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xsessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
 
 ```bash
 sudo rm /usr/share/xsessions/cinnamon2d.desktop

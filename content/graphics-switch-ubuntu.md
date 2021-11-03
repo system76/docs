@@ -1,5 +1,5 @@
 ---
-title: Graphics switching (Ubuntu)
+title: Graphics Switching (Ubuntu)
 description: >
    How to use systems with switchable graphics
 keywords:

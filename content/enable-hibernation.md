@@ -22,9 +22,9 @@ tableOfContents: true
 
 ## State of Hibernation on Pop!_OS
 
-Hibernation is not currently enabled on Pop!_OS by default. The factors for this choice are:
+Hibernation is not currently enabled on Pop!\_OS by default. There are several limitations that keep this from being a default:
 
-- Pop!_OS' Default Partition Layout
+- Pop!\_OS' Default Partition Layout
 - Use of a non-persistent encryption key for SWAP.
 - Additional drive I/O used on Solid State Drives (SSDs)
 - Depending on alloted RAM in a system, and size of NVMe/SSD drive(s), hibernation could add notable delay on resuming a hibernation session.

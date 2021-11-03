@@ -48,7 +48,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 3. Disable and remove the SWAP partition. You can either right-click on the SWAP partition, and select `swapoff` or issue that same command in the Terminal:
 
     ```bash
-    swapoff
+    sudo swapoff
     ```
 
     Then click on the swap partition, click the red `X` to mark it for deletion, and then press the green checkmark to approve the changes.

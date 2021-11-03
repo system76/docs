@@ -31,15 +31,6 @@ Be sure to install the <u>System76 Driver</u> first. The steps to do that are [h
 
 If you want to use a AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps below. 
 
-### Install Paru
-
-```bash
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-```
-
 This command will install all of the packages
 
 ```bash

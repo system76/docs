@@ -29,7 +29,7 @@ Hibernation is not currently enabled on Pop!\_OS by default. There are several l
 - Additional drive I/O used on Solid State Drives (SSDs)
 - Depending on alloted RAM in a system, and size of NVMe/SSD drive(s), hibernation could add notable delay on resuming a hibernation session.
 
-However, these limitations aside, hibernation is an often requested feature for Pop\!_OS. The purpose of this article is to provide steps for enabling hibernation for any users' that would like it.
+However, these limitations aside, hibernation is an often requested feature for Pop!\_OS. The purpose of this article is to provide steps for enabling hibernation for any users that would like it.
 
 ## Enable Hibernation on an Encrypted Drive
 
@@ -55,7 +55,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 4. Extend the `luks` partition to the end of the drive.
 
-    Click on the encrypted `luks` partition and select the "Resize/Move" button. Use the GUI drag tools, or number fields to make sure the OS partition extends to the end of the drive (after `EFI` and `recovery`).
+    Click on the encrypted `luks` partition and select the "Resize/Move" button. Use the GUI drag tools, or number fields, to make sure the OS partition extends to the end of the drive (after `EFI` and `recovery`).
 
     ![gparted](/images/hibernation/gparted.png)
 
@@ -72,7 +72,7 @@ However, these limitations aside, hibernation is an often requested feature for 
     sudo vgchange -ay
     ```
 
-5. Reduce the size of the root volume by the size of main memory. If you have 16GB of memory, reduce the `data-root` volume by 16GB. If you have 32GB reduce by 32GB, etc. Use these Terminal commands:
+5. Reduce the size of the root volume by the size of main memory. If you have 16GB of memory, reduce the `data-root` volume by 16GB. If you have 32GB, reduce by 32GB, etc. Use these Terminal commands:
 
     ```bash
     free -h
@@ -142,7 +142,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 2. Add `.pkla` file:
 
-    **NOTE:** For Pop!OS and Ubuntu, we also require a file at `/etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla`
+    **NOTE:** Pop!OS and Ubuntu require a file at `/etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla`
 
     To create this file, run:
 

@@ -29,9 +29,9 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
-If you want to use a AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps below. 
+If you want to use a AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps on this [page](/articles/system76-driver) as well. 
 
-This command will install all of the packages
+This command will install all of the packages using Paru.
 
 ```bash
 paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms

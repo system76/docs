@@ -75,13 +75,12 @@ First let's install some packages needed for the build process of the <u>System7
 sudo pacman -S --needed base-devel git linux-headers
 ```
 
-Run these commands in a <u>Terminal</u> to clone, build and install the <u>System76 Firmware Daemon</u>:
+### Install Paru
 
 ```bash
-git clone https://aur.archlinux.org/system76-firmware.git
-cd system76-firmware
-makepkg -srcif
-sudo systemctl enable --now system76-firmware-daemon
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
 ```
 
 Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
@@ -90,6 +89,11 @@ Now the <u>System76 Driver</u> can be cloned, built and installed using these co
 git clone https://aur.archlinux.org/system76-driver.git
 cd system76-driver
 makepkg -srcif
+sudo systemctl enable --now system76
+```
+
+```bash
+paru -s system76-driver
 sudo systemctl enable --now system76
 ```
 

@@ -31,7 +31,7 @@ Be sure to install the <u>System76 Driver</u> first. The steps to do that are [h
 
 If you want to use a AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps on this [page](/articles/system76-driver) as well.
 
-This command will install all of the packages using Paru.
+This command will install all of the packages using <u>Paru</u>.
 
 ```bash
 paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
@@ -49,7 +49,9 @@ sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
-These commands will install it using Paru.
+These commands will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s system76-firmware-daemon
@@ -67,7 +69,9 @@ cd firmware-manager
 makepkg -srcif
 ```
 
-This command will install it using Paru.
+This command will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s firmware-manager
@@ -83,7 +87,9 @@ cd system76-dkms
 makepkg -srcif
 ```
 
-This command will install it using Paru.
+This command will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s system76-dkms
@@ -99,7 +105,9 @@ cd system76-acpi-dkms
 makepkg -srcif
 ```
 
-This command will install it using Paru.
+This command will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s system76-acpi-dkms
@@ -115,7 +123,9 @@ sudo systemctl enable --now system76-power
 sudo gpasswd -a $USER adm
 ```
 
-These commands will install it using Paru.
+These commands will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s system76-power
@@ -131,7 +141,9 @@ cd gnome-shell-extension-system76-power
 makepkg -srcif
 ```
 
-This command will install it using Paru.
+This command will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s gnome-shell-extension-system76-power
@@ -145,7 +157,9 @@ cd system76-io-dkms
 makepkg -srcif
 ```
 
-This command will install it using Paru.
+This command will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s system76-io-dkms
@@ -161,10 +175,12 @@ cd system76-acpi-oled
 makepkg -srcif
 ```
 
-This command will install it using Paru.
+This command will install it using <u>Paru</u>.
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-acpi-oled
+<u>Paru</u> -s system76-acpi-oled
 ```
 
 **NOTE:** This package is only needed for systems with OLED displays to control the brightness.

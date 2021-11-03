@@ -45,7 +45,7 @@ A new Rust crate built around asynchronous I/O, using Rust's async / await synta
 * Using multiple concurrent connections per file (as parts) to increase throughput
 * Using multiple mirrors to fetch different parts of the same file from
 * Defining minimum and maximum part size
-* Definining maximum requests per per, and maximum number of files to fetch concurrently
+* Defining maximum requests per peer, and maximum number of files to fetch concurrently
 * Checking modified timestamps and content length to determine when fetching is required
 * Optional checksum validation (MD5 / SHA256)
 * Cancellation, timeout, and retry handling
@@ -75,13 +75,13 @@ The current goal is to use this for:
 
 * Alongside OS installation option
 * Resizing LUKS and LVM partitions
-* Create Rust bindings for blkid, devmapper, and cryptsetup
+* Create Rust bindings for `blkid`, `devmapper`, and `cryptsetup`
 * Create Rust crates for disk-probing and management
 * Separate disk management from the installer
-* Providing distinst as a daemon for the installer
+* Providing `distinst` as a daemon for the installer
 * Enabling Wayland support for the installer
 * Support for exotic LUKS and LVM combinations
-* LVM snapshotting support
+* LVM snapshot support
 * Support for ZFS and its special features
 
 ### Packaging
@@ -202,7 +202,7 @@ New Rust crates that we've developed and released
 * [async-fetcher](https://github.com/pop-os/async-fetcher): asynchronous file fetcher
 * [deb-changelog](https://github.com/pop-os/deb-changelog): Zero-copy parser and futures codec for debian's changelog format
 * [deb-control](https://github.com/pop-os/deb-control): Zero-copy parser and futures codec for debian's control file format, used in most Debian files
-* [deb-diversion](https://github.com/pop-os/deb-diversion): Futures codec for Debian's dpkg diversion file
+* [deb-diversion](https://github.com/pop-os/deb-diversion): Futures codec for Debian's `dpkg` diversion file
 * [gtk-extras](https://github.com/pop-os/gtk-extras): Common GTK widgets, functions, and behaviors across our GTK projects
 * [pidfd](https://github.com/pop-os/pidfd): Linux (>= 5.3) process ID file descriptor support
 * [srmw](https://github.com/pop-os/srmw): asynchronous single-reader, multi-writer
@@ -297,7 +297,7 @@ after.
 
 ### Upgrade Daemon
 
-Due to the many issues experienced with Ubuntu's `do-release-upgade` script, a new project was
+Due to the many issues experienced with Ubuntu's `do-release-upgrade` script, a new project was
 started during this cycle to improve the reliability of release upgrades. This daemon is
 responsible for performing system repairs and preparing the system for a release upgrade.
 
@@ -315,7 +315,7 @@ responsible for performing system repairs and preparing the system for a release
 ## Pop!_OS 18.10
 
 Released on October 20th, 2018, the focus of development was furthered improvements to the
-reliablity and feature set provided by our distribution installer; the addition of many third
+reliability and feature set provided by our distribution installer; the addition of many third
 party applications, including Tensorflow; and the inclusion
 
 ### Installation
@@ -324,7 +324,7 @@ party applications, including Tensorflow; and the inclusion
   * Many system checks were added to prevent incompatible installation setups.
   * A new crate for managing keyboard and language locales was developed.
   * Setting the correct keyboard layout for the cryptsetup screen was fixed.
-* Various portions of distinst were separated into multiple crates.
+* Various portions of `distinst` were separated into multiple crates.
 * Improved support for detecting required packages based on installation configuration, and
   removal of packages which are not necessary for that configuration.
 
@@ -345,7 +345,7 @@ party applications, including Tensorflow; and the inclusion
 
 * Fan controls were added, with support for Thelio's I/O boards.
 * The CLI now handles arguments via the `clap` crate, to provide a quality user-friendly interface.
-* A new `--experimental` flag was added for the daemon to launch with additional Powertop and
+* A new `--experimental` flag was added for the daemon to launch with additional `Powertop` and
   TLP-recommended power-saving options.
 
 ---
@@ -368,7 +368,7 @@ Develop a simple and fast installer that introduces users to Pop!_OS and enables
 
 * Installer backend (<https://github.com/pop-os/distinst>)
 * Installer frontend (<https://github.com/pop-os/installer>)
-* GNOME Intial Setup (<https://github.com/pop-os/gnome-initial-setup>)
+* GNOME Initial Setup (<https://github.com/pop-os/gnome-initial-setup>)
 * On detection of system76 hardware, the `system76-driver` package is installed.
 * With the NVIDIA ISO on non-NVIDIA hardware, the nvidia drivers are removed.
 
@@ -405,6 +405,6 @@ Develop a simple and fast installer that introduces users to Pop!_OS and enables
 
 ### Installation
 
-* Add a feature to Ubiquity to toggle between "minimal" and "complete" Ubiquity. Pop!_OS will use minimal while other Ubuntu flavors can use the complete. Paired down Ubiquity to a minimal set of screens and packaged seprarately.
+* Add a feature to Ubiquity to toggle between "minimal" and "complete" Ubiquity. Pop!_OS will use minimal while other Ubuntu flavors can use the complete. Paired down Ubiquity to a minimal set of screens and packaged separately.
 * Use GNOME Initial Setup for user configuration
 * Add nvidia driver to the installation media

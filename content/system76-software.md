@@ -29,7 +29,7 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
-If you want to use a AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps on this [page](/articles/system76-driver) as well. 
+If you want to use a AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps on this [page](/articles/system76-driver) as well.
 
 This command will install all of the packages using Paru.
 
@@ -39,7 +39,7 @@ paru -S system76-firmware-daemon system76-firmware firmware-manager system76-pow
 
 ### System76 Firmware Daemon in Arch
 
-These commands will clone, build and install the <u>System76 Firmware Daemon</u> service. 
+These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
 
 ```bash
 git clone https://aur.archlinux.org/system76-firmware.git
@@ -59,7 +59,7 @@ sudo gpasswd -a $USER adm
 
 ### System76 Firmware Manager in Arch
 
-These commands will clone, build and install the <u>System76 Firmware Manager</u> application. 
+These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
 
 ```bash
 git clone https://aur.archlinux.org/firmware-manager.git
@@ -75,7 +75,7 @@ paru -s firmware-manager
 
 ### System76 DKMS in Arch
 
-This package is needed for hotkeys and fan(s) on Closed Firmware systems. 
+This package is needed for hotkeys and fan(s) on Closed Firmware systems.
 
 ```bash
 git clone https://aur.archlinux.org/system76-dkms.git
@@ -175,7 +175,7 @@ Be sure to install the <u>System76 Driver</u> first and the steps to do that are
 
 ### System76 Firmware Manager in Fedora
 
-Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>, enable the service and add your user to the adm group. 
+Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>, enable the service and add your user to the adm group.
 
 ```bash
 sudo dnf install firmware-manager

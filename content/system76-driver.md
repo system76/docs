@@ -83,6 +83,8 @@ cd paru
 makepkg -si
 ```
 
+>**NOTE** that by default <u>Paru</u> uses vim standards so when you see a ":" press the <kbd>q</kbd> key to continue. You may also need to import some public keys by using the <kbd>y</kbd> key.
+
 Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
 
 ```bash
@@ -91,6 +93,8 @@ cd system76-driver
 makepkg -srcif
 sudo systemctl enable --now system76
 ```
+
+>**NOTE** use the first option after running the <u>Paru</u> command.
 
 ```bash
 paru -s system76-driver

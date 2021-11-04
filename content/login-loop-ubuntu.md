@@ -39,7 +39,7 @@ If you're not able to log in, the reason could be:
 * **Wrong password**: you're notified of this at the graphical login screen.
 * Something else is blocking the login.
 
-The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
+The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Ubuntu](/articles/install-ubuntu/) or contacting Support for more assistance.
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 

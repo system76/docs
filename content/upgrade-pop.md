@@ -11,6 +11,7 @@ keywords:
   - Pop!_OS 20.04
   - Pop!_OS 20.10
   - Pop!_OS 21.04
+  - Pop!_OS 21.10
   - LTS
   - Non-LTS
   - Upgrade
@@ -24,9 +25,18 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 ## When Should I Upgrade?
+
+Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete (depending on download speeds and the speed of the components in the system you are upgrading).
+
+That being said, from time to time, unexpected complications can arise. The liklihood of complications during the upgrade process increases on systems that are:
+
+- upgrading more than one release at a time
+- running older releases that have already reached the end-of-life period
+- using a large number of third-party software repositories (PPAs)
 
 Before upgrading, it can be helpful to ask yourself the following environment questions:
 
@@ -52,19 +62,21 @@ Before upgrading, it can be helpful to ask yourself the following environment qu
 
 ## Backing Up Your Data
 
-**IMPORTANT NOTE:** The upgrade process will leave your files in place, but no matter which system version you are running, we **always** recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.
+**IMPORTANT NOTE:** The upgrade process will leave your files in place, but no matter which system or version you are running, we **always** recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade. Internet or power outages can happen to anyone.
 
 Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
 ## Upgrade Pop!_OS
 
+<!--Pop!\OS 21.10 was released on November 9, 2021 -->
+
 Pop!\_OS 21.04 was released on June 29, 2021.
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
-### Upgrading Pop!\_OS to 21.04 from 20.10
+### Upgrading Pop!\_OS to 21.10 from 21.04
 
-> **NOTE:** For all other operating system versions scroll down to the instructions for upgrading from an earlier release
+> **NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -85,7 +97,7 @@ Once the updates are applied, a notification should appear at the top of your sc
 
 After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.04!
 
-### Advanced Install (Terminal)
+## Terminal Install
 
 Use the Terminal to apply the upgrade may do so by running the following commands:
 
@@ -131,7 +143,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 ## Upgrading older releases
 
-Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.04 (hirsute).
+Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.10 (impish).
 
 These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 
@@ -187,7 +199,7 @@ Most upgrades proceed without a hitch, but occasionally things go wrong. If your
 
 ### Stuck Upgrades
 
-If your upgrade appears to hang in place for an extended period of time, click on the **Terminal** item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support and we'll be able to provide assistance.
+If your upgrade appears to hang in place for an extended period of time, click on the **Terminal** item to expand the terminal section. Check what action is available there, then complete the steps to un-hang your upgrade. For help, contact support and we'll be able to provide assistance.
 
 ### Broken Upgrade
 
@@ -197,8 +209,10 @@ If the upgrade fails it will most likely be due to a package manager issue.  Fir
 do-release-upgrade
 ```
 
-If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager-pop/)
+If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [incomplete upgrades](/articles/pop-incomplete-upgrade/)
 
-Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:
+Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the [repair package manager](https://support.system76.com/articles/pop-incomplete-upgrade#repair-package-manager-after-failedincomplete-upgrade) commands:
 
-> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+```bash
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+```

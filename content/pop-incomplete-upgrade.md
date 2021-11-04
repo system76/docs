@@ -19,6 +19,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 ## Backup Your Files

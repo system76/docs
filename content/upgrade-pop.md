@@ -91,7 +91,7 @@ If you are planning on staying on an LTS release for the time being, this is als
 
 ![Settings OS Upgrade](/images/upgrade-pop/setting-os-upgrade.png)
 
-**IMPORTANT NOTE:** Clicking `Refresh` to the right of "Refresh OS" will reinstall the Operating System with the version stored in Recovery. Refreshing is **not** part of the upgrade process.
+**NOTE:** Refreshing is **not** part of the upgrade process. `Refresh` will reinstall the Operating System with the version stored in Recovery, and will erase all user-installed applications.
 
 1. Click the `Update` button to update the Recovery partition.
 

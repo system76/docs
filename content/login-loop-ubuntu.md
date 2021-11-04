@@ -67,6 +67,22 @@ mv ~/.nv ~/.nv.old
 sudo systemctl reboot
 ```
 
+### Move `xorg.conf` file out of the way
+
+If display settings have been corrupted or modified incorrectly, it's good to remove the `xorg.conf`.
+
+```bash
+mv /etc/X11/xorg.conf /etc/X11/xorg.conf.old
+```
+
+By default, X11 config files are instead stored here:
+
+```bash
+/usr/share/X11/xorg.conf.d
+```
+
+`xorg.conf` files saved in `/etc/X11` can cause displays issues on boot, and should be avoided wherever possible.
+
 After moving those files and rebooting, try logging in again. (There may be files you need to move other than the common ones listed above.)
 
 ## Reinstall the login manager

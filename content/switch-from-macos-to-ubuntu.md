@@ -15,6 +15,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: switching
+tableOfContents: true
 ---
 
 If you are just coming to [Ubuntu](https://www.ubuntu.com/) from [Apple](https://www.apple.com/), it can be a little confusing where everything is. Some software will have the same names, while some tasks need different software. Generally, all operating systems accomplish the same functions: running programs, managing files, installing software, watching funny cat videos, sending email, and low-level functions, such as networking, keyboard input, and displaying images.

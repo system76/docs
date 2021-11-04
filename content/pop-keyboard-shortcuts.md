@@ -10,6 +10,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: pop
+tableOfContents: true
 ---
 
 ## Notable Keys
@@ -49,7 +50,7 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 | <kbd>Enter</kbd>                                                        | Apply changes (exit adjustment mode)     |
 | <kbd>ESC</kbd>                                                          | Cancel (exit adjustment mode)            |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Left click + Drag         | Move window (without adjustment mode)    |
-| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Right cick + Drag         | Resize window (without adjustment mode)  |
+| <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + Right click + Drag         | Resize window (without adjustment mode)  |
 
 ### Manipulate windows
 
@@ -80,7 +81,7 @@ The launcher allows searching through open windows and installed applications, a
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>                 | Activate the launcher on Pop 21.04+ |
 | <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>/</kbd>  | Activate the launcher on Pop 20.10 and below |
 | `recent filename`                                          | Browse and search recent files  |
-| `/` / `~`                                                  | Browse the filesystem           |
+| `/` / `~/`                                                 | Browse the filesystem           |
 | `file filename`                                            | Search the filesystem for a certain file |
 | `t:`                                                       | Execute a command in a terminal |
 | `:`                                                        | Execute a command in sh         |

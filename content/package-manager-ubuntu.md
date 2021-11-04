@@ -15,6 +15,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems.  Some package manager issues can be resolved with the graphical update program, but many require the command line.  If you get the red circle in the status bar, run these commands to fix your package manager:
@@ -49,10 +50,73 @@ sudo apt install <package name>
 **Important:** Please pay attention when using a purge command.  If the command looks like it will remove several additional packages besides the one you are trying to fix, don't run it!  If it's only a few packages, most likely it's safe.  If additional packages are removed, make sure to install them again before restarting the computer.  This command will make sure the core Pop!_OS components are installed after any purge commands:
 
 ```bash
-sudo apt install pop-desktop
+sudo apt install ubuntu-desktop
 ```
 
 If <u>Software Updater</u> indicates that some remote repositories can't be reached, open the <u>Software & Updates</u> program and look in the **Other Software** tab for the broken repository.  Either remove the repository, or search for the software vendor to determine what has happened to their software server.  Sometimes the version of the repo (xenial, yakkety, zesty, artful, etc) needs changing to match the current version of the operating system.
+
+### Update with Packages Held
+
+If a problem presents itself immediately after updating a particular package, sometimes holding that package back temporarily can help narrow down the cause.
+
+> **NOTE:** This process is meant to be used on a temporary basis for testing *only.* System76 does not recommend holding back packages unless specifically instructed to by support.
+
+First, remove the newer package using this Terminal command:
+
+```bash
+sudo apt remove [packagename]
+```
+
+Next, search for the package name in the apt repositories:
+
+```bash
+apt policy [packagename]
+```
+
+Then, install the desired version:
+
+```bash
+sudo apt install [packagename including version number]
+```
+
+To perform an update while keeping some packages on their current version, use the following Terminal command:
+
+```bash
+sudo apt-mark hold [packagename]
+```
+
+If the package is not central to OS functions, it can be held at the current version and the other packages updated around it. If the problem doesn't present itself when a package has been held, it was likely being updated to a newer version that was causing instability.
+
+To remove the hold on an application run:
+
+```bash
+sudo apt-mark unhold [packagename]
+```
+
+Show which packages are currently held with:
+
+```bash
+apt-mark showhold
+```
+
+If the Terminal returns nothing, no packages are held.
+
+If the Pop!_Shop indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
+
+## Snap Pacakges
+
+Snaps are designed to update themselves as needed, but if you'd like to manually update the Snaps on your Ubuntu system, run these commands:
+
+```bash
+snap refresh --list
+sudo snap refresh 
+```
+
+To remove a Snap package run:
+
+```bash
+sudo snap remove <packagename>
+```
 
 ## Useful Programs
 

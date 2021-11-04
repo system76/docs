@@ -15,6 +15,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: media
+tableOfContents: true
 ---
 
 ## Bring Your Imagination to Life
@@ -29,11 +30,12 @@ Blender is the free and open source 3D creation suite. It supports the entirety 
 
 Install Directly From the Pop!\_Shop
 
+<!--
 ### DaVinci Resolve
 
 DaVinci Resolve 16 is the world’s only solution that combines professional 8K editing, color correction, visual effects and audio post production all in one software tool.
 
-See installation instructions [here](/articles/install-davinci-resolve/).
+See installation instructions [here](/articles/install-davinci-resolve/). -->
 
 ### Godot Game Engine
 

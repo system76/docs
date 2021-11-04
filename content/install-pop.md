@@ -17,6 +17,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: pop
+tableOfContents: true
 ---
 
 The following guide describes how to download the Pop!\_OS.iso image, write it to a flash drive, and install it on the hardware of your choice.

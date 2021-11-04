@@ -1,5 +1,5 @@
 ---
-title: Graphics switching (Ubuntu)
+title: Graphics Switching (Ubuntu)
 description: >
    How to use systems with switchable graphics
 keywords:
@@ -17,6 +17,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 The following laptops have switchable graphics:

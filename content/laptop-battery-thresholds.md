@@ -11,6 +11,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware
+tableOfContents: true
 ---
 
 Charging thresholds allow your System76 laptop to avoid charging the battery until it has dropped below a lower bound (the start threshold), and to stop charging when it reaches an upper bound (the end threshold). This is useful when your laptop is plugged into an AC power adapter for extended periods of time, as it prevents unnecessary micro-charging that would reduce battery longevity.
@@ -19,7 +20,7 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 ## Configuring Charging Thresholds (Open Firmware)
 
-**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them.
+**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged.) Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them. To work around this limitation in the short term, you can [use systemd to set thresholds at boot](#at-boot).
 
 ### Using the terminal
 
@@ -57,6 +58,33 @@ Charging thresholds are exposed by the firmware through ACPI, and the `system76_
 - `/sys/class/power_supply/BAT0/charge_control_end_threshold`
 
 The thresholds can be controlled by reading from and writing to these sysfs files.
+
+### At boot
+
+To work around the limitation in open firmware causing the thresholds to be reset when the system
+is shut down and unplugged, you can set the thresholds at boot via systemd. To do so, create a file called
+`/etc/systemd/system/charge-thresholds.service` with the following contents:
+
+```
+[Unit]
+Description=Set the charge threshold at startup.
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=system76-power charge-thresholds 40 80
+
+[Install]
+WantedBy=default.target
+```
+
+Then, enable the service using this command:
+
+```
+sudo systemctl enable charge-thresholds.service
+```
+
+Finally, start the service using `sudo systemctl start charge-thresholds.service` or reboot to apply the thresholds.
 
 ## Configuring FlexiCharger (proprietary firmware)
 

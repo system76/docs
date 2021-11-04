@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: general-hardware-info
+tableOfContents: true
 ---
 
 ## Disclaimer
@@ -55,49 +56,62 @@ We have tested the following docks:
 
 Community members have reported that the following docks work with our products:
 
+- [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/797) on an Intel system] <sup>1</sup>
 - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [[community-tested](https://github.com/system76/docs/pull/417) on an Intel system] <sup>1</sup>
   - Downstream (passthrough) Thunderbolt 3 port not tested.
+- [Dell D3100](https://www.dell.com/en-us/work/shop/dell-docking-station-usb-30-d3100/apd/452-bbpg/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/742) on an Intel system]
+  - DisplayPort port not tested.
 - [Dell DS1000](https://www.dell.com/support/manuals/us/en/04/dell-dockstand-ds1000/ds1000_docking_stand_ug_publication/technical-specifications?guid=guid-1ad58fe1-dd33-4ebc-bac1-8e6a9083eb35&lang=en-us) [[community-tested](https://github.com/system76/docs/pull/431) on an Intel system]
   - Ethernet port not tested.
-- [Dell WD19 Dock](https://www.dell.com/en-us/work/shop/dell-dock-wd19-90w-power-delivery-130w-ac/apd/210-ARIO/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system] <sup>1</sup>
+- [Dell WD19 Dock](https://www.dell.com/support/home/en-us/product-support/product/dell-wd19-130w-dock/overview) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system] <sup>1</sup>
   - Displays sometimes don't wake up from sleep until dock is re-plugged.
+- [Dell WD19S Dock](https://www.dell.com/en-us/work/shop/dell-dock-wd19s-130w/apd/210-azbg/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/773) on an Intel system] <sup>1</sup>
+  - Displays sometimes don't wake up from sleep until dock is re-plugged to its power source.
+  - At most, two external displays can be used at a time.
+  - Power button does nothing.
 - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/206) on an Intel system] <sup>1</sup>
 - [HP Thunderbolt Dock 120W G2](https://www.amazon.com/gp/product/B07DPKVYXR/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1) [[community-tested](https://github.com/system76/docs/pull/231) on an Intel system]
   - Requires extra configuration for suspend/resume to work.
+- [i-tec C31DUALDPDOCKPD](https://i-tec.pro/en/produkt/c31dualdpdockpd-2/) [[community-tested](https://github.com/system76/docs/pull/763) on an Intel system]<sup>1</sup>
+  - Displays sometimes don't power on until dock is re-plugged.
+- [i-tec U3DUALHDMIDOCK](https://i-tec.pro/en/produkt/u3dualhdmidock-2/) [[community-tested](https://github.com/system76/docs/pull/749) on an Intel system]
+  - HDMI video and USB keyboard input lags when laptop display is closed/disabled.
+  - Two HDMI outputs at the same time not tested.
 - [Lenovo ThinkPad Thunderbolt 3 Workstation Dock Gen 2](https://www.lenovo.com/us/en/accessories-and-monitors/docking/universal-cable-docks-thunderbolt/TBT-WS-Dock-Gen-2/p/40ANY230US) [[community-tested](https://github.com/system76/docs/pull/517) on an Intel sytem] <sup>1</sup>
 - [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
   - Ethernet and DVI ports not tested.
-- [Plugable UD-ULTCDL Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
+- [Plugable UD-ULTC4K USB-C Triple 4K Display Dock](https://plugable.com/products/ud-ultc4k) [[community-tested](https://github.com/system76/docs/pull/790) on an NVIDIA system] <sup>2,3</sup>
+- [Plugable UD-ULTCDL USB-C Triple Display Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
 
-## For Intel systems
+<sup>1</sup> Does not need the DisplayLink Driver installed to work.  
+<sup>2</sup> For video output via DisplayPort over USB-C, the Gazelle 15 (gaze15) requires GTX 1660 Ti graphics; the Gazelle 16 (gaze16) requires RTX 3060 graphics.  
+<sup>3</sup> NVIDIA cards have some minor graphical issues with what is rendered under the mouse as well as scrollbars.  
 
-You'll need to install the 'dkms' package to install DisplayLink Driver. The NVIDIA Driver installs this package automatically.
+## Installing the DisplayLink Driver
+
+**Note:** The DisplayLink driver should only be installed if you are using a docking station that requires it. The DisplayLink driver may cause graphical issues with non-DisplayLink devices.
+
+On Intel or AMD graphics systems, you'll need to install the 'dkms' package to install DisplayLink driver. On NVIDIA graphics systems, the NVIDIA driver installs this package automatically.
 
 ```bash
 sudo apt install dkms
 ```
 
-## Installing DisplayLink Driver
+Download the newest [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) from the linked webpage.
 
-To download the newest [DisplayLink driver](http://www.displaylink.com/downloads/ubuntu) with the link in orange.
-
-To install the DisplayLink Driver, open the Terminal and move to the Downloads directory (the version for the driver may change, so look at the file name and change it accordingly):
+To install the DisplayLink driver, open the Terminal and move to the Downloads directory (the version for the driver may change, so look at the file name and change it accordingly):
 
 ```bash
 cd Downloads
-unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu\ 5.2.zip
-sudo chmod +x displaylink-driver-5.2.14.run
-sudo ./displaylink-driver-5.2.14.run
+unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu5.4-EXE.zip
+sudo chmod +x displaylink-driver-5.4.0-55.153.run
+sudo ./displaylink-driver-5.4.0-55.153.run
 ```
 
-To uninstall the DisplayLink driver this command will be used:
+To uninstall the DisplayLink driver, use this command:
 
 ```bash
 sudo displaylink-installer uninstall
 ```
 
-For installing the NVIDIA Driver that we provide you can use this support article: [System76 NVIDIA Driver](/articles/system76-driver).
-
-<sup>1</sup> Does not need the DisplayLink Driver installed to work.  
-<sup>2</sup> On the Gazelle 15 (gaze15), requires GTX 1660 Ti graphics for video output via DisplayPort over USB-C.  
-<sup>3</sup> NVIDIA cards have some minor graphic issues with what is rendered under the mouse as well as scrollbars.
+To install the NVIDIA driver that we provide, see the [System76 NVIDIA Driver](/articles/system76-driver) support article.

@@ -11,6 +11,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 ## Disclaimer
@@ -28,6 +29,14 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
+If you want to use an AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps on this [page](/articles/system76-driver) as well.
+
+This command will install all of the packages using <u>Paru</u>.
+
+```bash
+paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
+```
+
 ### System76 Firmware Daemon in Arch
 
 These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
@@ -36,6 +45,16 @@ These commands will clone, build and install the <u>System76 Firmware Daemon</u>
 git clone https://aur.archlinux.org/system76-firmware.git
 cd system76-firmware-daemon
 makepkg -srcif
+sudo systemctl enable --now system76-firmware-daemon
+sudo gpasswd -a $USER adm
+```
+
+These commands will install `system76-firmware-daemon` using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+paru -s system76-firmware-daemon
 sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
@@ -50,9 +69,17 @@ cd firmware-manager
 makepkg -srcif
 ```
 
+This command will install `firmware-manager` using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+paru -s firmware-manager
+```
+
 ### System76 DKMS in Arch
 
-This package is needed for hotkeys and fan(s) on Closed Firmware systems:
+This package is needed for hotkeys and fan(s) on Closed Firmware systems.
 
 ```bash
 git clone https://aur.archlinux.org/system76-dkms.git
@@ -60,14 +87,30 @@ cd system76-dkms
 makepkg -srcif
 ```
 
+This command will install `system76-dkms` using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+paru -s system76-dkms
+```
+
 ### System76 ACPI DKMS in Arch
 
-This package is needed for hotkeys and fan(s) on Open Firmware systems:
+This package is needed for hotkeys and fan(s) on Open Firmware systems.
 
 ```bash
 git clone https://aur.archlinux.org/system76-acpi-dkms.git
 cd system76-acpi-dkms
 makepkg -srcif
+```
+
+This command will install `system76-acpi-dkms` using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+paru -s system76-acpi-dkms
 ```
 
 ### System76 Power in Arch
@@ -80,6 +123,16 @@ sudo systemctl enable --now system76-power
 sudo gpasswd -a $USER adm
 ```
 
+These commands will install `system76-power` using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+paru -s system76-power
+sudo systemctl enable --now system76-power
+sudo gpasswd -a $USER adm
+```
+
 ### System76 Power GNOME Shell Extension in Arch
 
 ```bash
@@ -88,7 +141,13 @@ cd gnome-shell-extension-system76-power
 makepkg -srcif
 ```
 
-**NOTE:** As of this writing the GNOME Shell Extension doesn't support GNOME 40.
+This command will install `gnome-shell-extension-system76-power` using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+paru -s gnome-shell-extension-system76-power
+```
 
 ### System76 Thelio Io DKMS in Arch
 
@@ -96,6 +155,14 @@ makepkg -srcif
 git clone https://aur.archlinux.org/system76-io-dkms.git
 cd system76-io-dkms
 makepkg -srcif
+```
+
+This command will install `system76-io-dkms` using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+paru -s system76-io-dkms
 ```
 
 **NOTE:** This package is only needed for Thelio desktops.
@@ -108,6 +175,14 @@ cd system76-acpi-oled
 makepkg -srcif
 ```
 
+This command will install it using <u>Paru</u>.
+
+**NOTE:** choose the first software option after running the <u>Paru</u> command.
+
+```bash
+<u>Paru</u> -s system76-acpi-oled
+```
+
 **NOTE:** This package is only needed for systems with OLED displays to control the brightness.
 
 ## Fedora
@@ -116,7 +191,7 @@ Be sure to install the <u>System76 Driver</u> first and the steps to do that are
 
 ### System76 Firmware Manager in Fedora
 
-Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>,enable the service and add your user to the adm group:
+Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>, enable the service and add your user to the adm group.
 
 ```bash
 sudo dnf install firmware-manager
@@ -165,7 +240,7 @@ sudo dnf install system76-acpi-dkms
 sudo systemctl enable dkms
 ```
 
-> **NOTE:** After enabling the dkms systemd service for either the <u>System76 DKMS</u> or the <u>System76 ACPI DKMS</u> package you will need to reboot the system:
+**NOTE:** After enabling the dkms systemd service for either the <u>System76 DKMS</u> or the <u>System76 ACPI DKMS</u> package you will need to reboot the system:
 
 ```bash
 sudo systemctl reboot

@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: pop
+tableOfContents: true
 ---
 
 The Pop!_OS operating system provides all the features you would expect from a modern desktop.

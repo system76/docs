@@ -93,11 +93,9 @@ If you are planning on staying on an LTS release for the time being, this is als
 
 **NOTE:** Refreshing is **not** part of the upgrade process. `Refresh` will reinstall the Operating System with the version stored in Recovery, and will erase all user-installed applications.
 
-1. Click the `Update` button to update the Recovery partition.
+1. Click the `Download` button and the download will begin. Once the download is complete, you will receive a second notification saying the upgrade is ready.
 
-2. Click the `Download` button and the download will begin. Once the download is complete, you will receive a second notification saying the upgrade is ready.
-
-3. Click on the notification and your computer will restart to the upgrade screen.
+2. Click on the notification and your computer will restart to the upgrade screen.
 
 After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.10!
 

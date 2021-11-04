@@ -20,7 +20,7 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Pop!_OS brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
+Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Ubuntu brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
 
 * Configuration files in your home directory are not compatible with new versions of software
 * The display/login manager is not working correctly

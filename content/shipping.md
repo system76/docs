@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: repairs-returns
+tableOfContents: true
 ---
 
 When shipping a computer to us for any reason, several steps need followed before sending it in.

@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 Some bugs are determined by the maintainer of Pop\! projects to be easy to fix, these bugs are referred to as "bitesize" bugs and will show up in the project's issue tracker as such.

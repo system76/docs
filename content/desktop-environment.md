@@ -16,6 +16,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 Pop!_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
@@ -190,7 +191,7 @@ xfce4-notifyd-config
 
 ### Remove Duplicate Options From Login Screen
 
-Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
+Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xsessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
 
 ```bash
 sudo rm /usr/share/xsessions/cinnamon2d.desktop

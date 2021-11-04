@@ -1,7 +1,7 @@
 ---
-title: Disaster Data Recovery
+title: Data Recovery
 description: >
- How to back up your files if your OS doesn't boot
+ How to back up your files if your operating system doesn't boot
 keywords:
   - files
   - backup
@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](/articles/login-loop-pop) may be helpful instead.
@@ -107,7 +108,7 @@ Now that we reinstalled the OS we can start restoring our data. To restore your 
 
 ## If the System Doesn't Power On
 
-Refer to your models [service manual](/articles/service-manuals) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
+Refer to your models [service manual](/articles/guides) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
 
 ## What if the Drive is the Problem?
 

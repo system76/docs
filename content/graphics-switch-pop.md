@@ -17,6 +17,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 Many laptops these days have _switchable graphics_, which allow users to switch between several GPU modes spanning power use and performance.

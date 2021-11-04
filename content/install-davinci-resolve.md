@@ -10,8 +10,9 @@ keywords:
 facebookImage: /_social/article
 twitterImage: /_social/article
 
-hidden: false
+hidden: true
 section: software
+tableOfContents: true
 ---
 
 ### GPU requirements

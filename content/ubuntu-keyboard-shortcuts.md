@@ -10,6 +10,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: ubuntu
+tableOfContents: true
 ---
 
 ## Super Key

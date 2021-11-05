@@ -91,19 +91,28 @@ sudo systemctl reboot
 
 After moving those files and rebooting, try logging in again. (There may be files you need to move other than the common ones listed above.)
 
+### Move `xorg.conf` file out of the way
+
+If display settings have been corrupted or modified incorrectly, it's good to remove the `xorg.conf`.
+
+```bash
+mv /etc/X11/xorg.conf /etc/X11/xorg.conf.old
+```
+
+By default, X11 config files are instead stored here:
+
+```bash
+/usr/share/X11/xorg.conf.d
+```
+
+`xorg.conf` files saved in `/etc/X11` can cause displays issues on boot, and should be avoided wherever possible.
+
 ### Reinstall the login manager
 
 You can reinstall GNOME Display Manager (which handles the login screen), along with the desktop environment. On Pop!_OS:
 
 ```bash
 sudo apt install --reinstall gdm3 pop-desktop gnome-shell
-sudo systemctl reboot
-```
-
-Or on Ubuntu:
-
-```bash
-sudo apt install --reinstall gdm3 ubuntu-desktop gnome-shell
 sudo systemctl reboot
 ```
 

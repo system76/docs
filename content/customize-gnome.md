@@ -55,6 +55,8 @@ https://github.com/pop-os/cosmic
 
 ### Pop Shell
 
+![pop-shell](/images/customize-gnome/pop-shell.png)
+
 ### System76 Power
 
 https://github.com/pop-os/gnome-shell-extension-system76-power 
@@ -79,13 +81,15 @@ This extension allows for the desktop to be themed in further ways than default.
 
 [Backslide](https://extensions.gnome.org/extension/543/backslide/)
 
-![backslide](/images/customize-gnome/backslide.png)
+![backslide](/images/customize-gnome/backslide-new.png)
 
 This extension is a wallpaper slideshow for your desktop.  After choosing a folder of pictures, they will be rotated automatically at a predefined time period.
 
 ---
 
 ## Caffeine
+
+![caffeine](/images/customize-gnome/caffeine.png)
 
 https://extensions.gnome.org/extension/517/caffeine/ 
 
@@ -101,7 +105,7 @@ https://extensions.gnome.org/extension/1319/gsconnect/
 
 [Lock keys](https://extensions.gnome.org/extension/36/lock-keys/)
 
-![lock keys](/images/customize-gnome/lock-keys.png)
+![lock keys](/images/customize-gnome/lock-keys-3.png)
 
 The lock keys extension notifies you when you press the Caps Lock or the Num Lock and let's you know at all times if you have either button active.
 
@@ -110,7 +114,11 @@ The lock keys extension notifies you when you press the Caps Lock or the Num Loc
 
 [Sound Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
-![sound-output](/images/customize-gnome/sound-output.png)
+
+Extension Disabled | Extension Enabled 
+---------|----------
+ ![sound-output-no](/images/customize-gnome/without-sound-devices.png) | ![sound-input-yes](/images/customize-gnome/with-sound-devices.png) 
+ 
 
 The Sound Output Chooser adds a quick change option to the system menu in the top right of the screen.  This allows for changing audio inputs and outputs and adjusting volume levels quickly.
 

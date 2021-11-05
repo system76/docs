@@ -58,11 +58,11 @@ If the existing install is encrypted, please see the [encrypted disk](#encrypted
 
 ## Repair
 
-If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**, or choose “try demo mode” after the language and keyboard selection screens.
+If the existing OS install needs to be repaired, the installer application should be closed. An app menu is located in the top-left of the screen with the name of the currently running application (in this case: "Install Pop!\_OS"). Click on the app menu and select `Quit`. Alternatively, you can use the installer app to select keyboard and language settings, and then click the `Try Demo Mode` button in the lower-left corner of the install page.
 
 **NOTE:** be sure not to choose any install or repair options, as this could result in data loss.
 
-To access to the existing OS drive and run the package manager [repair commands](/articles/package-manager-pop/), the following commands will need to be run:
+To access to the existing OS drive run the following terminal:
 
 First, press `SUPER`+`T` to open a terminal, then type this command:
 
@@ -117,7 +117,7 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command you will have root access to your installed system. You can also access your files with <u>files</u> via "Other Locations" -> "Computer" -> "mnt."
+With this last command you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>files</u> via "Other Locations" -> "Computer" -> "mnt."
 
 ### After Chroot
 

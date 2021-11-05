@@ -13,9 +13,17 @@ section: ubuntu
 tableOfContents: true
 ---
 
-## Super Key
+## Super key
 
-The Super Key is the OS key on your keyboard and is the Ubuntu or Pop key (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>).
+The Super key is the OS key on your keyboard.
+
+- On recent System76 products, it's the Pop key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys.
+- On older System76 products, it's the Ubuntu key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
+- On the Launch keyboard it is the <kbd>SUPER</kbd> key.
+- On generic third-party products, it may be labeled with a Windows logo.
+- On Mac accessories, it may be labeled `command`.
+
+The Super Key is the OS key on your keyboard and is the Ubuntu or Pop key (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
 
 In Ubuntu, <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> handles the majority of OS and window actions.
 

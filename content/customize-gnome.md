@@ -73,7 +73,7 @@ https://github.com/ubuntu/gnome-shell-extension-appindicator
 
 [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
-This extension allows for the desktop to be themed in further ways than default.  Many themes and extensions can be installed from [opendesktop.org](https://www.opendesktop.org/s/Gnome), among others.  This extension is installed by default in Pop!_OS, and can be added to Ubuntu 18.04.  
+This extension allows for the desktop to be themed in further ways than default.  Many themes and extensions can be installed from [opendesktop.org](https://www.opendesktop.org/s/Gnome), among others.  This extension is not installed by default in Pop!_OS.  
 
 ---
 
@@ -117,10 +117,8 @@ The lock keys extension notifies you when you press the Caps Lock or the Num Loc
 
 Extension Disabled | Extension Enabled 
 ---------|----------
- ![sound-output-no](/images/customize-gnome/without-sound-devices.png) | ![sound-input-yes](/images/customize-gnome/with-sound-devices.png) 
- 
+ ![sound-output-no](/images/customize-gnome/without-sound-devices.png) | ![sound-input-yes](/images/customize-gnome/with-sound-devices.png)
 
 The Sound Output Chooser adds a quick change option to the system menu in the top right of the screen.  This allows for changing audio inputs and outputs and adjusting volume levels quickly.
 
 ---
-

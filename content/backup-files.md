@@ -187,21 +187,21 @@ System-wide program configuration files can be found in many locations of the OS
 
 Pop!\_OS comes with a disk management utility called GNOME Disks. You can find it in your apps list.
 
-![Disks app](https://user-images.githubusercontent.com/35414314/130321339-33d80ce0-9045-4c6c-9e88-5b1f7b33e563.png)
+![Disks app](/images/backup/disks-1-none-selected.png.png)
 
 Upon opening, on the left, you will see a list of all disks connected to your computer. Choose which disk you want to back up or restore and click on it.
 
-![drop down menu in Disks app](https://user-images.githubusercontent.com/35414314/130321350-bbc2e2dd-34ec-4317-b66a-d35b010e3db4.png)
+![drop down menu in Disks app](/images/backup/disks-2-disk-selected.png)
 
 Once you select a disk, a "Disk options" button will appear near the top right corner of the app window. When you press it, a drop down menu will appear, allowing you to select the option you want - to create or restore a disk image.
 
 ### Creating a disk image
 
-![image](https://user-images.githubusercontent.com/35414314/130321407-8225e788-e708-4208-8068-cf10c64f321b.png)
+![image](/images/backup/disks-3-create-disk-image.png)
 
 When you press a "Create disk image" in the drop-down menu mentioned before, you will have a pop-up appear, presenting you with choice to name the disk image you're creating and select where to put it.
 
-![image](https://user-images.githubusercontent.com/35414314/130321417-000beada-73c9-4c2c-ac3c-8eed859dbf6a.png)
+![image](/images/backup/disks-3-create-disk-image-busy.png)
 
 After clicking "Start creating," it may ask for your password. Next Disks will start creating your disk image. A progress bar will be shown. You can cancel creating the image at any time by pressing the trash can icon on the right, next to the progress bar.
 
@@ -211,11 +211,11 @@ Upon finishing, you will have a disk image file in `.img` format. The file will 
 
 > **IMPORTANT NOTE:** Restoring a disk image to a drive erases the current contents of the selected drive or partition. Again, this will result in a complete loss of data. Only restore disk images to drives that are already backed up, or on which you don't wish to preserve the data.
 
-![image](https://user-images.githubusercontent.com/35414314/130321768-3538d10e-b847-4911-96aa-eae9c19d148a.png)
+![image](/images/backup/disks-4-restore-disk-image.png)
 
 When you press "Restore disk image" in the drop-down menu mentioned before, a pop-up will appear, presenting a button to select which disk image you want to restore The "Destination" will be whicehver disk you selected previously (on the left).
 
-![image](https://user-images.githubusercontent.com/35414314/130321834-ca776204-6ea1-4fe4-9651-675f025d5b91.png)
+![image](/images/backup/disks-4-restore-disk-image-busy.png.png)
 
 After you press "Start restoring," it will ask for a confirmation and may ask for a user password. After that, process of restoring a disk image onto your disk will start, showing you restoring progress. You can cancel at any time by pressing the trash can icon on the right from the progress bar.
 

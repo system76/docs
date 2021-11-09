@@ -21,7 +21,7 @@ tableOfContents: true
 
 The Recovery Partition is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory. Recovery can also perform a clean install, which resets all OS data.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>)
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>).
 
  **NOTE:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
 
@@ -33,10 +33,10 @@ Once the menu is shown, choose **Pop!_OS Recovery**.
 
 This option erases the current install along with all user files. It reformats the drive partitions and installs the version of Pop!\_OS contained in the Recovery partition.
 
-Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery)
+Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery).
 
 **NOTE:**
-The Recovery partition OS version will either be the same as the OS version that shipped with your computer or whichever version to which the Recovery partition has been [updated](#update-recovery-partition)
+The Recovery partition OS version will either be the same as the OS version that shipped with your computer or whichever version to which the Recovery partition has been [updated](#update-recovery-partition).
 
 ## Refresh Install
 
@@ -48,7 +48,7 @@ If the `Refresh Install` option is not present on the install screen, one of two
 
 1. Your drive is encrypted. The Refresh install option may appear after decrypting the drive. A notice about decrypting the drive will be present above the install options.
 
-2. The Recovery version is out of date. See the [update instructions](#update-recovery-partition)
+2. The Recovery version is out of date. See the [update instructions](#update-recovery-partition).
 
 ![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
 

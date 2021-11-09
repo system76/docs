@@ -19,7 +19,7 @@ tableOfContents: true
 
 The Super key is the OS key on your keyboard.
 
-- On recent System76 products, it's the Pop key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. ![Super Key](/images/super_key_vector_x32.png)
+- On recent System76 products, it's the Pop key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. ![Super Key](/images/super_key_vector_x32.png) The key is labelled with a rectangle and two two vertical lines, one on either side of the rectangle.
 - On older System76 products, it's the Ubuntu key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
 - On the Launch keyboard it is the <kbd>SUPER</kbd> key.
 - On generic third-party products, it may be labeled with a Windows logo.
@@ -42,35 +42,35 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 
 | Shortcut                                                                | Action                                   |
 | ----------------------------------------------------------------------- | ---------------------------------------- |
-| <kbd>Pop</kbd></kbd> + <kbd>Direction keys</kbd>                        | Switch focus between windows             |
-| <kbd>Pop</kbd> + <kbd>Enter</kbd>                                       | Enter window adjustment mode             |
+| <kbd>SUPER</kbd></kbd> + <kbd>Direction keys</kbd>                        | Switch focus between windows             |
+| <kbd>SUPER</kbd> + <kbd>Enter</kbd>                                       | Enter window adjustment mode             |
 | <kbd>Direction keys</kbd>                                               | Move window (while in adjustment mode)   |
 | <kbd>Shift</kbd> + <kbd>Direction keys</kbd>                            | Resize window (while in adjustment mode) |
 | <kbd>Ctrl</kbd> + <kbd>Direction keys</kbd>                             | Swap windows (while in adjustment mode)  |
 | <kbd>Enter</kbd>                                                        | Apply changes (exit adjustment mode)     |
 | <kbd>ESC</kbd>                                                          | Cancel (exit adjustment mode)            |
-| <kbd>Pop</kbd> + Left click + Drag                                      | Move window (without adjustment mode)    |
-| <kbd>Pop</kbd> + Right click + Drag                                     | Resize window (without adjustment mode)  |
+| <kbd>SUPER</kbd> + Left click + Drag                                      | Move window (without adjustment mode)    |
+| <kbd>SUPER</kbd> + Right click + Drag                                     | Resize window (without adjustment mode)  |
 
 ### Manipulate windows
 
 | Shortcut                                                                                  | Action                                     |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------ |
-| <kbd>Pop</kbd> + <kbd>S</kbd>                                                             | Toggle stacking                            |
-| <kbd>Pop</kbd> + <kbd>O</kbd>                                                             | Change window orientation (while stacking) |
-| <kbd>Pop</kbd> + <kbd>G</kbd>                                                             | Float/unfloat window (while stacking)      |
-| <kbd>Pop</kbd> + <kbd>M</kbd>                                                             | Maximize/unmaximize window                 |
-| <kbd>Pop</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd>/<kbd>→</kbd>                              | Snap window to left/right side of display  |
-| <kbd>Pop</kbd> + <kbd>Q</kbd>                                                             | Close window                               |
+| <kbd>SUPER</kbd> + <kbd>S</kbd>                                                             | Toggle stacking                            |
+| <kbd>SUPER</kbd> + <kbd>O</kbd>                                                             | Change window orientation (while stacking) |
+| <kbd>SUPER</kbd> + <kbd>G</kbd>                                                             | Float/unfloat window (while stacking)      |
+| <kbd>SUPER</kbd> + <kbd>M</kbd>                                                             | Maximize/unmaximize window                 |
+| <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd>/<kbd>→</kbd>                              | Snap window to left/right side of display  |
+| <kbd>SUPER</kbd> + <kbd>Q</kbd>                                                             | Close window                               |
 
 ### Manage workspaces and displays
 
 | Shortcut                                                                                   | Action                                         |
 | ------------------------------------------------------------------------------------------ | ---------------------------------------------- |
-| <kbd>Pop</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>                               | Navigate between workspaces                    |
-| <kbd>Pop</kbd> + <kbd>Home</kbd>/<kbd>End</kbd>                                            | Navigate to first/last workspace               |
-| <kbd>Pop</kbd> + <kbd>Shift</kbd> + <kbd>Direction keys</kbd>                              | Move active window between workspaces/displays |
-| <kbd>Pop</kbd> + <kbd>ESC</kbd>                                                            | Lock the screen                                |
+| <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>                               | Navigate between workspaces                    |
+| <kbd>SUPER</kbd> + <kbd>Home</kbd>/<kbd>End</kbd>                                            | Navigate to first/last workspace               |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>Direction keys</kbd>                              | Move active window between workspaces/displays |
+| <kbd>SUPER</kbd> + <kbd>ESC</kbd>                                                            | Lock the screen                                |
 
 ### Use the launcher
 
@@ -78,8 +78,8 @@ The launcher allows searching through open windows and installed applications, a
 
 | Shortcut/command                                           | Action                          |
 | ---------------------------------------------------------- | ------------------------------- |
-| <kbd>Pop</kbd>                                         | Activate the launcher on Pop 21.04+ |
-| <kbd>Pop</kbd> + <kbd>/</kbd>                 | Activate the launcher on Pop 20.10 and below |
+| <kbd>SUPER</kbd>                                         | Activate the launcher on Pop 21.04+ |
+| <kbd>SUPER</kbd> + <kbd>/</kbd>                 | Activate the launcher on Pop 20.10 and below |
 | `recent filename`                                          | Browse and search recent files  |
 | `/` / `~/`                                                 | Browse the filesystem           |
 | `file filename`                                            | Search the filesystem for a certain file |
@@ -92,22 +92,22 @@ The launcher allows searching through open windows and installed applications, a
 
 | Shortcut                                                                        | Action                                         |
 | ------------------------------------------------------------------------------- | ---------------------------------------------- |
-| <kbd>Pop</kbd> + <kbd>Tab</kbd>                                                 | Switch apps                                    |
-| <kbd>Pop</kbd> + <kbd>Tab</kbd> + <kbd>Shift</kbd>                              | Switch apps in reverse order                   |
-| <kbd>Pop</kbd> + <kbd>`</kbd>                                                   | Switch windows of current app                  |
-| <kbd>Pop</kbd> + <kbd>`</kbd> + <kbd>Shift</kbd>                                | Switch windows of current app in reverse order |
+| <kbd>SUPER</kbd> + <kbd>Tab</kbd>                                                 | Switch apps                                    |
+| <kbd>SUPER</kbd> + <kbd>Tab</kbd> + <kbd>Shift</kbd>                              | Switch apps in reverse order                   |
+| <kbd>SUPER</kbd> + <kbd>`</kbd>                                                   | Switch windows of current app                  |
+| <kbd>SUPER</kbd> + <kbd>`</kbd> + <kbd>Shift</kbd>                                | Switch windows of current app in reverse order |
 
 ### Miscellaneous OS shortcuts
 
 | Shortcut                                                       | Action                                             |
 | -------------------------------------------------------------- | -------------------------------------------------- |
-| <kbd>Pop</kbd> + <kbd>D</kbd>                                  | Toggle workspace menu                              |
-| <kbd>Pop</kbd> + <kbd>A</kbd>                                  | Toggle applications menu                           |
-| <kbd>Pop</kbd> + <kbd>V</kbd>                                  | Toggle notifications menu                          |
-| <kbd>Pop</kbd> + <kbd>T</kbd>                                  | Open a terminal                                    |
-| <kbd>Pop</kbd> + <kbd>F</kbd>                                  | Open Files                                         |
-| <kbd>Pop</kbd> + <kbd>P</kbd>                                  | Cycle display layout                               |
-| <kbd>Pop</kbd> + <kbd>Space</kbd>                              | Cycle between configured input sources (languages) |
+| <kbd>SUPER</kbd> + <kbd>D</kbd>                                  | Toggle workspace menu                              |
+| <kbd>SUPER</kbd> + <kbd>A</kbd>                                  | Toggle applications menu                           |
+| <kbd>SUPER</kbd> + <kbd>V</kbd>                                  | Toggle notifications menu                          |
+| <kbd>SUPER</kbd> + <kbd>T</kbd>                                  | Open a terminal                                    |
+| <kbd>SUPER</kbd> + <kbd>F</kbd>                                  | Open Files                                         |
+| <kbd>SUPER</kbd> + <kbd>P</kbd>                                  | Cycle display layout                               |
+| <kbd>SUPER</kbd> + <kbd>Space</kbd>                              | Cycle between configured input sources (languages) |
 | <kbd>Alt</kbd> + <kbd>F2</kbd>                                 | Run command                                        |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>              | Log out                                            |
 
@@ -115,6 +115,6 @@ The launcher allows searching through open windows and installed applications, a
 
 | Shortcut                                                                                 | Action                                  |
 | ---------------------------------------------------------------------------------------- | --------------------------------------- |
-| <kbd>Pop</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>                                           | Toggle screen reader                    |
-| <kbd>Pop</kbd> + <kbd>Alt</kbd> + <kbd>8</kbd>                                           | Toggle magnifier                        |
-| <kbd>Pop</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd>/<kbd>-</kbd>                              | Zoom in/out (when magnifier is enabled) |
+| <kbd>SUPER</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>                                           | Toggle screen reader                    |
+| <kbd>SUPER</kbd> + <kbd>Alt</kbd> + <kbd>8</kbd>                                           | Toggle magnifier                        |
+| <kbd>SUPER</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd>/<kbd>-</kbd>                              | Zoom in/out (when magnifier is enabled) |

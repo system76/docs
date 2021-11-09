@@ -17,7 +17,7 @@ tableOfContents: true
 
 The Super key is the OS key on your keyboard.
 
-- On recent System76 products, it's the Pop key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys.
+- On recent System76 products, it's the Pop key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. ![Super Key](/images/super_key_vector_x32.png) The key is labelled with a rectangle and two vertical lines, one on either side of the rectangle.
 - On older System76 products, it's the Ubuntu key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
 - On the Launch keyboard it is the <kbd>SUPER</kbd> key.
 - On generic third-party products, it may be labeled with a Windows logo.
@@ -32,8 +32,8 @@ In Ubuntu, <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon
 Tapping <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> on its own brings up the **Activities overview**, which is the core way of launching apps and managing your workflow.
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> switch workspaces up and down.  
-<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>←</kbd>/<kbd>→</kbd> tile windows to the left and right of your display.  
-<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>Tab</kbd> quickly switches between your open windows.  
+<kbd>SUPER</kbd> + <kbd>←</kbd>/<kbd>→</kbd> tile windows to the left and right of your display.  
+<kbd>SUPER</kbd> + <kbd>Tab</kbd> quickly switches between your open windows.  
 
 ## All Shortcuts
 
@@ -43,32 +43,32 @@ Windows can be switched between, moved around, tiled, and closed all with the ke
 
 | Shortcut | Action  | <kbd>Shift</kbd> Action |
 | -------- | --------- | ------ |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>Tab</kbd> | Switch windows | Switch windows backwards |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>`</kbd> | Switch windows of current app | Switch windows of current app backwards |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>W</kbd> | Close window | |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>H</kbd> | Hide window (minimize) | |
+| <kbd>SUPER</kbd> + <kbd>Tab</kbd> | Switch windows | Switch windows backwards |
+| <kbd>SUPER</kbd> + <kbd>`</kbd> | Switch windows of current app | Switch windows of current app backwards |
+| <kbd>SUPER</kbd> + <kbd>W</kbd> | Close window | |
+| <kbd>SUPER</kbd> + <kbd>H</kbd> | Hide window (minimize) | |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | Switch workspace up/down | Switch workspace up/down with window |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>←</kbd>/<kbd>→</kbd> | Tile window to the left/right | |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>↑</kbd> | Toggle maximize | |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>↓</kbd> | Restore window (unmaximize/untile) | |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>/<kbd>→</kbd>/<kbd>↑</kbd>/<kbd>↓</kbd> | Move window to display to the left, right, top, or bottom | |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + Right-drag | Resize window | |
+| <kbd>SUPER</kbd> + <kbd>←</kbd>/<kbd>→</kbd> | Tile window to the left/right | |
+| <kbd>SUPER</kbd> | Toggle maximize | |
+| <kbd>SUPER</kbd> + <kbd>↓</kbd> | Restore window (unmaximize/untile) | |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>/<kbd>→</kbd>/<kbd>↑</kbd>/<kbd>↓</kbd> | Move window to display to the left, right, top, or bottom | |
+| <kbd>SUPER</kbd> + Right-drag | Resize window | |
 
 ### Operating System
 
 | Shortcut | Action |
 | -------- | ------ |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> | Activities overview |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>A</kbd> | Applications |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>P</kbd> | Presentation mode (cycle display modes) |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>L</kbd> | Lock screen |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>O</kbd> | Orientation lock (on devices w/accelerometer) |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>D</kbd> | Show desktop |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>V</kbd> | Calendar and notifications indicator |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>N</kbd> | Focus active notification |
+| <kbd>SUPER</kbd> | Activities overview |
+| <kbd>SUPER</kbd> + <kbd>A</kbd> | Applications |
+| <kbd>SUPER</kbd> + <kbd>P</kbd> | Presentation mode (cycle display modes) |
+| <kbd>SUPER</kbd> + <kbd>L</kbd> | Lock screen |
+| <kbd>SUPER</kbd> + <kbd>O</kbd> | Orientation lock (on devices w/accelerometer) |
+| <kbd>SUPER</kbd> + <kbd>D</kbd> | Show desktop |
+| <kbd>SUPER</kbd> + <kbd>V</kbd> | Calendar and notifications indicator |
+| <kbd>SUPER</kbd> + <kbd>N</kbd> | Focus active notification |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> | Terminal |
 | <kbd>Alt</kbd> + <kbd>Space</kbd> | Application menu |
-| <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>Space</kbd> | Switch input source |
+| <kbd>SUPER</kbd> + <kbd>Space</kbd> | Switch input source |
 | <kbd>Alt</kbd> + <kbd>F2</kbd> | Run command |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> | Log out |
 
@@ -78,6 +78,6 @@ Accessibility shortcuts use <kbd>Alt</kbd> + <kbd><font-awesome-icon :icon="['fa
 
 | Shortcut | Action |
 | -------- | ------ |
-| <kbd>Alt</kbd> + <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>S</kbd> | Toggle screen reader |
-| <kbd>Alt</kbd> + <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>8</kbd> | Toggle magnifier |
-| <kbd>Alt</kbd> + <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>+</kbd>/<kbd>-</kbd> | Zoom in/out (when magnifier is active) |
+| <kbd>Alt</kbd> + <kbd>SUPER</kbd> + <kbd>S</kbd> | Toggle screen reader |
+| <kbd>Alt</kbd> + <kbd>SUPER</kbd> + <kbd>8</kbd> | Toggle magnifier |
+| <kbd>Alt</kbd> + <kbd>SUPER</kbd> + <kbd>+</kbd>/<kbd>-</kbd> | Zoom in/out (when magnifier is active) |

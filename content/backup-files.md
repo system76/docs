@@ -187,7 +187,7 @@ System-wide program configuration files can be found in many locations of the OS
 
 Pop!\_OS comes with a disk management utility called GNOME Disks. You can find it in your apps list.
 
-![Disks app](/images/backup/disks-1-none-selected.png.png)
+![Disks app](/images/backup/disks-1-none-selected.png)
 
 Upon opening, on the left, you will see a list of all disks connected to your computer. Choose which disk you want to back up or restore and click on it.
 

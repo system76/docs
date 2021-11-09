@@ -15,7 +15,7 @@ tableOfContents: true
 
 ## Super key
 
-The Super key is the OS key on your keyboard.
+The Super key is the OS key on your keyboard. ![Super Key](/images/super_key_vector_x64.png)
 
 - On recent System76 products, it's the Pop key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. ![Super Key](/images/super_key_vector_x32.png) The key is labelled with a rectangle and two vertical lines, one on either side of the rectangle.
 - On older System76 products, it's the Ubuntu key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).

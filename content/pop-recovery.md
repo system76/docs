@@ -40,7 +40,7 @@ The Recovery partition OS version will either be the same as the OS version that
 
 ## Refresh Install
 
-The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory. 
+The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory.
 
 **NOTE:** user-installed applications are not preserved and will need to be reinstalled.
 

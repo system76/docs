@@ -199,13 +199,17 @@ Once you select a disk, a "Disk options" button will appear near the top right c
 
 ![image](/images/backup/disks-3-create-disk-image.png)
 
-When you press a "Create disk image" in the drop-down menu mentioned before, you will have a pop-up appear, presenting you with choice to name the disk image you're creating and select where to put it.
+When you press a "Create disk image" in the drop-down menu mentioned before, you will have a pop-up appear, presenting you with choice to name the disk image you're creating and select where to put it. 
+
+**NOTE** that some of these features are only available when booting from a [live disk](/articles/live-disk).
 
 ![image](/images/backup/disks-3-create-disk-image-busy.png)
 
 After clicking "Start creating," it may ask for your password. Next Disks will start creating your disk image. A progress bar will be shown. You can cancel creating the image at any time by pressing the trash can icon on the right, next to the progress bar.
 
-Upon finishing, you will have a disk image file in `.img` format. The file will havethe name you chose and will be saved in the folder you selected.
+**NOTE** the location that you save the image file to will need to be either the same size or larger (ie 1TB will need a 1TB or above).
+
+Upon finishing, you will have a disk image file in `.img` format. The file will have the name you chose and will be saved in the folder you selected.
 
 ### Restoring a disk image
 

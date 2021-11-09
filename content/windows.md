@@ -49,8 +49,9 @@ tableOfContents: true
 | lemp10       | Yes                | No                 |
 | oryp6        | Yes                | No                 |
 | oryp7        | Yes                | No                 |
+| oryp8        | Yes                | No                 |
 | pang10       | Yes                | Yes                |
-| pang11       | Yes                | No                   |
+| pang11       | Yes                | Yes                |
 | serw12       | Yes                | Yes                |
 
 | Desktop Model     | Windows 10 Support | Windows 11 Support |

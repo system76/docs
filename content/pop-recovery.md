@@ -36,17 +36,19 @@ This option erases the current install along with all user files. It reformats t
 Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery)
 
 **NOTE:**
-The Recovery partition OS version will either be the same as the OS version that shipped with your computer, or whichever version to which the Recovery partition has been [updated](#update-recovery-partition)
+The Recovery partition OS version will either be the same as the OS version that shipped with your computer or whichever version to which the Recovery partition has been [updated](#update-recovery-partition)
 
 ## Refresh Install
 
-The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory. If the `Refresh Install` option is not present on the install screen, one of two things may be true.
+The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory. 
+
+**NOTE:** user-installed applications are not preserved and will need to be reinstalled.
+
+If the `Refresh Install` option is not present on the install screen, one of two things may be true.
 
 1. Your drive is encrypted. The Refresh install option may appear after decrypting the drive. A notice about decrypting the drive will be present above the install options.
 
 2. The Recovery version is out of date. See the [update instructions](#update-recovery-partition)
-
-**NOTE:** user-installed applications are not preserved and will need to be reinstalled.
 
 ![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
 
@@ -62,7 +64,7 @@ If the existing OS install needs to be repaired, the installer application shoul
 
 **NOTE:** be sure not to choose any install or repair options, as this could result in data loss.
 
-To access to the existing OS drive run the following terminal:
+To access the existing OS drive run the following terminal:
 
 First, press `SUPER`+`T` to open a terminal, then type this command:
 
@@ -103,9 +105,9 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 ## Chroot
 
-`chroot` is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (`apt`) and other system level commands can be run.
+`chroot` is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (`apt`) and other system-level commands can be run.
 
-The EFI partition is the next partition to be mounted. To help identify it, this partition is usually around 512MB, and is labelled as `/boot/efi`.
+The EFI partition is the next partition to be mounted. To help identify it, this partition is usually around 512MB, and is labeled as `/boot/efi`.
 
 | **SATA Drives**                       | **NVMe Drives**                          |
 |:-------------------------------------:|:----------------------------------------:|
@@ -117,7 +119,7 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>files</u> via "Other Locations" -> "Computer" -> "mnt."
+With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>files</u> via "Other Locations" -> "Computer" -> "mnt."
 
 ### After Chroot
 

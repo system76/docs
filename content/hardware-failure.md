@@ -126,6 +126,12 @@ We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need 
 sudo apt install git system76-cuda-latest 
 ```
 
+Then we will create the symlink for <u>gpu-burn</u>:
+
+```bash
+sudo ln -s /usr/lib/cuda /usr/local/cuda
+```
+
 Then we can clone the repository with this command:
 
 ```bash

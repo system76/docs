@@ -59,8 +59,8 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 | ----------------------------------------------------------------------------------------- | ------------------------------------------ |
 | <kbd>SUPER</kbd> + <kbd>S</kbd>                                                             | Toggle stacking                            |
 | <kbd>SUPER</kbd> + <kbd>O</kbd>                                                             | Change window orientation (while stacking) |
-| <kbd>SUPER</kbd> + <kbd>G</kbd>                                                             | Float/unfloat window (while stacking)      |
-| <kbd>SUPER</kbd> + <kbd>M</kbd>                                                             | Maximize/unmaximize window                 |
+| <kbd>SUPER</kbd> + <kbd>G</kbd>                                                             | Float/un-float window (while stacking)      |
+| <kbd>SUPER</kbd> + <kbd>M</kbd>                                                             | Maximize/un-maximize window                 |
 | <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd>/<kbd>→</kbd>                              | Snap window to left/right side of display  |
 | <kbd>SUPER</kbd> + <kbd>Q</kbd>                                                             | Close window                               |
 

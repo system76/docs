@@ -116,7 +116,7 @@ Then the application can be started:
 
 ```bash
 ./heaven
-
+```
 
 Click the 'Run' button to begin the program.
 

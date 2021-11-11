@@ -51,7 +51,7 @@ Windows can be switched between, moved around, tiled, and closed all with the ke
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | Switch workspace up/down | Switch workspace up/down with window |
 | <kbd>SUPER</kbd> + <kbd>←</kbd>/<kbd>→</kbd> | Tile window to the left/right | |
 | <kbd>SUPER</kbd> | Toggle maximize | |
-| <kbd>SUPER</kbd> + <kbd>↓</kbd> | Restore window (unmaximize/untile) | |
+| <kbd>SUPER</kbd> + <kbd>↓</kbd> | Restore window (un-maximize/un-tile) | |
 | <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>/<kbd>→</kbd>/<kbd>↑</kbd>/<kbd>↓</kbd> | Move window to display to the left, right, top, or bottom | |
 | <kbd>SUPER</kbd> + Right-drag | Resize window | |
 

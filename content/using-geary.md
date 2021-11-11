@@ -1,10 +1,11 @@
 ---
-title: Using Geary
+title: Set Up E-Mail
 description: >
-  Using services like ProtonMail with Geary
+  How to configure email services like ProtonMail with Geary
 keywords:
   - geary
   - protonmail
+  - email
 
 facebookImage: /_social/article
 twitterImage: /_social/article

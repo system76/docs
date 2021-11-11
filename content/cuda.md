@@ -27,7 +27,7 @@ sudo apt install system76-cuda-latest
 To install the cuDNN library, please run this command:
 
 ```bash
-sudo apt install system76-cudnn-10.2
+sudo apt install system76-cudnn-11.2
 ```
 
 ### For older releases of The NVIDIA CUDA Toolkit

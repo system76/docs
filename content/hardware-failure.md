@@ -120,10 +120,10 @@ Click the 'Run' button to begin the program.
 
 ### GPU Burn (for NVIDIA GPU's only)
 
-We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need to install git with this command:
+We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need to install git and CUDA with this command:
 
 ```bash
-sudo apt install git
+sudo apt install git system76-cuda-latest 
 ```
 
 Then we can clone the repository with this command:

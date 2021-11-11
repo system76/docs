@@ -15,7 +15,7 @@ tableOfContents: true
 
 ## Super key
 
-The Super key is the OS key on your keyboard. 
+The Super key is the OS key on your keyboard.
 
 - On recent System76 products, it's between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. The key is labelled with a rectangle and two two vertical lines, one on either side of the rectangle.
 

@@ -18,21 +18,19 @@ section: software
 tableOfContents: true
 ---
 
-The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
+The GNOME desktop environment is highly customizable. Visit [extensions.gnome.org](https://extensions.gnome.org) to install, remove, and configure currently installed extensions.  A web browser plugin is needed to interact with the site, and it will prompt for installation if needed.  Remember to refresh the page after the plugin is installed.
 
-To install a customization, simply head to [extensions.gnome.org](https://extensions.gnome.org) to install, remove, and configure currently installed customizations.  A web browser plugin is needed to interact with the site, and it will prompt for installation if needed.  Remember to refresh the page after the plugin is installed.
-
-There are many extensions to choose from! If one isn't currently working, or breaks with an update, then try a different extension to see if it works better.
+**NOTE:** There are many extensions to choose from! If one isn't currently working, or breaks with an update, then try a different extension to see if it works better.
 
 ---
 
 ## Included Extensions
 
+Pop!\_OS includes the GNOME Extensions app by default. Which lists both system-installed, and user-installed extensions.
+
 ![extensions-app-window](/images/customize-gnome/extensions-app-window.png)
 
-![built-in-extensions](/images/customize-gnome/built-in-extensions.png)
-
-![manually-installed](/images/customize-gnome/manually-installed.png)
+Each extension has options for customizing settings (if supported in Extension metadata), or viewing the webpage for the extension to learn more information. The Extensions app also allows you to quickly enable and disable installed extensions. The Pop!\_OS
 
 ### Cosmic Dock
 

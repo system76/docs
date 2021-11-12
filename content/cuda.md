@@ -32,6 +32,12 @@ sudo apt install system76-cudnn-11.2
 
 ### For older releases of The NVIDIA CUDA Toolkit
 
+To install CUDA 11.1
+
+```bash
+sudo apt install system76-cuda-11.1
+```
+
 To install CUDA 10.0:
 
 ```bash
@@ -94,10 +100,10 @@ To verify installation, run this command to see the current version of the NVIDI
 nvcc -V
 ```
 
-You can also check the version of the installer and patches installed with this command:
+You can check the version of cuDNN with this command:
 
 ```bash
-cat /usr/lib/cuda/version.txt
+cat /usr/lib/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2       
 ```
 
 ## Not running Pop!_OS?

@@ -48,7 +48,7 @@ NVMe drives can't be checked with a SMART Test through the <u>Disks</u> applicat
 sudo apt install nvme-cli
 ```
 
-First let's list the NVMe's that are installed:
+First, let's list the NVMe's that are installed:
 
 ```bash
 sudo nvme list
@@ -100,19 +100,19 @@ Run the following command:
 chmod +x Unigine_Heaven-4.0.run
 ```
 
-Then the application can be extracted:
+Then, the application can be extracted:
 
 ```bash
 ./Unigine_Heaven-4.0.run
 ```
 
-Then let's move to the new directory that was created:
+Next, let's move to the new directory that was created:
 
 ```bash
 cd Unigine_Heaven-4.0/
 ```
 
-Then the application can be started:
+Now, the application can be started:
 
 ```bash
 ./heaven
@@ -122,25 +122,25 @@ Click the 'Run' button to begin the program.
 
 ### GPU Burn (for NVIDIA GPU's only)
 
-We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need to install git and CUDA with this command:
+We can also test the GPU by using GPU Burn; first, if we're on Ubuntu, we'll need to install git and CUDA with this command:
 
 ```bash
 sudo apt install git system76-cuda-latest 
 ```
 
-Then we will create the symlink for <u>gpu-burn</u>:
+Then, we will create the symlink for <u>gpu-burn</u>:
 
 ```bash
 sudo ln -s /usr/lib/cuda-11.2 /usr/local/cuda
 ```
 
-Then we can clone the repository with this command:
+Next, we can clone the repository with this command:
 
 ```bash
 git clone https://github.com/wilicc/gpu-burn.git
 ```
 
-Now that we have cloned it we can move into that directory like so:
+Now that we have cloned it, we can move into that directory like so:
 
 ```bash
 cd gpu-burn

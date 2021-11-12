@@ -64,9 +64,9 @@ If the existing OS install needs to be repaired, the installer application shoul
 
 **NOTE:** be sure not to choose any install or repair options, as this could result in data loss.
 
-To access the existing OS drive run the following terminal:
+To access the existing OS drive follow the instructions below.
 
-First, press `SUPER`+`T` to open a terminal, then type this command:
+First, press <kbd>SUPER</kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
 ```bash
 lsblk
@@ -119,7 +119,7 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>files</u> via "Other Locations" -> "Computer" -> "mnt."
+With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>Files</u> via "Other Locations" -> "Computer" -> "mnt."
 
 ### After Chroot
 

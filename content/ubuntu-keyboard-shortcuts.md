@@ -15,15 +15,16 @@ tableOfContents: true
 
 ## Super key
 
-The Super key is the OS key on your keyboard. ![Super Key](/images/super_key_vector_x64.png)
+The Super key is the OS key on your keyboard.
 
-- On recent System76 products, it's the Pop key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. ![Super Key](/images/super_key_vector_x32.png) The key is labelled with a rectangle and two vertical lines, one on either side of the rectangle.
-- On older System76 products, it's the Ubuntu key between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
+- On recent System76 products, it's between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. The key is labelled with a rectangle and two vertical lines, one on either side of the rectangle.
+
+  ![Super Key](/images/super_key_vector_x64.png)
+
+- On older System76 products, the Super key is between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys and is represented by the Ubuntu logo (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
 - On the Launch keyboard it is the <kbd>SUPER</kbd> key.
 - On generic third-party products, it may be labeled with a Windows logo.
 - On Mac accessories, it may be labeled `command`.
-
-The Super Key is the OS key on your keyboard and is the Ubuntu or Pop key (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
 
 In Ubuntu, <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> handles the majority of OS and window actions.
 
@@ -50,7 +51,7 @@ Windows can be switched between, moved around, tiled, and closed all with the ke
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | Switch workspace up/down | Switch workspace up/down with window |
 | <kbd>SUPER</kbd> + <kbd>←</kbd>/<kbd>→</kbd> | Tile window to the left/right | |
 | <kbd>SUPER</kbd> | Toggle maximize | |
-| <kbd>SUPER</kbd> + <kbd>↓</kbd> | Restore window (unmaximize/untile) | |
+| <kbd>SUPER</kbd> + <kbd>↓</kbd> | Restore window (un-maximize/un-tile) | |
 | <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>/<kbd>→</kbd>/<kbd>↑</kbd>/<kbd>↓</kbd> | Move window to display to the left, right, top, or bottom | |
 | <kbd>SUPER</kbd> + Right-drag | Resize window | |
 

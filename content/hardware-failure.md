@@ -129,7 +129,7 @@ sudo apt install git system76-cuda-latest
 Then we will create the symlink for <u>gpu-burn</u>:
 
 ```bash
-sudo ln -s /usr/lib/cuda /usr/local/cuda
+sudo ln -s /usr/lib/cuda-11.2 /usr/local/cuda
 ```
 
 Then we can clone the repository with this command:

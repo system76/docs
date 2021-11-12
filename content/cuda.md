@@ -38,6 +38,14 @@ To install CUDA 11.1
 sudo apt install system76-cuda-11.1
 ```
 
+For the respective cuDNN library:
+
+```bash
+sudo apt install system76-cudnn-11.1
+```
+
+#### These versions are only in Pop 20.04 LTS:
+
 To install CUDA 10.0:
 
 ```bash
@@ -50,40 +58,28 @@ For the respective cuDNN library:
 sudo apt install system76-cudnn-10.0
 ```
 
-To install CUDA 9.2:
+To install CUDA 10.1:
 
 ```bash
-sudo apt install system76-cuda-9.2
+sudo apt install system76-cuda-10.1
 ```
 
 For the respective cuDNN library:
 
 ```bash
-sudo apt install system76-cudnn-9.2
+sudo apt install system76-cudnn-10.1
 ```
 
-To install CUDA 9.1:
+To install CUDA 10.2:
 
 ```bash
-sudo apt install system76-cuda-9.1
-```
-
-For the respective cuDNN library:
-
-```bash
-sudo apt install system76-cudnn-9.1
-```
-
-To install CUDA 9.0:
-
-```bash
-sudo apt install system76-cuda-9.0
+sudo apt install system76-cuda-10.2
 ```
 
 For the respective cuDNN library:
 
 ```bash
-sudo apt install system76-cudnn-9.0
+sudo apt install system76-cudnn-10.2
 ```
 
 ### Switch between different versions

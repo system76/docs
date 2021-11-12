@@ -44,7 +44,7 @@ For the respective cuDNN library:
 sudo apt install system76-cudnn-11.1
 ```
 
-#### These versions are only in Pop 20.04 LTS:
+#### These versions are only in Pop 20.04 LTS
 
 To install CUDA 10.0:
 

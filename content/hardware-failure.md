@@ -86,13 +86,14 @@ From here use the <kbd>Down</kbd> to switch from Monitor to Stress by pressing t
 
 We can confirm whether there is an issue with the GPU in your system by using a benchmarking tool called [Unigine Heaven](https://benchmark.unigine.com/heaven).
 
-Click the 'Free Download' button and choose the Linux option in the dropdown. Once the download is complete, there should be a `Unigine_Heaven-4.0.run` file in the Downloads directory. 
+Click the 'Free Download' button and choose the Linux option in the dropdown. Once the download is complete, there should be a `Unigine_Heaven-4.0.run` file in the Downloads directory.
 
 From a terminal, navigate to the folder with the Unigine Heaven download:
 
 ```bash
 cd Downloads
 ```
+
 Run the following command:
 
 ```bash
@@ -116,6 +117,7 @@ Then the application can be started:
 ```bash
 ./heaven
 ```
+
 Click the 'Run' button to begin the program.
 
 ### GPU Burn (for NVIDIA GPU's only)

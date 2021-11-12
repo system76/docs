@@ -19,7 +19,49 @@ tableOfContents: true
 
 The Pop!_OS operating system provides all the features you would expect from a modern desktop.
 
-## Getting to Know The Pop!_OS Desktop
+## Pop!_OS 21.04 COSMIC Desktop - Video Tutorials
+
+### Workspaces Tutorial
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/USQjxLP1Z5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### COSMIC Workflow
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/SrWw2LeZ21U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Pop!_OS 21.04 Desktop Menus and Navigation
+
+![cosmic desktop](/images/pop-basics/cosmic-desktop.png)
+
+![workspaces](/images/pop-basics/workspaces.png)
+
+![application menu](/images/pop-basics/application-menu-21-04.png)
+
+![app search menu](/images/pop-basics/app-menu-search-21-04.png)
+
+![in app menu](/images/pop-basics/in-app-menu.png)
+
+![top right menu](/images/pop-basics/top-right-menu.png)
+
+## Pop!_OS 20.04 Desktop - Video Tutorials
+
+### Stacking Tutorial
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/1TSdFWY_U9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Keyboard Shortcuts
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/aqj0cRTZaVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Workspaces Tutorial
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/v9oVZwJrjOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Auto Tiling Tutorial
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/-fltwBKsMY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Pop!\_OS 20.04 Desktop Menus and Navigation
 
 ![Pop Desktop](/images/pop-basics/pop-desktop.png)
 

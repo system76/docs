@@ -148,9 +148,9 @@ The screenshot below shows that the Recovery Partition has been upgraded success
 
 ![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)
 
-### Update Recovery Partition from command-line
+### Update Recovery Partition from the command-line
 
-Alternatively you can also upgrade the recovery partition from command-line
+Alternatively you can also upgrade the recovery partition from the command-line
 
 ```bash
 pop-upgrade recovery upgrade from-release

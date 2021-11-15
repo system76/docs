@@ -134,7 +134,9 @@ reboot
 
 It is important to keep the Recovery Partition up to date as it is not updated with the installed OS. Updating the Recovery partition will allow you to [reinstall](#reinstall) the newest OS, instead of the previous Recovery version.
 
-The Recovery Partition can be updated from within the OS in Settings -> OS Upgrade like in the screenshot below:
+The Recovery Partition can be updated from within the OS by either using Settings or from a terminal.
+
+If using Settings, click on OS Upgrade like in the screenshot below:
 
 ![Pop Recovery Update Available](/images/pop-recovery/pop-recovery-update.png)
 
@@ -145,3 +147,23 @@ Once the `Update` button is pressed you will see the below screenshot:
 The screenshot below shows that the Recovery Partition has been upgraded successfully:
 
 ![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)
+
+### Update Recovery Partition from the command-line
+
+Alternatively you can also upgrade the recovery partition from the command-line
+
+```bash
+pop-upgrade recovery upgrade from-release
+```
+
+You should see an output similar to below saying the recovery parition had been updated:
+
+```
+checking if pop-upgrade requires an update
+Recovery event: fetching recovery files
+Fetched 2932/2932 MiB
+Recovery event: verifying checksums of fetched files
+Recovery event: syncing recovery files with recovery partition
+Recovery event: recovery partition upgrade completed
+Recovery upgrade status: recovery partition refueled and ready to go
+```

@@ -32,6 +32,8 @@ sudo apt install system76-cudnn-11.2
 
 ### For older releases of The NVIDIA CUDA Toolkit
 
+#### These versions are only in Pop 21.04
+
 To install CUDA 11.1
 
 ```bash

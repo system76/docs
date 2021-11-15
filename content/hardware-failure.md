@@ -42,10 +42,10 @@ All of the values start at 100, and work their way down to 0.  The terms "old-ag
 
 ### NVMe Drive
 
-NVMe drives can't be checked with a SMART Test through the <u>Disks</u> application but the package <u>nvme-cli</u> can be used for this. It can be installed with this command:
+NVMe drives can't be checked with a SMART Test through the <u>Disks</u> application but the package <u>smartmontools</u> can be used for this. It can be installed with this command:
 
 ```bash
-sudo apt install nvme-cli
+sudo apt install smartmontools
 ```
 
 First, let's list the NVMe's that are installed:
@@ -57,7 +57,7 @@ sudo nvme list
 Under 'Node' you will see a mount path for each drive something like '/dev/nvme0n1', to access the smart-log you would type in the following:
 
 ```bash
-sudo nvme smart-log /dev/nvme0n1
+sudo smartctl -a /dev/nvme0n1
 ```
 
 ## Testing the CPU

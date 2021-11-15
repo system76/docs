@@ -42,7 +42,7 @@ All of the values start at 100, and work their way down to 0.  The terms "old-ag
 
 ### NVMe Drive
 
-NVMe drives can't be checked with a SMART Test through the <u>Disks</u> application but the package <u>nvme-cli</u> can be used for this. It can be installed with this command:
+NVMe drives can't be checked with a SMART Test through the <u>Disks</u> application but the package <u>smartmontools</u> can be used for this. It can be installed with this command:
 
 ```bash
 sudo apt install smartmontools

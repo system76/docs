@@ -178,7 +178,7 @@ Then, after the system has crashed or been used for a period of time, take a loo
 journalctl -f -u rasdaemon
 ```
 
-If there is no log or the log is empty, then the crash isn't related to a hardware failure.  The log will stay empty until a MCE happens.  Take a look for "uncorrected" errors, as most "corrected" errors can be ignored.  If there are a consistent number of "uncorrected" errors, the hardware should be examined.
+If there is no log or the log is empty, then the crash isn't related to a hardware failure.  The log will stay empty until a MCE happens.  If you have ECC RAM, take a look for "uncorrected" errors, as most "corrected" errors can be ignored.  If there are a consistent number of "corrected" errors, the hardware should be examined.
 
 ## Won't Power On
 

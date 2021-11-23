@@ -30,10 +30,10 @@ You can download the `AppImage` for Ubuntu and download it from the <u>Pop!\_Sho
 
 https://github.com/pop-os/keyboard-configurator/releases 
 
-You can also download it from the Arch Linux AUR from the links below:
+You can also download it from the Arch Linux AUR from the links below. The main version is built from latest releases which is recommended for most users and the -git version is built from the latest commits to the project.
 
-- Built from latest releases | https://aur.archlinux.org/packages/keyboard-configurator/
-- Built from the latest commits | https://aur.archlinux.org/packages/keyboard-configurator-git/
+- https://aur.archlinux.org/packages/keyboard-configurator/
+- https://aur.archlinux.org/packages/keyboard-configurator-git/
 
 ## Remapping Keys
 

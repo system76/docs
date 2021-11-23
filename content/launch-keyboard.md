@@ -26,7 +26,7 @@ The core idea of "Layers" is that one key can be used in different setups for ex
 
 ## Keyboard Configurator
 
-You can download the `AppImage` for Ubuntu and download it from the <u>Pop!\_Shop</u> on Pop!\_OS. Use the link below to download the application.
+You can download the `AppImage` for Ubuntu and download it from the <u>Pop!\_Shop</u> for Pop!\_OS. Use the link below to download the application.
 
 https://github.com/pop-os/keyboard-configurator/releases 
 
@@ -42,3 +42,7 @@ You can also download it from the Arch Linux AUR from the links below:
 </video>
 
 The keys are defined in the firmware of your keyboard and you can remap the keys using the <u>Keyboard Configurator</u>. After opening the <u>Keyboard Configurator</u>, you can then select the key you would like to configure, and select an item from the available items below the keyboard showing in the application. I am attaching a video showing the remapping process. Please note the "Layer 1" and "Layer 2" at the top of the configurator. Layer 1 is what the keys will do normally, then Layer 2 shows what the keys do when "Fn" is held down.
+
+## Changing Keycaps and Switches
+
+We have documentation that goes over changing the keycaps and switches in the Launch in the tech docs which can be found [here](https://tech-docs.system76.com/models/launch_1/repairs.html)

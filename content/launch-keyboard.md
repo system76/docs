@@ -30,13 +30,21 @@ The Launch keyboard uses our version [QMK firmware](https://github.com/system76/
 The core idea of "Layers" is that one key can be used in different setups for example on our laptops holding the <kbd>Fn</kbd> then pressing the <kbd>F5</kbd> will lower the volume while pressing <kbd>F5</kbd> on it's own will perform a different action like refreshing a web page if you are in a web browser like <u>Firefox</u>. You can read more about layers [here](https://beta.docs.qmk.fm/using-qmk/software-features/feature_layers
 ).
 
+## Firmware Updates
+
+Firmware updates for the Launch are handled using [fwupd](https://fwupd.org/) and our <u>Firmware Manager</u> can be used to apply the update. When you get a notification about a firmware update you will need to unlock the device using Fn+Esc (note that this will be the default keys even if you remapped them in the Keyboard Configurator) before you can apply the update. When the keyboard is unlocked you will see the following keys light up:
+
+- U N L O C K E D
+
+Once the keyboard is in this mode you can apply the firmware update, when the update is complete you will need to unplug and re-plug it in to exit this mode. 
+
 ## Keyboard Configurator
 
-You can download the `AppImage` for Ubuntu and download it from the <u>Pop!\_Shop</u> for Pop!\_OS. Use the link below to download the application.
+You can download the `AppImage` for Ubuntu and other OSes and use the <u>Pop!\_Shop</u> for Pop!\_OS. Use the link below to download the application.
 
 https://github.com/pop-os/keyboard-configurator/releases 
 
-You can also download it from the Arch Linux AUR from the links below. The main version is built from latest releases which is recommended for most users and the -git version is built from the latest commits to the project.
+You can also download it from the Arch Linux AUR from the links below. The main version is built from latest releases which is recommended for most users and the git version is built from the latest commits to the project (this version will have the very latest fixes and features).
 
 - https://aur.archlinux.org/packages/keyboard-configurator/
 - https://aur.archlinux.org/packages/keyboard-configurator-git/
@@ -55,6 +63,8 @@ The keys are defined in the firmware of your keyboard and you can remap the keys
   <source src="/files/launch-keyboard/video-soothing.mp4" type="video/mp4">
 </video>
 
-## Changing Keycaps and Switches
+In the <u>Keyboard Configurator</u> you can change the LEDs in the 'LEDs' section of the application by changing the 'Layer Color Pattern' using the dropdown.
 
-We have documentation that goes over changing the keycaps and switches in the Launch in the tech docs which can be found [here](https://tech-docs.system76.com/models/launch_1/repairs.html)
+## Tech Docs
+
+We have documentation that goes over changing the keycaps, switches and more in the tech docs which can be found [here](https://tech-docs.system76.com/models/launch_1/repairs.html).

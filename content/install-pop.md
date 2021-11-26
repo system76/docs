@@ -87,3 +87,5 @@ If you installed from the Intel/AMD ISO and your system has discrete NVIDIA grap
 ```
 sudo apt install system76-driver-nvidia
 ```
+
+If you used the ISO with NVIDIA drivers included, this step is not required. 

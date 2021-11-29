@@ -70,7 +70,7 @@ Community members have reported that the following docks work with our products:
   - At most, two external displays can be used at a time.
   - Power button does nothing.
 - [Dell WD19TB Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tb/apd/210-arik/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/206) on an Intel system] <sup>1</sup>
-- [Dell WD19TBS Thunderbolt Dock](hhttps://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tbs/apd/210-azbv/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/848) on an NVIDIA system] <sup>1</sup>
+- [Dell WD19TBS Thunderbolt Dock](https://www.dell.com/en-us/work/shop/dell-thunderbolt-dock-wd19tbs/apd/210-azbi/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/848) on an NVIDIA system] <sup>1</sup>
   - Displays sometimes don't wake up from sleep until dock is re-plugged.
   - USB devices may not reconnect after sleep until dock is re-plugged.
   - May not be able to wake system using peripherals connected via dock.

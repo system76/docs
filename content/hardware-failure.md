@@ -42,13 +42,13 @@ All of the values start at 100, and work their way down to 0.  The terms "old-ag
 
 ### NVMe Drive
 
-NVMe drives can't be checked with a SMART Test through the <u>Disks</u> application but the package <u>nvme-cli</u> can be used for this. It can be installed with this command:
+NVMe drives can't be checked with a SMART Test through the <u>Disks</u> application but the package <u>smartmontools</u> can be used for this. It can be installed with this command:
 
 ```bash
-sudo apt install nvme-cli
+sudo apt install smartmontools
 ```
 
-First let's list the NVMe's that are installed:
+First, let's list the NVMe's that are installed:
 
 ```bash
 sudo nvme list
@@ -57,7 +57,7 @@ sudo nvme list
 Under 'Node' you will see a mount path for each drive something like '/dev/nvme0n1', to access the smart-log you would type in the following:
 
 ```bash
-sudo nvme smart-log /dev/nvme0n1
+sudo smartctl -a /dev/nvme0n1
 ```
 
 ## Testing the CPU
@@ -84,47 +84,63 @@ From here use the <kbd>Down</kbd> to switch from Monitor to Stress by pressing t
 
 ### Benchmarking
 
-There are a few tools that we can use to confirm whether there is an issue with the GPU in your system. A benchmarking tool is one of them and the one that we use is [Unigine Heaven](https://benchmark.unigine.com/heaven).
+We can confirm whether there is an issue with the GPU in your system by using a benchmarking tool called [Unigine Heaven](https://benchmark.unigine.com/heaven).
 
-There is a free download link for Linux on the home page and once that is pressed the download will start. There should be a `Unigine_Heaven-4.0.run` file in the Downloads directory and from a terminal let's run this command:
+Click the 'Free Download' button and choose the Linux option in the dropdown. Once the download is complete, there should be a `Unigine_Heaven-4.0.run` file in the Downloads directory.
+
+From a terminal, navigate to the folder with the Unigine Heaven download:
+
+```bash
+cd Downloads
+```
+
+Run the following command:
 
 ```bash
 chmod +x Unigine_Heaven-4.0.run
 ```
 
-Then the application can be extracted:
+Then, the application can be extracted:
 
 ```bash
 ./Unigine_Heaven-4.0.run
 ```
 
-Then let's move to the new directory that was created:
+Next, let's move to the new directory that was created:
 
 ```bash
 cd Unigine_Heaven-4.0/
 ```
 
-Then the application can be started:
+Now, the application can be started:
 
 ```bash
 ./heaven
 ```
 
+Click the 'Run' button to begin the program.
+
 ### GPU Burn (for NVIDIA GPU's only)
 
-We can also test the GPU by using GPU Burn, first if we're on Ubuntu we'll need to install git with this command:
+We can also test the GPU by using GPU Burn; first, if we're on Ubuntu, we'll need to install git and CUDA with this command:
 
 ```bash
-sudo apt install git
+sudo apt install git system76-cuda-latest 
 ```
 
-Then we can clone the repository with this command:
+Then, we will create the symlink for <u>gpu-burn</u>:
+
+```bash
+sudo ln -s /usr/lib/cuda-11.2 /usr/local/cuda
+```
+
+Next, we can clone the repository with this command:
 
 ```bash
 git clone https://github.com/wilicc/gpu-burn.git
 ```
 
-Now that we have cloned it we can move into that directory like so:
+Now that we have cloned it, we can move into that directory like so:
 
 ```bash
 cd gpu-burn

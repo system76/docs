@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: pop
+tableOfContents: true
 ---
 
 Pop!\_OS: Productive out of the box. Easy to modify to meet individual needs

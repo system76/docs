@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware
+tableOfContents: true
 ---
 
 To add a printer to your System76 Computer, click the Ubuntu icon at the top left of your screen and type the word *Printers* then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.

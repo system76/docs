@@ -13,6 +13,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: network-troubleshooting
+tableOfContents: true
 ---
 
 WiFi issues are influenced by many different factors, including:

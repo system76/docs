@@ -15,6 +15,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: media
+tableOfContents: true
 ---
 
 ## Bring Your Imagination to Life

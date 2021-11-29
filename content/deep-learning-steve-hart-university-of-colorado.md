@@ -18,6 +18,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: case-studies
+tableOfContents: true
 ---
 
 Every day, hundreds of faculty, staff, and students at The Colorado Center for

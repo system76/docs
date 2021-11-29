@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 Do you love Minecraft and First Person Shooters? Then you'll love [OpenSpades](https://openspades.yvt.jp/). OpenSpades is a cross-platform MMOG which is compatible with Ace of Spades 0.75. It is released under a GPLv3 license.

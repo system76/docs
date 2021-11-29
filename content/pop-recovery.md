@@ -19,23 +19,54 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-The recovery partition on this operating system is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can also perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of Pop!\_OS 19.04 and above.
+The Recovery Partition is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory. Recovery can also perform a clean install, which resets all OS data.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>)
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>).
 
-> **NOTE:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
+ **NOTE:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
 
 Once the menu is shown, choose **Pop!_OS Recovery**.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
+## Clean Install
+
+This option erases the current install along with all user files. It reformats the drive partitions and installs the version of Pop!\_OS contained in the Recovery partition.
+
+Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery).
+
+**NOTE:**
+The Recovery partition OS version will either be the same as the OS version that shipped with your computer or whichever version to which the Recovery partition has been [updated](#update-recovery-partition).
+
+## Refresh Install
+
+The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory.
+
+**NOTE:** user-installed applications are not preserved and will need to be reinstalled.
+
+If the `Refresh Install` option is not present on the install screen, one of two things may be true.
+
+1. Your drive is encrypted. The Refresh install option may appear after decrypting the drive. A notice about decrypting the drive will be present above the install options.
+
+2. The Recovery version is out of date. See the [update instructions](#update-recovery-partition).
+
+![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
+
+### Reinstall
+
+Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
+
+If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions.
+
 ## Repair
 
-If the existing system needs to be repaired, then click the **Install Pop!_OS** in the top left, and choose **quit**.
+If the existing OS install needs to be repaired, the installer application should be closed. An app menu is located in the top-left of the screen with the name of the currently running application (in this case: "Install Pop!\_OS"). Click on the app menu and select `Quit`. Alternatively, you can use the installer app to select keyboard and language settings, and then click the `Try Demo Mode` button in the lower-left corner of the install page.
 
-To access to the existing OS drive and run the package manager [repair commands](/articles/package-manager-pop/), the following commands will need to be run:
+**NOTE:** be sure not to choose any install or repair options, as this could result in data loss.
 
-First, press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>+<kbd>T</kbd> to open a terminal, then type this command:
+To access the existing OS drive follow the instructions below.
+
+First, press <kbd>SUPER</kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
 ```bash
 lsblk
@@ -47,7 +78,7 @@ Next, run this command:
 
 | **SATA Drives**           | **NVMe Drives**                |
 |:-------------------------:|:------------------------------:|
-| sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
+| ```sudo mount /dev/sda3 /mnt``` | ```sudo mount /dev/nvme0n1p3 /mnt``` |
 
 If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.  
 
@@ -57,14 +88,14 @@ To get access to an encrypted disk, these additional commands need to be run in 
 
 | **SATA Drives**                                    | **NVMe Drives**                                   |
 |:--------------------------------------------------:|:-------------------------------------------------:|
-| sudo cryptsetup luksOpen /dev/sda3 cryptdata       | sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata |
+| ```sudo cryptsetup luksOpen /dev/sda3 cryptdata```       | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
 
 ```bash
 sudo lvscan
 sudo vgchange -ay
 ```
 
-**Note:** Pay attention to what the cryptdata group is called. If it is named something other than 'data-root' Substitute the correct info into this next command.  Make sure that `-root` is on the end:
+**Note:** Pay attention to what the `cryptdata` group is called. If it is named something other than `data-root`, substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
 ```bash
 sudo mount /dev/mapper/data-root /mnt
@@ -74,13 +105,13 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 ## Chroot
 
-<u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.
+`chroot` is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (`apt`) and other system-level commands can be run.
 
-The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
+The EFI partition is the next partition to be mounted. To help identify it, this partition is usually around 512MB, and is labeled as `/boot/efi`.
 
 | **SATA Drives**                       | **NVMe Drives**                          |
 |:-------------------------------------:|:----------------------------------------:|
-| sudo mount /dev/sda1 /mnt/boot/efi    | sudo mount /dev/nvme0n1p1 /mnt/boot/efi  |
+| ```sudo mount /dev/sda1 /mnt/boot/efi```    | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```  |
 
 ```bash
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
@@ -88,41 +119,51 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command you will have root access to your installed system. You can also access your files with <u>files</u> via "Other Locations" > Computer > /mnt.
+With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>Files</u> via "Other Locations" -> "Computer" -> "mnt."
 
 ### After Chroot
 
-Once you are done accessing files or running commands in your installed OS, you can exit from the <u>chroot</u> and reboot the computer, run these commands:
+Once you are done accessing files or running commands in your installed OS, you can exit from `chroot` and reboot the computer, by running these commands:
 
 ```bash
 exit
 reboot
 ```
 
-## Refresh Install
+## Update Recovery Partition
 
-Starting with new installations of Pop!\_OS 19.04 (not through upgrading) the installer will include a new Refresh Install option that allows you to reinstall the OS to be reinstalled without losing user account information and data in the home directory. However, your applications will still need to be reinstalled.
+It is important to keep the Recovery Partition up to date as it is not updated with the installed OS. Updating the Recovery partition will allow you to [reinstall](#reinstall) the newest OS, instead of the previous Recovery version.
 
-![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
+The Recovery Partition can be updated from within the OS by either using Settings or from a terminal.
 
-### Reinstall
-
-Once the recovery operating system has opened, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
-
-If files need to be copied off before reinstall, open the <u>Files</u> program to get access to the existing install.  If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions above.
-
-## Upgrade
-
-It is important to keep the Recovery Partition updated as it is not updated with the installed OS. This will allow you to reinstall the OS to the currently installed version if something went wrong in your install.
-
-The Recovery Partition can be upgraded from within the OS in Settings -> OS Upgrade like in the screenshot below:
+If using Settings, click on OS Upgrade like in the screenshot below:
 
 ![Pop Recovery Update Available](/images/pop-recovery/pop-recovery-update.png)
 
-Once the **Update** button is pressed you will see the below screenshot:
+Once the `Update` button is pressed you will see the below screenshot:
 
 ![Pop Recovery Updating](/images/pop-recovery/pop-recovery-update-updating.png)
 
-The screenshot below shows that the Recovery Partition has been upgrade successfully:
+The screenshot below shows that the Recovery Partition has been upgraded successfully:
 
 ![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)
+
+### Update Recovery Partition from the command-line
+
+Alternatively you can also upgrade the recovery partition from the command-line
+
+```bash
+pop-upgrade recovery upgrade from-release
+```
+
+You should see an output similar to below saying the recovery parition had been updated:
+
+```
+checking if pop-upgrade requires an update
+Recovery event: fetching recovery files
+Fetched 2932/2932 MiB
+Recovery event: verifying checksums of fetched files
+Recovery event: syncing recovery files with recovery partition
+Recovery event: recovery partition upgrade completed
+Recovery upgrade status: recovery partition refueled and ready to go
+```

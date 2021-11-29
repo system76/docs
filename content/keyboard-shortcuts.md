@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 You can view and change keyboard shortcuts in Pop!\_OS using the Settings app.

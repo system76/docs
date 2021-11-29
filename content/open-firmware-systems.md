@@ -10,6 +10,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: general-hardware-info
+tableOfContents: true
 ---
 
 ## System76 Open Firmware

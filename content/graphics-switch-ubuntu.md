@@ -1,5 +1,5 @@
 ---
-title: Graphics switching (Ubuntu)
+title: Graphics Switching (Ubuntu)
 description: >
    How to use systems with switchable graphics
 keywords:
@@ -17,14 +17,15 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 The following laptops have switchable graphics:
 
 - Adder WS (addw1, addw2)
 - Galago Pro (galp5 - NVIDIA models only)
-- Gazelle (gaze14, gaze15)
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7)
+- Gazelle (gaze14, gaze15, gaze16)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8)
 
 ### Graphics modes
 

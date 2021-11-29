@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: network-troubleshooting
+tableOfContents: true
 ---
 
 When your internet goes down at home most people would call up their internet provider and go through a list of things to check before (usually) admitting that the problem is on their end.

@@ -18,6 +18,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: case-studies
+tableOfContents: true
 ---
 
 Joshua Orvis, a Professor of Bioinformatics at Johns Hopkins University was

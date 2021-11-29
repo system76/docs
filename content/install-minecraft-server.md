@@ -15,6 +15,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 With no fuss with specific desktop environments and stuff, Installing a Minecraft Server is an easy task on the command line. The hard part is what you will build.

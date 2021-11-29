@@ -24,6 +24,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
 ## When Should I Upgrade?

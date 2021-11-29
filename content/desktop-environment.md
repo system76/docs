@@ -16,11 +16,16 @@ twitterImage: /_social/article
 
 hidden: false
 section: software
+tableOfContents: true
 ---
 
-Pop!_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
+Pop!\_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
-You can install an alternative desktop environment using the instructions below. If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!_OS, install the `pop-desktop` package:
+You can install an alternative desktop environment using the instructions below.
+
+**NOTE:** be careful when installing other desktop envioronments, as they may affect the default GNOME desktop (both Ubuntu and Pop).
+
+If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!\_OS, install the `pop-desktop` package:
 
 ```bash
 sudo apt install pop-desktop
@@ -32,7 +37,7 @@ For Ubuntu, install the `ubuntu-desktop` package instead:
 sudo apt install ubuntu-desktop
 ```
 
-The desktop environment is basically the top graphical layer of the OS. The desktop environment is launched by a display manager; Pop!_OS and Ubuntu both use GDM (GNOME Display Manager) by default.
+The desktop environment acts as the top graphical layer of the OS. The desktop environment is launched by a display manager; Pop!\_OS and Ubuntu both use GDM (GNOME Display Manager) by default.
 
 If multiple desktop environments are installed, GDM will display a gear icon, which will allow you to select the desktop environment you want to launch. You will need to either reboot or restart your display manager using `sudo systemctl restart gdm` before a newly-installed desktop environment will show up in the list of options.
 
@@ -190,7 +195,7 @@ xfce4-notifyd-config
 
 ### Remove Duplicate Options From Login Screen
 
-Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
+Some desktop environments provide more than one session. For example, Cinnamon provides both a 2D and a 3D session. The options available at login are located in the `/usr/share/xsessions` directory, and unneeded options can be removed by deleting the corresponding files. For example, to remove Cinnamon's extra option:
 
 ```bash
 sudo rm /usr/share/xsessions/cinnamon2d.desktop

@@ -36,7 +36,7 @@ A live disk is a handy tool to have around!
 
 ## Downloading the ISO
 
-In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](https://pop.system76.com) or [Ubuntu 20.04 here](https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&architecture=amd64).
+In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](https://pop.system76.com) or [Ubuntu 20.04 here](https://ubuntu.com/download/desktop).
 
 ## Verifying the Download
 
@@ -127,7 +127,7 @@ After creating the live disk, insert the USB drive into your computer, then rebo
  Firmware             | Laptops                                                               | Desktops                                              |
  -------------------- | --------------------------------------------------------------------- | ----------------------------------------------------- |
  Proprietary Firmware | Hold <kbd>F7</kbd>/<kbd>F1</kbd>/<kbd>F2</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>                        |
- Open Firmware        | Hold <kbd>Esc</kbd>                                                   |                                                       |
+ [Open Firmware](https://support.system76.com/articles/open-firmware-systems)        | Hold <kbd>Esc</kbd>                                            |
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 

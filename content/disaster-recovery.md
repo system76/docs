@@ -1,7 +1,7 @@
 ---
-title: Disaster Data Recovery
+title: Data Recovery
 description: >
- How to back up your files if your OS doesn't boot
+ How to back up your files if your operating system doesn't boot
 keywords:
   - files
   - backup
@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](/articles/login-loop-pop) may be helpful instead.

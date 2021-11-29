@@ -45,9 +45,7 @@ You can also download it from the Arch Linux AUR. The main version is built from
 
 ## Remapping Keys
 
-<video width="900" height="900" controls>
-  <source src="/files/launch-keyboard/remapping-function-keys.webm" type="video/mp4">
-</video>
+<iframe width="900" height="500" src="/files/launch-keyboard/remapping-function-keys.webm" title="Remapping keys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The keys are defined in the firmware of your keyboard, and you can remap the keys using the <u>Keyboard Configurator</u>. After opening the <u>Keyboard Configurator</u>, you can select the key you would like to configure and select an item from the available items below the keyboard showing in the application. See the attached video showing the remapping process. Please note the "Layer 1" and "Layer 2" at the top of the configurator. Layer 1 is what the keys will do normally and Layer 2 shows what the keys do when "Fn" is held down.
 

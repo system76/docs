@@ -23,7 +23,7 @@ The following items are included with your Launch:
 
 ## QMK firmware
 
-The Launch keyboard uses our version [QMK firmware](https://github.com/system76/qmk_firmware) and it is built using our changes that are not in upstream [QMK firmware](https://github.com/qmk/qmk_firmware). You can read more about QMK [here](https://github.com/system76/qmk_firmware). 
+The Launch keyboard uses our version [QMK firmware](https://github.com/system76/qmk_firmware) and it is built using our changes that are not in upstream [QMK firmware](https://github.com/qmk/qmk_firmware). You can read more about QMK [here](https://github.com/system76/qmk_firmware).
 
 ## Layers
 
@@ -36,18 +36,16 @@ Firmware updates for the Launch are handled using [fwupd](https://fwupd.org/) an
 
 - U N L O C K E D
 
-Once the keyboard is in this mode you can apply the firmware update, when the update is complete you will need to unplug and re-plug it in to exit this mode. 
+Once the keyboard is in this mode you can apply the firmware update, when the update is complete you will need to unplug and re-plug it in to exit this mode.
 
 ## Keyboard Configurator
 
-You can download the `AppImage` for Ubuntu and other OSes and use the <u>Pop!\_Shop</u> for Pop!\_OS. Use the link below to download the application.
+You can download the `AppImage` for Ubuntu and other OSes and use the <u>Pop!\_Shop</u> for Pop!\_OS. Use this [link](https://github.com/pop-os/keyboard-configurator/releases
+) to download the application.
 
-https://github.com/pop-os/keyboard-configurator/releases 
-
-You can also download it from the Arch Linux AUR from the links below. The main version is built from latest releases which is recommended for most users and the git version is built from the latest commits to the project (this version will have the very latest fixes and features).
-
-- https://aur.archlinux.org/packages/keyboard-configurator/
-- https://aur.archlinux.org/packages/keyboard-configurator-git/
+You can also download it from the Arch Linux AUR. The main version is built from latest releases which is recommended for most users which you can find [here](https://aur.archlinux.org/packages/keyboard-configurator/
+) and the git version is built from the latest commits to the project (this version will have the very latest fixes and features) which can be found [here](https://aur.archlinux.org/packages/keyboard-configurator-git/
+).
 
 ## Remapping Keys
 

@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: community
+tableOfContents: true
 ---
 
 In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open source face authentication tool.
@@ -96,6 +97,12 @@ ffplay /dev/INPUT
 ```
 
 Replace `INPUT` with results you had from previous command.
+
+Note: you may need to install `ffmpeg` before you are able to use the `ffplay` command. Install `ffmpeg` like this:
+
+```bash
+sudo apt install ffmpeg
+```
 
 #### Configuring Howdy to use webcam you want
 

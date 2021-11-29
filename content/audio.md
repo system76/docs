@@ -14,6 +14,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
 Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and reloading ALSA and/or PulseAudio can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.

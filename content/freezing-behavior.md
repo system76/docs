@@ -12,6 +12,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware-troubleshooting
+tableOfContents: true
 ---
 
 Freezing behaviors tend to occur when a piece of hardware is defective.  

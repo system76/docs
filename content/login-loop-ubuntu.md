@@ -17,9 +17,10 @@ twitterImage: /_social/article
 
 hidden: false
 section: software-troubleshooting
+tableOfContents: true
 ---
 
-Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Pop!_OS brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
+Sometimes after an upgrade, your system might not bring you to the desktop after logging in. If you try logging in and you just see a black screen, or Ubuntu brings you back to the login screen, you're experiencing a login loop. There are several causes for login loops:
 
 * Configuration files in your home directory are not compatible with new versions of software
 * The display/login manager is not working correctly
@@ -38,7 +39,7 @@ If you're not able to log in, the reason could be:
 * **Wrong password**: you're notified of this at the graphical login screen.
 * Something else is blocking the login.
 
-The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
+The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Ubuntu](/articles/install-ubuntu/) or contacting Support for more assistance.
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 
@@ -66,6 +67,22 @@ mv ~/.nv ~/.nv.old
 sudo systemctl reboot
 ```
 
+### Move `xorg.conf` file out of the way
+
+If display settings have been corrupted or modified incorrectly, it's good to remove the `xorg.conf`.
+
+```bash
+mv /etc/X11/xorg.conf /etc/X11/xorg.conf.old
+```
+
+By default, X11 config files are instead stored here:
+
+```bash
+/usr/share/X11/xorg.conf.d
+```
+
+`xorg.conf` files saved in `/etc/X11` can cause displays issues on boot, and should be avoided wherever possible.
+
 After moving those files and rebooting, try logging in again. (There may be files you need to move other than the common ones listed above.)
 
 ## Reinstall the login manager
@@ -87,11 +104,12 @@ If your system is equipped with NVIDIA graphics, a recent update might be causin
 |:------------- |:-------------- |:----------- |
 | Oryx Pro      | Wild Dog Pro   | Lemur (Pro) |
 | Adder WS      | Ratel          | Kudu        |
-| Serval WS     | Gazelle        | Meerkat     |
-| Bonobo WS     | Thelio         | Galago Pro  |
-| Leopard WS    | Thelio Mira    | Darter Pro  |
-| Silverback WS | Thelio Major   | Pangolin    |
-| Thelio Mega   | Thelio Massive |             |
+| Serval WS     | Galago Pro 5   | Meerkat     |
+| Bonobo WS     | Gazelle        | Galago Pro (4 or older)  |
+| Leopard WS    | Thelio         | Darter Pro  |
+| Silverback WS | Thelio Mira    | Pangolin    |
+| Thelio Mega   | Thelio Major   |             |
+|               | Thelio Massive |             |
 
 To remove the NVIDIA driver, run the following:
 

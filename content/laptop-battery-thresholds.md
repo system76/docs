@@ -11,6 +11,7 @@ twitterImage: /_social/article
 
 hidden: false
 section: hardware
+tableOfContents: true
 ---
 
 Charging thresholds allow your System76 laptop to avoid charging the battery until it has dropped below a lower bound (the start threshold), and to stop charging when it reaches an upper bound (the end threshold). This is useful when your laptop is plugged into an AC power adapter for extended periods of time, as it prevents unnecessary micro-charging that would reduce battery longevity.

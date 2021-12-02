@@ -27,7 +27,7 @@ The Launch keyboard uses our version of [QMK firmware](https://github.com/system
 
 ## Layers
 
-The core idea of "Layers" is that one key can be used for different actions. For example on our laptops holding the <kbd>Fn</kbd> then pressing the <kbd>F5</kbd> will lower the volume, while pressing <kbd>F5</kbd> on it's own will perform a different action like refreshing a web page if you are in a web browser like <u>Firefox</u>. You can read more about layers [here](https://beta.docs.qmk.fm/using-qmk/software-features/feature_layers).
+The core idea of "Layers" is that one key can be used for different actions. For example, on our laptops, holding the <kbd>Fn</kbd> then pressing the <kbd>F5</kbd> will lower the volume. Pressing <kbd>F5</kbd> on it's own will perform a different action, like refreshing a web page, if you are in a web browser like <u>Firefox</u>. You can read more about layers [here](https://beta.docs.qmk.fm/using-qmk/software-features/feature_layers).
 
 ## Firmware Updates
 
@@ -41,13 +41,13 @@ Once the keyboard is in this mode, you can apply the firmware update. When the u
 
 You can download the `AppImage` for Ubuntu and other OSes and use the <u>Pop!\_Shop</u> on Pop!\_OS. Use this [link](https://github.com/pop-os/keyboard-configurator/releases) to download the application.
 
-You can also download it from the Arch Linux AUR. The main version is built from latest releases which is recommended for most users which you can find [here](https://aur.archlinux.org/packages/keyboard-configurator/). While the git version is built from the latest commits to the project (this version will have the very latest fixes and features) which can be found [here](https://aur.archlinux.org/packages/keyboard-configurator-git/).
+YYou can also download the configurator from the Arch Linux User Repository (AUR). The main version is built from the latest release, which is recommended for most users. You can find more information [here](https://aur.archlinux.org/packages/keyboard-configurator/). The git version is built from the latest commits to the project (this version will have the very latest fixes and features) which can be found [here](https://aur.archlinux.org/packages/keyboard-configurator-git/).
 
 ## Remapping Keys
 
 <iframe width="900" height="500" src="/files/launch-keyboard/remapping-function-keys.webm" title="Remapping keys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The keys are defined in the firmware of your keyboard, and you can remap the keys using the <u>Keyboard Configurator</u>. After opening the <u>Keyboard Configurator</u>, you can select the key you would like to configure and select an item from the available items below the keyboard showing in the application. See the attached video showing the remapping process. Please note the "Layer 1" and "Layer 2" at the top of the configurator. Layer 1 is what the keys will do normally and Layer 2 shows what the keys do when "Fn" is held down.
+The keys are defined in the firmware of your keyboard, and you can remap the keys using the <u>Keyboard Configurator</u>. After opening the <u>Keyboard Configurator</u>, select the key you would like to re-map, then select an item from the available mapping options shown in the list below the keyboard diagram. Refer to the included video for more details. Please note the "Layer 1" and "Layer 2" at the top of the configurator. Layer 1 is what the keys will do normally and Layer 2 shows what the keys do when "Fn" is held down.
 
 ## Changing LEDs
 
@@ -55,7 +55,7 @@ The keys are defined in the firmware of your keyboard, and you can remap the key
   <source src="/files/launch-keyboard/video-soothing.mp4" type="video/mp4">
 </video>
 
-In the <u>Keyboard Configurator</u>, you can change the LEDs in the 'LEDs' section of the application by changing the 'Layer Color Pattern' using the dropdown.
+In the <u>Keyboard Configurator</u>, you can change keyboard back light color and behavior for the whole keyboard in the LEDs section of the application by changing the 'Layer Color Pattern' using the dropdown. If you want to change the lights per key use the 'Per Key Solid' from the 'Layer Color Patter' dropdown.
 
 ## Tech Docs
 

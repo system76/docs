@@ -81,6 +81,7 @@ This video shows the features of Pop!\_Shell auto-tiling. Covered are default be
 - Users can adjust the gap between application windows, and view keyboard shortcuts.
 
 **NOTE:** Current versions of Pop!\_Shell also offer options for showing or hiding window title bars.
+
 ### Keyboard Shortcuts
 
 <iframe width="900" height="500" src="https://www.youtube.com/embed/aqj0cRTZaVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

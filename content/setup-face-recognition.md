@@ -98,6 +98,12 @@ ffplay /dev/INPUT
 
 Replace `INPUT` with results you had from previous command.
 
+Note: you may need to install `ffmpeg` before you are able to use the `ffplay` command. Install `ffmpeg` like this:
+
+```bash
+sudo apt install ffmpeg
+```
+
 #### Configuring Howdy to use webcam you want
 
 Once you find a webcam you want to use for Howdy, type in:

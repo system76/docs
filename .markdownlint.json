@@ -12,7 +12,10 @@
       "font-awesome-icon",
       "kbd",
       "sup",
-      "u"
+      "u",
+      "iframe",
+      "video",
+      "source"
     ]
   },
 

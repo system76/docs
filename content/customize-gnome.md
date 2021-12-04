@@ -81,7 +81,7 @@ For details refer to the Github page (linked above) or view the tutorial content
 
 This extension assists with power-management and battery conservation. It adds options for switching CPU performance modes, and enabling/disabling GPU hardware on applicable models.
 
-For more information on System76 Power refer to the Github page (above) and/or this [support article](/articles/graphics-switching-pop)
+For more information on System76 Power refer to the Github page (above) and/or this [support article](/articles/graphics-switch-pop)
 
 ### [Ubuntu AppIndicators](https://github.com/ubuntu/gnome-shell-extension-appindicator)
 

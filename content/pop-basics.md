@@ -31,6 +31,7 @@ Once familiar with the Pop!\_OS default settings, users may want to further [cus
 ## Workflow
 
 Pop!\_OS is designed to provide smooth, efficient workflow features. There are several options for control and navigation.
+
 ### COSMIC Workflow
 
 <iframe width="900" height="500" src="https://www.youtube.com/embed/SrWw2LeZ21U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -75,7 +76,7 @@ This video covers how to use Pop!\_OS' tile-stacking feature to take advantage o
 This video shows the features of Pop!\_Shell auto-tiling. Covered are default behaviors, and ways to adjust settings and view keyboard shortcuts.
 
 - Click the Tiling icon in the top right of top-bar. The icon is to the left the the `Top-right Menu`.
-- The dropdown features options to automatically tile/untile the current application windows. 
+- The dropdown features options to automatically tile/untile the current application windows.
 - `Active Hints` can be enabled which highlight the active application window in a color of your choice.
 - Users can adjust the gap between application windows, and view keyboard shortcuts.
 
@@ -91,11 +92,13 @@ For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [this arti
 ## Workspaces
 
 Depending on which version of Pop!\_OS is installed on your system, the placement and appearance of workspaces may vary. Usage and features of workspaces remain essentially the same across versions.
+
 ### Pop!_OS 21.04 COSMIC Desktop - Workspaces Tutorial
 
 <iframe width="900" height="500" src="https://www.youtube.com/embed/USQjxLP1Z5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This video shows how to access the `Workspaces` overview and how to use gestures and keyboard shortcuts to navigate COSMIC.
+
 There are four ways to access the `Workspaces` overview:
 
 1. Click on the Workspaces icon in the Dock.
@@ -103,7 +106,7 @@ There are four ways to access the `Workspaces` overview:
 3. Swipe left on the trackpad with four (4) fingers.
 4. Press <kbd>SUPER</kbd> + <kbd>D</kbd>
 
-Once in the `Workspaces` overview, you can move active application windows to different workspaces by clicking and dragging them, or by pressing - <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd> .
+Once in the `Workspaces` overview, you can move active application windows to different workspaces by clicking and dragging them, or by pressing - <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>.
 
 Click on the thumbnail for a specific workspace to switch to it, or use
 <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd> to switch to workspaces above or below the current one.
@@ -118,13 +121,13 @@ This video shows methods for accessing the `Activities` overview, then managing 
 - Click and drag application windows to the desired workspace on the right-hand side.
 - Click on the thumbnail for a specific workspace to switch to it, or use
 <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd> to switch to workspaces above or below the current one.
-- Move active application windows to different workspaces by clicking and dragging them in the overview, or by pressing - <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd> .
+- Move active application windows to different workspaces by clicking and dragging them in the overview, or by pressing - <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>.
 
 ## Desktop Menus and Navigation
 
 ### Pop!_OS 21.10
 
-Pop!|_OS 21.10 introduced a new UI for the `Applications` menu. 
+Pop!\_OS 21.10 introduced a new UI for the `Applications` menu.
 
 By default, all apps installed are shown in alphabetical order. Application folders are grouped along the bottom of the window. New folders can be created, and apps can be dragged into, or out of folders.
 
@@ -135,6 +138,7 @@ If a folder is deleted, all applications in the folder revert to their original 
 As in previous versions a search box is provided which can search installed applications, or applications to install from the [Pop!\_Shop](#pop_shop-app-installation)
 
 ![new-app-search](/images/pop-basics/21-10-new-apps-search.png)
+
 ### Pop!_OS 21.04
 
 ![cosmic desktop](/images/pop-basics/cosmic-desktop.png)
@@ -159,7 +163,8 @@ The `Top-right Menu` can be used to adjust volume and screen brightness, connect
 
 ![top right menu](/images/pop-basics/top-right-menu.png)
 
-### Pop!\_OS 20.04 
+### Pop!\_OS 20.04
+
 ![Pop Desktop](/images/pop-basics/pop-desktop.png)
 
 To navigate within the desktop, either click the `Activities` button in the top left, or press the <kbd>SUPER</kbd> key on the keyboard.  This will show an overview of all open windows and provide a text box to search your system.

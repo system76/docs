@@ -64,9 +64,9 @@ If the existing OS install needs to be repaired, the installer application shoul
 
 **NOTE:** be sure not to choose any install or repair options, as this could result in data loss.
 
-To access the existing OS drive run the following terminal:
+To access the existing OS drive follow the instructions below.
 
-First, press `SUPER`+`T` to open a terminal, then type this command:
+First, press <kbd>SUPER</kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
 ```bash
 lsblk
@@ -119,7 +119,7 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>files</u> via "Other Locations" -> "Computer" -> "mnt."
+With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>Files</u> via "Other Locations" -> "Computer" -> "mnt."
 
 ### After Chroot
 
@@ -134,7 +134,9 @@ reboot
 
 It is important to keep the Recovery Partition up to date as it is not updated with the installed OS. Updating the Recovery partition will allow you to [reinstall](#reinstall) the newest OS, instead of the previous Recovery version.
 
-The Recovery Partition can be updated from within the OS in Settings -> OS Upgrade like in the screenshot below:
+The Recovery Partition can be updated from within the OS by either using Settings or from a terminal.
+
+If using Settings, click on OS Upgrade like in the screenshot below:
 
 ![Pop Recovery Update Available](/images/pop-recovery/pop-recovery-update.png)
 
@@ -145,3 +147,23 @@ Once the `Update` button is pressed you will see the below screenshot:
 The screenshot below shows that the Recovery Partition has been upgraded successfully:
 
 ![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)
+
+### Update Recovery Partition from the command-line
+
+Alternatively you can also upgrade the recovery partition from the command-line
+
+```bash
+pop-upgrade recovery upgrade from-release
+```
+
+You should see an output similar to below saying the recovery parition had been updated:
+
+```
+checking if pop-upgrade requires an update
+Recovery event: fetching recovery files
+Fetched 2932/2932 MiB
+Recovery event: verifying checksums of fetched files
+Recovery event: syncing recovery files with recovery partition
+Recovery event: recovery partition upgrade completed
+Recovery upgrade status: recovery partition refueled and ready to go
+```

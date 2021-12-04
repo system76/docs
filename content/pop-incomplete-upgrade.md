@@ -28,7 +28,7 @@ The upgrade process will leave your files intact, but it's always a good idea to
 
 ## If you can't boot the OS
 
-Refer to the [disaster recovery article](/articles/disaster-recovery) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
+Refer to the [data recovery article](/articles/disaster-recovery) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
 
 ## Recovery Partition is full
 
@@ -118,7 +118,7 @@ After you have made the edit, save the file and start the upgrade again.
 
     | **SATA Drives**           | **NVMe Drives**                |
     |:-------------------------:|:------------------------------:|
-    | sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
+    | ```sudo mount /dev/sda3 /mnt``` | ```sudo mount /dev/nvme0n1p3 /mnt``` |
 
     If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.
 

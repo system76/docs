@@ -68,7 +68,7 @@ Please read our article on [how to backup your files](/articles/backup-files/) f
 
 ## Upgrade Pop!_OS
 
-<!--Pop!\OS 21.10 was released on November 9, 2021 -->
+<!--Pop!\OS 21.10 was released on December 7, 2021 -->
 
 Pop!\_OS 21.04 was released on June 29, 2021.
 

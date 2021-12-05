@@ -63,7 +63,34 @@ GLX applications must be launched with this command to be rendered on the dGPU (
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia <application>
 ```
 
-Hybrid graphics mode is available on 19.10 and later.
+Hybrid graphics mode is available on 19.10 and later. Applications can be launched using Hybrid graphics on a per-application basis and through inheritance of launch state from a game launcher.
+
+#### Hybrid Graphics Integration with Steam: GUI Method
+
+When Steam is favorited, can be launched using Discrete Graphics by right clicking on the Pop Dock and selecting the following option: 
+```
+Launch Using Dedicated Graphics Card
+```
+As a result of this, Steam will utilize the discrete graphics card in the laptop for all games launch via the Steam client. Conversely when this option is not selected when Steam is opened, games can be played on the integrated Intel graphics which may prove advantageous depending on the title for compatibilty reasons.
+
+
+#### Hybrid Graphics Integration with Steam: Command Arguments
+
+If Hybrid Graphics is the preferred hardware configuration, it may be convient to set flags on a per-game basis if the GUI method proves cumbersome over time. There are two ways of achieving this:
+
+1. **This method applies for games launched through the Steam client**: Open the Steam client, right click on a game and click "Properties". Under the "General" tab, copy and paste the PRIME Render Offload flags mentioned above into this field, then click OK. As a result of this flag Steam can be launched without the Dedicated Graphics Card button in the Pop Dock, but the game in question will use the Nvidia graphics card.
+2. **This method applies for games launched through the Gnome application menu**: Navigate to the directory where Steam stores the .desktop files, this will be: *~/.local/share/applications*. For the games that need Dedicated Graphics to run, append the PRIME flag to the end of the Exec line. Then save an exit. An example .desktop entry for for Fallout 3 is below:
+```
+[Desktop Entry]
+Name=Fallout 3
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/22300 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia 
+Icon=steam_icon_22300
+Terminal=false
+Type=Application
+Categories=Game;
+```
+
 
 ### Compute
 

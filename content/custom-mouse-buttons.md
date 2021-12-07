@@ -49,6 +49,10 @@ In this window the button that has been clicked can be reassigned to a differet 
 
 You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/) and more information about <u>Solaar</u> [here](https://pwr-solaar.github.io/Solaar/devices).
 
+#### Installing
+
+<u>Solaar</u> can be installed from the <u>Pop!\_Shop</u> on Pop!\_OS and from the <u>Ubuntu Software</u> on Ubuntu.
+
 ## Command Line Software
 
 ### xbindkeys

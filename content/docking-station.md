@@ -58,7 +58,7 @@ We have tested the following docks:
 Community members have reported that the following docks work with our products:
 
 - [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/797) on an Intel system] <sup>1</sup>
-- [CableMatters Dual Display USB-C Docking Station 107008-BLK](https://www.cablematters.com/pc-881-127-cable-matters-60-ghz-wireless-docking-station-hybrid-model-with-usb-c.aspx) [[community-tested](todo) on an Intel system]
+- [CableMatters Dual Display USB-C Docking Station 107008-BLK](https://www.cablematters.com/pc-881-127-cable-matters-60-ghz-wireless-docking-station-hybrid-model-with-usb-c.aspx) [[community-tested](https://github.com/system76/docs/pull/860) on an Intel system] <sup>1</sup>
   - Outputting HDMI and DisplayPort simultaneously not tested.
   - Multi-monitor daisy-chaining not tested.
   - Audio not tested.

@@ -58,6 +58,10 @@ We have tested the following docks:
 Community members have reported that the following docks work with our products:
 
 - [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/797) on an Intel system] <sup>1</sup>
+- [CableMatters Dual Display USB-C Docking Station 107008-BLK](https://www.cablematters.com/pc-881-127-cable-matters-60-ghz-wireless-docking-station-hybrid-model-with-usb-c.aspx) [[community-tested](todo) on an Intel system]
+  - Outputting HDMI and DisplayPort simultaneously not tested.
+  - Multi-monitor daisy-chaining not tested.
+  - Audio not tested.
 - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [community-tested on an [Intel system](https://github.com/system76/docs/pull/417) and an [NVIDIA system](https://github.com/system76/docs/pull/917)] <sup>1</sup>
   - Downstream (passthrough) Thunderbolt 3 port not tested.
   - May not be able to wake system using peripherals connected via dock.

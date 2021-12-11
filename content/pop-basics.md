@@ -20,11 +20,11 @@ tableOfContents: true
 Welcome to the Pop!_OS desktop! By default, it's clean and ready for action.
 The Pop!_OS operating system provides all the features you would expect from a modern desktop.
 
-Pop!\_OS is based on Ubuntu, however, extra features and tools have been added, while other aspects have been slimmed down. You can read more about Pop!\_OS features and the differences between Pop!\_OS and Ubuntu [here](/articles/difference-between-pop-ubuntu)
+Pop!\_OS is based on Ubuntu, however, extra features and tools have been added, while other aspects have been slimmed down. You can read more about Pop!\_OS features and the differences between Pop!\_OS and Ubuntu [here](/articles/difference-between-pop-ubuntu).
 
 ## Pop!_OS Desktop Environment
 
-The Pop!_OS Desktop environment is based on GNOME shell and layered with other components called **Pop!\_Shell** and **C.O.S.M.I.C. (Computer Operating System Main Interface Components)** For more info, including source-code, refer to [this page](https://github.com/pop-os/).
+The Pop!_OS Desktop environment is based on GNOME shell and layered with other components called **Pop!\_Shell** and **C.O.S.M.I.C. (Computer Operating System Main Interface Components)** For more info, including source code, refer to [this page](https://github.com/pop-os/).
 
 Once familiar with the Pop!\_OS default settings, users may want to further [customize](/articles/customize-gnome) the desktop environment (DE), or even [install another DE](/articles/desktop-environment) alongside the default.
 
@@ -61,7 +61,7 @@ This video covers how to use Pop!\_OS' tile-stacking feature to take advantage o
 
 - <kbd>SUPER</kbd> + <kbd>S</kbd> converts a window to a stack. Dragging a window out of the stack and repeating the <kbd>SUPER</kbd> + <kbd>S</kbd> combination again converts back to a standard window.
 
-- <kbd>SUPER</kbd> + <kbd>ENTER</kbd> + <kbd>←</kbd> , <kbd>→</kbd> , <kbd>↑</kbd> , <kbd>↓</kbd> (or Vim shortcuts) move windows into or out of the stack. You can also click and drag windows into the stack.
+- <kbd>SUPER</kbd> + <kbd>ENTER</kbd> then use the arrow keys <kbd>←</kbd> , <kbd>→</kbd> , <kbd>↑</kbd> , <kbd>↓</kbd> (or Vim shortcuts) to move windows into or out of the stack. You can also click and drag windows into the stack.
 
 **NOTE:** In 20.04, the `Launcher` keyboard shortcut is <kbd>SUPER</kbd> + <kbd>/</kbd>, and pressing <kbd>SUPER</kbd> opens the `Activities` overview.
 
@@ -88,7 +88,7 @@ This video shows the features of Pop!\_Shell auto-tiling. Covered are default be
 
 This video covers keyboard shortcuts for opening the `Launcher`, opening applications, and switching between open applications or workspaces. It also covers how to navigate and adjust open applications windows.
 
-For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [this article](/articles/pop-keyboard-shortcuts)
+For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [this article](/articles/pop-keyboard-shortcuts).
 
 ## Workspaces
 
@@ -136,7 +136,7 @@ If a folder is deleted, all applications in the folder revert to their original 
 
 ![new-app-menu](/images/pop-basics/21-10-apps-menu.png)
 
-As in previous versions a search box is provided which can search installed applications, or applications to install from the [Pop!\_Shop](#pop_shop-app-installation)
+As in previous versions a search box is provided which can search installed applications, or applications to install from the [Pop!\_Shop](#pop_shop-app-installation).
 
 ![new-app-search](/images/pop-basics/21-10-new-apps-search.png)
 
@@ -198,4 +198,4 @@ The <u>Pop!_Shop</u> can be used to install additional software. Just search for
 
 ![Pop!_Shop](/images/pop-basics/pop-shop.png)
 
-To learn more about the Pop!_Shop refer to [this page](https://github.com/pop-os/shop), and for more information about package management in Pop!\_OS see this [article](articles/manage-repos-pop)
+To learn more about the Pop!_Shop refer to [this page](https://github.com/pop-os/shop), and for more information about package management in Pop!\_OS see this [article](articles/manage-repos-pop).

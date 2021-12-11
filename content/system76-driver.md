@@ -66,9 +66,9 @@ sudo apt-get install system76-driver-nvidia
 
 In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card.
 
-### Install System76 Driver on Other Operating Systems
+## Install System76 Driver on Other Operating Systems
 
-**DISCLAIMER:** This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
+**DISCLAIMER:** The linked articles explain how to install the <u>System76 Driver</u> on Arch and Fedora.
 
 Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
 
@@ -79,45 +79,9 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 **NOTE** at this time it is recommended to use the NVIDIA driver from the Arch and Fedora repositories.
 
-### Arch
+- [System76 Driver (Install - Arch)](/articles/system76-driver-arch)
+- [System76 Driver (Install - Fedora)](/articles/system76-driver-fedora)
 
-First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:
+### Finished Installing the System76 Driver?
 
-```bash
-sudo pacman -S --needed base-devel git linux-headers
-```
-
-### Install Paru
-
-```bash
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-```
-
-**NOTE** that by default <u>Paru</u> uses vim standards so when you see a ":" press the <kbd>q</kbd> key to continue. You may also need to import some public keys by using the <kbd>y</kbd> key.
-
-Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
-
-```bash
-git clone https://aur.archlinux.org/system76-driver.git
-cd system76-driver
-makepkg -srcif
-sudo systemctl enable --now system76
-```
-
-**NOTE** choose the first software option listed after running the <u>Paru</u> command.
-
-```bash
-paru -s system76-driver
-sudo systemctl enable --now system76
-```
-
-### Fedora
-
-Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](https://copr.fedorainfracloud.org/coprs/szydell/system76/) and install the <u>System76 Driver</u> :
-
-```bash
-sudo dnf copr enable szydell/system76
-sudo dnf install system76-driver
-```
+You will likely want to visit the [System76 Software installation article](/articles/system76-software) as well.

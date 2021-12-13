@@ -83,7 +83,7 @@ The launcher allows searching through open windows and installed applications, a
 | <kbd>SUPER</kbd> + <kbd>/</kbd>                 | Activate the launcher on Pop 20.10 and below |
 | `recent filename`                                          | Browse and search recent files  |
 | `/` / `~/`                                                 | Browse the filesystem           |
-| `file filename`                                            | Search the filesystem for a certain file |
+| `find filename`                                            | Search the filesystem for a certain file |
 | `t:`                                                       | Execute a command in a terminal |
 | `:`                                                        | Execute a command in sh         |
 | `=`                                                        | Calculate an equation           |

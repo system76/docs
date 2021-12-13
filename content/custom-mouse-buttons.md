@@ -26,6 +26,10 @@ tableOfContents: true
 
 <u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 (sold by System76). In this section we will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
 
+#### Installing
+
+<u>Piper</u> can be installed from the <u>Pop!\_Shop</u> on Pop!\_OS and from the <u>Ubuntu Software</u> on Ubuntu.
+
 ![Piper Buttons Assign Window](/images/custom-mouse-buttons/Piper-3.png)
 
 In this window the button that has been clicked can be reassigned to a differet function like changing the Left-click to the Right-click or swapping the Forward button to the Back button for web pages.
@@ -44,6 +48,10 @@ In this window the button that has been clicked can be reassigned to a differet 
 - Sensitivity (DPI) settings
 
 You can find the source code of <u>Solaar</u> [here](https://github.com/pwr-Solaar/Solaar/) and more information about <u>Solaar</u> [here](https://pwr-solaar.github.io/Solaar/devices).
+
+#### Installing
+
+<u>Solaar</u> can be installed from the <u>Pop!\_Shop</u> on Pop!\_OS and from the <u>Ubuntu Software</u> on Ubuntu.
 
 ## Command Line Software
 

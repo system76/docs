@@ -136,6 +136,12 @@ sudo btmon
 
 This will show all Bluetooth related messages.  Try leaving this command running while pairing or using a device to see any error messages or failures.
 
+```bash
+sudo rm -r /var/lib/bluetooth/
+```
+
+This will reset the Bluetooth device profiles and require re-pairing all devices. This can help if your Bluetooth audio device is stuck in an HSP/HFP profile and will not switch to A2DP mode after updates <sup>[1](https://github.com/bluez/bluez/issues/157)</sup>.
+
 ## Additional Info
 
 Here are a few additional tidbits about the Bluetooth system that may help with troubleshooting.

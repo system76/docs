@@ -187,7 +187,7 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 
 ### 5. After the 20.04 Pop upgrade is complete, **reboot**
 
-### 6. Run the command to upgrade to Pop 21.04
+### 6. Run the command to upgrade to the newest release
 
 ```bash
 pop-upgrade release upgrade

@@ -22,6 +22,17 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
+
+## Repairing Upgrade Errors
+
+Due to the overwhelming demand for 21.10, we have had to expand our servers' bandwidth. If you are experiencing any connection errors please run the following commands in a terminal.
+
+```bash
+sudo rm /etc/apt/sources.list.d/pop-os-ppa.sources
+systemctl restart pop-upgrade
+pop-upgrade release upgrade
+```
+
 ## Backup Your Files
 
 The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.

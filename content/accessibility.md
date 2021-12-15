@@ -1,7 +1,7 @@
 ---
 title: Accessibility
 description: >
-    Accessibility options for Pop!\_OS
+    Accessibility options for Pop!_OS
 keywords:
   - Support
   - Accessibility

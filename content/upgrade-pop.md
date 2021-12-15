@@ -143,6 +143,16 @@ Finally, you will get a notice to restart your computer to complete the upgrade.
 
 Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our [troubleshooting](#troubleshooting) section below.
 
+## Repairing Upgrade Errors
+
+Due to the overwhelming demand for 21.10, we have had to expand our servers' bandwidth. If you are experiencing any connection errors please run the following commands in a terminal.
+
+```
+sudo rm /etc/apt/sources.list.d/pop-os-ppa.sources
+systemctl restart pop-upgrade
+pop-upgrade release upgrade
+```
+
 ## Upgrading older releases
 
 Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.10 (impish).

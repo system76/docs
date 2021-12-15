@@ -33,24 +33,23 @@ The rules of our not fallen kingdom.
 
 ### General Rules
 1. No Griefing.
-2. No Spamming.
-3. No Advertising.
-4. Profanity is allowed, but encouraged to be kept at a minimum. If a staff member asks you to cut it out, you cut it out.
+2. No Spamming text chat.
+3. No Advertising - (you are allowed to tell people you have items for trade (trades must of ingame goods only))
+4. Profanity is not allowed.
 5. No Trolling/Flaming.
-6. No Asking for OP, Ranks, or Items.
+6. No Asking for OP, Ranks, or Items - ask ones your warned, ask again your banned.
 7. Respect all Players.
 8. Obey Staff they're the Law.
 9. No Racist or Sexist Remarks.
 10. No Mods/Hacks - Optifine is allowed.
-11.  No Full Caps Messages.
-12.  No Builds Near Spawn or the Mooshroom Island near spawn, this will be the future site of spwan.
-13.  No 1x1 Towers. Towers like this are allowed if needed to reach something specific, or as part of a larger build, but please do not leave them around once you are done.
+11. No Builds Near Spawn or the Mooshroom Island near spawn, we are moving spawn to the Mooshroom island soon.
+12. No 1x1 Towers in the wild. Towers like this are allowed if needed to reach something specific, or as part of a larger build, but please do not leave them around once you are done.
 
 ### PvP Rules
-1. PvP is enabled, so long as all players involved have offered consent.
-2. Spawn camping and griefing are both prohibited.
+1. It is ok to fight or kill other players as long as all players involved have offered consent.
+2. Spawn camping and griefing are prohibited.
 3. If a player does not consent you are responsible for returning their inventory, even if you lost it.
-4. Any repeated killing of players without consent will be considered harassing and will result in punishment.
+4. Any repeated killing of players without consent will be considered harassing and will result in ban.
 
 ### Mod/Admin Rules
 These rules are for the keepers of the peace our moderators and admins of the minecraft server.
@@ -71,12 +70,20 @@ Make like a tree and get out of here... cut trees down faster with any ax.  Brea
 Zipping around the server can save time and hassel.  Deep in a mining expidition and need food?  Telleport home grab some food then telleport back - it is that easy!  Your friend have a wicked cool build?  Tel
 
 #### Home
-/trigger sethome
-/trigger home
+Your home base is your castle and it is important to be able to find it and return home.  To set home you will want to use the following command in chat: `/trigger sethome`
+
+Be warned that will telleport your right back to that block even if it is not air.  To return home at any time use `/trigger home`
+
 #### Back
-/trigger back
+To go back to our last place is: `/trigger back`
+
+This can be useful to TP between to places rapidly.
+
 #### To Player
-/trigger tpa
+Want to get your friend super fast?  If you hold tab in game you will see current players with an number next to there name.  The number is the ID and is what you use to TP to a player: `/trigger tpa set NUMBER`
+
+It will be asked if they want to have you teleported to them.  It will time out after a few second but can be seen in chat.
 
 #### Teleporting Blogs
-ender pearl on color wool block
+
+Stairs are so last year.  Want to teleport up and down?  Use a wool block with an ender pearl to make it a teleported.  Place anouther one teleporter block anywhere in the Y axis.  Then stand on the block and shift or jump on the block to teleport between them.

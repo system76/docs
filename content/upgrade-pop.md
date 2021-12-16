@@ -11,6 +11,7 @@ keywords:
   - Pop!_OS 20.04
   - Pop!_OS 20.10
   - Pop!_OS 21.04
+  - Pop!_OS 21.10
   - LTS
   - Non-LTS
   - Upgrade
@@ -28,6 +29,14 @@ tableOfContents: true
 ---
 
 ## When Should I Upgrade?
+
+Every release of Pop!\_OS is thoroughly tested and undergoes an extensive quality assurance (QA) process, including the upgrade system itself. In almost all cases, the upgrade from an existing release of Pop!\_OS to a newer release is a smooth transition that takes only an hour or so to complete (depending on download speeds and the speed of the components in the system you are upgrading).
+
+That being said, from time to time, unexpected complications can arise. The likelihood of complications during the upgrade process increases on systems that are:
+
+- upgrading more than one release at a time
+- running older releases that have already reached the end-of-life period
+- using a large number of third-party software repositories (PPAs)
 
 Before upgrading, it can be helpful to ask yourself the following environment questions:
 
@@ -53,19 +62,21 @@ Before upgrading, it can be helpful to ask yourself the following environment qu
 
 ## Backing Up Your Data
 
-**IMPORTANT NOTE:** The upgrade process will leave your files in place, but no matter which system version you are running, we **always** recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade.
+**IMPORTANT NOTE:** The upgrade process will leave your files in place, but no matter which system or version you are running, we **always** recommend first creating a good backup of your files, just to be on the safe side should anything unexpected happen during the upgrade. Internet or power outages can happen to anyone.
 
 Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
 ## Upgrade Pop!_OS
 
+Pop!\OS 21.10 was released on December 14, 2021
+
 Pop!\_OS 21.04 was released on June 29, 2021.
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
-### Upgrading Pop!\_OS to 21.04 from 20.10
+### Upgrading Pop!\_OS to 21.10 from 21.04
 
-> **NOTE:** For all other operating system versions scroll down to the instructions for upgrading from an earlier release
+> **NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -74,19 +85,21 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a **Download** button.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a `Download` button.
+
+If you are planning on staying on an LTS release for the time being, this is also the page where you can dismiss upgrade notifications.
 
 ![Settings OS Upgrade](/images/upgrade-pop/setting-os-upgrade.png)
 
-1. Click the **Update** button to update the Recovery partition.
+**NOTE:** Refreshing is **not** part of the upgrade process. `Refresh` will reinstall the Operating System with the version stored in Recovery, and will erase all user-installed applications.
 
-2. Click the **Download** button and the download will begin. Once the download is complete, you will receive a second notification saying the upgrade is ready.
+1. Click the `Download` button and the download will begin. Once the download is complete, you will receive a second notification saying the upgrade is ready.
 
-3. Click on the notification and your computer will restart to the upgrade screen.
+2. Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.04!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.10!
 
-### Advanced Install (Terminal)
+## Terminal Upgrade
 
 Use the Terminal to apply the upgrade may do so by running the following commands:
 
@@ -94,7 +107,7 @@ Use the Terminal to apply the upgrade may do so by running the following command
 sudo apt update
 ```
 
-You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press <kbd>Enter</kbd>.
+You'll be prompted to enter your system password, but when you type it, the letters won't show. Just continue typing the password and press `ENTER`.
 
 ```bash
 sudo apt full-upgrade
@@ -112,27 +125,37 @@ Once updates have been applied (including the Recovery partition), initiate the 
 pop-upgrade release upgrade
 ```
 
-Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type <kbd>Y</kbd> or <kbd>Enter</kbd>. Some of the prompts to expect are described below.
+Please check the terminal window at different times during the update process to make sure you answer any prompts asking you to type `Y` or `ENTER`. Some of the prompts to expect are described below.
 
-If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press <kbd>Enter</kbd> to continue.
+If you have 3rd party sources enabled, you will be prompted about the sources being disabled during the upgrade. Press `ENTER` to continue.
 
-Type <kbd>Y</kbd> and press enter when prompted about starting the upgrade.
+Type `Y` and press `ENTER` when prompted about starting the upgrade.
 
-If you have your lock screen set to enabled, you will receive a prompt about the screen being disabled during the update. Press <kbd>Enter</kbd> to continue.
+If you have your lock screen set to enabled, you will receive a prompt about the screen being disabled during the update. Press `ENTER` to continue.
 
-Near the end of the upgrade process, you'll be prompted to remove obsolete packages. Type <kbd>Y</kbd> and press <kbd>Enter</kbd>  when prompted.
+Near the end of the upgrade process, you'll be prompted to remove obsolete packages. Type `Y` and press `ENTER` when prompted.
 
-You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press <kbd>Y</kbd> to use the package maintainer's version. If you have made a change you would like to keep, press <kbd>N</kbd> to use the local version, or press <kbd>D</kbd> to inspect the changes and see which version you would like to use.
+You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press `Y` to use the package maintainer's version. If you have made a change you would like to keep, press `N` to use the local version, or press `D` to inspect the changes and see which version you would like to use.
 
-Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing `[sudo] reboot` and pressing <kbd>Enter</kbd>. If you prefer, you can also use the graphical interface to reboot.
+Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing `sudo reboot`and pressing `ENTER`. If you prefer, you can also use the graphical interface to reboot.
 
 ---
 
-Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our troubleshooting section below.
+Once restarted, the computer will be on the newly upgraded system! If you run into any issues, check out our [troubleshooting](#troubleshooting) section below.
+
+## Repairing Upgrade Errors
+
+Due to the overwhelming demand for 21.10, we have had to expand our servers' bandwidth. If you are experiencing any connection errors please run the following commands in a terminal.
+
+```
+sudo rm /etc/apt/sources.list.d/pop-os-ppa.sources
+systemctl restart pop-upgrade
+pop-upgrade release upgrade
+```
 
 ## Upgrading older releases
 
-Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.04 (hirsute).
+Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.10 (impish).
 
 These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 
@@ -155,10 +178,8 @@ sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
 sudo apt-add-repository -yn ppa:system76-dev/stable
 sudo apt-add-repository -yn ppa:system76/pop
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
-sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
-
-**Note:** to change 'disco' to your release that you are trying to update from
 
 ### 3. Now, do the upgrade
 
@@ -172,11 +193,11 @@ sudo apt full-upgrade | tee ~/upgrade.log
 
 ### 4. Now put the PPAs back
 
-You will want to take a look at the files that end in "list" in "/etc/apt/backup" to see if you want to enable that again by moving them back to the /etc/apt/sources.list.d/ directory.
+You may want to take a look at the files that end in "list" in "/etc/apt/backup" to see if you want to enable them again by moving them back to the /etc/apt/sources.list.d/ directory.
 
 ### 5. After the 20.04 Pop upgrade is complete, **reboot**
 
-### 6. Run the command to upgrade to Pop 21.04
+### 6. Run the command to upgrade to the newest release
 
 ```bash
 pop-upgrade release upgrade
@@ -188,7 +209,7 @@ Most upgrades proceed without a hitch, but occasionally things go wrong. If your
 
 ### Stuck Upgrades
 
-If your upgrade appears to hang in place for an extended period of time, click on the **Terminal** item to expand the terminal section. Check what action is available there, then complete the steps to unhang your upgrade. For help, contact support and we'll be able to provide assistance.
+If your upgrade appears to hang in place for an extended period of time, click on the `Terminal` item to expand the terminal section. Check what action is available there, then complete the steps to un-hang your upgrade. For help, contact support and we'll be able to provide assistance.
 
 ### Broken Upgrade
 
@@ -198,8 +219,10 @@ If the upgrade fails it will most likely be due to a package manager issue.  Fir
 do-release-upgrade
 ```
 
-If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager-pop/)
+If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [incomplete upgrades](/articles/pop-incomplete-upgrade/)
 
-Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the repair package manager commands:
+Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the [repair package manager](https://support.system76.com/articles/pop-incomplete-upgrade#repair-package-manager-after-failedincomplete-upgrade) commands:
 
-> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+```bash
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+```

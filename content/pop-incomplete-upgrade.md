@@ -22,13 +22,38 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
+
+## Repairing Upgrade Errors
+
+Due to the overwhelming demand for 21.10, we have had to expand our servers' bandwidth. If you are experiencing any connection errors please run the following commands in a terminal.
+
+```bash
+sudo rm /etc/apt/sources.list.d/pop-os-ppa.sources
+systemctl restart pop-upgrade
+pop-upgrade release upgrade
+```
+
 ## Backup Your Files
 
 The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
 ## If you can't boot the OS
 
-Refer to the [disaster recovery article](/articles/disaster-recovery) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
+Refer to the [data recovery article](/articles/disaster-recovery) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
+
+## Recovery Partition is full
+
+If you see a notification about the Recovery Parititon being full or see it in this output:
+
+```bash
+df -h
+```
+
+You can run this command to empty the Recovery Partition and then redownload the Recovery files to correct the issue:
+
+```bash
+sudo rm -rf /recovery/casper-* && pop-upgrade recovery upgrade from-release
+```
 
 ## FStab Error Message
 
@@ -104,7 +129,7 @@ After you have made the edit, save the file and start the upgrade again.
 
     | **SATA Drives**           | **NVMe Drives**                |
     |:-------------------------:|:------------------------------:|
-    | sudo mount /dev/sda3 /mnt | sudo mount /dev/nvme0n1p3 /mnt |
+    | ```sudo mount /dev/sda3 /mnt``` | ```sudo mount /dev/nvme0n1p3 /mnt``` |
 
     If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS'`, then the hard drive has been encrypted, and additional commands are needed to unlock it.
 

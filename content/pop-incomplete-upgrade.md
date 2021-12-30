@@ -201,10 +201,10 @@ After you have made the edit, save the file and start the upgrade again.
 
 ## If you are still not able to upgrade
 
-If the system is still not able to upgrade and you have a System76 system please open a support ticket and include this file:
+If the system is still not able to upgrade and you have a System76 system, please open a [support ticket](https://support.system76.com/) and include this file:
 
 ```bash
 journalctl -u pop-upgrade > ~/pop-upgrade.log
 ```
 
-If it is not a System76 system go to our Pop!\_OS Mattermost chat for community support [here](chat.pop-os.org).
+If it is not a System76 system, go to our Pop!\_OS Mattermost chat for community support [here](https://chat.pop-os.org/pop-os/channels/upgrade-help).

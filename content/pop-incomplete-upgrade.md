@@ -201,7 +201,7 @@ After you have made the edit, save the file and start the upgrade again.
 
 ## If you are still not able to upgrade
 
-If the system is still not able to upgrade and you have a System76 system, please open a [support ticket](https://support.system76.com/) and include this file:
+If the system is still not able to upgrade and you have a System76 system, please open a [support ticket](https://system76.com/my-account/support-tickets/new) and include this file:
 
 ```bash
 journalctl -u pop-upgrade > ~/pop-upgrade.log

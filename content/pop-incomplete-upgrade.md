@@ -207,4 +207,4 @@ If the system is still not able to upgrade and you have a System76 system please
 journalctl -u pop-upgrade > ~/pop-upgrade.log
 ```
 
-If it is not a System76 system go to our Pop!\_OS Mattermost chat for community support [here](chat.pop-os.org).
+If it is not a System76 system go to our Pop!\_OS Mattermost chat for community support [here](https://chat.pop-os.org).

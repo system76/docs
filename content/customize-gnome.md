@@ -93,7 +93,7 @@ See [blogs.gnome.org](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-g
 
 ![internet-radio](/images/customize-gnome/internet-radio.png)
 
-Internet Radio adds a quick menu integration to play various radios stations found online.  A few default stations are included, and many more can be found at [www.internet-radio.com](https://www.internet-radio.com/).  Simply right-click on the `.m3u` file and choose 'Copy link address', and add that as a station to the Internet Radio icon at the top right of the menu bar.
+Internet Radio adds a quick menu integration to play various radio stations found online.  A few default stations are included, and many more can be found at [www.internet-radio.com](https://www.internet-radio.com/).  Simply right-click on the `.m3u` file and choose 'Copy link address', and add that as a station to the Internet Radio icon at the top right of the menu bar.
 
 ---
 

@@ -175,7 +175,6 @@ sudo apt install pop-desktop
 ```bash
 sudo mkdir -p /etc/apt/backup
 sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
-sudo apt-add-repository -yn ppa:system76-dev/stable
 sudo apt-add-repository -yn ppa:system76/pop
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
 sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list

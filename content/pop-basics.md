@@ -142,7 +142,7 @@ As in previous versions a search box is provided which can search installed appl
 
 ### Pop!_OS 21.04
 
-![cosmic desktop](/images/pop-basics/cosmic-desktop.png)
+![COSMIC Desktop](/images/pop-basics/cosmic-desktop.png)
 
 ![workspaces](/images/pop-basics/workspaces.png)
 

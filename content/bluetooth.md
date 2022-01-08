@@ -162,7 +162,7 @@ Then they can be installed with this command:
 sudo dpkg -i linux-firmware_#.###.#_all.deb
 ```
 
-> **NOTE:** You'll need to replace the nubmers/file name with the most current version after downloading it.
+> **NOTE:** You'll need to replace the numbers/file name with the most current version after downloading it.
 
 ### File Transfer
 

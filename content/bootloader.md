@@ -223,7 +223,7 @@ Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct 
 
 If you validate that the UUID entry is correct and are using LUKS encryption, be sure that there is no `cryptsetup: WARNING: target 'cryptdata' not found in /etc/crypttab` entry when running the `update-initramfs -c -k all` command above.
 
-If there is, check to be sure that `/etc/crypttab` does not have a strong of characters after `cryptdata` such as:
+If there is, check to be sure that `/etc/crypttab` does not have a string of characters after `cryptdata` such as:
 
 ```bash
 ​cryptdata_U0qNZ UUID=b7bb66dd-8690-4eca-b881-bf7e662a9336 none luks cryptswap UUID=c44ec301-f416-46da-8454-a731e074682c /dev/urandom swap,offset=1024,cipher=aes-xts-plain64,size=512

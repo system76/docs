@@ -220,3 +220,13 @@ If the system boots into a `BusyBox` environment, try `exit` to show potential f
 A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates an issue with the loader entry in `systemd-boot`.
 
 Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct UUID for the disk. For an encrypted setup, the line `options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash` should match the UUID reported by `lsblk -f` for the `data-root` partition on a standard installation with LUKS.
+
+If you validate that the UUID entry is correct and are using LUKS encryption, be sure that there is no `cryptsetup: WARNING: target 'cryptdata' not found in /etc/crypttab` entry when running the `update-initramfs -c -k all` command above.
+
+If there is, check to be sure that `/etc/crypttab` does not have a strong of characters after `cryptdata` such as:
+
+```bash
+​cryptdata_U0qNZ UUID=b7bb66dd-8690-4eca-b881-bf7e662a9336 none luks cryptswap UUID=c44ec301-f416-46da-8454-a731e074682c /dev/urandom swap,offset=1024,cipher=aes-xts-plain64,size=512
+```
+
+If it does, remove the characters after `cryptdata` (`_U0qNZ`, in this example) so that the entry starts only with `cryptdata`. Then, re-run the `update-initramfs -c -k all` command and continue with recovery.

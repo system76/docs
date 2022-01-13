@@ -46,6 +46,12 @@ To install Deja Dup, search for it in the Pop!\_Shop, Ubuntu Software or run thi
 sudo apt install deja-dup
 ```
 
+If Deja Dup can't be installed using the apt command, you can install it using the flatpak program by running the following command:
+
+```bash
+flatpak install flathub org.gnome.DejaDup
+```
+
 Once Deja Dup is installed, it will be labeled as "Backups" in the Activities overview.
 
 #### Selecting Data to Backup

@@ -29,7 +29,11 @@ Hibernation is not currently enabled on Pop!\_OS by default. There are several l
 - Additional drive I/O used on Solid State Drives (SSDs)
 - Depending on alloted RAM in a system, and size of NVMe/SSD drive(s), hibernation could add notable delay on resuming a hibernation session.
 
-However, these limitations aside, hibernation is an often requested feature for Pop!\_OS. The purpose of this article is to provide steps for enabling hibernation for any users that would like it.
+However, these limitations aside, hibernation is an often requested feature for Pop!\_OS, and there are some real benefits to it. For example, hibernation (when compared to always using suspend) can improve the longevity of your battery - full charge/discharge cycles can be hard on your battery and shorten its life. Since hibernation completely shuts off power to the device, it can prolong the lifetime of your battery. Additionally, there are some security benefits. While your computer is suspended, the decryption key for your data volume remains in memory, and your device is vulnerable to certain physical attacks that can extract the key from RAM. If the device is hibernated, and the hibernation swap space is encrypted, the drive must be decrypted to obtain the key, which would be impossible without already knowing the key (this is as secure as a normal, full shutdown).
+
+Note also that many devices support 'suspend-then-hibernate', which can yield the best of both worlds. This allows the laptop to suspend for a defined amount of time, before hibernating, which can save disk writes and improve wake time for short suspends (e.g. taking a lunch break), while giving all the benefits of hibernation for longer breaks (e.g. overnight). A note at the end of this guide describes how to make use of this.
+
+The purpose of this article is to provide steps for enabling hibernation for any users that would like it.
 
 ## Enable Hibernation on an Encrypted Drive
 
@@ -102,7 +106,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     ![crypttab](/images/hibernation/crypttab.png)
 
-    Open `fstab` to copy the UUID of the `swap` volume.
+    Open `fstab`, and edit the swap to use data-swap.
 
     ```bash
     sudo nano /mnt/etc/fstab
@@ -112,15 +116,22 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 8. Add a resume target for the kernel:
 
-    Using the UUID retrieved from `fstab` run this command:
+    Reboot the computer into the normal OS partion.
+
+    Obtain the UUID of the new swap volume using:
+
+    ```bash
+    blkid
+    ```
+
+    ![blkid](/images/hibernation/blkid.png)
+
+
+    THen add the swap volume as a resume target, using that UUID:
 
     ```bash
     sudo kernelstub -a "resume=UUID=xxxxxxxx-xxxx-xxxx-xxxxxxxx"
     ```
-
-    **NOTE:** Replace everything after `UUID=` with the ID of your new `swap` volume.
-
-    ![blkid](/images/hibernation/blkid.png)
 
     The system is now ready to suspend to, and resume from disk.
 
@@ -131,6 +142,8 @@ However, these limitations aside, hibernation is an often requested feature for 
     ```
 
     **CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) onto SSDs, shortening the lifespan of the drives.
+
+    **NOTE:** Rather than using straight hibernation, You may want to be enable and use `suspend-then-hibernate` to suspend to RAM for a predifined amount of time, and then hibernate if the computer is not woken in that time. This can be done by editing `/etc/systemd/sleep.conf` to enable `AllowSuspendThenHibernate` (if it is not already enabled), and then to set the `HibernateDelaySec` to a time that makes sense for your needs. Then, edit `/etc/systemd/login.conf` to change the lid-switch and sleep buttons to both invoke `hibernate-then-sleep`.
 
 ## Desktop Integration
 

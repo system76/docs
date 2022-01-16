@@ -126,7 +126,6 @@ The purpose of this article is to provide steps for enabling hibernation for any
 
     ![blkid](/images/hibernation/blkid.png)
 
-
     THen add the swap volume as a resume target, using that UUID:
 
     ```bash

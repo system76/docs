@@ -1,12 +1,13 @@
 ---
 title: Firmware Flash from a USB Flash Drive
 description: >
-  How to flash firmware from a USB using a zip file provided by System76
+  Clear SMMStore to fix exit code 5 and flashing firmware from a USB using a zip file provided by System76
 keywords:
   - Firmware
   - Open Firmware
   - UEFI
   - SMMSTORE
+  - exit code 5
 
 facebookImage: /_social/article
 twitterImage: /_social/article

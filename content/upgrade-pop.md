@@ -68,7 +68,7 @@ Please read our article on [how to backup your files](/articles/backup-files/) f
 
 ## Upgrade Pop!_OS
 
-Pop!\OS 21.10 was released on December 14, 2021
+Pop!\_OS 21.10 was released on December 14, 2021
 
 Pop!\_OS 21.04 was released on June 29, 2021.
 
@@ -85,7 +85,7 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 21.04 is available with a `Download` button.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 21.10 is available with a `Download` button.
 
 If you are planning on staying on an LTS release for the time being, this is also the page where you can dismiss upgrade notifications.
 
@@ -148,7 +148,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 Due to the overwhelming demand for 21.10, we have had to expand our servers' bandwidth. If you are experiencing any connection errors please run the following commands in a terminal.
 
 ```
-sudo rm /etc/apt/sources.list.d/pop-os-ppa.sources
+sudo rm -f /etc/apt/sources.list.d/pop-os-ppa.sources
 systemctl restart pop-upgrade
 pop-upgrade release upgrade
 ```
@@ -175,7 +175,6 @@ sudo apt install pop-desktop
 ```bash
 sudo mkdir -p /etc/apt/backup
 sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
-sudo apt-add-repository -yn ppa:system76-dev/stable
 sudo apt-add-repository -yn ppa:system76/pop
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
 sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
@@ -188,7 +187,7 @@ This will have a three phases and once the download is complete, you can't chang
 ```bash
 sudo apt update
 sudo apt install dpkg apt
-sudo apt full-upgrade | tee ~/upgrade.log
+sudo apt full-upgrade 2>/dev/null | tee ~/upgrade.log
 ```
 
 ### 4. Now put the PPAs back

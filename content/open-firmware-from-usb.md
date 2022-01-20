@@ -1,7 +1,7 @@
 ---
-title: Firmware Flash to Clear the SMMSTORE ROM (Error code 5)
+title: Firmware Flash from a USB Flash Drive
 description: >
-  How to fix the failed with exit status: exit code: 5 message
+  How to flash firmware from a USB using a zip file provided by System76
 keywords:
   - Firmware
   - Open Firmware
@@ -22,7 +22,7 @@ tableOfContents: true
 - Philips Screwdriver
 - Approx. 30 mins.
 
-## The error messages
+## Firmware to clear the SMMStore
 
 If you are seeing any of these messages on your Open Firmware system:
 
@@ -44,7 +44,9 @@ system76-firmware: failed to schedule: failed to add boot entry: exit code: 5
 
 we may need to clear the SMMSTORE ROM by flashing new firmware using a flash drive with a custom firmware update tool. Here are the steps to perform that action. After flashing, this will remove any custom EFI variables (such as those installed by boot managers). We have information on repairing the bootloader at the end of this article.
 
-Please download the zip file for your sytem and unzip the files within to a FAT32 formatted USB drive. Then shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system:
+Please download the zip file for your sytem and unzip the files within to a FAT32 formatted USB drive.
+
+If you are unable to access the firmware boot menu by pressing the Esc button while powering on the system. Then, shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system:
 
 |   System            |              Patched Firmware                             |                                        Tech Docs                                            |
 |:-------------------:|:---------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
@@ -73,9 +75,13 @@ The highlighted files pictured below (the hash will change based on file and mod
 
 ![files-unzipped](/images/open-firmware-smmstore/files-unzipped.png)
 
-With all drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the drive(s).
+## Booting the USB Firmware Updater
 
-Once the system is put back together we may need to boot with a live image in order to repair the boot loader if you dual-boot with Windows 10. We provide step by step instructions on how to do this in our support articles in the links below:
+After the flash drive is ready, power off your system. Then, power back on your system and tap the Esc key while the system is turning on. This will take you to the firmware boot menu, where you should select the USB flash drive from the list of boot options.
+
+_If you are unable to access the firmware boot menu by pressing the Esc button while powering on the system. Then, shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system linked above_
+
+Once the firmware is updated, we may need to boot with a live image in order to repair the boot loader if you dual-boot with Windows 10. We provide step by step instructions on how to do this in our support articles in the links below:
 
 [https://support.system76.com/articles/live-disk/](/articles/live-disk)
 

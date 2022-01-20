@@ -28,8 +28,8 @@ tableOfContents: true
 Due to the overwhelming demand for 21.10, we have had to expand our servers' bandwidth. If you are experiencing any connection errors please run the following commands in a terminal.
 
 ```bash
-sudo rm /etc/apt/sources.list.d/pop-os-ppa.sources
-systemctl restart pop-upgrade
+sudo rm -f /etc/apt/sources.list.d/pop-os-ppa.sources
+sudo systemctl restart pop-upgrade
 pop-upgrade release upgrade
 ```
 
@@ -52,7 +52,7 @@ df -h
 You can run this command to empty the Recovery Partition and then redownload the Recovery files to correct the issue:
 
 ```bash
-sudo rm -rf /recovery/casper-* && pop-upgrade recovery upgrade from-release
+sudo bash -c "rm -rf /recovery/casper-*" && pop-upgrade recovery upgrade from-release
 ```
 
 ## FStab Error Message
@@ -60,7 +60,7 @@ sudo rm -rf /recovery/casper-* && pop-upgrade recovery upgrade from-release
 This can be caused by the `pop-upgrade` command checking for an `/etc/fstab` file and finding an entry that it does not understand. If you have manually added drives to your fstab, adding a '#' to comment out the drive while the upgrade is ongoing should work.  You would then remove the comment after the upgrade is complete to have access to those drive paths again. To edit this file, run the following command in a terminal:
 
 ```bash
-sudo gedit /etc/fstab
+sudo -H gedit /etc/fstab
 ```
 
 For example:
@@ -201,10 +201,10 @@ After you have made the edit, save the file and start the upgrade again.
 
 ## If you are still not able to upgrade
 
-If the system is still not able to upgrade and you have a System76 system please open a support ticket and include this file:
+If the system is still not able to upgrade and you have a System76 system, please open a [support ticket](https://system76.com/my-account/support-tickets/new) and include this file:
 
 ```bash
 journalctl -u pop-upgrade > ~/pop-upgrade.log
 ```
 
-If it is not a System76 system go to our Pop!\_OS Mattermost chat for community support [here](chat.pop-os.org).
+If it is not a System76 system, go to our Pop!\_OS Mattermost chat for community support [here](https://chat.pop-os.org/pop-os/channels/upgrade-help).

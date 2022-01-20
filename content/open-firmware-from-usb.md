@@ -80,7 +80,7 @@ The highlighted files pictured below (the hash will change based on file and mod
 
 After the flash drive is ready, power off your system. Then, power back on your system and tap the Esc key while the system is turning on. This will take you to the firmware boot menu, where you should select the USB flash drive from the list of boot options.
 
-_If you are unable to access the firmware boot menu by pressing the Esc button while powering on the system. Then, shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system linked above_
+If you are unable to access the firmware boot menu by pressing the Esc button while powering on the system. Then, shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system linked above
 
 Once the firmware is updated, we may need to boot with a live image in order to repair the boot loader if you dual-boot with Windows 10. We provide step by step instructions on how to do this in our support articles in the links below:
 

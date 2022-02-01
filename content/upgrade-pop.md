@@ -19,6 +19,8 @@ keywords:
   - Release
   - System76
   - apt
+  - the repository 'https://us.arhive.ubuntu.com/ubuntu' does not have a Release file
+  - 404 Not Found
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -153,7 +155,7 @@ systemctl restart pop-upgrade
 pop-upgrade release upgrade
 ```
 
-## Upgrading older releases
+## Upgrading older releases (pre 20.04)
 
 Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.10 (impish).
 
@@ -201,6 +203,50 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 ```bash
 pop-upgrade release upgrade
 ```
+## Upgrading older releasee (20.10) 
+
+Like other older releases, Pop!_OS 20.10 update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does requires some work to manaully upgrade the system. Use the following steps to upgrade the system if you get errors like
+
+### 1. Update sources to 'old-releases'
+
+```bash
+# switch system release to old-release server
+sudo sed -Ei 's/us.archive/old-releases/g' /etc/apt/sources.list.d/system.sources
+# get release files
+sudo apt update -m
+# make sure dpkg is happy with package state
+sudo apt dpkg --configure -a
+# make sure apt is happy with dependency tree
+sudo apt install -f
+# upgrade all packages and depencencies to newest in groovy
+sudo apt full-upgrade
+# make sure pop-desktop meta package is installed
+sudo apt install pop-desktop
+```
+
+### 2. Transisiton to the new release files for Pop!_OS 21.10
+
+```bash
+# backup PPA files
+sudo mkdir -p /etc/apt/backup
+sudo cp -r /etc/apt/sources.list.d/ /etc/apt/backup
+sudo rm -f /etc/apt/sources.list.d/system76-dev*
+# create new PPA file for from Pop!_OS infrastructure
+sudo add-apt-repository "deb http://apt.pop-os.org/release impish main"
+sudo mv /etc/apt/sources.list.d/archive_uri-http_apt_pop-os_org_release-groovy.list /etc/apt/sources.list.d/pop-os-ppa.list
+# update all sources from groovy to impish
+sudo sed -Ei 's/groovy/impish/g' /etc/apt/sources.list.d/*
+```
+
+### Now, do the upgrade!
+
+```bash
+# get new release files, watch for any that reference groovy, not impish
+sudo apt update
+# upgrade the upgrade tools first
+sudo apt --assume-yes install dpkg apt
+# upgrade the rest of the installed packages
+sudo apt -o "Dpkg::Options::=--force-all" full-upgrade
 
 ## Troubleshooting
 
@@ -212,13 +258,9 @@ If your upgrade appears to hang in place for an extended period of time, click o
 
 ### Broken Upgrade
 
-If the upgrade fails it will most likely be due to a package manager issue.  First, run an alternative upgrade manager with this command, and see if it will manage further:
+Pop!_OS has replaced the Ubuntu upgrade tool "do-release-upgrade" in recent releases (21.04 and newer). With updates to the Pop!OS installer, you may find that either using an updated [Recovery Partition](/articles/pop-recovery/) or [Live USB](/articles/pop-live-disk/) with the desired Pop!_OS release using the "Refresh Install" option will be the fastest way to fix your install.
 
-```bash
-do-release-upgrade
-```
-
-If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [incomplete upgrades](/articles/pop-incomplete-upgrade/)
+Manually fixing package issues can be hard to diagnose. Use caution when removing system packages. Removing software from PPA's may be required to allow newer packages from the base repositories to install correctly.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager-pop/) and/or [incomplete upgrades](/articles/pop-incomplete-upgrade/)
 
 Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the [repair package manager](https://support.system76.com/articles/pop-incomplete-upgrade#repair-package-manager-after-failedincomplete-upgrade) commands:
 

@@ -50,3 +50,5 @@ Make sure that the short fold is underneath the long fold as shown.
 ### Step 8: Return to Box
 
 ![Step 8](/images/reboxing/Step8.jpg)
+
+When shipping in the your system, make sure the "UN3481" Lithium battery warning label is not covered or damaged. A damaged warning can cause UPS to refuse to ship your system. If this is damaged on your box, please print and attach this [replacement battery warning label](/images/reboxing/Li-Battery-Label-UN3481.pdf) PDF to the box.

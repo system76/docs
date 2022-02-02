@@ -247,6 +247,7 @@ sudo apt update
 sudo apt --assume-yes install dpkg apt
 # upgrade the rest of the installed packages
 sudo apt -o "Dpkg::Options::=--force-all" full-upgrade
+```
 
 ## Troubleshooting
 

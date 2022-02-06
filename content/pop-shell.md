@@ -72,13 +72,13 @@ make local-install
 To remap the launcher to Super+Space:
 
 ```bash
-gsettings --schemadir .local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['<Super>space']"
+gsettings --schemadir ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['<Super>space']"
 ```
 
 You can remap launcher to just Super_L, but it will eat the Super modifier and prevent other Super combinations from working:
 
 ```bash
-gsettings --schemadir .local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['Super_L']"
+gsettings --schemadir ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['Super_L']"
 ```
 To disable the Super key from opening the GNOME overview:
 

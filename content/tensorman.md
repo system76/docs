@@ -29,10 +29,10 @@ redirect_from:
 sudo apt install tensorman
 ```
 
-For NVIDIA CUDA support, the following package must be installed:
+For NVIDIA CUDA support, the following packages must be installed:
 
 ```bash
-sudo apt install nvidia-container-runtime
+sudo apt install nvidia-docker2 nvidia-container-toolkit
 ```
 
 The user account working with Tensorman must be added to the `docker` group if that hasn't been done already:
@@ -41,7 +41,13 @@ The user account working with Tensorman must be added to the `docker` group if t
 sudo usermod -aG docker $USER
 ```
 
-If Docker was just installed, then a reboot will be needed before Tensorman can be used.
+THe last thing is to add a kernel parameter:
+
+```bash
+sudo kernelstub --add-options "systemd.unified_cgroup_hierarchy=0"
+```
+
+and reboot. Then you are ready for liftoff!
 
 ## About Tensorman
 

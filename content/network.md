@@ -15,17 +15,9 @@ section: network-troubleshooting
 tableOfContents: true
 ---
 
-When your internet goes down at home most people would call up their internet provider and go through a list of things to check before (usually) admitting that the problem is on their end.
-
-This article will try to help you out by showing various commands to diagnosis typical network issues.
-
-Pinpointing what specifically is causing network issues can be a tricky task.  Let's go over some useful commands that can help track down network problems.
-For this article we will be working with TCP/IP networking commonly used with communication over the internet.
-
 ## A quick review of the TCP/IP model
 
-Communication on the internet is done over TCP/IP which is short for Transmission Control Protocol / Internet Protocol.  The IP portion is the internet address or domain name telling the application what computer or server to connect to.  The TCP portion handeles the actual connecting and error control.
-First, let's take a moment to review the fundamentals of the TCP/IP network model.
+Communication on the internet is done over TCP/IP which is short for Transmission Control Protocol / Internet Protocol.  The IP portion is the internet address or domain name telling the application what computer or server to connect to.  The TCP portion handles the actual connecting and error control.
 
 In order, the layers in the TCP/IP network model include:
 
@@ -35,13 +27,11 @@ In order, the layers in the TCP/IP network model include:
 - **Layer 2:** Data Link
 - **Layer 1:** Physical
 
-Knowing where to start troubleshooting network issues can differ based on the scenario. For example, let's say you can ssh to a remote server, but that server can't connect to a MySQL database, the problem is unlikely to be the physical or data link layers on the local server.
+Knowing where to start troubleshooting network issues can differ based on the scenario. For example, if the user can ssh to a remote server, but that server can't connect to a MySQL database, the problem is unlikely to be the physical or data link layers on the local server.
 
 In most cases it's a good idea to start at the top most layer (the application layer), and then troubleshoot each other layer until we have narrowed down the issue.
 
 This article is organized into sections each focusing on one of these layers except for the Application layer because that could mean having to debug source code.
-
-Now that we have a very brief understanding, let's jump to the command line and get working on diagnosing network issues.
 
 ## Layer 4: The transport layer
 
@@ -92,7 +82,7 @@ tcp     LISTEN   0        50               0.0.0.0:445             0.0.0.0:*
 
 Looking at the output, we can see several listening services. The **sshd** application is listening on port 22 on all IP addresses, as the text **0.0.0.0:22** shows.
 
-Here's another scenario, let's say the application isn't listening for some reason, and we need to use the previous troubleshooting steps (again using **ss**) on the remote host; that is if we have access.
+Here's another scenario, if the application isn't listening for some reason, and we need to use the previous troubleshooting steps (again using **ss**) on the remote host; that is if we have access.
 Another possibility is a host or firewall that is filtering network traffic. We may need to work with the networking team to verify Layer 4 connectivity across the path.
 
 For UDP we will want to use the **netcat** tool.  This tool gives a simple way to check a remote UDP port.
@@ -113,17 +103,17 @@ test
 Ncat: Connection refused.
 ```
 
-The examples above discussed common, simple utilities. However, a much more powerful tool is **nmap**. Entire books have been devoted to **nmap** functionality, so we won't cover it in this article, but you should know some of the things that it's capable of doing:
+The examples above discussed common, simple utilities. However, a much more powerful tool is **nmap**. It's capable of doing:
 
 - TCP and UDP port scanning remote machines.
 - OS fingerprinting.
 - Determining if remote ports are closed or simply filtered.
 
-There are more advanced programs such as **tcpdump** and **wireshark** but go far beyond the scope of this article.
+There are more advanced programs such as **tcpdump** and **wireshark** as well.
 
 ## Layer 3: The network/internet layer
 
-Layer 3 involves working with IP addresses. IP addresses are like the street address of your computer on a TCP/IP network. Instead of specifying an address, DNS servers are used so you can say "Dave's house" instead of the actual street address.
+Layer 3 involves working with IP addresses. IP addresses are like the street address of the computer on a TCP/IP network. Instead of specifying an address, DNS servers are used so it will say "Dave's house" instead of the actual street address.
 
 On the internet it works like this:
 
@@ -147,14 +137,14 @@ enp57s0f1 UP 10.0.0.88/24 2601:280:c201:62e0::d739/128 2601:280:c201:62e0:faf5:8
 wlp0s20f3 UP 192.168.0.110/24 2601:280:c201:62e0::b250/128 2601:280:c201:62e0:ad8d:4de2:cdd9:6386/64 2601:280:c201:62e0:173:f8b7:1973:5e25/64 fe80::b9d0:8c20:e248:7bf5/64
 ```
 
-We can see that our enp57s0f1 (ethernet) interface has an IPv4 address of 10.0.0.88. If we didn't have an IP address (or if we had an invalid, self-assigned IP address), then we'd want to troubleshoot that issue.
+The enp57s0f1 (ethernet) interface has an IPv4 address of 10.0.0.88. If we didn't have an IP address (or if we had an invalid, self-assigned IP address), then we'd want to troubleshoot that issue.
 
 The lack of an IP address can be caused by a local misconfiguration, such as an incorrect network interface config file, or it can be caused by problems with the DHCP server. The wlp0s20f3 interface (Wi-Fi) has a different IP address on the local network.
 
 ### Ping
 
 The most common tool used to troubleshoot Layer 3 is the **ping** utility. Ping sends an ICMP Echo Request packet to a remote host, and it expects an ICMP Echo Reply in return. ICMP stands for Internet Control Message Protocol and only lives in Layer 3.
-If you're having connectivity issues to a remote computer, **ping** is a common utility to begin your troubleshooting. Executing a simple ping from the command line sends ICMP echoes to the remote host indefinitely; you'll need to <kbd>CTRL</kbd> + <kbd>C</kbd> to end the ping or pass the `-c #` flag, like so:
+If you're having connectivity issues to a remote computer, **ping** is a common utility to begin troubleshooting. Executing a simple ping from the command line sends ICMP echoes to the remote host indefinitely; press <kbd>CTRL</kbd> + <kbd>C</kbd> to end the ping or pass the `-c #` flag, like so:
 
 Ping Command:
 
@@ -177,15 +167,15 @@ rtt min/avg/max/mdev = 11.833/14.465/16.401/1.653 ms
 
 ```
 
-Notice that each ping includes the amount of time it took to a response back.
+Notice that each ping includes the amount of time it took to receive a response back.
 
-> **NOTE:** many network components (such as routers) block ICMP packets as a security precaution. Another common pitfall is relying on the time field as an proof of network latency however ICMP packets can be rate limited by network components between you and the destination, and they shouldn't be relied upon to provide accurate application latency values.
+> **NOTE:** many network components (such as routers) block ICMP packets as a security precaution.
 
 ### My Traceroute (MTR)
 
-The next tool in the Layer 3 troubleshooting tool belt is the **mtr** command. This command doesn't come preinstalled so with Ubuntu nor Pop so we'll need to install it with the command **sudo apt install mtr-tiny**.
+The next tool in the Layer 3 troubleshooting tool belt is the **mtr** command. This command doesn't come preinstalled with Ubuntu or Pop so we'll need to install it with the command **sudo apt install mtr-tiny**.
 
-Mtr is short for "My Traceroute" and by default will show an autoupdated output. To quit mtr simply hit the 'q' key.
+Mtr is short for "My Traceroute" and by default will show an autoupdated output. To quit mtr simply press the 'q' key.
 
 Mtr takes advantage of the Time to Live (TTL) field in IP packets to determine the path that traffic takes to its destination. Mtr will send out one packet at a time, beginning with a TTL of one. Since the packet expires in transit, the upstream router sends back an ICMP Time-to-Live Exceeded packet. Mtr then increments the TTL to determine the next hop.  Unlike the original traceroute command, mtr is more user interactive. To make mtr act more like traceroute we can use the -r option.
 
@@ -216,7 +206,7 @@ HOST: system76-pc                 Loss%   Snt   Last   Avg  Best  Wrst StDev
 
 > **NOTE:** It's important to understand MTR's limitations. As with ICMP, routers or other network devices may filter the packets that **mtr** relies on, such as the ICMP Time-to-Live Exceeded message.  More importantly, the path that traffic takes to and from a destination can change and no two traces can be the same.  Mtr can mislead you into thinking that your traffic takes a nice straight path to and from its destination, but this is not always the case. Traffic may follow a different return path, and paths can change dynamically for many reasons (such as a backhoe cutting through a major internet cable). While **mtr** may provide accurate path representations in small networks, it often isn't accurate when trying to trace across large networks or the internet.
 
-Another common issue that you'll likely run into is a lack of a gateway for a particular route or a lack of a default route.  When an IP packet is sent to a different network, it must be sent to a gateway for further processing. The gateway should know how to route the packet to its final destination. The list of gateways for different routes is stored in a **routing table**, which can be inspected and manipulated using **ip route** commands. Routers are the most common gateway devices.
+Another common issue could be a lack of a gateway for a particular route or a lack of a default route.  When an IP packet is sent to a different network, it must be sent to a gateway for further processing. The gateway should know how to route the packet to its final destination. The list of gateways for different routes is stored in a **routing table**, which can be inspected and manipulated using **ip route** commands. Routers are the most common gateway devices.
 
 ### IP Route Show
 
@@ -242,7 +232,7 @@ On this system there is both WiFi (wlp0s20f3) and Ethernet (enp57s0f1) network i
 
 Simple networks often just have a default gateway configured, represented by the \"default\" entry at the top of the table. A missing or incorrect default gateway is a common issue.
 
-If our network is more complex then we will require different routes for different networks.  We can check the route for a specific prefix with the `ip route show [address]` command:
+If the network is more complex then it will require different routes for different networks.  Check the route for a specific prefix with the `ip route show [address]` command:
 
 IP Route (with IP Address) Command:
 
@@ -261,9 +251,9 @@ In the example above, we are sending all traffic destined to the 10.0.0.0/24 net
 
 ### DNS
 
-> **NOTE:** While not a Layer 3 protocol, it's worth mentioning DNS while we're talking about IP addressing. Among other things, the Domain Name System (DNS) translates IP addresses into human-readable names, such as **www.system76.com**. DNS problems are extremely common, and they are sometimes opaque to troubleshoot. Plenty of books and online guides have been written on DNS, but we'll focus on the basics here.
+> **NOTE:** While not a Layer 3 protocol, it's worth mentioning DNS. Among other things, the Domain Name System (DNS) translates IP addresses into human-readable names, such as **www.system76.com**. DNS problems are extremely common, and they are sometimes opaque to troubleshoot.
 
-A telltale sign of DNS trouble is the ability to connect to a remote host by IP address but not its hostname. Performing a quick `host` on the hostname can tell us quite a bit (`host` is part of the `bind9-host` package on Ubuntu / Pop!\_OS Linux based systems):
+A telltale sign of DNS trouble is the ability to connect to a remote host by IP address but not its hostname. Performing a quick `host` on the hostname can tell quite a bit (`host` is part of the `bind9-host` package on Ubuntu / Pop!\_OS Linux based systems):
 
 Host Command:
 
@@ -295,7 +285,7 @@ The output above shows the resulting IPv4 addresses as well as IPv6.
 The data link layer is responsible for **local** network connectivity; the communication of frames between hosts on the same Layer 2 (commonly called a local area network, or LAN).
 The most relevant Layer 2 protocol for most sysadmins is the [Address Resolution Protocol (ARP)](https://en.wikipedia.org/wiki/Address_Resolution_Protocol), which maps Layer 3 IP addresses to Layer 2 Ethernet MAC addresses. When a host tries to contact another host on its local network (such as the default gateway, e.g. the router), it will more than likely have the other host's IP address, but it doesn't know the other host's MAC address. ARP resolves this issue and figures out the MAC address for us.
 
-A common problem you might encounter is an ARP entry that won't populate, particularly for your host's default gateway. If your localhost can't successfully resolve its gateway's Layer 2 MAC address, then it won't be able to send any traffic to remote networks. This problem might be caused by having the wrong IP address configured for the gateway, or it may be another issue, such as a mis-configured switch port.
+A common problem could be an ARP entry that won't populate, particularly for your host's default gateway. If your localhost can't successfully resolve its gateway's Layer 2 MAC address, then it won't be able to send any traffic to remote networks. This problem might be caused by having the wrong IP address configured for the gateway, or it may be another issue, such as a mis-configured switch port.
 
 We can check the entries in our ARP table with the **ip neighbor** command:
 
@@ -314,7 +304,7 @@ Output:
 fe80::acdb:48ff:fe6a:7835 dev enp57s0f1 lladdr ae:db:48:6a:78:35 router REACHABLE
 ```
 
-> **NOTE:** that the gateway's MAC address is populated. If there was a problem with ARP, then we would see a resolution failure:
+> **NOTE:** that the gateway's MAC address is populated. If there was a problem with ARP, then there would be a resolution failure:
 >
 >```bash
 >ip neighbor show
@@ -326,15 +316,15 @@ fe80::acdb:48ff:fe6a:7835 dev enp57s0f1 lladdr ae:db:48:6a:78:35 router REACHABL
 >10.0.0.87 dev enp57s0f1 FAILED
 >```
 >
-> This output indicates there is a resolution issue with ARP. This could happen for a variety of reasons. For example, let's say that your networking team just replaced the gateway router (which is your server's default gateway). The MAC address may have changed as well since MAC addresses are hardware addresses that are assigned at the factory.
+> This output indicates there is a resolution issue with ARP. This could happen for a variety of reasons. For example, the networking team just replaced the gateway router (which is your server's default gateway). The MAC address may have changed as well since MAC addresses are hardware addresses that are assigned at the factory.
 
 ## Layer 1: The physical layer
 
-We often take the physical layer for granted (\"is the Ethernet cable plugged in?\"), but we can easily troubleshoot physical layer problems from the Linux command line.
+(\"is the Ethernet cable plugged in?\") We can easily troubleshoot physical layer problems from the Linux command line.
 
 ### IP Link
 
-Let's start with the most asked question: Is our physical interface up? For this we will be using the **ip** command.
+Start with the most asked question: Is the physical interface up? For this, use the **ip** command.
 
 The `ip link show` command tells us:
 
@@ -357,7 +347,7 @@ link/ether 80:fa:5b:6a:36:d2 brd ff:ff:ff:ff:ff:ff
 link/ether 18:56:80:54:60:2d brd ff:ff:ff:ff:ff:ff
 ```
 
-Notice the indication of DOWN in the above output for the enp57s0f1 interface. This result means that Layer 1 isn't coming up. We might try troubleshooting by checking the cabling or the remote end of the connection (e.g., the switch) for problems.
+Notice the indication of DOWN in the above output for the enp57s0f1 interface. This result means that Layer 1 isn't coming up. Try troubleshooting by checking the cabling or the remote end of the connection (e.g., the switch) for problems.
 
 Before you start checking cables, though, it's a good idea to make sure that the interface isn't just disabled. Running a command to bring the interface up can rule this problem out:
 
@@ -383,9 +373,7 @@ enp57s0f1 UP 52:54:00:82:d6:6e <BROADCAST,MULTICAST,UP,LOWER_UP>
 
 It looks like `ip link set enp57s0f1 up` did the trick, and the Ethernet interface enp57s0f1 is up and running again.
 
-These commands are great for troubleshooting obvious physical problems, but what about more disasterous issues? Interfaces can be misconfigured for the incorrect speed, or collisions (besides those inherent with Ethernet) and physical layer problems can cause packet loss or corruption that results in retransmissions.
-
-We can use the `-s` flag with the `ip` command to print additional statistics about an interface. The output below shows an interface, with only a few dropped receive packets and no other signs of physical layer issues:
+Interfaces can be misconfigured for the incorrect speed, or collisions (besides those inherent with Ethernet) and physical layer problems can cause packet loss or corruption that results in retransmissions. Use the `-s` flag with the `ip` command to print additional statistics about an interface. The output below shows an interface, with only a few dropped receive packets and no other signs of physical layer issues:
 
 Command:
 
@@ -419,8 +407,6 @@ TX: bytes packets errors dropped carrier collsns
 636200 4239 0 0 0 0
 ```
 
-## Conclusion
+#### Additional Tools
 
-<!-- add "and Further Reading" at a later date -->
-
-These tools should help get things back up and running but are not the only tools.  As stated earlier, other programs are available for troubleshooting networking issues. For example,  `wireshark` is another great tool for finding problems with your network but is beyond the scope of this article.
+`wireshark` is another great tool for finding problems with your network.

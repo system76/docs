@@ -30,7 +30,7 @@ We will share some of the more popular extensions, but there are many more to ch
 
 [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
-This extension allows for the desktop to be themed in further ways than default.  Many themes and extensions can be installed from [opendesktop.org](https://www.opendesktop.org/s/Gnome), among others.  This extension is installed by default in Pop!_OS, and can be added to Ubuntu 18.04.  
+This extension allows for the desktop to be themed in further ways than default.  Many themes and extensions can be installed from [opendesktop.org](https://www.opendesktop.org/s/Gnome), among others.  This extension is installed by default in Pop!_OS, and can be added to Ubuntu 18.04.
 
 ---
 
@@ -40,7 +40,7 @@ This extension allows for the desktop to be themed in further ways than default.
 
 ![dash-to-dock](/images/customize-gnome/dash-to-dock.png)
 
-This extension brings a launcher similar to the Unity launcher on the left side, or the macOS launcher on the bottom.  It is high customizable and allows for different locations, styles, sizes, and layouts.  This is included by default in Ubuntu 18.04 and can be added to Pop!_OS.
+This extension brings a launcher similar to the Unity launcher on the left side, or the macOS launcher on the bottom.  It is highly customizable and allows for different locations, styles, sizes, and layouts.  This is included by default in Ubuntu 18.04 and can be added to Pop!_OS.
 
 ---
 
@@ -76,8 +76,8 @@ This extension adds a traditionally styled, full featured menu to GNOME.  This m
 
 ## Appindicator Support and TopIcons Plus
 
-[Appindicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)  
-[Top Icons](https://extensions.gnome.org/extension/1031/topicons/)  
+[Appindicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
+[Top Icons](https://extensions.gnome.org/extension/1031/topicons/)
 
 ![topicons](/images/customize-gnome/topicons.png)
 
@@ -93,7 +93,7 @@ See [blogs.gnome.org](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-g
 
 ![internet-radio](/images/customize-gnome/internet-radio.png)
 
-Internet Radio adds a quick menu integration to play various radios stations found online.  A few default stations are included, and many more can be found at [www.internet-radio.com](https://www.internet-radio.com/).  Simply right-click on the `.m3u` file and choose 'Copy link address', and add that as a station to the Internet Radio icon at the top right of the menu bar.
+Internet Radio adds a quick menu integration to play various radio stations found online.  A few default stations are included, and many more can be found at [www.internet-radio.com](https://www.internet-radio.com/).  Simply right-click on the `.m3u` file and choose 'Copy link address', and add that as a station to the Internet Radio icon at the top right of the menu bar.
 
 ---
 

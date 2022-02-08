@@ -22,20 +22,7 @@ Most printers will be automatically added to the computer.  If not, to add a pri
 
 Select the correct printer and click **Add**.
 
-## HP and Epson Printers
-
-HP printers are supported with the **hplip** package, which is installed by default in Pop!_OS_
-
-```bash
-sudo apt install hplip
-```
-
-If you would like to use a guided GUI application from HP, you will need to install a python dependency:
-
-```bash
-sudo apt install python3-pyqt5
-hp-setup
-```
+## Epson Printers
 
 Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
@@ -106,7 +93,7 @@ sudo apt install --reinstall cups cups-client
 This will reinstall <u>CUPS</u>, the main printing software, which can help with generic issues.
 
 ```bash
-sudo apt install --reinstall ~n^system-config-printer
+sudo apt install --reinstall system-config-printer
 ```
 
 This will reinstall the system control panel if the settings are not available.

@@ -32,7 +32,7 @@ sudo apt install tensorman
 For NVIDIA CUDA support, the following packages must be installed:
 
 ```bash
-sudo apt install nvidia-docker2 nvidia-container-toolkit
+sudo apt install nvidia-docker2
 ```
 
 The user account working with Tensorman must be added to the `docker` group if that hasn't been done already:

@@ -41,13 +41,13 @@ The user account working with Tensorman must be added to the `docker` group if t
 sudo usermod -aG docker $USER
 ```
 
-One last thing, we need to add a kernel parameter:
+The last step is to add a kernel parameter:
 
 ```bash
 sudo kernelstub --add-options "systemd.unified_cgroup_hierarchy=0"
 ```
 
-... and reboot. Then you are ready for liftoff!
+...and reboot. Then you're ready for liftoff!
 
 ## About Tensorman
 

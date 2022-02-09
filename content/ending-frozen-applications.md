@@ -32,16 +32,16 @@ The System Monitor comes prepackaged in Pop!\_OS. This application provides a GU
 1. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch a Terminal session.
 2. Enter `gnome-system-monitor` and hit <kbd>Enter</kbd>.
 3. Locate frozen and hanging applications.
-   ![gnome-system-monitor](/images/ending-frozen-applications/gnome-system-monitor)
+   ![gnome-system-monitor](/images/ending-frozen-applications/gnome-system-monitor.png)
 4. Right click the application and click Stop in the dropdown menu.
 
 ### Using the kill Command (CLI)
 
 The `kill` command provides several methods to terminate a process:
 
-- SIGTERM (15) - Sends the "end" command to a PID, this is the default method used if not number is specified
-- SIGSTOP (19) - Sends the "stop" command to pause a process, processes are resumed with the SIGCONT (18)
-- SIGKILL (9) - Sends the "kill" command to a PID, this is the most destructive method, programs cannot ignore or block this command
+- SIGTERM (15) - Sends the "terminate" command to a PID (default)
+- SIGSTOP (19) - Sends the "stop" command to pause a process
+- SIGKILL (9) - Sends the "kill" command to a PID (destructive)
 
 `kill` takes arguments in the form of a Process ID (PID). The `pidof` command will display the PID(s) associated with any running process.
 

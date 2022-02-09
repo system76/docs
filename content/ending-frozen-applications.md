@@ -62,7 +62,6 @@ Users can bypass a frozen desktop environment by entering `TTY` mode. This metho
 2. Enter the user name and password for the account.
 3. Type the following command and hit <kbd>Enter</kbd>.
     ```bash
-    sudo kill -15 -1
+    sudo kill -9 -1
     ```
-   >Note: Users can alternatively use `sudo kill -9 -1` which sends a more destructive SIGTERM (end) request to running processes.
 4. The login screen will appear when the process completes. The desktop environment will load upon login.

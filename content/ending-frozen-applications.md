@@ -45,17 +45,12 @@ The `kill` command provides several methods to terminate a process:
 
 `kill` takes arguments in the form of a Process ID (PID). The `pidof` command will display the PID(s) associated with any running process.
 
-1. Press <kbd>Super</kbd> and type "system monitor", hit enter to launch the program.
-2. Type `pidof` + process or application name and hit <kbd>Enter</kbd>.
-   ```bash
-   pidof firefox
-   ```
-3. Take note of the listed PID(s).
-4. Type kill + PID(s) to kill all associated PID(s), then hit <kbd>Enter</kbd>. This command uses the default SIGTERM (15) method. Multiple PIDs can be passed to `kill` by piping in PIDs using the `pidof` and `xargs` command:
+1. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch a terminal session.
+2. This command uses the default SIGTERM (15) method. Multiple PIDs can be passed to `kill` by piping in PIDs using the `pidof` and `xargs` command:
     ```bash
     pidof firefox | xargs kill
     ```
-5. If the program remains unresponsive, use the SIGKILL (9) commend to force the program to close:
+3. If the program remains unresponsive, use the SIGKILL (9) commend to force the program to close:
     ```bash
     pidof firefox | xargs kill -9
     ```

@@ -27,7 +27,7 @@ Linux offers many methods to stop hanging or frozen processes. The System Monito
 
 ### Using System Monitor (GUI)
 
-The System Monitor comes prepackaged in Pop!\_OS. This application provides a GUI interface and functionality similar to the Windows Task Manager.
+The System Monitor application comes prepackaged in Pop!\_OS. This application provides a GUI interface and functionality similar to the Windows Task Manager.
 
 1. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch a Terminal session.
 2. Enter `gnome-system-monitor` and hit <kbd>Enter</kbd>.

@@ -47,24 +47,18 @@ The `kill` command provides several methods to terminate a process:
 
 1. Press <kbd>Super</kbd> and type "system monitor", hit enter to launch the program.
 2. Type `pidof` + process or application name and hit <kbd>Enter</kbd>.
-
    ```bash
    pidof firefox
    ```
-
 3. Take note of the listed PID(s).
 4. Type kill + PID(s) to kill all associated PID(s), then hit <kbd>Enter</kbd>. This command uses the default SIGTERM (15) method. Multiple PIDs can be passed to `kill` by piping in PIDs using the `pidof` and `xargs` command:
-
     ```bash
     pidof firefox | xargs kill
     ```
-  
 5. If the program remains unresponsive, use the SIGKILL (9) commend to force the program to close:
-
     ```bash
     pidof firefox | xargs kill -9
     ```
-
 ## End All Running Processes
 
 Users can bypass a frozen desktop environment by entering `TTY` mode. This method will use the `kill -9 -1` command, which kills all processes as allowed by the user account. Users can alternatively use `kill -15 -1` which sends a less destructive SIGTERM (end) request to running processes.
@@ -72,10 +66,8 @@ Users can bypass a frozen desktop environment by entering `TTY` mode. This metho
 1. Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F5</kbd> to enter `TTY` mode.
 2. Enter the user name and password for the account.
 3. Type the following command and hit <kbd>Enter</kbd>.
-
     ```bash
     sudo kill -15 -1
     ```
-
    >Note: Users can alternatively use `sudo kill -9 -1` which sends a more destructive SIGTERM (end) request to running processes.
 4. The login screen will appear when the process completes. The desktop environment will load upon login.

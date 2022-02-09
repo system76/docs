@@ -23,7 +23,7 @@ Linux offers many methods to end hanging or frozen processes. The `gnome-system-
 
 >Note: This article details several methods to end processes for a given scenario, but is not exhaustive or guaranteed to provide the most appropriate method for every scenario. Users should also keep in mind that suddenly terminating processes can result in unwanted data loss or system stability issues.
 
-## End Specific Applications or Windows
+## Close Specific Applications or Windows
 
 ### Using gnome-system-monitor (GUI)
 

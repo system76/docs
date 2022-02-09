@@ -19,15 +19,15 @@ section:
 
 ## Closing Frozen Processes, Applications, and Desktops
 
-Linux offers many methods to end hanging or frozen processes. The `gnome-system-monitor` provides a GUI process management application with features similar to the Windows Task Manager, while the `kill` command can end single or multiple processes from the Terminal.
+Linux offers many methods to stop hanging or frozen processes. The System Monitor provides a GUI process management application with features similar to the Windows Task Manager, while the `kill` command can end single or multiple processes from the Terminal.
 
 >Caution: Suddenly terminating processes can result in unwanted data loss or system stability issues.
 
 ## Close Specific Applications or Windows
 
-### Using gnome-system-monitor (GUI)
+### Using System Monitor (GUI)
 
-The gnome-system-monitor comes prepackaged in Pop!_OS. This application provides a GUI interface and functionality similar to the Windows Task Manager.
+The System Monitor comes prepackaged in Pop!\_OS. This application provides a GUI interface and functionality similar to the Windows Task Manager.
 
 1. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch a Terminal session.
 2. Enter `gnome-system-monitor` and hit <kbd>Enter</kbd>.
@@ -41,7 +41,7 @@ The gnome-system-monitor comes prepackaged in Pop!_OS. This application provides
 
 The `kill` command can send a signal termination (SIGTERM) command to any running processes. This process requires knowing the process IDs (PID) of the application(s) to be terminated. The `pidof` command will display the PID(s) associated with any running process.
 
-1. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch a Terminal session.
+1. Press <kbd>Super</kbd> and type "system monitor", hit enter to launch the program.
 2. Type pidof + process or application name and hit Enter.
 
    ```bash

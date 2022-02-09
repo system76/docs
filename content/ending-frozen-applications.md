@@ -1,5 +1,5 @@
 ---
-title: Ending Frozen Applications and Desktops
+title: Closing Frozen Applications and Desktops
 description: >
   Linux provides several methods to kill frozen or hung up processes and applications using GUI applications or terminal commands.
 keywords:
@@ -17,7 +17,7 @@ hidden: false
 section:
 ---
 
-## Ending Frozen Processes, Applications, and Desktops
+## Closing Frozen Processes, Applications, and Desktops
 
 Linux offers many methods to end hanging or frozen processes. The `gnome-system-monitor` provides a GUI process management application with features similar to the Windows Task Manager, while the `kill` command can end single or multiple processes from the Terminal.
 

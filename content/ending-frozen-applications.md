@@ -54,6 +54,7 @@ The `kill` command provides several methods to terminate a process:
     ```bash
     pidof firefox | xargs kill -9
     ```
+
 ## End All Running Processes
 
 Users can bypass a frozen desktop environment by entering `TTY` mode. This method will use the `kill -9 -1` command, which kills all processes as allowed by the user account. Users can alternatively use `kill -15 -1` which sends a less destructive SIGTERM (end) request to running processes.

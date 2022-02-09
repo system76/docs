@@ -19,11 +19,11 @@ section:
 
 ## Ending Frozen Processes, Applications, and Desktops
 
-Linux offers many methods to hanging or frozen processes. The `gnome-system-monitor` provides a GUI process management application with features similar to the Windows Task Manager, while the `kill` command can end single or multiple processes from the Terminal.
+Linux offers many methods to end hanging or frozen processes. The `gnome-system-monitor` provides a GUI process management application with features similar to the Windows Task Manager, while the `kill` command can end single or multiple processes from the Terminal.
 
->Note: This article provides several methods to end processes for a given scenario, but is not exhaustive or guaranteed to provide the most appropriate method for every scenario. Users should also keep in mind that suddenly terminating processes can result in unwanted data loss or system stability issues.
+>Note: This article details several methods to end processes for a given scenario, but is not exhaustive or guaranteed to provide the most appropriate method for every scenario. Users should also keep in mind that suddenly terminating processes can result in unwanted data loss or system stability issues.
 
-## End a Single Frozen Application or Window
+## End Specific Applications or Windows
 
 ### Using gnome-system-monitor (GUI)
 

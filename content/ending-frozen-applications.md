@@ -34,6 +34,15 @@ The System Monitor application comes prepackaged in Pop!\_OS. This application p
    ![gnome-system-monitor](/images/ending-frozen-applications/gnome-system-monitor.png)
 3. Right click the application and click Stop in the dropdown menu.
 
+### Using xkill (GUI)
+
+Launching xkill allows users to click and force close applications.
+
+1. Press <kbd>Alt</kbd> + <kbd>F2</kbd>.
+2. Type `xkill` and hit Enter.
+   ![launch-xkill](/images/ending-frozen-applications/launch-xkill.png)
+3. The cursor will turn into a small 'x'. Left click any window to kill the process associate with that window.
+
 ### Using the kill Command (CLI)
 
 The `kill` command provides several methods to terminate a process:
@@ -56,7 +65,7 @@ The `kill` command provides several methods to terminate a process:
 
 ## End All Running Processes
 
-Users can bypass a frozen desktop environment by entering `TTY` mode. This method will use the `kill -9 -1` command, which kills all processes as allowed by the user account. Users can alternatively use `kill -15 -1` which sends a less destructive SIGTERM (end) request to running processes.
+Users can bypass a frozen desktop environment by entering `TTY` mode. This method will use the `kill -9 -1` command, which kills all processes as allowed by the user account. Users can alternatively use `kill -15 -1` which sends a less destructive SIGTERM (terminate) request to running processes.
 
 1. Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F5</kbd> to enter `TTY` mode.
 2. Enter the user name and password for the account.
@@ -64,4 +73,5 @@ Users can bypass a frozen desktop environment by entering `TTY` mode. This metho
     ```bash
     sudo kill -9 -1
     ```
-4. The login screen will appear when the process completes. The desktop environment will load upon login.
+4. Enter the password for the user account.
+5. The login screen will appear when the process completes. The desktop environment will load upon login.

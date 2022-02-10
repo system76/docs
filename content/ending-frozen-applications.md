@@ -19,7 +19,7 @@ section:
 
 ## Closing Frozen Processes, Applications, and Desktops
 
-Linux offers many methods to stop hanging or frozen processes. The System Monitor application provides a GUI process management application with features similar to the Windows Task Manager, while the `kill` command can end single or multiple processes from the Terminal.
+Linux offers many methods to stop hanging or frozen processes. The System Monitor application provides a GUI with features similar to the Windows Task Manager, while the `kill` command can end single or multiple processes from the Terminal.
 
 >Caution: Suddenly terminating processes can result in unwanted data loss or system stability issues.
 
@@ -27,7 +27,7 @@ Linux offers many methods to stop hanging or frozen processes. The System Monito
 
 ### Using System Monitor (GUI)
 
-The System Monitor application comes prepackaged in Pop!\_OS. This application provides a GUI interface and functionality similar to the Windows Task Manager.
+The System Monitor application comes prepackaged in Pop!\_OS. This tool provides a GUI and functionality similar to the Windows Task Manager.
 
 1. Press <kbd>Super</kbd> and type `system monitor`, then hit Enter.
 2. Locate frozen and hanging applications.

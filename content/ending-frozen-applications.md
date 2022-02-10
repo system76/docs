@@ -41,7 +41,7 @@ Launching xkill allows users to click and force close applications.
 1. Press <kbd>Alt</kbd> + <kbd>F2</kbd>.
 2. Type `xkill` and hit Enter.
    ![launch-xkill](/images/ending-frozen-applications/launch-xkill.png)
-3. The cursor will turn into a small 'x'. Left click any window to kill the process associate with that window.
+3. The cursor will turn into a small 'x'. Left click any window to kill the process associated with that window.
 
 ### Using the kill Command (CLI)
 

@@ -27,8 +27,8 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 | System  | Supports USB-C Charging? | Supports Thunderbolt?       |
 |:-------:|:------------------------:|:---------------------------:|
 | addw1   | No                       | Yes                         |
-| addw2   | No                       | No (DisplayPort over USB-C) |
-| bonw14  | No                       | No (DisplayPort over USB-C) |
+| addw2   | No                       | Yes                         |
+| bonw14  | No                       | Yes                         |
 | darp5   | No                       | Yes                         |
 | darp6   | Yes                      | Yes                         |
 | darp7   | Yes                      | Yes                         |

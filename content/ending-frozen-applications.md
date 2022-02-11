@@ -14,7 +14,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section:
+section: software-troubleshooting
 ---
 
 ## Closing Frozen Processes, Applications, and Desktops

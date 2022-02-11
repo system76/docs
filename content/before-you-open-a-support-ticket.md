@@ -26,38 +26,34 @@ This article combines several self-help articles resolving common issues experie
 
 ### 1. Do you have a current backup of your files?
 
-If your issue is time-sensitive, reinstalling the operating system may provide the fastest resolution. Be sure to backup all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
+If your issue is time-sensitive, reinstalling the or [refreshing](/articles/pop-recovery#refresh-install) operating system may provide the fastest resolution. Be sure to backup all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
 
 **Note**: This guide may cover diagnostics and testing that you've already performed. Skip those sections as needed, but be sure to provide that information when submitting your ticket.
 
-We have a help article to guide you through backing up your system [here](/articles/backup-files)
+We have a help article to guide you through backing up your system [here.](/articles/backup-files)
 
-### 2. Do you have a Pop!_OS or Ubuntu Live USB?
+### 2. Do you have a Pop!\_OS or Ubuntu Live USB?
 
 A Live USB can be used as a rescue disk. This will provide us an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary.
 
-We have an article to guide you through creating [Live USBs here](/articles/live-disk)
+We have an article to guide you through creating [Live USBs here.](/articles/live-disk)
 
 ## Common Issue Sources
 
 ### Software
 
-See this article for troubleshooting software issues [here](/articles/software-triage)
+See this article for troubleshooting software issues [here.](/articles/software-triage)
 
 ### Environment
 
 1. Are any other machines or users in your home or workspace experiencing the same issue?
-
 2. If the issue involves networking, have you tried resetting your modem/router?
 
    **NOTE:** Please try this again, even if it appears no other devices are affected.
 
 3. Are there any devices in proximity with your system that could be causing Wi-Fi or Bluetooth interference?
-
 4. Is your work environment a stable temperature or has it been particularly warm or cold lately?
-
 5. Have you added any external devices or accessories to your machine and workflow lately?
-
 6. Has the machine ever suffered any fall or liquid damage?
 
 ### Hardware
@@ -108,7 +104,7 @@ We create and offer a quote to purchase the part in question. We usually can als
 
 ### Warranty Information
 
-Read the details of our warranty coverage [here](https://system76.com/warranty)
+Read the details of our warranty coverage [here.](https://system76.com/warranty)
 
 ---
 

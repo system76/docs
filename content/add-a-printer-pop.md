@@ -47,7 +47,7 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 1. Click [this link](https://support.brother.com/g/b/faqend.aspx?c=us&lang=en&prod=hll2300d_us_eu_as&faqid=faq00100556_000) to download Brother's Driver Install Tool for Linux.
 
-2. Click the "Click here to download tool" link on the Brother download page.
+2. Click the "Click here to download the tool" link on the Brother download page.
 
 3. Select Linux (deb) for your "OS Version", then click OK.
 

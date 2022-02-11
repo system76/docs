@@ -61,8 +61,8 @@ Community members have reported that the following docks work with our products:
 - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [[community-tested](https://github.com/system76/docs/pull/417) on an Intel system] <sup>1</sup>
   - Downstream (passthrough) Thunderbolt 3 port not tested.
   - May not be able to wake system using peripherals connected via dock.
-  - These issues can be potentially addressed by changing the Thunderbolt Security Mode to "None" in the BIOS, though this is not recommended.
-    - Displays sometimes don't wake up from sleep until dock is re-plugged.
+  - Displays sometimes don't wake up from sleep until dock is re-plugged.
+    - This issues can be potentially addressed by changing the Thunderbolt Security Mode to "None" in the BIOS, though this is not recommended.
 - [Dell D3100](https://www.dell.com/en-us/work/shop/dell-docking-station-usb-30-d3100/apd/452-bbpg/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/742) on an Intel system]
   - DisplayPort port not tested.
 - [Dell DS1000](https://www.dell.com/support/manuals/us/en/04/dell-dockstand-ds1000/ds1000_docking_stand_ug_publication/technical-specifications?guid=guid-1ad58fe1-dd33-4ebc-bac1-8e6a9083eb35&lang=en-us) [[community-tested](https://github.com/system76/docs/pull/431) on an Intel system]

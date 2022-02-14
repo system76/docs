@@ -137,7 +137,7 @@ Near the end of the upgrade process, you'll be prompted to remove obsolete packa
 
 You may receive a notice about the keyboard layout and the option to use the package maintainer's version of a certain package. If you haven't specifically made a change to a configuration file in your system, go ahead and press `Y` to use the package maintainer's version. If you have made a change you would like to keep, press `N` to use the local version, or press `D` to inspect the changes and see which version you would like to use.
 
-Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing `sudo reboot`and pressing `ENTER`. If you prefer, you can also use the graphical interface to reboot.
+Finally, you will get a notice to restart your computer to complete the upgrade. Make sure all files are saved and any open programs are closed. You can reboot via the terminal by typing `sudo reboot` and pressing `ENTER`. If you prefer, you can also use the graphical interface to reboot.
 
 ---
 
@@ -155,7 +155,10 @@ pop-upgrade release upgrade
 
 ## Upgrading older releases
 
-Upgrading Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan) will require upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.10 (impish).
+| Pop!_OS Version                                  | Upgrade Process                            |
+| :------------------------------------------- | :------------------------------------- |
+| Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan)         | Requires upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 21.10 (impish)       |
+|Pop!_OS 20.10 (groovy) |Refresh the OS from a recently upgraded [recovery partition](/articles/pop-recovery), or perform a clean install using a [Live USB](/articles/pop-live-disk) containing the latest release|
 
 These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 

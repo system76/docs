@@ -69,13 +69,13 @@ cd shell
 make local-install
 ```
 
-To remap the launcher to Super+Space:
+To remap the launcher to <kbd>Super</kbd>+<kbd>Space</kbd>:
 
 ```bash
 gsettings --schemadir ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['<Super>space']"
 ```
 
-You can remap launcher to just Super_L, but it will eat the Super modifier and prevent other Super combinations from working:
+You can remap launcher to just <kbd>Super_L</kbd> (Left Super key), but it will eat the <kbd>Super</kbd> modifier and prevent other <kbd>Super</kbd> combinations from working:
 
 ```bash
 gsettings --schemadir ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['Super_L']"

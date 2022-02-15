@@ -84,7 +84,7 @@ To disable the Super key from opening the GNOME overview:
 
 ```bash
 gsettings set org.gnome.mutter overlay-key ''
-``` 
+```
 
 #### For Manjaro
 

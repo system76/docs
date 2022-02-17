@@ -19,6 +19,8 @@ keywords:
   - Release
   - System76
   - apt
+  - the repository 'https://us.arhive.ubuntu.com/ubuntu' does not have a Release file
+  - 404 Not Found
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -66,7 +68,7 @@ Before upgrading, it can be helpful to ask yourself the following environment qu
 
 Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
-## Upgrade Pop!_OS
+## Upgrade Pop!\_OS
 
 Pop!\_OS 21.10 was released on December 14, 2021
 
@@ -76,7 +78,7 @@ Pop!\_OS 20.10 was released October 23, 2020.
 
 ### Upgrading Pop!\_OS to 21.10 from 21.04
 
-> **NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases)
+**NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -153,7 +155,7 @@ systemctl restart pop-upgrade
 pop-upgrade release upgrade
 ```
 
-## Upgrading older releases
+## Upgrading older releases (pre 20.04)
 
 | Pop!_OS Version                                  | Upgrade Process                            |
 | :------------------------------------------- | :------------------------------------- |
@@ -165,21 +167,32 @@ These older Pop!\_OS releases are now unsupported and no new updates are availab
 ### 1. Get your current system fully updated
 
 ```bash
+# change server from us.archive to old-releases
 sudo sed -i 's/us.archive/old-releases/g' /etc/apt/sources.list
+# request release files
 sudo apt update -m
+# configure any packages partially setup
 sudo dpkg --configure -a
+# fix any missing package dependency
 sudo apt install -f
+# upgrade all packages and dependencies to newest in release
 sudo apt full-upgrade
+# make sure the `pop-desktop` meta package is installed
 sudo apt install pop-desktop
 ```
 
 ### 2. Move any PPA additions out of the way, and get all of the sources pointed at the 20.04 versions
 
 ```bash
+# create a backup directory
 sudo mkdir -p /etc/apt/backup
+# move all current PPA entries into backup directory
 sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
+# add the System76 PPA back in
 sudo apt-add-repository -yn ppa:system76/pop
+# change update server back to us.archive.ubuntu.com
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
+# change all release names to focal, the 20.04 release
 sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 
@@ -188,8 +201,11 @@ sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/s
 This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
 
 ```bash
+# get release files
 sudo apt update
+# update the upgrade software first
 sudo apt install dpkg apt
+# upgrade all packages on system to latest release, keeping log in "upgrade.log"
 sudo apt full-upgrade 2>/dev/null | tee ~/upgrade.log
 ```
 
@@ -205,6 +221,53 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 pop-upgrade release upgrade
 ```
 
+## Upgrading older releases (20.10)
+
+Like other older releases, Pop!\_OS 20.10 update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does require some work to manually upgrade the system. Use the following steps to upgrade the system:
+
+### 1. Update sources to 'old-releases'
+
+```bash
+# switch system release to old-release server
+sudo sed -Ei 's/us.archive/old-releases/g' /etc/apt/sources.list.d/system.sources
+# get release files
+sudo apt update -m
+# make sure dpkg is happy with package state
+sudo apt dpkg --configure -a
+# make sure apt is happy with dependency tree
+sudo apt install -f
+# upgrade all packages and depencencies to newest in groovy
+sudo apt full-upgrade
+# make sure pop-desktop meta package is installed
+sudo apt install pop-desktop
+```
+
+### 2. Transisiton to the new release files for Pop!\_OS 21.10
+
+```bash
+# backup PPA files
+sudo mkdir -p /etc/apt/backup
+sudo cp -r /etc/apt/sources.list.d/ /etc/apt/backup
+sudo rm -f /etc/apt/sources.list.d/system76-dev*
+# create new PPA file for from Pop!_OS infrastructure
+sudo add-apt-repository "deb http://apt.pop-os.org/release impish main"
+sudo mv /etc/apt/sources.list.d/archive_uri-http_apt_pop-os_org_release-groovy.list /etc/apt/sources.list.d/pop-os-ppa.list
+# update all sources from groovy to impish
+sudo sed -Ei 's/groovy/impish/g' /etc/apt/sources.list.d/*
+sudo sed -Ei 's/old-releases/us.archive/g' /etc/apt/sources.listd./system.sources
+```
+
+### Now, Do the Upgrade
+
+```bash
+# get new release files, watch for any that reference groovy, not impish
+sudo apt update
+# upgrade the upgrade tools first
+sudo apt --assume-yes install dpkg apt
+# upgrade the rest of the installed packages
+sudo apt -o "Dpkg::Options::=--force-all" full-upgrade
+```
+
 ## Troubleshooting
 
 Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then the following steps can help repair your broken OS.
@@ -215,13 +278,9 @@ If your upgrade appears to hang in place for an extended period of time, click o
 
 ### Broken Upgrade
 
-If the upgrade fails it will most likely be due to a package manager issue.  First, run an alternative upgrade manager with this command, and see if it will manage further:
+Pop!_OS has replaced the Ubuntu upgrade tool "do-release-upgrade" in recent releases (21.04 and newer). With updates to the Pop!OS installer, you may find that either using an updated [Recovery Partition](/articles/pop-recovery/) or [Live USB](/articles/pop-live-disk/) with the desired Pop!_OS release using the "Refresh Install" option will be the fastest way to fix your install.
 
-```bash
-do-release-upgrade
-```
-
-If it fails again, the package manager will need to be repaired manually.  Please follow the steps as outlined in this document about [incomplete upgrades](/articles/pop-incomplete-upgrade/)
+Manually fixing package issues can be hard to diagnose. Use caution when removing system packages. Removing software from PPA's may be required to allow newer packages from the base repositories to install correctly.  Please follow the steps as outlined in this document about [repairing the package manager](/articles/package-manager-pop/) and/or [incomplete upgrades](/articles/pop-incomplete-upgrade/)
 
 Make sure to get the package manager to a fully upgraded status before rebooting your computer.  You should see this line after running all 6 of the [repair package manager](https://support.system76.com/articles/pop-incomplete-upgrade#repair-package-manager-after-failedincomplete-upgrade) commands:
 

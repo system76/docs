@@ -257,7 +257,7 @@ sudo sed -Ei 's/groovy/impish/g' /etc/apt/sources.list.d/*
 sudo sed -Ei 's/old-releases/us.archive/g' /etc/apt/sources.listd./system.sources
 ```
 
-### Now, do the upgrade!
+### Now, Do the Upgrade
 
 ```bash
 # get new release files, watch for any that reference groovy, not impish

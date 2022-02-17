@@ -78,7 +78,7 @@ Pop!\_OS 20.10 was released October 23, 2020.
 
 ### Upgrading Pop!\_OS to 21.10 from 21.04
 
-> **NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases)
+**NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases)
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -217,9 +217,10 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 ```bash
 pop-upgrade release upgrade
 ```
+
 ## Upgrading older releases (20.10)
 
-Like other older releases, Pop!_OS 20.10 update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does requires some work to manually upgrade the system. Use the following steps to upgrade the system if you get errors like
+Like other older releases, Pop!\_OS 20.10 update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does require some work to manually upgrade the system. Use the following steps to upgrade the system:
 
 ### 1. Update sources to 'old-releases'
 
@@ -238,7 +239,7 @@ sudo apt full-upgrade
 sudo apt install pop-desktop
 ```
 
-### 2. Transisiton to the new release files for Pop!_OS 21.10
+### 2. Transisiton to the new release files for Pop!\_OS 21.10
 
 ```bash
 # backup PPA files

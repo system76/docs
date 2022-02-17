@@ -164,21 +164,32 @@ These older Pop!\_OS releases are now unsupported and no new updates are availab
 ### 1. Get your current system fully updated
 
 ```bash
+# change server from us.archive to old-releases
 sudo sed -i 's/us.archive/old-releases/g' /etc/apt/sources.list
+# request release files
 sudo apt update -m
+# configure any packages partially setup
 sudo dpkg --configure -a
+# fix any missing package dependency
 sudo apt install -f
+# upgrade all packages and dependencies to newest in release
 sudo apt full-upgrade
+# make sure the `pop-desktop` meta package is installed
 sudo apt install pop-desktop
 ```
 
 ### 2. Move any PPA additions out of the way, and get all of the sources pointed at the 20.04 versions
 
 ```bash
+# create a backup directory
 sudo mkdir -p /etc/apt/backup
+# move all current PPA entries into backup directory
 sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
+# add the System76 PPA back in
 sudo apt-add-repository -yn ppa:system76/pop
+# change update server back to us.archive.ubuntu.com
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
+# change all release names to focal, the 20.04 release
 sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 
@@ -187,8 +198,11 @@ sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/s
 This will have a three phases and once the download is complete, you can't change your mind. This works from a new install of 19.04, but some packages may add complications, so make sure you have a backup of important data before moving forward. There may be a question about restarting services, and it is safe to answer "Yes". There may be some questions about using "maintainer" version of configuration files and using the that new version is also very likely what you want to do (and the default answer will work):
 
 ```bash
+# get release files
 sudo apt update
+# update the upgrade software first
 sudo apt install dpkg apt
+# upgrade all packages on system to latest release, keeping log in "upgrade.log"
 sudo apt full-upgrade 2>/dev/null | tee ~/upgrade.log
 ```
 
@@ -203,9 +217,9 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 ```bash
 pop-upgrade release upgrade
 ```
-## Upgrading older releasee (20.10) 
+## Upgrading older releases (20.10)
 
-Like other older releases, Pop!_OS 20.10 update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does requires some work to manaully upgrade the system. Use the following steps to upgrade the system if you get errors like
+Like other older releases, Pop!_OS 20.10 update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does requires some work to manually upgrade the system. Use the following steps to upgrade the system if you get errors like
 
 ### 1. Update sources to 'old-releases'
 

@@ -68,7 +68,7 @@ Before upgrading, it can be helpful to ask yourself the following environment qu
 
 Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
 
-## Upgrade Pop!_OS
+## Upgrade Pop!\_OS
 
 Pop!\_OS 21.10 was released on December 14, 2021
 

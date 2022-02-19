@@ -54,7 +54,7 @@ Open the DaVinci Resolve directory, right click on an empty space between/below 
 In the new **Terminal** window, run this command if you are using the free-of-cost version of DaVinci Resolve:
 
 ```bash
-./makeresolvedeb*.sh lite
+./makeresolvedeb*.sh //Whole DaVinci File. Example: DaVinci_Resolve_17.4.3_Linux.run
 ```
 
 Or this command if you are using the paid Studio version of DaVinci Resolve:

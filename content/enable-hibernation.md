@@ -142,7 +142,7 @@ The purpose of this article is to provide steps for enabling hibernation for any
 
     **CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) onto SSDs, shortening the lifespan of the drives.
 
-    **NOTE:** Rather than using straight hibernation, You may want to be enable and use `suspend-then-hibernate` to suspend to RAM for a predifined amount of time, and then hibernate if the computer is not woken in that time. This can be done by editing `/etc/systemd/sleep.conf` to enable `AllowSuspendThenHibernate` (if it is not already enabled), and then to set the `HibernateDelaySec` to a time that makes sense for your needs. Then, edit `/etc/systemd/login.conf` to change the lid-switch and sleep buttons to both invoke `hibernate-then-sleep`.
+    **NOTE:** Rather than using straight hibernation, You may want to be enable and use `suspend-then-hibernate` to suspend to RAM for a predifined amount of time, and then hibernate if the computer is not woken in that time. This can be done by editing `/etc/systemd/sleep.conf` to enable `AllowSuspendThenHibernate` (if it is not already enabled), and then to set the `HibernateDelaySec` to a time that makes sense for your needs. Then, edit `/etc/systemd/logind.conf` to change the lid-switch and sleep buttons to both invoke `hibernate-then-sleep`.
 
 ## Desktop Integration
 

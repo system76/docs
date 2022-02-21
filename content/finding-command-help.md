@@ -22,7 +22,7 @@ Even experienced Linux users frequently utilize knowledge resources to find prop
 
 ### Why Find Help Using the Terminal?
 
-Issues may disable user access to the desktop environment, including the web browser. In these scenarios, users can still find help that displays as output in a Terminal session. Users who still have access to a browser or second computer can find  help using the [ubuntu](https://manpages.ubuntu.com/) or [debian](https://manpages.debian.org/) manpage websites. The commands below are entered in a Terminal session. In Pop!\_OS, Terminal sessions can be started by pressing <kbd>Super</kbd> + <kbd>t</kbd>.
+Issues may disable user access to the desktop environment, including the web browser. In these scenarios, users can still find help that displays as output in a Terminal session. Users who still have access to a browser or second computer can find help using the [Ubuntu](https://manpages.ubuntu.com/) or [Debian](https://manpages.debian.org/) manpage websites. The commands below are entered in a Terminal session. In Pop!\_OS, Terminal sessions can be started by pressing <kbd>Super</kbd> + <kbd>t</kbd>.
 
 ### --help
 

@@ -4,6 +4,7 @@ description: >
   If the computer won't start, boot, or otherwise operate normally, there may be a hardware issue.  Follow these steps to diagnose hardware failures.
 keywords:
   - memory
+  - CPU
   - hard drive
   - won't boot
   - won't post
@@ -157,6 +158,78 @@ And now we can run it like so (this example will run it for 60 minutes/1 hour):
 ```bash
 ./gpu_burn -d 3600
 ```
+
+## CPU thermals
+
+If the CPU fan is spinning erratically, or you are experiencing random shutdowns, this may be the result of a thermal issue. To investigate this, we'll use tools that can display CPU temperatures.
+
+Modern hardware is designed to shut systems down when they reach temperatures that may be damaging to the internal components. Typically, these thresholds are in the upper 80s or 90s Celsius, depending on hardware.
+
+If your system is spontaneously shutting down, this may be caused by overheating. Systems with dedicated GPUs tend to run hot under normal circumstances, so noticing an overheating problem can be challenging from ambient temperature alone.
+
+The temperatures of your CPU cores and GPU card can be checked through software.
+
+Run lm-sensors
+lm-sensors (installed by default on Pop!_OS) is a text-based tool that runs in a Terminal.
+
+Install lm-sensors (If not installed)
+
+Open a Terminal with SUPER+T (Pop!_OS) or CTRL+ALT+T (Ubuntu) run the following commands:
+
+sudo apt update
+sudo apt install lm-sensors
+Get Sensor Output
+
+sensors
+This command will generate output like this:
+
+coretemp-isa-0000
+Adapter: ISA adapter
+Package id 0:  +55.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 0:        +53.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 1:        +53.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 2:        +53.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 3:        +53.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 4:        +55.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 5:        +53.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 6:        +52.0°C  (high = +100.0°C, crit = +100.0°C)
+Core 7:        +54.0°C  (high = +100.0°C, crit = +100.0°C)
+
+system76_acpi-acpi-0
+Adapter: ACPI interface
+CPU fan:        0 RPM
+GPU fan:        0 RPM
+CPU temp:     +55.0°C
+GPU temp:     +54.0°C
+
+iwlwifi_1-virtual-0
+Adapter: Virtual device
+temp1:        +69.0°C
+
+pch_cometlake-virtual-0
+Adapter: Virtual device
+temp1:        +60.0°C
+
+BAT0-acpi-0
+Adapter: ACPI interface
+in0:          12.95 V
+curr1:         0.00 A
+Psensor
+If you prefer a GUI tool which provides graphing over time, the application Psensor can be installed from the Pop!_Shop, or through the Terminal with this command:
+
+Install (Terminal):
+
+sudo apt install psensor
+Install Through Pop!_Shop
+
+psensor-pop
+
+Run Psensor:
+
+In a Terminal run:
+
+psensor
+Or, to launch through the OS interface, click on "Activities" in the top-left (Pop!_OS 20.04 LTS, or Ubuntu), or "Applications" (Pop!_OS COSMIC) and search for "Psensor" 
 
 ## Machine Check Exceptions
 

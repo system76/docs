@@ -169,7 +169,7 @@ If your system is spontaneously shutting down, this may be caused by overheating
 
 The temperatures of your CPU cores and GPU card can be checked through software.
 
-#### Run `lm-sensors` (command line tool)
+### Run `lm-sensors` (command line tool)
 
 `lm-sensors` (installed by default on Pop!\_OS) is a text-based tool that runs in a `Terminal`.
 

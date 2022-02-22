@@ -26,8 +26,9 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 
 | System  | Supports USB-C Charging? | Supports Thunderbolt?       |
 |:-------:|:------------------------:|:---------------------------:|
-| addw2   | No                       | No (DisplayPort over USB-C) |
-| bonw14  | No                       | No (DisplayPort over USB-C) |
+| addw1   | No                       | Yes                         |
+| addw2   | No                       | Yes                         |
+| bonw14  | No                       | Yes                         |
 | darp5   | No                       | Yes                         |
 | darp6   | Yes                      | Yes                         |
 | darp7   | Yes                      | Yes                         |
@@ -57,8 +58,10 @@ We have tested the following docks:
 Community members have reported that the following docks work with our products:
 
 - [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/797) on an Intel system] <sup>1</sup>
-- [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [[community-tested](https://github.com/system76/docs/pull/417) on an Intel system] <sup>1</sup>
+- [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [community-tested on an [Intel system](https://github.com/system76/docs/pull/417) and an [NVIDIA system](https://github.com/system76/docs/pull/917)] <sup>1</sup>
   - Downstream (passthrough) Thunderbolt 3 port not tested.
+  - May not be able to wake system using peripherals connected via dock.
+  - Displays sometimes don't wake up from sleep until dock is re-plugged.
 - [Dell D3100](https://www.dell.com/en-us/work/shop/dell-docking-station-usb-30-d3100/apd/452-bbpg/pc-accessories) [[community-tested](https://github.com/system76/docs/pull/742) on an Intel system]
   - DisplayPort port not tested.
 - [Dell DS1000](https://www.dell.com/support/manuals/us/en/04/dell-dockstand-ds1000/ds1000_docking_stand_ug_publication/technical-specifications?guid=guid-1ad58fe1-dd33-4ebc-bac1-8e6a9083eb35&lang=en-us) [[community-tested](https://github.com/system76/docs/pull/431) on an Intel system]

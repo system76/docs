@@ -1,6 +1,6 @@
 ---
 title: Media Production (Pop!_OS)
-description: Learn about media production tools on Pop!\_OS
+description: Learn about media production tools on Pop!_OS
 keywords:
   - Blender
   - DaVinci Resolve

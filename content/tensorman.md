@@ -29,11 +29,11 @@ redirect_from:
 sudo apt install tensorman
 ```
 
-For NVIDIA CUDA support, the following package must be installed:
+For NVIDIA CUDA support, install the following packages, depending on your Pop!_OS version:
 
-```bash
-sudo apt install nvidia-container-runtime
-```
+| Pop!_OS 21.10 +                    | Pop!_OS 20.04 LTS                            |
+| ---------------------------------- | -------------------------------------------- |
+| `sudo apt install nvidia-docker2`  | `sudo apt install nvidia-container-runtime`  |
 
 The user account working with Tensorman must be added to the `docker` group if that hasn't been done already:
 
@@ -41,7 +41,13 @@ The user account working with Tensorman must be added to the `docker` group if t
 sudo usermod -aG docker $USER
 ```
 
-If Docker was just installed, then a reboot will be needed before Tensorman can be used.
+The last step is to add a kernel parameter:
+
+```bash
+sudo kernelstub --add-options "systemd.unified_cgroup_hierarchy=0"
+```
+
+...and reboot. Then you're ready for liftoff!
 
 ## About Tensorman
 

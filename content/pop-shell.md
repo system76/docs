@@ -69,6 +69,23 @@ cd shell
 make local-install
 ```
 
+To remap the launcher to <kbd>Super</kbd>+<kbd>Space</kbd>:
+
+```bash
+gsettings --schemadir ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['<Super>space']"
+```
+
+You can remap launcher to just <kbd>Super_L</kbd> (Left Super key), but it will eat the <kbd>Super</kbd> modifier and prevent other <kbd>Super</kbd> combinations from working:
+
+```bash
+gsettings --schemadir ~/.local/share/gnome-shell/extensions/pop-shell@system76.com/schemas set org.gnome.shell.extensions.pop-shell activate-launcher "['Super_L']"
+```
+To disable the Super key from opening the GNOME overview:
+
+```bash
+gsettings set org.gnome.mutter overlay-key ''
+```
+
 #### For Manjaro
 
 <u>Pop Shell</u> is available in the repository:

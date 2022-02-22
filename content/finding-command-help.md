@@ -31,6 +31,7 @@ Issues may disable user access to the desktop environment, including the web bro
 **Use case**: A user wants to quickly reference all options for a known command in the current Terminal session.
 
 **Usage**: Type a command + `--help`, then hit <kbd>Enter</kbd>. This example uses the `cd` command. Commands must be an exact match.
+
 ```bash
 cd --help
 ```
@@ -43,22 +44,33 @@ cd --help
 **Use case**: A user wants a very brief reminder of a known command's functionality printed in the current Terminal session.
 
 **Usage**: Type `whatis` + command, then hit <kbd>Enter</kbd>. This example uses the `mkdir` command. Commands must be an exact match.
+
 ```bash
 whatis mkdir
 ```
 ![whatis output](/images/finding-command-help/what-output.png)
 
-### which
+### which & dpkg -S
 
-`which` provides the directory location of a command.
+`which` provides the directory location of a command. The output of `which` can be passed into `dpkg -S` to perform a search of associated packages.
 
-**Use case**: A user would like to know which installed package provides a given command.
+**Use case**: A user is attempting to learn about commands included with a recently installed program, and would like to know which installed package provides a specific command  
 
-**Usage**: Type `which` + command(s), then hit <kbd>Enter</kbd>. This example uses the ls and dpkg commands.
+**Usage**: Type `which` + command, then pipe the output of `which` into `dpkg -S` using `xargs`. The `xargs` command allows users to pass the output of a command as standard input into another command. The below example searches for the path of the `libreoffice` command, and then searches for the program associated with that path.
+
 ```bash
-which ls -l dpkg -S
+which libreoffice | xargs dpkg -S
 ```
 ![which output](/images/finding-command-help/which-output.png)
+
+Users may see an error stating no matching path can be found, or the returned path may not be the actual installation path for an application. `dpkg` only knows the intended default installation path for a package. It's common for packages to be symbolically linked: The system creates a file pointing to the actual location of the package. Symbolic linking is similar to creating an application shortcut in Windows. Pass the path output into the `ls -alh` command to verify if an executable file is symbolically linked.
+
+```bash
+which libreoffice | xargs ls -alh
+```
+![which ls](/images/finding-command-help/which-ls.png)
+
+The output indicates the package containing the `openoffice` command is symbolically linked to `..lib/libreoffice/program/soffice`. This verification step does not account for additional potential scenarios where a package installs to symlinked directory.
 
 ### apropos
 
@@ -67,6 +79,7 @@ which ls -l dpkg -S
 **Use case**: A user can't remember the specific name of a command, but knows keywords commonly used to describe the command's functions.
 
 **Usage**: Type `apropos` + keyword, then hit <kbd>Enter</kbd>. This example searches for commands related to the `reboot` keyword.
+
 ```bash
 apropos reboot
 ```
@@ -79,6 +92,7 @@ apropos reboot
 **Use case**: A user wants to see actions performed by a specific command, and available options to modify the outcome of the command.
 
 **Usage**: Type `man` + any command into a Terminal session, then hit <kbd>Enter</kbd>. This example uses the `reboot` command.
+
 ```bash
 man reboot
 ```
@@ -103,6 +117,7 @@ man reboot
 **Use case**: A user wants to see examples of command usage, command output, and easily navigate to commands offering related or supporting functionality.
 
 **Usage**: Type `info` + any command into a Terminal session, then hit <kbd>Enter</kbd>. This example uses the `ls` command.
+
 ```bash
 info ls
 ```

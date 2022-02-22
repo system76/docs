@@ -111,7 +111,7 @@ These values can be changed up to around 10GB if you need to go over 10GB. This 
 
 ### Server Properties
 
-In the server.properies files you can change the compression threshold and the default view distance. I would recommend keeping it at 4 for lower end hardware hosting the server and 10 for higher end.
+In the server.properties files you can change the compression threshold and the default view distance. I would recommend keeping it at 4 for lower end hardware hosting the server and 10 for higher end.
 
 `network-compression-threshold: -1`
 `view-distance:4`

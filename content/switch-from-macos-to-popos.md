@@ -331,6 +331,7 @@ Another popular alternative is VLC Media Player. This software is available in t
 ```shell
 sudo apt-get install gnome-sushi
 ```
+
 **NOTE:** You need to restart Nautilus (default file manager) in order for this to take effect. Log out and log back in to do so.
 
 ![Sushi](/images/pop-os-screenshots/sushi.png)

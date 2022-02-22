@@ -110,7 +110,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     ![fstab](/images/hibernation/fstab.png)
 
-8. Reboot your computer and allow to load Pop!_OS normally.
+8. Reboot your computer and allow it to load Pop!\_OS normally.
 
 9. Add a resume target for the kernel:
 

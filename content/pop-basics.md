@@ -142,7 +142,7 @@ As in previous versions a search box is provided which can search installed appl
 
 ### Pop!_OS 21.04
 
-![cosmic desktop](/images/pop-basics/cosmic-desktop.png)
+![COSMIC Desktop](/images/pop-basics/cosmic-desktop.png)
 
 ![workspaces](/images/pop-basics/workspaces.png)
 
@@ -198,4 +198,4 @@ The <u>Pop!_Shop</u> can be used to install additional software. Just search for
 
 ![Pop!_Shop](/images/pop-basics/pop-shop.png)
 
-To learn more about the Pop!_Shop refer to [this page](https://github.com/pop-os/shop), and for more information about package management in Pop!\_OS see this [article](articles/manage-repos-pop).
+To learn more about the Pop!_Shop refer to [this page](https://github.com/pop-os/shop), and for more information about package management in Pop!\_OS see this [article](/articles/manage-repos-pop/).

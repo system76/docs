@@ -70,4 +70,11 @@ Congratulations! You've successfully set up and are using AMD's FidelityFX Super
 
 ### Lutris
 
-Lutris version 0.5.9 will include a toggle for AMD FSR. This is currently in beta, but this guide will be updated when it launches!
+Lutris version 0.5.9 includes a toggle for AMD FSR in each game's preferences. This requires the FSHack version of Lutris-Wine.
+
+* Right-click your installed game and select "Configure".
+* Select the Runner Options tab at the top
+* For Wine Version, ensure you have lutris-fshack-6.13 or newer. It will mention "fshack" in the name.
+* Enable the "Enable AMD FidelityFX Super Resolution (FSR)" toggle in the options below.
+
+Then follow the "Setup your In-game Resolution" steps above, and enjoy FSR via Lutris!

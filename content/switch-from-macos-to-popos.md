@@ -336,7 +336,6 @@ sudo apt-get install gnome-sushi
 
 ![Sushi](/images/pop-os-screenshots/sushi.png)
 
-
 ### Listening to Music
 
 | macOS | Pop!\_OS |

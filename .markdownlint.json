@@ -6,13 +6,18 @@
   "MD024": {
     "allow_different_nesting": true
   },
+  
+  "MD031": false,
 
   "MD033": {
     "allowed_elements": [
       "font-awesome-icon",
       "kbd",
       "sup",
-      "u"
+      "u",
+      "iframe",
+      "video",
+      "source"
     ]
   },
 

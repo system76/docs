@@ -34,6 +34,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Galago Pro [(galp5)](https://tech-docs.system76.com/models/galp5/README.html) | Thelio Massive B1 [(thelio-massive-b1)](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
 | Gazelle [(gaze15)](https://tech-docs.system76.com/models/gaze15/README.html) | |
 | Gazelle [(gaze16)](https://tech-docs.system76.com/models/gaze16/README.html) |
+| Kudu [(kudu6)](https://tech-docs.system76.com/models/kudu6/README.html) |
 | Lemur Pro [(lemp9)](https://tech-docs.system76.com/models/lemp9/README.html) |
 | Lemur Pro [(lemp10)](https://tech-docs.system76.com/models/lemp10/README.html) |
 | Oryx Pro [(oryp6)](https://tech-docs.system76.com/models/oryp6/README.html) |

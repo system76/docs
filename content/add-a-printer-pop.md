@@ -16,26 +16,18 @@ section: hardware
 tableOfContents: true
 ---
 
-Most printers will be automatically added to the computer.  If not, to add a printer to your System76 Computer, press the super key and type the word *Printers*, then choose the <u>Printers</u> application in the search box. In the <u>Printers</u> Application, click the **Add a Printer...** button and a box will pop up with different options. Wait a few seconds for printers to appear in the Device List.
+Most printers will be automatically added to the computer. If a printer is not automatically added, users can manually add printers in the Settings -> Printers menu.  
 
-![Add Printer](/images/add-a-printer-pop/printer-settings.png)
+1. Press the <kbd>Super</kbd> key and type the word *Printers*.
+2. Choose the <u>Printers</u> application in the search box.
+3. In the <u>Printers</u> Application, click the **Add a Printer...** button and a box will pop up with different options.
+4. Wait a few seconds for printers to appear in the Device List.
 
-Select the correct printer and click **Add**.
+   ![Add Printer](/images/add-a-printer-pop/printer-settings.png)
 
-## HP and Epson Printers
+5. Select the correct printer and click **Add**.
 
-HP printers are supported with the **hplip** package, which is installed by default in Pop!_OS_
-
-```bash
-sudo apt install hplip
-```
-
-If you would like to use a guided GUI application from HP, you will need to install a python dependency:
-
-```bash
-sudo apt install python3-pyqt5
-hp-setup
-```
+## Epson Printers
 
 Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
@@ -51,39 +43,42 @@ sudo usermod -aG lpadmin $USER
 
 ## Brother Printers
 
-Search for your printer on this page <https://www.brother-usa.com/brother-support/driver-downloads>
+Brother provides a driver installation tool for Linux users. Install the appropriate driver for your Brother printer by downloading this tool and running the installer with your printer model appended to the command.
 
-Once you find your printer, click the downloads link, and select the "Linux" option under "Select OS Family"
+1. Click [this link](https://support.brother.com/g/b/faqend.aspx?c=us&lang=en&prod=hll2300d_us_eu_as&faqid=faq00100556_000) to download Brother's Driver Install Tool for Linux.
 
-Select Linux (deb) for your "OS Version"
+2. Click the "Click here to download the tool" link on the Brother download page.
 
-Click the Driver Install Tool under utilities on that page.
+3. Select Linux (deb) for your "OS Version", then click OK.
 
-Click "Agree to the EULA and Download"
+4. Click "Agree to the EULA and Download".
 
-Click Activities in the top left of your display, and search "Terminal" then click the Terminal application to open it.
+5. Choose the Save File option when prompted.
 
-Change directory to where you downloaded the driver, then unzip it. This is usually the downloads directory.
+6. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch the Terminal application.
 
-```
-cd Downloads
-gunzip linux-brprinter-installer-*.*.*-*.gz
-```
+7. Change directory to where you downloaded the driver, then unzip it. This is usually the downloads directory.
 
-After this, run the installer, but with your printer model appended to the end. For this example, we will use the model HL-L5000D.
-Note that your installer version may differ from this guide. It is best to type the first portion of the installer name, and then hit TAB to complete the installer name.
+   ```
+   cd Downloads
+   gunzip linux-brprinter-installer-*.*.*-*.gz
+   ```
 
-```
-sudo bash linux-brprinter-installer
-```
+8. Run the installer by typing the unzipped installer name into the terminal.
 
-When typing the above command, hit TAB after that for the installer name to be autocompleted, and then add your printer name, after a space, at the end.
+   > Note: Your installer version may differ from this guide. Type the first portion of the installer name as shown below, and then hit <kbd>TAB</kbd> to complete the installer name.
 
-Example:
+   ```
+   sudo bash linux-brprinter-installer
+   ```
 
-`sudo bash linux-brprinter-installer-2.2.2-2 HL-L5000D`
+9. Add a space after the tab-completed file name, then type your printer model (HL-L5000D used as an example):
 
-If you are asked for your "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
+   ```
+   sudo bash linux-brprinter-installer-2.2.2-2 HL-L5000D
+   ```
+
+   >Note: If prompted for a "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
 
 ![Printer Properties](/images/add-a-printer-pop/printerprops.png)
 
@@ -99,14 +94,14 @@ The status window will show current print jobs, detected printers, and other inf
 
 ## Useful Commands
 
+This command reinstalls <u>CUPS</u>, the main printing software, which can help with generic issues.
+
 ```bash
 sudo apt install --reinstall cups cups-client
 ```
 
-This will reinstall <u>CUPS</u>, the main printing software, which can help with generic issues.
+This command reinstalls the system control panel if the settings are not available.
 
 ```bash
-sudo apt install --reinstall ~n^system-config-printer
+sudo apt install --reinstall system-config-printer
 ```
-
-This will reinstall the system control panel if the settings are not available.

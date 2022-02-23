@@ -30,6 +30,12 @@ To install the cuDNN library, please run this command:
 sudo apt install system76-cudnn-11.2
 ```
 
+To verify installation, run this command after a reboot:
+
+```bash
+nvcc -V
+```
+
 ### For older releases of The NVIDIA CUDA Toolkit
 
 #### These versions are only in Pop 21.04

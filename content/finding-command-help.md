@@ -63,14 +63,21 @@ which libreoffice | xargs dpkg -S
 ```
 ![which output](/images/finding-command-help/which-output.png)
 
-Users may see an error stating no matching path can be found, or the returned path may not be the actual installation path for an application. `dpkg` only knows the intended default installation path for a package. It's common for packages to be symbolically linked: The system creates a file pointing to the actual location of the package. Symbolic linking is similar to creating an application shortcut in Windows. Pass the path output into the `ls -alh` command to verify if an executable file is symbolically linked.
+Users may see an error stating no matching path can be found. This occurs when `which` returns a symbolic link instead of the actual installation directory. Packages create symbolic links because the Terminal only recognizes executable commands from specific default and user defined directories. `dpkg` only knows the intended default installation path for a package, but may not know which package owns a symbolic link. Pass the path output from `which` into the `ls -alh` command to verify if an executable file is symbolically linked.
 
 ```bash
-which libreoffice | xargs ls -alh
+which shutdown | xargs ls -alh
 ```
 ![which ls](/images/finding-command-help/which-ls.png)
 
-The output indicates the package containing the `openoffice` command is symbolically linked to `..lib/libreoffice/program/soffice`. This verification step does not account for additional potential scenarios where a package installs to symlinked directory.
+The output indicates the package containing the `open` command is symbolically linked to `/bin/systemctl`. Now pass `/bin/systemctl` into the `dpkg -S` command to determine the package that owns this directory.
+
+```bash
+dpkg -S /bin/systemctl
+```
+![which dpkg](/images/finding-command-help/which-dpkg.png)
+
+This verification step does not account for potential scenarios where a package installs to a symlinked directory, and certain commands may still result in the "no path found" error even after performing these steps.
 
 ### apropos
 

@@ -110,6 +110,7 @@ If the Pop!_Shop is showing an update available, but there are no updates listed
 ```bash
 flatpak update
 flatpak uninstall --unused
+flatpak repair --user
 ```
 
 ## Useful Programs

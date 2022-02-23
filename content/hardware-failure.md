@@ -254,8 +254,6 @@ Specific instructions for working on your hardware model can be found [here](htt
 
 Quotes for replacement fans and thermal paste can be generated on open support tickets. To open a support ticket, visit [this link](https://system76.com/my-account/support-tickets/new)
 
-### Drive Issues
-
 ## Machine Check Exceptions
 
 Machine Check Exceptions are hardware failure events and can be logged with <u>rasdaemon.service</u> to journalctl. On Ubuntu based systems (<u>and Pop!_OS</u>) you can install via:

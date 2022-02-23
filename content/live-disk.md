@@ -131,7 +131,13 @@ After creating the live disk, insert the USB drive into your computer, then rebo
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 
+This menu is on our Closed Firmware systems.
+
 ![Boot Menu](/images/live-disk/boot-menu.jpg)
+
+This menu is on our Open Firmware systems.
+
+![One Time Boot](/images/boot-menu/one-time-boot.jpg)
 
 Use the arrow keys to select the USB drive, then press <kbd>Enter</kbd> to boot the selection.
 

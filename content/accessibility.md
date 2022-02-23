@@ -15,7 +15,7 @@ section: software
 tableOfContents: true
 ---
 
-Pop!_OS shares many of the same accessibility options as Gnome. These accessibility options allow for Pop!_OS to be used by as many people in the community as possible. If there are additional tools or options that you would like to see added to Pop!_OS in the future please let us know and we will see if implementation is possible.
+Pop!_OS shares many accessibility options with Gnome. These features expand Pop!_OS's usability to more users. If there are additional tools or options that you would like to see added to Pop!_OS in the future please let us know and we will see if implementation is possible.
 
 Additional information can be found on GNOME accessibility web page [here](https://help.gnome.org/users/gnome-help/stable/a11y.html).
 
@@ -65,4 +65,4 @@ Once Universal Access is open you will have options for the following sections.
 
 ## Keyboard Shortcuts & Modifiers
 
-Pop!_OS also provides many keyboard shortcuts to help users with navigating their system from the keyboard. The documentation for the keyboard shortcuts can be found by clicking this link [here](https://pop.system76.com/docs/keyboard-shortcuts/).
+Pop!_OS also provides many keyboard shortcuts to help users with navigating their system from the keyboard. The documentation for the keyboard shortcuts can be found by clicking this link [here](https://support.system76.com/articles/pop-keyboard-shortcuts).

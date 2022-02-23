@@ -36,7 +36,11 @@ We can instead use the <u>Terminal</u> application to perform the same behavior 
 
 |         SATA                       |           NVMe                 |
 |:----------------------------------:|:------------------------------:|
-| sudo fsck -Cy /dev/sda             | sudo fsck -Cy /dev nvme0n1     |
+| sudo fsck -Cy /dev/sda#            | sudo fsck -Cy /dev nvme0n1p#   |
+
+Substitute # with the partition number of your OS install, which can be determined by opening a terminal window and typing ```lsblk``` and pressing <kbd>Enter</kbd>.
+
+The drive with the / mountpoint will be your OS installation.
 
 If the commands complete without errors, or with errors corrected, reboot back into the installed OS.
 If errors are reported and not corrected, your drive may be experiencing hardware issues. You'll want to use your live environemnt (Live Disk or Recovery) to back up your files to another drive. We have an article on this process [here](https://support.system76.com/articles/disaster-recovery).

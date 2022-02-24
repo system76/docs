@@ -322,6 +322,20 @@ We also have a help article for installing codecs [here](/articles/codecs)
 
 Another popular alternative is VLC Media Player. This software is available in the Pop!\_Shop, and offers many customizable features.
 
+### Quick File Previews (spacebar)
+
+| macOS | Pop!\_OS |
+|---|---|
+| [Quick Look](https://support.apple.com/en-uz/guide/mac-help/mh14119/mac) | [Sushi](https://gitlab.gnome.org/GNOME/sushi) (available through `apt` package manager)|
+
+```shell
+sudo apt-get install gnome-sushi
+```
+
+**NOTE:** You need to restart Nautilus (default file manager) in order for this to take effect. Log out and log back in to do so.
+
+![Sushi](/images/pop-os-screenshots/sushi.png)
+
 ### Listening to Music
 
 | macOS | Pop!\_OS |

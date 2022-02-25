@@ -70,7 +70,7 @@ dpkg -S pop-upgrade
 
 **Use case**: A user would like to know which installed package provides a specific command.
 
-**Usage**: Type `which` + command, then pipe the output of `which` into `dpkg -S` using `xargs`. The `xargs` command allows users to pass the output of a command as standard input into another command. The below example searches for the path of the `libreoffice` command, and then searches for the program associated with that path.
+**Usage**: Type `which` + command, then pipe the output of `which` into `dpkg -S` using `xargs`. The `xargs` command allows users to pass the output of a command as standard input into another command. The below example searches for the path of the `libreoffice` command, and then searches for the package associated with that path.
 
 ```bash
 which libreoffice | xargs dpkg -S
@@ -88,7 +88,7 @@ which mkdir | xargs dpkg -S
 
 ![dpkg -S output with no results](/images/finding-command-help/dpkg-search-no-results.png)
 
-This occurs when a package is programmed to install a file to one directory, but that directory is symlinked to another directory on the system; in this situation, the package manager installs the file to a different directory than what the package was programmed for. The following directories are commonly symlinked on Pop!_OS systems:
+This occurs when a package is programmed to install a file to one directory, but that directory is symlinked to another directory on the system; in this situation, the package manager installs the file to a directory that differs from the original package's progamming. The following directories are commonly symlinked on Pop!_OS systems:
 
 | Symlink Name | Actual Directory |
 |--------------|------------------|
@@ -97,7 +97,7 @@ This occurs when a package is programmed to install a file to one directory, but
 | /lib         | /usr/lib         |
 | /lib64       | /usr/lib64       |
 
-If `dpkg -S` is unable to find a match, run `which` manually, remove `/usr` from the beginning of the output, and try again:
+If `dpkg -S` is unable to find a match, run `which` manually, remove `/usr` from the beginning of the output, and reattempt the command:
 
 ```bash
 which mkdir

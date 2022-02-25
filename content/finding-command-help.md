@@ -50,34 +50,77 @@ whatis mkdir
 ```
 ![whatis output](/images/finding-command-help/what-output.png)
 
+### dpkg -S
+
+`dpkg -S` provides an index of files installed from a package.
+
+**Use case**: A user is attempting to learn about commands included with a recently installed package.
+
+**Usage**: Type `dpkg -S` + package name, then hit <kbd>Enter</kbd>. This command only works with currently-installed packages.
+
+```bash
+dpkg -S pop-upgrade
+```
+
+![dpkg -S output](/images/finding-command-help/dpkg-search-output.png)
+
 ### which & dpkg -S
 
-`which` provides the directory location of a command. The output of `which` can be passed into `dpkg -S` to perform a search of associated packages.
+`which` provides the file location of a command. The output of `which` can be passed into `dpkg -S` to perform a search of associated packages.
 
-**Use case**: A user is attempting to learn about commands included with a recently installed program, and would like to know which installed package provides a specific command  
+**Use case**: A user would like to know which installed package provides a specific command.
 
 **Usage**: Type `which` + command, then pipe the output of `which` into `dpkg -S` using `xargs`. The `xargs` command allows users to pass the output of a command as standard input into another command. The below example searches for the path of the `libreoffice` command, and then searches for the program associated with that path.
 
 ```bash
 which libreoffice | xargs dpkg -S
 ```
-![which output](/images/finding-command-help/which-output.png)
 
-Users may see an error stating no matching path can be found. This occurs when `which` returns a symbolic link instead of the actual installation directory. Packages create symbolic links because the Terminal only recognizes executable commands from specific default and user defined directories. `dpkg` only knows the intended default installation path for a package, but may not know which package owns a symbolic link. Pass the path output from `which` into the `ls -alh` command to verify if an executable file is symbolically linked.
+![dpkg file lookup output](/images/finding-command-help/dpkg-file-lookup-output.png)
+
+#### Commands within symlinked directories
+
+Users may see an error stating no matching path can be found:
 
 ```bash
-which shutdown | xargs ls -alh
+which mkdir | xargs dpkg -S
 ```
-![which ls](/images/finding-command-help/which-ls.png)
 
-The output indicates the package containing the `open` command is symbolically linked to `/bin/systemctl`. Now pass `/bin/systemctl` into the `dpkg -S` command to determine the package that owns this directory.
+![dpkg -S output with no results](/images/finding-command-help/dpkg-search-no-results.png)
+
+This occurs when a package is programmed to install a file to one directory, but that directory is symlinked to another directory on the system; in this situation, the package manager installs the file to a different directory than what the package was programmed for. The following directories are commonly symlinked on Pop!_OS systems:
+
+| Symlink Name | Actual Directory |
+|--------------|------------------|
+| /bin         | /usr/bin         |
+| /sbin        | /usr/sbin        |
+| /lib         | /usr/lib         |
+| /lib64       | /usr/lib64       |
+
+If `dpkg -S` is unable to find a match, run `which` manually, remove `/usr` from the beginning of the output, and try again:
 
 ```bash
+which mkdir
+dpkg -S /bin/mkdir
+```
+
+![dpkg file lookup with a /usr symlink](/images/finding-command-help/dpkg-search-usr-symlink.png)
+
+In the above example, the `mkdir` command (which comes from the `coreutils` package) was supposed to be installed to `/bin/mkdir`, but is located at `/usr/bin/mkdir` instead because `/bin` is a symlink to `/usr/bin` in Pop!_OS.
+
+#### Commands symlinked to other files
+
+Sometimes, a command may not be an executable itself, but may be symlinked to an executable installed by a different package. To check if this is the case, after getting the command's path with `which`, run the path through `ls -l` to display any link information:
+
+```bash
+which reboot
+ls -l /usr/sbin/reboot
 dpkg -S /bin/systemctl
 ```
-![which dpkg](/images/finding-command-help/which-dpkg.png)
 
-This verification step does not account for potential scenarios where a package installs to a symlinked directory, and certain commands may still result in the "no path found" error even after performing these steps.
+![dpkg file lookup with a symlinked executable](/images/finding-command-help/dpkg-search-symlinked-executable.png)
+
+In the above example, the `reboot` command is located at `/usr/sbin/reboot` (which is installed from the `systemd-sysv` package), but that file is actually a symlink to `/bin/systemctl` (which comes from the `systemd` package.)
 
 ### apropos
 

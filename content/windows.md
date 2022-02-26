@@ -339,7 +339,7 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
-See [additional setup](#additional-setup-for-windows) for next steps.
+See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
 ---
 
@@ -462,7 +462,7 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
-See [additional setup](#additional-setup-for-windows) for next steps.
+See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
 ---
 

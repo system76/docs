@@ -57,7 +57,7 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 6. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch the Terminal application.
 
-7. Change directory to where you downloaded the driver, then unzip it. This is usually the downloads directory.
+7. Change directory to where you downloaded the driver, then unzip it. This is usually the downloads directory. Note that those stars are placeholders for the version number of the installer, feel free to put the version number in place of each of those stars.
 
    ```
    cd Downloads
@@ -72,7 +72,7 @@ Brother provides a driver installation tool for Linux users. Install the appropr
    sudo bash linux-brprinter-installer
    ```
 
-9. Add a space after the tab-completed file name, then type your printer model (HL-L5000D used as an example):
+9. Add a space after the tab-completed file name, then type your printer model (HL-L5000D used as an example, as is the 2.2.2.2):
 
    ```
    sudo bash linux-brprinter-installer-2.2.2-2 HL-L5000D

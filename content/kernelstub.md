@@ -30,23 +30,17 @@ tableOfContents: true
 
 From the `kernelstub` [Github page](https://github.com/isantop/kernelstub)
 
-### Ubuntu vs. Pop!_OS
-
-Developed by System76, `kernelstub` is included with Pop!\_OS by default. But it can also be installed in Ubuntu and other debian based distributions. The `.deb` file can be downloaded on Github [here](https://github.com/isantop/kernelstub/releases). Source code is also available.
+Developed by System76, `kernelstub` is included with Pop!\_OS to manage kernel settings and boot files with `systemd-boot`. The `.deb` file can be downloaded on Github [here](https://github.com/isantop/kernelstub/releases) along with source code. `kernelstub` is designed to make working with `systemd-boot` easy to work with.
 
 ## Common Uses
 
-The benefit of `kernelstub` is the ease with which kernel options and boot parameters can be quickly added to `initramfs` with a few commands, and do not need to be specified again on every boot.
+The benefit of `kernelstub` is the ease with which kernel options and boot parameters can be managed. You can be quickly added (or remove) options that are used by the Linux kernel on boot. 'kernelstub' will make sure to only have a sinlge instance of options added.
 
-For example a kernel option can be quickly added with a single Terminal command:
+For example, this makes adds both "quiet" and "splash" to the kernel options:
 
 ```bash
 sudo kernelstub -o "quiet splash"
 ```
-
-With this parameter we are adding the "quiet" option (`-o`) to `initramfs` making sure that the option is applied on the next reboot and all subsequent reboots.
-
-**NOTE:** "Quiet Splash" is enabled by default with `kernelstub`.
 
 A full set of available options are listed on the Github page. They can also be printed out in the Terminal by passing:
 
@@ -54,17 +48,11 @@ A full set of available options are listed on the Github page. They can also be 
 sudo kernelstub --help
 ```
 
-OR
-
-```bash
-sudo kernelstub -h
-```
-
-Most of the options available have short and long-form options like the examples above. Output of the `--help` produced at the time of this writing is included [below.](#help-output)
+Most of the options available have short and long-form options. Output of the `--help` produced at the time of this writing is included [below.](#help-output)
 
 ## Troubleshooting
 
-`kernelstub` is also a useful troubleshooting tool. It allows users to quickly change the default kernel used at boot. It also provides shortcuts for passing instructions on CPU and drive behaviors at boot.
+`kernelstub` is also a useful troubleshooting tool, allowing quick changes to kernel options used on boot.
 
 ### Verbose Output
 
@@ -81,12 +69,6 @@ This command creates a log of `kernelstub` output and saves it in the `Home` fol
 To see if a command will do something intended or something harmful, you can run `kernelstub` with a "dry run" instruction added.
 
 ```bash
-sudo kernelstub -c
-```
-
-OR
-
-```bash
 sudo kernelstub --dry-run
 ```
 
@@ -98,9 +80,13 @@ If your dry run yields errors, you can look up the error codes [here](https://gi
 
 If a system exhibits drive, or drive power issues, the drive may not be correctly resuming from suspend. Drive latency can be adjusted using `kernelstub`.
 
-The optimal latency for an installed NVME drive can be determined by running:
+Finding the latency settings from the drive controller to limit the drive from the deepest drive states can be found from the following commands:
 
-[COMMAND HERE]
+```bash
+# make sure smartclt is installed
+sudo apt install smartmontools
+sudo smartctl -a /dev/nvme0n1
+```
 
 and then can be set with a `kernelstub` command like this:
 

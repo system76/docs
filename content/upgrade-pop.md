@@ -233,7 +233,7 @@ sudo sed -Ei 's/us.archive/old-releases/g' /etc/apt/sources.list.d/system.source
 # get release files
 sudo apt update -m
 # make sure dpkg is happy with package state
-sudo apt dpkg --configure -a
+sudo dpkg --configure -a
 # make sure apt is happy with dependency tree
 sudo apt install -f
 # upgrade all packages and depencencies to newest in groovy
@@ -254,7 +254,7 @@ sudo add-apt-repository "deb http://apt.pop-os.org/release impish main"
 sudo mv /etc/apt/sources.list.d/archive_uri-http_apt_pop-os_org_release-groovy.list /etc/apt/sources.list.d/pop-os-ppa.list
 # update all sources from groovy to impish
 sudo sed -Ei 's/groovy/impish/g' /etc/apt/sources.list.d/*
-sudo sed -Ei 's/old-releases/us.archive/g' /etc/apt/sources.listd./system.sources
+sudo sed -Ei 's/old-releases/us.archive/g' /etc/apt/sources.list.d/system.sources
 ```
 
 ### Now, Do the Upgrade

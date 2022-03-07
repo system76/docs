@@ -129,6 +129,7 @@ sudo kernelstub -a "intel_idle.max_cstate=4"
 The higher the `cstate` number, the lower the CPU power is set. `cstate` 0 means the CPU cores are running. `cstate` 1 is `halt`. `cstate` 2 is `stop-clock` or partial sleep, `cstate` 3 is `sleep` and `cstate` 4 is deep sleep. The maximum `cstate` number is determined by the processor model.
 
 In our example, setting the maximum `cstate` to 4 means that the computer can go into deep sleep, but any additinoal power-saving measures will not be used. This can counteract bugs where deeper sleep states cause unexpected behavior, but can increase battery consumption.
+
 ### Backlight Controls
 
 Kernelstub can be used to change ACPI settings for backlight control in the event of function keys misbehaving.

@@ -34,7 +34,7 @@ Developed by System76, `kernelstub` is included with Pop!\_OS to manage kernel s
 
 ## Common Uses
 
-The benefit of `kernelstub` is the ease with which kernel options and boot parameters can be managed. You can be quickly add (or remove) options that are used by the Linux kernel on boot. `kernelstub` will make sure to only have a single instance of options added.
+The benefit of `kernelstub` is the ease with which kernel options and boot parameters can be managed. You can quickly add (or remove) options that are used by the Linux kernel on boot. `kernelstub` will make sure to only have a single instance of options added.
 
 For example, the command below adds both "quiet" and "splash" to the kernel options:
 

@@ -57,11 +57,11 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 6. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch the Terminal application.
 
-7. Change directory to where you downloaded the driver, then unzip it. This is usually the downloads directory. Note that those stars are placeholders for the version number of the installer, feel free to put the version number in place of each of those stars.
+7. Change directory to where you downloaded the driver (usually the Downloads directory). Unzip the file using the commmand below.
 
    ```
    cd Downloads
-   gunzip linux-brprinter-installer-*.*.*-*.gz
+   gunzip linux-brprinter-installer-*.gz
    ```
 
 8. Run the installer by typing the unzipped installer name into the terminal.

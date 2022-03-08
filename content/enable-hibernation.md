@@ -114,7 +114,9 @@ The purpose of this article is to provide steps for enabling hibernation for any
 
     ![fstab](/images/hibernation/fstab.png)
 
-8. Add a resume target for the kernel:
+8. Reboot your computer and allow it to load Pop!\_OS normally.
+
+9. Add a resume target for the kernel:
 
     Reboot the computer into the normal OS partion.
 

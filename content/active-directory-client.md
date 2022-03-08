@@ -60,8 +60,8 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
     ```
     kinit administrator
     klist
-    msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os.system76.local -k my-keytab.keytab ‑‑computer-name POP-OS ‑‑upn POP-OS$ ‑‑server adserver.system76.local ‑‑user-creds-only
-    msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os -k my-keytab.keytab ‑‑computer-name POP-OS ‑‑upn POP-OS$ ‑‑server adserver.system76.local ‑‑user-creds-only
+    msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os.system76.local -k my-keytab.keytab --computer-name POP-OS --upn POP-OS$ --server adserver.system76.local --user-creds-only
+    msktutil -N -c -b 'CN=COMPUTERS' -s POP-OS/pop-os -k my-keytab.keytab --computer-name POP-OS --upn POP-OS$ --server adserver.system76.local --user-creds-only
     kdestroy
     ```
 

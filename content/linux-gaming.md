@@ -99,6 +99,18 @@ Downloaded 100.0% - 370.81 MiB/370.81 MiB
 [INFO] Installed in: /home/aaronh/.steam/root/compatibilitytools.d/Proton-6.10-GE-1
 ```
 
+You can also use `protonup` to install older versions of ProtonGE if you have a game that works better on an older release by using the `protonup --releases` command and then the `protonup -t` command followed by a specific release, to grab that release:
+
+```bash
+➜  ~ protonup -t GE-Proton7-1
+Ready to download Proton-GE-Proton7-1 
+Size      : 407.23 MiB 
+Published : 2022-02-27
+Continue? (Y/N): y
+Downloaded 100.0% - 407.25 MiB/407.23 MiB
+[INFO] Installed in: /home/s31bz/.steam/root/compatibilitytools.d/Proton-GE-Proton7-1
+```
+
 ## Gamehub (Install)
 
 <u>GameHub</u> is a game launcher that can use different compatibility layers like Wine/Proton, DOSBox and other tools. It can hook into Steam, GOG and other sources.

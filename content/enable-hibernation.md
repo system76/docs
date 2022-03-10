@@ -174,4 +174,4 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 Save (ctrl+s) and close the file (ctrl+x).
 
-On your next boot, you should now have an `Hibernate` option in the top-right, drop-down, Power Options menu. The `Hibernate` option is located alongside the existing `Suspend` and `Shut Down` options.
+On your next boot, you should now have an `Hibernate` option in the top-right, drop-down, `Power Off / Logout` Options menu. The `Hibernate` option is located alongside the existing `Suspend` and `Power Off` options.

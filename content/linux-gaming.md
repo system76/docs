@@ -99,7 +99,7 @@ Downloaded 100.0% - 370.81 MiB/370.81 MiB
 [INFO] Installed in: /home/aaronh/.steam/root/compatibilitytools.d/Proton-6.10-GE-1
 ```
 
-You can also use `protonup` to install older versions of ProtonGE if you have a game that works better on an older release by using the `protonup --releases` command and then the `protonup -t` command followed by a specific release, to grab that release:
+You can also use `protonup` to install older versions of ProtonGE if you have a game that works better on an older release by using the `protonup --releases` command. The `protonup -t` command can then be run, followed by a specific release, to grab that release:
 
 ```bash
 ➜  ~ protonup -t GE-Proton7-1

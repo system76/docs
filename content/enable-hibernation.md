@@ -114,9 +114,9 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 8. Reboot your computer and allow it to load Pop!\_OS normally. Check that the swap partition in use and is sized for your system memory by running the following command in a terminal:
 
-```bash
-free
-```
+    ```bash
+    free
+    ```
 
 9. Add a resume target for the kernel:
 
@@ -174,4 +174,4 @@ free
 
 Save (ctrl+s) and close the file (ctrl+x).
 
-On your next boot, you should now have in option next to powering down your computer in the power options menu.
+On your next boot, you should now have an `Hibernate` option in the top-right, drop-down, Power Options menu. The `Hibernate` option is located alongside the existing `Suspend` and `Shut Down` options.

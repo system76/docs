@@ -45,7 +45,7 @@ sudo usermod -aG lpadmin $USER
 
 Brother provides a driver installation tool for Linux users. Install the appropriate driver for your Brother printer by downloading this tool and running the installer with your printer model appended to the command.
 
-1. Click [this link](https://support.brother.com/g/b/productsearch.aspx?c=us&lang=en&content=dl) to download Brother's Driver Install Tool for Linux while searching for your appropriate printer.
+1. Click [this link](https://support.brother.com/g/b/productsearch.aspx?c=us&lang=en&content=dl) to download Brother's Driver Install Tool for Linux while searching for the appropriate printer.
 
 2. Click the "Click here to download the tool" link on the Brother download page.
 

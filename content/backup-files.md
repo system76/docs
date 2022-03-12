@@ -20,6 +20,8 @@ tableOfContents: true
 There are many ways to back up important files on your computer. It's a personal choice which one to use based on habits, preferences, and what is being backed up. We will outline a few options here, but the final solution may be a mix of several of these options.
 
 ## Data Policy
+<details>
+    <summary>Click to expand</summary>
 
 The key to good backups is having the data automatically backed up, accessible, secure, and distributed. All backup solutions should be evaluated against these 4 criteria:
 
@@ -29,17 +31,28 @@ The key to good backups is having the data automatically backed up, accessible, 
 - Distributed: Data needs to be in multiple places. If all the copies are in one location, the risk for data loss increases (for example, if your data is saved to a USB disk in your house, but there is a fire, both the computer and the backup disk could potentially be lost at the same time.)
 
 **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two (2) copies on-site, and one (1) copy off-site. This off-site backup could be through a cloud storage solution, a drive that's kept at a relative's house, or in a safety deposit box.
+</details>
 
 ## User Files
 
-User files are the most common data to back up. This includes documents, pictures, and other personal files. Typically, these documents are all saved in your home directory (`/home/username`).
+<details>
+    <summary>Click to expand</summary>
 
-### Deja Dup
+User files are the most common data to back up. This includes documents, pictures, and other personal files. Typically, these documents are all saved in your home directory (`/home/username`).
+</details>
+
+## Deja Dup
+
+<details>
+    <summary>Click to expand</summary>
 
 [Déjà Dup](https://wiki.gnome.org/Apps/DejaDup) is a popular, straightforward backup option. It can be used to back up user data locally, remotely, or to a cloud server. It can also be set up to run automatically on a regular basis.
 
-#### Installation
+### Installation
 
+<details>
+    <summary>Click to expand</summary>
+    
 To install Deja Dup, search for it in the Pop!\_Shop, Ubuntu Software or run this command:
 
 ```bash
@@ -53,14 +66,22 @@ flatpak install flathub org.gnome.DejaDup
 ```
 
 Once Deja Dup is installed, it will be labeled as "Backups" in the Activities overview.
+</details>
 
-#### Selecting Data to Backup
+### Selecting Data to Backup
+
+<details>
+    <summary>Click to expand</summary>
 
 With Deja Dup (Backups) open, you can select the folders you wish to save or ignore using the pages listed on the left. By default, Deja Dup will backup your entire home directory, which includes your Documents, Pictures, Music, and Videos folders. It ignores your Downloads folder and any items in the Trash. Use the plus and minus buttons as needed to modify both categories.
 
 ![Selecting data to backup in Deja-Dup](/images/backup/deja_selection.png)
+</details>
 
-#### Choosing a Backup Location
+### Choosing a Backup Location
+
+<details>
+    <summary>Click to expand</summary>
 
 On the **Storage location** page, you can configure the location where your backup will be stored.
 
@@ -94,20 +115,25 @@ Remote (off-site) location provides geographical redundancy, and is accessible a
 Requires a Google account.
 Your data could be accessible by Google or third parties (including law enforcement).
 Will be slower to back up (depending on your internet speed), and uses your data transfer/bandwidth.
+</details>
 
-#### Scheduling Regular Backups
+### Scheduling Regular Backups
 
 To schedule backups to run automatically, select **Scheduling** from the list on the left, then flip the switch to enable automatic backups. Schedule the backup for a time when you know the location will be available (for example, when you know you'll have the USB drive plugged in). Many people choose to let their backups run overnight or on weekends.
 
 ![Scheduling backups in Deja-Dup](/images/backup/deja_scheduling.png)
 
-#### Restoring Your Data
+### Restoring Your Data
 
 To restore your data with Deja Dup, select the **Overview** page, then click the **Restore...** button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.
 
 ![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
+</details>
 
-### Cloud Desktop Clients
+## Cloud Desktop Clients
+
+<details>
+    <summary>Click to expand</summary>
 
 Many online services offer small amounts of free storage and desktop clients with automatic synchronization. A few examples of companies that offer cross-platform cloud storage are:
 
@@ -120,8 +146,12 @@ Many online services offer small amounts of free storage and desktop clients wit
 One solution to keep the data from being read by cloud storage providers is to keep all of the files in password-protected archives. A .zip or .7z file with a password is encrypted, and can't be easily accessed by anyone without the password.
 
 Another option is [Nextcloud](https://nextcloud.com/). Nextcloud is an open-source cloud solution that is completely controlled by the user. The remote server needs to be set up manually (or a trusted third party could be paid to set up and maintain the server.)
+</details>
 
 ### Copy Data Manually Using the Files App
+
+<details>
+    <summary>Click to expand</summary>
 
 With an external drive attached, data can be manually copied to an external drive. Use the file browser to copy data from the internal drive to the external drive.
 
@@ -130,9 +160,12 @@ Easy and straightforward to copy data from one place to another.
 
 <u>Cons:</u>
 Because the process is manual, updates and changes to the data may be missed over time. No geographic redundancy.
+</details>
 
 ### Terminal Only (Advanced)
 
+<details>
+    <summary>Click to expand</summary>
 In certain situations, you may only have access to a command-line interface. The command-line `rsync` program verifies data integrity and avoids re-copying files that are already backed up.
 
 An example of the rsync command would be:
@@ -142,12 +175,18 @@ rsync -a ~/ OUTPUT_DIRECTORY
 ```
 
 ...where `-a` tells rsync to output as an archive, `~/` refers to your home directory as the source location, and `OUTPUT_DIRECTORY` should be replaced with the location of your external disk or your remotely mounted server.
+</details>
 
 ## E-mail
 
+<details>
+    <summary>Click to expand</summary>
 If you access your email through a web browser, manual backup is likely unnecessary, as the data is always being held on a remote computer. If you use a local client such as Thunderbird or Evolution, then the data may be stored in multiple locations (such the email server and other client devices), or only in one. If the IMAP protocol is used, the data is synchronized between all clients; if the POP protocol is used, then the data is only stored on the client where the email was viewed.
+</details>
 
 ### Web Browser
+<details>
+    <summary>Click to expand</summary>
 
 <u>Pros:</u>
 All data is always on a remote server.
@@ -170,28 +209,43 @@ Data is more secure, as it's only in one location at any time.
 
 <u>Cons:</u>
 The client storing data is a single point of failure.
+</details>
 
 ## User Configuration Files
+
+<details>
+    <summary>Click to expand</summary>
 
 Most user configuration files are stored in the home folder. These can generally be copied and saved just like any other file, but restoring these files may not always work. Occasionally, programs change how, where, or in what format their configuration files are stored. This means they won't always be restorable, or may not function as intended. It's recommended to back these up as needed, but remember that they may not restore correctly.
 
 Most user configuration files can be found in the home directory, and begin with a period (for example, the `.config` directory.)
+</details>
 
 ## Programs
+
+<details>
+    <summary>Click to expand</summary>
 
 Because programs are readily available online (usually through software repositories), we don't recommend backing them up. They are spread throughout the file system and are difficult to restore properly. To back up programs, we recommend keeping a list of package names for the programs that you use so they can be reinstalled with a single package manager command, like so:
 
 ```bash
 sudo apt install gnome-tweak-tool mousepad aptitude thunar
 ```
+</details>
 
 ## Program Configuration Files
+<details>
+    <summary>Click to expand</summary>
 
 System-wide program configuration files can be found in many locations of the OS. The most common location is the `/etc` folder. Most of these can be backed up in the same ways that user configuration files can, with the same caveat about changes in configuration format when restoring these files. (Unless you have modified system-wide configuration files manually, most configuration is usually stored per-user in the home directory.)
+</details>
 
 ## Create and Restore Disk images using Disks app
 
-Pop!\_OS comes with a disk management utility called GNOME Disks. You can find it in your apps list.
+<details>
+    <summary>Click to expand</summary>
+
+Pop!_OS comes with a disk management utility called GNOME Disks. You can find it in your apps list.
 
 ![Disks app](/images/backup/disks-1-none-selected.png)
 
@@ -232,3 +286,4 @@ After you press "Start restoring," it will ask for a confirmation and may ask fo
 > **NOTE:** Even if you press the button to cancel, your selected disk will already have been erased to make room for the restore image. The data on the disk is  already gone.
 
 Upon finishing you will have your disk image file and its data on the disk you selected.
+</details>

@@ -51,6 +51,42 @@ sudo usermod -aG lpadmin $USER
 
 And when adding the printer, select type of connection as **DNS-SD**, and then **Forward**, and then **ESC/P-R**.
 
+## Brother Printers
+
+Brother provides a driver installation tool for Linux users. Install the appropriate driver for your Brother printer by downloading this tool and running the installer with your printer model appended to the command.
+
+1. Click [this link](https://support.brother.com/g/b/productsearch.aspx?c=us&lang=en&content=dl) to download Brother's Driver Install Tool for Linux while searching for the appropriate printer.
+
+2. Click the "Click here to download the tool" link on the Brother download page.
+
+3. Select Linux (deb) for your "OS Version", then click OK.
+
+4. Click "Agree to the EULA and Download".
+
+5. Choose the Save File option when prompted.
+
+6. Press <kbd>Super</kbd> + <kbd>T</kbd> to launch the Terminal application.
+
+7. Change directory to where you downloaded the driver (usually the Downloads directory). Unzip the file using the commmand below.
+
+   ```
+   cd Downloads
+   gunzip linux-brprinter-installer-*.gz
+   ```
+
+8. Run the installer by typing the unzipped installer name into the terminal.
+
+   > Note: Your installer version may differ from this guide. Type the first portion of the installer name as shown below, and then hit <kbd>TAB</kbd> to complete the installer name. Place your exact printer model where we wrote PRINTERNAME below.
+   > Note: During this installer process, say yes to all questions except for the Device URI one. See below for more information on finding a Device URI, or feel free to say no to that one.
+
+   ```
+   sudo bash linux-brprinter-installer PRINTERNAME
+   ```
+  
+  >Note: If prompted for a "DeviceURI", you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
+
+![Printer Properties](/images/add-a-printer-pop/printerprops.png)
+
 ## Troubleshooting
 
 If the printer stops working, open the <u>Printers</u> Application again and right-click on the printer and select **Delete** to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.

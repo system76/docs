@@ -29,7 +29,7 @@ Hibernation is not currently enabled on Pop!\_OS by default. There are several l
 - Additional drive I/O used on Solid State Drives (SSDs)
 - Depending on alloted RAM in a system, and size of NVMe/SSD drive(s), hibernation could add notable delay on resuming a hibernation session.
 
-However, these limitations aside, hibernation is an often requested feature for Pop!\_OS. The purpose of this article is to provide steps for enabling hibernation for any users that would like it.
+However, these limitations aside, hibernation is an often requested feature for Pop!\_OS. The purpose of this article is to provide steps for enabling hibernation for any users that would like it. Since hibernation completely shuts off power to the device, it can prolong the lifetime of your battery. Additionally, there are some security benefits. While your computer is suspended, the decryption key for your data volume remains in memory, and your device is vulnerable to certain physical attacks that can extract the key from RAM.
 
 ## Enable Hibernation on an Encrypted Drive
 
@@ -51,11 +51,11 @@ However, these limitations aside, hibernation is an often requested feature for 
     sudo swapoff
     ```
 
-    Then click on the swap partition, click the red `X` to mark it for deletion, and then press the green checkmark to approve the changes.
+    Then click on the swap partition, click the red `X` to mark it for deletion, and then press the green check-mark to approve the changes.
 
 4. Extend the `luks` partition to the end of the drive.
 
-    Click on the encrypted `luks` partition and select the "Resize/Move" button. Use the GUI drag tools, or number fields, to make sure the OS partition extends to the end of the drive (after `EFI` and `recovery`).
+    Click on the encrypted `luks` partition and select the "Resize/Move" button. Use the GUI drag tools, or number fields, to make sure the OS partition extends to the end of the drive (after `EFI` and `recovery`). Use the green check-mark to apply the changes to the drive and close `gparted` once the changes are complete.
 
     ![gparted](/images/hibernation/gparted.png)
 
@@ -63,7 +63,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     | **SATA Drives**                                    | **NVMe Drives**                                   |
     |:--------------------------------------------------:|:-------------------------------------------------:|
-    | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata```       | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
+    | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
 
     **NOTE:** In the screenshot example, the partition is called `/dev/vda3`. Adjust the drive name to your case (sda# or nvme#n#p#).
 
@@ -102,21 +102,29 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     ![crypttab](/images/hibernation/crypttab.png)
 
-    Open `fstab` to copy the UUID of the `swap` volume.
+    Open `fstab` to update the mount path for the new swap volume.
 
     ```bash
+    # swap mount line will be changed to
+    # /dev/mapper/data-swap none swap defaults 0 0
     sudo nano /mnt/etc/fstab
     ```
 
     ![fstab](/images/hibernation/fstab.png)
 
-8. Reboot your computer and allow it to load Pop!\_OS normally.
+8. Reboot your computer and allow it to load Pop!\_OS normally. Check that the swap partition in use and is sized for your system memory by running the following command in a terminal:
+
+    ```bash
+    free
+    ```
 
 9. Add a resume target for the kernel:
 
-    Using the UUID retrieved from `fstab` run this command:
+    Using the UUID for the `data-swap` partition run this command:
 
     ```bash
+    sudo blkid
+    # use the UUID for the /dev/mappter/data-swap line from the output of blkid
     sudo kernelstub -a "resume=UUID=xxxxxxxx-xxxx-xxxx-xxxxxxxx"
     ```
 
@@ -124,7 +132,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     ![blkid](/images/hibernation/blkid.png)
 
-    The system is now ready to suspend to, and resume from disk.
+    The system should now be ready to suspend to, and resume from disk.
 
     You can test if hibernation works by booting back into your install and running:
 
@@ -132,11 +140,9 @@ However, these limitations aside, hibernation is an often requested feature for 
     sudo systemctl hibernate
     ```
 
-    **CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) onto SSDs, shortening the lifespan of the drives.
+    **CAUTION:** Hibernation, if used often, will add additional write traffic (equal to the total amount of RAM) to SSDs, shortening the lifespan of the drives.
 
-## Desktop Integration
-
-## GNOME Extension
+## Desktop Integration - GNOME Extension
 
 1. Add Extension:
 
@@ -166,6 +172,6 @@ However, these limitations aside, hibernation is an often requested feature for 
     ResultActive=yes
     ```
 
-Save and close the file.
+Save (ctrl+s) and close the file (ctrl+x).
 
-Your system is now ready to hibernate!
+On your next boot, you should now have an `Hibernate` option in the top-right, drop-down, `Power Off / Logout` Options menu. The `Hibernate` option is located alongside the existing `Suspend` and `Power Off` options.

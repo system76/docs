@@ -69,7 +69,7 @@ Feel free to just pick the defaults here and click on the "Create" button.
 
 To ensure the bootloader installs properly:
 
-1. Open the settings for the machine (click the machine on the list and press Ctrl+S)
+1. Open the settings for the machine (click the machine on the list and press <kbd>Ctrl</kbd>+<kbd>S</kbd>)
 2. Click __System__ in the list
 3. Check the __Enable EFI__ checkbox
 4. Click the __OK__ button

@@ -151,9 +151,9 @@ On Windows, there are also 2 drivers that will need installed for all the featur
 - Spice WebDAVd: [https://www.spice-space.org/download/windows/spice-webdavd/spice-webdavd-x64-latest.msi](https://www.spice-space.org/download/windows/spice-webdavd/spice-webdavd-x64-latest.msi)
 
 > While trying to download the Spice WebDAVd file in the Edge browser, if I clicked the link, I was taken to a page trying to display the file as text instead of downloading the file. This ends up showing a lot of odd letters and characters.
->
+
 > When trying the download a few more times, I either saw same window with random text, or I received a "This page isn't responding" prompt.
-> 
+
 > If either of these happen when you download, right-click the link above and select "Save Link As..." and save the file to your Downloads folder.
 
 ## Virtualiaztion Features

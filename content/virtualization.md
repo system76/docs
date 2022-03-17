@@ -20,8 +20,6 @@ section: software
 tableOfContents: true
 ---
 
-# Virtualization
-
 ![GNOME Boxes with VMs](/images/boxes-full.png)
 
 This is a quick tutorial on running virtual machines, or VMs, on Linux. Virtual machines allow you to run other operating systems from within your primary operating systems. This is a great way to run applications that require older software, run applications that require an OS other than Linux, or to try out other operating systems.

@@ -87,9 +87,9 @@ The install process for your chosen operating system will be just like any other
 
 #### Linux
 
-Install Pop!_OS - https://support.system76.com/articles/install-pop/ 
+Install Pop!_OS - [https://support.system76.com/articles/install-pop/](https://support.system76.com/articles/install-pop/)
 
-Install Ubuntu - https://support.system76.com/articles/install-ubuntu/
+Install Ubuntu - [https://support.system76.com/articles/install-ubuntu/](https://support.system76.com/articles/install-ubuntu/)
 
 #### Windows
 
@@ -97,7 +97,7 @@ Install Ubuntu - https://support.system76.com/articles/install-ubuntu/
 
 When you attempt to create a Windows VM, you will likely see a prompt for the "Express Install" feature of GNOME Boxes. You can certainly use the Express Install with your Windows product key. However, for this article turn off the Express Install, then click "Next" at the top right to move to the standard installer set up.
 
-Install Windows - https://support.system76.com/articles/windows/ 
+Install Windows - [https://support.system76.com/articles/windows/](https://support.system76.com/articles/windows/)
 
 ### Install GNOME Boxes Drivers
 
@@ -149,8 +149,9 @@ On Windows, there are also 2 drivers that will need installed for all the featur
 
 ##### Windows Driver Downloads
 
-- Windows Guest Tools: https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe
-- Spice WebDAVd: https://www.spice-space.org/download/windows/spice-webdavd/spice-webdavd-x64-latest.msi
+- Windows Guest Tools: [https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe](https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe)
+- Spice WebDAVd: [https://www.spice-space.org/download/windows/spice-webdavd/spice-webdavd-x64-latest.msi](https://www.spice-space.org/download/windows/spice-webdavd/spice-webdavd-x64-latest.msi)
+
 > While trying to download the Spice WebDAVd file in the Edge browser, if I clicked the link, I was taken to a page trying to display the file as text instead of downloading the file. This ends up showing a lot of odd letters and characters.
 >
 > When trying the download a few more times, I either saw same window with random text, or I received a "This page isn't responding" prompt.

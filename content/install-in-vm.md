@@ -71,7 +71,7 @@ To ensure the bootloader installs properly:
 
 1. Open the settings for the machine (click the machine on the list and press <kbd>Ctrl</kbd>+<kbd>S</kbd>)
 2. Click __System__ in the list
-3. Check the __Enable EFI__ checkbox
+3. Check the __Enable EFI (special OSes only)__ checkbox
 4. Click the __OK__ button
 
 _The install may fail if you use VirtualBox's default legacy boot mode._

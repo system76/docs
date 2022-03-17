@@ -74,7 +74,7 @@ To ensure the bootloader installs properly:
 3. Check the __Enable EFI__ checkbox
 4. Click the __OK__ button
 
-_The install will fail if you use VirtualBox's default legacy boot mode._
+_The install may fail if you use VirtualBox's default legacy boot mode._
 
 ### 9. Start VM
 

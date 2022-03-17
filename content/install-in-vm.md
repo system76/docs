@@ -65,7 +65,7 @@ This dialog tells you how you want to grow the disk as you put content on it.  T
 
 Feel free to just pick the defaults here and click on the "Create" button.
 
-### 8. Set EFI Mode
+### 8. Enable EFI Mode
 
 To ensure the bootloader installs properly:
 

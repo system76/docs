@@ -28,6 +28,12 @@ section: software
 tableOfContents: true
 ---
 
+## Disclaimer
+
+System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for information purposes only.
+
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
+
 ## Windows 11
 
 >**Windows 11 Compatibility:** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
@@ -65,12 +71,6 @@ tableOfContents: true
 | thelio-massive-b1 | Yes                | Yes*                |
 
 > **NOTE:** For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
-
-## Disclaimer
-
-System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for information purposes only.
-
-System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
 
 ### Scope of Support
 
@@ -339,7 +339,7 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
-See [additional setup](#additional-setup-for-windows) for next steps.
+See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
 ---
 
@@ -462,7 +462,7 @@ After completing the wizard, Windows will display a slideshow while it finishes 
 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
-See [additional setup](#additional-setup-for-windows) for next steps.
+See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
 ---
 

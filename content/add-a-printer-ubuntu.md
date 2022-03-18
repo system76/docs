@@ -99,7 +99,7 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 ![Printer Properties](/images/add-a-printer-pop/printerprops.png)
   
-</details> 
+</details>
 
 ## Troubleshooting
 

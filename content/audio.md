@@ -174,7 +174,6 @@ Some particular problems may be solved by tweaks to ALSA or PulseAudio configura
 <details>
     <summary>Click to expand</summary>
 
-
 If you hear audio crackling (especially when you start or stop playing audio), PulseAudio may be putting your audio card to sleep too often. This is known to happen on the [serw12](/articles/serval-dac/) and some [Thunderbolt docks](https://github.com/system76/docs/issues/491).
 
 These two commands will disable this behavior and restart PulseAudio:

@@ -46,7 +46,6 @@ sudo usermod -aG lpadmin $USER
 
 </details>
 
-
 ## Brother Printers
 
 <details>

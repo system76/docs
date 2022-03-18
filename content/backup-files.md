@@ -20,6 +20,7 @@ tableOfContents: true
 There are many ways to back up important files on your computer. It's a personal choice which one to use based on habits, preferences, and what is being backed up. We will outline a few options here, but the final solution may be a mix of several of these options.
 
 ## Data Policy
+
 <details>
     <summary>Click to expand</summary>
 
@@ -52,7 +53,7 @@ User files are the most common data to back up. This includes documents, picture
 
 <details>
     <summary>Click to expand</summary>
-    
+
 To install Deja Dup, search for it in the Pop!\_Shop, Ubuntu Software or run this command:
 
 ```bash
@@ -185,6 +186,7 @@ If you access your email through a web browser, manual backup is likely unnecess
 </details>
 
 ### Web Browser
+
 <details>
     <summary>Click to expand</summary>
 
@@ -234,6 +236,7 @@ sudo apt install gnome-tweak-tool mousepad aptitude thunar
 </details>
 
 ## Program Configuration Files
+
 <details>
     <summary>Click to expand</summary>
 

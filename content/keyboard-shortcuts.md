@@ -4,7 +4,7 @@ description:
   View, add, or modify keyboard shortcuts in Pop!_OS.
 keywords:
   - keyboard shortcuts
-  - pop
+  - Pop
   - settings
 
 facebookImage: /_social/article

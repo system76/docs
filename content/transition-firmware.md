@@ -38,7 +38,7 @@ System76 Open Firmware is designed to be lightweight and performant with a simpl
   - Disabled: Secure Boot
 - Some features are present in proprietary firmware but are not available in Open Firmware, including:
   - Flexicharger (battery threshold). This feature is currently in development for System76 Open Firmware.
-  - Self-encryptiong storage drives. Not supported (note that the full-disk encryption used in Pop!\_OS does not require this firmware-level feature.)
+  - Self-encrypting storage drives. Not supported (note that the full-disk encryption used in Pop!\_OS does not require this firmware-level feature.)
 - Some features behave differently in System76 Open Firmware
   - Galago Pro units running System76 EC require pressing the <kbd>Fn</kbd> key to use the number pad, regardless of <kbd>Num Lk</kbd> state
 

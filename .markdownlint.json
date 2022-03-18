@@ -17,7 +17,9 @@
       "u",
       "iframe",
       "video",
-      "source"
+      "source",
+      "details",
+      "summary"
     ]
   },
 

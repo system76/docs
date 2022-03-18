@@ -104,7 +104,7 @@ Once you have installed Etcher and downloaded the Pop!_OS.iso image, open up the
 
 ![Etcher Startup](/images/live-disk-new/etcher01-start.png)
 
-Choose `Flash from file` and then navigate to where you downloaded the Pop!_OS ISO file (typicall your "Downloads" folder). Click on the file then and hit the `Open` button. On Windows, it should look something like this:
+Choose `Flash from file` and then navigate to where you downloaded the Pop!_OS ISO file (typically your "Downloads" folder). Click on the file then and hit the `Open` button. On Windows, it should look something like this:
 
 ![Select Pop!_OS iso](/images/live-disk-new/etcher02-filepicker.png)
 

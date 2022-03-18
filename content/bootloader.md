@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Repair the Boot-loader
+title: Repair the Bootloader
 description: >
-   How to repair and reinstall the boot-loader.
+   How to repair and reinstall the bootloader.
 keywords:
   - Support
   - Grub
@@ -17,19 +17,19 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Systemd-boot is the boot-loader for Pop!_OS 18.04 and above while GRUB is the boot-loader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. A boot-loader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.
+Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. A bootloader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.
 
 ### Important Note
 
 If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
 
-On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> boot-loader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page.
+On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page.
 
 ### Create Live Disk
 
 Please see our instructions for making a live disk of Pop!_OS [here](/articles/live-disk/).
 
-### Reinstall GRUB Boot-loader
+### Reinstall GRUB Bootloader
 
 Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. When you see the System76 logo on the screen:
 

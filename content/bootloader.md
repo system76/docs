@@ -221,6 +221,8 @@ A message like `ALERT! UUID:xxx does not exist. Dropping to a shell!` indicates 
 
 Ensure that `/boot/efi/loader/entries/Pop_OS-current.conf` contains the correct UUID for the disk. For an encrypted setup, the line `options root=UUID=xxx ro quiet loglevel=0 systemd.show_status=false splash` should match the UUID reported by `lsblk -f` for the `data-root` partition on a standard installation with LUKS.
 
+#### LUKS volume name
+
 If you validate that the UUID entry is correct and are using LUKS encryption, be sure that there is no `cryptsetup: WARNING: target 'cryptdata' not found in /etc/crypttab` entry when running the `update-initramfs -c -k all` command above.
 
 If there is, check to be sure that `/etc/crypttab` does not have a string of characters after `cryptdata` such as:

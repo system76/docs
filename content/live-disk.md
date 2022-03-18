@@ -98,27 +98,37 @@ Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon>
 
 ### For Windows/macOS
 
-Etcher is an open source app for Windows and macOS that allows you to "burn images to SD cards & USB drives safely and easily." You can download it at [Etcher.io](https://etcher.io).
+Etcher is an open source app for Windows, macOS, and Linux that allows you to burn disk images to USB drives. You can download it at [balena.io/etcher/](https://www.balena.io/etcher/).
 
 Once you have installed Etcher and downloaded the Pop!_OS.iso image, open up the Etcher application. You should see something like this:
 
-![Etcher](/images/live-disk/etcher.png)
+![Etcher Startup](/images/live-disk-new/etcher01-start.png)
 
-Choose `Select Image` and navigate to where you downloaded Pop!_OS, click on it and hit the `Open` button:
+Choose `Flash from file` and then navigate to where you downloaded the Pop!_OS ISO file (typicall your "Downloads" folder). Click on the file then and hit the `Open` button. On Windows, it should look something like this:
 
-![Select Pop!_OS iso](/images/live-disk/open-pop-iso-etcher.png)
+![Select Pop!_OS iso](/images/live-disk-new/etcher02-filepicker.png)
 
-Next, select the drive that you want to use. If there is only one, it should automatically recognize that you have a flash drive inserted and select it.
+Now click on `Select Target`:
 
-![Etcher Flash Drive Selected](/images/live-disk/etcher-flash-selected.png)
+![Click on Select Target](images/live-disk-new/etcher03-select-target.png)
 
-Now hit the `Flash` button and watch the magic happen!
+Next, select the drive that you want to use by checking the box next to it. It should only show removeable drives by default. After the box for your USB stick is checked, click on the `Select` button:
 
-![Flashing Pop!_OS...](/images/live-disk/flashing-pop-os.png)
+![Flash Drive Select](/images/live-disk-new/etcher04-select-device.png)
 
-![Flash Complete](/images/live-disk/flash-complete.png)
+Now hit the `Flash` button and it will start writing to the USB drive.
 
-Once the flash is complete (it should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
+![Click Finish](/images/live-disk-new/etcher05-select-finish.png)
+
+Now you'll see a progress bar, and some information about other projects by _balena_, the company that makes Etcher. Wait for it to finish writing to the USB device.
+
+![Flashing the drive](/images/live-disk-new/etcher06-in-progress.png)
+
+When it's complete, you can just close the app.
+
+![Flash Complete](/images/live-disk-new/etcher07-complete.png)
+
+Now it's time to boot it up on the machine that you want to install Pop!_OS on!
 
 ## Booting From the Live Disk
 

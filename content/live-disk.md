@@ -112,7 +112,7 @@ Now click on `Select Target`:
 
 ![Click on Select Target](images/live-disk-new/etcher03-select-target.png)
 
-Next, select the drive that you want to use by checking the box next to it. It should only show removeable drives by default. After the box for your USB stick is checked, click on the `Select` button:
+Next, select the drive that you want to use by checking the box next to it. It should only show removable drives by default. After the box for your USB stick is checked, click on the `Select` button:
 
 ![Flash Drive Select](/images/live-disk-new/etcher04-select-device.png)
 

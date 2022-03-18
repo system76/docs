@@ -27,6 +27,21 @@ Most printers will be automatically added to the computer. If a printer is not a
 
 5. Select the correct printer and click **Add**.
 
+## HP Printers
+
+HP printers are supported with the hplip package, which is installed by default in Pop!OS
+
+```bash
+sudo apt install hplip
+```
+
+If you would like to use a guided GUI application from HP, you will need to install a python dependency:
+
+```bash
+sudo apt install python3-pyqt5
+hp-setup
+```
+
 ## Epson Printers
 
 Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:

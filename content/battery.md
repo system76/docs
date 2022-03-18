@@ -25,11 +25,24 @@ The biggest consumer of power is the display backlight. Up to 10% more battery l
 
 ## Power Profiles
 
+<details>
+  <summary>Click to expand</summary>
+
 With the <u>system76-power</u> package there are **Power Profiles** that can be accessed in the **System Menu** in the image below.
 
 ![Battery](/images/battery/system-menu.png)
 
+</details>
+
 ## Useful Programs
+
+<details>
+  <summary>Click to expand</summary>
+
+## TLP
+
+<details>
+  <summary>Click to expand</summary>
 
 <u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. Its default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
 
@@ -66,7 +79,12 @@ man tlp
 man tlp-stat
 ```
 
----
+</details>
+
+## Powertop
+
+<details>
+  <summary>Click to expand</summary>
 
 To install <u>powertop</u>, please open a terminal and run this command:
 
@@ -98,7 +116,12 @@ Open the report located at `~/report.html` to see the results.
 
 It's useful to create a baseline by running <u>powertop</u> after a cold startup, without opening any applications, and then run it a few more times throughout the day to get a comparison of different workloads. Make sure to specify a different filename each time for comparison. Look at running software and see if programs can be uninstalled or if the settings of high resource using programs can be changed.
 
-### Tuning
+</details>
+
+### Tuning Powertop
+
+<details>
+  <summary>Click to expand</summary>
 
 After looking at running software, head over to the 'Tuning' tab. We recommend install <u>TLP</u> first, and then seeing if <u>powertop</u> finds any other tuning suggestions.
 
@@ -124,7 +147,14 @@ above the 'exit 0' line, or add the individual tuning options.
 
 **Do not do this without testing!  Several auto-tune settings will create system instability!**
 
-### Disable Ethernet
+</details>
+
+</details>
+
+## Disable Ethernet
+
+<details>
+  <summary>Click to expand</summary>
 
 If Ethernet is never used, or is only used irregularly, then it can be disabled to save power.  Please run this command:
 
@@ -154,7 +184,12 @@ Then, if Ethernet needs to be used, this command can be run to enable it for the
 sudo ifconfig enp4s0f2 up
 ```
 
+</details>
+
 ## Useful Commands
+
+<details>
+  <summary>Click to expand</summary>
 
 ```bash
 upower -d
@@ -167,3 +202,5 @@ sudo rm /var/lib/upower/*
 ```
 
 If the battery life indicator is inaccurate, this will remove the stored statistics. After a few charge/discharge cycles the indicator should be more accurate.
+
+</details>

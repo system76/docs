@@ -156,7 +156,7 @@ On Windows, there are also 2 drivers that will need installed for all the featur
 >
 > If either of these happen when you download, right-click the link above and select "Save Link As..." and save the file to your Downloads folder.
 
-## Virtualiaztion Features
+## Virtualization Features
 
 Now that the VM is set up, and drivers are installed, we can now use the advanced features of GNOME Boxes.
 

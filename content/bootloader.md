@@ -66,6 +66,45 @@ Pop!_OS 20.04 LTS
 
 ---
 
+## systemd-boot
+
+### EFI Boot
+
+Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the earlier `parted` output, then the system is installed in UEFI mode. You can also use this command to verify that your OS is installed in UEFI mode:
+
+```bash
+[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
+```
+
+The expected output is:
+
+```bash
+support@pop-os:~$ [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
+Installed in UEFI mode
+support@pop-os:~$
+```
+
+Run these commands based on what type of disk you have:
+
+| NVMe Drive                                | SATA Drive                           |
+| :---------------------------------------- | :----------------------------------- |
+| `sudo mount /dev/nvme0n1p3 /mnt`          | `sudo mount /dev/sda3 /mnt`          |
+| `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
+
+Then continue with the following commands for either disk type:
+
+```bash
+for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+sudo cp -n /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+apt install --reinstall linux-image-generic linux-headers-generic
+update-initramfs -c -k all
+exit
+sudo bootctl --path=/mnt/boot/efi install
+```
+
+---
+
 ## GRUB
 
 ### EFI Boot
@@ -117,45 +156,6 @@ sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
 sudo update-grub
-```
-
----
-
-## systemd-boot
-
-### EFI Boot
-
-Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the earlier `parted` output, then the system is installed in UEFI mode. You can also use this command to verify that your OS is installed in UEFI mode:
-
-```bash
-[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
-```
-
-The expected output is:
-
-```bash
-support@pop-os:~$ [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
-Installed in UEFI mode
-support@pop-os:~$
-```
-
-Run these commands based on what type of disk you have:
-
-| NVMe Drive                                | SATA Drive                           |
-| :---------------------------------------- | :----------------------------------- |
-| `sudo mount /dev/nvme0n1p3 /mnt`          | `sudo mount /dev/sda3 /mnt`          |
-| `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
-
-Then continue with the following commands for either disk type:
-
-```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
-apt install --reinstall linux-image-generic linux-headers-generic
-update-initramfs -c -k all
-exit
-sudo bootctl --path=/mnt/boot/efi install
 ```
 
 ---

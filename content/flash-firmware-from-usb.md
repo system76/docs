@@ -46,6 +46,18 @@ The highlighted files pictured below (the hash will change based on file and mod
 
 ![files-unzipped](/images/open-firmware-smmstore/files-unzipped.png)
 
+## Extracting an img to the USB drive
+
+Firmware is typically packaged in the form of a zip archive, but support will ocasionally provide an .img image. If the firmware image provided is a .img file, it will need to be flashed using the Disks application. We do this by "restoring" the image to the drive.
+
+Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'disks' to launch the Disks application.
+
+![Disks](/images/live-disk/disks.png)
+
+Next, select the flash drive in the list on the left and click on the three dots on the top right of the window. Now select `Restore Disk Image...` and select the Ubuntu or Pop_OS ISO file. Finally, click the `Start Restoring...` button and enter your password.
+
+![Disks](/images/live-disk/disks-selection.png)
+
 ## Booting the USB Firmware Updater
 
 After the flash drive is ready, power off your system. Then, power back on your system and tap the <kbd>ESC</kbd> key while the system is turning on. This will take you to the firmware boot menu, where you should select the USB flash drive from the list of boot options. To select the USB drive, you will use the Arrow keys to change the highlighted line, then press the <kbd>ENTER</kbd> key to select it.

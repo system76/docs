@@ -65,13 +65,24 @@ This dialog tells you how you want to grow the disk as you put content on it.  T
 
 Feel free to just pick the defaults here and click on the "Create" button.
 
-### 8. Start VM
+### 8. Enable EFI Mode
+
+To ensure the bootloader installs properly:
+
+1. Open the settings for the machine (click the machine on the list and press <kbd>Ctrl</kbd>+<kbd>S</kbd>)
+2. Click __System__ in the list
+3. Check the __Enable EFI (special OSes only)__ checkbox
+4. Click the __OK__ button
+
+_The install may fail if you use VirtualBox's default legacy boot mode._
+
+### 9. Start VM
 
 ![Ready to run](/images/install-in-a-vm/Ready_to_run.png)
 
 You should be all ready to run!  Hit the "Start" button, the green arrow on the toolbar at the top.
 
-### 9. Open ISO File
+### 10. Open ISO File
 
 ![Select Disk File](/images/install-in-a-vm/select_startup_disk.png)
 
@@ -81,7 +92,7 @@ In order to run, it needs a startup disk, in this case the Pop!_OS iso file that
 
 Go to your Downloads area and select the ISO image you downloaded and click "Open".
 
-### Start Pop!_OS VM
+### 11. Start Pop!_OS VM
 
 ![Ready to run](/images/install-in-a-vm/Ready_to_run.png)
 

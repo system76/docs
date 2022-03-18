@@ -26,7 +26,7 @@ The GNOME desktop environment is highly customizable. Visit [extensions.gnome.or
 
 ## Included Extensions
 
-Pop!\_OS includes the GNOME Extensions app by default. Which lists both system-installed, and user-installed extensions.
+Pop!\_OS includes the GNOME ```Extensions``` app by default. Which lists both system-installed, and user-installed extensions.
 
 ![extensions-app-window](/images/customize-gnome/extensions-app-window.png)
 
@@ -40,7 +40,7 @@ A fork of Dash to Dock customized for Pop!\_OS.
 
 ![cosmic-dock-close](/images/customize-gnome/cosmic-dock-close.png)
 
-**NOTE:** It is **not** recommended to have both Cosmic Dock and Dash-t0-Dock installed an enabled at the same time. User Interface (UI) bugs will occur. Choose one or the other.
+**NOTE:** It is **not** recommended to have both Cosmic Dock and Dash-to-Dock installed an enabled at the same time. User Interface (UI) bugs will occur. Choose one or the other.
 
 ### [Cosmic Workspaces](https://github.com/pop-os/cosmic-workspaces)
 
@@ -52,7 +52,7 @@ Workspace behaviors can be edited in Settings.
 
 ### [Desktop Icons NG (DING)](https://gitlab.com/rastersoft/desktop-icons-ng)
 
-Since Desktop icons have been deprecated in mainline GNOME, Pop!_OS includes a GNOME extension to return this feature.
+Since Desktop icons have been deprecated in mainline GNOME, Pop!_OS includes a GNOME extension to bring this feature back.
 
 ### [Pop COSMIC](https://github.com/pop-os/cosmic)
 
@@ -67,7 +67,7 @@ COSMIC is the name for the main shell components in Pop_Shell (separate from the
 - Configuration options
 - Separated Workspaces overview from Applications.
 
-Most components can be configured to fit the user's workflow and preferences, with two main presets for both keyboard-focused and mouse-focused navigation and use.
+Most components can be configured to fit the user's workflow and preferences; presets are included for both keyboard-focused and mouse-focused navigation and use.
 
 ### [Pop Shell](https://github.com/pop-os/shell)
 
@@ -81,7 +81,7 @@ For details refer to the Github page (linked above) or view the tutorial content
 
 This extension assists with power-management and battery conservation. It adds options for switching CPU performance modes, and enabling/disabling GPU hardware on applicable models.
 
-For more information on System76 Power refer to the Github page (above) and/or this [support article](/articles/graphics-switch-pop)
+For more information on System76 Power refer to the Github page (above) and/or this [support article](/articles/graphics-switch-pop).
 
 ### [Ubuntu AppIndicators](https://github.com/ubuntu/gnome-shell-extension-appindicator)
 

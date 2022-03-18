@@ -23,6 +23,9 @@ In hopes of giving this awesome software wider exposure and making it easier to 
 
 ### Required Hardware
 
+<details>
+    <summary>Click to expand</summary>
+
 This tutorial focuses on installing and calibrating the software, but won't cover the details of the hardware setup.
 
 For detailed information on the hardware setup, see the [AR Sandbox hardware tutorial](https://arsandbox.ucdavis.edu/instructions/hardware-2/), but in brief you'll need:
@@ -39,13 +42,18 @@ For detailed information on the hardware setup, see the [AR Sandbox hardware tut
 
 In terms of System76 computers we recommend the [Oryx Pro](https://system76.com/laptops/oryx) laptop or [Thelio](https://system76.com/cart/configure/thelio-r1) desktop with the fastest available GPU.
 
+</details>
+
 ## Install Software
+
+<details>
+    <summary>Click to expand</summary>
 
 - You'll need a computer running Pop!_OS or Ubuntu 18.04 or newer.
 
 - Add the needed PPA and install the software by opening a terminal and running these three commands:
 
-```
+```bash
 sudo add-apt-repository -ys ppa:system76-dev/weekend-project
 sudo apt-get update
 sudo apt-get install arsandbox
@@ -53,35 +61,45 @@ sudo apt-get install arsandbox
 
 - Find out what your username is by running this command in the terminal:
 
-```
+```bash
 whoami
 ```
 
 - Add yourself to the vrui-grp group with this command, replacing USERNAME with the user-name returned by the whoami command above:
 
-```
+```bash
 sudo adduser USERNAME vrui-grp
 ```
 
 - Reboot your computer so all of the above changes take effect.
 
+</details>
+
 ## Enable Touchpad While Typing
+
+<details>
+    <summary>Click to expand</summary>
 
 During the setup process there will be times when you will need to hold down a key while moving your cursor, however by default the touchpad is disabled while typing. In order for this to work correctly, you will want to go ahead and modify that setting.
 
 To do this, please install the <u>GNOME Tweaks tool</u> from the Pop!\_Shop or Ubuntu Software Center, or from the Terminal by running:
 
-```
+```bash
 sudo apt install gnome-tweak-tool
 ```
 
 After that, open the <u>Tweaks</u> app from the Activities overview, then navigate to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
 
+</details>
+
 ## Calibrate Kinect
+
+<details>
+    <summary>Click to expand</summary>
 
 - Plug in your first-generation Kinect device, then open a terminal and run:
 
-```
+```bash
 KinectUtil getCalib 0
 ```
 
@@ -89,11 +107,16 @@ This will download the intrinsic calibration parameters directly from your Kinec
 
 Note: if you receive a "Kinect Error 13" message, you may need to power-cycle the Kinect, the computer, or both.
 
+</details>
+
 ## Align Kinect above sandbox
+
+<details>
+    <summary>Click to expand</summary>
 
 - Open a terminal and run:
 
-```
+```bash
 RawKinectViewer -compress 0
 ```
 
@@ -111,7 +134,12 @@ The Augmented Reality Sandbox only uses the depth view (left), but the camera vi
 
 - Hit Esc to close the `RawKinectViewer`.
 
+</details>
+
 ## Calculate base plane
+
+<details>
+    <summary>Click to expand</summary>
 
 - There are two ways to calculate the base plane. If you haven't yet filled your sandbox with sand, you can calculate the base plane using a region on the floor of your sandbox.
 
@@ -121,7 +149,7 @@ On the other hand, if you've already filed your sandbox with sand, you can calcu
 
 - From a terminal, launch the RawKinectViewer:
 
-```
+```bash
 RawKinectViewer -compress 0
 ```
 
@@ -150,7 +178,7 @@ Start with your cursor near the top-left corner of your flat surface. Press and 
 
 - Edit the BoxLayout.txt file by running this command from the terminal:
 
-```
+```bash
 gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
@@ -166,7 +194,12 @@ You should end up with a first line something like this:
 
 - NOTE: If you receive an error message regarding an "invalid taken character," please double-check to make sure the equal sign in `BoxLayout.txt` has been replaced with a comma as described above.
 
+</details>
+
 ## Measure 3D extents of sand surface
+
+<details>
+    <summary>Click to expand</summary>
 
 - This step requires you to have filed your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
 
@@ -174,7 +207,7 @@ If you placed a piece of poster board (or another flat surface) on top of your s
 
 - From a terminal, again launch the RawKinectViewer:
 
-```
+```bash
 RawKinectViewer -compress 0
 ```
 
@@ -220,7 +253,7 @@ Note there is no feedback from the UI when you press the 1 key.
 
 - Edit the `BoxLayout.txt` file by running this command from the terminal:
 
-```
+```bash
 gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
@@ -230,7 +263,12 @@ gedit /etc/SARndbox-1.6/BoxLayout.txt
 
 - Save the file and close `gedit`.
 
+ </details>
+
 ## Postition projector
+
+<details>
+    <summary>Click to expand</summary>
 
 - If you haven't already, turn on your projector and plug it into your computer.
 
@@ -240,7 +278,7 @@ gedit /etc/SARndbox-1.6/BoxLayout.txt
 
 - Launch the XBackgroud tool from a terminal like this:
 
-```
+```bash
 XBackground
 ```
 
@@ -251,6 +289,9 @@ XBackground
 After you're done positioning your projector, hit Esc to close the `XBackgroud` application.
 
 ## Calibrate AR Sandbox
+
+<details>
+    <summary>Click to expand</summary>
 
 - As with step 5, this step requires you to have filed your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
 
@@ -266,7 +307,7 @@ At each height, you'll capture 12 tie-points. For a decent calibration, you'll n
 
 - Launch `CalibrateProjector` from a terminal like this:
 
-```
+```bash
 CalibrateProjector -s WIDTH HEIGHT
 ```
 
@@ -274,7 +315,7 @@ Replacing WIDTH and HEIGHT with the settings for your projector. The Kinect itse
 
 To match the resolution of the laptop we used in this tutorial, we set our projector to 1920x1080, but our particular BenQ projector allows us to force a 4:3 aspect ratio even when the resolution is a 16:9 aspect ratio. So in our case, we launched `CalibrateProjector` like this:
 
-```
+```bash
 CalibrateProjector -s 1920 1080
 ```
 
@@ -324,7 +365,12 @@ Repeat this process for the remaining 11 tie-points at this depth. Once the whit
 
 Hitting Esc will automatically write the calibration file in `/etc/SARndbox-1.6/ProjectorMatrix.dat`.
 
+</details>
+
 ## Adjust the "sea level"
+
+<details>
+    <summary>Click to expand</summary>
 
 - Launch the main `SARndbox` application by searching for "sandbox" in GNOME Search:
 
@@ -344,7 +390,7 @@ On the other hand, if in step 4 you calculated the base plane when your sandbox 
 
 - To adjust the sea level, edit the `/etc/SARndbox-1.6/BoxLayout.txt` by running this command from the terminal:
 
-```
+```bash
 gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
@@ -371,7 +417,12 @@ You can experiment with different values for the sea-level to suite your prefere
 
 Note that you can adjust the sea level at any time in the future without recalibrating your sandbox.
 
+</details>
+
 ## Use the Sandbox
+
+<details>
+    <summary>Click to expand</summary>
 
 - Whew! You made it through the setup and calibration!
 As long as you don't change the physical setup of your sandbox (in particular, the position of the Kinect, the projector, and the sandbox relative to each other), you never need to calibrate it again. Although now that you have the hang of it, you might want to go through the calibration again in order to achieve a more accurate setup.
@@ -386,7 +437,7 @@ As long as you don't change the physical setup of your sandbox (in particular, t
 
 This is a shortcut to launch `SARndbox` with the following arguments (which you can also do directly from a terminal):
 
-```
+```bash
 SARndbox -uhm -fpv -evr -0.01
 ```
 
@@ -396,16 +447,18 @@ So you typically want to set an evaporation rate, especially when deploying the 
 
 - If our recommended evaporation rate seems too fast for your tastes, try:
 
-```
+```bash
 SARndbox -uhm -fpv -evr -0.005
 ```
 
 If our recommended evaporation rate seems too slow for your tastes, try:
 
-```
+```bash
 SARndbox -uhm -fpv -evr -0.02
 ```
 
 Thanks again to [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) for developing such an incredible, inspiring piece of software!
 
 Be sure to check out the [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) website for more details.
+
+</details>

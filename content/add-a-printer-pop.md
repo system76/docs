@@ -29,6 +29,9 @@ Most printers will be automatically added to the computer. If a printer is not a
 
 ## Epson Printers
 
+<details>
+    <summary>Click to expand</summary>
+
 Epson printer drivers are in the **printer-driver-escpr** package and is also installed by default. You may need to install the **lsb** package for some printer versions:
 
 ```bash
@@ -41,7 +44,13 @@ Automatically installed printers will work fine, but if you need to make changes
 sudo usermod -aG lpadmin $USER
 ```
 
+</details>
+
+
 ## Brother Printers
+
+<details>
+    <summary>Click to expand</summary>
 
 Brother provides a driver installation tool for Linux users. Install the appropriate driver for your Brother printer by downloading this tool and running the installer with your printer model appended to the command.
 
@@ -82,7 +91,12 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 ![Printer Properties](/images/add-a-printer-pop/printerprops.png)
 
+ </details>
+
 ## Troubleshooting
+
+<details>
+    <summary>Click to expand</summary>
 
 If the printer stops working, open the <u>Printers</u> Application again and click the gear icon, and select **Remove Printer** to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.
 
@@ -92,7 +106,12 @@ To look at the CUPS (Common Unix Printing System) configuration and status windo
 
 The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer. When there is a prompt for your username and password, use your user name, and password used to login.
 
+</details>
+
 ## Useful Commands
+
+<details>
+    <summary>Click to expand</summary>
 
 This command reinstalls <u>CUPS</u>, the main printing software, which can help with generic issues.
 
@@ -105,3 +124,4 @@ This command reinstalls the system control panel if the settings are not availab
 ```bash
 sudo apt install --reinstall system-config-printer
 ```
+</details>

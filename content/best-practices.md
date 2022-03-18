@@ -22,4 +22,3 @@ tableOfContents: true
 </details>
 
 ## Business Use
-

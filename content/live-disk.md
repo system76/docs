@@ -1,7 +1,7 @@
 ---
-title: Live Disk Creation (Other Operating Systems)
+title: Live Disk Creation
 description: >
-  Create and use bootable media on other operating systems.
+  Create and use bootable media to install or repair your OS.
 keywords:
   - Pop_OS!
   - USB
@@ -32,7 +32,7 @@ Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_O
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
 - [Fixing the boot loader](/articles/bootloader)
 
-A live disk is a handy tool to have around!
+A live disk is a handy tool to have around. Support recommends using a live disk when doing hardware troubleshooting.
 
 ## Downloading the ISO
 
@@ -49,7 +49,7 @@ Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal (<
 #### For Intel/AMD iso
 
 ```
-sha256sum Downloads/pop-os_21.04_amd64_intel_7.iso
+sha256sum Downloads/pop-os_21.10_amd64_intel_7.iso
 ```
 
 #### For NVIDIA iso
@@ -69,13 +69,13 @@ Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Promp
 #### For Intel/AMD iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_21.04_amd64_intel_7.iso sha256
+CertUtil -hashfile Downloads\pop-os_21.10_amd64_intel_7.iso sha256
 ```
 
 #### For NVIDIA iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_21.04_amd64_nvidia_7.iso sha256
+CertUtil -hashfile Downloads\pop-os_21.10_amd64_nvidia_7.iso sha256
 ```
 
 **Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
@@ -84,17 +84,37 @@ If the checksum does not match the one on the [download page](https://pop.system
 
 ## Making the Bootable Drive
 
-In order to make the bootable live disk, you must have a flash drive and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial, we'll use the Disks applicaton for Ubuntu and Etcher for Windows/macOS.
+In order to make the bootable live disk, you must have a flash drive and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial, we'll use the Popsicle utility for Linux and Etcher for macOS/Windows.
 
-### For Ubuntu/Pop!_OS
+If you are comfortable with using Flatpak, Popsicle is available in Flathub [here](https://flathub.org/apps/details/com.system76.Popsicle)! If you want to setup Flatpak on your system, you can visit [this](https://flatpak.org/setup/) link. Popsicle is included in all recent Pop_OS! releases by default (18.04)+.
 
-Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'disks' to launch the Disks application.
+If you'd just like to quickly launch Popsicle by downloading a file, there is an AppImage available from AppImageHub, downloadable [here](https://appimage.github.io/Popsicle/). AppImages run on most Linux variants and don't require installation or terminal commands.
 
-![Disks](/images/live-disk/disks.png)
+### For Linux
 
- Next select the flash drive in the list on left and click on the three dots on the top right of the window. Now select `Restore Disk Image...` and select the Ubuntu or Pop_OS ISO file. Finally, click the `Start Restoring...` button and enter your user password.
+If you're on Pop or Ubuntu: 
 
-![Disks](/images/live-disk/disks-selection.png)
+Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'Popsicle' to launch the Popsicle application.
+
+If you're on a different distribution, either locate the AppImage by right-clicking on it within your Downloads folder, selecting "Properties" and click the option to make the image executable. If it is the Flatpak, simply search "Popsicle" using your distro's application launcher and it should appear.
+
+![Popsicle](/images/pop-live-disk/popsicle.png)
+
+Pick *Choose Image* and navigate to where you downloaded Pop!_OS, click on it and hit the *open* button:
+
+![Select Pop!_OS iso](/images/pop-live-disk/popsicle-image-selection.png)
+
+Next, select the drive that you want to use; the name of the drive most likely will be the brand name, e.g. "SanDisk" or "Kingston".
+
+![Popsicle Flash Drive Selected](/images/pop-live-disk/popsicle-drive-selection.png)
+
+Now hit the *Flash* button and watch the magic happen!
+
+![Flashing Pop!_OS...](/images/pop-live-disk/popsicle-progress.png)
+
+![Flash Complete](/images/pop-live-disk/popsicle-finished.png)
+
+Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
 
 ### For Windows/macOS
 

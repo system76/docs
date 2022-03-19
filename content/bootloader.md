@@ -17,13 +17,13 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Systemd-boot is the boot-loader for Pop!_OS 18.04 and above while GRUB is the boot-loader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. A boot-loader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.
+Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. A bootloader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.
 
 ### Important Note
 
-If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
+If you need to configure grub-pc (for example, after an update), installing GRUB to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
 
-On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the <u>GRUB</u> boot-loader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page.
+On a fresh install of Pop!_OS 18.04 and newer, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page.
 
 ### Create Live Disk
 
@@ -66,9 +66,7 @@ Pop!_OS 20.04 LTS
 
 ---
 
-## GRUB
-
-### EFI Boot
+# How to tell if your system is EFI-based or legacy boot
 
 Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
 
@@ -76,7 +74,61 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
 
-Run these commands based on what type of disk you have:
+Additionally, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode.
+
+### EFI Boot - Pop!_OS (systemd-boot)
+
+If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below.
+
+First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
+
+| NVMe Drive                                    | SATA Drive                              |
+| :-------------------------------------------- | :-------------------------------------- |
+| ```sudo mount /dev/nvme0n1p3 /mnt```          | ```sudo mount /dev/sda3 /mnt```         |
+| ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` | ```sudo mount /dev/sda1 /mnt/boot/efi```|
+
+
+After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
+
+```bash
+for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+sudo cp -n /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+apt install --reinstall linux-image-generic linux-headers-generic
+update-initramfs -c -k all
+exit
+sudo bootctl --path=/mnt/boot/efi install
+```
+
+### Encrypted Disk
+
+To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `sudo parted -ls` command described above to determine the correct drive and partition. 
+
+Pop!_OS supports full-disk encryption as an option by default, whereas, Ubuntu does not. If you are on Ubuntu, you likely don't need to follow this section.
+
+| NVMe Drive                                              | SATA Drive                                         |
+| :------------------------------------------------------ | :------------------------------------------------- |
+| ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` |
+
+```bash
+sudo lvscan
+sudo vgchange -ay
+```
+
+Take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
+
+```bash
+sudo mount /dev/mapper/data-root /mnt
+```
+
+And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to '+ Other Locations' -> 'Computer' and then click on the `/mnt` folder.
+
+### EFI Boot - Ubuntu
+
+If the echo command above says the system is installed in EFI mode **and** you are using Ubuntu, follow this section.
+
+First, we need to mount the OS partitions. Run these commands based on what type of disk you have (based on the ```parted``` output from your system):
+
 
 | NVMe Drives                                  | SATA Drives                            |
 | :------------------------------------------- | :------------------------------------- |
@@ -96,11 +148,7 @@ update-grub
 
 ### Legacy BIOS Boot
 
-If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
-
-```bash
-[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
-```
+As mentioned above, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode. If this is the case, you need to follow this section to repair your bootloader.
 
 Run these commands based on what type of disk you have:
 
@@ -112,89 +160,9 @@ Run these commands based on what type of disk you have:
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+apt install --reinstall grub-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
 sudo update-grub
-```
-
-## systemd-boot
-
-### EFI Boot
-
-Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags`, the system is installed in UEFI mode. You can also use this command to verify that your OS is installed in UEFI mode:
-
-```bash
-[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
-```
-
-The expected output is:
-
-```bash
-support@pop-os:~$ [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
-Installed in UEFI mode
-support@pop-os:~$
-```
-
-Run these commands based on what type of disk you have:
-
-| NVMe Drive                                    | SATA Drive                              |
-| :-------------------------------------------- | :-------------------------------------- |
-| ```sudo mount /dev/nvme0n1p3 /mnt```          | ```sudo mount /dev/sda3 /mnt```         |
-| ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` | ```sudo mount /dev/sda1 /mnt/boot/efi```|
-
-```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
-apt install --reinstall linux-image-generic linux-headers-generic
-update-initramfs -c -k all
-exit
-sudo bootctl --path=/mnt/boot/efi install
-```
-
----
-
-### Encrypted Disk
-
-To get access to an encrypted disk, these additional commands need run to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
-
-| NVMe Drive                                              | SATA Drive                                         |
-| :------------------------------------------------------ | :------------------------------------------------- |
-| ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata``` |
-
-```bash
-sudo lvscan
-sudo vgchange -ay
-```
-
-And take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end:
-
-```bash
-sudo mount /dev/mapper/data-root /mnt
-```
-
-And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to '+ Other Locations' -> 'Computer' and then click on the `/mnt` folder.
-
-### Chroot
-
-<u>chroot</u> is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (<u>apt</u>) and other system level commands can be run.
-
-The EFI partition is usually around 512MB so that would be the partition that we replace in the next command. The Recovery Partition is around 4GB as well.
-
-| NVMe Drive                                   | SATA Drive                               |
-| :------------------------------------------- | :--------------------------------------- |
-|```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` | ```sudo mount /dev/sda1 /mnt/boot/efi``` |
-
-```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo chroot /mnt
-```
-
-You now have root administrator access to your installed OS. If you are trying to either fix or undo changes that you made to the system, you now have the access to do so. Once you are done, and to exit from the <u>chroot</u> and reboot the computer, run these commands:
-
-```bash
-exit
-reboot
 ```
 
 ---
@@ -205,7 +173,7 @@ As your system reboots, remove the disk when prompted. The computer should now b
 
 ### chroot
 
-If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system.
+If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system. If you need more information on how to chroot, and what it it does, visit the chroot article here.
 
 For example, the error is most frequently seen when trying to `chroot` to a 64-bit system (amd64) from a 32-bit Install CD (x86).
 

@@ -92,7 +92,7 @@ If you'd just like to quickly launch Popsicle by downloading a file, there is an
 
 ### For Linux
 
-If you're on Pop or Ubuntu: 
+If you're on Pop or Ubuntu:
 
 Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'Popsicle' to launch the Popsicle application.
 

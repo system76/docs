@@ -55,7 +55,7 @@ sha256sum Downloads/pop-os_21.04_amd64_intel_7.iso
 #### For NVIDIA iso
 
 ```
-sha256sum Downloads/pop-os_21.04_amd64_nvidia_7.iso
+sha256sum Downloads/pop-os_21.10_amd64_nvidia_7.iso
 ```
 
 **Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.

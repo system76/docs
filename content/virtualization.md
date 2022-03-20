@@ -217,8 +217,7 @@ Now that GNOME Boxes is sharing the folder, we can close the properties menu and
     - You will likely see a spinning loading wheel under "Networks" for a moment, wait for that to finish.
 4. Find "Spice client folder" listed under "Networks."
 5. Click on "Spice client folder."
-    - You will see a 2nd "Spice client folder" entry appear.
-    - This new entry will have a folder icon (see the photo below).
+    - You will now see a 2nd "Spice client folder" entry with a folder icon (see the photo below).
 6. Click on the new "Spice client folder" entry and you will see the shared folder listed.
     - You can also click the "Spice client folder" item listed on the left hand column.
 

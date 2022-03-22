@@ -70,7 +70,7 @@ Mount Point                                | `/home/...`*{from step 2}*
 Identify As                                | `/dev/disk/by-uuid/...`
 Filesystem Type                            | `ext4`**
 
-\* If you plan on running Windows games via Proton on an NTFS drive, ![refer to the Proton manual](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows#editing-fstab) for this field.
+\* If you plan on running Windows games via Proton on an NTFS drive, [refer to the Proton manual](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows#editing-fstab) for this field.
 
 \** This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.
 

@@ -174,7 +174,7 @@ Once your VM has the `spice-vdagent` or an equivalent package installed on your 
 
 ![Devices and Shares](/images/gnome-boxes/boxes-vmprefs-usb.png)
 
-One of the features of GNOME Boxes, is the ability to transfer a USB device connected to your Host to the VM. To share a USB device
+One of the features of GNOME Boxes is the ability to transfer a USB device connected to your Host to the VM. To share a USB device:
 
 1. Open the VM's properties menu.
 2. Navigate to the "Devices & Shares" tab.

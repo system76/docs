@@ -20,39 +20,39 @@ tableOfContents: true
 
 The GNOME desktop environment is highly customizable. Visit [extensions.gnome.org](https://extensions.gnome.org) to install, remove, and configure currently installed extensions.  A web browser plugin is needed to interact with the site, and it will prompt for installation if needed.  Remember to refresh the page after the plugin is installed.
 
-**NOTE:** There are many extensions to choose from! If one isn't currently working, or breaks with an update, then try a different extension to see if it works better.
+>**NOTE:** There are many extensions to choose from! If one isn't currently working, or breaks with an update, then try a different extension to see if it works better.
 
 ---
 
 ## Included Extensions
 
-<details>
+<details open>
   <summary>Click to expand</summary>
 
-Pop!\_OS includes the GNOME ```Extensions``` app by default. Which lists both system-installed, and user-installed extensions.
+Pop!\_OS includes the GNOME `Extensions` app by default, which lists both system-installed, and user-installed extensions.
 
 ![extensions-app-window](/images/customize-gnome/extensions-app-window.png)
 
-Each extension has options for customizing settings (if supported in Extension metadata), or viewing the webpage for the extension to learn more information. The Extensions app also allows you to quickly enable and disable installed extensions.
+Each extension has options for customizing settings (if supported in the extension's metadata), and viewing the webpage for the extension to learn more information. The `Extensions` app also allows you to quickly enable and disable installed extensions.
 
 Pop!\_OS includes the following extensions by default. In most cases, these extensions should be left **enabled**.
 
 ### [Cosmic Dock](https://github.com/pop-os/cosmic-dock)
 
-<details>
+<details open>
   <summary>Click to expand</summary>
 
 A fork of Dash to Dock customized for Pop!\_OS.
 
 ![cosmic-dock-close](/images/customize-gnome/cosmic-dock-close.png)
 
-**NOTE:** It is **not** recommended to have both Cosmic Dock and Dash-to-Dock installed an enabled at the same time. User Interface (UI) bugs will occur. Choose one or the other.
+>**NOTE:** It is **not** recommended to have both Cosmic Dock and Dash-to-Dock installed an enabled at the same time. User Interface (UI) bugs will occur. Choose one or the other.
 
 </details>
 
 ### [Cosmic Workspaces](https://github.com/pop-os/cosmic-workspaces)
 
-<details>
+<details open>
   <summary>Click to expand</summary>
 
 A fork of this [extension](https://github.com/RensAlthuis/vertical-overview) designed to return the GNOME workspaces to a vertical layout rather than the horizontal view introduced in GNOME 40.
@@ -74,7 +74,7 @@ Since Desktop icons have been deprecated in mainline GNOME, Pop!_OS includes a G
 
 ### [Pop COSMIC](https://github.com/pop-os/cosmic)
 
-<details>
+<details open>
   <summary>Click to expand</summary>
 
 ![cosmic-dock](/images/customize-gnome/cosmic-dock.png)
@@ -83,10 +83,10 @@ Computer Operating System Main Interface Components **(C.O.S.M.I.C.)**
 
 COSMIC is the name for the main shell components in Pop_Shell (separate from the tiling and window-management components). It makes the following changes to the standard GNOME Shell environment:
 
-- Dock
-- Multi-Monitor improvements
-- Configuration options
-- Separated Workspaces overview from Applications.
+- [Updated Dock](#cosmic-dock)
+- Multi-Monitor improvements (navigation and `Workspaces` changes)
+- Configuration for Pop_Shell and GNOME behaviors.
+- Separated `Workspaces` overview from `Applications` menu.
 
 Most components can be configured to fit the user's workflow and preferences; presets are included for both keyboard-focused and mouse-focused navigation and use.
 
@@ -101,7 +101,7 @@ Most components can be configured to fit the user's workflow and preferences; pr
 
 An extension designed to add `i3wm`-style auto-tiling and related keyboard navigation features to the GNOME Desktop.
 
-For details refer to the Github page (linked above) or view the tutorial content [here](/articles/pop-basics)
+For details refer to the Github page (linked above) or view the tutorial content [here](/articles/pop-basics).
 
 </details>
 
@@ -134,11 +134,11 @@ The appearance and features of each icon vary by the application and the develop
 <details>
   <summary>Click to expand</summary>
 
-Adding and customizing certain features in GNOME desktop environments requires either editing system files or using a tool like GNOME Tweaks.
+Adding and customizing certain features in GNOME desktop environments requires either editing `gsettings` or using a tool like GNOME Tweaks.
 
-GNOME Tweaks is available in the **Pop!\_Shop**.
+`GNOME Tweaks` is available in the `Pop!_Shop`.
 
-Once installed, users can use GNOME Tweaks (appears as Tweaks after install) to:
+Once installed, users can use `GNOME Tweaks` (appears as "Tweaks" after install) to:
 
 - Customize their GNOME theme (icons, colors, etc.).
 - Edit additional mouse and keyboard settings.
@@ -150,7 +150,7 @@ Once installed, users can use GNOME Tweaks (appears as Tweaks after install) to:
 
 ![tweaks-winow-titlebars](/images/customize-gnome/tweaks-window-bars.png)
 
-**NOTE:** GNOME Tweaks is the easiest way to apply installed GNOME themes. However, installing custom themes also requires the [User Themes](#user-themes) extension be installed (see below).
+> **NOTE:** GNOME Tweaks is the easiest way to apply installed GNOME themes. However, installing custom themes also requires the [User Themes](#user-themes) extension be installed (see [below](#user-themes)).
 
 </details>
 

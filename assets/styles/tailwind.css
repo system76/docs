@@ -31,3 +31,10 @@
     @apply text-warm-gray-600 font-sans text-base leading-8 sm:text-lg sm:leading-9 xl:text-xl xl:leading-10;
   }
 }
+
+/*
+ * This block allows Markdown '#' headers to be made into foldable sections
+ */
+details summary > * {
+    display: inline;
+}

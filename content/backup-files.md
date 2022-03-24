@@ -43,7 +43,12 @@ User files are the most common data to back up. This includes documents, picture
 
 </details>
 
+<details open>
+<summary>
+
 ## Using Deja Dup
+
+</summary>
 
 <details>
 <summary>
@@ -147,6 +152,7 @@ To restore your data with Deja Dup, select the **Overview** page, then click the
 
 ![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
 
+</details>
 </details>
 
 <details open>

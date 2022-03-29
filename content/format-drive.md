@@ -26,7 +26,13 @@ tableOfContents: true
 
 In order to format the drive that has your OS on it we will need to boot from either a live disk or the Pop Recovery partition.
 
-**NOTE** Formatting the entire OS drive (including the Recovery partition) requires booting from a live disk or another drive.
+### Option 1: Live USB
+
+A live disk is a bootable USB storage device that runs the entire operating system in RAM. See [this article for instructions to create a bootable Pop!\_OS live USB.](/articles/live-disk/)
+
+### Option 2: Pop Recovery Partition
+
+The Recovery Partition is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. See [this article for instructions to boot into the Pop!\_OS recovery partition.](/articles/pop-recovery/)
 
 ### Disks application
 
@@ -36,6 +42,6 @@ In this screenshot the drive is a USB Flash Drive, though the concept is the sam
 
 ![Disks](/images/format-drive/disks-format-disk.png)
 
-Now select the **Format Disk...** option then make sure to have the 'Compatible with modern systems and hard drives > 2TB (GPT)' selected (you can use either the Quick option or the Slow option).
+Now select the `Format Disk` option then make sure to have the 'Compatible with modern systems and hard drives > 2TB (GPT)' selected (you can use either the Quick option or the Slow option).
 
 ![Disks](/images/format-drive/disks-format-disk2.png)

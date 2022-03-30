@@ -8,6 +8,10 @@ keywords:
   - 18.04
   - 19.10
   - 20.04
+  - 20.10
+  - 21.04
+  - 21.10
+  - 22.04
   - NVIDIA
   - Hybrid
   - Integrated
@@ -26,6 +30,7 @@ The following System76 laptops have these switchable graphics capabilities:
 - Adder WS (addw1, addw2)
 - Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15, gaze16)
+- Kudu (kudu6)
 - Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8)
 
 Pop!\_OS includes utilities for switching between these modes, which you can learn more about below.

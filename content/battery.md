@@ -124,7 +124,9 @@ sudo gedit /etc/rc.local
 
 And add:
 
-> sudo powertop --auto-tune
+```bash
+sudo powertop --auto-tune
+```
 
 above the 'exit 0' line, or add the individual tuning options.
 

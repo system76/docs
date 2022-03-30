@@ -31,6 +31,8 @@ With the <u>system76-power</u> package there are **Power Profiles** that can be 
 
 ## Useful Programs
 
+### TLP
+
 <u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. Its default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
 
 To install TLP, run this command:
@@ -67,6 +69,10 @@ man tlp-stat
 ```
 
 ---
+
+### Powertop
+
+Powertop monitors running processes and applications to determine how much power is being consumed. Powertop can also use application battery usage data to create custom power profiles. We recommend installing and running TLC before using Powertop.
 
 To install <u>powertop</u>, please open a terminal and run this command:
 
@@ -140,7 +146,9 @@ sudo gedit /etc/network/interfaces
 
 And add this line to the file:
 
-> iface enp4s0f2 inet manual
+```bash
+iface enp4s0f2 inet manual
+```
 
 This new configuration will take effect after a reboot. To disable the interface immediately, run this command:
 
@@ -160,7 +168,9 @@ sudo ifconfig enp4s0f2 up
 upower -d
 ```
 
-This will show the information that your computer can read about the battery.
+This will show the information that your computer can read about the battery. The output from `upower -d` is also included when generating log files in Settings -> Support -> Create Log Files:
+
+![Create Log Files](/images/battery/create-logs.png)
 
 ```bash
 sudo rm /var/lib/upower/*

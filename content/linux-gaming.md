@@ -119,7 +119,7 @@ There is also a community maintained GUI tool called ProtonUp-Qt for installing 
 
 <u>GameHub</u> is a game launcher that can use different compatibility layers like Wine/Proton, DOSBox and other tools. It can hook into Steam, GOG and other sources.
 
-It is written in Vala and you can read more about it [here](https://tkashkin.tk/projects/gamehub/).
+It is written in Vala and you can read more about it [here](https://tkashkin.github.io/projects/gamehub/).
 
 ### Install Gamehub From Command Line
 

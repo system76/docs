@@ -166,16 +166,20 @@ sudo ifconfig enp4s0f2 up
 
 ## Useful Commands
 
+This command will show the information that your computer can read about the battery:
+
 ```bash
 upower -d
 ```
 
-This will show the information that your computer can read about the battery. The output from `upower -d` is also included when generating log files in Settings -> Support -> Create Log Files:
+The output from `upower -d` is also included when generating log files in Settings -> Support -> Create Log Files:
 
 ![Create Log Files](/images/battery/create-logs.png)
+
+If the battery life indicator is inaccurate, this will remove the stored statistics:
 
 ```bash
 sudo rm /var/lib/upower/*
 ```
 
-If the battery life indicator is inaccurate, this will remove the stored statistics. After a few charge/discharge cycles the indicator should be more accurate.
+After a few charge/discharge cycles, the indicator should be more accurate.

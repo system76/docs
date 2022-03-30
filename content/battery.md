@@ -72,7 +72,7 @@ man tlp-stat
 
 ### Powertop
 
-Powertop monitors running processes and applications to determine how much power is being consumed. Powertop can also use application battery usage data to create custom power profiles. We recommend installing and running TLC before using Powertop.
+Powertop monitors running processes and applications to determine how much power is being consumed. Powertop can also use application battery usage data to create custom power profiles. We recommend installing and running TLP before using Powertop.
 
 To install <u>powertop</u>, please open a terminal and run this command:
 

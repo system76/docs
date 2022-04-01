@@ -16,7 +16,7 @@ section: software
 tableOfContents: true
 ---
 
-Bottles is a front end for Wine that uses <u>environments</u> to streamline configuration of libraries and dependencies. These environments simplify steps required to get up and running with Windows-only applications.
+[Bottles](https://docs.usebottles.com/) is a front end for Wine that uses <u>environments</u> to streamline configuration of libraries and dependencies. These environments simplify steps required to get up and running with Windows-only applications.
 
 ![Bottles Main Screen](/images/using-bottles/bottles-main-screen.png)
 

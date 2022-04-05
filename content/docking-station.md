@@ -42,13 +42,13 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 
 ## A Note About Multi-Monitor Support
 
-Many docking stations offer multiple video-out ports on the dock device itself. However, depending on the technology used by the dock, there may be only one video stream per port. Even if the docking station supports multiple video ports, only one at a time could be active. For example, connecting a docking station with two HDMI ports to the Thunderbolt port on a System76 laptop will only activate one HDMI monitor.
+Many docking stations offer multiple video-out ports on the dock device itself. However, depending on the technology used by the dock, there may be only one video stream per port. Even if the docking station supports multiple video ports, only one at a time could be active. For example, connecting a docking station with two HDMI ports to the Thunderbolt port on a System76 laptop may only activate one HDMI monitor.
 
-DisplayPort -- and by extension, Mini-DisplayPort and DisplayPort over USB (often called USB Alt-Mode) -- allows for more than 1 video stream to be sent over a single cable, with a technology called Multi-Stream Transport, or MST. MST is part of the DisplayPort standard; so most, if not all, DisplayPort **outputs** support this feature. However, not all docking stations use this technology to provide multiple video outputs. To use MST with your system, look for a MST hub or dock that explicitly mentions the feature.
+DisplayPort -- and by extension, Mini-DisplayPort and DisplayPort over USB-C (often called USB Alt-Mode) -- allows for more than 1 video stream to be sent over a single cable, with a technology called Multi-Stream Transport, or MST. MST is part of the DisplayPort standard; so most, if not all, DisplayPort **outputs** support this feature. However, not all docking stations use this technology to provide multiple video outputs. To use MST with your system, look for a MST hub or dock that explicitly mentions the feature.
 
 Alternatively, you can also use MST to daisy-chain two or more monitors together from the laptop or a docking station, but this requires the monitor hardware to support daisy-chaining. This is usually an advertised feature, so check the marketing material and store page for your monitor to check. This can also be verified by checking for a DisplayPort output on the monitor, in addition to the normal DisplayPort inputs. A set up with daisy-chaining would look something like the diagram below:
 
-Laptop -> Monitor 1 -> DisplayPort Cable or Thunderbolt Cable -> Monitor 2
+Laptop -> Monitor 1 -> DisplayPort or USB-C Cable -> Monitor 2
 
 ### System76-tested docks
 

@@ -83,6 +83,8 @@ Run these commands based on what type of disk you have:
 | ```sudo mount /dev/nvme0n1p2 /mnt```         | ```sudo mount /dev/sda2 /mnt```        |
 |```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` |```sudo mount /dev/sda1 /mnt/boot/efi```|
 
+>**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
+
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
 sudo cp -n /etc/resolv.conf /mnt/etc/
@@ -107,6 +109,8 @@ Run these commands based on what type of disk you have:
 | NVMe Drive                           | SATA Drive                      |
 | :----------------------------------- | :------------------------------ |
 | ```sudo mount /dev/nvme0n1p2 /mnt``` | ```sudo mount /dev/sda2 /mnt``` |
+
+>**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
 
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
@@ -141,6 +145,8 @@ Run these commands based on what type of disk you have:
 | :-------------------------------------------- | :-------------------------------------- |
 | ```sudo mount /dev/nvme0n1p3 /mnt```          | ```sudo mount /dev/sda3 /mnt```         |
 | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` | ```sudo mount /dev/sda1 /mnt/boot/efi```|
+
+>**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
 
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done

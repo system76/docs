@@ -108,7 +108,7 @@ The status window will show current print jobs, detected printers, and other inf
 
 ### Assign a Static IP Address to the Printer
 
-Connectivity issues can occur when the printer is assigned an address using DHCP. Assigning a permanent, static IP address will resolve these issues. Reference your printer manufacturer's documentation for this process. Be aware that simply using the printer's assigned DHCP address as a static IP may cause a future address conflict. Additional router configuration may be required to reserve specific addresses within our outside of a DHCP address pool. If your printer is being deployed on a corporate network, contact your network administrator for this process.
+Connectivity issues can occur when the printer is assigned an address using DHCP. Assigning a permanent, static IP address will resolve these issues. Reference your printer manufacturer's documentation for this process. Be aware that simply using the printer's assigned DHCP address as a static IP may cause a future address conflict. Additional router configuration may be required to reserve specific addresses within or outside of a DHCP address pool. If your printer is being deployed on a corporate network, contact your network administrator for this process.
 
 ## Useful Commands
 

@@ -46,7 +46,9 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 ### Encrypted Disk
 
-To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  Please use the `lsblk` command described above to determine the correct drive and partition.
+To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  
+
+>**Note**: The drive names listed below (e.g. `/dev/sda3`) may not match your drive configuration. Use the `lsblk` command described above to determine the correct drive and partition.
 
 | **SATA Drives**                                    | **NVMe Drives**                                   |
 |:--------------------------------------------------:|:-------------------------------------------------:|
@@ -63,7 +65,7 @@ sudo vgchange -ay
 sudo mount /dev/mapper/data-root /mnt
 ```
 
-And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to '+ Other Locations' -> 'Computer' and then click on the `/mnt` folder.
+And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to `+ Other Locations` -> `Computer` and then click on the `/mnt` folder.
 
 ## Chroot
 
@@ -83,7 +85,7 @@ sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
-With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>Files</u> via "+ Other Locations" -> "Computer" -> "mnt."
+With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](article/package-manager-pop). You can also access your files with <u>Files</u> via `+ Other Locations` -> `Computer` -> `/mnt`.
 
 ### After Chroot
 

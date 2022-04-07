@@ -89,13 +89,21 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 ## Troubleshooting
 
+### Remove and Re-add the Printer in Settings
+
 If the printer stops working, open the <u>Printers</u> Application again and right-click on the printer and select **Delete** to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.
+
+### Check the Printer Status in CUPS
 
 To look at the CUPS (Common Unix Printing System) configuration and status window, please open this webpage:
 
 [localhost:631](http://localhost:631)
 
 The status window will show current print jobs, detected printers, and other information about the printing system. If you would like to share this printer with others on your local network, click on the 'Admin' link, under Server, click on the "Share printers connected to this system" and save the changes. Other computers on your network should than see that printer.
+
+### Assign a Static IP Address to the Printer
+
+Connectivity issues can occur when the printer is assigned an address using DHCP. Assigning a permanent, static IP address will resolve these issues. Reference your printer manufacturer's documentation for this process. Be aware that simply using the printer's assigned DHCP address as a static IP may cause a future address conflict. Additional router configuration may be required to reserve specific addresses within or outside of a DHCP address pool. If your printer is being deployed on a corporate network, contact your network administrator for this process.
 
 ## Useful Commands
 

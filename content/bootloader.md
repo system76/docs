@@ -29,6 +29,8 @@ On a fresh install of Pop!_OS 18.04, <u>systemd-boot</u> is used rather than the
 
 Please see our instructions for making a live disk of Pop!_OS [here](/articles/live-disk/).
 
+>**Note**: The live environment will not have your WiFi password saved. Once booted into the live environment, you will need to reconnect manually to your WiFi in order to access the internet.
+
 ### Reinstall GRUB Boot-loader
 
 Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. When you see the System76 logo on the screen:
@@ -83,11 +85,8 @@ Run these commands based on what type of disk you have:
 | ```sudo mount /dev/nvme0n1p2 /mnt```         | ```sudo mount /dev/sda2 /mnt```        |
 |```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` |```sudo mount /dev/sda1 /mnt/boot/efi```|
 
->**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
-
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -110,11 +109,8 @@ Run these commands based on what type of disk you have:
 | :----------------------------------- | :------------------------------ |
 | ```sudo mount /dev/nvme0n1p2 /mnt``` | ```sudo mount /dev/sda2 /mnt``` |
 
->**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
-
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -146,11 +142,8 @@ Run these commands based on what type of disk you have:
 | ```sudo mount /dev/nvme0n1p3 /mnt```          | ```sudo mount /dev/sda3 /mnt```         |
 | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` | ```sudo mount /dev/sda1 /mnt/boot/efi```|
 
->**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
-
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 apt install --reinstall linux-image-generic linux-headers-generic
 update-initramfs -c -k all

@@ -23,6 +23,8 @@ tableOfContents: true
 
 It is possible to mount an OS drive and log into the installed OS with root access. This is called gaining "chroot" (change to root) access. This process is useful when [rescuing files](/articles/disaster-recovery), [fixing package manager issues](/articles/package-manager-pop), or [resetting forgotten user passwords](/articles/password).
 
+>**Note**: The live environment will not have your WiFi password saved. Once booted into the live environment, you will need to reconnect manually to your WiFi in order to access the internet.
+
 You'll need a Live OS Environment from which to mount your drive, and log in. This can be done from a [live USB](/articles/live-disk), or on Pop!_OS from the [recovery partition](/articles/pop-recovery).
 Boot the computer while holding down the [boot menu key for your system](/articles/boot-menu), or the <kbd>SPACE</kbd> bar to access Systemd, and the Pop!\_OS Recovery partition.
 
@@ -77,11 +79,8 @@ The EFI partition is the next partition to be mounted. To help identify it, this
 |:-------------------------------------:|:----------------------------------------:|
 | ```sudo mount /dev/sda1 /mnt/boot/efi```    | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```  |
 
->**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
-
 ```bash
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 

@@ -27,6 +27,8 @@ To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding dow
 
 Once the menu is shown, choose **Pop!_OS Recovery**.
 
+>**Note**: The Pop!\_OS recovery environment will not have your WiFi password saved. Once booted into the live environment, you will need to reconnect manually to your WiFi in order to access the internet.
+
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
 ## Clean Install
@@ -112,11 +114,8 @@ The EFI partition is the next partition to be mounted. To help identify it, this
 |:-------------------------------------:|:----------------------------------------:|
 | ```sudo mount /dev/sda1 /mnt/boot/efi```    | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```  |
 
->**Note**: Make sure the system has an internet connection before copying over /etc/resolv.conf file.
-
 ```bash
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
@@ -157,7 +156,7 @@ Alternatively you can also upgrade the recovery partition from the command-line
 pop-upgrade recovery upgrade from-release
 ```
 
-You should see an output similar to below saying the recovery parition had been updated:
+You should see an output similar to below saying the recovery partition had been updated:
 
 ```
 checking if pop-upgrade requires an update

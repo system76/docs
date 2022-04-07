@@ -21,6 +21,7 @@ tableOfContents: true
 ## Steam
 
 <u>Steam</u> is a popular game client released by Valve. Steam offers games that are natively compatible with Linux, and compatibility for many non-native games can be achieved using Proton.
+
 ### Install Steam From the Pop!_Shop
 
 Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. Now click the **Install** button.

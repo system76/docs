@@ -68,7 +68,7 @@ Valve's official Proton release may not provide optimal compatibility for specif
 
 - **Protonup** is a command-line tool that installs, manages, and updates ProtonGE. Protonup is written in Python and maintained by AUNaseef in the [Pypi project directory](https://pypi.org/project/protonup/).
 
-- **ProtonUp-Qt** is a communitry-maintained GUI tool based on AUNaseef's CLI tool. The app allows downloading Proton versions for Steam, and WINE versions for Lutris. It will automatically put each of these compatibility layer versions in the correct location to be found by Steam and Lutris respectively. The ProtonUp-Qt Github repository can be found [here](https://github.com/DavidoTek/ProtonUp-Qt).
+- **ProtonUp-Qt** is a community-maintained GUI tool based on AUNaseef's CLI tool. The app allows downloading Proton versions for Steam, and WINE versions for Lutris. It will automatically put each of these compatibility layer versions in the correct location to be found by Steam and Lutris respectively. The ProtonUp-Qt Github repository can be found [here](https://github.com/DavidoTek/ProtonUp-Qt).
 
 #### Install Protonup
 
@@ -262,7 +262,7 @@ Now that <u>Battle.net</u> is installed, you can select WoW from your Games and 
 
 Once <u>Battle.net</u> launches you can finish the World of Warcraft installation.
 
-**NOTE:** If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two seperate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.
+**NOTE:** If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two separate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.
 
 ![Lutris Installed Game](/images/linux-gaming/lutris-wow-installed.png)
 
@@ -276,7 +276,7 @@ In the Game Options tab we'll set the path to the Executable (the .exe file exte
 
 ![Lutris Add Game Options](/images/linux-gaming/lutris-add-game-options.png)
 
-Now click on the Firefox item in <u>Lutris</u> and then press the **Play** button. Once the install is finished be sure to unclick the checkbox at the end of the installer. Once the installer closes, right-click on the Firefox item and hit the **Configure** button. Now change the Executable path to `~/.wine/drive_c/Program Files/Mozilla Firefox/firefox.exe` using the **Browse...** button. Otherwise, every time you launch Firefox, it will run the setup wizard again, intead of the newly installed `Firefox.exe`.
+Now click on the Firefox item in <u>Lutris</u> and then press the **Play** button. Once the install is finished be sure to unclick the checkbox at the end of the installer. Once the installer closes, right-click on the Firefox item and hit the **Configure** button. Now change the Executable path to `~/.wine/drive_c/Program Files/Mozilla Firefox/firefox.exe` using the **Browse...** button. Otherwise, every time you launch Firefox, it will run the setup wizard again, instead of the newly installed `Firefox.exe`.
 
 > **NOTE:** You will need to hit <kbd>Ctrl</kbd>+<kbd>H</kbd> to show the hidden `.wine` folder when setting the Executable path first.
 

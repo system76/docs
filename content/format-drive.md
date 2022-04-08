@@ -42,6 +42,6 @@ In this screenshot the drive is a USB Flash Drive, though the concept is the sam
 
 ![Disks](/images/format-drive/disks-format-disk.png)
 
-Now select the `Format Disk` option then make sure to have the 'Compatible with modern systems and hard drives > 2TB (GPT)' selected (you can use either the Quick option or the Slow option).
+Now select the `Format Disk...` option then make sure to have the 'Compatible with modern systems and hard drives > 2TB (GPT)' selected (you can use either the Quick option or the Slow option).
 
 ![Disks](/images/format-drive/disks-format-disk2.png)

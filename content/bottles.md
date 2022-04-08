@@ -38,7 +38,7 @@ flatpak install flathub com.usebottles.bottles
 
 ## Create Your First Bottle
 
-You can choose a gaming, application, or custom environment. In this example we will install
+You can choose a gaming, application, or custom environment. In this example we will install a Windows application.
 
 1. Launch Bottles and click through the introductory screens. Click `Create a new Bottle`.
   ![Create a new bottle](/images/using-bottles/create-new-bottle.png)

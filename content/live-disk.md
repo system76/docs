@@ -1,7 +1,7 @@
 ---
-title: Live Disk Creation (Other Operating Systems)
+title: Live Disk Creation
 description: >
-  Create and use bootable media on other operating systems.
+  Create and use bootable media to install or repair your OS.
 keywords:
   - Pop_OS!
   - USB
@@ -32,7 +32,7 @@ Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_O
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
 - [Fixing the boot loader](/articles/bootloader)
 
-A live disk is a handy tool to have around!
+A live disk is a handy tool to have around. Support recommends using a live disk when doing hardware troubleshooting.
 
 ## Downloading the ISO
 
@@ -49,13 +49,13 @@ Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal (<
 #### For Intel/AMD iso
 
 ```
-sha256sum Downloads/pop-os_21.04_amd64_intel_7.iso
+sha256sum Downloads/pop-os_21.10_amd64_intel_7.iso
 ```
 
 #### For NVIDIA iso
 
 ```
-sha256sum Downloads/pop-os_21.04_amd64_nvidia_7.iso
+sha256sum Downloads/pop-os_21.10_amd64_nvidia_7.iso
 ```
 
 **Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
@@ -69,13 +69,13 @@ Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Promp
 #### For Intel/AMD iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_21.04_amd64_intel_7.iso sha256
+CertUtil -hashfile Downloads\pop-os_21.10_amd64_intel_7.iso sha256
 ```
 
 #### For NVIDIA iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_21.04_amd64_nvidia_7.iso sha256
+CertUtil -hashfile Downloads\pop-os_21.10_amd64_nvidia_7.iso sha256
 ```
 
 **Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
@@ -84,7 +84,7 @@ If the checksum does not match the one on the [download page](https://pop.system
 
 ## Making the Bootable Drive
 
-In order to make the bootable live disk, you must have a flash drive and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial, we'll use the Disks applicaton for Ubuntu and Etcher for Windows/macOS.
+In order to make the bootable live disk, you must have a flash drive and software to write the Pop!_OS .iso image to the drive. There's a variety of applications you can use to write disk images to a flash drive, but for this tutorial, we'll use the Disks utility for Linux and Etcher for macOS/Windows.
 
 ### For Ubuntu/Pop!_OS
 
@@ -96,29 +96,41 @@ Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon>
 
 ![Disks](/images/live-disk/disks-selection.png)
 
+Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
+
 ### For Windows/macOS
 
-Etcher is an open source app for Windows and macOS that allows you to "burn images to SD cards & USB drives safely and easily." You can download it at [Etcher.io](https://etcher.io).
+Etcher is an open source app for Windows, macOS, and Linux that allows you to burn disk images to USB drives. You can download it at [balena.io/etcher/](https://www.balena.io/etcher/).
 
 Once you have installed Etcher and downloaded the Pop!_OS.iso image, open up the Etcher application. You should see something like this:
 
-![Etcher](/images/live-disk/etcher.png)
+![Etcher Startup](/images/live-disk-new/etcher01-start.png)
 
-Choose `Select Image` and navigate to where you downloaded Pop!_OS, click on it and hit the `Open` button:
+Choose `Flash from file` and then navigate to where you downloaded the Pop!_OS ISO file (typically your "Downloads" folder). Click on the file then and hit the `Open` button. On Windows, it should look something like this:
 
-![Select Pop!_OS iso](/images/live-disk/open-pop-iso-etcher.png)
+![Select Pop!_OS iso](/images/live-disk-new/etcher02-filepicker.png)
 
-Next, select the drive that you want to use. If there is only one, it should automatically recognize that you have a flash drive inserted and select it.
+Now click on `Select Target`:
 
-![Etcher Flash Drive Selected](/images/live-disk/etcher-flash-selected.png)
+![Click on Select Target](images/live-disk-new/etcher03-select-target.png)
 
-Now hit the `Flash` button and watch the magic happen!
+Next, select the drive that you want to use by checking the box next to it. It should only show removable drives by default. After the box for your USB stick is checked, click on the `Select` button:
 
-![Flashing Pop!_OS...](/images/live-disk/flashing-pop-os.png)
+![Flash Drive Select](/images/live-disk-new/etcher04-select-device.png)
 
-![Flash Complete](/images/live-disk/flash-complete.png)
+Now hit the `Flash` button and it will start writing to the USB drive.
 
-Once the flash is complete (it should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
+![Click Finish](/images/live-disk-new/etcher05-select-finish.png)
+
+Now you'll see a progress bar, and some information about other projects by _balena_, the company that makes Etcher. Wait for it to finish writing to the USB device.
+
+![Flashing the drive](/images/live-disk-new/etcher06-in-progress.png)
+
+When it's complete, you can just close the app.
+
+![Flash Complete](/images/live-disk-new/etcher07-complete.png)
+
+Now it's time to boot it up on the machine that you want to install Pop!_OS on!
 
 ## Booting From the Live Disk
 

@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# VSCode Dev Container Config
+.devcontainer/

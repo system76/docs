@@ -36,7 +36,7 @@ lsblk
 
 This will show you the name of the main internal drive, which will have 4 partitions (Pop!\_OS), or 3 (Ubuntu) on it.  We will be working with the 3rd partition.  If the main drive is an NVMe drive, it will be called `/dev/nvme0n1p3` (p2 on Ubuntu) and if the drive is a SATA or regular M.2 drive, it will be called `/dev/sda3` (sda2 on Ubuntu).
 
->**Note:** The rest of these instructions assume a Pop!\_OS install, for partition labelling. The instructions are otherwise the same. Change the partition number accordingly.
+>**Note:** The rest of these instructions assume partition labeling consistent with a Pop!_OS install. For an Ubuntu install, change the partition number accordingly; the instructions are otherwise the same.
 
 Next, run this command:
 
@@ -48,7 +48,7 @@ If the command fails and says `mount: /mnt: unknown filesystem type 'crypto_LUKS
 
 ### Encrypted Disk
 
-To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk.  
+To access an encrypted disk, run these additional commands to unlock the encrypted volume.
 
 >**Note**: The drive names listed below (e.g. `/dev/sda3`) may not match your drive configuration. Use the `lsblk` command described above to determine the correct drive and partition.
 
@@ -67,7 +67,7 @@ sudo vgchange -ay
 sudo mount /dev/mapper/data-root /mnt
 ```
 
-And now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to `+ Other Locations` -> `Computer` and then click on the `/mnt` folder.
+Now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to `+ Other Locations` -> `Computer` and then click on the `/mnt` folder.
 
 ## Chroot
 

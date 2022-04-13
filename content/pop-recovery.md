@@ -37,13 +37,13 @@ This option erases the current install along with all user files. It reformats t
 
 Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery).
 
->**Note:**The Recovery partition OS version will either be the same as the OS version that shipped with your computer or whichever version to which the Recovery partition has been [updated](#update-recovery-partition).
+>**Note:**The Recovery partition OS version will either be the same as the OS version that shipped with your computer, or the latest version to which the Recovery partition has been [updated](#update-recovery-partition).
 
 ## Refresh Install
 
 The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory.
 
->**Note:** User-installed applications are not preserved and will need to be reinstalled.
+>**Note:** User-installed applications not stored in the Home folder (e.g. .deb or apt installed versions) will need to be re-installed.
 
 If the `Refresh Install` option is not present on the install screen, one of two things may be true.
 
@@ -65,7 +65,7 @@ If the existing OS install needs to be repaired, the installer application shoul
 
 >**Note:** Do not choose any install or repair options, as this could result in data loss.
 
-For the instructions below to access the existing OS drive:
+Follow the instructions below to access the existing OS drive:
 
 First, press <kbd>SUPER</kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
@@ -106,7 +106,7 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 ## Chroot
 
-`chroot` runs commands as if the existing operating system had been booted.  Once these commands are run, then package manager (`apt`) and other system-level commands can be run.
+`Chroot` runs commands as if the existing operating system had been booted. Once these commands are run, package manager (`apt`) and other system-level commands can be run.
 
 The EFI partition is the next partition to be mounted. To help identify it, this partition is usually around 512MB, and is labeled as `/boot/efi`.
 
@@ -156,7 +156,7 @@ Alternatively you can also upgrade the recovery partition from the command-line
 pop-upgrade recovery upgrade from-release
 ```
 
-You should see an output similar to below saying the recovery partition had been updated:
+You should see an output similar to what is pictured below confirming the recovery partition had been updated:
 
 ```
 checking if pop-upgrade requires an update

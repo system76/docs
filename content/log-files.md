@@ -104,4 +104,4 @@ As with the <u>System76 Driver</u> application, the log files will be stored wit
 
 Once the logs are created, you can attach them directly to the support case.
 
-> **NOTE:** In some cases, error messages can grow logs files to a size too large for an email attachment. If that's the case, use a file sharing service like Google Drive or [Wormhole](https://wormhole.app/), and then include the share link in an email response to the support ticket.
+> **NOTE:** In some cases, error messages can grow log files to a size too large for an email attachment. If that's the case, use a file sharing service like Google Drive or [Wormhole](https://wormhole.app/), and then include the share link in an email response to the support ticket.

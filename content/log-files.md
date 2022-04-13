@@ -69,7 +69,7 @@ Next click on the button outlined in red in the <u>System76 Driver</u> applicati
 
 ### Manually Generating Log Files
 
-If for some reason you are unable to access the <u>System76 Driver</u> application, you can manually create a set of logs files by running a series of commands via the <u>Terminal</u> application. To do this, click `Activities`/`Applications` in the top left of your system, search for "Terminal", then open the application that appears.
+If for some reason you are unable to access the <u>System76 Driver</u> application, you can manually create a set of log files by running a series of commands via the <u>Terminal</u> application. To do this, click `Activities`/`Applications` in the top left of your system, search for "Terminal", then open the application that appears.
 
 You can also launch <u>Terminal</u> with keyboard shortcuts:
 

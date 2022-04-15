@@ -19,26 +19,63 @@ tableOfContents: true
 
 Log files help our support team learn more about your system, and can be a great benefit during troubleshooting.
 
-Among the information collected by the log files includes:
+The information collected by the log files includes:
 
 * The installed operating system and active kernel version
 * A listing of the filesystems connected to your system, and the space used
 * Information about your firmware
 * A list of disks connected to your system, as well as connected USB devices
-* Sensors information showing temperatures and fanspeeds
+* Sensors information showing temperatures and fan speeds
 * Comprehensive output from `syslog` and `journalctl`
+
+The detailed contents of the log file are listed below:
+
+```
+/apt/sources.list.d/*
+/apt/history.log
+/apt/history-rotated.log
+/apt/sources.list
+/apt/term.log
+/apt/term-rotated.log
+df
+dmesg
+dmidecode
+fstab
+journalctl
+lsblk
+lspci
+lsusb
+sensors
+syslog.log
+systeminfo.txt
+upower
+uptime
+xorg.0.log
+```
+
+## Generating Log Files in Settings (Pop!_OS 21.10+)
+
+Starting in Pop!\_OS 21.10, logs are no longer generated through the <u>System76 Driver</u> application. Instead, a "Support" section has been added to the <u>Settings</u> application. Clicking the `Create Log Files` button will prompt you for your admin password, and then generate and save a file called `pop-support_[timestamp].tar.xz`. This file is saved in your Home directory (`/home/username`).
+
+![Settings-Logs](/images/system76-driver/logs-in-settings.png)
 
 ## Generating Log Files Using the System76 Driver Application
 
-The System76 Driver can be opened by clicking the <u>Activities</u> button in the top left (or pressing the Ubuntu or Pop key), then searching for 'System76.' Among the applications listed should be the <u>System76 Driver</u> application. Go ahead and click the icon to launch the application, and enter your password when prompted to do so.
+The System76 Driver can be opened by clicking the `Activities` or `Applications` button in the top left (or pressing the <kbd>SUPER</kbd> key), then searching for "System76." Among the applications listed should be the <u>System76 Driver</u> application. Click the icon to launch the application, and enter your password when prompted to do so.
 
-Next click on the button outlined in red in the <u>System76 Driver</u> application and there will be a file called `system76-logs.tgz` placed in your Home directory (/home/username)
+Next click on the button outlined in red in the <u>System76 Driver</u> application and a file called `system76-logs.tgz` will be created and placed in your Home directory (`/home/username`).
 
 ![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
 
 ### Manually Generating Log Files
 
-If for some reason you are unable to access the <u>System76 Driver</u> application, you can manually create a set of logs files by running a series of commands via the Terminal application. To do this, click <u>Activities</u> in the top left of your system, search for <u>Terminal</u>, then open the application that appears.
+If for some reason you are unable to access the <u>System76 Driver</u> application, you can manually create a set of log files by running a series of commands via the <u>Terminal</u> application. To do this, click `Activities`/`Applications` in the top left of your system, search for "Terminal", then open the application that appears.
+
+You can also launch <u>Terminal</u> with keyboard shortcuts:
+
+Pop - <kbd>SUPER</kbd>+<kbd>T</kbd>
+
+Ubuntu - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 
 From there, you can enter the following commands:
 
@@ -65,4 +102,6 @@ As with the <u>System76 Driver</u> application, the log files will be stored wit
 
 ### Sending the Logs to the Support Team
 
-Once the logs are created, you can either attach them directly to the support case, or you can email them to [careteam@system76.com](mailto:careteam@system76.com) and reference your case number.
+Once the logs are created, you can attach them directly to the support case.
+
+> **NOTE:** In some cases, error messages can grow log files to a size too large for an email attachment. If that's the case, use a file sharing service like Google Drive or [Wormhole](https://wormhole.app/), and then include the share link in an email response to the support ticket.

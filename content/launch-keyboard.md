@@ -28,7 +28,7 @@ The Launch keyboard uses a System76 version of [QMK firmware](https://github.com
 
 ## Layers
 
-The core idea of "Layers" is that one key can be used for different actions. For example, on our laptops, holding the <kbd>Fn</kbd> then pressing the <kbd>F5</kbd> will lower the volume. Pressing <kbd>F5</kbd> on it's own will perform a different action, like refreshing a web page in the browser. You can read more about layers [here](https://beta.docs.qmk.fm/using-qmk/software-features/feature_layers).
+The core idea of "Layers" is that one key can be used for different actions. For example, on our laptops, holding the <kbd>Fn</kbd> then pressing the <kbd>F5</kbd> will lower the volume. Pressing <kbd>F5</kbd> on it's own will perform a different action, like refreshing a web page in the browser. You can read more about layers [here](https://docs.qmk.fm/#/feature_layers).
 
 ## Firmware Updates
 

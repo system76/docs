@@ -118,7 +118,7 @@ If there is an **ME State** option at the bottom of the list, select it, then se
 
 Navigate to the **Exit** section in the left sidebar, then select **Exit Saving Changes** and **Yes** to save and exit the setup utility. The system may power off and back on again, then it should boot normally.
 
-### Updating on Other OS's
+### Updating on Other Operating Systems
 
 If your system is running another Linux-based OS installed with an EFI System Partition (ESP), then you can update your firmware using a live disk of Pop!\_OS. First, create a live disk using one of the following articles:
 

@@ -148,7 +148,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 ## Repairing Upgrade Errors
 
-Due to the overwhelming demand for Pop!\_OS, users may occasionally experience bandwidth issues. If you are still experiencing any connection errors after waiting a short time (15-30 mins.), please run the following commands in a terminal.
+Due to the overwhelming demand for Pop!\_OS, users may occasionally experience bandwidth issues. If you are still experiencing any connection errors after waiting a short time (15-30 minutes), please run the following commands in a terminal.
 
 ```
 sudo rm -f /etc/apt/sources.list.d/pop-os-ppa.sources

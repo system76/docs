@@ -89,7 +89,7 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 21.10 is available with a `Download` button.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 22.04 is available with a `Download` button.
 
 If you are planning on staying on an LTS release for the time being, this is also the page where you can dismiss upgrade notifications.
 
@@ -151,7 +151,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 ## Repairing Upgrade Errors
 
-Due to the overwhelming demand for Pop!\_OS, users may occasionally experience bandwidth issues. If you are experiencing any connection errors please run the following commands in a terminal.
+Due to the overwhelming demand for Pop!\_OS, users may occasionally experience bandwidth issues. If you are still experiencing any connection errors after waiting a short time (15-30 mins.), please run the following commands in a terminal.
 
 ```
 sudo rm -f /etc/apt/sources.list.d/pop-os-ppa.sources

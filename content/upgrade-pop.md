@@ -70,13 +70,15 @@ Please read our article on [how to backup your files](/articles/backup-files/) f
 
 ## Upgrade Pop!\_OS
 
+Pop!\_OS 22.04 was released on April 25, 2022
+
 Pop!\_OS 21.10 was released on December 14, 2021
 
 Pop!\_OS 21.04 was released on June 29, 2021.
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
-### Upgrading Pop!\_OS to 21.10 from 21.04
+### Upgrading Pop!\_OS to 22.04 from 21.10
 
 **NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases)
 
@@ -91,6 +93,8 @@ Once the updates are applied, a notification should appear at the top of your sc
 
 If you are planning on staying on an LTS release for the time being, this is also the page where you can dismiss upgrade notifications.
 
+The OS Upgrade and Recovery page of settings now allows for automatic update scheduling and updating the Recovery partition as well.
+
 ![Settings OS Upgrade](/images/upgrade-pop/setting-os-upgrade.png)
 
 **NOTE:** Refreshing is **not** part of the upgrade process. `Refresh` will reinstall the Operating System with the version stored in Recovery, and will erase all user-installed applications.
@@ -99,7 +103,7 @@ If you are planning on staying on an LTS release for the time being, this is als
 
 2. Click on the notification and your computer will restart to the upgrade screen.
 
-After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 21.10!
+After the upgrade is finished, you will be taken back to the login page, and voila! Your system is now running Pop!\_OS 22.04!
 
 ## Terminal Upgrade
 
@@ -147,7 +151,7 @@ Once restarted, the computer will be on the newly upgraded system! If you run in
 
 ## Repairing Upgrade Errors
 
-Due to the overwhelming demand for 21.10, we have had to expand our servers' bandwidth. If you are experiencing any connection errors please run the following commands in a terminal.
+Due to the overwhelming demand for Pop!\_OS, users may occasionally experience bandwidth issues. If you are experiencing any connection errors please run the following commands in a terminal.
 
 ```
 sudo rm -f /etc/apt/sources.list.d/pop-os-ppa.sources
@@ -193,7 +197,7 @@ sudo apt-add-repository -yn ppa:system76/pop
 # change update server back to us.archive.ubuntu.com
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
 # change all release names to focal, the 20.04 release
-sudo sed -Ei 's/cosmic|eoan|disco|eoan/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 
 ### 3. Now, do the upgrade
@@ -213,7 +217,7 @@ sudo apt full-upgrade 2>/dev/null | tee ~/upgrade.log
 
 You may want to take a look at the files that end in "list" in "/etc/apt/backup" to see if you want to enable them again by moving them back to the /etc/apt/sources.list.d/ directory.
 
-### 5. After the 20.04 Pop upgrade is complete, **reboot**
+### 5. After the 20.04 Pop upgrade is complete, **Reboot**
 
 ### 6. Run the command to upgrade to the newest release
 
@@ -221,9 +225,9 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 pop-upgrade release upgrade
 ```
 
-## Upgrading older releases (20.10)
+## Upgrading older releases to 20.04
 
-Like other older releases, Pop!\_OS 20.10 update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does require some work to manually upgrade the system. Use the following steps to upgrade the system:
+On older releases, Pop!\_OS update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does require some work to manually upgrade the system. Use the following steps to upgrade the system:
 
 ### 1. Update sources to 'old-releases'
 
@@ -242,19 +246,19 @@ sudo apt full-upgrade
 sudo apt install pop-desktop
 ```
 
-### 2. Transisiton to the new release files for Pop!\_OS 21.10
+### 2. Transition to the release files for Pop!_OS 20.04
 
 ```bash
-# backup PPA files
+# create a backup directory
 sudo mkdir -p /etc/apt/backup
-sudo cp -r /etc/apt/sources.list.d/ /etc/apt/backup
-sudo rm -f /etc/apt/sources.list.d/system76-dev*
-# create new PPA file for from Pop!_OS infrastructure
-sudo add-apt-repository "deb http://apt.pop-os.org/release impish main"
-sudo mv /etc/apt/sources.list.d/archive_uri-http_apt_pop-os_org_release-groovy.list /etc/apt/sources.list.d/pop-os-ppa.list
-# update all sources from groovy to impish
-sudo sed -Ei 's/groovy/impish/g' /etc/apt/sources.list.d/*
-sudo sed -Ei 's/old-releases/us.archive/g' /etc/apt/sources.list.d/system.sources
+# move all current PPA entries into backup directory
+sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
+# add the System76 PPA back in
+sudo apt-add-repository -yn ppa:system76/pop
+# change update server back to us.archive.ubuntu.com
+sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
+# change all release names to focal, the 20.04 release
+sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 
 ### Now, Do the Upgrade

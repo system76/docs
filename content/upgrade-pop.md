@@ -89,12 +89,9 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade package will display a message that Pop!\_OS 22.04 is available with a `Download` button.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade page will display a message that Pop!\_OS 22.04 is available with a `Download` button.
 
 If you are planning on staying on an LTS release for the time being, this is also the page where you can dismiss upgrade notifications.
-
-The OS Upgrade and Recovery page of settings now allows for automatic update scheduling and updating the Recovery partition as well.
-
 ![Settings OS Upgrade](/images/upgrade-pop/Pop-22.04-Upgrade.png)
 
 **NOTE:** Refreshing is **not** part of the upgrade process. `Refresh` will reinstall the Operating System with the version stored in Recovery, and will erase all user-installed applications.
@@ -227,7 +224,7 @@ pop-upgrade release upgrade
 
 ## Upgrading older releases to 20.04
 
-On older releases, Pop!\_OS update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade does require some work to manually upgrade the system. Use the following steps to upgrade the system:
+On older releases, Pop!\_OS update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade requires some work to manually upgrade the system. Use the following steps to upgrade the system:
 
 ### 1. Update sources to 'old-releases'
 

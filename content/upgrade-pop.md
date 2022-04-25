@@ -95,7 +95,7 @@ If you are planning on staying on an LTS release for the time being, this is als
 
 The OS Upgrade and Recovery page of settings now allows for automatic update scheduling and updating the Recovery partition as well.
 
-![Settings OS Upgrade](/images/upgrade-pop/Pop!_OS 22.04 Upgrade.png)
+![Settings OS Upgrade](/images/upgrade-pop/Pop-22.0-Upgrade.png)
 
 **NOTE:** Refreshing is **not** part of the upgrade process. `Refresh` will reinstall the Operating System with the version stored in Recovery, and will erase all user-installed applications.
 

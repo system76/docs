@@ -222,52 +222,6 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 pop-upgrade release upgrade
 ```
 
-## Upgrading older releases to 20.04
-
-On older releases, Pop!\_OS update files are no longer in the Ubuntu mirror network. Getting your system ready for the upgrade requires some work to manually upgrade the system. Use the following steps to upgrade the system:
-
-### 1. Update sources to 'old-releases'
-
-```bash
-# switch system release to old-release server
-sudo sed -Ei 's/us.archive/old-releases/g' /etc/apt/sources.list.d/system.sources
-# get release files
-sudo apt update -m
-# make sure dpkg is happy with package state
-sudo dpkg --configure -a
-# make sure apt is happy with dependency tree
-sudo apt install -f
-# upgrade all packages and depencencies to newest in groovy
-sudo apt full-upgrade
-# make sure pop-desktop meta package is installed
-sudo apt install pop-desktop
-```
-
-### 2. Transition to the release files for Pop!_OS 20.04
-
-```bash
-# create a backup directory
-sudo mkdir -p /etc/apt/backup
-# move all current PPA entries into backup directory
-sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
-# add the System76 PPA back in
-sudo apt-add-repository -yn ppa:system76/pop
-# change update server back to us.archive.ubuntu.com
-sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
-# change all release names to focal, the 20.04 release
-sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
-```
-
-### Now, Do the Upgrade
-
-```bash
-# get new release files, watch for any that reference groovy, not impish
-sudo apt update
-# upgrade the upgrade tools first
-sudo apt --assume-yes install dpkg apt
-# upgrade the rest of the installed packages
-sudo apt -o "Dpkg::Options::=--force-all" full-upgrade
-```
 
 ## Troubleshooting
 

@@ -222,7 +222,6 @@ You may want to take a look at the files that end in "list" in "/etc/apt/backup"
 pop-upgrade release upgrade
 ```
 
-
 ## Troubleshooting
 
 Most upgrades proceed without a hitch, but occasionally things go wrong. If your system hangs on the upgrade process or if it reboots and won't start, then the following steps can help repair your broken OS.

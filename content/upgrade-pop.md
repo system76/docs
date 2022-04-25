@@ -89,7 +89,7 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The System76 upgrade page will display a message that Pop!\_OS 22.04 is available with a `Download` button.
+Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to Settings ->  OS Upgrade & Recovery. The upgrade page will display a message that Pop!\_OS 22.04 is available with a `Download` button.
 
 If you are planning on staying on an LTS release for the time being, this is also the page where you can dismiss upgrade notifications.
 ![Settings OS Upgrade](/images/upgrade-pop/Pop-22.04-Upgrade.png)

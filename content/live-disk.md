@@ -49,13 +49,13 @@ Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal (<
 #### For Intel/AMD iso
 
 ```
-sha256sum Downloads/pop-os_21.10_amd64_intel_7.iso
+sha256sum Downloads/pop-os_22.04_amd64_intel_4.iso
 ```
 
 #### For NVIDIA iso
 
 ```
-sha256sum Downloads/pop-os_21.10_amd64_nvidia_7.iso
+sha256sum Downloads/pop-os_22.04_amd64_nvidia_4.iso
 ```
 
 **Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
@@ -69,13 +69,13 @@ Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Promp
 #### For Intel/AMD iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_21.10_amd64_intel_7.iso sha256
+CertUtil -hashfile Downloads\pop-os_22.04_amd64_intel_4.iso sha256
 ```
 
 #### For NVIDIA iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_21.10_amd64_nvidia_7.iso sha256
+CertUtil -hashfile Downloads\pop-os_22.04_amd64_nvidia_4.iso sha256
 ```
 
 **Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.

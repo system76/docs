@@ -18,6 +18,8 @@ section: software
 tableOfContents: true
 ---
 
+**Please note**: If you are using a custom GNOME theme in Pop_OS! 22.04, it __must__ support GTK 4.
+
 The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 
 To install a customization, simply head to [extensions.gnome.org](https://extensions.gnome.org) to install, remove, and configure currently installed customizations.  A web browser plugin is needed to interact with the site, and it will prompt for installation if needed.  Remember to refresh the page after the plugin is installed.

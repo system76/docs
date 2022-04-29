@@ -24,7 +24,7 @@ DaVinci Resolve requires an NVIDIA GPU to run. (Intel GPUs lack the necessary Op
 The following packages will be needed to build and install DaVinci Resolve:
 
 ```bash
-sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
+sudo apt install libssl3 ocl-icd-opencl-dev fakeroot xorriso
 ```
 
 ### Download DaVinci Resolve and the MakeResolveDeb script

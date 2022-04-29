@@ -102,7 +102,7 @@ Once the flash is complete (should look like the screenshot above), it's time to
 
 Etcher is an open source app for Windows, macOS, and Linux that allows you to burn disk images to USB drives. You can download it at [balena.io/etcher/](https://www.balena.io/etcher/).
 
-Once you have installed Etcher and downloaded the Pop!_OS.iso image, open up the Etcher application. You should see something like this:
+Once you have installed Etcher and downloaded the Pop!\_OS.iso image, open up the Etcher application. You should see something like this:
 
 ![Etcher Startup](/images/live-disk-new/etcher01-start.png)
 
@@ -122,7 +122,7 @@ Now hit the `Flash` button and it will start writing to the USB drive.
 
 ![Click Finish](/images/live-disk-new/etcher05-select-finish.png)
 
-Now you'll see a progress bar, and some information about other projects by _balena_, the company that makes Etcher. Wait for it to finish writing to the USB device.
+Now you'll see a progress bar, and some information about other projects by *Balena*, the company that makes Etcher. Wait for it to finish writing to the USB device.
 
 ![Flashing the drive](/images/live-disk-new/etcher06-in-progress.png)
 

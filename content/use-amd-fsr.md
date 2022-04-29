@@ -20,11 +20,11 @@ tableOfContents: true
 
 ### Setting your System up for Gaming
 
-Following the steps in [Gaming for Linux](linux-gaming.md) article will ensure your system is setup and ready to use AMD's Fidelity SuperResolution (FSR). The most important steps are:
+Following the steps in [Gaming for Linux](/articles/linux-gaming/) article will ensure your system is setup and ready to use AMD's Fidelity SuperResolution (FSR). The most important steps are:
 
-1. [Enable Steam Play (Proton)](linux-gaming.md#enable-steam-play-proton)
-2. Get the latest version of Proton-GE via [Protonup](linux-gaming.md#install-protonup-to-manage-custom-proton-versions)
-3. Enable the latest version of Proton-GE by [changing the Proton version for each game](linux-gaming.md#changing-the-proton-version-for-a-specific-game)
+1. [Enable Steam Play (Proton)](/articles/linux-gaming#enable-steam-play-proton)
+2. Get the latest version of Proton-GE via [Protonup](/articles/linux-gaming#install-protonup-to-manage-custom-proton-versions)
+3. Enable the latest version of Proton-GE by [changing the Proton version for each game](/articles/linux-gaming#changing-the-proton-version-for-a-specific-game)
 
 ## AMD FSR
 
@@ -32,7 +32,7 @@ Following the steps in [Gaming for Linux](linux-gaming.md) article will ensure y
 
 AMD's FSR works by running the game in a lower resolution (thereby increasing performance), then using AI to upscale the image to your output resolution. AMD has recommended specific resolutions at which your game should run, depending on your screen resolution. Here is a handy image.
 
-![Recommmended Resolutions](/static/images/use-amd-fsr/recommended-resolutions.png)
+![Recommmended Resolutions](/images/use-amd-fsr/recommended-resolutions.png)
 
 The Quality preset, on the furthest left column, is determined by which resolution you select in-game. The higher the quality, the better the image! Conversely, the lower the quality, the higher your performance gains. Which you choose depends on your own goals and system!
 

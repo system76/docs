@@ -23,24 +23,15 @@ Sound settings or packages related to the sound system can become corrupt or bro
 
 If the system is not playing audio, first try restarting the Audio daemon:
 
-!| PulseAudio (Ubuntu and Pop!_OS before 22.04)      | PipeWire (Starting with Pop!_OS 22.04)     |
-| :------------------------------------------------  | :----------------------------------------- |
-| ```systemctl --user restart pulseaudio```          | ```systemctl --user restart restart wireplumber pipewire pipewire-pulse ```       |
+| PulseAudio | PipeWire |
+| :--------- | :-------|
+| Ubuntu and Pop!\_OS pre-22.04 | Pop!\_OS 22.04+ |
+| ```systemctl --user restart pulseaudio``` | ```systemctl --user restart restart wireplumber pipewire pipewire-pulse``` |
+| ```rm -r ~/.config/pulse ``` |  ```rm -r ~/.config/pulse ``` |
+| ```pulseaudio -k``` | |
 
 
-After restarting the daemon, applications may need to be restarted to re-connect to the audio server. If the system still isn't playing sound, then try removing the user configuration files for PulseAudio:
-
-```
-rm -r ~/.config/pulse
-```
-
-Then, kill all instances of PulseAudio:
-
-```
-pulseaudio -k
-```
-
-When PulseAudio starts again (which it should do automatically), it will create new configuration files.
+This set of commands first restarts the sound daemon and removes the users configuration for PulseAudio. If still using PulseAudio as a server, restarts the PulseAudio server that will create new default audio configuration files.
 
 ## Check the PulseAudio Controls
 
@@ -130,7 +121,7 @@ This command will reinstall the PipeWire packages:
 sudo apt reinstall libpipewire-0.3-0 libpipewire-0.3-common libpipewire-0.3-modules pipewire pipewire-audio-client-libraries pipewire-bin pipewire-pulse
 ```
 
-This command will reload the sound driver modules:
+This command will force reload the kernel sound driver modules:
 
 ```
 sudo alsa force-reload
@@ -140,6 +131,18 @@ This command will start PulseAudio after it's been stopped (this is not usually 
 
 ```
 pulseaudio --start
+```
+
+This command will check the status of PipeWire and show any errors if automatic restarts raised any errors:
+
+```
+systemctl --user status wireplumber
+```
+
+If you would like to monitor PipeWire, run:
+
+```
+pw-top
 ```
 
 ## Configuration Tweaks

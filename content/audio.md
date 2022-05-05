@@ -17,17 +17,18 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and reloading ALSA and/or PulseAudio can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
+Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and starting the audio software can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
 
-## Reset PulseAudio
+## Reset Audio Software (server)
 
-If the system is not playing audio, first try restarting the PulseAudio daemon:
+If the system is not playing audio, first try restarting the Audio daemon:
 
-```
-systemctl --user restart pulseaudio
-```
+!| PulseAudio (Ubuntu and Pop!_OS before 22.04)      | PipeWire (Starting with Pop!_OS 22.04)     |
+| :------------------------------------------------  | :----------------------------------------- |
+| ```systemctl --user restart pulseaudio```          | ```systemctl --user restart restart wireplumber pipewire pipewire-pulse ```       |
 
-After restarting the daemon, applications may need to be restarted to re-connect to PulseAudio. If the system still isn't playing sound, then try removing the user configuration files for PulseAudio:
+
+After restarting the daemon, applications may need to be restarted to re-connect to the audio server. If the system still isn't playing sound, then try removing the user configuration files for PulseAudio:
 
 ```
 rm -r ~/.config/pulse
@@ -114,7 +115,19 @@ If the output from that command is blank, then your system isn't detecting any s
 This command will reinstall ALSA and some of the other core audio packages:
 
 ```
-sudo apt install --reinstall alsa-base alsa-utils pulseaudio linux-sound-base libasound2
+sudo apt install --reinstall alsa-base alsa-utils linux-sound-base libasound2
+```
+
+This command will reinstall PulseAudio packages:
+
+```
+sudo apt install --reinstall libpulse0 libpulsedsp pulseaudio pulseaudio-module-bluetooth pulseaudio-utils
+```
+
+This command will reinstall the PipeWire packages:
+
+```
+sudo apt reinstall libpipewire-0.3-0 libpipewire-0.3-common libpipewire-0.3-modules pipewire pipewire-audio-client-libraries pipewire-bin pipewire-pulse
 ```
 
 This command will reload the sound driver modules:

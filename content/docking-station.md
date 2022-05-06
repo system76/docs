@@ -35,7 +35,7 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 | galp3-b | No                       | Yes                         |
 | galp3-c | Yes                      | Yes                         |
 | galp4   | Yes                      | Yes                         |
-| galp5   | Yes                      | Yes                         |
+| galp5   | Yes (3050 does not)      | Yes                         |
 | lemp9   | Yes                      | No (DisplayPort over USB-C) |
 | lemp10  | Yes                      | Yes                         |
 | serw12  | No                       | No (DisplayPort over USB-C) |
@@ -105,6 +105,8 @@ Community members have reported that the following docks work with our products:
 
 **Note:** The DisplayLink driver should only be installed if you are using a docking station that requires it. The DisplayLink driver may cause graphical issues with non-DisplayLink devices.
 
+**Note:** DisplayLink has not added support for Ubuntu 22.04 LTS at this time and does not support 5.15+ kernels.
+
 On Intel or AMD graphics systems, you'll need to install the 'dkms' package to install DisplayLink driver. On NVIDIA graphics systems, the NVIDIA driver installs this package automatically.
 
 ```bash
@@ -117,9 +119,9 @@ To install the DisplayLink driver, open the Terminal and move to the Downloads d
 
 ```bash
 cd Downloads
-unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu5.4-EXE.zip
-sudo chmod +x displaylink-driver-5.4.0-55.153.run
-sudo ./displaylink-driver-5.4.0-55.153.run
+unzip DisplayLink\ USB\ Graphics\ Software\ for\ Ubuntu5.5-EXE.zip
+sudo chmod +x displaylink-driver-5.5.0-59.151.run
+sudo ./displaylink-driver-5.5.0-59.151.run
 ```
 
 To uninstall the DisplayLink driver, use this command:

@@ -26,11 +26,11 @@ tableOfContents: true
 
 ## Repositories and Sources
 
-Pop!_OS comes pre-installed with a number of sources for installing additional software, but additional sources can be added as well, either by hand or by installing a third-party package. Sources for systemwide software packages are called _repositories_ (or "repos" for short), and sources for Flatpak software are called just _sources_.
+Pop!\_OS comes pre-installed with a number of sources for installing additional software, but additional sources can be added as well, either by hand or by installing a third-party package. Sources for systemwide software packages are called _repositories_ (or "repos" for short), and sources for Flatpak software are called just _sources_.
 
 ## Repoman and System Repositories
 
-Pop!_OS' tool for adding, removing and editing repositiories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
+Pop!\_OS' tool for adding, removing and editing repositiories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
 
 ![Pop!_OS Shop](/images/manage-repos/pop-shop-button.png)
 

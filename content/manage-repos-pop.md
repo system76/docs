@@ -1,13 +1,20 @@
 ---
 title: Manage Repositories (Pop!_OS)
 description: >
-  Add, remove and edit repositories in Pop!_OS
+  Add, remove and edit repositories and sources in Pop!_OS
 keywords:
+  - Pop!_OS
   - Pop!_OS 18.04
   - Pop!_OS 19.10
+  - Pop!_OS 20.04
+  - Pop!_OS 20.10
+  - Pop!_OS 21.04
+  - Pop!_OS 21.10
+  - Pop!_OS 22.04
   - repoman
   - System76
   - apt
+  - Flatpak
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -17,70 +24,62 @@ section: software
 tableOfContents: true
 ---
 
-## Accessing Repoman
+## Repositories and Sources
 
-Pop!_OS' tool for adding, removing and editing repositiories is called <u>Repoman</u> which is a part of the Pop!_Shop.
+Pop!_OS comes pre-installed with a number of sources for installing additional software, but additional sources can be added as well, either by hand or by installing a third-party package. Sources for systemwide software packages are called _repositories_ (or "repos" for short), and sources for Flatpak software are called just _sources_.
+
+## Repoman and System Repositories
+
+Pop!_OS' tool for adding, removing and editing repositiories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
 
 ![Pop!_OS Shop](/images/manage-repos/pop-shop-button.png)
 
-Click on the gear icon in the top right of the <u>Pop!_Shop</u> window. Once <u>Repoman</u> is opened, click on the **Extra Sources** tab there will be options to add repositories with the **Plus** button (on the bottom left). Select a repository from the list and then click on the **Edit** button (next to the **Plus** button) to edit the selected repository.
+Click on the gear icon in the top right of the <u>Pop!_Shop</u> window. Once <u>Repoman</u> is opened, click on the **Extra Sources** tab to view the configured repositories for systemwide software packages.
 
-![Repoman window](/images/manage-repos/Repoman-Flatpak.png)
+![Repoman Extra Sources window](/images/manage-repos/Repoman-extra-sources.png)
 
-<u>Repoman</u> can be also be used to add, remove and edit Flatpak Sources starting with Pop!_OS 20.04 LTS. For command-line use of Flatpak the following commands can be used:
+There will be three buttons on the lower left. The **Plus** button is for adding new repositories by hand, although third-party software will usually do this automatically. The **Pencil** button will open up a selected repository for editing, including the ability to disable it without completely removing it.
+
+![Repoman repository edit window](/images/manage-repos/Repoman-edit-repo.png)
+
+The **Trash** button will delete a selected software repository completely.
+
+## Repoman and Flatpak Sources
+
+<u>Repoman</u> can be also be used to add, remove, and edit Flatpak sources starting with Pop!_OS 20.04 LTS. Click on the **Flatpak** tab to view them, and there will be similar buttons for adding, editing, or removing sources.
+
+![Repoman Flatpak tab](/images/manage-repos/Repoman-Flatpak-tab.png)
+
+Editing a Flatpak source will allow you to disable it without removing it, can also show you what software has been installed from that source.
+
+![Repoman Flatpak edit window](/images/manage-repos/Repoman-Flatpak-edit.png)
+
+## Repositories, Sources, and the Command Line
+
+The <u>Repoman</u> tool can also be run from the command line:
+
+```bash
+repoman
+```
+
+There may also be situations where repositories and Flatpak sources need to be adjusted from the terminal. Editing system repositories from the command line is not recommended without the aid of technical support, as this can lead to a system that will not receive updates correctly, but Flatpak sources are normally safe to edit from the terminal.
+
+To list the currently configured Flatpak sources:
 
 ```bash
 flatpak remotes
 ```
 
-This is used to list the remote/sources configured on your system.
+To add a new Flatpak source (with Flathub as the example):
 
 ```bash
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
-This command is used to add a remote/source if it doesn't exist on your system and in this example the Flathub remove/source is being added.
+To delete an existing Flathub source:
 
 ```bash
 flatpak remote-delete flathub
 ```
-
-If we want to remove a remote/source the following command can be used.
-
-```bash
-flatpak search inkscape
-```
-
-This command is used to search for a certain package (inkscape in this case) in the coufigured remotes/sources on this system.
-
-```bash
-flatpak install flathub org.inkscape.Inkscape
-```
-
-Here we are installing inkscape using the Flathub remote/source.
-
-```bash
-flatpak uninstall org.inkscape.Inkscape
-```
-
-This will remove the inkscape package from this system.
-
-```bash
-flatpak run org.inkscape.Inkscape
-```
-
-This command will run inkscape once it is installed on the system.
-
-```bash
-flatpak update
-```
-
-This will update all of your installed Flatpak applications and runtimes to their latest versions.
-
-```bash
-flatpak list
-```
-
-This will list all of the installed applications and runtimes.
 
 For more information about Flatpak commands look [here.](https://docs.flatpak.org/en/latest/using-flatpak.html)

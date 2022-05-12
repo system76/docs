@@ -67,7 +67,7 @@ flatpak list --columns=name,application | grep -i slack
 The output will look something like this:
 
 ```
-Slack	com.slack.Slack
+Slack com.slack.Slack
 ```
 
 We can look at the package details by running this command:

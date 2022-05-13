@@ -72,7 +72,16 @@ This process lowers the sound quality of the stream when in HSP/HFP mode, so aud
 
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
-Then, try reinstalling Bluetooth related software with this command:
+Then, try reinstalling Bluetooth related software:
+
+For Pop!_OS 22.04 or later use:
+
+
+```bash
+sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pipewire-pulse
+```
+
+For older versions use:
 
 ```bash
 sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudio-module-bluetooth

@@ -30,7 +30,8 @@ Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 Install the software with this command in the terminal.
 
 ```bash
-sudo apt install lxd lxd-client
+sudo apt install snapd
+snap install lxd
 ```
 
 ## Setup
@@ -38,7 +39,7 @@ sudo apt install lxd lxd-client
 Tell LXD what storage and network is needed with this command:
 
 ```bash
-sudo lxd init
+lxd init
 ```
 
 ## Create a container
@@ -46,10 +47,20 @@ sudo lxd init
 Now create our first container with this command:
 
 ```bash
-lxc launch ubuntu:16.04 first
+lxc launch ubuntu:16.04 ubuntu-container
 ```
 
-This will create a container based on Ubuntu 16.04 with the name 'first'.
+This will create a container based on Ubuntu 16.04 with the name 'first'. You can change the version depending on the OS version that you need, for example:
+
+```bash
+lxc launch ubuntu:18.04 ubuntu-container
+```
+
+or
+
+```bash
+lxc launch ubuntu:20.04 ubuntu-container
+```
 
 List and confirm that the container was created with this command:
 
@@ -96,3 +107,5 @@ For pulling a file from the container:
 ```bash
 lxc file pull first/tmp/filename .
 ```
+
+For more information refer to Ubuntu's [documenation](https://ubuntu.com/lxd).

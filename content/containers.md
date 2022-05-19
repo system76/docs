@@ -36,6 +36,12 @@ snap install lxd
 
 ## Setup
 
+Now we'll add our current user to the `lxd` group so that we have the correct permissions to use the application. 
+
+```bash
+sudo usermod -aG lxd $USER
+```
+
 Tell LXD what storage and network is needed with this command:
 
 ```bash

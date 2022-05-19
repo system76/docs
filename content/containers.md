@@ -42,7 +42,7 @@ Add your current user to the `lxd` group so that it has the correct permissions 
 sudo usermod -aG lxd $USER
 ```
 
-Tell LXD what storage and network is needed with this command:
+Reboot to apply the new permissions, then open a terminal again and set up LXD's storage and network configuration with this command:
 
 ```bash
 lxd init

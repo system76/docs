@@ -139,11 +139,11 @@ flatpak remotes
 To add a new Flatpak source (with Flathub as the example):
 
 ```bash
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 To delete an existing Flathub source:
 
 ```bash
-flatpak remote-delete flathub
+flatpak remote-delete --user flathub
 ```

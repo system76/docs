@@ -30,7 +30,7 @@ Pop!\_OS comes pre-installed with a number of sources for installing additional 
 
 ## Repoman and System Repositories
 
-Pop!\_OS' tool for adding, removing and editing repositiories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
+Pop!\_OS's tool for adding, removing and editing repositiories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
 
 ![Pop!_OS Shop](/images/manage-repos/pop-shop-button.png)
 

@@ -30,7 +30,7 @@ If the system is not playing audio, first try restarting the audio daemon:
 | `rm -r ~/.config/pulse` |  `rm -r ~/.config/pulse` |
 | `pulseaudio -k` | |
 
-This set of commands first restarts the sound daemon and removes the user's configuration for PulseAudio. If still using PulseAudio as a server, restarts the PulseAudio server that will create new default audio configuration files.
+This set of commands first restarts the sound daemon and removes the user's configuration for PulseAudio. On systems still using PulseAudio as a server, it restarts the PulseAudio server, which will create new default audio configuration files.
 
 ## Check the PulseAudio Controls
 
@@ -108,7 +108,7 @@ This command will reinstall ALSA and some of the other core audio packages:
 sudo apt install --reinstall alsa-base alsa-utils linux-sound-base libasound2
 ```
 
-This command will reinstall PulseAudio packages:
+This command will reinstall the PulseAudio packages:
 
 ```
 sudo apt install --reinstall libpulse0 libpulsedsp pulseaudio pulseaudio-module-bluetooth pulseaudio-utils

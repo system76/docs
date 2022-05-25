@@ -17,20 +17,20 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and starting the audio software can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
+Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and restarting the audio software can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
 
 ## Reset Audio Software (server)
 
-If the system is not playing audio, first try restarting the Audio daemon:
+If the system is not playing audio, first try restarting the audio daemon:
 
 | PulseAudio | PipeWire |
 | :--------- | :-------|
 | Ubuntu and Pop!\_OS pre-22.04 | Pop!\_OS 22.04+ |
-| `systemctl --user restart pulseaudio` | `systemctl --user restart restart wireplumber pipewire pipewire-pulse` |
+| `systemctl --user restart pulseaudio` | `systemctl --user restart wireplumber pipewire pipewire-pulse` |
 | `rm -r ~/.config/pulse` |  `rm -r ~/.config/pulse` |
 | `pulseaudio -k` | |
 
-This set of commands first restarts the sound daemon and removes the users configuration for PulseAudio. If still using PulseAudio as a server, restarts the PulseAudio server that will create new default audio configuration files.
+This set of commands first restarts the sound daemon and removes the user's configuration for PulseAudio. If still using PulseAudio as a server, restarts the PulseAudio server that will create new default audio configuration files.
 
 ## Check the PulseAudio Controls
 
@@ -135,7 +135,7 @@ pulseaudio --start
 This command will check the status of PipeWire and show any errors if automatic restarts raised any errors:
 
 ```
-systemctl --user status wireplumber
+systemctl --user status pipewire
 ```
 
 If you would like to monitor PipeWire, run:

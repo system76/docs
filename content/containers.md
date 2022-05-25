@@ -27,7 +27,7 @@ Pop!_OS : <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon>
 
 Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 
-Install the software with this command in the terminal:
+Install the software by running these commands in the terminal:
 
 ```bash
 sudo apt install snapd

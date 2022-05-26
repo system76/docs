@@ -78,7 +78,7 @@ For Pop!_OS 22.04 or later use:
 
 
 ```bash
-sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pipewire-pulse
+sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth wireplumber
 ```
 
 For older versions use:

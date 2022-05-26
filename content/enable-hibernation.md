@@ -76,7 +76,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     ```bash
     free -h
-    sudo lvreduce -r -L-16G /dev/mapper/data-root
+    sudo lvreduce -r -L -16G /dev/mapper/data-root
     ```
 
 6. Create a `swap` volume (instead of a drive partition):

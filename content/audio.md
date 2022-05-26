@@ -17,29 +17,20 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and reloading ALSA and/or PulseAudio can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
+Sound settings or packages related to the sound system can become corrupt or broken. Many times, deleting the configuration files, reinstalling the sound-related packages, and restarting the audio software can help. These commands can also help fix the <u>Sound</u> settings showing "Dummy Output" as the audio output.
 
-## Reset PulseAudio
+## Reset Audio Software (server)
 
-If the system is not playing audio, first try restarting the PulseAudio daemon:
+If the system is not playing audio, first try restarting the audio daemon:
 
-```
-systemctl --user restart pulseaudio
-```
+| PulseAudio | PipeWire |
+| :--------- | :-------|
+| Ubuntu and Pop!\_OS pre-22.04 | Pop!\_OS 22.04+ |
+| `systemctl --user restart pulseaudio` | `systemctl --user restart wireplumber pipewire pipewire-pulse` |
+| `rm -r ~/.config/pulse` |  `rm -r ~/.config/pulse` |
+| `pulseaudio -k` | |
 
-After restarting the daemon, applications may need to be restarted to re-connect to PulseAudio. If the system still isn't playing sound, then try removing the user configuration files for PulseAudio:
-
-```
-rm -r ~/.config/pulse
-```
-
-Then, kill all instances of PulseAudio:
-
-```
-pulseaudio -k
-```
-
-When PulseAudio starts again (which it should do automatically), it will create new configuration files.
+This set of commands first restarts the sound daemon and removes the user's configuration for PulseAudio. On systems still using PulseAudio as a server, it restarts the PulseAudio server, which will create new default audio configuration files.
 
 ## Check the PulseAudio Controls
 
@@ -114,10 +105,22 @@ If the output from that command is blank, then your system isn't detecting any s
 This command will reinstall ALSA and some of the other core audio packages:
 
 ```
-sudo apt install --reinstall alsa-base alsa-utils pulseaudio linux-sound-base libasound2
+sudo apt install --reinstall alsa-base alsa-utils linux-sound-base libasound2
 ```
 
-This command will reload the sound driver modules:
+This command will reinstall the PulseAudio packages:
+
+```
+sudo apt install --reinstall libpulse0 libpulsedsp pulseaudio pulseaudio-module-bluetooth pulseaudio-utils
+```
+
+This command will reinstall the PipeWire packages:
+
+```
+sudo apt reinstall libpipewire-0.3-0 libpipewire-0.3-common libpipewire-0.3-modules pipewire pipewire-audio-client-libraries pipewire-bin pipewire-pulse
+```
+
+This command will force reload the kernel sound driver modules:
 
 ```
 sudo alsa force-reload
@@ -127,6 +130,18 @@ This command will start PulseAudio after it's been stopped (this is not usually 
 
 ```
 pulseaudio --start
+```
+
+This command will check the status of PipeWire and show any errors if automatic restarts raised any errors:
+
+```
+systemctl --user status pipewire
+```
+
+If you would like to monitor PipeWire, run:
+
+```
+pw-top
 ```
 
 ## Configuration Tweaks

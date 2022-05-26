@@ -129,7 +129,7 @@ Sources:
 
 [Fix Package Manager](/articles/package-manager-pop)
 
-[Manage Repositories](/articles/manage-repos-pop.md)
+[Manage Repositories](/articles/manage-repos-pop)
 
 ### 4. Test Second Admin User
 

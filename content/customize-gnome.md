@@ -18,7 +18,7 @@ section: software
 tableOfContents: true
 ---
 
-**Please note**: If you are using a custom GNOME theme in Pop_OS! 22.04, it **must** support GTK 4.
+**Please note**: Pop_OS! 22.04 is based on GNOME 42 so the extension **must** support GNOME 42.
 
 The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 
@@ -29,6 +29,8 @@ We will share some of the more popular extensions, but there are many more to ch
 ---
 
 ## User Themes
+
+**Please note**: If you are using a custom GNOME theme in Pop_OS! 22.04, it **must** support GTK 4.
 
 [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 

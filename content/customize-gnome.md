@@ -18,7 +18,7 @@ section: software
 tableOfContents: true
 ---
 
-**Please note**: If you are using a custom GNOME theme in Pop_OS! 22.04, it __must__ support GTK 4.
+**Please note**: If you are using a custom GNOME theme in Pop_OS! 22.04, it **must** support GTK 4.
 
 The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 

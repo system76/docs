@@ -23,7 +23,7 @@ Sometimes, an older version of a library or libraries for an application is need
 
 First, open a terminal using the keyboard shortcut for your operating system:
 
-Pop!_OS : <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd>
+Pop!_OS : <kbd>SUPER</kbd> + <kbd>T</kbd>
 
 Ubuntu : <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 

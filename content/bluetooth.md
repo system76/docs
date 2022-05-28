@@ -130,12 +130,12 @@ sudo rfkill unblock all
 
 This will check to see Bluetooth is blocked, and if so, unblock it.
 
-*For Pop!\_OS v21.10 or v20.04:*
+*For Pop!\_OS 21.10 or 20.04:*
 ```bash
 pactl load-module module-bluetooth-discover
 ```
 
-This will load the PulseAudio module responsible for Bluetooth Audio.  Typically, it's loaded by default, but sometimes a manual loading can get Bluetooth headsets working again. This module is no longer used on Pop!\_OS v22.04 or higher.
+This will load the PulseAudio module responsible for Bluetooth Audio.  Typically, it's loaded by default, but sometimes a manual loading can get Bluetooth headsets working again. This module is no longer used on Pop!\_OS 22.04 or higher.
 
 ```bash
 sudo btmon

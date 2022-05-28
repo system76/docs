@@ -75,9 +75,11 @@ Bluetooth issues can be troubleshooted in several ways.  The first thing to chec
 Then, try reinstalling Bluetooth related software with this command, depending on the verison of Pop!\_OS you're using.
 
 *For Pop!\_OS 22.04 or higher:*
+
 ```bash
 sudo apt reinstall --purge bluez gnome-bluetooth
 ```
+
 *For Pop!\_OS 21.10 or 20.04:*
 
 ```bash
@@ -131,6 +133,7 @@ sudo rfkill unblock all
 This will check to see Bluetooth is blocked, and if so, unblock it.
 
 *For Pop!\_OS 21.10 or 20.04:*
+
 ```bash
 pactl load-module module-bluetooth-discover
 ```

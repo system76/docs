@@ -35,7 +35,7 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 | galp3-b | No                       | Yes                         |
 | galp3-c | Yes                      | Yes                         |
 | galp4   | Yes                      | Yes                         |
-| galp5   | Yes (3050 does not)      | Yes                         |
+| galp5   | Yes                      | Yes                         |
 | lemp9   | Yes                      | No (DisplayPort over USB-C) |
 | lemp10  | Yes                      | Yes                         |
 | serw12  | No                       | No (DisplayPort over USB-C) |

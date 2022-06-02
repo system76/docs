@@ -117,7 +117,7 @@ It may take several minutes or more for the process to finish -- wait until the 
 
 ## Dual-Booting Windows with Linux
 
-Dual booting allows you to run 2 or more operating systems on the same computer. There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
+Dual booting allows you to run 2 perating systems on the same computer. There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
 
 - [Installing on a Dedicated Drive (Recommended)](#installing-on-a-dedicated-drive)
 - [Installing on a Shared Drive](#installing-on-a-shared-drive)
@@ -220,11 +220,11 @@ The next page will ask what type of installation you want to perform. Since ther
 
 ![Windows installation types](/images/dual-booting/windows-installation-type.jpg)
 
-Finally, the installer will ask you to select where you want to install to. Please follow the instructions for the configuration you chose under [Dual-Booting Windows](#dual-booting-windows-with-linux)
+Finally, the installer will ask you to select the location where you want Windows installed. Please follow the instructions for the configuration you chose under [Dual-Booting Windows](#dual-booting-windows-with-linux)
 
 Installing Windows to a **Dedicated Drive**
 
-1. Select the drive you would like to install Windows to.
+1. Select the drive for Windows installation.
     - This drive likely has 1 partition listed, or shows as "Unallocated Space"
     - If there are more partitions listed, see the [Managing Partitions](#managing-partitions) section below for instructions on removing them.
 2. Click `Next` to install Windows to the drive.

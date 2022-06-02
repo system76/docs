@@ -48,17 +48,17 @@ The highlighted files pictured below (the hash will change based on file and mod
 
 ## Extracting an img to the USB drive
 
-Firmware is typically packaged in the form of a zip archive, but support will ocasionally provide an .img image. If the firmware image provided is a .img file, it will need to be flashed using an application. 
+Firmware is typically packaged in the form of a zip archive, but support will ocasionally provide an .img image. If the firmware image provided is a .img file, it will need to be flashed using an application.
 
 ### Pop!\_OS
 
-We can do this using the USB Flasher (Popsicle) application. 
+We can do this using the USB Flasher (Popsicle) application.
 
 Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'usb' to launch the Popsicle application.
 
 ![Popsicle](/images/pop-live-disk/popsicle.png)
 
-Next, select the .img file use the `Choose Image` button. 
+Next, select the .img file use the `Choose Image` button.
 
 ![Popsicle Image](/images/pop-live-disk/popsicle-image-selection.png)
 

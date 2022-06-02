@@ -7,12 +7,11 @@ keywords:
   - Windows 10
   - Windows 11
   - Microsoft
-  - drivers
+  - Drivers
   - System76
-  - dual boot
+  - Dual Boot
   - Linux
   - Support
-  - virtual machine
   - VM
   - Virtual Machines
   - Virtualbox

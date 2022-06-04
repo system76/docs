@@ -23,9 +23,11 @@ The Recovery Partition is a full copy of the Pop!\_OS installation disk. It can 
 
 To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>).
 
- **NOTE:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
+ >**Note:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
 
 Once the menu is shown, choose **Pop!_OS Recovery**.
+
+>**Note**: The Pop!\_OS recovery environment will not have your WiFi password saved. Once booted into the live environment, you will need to reconnect manually to your WiFi in order to access the internet.
 
 ![systemd-boot](/images/pop-recovery/systemd-boot.png)
 
@@ -35,14 +37,13 @@ This option erases the current install along with all user files. It reformats t
 
 Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery).
 
-**NOTE:**
-The Recovery partition OS version will either be the same as the OS version that shipped with your computer or whichever version to which the Recovery partition has been [updated](#update-recovery-partition).
+>**Note:**The Recovery partition OS version will either be the same as the OS version that shipped with your computer, or the latest version to which the Recovery partition has been [updated](#update-recovery-partition).
 
 ## Refresh Install
 
 The Refresh Install option allows you to reinstall the OS without losing user account information and data in the home directory.
 
-**NOTE:** user-installed applications are not preserved and will need to be reinstalled.
+>**Note:** User-installed applications not stored in the Home folder (e.g. .deb or apt installed versions) will need to be re-installed.
 
 If the `Refresh Install` option is not present on the install screen, one of two things may be true.
 
@@ -62,9 +63,9 @@ If the existing install is encrypted, please see the [encrypted disk](#encrypted
 
 If the existing OS install needs to be repaired, the installer application should be closed. An app menu is located in the top-left of the screen with the name of the currently running application (in this case: "Install Pop!\_OS"). Click on the app menu and select `Quit`. Alternatively, you can use the installer app to select keyboard and language settings, and then click the `Try Demo Mode` button in the lower-left corner of the install page.
 
-**NOTE:** be sure not to choose any install or repair options, as this could result in data loss.
+>**Note:** Do not choose any install or repair options, as this could result in data loss.
 
-To access the existing OS drive follow the instructions below.
+Follow the instructions below to access the existing OS drive:
 
 First, press <kbd>SUPER</kbd>+<kbd>T</kbd> to open a terminal, then type this command:
 
@@ -105,7 +106,7 @@ And now the existing hard drive can be accessed by going to the `/mnt` folder.  
 
 ## Chroot
 
-`chroot` is the way to run commands as if the existing operating system had been booted.  Once these commands are run, then package manager (`apt`) and other system-level commands can be run.
+`Chroot` runs commands as if the existing operating system had been booted. Once these commands are run, package manager (`apt`) and other system-level commands can be run.
 
 The EFI partition is the next partition to be mounted. To help identify it, this partition is usually around 512MB, and is labeled as `/boot/efi`.
 
@@ -115,7 +116,6 @@ The EFI partition is the next partition to be mounted. To help identify it, this
 
 ```bash
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
 ```
 
@@ -156,7 +156,7 @@ Alternatively you can also upgrade the recovery partition from the command-line
 pop-upgrade recovery upgrade from-release
 ```
 
-You should see an output similar to below saying the recovery parition had been updated:
+You should see an output similar to what is pictured below confirming the recovery partition had been updated:
 
 ```
 checking if pop-upgrade requires an update

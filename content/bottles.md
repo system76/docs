@@ -22,7 +22,7 @@ tableOfContents: true
 
 ## Considerations
 
-A program must be compatible with Wine in order to run in bottles. Not all Windows applications will work with Bottles.
+A program must be compatible with Wine in order to run in Bottles. Not all Windows applications will work with Bottles.
 
 ## Installation
 

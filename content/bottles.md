@@ -46,7 +46,7 @@ You can choose a gaming, application, or custom environment. In this example, we
   ![Select Application Environment](/images/using-bottles/select-application-environment.png)
 3. Wait while required dependencies and libraries are installed. Click `Close` when the process completes.
   ![Install Dependencies](/images/using-bottles/install-dependencies.png)
-4. Launch your newly created bottle by clicking the `>`.
+4. Select your newly created bottle by clicking the `>`.
   ![Launch Bottles](/images/using-bottles/launch-bottle.png)
 5. Click `Run executable`.
   ![Run Executable](/images/using-bottles/run-executable.png)

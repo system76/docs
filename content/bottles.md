@@ -48,7 +48,7 @@ You can choose a gaming, application, or custom environment. In this example, we
   ![Install Dependencies](/images/using-bottles/install-dependencies.png)
 4. Launch your newly created bottle by clicking the `>`.
   ![Launch Bottles](/images/using-bottles/launch-bottle.png)
-5. Click `Run Executable`.
+5. Click `Run executable`.
   ![Run Executable](/images/using-bottles/run-executable.png)
 6. Navigate to your .exe file.
   ![Navigate to exe](/images/using-bottles/navigate-to-exe.png)

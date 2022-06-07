@@ -117,7 +117,15 @@ Both macOS and Pop!\_OS use workspaces to organize open application windows
 
 macOS uses multi-touch gestures, or CTRL+[up arrow] or [down arrow], to launch "Mission Control" and CTRL+[left arrow] or [right arrow] are used to navigate between workspaces.
 
-In Pop!\_OS users press the SUPER key to enter "Overview" and show all workspaces. They can also use CTRL+SUPER+[up arrow] or [down arrow] to navigate between workspaces.
+#### Accessing Overview
+
+In Pop!\_OS the "Overview" will show all workspaces and the key(s) to access it is different on certain versions.  
+
+| Pop!\_OS 20.04+ | Pop!\_OS 22.04+ |
+|-----------------|-----------------|
+| <kbd>SUPER</kbd> | <kbd>SUPER</kbd>+<kbd>D</kbd> |
+
+They can also use <kbd>CTRL</kbd>+<kbd>SUPER</kbd>+<kbd>up</kbd> or <kbd>down</kbd> to navigate between workspaces.
 
 ### Pop Shell
 

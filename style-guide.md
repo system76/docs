@@ -1,7 +1,7 @@
 ## Writing
 
 
-### Punctiation
+### Punctuation
 
 Even if technically correct, avoid over-use of commas. That, is to say, the reading experience should not, in practice, be a tedious endeavor. 
 

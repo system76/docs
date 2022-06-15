@@ -146,7 +146,12 @@ pw-top
 
 ## Configuration Tweaks
 
-Some particular problems may be solved by tweaks to ALSA or PulseAudio configuration.
+Some particular problems may be solved by tweaks to ALSA or PulseAudio configuration. Clearing the current settings for Pipewire or PulseAudio may allow the defualts to be used again. To revert to defaults and clear any current saved settings run the following commands:
+
+```
+rm -r ~/.config/pulse/*
+rm -r ~/.local/state/wireplumber/*
+```
 
 ### Audio crackling or hardware clicking
 

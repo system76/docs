@@ -72,15 +72,15 @@ This process lowers the sound quality of the stream when in HSP/HFP mode, so aud
 
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
-Then, try reinstalling Bluetooth related software:
+Then, try reinstalling Bluetooth related software with this command, depending on the verison of Pop!\_OS you're using.
 
-For Pop!_OS 22.04 or later use:
+*For Pop!\_OS 22.04 or higher:*
 
 ```bash
-sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth wireplumber
+sudo apt reinstall --purge bluez gnome-bluetooth
 ```
 
-For older versions use:
+*For Pop!\_OS 21.10 or 20.04:*
 
 ```bash
 sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudio-module-bluetooth
@@ -132,11 +132,13 @@ sudo rfkill unblock all
 
 This will check to see Bluetooth is blocked, and if so, unblock it.
 
+*For Pop!\_OS 21.10 or 20.04:*
+
 ```bash
 pactl load-module module-bluetooth-discover
 ```
 
-This will load the PulseAudio module responsible for Bluetooth Audio.  Typically, it's loaded by default, but sometimes a manual loading can get Bluetooth headsets working again.
+This will load the PulseAudio module responsible for Bluetooth Audio.  Typically, it's loaded by default, but sometimes a manual loading can get Bluetooth headsets working again. This module is no longer used on Pop!\_OS 22.04 or higher.
 
 ```bash
 sudo btmon

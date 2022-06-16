@@ -153,6 +153,8 @@ rm -r ~/.config/pulse/*
 rm -r ~/.local/state/wireplumber/*
 ```
 
+**NOTE:** When running those commands you may see messages similar to this: `rm: cannot remove '/home/ckw/.config/pulse/*': No such file or directory` those are safe to ignore as the file simply does not exist. 
+
 ### Audio crackling or hardware clicking
 
 If you hear audio crackling (especially when you start or stop playing audio), PulseAudio may be putting your audio card to sleep too often. This is known to happen on the [serw12](/articles/serval-dac/) and some [Thunderbolt docks](https://github.com/system76/docs/issues/491).

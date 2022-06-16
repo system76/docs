@@ -36,7 +36,7 @@ A live disk is a handy tool to have around. Support recommends using a live disk
 
 ## Downloading the ISO
 
-In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](https://pop.system76.com) or [Ubuntu 20.04 here](https://ubuntu.com/download/desktop).
+In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](https://pop.system76.com) or [Ubuntu 22.04 here](https://ubuntu.com/download/desktop).
 
 ## Verifying the Download
 

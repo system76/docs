@@ -127,7 +127,6 @@ In Pop!\_OS the "Overview" will show all workspaces. The key(s) to access it are
 | 21.10 | <kbd>SUPER</kbd> |
 | 22.04 LTS | <kbd>SUPER</kbd>+<kbd>D</kbd> |
 
-
 They can also use <kbd>CTRL</kbd>+<kbd>SUPER</kbd>+<kbd>up</kbd> or <kbd>down</kbd> to navigate between workspaces.
 
 ### Pop Shell

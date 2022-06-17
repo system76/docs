@@ -146,14 +146,12 @@ pw-top
 
 ## Configuration Tweaks
 
-Some particular problems may be solved by tweaks to ALSA or PulseAudio configuration. Clearing the current settings for Pipewire or PulseAudio may allow the defualts to be used again. To revert to defaults and clear any current saved settings run the following commands:
+Some particular problems may be solved by tweaks to ALSA or PulseAudio configuration. Clearing the current settings for Pipewire or PulseAudio may allow the defaults to be used again. To revert to defaults and clear any current saved settings run the following commands:
 
 ```
-rm -r ~/.config/pulse/*
-rm -r ~/.local/state/wireplumber/*
+rm -rn ~/.config/pulse/*
+rm -rn ~/.local/state/wireplumber/*
 ```
-
-**NOTE:** When running those commands you may see messages similar to this: `rm: cannot remove '/home/ckw/.config/pulse/*': No such file or directory` those are safe to ignore as the file simply does not exist.
 
 ### Audio crackling or hardware clicking
 

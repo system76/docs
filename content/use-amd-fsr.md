@@ -81,7 +81,7 @@ Then follow the "Setup your In-game Resolution" steps above, and enjoy FSR via L
 
 ### Bottles
 
-For more information about the Bottles app refer to [this article](/articles/bottles.md).
+For more information about the Bottles app refer to [this article](/articles/bottles).
 
 Bottles version 2021.10.14 and greater includes a toggle for AMD FSR in the preferences of each bottle.
 

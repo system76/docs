@@ -153,7 +153,7 @@ rm -r ~/.config/pulse/*
 rm -r ~/.local/state/wireplumber/*
 ```
 
-**NOTE:** When running those commands you may see messages similar to this: `rm: cannot remove '/home/ckw/.config/pulse/*': No such file or directory` those are safe to ignore as the file simply does not exist. 
+**NOTE:** When running those commands you may see messages similar to this: `rm: cannot remove '/home/ckw/.config/pulse/*': No such file or directory` those are safe to ignore as the file simply does not exist.
 
 ### Audio crackling or hardware clicking
 

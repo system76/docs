@@ -78,3 +78,14 @@ Lutris version 0.5.9 includes a toggle for AMD FSR in each game's preferences. T
 * Enable the "Enable AMD FidelityFX Super Resolution (FSR)" toggle in the options below.
 
 Then follow the "Setup your In-game Resolution" steps above, and enjoy FSR via Lutris!
+
+### Bottles
+
+For more information about the Bottles app refer to [this article](/articles/bottles).
+
+Bottles version 2021.10.14 and greater includes a toggle for AMD FSR in the preferences of each bottle.
+
+* Go to the bottle preferences.
+* Enable the "Enable FSR" toggle in the "Graphics" section and choose the quality level.
+
+Then follow the "Setup your In-game Resolution" steps above, and enjoy FSR!

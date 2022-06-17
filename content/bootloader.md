@@ -115,9 +115,7 @@ exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
 
-## GRUB
-
-### EFI Boot
+## GRUB EFI Boot
 
 Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the `parted` output from earlier, then the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
 
@@ -143,7 +141,7 @@ update-initramfs -c -k all
 update-grub
 ```
 
-### Legacy BIOS Boot
+## GRUB Legacy BIOS Boot
 
 If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
 
@@ -158,7 +156,6 @@ Run these commands based on what type of disk you have:
 | `sudo mount /dev/nvme0n1p2 /mnt` | `sudo mount /dev/sda2 /mnt` |
 
 Then continue with the following commands for either disk type:
-
 
 After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
 
@@ -201,7 +198,6 @@ Now the existing hard drive can be accessed by going to the `/mnt` folder. To us
 If the echo command above says the system is installed in EFI mode **and** you are using Ubuntu, follow this section.
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have (based on the ```parted``` output from your system):
-
 
 | NVMe Drives                                  | SATA Drives                            |
 | :------------------------------------------- | :------------------------------------- |

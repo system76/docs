@@ -119,7 +119,7 @@ macOS uses multi-touch gestures, or <kbd>CTRL</kbd>+<kbd>up</kbd> or <kbd>down</
 
 #### Accessing Overview
 
-In Pop!\_OS the "Overview" will show all workspaces and the key(s) to access it is different on certain versions.  
+In Pop!\_OS the "Overview" will show all workspaces. The key(s) to access it are different on certain versions.  
 
 | Pop!\_OS version | Display Overview Default |
 |------------------|--------------------------|

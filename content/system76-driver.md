@@ -77,7 +77,7 @@ Support typically makes best-efforts to offer direction or troubleshooting for o
 
 We may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those Operating System(s)' support forums.
 
-**NOTE** at this time it is recommended to use the NVIDIA driver from the Arch and Fedora repositories.
+**NOTE:** at this time it is recommended to use the NVIDIA driver from the Arch and Fedora repositories.
 
 ### Arch - Build the source code
 

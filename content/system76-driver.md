@@ -96,9 +96,9 @@ makepkg -srcif
 sudo systemctl enable --now system76
 ```
 
-### Arch Alt - Install Paru
- 
-Paru automates installing and updating software that you install from the AUR. To start, we'll get Paru installed before moving on to installing the <u>system76-driver</u> package from the AUR using <u>Paru</u>
+### Arch - Use a AUR helper
+
+We'll use the application <u>Paru</u> which automates installing and updating software that you install from the AUR. To start, we'll get <u>Paru</u> installed before moving on to installing the <u>system76-driver</u> package from the AUR using <u>Paru</u>
 
 ```bash
 git clone https://aur.archlinux.org/paru.git

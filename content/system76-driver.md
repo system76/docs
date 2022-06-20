@@ -70,7 +70,7 @@ In addition to the standard packages, that will pull in the latest NVIDIA driver
 
 **DISCLAIMER:** This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
 
-The System76 engineering and QA teams may not regularly test other OSes on System76 hardware. This section is provided for informational purposes only. 
+The System76 engineering and QA teams may not regularly test other OSes on System76 hardware. This section is provided for informational purposes only.
 
 System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing other operating systems.
 

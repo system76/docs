@@ -112,6 +112,7 @@ paru -s system76-driver
 # choose the first software option listed
 sudo systemctl enable --now system76
 ```
+
 ### Fedora
 
 Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](https://copr.fedorainfracloud.org/coprs/szydell/system76/) and install the <u>System76 Driver</u> :

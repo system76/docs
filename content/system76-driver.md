@@ -95,21 +95,21 @@ cd paru
 makepkg -si
 ```
 
-**NOTE** that by default <u>Paru</u> uses vim standards so when you see a ":" press the <kbd>q</kbd> key to continue. You may also need to import some public keys by using the <kbd>y</kbd> key.
+**NOTE**: By default <u>Paru</u> uses vim keyboard standards, when you see a ":" press the <kbd>q</kbd> key to continue. You may also need to import some public keys by using the <kbd>y</kbd> key.
 
-Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
+Next, build the <u>System76 Driver</u> with <u>Paru</u>. You will be offered the choice between our tagged release or git HEAD releases.
+
+```bash
+paru -s system76-driver
+sudo systemctl enable --now system76
+```
+
+If you would like to build the package manualy, use the following commands:
 
 ```bash
 git clone https://aur.archlinux.org/system76-driver.git
 cd system76-driver
 makepkg -srcif
-sudo systemctl enable --now system76
-```
-
-**NOTE** choose the first software option listed after running the <u>Paru</u> command.
-
-```bash
-paru -s system76-driver
 sudo systemctl enable --now system76
 ```
 

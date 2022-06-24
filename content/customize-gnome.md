@@ -18,15 +18,22 @@ section: software
 tableOfContents: true
 ---
 
+
 The GNOME desktop environment is highly customizable. Visit [extensions.gnome.org](https://extensions.gnome.org) to install, remove, and configure currently installed extensions.  A web browser plugin is needed to interact with the site, and it will prompt for installation if needed.  Remember to refresh the page after the plugin is installed.
 
->**NOTE:** There are many extensions to choose from! If one isn't currently working, or breaks with an update, then try a different extension to see if it works better.
+**Please note**: Pop_OS! 22.04 is based on GNOME 42 so the extension **must** support GNOME 42. There are many extensions to choose from! If one isn't currently working, or breaks with an update, then try a different extension to see if it works better.
+
+The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 
 ---
 
 ## Included Extensions
 
 Pop!\_OS includes the GNOME `Extensions` app by default, which lists both system-installed, and user-installed extensions.
+
+**Please note**: If you are using a custom GNOME theme in Pop_OS! 22.04, it **must** support GTK 4.
+
+[User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
 ![extensions-app-window](/images/customize-gnome/extensions-app-window.png)
 

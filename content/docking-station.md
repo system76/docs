@@ -42,9 +42,13 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 
 ## A Note About Multi-Monitor Support
 
-Many docking stations offer multiple video-out ports on the dock device itself. However, our systems typically only have one video stream per port; so, even if a docking station supports multiple video ports, only one at a time will be active. For example, connecting a docking station with two DisplayPort ports to the Thunderbolt port on a System76 laptop will only activate one DisplayPort monitor. To chain two monitors together from the same docking station requires the monitor hardware to support daisy-chaining, and both monitors will need to be connected to each other, rather than to the docking station.
+Many docking stations offer multiple video-out ports on the dock device itself. However, depending on the technology used by the dock, there may be only one video stream per port. Even if the docking station supports multiple video ports, only one at a time could be active. For example, connecting a docking station with two HDMI ports to a Thunderbolt port on a System76 laptop may only activate one HDMI monitor.
 
-Laptop -> Docking Station -> Monitor 1 -> DisplayPort Cable or Thunderbolt Cable -> Monitor 2
+Multi-Stream Transport (MST) is a DisplayPort standard allowing multiple video streams to be sent through a single DisplayPort output on your computer or device. MST is a feature of the DisplayPort standard, so is available on Displayport, Mini-DisplayPort and DisplayPort over USB-C (USB Alt-Mode) connections. Most DisplaytPort outputs support MST, but not all docking stations use this technology to provide multiple display outputs. If you plan to use MST, make sure the hub or dock explicitly mentions MST support.
+
+Alternatively, you can also use MST to daisy-chain two or more monitors together from the laptop or a docking station. This requires that the monitor hardware to support daisy-chaining. MST is often an advertised feature, so check the marketing material or store page for your monitor. If you already have, or have access to the monitor, you can also verify by checking for a DisplayPort output on the monitor, in addition to the normal DisplayPort inputs. A set up with daisy-chaining would look something like the diagram below:
+
+Laptop -> Monitor 1 -> DisplayPort or USB-C Cable -> Monitor 2
 
 ### System76-tested docks
 
@@ -58,6 +62,8 @@ We have tested the following docks:
 Community members have reported that the following docks work with our products:
 
 - [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/797) on an Intel system] <sup>1</sup>
+- [CableMatters 107008-BLK](https://www.cablematters.com/pc-881-127-cable-matters-60-ghz-wireless-docking-station-hybrid-model-with-usb-c.aspx) [[community-tested](https://github.com/system76/docs/pull/860) on an Intel system] <sup>1</sup>
+  - Simultaneous HDMI/DisplayPort, DisplayPort daisy-chaining, and 3.5mm audio not tested.
 - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [community-tested on an [Intel system](https://github.com/system76/docs/pull/417) and an [NVIDIA system](https://github.com/system76/docs/pull/917)] <sup>1</sup>
   - Downstream (passthrough) Thunderbolt 3 port not tested.
   - May not be able to wake system using peripherals connected via dock.

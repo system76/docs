@@ -70,34 +70,23 @@ In addition to the standard packages, that will pull in the latest NVIDIA driver
 
 **DISCLAIMER:** This section explains how to install the <u>System76 Driver</u> on Arch and Fedora.
 
-Except in some rare cases, System76 QA and Engineering teams do not test other OSes on our hardware. This section is provided for informational purposes only. System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer.
+The System76 engineering and QA teams may not regularly test other OSes on System76 hardware. This section is provided for informational purposes only.
 
-However, System76 does not guarantee the success or quality of experience when installing other Operating Systems.
-Support typically makes best-efforts to offer direction or troubleshooting for other distributions.
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing other operating systems.
 
-We may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those Operating System(s)' support forums.
+The support team typically makes a best-effort attempt to offer direction or troubleshooting for other distributions. The team may determine that troubleshooting has exceeded the scope of support. If that's the case, further questions should be referred to those operating system(s)' support forums.
 
-**NOTE** at this time it is recommended to use the NVIDIA driver from the Arch and Fedora repositories.
+**Note:** At this time, it is recommended to use the NVIDIA driver from the Arch and Fedora repositories.
 
-### Arch
+### Arch - Manual install
 
-First let's install some packages needed for the build process of the <u>System76 Firmware Daemon</u> and the <u>System76 Driver</u>:
+First, install some build dependencies for the the <u>System76 Firmware Daemon</u> and <u>System76 Driver</u> packages:
 
 ```bash
 sudo pacman -S --needed base-devel git linux-headers
 ```
 
-### Install Paru
-
-```bash
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-```
-
-**NOTE** that by default <u>Paru</u> uses vim standards so when you see a ":" press the <kbd>q</kbd> key to continue. You may also need to import some public keys by using the <kbd>y</kbd> key.
-
-Now the <u>System76 Driver</u> can be cloned, built and installed using these commands:
+Next, the <u>System76 Driver</u> package can be cloned, built, and installed using these commands:
 
 ```bash
 git clone https://aur.archlinux.org/system76-driver.git
@@ -106,10 +95,21 @@ makepkg -srcif
 sudo systemctl enable --now system76
 ```
 
-**NOTE** choose the first software option listed after running the <u>Paru</u> command.
+### Arch - Using an AUR helper
+
+Arch uesrs can alternatively use an AUR helper to automate some of the steps for installation and upgrading; in this example, we'll use the <u>Paru</u> application. <u>Paru</u> can be installed from the AUR using these commands:
+
+```bash
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
+
+**Note:** By default, <u>Paru</u> uses VIM keyboard shortcuts, so when you see a `:`, press the <kbd>q</kbd> key to continue. You may also need to confirm the import of some public keys using the <kbd>y</kbd> key.
 
 ```bash
 paru -s system76-driver
+# choose the first software option listed
 sudo systemctl enable --now system76
 ```
 

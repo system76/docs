@@ -29,7 +29,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.19.1",
     "lodash": "^4.17.21",
-    "markdownlint-cli": "^0.29.0",
+    "markdownlint-cli": "^0.31.1",
     "nuxt-dynamic-images": "0.0.1",
     "postcss": "^8.3.9",
     "shiki": "^0.9.3",

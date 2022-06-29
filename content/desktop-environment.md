@@ -240,3 +240,9 @@ For example, to remove KDE:
 ```bash
 sudo apt autoremove --purge kde-standard
 ```
+
+Note that if you remove a desktop environment and revert to the original Pop!_OS shell you may need to install the GNOME tweaks utility, open it and navigate to the Appearance tab, then restore the Themes settings to the 'Pop' options if some icons and display settings did not restore to their original values automatically.
+
+```bash
+sudo apt install gnome-tweaks
+```

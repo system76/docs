@@ -17,13 +17,13 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Systemd-boot is the bootloader for Pop!_OS 18.04 and above while GRUB is the bootloader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. A bootloader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.
+A bootloader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Systemd-boot is the bootloader for Pop!_OS 18.04 and newer while GRUB is the bootloader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. If you are unable to reach the log in screen, your bootloader may be the cause.
 
 ### Important Note
 
 If you need to configure grub-pc (for example, after an update), installing GRUB to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
 
-On a fresh install of Pop!_OS 18.04 and newer, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader, and the following instructions do not apply please refer to the <u>systemd-boot</u> section on this page.
+On a fresh install of Pop!_OS 18.04 and newer, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader. The following instructions only apply to systems using the GRUB bootloader, otherwise refer to the <u>systemd-boot</u> section of this article.
 
 ### Create Live Disk
 

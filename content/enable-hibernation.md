@@ -29,7 +29,7 @@ Hibernation is not currently enabled on Pop!\_OS by default. There are several l
 - Additional drive I/O used on Solid State Drives (SSDs)
 - Depending on alloted RAM in a system, and size of NVMe/SSD drive(s), hibernation could add notable delay on resuming a hibernation session.
 
-However, these limitations aside, hibernation is an often requested feature for Pop!\_OS. The purpose of this article is to provide steps for enabling hibernation for any users that would like it. Since hibernation completely shuts off power to the device, it can prolong the lifetime of your battery. Additionally, there are some security benefits. While your computer is suspended, the decryption key for your data volume remains in memory, and your device is vulnerable to certain physical attacks that can extract the key from RAM.
+However, these limitations aside, hibernation is an often requested feature for Pop!\_OS. The purpose of this article is to provide steps for enabling hibernation for any users that would like it. Since hibernation completely shuts off power to the device, it can prolong the lifetime of your battery. Additionally, there are some security benefits. Unlike suspend, the decryption key for the disk no longer remains in memory, and the disk is locked. This mitigates certain physical attacks that can extract the key from RAM.
 
 ## Enable Hibernation on an Encrypted Drive
 

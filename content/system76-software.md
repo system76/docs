@@ -208,6 +208,12 @@ sudo systemctl enable system76-power system76-power-wake
 sudo systemctl start system76-power
 ```
 
+Some users may find that the `system76-power.service` service does not start automatically on boot, even though it's enabled.  To remedy this, you may need to mask the `power-profiles-daemon.service`:
+
+```bash
+sudo systemctl mask power-profiles-daemon.service
+```
+
 ### System76 Power GNOME Shell Extension in Fedora
 
 These commands will download the source code for the application, build it, install it and install the <u>Extensions</u> application:
@@ -221,6 +227,14 @@ make install
 ```
 
 Now log out and use the <u>Extensions</u> to enable the extenstion.
+
+If `Gio.DBusError` presents itself when attempting to enable the extension within the Extensions application, confirm that the `system76-power.service` is running:
+
+```bash
+sudo systemctl status system76-power.service
+```
+If the service isn't running, revisit [these](https://github.com/system76/docs/edit/master/content/system76-software.md#system76-power-gnome-shell-extension-in-fedora) steps.
+
 
 ### System76 DKMS in Fedora
 

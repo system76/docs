@@ -49,6 +49,12 @@ On the dialog that pops up, enter your account information for the server, then 
 
 Once this is done, hit "Connect" in the top right and you can access the files on the network drive.
 
+If you're looking for the location of your mount in terminal, it can be found in the following location:
+
+    /run/user/1000/gvfs/
+    
+Alternatively, you can right click your file and open in terminal. 
+  
 ---
 
 This article was contributed by [kylecorry31](https://github.com/kylecorry31).

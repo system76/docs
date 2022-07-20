@@ -39,7 +39,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 
 ## Windows 11
 
->**Windows 11 Compatibility:** Windows 11 is not supported on all systems. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+> **Windows 11 Compatibility:** Windows 11 is not supported on all systems. Open Firmware systems to do support Secure Boot which is a requirement for Windows 11. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
 
 ### Compatibility Table
 
@@ -50,15 +50,20 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | addw2        | Yes                | No                 |
 | bonw14       | Yes                | No                 |
 | darp6        | Yes                | No                 |
+| darp7        | Yes                | No                 |
+| darp8        | Yes                | No                 |
 | galp4        | Yes                | No                 |
 | galp5        | Yes                | No                 |
 | gaze15       | Yes                | No                 |
 | gaze16       | Yes                | No                 |
+| gaze17       | Yes                | No                 |
 | lemp9        | Yes                | No                 |
 | lemp10       | Yes                | No                 |
+| lemp11       | Yes                | No                 |
 | oryp6        | Yes                | No                 |
 | oryp7        | Yes                | No                 |
 | oryp8        | Yes                | No                 |
+| oryp9        | Yes                | No                 |
 | pang10       | Yes                | Yes                |
 | pang11       | Yes                | Yes                |
 | serw12       | Yes                | Yes                |
@@ -73,7 +78,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | thelio-mega-r1    | Yes                | Yes*                |
 | thelio-massive-b1 | Yes                | Yes*                |
 
-> **NOTE:** For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
+> **NOTE:** *For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
 
 ---
 

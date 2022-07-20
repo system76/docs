@@ -28,11 +28,14 @@ section: software
 tableOfContents: true
 ---
 
-## Disclaimer
+## Important Disclaimer - Please Read
 
 System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for information purposes only.
 
-System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows.
+System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows and does not provide support or testing for any Windows version. Please do not open a support ticket for anything other than clarification of the steps covered in this article.
+The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
+
+Installing Windows is undertaken at your own risk. It's possible not all hardware will function as intended and drivers may not be available for all components. Your mileage may vary.
 
 ## Windows 11
 
@@ -71,10 +74,6 @@ System76 encourages users to take ownership of their machines and install whatev
 | thelio-massive-b1 | Yes                | Yes*                |
 
 > **NOTE:** For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
-
-### Scope of Support
-
-The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any troubleshooting or Windows support questions not covered in this article are outside the scope of System76 and should be referred to Microsoft.
 
 ---
 

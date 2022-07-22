@@ -17,7 +17,7 @@ section: software
 tableOfContents: true
 ---
 
-System76 laptops and desktops with Open Firmware will typically have the Intel Management Engine (IME) disabled, unless doing so breaks functionality. Machines running Open Firmware with coreboot can disable the IME manually.
+System76 laptops will have the Intel Management Engine (IME) disabled when it does not break functionality. System76 open firmware systems do have some control to [enable and disable the IME](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md).
 
 ## What is the Intel Management Engine?
 
@@ -29,7 +29,11 @@ System76 Open Firmware is an open source distribution of firmware utilizing core
 
 ## Is the IME Disabled On My System76 PC?
 
-For Open Firmware systems, the IME is typically disabled by default unless doing so would break functionality (such as suspend/resume). System76 maintains a list of machines that ship with Open Firmware [in this article](/articles/open-firmware-systems/).
+You can confirm if the IME is enabled on your PC by booting into the firmware menu and navigating to `Firmware Configuration Information`. [See this article](/articles/boot-menu/) for instructions to access the firmware menu for your System76 machine.
+
+![Firmware Config Menu](/images/intel-me/firmwareconfiginfo.png)
+
+ For Open Firmware systems, the IME is typically disabled by default unless doing so would break functionality (such as suspend/resume). System76 maintains a list of machines that ship with Open Firmware [in this article](/articles/open-firmware-systems/).
 
 For proprietary firmware systems, if the option to disable (or enable) the IME is available, it is typically located under `Advanced` ➞ `Advanced Chipset Control`. This option is usually disabled by default, although there have been some models that required re-disabling after an over-the-air firmware update; see [this section](/articles/system-firmware#disabling-the-me) of the firmware update instructions article.
 

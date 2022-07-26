@@ -19,7 +19,7 @@ section: software
 tableOfContents: true
 ---
 
-Pop!\_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day. 
+Pop!\_OS and Ubuntu both include the GNOME desktop environment by default. A desktop environment is responsible for the look and feel of the graphical desktop, and includes many of the key programs that get used every day.
 
 You can install an alternative desktop environment using the instructions below.
 

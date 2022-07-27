@@ -250,4 +250,3 @@ For example, to remove KDE:
 ```bash
 sudo apt autoremove --purge kde-standard
 ```
-

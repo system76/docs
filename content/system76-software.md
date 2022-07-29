@@ -101,7 +101,7 @@ sudo systemctl enable --now com.System76.PowerDaemon.service
 sudo gpasswd -a $USER adm
 ```
 
-### System76 Power GNOME Shell Extension 
+### System76 Power GNOME Shell Extension
 
 ```bash
 git clone https://aur.archlinux.org/gnome-shell-extension-system76-power-git.git
@@ -117,7 +117,7 @@ This command will install `gnome-shell-extension-system76-power` using <u>Paru</
 paru -s gnome-shell-extension-system76-power
 ```
 
-### System76 Thelio Io DKMS 
+### System76 Thelio Io DKMS
 
 ```bash
 git clone https://aur.archlinux.org/system76-io-dkms.git
@@ -135,7 +135,7 @@ paru -s system76-io-dkms
 
 **NOTE:** This package is only needed for Thelio desktops.
 
-### System76 OLED 
+### System76 OLED
 
 ```bash
 git clone https://aur.archlinux.org/system76-oled.git

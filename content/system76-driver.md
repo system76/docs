@@ -80,13 +80,13 @@ The support team typically makes a best-effort attempt to offer direction or tro
 
 ### Arch - Manual install
 
-First, install some build dependencies for the the <u>System76 Firmware Daemon</u>, <u>System76 Driver</u> and the <u>Firmware Manager</u> packages:
+First, install some build dependencies for the <u>System76 Firmware Daemon</u>, <u>System76 Driver</u> and the <u>Firmware Manager</u> packages:
 
 ```bash
 sudo pacman -S --needed base-devel git linux-headers
 ```
 
-Next import Jeremy Sollar's public key which is needed to build the <u>System76 Driver</u>
+Next import Jeremy Soller's public key which is needed to build the <u>System76 Driver</u>
 
 ```bash
 gpg --recv-keys 87F211AF2BE4C2FE
@@ -125,11 +125,11 @@ makepkg -srcif
 sudo systemctl enable --now system76
 ```
 
-Now reboot the system so that our user is added to the `adm` group then we are done!
+Reboot the system so that our user is added to the `adm` group, then we are done!
 
 ### Arch - Using an AUR helper
 
-Arch uesrs can alternatively use an AUR helper to automate some of the steps for installation and upgrading; in this example, we'll use the <u>Paru</u> application. <u>Paru</u> can be installed from the AUR using these commands:
+Arch users can alternatively use an AUR helper to automate some of the steps for installation and upgrading; in this example, we'll use the <u>Paru</u> application. <u>Paru</u> can be installed from the AUR using these commands:
 
 ```bash
 git clone https://aur.archlinux.org/paru.git

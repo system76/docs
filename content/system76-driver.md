@@ -104,6 +104,16 @@ sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
+### System76 Firmware Manager
+
+These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
+
+```bash
+git clone https://aur.archlinux.org/firmware-manager.git
+cd firmware-manager
+makepkg -srcif
+```
+
 ### System76 Driver
 
 Next, the <u>System76 Driver</u> package can be cloned, built, and installed using these commands:
@@ -113,16 +123,6 @@ git clone https://aur.archlinux.org/system76-driver.git
 cd system76-driver
 makepkg -srcif
 sudo systemctl enable --now system76
-```
-
-### System76 Firmware Manager
-
-These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
-
-```bash
-git clone https://aur.archlinux.org/firmware-manager.git
-cd firmware-manager
-makepkg -srcif
 ```
 
 Now reboot the system so that our user is added to the `adm` group then we are done!

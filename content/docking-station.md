@@ -62,6 +62,8 @@ We have tested the following docks:
 Community members have reported that the following docks work with our products:
 
 - [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/797) on an Intel system] <sup>1</sup>
+- [Belkin Thunderbolt 3 Dock - Plus](https://www.belkin.com/us/business/hubs-and-docks-for-business/docking-stations-for-business/thunderbolt-3-dock-plus/p/p-f4u109/)[[community-tested](PLACEHOLDER) on an Intel system (Lemur Pro 10)]
+  - No issues with Pop!OS 22.04 LTS
 - [CableMatters 107008-BLK](https://www.cablematters.com/pc-881-127-cable-matters-60-ghz-wireless-docking-station-hybrid-model-with-usb-c.aspx) [[community-tested](https://github.com/system76/docs/pull/860) on an Intel system] <sup>1</sup>
   - Simultaneous HDMI/DisplayPort, DisplayPort daisy-chaining, and 3.5mm audio not tested.
 - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [community-tested on an [Intel system](https://github.com/system76/docs/pull/417) and an [NVIDIA system](https://github.com/system76/docs/pull/917)] <sup>1</sup>

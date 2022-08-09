@@ -86,12 +86,6 @@ First, install some build dependencies for the <u>System76 Firmware Daemon</u>, 
 sudo pacman -S --needed base-devel git linux-headers
 ```
 
-Next import Jeremy Soller's public key which is needed to build the <u>System76 Driver</u>
-
-```bash
-gpg --recv-keys 87F211AF2BE4C2FE
-```
-
 ### System76 Firmware Daemon
 
 These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.

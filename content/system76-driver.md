@@ -80,11 +80,35 @@ The support team typically makes a best-effort attempt to offer direction or tro
 
 ### Arch - Manual install
 
-First, install some build dependencies for the the <u>System76 Firmware Daemon</u> and <u>System76 Driver</u> packages:
+First, install some build dependencies for the <u>System76 Firmware Daemon</u>, <u>System76 Driver</u> and the <u>Firmware Manager</u> packages:
 
 ```bash
 sudo pacman -S --needed base-devel git linux-headers
 ```
+
+### System76 Firmware Daemon
+
+These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
+
+```bash
+git clone https://aur.archlinux.org/system76-firmware-daemon.git
+cd system76-firmware-daemon
+makepkg -srcif
+sudo systemctl enable --now system76-firmware-daemon
+sudo gpasswd -a $USER adm
+```
+
+### System76 Firmware Manager
+
+These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
+
+```bash
+git clone https://aur.archlinux.org/firmware-manager.git
+cd firmware-manager
+makepkg -srcif
+```
+
+### System76 Driver
 
 Next, the <u>System76 Driver</u> package can be cloned, built, and installed using these commands:
 
@@ -95,9 +119,11 @@ makepkg -srcif
 sudo systemctl enable --now system76
 ```
 
+Reboot the system so that our user is added to the `adm` group, then we are done!
+
 ### Arch - Using an AUR helper
 
-Arch uesrs can alternatively use an AUR helper to automate some of the steps for installation and upgrading; in this example, we'll use the <u>Paru</u> application. <u>Paru</u> can be installed from the AUR using these commands:
+Arch users can alternatively use an AUR helper to automate some of the steps for installation and upgrading; in this example, we'll use the <u>Paru</u> application. <u>Paru</u> can be installed from the AUR using these commands:
 
 ```bash
 git clone https://aur.archlinux.org/paru.git
@@ -106,6 +132,16 @@ makepkg -si
 ```
 
 **Note:** By default, <u>Paru</u> uses VIM keyboard shortcuts, so when you see a `:`, press the <kbd>q</kbd> key to continue. You may also need to confirm the import of some public keys using the <kbd>y</kbd> key.
+
+```bash
+paru -s system76-firmware-daemon
+sudo systemctl enable --now system76-firmware-daemon
+sudo gpasswd -a $USER adm
+```
+
+```bash
+paru -s firmware-manager
+```
 
 ```bash
 paru -s system76-driver

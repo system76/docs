@@ -5,8 +5,11 @@ description:
 keywords:
   - keyboard shortcuts
   - launch
+  - launch-lite
   - pop
   - ubuntu
+  - arch
+  - fedora
 
 facebookImage: /_social/article
 twitterImage: /_social/article

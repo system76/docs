@@ -21,44 +21,44 @@ tableOfContents: true
 
 Pop!\_OS does a lot to conserve the battery life of your laptop just by default, but there's additional things to be aware of that can stretch that battery life even longer. Choosing the right options to match your work or play style can help keep you away from the wall socket.
 
-## Screen brightness
+## Adjusting Screen Brightness
 
 One of the largest consumers of laptop power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor, but brightness can be adjusted manually via the **System Menu** (see screenshot below) or with the keyboard shortcuts for each individual laptop model, which can be found on the "External Overview" pages of [each model's technical documentation](https://support.system76.com/articles/guides/).
 
 ![Brightness](/images/battery/brightness.png)
 
-## Power Profiles
+## Changing Power Profiles
 
-Pop!\_OS comes preloaded with the `system76-power` package, which allows you to select **Power Profiles** through the **System Menu**, as shown in the image below. This screenshot is from a laptop that has switchable Nvidia graphics, and a laptop that has only Intel graphics will not hawe those options.
+Pop!\_OS comes preloaded with the `system76-power` package, which allows you to select **Power Profiles** through the **System Menu**, as shown in the image below. Changing power profiles does not require rebooting the laptop. This screenshot is from a laptop that has switchable NVIDIA graphics, and a laptop that has only Intel graphics will not have those options.
 
 ![Battery](/images/battery/power-menu.png)
 
-The system will default on each startup to the "Balanced" setting, which is usually preferred even when connected to AC power as it helps keep the system running cool and quiet. When maximum performance is needed, the "High Performance" setting will uncap everything and let the system run as hot and power-hungry as it wants, which can dramaticaly reduce battery life and may also increase the noise made by the system fan(s).
+The system will default on each startup to the `Balanced` setting, which is usually preferred even when connected to AC power as it helps keep the system running cool and quiet. When maximum performance is needed, the `High Performance` setting will uncap everything and let the system run as hot and power-hungry as it wants, which can dramaticaly reduce battery life and may also increase the noise made by the system fan(s).
 
-The "Battery Life" setting will do a number of things to improve battery life, including reduce the screen brightness (which can be turned back up as described above if desired), reduce the maximum speed of the CPU (and any GPUs if present), aggressively control how applications are allowed to use the CPU and GPU, and much more under the hood.
+The `Battery Life` setting will do a number of things to improve battery life, including reduce the screen brightness (which can be turned back up as described above if desired), reduce the maximum speed of the CPU (and any GPUs if present), aggressively control how applications are allowed to use the CPU and GPU, and much more under the hood.
 
-## Switchable graphics settings
+## Switching Graphics Settings
 
-The settings for the graphics modes on laptops that have switchable Nvidia graphics are outlined in detail [on their own support document](https://support.system76.com/articles/graphics-switch-pop), but to summarize:
+The settings for the graphics modes on laptops that have switchable NVIDIA graphics are outlined in detail [on their own support document](https://support.system76.com/articles/graphics-switch-pop), but to summarize:
 
 * Integrated Intel graphics mode will provide increased battery life at the cost of 3D performance, and some laptops will not support external displays in that mode.
-* Hybrid graphics allow you to choose to use the more powerful Nvidia GPU when needed, but applications will default to using the lower-power Intel graphics.
-* Nvidia graphics mode runs everything on the Nvidia GPU for maximum perormance, and will use the most battery.
-* Compute mode reserves the Nvidia GPU for tasks that don't output graphics to the screen, like machine learning or data crunching processes.
+* Hybrid graphics allow you to choose to use the more powerful NVIDIA GPU when needed, but applications will default to using the lower-power Intel graphics.
+* NVIDIA graphics mode runs everything on the NVIDIA GPU for maximum perormance, and will use the most battery.
+* Compute mode reserves the NVIDIA GPU for tasks that don't output graphics to the screen, like machine learning or data crunching processes.
 
 Switching graphics modes does require restarting the laptop, which will use up some battery life in the process, so it's recommended that the graphics mode be switched before disconnecting from the AC adapter.
 
-## Disabling unused wireless devices
+## Disabling Unused Wireless Devices
 
-WiFi and Bluetooth are wireless technologies that use up a small amount of power even when they're not being used, as they monitor for wireless network activity. If you're not using them, disabling either WiFi or Bluetooth can improve battery life, and the "Airplane Mode" setting will disable both for maximum savings. They can be disabled individually via the Wi-Fi and Bluetooth panels in the Settings application by toggling the switch at the top of the window, and Airplane Mode is available underneath it on the Wi-Fi settings panel:
+Wi-Fi and Bluetooth are wireless technologies that use up a small amount of power even when they're not being used, as they monitor for wireless network activity. If you're not using them, disabling either Wi-Fi or Bluetooth can improve battery life, and the `Airplane Mode` setting will disable both for maximum savings. They can be disabled individually via the Wi-Fi and Bluetooth panels in the Settings application by toggling the switch at the top of the window, and Airplane Mode is available underneath it on the Wi-Fi settings panel:
 
-![disable-wifi](/images/battery/disable-wifi.png)
+![disable-Wi-Fi](/images/battery/disable-wifi.png)
 
-## Monitoring system performance
+## Monitoring System Performance
 
 Pop!\_OS has a number of different options for monitoring the CPU and GPU use of processes and applications. The more CPU and/or GPU a program is using, the more battery life it will consume as well. If a system's battery isn't lasting as long as expected, it can be useful to see what the system is doing to go through the charge more quickly.
 
-### `powertop`
+### Using `powertop`
 
 `powertop`is a tool for generating reports about what applications and hardware are using the most power, as well as providing live monitoring of the system. It can be installed by running this command in the terminal:
 
@@ -80,15 +80,15 @@ Running the command in the terminal without any parameters like this:
 sudo powertop
 ```
 
-will start `powertop` in an interactive monitoring mode. The Tab key can be used to move between pages and the arrow keys to scroll, and it's very similar to to HTML report, only it's updated in real-time.
+will start `powertop` in an interactive monitoring mode. Use the <kbd>Tab</kbd> key to navigate between pages, and the arrow keys to scroll. This output shows the same information from the HTML report, but is updated in real-time.
 
-### System Monitor
+### Using the System Monitor
 
 The GUI application named System Monitor is installed by default on Pop!\_OS, and is a GUI tool for watching system proceses. By clicking on the column labeled "CPU", so that the arrow is pointing down, it will sort the processes by how much CPU time they're using. This can be useful for finding a process that's running the background and keeping the CPU busy.
 
 ![system-monitor](/images/battery/system-monitor.png)
 
-### `top` and variants
+### Using `top` and Variants
 
 Pop!\_OS comes pre-installed with a tool for the terminal called `top`, which is the standard Linux tool for monitoring system processes. It's like the System Monitor, except it's text-only (so it uses fewer system resources itself), and it automatically sorts the processes by their CPU usage.
 
@@ -108,9 +108,9 @@ Here'a a screenshot of it running on a system with eight physical cores and sixt
 
 ![htop](/images/battery/htop.png)
 
-### Nvidia GPUs: `nvtop`
+### NVIDIA GPUs: Using `nvtop`
 
-Nvidia GPUs can be monitored with a tool called `nvtop`. It can be installed from the terminal with this command:
+NVIDIA GPUs can be monitored with a tool called `nvtop`. It can be installed from the terminal with this command:
 
 ```bash
 sudo apt install nvtop
@@ -128,7 +128,7 @@ It's recommended that you expand the terminal window horizontally, as `nvtop` ca
 
 If `nvtop` is showing a lot of GPU activity when no GPU-heavy applications (like games or 3D software) are running, there may be an program which is using the GPU when it's not supposed to be.
 
-### Intel graphics: `intel_gpu_top`
+### Intel Graphics: Using `intel_gpu_top`
 
 Integrated Intel graphics have an additional monitoring tool called `intel_gpu_top`. It can be installed from the terminal with this command, along with other tools for Intel graphics:
 
@@ -148,7 +148,7 @@ This screenshot shows `intel_gpu_top` on a system running some normal applicatio
 
 If `intel_gpu_top` is showing a lot of GPU activity when no GPU-heavy applications (like games or 3D software) are running, there may be an program which is using the GPU when it's not supposed to be.
 
-## Checking battery health
+## Checking Battery Health
 
 This command will show the information that your computer can read about the battery:
 
@@ -158,7 +158,7 @@ upower -d
 
 The "Capacity" statistic compares the original power capacity that the battery had when it with new, with the current maximum power capacity. Batteries do lose maximum power charge as they age, and this can be a good way to see if the battery needs replacement.
 
-## Inaccurate battery percentages
+## Fixing Inaccurate Battery Percentage
 
 If the battery life indicator at the top of the System Menu is inaccurate, which can often happen on a new system or after a battery has been replaced, this command will remove the stored battery statistics:
 
@@ -168,6 +168,6 @@ sudo rm /var/lib/upower/*
 
 After a few charge/discharge cycles, the indicator should become more accurate as the system learns how to estimate the correct percentage.
 
-## Tools we do not recommend
+## Tools We Do Not Recommend
 
-The [TLP power maagement tool for Linux](https://linrunner.de/tlp/index.html) is popular on other Linx distributions, but it is not compatible with `system76-power`, and both System76 and [the TLP developers](https://linrunner.de/tlp/faq/installation.html#does-tlp-conflict-with-other-power-management-tools) do not recommend installing TLP on Pop!\_OS.
+The [TLP power management tool for Linux](https://linrunner.de/tlp/index.html) is popular on other Linux distributions, but it is not compatible with `system76-power`, and both System76 and [the TLP developers](https://linrunner.de/tlp/faq/installation.html#does-tlp-conflict-with-other-power-management-tools) do not recommend installing TLP on Pop!\_OS.

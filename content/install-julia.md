@@ -29,6 +29,6 @@ sudo apt install julia
 
 ## Launching Julia
 
-Press the Super key to bring up the Launcher, then type “julia” and hit enter.
+Press the <kbd>Super</kbd> key to bring up the Launcher, then type “julia” and hit enter.
 
 ![Launching Julia in Pop!_OS](/images/install-julia/launch-julia.png)

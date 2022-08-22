@@ -87,7 +87,7 @@ paru -s system76-acpi-dkms
 git clone https://aur.archlinux.org/system76-power.git
 cd system76-power
 makepkg -srcif
-sudo systemctl enable --now com.System76.PowerDaemon.service
+sudo systemctl enable --now com.system76.PowerDaemon.service
 sudo gpasswd -a $USER adm
 ```
 
@@ -97,7 +97,7 @@ These commands will install `system76-power` using <u>Paru</u>.
 
 ```bash
 paru -s system76-power
-sudo systemctl enable --now com.System76.PowerDaemon.service
+sudo systemctl enable --now com.system76.PowerDaemon.service
 sudo gpasswd -a $USER adm
 ```
 

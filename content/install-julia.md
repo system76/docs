@@ -21,7 +21,7 @@ Julia is a high-level programming language popularly used for numerical analysis
 
 ### Using the Terminal
 
-In Pop!_OS, Julia is simply installed by running `sudo apt install julia`. 
+In Pop!_OS, Julia is simply installed by running `sudo apt install julia`.
 
 ```bash
 sudo apt install julia

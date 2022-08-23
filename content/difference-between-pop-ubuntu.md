@@ -22,21 +22,21 @@ Pop!_OS has evolved quite a bit since its 17.10 release. While the easiest way t
 
 ## “Isn’t it just a re-skinned Ubuntu?”
 
-This is a common question to come up, and one that makes our engineers cringe. Yes, Pop!_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)
+This is a common question that comes up, and one that makes our engineers cringe. Yes, Pop!_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)
 
-To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our [Roadmap](/articles/roadmap) documentation and the [This Week in Pop!](https://pop-planet.info/forums/forums/project-updates.28/) series on [Pop!_Planet](https://pop-planet.info/). Below, you’ll find a general list of improvements that make Pop!_OS stand out.
+To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our [Roadmap](/articles/roadmap) documentation and the [This Week in Pop!](https://pop-planet.info/forums/forums/project-updates.28/) series on [Pop!_Planet](https://pop-planet.info/). Below, you willl find a general list of improvements that make Pop!_OS stand out.
 
 ## First impressions: The Installer
 
 ![Installer Images: Download screen](/images/difference-between-pop-ubuntu/Installer-Screenshot.png)
 
-While Pop!_OS is designed to be [easy to use](https://www.forbes.com/sites/jasonevangelho/2018/11/14/a-linux-noob-reviews-the-pop_os-installer-from-system76/#144a421310d4) for Linux beginners, it’s also developed with the tech-savvy professional in mind. Pop!’s installer sets the tone for our philosophy behind the OS: to provide snappy functionality inside a desktop environment that promotes creative thinking.
+While Pop!_OS is designed to be [easy to use](https://www.forbes.com/sites/jasonevangelho/2018/11/14/a-linux-noob-reviews-the-pop_os-installer-from-system76/#144a421310d4) for Linux beginners, it is also developed with the tech-savvy professional in mind. Pop!’s installer sets the tone for our philosophy behind the OS: to provide snappy functionality inside a desktop environment that promotes creative thinking.
 
 The installer offers encryption out of the box and takes care of setting up your user preferences (language, keyboard layout, installation method). On first use, the installer also makes it easy to select your time zone and integrate any online accounts into your desktop.
 
 ![Intel/AMD + NVIDIA](/images/difference-between-pop-ubuntu/intel-amd-nvidia-1904.png)
 
-Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings and the proprietary NVIDIA driver for NVIDIA systems, ensuring the best performance and use of CUDA tools one command away. On Oryx Pro systems, you can even switch between Intel and Nvidia graphics using a toggle in the top right corner of your screen.
+Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings and the proprietary NVIDIA driver for NVIDIA systems, ensuring the best performance and use of CUDA tools, one command away. On Oryx Pro systems, you can even switch between Intel and Nvidia graphics using a toggle in the top right corner of your screen.
 
 ## Privacy
 
@@ -59,7 +59,7 @@ Pop!_OS includes a selection of apps intended to be comprehensive, but relativel
 
 ![Power Profiles/Graphics toggle](/images/difference-between-pop-ubuntu/system-menu.png)
 
-Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](/articles/roadmap) offers a more extensive outline of these changes, we’ve highlighted some of our major improvements below:
+Pop!_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](/articles/roadmap) offers a more extensive outline of these changes, we have highlighted some of our major improvements below:
 
 * Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!_OS on install also downloads the NVIDIA drivers by default.
 * The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.

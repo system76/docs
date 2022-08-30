@@ -43,7 +43,7 @@ If multiple desktop environments are installed, GDM will display a gear icon, wh
 
 ![Login2](/images/desktop-environment/Login2.png)
 
-If you do not find the gear icon to switch the desktop environment, click the user icon first to see the gear button.
+If you can't find the gear icon to switch the desktop environment, click the user icon first to see the gear button.
 
 ## Different Desktop Environments
 

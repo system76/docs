@@ -38,7 +38,6 @@ sudo apt autoremove --purge
 - `dpkg --configure -a` - The `--configure -a` command configures any unpacked but not yet configured packages.
 - `apt install -f` - The `-f` option attempts to correct broken dependencies
 - `apt full-upgrade` - In addition to downloading and installing package updates, `full-upgrade` downgrades or removes dependencies as necessary when upgrading packages.
-- `apt autoremove --purge [packagename]` - In addition to removing a package, `autoremove` will remove dependencies no longer required by any installed application. Combining with `purge` will remove any residual configuration files related to the package.
 - `apt autoremove --purge` - Running this command with no specified package will remove any packages that were previously dependencies for other installed packages but are no longer required (either because the dependent package was removed, or because the package was updated to no longer depend on certain packages.)
 
 ### Fix Individual Packages

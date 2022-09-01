@@ -23,10 +23,11 @@ tableOfContents: true
 2. Confirm the outlet works by plugging in another device.
 3. Be sure that the system is on a flat surface
 4. Desktops have a button on the power supply located at the back of the computer. Toggle that button and make sure it is in the 'On' position though it may be labeled as a '1' to note that it is powered on, then attempt to turn the desktop on.
-5. If the power button lights up, the power supply is providing power to the machine. It is recommended to check the display connections next.
+5. Disconnect the power cable and switch the button on the power supply to off. Hold down the on/off button on the computer three times for 10 seconds each. This will drain capacitors and can potentially fix a failure to power on.
+6. If the power button lights up, the power supply is providing power to the machine. It is recommended to check the display connections next.
     * 5a. If the display connections are not at fault, investigate internal components using steps outlined in this [article](/articles/hardware-failure).
-6. If the power button does not light up, the computer may need a new power button or power supply. To troubleshoot the power button on a Thelio desktop, visit this [link](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html#troubleshooting-the-power-button).
-7. Does the computer turn on when using the power switch on the Thelio IO board instead of the button? The backup power button is located on the IO board near the power button on the internal part of the case.
+7. If the power button does not light up, the computer may need a new power button or power supply. To troubleshoot the power button on a Thelio desktop, visit this [link](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html#troubleshooting-the-power-button).
+8. Does the computer turn on when using the power switch on the Thelio IO board instead of the button? The backup power button is located on the IO board near the power button on the internal part of the case.
 
 ![Thelio Io power button](/images/failure-power-on/thelio-io-power-button.png)
 

@@ -31,7 +31,7 @@ The core idea of "Layers" is that one key can be used for different actions. For
 
 Firmware updates for the Launch and Launch Lite are handled using [fwupd](https://fwupd.org/) and our <u>Firmware Manager</u> (which can be installed on Arch and Fedora using this [article](https://support.system76.com/articles/system76-driver/)) can be used to apply the update. When you get a notification about a firmware update, you will need to unlock the keyboard using <kbd>Fn</kbd> + <kbd>Esc</kbd> (Launch Lite is <kbd>Left Ctrl</kbd> + <kbd>Right Ctrl</kbd> + <kbd>Esc</kbd>).
 
-> ℹ️ These will be the default keys (even if you remapped them in the Keyboard Configurator) that must be used before you can apply the update.
+> ℹ️ If you changed your layout and moved any of these keys, you will need to press them wherever they are now located.
 
 When the keyboard is unlocked, you will see the following keys light up:
 

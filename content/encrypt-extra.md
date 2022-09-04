@@ -22,7 +22,7 @@ In this screenshot, the extra drive can be seen. Select the **Gear icon** under 
 
 ![Disks](/images/encrypt-extra/Disk-Menu.png)
 
-When the 'Format Volume' dialog window opens, set the volume name and select the `Ext4` type with `LUKS`. Click on `Next` at the top right of the dialog, then click on format.
+When the 'Format Volume' dialog window opens, set the volume name(Optional) and select the `Ext4` type with `LUKS`. Click on `Next` at the top right of the dialog, then click on format.
 
 ![Disks](/images/encrypt-extra/Disk-Encrypt.png)
 

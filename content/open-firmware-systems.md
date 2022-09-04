@@ -42,6 +42,7 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 | darp8  | Yes           | Yes     |
 | darp7  | Yes           | Yes     |
 | darp6  | Yes           | Yes\*   |
+| galp6  | Yes           | Yes     |
 | galp5  | Yes           | Yes     |
 | galp4  | Yes           | No      |
 | gaze17 | Yes           | Yes     |

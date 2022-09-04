@@ -18,7 +18,7 @@ tableOfContents: true
 
 The <u>Disks</u> application can be used to encrypt the extra drive and it comes pre-installed on Pop!_OS and Ubuntu.
 
-In this screenshot, the extra drive can be seen. Select the **Gear icon** under Volumes. Then select the **Format Partition...** option to open the 'Format Partition' dialog.
+In this screenshot, the extra drive can be seen. Select the **Gear icon** under Volumes. Then select the **Format Partition...** option to open the 'Format Volume' dialog.
 
 ![Disks](/images/encrypt-extra/Disk-Menu.png)
 

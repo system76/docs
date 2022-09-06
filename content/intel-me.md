@@ -35,7 +35,7 @@ You can confirm if the IME is enabled on your PC by booting into the firmware me
 
 For Open Firmware systems, the IME is typically disabled by default unless doing so would break functionality (such as suspend/resume). System76 maintains a list of machines that ship with Open Firmware in [this article](/articles/open-firmware-systems/).
 
-For proprietary firmware systems, if the option to disable (or enable) the IME is available, it is typically located under `Advanced` ➞ `Advanced Chipset Control`. This option is usually disabled by default, although there have been some models that required re-disabling after an over-the-air firmware update; see [this section](/articles/system-firmware#disabling-the-me) of the firmware update instructions article.
+For proprietary firmware systems, if the option to disable (or enable) the IME is available, it is typically located under `Advanced` ➞ `Advanced Chipset Control`. This option is usually disabled by default, although there have been some models that required re-disabling after an over-the-air firmware update; see [this section](/articles/system-firmware#disabling-the-me) of the firmware update article for instructions.
 
 ## Can I Disable the IME Manually?
 

@@ -17,7 +17,7 @@ section: software
 tableOfContents: true
 ---
 
-System76 laptops will have the Intel Management Engine (IME) disabled when it does not break functionality. System76 Open Firmware systems do have some control to [enable and disable the IME](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md).
+System76 laptops will have the Intel Management Engine (IME) disabled when it does not break functionality. System76 Open Firmware systems provide some control to [enable and disable the IME](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md).
 
 ## What is the Intel Management Engine?
 

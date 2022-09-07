@@ -233,8 +233,7 @@ If `Gio.DBusError` presents itself when attempting to enable the extension withi
 ```bash
 sudo systemctl status system76-power.service
 ```
-If the service isn't running, revisit [these](https://github.com/system76/docs/edit/master/content/system76-software.md#system76-power-gnome-shell-extension-in-fedora) steps.
-
+If the service isn't running, revisit the above instructions to mask the `power-profiles-daemon.service`.
 
 ### System76 DKMS in Fedora
 

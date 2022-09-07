@@ -23,7 +23,15 @@ Pop!\_OS and Ubuntu both include the GNOME desktop environment by default. A des
 
 You can install an alternative desktop environment using the instructions below.
 
-**NOTE:** be careful when installing other desktop environments, as they may affect the default GNOME desktop (both Ubuntu and Pop).
+>⚠️ Be careful when installing other desktop environments as they may affect the default GNOME desktop (both Ubuntu and Pop).
+
+## Applying a Desktop Environment
+
+If multiple desktop environments are installed, GDM will display a gear icon, which will allow you to select the desktop environment you want to launch. You will need to either reboot or restart your display manager using `sudo systemctl restart gdm` before a newly-installed desktop environment will show up in the list of options.
+
+![Login2](/images/desktop-environment/Login2.png)
+
+## Reverting Back to Pop-desktop
 
 If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!\_OS, install the `pop-desktop` package:
 
@@ -37,13 +45,15 @@ For Ubuntu, install the `ubuntu-desktop` package instead:
 sudo apt install ubuntu-desktop
 ```
 
-The desktop environment acts as the top graphical layer of the OS. The desktop environment is launched by a display manager; Pop!\_OS and Ubuntu both use GDM (GNOME Display Manager) by default.
+In some instances, icons and display settings may not automatically revert to their original values. To resolve this, install the GNOME Tweaks utility, navigate to the `Appearance` tab, then restore `Themes` settings to the `Pop` options. GNOME Tweaks can be installed from the Pop!\_Shop, or with this command:
 
-If multiple desktop environments are installed, GDM will display a gear icon, which will allow you to select the desktop environment you want to launch. You will need to either reboot or restart your display manager using `sudo systemctl restart gdm` before a newly-installed desktop environment will show up in the list of options.
-
-![Login2](/images/desktop-environment/Login2.png)
+```bash
+sudo apt install gnome-tweaks
+```
 
 ## Different Desktop Environments
+
+The desktop environment acts as the top graphical layer of the OS. The desktop environment is launched by a display manager; Pop!\_OS and Ubuntu both use GDM (GNOME Display Manager) by default.
 
 ### MATE
 

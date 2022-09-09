@@ -159,7 +159,7 @@ rm -r ~/.local/state/wireplumber/*
 
 If you hear audio crackling (especially when you start or stop playing audio), your audio card may be going to sleep too often. This is known to happen on some versions of the [Serval WS](/articles/serval-dac/) and some [Thunderbolt docks](https://github.com/system76/docs/issues/491).
 
-#### Prevent Crackling with PipeWire/WirePlumber:
+#### Prevent Crackling with PipeWire/WirePlumber
 
 For Pop!_OS 22.04 and newer (and other distributions using PipeWire with WirePlumber), these two commands will disable this behavior and restart PipeWire:
 
@@ -175,7 +175,7 @@ sudo sed -i 's/\["session.suspend-timeout-seconds"\] = 0/--\["session.suspend-ti
 systemctl restart --user pipewire.service
 ```
 
-#### Prevent Crackling with PulseAudio:
+#### Prevent Crackling with PulseAudio
 
 For older versions of Pop!_OS or distributions using PulseAudio without PipeWire, these two commands will disable this behavior and restart PulseAudio:
 

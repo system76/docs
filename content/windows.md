@@ -70,7 +70,7 @@ System76 encourages users to take ownership of their machines and install whatev
 | thelio-mega-r1    | Yes                | Yes*                |
 | thelio-massive-b1 | Yes                | Yes*                |
 
-> **NOTE:** For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
+*\*For desktop computers you will want to confirm you have an 8th/9th Gen Intel Core Processor or an AMD Ryzen 2000-5XXX Processor, and that you have TPM enabled in the [UEFI settings](https://support.system76.com/articles/windows#using-the-uefi-firmware).*
 
 ### Scope of Support
 

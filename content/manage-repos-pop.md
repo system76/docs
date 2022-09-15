@@ -34,7 +34,7 @@ Pop!\_OS's tool for adding, removing and editing repositiories and sources is ca
 
 ![Pop!_OS Shop](/images/manage-repos/pop-shop-button.png)
 
-Click on the gear icon in the top right of the <u>Pop!_Shop</u> window. Once <u>Repoman</u> is opened, click on the **Extra Sources** tab to view the configured repositories for systemwide software packages.
+Click on the menu icon in the top right of the <u>Pop!_Shop</u> window and then click **System Software Sources**. Alternatively `Ctrl` + `S` will also open <u>Repoman</u>. Once <u>Repoman</u> is opened, click on the **Extra Sources** tab to view the configured repositories for systemwide software packages.
 
 ![Repoman Extra Sources window](/images/manage-repos/Repoman-extra-sources.png)
 

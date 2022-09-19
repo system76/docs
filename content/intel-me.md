@@ -39,7 +39,7 @@ For proprietary firmware systems, if the option to disable (or enable) the IME i
 
 ## Can I Disable the IME Manually?
 
-PCs running coreboot can disable the IME using coreboot's nvramtool. See [this page](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md) for information about manually disabling (or enabling) the ME. Using the Coreboot Configurator you can turn off the Intel ME using the steps in [this article](https://github.com/system76/coreboot/tree/system76/util/coreboot-configurator). This tool will only work if your firmware version is higher than 2022-01-06 you can check the version with this command:
+PCs running coreboot can disable the IME using coreboot's nvramtool. See [this page](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md) for information about manually disabling (or enabling) the ME. Using the Coreboot Configurator you can turn off the Intel ME using the steps in [this article](https://github.com/system76/coreboot/tree/system76/util/coreboot-configurator). This tool will only work if your firmware version is higher than 2022-01-06. You can check the version with this command:
 
 ```bash
 sudo dmidecode -t 0

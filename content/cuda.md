@@ -14,7 +14,11 @@ section: software
 tableOfContents: true
 ---
 
-## Install on Pop!_OS
+## For Pop!\_OS 22.04 LTS
+
+It is recommanded to use [Tensorman](/articles/tensorman) as newer versions of CUDA are not packaged on their own any longer. 
+
+## Install on Pop!\_OS 20.04 LTS
 
 ### Install The latest NVIDIA CUDA Toolkit
 
@@ -36,23 +40,7 @@ To verify installation, run this command after a reboot:
 nvcc -V
 ```
 
-### For older releases of The NVIDIA CUDA Toolkit
-
-#### These versions are only in Pop 21.04
-
-To install CUDA 11.1
-
-```bash
-sudo apt install system76-cuda-11.1
-```
-
-For the respective cuDNN library:
-
-```bash
-sudo apt install system76-cudnn-11.1
-```
-
-#### These versions are only in Pop 20.04 LTS
+#### These versions are only in Pop\_OS 20.04 LTS
 
 To install CUDA 10.0:
 

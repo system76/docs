@@ -16,7 +16,7 @@ tableOfContents: true
 
 ## For Pop!\_OS 22.04 LTS
 
-It is recommanded to use [Tensorman](/articles/tensorman) as newer versions of CUDA are not packaged on their own any longer. 
+It is recommanded to use [Tensorman](/articles/tensorman) as newer versions of CUDA are not packaged on their own any longer.
 
 ## Install on Pop!\_OS 20.04 LTS
 
@@ -40,7 +40,7 @@ To verify installation, run this command after a reboot:
 nvcc -V
 ```
 
-#### These versions are only in Pop\_OS 20.04 LTS
+#### Versions in Pop!\_OS 20.04 LTS
 
 To install CUDA 10.0:
 

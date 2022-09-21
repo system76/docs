@@ -16,11 +16,11 @@ tableOfContents: true
 
 ## For Pop!\_OS 22.04 LTS
 
-It is recommanded to use [Tensorman](/articles/tensorman) as newer versions of CUDA are not packaged on their own any longer.
+It is recommended to use [Tensorman](/articles/tensorman) as newer versions of CUDA are no longer packaged on their own.
 
 ## Install on Pop!\_OS 20.04 LTS
 
-### Install The latest NVIDIA CUDA Toolkit
+### Install the Latest NVIDIA CUDA Toolkit
 
 To install the CUDA toolkit, please run this command:
 
@@ -78,7 +78,7 @@ For the respective cuDNN library:
 sudo apt install system76-cudnn-10.2
 ```
 
-### Switch between different versions
+### Switch Between CUDA Versions
 
 You can switch between each CUDA version with the following command:
 
@@ -98,11 +98,13 @@ You can check the version of cuDNN with this command:
 cat /usr/lib/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2       
 ```
 
-## Not running Pop!_OS?
+## Not Running Pop!_OS?
 
-The previous instructions will work with Pop!_OS out of the box but for Ubuntu and other Debian derivatives the following commands will need to be run first:
+The previous instructions will work with Pop!_OS out of the box, Ubuntu and other Debian derivatives require additional commands.
 
-Ubuntu 20.04 LTS
+> ℹ️ These packages have only been tested with the System76 NVIDIA driver.
+
+### Ubuntu 20.04 LTS
 
 ```bash
 echo "deb http://apt.pop-os.org/proprietary focal main" | sudo tee -a /etc/apt/sources.list.d/pop-proprietary.list
@@ -110,14 +112,12 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 204DD8AEC33A7AFF
 sudo apt update
 ```
 
-Ubuntu 21.04
+### Ubuntu 21.04
 
 ```bash
 echo "deb http://apt.pop-os.org/proprietary hirsute main" | sudo tee -a /etc/apt/sources.list.d/pop-proprietary.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 204DD8AEC33A7AFF
 sudo apt update
 ```
-
-*These packages have been tested with the System76 NVIDIA driver only.
 
 The following [article](/articles/system76-driver) will go over installing the System76 NVIDIA driver.

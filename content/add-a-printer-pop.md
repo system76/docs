@@ -20,7 +20,7 @@ Most printers will be automatically added to the computer. If a printer is not a
 
 1. Press the <kbd>Super</kbd> key and type the word *Printers*.
 
-2. Choose the `Printers` application in the search box.
+2. Choose the `Printers` result in the search box.
 
 3. In the `Printers` settings panel, click the `Add a Printer...` button to search for locally connected printers.
 
@@ -44,7 +44,7 @@ The status window will show current print jobs, detected printers, and other inf
 
 ### Adding Users to the lpadmin Group
 
-CUPS allows you to manage printers using Terminal commands. Configuring printers requires that the user is a part of the `lpadmin` group. You can confirm you are a part of this group with the following command:
+CUPS allows you to manage printers using Terminal commands. A user must be a part of the `lpadmin` group to use these commands. You can confirm you are a part of this group with the following command:
 
 ```bash
 groups
@@ -131,7 +131,7 @@ During this installer process, answer `yes` to all questions except when you are
    sudo bash linux-brprinter-installer PRINTERNAME
    ```
   
-9. If your printer configuration requires a device URI, you can find that by opening up Settings > Printers > Additional Printer Settings, then right click your printer and click Properties. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
+9. If your printer configuration requires a device URI, you can find that by opening up Settings > Printers > Additional Printer Settings, then right-click your printer and click `Properties`. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
 
 ![Printer Properties](/images/add-a-printer-pop/printer-properties.png)
 
@@ -139,7 +139,7 @@ During this installer process, answer `yes` to all questions except when you are
 
 ### Remove and Re-add the Printer in Settings
 
-If the printer stops working, open the <u>Printers</u> Application again and click the gear icon, and select **Remove Printer** to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process usually resolves many printing issues.
+If the printer stops working, open the <u>Printers</u> Application again and click the gear icon, and select `Remove Printer` to remove the printer and its settings. Repeat the steps above to add the printer and try printing the test page again. This process often resolves general printer connectivity issues.
 
 ### Assign a Static IP Address to the Printer
 
@@ -147,7 +147,7 @@ Connectivity issues can occur when the printer is assigned an address using DHCP
 
 ## Useful Commands
 
-Reinstall CUPS:
+Reinstall the CUPS print server to resolve general printing issues:
 
 ```bash
 sudo apt --reinstall cups cups-client

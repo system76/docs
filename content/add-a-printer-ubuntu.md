@@ -20,7 +20,7 @@ tableOfContents: true
 
 2. In the Printers Application, click the `Add` button. Wait a few seconds for printers to appear in the Device List.
 
-  ![Add Printer](/images/add-a-printer-ubuntu/selectcorrectprinter.png)
+    ![Add Printer](/images/add-a-printer-ubuntu/selectcorrectprinter.png)
 
 3. Select the correct printer and click `Forward`. The computer will search for the correct Drivers to enable the printer.
 
@@ -114,13 +114,13 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 8. Run the installer by typing the unzipped installer name into the terminal.
 
-  > ℹ️ Your installer version may differ from this guide. Type the first portion of the installer name as shown below, and then hit `TAB` to complete the installer name. Substitute PRINTERNAME with your exact printer model name.
+     > ℹ️ Your installer version may differ from this guide. Type the first portion of the installer name as shown below, and then hit `TAB` to complete the installer name. Substitute PRINTERNAME with your exact printer model name.
 
-During this installer process, answer `yes` to all questions except when you are prompted for the `Device URI`. See step 9 if you require a device URI for your printer setup.
+    During this installer process, answer `yes` to all questions except when you are prompted for the `Device URI`. See step 9 if you require a device URI for your printer setup.
 
-   ```
-   sudo bash linux-brprinter-installer PRINTERNAME
-   ```
+    ```
+    sudo bash linux-brprinter-installer PRINTERNAME
+    ```
 
 9. If your printer configuration requires a device URI, you can find that by opening up Settings > Printers > Additional Printer Settings, then right-click your printer and click `Properties`. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
 

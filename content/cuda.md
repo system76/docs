@@ -14,11 +14,11 @@ section: software
 tableOfContents: true
 ---
 
-## For Pop!\_OS 22.04 LTS
+## Pop!\_OS 22.04 LTS
 
 It is recommended to use [Tensorman](/articles/tensorman) as newer versions of CUDA are no longer packaged on their own.
 
-## Install on Pop!\_OS 20.04 LTS
+## Pop!\_OS 20.04 LTS
 
 ### Install the Latest NVIDIA CUDA Toolkit
 

@@ -96,6 +96,7 @@ Community members have reported that the following docks work with our products:
 - [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
   - Ethernet and DVI ports not tested.
 - [Plugable UD-ULTC4K USB-C Triple 4K Display Dock](https://plugable.com/products/ud-ultc4k) [[community-tested](https://github.com/system76/docs/pull/790) on an NVIDIA system] <sup>2,3</sup>
+   - Does not natively support multiple monitors when paired with Lemur. Works fine for one monitor. [[community-tested](my-link) on an Intel system]
 - [Plugable UD-ULTCDL USB-C Triple Display Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
 
 <sup>1</sup> Does not need the DisplayLink Driver installed to work.  

@@ -37,38 +37,6 @@ This command will install all of the packages using <u>Paru</u>.
 paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
 ```
 
-### System76 Firmware Daemon in Arch
-
-These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
-
-```bash
-git clone https://aur.archlinux.org/system76-firmware.git
-cd system76-firmware-daemon
-makepkg -srcif
-sudo systemctl enable --now system76-firmware-daemon
-sudo gpasswd -a $USER adm
-```
-
-These commands will install `system76-firmware-daemon` using <u>Paru</u>.
-
-**NOTE:** choose the first software option after running the <u>Paru</u> command.
-
-```bash
-paru -s system76-firmware-daemon
-sudo systemctl enable --now system76-firmware-daemon
-sudo gpasswd -a $USER adm
-```
-
-### System76 Firmware Manager in Arch
-
-These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
-
-```bash
-git clone https://aur.archlinux.org/firmware-manager.git
-cd firmware-manager
-makepkg -srcif
-```
-
 This command will install `firmware-manager` using <u>Paru</u>.
 
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
@@ -77,7 +45,7 @@ This command will install `firmware-manager` using <u>Paru</u>.
 paru -s firmware-manager
 ```
 
-### System76 DKMS in Arch
+### System76 DKMS
 
 This package is needed for hotkeys and fan(s) on Closed Firmware systems.
 
@@ -95,7 +63,7 @@ This command will install `system76-dkms` using <u>Paru</u>.
 paru -s system76-dkms
 ```
 
-### System76 ACPI DKMS in Arch
+### System76 ACPI DKMS
 
 This package is needed for hotkeys and fan(s) on Open Firmware systems.
 
@@ -113,13 +81,13 @@ This command will install `system76-acpi-dkms` using <u>Paru</u>.
 paru -s system76-acpi-dkms
 ```
 
-### System76 Power in Arch
+### System76 Power
 
 ```bash
 git clone https://aur.archlinux.org/system76-power.git
 cd system76-power
 makepkg -srcif
-sudo systemctl enable --now system76-power
+sudo systemctl enable --now com.system76.PowerDaemon.service
 sudo gpasswd -a $USER adm
 ```
 
@@ -129,11 +97,11 @@ These commands will install `system76-power` using <u>Paru</u>.
 
 ```bash
 paru -s system76-power
-sudo systemctl enable --now system76-power
+sudo systemctl enable --now com.system76.PowerDaemon.service
 sudo gpasswd -a $USER adm
 ```
 
-### System76 Power GNOME Shell Extension in Arch
+### System76 Power GNOME Shell Extension
 
 ```bash
 git clone https://aur.archlinux.org/gnome-shell-extension-system76-power-git.git
@@ -149,7 +117,7 @@ This command will install `gnome-shell-extension-system76-power` using <u>Paru</
 paru -s gnome-shell-extension-system76-power
 ```
 
-### System76 Thelio Io DKMS in Arch
+### System76 Thelio Io DKMS
 
 ```bash
 git clone https://aur.archlinux.org/system76-io-dkms.git
@@ -167,7 +135,7 @@ paru -s system76-io-dkms
 
 **NOTE:** This package is only needed for Thelio desktops.
 
-### System76 OLED in Arch
+### System76 OLED
 
 ```bash
 git clone https://aur.archlinux.org/system76-oled.git

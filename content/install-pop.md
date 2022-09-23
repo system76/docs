@@ -28,8 +28,8 @@ The following guide describes how to download the Pop!\_OS.iso image, write it t
 
 | Component | Requirement | Recommended |
 |-----------|-------------|-------------|
-| CPU       | 64-bit x86 architecture |
-| RAM       | 2 GB        | 4 GB        |
+| CPU       | 64-bit x86, ARM (RAS PI 4) architectures |
+| RAM       | 4 GB        | 8 GB        |
 | Drive Storage | 20 GB   |             |
 
 ### Installation Media
@@ -38,7 +38,7 @@ The Pop!\_OS.iso can be easily flashed to a USB drive. See our [Live Disk Creati
 
 ### Secure Boot
 
-Systems with Secure Boot enabled must disable this feature before installing Pop!\_OS. Secure boot can be disabled in the BIOS of most computers; however, the process to disable secure boot will vary by laptop and motherboard model.
+Secure boot must be disabled before installing Pop!\_OS. Secure boot can be disabled in the BIOS of most computers; however, the process to disable secure boot will vary by laptop and motherboard model.
 
 ## Selecting Your Bootable USB Drive as a Boot Device
 
@@ -54,7 +54,7 @@ Power off the target computer and insert the bootable USB. Power on the computer
 
 ## Installing Pop!\_OS
 
-Once your bootable USB drive is selected as a boot device, your computer will into a live Pop!\_OS environment.
+Once your bootable USB drive is selected as a boot device, your computer will boot into a live Pop!\_OS environment.
 
 1. Select your language:
 

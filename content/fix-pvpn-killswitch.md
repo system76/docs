@@ -19,7 +19,7 @@ section: software
 tableOfContents: true
 ---
 
-ProtonVPN's kill switch will disable internet connectivity when you are not connected to a VPN server. This ensures the true IP address if you computer is never leaked to the internet. If the kill switch is set to `Permanent`, then your computer will be unable to connect to the internet, even if ProtonVPN isn't running (i.e., at system start up), the GUI application becomes inaccessible, or if ProtonVPN was improperly removed from the system.
+ProtonVPN's kill switch will disable internet connectivity when you are not connected to a VPN server. This ensures the true IP address if your computer is never leaked to the internet. If the kill switch is set to `Permanent`, then your computer will be unable to connect to the internet, even if ProtonVPN isn't running (i.e., at system start up), the GUI application becomes inaccessible, or if ProtonVPN was improperly removed from the system.
 
 ![ProtonVPN Kill Switch](images/fix-pvpn-killswitch/proton-killswitch.png)
 

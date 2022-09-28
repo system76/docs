@@ -22,7 +22,7 @@ tableOfContents: true
     * 1c. Turn the surge protector off and on again
 2. Confirm the outlet works by plugging in another device.
 3. Be sure that the system is on a flat surface
-4. Desktops have a switch on the power supply located at the back of the computer. Make sure this switch is in the 'On' position, then attempt to turn the desktop on.
+4. Desktops have a switch on the power supply located at the back of the computer. Make sure this switch is in the 'On' position (sometimes labeled '1'), then attempt to turn the desktop on.
 5. In some cases, draining the capacitors in the power supply before powering your desktop on can help.
     * 5a. Completely disconnect power from the power supply. This can be done either by turning off the switch on the power supply, or by unplugging the power cable.
     * 5b. Hold the power button for 15 to 20 seconds.

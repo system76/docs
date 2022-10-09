@@ -421,8 +421,6 @@ Common development tools like Atom and Microsoft Visual Studio Code are also ava
 
 ![text-editor](/images/pop-os-screenshots/text-editor.png)
 
-![atom](/images/pop-os-screenshots/atom.png)
-
 ![vscode](/images/pop-os-screenshots/vs-studio.png)
 
 ### Gaming

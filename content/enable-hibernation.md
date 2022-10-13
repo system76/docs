@@ -20,6 +20,10 @@ section: software
 tableOfContents: true
 ---
 
+## Disclaimer
+
+Hibernation is not officially supported on Pop!_OS as of 22.04. This documentation is supplied for your own explorative purposes. Any changes to your system configuration may break hibernation, or hibernation may not work at all. Support or assistance may not be provided.
+
 ## State of Hibernation on Pop!_OS
 
 Hibernation is not currently enabled on Pop!\_OS by default. There are several limitations that keep this from being a default:

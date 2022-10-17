@@ -80,7 +80,7 @@ Pop!\_OS 20.10 was released October 23, 2020.
 
 ### Upgrading Pop!\_OS to 22.04 from 20.04 or 21.10
 
-**NOTE:** For all other operating system versions refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases-pre-2004)
+**NOTE:** For all other operating system versions, refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases).
 
 First, make sure you have applied all updates to your system. You can do this through the Pop!\_Shop, or through the terminal:
 
@@ -156,7 +156,7 @@ systemctl restart pop-upgrade
 pop-upgrade release upgrade
 ```
 
-## Upgrading older releases (pre 20.04)
+## Upgrading older releases
 
 | Pop!_OS Version                                  | Upgrade Process                            |
 | :------------------------------------------- | :------------------------------------- |

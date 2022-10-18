@@ -172,8 +172,8 @@ sudo gpasswd -a $USER adm
 Use these commands to install the <u>System76 Power</u> package and enable the service:
 
 ```bash
-sudo systemctl enable system76-power system76-power-wake
-sudo systemctl start system76-power
+sudo systemctl enable com.system76.PowerDaemon.service system76-power-wake
+sudo systemctl start com.system76.PowerDaemon.service
 ```
 
 Some users may find that the `system76-power.service` service does not start automatically on boot, even though it's enabled.  To remedy this, you may need to mask the `power-profiles-daemon.service`:
@@ -199,7 +199,7 @@ Now log out and use the <u>Extensions</u> to enable the extenstion.
 If `Gio.DBusError` presents itself when attempting to enable the extension within the Extensions application, confirm that the `system76-power.service` is running:
 
 ```bash
-sudo systemctl status system76-power.service
+sudo systemctl status com.system76.PowerDaemon.service
 ```
 If the service isn't running, revisit the above instructions to mask the `power-profiles-daemon.service`.
 

@@ -176,7 +176,7 @@ sudo systemctl enable com.system76.PowerDaemon.service system76-power-wake
 sudo systemctl start com.system76.PowerDaemon.service
 ```
 
-Some users may find that the `system76-power.service` service does not start automatically on boot, even though it's enabled.  To remedy this, you may need to mask the `power-profiles-daemon.service`:
+Some users may find that the `com.system76.PowerDaemon.service` service does not start automatically on boot, even though it's enabled.  To remedy this, you may need to mask the `power-profiles-daemon.service`:
 
 ```bash
 sudo systemctl mask power-profiles-daemon.service
@@ -196,7 +196,7 @@ make install
 
 Now log out and use the <u>Extensions</u> to enable the extenstion.
 
-If `Gio.DBusError` presents itself when attempting to enable the extension within the Extensions application, confirm that the `system76-power.service` is running:
+If `Gio.DBusError` presents itself when attempting to enable the extension within the Extensions application, confirm that the `com.system76.PowerDaemon.service` is running:
 
 ```bash
 sudo systemctl status com.system76.PowerDaemon.service

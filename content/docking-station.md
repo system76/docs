@@ -62,6 +62,7 @@ We have tested the following docks:
 Community members have reported that the following docks work with our products:
 
 - [Anker A8392](https://us.anker.com/products/a8392) [[community-tested](https://github.com/system76/docs/pull/797) on an Intel system] <sup>1</sup>
+- [Belkin Thunderbolt 3 Dock Plus](https://www.belkin.com/us/business/hubs-and-docks-for-business/docking-stations-for-business/thunderbolt-3-dock-plus/p/p-f4u109/) [[community-tested](https://github.com/system76/docs/pull/1038) on an Intel system]
 - [CableMatters 107008-BLK](https://www.cablematters.com/pc-881-127-cable-matters-60-ghz-wireless-docking-station-hybrid-model-with-usb-c.aspx) [[community-tested](https://github.com/system76/docs/pull/860) on an Intel system] <sup>1</sup>
   - Simultaneous HDMI/DisplayPort, DisplayPort daisy-chaining, and 3.5mm audio not tested.
 - [CalDigit TS3 Plus](https://www.caldigit.com/ts3-plus/) [community-tested on an [Intel system](https://github.com/system76/docs/pull/417) and an [NVIDIA system](https://github.com/system76/docs/pull/917)] <sup>1</sup>
@@ -95,6 +96,7 @@ Community members have reported that the following docks work with our products:
 - [Lenovo ThinkPad USB 3.0 Pro Dock](https://support.lenovo.com/us/en/solutions/acc100184-thinkpad-usb-30-pro-dock-overview-and-service-parts) [[community-tested](https://github.com/system76/docs/pull/523) on an Intel system]
   - Ethernet and DVI ports not tested.
 - [Plugable UD-ULTC4K USB-C Triple 4K Display Dock](https://plugable.com/products/ud-ultc4k) [[community-tested](https://github.com/system76/docs/pull/790) on an NVIDIA system] <sup>2,3</sup>
+  - Does not natively support multiple monitors with a Lemur Pro (lemp11). Works with one monitor [[community-tested](https://github.com/system76/docs/pull/1064) on an Intel system].
 - [Plugable UD-ULTCDL USB-C Triple Display Dock](https://plugable.com/products/ud-ultcdl/) [[community-tested](https://github.com/system76/docs/pull/518) on an NVIDIA system]
 
 <sup>1</sup> Does not need the DisplayLink Driver installed to work.  

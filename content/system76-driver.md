@@ -161,7 +161,7 @@ sudo systemctl enable --now system76-power.service
 
 ### Fedora Silverblue
 
-Adding szydell's repo to your installation is a bit different then normal Fedora and instead you would download the .repo file for the Fedora release that matches Silverblue which is currently Fedora 36 (soon to be 37) which you can get from [this page](https://copr.fedorainfracloud.org/coprs/szydell/system76/).
+Adding szydell's repo to your installation is a bit different then base Fedora and instead you would download the .repo file for the Fedora release that matches Silverblue which is currently Fedora 36 (soon to be 37) which you can get from [this page](https://copr.fedorainfracloud.org/coprs/szydell/system76/).
 
 You can run these commands to both download the file and move to the correct place:
 
@@ -170,3 +170,8 @@ wget https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-36/szy
 sudo mv ~/Downloads/szydell-system76-fedora-36.repo /etc/yum.repos.d/
 ```
 
+From there install the software similar to base Fedora like this:
+
+```bash
+rpm-ostree install system76-driver
+```

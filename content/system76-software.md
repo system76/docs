@@ -242,3 +242,11 @@ This command will be used to install the <u>System76 OLED</u> which is used for 
 ```bash
 sudo dnf install system76-oled
 ```
+
+## Fedora Silverblue
+
+The package names will be the same as base Fedora but instead of using `dnf` we'll use `rpm-ostree` to install them like this:
+
+```bash
+rpm-ostree install firmware-manager
+```

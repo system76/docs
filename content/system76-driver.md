@@ -158,3 +158,15 @@ sudo dnf copr enable szydell/system76
 sudo dnf install system76*
 sudo systemctl enable --now system76-power.service
 ```
+
+### Fedora Silverblue
+
+Adding szydell's repo to your installation is a bit different then normal Fedora and instead you would download the .repo file for the Fedora release that matches Silverblue which is currently Fedora 36 (soon to be 37) which you can get from [this page](https://copr.fedorainfracloud.org/coprs/szydell/system76/).
+
+You can run these commands to both download the file and move to the correct place:
+
+```bash
+wget https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-36/szydell-system76-fedora-36.repo -P ~/Downloads
+sudo mv ~/Downloads/szydell-system76-fedora-36.repo /etc/yum.repos.d/
+```
+

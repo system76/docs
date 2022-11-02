@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <sys-omnibar :class="$style.spooky">
+    <sys-omnibar>
       <template #global>
         <a
           href="https://system76.com/specials"
@@ -38,7 +38,6 @@
     <nuxt class="flex-auto" />
 
     <sys-footerbar
-      :class="$style.spooky"
       url-contact="https://system76.com/contact"
       url-about="https://system76.com/about"
       url-careers="https://system76.com/careers"
@@ -66,13 +65,5 @@ body,
 /** This fixes an issue with the specials offers button hidden on tablet size **/
 .hidden {
   display: none !important;
-}
-
-header.spooky {
-  background-color: rgba(41, 39, 41, 0.8) !important;
-}
-
-footer.spooky {
-  background-color: #292729 !important;
 }
 </style>

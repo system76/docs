@@ -36,8 +36,16 @@ Not all docks will work on all hardware. Be sure you purchase docking stations f
 | galp3-c | Yes                      | Yes                         |
 | galp4   | Yes                      | Yes                         |
 | galp5   | Yes                      | Yes                         |
+| galp6   | Yes                      | Yes                         |
+| gaze15  | No                       | No                          |
+| gaze16  | No                       | No                          |
+| gaze17  | No                       | Yes                         |
 | lemp9   | Yes                      | No (DisplayPort over USB-C) |
 | lemp10  | Yes                      | Yes                         |
+| lemp11  | Yes                      | Yes                         |
+| oryp8   | No                       | Yes                         |
+| oryp9   | No                       | Yes                         |
+| oryp10  | No                       | Yes                         |
 | serw12  | No                       | No (DisplayPort over USB-C) |
 
 ## A Note About Multi-Monitor Support
@@ -49,13 +57,6 @@ Multi-Stream Transport (MST) is a DisplayPort standard allowing multiple video s
 Alternatively, you can also use MST to daisy-chain two or more monitors together from the laptop or a docking station. This requires that the monitor hardware to support daisy-chaining. MST is often an advertised feature, so check the marketing material or store page for your monitor. If you already have, or have access to the monitor, you can also verify by checking for a DisplayPort output on the monitor, in addition to the normal DisplayPort inputs. A set up with daisy-chaining would look something like the diagram below:
 
 Laptop -> Monitor 1 -> DisplayPort or USB-C Cable -> Monitor 2
-
-### System76-tested docks
-
-We have tested the following docks:
-
-- [Plugable UD-CA1A](https://plugable.com/products/ud-ca1a/) [works with NVIDIA and Intel systems] <sup>1,2,3</sup>
-  - All features work.
 
 ### Community-tested docks
 

@@ -1,6 +1,7 @@
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons/faArrowLeft'
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars'
+import { faBolt } from '@fortawesome/free-solid-svg-icons/faBolt'
 import { faCog } from '@fortawesome/free-solid-svg-icons/faCog'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons/faGraduationCap'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons/faPaperPlane'
@@ -20,6 +21,7 @@ config.autoAddCss = false
 
 library.add(faArrowLeft)
 library.add(faBars)
+library.add(faBolt)
 library.add(faCog)
 library.add(faGraduationCap)
 library.add(faPaperPlane)

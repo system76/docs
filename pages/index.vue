@@ -188,6 +188,25 @@
         <ul class="space-y-2 md:space-y-4">
           <li>
             <a
+              href="/articles/before-you-open-a-support-ticket"
+              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            >
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
+                <font-awesome-icon icon="bolt" />
+              </div>
+              <div class="ml-4">
+                <p class="font-bold text-warm-gray-800">
+                  Before You Open a Ticket
+                </p>
+                <p class="text-warm-gray-600">
+                  A troubleshooting triage to help you self-diagnose a variety of issues.
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a
               href="https://system76.com/my-account/support-tickets/new"
               class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
               target="_blank"
@@ -202,25 +221,6 @@
                 </p>
                 <p class="text-warm-gray-600">
                   Get expert help from real support humans. Recommended for most users.
-                </p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="tel:+17202269269"
-              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
-                <font-awesome-icon icon="phone" />
-              </div>
-              <div class="ml-4">
-                <p class="font-bold text-warm-gray-800">
-                  Call (720) 226-9269
-                </p>
-                <p class="text-warm-gray-600">
-                  We’re open 8am – 5pm MST. Response time may be limited on weekends and holidays.
                 </p>
               </div>
             </a>

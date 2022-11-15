@@ -39,7 +39,7 @@ Once you click on the new, button you should have the screen where you can name 
 
 ![Memory Size](/images/install-in-a-vm/set_memory.png)
 
-Set the memory to 2048 MB.  The default value of 1024 MB is not enough to run Ubuntu and you will have problems.  You can of course set it to as high as you like.  Click "Next" button to the next screen.
+Set the memory to 4096 MB.  The default value of 1024 MB is not enough to run Ubuntu and you will have problems.  You can of course set it to as high as you like.  Click "Next" button to the next screen.
 
 ### 4. Choose Drive Type
 

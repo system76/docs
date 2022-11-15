@@ -412,16 +412,16 @@ LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 | macOS | Pop!\_OS |
 |---|---|
 | Xcode (available in the App Store) | Text Editor (default) |
-| | [Atom](https://atom.io/) (available in the Pop!\_Shop) |
+| | [Sublime Text](https://www.sublimetext.com) (available in the Pop!\_Shop) |
 | | [Microsoft VSCode](https://code.visualstudio.com/) (available in the Pop!\_Shop) |
 
 Pop!\_OS does not have a proprietary coding language, but supports a variety of languages and tools for development. The built in program Text Editor supports markdown formatting, and other text editor modelines.
 
-Common development tools like Atom and Microsoft Visual Studio Code are also available in the Pop!\_Shop.
+Common development tools like Sublime Text and Microsoft Visual Studio Code are also available in the Pop!\_Shop.
 
 ![text-editor](/images/pop-os-screenshots/text-editor.png)
 
-![atom](/images/pop-os-screenshots/atom.png)
+![sublime](/images/pop-os-screenshots/sublime.png)
 
 ![vscode](/images/pop-os-screenshots/vs-studio.png)
 

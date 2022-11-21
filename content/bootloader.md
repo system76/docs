@@ -93,6 +93,9 @@ Run these commands based on what type of disk you have:
 | `sudo mount /dev/nvme0n1p3 /mnt`          | `sudo mount /dev/sda3 /mnt`          |
 | `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
 
+Where in case of dual boots, replace ```nvme0n1p3``` with the appropriate partition where you've installed Pop!_OS.
+
+
 Then continue with the following commands for either disk type:
 
 ```bash

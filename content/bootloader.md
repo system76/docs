@@ -93,8 +93,7 @@ Run these commands based on what type of disk you have:
 | `sudo mount /dev/nvme0n1p3 /mnt`          | `sudo mount /dev/sda3 /mnt`          |
 | `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
 
-Where in case of dual boots, replace ```nvme0n1p3``` with the appropriate partition where you've installed Pop!_OS.
-
+If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p3` or `sda3` with the Pop!_OS root partition and `nvme0n1p1` or `sda1` with the EFI system partition (ESP).
 
 Then continue with the following commands for either disk type:
 
@@ -126,6 +125,8 @@ Run these commands based on what type of disk you have:
 | `sudo mount /dev/nvme0n1p2 /mnt`          | `sudo mount /dev/sda2 /mnt`          |
 | `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
 
+If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Pop!_OS root partition and `nvme0n1p1` or `sda1` with the boot partition.
+
 Then continue with the following commands for either disk type:
 
 ```bash
@@ -149,6 +150,8 @@ Run these commands based on what type of disk you have:
 | NVMe Drive                       | SATA Drive                  |
 | :------------------------------- | :-------------------------- |
 | `sudo mount /dev/nvme0n1p2 /mnt` | `sudo mount /dev/sda2 /mnt` |
+
+If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Pop!_OS root partition.
 
 Then continue with the following commands for either disk type:
 

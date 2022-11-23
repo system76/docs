@@ -31,7 +31,7 @@ The following System76 laptops have these switchable graphics capabilities:
 - Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15, gaze16, gaze17)
 - Kudu (kudu6)
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
+- Oryx Pro (oryp4, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
 
 Pop!\_OS includes utilities for switching between these modes, which you can learn more about below.
 

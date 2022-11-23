@@ -29,7 +29,7 @@ The following System76 laptops have these switchable graphics capabilities:
 
 - Adder WS (addw1, addw2)
 - Galago Pro (galp5 - NVIDIA models only)
-- Gazelle (gaze14, gaze15, gaze16, gaze17)
+- Gazelle (gaze14, gaze15, gaze16, gaze17-3050, gaze17-3060-b)
 - Kudu (kudu6)
 - Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
 

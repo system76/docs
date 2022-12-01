@@ -28,9 +28,9 @@ The following laptops have switchable graphics:
 
 - Adder WS (addw1, addw2)
 - Galago Pro (galp5 - NVIDIA models only)
-- Gazelle (gaze14, gaze15, gaze16)
+- Gazelle (gaze14, gaze15, gaze16, gaze17)
 - Kudu (kudu6)
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8)
+- Oryx Pro (oryp4, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
 
 ### Graphics modes
 

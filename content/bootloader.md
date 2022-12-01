@@ -98,7 +98,7 @@ If you are using a non-default partitioning scheme (such as a dual boot), replac
 Then continue with the following commands for either disk type:
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+for i in dev dev/pts proc sys sys/firmware/efi/efivars run; do sudo mount -B /$i /mnt/$i; done
 sudo chroot /mnt
 apt install --reinstall linux-image-generic linux-headers-generic
 update-initramfs -c -k all
@@ -130,7 +130,7 @@ If you are using a non-default partitioning scheme (such as a dual boot), replac
 Then continue with the following commands for either disk type:
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+for i in dev dev/pts proc sys sys/firmware/efi/efivars run; do sudo mount -B /$i /mnt/$i; done
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -197,7 +197,7 @@ The EFI partition is usually around 512MB, and that is the partition to substitu
 | `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+for i in dev dev/pts proc sys sys/firmware/efi/efivars run; do sudo mount -B /$i /mnt/$i; done
 sudo chroot /mnt
 ```
 

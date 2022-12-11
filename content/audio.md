@@ -32,6 +32,12 @@ If the system is not playing audio, first try restarting the audio daemon:
 
 This set of commands first restarts the sound daemon and removes the user's configuration for PulseAudio. On systems still using PulseAudio as a server, it restarts the PulseAudio server, which will create new default audio configuration files.
 
+Alternatively, for Pop!\_OS! 22.04+ users, you can reinstall relevant packages and restart the server:
+```
+sudo apt reinstall pipewire pipewire-bin pipewire-pulse
+systemctl --user --now enable pipewire pipewire-pulse
+```
+
 ## Check the PulseAudio Controls
 
 The program <u>PulseAudio Volume Control</u> is helpful in figuring out which program is producing audio, where that audio is being routed, what the default input/output devices are, and what the volume levels are set to.  It can be installed using the Pop!\_Shop, or with this command:

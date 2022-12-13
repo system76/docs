@@ -66,7 +66,7 @@ reboot
 
 - Connect the projector to your computer.
 
-- Mirror your computer's display to the sandbox by pressing `Super` <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'windows']"></font-awesome-icon></kbd> and `p` at the same time until `Mirror` is selected. When released the sandbox should mirror your compute's display.
+- Mirror your computer's display to the sandbox by pressing `Super` <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'windows']"></font-awesome-icon></kbd> and `p` at the same time until `Mirror` is selected. When released the sandbox should mirror your computer's display.
 
 ## Calibrate Kinect
 
@@ -124,7 +124,7 @@ RawKinectViewer -compress 0
 
 ![Right Click Menu](/images/ar-sandbox/4-B-average-frames-1ba827544a.png)
 
-- Press and hold `Shift` and `1`, move your cursor over Extract Planes, then release both keys. Releasing this key will trigger this action, and assign clibration to `Shift` + `1`.
+- Press and hold `Shift` and `1`, move your cursor over Extract Planes, then release both keys. Releasing this key will trigger this action, and assign calibration to `Shift` + `1`.
 
 ![Extract Planes](/images/ar-sandbox/4-C-extract-plane-1cbd8abb5e.png)
 
@@ -294,7 +294,7 @@ Press the `2` key to capture the background image, after which you'll briefly se
 
 After this is completed, you can proceed with the calibration.
 
-- Next, you'll capture tie-points at the lowest height. Using your shortest spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface. Just set the spacer and only pushing down enought to level the alignment target.
+- Next, you'll capture tie-points at the lowest height. Using your shortest spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface. Just set the spacer and only pushing down enough to level the alignment target.
 
 ![Lowest](/images/ar-sandbox/7-E-lowest-db2aad81b1.jpg)
 

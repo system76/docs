@@ -66,7 +66,7 @@ reboot
 
 - Connect the projector to your computer.
 
-- Mirror your computer's display to the sandbox by pressing `Super` <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'windows']"></font-awesome-icon></kbd> and `p` at the same time until `Mirror` is selected. When released the sandbox should mirror your computer's display.
+- Mirror your computer's display to the sandbox by pressing `Super` <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fa-brands', 'windows']"></font-awesome-icon></kbd> and `p` at the same time until `Mirror` is selected. When released the sandbox should mirror your computer's display.
 
 ## Calibrate Kinect
 

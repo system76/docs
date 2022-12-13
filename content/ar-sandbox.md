@@ -380,7 +380,7 @@ As long as you don't change the physical setup of your sandbox (in particular, t
 
 ![Make it rain](/images/ar-sandbox/9-B-make-it-rain-fe5051a11f.jpg)
 
-- As a convenience, the System76 packaging for Ubuntu includes a launcher you can search for in the GNOME Search:
+- As a convenience, the System76 packaging for Pop!_/OS and Ubuntu includes a launcher you can search for in the GNOME Search:
 
 ![Launch SARndbox](/images/ar-sandbox/9-A-launch-sarndbox-3d1afe80d2.png)
 

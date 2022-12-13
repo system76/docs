@@ -61,7 +61,7 @@ sudo adduser $(whoami) vrui-grp
 ```
 reboot
 ```
-## Mirror display
+## Mirror Display
 
 - Connect the projector to your computer.
 

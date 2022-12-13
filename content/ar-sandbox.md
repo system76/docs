@@ -367,7 +367,7 @@ So we'll set the sea-level to `-107`, like this:
 
 ![Sea Level just right](/images/ar-sandbox/8-E-sea-level-just-right-cdc5f0037b.jpg)
 
-You can experiment with different values for the sea-level to suite your preferences, but our recommendations here will give you a good starting point.
+You can experiment with different values for the sea-level to suit your preferences, but our recommendations here will give you a good starting point.
 
 Note that you can adjust the sea level at any time in the future without recalibrating your sandbox.
 
@@ -380,7 +380,7 @@ As long as you don't change the physical setup of your sandbox (in particular, t
 
 ![Make it rain](/images/ar-sandbox/9-B-make-it-rain-fe5051a11f.jpg)
 
-- As a convenience, the System76 packaging for Pop!_/OS and Ubuntu includes a launcher you can search for in the GNOME Search:
+- As a convenience, the System76 packaging for Pop!_/OS includes a launcher you can search for in the GNOME Search:
 
 ![Launch SARndbox](/images/ar-sandbox/9-A-launch-sarndbox-3d1afe80d2.png)
 

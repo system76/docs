@@ -15,6 +15,7 @@ keywords:
   - NVIDIA
   - Hybrid
   - Integrated
+  - Compute
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -30,7 +31,7 @@ The following laptops have switchable graphics:
 - Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15, gaze16, gaze17)
 - Kudu (kudu6)
-- Oryx Pro (oryp4, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
 
 ### Graphics modes
 

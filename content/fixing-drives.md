@@ -36,7 +36,7 @@ We can instead use the <u>Terminal</u> application to perform the same behavior 
 
 |         SATA                       |           NVMe                 |
 |:----------------------------------:|:------------------------------:|
-| sudo fsck -Cy /dev/sda#            | sudo fsck -Cy /dev nvme0n1p#   |
+| sudo fsck -Cy /dev/sda#            | sudo fsck -Cy /dev/nvme0n1p#   |
 
 Substitute # with the partition number of your OS install, which can be determined by opening a terminal window and typing ```lsblk``` and pressing <kbd>Enter</kbd>.
 

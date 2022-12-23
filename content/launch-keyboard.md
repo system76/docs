@@ -1,12 +1,15 @@
 ---
-title: Configuring your new Launch keyboard
+title: Configuring Your New Launch Keyboard
 description:
   View, add, or modify keys in your OS.
 keywords:
   - keyboard shortcuts
   - launch
+  - launch-lite
   - pop
   - ubuntu
+  - arch
+  - fedora
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -15,12 +18,6 @@ hidden: false
 section: software
 tableOfContents: true
 ---
-
-## The Launch and Accessories
-
-The following items are included with your Launch:
-
-![Accessories](/files/launch-keyboard/launch-accessories.webp)
 
 ## QMK firmware
 
@@ -32,7 +29,11 @@ The core idea of "Layers" is that one key can be used for different actions. For
 
 ## Firmware Updates
 
-Firmware updates for the Launch are handled using [fwupd](https://fwupd.org/) and our <u>Firmware Manager</u> can be used to apply the update. When you get a notification about a firmware update, you will need to unlock the keyboard using Fn+Esc (**Note:** that these will be the default keys even if you remapped them in the Keyboard Configurator) before you can apply the update. When the keyboard is unlocked, you will see the following keys light up:
+Firmware updates for the Launch and Launch Lite are handled using [fwupd](https://fwupd.org/) and our <u>Firmware Manager</u> (which can be installed on Arch and Fedora using this [article](https://support.system76.com/articles/system76-driver/)) can be used to apply the update. When you get a notification about a firmware update, you will need to unlock the keyboard using <kbd>Fn</kbd> + <kbd>Esc</kbd> (Launch Lite is <kbd>Left Ctrl</kbd> + <kbd>Right Ctrl</kbd> + <kbd>Esc</kbd>).
+
+> ℹ️ If you changed your layout and moved any of these keys, you will need to press them wherever they are now located.
+
+When the keyboard is unlocked, you will see the following keys light up:
 
 - U N L O C K E D
 
@@ -42,7 +43,7 @@ Once the keyboard is in this mode, you can apply the firmware update. When the u
 
 You can download the configurator application [here](https://github.com/pop-os/keyboard-configurator/releases) On Pop!\_OS the configurator is available in the <u>Pop!\_Shop</u>. An `AppImage` is provided for Ubuntu and other Linux OSes.  Windows and macOS downloads are also available.
 
-You can also download the configurator from the Arch Linux User Repository (AUR). The main version is built from the latest release, which is recommended for most users. You can find more information [here](https://aur.archlinux.org/packages/keyboard-configurator/). The git version is built from the latest commits to the project (this version will have the very latest fixes and features) which can be found [here](https://aur.archlinux.org/packages/keyboard-configurator-git/).
+You can also download the configurator from the Arch Linux User Repository (AUR). The main version is built from the latest release, which is recommended for most users. You can find more information [here](https://aur.archlinux.org/packages/system76-keyboard-configurator). The git version is built from the latest commits to the project (this version will have the very latest fixes and features) which can be found [here](https://aur.archlinux.org/packages/keyboard-configurator-git/).
 
 ## Remapping Keys
 
@@ -62,4 +63,7 @@ In the <u>Keyboard Configurator</u>, you can change keyboard back light color an
 
 ## Tech Docs
 
-We have documentation that goes over changing the keycaps, switches, and more in the tech docs, which can be found [here](https://tech-docs.system76.com/models/launch_1/repairs.html).
+We have documentation that goes over changing the keycaps, switches, and more on our Tech Docs site:
+
+- [Launch](https://tech-docs.system76.com/models/launch_1/repairs.html)
+- [Launch Lite](https://tech-docs.system76.com/models/launch_lite_1/repairs.html)

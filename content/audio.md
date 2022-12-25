@@ -40,7 +40,7 @@ The program <u>PulseAudio Volume Control</u> is helpful in figuring out which pr
 sudo apt install pavucontrol
 ```
 
-Once installed, open the <u>PulseAudio Volume Control</u> app in the Activities menu, or run `pavucontrol` in a terminal.
+Once installed, open the <u>PulseAudio Volume Control</u> app in the Activities or Applications menu, or run `pavucontrol` in a terminal.
 
 The "Playback" tab will show a list of applications that are currently playing audio. The volume for each application can be individually controlled.
 

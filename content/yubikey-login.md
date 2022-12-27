@@ -46,7 +46,7 @@ You should receive a message similar to:
 
 `Stored initial challenge and expected response in '$HOME/.yubico/challenge-123456'.`
 
-You should receive a unique *challenge-<serial>* in your output.
+You should receive a unique challenge-<serial> in your output.
 
 Now, to finish up:
 
@@ -91,7 +91,7 @@ You will want to keep a root terminal logged in while setting this up to make su
 
 With the Yubikey plugged into the system simulate a login with the following commands:
 
-```
+```bash
 support@pop-os:~$ sudo -s
 [snip lots of logging]
 [sudo] password for support:

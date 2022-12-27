@@ -64,6 +64,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | oryp7        | Yes                | No                 |
 | oryp8        | Yes                | No                 |
 | oryp9        | Yes                | No                 |
+| oryp10       | Yes                | No                 |
 | pang10       | Yes                | Yes                |
 | pang11       | Yes                | Yes                |
 | serw12       | Yes                | Yes                |
@@ -72,11 +73,29 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | ----------------- | ------------------ | ------------------ |
 | meer5             | Yes                | Yes                |
 | meer6             | Yes                | Yes                |
-| thelio-mira-r1    | Yes                | Yes*                |
-| thelio-mira-b1    | Yes                | Yes*                |
-| thelio-major      | Yes                | Yes*                |
-| thelio-mega-r1    | Yes                | Yes*                |
-| thelio-massive-b1 | Yes                | Yes*                |
+| thelio-r1         | Yes                | Yes                |
+| thelio-r2         | Yes                | Yes                |
+| thelio-r3         | Yes                | Yes                |
+| thelio-b1         | Yes                | Yes                |
+| thelio-b2         | Yes                | Yes                |
+| thelio-b3         | Yes                | Yes                |
+| thelio-b4         | Yes                | Yes                |
+| thelio-mira-r1    | Yes                | Yes*               |
+| thelio-mira-r2    | Yes                | Yes*               |
+| thelio-mira-r3    | Yes                | Yes*               |
+| thelio-mira-b1    | Yes                | Yes*               |
+| thelio-mira-b2    | Yes                | Yes*               |
+| thelio-mira-b3    | Yes                | Yes*               |
+| thelio-major-r1   | Yes                | Yes*               |
+| thelio-major-r2   | Yes                | Yes*               |
+| thelio-major-r3   | Yes                | Yes*               |
+| thelio-major-b1   | Yes                | Yes*               |
+| thelio-major-b2   | Yes                | Yes*               |
+| thelio-major-b3   | Yes                | Yes*               |
+| thelio-major-b4   | Yes                | Yes*               |
+| thelio-mega-r1    | Yes                | Yes*               |
+| thelio-mega-r2    | Yes                | Yes*               |
+| thelio-massive-b1 | Yes                | Yes*               |
 
 \* For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
 

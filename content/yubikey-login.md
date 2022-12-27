@@ -91,12 +91,10 @@ You will want to keep a root terminal logged in while setting this up to make su
 
 With the Yubikey plugged into the system simulate a login with the following commands:
 
-```
 support@pop-os:~$ sudo -s
 [snip lots of logging]
 [sudo] password for support:
 root@pop-os:/home/support#
-```
 
 Test you setup if you are changing the "sufficient" setting to "required" before removing the "debug" setting. Use new terminal windows to simulate a login both with your Yubikey attached and out of the system. In "required" mode, you should not be able to finish a login with the Yubikey not plugged into your system.
 

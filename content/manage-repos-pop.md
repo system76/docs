@@ -26,23 +26,23 @@ tableOfContents: true
 
 ## Repositories and Sources
 
-Pop!\_OS comes pre-installed with a number of sources for installing additional software, but additional sources can be added as well, either by hand or by installing a third-party package. Sources for systemwide software packages are called _repositories_ (or "repos" for short), and sources for Flatpak software are called just _sources_.
+Pop!\_OS comes pre-installed with a number of sources for installing additional software, but additional sources can be added as well, either by hand or by installing a third-party package. Sources for system-wide software packages are called _repositories_ (or "repos" for short), and sources for Flatpak software are called just _sources_.
 
 ## Repoman and System Repositories
 
-Pop!\_OS's tool for adding, removing and editing repositiories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
+Pop!\_OS's tool for adding, removing and editing repositories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
 
 ![Pop!_OS Shop](/images/manage-repos/pop-shop-button.png)
 
-Click on the gear icon in the top right of the <u>Pop!_Shop</u> window. Once <u>Repoman</u> is opened, click on the **Extra Sources** tab to view the configured repositories for systemwide software packages.
+Click on the menu icon in the top right of the <u>Pop!_Shop</u> window and then click `System Software Sources`. Alternatively <kbd>Ctrl</kbd> + <kbd>S</kbd> will also open <u>Repoman</u>. Once <u>Repoman</u> is opened, click on the `Extra Sources` tab to view the configured repositories for system-wide software packages.
 
 ![Repoman Extra Sources window](/images/manage-repos/Repoman-extra-sources.png)
 
-There will be three buttons on the lower left. The **Plus** button is for adding new repositories by hand, although third-party software will usually do this automatically. The **Pencil** button will open up a selected repository for editing, including the ability to disable it without completely removing it.
+There will be three buttons on the lower left. The `Plus` button is for adding new repositories by hand, although third-party software will usually do this automatically. The `Pencil` button will open up a selected repository for editing, including the ability to disable it without completely removing it.
 
 ![Repoman repository edit window](/images/manage-repos/Repoman-edit-repo.png)
 
-The **Trash** button will delete a selected software repository completely.
+The `Trash` button will delete a selected software repository completely.
 
 ## Repoman and Flatpak Sources
 

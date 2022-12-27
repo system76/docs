@@ -19,152 +19,136 @@ section: hardware
 tableOfContents: true
 ---
 
-Every running program consumes the battery. This could be a program that is part of the operating system, or a program currently in use like <u>Firefox</u> or <u>Libre Office</u>. We recommend using [TLP](http://linrunner.de/en/tlp/tlp.html) to quickly reduce overall power consumption and using [powertop](https://01.org/powertop) to check what software is consuming the battery.
+Pop!\_OS does a lot to conserve the battery life of your laptop just by default, but there's additional things to be aware of that can stretch that battery life even longer. Choosing the right options to match your work or play style can help keep you away from the wall socket.
 
-The biggest consumer of power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor and brightness needs manual adjustment with <kbd>Fn</kbd>+<kbd>F8</kbd> and <kbd>Fn</kbd>+<kbd>F9</kbd>.
+## Adjusting Screen Brightness
 
-## Power Profiles
+One of the largest consumers of laptop power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor, but brightness can be adjusted manually via the **System Menu** (see screenshot below) or with the keyboard shortcuts for each individual laptop model, which can be found on the "External Overview" pages of [each model's technical documentation](https://support.system76.com/articles/guides/).
 
-With the <u>system76-power</u> package there are **Power Profiles** that can be accessed in the **System Menu** in the image below.
+![Brightness](/images/battery/brightness.png)
 
-![Battery](/images/battery/system-menu.png)
+## Changing Power Profiles
 
-## Useful Programs
+Pop!\_OS comes preloaded with the `system76-power` package, which allows you to select **Power Profiles** through the **System Menu**, as shown in the image below. Changing power profiles does not require rebooting the laptop. This screenshot is from a laptop that has switchable NVIDIA graphics, and a laptop that has only Intel graphics will not have those options.
 
-### TLP
+![Battery](/images/battery/power-menu.png)
 
-<u>TLP</u> is an excellent program for increasing battery life on all of our laptops. <u>TLP</u> is a pure command line tool with automated background tasks and does not contain a GUI. Its default settings are excellent for most situations and require little tuning. <u>TLP</u> will take care of most of the settings that <u>Powertop</u> autotuning would, and with less trial and error.
+The system will default on each startup to the `Balanced` setting, which is usually preferred even when connected to AC power as it helps keep the system running cool and quiet. When maximum performance is needed, the `High Performance` setting will uncap everything and let the system run as hot and power-hungry as it wants, which can dramaticaly reduce battery life and may also increase the noise made by the system fan(s).
 
-To install TLP, run this command:
+The `Battery Life` setting will do a number of things to improve battery life, including reduce the screen brightness (which can be turned back up as described above if desired), reduce the maximum speed of the CPU (and any GPUs if present), aggressively control how applications are allowed to use the CPU and GPU, and much more under the hood.
 
-```bash
-sudo apt install tlp tlp-rdw --no-install-recommends
-```
+## Switching Graphics Settings
 
-TLP will take effect upon restart. To see current configuration settings, run this command:
+The settings for the graphics modes on laptops that have switchable NVIDIA graphics are outlined in detail [on their own support document](https://support.system76.com/articles/graphics-switch-pop), but to summarize:
 
-```bash
-sudo tlp-stat
-```
+* Integrated Intel graphics mode will provide increased battery life at the cost of 3D performance, and some laptops will not support external displays in that mode.
+* Hybrid graphics allow you to choose to use the more powerful NVIDIA GPU when needed, but applications will default to using the lower-power Intel graphics.
+* NVIDIA graphics mode runs everything on the NVIDIA GPU for maximum perormance, and will use the most battery.
+* Compute mode reserves the NVIDIA GPU for tasks that don't output graphics to the screen, like machine learning or data crunching processes.
 
-The program is highly configurable by editing the settings file. Run this command to edit the file:
+Switching graphics modes does require restarting the laptop, which will use up some battery life in the process, so it's recommended that the graphics mode be switched before disconnecting from the AC adapter.
 
-```bash
-sudo gedit /etc/default/tlp
-```
+## Disabling Unused Wireless Devices
 
-Starting with <u>TLP</u> 1.3 the default configuration file has changed so the command for that version is below:
+Wi-Fi and Bluetooth are wireless technologies that use up a small amount of power even when they're not being used, as they monitor for wireless network activity. If you're not using them, disabling either Wi-Fi or Bluetooth can improve battery life, and the `Airplane Mode` setting will disable both for maximum savings. They can be disabled individually via the Wi-Fi and Bluetooth panels in the Settings application by toggling the switch at the top of the window, and Airplane Mode is available underneath it on the Wi-Fi settings panel:
 
-```bash
-sudo gedit /etc/tlp.conf
-```
+![disable-Wi-Fi](/images/battery/disable-wifi.png)
 
-The `/etc/tlp.conf` file is for user configuration while `/etc/tlp.d/*.conf` file is for drop-in customization snippets.
+## Monitoring System Performance
 
-All of the info about the program can be found with these 2 commands:
+Pop!\_OS has a number of different options for monitoring the CPU and GPU use of processes and applications. The more CPU and/or GPU a program is using, the more battery life it will consume as well. If a system's battery isn't lasting as long as expected, it can be useful to see what the system is doing to go through the charge more quickly.
 
-```bash
-man tlp
-man tlp-stat
-```
+### Using `powertop`
 
----
-
-### Powertop
-
-Powertop monitors running processes and applications to determine how much power is being consumed. Powertop can also use application battery usage data to create custom power profiles. We recommend installing and running TLP before using Powertop.
-
-To install <u>powertop</u>, please open a terminal and run this command:
+`powertop`is a tool for generating reports about what applications and hardware are using the most power, as well as providing live monitoring of the system. It can be installed by running this command in the terminal:
 
 ```bash
 sudo apt install powertop
 ```
 
-After installing the program, reboot your computer and calibrate the readings on battery power with this command:
-
-```bash
-sudo powertop -c
-```
-
-This will take about 15 minutes to run the calibration. The system will turn the display off a few times, and you won't be able to do anything else on the PC during the process.  Powertop can be run just by itself to see what is using resources on your system.  It needs to be left open for a little amount of time to gather statistics, and be more accurate.  Run it with this command:
-
-```bash
-powertop
-```
-
-Powertop can also generate HTML reports with this command:
+And the following command will generate a report:
 
 ```bash
 sudo powertop --html=report.html
 ```
 
-Open the report located at `~/report.html` to see the results.
+The `report.html` file can be opened in a web browser and will outline what processes and hardware used the most power during its testing. It also has recommended settings on the "Tuning" page, which may or may not have undesireable side effects; the commands on the "Tuning" page to change those settings are temporary and will be cleared if the system is rebooted. Caution is suggested when trying these suggestions.
 
-![Powertop1](/images/power/powertop1.png)
-
-It's useful to create a baseline by running <u>powertop</u> after a cold startup, without opening any applications, and then run it a few more times throughout the day to get a comparison of different workloads. Make sure to specify a different filename each time for comparison. Look at running software and see if programs can be uninstalled or if the settings of high resource using programs can be changed.
-
-### Tuning
-
-After looking at running software, head over to the 'Tuning' tab. We recommend install <u>TLP</u> first, and then seeing if <u>powertop</u> finds any other tuning suggestions.
-
-![Powertop2](/images/power/powertop2.png)
-
-<u>powertop</u> provides many suggestions to increase battery life. To test enabling of all of the suggested tunings, please run this command:
+Running the command in the terminal without any parameters like this:
 
 ```bash
-sudo powertop --auto-tune
+sudo powertop
 ```
 
-Please test the settings and make sure they don't introduce any instability or oddities. The above command will only last until reboot. The most likely problem with the auto-tune command is that external USB devices have delays after inactivity. To make the new settings persist after reboot, please edit the /etc/rc.local file with this command:
+will start `powertop` in an interactive monitoring mode. Use the <kbd>Tab</kbd> key to navigate between pages, and the arrow keys to scroll. This output shows the same information from the HTML report, but is updated in real-time.
+
+### Using the System Monitor
+
+The GUI application named System Monitor is installed by default on Pop!\_OS, and is a GUI tool for watching system proceses. By clicking on the column labeled "CPU", so that the arrow is pointing down, it will sort the processes by how much CPU time they're using. This can be useful for finding a process that's running the background and keeping the CPU busy.
+
+![system-monitor](/images/battery/system-monitor.png)
+
+### Using `top` and Variants
+
+Pop!\_OS comes pre-installed with a tool for the terminal called `top`, which is the standard Linux tool for monitoring system processes. It's like the System Monitor, except it's text-only (so it uses fewer system resources itself), and it automatically sorts the processes by their CPU usage.
+
+Other popular tools along the same lines include `htop`, which provides more details, such as how much each individual CPU core is bring used, and it's generally preferred over plain `top` for troubleshooting purposes since it's much more capable. You can install it via the terminal with this command:
 
 ```bash
-sudo gedit /etc/rc.local
+sudo apt install htop
 ```
 
-And add:
+and run it in the terminal with the command:
 
 ```bash
-sudo powertop --auto-tune
+sudo htop
 ```
 
-above the 'exit 0' line, or add the individual tuning options.
+Here'a a screenshot of it running on a system with eight physical cores and sixteen threads:
 
-**Do not do this without testing!  Several auto-tune settings will create system instability!**
+![htop](/images/battery/htop.png)
 
-### Disable Ethernet
+### NVIDIA GPUs: Using `nvtop`
 
-If Ethernet is never used, or is only used irregularly, then it can be disabled to save power.  Please run this command:
+NVIDIA GPUs can be monitored with a tool called `nvtop`. It can be installed from the terminal with this command:
 
 ```bash
-ifconfig
+sudo apt install nvtop
 ```
 
-And note the name of the interface.  It will probably be `enp4s0f2` or similar.  Disable it by running this command:
+and then run in the terminal with the command:
 
 ```bash
-sudo gedit /etc/network/interfaces
+nvtop
 ```
 
-And add this line to the file:
+It's recommended that you expand the terminal window horizontally, as `nvtop` can show additional information (like video decoding) if it has extra room. This screenshot shows `nvtop` monitoring the GTX 2070 GPU in an Oryx Pro model _oryp6_ while it's running a small 3D application and decoding a video on the GPU at the same time, so the `DEC[]` section appears in the upper right:
+
+![nvtop](/images/battery/nvtop.png)
+
+If `nvtop` is showing a lot of GPU activity when no GPU-heavy applications (like games or 3D software) are running, there may be an program which is using the GPU when it's not supposed to be.
+
+### Intel Graphics: Using `intel_gpu_top`
+
+Integrated Intel graphics have an additional monitoring tool called `intel_gpu_top`. It can be installed from the terminal with this command, along with other tools for Intel graphics:
 
 ```bash
-iface enp4s0f2 inet manual
+sudo apt install intel-gpu-tools
 ```
 
-This new configuration will take effect after a reboot. To disable the interface immediately, run this command:
+and then run with the command:
 
 ```bash
-sudo ifconfig enp4s0f2 down
+sudo intel_gpu_top
 ```
 
-Then, if Ethernet needs to be used, this command can be run to enable it for the session:
+This screenshot shows `intel_gpu_top` on a system running some normal applications with a 3D accelerated desktop, along with a video player that's using the Intel hardware for decoding.
 
-```bash
-sudo ifconfig enp4s0f2 up
-```
+![intel_gpu_top](/images/battery/intel_gpu_top.png)
 
-## Useful Commands
+If `intel_gpu_top` is showing a lot of GPU activity when no GPU-heavy applications (like games or 3D software) are running, there may be an program which is using the GPU when it's not supposed to be.
+
+## Checking Battery Health
 
 This command will show the information that your computer can read about the battery:
 
@@ -172,14 +156,18 @@ This command will show the information that your computer can read about the bat
 upower -d
 ```
 
-The output from `upower -d` is also included when generating log files in Settings -> Support -> Create Log Files:
+The "Capacity" statistic compares the original power capacity that the battery had when it with new, with the current maximum power capacity. Batteries do lose maximum power charge as they age, and this can be a good way to see if the battery needs replacement.
 
-![Create Log Files](/images/battery/create-logs.png)
+## Fixing Inaccurate Battery Percentage
 
-If the battery life indicator is inaccurate, this will remove the stored statistics:
+If the battery life indicator at the top of the System Menu is inaccurate, which can often happen on a new system or after a battery has been replaced, this command will remove the stored battery statistics:
 
 ```bash
 sudo rm /var/lib/upower/*
 ```
 
-After a few charge/discharge cycles, the indicator should be more accurate.
+After a few charge/discharge cycles, the indicator should become more accurate as the system learns how to estimate the correct percentage.
+
+## Tools We Do Not Recommend
+
+The [TLP power management tool for Linux](https://linrunner.de/tlp/index.html) is popular on other Linux distributions, but it is not compatible with `system76-power`, and both System76 and [the TLP developers](https://linrunner.de/tlp/faq/installation.html#does-tlp-conflict-with-other-power-management-tools) do not recommend installing TLP on Pop!\_OS.

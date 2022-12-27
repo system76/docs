@@ -40,7 +40,7 @@ The program <u>PulseAudio Volume Control</u> is helpful in figuring out which pr
 sudo apt install pavucontrol
 ```
 
-Once installed, open the <u>PulseAudio Volume Control</u> app in the Activities menu, or run `pavucontrol` in a terminal.
+Once installed, open the <u>PulseAudio Volume Control</u> app in the Activities or Applications menu, or run `pavucontrol` in a terminal.
 
 The "Playback" tab will show a list of applications that are currently playing audio. The volume for each application can be individually controlled.
 
@@ -157,18 +157,36 @@ rm -r ~/.local/state/wireplumber/*
 
 ### Audio crackling or hardware clicking
 
-If you hear audio crackling (especially when you start or stop playing audio), PulseAudio may be putting your audio card to sleep too often. This is known to happen on the [serw12](/articles/serval-dac/) and some [Thunderbolt docks](https://github.com/system76/docs/issues/491).
+If you hear audio crackling (especially when you start or stop playing audio), your audio card may be going to sleep too often. This is known to happen on some versions of the [Serval WS](/articles/serval-dac/) and some [Thunderbolt docks](https://github.com/system76/docs/issues/491).
 
-These two commands will disable this behavior and restart PulseAudio:
+#### Prevent Crackling with PipeWire/WirePlumber
 
+For Pop!_OS 22.04 and newer (and other distributions using PipeWire with WirePlumber), these two commands will disable this behavior and restart PipeWire:
+
+```bash
+sudo sed -i 's/--\["session.suspend-timeout-seconds"\] = 5/\["session.suspend-timeout-seconds"\] = 0/' /usr/share/wireplumber/main.lua.d/50-alsa-config.lua
+systemctl restart --user pipewire.service
 ```
+
+This change can be undone using these commands:
+
+```bash
+sudo sed -i 's/\["session.suspend-timeout-seconds"\] = 0/--\["session.suspend-timeout-seconds"\] = 5/' /usr/share/wireplumber/main.lua.d/50-alsa-config.lua
+systemctl restart --user pipewire.service
+```
+
+#### Prevent Crackling with PulseAudio
+
+For older versions of Pop!_OS or distributions using PulseAudio without PipeWire, these two commands will disable this behavior and restart PulseAudio:
+
+```bash
 sudo sed -i 's/load-module module-suspend-on-idle/#load-module module-suspend-on-idle/' /etc/pulse/default.pa
 pulseaudio -k
 ```
 
 This change can be undone using these commands:
 
-```
+```bash
 sudo sed -i 's/#load-module module-suspend-on-idle/load-module module-suspend-on-idle/' /etc/pulse/default.pa
 pulseaudio -k
 ```

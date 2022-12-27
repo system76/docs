@@ -103,11 +103,11 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 
 ### Planning the Installation
 
-There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the instructions for your specific situation:
+There are several ways to dual boot Pop!\_OS and Windows. Make sure to follow the instructions for your specific situation:
 
 - [Installing in a Virtual Machine](#install-windows-in-a-virtual-machine)
 - [Installing on a Dedicated Drive (Recommended)](#installing-on-a-dedicated-drive)
-- [Installing on a Shared Drive - Starting with Pop!_OS](#installing-on-a-shared-drive-starting-with-pop_os)
+- [Installing on a Shared Drive - Starting with Pop!\_OS](#installing-on-a-shared-drive-starting-with-pop_os)
 
 ## Install Windows in a Virtual Machine
 
@@ -115,7 +115,7 @@ There are several ways to dual boot Pop!_OS and Windows. Make sure to follow the
 >
 >Virtual machines are a method of running multiple OSes on your computer simultaneously. It's conceptually a second computer that you control through a special application called a Hypervisor. You can install an additional operating system on this virtual computer, which you can then boot and run as if it were another system.
 
-Setting up a Windows virtual machine (VM) allows running Windows on a virtual drive within the OS. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!_OS applications simultaneously.
+Setting up a Windows virtual machine (VM) allows running Windows on a virtual drive within the OS. The virtual machine can be started, stopped, and suspended without requiring the computer to be restarted, and you can run Windows and Pop!\_OS applications simultaneously.
 
 Virtual machines impose a slight performance penalty in their operation, depending on the exact application. Many applications will run near full-speed, but applications that depend on heavy computations or access to the GPU (like games and video editing software) will likely be faster with a dual boot.
 
@@ -181,9 +181,9 @@ On the next screen, click `Install Now` to start the installation.
 
 ![Click Install Now to start the installation](/images/windows/step11.png)
 
-You'll next need to enter your product key for your copy of Windows. Be sure to enter this exactly as it's listed on the sticker or in your email.  Windows 10 can be run without a product key temporarily without issues.  If you don't have a product key, select `I don't have a key` or `Skip`.  Otherwise, click `Next`.
+To install Windows on your System 76 computer, we will need to create a Windows USB installer. Creating a Windows installer on Linux is similar to how you create Linux USB installers. However, the Windows installer has unique set up requirements, so not all USB creation tools will work.
 
-![Enter your Product Key](/images/windows/step12.png)
+### Create a Windows USB Installer
 
 Review the terms of the EULA. You are required to accept the terms of the EULA before completing the installation. Checking the box and clicking `Next` assumes you do accept the terms and agree to be bound by them. Do not continue with the installation if you don't agree to the terms in the EULA.
 
@@ -253,14 +253,14 @@ Select `OK` and power on your virtual machine. Go to the Printer menu and select
 
 Download the latest [Windows .iso file](https://www.microsoft.com/en-us/software-download/windows10ISO) from Microsoft's website. Plug in a USB flash drive (8GB or larger) to use as an installation disk. The USB drive will be wiped during this process.
 
-On Pop!_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
+On Pop!\_OS or Ubuntu, install [WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) using these commands:
 
 ```bash
 sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common
 sudo pip3 install WoeUSB-ng
 ```
 
-Once installed, open the WoeUSB-ng application (entering your password when prompted) and perform the following steps:
+Once installed, open the WoeUSB-ng application and create the USB installer with the steps below:
 
 1. Select the Windows .iso file as the source.
 
@@ -277,15 +277,15 @@ It may take several minutes or more for the process to finish -- wait until the 
 
 ### Installing on a Dedicated Drive
 
-The easiest way to dual-boot Windows is to install it on a separate physical drive from Pop!_OS. This allows both Windows and Pop!_OS to use their default partition schemes, and allows you to select the OS using the UEFI firmware menu.
+The easiest way to dual-boot Windows is to install it on a separate physical drive from Pop!\_OS. This allows both Windows and Pop!\_OS to use their default partition schemes, and allows you to select the OS using the UEFI firmware menu.
 
->**NOTE:** If you want to use full-disk encryption in Pop!_OS, this is the only option.
+>**NOTE:** If you want to use full-disk encryption in Pop!\_OS, this is the only option.
 
-For the safest experience, power off your machine, [open the case](https://support.system76.com/articles/guides), and remove the drive with Pop!_OS prior to installing Windows. This ensures Windows won't overwrite the Pop!_OS bootloader, and helps avoid accidentally overwriting Pop!_OS.
+For the safest experience, power off your machine, [open the case](https://support.system76.com/articles/guides), and remove the drive with Pop!\_OS prior to installing Windows. This ensures Windows won't overwrite the Pop!\_OS bootloader, and helps avoid accidentally overwriting Pop!\_OS.
 
-### Starting the Installer
+## Install Windows
 
-Plug the [install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
+Plug the [USB installer](#create-a-windows-usb-installer) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
 
 - `Esc` for laptops with Open Firmware
 - `F7` for laptops with proprietary firmware
@@ -324,7 +324,7 @@ Finally, the installer will ask you to select where you want to install to. In t
 
 If the drive to be used for Windows already contains any partitions, start by deleting those partitions. To do this, you'll need to identify which drive will be used for Windows.
 
-For example, if you purchased a System76 machine with multiple drives, any extra drives should have a single partition (while the OS drive for Pop!_OS will have three or four partitions.) In this example, the Pop!_OS drive is 256GB and the Windows drive is 128GB, so we'll delete the single partition on `Drive 1` because it's closest to 128GB:
+For example, if you purchased a System76 machine with multiple drives, any extra drives should have a single partition (while the OS drive for Pop!\_OS will have three or four partitions.) In this example, the Pop!\_OS drive is 256GB and the Windows drive is 128GB, so we'll delete the single partition on `Drive 1` because it's closest to 128GB:
 
 ![Windows deleting existing partitions](/images/dual-booting/windows-delete-existing-partitions.jpg)
 
@@ -366,33 +366,33 @@ See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
 ---
 
-### Installing on a Shared Drive (Starting with Pop!_OS)
+### Installing on a Shared Drive (Starting with Pop!\_OS)
 
-If you need to install both operating systems on a single drive (for example, if your computer only supports a single SSD), it is possible to install both OS's using a custom partition scheme. Pop!_OS's full-disk encryption is not supported with this setup.
+If you need to install both operating systems on a single drive (for example, if your computer only supports a single SSD), it is possible to install both OS's using a custom partition scheme. Pop!\_OS's full-disk encryption is not supported with this setup.
 
-Start by [installing Pop!_OS](/articles/install-pop/), making sure to select `Don't Encrypt` during the installation process.
+Start by [installing Pop!\_OS](/articles/install-pop/), making sure to select `Don't Encrypt` during the installation process.
 
-(System76 computers shipped with Pop!_OS give you the option of whether or not to encrypt on first boot. If you chose to encrypt at first boot, or if you reinstalled and chose to encrypt, you will need to reinstall without encrypting before proceeding. If you want to dual boot and also use full-disk encryption, you will need to [use a dedicated drive](#installing-on-a-dedicated-drive) instead.)
+(System76 computers shipped with Pop!\_OS give you the option of whether or not to encrypt on first boot. If you chose to encrypt at first boot, or if you reinstalled and chose to encrypt, you will need to reinstall without encrypting before proceeding. If you want to dual boot and also use full-disk encryption, you will need to [use a dedicated drive](#installing-on-a-dedicated-drive) instead.)
 
-### Shrinking Pop!_OS
+### Shrinking Pop!\_OS
 
-Once Pop!_OS is installed (and not encrypted), boot into Recovery mode by holding down the spacebar during boot and selecting `Pop!_OS recovery` from the list of boot options.
+Once Pop!\_OS is installed (and not encrypted), boot into Recovery mode by holding down the spacebar during boot and selecting `Pop!\_OS recovery` from the list of boot options.
 
-![Entering Pop!_OS Recovery](/images/dual-booting/pop-recovery.jpg)
+![Entering Pop!\_OS Recovery](/images/dual-booting/pop-recovery.jpg)
 
 Once Recovery mode has finished loading, select your language and keyboard layout, then select `Try Demo Mode` in the bottom left to exit the installer.
 
 Next, open `GParted` by searching for it in the Activities menu (`SUPER`) or the Pop!_Shell launcher (`SUPER` + `/`).
 
-The Recovery mode is installed on the same drive as the main Pop!\_OS install. Because of the Recovery location, GParted should automatically show the drive that Pop!_OS is installed to; otherwise, if GParted is showing a different drive (such as a flash drive), select the correct drive in the `GParted` -> `Devices` menu.
+The Recovery partition is installed on the same drive as the main Pop!\_OS install. Because of the Recovery location, GParted should automatically show the drive that Pop!\_OS is installed to; otherwise, if GParted is showing a different drive (such as a flash drive), select the correct drive in the `GParted` -> `Devices` menu.
 
 The largest partition in an unencrypted, default layout is an ext4 partition. Select this partition from the list, then click the `Resize/Move` button.
 
-![Selecting the Pop!_OS partition in GParted](/images/dual-booting/gparted-select-partition.jpg)
+![Selecting the Pop!\_OS partition in GParted](/images/dual-booting/gparted-select-partition.jpg)
 
-In the resizing dialog, drag the end of the partition to the left to shrink its size. (If you want the Pop!_OS partition to be a specific size, you can also enter the size value manually in the `New size (MiB)` text box.)
+In the resizing dialog, drag the end of the partition to the left to shrink its size. (If you want the Pop!\_OS partition to be a specific size, you can also enter the size value manually in the `New size (MiB)` text box.)
 
-![Resizing the Pop!_OS partition in GParted](/images/dual-booting/gparted-resize-partition.png)
+![Resizing the Pop!\_OS partition in GParted](/images/dual-booting/gparted-resize-partition.png)
 
 Click the `Resize/Move` button in the bottom right to confirm the change. Next, select the `unallocated` space immediately following the resized partition and click the `New` button to create a new partition for Windows.
 
@@ -427,7 +427,7 @@ Plug the [Windows install media](#creating-install-media) into your machine, the
 
 From the boot menu, select the drive containing the Windows installer, then wait for the installer to boot.
 
-### Performing the Windows installation
+### Performing the installation
 
 Select your language, region, and keyboard settings, then click `Next`.
 
@@ -441,7 +441,7 @@ On the `Activate Windows` page, enter your Windows product key, then click `Next
 
 ![Windows activation](/images/dual-booting/windows-activation.jpg)
 
-If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 10 Pro` (if you're not sure which version to select, use this one.)
+If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 10 Home` (if you're not sure which version to select, use this one.)
 
 ![Windows edition selection](/images/dual-booting/windows-select-edition.jpg)
 
@@ -457,7 +457,7 @@ Finally, the installer will ask you to select where you want to install to. In t
 
 Select the partition that matches the size and position in the list of what you created earlier using GParted. (Windows may select this partition automatically.) Click `Next` to install Windows to the partition.
 
->**Warning:** You should not need to format any partitions during this step. If you see a `Windows can't be installed on drive # partition #` message, either you have the wrong partition selected, or you did not select `NTFS` as the partition type when creating the partition in GParted earlier. Try selecting a different partition, or go back to [Shrinking Pop!_OS](#shrinking-pop_os).
+>**Warning:** You should not need to format any partitions during this step. If you see a `Windows can't be installed on drive # partition #` message, either you have the wrong partition selected, or you did not select `NTFS` as the partition type when creating the partition in GParted earlier. Try selecting a different partition, or go back to [Shrinking Pop!\_OS](#shrinking-pop_os).
 
 ![Windows selecting a partition](/images/dual-booting/windows-select-partition.jpg)
 
@@ -469,11 +469,12 @@ If you see a message about checking the disk, wait and allow the installer to ch
 
 ![Windows checking the disk](/images/dual-booting/windows-checking-disk.jpg)
 
-Eventually, the Windows out-of-box experience wizard will start. Select your country (it may be automatically selected if you're connected to the internet) and click `Yes`.
+### Windows Set Up
 
+After the install is completed, the system will reboot and then load the Windows set-up wizard. Select your country (it may be automatically selected if you're connected to the internet) and click `Yes`.
 ![Windows first-time setup wizard](/images/dual-booting/windows-oobe.jpg)
 
-Follow the wizard to select your preferences:
+Follow the wizard to select your preferences for:
 
 - Keyboard layout
 - Network setup, if using WiFi
@@ -481,7 +482,7 @@ Follow the wizard to select your preferences:
 - Privacy settings
 - Cortana settings
 
-After completing the wizard, Windows will display a slideshow while it finishes setting up. Eventually, you will see the Windows desktop:
+After completing the wizard, Windows will display a slideshow while it finishes setting up. Once the set up is completed, you will see the Windows desktop:
 
 ![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
 
@@ -507,7 +508,7 @@ For our Open Firmware and Open EC systems, you can download the Windows drivers 
 
 For systems with NVIDIA graphics cards, drivers can be found here [NVIDIA Drivers](http://www.nvidia.com/Download/index.aspx)
 
-### NVIDIA Hardware Table
+#### NVIDIA Hardware Table
 
 Always|Maybe|Never
 :----:|:----:|:----:
@@ -518,7 +519,7 @@ Oryx Pro|Ratel|
 Serval WS|Thelio|
 Silverback WS|Wild Dog Pro|
 
-### Ethernet Hardware Table
+#### Ethernet Hardware Table
 
 Realtek RTL8111/8168/8411|Intel I219-V|Atheros/Killer Ethernet E2400|Intel I210
 :----:|:----:|:----:|:----:
@@ -561,11 +562,11 @@ Finally, scroll down to the "Shutdown settings" section, uncheck the `Turn on fa
 
 This will ensure Windows fully shuts down and allows other operating systems to use the hardware.
 
-### Switching between Pop!_OS and Windows
+### Selecting Pop!\_OS or Windows
 
-Depending on how you installed Windows and which firmware your computer is running, there may be several ways to choose which OS to boot.
+Depending on how you installed Windows and which firmware your computer is running, there are a variety of ways to choose which OS to boot.
 
-### Using the UEFI firmware
+#### Using the firmware boot menu
 
 - **Change the default OS** using the [UEFI setup menu](/articles/boot-menu/) (while booting, hold down `ESC` on Open Firmware laptops, `F2` on closed firmware laptops, `DEL` on Thelio desktops, or `F2` on Meerkat desktops.)
 - Navigate to the boot options and set the desired order, then save and exit.
@@ -574,9 +575,11 @@ Depending on how you installed Windows and which firmware your computer is runni
 - Select the desired OS (or the drive that it's on.)
 - If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
 
-### Using systemd-boot
+#### Using the systemd-boot menu
 
-- This menu is part of Pop!_OS, so in order to use it effectively, Pop!_OS must be set as the default OS in the firmware settings as described in the previous section.
+Systemd-boot is the bootloader used by Pop!\_OS. It can be used to select which operating system you would like to boot from. The steps below outline how to access the systemd-boot menu, and select an operating system:
+
+- This menu is part of Pop!\_OS, so in order to use it effectively, Pop!\_OS must be set as the default OS in the firmware settings as described in the previous section.
 - **Change the default OS** using the `systemd-boot` menu (while booting, hold down `SPACE`.)
 - Highlight the desired default OS using the arrow keys, then press `D` to make it the default.
 - **Boot the secondary OS** using the `systemd-boot` menu (while booting, hold down `SPACE`).
@@ -586,11 +589,11 @@ Depending on how you installed Windows and which firmware your computer is runni
 - Press the `+` key (or `SHIFT` + `=`) to increase the number of seconds the system will wait before booting the default OS; press `-` to decrease the number of seconds.
 - Once a timer is set, the menu will display on every boot without having to hold down `SPACE`. (To reverse this, press `-` until the timer is back to zero.)
 
-## Repairing the Pop!_OS Bootloader
+## Repairing the Pop!\_OS Bootloader
 
-If Pop!_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](/articles/bootloader) for information on repairing the Pop!_OS bootloader.
+If Pop!\_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](/articles/bootloader) for information on repairing the Pop!\_OS bootloader.
 
-## Fixing the System Clock
+### Fixing the System Clock
 
 Windows and Linux store their time in the UEFI firmware differently. This can cause the clock to become de-synchronized when you switch from one OS to the other.
 

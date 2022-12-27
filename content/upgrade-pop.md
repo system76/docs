@@ -12,6 +12,7 @@ keywords:
   - Pop!_OS 20.10
   - Pop!_OS 21.04
   - Pop!_OS 21.10
+  - Pop!_OS 22.04
   - LTS
   - Non-LTS
   - Upgrade
@@ -78,7 +79,7 @@ Pop!\_OS 21.04 was released on June 29, 2021.
 
 Pop!\_OS 20.10 was released October 23, 2020.
 
-### Upgrading Pop!\_OS to 22.04 from 20.04 or 21.10
+### Upgrading Pop!\_OS to 22.04 from 20.04
 
 **NOTE:** For all other operating system versions, refer to the instructions for [upgrading from an earlier release](#upgrading-older-releases).
 
@@ -158,10 +159,9 @@ pop-upgrade release upgrade
 
 ## Upgrading older releases
 
-| Pop!_OS Version                                  | Upgrade Process                            |
+| Pop!_OS Version                              | Upgrade Process                        |
 | :------------------------------------------- | :------------------------------------- |
-| Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan)         | Requires upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 22.04 (jammy)       |
-|Pop!_OS 20.10 (groovy) |Refresh the OS from a recently upgraded [recovery partition](/articles/pop-recovery), or perform a clean install using a [Live USB](/articles/pop-live-disk) containing the latest release|
+| Any Pop!\_OS version before 22.04 LTS        | You will need to perform a clean install using a [Live USB](/articles/pop-live-disk) containing the latest release or using the Refresh option in a live disk of the latest release |
 
 These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
 

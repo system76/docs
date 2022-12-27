@@ -2,8 +2,20 @@
   <div class="min-h-screen flex flex-col">
     <sys-omnibar>
       <template #global>
-        <a href="https://system76.com/specials">
+        <a
+          href="https://system76.com/specials"
+          target="_blank"
+        >
           Special Offers
+        </a>
+      </template>
+
+      <template #copy>
+        <a
+          href="https://system76.com/desktops"
+          target="_blank"
+        >
+          New Thelio Accent Panels! Learn More!
         </a>
       </template>
 

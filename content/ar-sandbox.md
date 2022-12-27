@@ -19,13 +19,9 @@ tableOfContents: true
 
 The [Augmented Reality Sandbox](https://arsandbox.ucdavis.edu/) was developed by [Oliver Kreylos](http://idav.ucdavis.edu/~okreylos/) at [UC Davis](https://www.ucdavis.edu/).
 
-In hopes of giving this awesome software wider exposure and making it easier to consume, System76 [packaged this software for Ubuntu-based OSes](https://launchpad.net/~system76-dev/+archive/ubuntu/weekend-project) and wrote this tutorial.
+In hopes of giving this awesome software wider exposure and making it easier to consume, System76 [packaged this software for Pop!_OS](https://github.com/pop-os/packaging-sarndbox) and wrote this tutorial.
 
 ### Required Hardware
-
-This tutorial focuses on installing and calibrating the software, but won't cover the details of the hardware setup.
-
-For detailed information on the hardware setup, see the [AR Sandbox hardware tutorial](https://arsandbox.ucdavis.edu/instructions/hardware-2/), but in brief you'll need:
 
 - A first generation Kinect
 
@@ -35,47 +31,42 @@ For detailed information on the hardware setup, see the [AR Sandbox hardware tut
 
 - Roughly 200 pounds of white sand like [Sandtastik White Sandbox Sand](https://www.amazon.com/Sandtastik-White-Play-Sand-SND025/dp/B001AZ0CGG)
 
-- A Linux-friendly computer with a fast NVIDIA GPU, running Pop!_OS/Ubuntu 18.04 or newer (any flavor).
+- A System76 computer with a fast NVIDIA GPU, running Pop!_OS 22.04 or newer.
 
-In terms of System76 computers we recommend the [Oryx Pro](https://system76.com/laptops/oryx) laptop or [Thelio](https://system76.com/cart/configure/thelio-r1) desktop with the fastest available GPU.
+In terms of System76 computers we recommend the [Oryx Pro](https://system76.com/laptops/oryx) laptop or [Thelio](https://system76.com/desktops) desktop with a dedicated GPU.
 
 ## Install Software
 
-- You'll need a computer running Pop!_OS or Ubuntu 18.04 or newer.
+- You'll need a computer running Pop!_OS 22.04 or newer.
 
-- Add the needed PPA and install the software by opening a terminal and running these three commands:
+- Then install ArSandbox via the [terminal](https://support.system76.com/articles/terminal-basics)
+
+> All of the terminal commands in this guide can be copy-pasted or typed into your terminal.
 
 ```
-sudo add-apt-repository -ys ppa:system76-dev/weekend-project
 sudo apt-get update
+```
+```
 sudo apt-get install arsandbox
 ```
 
-- Find out what your username is by running this command in the terminal:
+- Add yourself to the vrui-grp group
 
 ```
-whoami
-```
-
-- Add yourself to the vrui-grp group with this command, replacing USERNAME with the user-name returned by the whoami command above:
-
-```
-sudo adduser USERNAME vrui-grp
+sudo adduser $(whoami) vrui-grp
 ```
 
 - Reboot your computer so all of the above changes take effect.
 
-## Enable Touchpad While Typing
-
-During the setup process there will be times when you will need to hold down a key while moving your cursor, however by default the touchpad is disabled while typing. In order for this to work correctly, you will want to go ahead and modify that setting.
-
-To do this, please install the <u>GNOME Tweaks tool</u> from the Pop!\_Shop or Ubuntu Software Center, or from the Terminal by running:
-
 ```
-sudo apt install gnome-tweak-tool
+reboot
 ```
 
-After that, open the <u>Tweaks</u> app from the Activities overview, then navigate to 'Keyboard & Mouse' -> 'Touchpad', then disable the switch marked 'Disable While Typing'
+## Mirror Display
+
+- Connect the projector to your computer.
+
+- Mirror your computer's display to the sandbox by pressing `Super` <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and `p` at the same time until `Mirror` is selected. When released the sandbox should mirror your computer's display.
 
 ## Calibrate Kinect
 
@@ -133,12 +124,15 @@ RawKinectViewer -compress 0
 
 ![Right Click Menu](/images/ar-sandbox/4-B-average-frames-1ba827544a.png)
 
-- Press and hold the 1 key, move your cursor over Extract Planes, then release the 1 key (releasing this key will trigger this action, so clicking with the mouse is not necessary):
+- Press and hold `Shift` and `1`, move your cursor over Extract Planes, then release both keys. Releasing this key will trigger this action, and assign calibration to `Shift` + `1`.
 
 ![Extract Planes](/images/ar-sandbox/4-C-extract-plane-1cbd8abb5e.png)
 
-- You now need to draw a rectangle that fits within the interior of your flat surface (in the depth view). You want some space between your rectangle and the edges of your flat surface.
-Start with your cursor near the top-left corner of your flat surface. Press and hold the 1 key, drag out a rectangle toward the bottom-right corner using the right mouse button, then release the 1 key:
+- We now need to run the `Extract Planes` feature. Hover your mouse over one corner of your flat plane within your sandbox. Now, press `Shift` and `1`, then press `Ctrl` all at the same time. Drag your mouse from one corner to the opposite corner within the sandbox. There should be a rectangle forming around the path the mouse moved on.
+
+- Now let go of everything at the same time.
+
+- If sucessful there will be a new line in your terminal with something like `Camera-space plane equation: X * (0.1234567, -0.1234567, 0.1234567) = -01.1234`, if not there is no harm in pressing `Esc` to close the Kinect Viewer, and trying again.
 
 ![Kinect Area View](/images/ar-sandbox/4-D-drag-rectangle-a8b53ecc87.png)
 
@@ -151,7 +145,7 @@ Start with your cursor near the top-left corner of your flat surface. Press and 
 - Edit the BoxLayout.txt file by running this command from the terminal:
 
 ```
-gedit /etc/SARndbox-1.6/BoxLayout.txt
+sudo gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
 - Paste the line you just copied over the first line in the `BoxLayout.txt` file.
@@ -167,6 +161,8 @@ You should end up with a first line something like this:
 - NOTE: If you receive an error message regarding an "invalid taken character," please double-check to make sure the equal sign in `BoxLayout.txt` has been replaced with a comma as described above.
 
 ## Measure 3D extents of sand surface
+
+- If you used a flat surface above your sandbox in the previous step, remove that now. The projector's display should seen on the sand before this next step is started.
 
 - This step requires you to have filed your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
 
@@ -186,7 +182,7 @@ RawKinectViewer -compress 0
 
 ![Right Click Menu](/images/ar-sandbox/4-B-average-frames-1ba827544a.png)
 
-- Press and hold the 1 key, move your cursor over Measure 3D positions, then release the 1 key:
+- Press and hold the `Shift` and `1`, move your cursor over Measure 3D positions, then release both keys,
 
 ![Measure 3D Positions](/images/ar-sandbox/5-A-measure-3d-positions-14f7ae1f35.png)
 
@@ -221,7 +217,7 @@ Note there is no feedback from the UI when you press the 1 key.
 - Edit the `BoxLayout.txt` file by running this command from the terminal:
 
 ```
-gedit /etc/SARndbox-1.6/BoxLayout.txt
+sudo gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
 - Replace the bottom four lines in BoxLayout.txt with the four lines you just copied, so you end up with something like this:
@@ -243,6 +239,8 @@ gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 XBackground
 ```
+
+- Then set the background to be fullscreen. (Press `F11` or `Fn` and `F11`)
 
 - You'll need to position the projector so that it fills the interior of your sandbox. It's okay if it overlaps slightly.
 
@@ -278,29 +276,29 @@ To match the resolution of the laptop we used in this tutorial, we set our proje
 CalibrateProjector -s 1920 1080
 ```
 
-- Then maximize this window so it fills your entire sandbox:
+- You MUST maximize the window with `F11` ot `Fn` and `F11`
 
 ![CalibrateProjector](/images/ar-sandbox/7-maximize-478e070818.png)
 
-- Press and hold the 1 key, move your cursor over Capture, then release the 1 key:
+- Press and hold `Shift` and `1` keys, move your cursor over Capture, then release both keys:
 
 ![Tools Menu](/images/ar-sandbox/7-B-press-1-17ad6d4ad8.png)
 
-- Then press the 2 key when you see this dialog:
+- Then press the `2` key when you see this dialog:
 
 ![Capture](/images/ar-sandbox/7-C-press-2-867c3ffac3.png)
 
-Press the 2 key to capture the background image, after which you'll briefly see a uniform red color projected onto your sandbox:
+Press the `2` key to capture the background image, after which you'll briefly see a uniform red color projected onto your sandbox:
 
 ![Uniform Red Color](/images/ar-sandbox/7-D-capture-background-af5f6cb582.jpg)
 
 After this is completed, you can proceed with the calibration.
 
-- Next, you'll capture tie-points at the lowest height. Using your shortest spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface:
+- Next, you'll capture tie-points at the lowest height. Using your shortest spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface. Just set the spacer and only pushing down enough to level the alignment target.
 
 ![Lowest](/images/ar-sandbox/7-E-lowest-db2aad81b1.jpg)
 
-Then press the 1 key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
+Then press the `1` key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
 
 Repeat this process for the remaining 11 tie-points at this depth. Once the white projected cross-hairs are back at their original position, you're ready to switch to a taller spacer.
 
@@ -345,7 +343,7 @@ On the other hand, if in step 4 you calculated the base plane when your sandbox 
 - To adjust the sea level, edit the `/etc/SARndbox-1.6/BoxLayout.txt` by running this command from the terminal:
 
 ```
-gedit /etc/SARndbox-1.6/BoxLayout.txt
+sudo gedit /etc/SARndbox-1.6/BoxLayout.txt
 ```
 
 The value highlighted below in `BoxLayout.txt` controls the sea-level:
@@ -361,13 +359,15 @@ So we'll set the sea-level to `-107`, like this:
 
 ![BoxLayout3](/images/ar-sandbox/8-D-gedit-3-36f32a4191.png)
 
+- Though this isn't an exact science. Play with your SARndbox and adjust this value to whatever feels the most correct to you. A more negative value will lower the sea level, a more positive one will raise the sea level. In general the adjustments are about +/` 10 of the smallest value.
+
 - Save the file and close `gedit`.
 
 - Re-launch the AR Sandbox application from the Ubuntu dash, maximize the window, and you'll see something like this:
 
 ![Sea Level just right](/images/ar-sandbox/8-E-sea-level-just-right-cdc5f0037b.jpg)
 
-You can experiment with different values for the sea-level to suite your preferences, but our recommendations here will give you a good starting point.
+You can experiment with different values for the sea-level to suit your preferences, but our recommendations here will give you a good starting point.
 
 Note that you can adjust the sea level at any time in the future without recalibrating your sandbox.
 
@@ -380,7 +380,7 @@ As long as you don't change the physical setup of your sandbox (in particular, t
 
 ![Make it rain](/images/ar-sandbox/9-B-make-it-rain-fe5051a11f.jpg)
 
-- As a convenience, the System76 packaging for Ubuntu includes a launcher you can search for in the GNOME Search:
+- As a convenience, the System76 packaging for Pop!_/OS includes a launcher you can search for in the GNOME Search:
 
 ![Launch SARndbox](/images/ar-sandbox/9-A-launch-sarndbox-3d1afe80d2.png)
 

@@ -30,16 +30,16 @@ tableOfContents: true
 
 ## Important Disclaimer - Please Read
 
-System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for information purposes only.
+System76 is not a licensed reseller or installer of the Windows operating system. This article is provided for informational purposes only.
 
 System76 encourages users to take ownership of their machines and install whatever software or operating systems they prefer. However, System76 does not guarantee the success or quality of experience when installing Windows and does not provide support or testing for any Windows version. Please do not open a support ticket for anything other than clarification of the steps covered in this article.
 The contents of this support article are the **total extent of support and troubleshooting that System76 can provide for Windows.** Any Windows-related support for System76 hardware not covered in this article is beyond the scope of support provided by System76. Please refer to Microsoft's [official troubleshooting documentation](https://support.microsoft.com/en-us) or other online resources.
 
-Installing Windows is undertaken at your own risk. It's possible not all hardware will function as intended and drivers may not be available for all components. Your mileage may vary.
+Installing Windows is undertaken at your own risk. It's possible not all hardware will function as intended and, drivers may not be available for all components. Your mileage may vary.
 
 ## Windows 11
 
-> **Windows 11 Compatibility:** Windows 11 is not supported on all systems. Open Firmware systems to do support Secure Boot which is a requirement for Windows 11. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+> **Windows 11 Compatibility:** Windows 11 is not supported on all systems. Open Firmware systems do not support Secure Boot which is a requirement for Windows 11. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
 
 ### Compatibility Table
 

@@ -150,11 +150,11 @@ Connectivity issues can occur when the printer is assigned an address using DHCP
 Reinstall the CUPS print server to resolve general printing issues:
 
 ```bash
-sudo apt --reinstall cups cups-client
+sudo apt install --reinstall cups cups-client
 ```
 
 Reinstall the system control panel in case printer settings are not available.
 
 ```bash
-sudo apt --reinstall system-config-printer
+sudo apt install --reinstall system-config-printer
 ```

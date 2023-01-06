@@ -226,6 +226,71 @@ update-initramfs -c -k all
 update-grub
 ```
 
+### EFI Boot - Ubuntu - Encrypted Root
+
+If the echo command above says the system is installed in EFI mode **and** you are using Ubuntu **and** you have an encrypted root partition,
+follow this section.
+
+First, verify that your paritions look like the following via `sudo lsblk -f`
+
+```
+...
+... other devices ...
+...
+nvme0n1                                                                                                                         
+├─nvme0n1p1   vfat  FAT32    10A3-8FDF                               491.4M     4%
+├─nvme0n1p2   ext4  1.0      49b5b327-fb9e-4268-9b16-da0926db8301      1.3G    15%
+└─nvme0n1p3   crypto_LUKS 2  0cbbeeeb-f60d-4d4f-9dd3-7ddf72ff6b77  
+...
+... for SATA drives, replace "nvme0n1p" with "sda" ...
+```
+The `FSTYPE` here is important.
+
+Unlock the `luks` parition with
+```bash
+cryptsetup openLuks /dev/nvme0n1p3 nvme0n1p3_crypt
+```
+
+Note that the name `nvme0n1p3_crypt`, although arbitrary, <u>**must**</u> end with the `_crypt` suffix, otherwise the system's `initrd` tools
+will not process the `cryptsetup` steps correctly, later on!
+
+You should be prompted for the `luks` password, and if successful the device mapper will map your devices with the `nvme0n1p3_crypt` name.
+
+```
+nvme0n1                                                                                                                         
+├─nvme0n1p1             vfat        FAT32           10A3-8FDF                               491.4M     4%
+├─nvme0n1p2             ext4        1.0             49b5b327-fb9e-4268-9b16-da0926db8301      1.3G    15%
+└─nvme0n1p3             crypto_LUKS 2               0cbbeeeb-f60d-4d4f-9dd3-7ddf72ff6b77                  
+  └─nvme0n1p3_crypt     LVM2_member LVM2 001        zjDMJe-5u1l-pQxG-d3Pw-iP5E-D6J3-B9Kj1H                
+    ├─vgubuntu-root     ext4        1.0             417a9f13-fc45-4456-a7c4-b9fb68486560    830.2G     4%
+    └─vgubuntu-swap_1   swap        1               de7d304e-fde2-400b-b41e-8515fc5e7539
+```
+
+Second, we need to mount the OS partitions. Run these commands based on what type of disk you have (based on the ```parted``` output from your system):
+
+| NVMe Drives                                    | SATA Drives                                     |
+| :--------------------------------------------- | :---------------------------------------------- |
+| ```sudo mount /dev/mapper/vgubuntu-root /mnt```| ```sudo mount /dev/mapper/vgubuntu-root /mnt``` |
+| ```sudo mount /dev/nvme0n1p2 /mnt/boot```      | ```sudo mount /dev/sda2 /mnt/boot```            |
+| ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```  | ```sudo mount /dev/sda1 /mnt/boot/efi```        |
+
+<u>chroot</u> is a way to run commands as if the existing operating system had been booted. Once the chroot commands have been run, then package manager (<u>apt</u>) and other system level commands can be run.
+
+The EFI partition is usually around 512MB, and that is the partition to substitute into the next command. The Recovery partition is around 4GB.
+
+| NVMe Drive                                | SATA Drive                           |
+| :---------------------------------------- | :----------------------------------- |
+| `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
+
+```bash
+for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+sudo cp -n /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
+update-grub
+```
+
 ### Legacy BIOS Boot
 
 As mentioned above, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode. If this is the case, you need to follow this section to repair your bootloader.

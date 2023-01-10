@@ -17,11 +17,13 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-Systemd-boot is the default bootloader for Pop!_OS. GRUB is the default bootloader for Ubuntu, and is the bootloader for Pop!_OS when installed in Legacy BIOS (CSM) mode. A bootloader takes care of getting the operating system started up. It can also be used to allow the user to select between multiple operating systems at boot. Sometimes, GRUB or systemd-boot can break, and it may not let you boot into your computer to fix the problem.
+A bootloader takes care of getting the operating system started up. It is also responsible for allowing the user to select between multiple operating systems at boot. Systemd-boot is the bootloader for Pop!_OS 18.04 and newer while GRUB is the bootloader for Ubuntu and Pop!_OS when installed in Legacy BIOS mode. If you are unable to reach the log in screen, your bootloader may be the cause.
 
 ### Important Note
 
-If you need to configure grub-pc (for example, after an update), installing grub to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
+If you need to configure grub-pc (for example, after an update), installing GRUB to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
+
+On a fresh install of Pop!_OS 18.04 and newer, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader. The following instructions only apply to systems using the GRUB bootloader, otherwise refer to the <u>systemd-boot</u> section of this article.
 
 ### Create Live Disk
 
@@ -68,6 +70,8 @@ Pop!_OS 20.04 LTS
 
 ---
 
+## How to tell if your system is EFI-based or legacy boot
+
 ## systemd-boot
 
 ### EFI Boot
@@ -77,6 +81,14 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 ```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
+
+Additionally, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode.
+
+### EFI Boot - Pop!_OS (systemd-boot)
+
+If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below.
+
+First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
 The expected output is:
 
@@ -106,11 +118,7 @@ exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
 
----
-
-## GRUB
-
-### EFI Boot
+## GRUB EFI Boot
 
 Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the `parted` output from earlier, then the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
 
@@ -137,7 +145,7 @@ update-initramfs -c -k all
 update-grub
 ```
 
-### Legacy BIOS Boot
+## GRUB Legacy BIOS Boot
 
 If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
 
@@ -155,6 +163,8 @@ If you are using a non-default partitioning scheme (such as a dual boot), replac
 
 Then continue with the following commands for either disk type:
 
+After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
+
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
 sudo chroot /mnt
@@ -163,9 +173,9 @@ update-initramfs -c -k all
 sudo update-grub
 ```
 
----
-
 ### Encrypted Disk
+
+Pop!_OS supports full-disk encryption as an option by default, whereas, Ubuntu does not. If you are on Ubuntu, you likely don't need to follow this section.
 
 To get access to an encrypted disk, these additional commands need to be run in order to unlock the disk. Please use the `parted` command described above to determine the correct drive and partition. The encrypted partition will typically be the largest one on the main drive.
 
@@ -178,6 +188,8 @@ sudo lvscan
 sudo vgchange -ay
 ```
 
+Take note as to what the volume group is called.  Substitute the correct info into this next command.  Make sure that `-root` is on the end.
+
 After running the `vgchange` command, take note of what the volume group is called. Substitute the correct info into this next command. Make sure that `-root` is added to the end of the volume group name:
 
 ```bash
@@ -186,7 +198,16 @@ sudo mount /dev/mapper/data-root /mnt
 
 Now the existing hard drive can be accessed by going to the `/mnt` folder. To use the <u>Files</u> program, go to `+ Other Locations` -> `Computer` and then click on the `/mnt` folder.
 
-### Chroot
+### EFI Boot - Ubuntu
+
+If the echo command above says the system is installed in EFI mode **and** you are using Ubuntu, follow this section.
+
+First, we need to mount the OS partitions. Run these commands based on what type of disk you have (based on the ```parted``` output from your system):
+
+| NVMe Drives                                  | SATA Drives                            |
+| :------------------------------------------- | :------------------------------------- |
+| ```sudo mount /dev/nvme0n1p2 /mnt```         | ```sudo mount /dev/sda2 /mnt```        |
+|```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` |```sudo mount /dev/sda1 /mnt/boot/efi```|
 
 <u>chroot</u> is a way to run commands as if the existing operating system had been booted. Once the chroot commands have been run, then package manager (<u>apt</u>) and other system level commands can be run.
 
@@ -198,14 +219,32 @@ The EFI partition is usually around 512MB, and that is the partition to substitu
 
 ```bash
 for i in dev dev/pts proc sys sys/firmware/efi/efivars run; do sudo mount -B /$i /mnt/$i; done
+sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
+apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
+update-grub
 ```
+
+### Legacy BIOS Boot
+
+As mentioned above, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode. If this is the case, you need to follow this section to repair your bootloader.
+
+Run these commands based on what type of disk you have:
+
+| NVMe Drive                           | SATA Drive                      |
+| :----------------------------------- | :------------------------------ |
+| ```sudo mount /dev/nvme0n1p2 /mnt``` | ```sudo mount /dev/sda2 /mnt``` |
 
 You now have root administrator access to your installed OS. If you are trying to either fix or undo changes that you made to the system, you now have the access to do so. Once you are done, to exit from the <u>chroot</u> and reboot the computer, run these commands:
 
 ```bash
-exit
-reboot
+for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+sudo cp -n /etc/resolv.conf /mnt/etc/
+sudo chroot /mnt
+apt install --reinstall grub-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
+sudo update-grub
 ```
 
 As your system reboots, remove the disk when prompted. The computer should now boot normally.
@@ -213,6 +252,8 @@ As your system reboots, remove the disk when prompted. The computer should now b
 ## Troubleshooting
 
 ### chroot
+
+If the `chroot` command returns with the error: `chroot: cannot run command '/bin/bash': Exec format error`, this probably indicates that the Install DVD/CD or USB is not compatible with that of the installed system. If you need more information on how to chroot, and what it it does, visit the chroot article here.
 
 #### Live disk compatibility
 
@@ -241,7 +282,7 @@ If you validate that the UUID entry is correct and are using LUKS encryption, be
 If there is, check to be sure that `/etc/crypttab` does not have a string of characters after `cryptdata` such as this:
 
 ```bash
-​cryptdata_U0qNZ UUID=b7bb66dd-8690-4eca-b881-bf7e662a9336 none luks cryptswap UUID=c44ec301-f416-46da-8454-a731e074682c /dev/urandom swap,offset=1024,cipher=aes-xts-plain64,size=512
+cryptdata_U0qNZ UUID=b7bb66dd-8690-4eca-b881-bf7e662a9336 none luks cryptswap UUID=c44ec301-f416-46da-8454-a731e074682c /dev/urandom swap,offset=1024,cipher=aes-xts-plain64,size=512
 ```
 
 If it does, remove the characters after `cryptdata` (`_U0qNZ`, in this example) so that the entry starts only with `cryptdata`. Then, re-run the `update-initramfs -c -k all` command and continue with recovery.

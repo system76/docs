@@ -78,6 +78,10 @@ export default async () => ({
     'nuxt-dynamic-images'
   ],
 
+  dynamicImages: {
+    puppeteerOptions: { headless: true, args: ['--no-sandbox'] }
+  },
+
   modules: [
     '@nuxt/content'
   ],

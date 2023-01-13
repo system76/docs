@@ -106,6 +106,7 @@ Pop!\_OS and Ubuntu can be joined to an Active Directory domain, which allows us
     ldap_sasl_authid = POP-OS$
     krb5_keytab = /etc/sssd/my-keytab.keytab
     ldap_krb5_init_creds = true
+    ad_gpo_access_control = permissive
     ```
 
     After saving, set the appropriate permissions on that configuration file:

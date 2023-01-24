@@ -132,7 +132,7 @@ RawKinectViewer -compress 0
 
 - Now let go of everything at the same time.
 
-- If sucessful there will be a new line in your terminal with something like `Camera-space plane equation: X * (0.1234567, -0.1234567, 0.1234567) = -01.1234`, if not there is no harm in pressing `Esc` to close the Kinect Viewer, and trying again.
+- If successful there will be a new line in your terminal with something like `Camera-space plane equation: X * (0.1234567, -0.1234567, 0.1234567) = -01.1234`, if not there is no harm in pressing `Esc` to close the Kinect Viewer, and trying again.
 
 ![Kinect Area View](/images/ar-sandbox/4-D-drag-rectangle-a8b53ecc87.png)
 
@@ -145,7 +145,7 @@ RawKinectViewer -compress 0
 - Edit the BoxLayout.txt file by running this command from the terminal:
 
 ```
-sudo gedit /etc/SARndbox-1.6/BoxLayout.txt
+sudo gedit /etc/SAR*/BoxLayout.txt
 ```
 
 - Paste the line you just copied over the first line in the `BoxLayout.txt` file.
@@ -217,7 +217,7 @@ Note there is no feedback from the UI when you press the 1 key.
 - Edit the `BoxLayout.txt` file by running this command from the terminal:
 
 ```
-sudo gedit /etc/SARndbox-1.6/BoxLayout.txt
+sudo gedit /etc/SAR*/BoxLayout.txt
 ```
 
 - Replace the bottom four lines in BoxLayout.txt with the four lines you just copied, so you end up with something like this:
@@ -246,11 +246,11 @@ XBackground
 
 ![Aligning grid to box](/images/ar-sandbox/6-C-xbackground-af01671469.jpg)
 
-After you're done positioning your projector, hit Esc to close the `XBackgroud` application.
+After you're done positioning your projector, hit Esc to close the `XBackground` application.
 
 ## Calibrate AR Sandbox
 
-- As with step 5, this step requires you to have filed your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
+- As with step 5, this step requires you to have filled your sandbox with sand. You want the sand surface to be as level as possible, but it doesn't need to be perfectly level.
 
 - To calibrate your sandbox, you'll need an alignment target and several spacers to help you perform the alignment at multiple heights:
 
@@ -320,7 +320,7 @@ Repeat this process for the remaining 11 tie-points at this depth. Once the whit
 
 - Once you've completed the calibration, hit Esc to close the `CalibrateProjector` application.
 
-Hitting Esc will automatically write the calibration file in `/etc/SARndbox-1.6/ProjectorMatrix.dat`.
+Hitting Esc will automatically write the calibration file in `/etc/SAR*/ProjectorMatrix.dat`.
 
 ## Adjust the "sea level"
 
@@ -340,10 +340,10 @@ On the other hand, if in step 4 you calculated the base plane when your sandbox 
 
 - Hit Esc to close the AR Sandbox application.
 
-- To adjust the sea level, edit the `/etc/SARndbox-1.6/BoxLayout.txt` by running this command from the terminal:
+- To adjust the sea level, edit the `/etc/SAR*/BoxLayout.txt` by running this command from the terminal:
 
 ```
-sudo gedit /etc/SARndbox-1.6/BoxLayout.txt
+sudo gedit /etc/SAR*/BoxLayout.txt
 ```
 
 The value highlighted below in `BoxLayout.txt` controls the sea-level:

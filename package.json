@@ -16,7 +16,8 @@
     "@system76/components": "^1.4.0",
     "@system76/design": "^5.4.1",
     "core-js": "^3.18.2",
-    "nuxt": "^2.2.0"
+    "nuxt": "^2.2.0",
+    "nuxt-content-git": "^3.0.0"
   },
   "devDependencies": {
     "@nuxt/image": "^0.6.0",

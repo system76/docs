@@ -83,6 +83,7 @@ export default async () => ({
   },
 
   modules: [
+    'nuxt-content-git',
     '@nuxt/content'
   ],
 

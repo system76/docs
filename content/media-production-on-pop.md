@@ -9,6 +9,7 @@ keywords:
   - Godot
   - Lightworks
   - Natron
+  - Krita
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -84,5 +85,11 @@ Install Directly From the Pop!\_Shop
 ### Flowblade
 
 Flowblade is a multitrack non-linear video editor with a set of industry standard editing tools suitable for beginners and masters alike to help make your vision a reality of image and sound.
+
+Install Directly From the Pop!\_Shop
+
+### Krita
+
+Krita is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.
 
 Install Directly From the Pop!\_Shop

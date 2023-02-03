@@ -134,17 +134,17 @@ makepkg -si
 **Note:** By default, <u>Paru</u> uses VIM keyboard shortcuts, so when you see a `:`, press the <kbd>q</kbd> key to continue. You may also need to confirm the import of some public keys using the <kbd>y</kbd> key.
 
 ```bash
-paru -s system76-firmware-daemon
+paru -S system76-firmware-daemon
 sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
 ```
 
 ```bash
-paru -s firmware-manager
+paru -S firmware-manager
 ```
 
 ```bash
-paru -s system76-driver
+paru -S system76-driver
 # choose the first software option listed
 sudo systemctl enable --now system76
 ```

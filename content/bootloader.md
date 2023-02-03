@@ -98,7 +98,6 @@ If the echo command at the beginning of this page says that the OS is installed 
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
-
 | NVMe Drive                                | SATA Drive                           |
 | :---------------------------------------- | :----------------------------------- |
 | `sudo mount /dev/nvme0n1p3 /mnt`          | `sudo mount /dev/sda3 /mnt`          |

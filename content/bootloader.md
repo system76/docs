@@ -82,14 +82,6 @@ Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `f
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
 
-Additionally, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode.
-
-### EFI Boot - Pop!_OS (systemd-boot)
-
-If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below.
-
-First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
-
 The expected output is:
 
 ```bash
@@ -98,7 +90,13 @@ Installed in UEFI mode
 support@pop-os:~$
 ```
 
-Run these commands based on what type of disk you have:
+Additionally, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode.
+
+### EFI Boot - Pop!_OS (systemd-boot)
+
+If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below.
+
+First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
 | NVMe Drive                                | SATA Drive                           |
 | :---------------------------------------- | :----------------------------------- |

@@ -86,7 +86,7 @@ journalctl > ~/system76/journal.log
 dmesg > ~/system76/dmesg.log
 cp ~/.local/share/xorg/Xorg.0.log ~/system76/Xorg.0.log 2> /dev/null
 sudo dmidecode > ~/system76/demidecode
-sudo lspci -vv > ~/system76/lscpi.log
+sudo lspci -vv > ~/system76/lspci.log
 sudo lsusb -vv > ~/system76/lsusb.log
 uname -a > ~/system76/uname.log
 cp /etc/os-release ~/system76/os-release

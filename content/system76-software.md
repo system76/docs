@@ -245,7 +245,7 @@ sudo dnf install system76-oled
 
 ## NixOS
 
-For hardware support this line needs to be added to you `/etc/nixos/configuration.nix` file then rebuild the OS:
+For hardware support, this line needs to be added to your `/etc/nixos/configuration.nix` file then rebuild the OS:
 
 ```bash
 # System76

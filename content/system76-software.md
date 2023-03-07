@@ -242,3 +242,16 @@ This command will be used to install the <u>System76 OLED</u> which is used for 
 ```bash
 sudo dnf install system76-oled
 ```
+
+## NixOS
+
+For hardware support, this line needs to be added to your `/etc/nixos/configuration.nix` file then rebuild the OS:
+
+```bash
+# System76
+hardware.system76.enableAll = true;
+```
+
+```bash
+sudo nixos-rebuild switch
+```

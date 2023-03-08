@@ -84,9 +84,13 @@ Firmware update scheduled. Reboot your machine to install.
 
 ### Performing the Update
 
-The System76 Firmware Updater will start on the next boot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
+The System76 Firmware Updater will start on the next boot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing. 
 
 ![Press Enter to commence flashing](/images/system-firmware/press-enter.jpg)
+
+For 13th Gen systems and above when the system is rebooted the following image will appear for firmware security:
+
+![Firmware Security](/images/system-firmware/firmware-security.png)
 
 Depending on the model, the system may reboot at this point. The system's fans may spin at full speed while the new firmware is being written. Once the firmware update process is complete, you may see a prompt to **press any key** to shut down.
 

@@ -20,7 +20,7 @@ tableOfContents: true
 
 Press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off.
 
-Please note that this shortcut is not available on the Pangolin (pang12).
+>**Note**: This shortcut is not available on the Pangolin (pang12).
 
 To configure your touchpad, press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> then type <u>Mouse & Touchpad</u> and click on the result. The touchpad settings are under the **Touchpad** tab.
 

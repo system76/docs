@@ -30,7 +30,7 @@ From here, the touchpad can be disabled only while typing, like in the screensho
 
 ![Mouse & Touchpad Settings](/images/touchpad/touchpad-mouse-settings.png)
 
-<u>GNOME Tweaks</u> has a few other options for the touchpad for example adjusting the acceleration profile and mouse click emulation.
+<u>GNOME Tweaks</u> has a few other options for the touchpad (for example, adjusting the acceleration profile and enabling mouse click emulation.)
 
 <u>GNOME Tweaks</u> can be installed from the <u>Pop!_Shop</u> (Pop!_OS), <u>Ubuntu Software Center</u> (Ubuntu) or from the <u>Terminal</u> with this command:
 

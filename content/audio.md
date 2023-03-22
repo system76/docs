@@ -25,7 +25,7 @@ If the system is not playing audio, first try restarting the audio daemon:
 
 | PulseAudio | PipeWire |
 | :--------- | :-------|
-| Ubuntu and Pop!\_OS pre-22.04 | Pop!\_OS 22.04+ |
+| Ubuntu pre-22.10 and Pop!\_OS pre-22.04 | Ubuntu 22.10+ and Pop!\_OS 22.04+ |
 | `systemctl --user restart pulseaudio` | `systemctl --user restart wireplumber pipewire pipewire-pulse` |
 | `rm -r ~/.config/pulse` |  `rm -r ~/.config/pulse` |
 | `pulseaudio -k` | |

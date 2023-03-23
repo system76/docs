@@ -16,7 +16,9 @@ tableOfContents: true
 
 ## Pop!\_OS 22.04 LTS
 
-It is recommended to use NVIDIA Container Toolkit as newer versions of CUDA are no longer packaged on their own.
+If you are looking to install other versions of the CUDA libraries other than the version included with the Nvidia driver, we suggest using the `nvidia-container-toolkit` to allow alternate versions of the CUDA libraries to be installed. This should give you native speed that was tested to work by Nvidia as they package the libraries in a docker image. You can see the different iamages that are published here: https://hub.docker.com/r/nvidia/cuda/
+
+This example installs a development enviroment with CUDA version 12.1.
 
 ## Install Software
 
@@ -29,6 +31,7 @@ sudo apt install nvidia-container-toolkit
 The user account working with the Container Toolkit must be added to the `docker` group if that hasn't been done already:
 
 ```bash
+sudo docker.io
 sudo usermod -aG docker $USER
 ```
 
@@ -50,7 +53,7 @@ sudo systemctl restart docker
 ## Test Configuration
 
 ```bash
-sudo docker run --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 nvidia-smi
+docker run --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 nvidia-smi
 ```
 
 We should see this output:
@@ -80,7 +83,7 @@ Thu Mar 23 14:43:51 2023
 ## Run the Container
 
 ```bash
-sudo docker run -it --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 bash
+docker run -it --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 bash
 ```
 
 This allows us to run more then one command:
@@ -112,7 +115,7 @@ From this Container ID we can copy files into the Container to run:
 
 ```bash
 git clone https://github.com/NVIDIA/cuda-samples.git
-sudo docker cp Projects/cuda-samples/5397e7ea7f57:/home
+docker cp Projects/cuda-samples/5397e7ea7f57:/home
 ```
 
 Now in the other terminal window or tab go into the Container and build an example:

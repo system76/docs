@@ -86,7 +86,7 @@ Thu Mar 23 14:43:51 2023
 docker run -it --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 bash
 ```
 
-This allows us to run more then one command:
+This allows us to run more than one command:
 
 ```bash
 nvcc --version

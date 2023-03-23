@@ -16,7 +16,7 @@ tableOfContents: true
 
 ## Pop!\_OS 22.04 LTS
 
-If you are looking to install other versions of the CUDA libraries other than the version included with the Nvidia driver, we suggest using the `nvidia-container-toolkit` to allow alternate versions of the CUDA libraries to be installed. This should give you native speed that was tested to work by Nvidia as they package the libraries in a docker image. You can see the different iamages that are published here: https://hub.docker.com/r/nvidia/cuda/
+If you are looking to install other versions of the CUDA libraries other than the version included with the Nvidia driver, we suggest using the `nvidia-container-toolkit` to allow alternate versions of the CUDA libraries to be installed. This should give you native speed that was tested to work by Nvidia as they package the libraries in a docker image. You can see the different iamages that are published here: <https://hub.docker.com/r/nvidia/cuda/>
 
 This example installs a development enviroment with CUDA version 12.1.
 

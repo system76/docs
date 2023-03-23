@@ -133,7 +133,6 @@ Makefile           README.md   c++11_cuda.cu  c++11_cuda_vs2017.sln      c++11_c
 NsightEclipse.xml  c++11_cuda  c++11_cuda.o   c++11_cuda_vs2017.vcxproj  c++11_cuda_vs2019.vcxproj  c++11_cuda_vs2022.vcxproj  warandpeace.txt
 ```
 
-
 ## Pop!\_OS 20.04 LTS
 
 ### Install the Latest NVIDIA CUDA Toolkit

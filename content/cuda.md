@@ -127,8 +127,8 @@ CONTAINER ID   IMAGE                                 COMMAND   CREATED         S
 The container ID can be referenced to copy files into and out of the container:
 
 ```bash
-system76@pop-os:~$ git clone https://github.com/NVIDIA/cuda-samples.git
-system76@pop-os:~$ docker cp Projects/cuda-samples/ 5397e7ea7f57:/home
+git clone https://github.com/NVIDIA/cuda-samples.git Projects/cuda-samples/
+docker cp Projects/cuda-samples/. 5397e7ea7f57:/home/cuda-samples/
 ```
 
 Now, from within the container, an example project can be built:

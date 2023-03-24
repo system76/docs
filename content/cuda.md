@@ -56,7 +56,7 @@ sudo kernelstub --add-options "systemd.unified_cgroup_hierarchy=0"
 
 ...and reboot.
 
-#### Configure the Docker daemon for the NVIDIA Containter Runtime
+#### Configure the Docker daemon for the NVIDIA Container Runtime
 
 Use the NVIDIA Container Toolkit CLI to configure Docker to use the NVIDIA libraries, then restart Docker:
 

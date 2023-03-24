@@ -127,36 +127,40 @@ CONTAINER ID   IMAGE                                 COMMAND   CREATED         S
 The container ID can be referenced to copy files into and out of the container:
 
 ```bash
-git clone https://github.com/NVIDIA/cuda-samples.git Projects/cuda-samples/
-docker cp Projects/cuda-samples/. 5397e7ea7f57:/home/cuda-samples/
+system76@pop-os:~$ git clone https://github.com/NVIDIA/cuda-samples.git
+system76@pop-os:~$ docker cp cuda-samples/ 5397e7ea7f57:/root/cuda-samples/
 ```
 
 Now, from within the container, an example project can be built:
 
 ```bash
-root@5397e7ea7f57# cd home/cuda-samples/Samples/0_Introduction/c++11_cuda
-root@5397e7ea7f57:/home/cuda-samples/Samples/0_Introduction/c++11_cuda# make
+root@5397e7ea7f57# cd /root/cuda-samples/Samples/0_Introduction/c++11_cuda/
+root@5397e7ea7f57:~/cuda-samples/Samples/0_Introduction/c++11_cuda# make
 ```
 
-You should see the binary built:
+The binary (`c++11_cuda`) is built:
 
 ```
-root@5397e7ea7f57:/home/cuda-samples/Samples/0_Introduction/c++11_cuda# ls
-Makefile           README.md   c++11_cuda.cu  c++11_cuda_vs2017.sln      c++11_cuda_vs2019.sln      c++11_cuda_vs2022.sln      range.hpp
-NsightEclipse.xml  c++11_cuda  c++11_cuda.o   c++11_cuda_vs2017.vcxproj  c++11_cuda_vs2019.vcxproj  c++11_cuda_vs2022.vcxproj  warandpeace.txt
+root@5397e7ea7f57:~/cuda-samples/Samples/0_Introduction/c++11_cuda# ls -l
+total 6108
+-rw-rw-r-- 1 1000 1000   13679 Mar 24 16:45 Makefile
+-rw-rw-r-- 1 1000 1000    2090 Mar 24 16:45 NsightEclipse.xml
+-rw-rw-r-- 1 1000 1000    3556 Mar 24 16:45 README.md
+-rwxr-xr-x 1 root root 1881448 Mar 24 16:48 c++11_cuda
+...
 ```
 
 ## Pop!\_OS 20.04 LTS
 
 ### Install the Latest NVIDIA CUDA Toolkit
 
-To install the CUDA toolkit, please run this command:
+To install the CUDA toolkit, run this command:
 
 ```bash
 sudo apt install system76-cuda-latest
 ```
 
-To install the cuDNN library, please run this command:
+To install the cuDNN library, run this command:
 
 ```bash
 sudo apt install system76-cudnn-11.2

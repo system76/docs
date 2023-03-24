@@ -134,7 +134,7 @@ system76@pop-os:~$ docker cp Projects/cuda-samples/5397e7ea7f57:/home
 Now, from within the container, an example project can be built:
 
 ```bash
-root@5397e7ea7f57# cd home/cuda-samples/Samples/0_Introductions/c++11_cuda
+root@5397e7ea7f57# cd home/cuda-samples/Samples/0_Introduction/c++11_cuda
 root@5397e7ea7f57:/home/cuda-samples/Samples/0_Introduction/c++11_cuda# make
 ```
 

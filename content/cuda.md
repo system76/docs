@@ -34,16 +34,17 @@ This example installs a development enviroment with CUDA version 12.1.
 
 #### Install Software
 
+After making sure the system is up-to-date, install the NVIDIA container toolkit. In this example, Docker will also be installed using the `docker.io` package.
+
 ```bash
 sudo apt update
-sudo apt upgrade
-sudo apt install nvidia-container-toolkit
+sudo apt full-upgrade
+sudo apt install nvidia-container-toolkit docker.io
 ```
 
 The user account working with the Container Toolkit must be added to the `docker` group if that hasn't been done already:
 
 ```bash
-sudo docker.io
 sudo usermod -aG docker $USER
 ```
 
@@ -57,12 +58,16 @@ sudo kernelstub --add-options "systemd.unified_cgroup_hierarchy=0"
 
 #### Configure the Docker daemon for the NVIDIA Containter Runtime
 
+Use the NVIDIA Container Toolkit CLI to configure Docker to use the NVIDIA libraries, then restart Docker:
+
 ```bash
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
 
 #### Test Configuration
+
+Run this command to check the Docker configuration for CUDA:
 
 ```bash
 docker run --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 nvidia-smi
@@ -94,17 +99,16 @@ Thu Mar 23 14:43:51 2023
 
 #### Run the Container
 
+Start a shell within the container:
+
 ```bash
 docker run -it --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 bash
 ```
 
-This presents a shell where commands can be run with CUDA support:
+Commands can then be run with CUDA support:
 
-```bash
-nvcc --version
-```
-
-```
+```shell
+root@5397e7ea7f57:/# nvcc --version
 nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2023 NVIDIA Corporation
 Built on Tue_Feb__7_19:32:13_PST_2023
@@ -112,13 +116,10 @@ Cuda compilation tools, release 12.1, V12.1.66
 Build cuda_12.1.r12.1/compiler.32415258_0
 ```
 
-The container can be viewed and managed using Docker in another terminal or tab:
+The container can be viewed and managed using `docker ps` in another terminal or tab:
 
 ```bash
-sudo docker ps
-```
-
-```
+system76@pop-os:~$ docker ps
 CONTAINER ID   IMAGE                                 COMMAND   CREATED         STATUS         PORTS     NAMES
 5397e7ea7f57   nvidia/cuda:12.1.0-devel-ubuntu22.04   "/opt/nvidia/nvidia_…"   2 minutes ago   Up 2 minutes             boring_tesla
 ```
@@ -126,8 +127,8 @@ CONTAINER ID   IMAGE                                 COMMAND   CREATED         S
 The container ID can be referenced to copy files into and out of the container:
 
 ```bash
-git clone https://github.com/NVIDIA/cuda-samples.git
-docker cp Projects/cuda-samples/5397e7ea7f57:/home
+system76@pop-os:~$ git clone https://github.com/NVIDIA/cuda-samples.git
+system76@pop-os:~$ docker cp Projects/cuda-samples/5397e7ea7f57:/home
 ```
 
 Now, from within the container, an example project can be built:

@@ -16,11 +16,23 @@ tableOfContents: true
 
 ## Pop!\_OS 22.04 LTS
 
+Basic CUDA runtime functionality is installed automatically with the NVIDIA driver (in the `libnvidia-compute-*` and `nvidia-compute-utils-*` packages). The maximum CUDA version supported by the libraries included with the driver can be seen using the `nvidia-smi` command.
+
+Additional tools for using and developing with CUDA can be installed with the `nvidia-cuda-toolkit` package:
+
+```
+sudo apt install nvidia-cuda-toolkit
+```
+
+The `nvidia-cuda-toolkit` package is [maintained by Ubuntu](https://packages.ubuntu.com/jammy/amd64/nvidia-cuda-toolkit), and may contain an older version of CUDA than what the driver supports.
+
+### Other Versions of CUDA
+
 The `nvidia-container-toolkit` package uses Docker containers to allow alternate versions of the CUDA libraries to be installed alongside the one included with the NVIDIA driver. You can see the different Docker images that are published by NVIDIA here: <https://hub.docker.com/r/nvidia/cuda/>
 
 This example installs a development enviroment with CUDA version 12.1.
 
-## Install Software
+#### Install Software
 
 ```bash
 sudo apt update
@@ -41,22 +53,22 @@ The last step is to add a kernel parameter:
 sudo kernelstub --add-options "systemd.unified_cgroup_hierarchy=0"
 ```
 
-## Configure the Docker daemon for the NVIDIA Containter Runtime
+...and reboot.
+
+#### Configure the Docker daemon for the NVIDIA Containter Runtime
 
 ```bash
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
 
-...and reboot. Then you're ready for liftoff!
-
-## Test Configuration
+#### Test Configuration
 
 ```bash
 docker run --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 nvidia-smi
 ```
 
-We should see this output:
+The output displays the CUDA version supported by the container:
 
 ```
 Thu Mar 23 14:43:51 2023       
@@ -80,13 +92,13 @@ Thu Mar 23 14:43:51 2023
 +-----------------------------------------------------------------------------+
 ```
 
-## Run the Container
+#### Run the Container
 
 ```bash
 docker run -it --rm --runtime=nvidia --gpus all nvidia/cuda:12.1.0-devel-ubuntu22.04 bash
 ```
 
-This allows us to run more than one command:
+This presents a shell where commands can be run with CUDA support:
 
 ```bash
 nvcc --version
@@ -100,7 +112,7 @@ Cuda compilation tools, release 12.1, V12.1.66
 Build cuda_12.1.r12.1/compiler.32415258_0
 ```
 
-This will also have the Container running and we can check this by running this command in another terminal or tab:
+The container can be viewed and managed using Docker in another terminal or tab:
 
 ```bash
 sudo docker ps
@@ -111,18 +123,18 @@ CONTAINER ID   IMAGE                                 COMMAND   CREATED         S
 5397e7ea7f57   nvidia/cuda:12.1.0-devel-ubuntu22.04   "/opt/nvidia/nvidia_…"   2 minutes ago   Up 2 minutes             boring_tesla
 ```
 
-From this Container ID we can copy files into the Container to run:
+The container ID can be referenced to copy files into and out of the container:
 
 ```bash
 git clone https://github.com/NVIDIA/cuda-samples.git
 docker cp Projects/cuda-samples/5397e7ea7f57:/home
 ```
 
-Now in the other terminal window or tab go into the Container and build an example:
+Now, from within the container, an example project can be built:
 
 ```bash
-cd home/cuda-samples/Samples/0_Introductions/c++11_cuda
-make
+root@5397e7ea7f57# cd home/cuda-samples/Samples/0_Introductions/c++11_cuda
+root@5397e7ea7f57:/home/cuda-samples/Samples/0_Introduction/c++11_cuda# make
 ```
 
 You should see the binary built:

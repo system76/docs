@@ -62,6 +62,26 @@ sha256sum Downloads/pop-os_22.04_amd64_nvidia_4.iso
 
 If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
 
+### For MacOS
+
+Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal and run the following command:
+
+#### For Intel/AMD iso
+
+```
+shasum -a 256  ~/Downloads/pop-os_22.04_amd64_intel_4.iso
+```
+
+#### For NVIDIA iso
+
+```
+shasum -a 256  ~/Downloads/pop-os_22.04_amd64_nvidia_4.iso
+```
+
+**Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
+
+If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+
 ### For Windows
 
 Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Prompt and run the following command:

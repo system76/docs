@@ -57,13 +57,13 @@ If the `Refresh Install` option is not present on the install screen, one of two
 
 Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
 
-If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions.
+If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions. 
 
 ## Repair
 
 If the existing OS install needs to be repaired, the installer application should be closed. An app menu is located in the top-left of the screen with the name of the currently running application (in this case: "Install Pop!\_OS"). Click on the app menu and select `Quit`. Alternatively, you can use the installer app to select keyboard and language settings, and then click the `Try Demo Mode` button in the lower-left corner of the install page.
 
->**Note:** Do not choose any install or repair options, as this could result in data loss.
+>**Note:** Do not choose any install or repair options, as this could result in data loss. Also, once you have setup or accessed any of the filesystems, you will need to boot to the recovery environment anew to use any of the install options.
 
 Follow the instructions below to access the existing OS drive:
 

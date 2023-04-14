@@ -65,6 +65,7 @@ In the <u>Keyboard Configurator</u>, you can change keyboard back light color an
 
 We have documentation that goes over changing the keycaps, switches, and more on our Tech Docs site:
 
-- [Launch](https://tech-docs.system76.com/models/launch_1/repairs.html)
+- [Launch launch_1](https://tech-docs.system76.com/models/launch_1/repairs.html)
+- [Launch launch_2](https://tech-docs.system76.com/models/launch_2/repairs.html)
 - [Launch Lite](https://tech-docs.system76.com/models/launch_lite_1/repairs.html)
-- [Launch Heavy](https://tech-docs.system76.com/models/launch_heavy_1/README.html)
+- [Launch Heavy](https://tech-docs.system76.com/models/launch_heavy_1/repairs.html)

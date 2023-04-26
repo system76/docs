@@ -148,7 +148,7 @@ This command will install it using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-<u>Paru</u> -s system76-acpi-oled
+paru -S system76-acpi-oled
 ```
 
 **NOTE:** This package is only needed for systems with OLED displays to control the brightness.

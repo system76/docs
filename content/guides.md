@@ -34,8 +34,8 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
  Darter Pro [(darp8)](https://tech-docs.system76.com/models/darp8/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
 | Galago Pro [(galp4)](https://tech-docs.system76.com/models/galp4/README.html) | Thelio Mira B1 [(thelio-mira-b1)](https://tech-docs.system76.com/models/thelio-mira-b1.0/README.html) |
 | Galago Pro [(galp5)](https://tech-docs.system76.com/models/galp5/README.html) | Thelio Mira R3 [(thelio-mira-r3)](https://tech-docs.system76.com/models/thelio-mira-r3/README.html) |
-| Galago Pro [(galp6)](https://tech-docs.system76.com/models/galp6/README.html) | 
-| Gazelle [(gaze15)](https://tech-docs.system76.com/models/gaze15/README.html) | 
+| Galago Pro [(galp6)](https://tech-docs.system76.com/models/galp6/README.html) |
+| Gazelle [(gaze15)](https://tech-docs.system76.com/models/gaze15/README.html) |
 | Gazelle [(gaze16)](https://tech-docs.system76.com/models/gaze16/README.html) |
 | Gazelle [(gaze17)](https://tech-docs.system76.com/models/gaze17/README.html) |
 | Kudu [(kudu6)](https://tech-docs.system76.com/models/kudu6/README.html) |

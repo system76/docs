@@ -37,13 +37,13 @@ This command will install all of the packages using <u>Paru</u>.
 paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms system76-io-dkms
 ```
 
-This command will install `firmware-manager` using <u>Paru</u>.
-
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
 paru -S firmware-manager
 ```
+
+This command will install <u>firmware-manager</u> using <u>Paru</u>.
 
 ### System76 DKMS
 

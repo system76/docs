@@ -131,6 +131,5 @@ Run these commands in a <u>Terminal</u> to enable the [community Fedora COPR](ht
 
 ```bash
 sudo dnf copr enable szydell/system76
-sudo dnf install system76*
-sudo systemctl enable --now com.system76.PowerDaemon.service
+sudo dnf install system76-driver
 ```

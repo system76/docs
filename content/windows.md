@@ -7,14 +7,13 @@ keywords:
   - Windows 10
   - Windows 11
   - Microsoft
-  - drivers
+  - Drivers
   - System76
-  - dual boot
+  - Dual Boot
   - Linux
   - Support
-  - virtual machine
+  - Virtual Machine
   - VM
-  - Virtual Machines
   - Virtualbox
 
 facebookImage: /_social/article
@@ -48,6 +47,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | ------------ | ------------------ | ------------------ |
 | addw1        | Yes                | Yes                |
 | addw2        | Yes                | No                 |
+| addw3        | Yes                | No                 |
 | bonw14       | Yes                | No                 |
 | darp6        | Yes                | No                 |
 | darp7        | Yes                | No                 |
@@ -57,6 +57,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | gaze15       | Yes                | No                 |
 | gaze16       | Yes                | No                 |
 | gaze17       | Yes                | No                 |
+| gaze18       | Yes                | No                 |
 | lemp9        | Yes                | No                 |
 | lemp10       | Yes                | No                 |
 | lemp11       | Yes                | No                 |
@@ -67,12 +68,15 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | oryp10       | Yes                | No                 |
 | pang10       | Yes                | Yes                |
 | pang11       | Yes                | Yes                |
+| pang12       | Yes                | Yes                |
 | serw12       | Yes                | Yes                |
+| serw13       | Yes                | No                 |
 
 | Desktop Model     | Windows 10 Support | Windows 11 Support |
 | ----------------- | ------------------ | ------------------ |
 | meer5             | Yes                | Yes                |
 | meer6             | Yes                | Yes                |
+| meer7             | Yes                | Yes                |
 | thelio-r1         | Yes                | Yes                |
 | thelio-r2         | Yes                | Yes                |
 | thelio-r3         | Yes                | Yes                |

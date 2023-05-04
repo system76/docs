@@ -199,7 +199,7 @@ sudo systemctl mask power-profiles-daemon.service
 
 ### System76 Power GNOME Shell Extension in Fedora
 
-**NOTE:** This extension does not suppor GNOME Shell versions newer then 42 and Fedora 38 uses GNOME 44.
+**NOTE:** Fedora uses GNOME 44 and some of the internal APIs are missing that are used in this extention. The API change happend with the release of GNOME 43. Pull requests that update to newer APIs are very welcome!
 
 These commands will download the source code for the application, build it, install it and install the <u>Extensions</u> application:
 

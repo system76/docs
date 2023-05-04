@@ -157,6 +157,15 @@ paru -S system76-acpi-oled
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
+This command will install all of the packages using <u>Paru</u>.
+
+```bash
+sudo dnf install system76* firmware-manager
+sudo systemctl enable --now system76-firmware-daemon
+sudo systemctl mask power-profiles-daemon.service
+sudo gpasswd -a $USER adm
+```
+
 ### System76 Firmware Manager in Fedora
 
 Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware Daemon</u>, enable the service and add your user to the adm group.
@@ -165,6 +174,12 @@ Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware D
 sudo dnf install firmware-manager
 sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
+```
+
+**NOTE:** After enabling the dkms systemd service for any of the DKMS packages you will need to reboot the system:
+
+```bash
+sudo systemctl reboot
 ```
 
 ### System76 Power in Fedora
@@ -183,6 +198,8 @@ sudo systemctl mask power-profiles-daemon.service
 ```
 
 ### System76 Power GNOME Shell Extension in Fedora
+
+**NOTE:** This extension does not suppor GNOME Shell versions newer then 42 and Fedora 38 uses GNOME 44.
 
 These commands will download the source code for the application, build it, install it and install the <u>Extensions</u> application:
 
@@ -221,18 +238,18 @@ sudo dnf install system76-acpi-dkms
 sudo systemctl enable dkms
 ```
 
-**NOTE:** After enabling the dkms systemd service for either the <u>System76 DKMS</u> or the <u>System76 ACPI DKMS</u> package you will need to reboot the system:
-
-```bash
-sudo systemctl reboot
-```
-
 ### System76 Thelio Io DKMS in Fedora
 
 This command will be used to install the <u>System76 Io DKMS</u> which is used for the Thelio Io board:
 
 ```bash
 sudo dnf install system76-io-dkms
+```
+
+**NOTE:** After enabling the dkms systemd service for any of the DKMS packages you will need to reboot the system:
+
+```bash
+sudo systemctl reboot
 ```
 
 ### System76 OLED in Fedora

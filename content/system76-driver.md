@@ -68,7 +68,7 @@ These commands will clone, build and install the <u>System76 Firmware Daemon</u>
 
 ```bash
 git clone https://aur.archlinux.org/system76-firmware-daemon-git.git
-cd system76-firmware-daemon
+cd system76-firmware-daemon-git
 makepkg -srcif
 sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
@@ -80,7 +80,7 @@ These commands will clone, build and install the <u>System76 Firmware Manager</u
 
 ```bash
 git clone https://aur.archlinux.org/firmware-manager-git.git
-cd firmware-manager
+cd firmware-manager-git
 makepkg -srcif
 ```
 

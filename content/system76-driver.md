@@ -67,8 +67,8 @@ sudo pacman -S --needed base-devel git linux-headers
 These commands will clone, build and install the <u>System76 Firmware Daemon</u> service.
 
 ```bash
-git clone https://aur.archlinux.org/system76-firmware-daemon-git.git
-cd system76-firmware-daemon-git
+git clone https://aur.archlinux.org/system76-firmware.git
+cd system76-firmware
 makepkg -srcif
 sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm

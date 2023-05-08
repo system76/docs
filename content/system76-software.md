@@ -155,7 +155,7 @@ paru -S system76-acpi-oled
 
 ## Fedora
 
-Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
+Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver). The commands below will install every system76 package using the wildcard(*) use the other sections to install each package on it's own if you do not want all of the packages.
 
 ```bash
 sudo dnf install system76* firmware-manager

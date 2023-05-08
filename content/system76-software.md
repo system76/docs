@@ -157,8 +157,6 @@ paru -S system76-acpi-oled
 
 Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
 
-This command will install all of the packages using <u>Paru</u>.
-
 ```bash
 sudo dnf install system76* firmware-manager
 sudo systemctl enable --now system76-firmware-daemon

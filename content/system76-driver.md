@@ -79,8 +79,8 @@ sudo gpasswd -a $USER adm
 These commands will clone, build and install the <u>System76 Firmware Manager</u> application.
 
 ```bash
-git clone https://aur.archlinux.org/firmware-manager-git.git
-cd firmware-manager-git
+git clone https://aur.archlinux.org/firmware-manager.git
+cd firmware-manager
 makepkg -srcif
 ```
 

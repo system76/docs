@@ -37,7 +37,7 @@ This option erases the current install along with all user files. It reformats t
 
 Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery).
 
->**Note:**The Recovery partition OS version will either be the same as the OS version that shipped with your computer, or the latest version to which the Recovery partition has been [updated](#update-recovery-partition).
+>**Note:** The Recovery partition OS version will either be the same as the OS version that shipped with your computer, or the latest version to which the Recovery partition has been [updated](#update-recovery-partition).
 
 ## Refresh Install
 
@@ -63,8 +63,8 @@ If the existing install is encrypted, please see the [encrypted disk](#encrypted
 
 If the existing OS install needs to be repaired, the installer application should be closed. An app menu is located in the top-left of the screen with the name of the currently running application (in this case: "Install Pop!\_OS"). Click on the app menu and select `Quit`. Alternatively, you can use the installer app to select keyboard and language settings, and then click the `Try Demo Mode` button in the lower-left corner of the install page.
 
->**Note:** Do not choose any install or repair options, as this could result in data loss.
->**Note:** Also, once you have setup or accessed any of the filesystems, you will need to boot to the recovery environment anew to use any of the install options.
+>**Note:** Do not choose any install or repair options, as this could result in data loss.    
+>**Note:** Also, once you have set up or accessed any of the filesystems, you will need to boot to the recovery environment anew to use any of the install options.
 
 Follow the instructions below to access the existing OS drive:
 

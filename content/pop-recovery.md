@@ -61,7 +61,7 @@ If the existing install is encrypted, please see the [encrypted disk](#encrypted
 
 ## Repair
 
-If the existing OS install needs to be repaired, the installer application should be closed. An app menu is located in the top-left of the screen with the name of the currently running application (in this case: "Install Pop!\_OS"). Click on the app menu and select `Quit`. Alternatively, you can use the installer app to select keyboard and language settings, and then click the `Try Demo Mode` button in the lower-left corner of the install page.
+If the existing OS install needs to be repaired, the installer application should be closed. Use the installer app to select keyboard and language settings, then click the `Try Demo Mode` button in the lower-left corner of the Install page.
 
 >**Note:** Do not choose any install or refresh options. Choosing install options could result in data loss.  
 >**Note:** Once you have set up or accessed any of the filesystems, you will need to reboot the recovery environment to use any of the install options.

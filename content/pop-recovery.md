@@ -61,7 +61,7 @@ If the existing install is encrypted, please see the [encrypted disk](#encrypted
 
 ## Repair
 
-If the existing OS install needs to be repaired, the installer application should be closed. Use the installer app to select keyboard and language settings, then click the `Try Demo Mode` button in the lower-left corner of the Install page.
+If the existing OS install needs to be repaired, the installer application should be closed. Use the installer app to select keyboard and language settings, then click the `Try Demo Mode` button in the lower-left corner of the Install page. Alternatively, right-click the installer icon in the dock and select `Quit`.
 
 >**Caution:** Do not choose any install or refresh options. Choosing install options could result in data loss.  
 >**Note:** Once you have set up or accessed any of the filesystems, you will need to reboot the recovery environment to use any of the install options.

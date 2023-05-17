@@ -63,7 +63,7 @@ If the existing install is encrypted, please see the [encrypted disk](#encrypted
 
 If the existing OS install needs to be repaired, the installer application should be closed. Use the installer app to select keyboard and language settings, then click the `Try Demo Mode` button in the lower-left corner of the Install page.
 
->**Note:** Do not choose any install or refresh options. Choosing install options could result in data loss.  
+>**Caution:** Do not choose any install or refresh options. Choosing install options could result in data loss.  
 >**Note:** Once you have set up or accessed any of the filesystems, you will need to reboot the recovery environment to use any of the install options.
 
 Follow the instructions below to access the existing OS drive:

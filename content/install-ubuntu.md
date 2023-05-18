@@ -23,7 +23,9 @@ section: ubuntu
 tableOfContents: true
 ---
 
-System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.
+## Important Disclaimer - Please Read
+
+Releases of Ubuntu beyond 22.04 are not fully tested other then releasing packages on Launchpad for that release (such as 23.04 and 23.10).
 
 > **NOTE: Oryx Pro (oryp2) Touchpad** On our second generation Oryx Pro (oryp2), the System76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
@@ -207,28 +209,6 @@ If you ordered a system with a discrete NVIDIA graphics card or if you added one
 
 ```bash
 sudo apt install system76-driver-nvidia
-```
-
-### If 'nouveau.modeset=0' Was Used
-
-The `nouveau.modeset=0` modifier should be made default if your machine has NVIDIA hardware. Please run this command to edit the startup options file:
-
-```bash
-sudo gedit /etc/default/grub
-```
-
-Update this line:
-
-> GRUB_CMDLINE_LINUX="nouveau.modeset=0"
-
-to:
-
-> GRUB_CMDLINE_LINUX=""
-
-Then save the file, exit the editor, and run this command to make the change permanent:  
-
-```bash
-sudo update-grub
 ```
 
 Once the process is finished, restart your computer for all changes to take effect.

@@ -4,8 +4,7 @@ description: >
   Full instructions on installing Ubuntu your computer.
 keywords:
   - Ubuntu
-  - Ubuntu 16.04
-  - Ubuntu 16.10
+  - Ubuntu 22.04
   - LTS
   - Restore
   - Reinstall
@@ -209,30 +208,6 @@ If you ordered a system with a discrete NVIDIA graphics card or if you added one
 ```bash
 sudo apt install system76-driver-nvidia
 ```
-
-### Apt Preferences File
-
-If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
-
-Create the apt preferences file here:
-
-```bash
-sudo gedit /etc/apt/preferences.d/system76-apt-preferences
-```
-
-Add the following six lines (seven if you count the space in the middle):
-
-```bash
-Package: *
-Pin: release o=LP-PPA-system76-dev-stable
-Pin-Priority: 1001
-
-Package: *
-Pin: release o=LP-PPA-system76-dev-pre-stable
-Pin-Priority: 1001
-```
-
-Save the file. Now you should be able to install the System76 Driver as described above.
 
 ### If 'nouveau.modeset=0' Was Used
 

@@ -125,7 +125,7 @@ This is when you will create your first user in your new install of Ubuntu.
 
 ### Slideshow
 
-![Slideshow](/images/install-ubuntu/install-ubuntu-21.04-7.png)
+![Slideshow](/images/install-ubuntu/install-ubuntu-22.04-7.png)
 
 This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved.
 

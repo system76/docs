@@ -46,6 +46,14 @@ If the issues started after you applied updates, try running this command to mak
 sudo apt remove backport-iwlwifi-dkms
 ```
 
+## On Systems with Dual Boot Windows 10/11
+
+If you have a dual-boot machine with a recent version of Windows and start seeing problems during initialization of the WiFi device when booting Linux, the problem could be due to the “fast startup” feature on Windows.
+
+With this feature enabled, Windows don't really shut down the entire system, but leaves things partially running so you can start the machine faster again. Try to disable this option, on Windows 10 it should be in “Control Panel→Hardware and Sound→Power Options→System Settings”. Select “Chooose what the power buttons do” to access the System Settings from the Power Options. Then disable the “Fast Startup” option in “Shutdown Settings”. This will cause Windows to fully shutdown and may solve the issue.
+
+Reference [iwlwifi fast boot]([http://wikipedia.org/wiki/ISO_3166-1](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi#about_dual-boot_with_windows_and_fast-boot_enabled))
+
 ## Advanced Troubleshooting
 
 If the above steps aren't working, or you would like to fine tune and improve you connection, see the following steps.

@@ -42,7 +42,7 @@ This command will install `firmware-manager` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s firmware-manager
+paru -S firmware-manager
 ```
 
 ### System76 DKMS
@@ -60,7 +60,7 @@ This command will install `system76-dkms` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-dkms
+paru -S system76-dkms
 ```
 
 ### System76 ACPI DKMS
@@ -78,7 +78,7 @@ This command will install `system76-acpi-dkms` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-acpi-dkms
+paru -S system76-acpi-dkms
 ```
 
 ### System76 Power
@@ -96,7 +96,7 @@ These commands will install `system76-power` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-power
+paru -S system76-power
 sudo systemctl enable --now com.system76.PowerDaemon.service
 sudo gpasswd -a $USER adm
 ```
@@ -114,7 +114,7 @@ This command will install `gnome-shell-extension-system76-power` using <u>Paru</
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s gnome-shell-extension-system76-power
+paru -S gnome-shell-extension-system76-power
 ```
 
 ### System76 Thelio Io DKMS
@@ -130,7 +130,7 @@ This command will install `system76-io-dkms` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-io-dkms
+paru -S system76-io-dkms
 ```
 
 **NOTE:** This package is only needed for Thelio desktops.
@@ -148,7 +148,7 @@ This command will install it using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-<u>Paru</u> -s system76-acpi-oled
+paru -S system76-acpi-oled
 ```
 
 **NOTE:** This package is only needed for systems with OLED displays to control the brightness.
@@ -241,4 +241,17 @@ This command will be used to install the <u>System76 OLED</u> which is used for 
 
 ```bash
 sudo dnf install system76-oled
+```
+
+## NixOS
+
+For hardware support, this line needs to be added to your `/etc/nixos/configuration.nix` file then rebuild the OS:
+
+```bash
+# System76
+hardware.system76.enableAll = true;
+```
+
+```bash
+sudo nixos-rebuild switch
 ```

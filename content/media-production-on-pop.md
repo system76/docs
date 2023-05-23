@@ -9,6 +9,10 @@ keywords:
   - Godot
   - Lightworks
   - Natron
+  - Krita
+  - LMMS
+  - GIMP
+  - Flowblade
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -80,6 +84,10 @@ Install Directly From the Pop!\_Shop
 GIMP is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
 
 Install Directly From the Pop!\_Shop
+
+### Krita
+
+Krita is a free and open source raster graphics editor that is primarily focused on digital drawing and painting. It features an OpenGL-accelerated canvas, non-destructive layers and masks, an advanced brush engine, and support for many drawing tablets.
 
 ### Flowblade
 

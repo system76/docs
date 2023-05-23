@@ -25,7 +25,7 @@ section: software
 tableOfContents: true
 ---
 
-Many laptops these days have _switchable graphics_, which allow users to switch between several GPU modes spanning power use and performance.
+Many modern laptops with NVIDIA graphics cards have switchable graphics, which allows users to switch their primary GPU between the CPU's integrated graphics processor and the dedicated NVIDIA graphics card.
 The following System76 laptops have these switchable graphics capabilities:
 
 - Adder WS (addw1, addw2)

@@ -93,7 +93,6 @@ You will want to keep a root terminal logged in while setting this up to make su
 
 With the Yubikey plugged into the system simulate a login with the following commands:
 
-
     support@pop-os:~$ sudo -s
     [snip lots of logging]
     [sudo] password for support:

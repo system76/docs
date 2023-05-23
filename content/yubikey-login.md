@@ -35,7 +35,7 @@ To enable challenge-response on your Yubikey in slot 2, type the following comma
 
 This configures slot 2 for challenge-response, and leaves slot 1 alone.
 
-Next we need to create a place to sore your challenge response files, secure those files, and finally create the stored challenge files:
+Next we need to create a place to store your challenge response files, secure those files, and finally create the stored challenge files:
 
     sudo mkdir /var/yubico
     sudo chown root /var/yubico
@@ -66,6 +66,8 @@ You will want to change the "Parameters for Yubico PAM:" to be:
 
     mode=challenge-response debug chalresp_path=/var/yubico
 
+ >**Note:** The debug option is used for testing the change, review the Debugging and Testing section of this article for more information.
+
 ![dpkg-reconfigure-pg1](/images/yubikey-login/dpkg-reconfigure-pg1.png)
 ![dpkg-reconfigure-pg2](/images/yubikey-login/dpkg-reconfigure-pg2.png)
 
@@ -87,14 +89,15 @@ There a a number of other options for PAM and ways to configure that to your lik
 
 ## Debugging and Testing your PAM configuration
 
-You will want to keep a root terminal logged in while setting this up to make sure you can back out any changes that do not allow you to login.  In the initial setup, the parameters to setup libpam-yubico included debug message. "Sudo" on the command line will now show debug output when run.
+You will want to keep a root terminal logged in while setting this up to make sure you can reverse any changes that do not allow you to login.  In the initial setup, the parameters to setup libpam-yubico included debug message. "Sudo" on the command line will now show debug output when run.
 
 With the Yubikey plugged into the system simulate a login with the following commands:
 
-support@pop-os:~$ sudo -s
-[snip lots of logging]
-[sudo] password for support:
-root@pop-os:/home/support#
+
+    support@pop-os:~$ sudo -s
+    [snip lots of logging]
+    [sudo] password for support:
+    root@pop-os:/home/support#
 
 Test you setup if you are changing the "sufficient" setting to "required" before removing the "debug" setting. Use new terminal windows to simulate a login both with your Yubikey attached and out of the system. In "required" mode, you should not be able to finish a login with the Yubikey not plugged into your system.
 

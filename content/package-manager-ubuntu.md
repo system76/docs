@@ -18,6 +18,8 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
+## Apt/Dpkg (system-wide packages)
+
 If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems.  Some package manager issues can be resolved with the graphical update program, but many require the command line.  If you get the red circle in the status bar, run these commands to fix your package manager:
 
 ```bash
@@ -135,4 +137,23 @@ The program <u>Synaptic</u> is a very powerful GUI of the package manager.  Pack
 
 ```bash
 sudo apt install synaptic
+```
+
+## Sending information to support
+
+The following commands will send the output of the commands to two different files so that they can be attached to support emails.
+
+```bash
+sudo apt clean | tee -a ~/upgrade.txt
+sudo apt update -m | tee -a ~/upgrade.txt
+sudo dpkg --configure -a | tee -a ~/upgrade.txt
+sudo apt install -f | tee -a ~/upgrade.txt
+sudo apt full-upgrade | tee -a ~/upgrade.txt
+sudo apt autoremove --purge | tee -a ~/upgrade.txt
+
+cat /etc/apt/sources.list | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/* | tee -a ~/sources.txt
+ls /etc/apt/sources.list.d/ | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/system.sources | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/pop-os-apps.sources | tee -a ~/sources.txt
 ```

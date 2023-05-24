@@ -71,7 +71,7 @@ You will want to change the "Parameters for Yubico PAM:" to be:
 ![dpkg-reconfigure-pg1](/images/yubikey-login/dpkg-reconfigure-pg1.png)
 ![dpkg-reconfigure-pg2](/images/yubikey-login/dpkg-reconfigure-pg2.png)
 
-If you want to only want to add the Yubikey as sufficient, you will need to change the second setting in the following line in ```/etc/pam.d/common-auth```:
+Setting this to sufficient is the recommended method as the login manager will take your password **or** the Yubikey to login. To do this you will need to change the second setting in the following line in ```/etc/pam.d/common-auth```:
 
     auth sufficient pam_yubico.so mode=challenge-response chalresp_path=/var/yubico
 

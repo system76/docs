@@ -141,7 +141,7 @@ sudo apt install synaptic
 
 ## Sending information to support
 
-The following commands will send the output of the commands to two different files so that they can be attached to support emails.
+The following commands will save the output to `upgrade.txt` and `sources.txt` so that they can be attached to support emails.
 
 ```bash
 sudo apt clean | tee -a ~/upgrade.txt

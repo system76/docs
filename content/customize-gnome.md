@@ -77,7 +77,7 @@ This extension adds a window list to the bottom of the monitors.  This shows wha
 
 ![topicons](/images/customize-gnome/topicons.png)
 
->**Note:** Starting with Pop!\_OS 22.04 the Ubuntu fork of this extension is included by default. 
+>**Note:** Starting with Pop!\_OS 22.04 the Ubuntu fork of this extension is included by default.
 
 Appindicator Support and TopIcons Plus both serve to add the ability for programs to use an indicator icon to show they are running.  This functionality has been removed in recent versions of GNOME, and an extension is needed for the functionality.  These 2 programs work slightly differently, and work better in some setups vs. others.  If one doesn't work, try the other one.
 

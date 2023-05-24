@@ -18,7 +18,7 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-## Apt/Dpkg (system-wide packages)
+## APT/Dpkg (system-wide packages)
 
 If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems. Some package manager issues can be resolved with the graphical update program, but many require the command line. Try running these commands to fix your package manager:
 
@@ -112,7 +112,7 @@ apt-mark showhold
 
 If the Terminal returns nothing, no packages are held.
 
-If the Pop!_Shop indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
+If the Pop Shop indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
 
 ## Flatpak
 

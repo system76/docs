@@ -115,14 +115,6 @@ CPU power meter allows for quick switching of various CPU frequency settings.
 
 ---
 
-## Extension Update Notifier
-
-[Extension Update Notifier](https://extensions.gnome.org/extension/1166/extension-update-notifier/)
-
-This extension will check the various installed extensions and present a notification that there is an update to the extensions.  Extensions are not automatically updated, so this extension provides the next best option.
-
----
-
 ## Lock Keys
 
 [Lock keys](https://extensions.gnome.org/extension/36/lock-keys/)

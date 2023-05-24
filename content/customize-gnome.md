@@ -70,16 +70,6 @@ This extension adds a window list to the bottom of the monitors.  This shows wha
 
 ---
 
-## Gnomenu
-
-[Gnomenu](https://extensions.gnome.org/extension/608/gnomenu/)
-
-![gnomenu](/images/customize-gnome/gnomenu.png)
-
-This extension adds a traditionally styled, full featured menu to GNOME.  This menu is similar to a traditional Window's Start Menu, and is highly customizable for how it looks and functions.
-
----
-
 ## Appindicator Support and TopIcons Plus
 
 [Appindicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)

@@ -131,3 +131,22 @@ The program <u>Synaptic Package Manager</u> is a very powerful GUI frontend for 
 ```bash
 sudo apt install synaptic
 ```
+
+## Sending information to support
+
+The following commands will send the output of the commands to two different files so that they can be attached to support emails.
+
+```bash
+sudo apt clean | tee -a ~/upgrade.txt
+sudo apt update -m | tee -a ~/upgrade.txt
+sudo dpkg --configure -a | tee -a ~/upgrade.txt
+sudo apt install -f | tee -a ~/upgrade.txt
+sudo apt full-upgrade | tee -a ~/upgrade.txt
+sudo apt autoremove --purge | tee -a ~/upgrade.txt
+
+cat /etc/apt/sources.list | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/* | tee -a ~/sources.txt
+ls /etc/apt/sources.list.d/ | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/system.sources | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/pop-os-apps.sources | tee -a ~/sources.txt
+```

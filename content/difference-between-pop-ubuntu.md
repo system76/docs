@@ -6,7 +6,8 @@ keywords:
   - Ubuntu
   - Pop
   - 18.04
-  - 19.04
+  - 20.04
+  - 22.04
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -24,7 +25,7 @@ Pop!_OS has evolved quite a bit since its 17.10 release. While the easiest way t
 
 This is a common question that comes up, and one that makes our engineers cringe. Yes, Pop!_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)
 
-To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our [Roadmap](/articles/roadmap) documentation and the [This Week in Pop!](https://pop-planet.info/forums/forums/project-updates.28/) series on [Pop!_Planet](https://pop-planet.info/). Below, you will find a general list of improvements that make Pop!_OS stand out.
+To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop! developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!_OS, take a look at our [Roadmap](/articles/roadmap) documentation, you will find a general list of improvements that make Pop!_OS stand out.
 
 ## First impressions: The Installer
 
@@ -70,4 +71,4 @@ Pop!_OS is built from Ubuntu repositories, meaning you get the same access to so
 
 ## Recovery Partition
 
-The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of either Pop!_OS 19.04 or 18.04 (not through upgrading).
+The recovery partition on this operating system is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder, or opt to do a fresh install, which will essentially reset all OS data. Refresh Installs are only available on a fresh install of either Pop!_OS 19.04 or 18.04 (not through upgrading). To learn more about the Recovery Partition read about it [here](/articles/pop-recovery/)

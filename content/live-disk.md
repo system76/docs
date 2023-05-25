@@ -185,6 +185,10 @@ The list provided at the beginning of the article provides links to other articl
 
 Since the live environment is a full Pop!_OS installation, it works just like the normal environment. There are tools and methods that allow to `chroot` (change root) into the normal installation and work in the existing operating system to repair a broken package or other problem that is preventing normal booting.
 
+### Refreshing the Operating System
+
+If Pop!\_OS is installed and a Pop!\_OS live disk is used it can be used to Refresh the OS without losing user account information and data in the home directory. You can find out more about this option [here](/articles/pop-recovery)
+
 ### Backing Up Files
 
 Perhaps you're reinstalling, or maybe you can't boot but you want to try and recover and back up your files? The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar <u>Files</u> utility.

@@ -55,7 +55,7 @@ If the `Refresh Install` option is not present on the install screen, one of two
 
 ### Reinstall
 
-Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
+Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/#refresh-install).
 
 If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions.
 

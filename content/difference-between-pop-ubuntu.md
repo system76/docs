@@ -55,7 +55,7 @@ After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to m
 
 ![Pop Shop](/images/difference-between-pop-ubuntu/pop-shop-screenshot.png)
 
-Pop!_OS includes a selection of apps intended to be comprehensive, but relatively lightweight. Because Pop!_OS is optimized for your workflow, we avoid providing some larger programs by default that slow down your computer. TThis is especially true for library applications such as one for storing your photos. Which we opt to replace with image viewers, or similar apps that are smaller in size. However, if you are in need of a photo manager, Steam, or Spotify these applications are available in Pop!_Shop.
+Pop!_OS includes a selection of apps intended to be comprehensive, but relatively lightweight. Because Pop!_OS is optimized for your workflow, we avoid providing some larger programs by default that slow down your computer. This is especially true for library applications such as one for storing your photos. Which we opt to replace with image viewers, or similar apps that are smaller in size. However, if you are in need of a photo manager, Steam, or Spotify these applications are available in Pop!_Shop.
 
 ## Features across the board
 

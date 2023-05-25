@@ -39,7 +39,6 @@ The installer offers encryption out of the box and takes care of setting up your
 
 Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings, and the proprietary NVIDIA driver for NVIDIA systems. Ensuring the best performance, and use of CUDA tools is one command away.
 
-
 ## Privacy
 
 ![Encryption, in-progress screen](/images/difference-between-pop-ubuntu/Encryption-Screenshot.png)

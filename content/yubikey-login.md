@@ -14,7 +14,6 @@ section: community
 tableOfContents: true
 ---
 
-
 If you have a Yubikey, you can use it to login or unlock your system.
 
 To do this you must install the yubikey packages, configure a challenge-response slot on the Yubikey, and then configure the necessary PAM modules.
@@ -50,11 +49,11 @@ You should receive a unique *challenge-serial* in your output.
 
 Now, to finish up:
 
-    sudo mv ~/.yubico/challenge-123456 /var/yubico/alice-123456
-    sudo chown root.root /var/yubico/bob-123456
-    sudo chmod 600 /var/yubico/lisa-123456
+    sudo mv ~/.yubico/challenge-123456 /var/yubico/aaronh-serial
+    sudo chown root.root /var/yubico/aaronh-serial
+    sudo chmod 600 /var/yubico/aaronh-serial
 
-Pay close attention when copying/pasting the commands above.  The *challenge-123456* and *alice-123456* needs to match the both the output from the `ykpamcfg` command and the final file needs to match the name of your user name and serial.**
+Pay close attention when copying/pasting the commands above.  The *challenge-123456* and *aaronh-serial* needs to match the both the output from the `ykpamcfg` command and the final file needs to match the name of your user name and serial.**
 
 ## Configure Plugable Authentication Modules
 

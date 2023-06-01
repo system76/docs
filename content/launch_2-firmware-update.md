@@ -21,11 +21,12 @@ tableOfContents: true
 
 ### Install software
 
-We have a package that will bring in the needed support software to do this firmware update. Run the following commands in a terminal:
+We have a package that will bring in the needed support software to do this firmware update. Run the following command in a terminal:
 
 ```
 sudo apt install test-launch-system76-keyboard-configurator
 ```
+
 If you are not on Pop!\_OS you can also use the AppImage version of the `system76-keyboard` and luanch from the command line and add the option `--lanch-test`. You will also need to make sure to install `avrdude` and `dfu-programmer`.
 
 Start System76 Keyboard Tester -- this will launch the `System76 Keyboard Configurator` in a test mode
@@ -41,7 +42,7 @@ Unplug the launch keyboard and hold <kbd>ESC</kbd> while plugging it back in.
 
 ### Suscessful enter of firmware update mode
 
-You will know you have succedded when a new button shows up in the header of the keyboard configurator. This button will list firmware available for your keyboard. Select the "launch_2" or "lauanch_heavy_1" based on the keyboard your have. Successful firmware update will freeze updates to the application as the firmware is flashed to the new firmware.
+You will know you have succedded when a new button shows up in the header of the keyboard configurator. This button will list firmware available for your keyboard. Select the "launch_2" or "lauanch_heavy_1" based on the keyboard you have. A successful firmware update will freeze updates to the application as the firmware is flashed to the new firmware.
 ![System76-Tester-firmware-update](/images/launch_2-firmware-update/Tester-in-firmware-update-mode-menu.png)
 
 ### Verify firmware update
@@ -62,7 +63,7 @@ sudo apt remove test-launch-system76-keyboard-configurator
 sudo apt autoremove
 ```
 
-Future update will now be done with `fwupd` and should not require these manual steps.
+Future updates will now be done with `fwupd` and should not require these manual steps.
 
 ## Getting help
 

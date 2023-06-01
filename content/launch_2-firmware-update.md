@@ -5,7 +5,7 @@ description: >
 keywords:
   - Firmware
   - Open Firmware
-  - FWUPD
+  - fwupd
   - Launch_2
   - Launch_heavy_1
 
@@ -30,12 +30,11 @@ If you are not on Pop!\_OS you can also use the AppImage version of the `system7
 
 Start System76 Keyboard Tester -- this will launch the `System76 Keyboard Configurator` in a test mode
 
-
 ![System76-Tester](/images/launch_2-firmware-update/Launch-system76-keyboard-tester.png)
 
 ### Enter Bootloader mode
 
-Unplug the launch keyboard and hold <key>ESC</key> while plugging it back in.
+Unplug the launch keyboard and hold <kbd>ESC</kbd> while plugging it back in.
 
 *NOTE: This may fail. Try 5 times -- in-between retries, leave the keyboard unplugged and press no buttons for 15 seconds.
 ![System76-Tester](/images/launch_2-firmware-update/Tester-in-firmware-update-mode.png)

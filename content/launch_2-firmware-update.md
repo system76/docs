@@ -19,6 +19,8 @@ tableOfContents: true
 
 ## Steps to take to update firmware
 
+* NOTE: This should only be necessary for firmware versions starting with `0.7.103-`. Newer versions should be able to update via the Firmware Manager in Pop!\_OS and Ubuntu, or via `fwupdmgr`.
+
 If you are receiving notifications that your `launch_2` or `launch_heavy_1` keyboard has an available firmware update, but the update won't install, this guide may help you manually flash the firmware update. We will be using the [System76 Keyboard Configurator](https://github.com/pop-os/keyboard-configurator/), but it will be in the testing mode that we use for factory firmware updates, as well as quality control.
 
 Manually updating firmware in this way will reset your Launch back to its factory defaults, undoing any customizations that you've made to mapping and LEDs. Before you begin, you may want to use the System76 Keyboard Configurator to export your layout. After the firmware update, it can be imported to restore all of your customizations.

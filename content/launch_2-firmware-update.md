@@ -43,7 +43,7 @@ Start System76 Keyboard Tester -- this will launch the System76 Keyboard Configu
 
 ### Enter Bootloader mode
 
-Unplug the launch keyboard and hold <kbd>Esc</kbd> while plugging it back in. Continue to hold the <kbd>Esc</kbd> key for about 10 seconds, or until the firmware update button appears in the right side of the Configurator's header bar. The keyboard's LEDs will remain off while the keyboard is in bootloader mode.
+Unplug the Launch Keyboard and hold <kbd>Esc</kbd> while plugging it back in. Continue to hold the <kbd>Esc</kbd> key for about 10 seconds, or until the firmware update button appears in the right side of the Configurator's header bar. The keyboard's LEDs will remain off while the keyboard is in bootloader mode.
 
 ![System76-Tester-in-update-mode](/images/launch_2-firmware-update/Tester-in-firmware-update-mode.png)
 

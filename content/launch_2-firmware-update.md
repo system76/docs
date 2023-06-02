@@ -49,7 +49,9 @@ Unplug the launch keyboard and hold <kbd>Esc</kbd> while plugging it back in. Co
 
 * NOTE: This occasionally takes a couple tries. If the LEDs come on and the keyboard powers on normally, try a few more times. In between retries, leave the keyboard unplugged for 15 to 20 seconds.
 
-When this button appears, it means that your keyboard is in bootloader mode and is ready for a firmware update. Click the firmware button and select your keyboard's model to initiate the firmware update.
+### Update firmware
+
+When the firmware update button appears, it means that your keyboard is in bootloader mode and is ready for a firmware update. Click the firmware update button and select your keyboard's model to initiate the firmware update.
 
 * **WARNING:** Do not unplug the keyboard while firmware is updating! An incomplete firmware flash will render the keyboard inoperable and unflashable.
 

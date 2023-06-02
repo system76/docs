@@ -45,7 +45,7 @@ Start System76 Keyboard Tester -- this will launch the System76 Keyboard Configu
 
 Unplug the launch keyboard and hold <kbd>Esc</kbd> while plugging it back in. Continue to hold the <kbd>Esc</kbd> key for about 10 seconds, or until the firmware update button appears in the right side of the Configurator's header bar. The keyboard's LEDs will remain off while the keyboard is in bootloader mode.
 
-![System76-Tester](/images/launch_2-firmware-update/Tester-in-firmware-update-mode.png**
+![System76-Tester-in-update-mode](/images/launch_2-firmware-update/Tester-in-firmware-update-mode.png)
 
 * NOTE: This occasionally takes a couple tries. If the LEDs come on and the keyboard powers on normally, try a few more times. In between retries, leave the keyboard unplugged for 15 to 20 seconds.
 
@@ -57,14 +57,9 @@ When this button appears, it means that your keyboard is in bootloader mode and 
 
 Once the firmware update has completed, the keyboard will reset, the keyboard will be displayed in the Configurator window, and the LEDs will turn on to the default "spacetime" pattern.
 
-### Verify firmware update
+The button below the keyboard in the Configurator should now say "Configure Keyboard" instead of "Keyboard firmware update required!"
 
-Use `fwupdmgr` to verify that the firmware has updated to at least `0.12.20`:
-
-```
-sudo fwupdmgr get-devices
-```
-![Firmware version](/images/launch_2-firmware-update/launch-version-number.png)
+![firmware-update-success](/images/launch_2-firmware-update/firmware-update-success.png)
 
 ### Clean up and remove software
 

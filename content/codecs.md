@@ -58,9 +58,10 @@ You may be prompted for your `[sudo] password`. If so, type in your regular logi
 
 ## Setup DVD Playback (optional)
 
-Once you see the command above has finished, enter in the following command to enable DVD playback:
+Once you see the command above has finished, enter in the following commands to enable DVD playback:
 
 ```
+sudo apt install -y libdvd-pkg
 sudo dpkg-reconfigure libdvd-pkg
 ```
 

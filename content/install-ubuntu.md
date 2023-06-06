@@ -4,8 +4,7 @@ description: >
   Full instructions on installing Ubuntu your computer.
 keywords:
   - Ubuntu
-  - Ubuntu 16.04
-  - Ubuntu 16.10
+  - Ubuntu 22.04
   - LTS
   - Restore
   - Reinstall
@@ -24,7 +23,9 @@ section: ubuntu
 tableOfContents: true
 ---
 
-System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.
+## Important Disclaimer - Please Read
+
+Ubuntu releases beyond 22.04 are not fully tested, but certain packages are made available in the system76-dev/stable PPA on Launchpad.
 
 > **NOTE: Oryx Pro (oryp2) Touchpad** On our second generation Oryx Pro (oryp2), the System76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
@@ -124,7 +125,7 @@ This is when you will create your first user in your new install of Ubuntu.
 
 ### Slideshow
 
-![Slideshow](/images/install-ubuntu/install-ubuntu-21.04-7.png)
+![Slideshow](/images/install-ubuntu/install-ubuntu-22.04-7.png)
 
 This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved.
 
@@ -208,52 +209,6 @@ If you ordered a system with a discrete NVIDIA graphics card or if you added one
 
 ```bash
 sudo apt install system76-driver-nvidia
-```
-
-### Apt Preferences File
-
-If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
-
-Create the apt preferences file here:
-
-```bash
-sudo gedit /etc/apt/preferences.d/system76-apt-preferences
-```
-
-Add the following six lines (seven if you count the space in the middle):
-
-```bash
-Package: *
-Pin: release o=LP-PPA-system76-dev-stable
-Pin-Priority: 1001
-
-Package: *
-Pin: release o=LP-PPA-system76-dev-pre-stable
-Pin-Priority: 1001
-```
-
-Save the file. Now you should be able to install the System76 Driver as described above.
-
-### If 'nouveau.modeset=0' Was Used
-
-The `nouveau.modeset=0` modifier should be made default if your machine has NVIDIA hardware. Please run this command to edit the startup options file:
-
-```bash
-sudo gedit /etc/default/grub
-```
-
-Update this line:
-
-> GRUB_CMDLINE_LINUX="nouveau.modeset=0"
-
-to:
-
-> GRUB_CMDLINE_LINUX=""
-
-Then save the file, exit the editor, and run this command to make the change permanent:  
-
-```bash
-sudo update-grub
 ```
 
 Once the process is finished, restart your computer for all changes to take effect.

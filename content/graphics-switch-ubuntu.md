@@ -27,7 +27,7 @@ tableOfContents: true
 
 Many modern laptops with NVIDIA graphics cards have switchable graphics, which allows users to switch their primary GPU between the CPU's integrated graphics processor and the dedicated NVIDIA graphics card. The following System76 laptops have these switchable graphics capabilities:
 
-- Adder WS (addw1, addw2)
+- Adder WS (addw1, addw2, addw3)
 - Bonobo WS (bonw15)
 - Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15, gaze16, gaze17, gaze18)

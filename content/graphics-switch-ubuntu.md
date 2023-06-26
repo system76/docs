@@ -32,7 +32,7 @@ Many modern laptops with NVIDIA graphics cards have switchable graphics, which a
 - Galago Pro (galp5 - NVIDIA models only)
 - Gazelle (gaze14, gaze15, gaze16, gaze17, gaze18)
 - Kudu (kudu6)
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
+- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10, oryp11)
 - Serval WS (serw13)
 
 ## Graphics modes

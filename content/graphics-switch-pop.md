@@ -29,10 +29,12 @@ Many modern laptops with NVIDIA graphics cards have switchable graphics, which a
 The following System76 laptops have these switchable graphics capabilities:
 
 - Adder WS (addw1, addw2)
+- Bonobo WS (bonw15)
 - Galago Pro (galp5 - NVIDIA models only)
-- Gazelle (gaze14, gaze15, gaze16, gaze17)
+- Gazelle (gaze14, gaze15, gaze16, gaze17, gaze18)
 - Kudu (kudu6)
 - Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
+- Serval WS (serw13)
 
 Pop!\_OS includes utilities for switching between these modes, which you can learn more about below.
 

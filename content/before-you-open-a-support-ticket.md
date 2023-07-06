@@ -11,6 +11,9 @@ keywords:
  - self-help
  - tech-support
  - troubleshooting
+ - repair guide
+ - internal view
+ - disassembly
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -37,6 +40,10 @@ We have a help article to guide you through backing up your system [here.](/arti
 A Live USB can be used as a rescue disk. This will provide us an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary.
 
 We have an article to guide you through creating [Live USBs here.](/articles/live-disk)
+
+## Local repair and upgrades
+
+We offer techincal documenation (tech-docs such as service manuals) in this [article](/articles/guides).
 
 ## Common Issue Sources
 

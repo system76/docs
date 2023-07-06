@@ -38,7 +38,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 
 ## Windows 11
 
-> **Windows 11 Compatibility:** Windows 11 is not supported on all systems. Open Firmware systems do not support Secure Boot which is a requirement for Windows 11. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+> **Windows 11 Compatibility:** Windows 11 is not supported on all systems. Open Firmware systems below 13th Gen do not support Secure Boot which is a requirement for Windows 11. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
 
 ### Compatibility Table
 
@@ -47,30 +47,36 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | ------------ | ------------------ | ------------------ |
 | addw1        | Yes                | Yes                |
 | addw2        | Yes                | No                 |
-| addw3        | Yes                | No                 |
+| addw3        | Yes                | Yes                |
 | bonw14       | Yes                | No                 |
+| bonw15       | Yes                | Yes                |
 | darp6        | Yes                | No                 |
 | darp7        | Yes                | No                 |
 | darp8        | Yes                | No                 |
+| darp9        | Yes                | Yes                |
 | galp4        | Yes                | No                 |
 | galp5        | Yes                | No                 |
+| galp6        | Yes                | No                 |
+| galp7        | Yes                | Yes                |
 | gaze15       | Yes                | No                 |
 | gaze16       | Yes                | No                 |
 | gaze17       | Yes                | No                 |
-| gaze18       | Yes                | No                 |
+| gaze18       | Yes                | Yes                |
 | lemp9        | Yes                | No                 |
 | lemp10       | Yes                | No                 |
 | lemp11       | Yes                | No                 |
+| lemp12       | Yes                | Yes                |
 | oryp6        | Yes                | No                 |
 | oryp7        | Yes                | No                 |
 | oryp8        | Yes                | No                 |
 | oryp9        | Yes                | No                 |
 | oryp10       | Yes                | No                 |
+| oryp11       | Yes                | Yes                |
 | pang10       | Yes                | Yes                |
 | pang11       | Yes                | Yes                |
 | pang12       | Yes                | Yes                |
 | serw12       | Yes                | Yes                |
-| serw13       | Yes                | No                 |
+| serw13       | Yes                | Yes                |
 
 | Desktop Model     | Windows 10 Support | Windows 11 Support |
 | ----------------- | ------------------ | ------------------ |
@@ -84,15 +90,18 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | thelio-b2         | Yes                | Yes                |
 | thelio-b3         | Yes                | Yes                |
 | thelio-b4         | Yes                | Yes                |
+| thelio-b5         | Yes                | Yes                |
 | thelio-mira-r1    | Yes                | Yes*               |
 | thelio-mira-r2    | Yes                | Yes*               |
 | thelio-mira-r3    | Yes                | Yes*               |
 | thelio-mira-b1    | Yes                | Yes*               |
 | thelio-mira-b2    | Yes                | Yes*               |
 | thelio-mira-b3    | Yes                | Yes*               |
+| thelio-mira-b4    | Yes                | Yes*               |
 | thelio-major-r1   | Yes                | Yes*               |
 | thelio-major-r2   | Yes                | Yes*               |
 | thelio-major-r3   | Yes                | Yes*               |
+| thelio-major-r4   | Yes                | Yes*               |
 | thelio-major-b1   | Yes                | Yes*               |
 | thelio-major-b2   | Yes                | Yes*               |
 | thelio-major-b3   | Yes                | Yes*               |

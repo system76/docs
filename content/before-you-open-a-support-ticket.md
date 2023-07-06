@@ -11,9 +11,6 @@ keywords:
  - self-help
  - tech-support
  - troubleshooting
- - repair guide
- - internal view
- - disassembly
 
 facebookImage: /_social/article
 twitterImage: /_social/article

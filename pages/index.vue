@@ -207,25 +207,6 @@
 
           <li>
             <a
-              href="/articles/guides"
-              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
-                <font-awesome-icon icon="wrench" />
-              </div>
-              <div class="ml-4">
-                <p class="font-bold text-warm-gray-800">
-                  Find Technical Documentation for your system
-                </p>
-                <p class="text-warm-gray-600">
-                  Extend the life of your system by upgrading and repairing your hardware.
-                </p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a
               href="https://system76.com/my-account/support-tickets/new"
               class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
               target="_blank"

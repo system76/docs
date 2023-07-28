@@ -6,7 +6,7 @@
           href="https://system76.com/specials"
           target="_blank"
         >
-          Special Offers
+          Gear Up and SAVE up to $150!
         </a>
       </template>
 
@@ -30,6 +30,7 @@
       url-desktops="https://system76.com/desktops"
       url-mini="https://system76.com/desktops/meerkat"
       url-servers="https://system76.com/servers"
+      url-components="https://system76.com/components"
       url-keyboards="https://system76.com/accessories/launch"
       url-pop-os="https://pop.system76.com"
       url-contact="https://system76.com/contact"

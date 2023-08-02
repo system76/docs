@@ -41,9 +41,15 @@ Once the keyboard is in this mode, you can apply the firmware update. When the u
 
 ## Keyboard Configurator
 
-You can download the configurator application [here](https://github.com/pop-os/keyboard-configurator/releases) On Pop!\_OS the configurator is available in the <u>Pop!\_Shop</u>. An `AppImage` is provided for Ubuntu and other Linux OSes.  Windows and macOS downloads are also available.
+You can download the configurator application [here](https://github.com/pop-os/keyboard-configurator/releases) On Pop!\_OS the configurator is available in the <u>Pop!\_Shop</u>. An `AppImage` is provided for Ubuntu and other Linux OSes as a standalone file. Recent changes to Ubuntu will require that you install the `libfuse2` package for `AppImage` support and can be done with the following command run in a terminal:
 
+```bash
+sudo apt update
+sudo apt install libfuse2
+```
 You can also download the configurator from the Arch Linux User Repository (AUR). The main version is built from the latest release, which is recommended for most users. You can find more information [here](https://aur.archlinux.org/packages/system76-keyboard-configurator). The git version is built from the latest commits to the project (this version will have the very latest fixes and features) which can be found [here](https://aur.archlinux.org/packages/keyboard-configurator-git/).
+
+There are also builds of the Keyboard Configurator for [Windows and macOS](https://github.com/pop-os/keyboard-configurator/releases) at the same location.
 
 ## Remapping Keys
 

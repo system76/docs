@@ -179,11 +179,15 @@ Pop!_OS will boot into the familiar Pop!_OS desktop.
 
 ## Using the Live Environment
 
-The list provided at the beginning of the article provides links to other articles on using the live environment for hardware testing, restoration/upgrades, and boot repair.
+Aside from [installing Pop!_OS](/articles/install-pop), you can also use the live environment for hardware testing, restoration/upgrades, and boot repair.
 
 ### Repairing an Existing Operating System
 
-Since the live environment is a full Pop!_OS installation, it works just like the normal environment. There are tools and methods that allow to `chroot` (change root) into the normal installation and work in the existing operating system to repair a broken package or other problem that is preventing normal booting.
+Since the live environment is a full Pop!_OS installation, it has all the same tools as the normal environment. If the system can't boot normally, you can `chroot` (change root) into the normal installation using the commands [here](/articles/pop-recovery#chroot), which allows you to run commands in the existing operating system to repair broken packages or other problems.
+
+### Refreshing the Operating System
+
+A Pop!\_OS live disk can also be used to refresh an existing Pop!_OS installation without losing user account information and data in the `/home` directory. You can find out more about this option [here](/articles/pop-recovery#refresh-install).
 
 ### Backing Up Files
 

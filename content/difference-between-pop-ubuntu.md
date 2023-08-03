@@ -25,7 +25,7 @@ Pop!\_OS has evolved quite a bit since its 17.10 release. While the easiest way 
 
 This is a common question that comes up, and one that makes our engineers cringe. Yes, Pop!\_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)
 
-To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop!\_OS developers work diligently to create. 
+To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop!\_OS developers work diligently to create.
 
 ## First impressions: The Installer
 

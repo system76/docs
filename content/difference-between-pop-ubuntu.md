@@ -25,7 +25,7 @@ Pop!\_OS has evolved quite a bit since its 17.10 release. While the easiest way 
 
 This is a common question that comes up, and one that makes our engineers cringe. Yes, Pop!\_OS has been designed with vibrant colors, a flat theme, and a clean desktop environment, but we created it to do so much more than just look pretty. (Although it does look very pretty.)
 
-To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop!\_OS developers work diligently to create. For an in-depth look at the effort and manpower that goes into updating and maintaining Pop!\_OS, take a look at our [Roadmap](/articles/roadmap) documentation, you will find a general list of improvements that make Pop!\_OS stand out.
+To call it a re-skinned Ubuntu brushes over all of the features and quality-of-life improvements that Pop!\_OS developers work diligently to create. 
 
 ## First impressions: The Installer
 
@@ -60,7 +60,7 @@ Pop!_OS includes a selection of apps intended to be comprehensive, but relativel
 
 ![Power Profiles/Graphics toggle](/images/difference-between-pop-ubuntu/system-menu.png)
 
-Pop!\_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. While our [Roadmap](/articles/roadmap) offers a more extensive outline of these changes, we have highlighted some of our major improvements below:
+Pop!\_OS is built from Ubuntu repositories, meaning you get the same access to software as Ubuntu. Based on both user feedback and in-house testing, we continue to make changes and updates to the operating system for quality-of-life improvements. The best part is, updates are kept on a rolling release cycle, so you don’t have to wait around 6 months for bug fixes or improvements to your OS. We have highlighted some of our major improvements below:
 
 * Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!\_OS on install also downloads the NVIDIA drivers by default.
 * The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.

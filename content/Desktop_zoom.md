@@ -23,11 +23,10 @@ section: software-accessibility
 3. Toggle the 'Fractional Scaling' setting to the on position
 
  ![Pop OS Display Settings with Fractional scaling highlighted](/static/images/settingsdisplayshighlighted.png)
-   
+
 5. Zoom percentages will appear and be available to choose. Choose the option then click the dialogue to apply the settings
  ![Keep Settings Option](static/images/settings150percent.png)
-    ```
-
+    
 ## Zoom in or Enlarge Active Window
 
 1. Click anywhere within the active window.

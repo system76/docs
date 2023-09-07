@@ -53,6 +53,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Pangolin Pro [(pang10)](https://tech-docs.system76.com/models/pang10/README.html) |
 | Pangolin Pro [(pang11)](https://tech-docs.system76.com/models/pang11/README.html) |
 | Pangolin Pro [(pang12)](https://tech-docs.system76.com/models/pang12/README.html) |
+| Pangolin Pro [(pang13)](https://tech-docs.system76.com/models/pang13/README.html) |
 | Serval WS [(serw12)](https://tech-docs.system76.com/models/serw12/README.html) |
 | Serval WS [(serw13)](https://tech-docs.system76.com/models/serw13/README.html) |
 

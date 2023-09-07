@@ -18,9 +18,11 @@ section: software
 tableOfContents: true
 ---
 
+## Changing user password
+
 If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
 
-## Pop!_OS 18.04 and Later
+### Pop!_OS 18.04 and Later
 
 On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather than <u>GRUB</u>.  Please follow these instructions to reset your password.  If your operating system is anything other than Pop!_OS 18.04 and later, please use the [GRUB](#grub) section.
 
@@ -30,11 +32,11 @@ First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or
 
 Once the recovery operating system boots, close out of the installation window or choose **“try demo mode”** (be sure not to choose any install or repair options, as this could result in data loss).
 
-## Ubuntu
+### Ubuntu
 
 If you are using Ubuntu we can boot from a live disk and [here](/articles/live-disk) are instructions for creating the live disk. Once the live disk has been created refer to this [article](/articles/boot-menu) for booting from the live disk.
 
-## Mounting the Installed OS
+#### Mounting the Installed OS
 
 Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
 
@@ -84,4 +86,46 @@ exit
 reboot
 ```
 
+## Changing LUKS passphrase
+
 Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
+
+## Adding LUKS passphrases
+
+With Full Disk Encryption more than one password to decrypt the drive may be needed if more then one person is using the computer. In this situation seven extra passwords can be added with the instructions below.
+
+#### List Partitions
+
+First let's list the partitions of all of the installed drives:
+
+```
+lsblk -f
+```
+
+The output may be different based on the drive setup and partition table. You can see the root partition at mountpoint '/'. From there we can use that output to run this command:
+
+```
+sudo cryptsetup luksDump /dev/sda3
+```
+
+Replacing '/dev/sda3' with the location of the root partition on your system. With the output of this command we can see the seven extra slots that we have for passwords to decrypt the drive. Slots 1-7 are the open ones and Slot 0 is the current one the system has set.
+
+#### Set Extra Password
+
+Following the partition scheme from the previous command we can form the next command to add a new key to the open Key Slot:
+
+```
+sudo cryptsetup luksAddKey /dev/sda3
+```
+
+This command will require the current encryption password before new password can be added.
+
+#### Confirm The Password
+
+Let's run this command again to confirm that the additional password is set:
+
+```
+sudo cryptsetup luksDump /dev/sda3
+```
+
+You should see that Key Slot 1 is now enabled so this confirms the new password is set.

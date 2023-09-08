@@ -24,7 +24,7 @@ section: software-accessibility
 
 ![Pop OS Display Settings with Fractional scaling highlighted](/static/images/settingsdisplayshighlighted.png)
 
-4. Zoom percentages will appear and be available to choose. Choose the option then click the dialogue to apply the settings
+1. Zoom percentages will appear and be available to choose. Choose the option then click the dialogue to apply the settings
 
 ![Keep Settings Option](static/images/settings150percent.png)
 
@@ -42,9 +42,9 @@ section: software-accessibility
 
 ![Pop OS Accessibility Settings Zoom option](static/images/accessibilityzoom.png)
 
-4. Adjust your magnification settings in increments. 2.0 is a good starting point
-5. Select 'Follow Mouse cursor'
+1. Adjust your magnification settings in increments. 2.0 is a good starting point
+1. Select 'Follow Mouse cursor'
 
 ![Pop OS Accessibility Settings Zoom options](static/images/accessibilityzoomsettings.png)
 
-6. Toggle the 'Zoom' setting to the ON position
+1. Toggle the 'Zoom' setting to the ON position

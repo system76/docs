@@ -34,14 +34,16 @@ section: software-accessibility
 3. Continue pressing the <kbd>+</kbd> to enlarge the text within the window
 
 ## Magnify Desktop as you Move the Mouse
+
 1. Open Settings application by pressing <kbd>Super</kbd> and type the word 'Settings'
 2. Select the 'Accessibility' option
 3. Click the 'Zoom' option
-![Pop OS Accessibility Settings Zoom option](static/images/accessibilityzoom.png)
+
+ ![Pop OS Accessibility Settings Zoom option](static/images/accessibilityzoom.png)
 
 4. Adjust your magnification settings in increments. 2.0 is a good starting point
 5. Select 'Follow Mouse cursor'
-![Pop OS Accessibility Settings Zoom options](static/images/accessibilityzoomsettings.png)
+
+ ![Pop OS Accessibility Settings Zoom options](static/images/accessibilityzoomsettings.png)
 
 6. Toggle the 'Zoom' setting to the ON position
-

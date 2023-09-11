@@ -22,11 +22,11 @@ section: software-accessibility
 2. Click 'Displays'
 3. Toggle the 'Fractional Scaling' setting to the on position
 
-![Pop OS Display Settings with Fractional scaling highlighted](/static/images/desktop-zoom/settingsdisplayshighlighted.png)
+![Pop OS Display Settings with Fractional scaling highlighted](/images/desktop-zoom/settingsdisplayshighlighted.png)
 
 4. Zoom percentages will appear and be available to choose. Choose the option then click the dialogue to apply the settings
 
-![Keep Settings Option](static/images/desktop-zoom/settings150percent.png)
+![Keep Settings Option](/images/desktop-zoom/settings150percent.png)
 
 ## Zoom in or Enlarge Active Window
 
@@ -40,11 +40,11 @@ section: software-accessibility
 2. Select the 'Accessibility' option
 3. Click the 'Zoom' option
 
-![Pop OS Accessibility Settings Zoom option](static/images/desktop-zoom/accessibilityzoom.png)
+![Pop OS Accessibility Settings Zoom option](/images/desktop-zoom/accessibilityzoom.png)
 
 4. Adjust your magnification settings in increments. 2.0 is a good starting point
 5. Select 'Follow Mouse cursor'
 
-![Pop OS Accessibility Settings Zoom options](static/images/desktop-zoom/accessibilityzoomsettings.png)
+![Pop OS Accessibility Settings Zoom options](/images/desktop-zoom/accessibilityzoomsettings.png)
 
 6. Toggle the 'Zoom' setting to the ON position

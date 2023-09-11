@@ -94,7 +94,7 @@ Now, enter the original passphrase. Here you will be prompted for the new passph
 
 With Full Disk Encryption more than one password to decrypt the drive may be needed if more then one person is using the computer. In this situation seven extra passwords can be added with the instructions below.
 
-#### List Partitions
+### List Partitions
 
 First let's list the partitions of all of the installed drives:
 

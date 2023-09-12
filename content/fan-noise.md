@@ -20,7 +20,7 @@ We set custom fan curves for some laptops to maximize their performance so that 
 
 ### Monitoring Fan Speeds
 
-Fan Speeds can be reviewed in the <u>psensor</u> which can be installed from either the <u>Pop!_Shop</u> or the <u>Ubuntu Software</u> applications. Here is what it should look like (the number of cores/threads will be different depending on the system as well as having a GPU fan or not). 
+Fan Speeds can be reviewed in the <u>psensor</u> which can be installed from either the <u>Pop!_Shop</u> or the <u>Ubuntu Software</u> applications. Here is what it should look like (the number of cores/threads will be different depending on the system as well as having a GPU fan or not).
 
 ![psensor on an oryp7](/images/fan-noise/psensor-oryp7.png)
 
@@ -33,5 +33,5 @@ Most laptops other then the Pangolin (pang12 and pang13) have fan modes which ar
 A few ways to lower the RPM (revolutions per minute) include:
 
 1. Run the laptop while on battery, this will lower the clock speed for the CPU and GPU which will lower the demand of the fans to cool the system.
-2. Set the laptop to Battery Life mode in system76-power, this will also lower the clock speeds. 
+2. Set the laptop to Battery Life mode in system76-power, this will also lower the clock speeds.
 

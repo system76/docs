@@ -43,7 +43,7 @@
       url-contact="https://system76.com/contact"
       url-about="https://system76.com/about"
       url-careers="https://system76.com/careers"
-      url-sutainability="https://system76.com/sustainability"
+      url-sustainability="https://system76.com/sustainability"
       url-shipping="https://system76.com/shipping"
       url-privacy="https://system76.com/privacy-and-legal"
     />

@@ -16,11 +16,11 @@ tableOfContents: true
 
 ## Noise Levels
 
-System76 sets custom fan curves for laptops to maximize their performance while minimazing fan noise. Current firmware keeps the fan off until 65c and will ramp the fan speeds to max speed by 90c. 
+System76 sets custom fan curves for laptops to maximize their performance while minimazing fan noise. Current firmware keeps the fan off until 65c and will ramp the fan speeds to max speed by 90c.
 
 ### Monitoring Fan Speeds
 
-Fan Speeds can be reviewed in the <u>psensor</u> which can be installed from either the <u>Pop!_Shop</u> or the <u>Ubuntu Software</u> applications. Below is an example from a Oryx Pro (the number of cores/threads will be different depending on the system as well as having a GPU fan or not).
+Fan Speeds can be monitored with <u>psensor</u>, which can be installed from either the <u>Pop!_Shop</u> or the <u>Ubuntu Software</u> applications. Below is an example from a Oryx Pro (the number of cores/threads/GPU presense will be different depending on the system).
 
 ![psensor on an oryp7](/images/fan-noise/psensor-oryp7.png)
 

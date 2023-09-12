@@ -16,7 +16,7 @@ tableOfContents: true
 
 ## Noise Levels
 
-We set custom fan curves for some laptops to maximize their performance so that you get as much power as possible but still keep the system in safe temperature ranges. 
+We set custom fan curves for some laptops to maximize their performance so that you get as much power as possible but still keep the system in safe temperature ranges.
 
 ### Monitoring Fan Speeds
 
@@ -34,4 +34,3 @@ A few ways to lower the RPM (revolutions per minute) include:
 
 1. Run the laptop while on battery, this will lower the clock speed for the CPU and GPU which will lower the demand of the fans to cool the system.
 2. Set the laptop to Battery Life mode in system76-power, this will also lower the clock speeds.
-

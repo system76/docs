@@ -31,5 +31,6 @@ Our Open Firmware laptops (so other than the Pangolin) have fan controls to swap
 ### Easy settings to effect fan noise
 
 Fan speed is based on termal output of the system. There are some settings that will indirectly limit how much heat is created during use:
+
 1. Run the laptop while on battery: This will limit power budget for the CPU and GPU and will lower thermal output.
 2. Set the laptop to Battery Life mode in either Power Profiles in the system menu or using `system76-power`: This limits the turbo mode on the CPU and dim the display to prolong battery life. A side effect is to also limit how much heat is created.

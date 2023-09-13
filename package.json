@@ -15,8 +15,8 @@
     "@nuxt/content": "^1.14.0",
     "@system76/components": "^1.9.0",
     "@system76/design": "^5.4.1",
-    "core-js": "^3.18.2",
-    "nuxt": "^2.2.0",
+    "core-js": "^3.32.2",
+    "nuxt": "^2.17.1",
     "nuxt-content-git": "^3.0.0"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "lodash": "^4.17.21",
     "markdownlint-cli": "^0.31.1",
     "nuxt-dynamic-images": "0.0.1",
-    "postcss": "^8.3.9",
+    "postcss": "^8.4.29",
     "shiki": "^0.9.3",
     "unist-util-visit": "^2.0.3"
   }

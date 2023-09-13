@@ -13,7 +13,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@nuxt/content": "^1.14.0",
-    "@system76/components": "^1.8.0",
+    "@system76/components": "^1.9.0",
     "@system76/design": "^5.4.1",
     "core-js": "^3.18.2",
     "nuxt": "^2.2.0",

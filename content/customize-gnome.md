@@ -44,7 +44,7 @@ This extension allows for the desktop to be themed in further ways than default.
 
 ![dash-to-dock](/images/customize-gnome/dash-to-dock.png)
 
- >**Note:** Starting with Pop!\_OS 22.04 Cosmic Dock is forked from Dash to Dock. Gnome Settings has options for customization in Settings -> Desktop -> Dock. You will want to disable Cosmic Dock in the Extension application if adding Dash to Dock.
+ >**Note:** Starting with version 22.04, Pop!_OS includes Cosmic Dock, which is forked from Dash to Dock. GNOME Settings has options for customization in Settings -> Desktop -> Dock. You will want to disable Cosmic Dock in the Extension application if adding Dash to Dock.
 
 This extension brings a launcher similar to the Unity launcher on the left side, or the macOS launcher on the bottom.  It is highly customizable and allows for different locations, styles, sizes, and layouts.  This is included by default in Ubuntu 18.04 and can be added to Pop!_OS.
 

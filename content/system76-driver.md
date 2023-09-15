@@ -166,8 +166,8 @@ Adding szydell's repo to your installation is a bit different then base Fedora a
 You can run these commands to both download the file and move to the correct place:
 
 ```bash
-wget https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-36/szydell-system76-fedora-36.repo -P ~/Downloads
-sudo mv ~/Downloads/szydell-system76-fedora-36.repo /etc/yum.repos.d/
+wget https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-36/szydell-system76-fedora-38.repo -P ~/Downloads
+sudo mv ~/Downloads/szydell-system76-fedora-38.repo /etc/yum.repos.d/
 ```
 
 From there install the software similar to base Fedora like this:

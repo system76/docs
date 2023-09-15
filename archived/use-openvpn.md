@@ -16,24 +16,6 @@ section: software
 tableOfContents: true
 ---
 
-## Open A Terminal
-
-### Pop!_OS
-
-Press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
-
-### Ubuntu
-
-Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>t</kbd> on your keyboard. A Terminal window should open.
-
-## Install Packages
-
-Enter the following command followed by <kbd>Enter</kbd>:
-
-```bash
-sudo apt install network-manager-openvpn-gnome
-```
-
 ## Open Network Settings
 
 Access OpenVPN setting in the <u>Settings</u> application (GNOME Control Center)

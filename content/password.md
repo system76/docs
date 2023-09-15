@@ -1,5 +1,5 @@
 ---
-title: Change User Password
+title: Change User Password and LUKS Passphrase
 description: >
     Forgot your main password?  Locked out of your computer? Need to change your encryption passphrase? Follow these instructions to change both!
 keywords:
@@ -87,6 +87,12 @@ reboot
 ```
 
 ## Changing LUKS passphrase
+
+Run this command (replace the example partition with your root partition):
+
+```bash
+cryptsetup luksChangeKey /dev/sda3 -S 0
+```
 
 Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
 

@@ -203,3 +203,7 @@ The newest version of the <u>linux-firmware</u> package, which contains the iwlw
 [mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware](https://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware)
 
 Sometimes the newest version of the firmware will clear up occasional bugs.  Please download the newest `.deb` package.
+
+### Windows Dual Boot
+
+If you are dual booting Windows, you may lose access to your wifi card entirely after running driver/OS updates in Windows. You may be able to gain access to your wifi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.

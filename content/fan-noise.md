@@ -32,5 +32,5 @@ Our [Open Firmware laptops](/articles/open-firmware-systems) have fan controls t
 
 Fan speed is based on thermal output of the system. There are some settings that will indirectly limit how much heat is created during use:
 
-1. Run the laptop while on battery: This will limit power budget for the CPU and GPU and will lower thermal output.
+1. Run the laptop while on battery: This will limit power consumption for the CPU and GPU and will lower thermal output.
 2. Set the laptop to Battery Life mode in either Power Profiles in the system menu or using `system76-power`. This limits the CPU's boost frequency, a side effect is to also limit how much heat is created.

@@ -35,7 +35,7 @@ Once installed, use the Application button to search for and run <u>Steam</u>.
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Activities Overview](/images/linux-gaming/search-terminal.png)
+![Application Library](/images/linux-gaming/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -134,7 +134,7 @@ ProtonUP-Qt is available as a Flatpak in the Pop!\_Shop. Launch the Pop!\_Shop, 
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Activities Overview](/images/linux-gaming/search-terminal.png)
+![Application Library](/images/linux-gaming/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 

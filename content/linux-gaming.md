@@ -167,8 +167,6 @@ ProtonUP-Qt is available as a Flatpak in the Pop!\_Shop. Launch the Pop!\_Shop, 
 
 <u>GameHub</u> is a game launcher that can use different compatibility layers like Wine/Proton, DOSBox and other tools. It can hook into Steam, GOG and other sources. It is written in Vala and you can read more about it [here](https://tkashkin.github.io/projects/gamehub/).
 
->**Note**: GameHub is not supported in Pop!\_OS versions later than 20.04. Users running Pop!\_OS 21.04 or later should consider using [Lutris](#lutris-install) as an alternative.
-
 ### Install GameHub From Command Line
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.

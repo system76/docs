@@ -7,6 +7,9 @@ keywords:
   - Guides
   - Quickstart
   - Setup
+  - repair guide
+  - internal view
+  - disassembly
   - System76
 
 facebookImage: /_social/article

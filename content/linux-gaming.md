@@ -9,6 +9,7 @@ keywords:
   - lutris
   - gamehub
   - proton
+  - 22.04
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -28,7 +29,7 @@ Open the <u>Pop!_Shop</u> application then either search for Steam or by clickin
 
 ![Pop!_Shop Steam](/images/linux-gaming/pop-shop_steam.png)
 
-Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+Once installed, use the Application button to search for and run <u>Steam</u>.
 
 ### Install Steam From Command Line
 
@@ -146,7 +147,7 @@ apt search gamehub
 Once we find the right name for <u>GameHub</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
 ```bash
-sudo apt install com.github.tkashkin.gamehub
+sudo apt install gamehub
 ```
 
 ### Install GameHub From the Pop!_Shop
@@ -155,7 +156,7 @@ Open the <u>Pop!_Shop</u> application then either search for GameHub, or navigat
 
 ![Pop!_Shop GameHub](/images/linux-gaming/pop-shop_gamehub.png)
 
-Once installed, use the Activities Overview to search for and run <u>GameHub</u>.
+Once installed, use the Application button to search for and run <u>GameHub</u>.
 
 ## Lutris
 
@@ -191,7 +192,7 @@ Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicki
 
 ## Using Steam
 
-Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+Once installed, use the Application button to search for and run <u>Steam</u>.
 
 ### Proton vs. Native
 

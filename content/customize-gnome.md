@@ -18,7 +18,7 @@ section: software
 tableOfContents: true
 ---
 
-**Please note**: Pop_OS! 22.04 is based on GNOME 42 so the extension **must** support GNOME 42.
+**Please note**: Pop!\_OS 22.04 is based on GNOME 42 so the extension **must** support GNOME 42.
 
 The GNOME desktop environment is highly customizable.  With a few extensions, the desktop can look and feel like many other operating system's desktops.  Launcher bars can be added, window lists can be used, and the overall look and feel of the desktop can be changed.
 
@@ -30,7 +30,7 @@ We will share some of the more popular extensions, but there are many more to ch
 
 ## User Themes
 
-**Please note**: If you are using a custom GNOME theme in Pop_OS! 22.04, it **must** support GTK 4.
+**Please note**: If you are using a custom GNOME theme in Pop!\_OS 22.04, it **must** support GTK 4.
 
 [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
@@ -43,6 +43,8 @@ This extension allows for the desktop to be themed in further ways than default.
 [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
 ![dash-to-dock](/images/customize-gnome/dash-to-dock.png)
+
+ >**Note:** Starting with version 22.04, Pop!\_OS includes Cosmic Dock, which is forked from Dash to Dock. GNOME Settings has options for customization in Settings -> Desktop -> Dock. You will want to disable Cosmic Dock in the Extension application if adding Dash to Dock.
 
 This extension brings a launcher similar to the Unity launcher on the left side, or the macOS launcher on the bottom.  It is highly customizable and allows for different locations, styles, sizes, and layouts.  This is included by default in Ubuntu 18.04 and can be added to Pop!_OS.
 
@@ -68,22 +70,14 @@ This extension adds a window list to the bottom of the monitors.  This shows wha
 
 ---
 
-## Gnomenu
-
-[Gnomenu](https://extensions.gnome.org/extension/608/gnomenu/)
-
-![gnomenu](/images/customize-gnome/gnomenu.png)
-
-This extension adds a traditionally styled, full featured menu to GNOME.  This menu is similar to a traditional Window's Start Menu, and is highly customizable for how it looks and functions.
-
----
-
 ## Appindicator Support and TopIcons Plus
 
 [Appindicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 [Top Icons](https://extensions.gnome.org/extension/1031/topicons/)
 
 ![topicons](/images/customize-gnome/topicons.png)
+
+>**Note:** Starting with Pop!\_OS 22.04 the Ubuntu fork of this extension is included by default.
 
 Appindicator Support and TopIcons Plus both serve to add the ability for programs to use an indicator icon to show they are running.  This functionality has been removed in recent versions of GNOME, and an extension is needed for the functionality.  These 2 programs work slightly differently, and work better in some setups vs. others.  If one doesn't work, try the other one.
 
@@ -118,14 +112,6 @@ The Sound Output Chooser adds a quick change option to the system menu in the to
 ![cpu-power](/images/customize-gnome/cpu-power.png)
 
 CPU power meter allows for quick switching of various CPU frequency settings.
-
----
-
-## Extension Update Notifier
-
-[Extension Update Notifier](https://extensions.gnome.org/extension/1166/extension-update-notifier/)
-
-This extension will check the various installed extensions and present a notification that there is an update to the extensions.  Extensions are not automatically updated, so this extension provides the next best option.
 
 ---
 

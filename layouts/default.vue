@@ -6,7 +6,7 @@
           href="https://system76.com/specials"
           target="_blank"
         >
-          Special Offers
+          Gear Up and SAVE up to $150!
         </a>
       </template>
 
@@ -43,13 +43,9 @@
       url-contact="https://system76.com/contact"
       url-about="https://system76.com/about"
       url-careers="https://system76.com/careers"
-      url-specials="https://system76.com/specials"
+      url-sustainability="https://system76.com/sustainability"
       url-shipping="https://system76.com/shipping"
-      url-financing="https://system76.com/financing"
-      url-warranty="https://system76.com/warranty"
-      url-privacy="https://system76.com/privacy"
-      url-disclaimer="https://system76.com/disclaimer"
-      url-terms="https://system76.com/terms"
+      url-privacy="https://system76.com/privacy-and-legal"
     />
   </div>
 </template>

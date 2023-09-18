@@ -61,6 +61,45 @@ Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supp
 
 ![Steam Settings](/images/linux-gaming/enable-steam-play_proton.png)
 
+## Using Steam
+
+Once installed, use the Application button to search for and run <u>Steam</u>.
+
+### Proton vs. Native
+
+![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
+
+![Playing a native game](/images/linux-gaming/playing-native-game.png)
+
+From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
+Once you've enabled Steam Play, they both present the usual green "Play" button.
+
+**NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
+
+If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
+
+![Skyrim 1](/images/linux-gaming/skyrim-info-pane.png)
+
+![Skyrim Detail](/images/linux-gaming/steamplay-detail.png)
+
+### Changing the Proton Version for a Specific Game
+
+It's possible to specify a certain Proton version on per game basis. You can switch between older and newer Proton versions installed on your system by the Steam client, or select custom versions of proton like ProtonGE.
+
+To change the Proton version:
+
+1. Click on the "Gear" icon in the top-right corner of the game info page.
+
+2. In the drop-down menu, select "Properties."
+
+3. Once the properties window opens, click "Compatibility" from the left menu pane.
+
+4. Check the box to "Force the use of a specific Steam Play compatibility tool."
+
+5. Select the desired Proton version from the drop down menu (as pictured below).
+
+![Compatibility Menu](/images/linux-gaming/skyrim-proton-version.png)
+
 ### Use Protonup to Manage Custom Proton Versions
 
 Valve's official Proton release may not provide optimal compatibility for specific games, or community contributors may discover improvements not yet implemented by Valve. If a game is not working with mainline or experimental versions of Proton, consider trying a community-contributed fork.
@@ -189,45 +228,6 @@ sudo apt install lutris
 Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicking the <u>Lutris</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
 ![Pop!_Shop Lutris](/images/linux-gaming/pop-shop_lutris.png)
-
-## Using Steam
-
-Once installed, use the Application button to search for and run <u>Steam</u>.
-
-### Proton vs. Native
-
-![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
-
-![Playing a native game](/images/linux-gaming/playing-native-game.png)
-
-From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
-Once you've enabled Steam Play, they both present the usual green "Play" button.
-
-**NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
-
-If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
-
-![Skyrim 1](/images/linux-gaming/skyrim-info-pane.png)
-
-![Skyrim Detail](/images/linux-gaming/steamplay-detail.png)
-
-### Changing the Proton Version for a Specific Game
-
-It's possible to specify a certain Proton version on per game basis. You can switch between older and newer Proton versions installed on your system by the Steam client, or select custom versions of proton like ProtonGE.
-
-To change the Proton version:
-
-1. Click on the "Gear" icon in the top-right corner of the game info page.
-
-2. In the drop-down menu, select "Properties."
-
-3. Once the properties window opens, click "Compatibility" from the left menu pane.
-
-4. Check the box to "Force the use of a specific Steam Play compatibility tool."
-
-5. Select the desired Proton version from the drop down menu (as pictured below).
-
-![Compatibility Menu](/images/linux-gaming/skyrim-proton-version.png)
 
 ## Using GameHub
 

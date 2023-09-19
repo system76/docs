@@ -5,7 +5,7 @@ description: >
    How to repair and reinstall the bootloader.
 keywords:
   - Support
-  - Grub
+  - GRUB
   - systemd-boot
   - Bootloader
   - Refresh
@@ -21,7 +21,7 @@ A bootloader takes care of getting the operating system started up. It is also r
 
 ### Important Note
 
-If you need to configure grub-pc (for example, after an update), installing GRUB to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
+If you need to configure grub-efi/pc (for example, after an update), installing GRUB to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
 
 On a fresh install of Pop!_OS 18.04 and newer, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader. The following instructions only apply to systems using the GRUB bootloader, otherwise refer to the <u>systemd-boot</u> section of this article.
 
@@ -44,39 +44,39 @@ Use the arrow keys and Enter key to select the live disk from the boot menu.
 Once the desktop is shown, connect to the Internet.  Next, open a terminal (search <u>Terminal</u> after pressing the Super Key) and run the following command:
 
 ```bash
-sudo parted -ls
+lsblk -f
 ```
 
-In the output, look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and for the `linux-swap` partition to help identify the main OS drive. Here are some OS partition layout examples:
+In the output, look for the name of your main hard drive. It could be `/dev/sda` or `/dev/nvme0n1`, depending on if you have a standard SATA drive or an NVMe drive, respectively. If you have multiple drives, look at the sizes of the partitions and mountpoints to help identify the main OS drive. Here are some OS partition layout examples:
 
-Ubuntu 20.04 LTS
-
-```
-      Number  Start   End     Size    File system     Name      Flags
-       1      2097kB  524MB   522MB   fat32                     boot, esp
-       2      524MB   496GB   491GB   ext4            root
-       3      496GB   500GB   4295MB  linux-swap(v1)            swap
-```
-
-Pop!_OS 20.04 LTS
+Ubuntu 22.04 LTS
 
 ```
-      Number  Start   End     Size    File system     Name      Flags
-       1      2097kB  524MB   522MB   fat32                     boot, esp
-       2      524MB   4819MB  4295MB  fat32           recovery  msftdata
-       3      4819MB  496GB   491GB   ext4            root
-       4      496GB   500GB   4295MB  linux-swap(v1)            swap
+nvme0n1                                                                                                          
+├─nvme0n1p1   vfat            FAT32                        7786-1112F                               504.9M    1% /boot/efi
+├─nvme0n1p2   ext4            1.0                          fc231aaf-fef4-479da82c-2638a3608a0d       1.4G    86% /var/snap/firefox/common/host-hunspell
+|                                                                                                                / 
+```
+
+Pop!_OS 22.04 LTS
+
+```
+nvme0n1                                                                                                          
+├─nvme0n1p1   vfat            FAT32                        E39A-2435                               621.9M    39% /boot/efi
+├─nvme0n1p2   vfat            FAT32                        E39A-2430                                 1.1G    73% /recovery
+├─nvme0n1p3   crypto_LUKS     2                            3ad45436-d4c8-49ee-b011-b44f0c46d7c7                  
+│ └─cryptdata LVM2_member     LVM2 001                     3fgddx-P2nH-agMi-1qOR-VBmd-R3zY-Ffc1NL                
+│   └─data-root
+│             ext4            1.0                          8c15e6e0-39eb-44a6-9f27-f31252b417f6    504.7G    39% /
+└─nvme0n1p4   swap            1                            6e68791e-cf0d-413a-a765-8debd6de99d9                  
+  └─cryptswap swap            1        cryptswap           6816a90f-296c-44b3-950f-b782cef2819b 
 ```
 
 ---
 
 ## How to tell if your system is EFI-based or legacy boot
 
-## systemd-boot
-
-### EFI Boot
-
-Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the earlier `parted` output, then the system is installed in UEFI mode. You can also use this command to verify that your OS is installed in UEFI mode:
+Most computers sold after 2014 use UEFI mode, you can use this command to verify that your OS is installed in UEFI mode:
 
 ```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
@@ -90,11 +90,9 @@ Installed in UEFI mode
 support@pop-os:~$
 ```
 
-Additionally, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode.
-
 ### EFI Boot - Pop!_OS (systemd-boot)
 
-If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below.
+Please note that if you have an encrypted disk, you will need to first unlock it using [these steps](/articles/bootloader#encrypted-disk).
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
@@ -116,15 +114,11 @@ exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
 
-## GRUB EFI Boot
+### EFI Boot - Ubuntu (GRUB)
 
-Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the `parted` output from earlier, then the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
+Please note that if you have an encrypted disk, you will need to first unlock it using [these steps](/articles/bootloader#encrypted-disk).
 
-```bash
-[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
-```
-
-Run these commands based on what type of disk you have:
+First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
 | NVMe Drives                               | SATA Drives                          |
 | :---------------------------------------- | :------------------------------------|
@@ -141,34 +135,6 @@ sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
 update-grub
-```
-
-## GRUB Legacy BIOS Boot
-
-If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
-
-```bash
-[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
-```
-
-Run these commands based on what type of disk you have:
-
-| NVMe Drive                       | SATA Drive                  |
-| :------------------------------- | :-------------------------- |
-| `sudo mount /dev/nvme0n1p2 /mnt` | `sudo mount /dev/sda2 /mnt` |
-
-If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Pop!_OS root partition.
-
-Then continue with the following commands for either disk type:
-
-After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
-
-```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo chroot /mnt
-apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
-update-initramfs -c -k all
-sudo update-grub
 ```
 
 ### Encrypted Disk
@@ -196,51 +162,30 @@ sudo mount /dev/mapper/data-root /mnt
 
 Now the existing hard drive can be accessed by going to the `/mnt` folder. To use the <u>Files</u> program, go to `+ Other Locations` -> `Computer` and then click on the `/mnt` folder.
 
-### EFI Boot - Ubuntu
+## GRUB Legacy BIOS Boot
 
-If the echo command above says the system is installed in EFI mode **and** you are using Ubuntu, follow this section.
-
-First, we need to mount the OS partitions. Run these commands based on what type of disk you have (based on the ```parted``` output from your system):
-
-| NVMe Drives                                  | SATA Drives                            |
-| :------------------------------------------- | :------------------------------------- |
-| ```sudo mount /dev/nvme0n1p2 /mnt```         | ```sudo mount /dev/sda2 /mnt```        |
-|```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` |```sudo mount /dev/sda1 /mnt/boot/efi```|
-
-<u>chroot</u> is a way to run commands as if the existing operating system had been booted. Once the chroot commands have been run, then package manager (<u>apt</u>) and other system level commands can be run.
-
-The EFI partition is usually around 512MB, and that is the partition to substitute into the next command. The Recovery partition is around 4GB.
-
-| NVMe Drive                                | SATA Drive                           |
-| :---------------------------------------- | :----------------------------------- |
-| `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
+If the system is installed in BIOS mode run though these comamnd. You can confirm if it is installed in BIOS with this command:
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
-apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
-update-initramfs -c -k all
-update-grub
+[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
 ```
-
-### Legacy BIOS Boot
-
-As mentioned above, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode. If this is the case, you need to follow this section to repair your bootloader.
 
 Run these commands based on what type of disk you have:
 
-| NVMe Drive                           | SATA Drive                      |
-| :----------------------------------- | :------------------------------ |
-| ```sudo mount /dev/nvme0n1p2 /mnt``` | ```sudo mount /dev/sda2 /mnt``` |
+| NVMe Drive                       | SATA Drive                  |
+| :------------------------------- | :-------------------------- |
+| `sudo mount /dev/nvme0n1p2 /mnt` | `sudo mount /dev/sda2 /mnt` |
 
-You now have root administrator access to your installed OS. If you are trying to either fix or undo changes that you made to the system, you now have the access to do so. Once you are done, to exit from the <u>chroot</u> and reboot the computer, run these commands:
+If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Pop!_OS root partition.
+
+Then continue with the following commands for either disk type:
+
+After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
 
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
 sudo chroot /mnt
-apt install --reinstall grub-amd64 linux-generic linux-headers-generic
+apt install --reinstall grub-pc linux-generic linux-headers-generic
 update-initramfs -c -k all
 sudo update-grub
 ```

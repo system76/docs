@@ -29,7 +29,7 @@ Open the <u>Pop!_Shop</u> application then either search for Steam or by clickin
 
 ![Pop!_Shop Steam](/images/linux-gaming/pop-shop_steam.png)
 
-Once installed, use the Application button to search for and run <u>Steam</u>.
+Once installed, use the Applications button to search for and run <u>Steam</u>.
 
 ### Install Steam From Command Line
 
@@ -63,7 +63,7 @@ Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supp
 
 ## Using Steam
 
-Once installed, use the Application button to search for and run <u>Steam</u>.
+Once installed, use the Applications button to search for and run <u>Steam</u>.
 
 ### Proton vs. Native
 
@@ -193,7 +193,7 @@ Open the <u>Pop!_Shop</u> application then either search for GameHub, or navigat
 
 ![Pop!_Shop GameHub](/images/linux-gaming/pop-shop_gamehub.png)
 
-Once installed, use the Application button to search for and run <u>GameHub</u>.
+Once installed, use the Applications button to search for and run <u>GameHub</u>.
 
 ## Lutris
 

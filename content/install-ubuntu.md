@@ -31,9 +31,7 @@ Ubuntu releases beyond 22.04 are not fully tested, but certain packages are made
 
 ## Recent Upgrade Issues
 
-If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [Repair the Bootloader](/articles/bootloader)
-
----
+If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [Repair the Bootloader](/articles/bootloader).
 
 ## Create Install Media
 
@@ -47,13 +45,7 @@ Create an Installation USB | Create an Installation DVD
 
 ### Boot From Install Media
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on:
-
-Laptops                             | Desktops
------------------------------------ | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
-
----
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk by accessing the Boot Menu using the key combos in this [article](/articles/bootloader).
 
 <!--#### NVIDIA Graphics
 
@@ -62,8 +54,6 @@ Ubuntu may need a special option enabled to install and boot from Ubuntu until t
 ![nomodeset](/images/install-ubuntu/ubuntu-install-nomodeset.png)
 
 From the menu shown the 'nomodeset' option can be selected during this boot. -->
-
----
 
 ![grub](/images/install-ubuntu/ubuntu-grub.png)
 

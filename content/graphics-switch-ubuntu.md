@@ -102,7 +102,7 @@ Now enable the System76 Power extension with the toggle to the right.
 Click the system menu in the top right corner of your screen to access graphics
 switching.
 
->**Note**: Ubuntu versions higher then 22.04 will not have this menu as the GNOME Shell extension has not been updated for newer GNOME versions.
+>**Note**: Ubuntu versions higher than 22.04 will not have this menu because the GNOME Shell extension has not been updated for newer GNOME versions.
 
 ![Graphics](/images/graphics-switch-ubuntu/system-menu.png)
 

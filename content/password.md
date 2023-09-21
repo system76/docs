@@ -88,17 +88,17 @@ reboot
 
 ## Changing LUKS passphrase
 
-Run this command (replace the example partition with your root partition):
+If you would like to change the password on a LUKS encrypted partition, run this command (replace the example partition with your root partition):
 
 ```bash
 cryptsetup luksChangeKey /dev/sda3 -S 0
 ```
 
-Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
+Enter the original pass-phrase, and follow the prompts for the new pass-phrase ( and to confirm the new pass-phrase).
 
 ## Adding LUKS passphrases
 
-With Full Disk Encryption more than one password to decrypt the drive may be needed if more then one person is using the computer. In this situation seven extra passwords can be added with the instructions below.
+Full Disk Encryption supports up to 8 total pass-phrases to unlock the encryption. This is useful if you would like to allow more than a single user to unlock the encryption and not share a pass-phrase. The default pass-phrase is in slot 0, with space for additional pass-phrases in slots 1 through 7 (for a total of 8). 
 
 ### List Partitions
 
@@ -114,7 +114,7 @@ The output may be different based on the drive setup and partition table. You ca
 sudo cryptsetup luksDump /dev/sda3
 ```
 
-Replacing '/dev/sda3' with the location of the root partition on your system. With the output of this command we can see the seven extra slots that we have for passwords to decrypt the drive. Slots 1-7 are the open ones and Slot 0 is the current one the system has set.
+Replacing '/dev/sda3' with the location of the root partition on your system. With the output of this command we can see the seven extra slots that we have for passwords to decrypt the drive. On a normal install Slots 1-7 are the open, with Slot 0 as the initial pass-phrase.
 
 #### Set Extra Password
 
@@ -128,10 +128,10 @@ This command will require the current encryption password before new password ca
 
 #### Confirm The Password
 
-Let's run this command again to confirm that the additional password is set:
+Let's run this command again to confirm that the additional pass-phrase is set:
 
 ```
 sudo cryptsetup luksDump /dev/sda3
 ```
 
-You should see that Key Slot 1 is now enabled so this confirms the new password is set.
+You should see that Key Slot 1 is now enabled so this confirms the new pass-phrase is set.

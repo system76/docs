@@ -38,6 +38,10 @@ A Live USB can be used as a rescue disk. This will provide us an outside OS envi
 
 We have an article to guide you through creating [Live USBs here.](/articles/live-disk)
 
+## Local repair and upgrades
+
+We offer techincal documenation (tech-docs such as service manuals) in this [article](/articles/guides).
+
 ## Common Issue Sources
 
 ### Software

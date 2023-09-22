@@ -98,7 +98,7 @@ Enter the original pass-phrase, and follow the prompts for the new pass-phrase (
 
 ## Adding LUKS passphrases
 
-Full Disk Encryption supports up to 8 total pass-phrases to unlock the encryption. This is useful if you would like to allow more than a single user to unlock the encryption and not share a pass-phrase. The default pass-phrase is in slot 0, with space for additional pass-phrases in slots 1 through 7 (for a total of 8). 
+Full Disk Encryption supports up to 8 total pass-phrases to unlock the encryption. This is useful if you would like to allow more than a single user to unlock the encryption and not share a pass-phrase. The default pass-phrase is in slot 0, with space for additional pass-phrases in slots 1 through 7 (for a total of 8).
 
 ### List Partitions
 

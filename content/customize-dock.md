@@ -9,6 +9,7 @@ keywords:
   - Moving
   - Dock
   - Dash to Dock
+  - Pop Dock
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -22,47 +23,19 @@ redirect_from:
   - /articles/move-launcher
 ---
 
-Pop!\_OS and Ubuntu both contain an application dock on the left side of the screen. In Pop!\_OS, the dock is only visible when the Activities menu is open. In Ubuntu, the dock is always visible. By installing a GNOME extension called Dash to Dock, you can adjust this preference, move the dock to the bottom of the screen, and more.
+Pop!\_OS and Ubuntu both contain an application dock on the left side of the screen. You can adjust this preference, move the dock to the bottom of the screen, and more in <u>Settings</u>.
 
-## Dash to Dock on Pop!\_OS
+## Changing the Dock on Pop!\_OS
 
-To install Dash to Dock on Pop!\_OS, visit [the extension's page](https://extensions.gnome.org/extension/307/dash-to-dock/) in Firefox.
-
-![Dash to Dock page in Firefox](/images/dash-to-dock/pop-firefox1.png)
-
-If you see a purple message at the top about GNOME Shell integration, click the link to install the Firefox browser extension, then click the blue "Continue to Installation" button, and finally the blue "Add" button.
-
-![Installing the Firefox extension](/images/dash-to-dock/pop-firefox2.png)
-
-![Installing the Firefox extension](/images/dash-to-dock/pop-firefox3.png)
-
-After refreshing the web page, you should see an On/Off switch at the top right of the page. Click the switch to toggle it to the "On" position.
-
-![Enabling Dash to Dock](/images/dash-to-dock/pop-firefox4.png)
-
-On the resulting pop-up, click Install to download and install the extension.
-
-![Enabling Dash to Dock](/images/dash-to-dock/pop-install-extension.png)
-
-At this point, Firefox can be closed. The dock will display on the left side of the screen.
-
-![Dock on left side](/images/dash-to-dock/pop-launcher1.png)
-
-To customize the dock's settings, right-click on the "Show Applications" button and click "Dash to Dock Settings."
-
-![Dash to Dock Settings](/images/dash-to-dock/pop-launcher2.png)
-
-In the Dash to Dock Settings window, you can choose which screen edge to display the launcher on, such as the bottom of the screen:
-
-![Dock at bottom of screen](/images/dash-to-dock/pop-launcher3.png)
-
-You can also choose to extend the dock into "Panel mode," which looks similar to Ubuntu:
-
-![Dock with Panel Mode](/images/dash-to-dock/pop-launcher4.png)
+![Stock Pop Dock](/images/customize-dock/pop-dock.png)
 
 ## Dash to Dock on Ubuntu
 
-Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. When you enable the full version of Dash to Dock, it will override the built-in version.
+Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. 
+
+![Stock Ubuntu Dock](/images/customize-dock/ubuntu-dock.png)
+
+When you enable the full version of Dash to Dock, it will override the built-in version.
 
 To install Dash to Dock on Ubuntu, you will first need to install the "native host connector," which allows Firefox to install and remove GNOME Shell extensions. This component is installed by default in Pop!\_OS, but it is not installed by default in Ubuntu. Open a terminal and run this command to install the native host connector:
 

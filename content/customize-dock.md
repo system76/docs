@@ -27,7 +27,7 @@ Pop!\_OS and Ubuntu both contain an application dock on the left side of the scr
 
 ## Default Dock on Pop!\_OS
 
-Pop!\_OS includes a lightweight version of Dash to Dock, which is why the dock already displays on the bottom of the screen by default. 
+Pop!\_OS includes a lightweight version of Dash to Dock, which is why the dock already displays on the bottom of the screen by default.
 
 ![Stock Pop Dock](/images/customize-dock/pop-dock.png)
 
@@ -63,7 +63,7 @@ In the Dash to Dock Settings window, you can choose which screen edge to display
 
 ## Default Dock on Ubuntu
 
-Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. 
+Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default.
 
 ![Stock Ubuntu Dock](/images/customize-dock/ubuntu-dock.png)
 

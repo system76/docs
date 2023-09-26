@@ -65,13 +65,15 @@ You can also choose to extend the dock into "Panel mode," which looks similar to
 
 ![Dock with Panel Mode](/images/dash-to-dock/pop-launcher4.png)
 
-## Dash to Dock on Ubuntu
+## Default Dock on Pop!\_OS
 
 Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. 
 
 ![Stock Ubuntu Dock](/images/customize-dock/ubuntu-dock.png)
 
-When you enable the full version of Dash to Dock, it will override the built-in version.
+## Dash to Dock on Ubuntu
+
+When using Dash to Dock on Ubuntu it can effect the default Dock as it was forked from that project. When you enable the full version of Dash to Dock, it will override the built-in version.
 
 To install Dash to Dock on Ubuntu, you will first need to install the "native host connector," which allows Firefox to install and remove GNOME Shell extensions. This component is installed by default in Pop!\_OS, but it is not installed by default in Ubuntu. Open a terminal and run this command to install the native host connector:
 

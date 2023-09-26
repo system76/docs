@@ -76,27 +76,3 @@ To customize the dock's settings, right-click on the "Show Applications" button 
 In the Dash to Dock Settings window, you can choose which screen edge to display the dock on, such as the bottom of the screen:
 
 ![Dock at bottom of screen](/images/dash-to-dock/ubuntu-launcher3.png)
-
----
-
-## Moving the Application Launcher in Ubuntu 16.04 LTS
-
-Ubuntu 16.04 LTS includes its own dock as part of the Unity desktop environment. If you'd like to put the dock at the bottom of the screen in 16.04, enter this command in a terminal:
-
-```bash
-gsettings set com.canonical.Unity.Launcher launcher-position 'Bottom'
-```
-
-![Setting the Launcher to the bottom](/images/dash-to-dock/unity1.png)
-
-This will set the dock to the bottom of the screen:
-
-![Lanncher on the bottom](/images/dash-to-dock/unity2.png)
-
-To reset the position of the dock to the left, run this command:
-
-```bash
-gsettings set com.canonical.Unity.Launcher launcher-position 'Left'
-```
-
-![Resetting the Launcher](/images/dash-to-dock/unity3.png)

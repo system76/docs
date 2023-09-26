@@ -23,11 +23,11 @@ redirect_from:
   - /articles/move-launcher
 ---
 
-Pop!\_OS and Ubuntu both contain an application dock on the left side of the screen. You can adjust this preference, move the dock to the bottom of the screen, and more in <u>Settings</u>.
+Pop!\_OS and Ubuntu both contain an application dock on the bottom of the screen. You can adjust this preference, move the dock to the bottom of the screen, and more in <u>Settings</u>.
 
 ## Default Dock on Pop!\_OS
 
-Pop!\_OS includes a lightweight version of Dash to Dock, which is why the dock already displays on the bottom of the screen by default. 
+Pop!\_OS includes a lightweight version of Dash to Dock, which is why the dock already displays on the bottom of the screen by default.
 
 ![Stock Pop Dock](/images/customize-dock/pop-dock.png)
 
@@ -35,7 +35,7 @@ If you need more options or want to make more changes to the dock you can instal
 
 ## Dash to Dock on Pop!\_OS
 
-When using Dash to Dock on Pop!\_OS it can effect the default Dock as it was forked from that project. To install Dash to Dock on Pop!\_OS, visit [the extension's page](https://extensions.gnome.org/extension/307/dash-to-dock/) in Firefox.
+When using Dash to Dock on Pop!\_OS it can affect the default Dock as it was forked from that project. To install Dash to Dock on Pop!\_OS, visit [the extension's page](https://extensions.gnome.org/extension/307/dash-to-dock/) in Firefox.
 
 ![Dash to Dock page in Firefox](/images/customize-dock/dash-to-dock-page.png)
 
@@ -51,19 +51,19 @@ On the resulting pop-up, click Install to download and install the extension.
 
 ![Installing the Firefox extension](/images/customize-dock/pop-install-dash-to-dock3.png)
 
-At this point, Firefox can be closed. The dock will display on the bottom of the screen. You will want to disable COSMIC Dock in the <u>Extension</u> application as well.
+At this point, Firefox can be closed. The dock will display on the bottom of the screen. You will want to disable COSMIC Dock in the <u>Extensions</u> application as well.
 
 ![Pop!_OS Extension application](/images/customize-dock/pop-gnome-extensions.png)
 
-To customize the dock's settings, click on the settings button for Dash to Dock in the <u>Extension</u> application"
+To customize the dock's settings, click on the settings button for Dash to Dock in the <u>Extensions</u> application"
 
 ![Dash to Dock Settings](/images/customize-dock/pop-dash-to-dock-settings.png)
 
-In the Dash to Dock Settings window, you can choose which screen edge to display the launcher on, such as the bottom of the screen. You can also choose to extend the dock into "Panel mode," which looks similar to Ubuntu:
+In the Dash to Dock Settings window, you can choose which screen edge to display the dock on, such as the bottom of the screen. You can also choose to extend the dock into "Panel mode," which looks similar to Ubuntu:
 
 ## Default Dock on Ubuntu
 
-Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default. 
+Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default.
 
 ![Stock Ubuntu Dock](/images/customize-dock/ubuntu-dock.png)
 
@@ -73,7 +73,7 @@ If you need more options or want to make more changes to the dock you can instal
 
 When using Dash to Dock on Ubuntu it can effect the default Dock as it was forked from that project. When you enable the full version of Dash to Dock, it will override the built-in version.
 
-To install Dash to Dock on Ubuntu, you will first need to install the "native host connector," which allows Firefox to install and remove GNOME Shell extensions and the GNOME Shell <u>Extension</u> application. This component is installed by default in Pop!\_OS, but it is not installed by default in Ubuntu. Open a terminal and run this command to install the native host connector:
+To install Dash to Dock on Ubuntu, you will first need to install the "native host connector," which allows Firefox to install and remove GNOME Shell extensions and the GNOME Shell <u>Extensions</u> application. This component is installed by default in Pop!\_OS, but it is not installed by default in Ubuntu. Open a terminal and run this command to install the native host connector:
 
 ```bash
 sudo apt install chrome-gnome-shell gnome-shell-extensions

@@ -47,7 +47,7 @@ Unplug the Launch Keyboard and hold <kbd>Esc</kbd> while plugging it back in. Co
 
 ![System76-Tester-in-update-mode](/images/launch_2-firmware-update/Tester-in-firmware-update-mode.png)
 
-* NOTE: This occasionally takes a couple tries. If the LEDs come on and the keyboard powers on normally, try a few more times. In between retries, leave the keyboard unplugged for 15 to 20 seconds.
+* NOTE: This occasionally takes a couple tries. If the LEDs come on and the keyboard powers on normally, try a few more times. In between retries, leave the keyboard unplugged for 15 to 20 seconds. We suggest that you use the braided cables that came with your Launch Keyboard.
 
 ### Update firmware
 

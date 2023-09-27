@@ -56,6 +56,8 @@ To access an encrypted disk, run these additional commands to unlock the encrypt
 |:--------------------------------------------------:|:-------------------------------------------------:|
 | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata```       | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
 
+>**Note:** You will see "Enter passphrase for /dev/nvme0n1p3 (or the name of your exact drive):" - Enter your encryption password here. You will "enter this blind," i.e. you won't see the characters typed out. Then press Enter. 
+
 ```bash
 sudo lvscan
 sudo vgchange -ay

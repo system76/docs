@@ -27,7 +27,14 @@ Password                    | System Serial Number
 Network Address (eth0)      | Assigned by DHCP
 Network Address (eth1)      | Unconfigured
 
-> System serial number should be entered in all lower-case. For example, if the serial number is `7X1234`, then the password would be `7x1234`.
+- The password is your serial number, which can
+be found at the top of these instructions.
+- You can also find your serial number on a pull
+tab located on the front face of your server.
+- Use capital letters when typing your password,
+as it is case-sensitive.
+- If your server does not have a pull tab, the serial
+number can be found on a label in the top-left.
 
 Connect your server to a monitor to determine the IP addresses assigned to your server. Afterwards you can configure and manage your server from any other computer on your network.
 
@@ -42,6 +49,103 @@ ip link show
 ```
 
 In the directions below replace `IPADDRESS` with the server's IP address.
+
+### Add Administrative User
+
+To add another user, enter these commands:
+
+```bash
+ssh oem@IPADDRESS
+sudo adduser [new username]
+sudo adduser [new username] adm
+sudo adduser [new username] sudo
+exit
+```
+
+Log back in by typing:
+
+```bash
+ssh [new username]@IPADDRESS
+```
+
+Remove the OEM User:
+
+```bash
+sudo deluser oem
+```
+
+## Configure Network Interface for Ubuntu Server 22.04
+
+Ubuntu Server 22.04 is shipping with netplan, so the system file will need to be edited for networking. With this command, we will edit the file:
+
+```bash
+sudo nano /etc/netplan/00-installer-config.yaml
+```
+
+Adjust as necessary
+Press <kbd>Ctrl</kbd>+<kbd>O</kbd> then press <kbd>Enter</kdb> to save, and <kbd>Ctrl</kbd>+<kbd>X</kbd> to exit
+
+Example /etc/netplan/00-installer-config.yaml file.
+
+```
+# This is yaml, make sure to use spaces, and indenting is important.
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5)
+
+network:
+version: 2
+renderer: networkd
+ethernets:
+enp0s3:
+dhcp4: no
+addresses: [10.13.15.10/24]
+gateway4: 10.13.15.254
+nameservers:
+addresses: [8.8.8.8,8.8.4.4]
+enp1s3:
+dhcp4: no
+addresses: [10.13.15.11]
+gateway4: 10.13.15.254
+nameservers:
+addresses: [8.8.8.8,8.8.4.4]
+```
+
+```bash
+sudo netplan generate
+sudo netplan apply
+```
+
+Restart your system or reset the network connections to be sure your
+settings are
+
+### Install OpenSSH Server
+
+To remotely administer the server, a secure shell program needs installed to accept incoming SSH connections.  Install the program with this command:
+
+```bash
+sudo apt install openssh-server
+```
+
+And then configure the program by editing its settings file with this command:
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+And to use the new settings, restart the SSH daemon with this command (or restart the server):
+
+```bash
+sudo systemctl restart sshd
+```
+
+Then, from another Linux client terminal:
+
+```bash
+ssh oem@IPADDRESS
+```
+
+From a Windows computer:  
+Download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
 ### Configure Hostname And Domain
 
@@ -83,138 +187,6 @@ Verify the correct hostname and domain with this command:
 hostname -f
 ```
 
-### Configure Time Zone
-
-```bash
-sudo dpkg-reconfigure tzdata
-```
-
-### Configure Network Interface for Ubuntu Server 18.04
-
-Ubuntu Server 18.04 is shipping with netplan, so the system file will need to be edited for networking. With this command, we will edit the file:
-
-```bash
-sudo nano /etc/netplan/50-cloud-int.yaml
-```
-
-This command will list the network interfaces:
-
-```bash
-ip link show
-```
-
-This text will need to be edited depending on what the system will label the network interfaces.
-
-```bash
-network:
-    version: 2
-    ethernets:
-        eno1:
-            addresses: [ ]
-            dhcp4: true
-            optional: true
-        eno2:
-            addresses: [ ]
-            dhcp4: true
-            optional: true
-```
-
-Now if the router has DHCP setup you will get an IP address for the port that has the Ethernet cable attached.
-
-### Configure Network Interface for Ubuntu Server 16.04
-
-To change the IP address of the server, run these commands:
-
-```bash
-sudo nano /etc/network/interfaces
-```
-
-Adjust as necessary & press <kbd>Ctrl</kbd>+<kbd>X</kbd> → <kbd>Y</kbd> → <kbd>Enter</kbd> to save.  Next, restart network services (this will drop your ssh connection):
-
-```bash
-sudo systemctl restart networking
-```
-
----
-
-Example `/etc/network/interfaces` file:
-
-```
-# This is the loopback interface - Do not adjust  
-auto lo  
-iface lo inet loopback  
-
-# Primary Network Interface  
-auto eth0  
-iface eth0 inet static  
-address 10.13.15.10  
-netmask 255.255.255.0  
-gateway 10.13.15.1  
-dns-nameservers 8.8.8.8 8.8.4.4  
-
-auto eth1  
-iface eth1 inet static  
-address 10.13.15.11  
-netmask 255.255.255.0  
-gateway 10.13.15.1  
-dns-nameservers 8.8.8.8 8.8.4.4  
-```
-
----
-
-### Remote Administration
-
-To remotely administer the server, a secure shell program needs installed to accept incoming SSH connections.  Install the program with this command:
-
-```bash
-sudo apt install openssh-server
-```
-
-And then configure the program by editing its settings file with this command:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-And to use the new settings, restart the SSH daemon with this command (or restart the server):
-
-```bash
-sudo systemctl restart sshd
-```
-
-Then, from another Linux client terminal:
-
-```bash
-ssh oem@IPADDRESS
-```
-
-From a Windows computer:  
-Download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
-
-### Add Administrative User
-
-To add another user, enter these commands:
-
-```bash
-ssh oem@IPADDRESS
-sudo adduser [new username]
-sudo adduser [new username] adm
-sudo adduser [new username] sudo
-exit
-```
-
-Log back in by typing:
-
-```bash
-ssh [new username]@IPADDRESS
-```
-
-Remove the OEM User:
-
-```bash
-sudo deluser oem
-```
-
 ### Update Packages
 
 Download and install updates:
@@ -227,6 +199,13 @@ sudo apt dist-upgrade
 Reboot may be required for the changes to take effect:
 
 ```bash
+sudo reboot
+```
+
+### Configure Time Zone
+
+```bash
+sudo dpkg-reconfigure tzdata
 sudo reboot
 ```
 

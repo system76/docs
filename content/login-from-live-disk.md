@@ -19,7 +19,7 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-## Login from Live Disk (Chroot)
+## Log in from Live Disk (Chroot)
 
 It is possible to mount an OS drive and log into the installed OS with root access. This is called gaining "chroot" (change to root) access. This process is useful when [rescuing files](/articles/disaster-recovery), [fixing package manager issues](/articles/package-manager-pop), or [resetting forgotten user passwords](/articles/password).
 
@@ -56,20 +56,23 @@ To access an encrypted disk, run these additional commands to unlock the encrypt
 |:--------------------------------------------------:|:-------------------------------------------------:|
 | ```sudo cryptsetup luksOpen /dev/sda3 cryptdata```       | ```sudo cryptsetup luksOpen /dev/nvme0n1p3 cryptdata``` |
 
->**Note:** You will see "Enter passphrase for /dev/nvme0n1p3 (or the name of your exact drive):" - Enter your encryption password here. You will "enter this blind," i.e. you won't see the characters typed out. Then press Enter. 
+>**Note:** You will see "Enter passphrase for /dev/nvme0n1p3 (or the name of your exact drive):" - Enter your encryption password here. You will "enter this blind," i.e. you won't see the characters typed out. Then press Enter.
 
 ```bash
+# scan for logical volumes
 sudo lvscan
+# scan and setup volume groups
 sudo vgchange -ay
 ```
 
 >**Note:** Pay attention to what the `cryptdata` group is called. If it is named something other than `data-root`, substitute the correct info into this next command.  Make sure that `-root` is on the end:
 
 ```bash
+# setup access to the encrypted file system on '/mnt'
 sudo mount /dev/mapper/data-root /mnt
 ```
 
-Now the existing hard drive can be accessed by going to the `/mnt` folder.  To use the <u>Files</u> program, go to `+ Other Locations` -> `Computer` and then click on the `/mnt` folder.
+**Note:** If you want to backup your files, you can do so at this point in the process if you don't already have a [backup of your data](/articles/backup-files/)
 
 ## Chroot
 
@@ -82,6 +85,7 @@ The EFI partition is the next partition to be mounted. To help identify it, this
 | ```sudo mount /dev/sda1 /mnt/boot/efi```    | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```  |
 
 ```bash
+# mount several "kernel" virtual file systems from the live system to '/mnt/'
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo chroot /mnt
 ```

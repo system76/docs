@@ -158,31 +158,11 @@ pop-upgrade release upgrade
 
 ## Upgrading older releases
 
-| Pop!_OS Version                                  | Upgrade Process                            |
-| :------------------------------------------- | :------------------------------------- |
-| Pop!\_OS 17.10 (artful) 18.10 (cosmic), 19.04 (disco) or 19.10 (eoan)         | Requires upgrading to Pop!\_OS 20.04 (focal) LTS before upgrading to the current Pop!\_OS 22.04 (jammy)       |
-|Pop!_OS 20.10 (groovy) |Refresh the OS from a recently upgraded [recovery partition](/articles/pop-recovery), or perform a clean install using a [Live USB](/articles/pop-live-disk) containing the latest release|
+These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 17.10 to Pop!\_OS 18.04:
 
-These older Pop!\_OS releases are now unsupported and no new updates are available. After unsupported versions have been removed from the archive and mirror network, you will need to change where your system checks for un-applied updates to be able to upgrade. Open a terminal and follow the next set of instructions to upgrade from Pop!\_OS 18.10, 19.04, or 19.10.
+### 17.10 -> 18.04
 
-### 1. Get your current system fully updated
-
-```bash
-# change server from us.archive to old-releases
-sudo sed -i 's/us.archive/old-releases/g' /etc/apt/sources.list
-# request release files
-sudo apt update -m
-# configure any packages partially setup
-sudo dpkg --configure -a
-# fix any missing package dependency
-sudo apt install -f
-# upgrade all packages and dependencies to newest in release
-sudo apt full-upgrade
-# make sure the `pop-desktop` meta package is installed
-sudo apt install pop-desktop
-```
-
-### 2. Move any PPA additions out of the way, and get all of the sources pointed at the 20.04 versions
+#### Move any PPA additions out of the way, and get all of the sources pointed at the next release.
 
 ```bash
 # create a backup directory
@@ -191,10 +171,82 @@ sudo mkdir -p /etc/apt/backup
 sudo mv /etc/apt/sources.list.d/* /etc/apt/backup
 # add the System76 PPA back in
 sudo apt-add-repository -yn ppa:system76/pop
-# change update server back to us.archive.ubuntu.com
+```
+
+#### Get your current system fully updated
+
+```bash
+# change server from us.archive to old-releases
+sudo sed -i 's/us.archive/old-releases/g' /etc/apt/sources.list
+sudo sed -i '46,51 s/^/#/' /etc/apt/sources.list
+# request release files
+sudo apt update -m
+# configure any packages partially setup
+sudo dpkg --configure -a
+# fix any missing package dependency
+sudo apt install -f
+# upgrade all packages and dependencies to newest in release
+sudo apt full-upgrade
+```
+
+#### Move to the 18.04 release (Bionic Beaver)
+
+```bash
+# now we'll change all release names to the next release
+sudo sed -Ei 's/artful/bionic/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 sudo sed -i 's/old-releases/us.archive/g' /etc/apt/sources.list
-# change all release names to focal, the 20.04 release
-sudo sed -Ei 's/cosmic|eoan|disco/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+sudo sed -i '46,51 s/^#//' /etc/apt/sources.list
+sudo apt update -m
+sudo apt full-upgrade | tee ~/upgrade-17.10-18.04.log
+# make sure the `pop-desktop` meta package is installed
+sudo apt install pop-desktop
+```
+
+Now reboot the system
+
+```bash
+sudo reboot
+```
+
+### 18.04 -> 20.04
+
+```bash
+sudo sed -Ei 's/bionic/focal/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+sudo apt update -m
+sudo apt full-upgrade
+sudo apt install dpkg apt pop-desktop
+sudo apt -o "Dpkg::Options::=--force-all" full-upgrade | tee ~/upgrade-18.04-20.04.log
+```
+
+### 20.04 -> 22.04
+
+```bash
+sudo sed -Ei 's/focal/jammy/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+# create new PPA file for from Pop!_OS infrastructure
+sudo add-apt-repository "deb http://apt.pop-os.org/release jammy main"
+sudo rm /etc/apt/sources.list.d/system76-ubuntu-pop-*.list*
+sudo apt update -m
+sudo apt -o "Dpkg::Options::=--force-all" full-upgrade | tee ~/upgrade-20.04-22.04.log
+sudo apt install dpkg apt pop-desktop
+
+```
+
+### 20.10
+
+```bash
+sudo sed -Ei 's/groovy/hirsute/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+```
+
+### 21.04
+
+```bash
+sudo sed -Ei 's/hirsute/impish/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+```
+
+### 21.10
+
+```bash
+sudo sed -Ei 's/impish/jammy/g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list
 ```
 
 ### 3. Now, do the upgrade
@@ -203,10 +255,13 @@ This will have a three phases and once the download is complete, you can't chang
 
 ```bash
 # get release files
-sudo apt update
+sudo apt update -m
 # update the upgrade software first
 sudo apt install dpkg apt
+```
+
 # upgrade all packages on system to latest release, keeping log in "upgrade.log"
+```bash
 sudo apt full-upgrade 2>/dev/null | tee ~/upgrade.log
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Login from Live Disk (Chroot)
+title: Log in from Live Disk (Chroot)
 description: >
     Access an installed OS from a Live Disk/Recovery.
 keywords:

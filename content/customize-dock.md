@@ -9,7 +9,8 @@ keywords:
   - Moving
   - Dock
   - Dash to Dock
-  - Pop Dock
+  - COSMIC Dock
+  - Ubuntu Dock
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -23,17 +24,17 @@ redirect_from:
   - /articles/move-launcher
 ---
 
-Pop!\_OS and Ubuntu both contain an application dock on the bottom of the screen. You can adjust this preference, move the dock to the bottom of the screen, and more in <u>Settings</u>.
+Pop!\_OS and Ubuntu both contain an application dock on the screen. The location of the dock, as well as other dock settings, can be adjusted in <u>Settings</u>.
 
 ## Default Dock on Pop!\_OS
 
-Pop!\_OS includes a lightweight version of Dash to Dock, which is why the dock already displays on the bottom of the screen by default.
+Pop!\_OS's dock is positioned along the bottom edge of the screen by default.
 
 ![Stock Pop Dock](/images/customize-dock/pop-dock.png)
 
 ## Default Dock on Ubuntu
 
-Ubuntu includes a lightweight version of Dash to Dock, which is why the dock already displays on the left side of the screen by default.
+Ubuntu's dock is positioned along the left edge of the screen by default.
 
 ![Stock Ubuntu Dock](/images/customize-dock/ubuntu-dock.png)
 

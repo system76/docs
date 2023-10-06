@@ -32,9 +32,10 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Bonobo WS [(bonw15)](https://tech-docs.system76.com/models/bonw15/README.html) | Thelio Major [(thelio-major-b1-b2/r1-r2)](https://tech-docs.system76.com/models/thelio-major-b1-b2-r1-r2/README.html) |
 | Darter Pro [(darp6)](https://tech-docs.system76.com/models/darp6/README.html) | Thelio Massive B1 [(thelio-massive-b1)](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
 | Darter Pro [(darp7)](https://tech-docs.system76.com/models/darp7/README.html) | Thelio Mega R1 [(thelio-mega-r1)](https://tech-docs.system76.com/models/thelio-mega-r1.0/README.html) |
- Darter Pro [(darp8)](https://tech-docs.system76.com/models/darp8/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
-| Galago Pro [(galp4)](https://tech-docs.system76.com/models/galp4/README.html) | Thelio Mira B1 [(thelio-mira-b1)](https://tech-docs.system76.com/models/thelio-mira-b1.0/README.html) |
-| Galago Pro [(galp5)](https://tech-docs.system76.com/models/galp5/README.html) | Thelio Mira R3 [(thelio-mira-r3)](https://tech-docs.system76.com/models/thelio-mira-r3/README.html) |
+| Darter Pro [(darp8)](https://tech-docs.system76.com/models/darp8/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
+| Darter Pro [(darp9)](https://tech-docs.system76.com/models/darp9/README.html) | Thelio Mira B1 [(thelio-mira-b1)](https://tech-docs.system76.com/models/thelio-mira-b1.0/README.html) |
+| Galago Pro [(galp4)](https://tech-docs.system76.com/models/galp4/README.html) | Thelio Mira R3 [(thelio-mira-r3)](https://tech-docs.system76.com/models/thelio-mira-r3/README.html) |
+| Galago Pro [(galp5)](https://tech-docs.system76.com/models/galp5/README.html) |
 | Galago Pro [(galp6)](https://tech-docs.system76.com/models/galp6/README.html) |
 | Galago Pro [(galp7)](https://tech-docs.system76.com/models/galp7/README.html) |
 | Gazelle [(gaze15)](https://tech-docs.system76.com/models/gaze15/README.html) |

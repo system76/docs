@@ -1,5 +1,5 @@
 ---
-title: Manual steps to update firmware on Launch and Launch Heavy keyboards
+title: Manual steps to update firmware on Launch (launch_2) and Launch Heavy (launch_heavy_1) keyboards
 description: >
   Launch firmware before version 0.12.20 will need these manual steps to make sure they can reliably upgrade firmware with `fwupd`
 keywords:
@@ -43,6 +43,8 @@ Start System76 Keyboard Tester -- this will launch the System76 Keyboard Configu
 
 ### Enter Bootloader mode
 
+* NOTE: If you have a Launch keyboard other than Launch_2 or Launch_heavy_1, use the Firmware Updater in your Settings Application.
+
 Unplug the Launch Keyboard and hold <kbd>Esc</kbd> while plugging it back in. Continue to hold the <kbd>Esc</kbd> key for about 10 seconds, or until the firmware update button appears in the right side of the Configurator's header bar. The keyboard's LEDs will remain off while the keyboard is in bootloader mode.
 
 ![System76-Tester-in-update-mode](/images/launch_2-firmware-update/Tester-in-firmware-update-mode.png)
@@ -57,7 +59,7 @@ When the firmware update button appears, it means that your keyboard is in bootl
 
 ![System76-Tester-firmware-update](/images/launch_2-firmware-update/Tester-in-firmware-update-mode-menu.png)
 
-Once the firmware update has completed, the keyboard will reset, the keyboard will be displayed in the Configurator window, and the LEDs will turn on to the default "spacetime" pattern.
+Once the firmware update has completed, the keyboard will reset, the keyboard will be displayed in the Configurator window, and the LEDs will turn on to the default "spacetime" pattern. You can then restore your keyboard layout from the Keyboard Configurator by selecting "Import Layout".
 
 The button below the keyboard in the Configurator should now say "Configure Keyboard" instead of "Keyboard firmware update required!"
 

@@ -34,7 +34,7 @@ Once the account is created you will be taken to the your account dashboard:
 
 Your browser (Firefox is the default in Pop!\_OS) will ask whether you want to open or save the file.
 
-## Install the Beta
+## Install the DEB file
 
 In Pop!\_OS, the default application for opening .deb files is Eddy. Choose the "Open" option, and Eddy will launch automatically when the download is complete. (If you are using a different web browser and you saved the .deb file, locate the .deb file in the **Files** app and open it.)
 
@@ -58,5 +58,5 @@ Once the .deb file is downloaded, instead of using Eddy, it can also be installe
 
 ```bash
 cd ~/Downloads
-sudo apt install ./Lightworks*.deb
+sudo apt install ./lightworks*.deb
 ```

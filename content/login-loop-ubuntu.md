@@ -1,5 +1,5 @@
 ---
-title: Black Screen Or Login Issues (Ubuntu)
+title: Black Screen Or Login Issues (Ubuntu 22.04)
 description: >
   Are you getting stuck in a login loop, even though your password is correct? Do you see a black screen after you log in?
 keywords:
@@ -98,18 +98,11 @@ After reinstalling those packages and rebooting, try logging in again.
 
 ## Reinstall NVIDIA Driver
 
-If your system is equipped with NVIDIA graphics, a recent update might be causing the login issues. (Usually, NVIDIA driver issues will prevent the login screen from loading at all; however, it's still worth reinstalling if you are unable to log in after the above steps.) Refer to the table below to determine if your system contains NVIDIA graphics:
+If your system is equipped with NVIDIA graphics, a recent update might be causing the login issues. (Usually, NVIDIA driver issues will prevent the login screen from loading at all; however, it's still worth reinstalling if you are unable to log in after the above steps.) Run these commands to determine if your system has NVIDIA graphics:
 
-| Always        | Maybe          | Never       |
-|:------------- |:-------------- |:----------- |
-| Oryx Pro      | Wild Dog Pro   | Lemur (Pro) |
-| Adder WS      | Ratel          | Kudu        |
-| Serval WS     | Galago Pro 5   | Meerkat     |
-| Bonobo WS     | Gazelle        | Galago Pro (4 or older)  |
-| Leopard WS    | Thelio         | Darter Pro  |
-| Silverback WS | Thelio Mira    | Pangolin    |
-| Thelio Mega   | Thelio Major   |             |
-|               | Thelio Massive |             |
+```bash
+lspci -v | grep VGA
+```
 
 To remove the NVIDIA driver, run the following:
 

@@ -6,7 +6,7 @@
           href="https://system76.com/specials"
           target="_blank"
         >
-          Gear Up and SAVE up to $150!
+          Special Offers
         </a>
       </template>
 

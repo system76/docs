@@ -24,6 +24,7 @@ These instructions are for System76 owners who have been prompted for a firmware
 * **Disconnect external devices**, including any displays or USB devices.
 * **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
 * During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
+* Make sure you can **see the System76 splash screen on boot**. Not all ports of your GPU might provide a signal during the firmware updating process and so for example you may have to switch from using a display port cable to an HDMI cable.
 
 * **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
 

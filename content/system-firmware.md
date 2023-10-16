@@ -22,10 +22,9 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 * Make sure the laptop is **plugged into the AC Adapter** for the entire firmware updating process. USB Type-C charging is **not** supported during firmware updates on the following models: Galago Pro (galp3-c, galp4), Darter Pro (darp5, darp6)
 * **Disconnect external devices**, including any displays or USB devices.
-* During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
-
 * **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
-
+* During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
+* 
 ### Starting the Update (GUI)
 
 In Pop!\_OS, you can check for firmware updates using **Settings -> Firmware**.

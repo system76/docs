@@ -60,7 +60,7 @@ The Dock can be moved in both OSes. macOS has this feature in System Preferences
 
 For more information on GNOME extensions, refer to the following support articles:
 [Customize Pop!\_OS](/articles/customize-gnome)
-[Dock Customization](/articles/dash-to-dock)
+[Dock Customization](/articles/customize-dock)
 
 ### View Installed applications
 

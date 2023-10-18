@@ -238,5 +238,7 @@ sudo apt autoremove --purge ...
 For example, to remove KDE:
 
 ```bash
+sudo apt purge kde-*
+
 sudo apt autoremove --purge kde-standard
 ```

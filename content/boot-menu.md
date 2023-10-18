@@ -23,7 +23,7 @@ The BIOS or boot menu can be accessed by holding specific keys down during boot.
 | Laptops:<br/>All Open Firmware models<br/>Pangolin (pang12) | ESC      | ESC:<br/>Select `One Time Boot` (Open Firmware)<br/>or `Save & Exit` → `Boot Override`. |
 | Laptops:<br/>Most proprietary firmware models               | F2       | F7                                |
 | Older laptops                                               | Depends on the system | F1                   |
-| Thelio desktops                                             | Del      | F8 or F12                         |
+| Thelio desktops                                             | Del      | F8/F11/F12                         |
 | Meerkat (mini) desktops                                     | F2       | F10                               |
 
 ## Open Firmware Screenshots

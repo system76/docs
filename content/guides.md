@@ -7,6 +7,9 @@ keywords:
   - Guides
   - Quickstart
   - Setup
+  - repair guide
+  - internal view
+  - disassembly
   - System76
 
 facebookImage: /_social/article
@@ -51,9 +54,10 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Oryx Pro [(oryp8)](https://tech-docs.system76.com/models/oryp8/README.html) |
 | Oryx Pro [(oryp9)](https://tech-docs.system76.com/models/oryp9/README.html) |
 | Oryx Pro [(oryp10)](https://tech-docs.system76.com/models/oryp10/README.html) |
-| Pangolin Pro [(pang10)](https://tech-docs.system76.com/models/pang10/README.html) |
-| Pangolin Pro [(pang11)](https://tech-docs.system76.com/models/pang11/README.html) |
-| Pangolin Pro [(pang12)](https://tech-docs.system76.com/models/pang12/README.html) |
+| Pangolin [(pang10)](https://tech-docs.system76.com/models/pang10/README.html) |
+| Pangolin [(pang11)](https://tech-docs.system76.com/models/pang11/README.html) |
+| Pangolin [(pang12)](https://tech-docs.system76.com/models/pang12/README.html) |
+| Pangolin [(pang13)](https://tech-docs.system76.com/models/pang13/README.html) |
 | Serval WS [(serw12)](https://tech-docs.system76.com/models/serw12/README.html) |
 | Serval WS [(serw13)](https://tech-docs.system76.com/models/serw13/README.html) |
 

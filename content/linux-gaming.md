@@ -9,6 +9,7 @@ keywords:
   - lutris
   - gamehub
   - proton
+  - 22.04
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -28,13 +29,13 @@ Open the <u>Pop!_Shop</u> application then either search for Steam or by clickin
 
 ![Pop!_Shop Steam](/images/linux-gaming/pop-shop_steam.png)
 
-Once installed, use the Activities Overview to search for and run <u>Steam</u>.
+Once installed, use the Applications button to search for and run <u>Steam</u>.
 
 ### Install Steam From Command Line
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Activities Overview](/images/linux-gaming/search-terminal.png)
+![Application Library](/images/linux-gaming/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -59,6 +60,45 @@ Proton is a compatibility layer tool which enables support for some Windows game
 Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supported titles AND "Enable Steam Play for all other titles" as pictured below:
 
 ![Steam Settings](/images/linux-gaming/enable-steam-play_proton.png)
+
+## Using Steam
+
+Once installed, use the Applications button to search for and run <u>Steam</u>.
+
+### Proton vs. Native
+
+![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
+
+![Playing a native game](/images/linux-gaming/playing-native-game.png)
+
+From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
+Once you've enabled Steam Play, they both present the usual green "Play" button.
+
+**NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
+
+If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
+
+![Skyrim 1](/images/linux-gaming/skyrim-info-pane.png)
+
+![Skyrim Detail](/images/linux-gaming/steamplay-detail.png)
+
+### Changing the Proton Version for a Specific Game
+
+It's possible to specify a certain Proton version on per game basis. You can switch between older and newer Proton versions installed on your system by the Steam client, or select custom versions of proton like ProtonGE.
+
+To change the Proton version:
+
+1. Click on the "Gear" icon in the top-right corner of the game info page.
+
+2. In the drop-down menu, select "Properties."
+
+3. Once the properties window opens, click "Compatibility" from the left menu pane.
+
+4. Check the box to "Force the use of a specific Steam Play compatibility tool."
+
+5. Select the desired Proton version from the drop down menu (as pictured below).
+
+![Compatibility Menu](/images/linux-gaming/skyrim-proton-version.png)
 
 ### Use Protonup to Manage Custom Proton Versions
 
@@ -127,13 +167,11 @@ ProtonUP-Qt is available as a Flatpak in the Pop!\_Shop. Launch the Pop!\_Shop, 
 
 <u>GameHub</u> is a game launcher that can use different compatibility layers like Wine/Proton, DOSBox and other tools. It can hook into Steam, GOG and other sources. It is written in Vala and you can read more about it [here](https://tkashkin.github.io/projects/gamehub/).
 
->**Note**: GameHub is not supported in Pop!\_OS versions later than 20.04. Users running Pop!\_OS 21.04 or later should consider using [Lutris](#lutris-install) as an alternative.
-
 ### Install GameHub From Command Line
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Activities Overview](/images/linux-gaming/search-terminal.png)
+![Application Library](/images/linux-gaming/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -146,7 +184,7 @@ apt search gamehub
 Once we find the right name for <u>GameHub</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
 ```bash
-sudo apt install com.github.tkashkin.gamehub
+sudo apt install gamehub
 ```
 
 ### Install GameHub From the Pop!_Shop
@@ -155,7 +193,7 @@ Open the <u>Pop!_Shop</u> application then either search for GameHub, or navigat
 
 ![Pop!_Shop GameHub](/images/linux-gaming/pop-shop_gamehub.png)
 
-Once installed, use the Activities Overview to search for and run <u>GameHub</u>.
+Once installed, use the Applications button to search for and run <u>GameHub</u>.
 
 ## Lutris
 
@@ -188,45 +226,6 @@ sudo apt install lutris
 Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicking the <u>Lutris</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
 ![Pop!_Shop Lutris](/images/linux-gaming/pop-shop_lutris.png)
-
-## Using Steam
-
-Once installed, use the Activities Overview to search for and run <u>Steam</u>.
-
-### Proton vs. Native
-
-![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
-
-![Playing a native game](/images/linux-gaming/playing-native-game.png)
-
-From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
-Once you've enabled Steam Play, they both present the usual green "Play" button.
-
-**NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
-
-If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
-
-![Skyrim 1](/images/linux-gaming/skyrim-info-pane.png)
-
-![Skyrim Detail](/images/linux-gaming/steamplay-detail.png)
-
-### Changing the Proton Version for a Specific Game
-
-It's possible to specify a certain Proton version on per game basis. You can switch between older and newer Proton versions installed on your system by the Steam client, or select custom versions of proton like ProtonGE.
-
-To change the Proton version:
-
-1. Click on the "Gear" icon in the top-right corner of the game info page.
-
-2. In the drop-down menu, select "Properties."
-
-3. Once the properties window opens, click "Compatibility" from the left menu pane.
-
-4. Check the box to "Force the use of a specific Steam Play compatibility tool."
-
-5. Select the desired Proton version from the drop down menu (as pictured below).
-
-![Compatibility Menu](/images/linux-gaming/skyrim-proton-version.png)
 
 ## Using GameHub
 

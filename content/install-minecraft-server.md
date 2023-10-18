@@ -78,7 +78,7 @@ The server will crash on the first run, so first change the eula.txt text from `
 Then, Re-start by stopping the server and restarting.  
 We can also configure the world and other settings in `server.properties`  
 
-For more info, see the [Minecraft Wiki](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server) on this issue.
+For more info, see the [Minecraft Wiki](https://minecraft.wiki/w/Tutorials/Setting_up_a_server) on this issue.
 
 ---
 

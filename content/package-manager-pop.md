@@ -18,7 +18,7 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-## Apt/Dpkg (system-wide packages)
+## APT/Dpkg (system-wide packages)
 
 If your system complains about a failed upgrade, package manager conflicts, broken upgrades, or other package-related issues, there are several common fixes to these problems. Some package manager issues can be resolved with the graphical update program, but many require the command line. Try running these commands to fix your package manager:
 
@@ -112,11 +112,11 @@ apt-mark showhold
 
 If the Terminal returns nothing, no packages are held.
 
-If the Pop!_Shop indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
+If the <u>Pop!_Shop</u> indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
 
 ## Flatpak
 
-If the Pop!_Shop is showing an update available, but there are no updates listed on the update page, there may be a Flatpak runtime (a backend program that another Flatpak depends on) with an update available. Run these commands to update all Flatpaks and remove any Flatpak runtimes that are no longer required by any installed programs:
+If the <u>Pop!_Shop</u> is showing an update available, but there are no updates listed on the update page, there may be a Flatpak runtime (a backend program that another Flatpak depends on) with an update available. Run these commands to update all Flatpaks and remove any Flatpak runtimes that are no longer required by any installed programs:
 
 ```bash
 flatpak update
@@ -130,4 +130,23 @@ The program <u>Synaptic Package Manager</u> is a very powerful GUI frontend for 
 
 ```bash
 sudo apt install synaptic
+```
+
+## Sending information to support
+
+The following commands will save the output to `upgrade.txt` and `sources.txt` so that they can be attached to support emails.
+
+```bash
+sudo apt clean | tee -a ~/upgrade.txt
+sudo apt update -m | tee -a ~/upgrade.txt
+sudo dpkg --configure -a | tee -a ~/upgrade.txt
+sudo apt install -f | tee -a ~/upgrade.txt
+sudo apt full-upgrade | tee -a ~/upgrade.txt
+sudo apt autoremove --purge | tee -a ~/upgrade.txt
+
+cat /etc/apt/sources.list | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/* | tee -a ~/sources.txt
+ls /etc/apt/sources.list.d/ | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/system.sources | tee -a ~/sources.txt
+cat /etc/apt/sources.list.d/pop-os-apps.sources | tee -a ~/sources.txt
 ```

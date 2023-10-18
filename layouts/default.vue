@@ -6,7 +6,7 @@
           href="https://system76.com/specials"
           target="_blank"
         >
-          Gear Up and SAVE up to $150!
+          Specials
         </a>
       </template>
 
@@ -15,7 +15,7 @@
           href="https://system76.com/desktops"
           target="_blank"
         >
-          New Thelio Accent Panels! Learn More!
+          Computers Engineered to Unleash Your Potential
         </a>
       </template>
 
@@ -43,7 +43,7 @@
       url-contact="https://system76.com/contact"
       url-about="https://system76.com/about"
       url-careers="https://system76.com/careers"
-      url-specials="https://system76.com/specials"
+      url-sustainability="https://system76.com/sustainability"
       url-shipping="https://system76.com/shipping"
       url-privacy="https://system76.com/privacy-and-legal"
     />

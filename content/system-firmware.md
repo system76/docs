@@ -24,9 +24,7 @@ These instructions are for System76 owners who have been prompted for a firmware
 * **Disconnect external devices**, including any displays or USB devices.
 * **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
 * During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
-
-* **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
-
+  
 ### Starting the Update (GUI)
 
 In Pop!\_OS, you can check for firmware updates using **Settings -> Firmware**.
@@ -136,7 +134,8 @@ Identify the EFI partition in the list. (The EFI partition is usually the first 
 #### For NVMe Drives
 
 ```bash
-sudo apt install system76-driver
+sudo apt update
+sudo apt install system76-driver system76-firmware
 sudo mkdir -p /boot/efi
 sudo mount /dev/nvme0n1p1 /boot/efi
 gnome-control-center firmware
@@ -147,7 +146,8 @@ Where `/dev/nvme0n1p1` is the EFI system partition.
 #### For SATA Drives
 
 ```bash
-sudo apt install system76-driver
+sudo apt update
+sudo apt install system76-driver system76-firmware
 sudo mkdir -p /boot/efi
 sudo mount /dev/sda1 /boot/efi
 gnome-control-center firmware

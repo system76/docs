@@ -23,7 +23,7 @@ Pop!\_OS and Ubuntu both include the GNOME desktop environment by default. A des
 
 You can install an alternative desktop environment using the instructions below.
 
-**NOTE:** be careful when installing other desktop environments, as they may affect the default GNOME desktop (both Ubuntu and Pop).
+> **Warning:** Installing other desktop environments may affect the visual style and functionality of the default GNOME desktop (on both Ubuntu and Pop!_OS).
 
 If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default GNOME desktop environment is installed in Pop!\_OS, install the `pop-desktop` package:
 
@@ -229,16 +229,16 @@ gsettings set org.cinnamon.desktop.lockdown disable-lock-screen false
 
 ### Removing Desktop Environments
 
-If you no longer want to use a desktop environment, it can be removed by using:
+If you no longer want to use a desktop environment, it can be removed by using the `sudo apt autoremove --purge` command with the name of the package you originally installed. For example, if you installed LXDE with `sudo apt install lxde`, you can remove it using the following command:
 
 ```bash
-sudo apt autoremove --purge ...
+sudo apt autoremove --purge lxde
 ```
 
-For example, to remove KDE:
+Some desktop environments (such as KDE) may leave behind additional packages even after uninstalling the original package with the `autoremove` command. To more thoroughly remove packages related to a desktop environment, use a regular expression to remove all packages beginning with the name of the environment followed by a hyphen (for example, `kde-`):
+
+> **Warning:** Because regular expressions can match packages you don't expect, inspect the list of packages being removed before confirming the operation, and be prepared to reinstall any packages you wish to keep afterwards.
 
 ```bash
-sudo apt purge kde-*
-
-sudo apt autoremove --purge kde-standard
+sudo apt autoremove --purge 'name?(^kde-)'
 ```

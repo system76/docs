@@ -21,7 +21,7 @@ tableOfContents: true
 
 ## Trusting the computer in iOS
 
-First the iPhone must trust the computer to allow access to the file system on the iPhone using the prompt in this screenshot:
+First the iPhone must trust your computer which then allows access to the file system on the iPhone. This can be done using the prompt that appears when you connect the iPhone to your system in this screenshot:
 
 ![iPhone Trust Prompt](/images/transfer-photos-from-iphone/iPhone-Trust-Device-scaled.png)
 

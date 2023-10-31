@@ -135,10 +135,11 @@ Identify the EFI partition in the list. (The EFI partition is usually the first 
 
 ```bash
 sudo apt update
-sudo apt install system76-driver system76-firmware
+sudo apt install system76-firmware
+sudo system76-firmware-cli schedule
 sudo mkdir -p /boot/efi
 sudo mount /dev/nvme0n1p1 /boot/efi
-gnome-control-center firmware
+sudo system76-firmware-cli schedule
 ```
 
 Where `/dev/nvme0n1p1` is the EFI system partition.
@@ -147,10 +148,10 @@ Where `/dev/nvme0n1p1` is the EFI system partition.
 
 ```bash
 sudo apt update
-sudo apt install system76-driver system76-firmware
+sudo apt install system76-firmware
 sudo mkdir -p /boot/efi
 sudo mount /dev/sda1 /boot/efi
-gnome-control-center firmware
+sudo system76-firmware-cli schedule
 ```
 
 After the above commands are ran depending on the drive that the OS is installed on, you can use the above instructions to update your firmware.

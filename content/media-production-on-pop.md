@@ -98,7 +98,7 @@ Flowblade is a multitrack non-linear video editor with a set of industry standar
 
 Install Directly From the Pop!_Shop
 
-### Shotcut 
+### Shotcut
 
 Shotcut is a free, open source, cross-platform video editor. It has wide format support, various device and transport options, and an intuitive but customizable user interface.
 

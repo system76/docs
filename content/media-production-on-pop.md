@@ -103,4 +103,3 @@ Install Directly From the Pop!_Shop
 Shotcut is a free, open source, cross-platform video editor. It has wide format support, various device and transport options, and an intuitive but customizable user interface.
 
 Install Directly From the Pop!_Shop
-

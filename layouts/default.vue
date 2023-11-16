@@ -2,20 +2,15 @@
   <div class="min-h-screen flex flex-col">
     <sys-omnibar>
       <template #global>
-        <a
-          href="https://system76.com/specials"
-          target="_blank"
-        >
-          Specials
-        </a>
+        <span :class="$style.hidden" />
       </template>
 
       <template #copy>
         <a
-          href="https://system76.com/desktops"
+          href="https://system76.com/specials"
           target="_blank"
         >
-          Computers Engineered to Unleash Your Potential
+          Tuxmas holiday deals are here! Shop Now!
         </a>
       </template>
 

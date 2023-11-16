@@ -26,7 +26,7 @@ This article combines several self-help articles resolving common issues experie
 
 ### 1. Do you have a current backup of your files?
 
-If your issue is time-sensitive, reinstalling the or [refreshing](/articles/pop-recovery#refresh-install) operating system may provide the fastest resolution. Be sure to backup all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
+If your issue is time-sensitive, reinstalling or [refreshing](/articles/pop-recovery#refresh-install) the operating system may provide the fastest resolution. Be sure to back up all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
 
 **Note**: This guide may cover diagnostics and testing that you've already performed. Skip those sections as needed, but be sure to provide that information when submitting your ticket.
 

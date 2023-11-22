@@ -10,7 +10,7 @@
           href="https://system76.com/specials"
           target="_blank"
         >
-          Tuxmas holiday deals are here! Shop Now!
+          Tuxmas Black Friday Bundles are here! Shop Now!
         </a>
       </template>
 

@@ -10,7 +10,7 @@
           href="https://system76.com/specials"
           target="_blank"
         >
-          Tuxmas Black Friday Bundles are here! Shop Now!
+          Tuxmas: Upgrade & Save up to $460!
         </a>
       </template>
 

@@ -82,7 +82,7 @@ Pop!_OS 22.04 LTS
        4      496GB   500GB   4295MB  linux-swap(v1)            swap
 ```
 
->**NOTE:** A BIOS install of Pop!\_OS will not have a Recovery Partition and the Flags for the Boot Partition will not note esp. 
+>**NOTE:** A BIOS install of Pop!\_OS will not have a Recovery Partition and the Flags for the Boot Partition will not note esp.
 
 ---
 
@@ -164,7 +164,7 @@ exit
 sudo update-grub
 ```
 
-## Legacy BIOS Boot - Ubuntu (GRUB)
+### Legacy EFI Boot - Pop!_OS (GRUB)
 
 If the echo command at the beginning of this page says that the OS is installed in Legacy mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
 
@@ -174,15 +174,43 @@ mount: /mnt: unknown filesystem type 'crypto_LUKS'.
 
 Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
+Run these commands based on what type of disk you have:
+
+| NVMe Drive                       | SATA Drive                  |
+| :------------------------------- | :-------------------------- |
+| `sudo mount /dev/nvme0n1p2 /mnt` | `sudo mount /dev/sda2 /mnt` |
+| `sudo mount /dev/nvme0n1p1 /mnt/boot/` | `sudo mount /dev/sda1 /mnt/boot/` |
+
+If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Pop!_OS root partition.
+
+Then continue with the following commands for either disk type:
+
+After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
+
 ```bash
-[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
+for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+sudo chroot /mnt
+apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+update-initramfs -c -k all
+sudo update-grub
 ```
+
+### Legacy BIOS Boot - Ubuntu (GRUB)
+
+If the echo command at the beginning of this page says that the OS is installed in Legacy mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
+
+```
+mount: /mnt: unknown filesystem type 'crypto_LUKS'.
+```
+
+Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
 Run these commands based on what type of disk you have:
 
 | NVMe Drive                       | SATA Drive                  |
 | :------------------------------- | :-------------------------- |
 | `sudo mount /dev/nvme0n1p2 /mnt` | `sudo mount /dev/sda2 /mnt` |
+| `sudo mount /dev/nvme0n1p1 /mnt/boot/` | `sudo mount /dev/sda1 /mnt/boot/` |
 
 If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Pop!_OS root partition.
 

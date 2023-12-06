@@ -82,6 +82,8 @@ Pop!_OS 22.04 LTS
        4      496GB   500GB   4295MB  linux-swap(v1)            swap
 ```
 
+>**NOTE:** A BIOS install of Pop!\_OS will not have a Recovery Partition and the Flags for the Boot Partition will not note esp. 
+
 ---
 
 ## How to tell if your system is EFI-based or legacy boot
@@ -100,7 +102,7 @@ Installed in UEFI mode
 support@pop-os:~$
 ```
 
-Additionally, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode.
+Additionally, if `esp` is not listed under `flags` for the Boot Partition, the system is installed in legacy BIOS mode.
 
 ### EFI Boot - Pop!_OS (systemd-boot)
 

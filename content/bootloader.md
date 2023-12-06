@@ -198,7 +198,7 @@ update-initramfs -c -k all
 sudo update-grub
 ```
 
-### Encrypted Disk
+## Encrypted Disk
 
 Pop!_OS supports full-disk encryption as an option by default, whereas, Ubuntu does not. If you are on Ubuntu, you likely don't need to follow this section.
 

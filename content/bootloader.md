@@ -21,7 +21,7 @@ A bootloader takes care of getting the operating system started up. It is also r
 
 ### Important Note
 
-If you need to configure grub-pc (for example, after an update), installing GRUB to all devices will break GRUB. You will need to install to `/dev/sda` _not_ `/dev/sda1`.
+If you need to configure grub-pc (for example, after an update), installing GRUB to all devices will break GRUB. You will need to install to `/dev/sda` or `/dev/nvme0n1` _not_ `/dev/sda1` or `/dev/nvme0n1p1`.
 
 On a fresh install of Pop!_OS 18.04 and newer, <u>systemd-boot</u> is used rather than the <u>GRUB</u> bootloader. The following instructions only apply to systems using the GRUB bootloader, otherwise refer to the <u>systemd-boot</u> section of this article.
 
@@ -33,11 +33,7 @@ Please see our instructions for making a live disk of Pop!_OS [here](/articles/l
 
 ### Boot from Live Disk
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the live disk. When you see the System76 logo on the screen, press and hold the appropriate key for your system:
-
-Laptops  | Desktops
--------- | --------
-Hold <kbd>Esc</kbd>, <kbd>F7</kbd>, or <kbd>F1</kbd> | Hold <kbd>F8</kbd>, <kbd>F10</kbd>, or <kbd>F12</kbd>
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the live disk. When you see the System76 logo on the screen, press and hold the appropriate key for your system based on this [article](/articles/boot-menu).
 
 Use the arrow keys and Enter key to select the live disk from the boot menu.
 
@@ -68,13 +64,27 @@ Pop!_OS 20.04 LTS
        4      496GB   500GB   4295MB  linux-swap(v1)            swap
 ```
 
+Ubuntu 22.04 LTS
+
+```
+      Number  Start   End     Size    File system     Name                          Flags
+       1      1047kB  538MB   537MB   fat32           EFI System Partition          boot, esp
+       2      538MB   496GB   491GB   ext4            
+```
+
+Pop!_OS 22.04 LTS
+
+```
+      Number  Start   End     Size    File system     Name      Flags
+       1      2097kB  524MB   522MB   fat32                     boot, esp
+       2      524MB   4819MB  4295MB  fat32           recovery  msftdata
+       3      4819MB  496GB   491GB   ext4            root
+       4      496GB   500GB   4295MB  linux-swap(v1)            swap
+```
+
 ---
 
 ## How to tell if your system is EFI-based or legacy boot
-
-## systemd-boot
-
-### EFI Boot
 
 Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the earlier `parted` output, then the system is installed in UEFI mode. You can also use this command to verify that your OS is installed in UEFI mode:
 
@@ -94,7 +104,13 @@ Additionally, if `bios_grub` is listed under `flags`, the system is installed in
 
 ### EFI Boot - Pop!_OS (systemd-boot)
 
-If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below.
+If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
+
+```
+mount: /mnt: unknown filesystem type 'crypto_LUKS'.
+```
+
+Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
@@ -103,7 +119,7 @@ First, we need to mount the OS partitions. Run these commands based on what type
 | `sudo mount /dev/nvme0n1p3 /mnt`          | `sudo mount /dev/sda3 /mnt`          |
 | `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
 
-If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p3` or `sda3` with the Pop!_OS root partition and `nvme0n1p1` or `sda1` with the EFI system partition (ESP).
+>**NOTE:** If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p3` or `sda3` with the Pop!_OS root partition and `nvme0n1p1` or `sda1` with the EFI system partition (ESP).
 
 Then continue with the following commands for either disk type:
 
@@ -116,36 +132,45 @@ exit
 sudo bootctl --path=/mnt/boot/efi install
 ```
 
-## GRUB EFI Boot
+### EFI Boot - Ubuntu (GRUB)
 
-Most computers sold after 2014 use UEFI mode.  If `boot, esp` is listed under `flags` in the `parted` output from earlier, then the system is installed in UEFI mode. You can also use this command to see if the OS is installed in UEFI mode:
+If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
 
-```bash
-[ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
+```
+mount: /mnt: unknown filesystem type 'crypto_LUKS'.
 ```
 
-Run these commands based on what type of disk you have:
+Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
-| NVMe Drives                               | SATA Drives                          |
-| :---------------------------------------- | :------------------------------------|
+First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
+
+| NVMe Drive                                | SATA Drive                           |
+| :---------------------------------------- | :----------------------------------- |
 | `sudo mount /dev/nvme0n1p2 /mnt`          | `sudo mount /dev/sda2 /mnt`          |
 | `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
 
-If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Pop!_OS root partition and `nvme0n1p1` or `sda1` with the boot partition.
+If you are using a non-default partitioning scheme (such as a dual boot), replace `nvme0n1p2` or `sda2` with the Ubuntu root partition and `nvme0n1p1` or `sda1` with the EFI system partition (ESP).
 
 Then continue with the following commands for either disk type:
 
 ```bash
 for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
 sudo chroot /mnt
-apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
+apt install --reinstall linux-image-generic linux-headers-generic
 update-initramfs -c -k all
-update-grub
+exit
+sudo update-grub
 ```
 
-## GRUB Legacy BIOS Boot
+## Legacy BIOS Boot - Ubuntu (GRUB)
 
-If `bios_grub` is listed under `flags`, the system is installed in BIOS mode. You can also use this command to see if the OS is installed in BIOS mode:
+If the echo command at the beginning of this page says that the OS is installed in Legacy mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
+
+```
+mount: /mnt: unknown filesystem type 'crypto_LUKS'.
+```
+
+Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
 ```bash
 [ -d /sys/firmware/efi ] && echo "Installed in UEFI mode" || echo "Installed in Legacy mode"
@@ -195,55 +220,6 @@ sudo mount /dev/mapper/data-root /mnt
 ```
 
 Now the existing hard drive can be accessed by going to the `/mnt` folder. To use the <u>Files</u> program, go to `+ Other Locations` -> `Computer` and then click on the `/mnt` folder.
-
-### EFI Boot - Ubuntu
-
-If the echo command above says the system is installed in EFI mode **and** you are using Ubuntu, follow this section.
-
-First, we need to mount the OS partitions. Run these commands based on what type of disk you have (based on the ```parted``` output from your system):
-
-| NVMe Drives                                  | SATA Drives                            |
-| :------------------------------------------- | :------------------------------------- |
-| ```sudo mount /dev/nvme0n1p2 /mnt```         | ```sudo mount /dev/sda2 /mnt```        |
-|```sudo mount /dev/nvme0n1p1 /mnt/boot/efi``` |```sudo mount /dev/sda1 /mnt/boot/efi```|
-
-<u>chroot</u> is a way to run commands as if the existing operating system had been booted. Once the chroot commands have been run, then package manager (<u>apt</u>) and other system level commands can be run.
-
-The EFI partition is usually around 512MB, and that is the partition to substitute into the next command. The Recovery partition is around 4GB.
-
-| NVMe Drive                                | SATA Drive                           |
-| :---------------------------------------- | :----------------------------------- |
-| `sudo mount /dev/nvme0n1p1 /mnt/boot/efi` | `sudo mount /dev/sda1 /mnt/boot/efi` |
-
-```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
-apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
-update-initramfs -c -k all
-update-grub
-```
-
-### Legacy BIOS Boot
-
-As mentioned above, if `bios_grub` is listed under `flags`, the system is installed in legacy BIOS mode. If this is the case, you need to follow this section to repair your bootloader.
-
-Run these commands based on what type of disk you have:
-
-| NVMe Drive                           | SATA Drive                      |
-| :----------------------------------- | :------------------------------ |
-| ```sudo mount /dev/nvme0n1p2 /mnt``` | ```sudo mount /dev/sda2 /mnt``` |
-
-You now have root administrator access to your installed OS. If you are trying to either fix or undo changes that you made to the system, you now have the access to do so. Once you are done, to exit from the <u>chroot</u> and reboot the computer, run these commands:
-
-```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
-sudo cp -n /etc/resolv.conf /mnt/etc/
-sudo chroot /mnt
-apt install --reinstall grub-amd64 linux-generic linux-headers-generic
-update-initramfs -c -k all
-sudo update-grub
-```
 
 As your system reboots, remove the disk when prompted. The computer should now boot normally.
 

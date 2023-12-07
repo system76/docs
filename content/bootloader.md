@@ -106,13 +106,25 @@ Additionally, if `esp` is not listed under `flags` for the Boot Partition, the s
 
 ### EFI Boot - Pop!_OS (systemd-boot)
 
-If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
+If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Pop!_OS, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. Running the command below will let us know if the drive is encrypted:
+
+```bash
+sudo cryptsetup luksDump /dev/nvme0n1p3
+```
+
+or
+
+```bash
+sudo cryptsetup luksDump /dev/sda3
+```
+
+If you get the output below then you do not need to decrypt the drive first:
 
 ```
-mount: /mnt: unknown filesystem type 'crypto_LUKS'.
+Device /dev/nvme0n1p3 or /dev/sda3 is not a valid LUKS device.
 ```
 
-Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
@@ -136,13 +148,25 @@ sudo bootctl --path=/mnt/boot/efi install
 
 ### EFI Boot - Ubuntu (GRUB)
 
-If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
+If the echo command at the beginning of this page says that the OS is installed in EFI mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. Running the command below will let us know if the drive is encrypted:
+
+```bash
+sudo cryptsetup luksDump /dev/nvme0n1p2
+```
+
+or
+
+```bash
+sudo cryptsetup luksDump /dev/sda2
+```
+
+If you get the output below then you do not need to decrypt the drive first:
 
 ```
-mount: /mnt: unknown filesystem type 'crypto_LUKS'.
+Device /dev/nvme0n1p2 or /dev/sda2 is not a valid LUKS device.
 ```
 
-Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
@@ -166,13 +190,25 @@ sudo update-grub
 
 ### Legacy EFI Boot - Pop!_OS (GRUB)
 
-If the echo command at the beginning of this page says that the OS is installed in Legacy mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
+If the echo command at the beginning of this page says that the OS is installed in Legacy mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. Running the command below will let us know if the drive is encrypted:
+
+```bash
+sudo cryptsetup luksDump /dev/nvme0n1p3
+```
+
+or
+
+```bash
+sudo cryptsetup luksDump /dev/sda3
+```
+
+If you get the output below then you do not need to decrypt the drive first:
 
 ```
-mount: /mnt: unknown filesystem type 'crypto_LUKS'.
+Device /dev/nvme0n1p3 or /dev/sda3 is not a valid LUKS device.
 ```
 
-Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
 Run these commands based on what type of disk you have:
 
@@ -197,13 +233,25 @@ sudo update-grub
 
 ### Legacy BIOS Boot - Ubuntu (GRUB)
 
-If the echo command at the beginning of this page says that the OS is installed in Legacy mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. If you see the error below then your drive is encrypted with LUKS:
+If the echo command at the beginning of this page says that the OS is installed in Legacy mode **and** you are using Ubuntu, follow this section. Please note that if you have an encrypted disk, you will need to first unlock it as described below. Running the command below will let us know if the drive is encrypted:
+
+```bash
+sudo cryptsetup luksDump /dev/nvme0n1p2
+```
+
+or
+
+```bash
+sudo cryptsetup luksDump /dev/sda2
+```
+
+If you get the output below then you do not need to decrypt the drive first:
 
 ```
-mount: /mnt: unknown filesystem type 'crypto_LUKS'.
+Device /dev/nvme0n1p2 or /dev/sda2 is not a valid LUKS device.
 ```
 
-Follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
 
 Run these commands based on what type of disk you have:
 

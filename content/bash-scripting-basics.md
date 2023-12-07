@@ -60,7 +60,7 @@ Congratulations! You have created a working Bash script. Of course, outputting a
 
 ## Adding functionality
 
-At this point, our script does one thing: It outputs a single line in our terminal. The script works, but it isn't very useful yet. There are many things you can do with a script, such as if you combine several commands together to create something useful. There is a lot to cover so I won't be able to cover everything. If you would like to explore more ideas, a good place to find useful commands you can use in your script is by searching for what you need to accomplish on website such as [Stack Overflow](https://stackoverflow.com) or [AskUbuntu](https://askubuntu.com), and then after finding the appropriate command, add it to a script. You can also run each command on their own in a terminal to test what the command and it's options do.
+At this point, our script does one thing: It outputs a single line in our terminal. The script works, but it isn't very useful yet. There are many things you can do with a script, such as if you combine several commands together to create something useful. If you would like to explore more ideas, a good place to find useful commands you can use in your script is by searching for what you need to accomplish. There are a few great websites to use a references such as [Stack Overflow](https://stackoverflow.com) or [AskUbuntu](https://askubuntu.com), and then after finding the appropriate command, add it to a script. You can also run each command on their own in a terminal to test what the command and it's options do.
 
 ### Variables
 
@@ -143,7 +143,7 @@ else
 fi
 ```
 
-If you run the script, it will ask the user for their name and their favorite color. It will then ask the user to input a number. After the user inputs the number, depending on if it was lower, higher or correct, the script will dynamically adapt to the user input.
+If you run the script, it will ask the user for their name and their favorite color. It will then ask the user to input a number. After the user inputs the number, depending on whether it was lower, higher or correct, the script will dynamically adapt to the user input.
 
 ## Conclusion
 

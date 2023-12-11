@@ -60,14 +60,14 @@ Congratulations! You have created a working Bash script. Of course, outputting a
 
 ## Adding functionality
 
-At this point, our script does one thing: It outputs a single line in our terminal. The script works, but it isn't very useful yet. There are many things you can do with a script, such as if you combine several commands together to create something useful. If you would like to explore more ideas, a good place to find useful commands you can use in your script is by searching for what you need to accomplish. 
-
-These are great websites to use as reference for your scripting adventure!:
+At this point, our script does one thing: It outputs a single line in our terminal. The script works, but it isn't very useful yet. There are many things you can do with a script, especially once you start combining several commands together. Here are some websites that can be helpful in the search for more commands:
 
 - [Stack Overflow](https://stackoverflow.com)
 - [AskUbuntu](https://askubuntu.com)
 
-Once you find the commands that you want to add to your script you can run them in their own in a terminal to test what the command does and what its options do.
+Once you find commands that you want to add to your script, you can run them in a terminal to test them and see how they work.
+
+It may also be helpful to read the *manual pages* (often shortened to "man pages") for commands that you're using. To view a command's manual page, simply run `man command` where "command" is substituted for the command you are looking up. To exit the manual page viewer, hit the `q` key.
 
 ### Variables
 

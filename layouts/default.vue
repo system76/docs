@@ -2,20 +2,15 @@
   <div class="min-h-screen flex flex-col">
     <sys-omnibar>
       <template #global>
-        <a
-          href="https://system76.com/specials"
-          target="_blank"
-        >
-          Gear Up and SAVE up to $150!
-        </a>
+        <span :class="$style.hidden" />
       </template>
 
       <template #copy>
         <a
-          href="https://system76.com/desktops"
+          href="https://system76.com/specials"
           target="_blank"
         >
-          New Thelio Accent Panels! Learn More!
+          Tuxmas: Upgrade & Save up to $460!
         </a>
       </template>
 

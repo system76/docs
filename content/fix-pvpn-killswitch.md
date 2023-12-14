@@ -21,9 +21,15 @@ tableOfContents: true
 
 ProtonVPN's kill switch will disable internet connectivity when you are not connected to a VPN server. This ensures the true IP address if your computer is never leaked to the internet. If the kill switch is set to `Permanent`, then your computer will be unable to connect to the internet, even if ProtonVPN isn't running (i.e., at system start up), the GUI application becomes inaccessible, or if ProtonVPN was improperly removed from the system.
 
-![ProtonVPN Kill Switch](images/fix-pvpn-killswitch/proton-killswitch.png)
+![ProtonVPN Settings](images/fix-pvpn-killswitch/ProtonVPN-Settings.png)
 
-> ℹ️ ProtonVPN installs to the entire system; not just for a single user. If ProtonVPN is installed under another user account and has the kill switch enabled, other users will not be able to connect to the internet until ProtonVPN connects to a server.
+![ProtonVPN Kill switch](images/fix-pvpn-killswitch/ProtonVPN-Killswitch.png)
+
+> **NOTE:** ProtonVPN installs to the entire system; not just for a single user. If ProtonVPN is installed under another user account and has the kill switch enabled, other users will not be able to connect to the internet until ProtonVPN connects to a server.
+
+<!-- v4 of ProtonVPN does not have a CLI version like v3 did per this support article: https://protonvpn.com/support/linux-vpn-setup/
+
+We can enable this again (with new option(s) as needed when it is available again) .
 
 ## ProtonVPN GUI Application is Inaccessible
 
@@ -32,6 +38,8 @@ If the ProtonVPN GUI application suddenly becomes inaccessible, but you still ha
 ```bash
 protonvpn-cli ks --off
 ```
+
+-->
 
 ## Permanent Kill Switch Persists After System Refresh
 

@@ -102,6 +102,8 @@ Now enable the System76 Power extension with the toggle to the right.
 Click the system menu in the top right corner of your screen to access graphics
 switching.
 
+>**Note**: GNOME Shell versions newer than 42 (Ubuntu 22.10 and above) are not supported by the System76 Power extension.
+
 ![Graphics](/images/graphics-switch-ubuntu/system-menu.png)
 
 Click on NVIDIA, Integrated, Hybrid, or Compute depending on your use case.

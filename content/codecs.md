@@ -40,13 +40,7 @@ sudo apt install -y ubuntu-restricted-extras
 
 If it is not legal for you to do so, or if you only want the minimum required codecs, you may do so manually. Please note that packages listed with "bad" in the names below are not harmful to your system, they are listed as "bad" in the system software repositories due to the non-free (as in libre) nature of the code within the packages.
 
-Copy and paste the following line for Ubuntu/Pop!\_OS 18.04 and below, followed by <kbd>Enter</kbd>:
-
-```
-sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libavcodec-extra gstreamer1.0-libav gstreamer1.0-fluendo-mp3 chromium-codecs-ffmpeg-extra libdvd-pkg
-```
-
-Copy and paste the following line for Ubuntu/Pop!\_OS 20.04 and above, followed by <kbd>Enter</kbd>:
+Copy and paste the following line for Ubuntu/Pop!\_OS 22.04 and above, followed by <kbd>Enter</kbd>:
 
 ```
 sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good libavcodec-extra gstreamer1.0-libav chromium-codecs-ffmpeg-extra libdvd-pkg
@@ -54,7 +48,9 @@ sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer
 
 To paste into the terminal, use the "Edit" Menu, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>
 
-You may be prompted for your `[sudo] password`. If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should see several lines of output in the terminal. The command may take a few minutes to complete.
+You may be prompted for your `[sudo] password`. If so, type in your regular login/user password, then press <kbd>Enter</kbd> again. You should see several lines of output in the terminal. You will see a prompt in your terminal to configure the libdvd-pkg for automatic upgrade, by default Yes is selected so you would press the <kbd>Enter</kbd> key.
+
+The command may take a few minutes to complete.
 
 ## Setup DVD Playback (optional)
 

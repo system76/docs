@@ -35,9 +35,9 @@ While Pop!_OS is designed to be [easy to use](https://www.forbes.com/sites/jason
 
 The installer offers encryption out of the box and takes care of setting up your user preferences (language, keyboard layout, installation method). On first use, the installer also makes it easy to select your time zone and integrate any online accounts into your desktop.
 
-![Intel/AMD + NVIDIA](/images/difference-between-pop-ubuntu/intel-amd-nvidia-1904.png)
+![Intel/AMD + NVIDIA](/images/difference-between-pop-ubuntu/intel-nvidia-rpi.png)
 
-Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings, and the proprietary NVIDIA driver for NVIDIA systems. Ensuring the best performance, and use of CUDA tools is one command away.
+Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings, and the proprietary NVIDIA driver for NVIDIA systems. Ensuring the best performance, and use of CUDA tools is one command away. Pop!_OS also provides an ISO for the Raspberry Pi 4.
 
 ## Privacy
 

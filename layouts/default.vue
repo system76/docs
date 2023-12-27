@@ -10,7 +10,7 @@
           href="https://system76.com/specials"
           target="_blank"
         >
-          Tuxmas: Upgrade & Save up to $460!
+          Time off? Tinker & game with these deals!
         </a>
       </template>
 

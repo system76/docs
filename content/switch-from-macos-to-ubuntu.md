@@ -154,7 +154,7 @@ Ubuntu has several powerful image manipulation programs. [Gimp](https://www.gimp
 
 ## Writing Software
 
-Anyone familiar with writing software on a Mac will be at home with writing software on Ubuntu. [Microsoft VSCode](https://code.visualstudio.com), [Sublime](https://www.sublimetext.com), and other editors are available for both systems. Compilers can be used directly, and many web applications including [Apache](https://httpd.apache.org) can be run natively in Ubuntu, without the need for [Virtual Machines](https://www.virtualbox.org).
+Anyone familiar with writing software on a Mac will be at home with writing software on Ubuntu. [Microsoft VSCode](https://code.visualstudio.com), [Codelobster](https://www.codelobster.com), [Sublime](https://www.sublimetext.com), and other editors are available for both systems. Compilers can be used directly, and many web applications including [Apache](https://httpd.apache.org) can be run natively in Ubuntu, without the need for [Virtual Machines](https://www.virtualbox.org).
 
 ![apple-code](/images/switch/apple-code.png)
 

@@ -13,6 +13,7 @@ keywords:
   - LMMS
   - GIMP
   - Flowblade
+  - Shotcut
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -89,8 +90,16 @@ Install Directly From the Pop!\_Shop
 
 Krita is a free and open source raster graphics editor that is primarily focused on digital drawing and painting. It features an OpenGL-accelerated canvas, non-destructive layers and masks, an advanced brush engine, and support for many drawing tablets.
 
+Install Directly From the Pop!_Shop
+
 ### Flowblade
 
 Flowblade is a multitrack non-linear video editor with a set of industry standard editing tools suitable for beginners and masters alike to help make your vision a reality of image and sound.
 
-Install Directly From the Pop!\_Shop
+Install Directly From the Pop!_Shop
+
+### Shotcut
+
+Shotcut is a free, open source, cross-platform video editor. It has wide format support, various device and transport options, and an intuitive but customizable user interface.
+
+Install Directly From the Pop!_Shop

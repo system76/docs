@@ -7,10 +7,10 @@
 
       <template #copy>
         <a
-          href="https://system76.com/specials"
+          href="https://system76.com/desktops"
           target="_blank"
         >
-          Time off? Tinker & game with these deals!
+          Computers Engineered to Unleash Your Potential
         </a>
       </template>
 

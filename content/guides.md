@@ -49,6 +49,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Lemur Pro [(lemp9)](https://tech-docs.system76.com/models/lemp9/README.html) |
 | Lemur Pro [(lemp10)](https://tech-docs.system76.com/models/lemp10/README.html) |
 | Lemur Pro [(lemp11)](https://tech-docs.system76.com/models/lemp11/README.html) |
+| Lemur Pro [(lemp12)](https://tech-docs.system76.com/models/lemp12/README.html) |
 | Oryx Pro [(oryp6)](https://tech-docs.system76.com/models/oryp6/README.html) |
 | Oryx Pro [(oryp7)](https://tech-docs.system76.com/models/oryp7/README.html) |
 | Oryx Pro [(oryp8)](https://tech-docs.system76.com/models/oryp8/README.html) |

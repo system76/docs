@@ -75,6 +75,8 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | pang10       | Yes                | Yes                |
 | pang11       | Yes                | Yes                |
 | pang12       | Yes                | Yes                |
+| pang13       | Yes                | Yes                |
+| pang14       | Yes                | Yes                |
 | serw12       | Yes                | Yes                |
 | serw13       | Yes                | Yes                |
 

@@ -19,7 +19,7 @@ tableOfContents: true
 If you can’t see the image from your webcam or you receive a "No device found!" error when you try to use it, ensure that it's not toggled off.
 
 - On most System76 laptops, press <kbd>Fn</kbd>+<kbd>F10</kbd> to toggle the camera on, then restart the application using the webcam (such as <u>Cheese</u>).
-- On some Pangolin models (pang12 and pang13), there is a physical switch on the left side of the computer (while facing the screen). Ensure the switch is switched on, then restart the application using the webcam (such as <u>Cheese</u>).
+- On some Pangolin models (pang12, pang13 and pang14), there is a physical switch on the left side of the computer (while facing the screen). Ensure the switch is switched on, then restart the application using the webcam (such as <u>Cheese</u>).
   - The Pangolin models with a physical webcam switch do not have a webcam toggle key combination.
 
 ![Cheese](/images/webcam/cheese.png)

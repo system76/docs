@@ -98,4 +98,4 @@ To adjust the thresholds, reboot the computer and enter the UEFI setup utility b
 
 Once configured, save and exit the setup utility. The thresholds can be disabled at any time by setting FlexiCharger back to Disabled.
 
-**Note:** The pang12 and pang13 do not support FlexiCharging.
+**Note:** The pang12, pang13 and pang14 do not support FlexiCharging.

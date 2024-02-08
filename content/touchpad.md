@@ -18,7 +18,7 @@ section: hardware
 tableOfContents: true
 ---
 
-On most System76 laptops, press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off. On the Pangolin (pang12), press <kbd>Fn</kbd>+<kbd>F6</kbd>.
+On most System76 laptops, press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop touchpad on/off. On some Pangolin models (pang12, pang13, pang14), press <kbd>Fn</kbd>+<kbd>F6</kbd>.
 
 To configure your touchpad, press the Super key (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>), then type <u>Mouse & Touchpad</u> and click on the result.
 

@@ -69,8 +69,8 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | Thelio (thelio-r1 and newer) | Yes     | Yes                |
 | Thelio (thelio-b1 and newer) | Yes     | Yes                |
 | Thelio Mira (thelio-mira-r1 and newer) | Yes  | Yes*        |
-| Thelio Mira (thelio-mira-b1 and newer) | Yes  | Yes*        |       
-| Thelio Mira (thelio-major-r1 and newer) | Yes | Yes*        |
+| Thelio Mira (thelio-mira-b1 and newer) | Yes  | Yes*        |
+| Thelio Major (thelio-major-r1 and newer) | Yes | Yes*        |
 | Thelio Major (thelio-major-b1 and newer) | Yes | Yes*       |
 | Thelio Mega (thelio-mega-r1 and newer) | Yes | Yes*         |
 | Thelio Massive (thelio-massive-b1 and newer) | Yes | Yes*   |

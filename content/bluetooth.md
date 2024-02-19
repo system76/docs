@@ -20,6 +20,7 @@ tableOfContents: true
 Bluetooth is a bit odd.
 There are a lot of factors that go into whether Bluetooth devices work together as expected.
 
+
 ### Bluetooth version
 
 Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer versions or devices.
@@ -70,6 +71,19 @@ This process lowers the sound quality of the stream when in HSP/HFP mode, so aud
 
 ## Bluetooth Troubleshooting
 
+<!--## Dear Pop OS team I hope this helps to improve your distribution and documentation, feel free to rework.-->
+### Problem: Fresh installed pop-os_22.04_amd64_intel_38.iso, Bluetooth dont turn on
+The Bluetooth did not switch on in the settings. I can toggle it but it still stays gray.
+Solution:
+```bash
+sudo rmmod btusb
+sudo modprobe btusb
+```
+Now it works fine on my VivoBook.
+Source: https://www.reddit.com/r/pop_os/comments/mtjysf/bluetooth_wont_turn_on/
+
+---
+### General
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
 Then, try reinstalling Bluetooth related software with this command, depending on the verison of Pop!\_OS you're using.

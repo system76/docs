@@ -73,5 +73,7 @@ We have documentation that goes over changing the keycaps, switches, and more on
 
 - [Launch (launch_1)](https://tech-docs.system76.com/models/launch_1/repairs.html)
 - [Launch (launch_2)](https://tech-docs.system76.com/models/launch_2/repairs.html)
+- [Launch (launch_3)](https://tech-docs.system76.com/models/launch_3/repairs.html)
 - [Launch Lite (launch_lite_1)](https://tech-docs.system76.com/models/launch_lite_1/repairs.html)
 - [Launch Heavy (launch_heavy_1)](https://tech-docs.system76.com/models/launch_heavy_1/repairs.html)
+- [Launch Heavy (launch_heavy_3)](https://tech-docs.system76.com/models/launch_heavy_3/repairs.html)

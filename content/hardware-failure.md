@@ -153,10 +153,16 @@ Now we'll compile it:
 make
 ```
 
-And now we can run it like so (this example will run it for 60 minutes/1 hour):
+For NVIDIA **RTX** GPUs we can use Tensor cores to run it like so (this example will run it for 60 minutes/1 hour):
 
 ```bash
 ./gpu_burn -tc 3600
+```
+
+For NVIDIA **GTX** GPUs run it like so (this example will run it for 60 minutes/1 hour):
+
+```bash
+./gpu_burn 3600
 ```
 
 ## Test CPU thermals

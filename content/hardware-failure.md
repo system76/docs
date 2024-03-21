@@ -156,7 +156,7 @@ make
 And now we can run it like so (this example will run it for 60 minutes/1 hour):
 
 ```bash
-./gpu_burn -d 3600
+./gpu_burn -tc 3600
 ```
 
 ## Test CPU thermals

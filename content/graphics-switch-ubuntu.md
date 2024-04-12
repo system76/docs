@@ -75,6 +75,8 @@ Hybrid graphics mode is available on 19.10 and later.
 Compute graphics mode uses the integrated GPU for all rendering. The NVIDIA
 GPU is left available, allowing it to be used as a compute node.
 
+Note: External monitors might not work with this mode if the system relies on GPU for supporting them.
+
 ## Switch graphics
 
 Pop!_OS by System76 includes the system76-power package, which includes the

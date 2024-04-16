@@ -40,7 +40,7 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 Open the Activities Overview by clicking on the Activities button in the top left and then search for <u>Software Updater</u>.
 
-![Updater in Overview](/images/upgrade-ubuntu/Step-1.png)
+![Updater in Overview](/images/upgrade-ubuntu/ubuntu-update.png)
 
 ### Configure Version Updates
 

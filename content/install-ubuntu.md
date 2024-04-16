@@ -167,21 +167,14 @@ Congratulations, Ubuntu is now installed on your system!
 
 Often, after a fresh install some packages will have been updated since the ISO file was created. If there are new updates available you'll see a dialogue box pop up like this:
 
-![Updates Available](/images/install-ubuntu/ubuntu-21.04-new-updates.png)
+![Updates Available](/images/install-ubuntu/ubuntu-updater.png)
 
 You can opt to install the updates later, or install them now by clicking **Install Now.**
 
-Installing the updates will produce this screen asking for an administrative user's password:
-
-![Authorization](/images/install-ubuntu/ubuntu-21.04-installing-updates.png)
-
-The system will display the progress of updates through this screen:
-
-![Updates in Progress](/images/install-ubuntu/ubuntu-21.04-updates-in-progress.png)
 
 And often will prompt for a restart once complete:
 
-![Updates Complete](/images/install-ubuntu/ubuntu-21.04-updates-finished.png)
+![Updates Complete](/images/install-ubuntu/ubuntu-updater-finished.png)
 
 ### Install System76 Driver
 

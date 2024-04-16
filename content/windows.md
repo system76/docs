@@ -45,73 +45,36 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 ---
 | Laptop Model | Windows 10 Support | Windows 11 Support |
 | ------------ | ------------------ | ------------------ |
-| addw1        | Yes                | Yes                |
-| addw2        | Yes                | No                 |
-| addw3        | Yes                | Yes                |
-| bonw14       | Yes                | No                 |
-| bonw15       | Yes                | Yes                |
-| darp6        | Yes                | No                 |
-| darp7        | Yes                | No                 |
-| darp8        | Yes                | No                 |
-| darp9        | Yes                | Yes                |
-| galp4        | Yes                | No                 |
-| galp5        | Yes                | No                 |
-| galp6        | Yes                | No                 |
-| galp7        | Yes                | Yes                |
-| gaze15       | Yes                | No                 |
-| gaze16       | Yes                | No                 |
-| gaze17       | Yes                | No                 |
-| gaze18       | Yes                | Yes                |
-| lemp9        | Yes                | No                 |
-| lemp10       | Yes                | No                 |
-| lemp11       | Yes                | No                 |
-| lemp12       | Yes                | Yes                |
-| oryp6        | Yes                | No                 |
-| oryp7        | Yes                | No                 |
-| oryp8        | Yes                | No                 |
-| oryp9        | Yes                | No                 |
-| oryp10       | Yes                | No                 |
-| oryp11       | Yes                | Yes                |
-| pang10       | Yes                | Yes                |
-| pang11       | Yes                | Yes                |
-| pang12       | Yes                | Yes                |
-| pang13       | Yes                | Yes                |
-| pang14       | Yes                | Yes                |
-| serw12       | Yes                | Yes                |
-| serw13       | Yes                | Yes                |
+| Adder WS (addw1)     | Yes        | Yes                |
+| Adder WS (addw2)     | Yes        | No                 |
+| Adder WS (addw3)     | Yes        | Yes                |
+| Bonobo WS (bonw14)   | Yes        | No                 |
+| Bonobo WS (bonw15)   | Yes        | Yes                |
+| Darter Pro (darp8 and older) | Yes | No                |
+| Darter Pro (darp9 and newer) | Yes | Yes               |
+| Galago Pro (galp6 and older) | Yes | No                |
+| Galago Pro (galp7 and newer) | Yes        | Yes        |
+| Gazelle (gaze17 and older)   | Yes        | No         |
+| Gazelle (gaze18 and newer)   | Yes        | Yes        |
+| Lemur Pro (lemp11 and older) | Yes        | No         |
+| Lemur Pro (lemp12 and newer) | Yes        | Yes        |
+| Oryx Pro (oryp10 and older)  | Yes        | No         |
+| Oryx Pro (oryp11 and newer)  | Yes        | Yes        |
+| Pangolin (pang10 and newer)  | Yes        | Yes        |
+| Serval WS (serw12 and newer) | Yes        | Yes        |
 
 | Desktop Model     | Windows 10 Support | Windows 11 Support |
 | ----------------- | ------------------ | ------------------ |
-| meer5             | Yes                | Yes                |
-| meer6             | Yes                | Yes                |
-| meer7             | Yes                | Yes                |
-| meer8             | Yes                | Yes                |
-| thelio-r1         | Yes                | Yes                |
-| thelio-r2         | Yes                | Yes                |
-| thelio-r3         | Yes                | Yes                |
-| thelio-b1         | Yes                | Yes                |
-| thelio-b2         | Yes                | Yes                |
-| thelio-b3         | Yes                | Yes                |
-| thelio-b4         | Yes                | Yes                |
-| thelio-b5         | Yes                | Yes                |
-| thelio-mira-r1    | Yes                | Yes*               |
-| thelio-mira-r2    | Yes                | Yes*               |
-| thelio-mira-r3    | Yes                | Yes*               |
-| thelio-mira-b1    | Yes                | Yes*               |
-| thelio-mira-b2    | Yes                | Yes*               |
-| thelio-mira-b3    | Yes                | Yes*               |
-| thelio-mira-b4    | Yes                | Yes*               |
-| thelio-major-r1   | Yes                | Yes*               |
-| thelio-major-r2   | Yes                | Yes*               |
-| thelio-major-r3   | Yes                | Yes*               |
-| thelio-major-r4   | Yes                | Yes*               |
-| thelio-major-b1   | Yes                | Yes*               |
-| thelio-major-b2   | Yes                | Yes*               |
-| thelio-major-b3   | Yes                | Yes*               |
-| thelio-major-b4   | Yes                | Yes*               |
-| thelio-mega-r1    | Yes                | Yes*               |
-| thelio-mega-r2    | Yes                | Yes*               |
-| thelio-massive-b1 | Yes                | Yes*               |
+| Meerkat (meer5 and newer) | Yes        | Yes                |
+| Thelio (thelio-r1 and newer) | Yes     | Yes                |
+| Thelio (thelio-b1 and newer) | Yes     | Yes                |
+| Thelio Mira (thelio-mira-r1 and newer) | Yes  | Yes*        |
+| Thelio Mira (thelio-mira-b1 and newer) | Yes  | Yes*        |
+| Thelio Major (thelio-major-r1 and newer) | Yes | Yes*       |
+| Thelio Major (thelio-major-b1 and newer) | Yes | Yes*       |
+| Thelio Mega (thelio-mega-r1 and newer) | Yes | Yes*         |
+| Thelio Massive (thelio-massive-b1 and newer) | Yes | Yes*   |
+| Thelio Spark (thelio-spark-b1-n2 and newer)  | Yes | Yes*   |
 
 \* For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
 

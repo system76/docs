@@ -70,11 +70,12 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | Thelio (thelio-b1 and newer) | Yes     | Yes                |
 | Thelio Mira (thelio-mira-r1 and newer) | Yes  | Yes*        |
 | Thelio Mira (thelio-mira-b1 and newer) | Yes  | Yes*        |
-| Thelio Major (thelio-major-r1 and newer) | Yes | Yes*        |
+| Thelio Major (thelio-major-r1 and newer) | Yes | Yes*       |
 | Thelio Major (thelio-major-b1 and newer) | Yes | Yes*       |
 | Thelio Mega (thelio-mega-r1 and newer) | Yes | Yes*         |
 | Thelio Massive (thelio-massive-b1 and newer) | Yes | Yes*   |
 | Thelio Spark (thelio-spark-b1-n2 and newer)  | Yes | Yes*   |  
+=======
 
 \* For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
 

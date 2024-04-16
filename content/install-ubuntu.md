@@ -123,27 +123,25 @@ This section of the installation will show you a few of the preinstalled applica
 
 ### Restart
 
-![Restart](/images/install-ubuntu/install-ubuntu-21.04-8.png)
+![Restart](/images/install-ubuntu/install-ubuntu-24.04-14.png)
 
 Once the installation is finished, the system will prompt you to reboot.
 
 ### Remove Install Media
 
-![Remove Install Media](/images/install-ubuntu/install-ubuntu-21.04-9.png)
-
 Before completing the reboot, the system will prompt you to make sure the install media has been removed.
 
 ### Decrypt Drive
 
-![Decryption Screen](/images/install-ubuntu/ubuntu-decryption-screen.png)
+![Decryption Screen](/images/install-ubuntu/ubuntu-24.04-decryption-screen.png)
 
 If you chose to encrypt your drive, this screen will be shown on reboot. Enter the decryption passphrase, and press <kbd>ENTER</kbd>
 
 ### Login Screen
 
-![Login Screen 1](/images/install-ubuntu/ubuntu-login-screen-1.png)
+![Login Screen 1](/images/install-ubuntu/ubuntu-24.04-login-screen-1.png)
 
-![Login Screen 2](/images/install-ubuntu/ubuntu-login-2.png)
+![Login Screen 2](/images/install-ubuntu/ubuntu-24.04-login-screen-2.png)
 
 Select your User from the login screen and enter your user passphrase.
 

@@ -61,15 +61,21 @@ Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to
 
 >**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The restore process is designed to leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
-![Try or Install](/images/install-ubuntu/ubuntu-install-try-install.png)
+![First page of the installer](/images/install-ubuntu/install-ubuntu-24.04-1.png)
 
->**NOTE:** You may or may not see the screen pictured above. Your system may boot directly to the screen pictured below:
+>**NOTE:** You may or may not see the screen pictured above. Your system may boot directly to the screen pictured above:
 
-![Try or Install 2](/images/install-ubuntu/install-ubuntu-21.04-1.png)
+### Language and Keyboard layout
 
-If all of your files are backed up, or if you are installing from scratch, pick the **Install Ubuntu** option to continue with the installation. Please check the box labeled **Download updates while installing Ubuntu** to ensure that your new installation is fully up to date once the installation is complete.
+![Keyboard Layout](/images/install-ubuntu/install-ubuntu-24.04-3.png)
 
-![Download Updates](/images/install-ubuntu/ubuntu-install-screen2.png)
+If all of your files are backed up, or if you are installing from scratch, pick the **Install Ubuntu** option to continue with the installation. 
+
+![Try or Install](/images/install-ubuntu/install-ubuntu-24.04-5.png)
+
+Please check the box labeled **Download updates while installing Ubuntu** to ensure that your new installation is fully up to date once the installation is complete.
+
+![Download Updates](/images/install-ubuntu/install-ubuntu-24.04-8.png)
 
 ## Install Ubuntu
 
@@ -81,41 +87,37 @@ Option             | Action
 **Erase Disk** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, select **Use LVM with the new Ubuntu Installation** option for flexibility with partitions later.
 **Something Else** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
 
-### Language and Keyboard layout
-
-![Keyboard Layout](/images/install-ubuntu/install-ubuntu-21.04-2.png)
-
 ### Installation type
 
-![Installation Type](/images/install-ubuntu/install-ubuntu-21.04-3.png)
+![Installation Type](/images/install-ubuntu/install-ubuntu-24.04-9.png)
 
 ### Advanced Features
 
-![Advanced Features](/images/install-ubuntu/install-ubuntu-21.04-3.5.png)
+![Advanced Features](/images/install-ubuntu/install-ubuntu-24.04-9-a.png)
 
 ### Disk encryption
 
-![Disk Encryption](/images/install-ubuntu/install-ubuntu-21.04-3.6.png)
-
-### Write changes to the drive/disk
-
-![Write to Disk](/images/install-ubuntu/install-ubuntu-21.04-3.7.png)
-
-### Location
-
-![Location](/images/install-ubuntu/install-ubuntu-21.04-5.png)
-
-This option will effect your timezone.
+![Disk Encryption](/images/install-ubuntu/install-ubuntu-24.04-9-b.png)
 
 ### User creation
 
-![User Creation](/images/install-ubuntu/install-ubuntu-21.04-6.png)
-
 This is when you will create your first user in your new install of Ubuntu.
+
+![User Creation](/images/install-ubuntu/install-ubuntu-24.04-10.png)
+
+### Location
+
+![Location](/images/install-ubuntu/install-ubuntu-24.04-11.png)
+
+This option will effect your timezone.
+
+### Write changes to the drive/disk
+
+![Write to Disk](/images/install-ubuntu/install-ubuntu-24.04-12.png)
 
 ### Slideshow
 
-![Slideshow](/images/install-ubuntu/install-ubuntu-22.04-7.png)
+![Slideshow](/images/install-ubuntu/install-ubuntu-24.04-13.png)
 
 This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved.
 

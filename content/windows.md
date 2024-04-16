@@ -85,6 +85,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | meer5             | Yes                | Yes                |
 | meer6             | Yes                | Yes                |
 | meer7             | Yes                | Yes                |
+| meer8             | Yes                | Yes                |
 | thelio-r1         | Yes                | Yes                |
 | thelio-r2         | Yes                | Yes                |
 | thelio-r3         | Yes                | Yes                |

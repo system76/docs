@@ -13,18 +13,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
       - name: Setup
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v2
         with:
-          node-version: 20
+          node-version: 14
 
       - name: Cache
         id: cache
-        uses: actions/cache@v4.0.2
+        uses: actions/cache@v2
         with:
           path: ./node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -40,7 +40,7 @@ jobs:
           NODE_ENV: production
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4.0.0
+        uses: peaceiris/actions-gh-pages@v3
         with:
           cname: support.system76.com
           github_token: ${{ secrets.RELEASE_TOKEN }}

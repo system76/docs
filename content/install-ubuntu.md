@@ -4,7 +4,7 @@ description: >
   Full instructions on installing Ubuntu your computer.
 keywords:
   - Ubuntu
-  - Ubuntu 22.04
+  - Ubuntu 24.04
   - LTS
   - Restore
   - Reinstall
@@ -69,7 +69,7 @@ Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to
 
 ![Keyboard Layout](/images/install-ubuntu/install-ubuntu-24.04-3.png)
 
-If all of your files are backed up, or if you are installing from scratch, pick the **Install Ubuntu** option to continue with the installation. 
+If all of your files are backed up, or if you are installing from scratch, pick the **Install Ubuntu** option to continue with the installation.
 
 ![Try or Install](/images/install-ubuntu/install-ubuntu-24.04-5.png)
 
@@ -145,21 +145,21 @@ If you chose to encrypt your drive, this screen will be shown on reboot. Enter t
 
 Select your User from the login screen and enter your user passphrase.
 
-### Online Accounts
+### Ubuntu Pro
 
-![Online Accounts](/images/install-ubuntu/ubuntu-online-accounts.png)
+![Ubuntu Pro](/images/install-ubuntu/ubuntu-24.04_initial-setup-2.png)
 
-Ubuntu asks users if they would like to sign into online accounts after the first login. This can be done now, or later, in <u>Settings.</u>
+Canonical offers Ubuntu Pro for free on up to 5 machines but it is not required to use Ubuntu and it's features and does not change your experience.
 
 ### Telemetry
 
-![Telemetry](/images/install-ubuntu/ubuntu-21.04-telemetry.png)
+![Telemetry](/images/install-ubuntu/ubuntu-24.04_initial-setup-3.png)
 
 Canonical asks you if you would like to send some system information to them to improve Ubuntu. Opting in or out of this option will not affect your Ubuntu features or experience.
 
 ### Ready to Go
 
-![Ready](/images/install-ubuntu/ubuntu-ready-to-go.png)
+![Ready](/images/install-ubuntu/ubuntu-24.04_initial-setup-4.png)
 
 Congratulations, Ubuntu is now installed on your system!
 
@@ -170,7 +170,6 @@ Often, after a fresh install some packages will have been updated since the ISO 
 ![Updates Available](/images/install-ubuntu/ubuntu-updater.png)
 
 You can opt to install the updates later, or install them now by clicking **Install Now.**
-
 
 And often will prompt for a restart once complete:
 

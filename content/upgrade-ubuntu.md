@@ -60,15 +60,15 @@ Changing this option will require your user password. After selecting your updat
 
 The system will automatically check for updates. You may need to update (and sometimes, restart) before continuing with the upgrade process. If you have to restart after installing updates, launch the updater again as described above.
 
-![Software Updater](/images/upgrade-ubuntu/Step-2.png)
+<!-- ![Software Updater](/images/upgrade-ubuntu/Step-2.png) -->
 
-![Software Updater](/images/upgrade-ubuntu/Step-2b.png)
+![Software Updater](/images/upgrade-ubuntu/ubuntu-24.04-upgrade-prompt.png)
 
 ### Install The Upgrade
 
 A message will appear informing you of the availability of the new release. Click **Yes, Upgrade Now**  or **Upgrade…** depending on the window that you have and follow the on-screen instructions.
 
-![Upgrade Message](/images/upgrade-ubuntu/Step-3.png)
+![Upgrade Message](/images/upgrade-ubuntu/ubuntu-24.04-upgrade-window.png)
 
 ### Install The System76 Driver
 

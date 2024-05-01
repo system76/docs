@@ -55,9 +55,9 @@ From the menu shown the 'nomodeset' option can be selected during this boot. -->
 
 ![grub](/images/install-ubuntu/ubuntu-grub.png)
 
-Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
+Once Ubuntu starts and you have selected your language, any accessibility features that you may need, your keyboard selection, and network connectivity you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
 
->**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The restore process is designed to leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
+>**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The Ubuntu installation process will wipe any data on the drive that is selected for the installation. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
 ![First page of the installer](/images/install-ubuntu/install-ubuntu-24.04-1.png)
 
@@ -71,7 +71,11 @@ If all of your files are backed up, or if you are installing from scratch, pick 
 
 ![Try or Install](/images/install-ubuntu/install-ubuntu-24.04-5.png)
 
-Please check the box labeled **Download updates while installing Ubuntu** to ensure that your new installation is fully up to date once the installation is complete.
+For most installations the **Interaction installation** type is recommended.
+
+![Type of Installation](/images/install-ubuntu/install-ubuntu-24.04-6.png)
+
+We recommend checking the boxes labeled **Install third-party software for graphics and Wi-Fi hardware** and **Download and install support for additional media formats** but they are not required. In the case of the third-party software you will be installing the NVIDIA driver later in this article if you have NVIDIA hardware for that support.
 
 ![Download Updates](/images/install-ubuntu/install-ubuntu-24.04-8.png)
 
@@ -79,11 +83,9 @@ Please check the box labeled **Download updates while installing Ubuntu** to ens
 
 Option             | Action
 ------------------ | ----------------
-**Upgrade** | To preserve everything in the `/home` directory and attempt to restore Ubuntu to a working condition. This option can also be used to upgrade Ubuntu to the version currently on the bootable media. Choose this option if you would like to repair your OS. This is the least destructive of the options.
-**Erase Ubuntu** | To erase only the partitions related to Ubuntu. Choose this option if you would like to preserve an existing installation of Windows or another operating system, while still reinstalling Ubuntu.
 **Install Ubuntu Alongside** | To allow you to add an additional operating system to your computer. Choose this option if you already have an operating system, such as Windows or another version of Linux, and would like to also install Ubuntu. Please note that the existing operating system's partition will need to be reduced before installing Ubuntu in the extra space.
 **Erase Disk** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, select **Use LVM with the new Ubuntu Installation** option for flexibility with partitions later.
-**Something Else** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
+**Manual Installation** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
 
 ### Installation type
 
@@ -175,7 +177,7 @@ And often will prompt for a restart once complete:
 
 ### Install System76 Driver
 
-Once you've reinstalled Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've installed Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
 
 ```bash
 sudo apt-add-repository -y ppa:system76-dev/stable

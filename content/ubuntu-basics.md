@@ -27,19 +27,19 @@ Use the Launcher on the left hand side of the screen to start your favorite apps
 ## Show Applications
 
 Clicking on the Ubuntu logo in the lower left corner of the screen (on the Dock), will show you all of your installed applications in an app drawer-grid.
-This screen can also be accessed by pressing <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>A</kbd> or <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>A</kbd>.
+This screen can also be accessed by pressing <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> + <kbd>A</kbd>, <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>A</kbd> or <kbd>Super</kbd> + <kbd>A</kbd>.
 
 ![Show Applications](/images/ubuntu-basics/ubuntu-24.04-applications.png)
 
-Type in any word to search your computer for installed programs, files, and items in <u>Ubuntu Software</u>.
+Type in any word to search your computer for installed programs, files, and items in <u>App Center</u>.
 
 ![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-24.04-search.png)
 
 ## Ubuntu App Center
 
-Clicking on the orange briefcase icon in the Dock, opens Ubuntu Software. This application provides a GUI frontend for installing applications and updates.
+Clicking on the orange briefcase icon in the Dock, opens App Center. This application provides a GUI frontend for installing applications and updates.
 
-![Ubuntu Software](/images/ubuntu-basics/ubuntu-24.04-app-center.png)
+![App Center](/images/ubuntu-basics/ubuntu-24.04-app-center.png)
 
 ## GNOME Notifications
 
@@ -52,6 +52,12 @@ Date, Time, Calendar and app notifications appear in the top-middle of the scree
 The top-right menu offers shortcuts for networking, battery/power and shutdown commands.
 
 ![Top Right](/images/ubuntu-basics/ubuntu-24.04-top-right-menu.png)
+
+## System Settings
+
+This can be accessed though the Top Right Menu using the gear icon or by searching for 'settings' in the app drawer-grid.
+
+![Settings](/images/ubuntu-basics/ubuntu-24.04-settings.png)
 
 ## Application Window Menu
 

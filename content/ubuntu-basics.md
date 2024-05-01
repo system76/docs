@@ -22,7 +22,7 @@ The Ubuntu operating system provides all the features you would expect from a so
 
 ![Ubuntu Desktop](/images/ubuntu-basics/ubuntu-24.04-desktop.png)
 
-Use the Launcher on the left hand side of the screen to start your favorite apps. You can switch between running apps by clicking on their icons. Right click on an icon in the Launcher to show a menu of actions. Actions include adding, removing application icons, opening new tabs, switching multiple windows of the same app and much more.
+Use the Launcher on the left hand side of the screen to start your favorite apps. You can switch between running apps by clicking on their icons. Right click on an icon in the Launcher to show a menu of actions. Actions include adding, removing application icons from the launcher, opening new tabs, switching multiple windows of the same app and much more.
 
 ## Show Applications
 

@@ -25,7 +25,7 @@ tableOfContents: true
 
 ## Important Disclaimer - Please Read
 
-Ubuntu releases beyond 22.04 are not fully tested, but certain packages are made available in the system76-dev/stable PPA on Launchpad.
+Ubuntu releases beyond 24.04 are not fully tested, but certain packages are made available in the system76-dev/stable PPA on Launchpad.
 
 > **NOTE: Oryx Pro (oryp2) Touchpad** On our second generation Oryx Pro (oryp2), the System76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
@@ -35,15 +35,13 @@ If your recently upgraded system does not boot, it can often be recovered.  If y
 
 ## Create Install Media
 
-First, you'll need to create bootable media you can restore or install Ubuntu with.
+First, you'll need to create bootable USB you can restore or install Ubuntu with.
 
-Create an Installation USB | Create an Installation DVD
---------------------------------- | ---------------------------
-[Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
-[Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+- [Using Ubuntu](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview)
+- [Using Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview)
+- [Using macOS](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview)
 
-### Boot From Install Media
+### Boot From Install USB
 
 Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk by accessing the Boot Menu using the key combos in this [article](/articles/bootloader).
 

@@ -53,7 +53,7 @@ Ubuntu may need a special option enabled to install and boot from Ubuntu until t
 
 From the menu shown the 'nomodeset' option can be selected during this boot. -->
 
-![grub](/images/install-ubuntu/ubuntu-grub.png)
+![grub](/images/install-ubuntu/GRUB-2.12.png)
 
 Once Ubuntu starts and you have selected your language, any accessibility features that you may need, your keyboard selection, and network connectivity you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
 
@@ -74,6 +74,10 @@ If all of your files are backed up, or if you are installing from scratch, pick 
 For most installations the **Interaction installation** type is recommended.
 
 ![Type of Installation](/images/install-ubuntu/install-ubuntu-24.04-6.png)
+
+The **Default selection** will work for most installations while the **Extended selection** includes applications such as the LibreOffice suite and more. Those applications can be installed once the installation is finished if the **Default selection** is used instead.
+
+![Applications](/images/install-ubuntu/install-ubuntu-24.04-7.png)
 
 We recommend checking the boxes labeled **Install third-party software for graphics and Wi-Fi hardware** and **Download and install support for additional media formats** but they are not required. In the case of the third-party software you will be installing the NVIDIA driver later in this article if you have NVIDIA hardware for that support.
 

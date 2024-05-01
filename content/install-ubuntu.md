@@ -71,7 +71,7 @@ If all of your files are backed up, or if you are installing from scratch, pick 
 
 ![Try or Install](/images/install-ubuntu/install-ubuntu-24.04-5.png)
 
-For most installations the **Interaction installation** type is recommended.
+For most installations the **Interactive installation** type is recommended.
 
 ![Type of Installation](/images/install-ubuntu/install-ubuntu-24.04-6.png)
 
@@ -153,7 +153,7 @@ Select your User from the login screen and enter your user passphrase.
 
 ![Ubuntu Pro](/images/install-ubuntu/ubuntu-24.04_initial-setup-2.png)
 
-Canonical offers Ubuntu Pro for free on up to 5 machines but it is not required to use Ubuntu and it's features and does not change your experience.
+Canonical offers Ubuntu Pro for free on up to 5 machines but it is not required to use Ubuntu and it's features, and does not change your experience.
 
 ### Telemetry
 
@@ -181,7 +181,7 @@ And often will prompt for a restart once complete:
 
 ### Install System76 Driver
 
-Once you've installed Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've installed Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> and run the following commands. For using the <u>Terminal</u> refer to our [Linux Terminal Basics article](/articles/terminal-basics).
 
 ```bash
 sudo apt-add-repository -y ppa:system76-dev/stable

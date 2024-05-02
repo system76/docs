@@ -79,7 +79,15 @@ The **Default selection** will work for most installations while the **Extended 
 
 ![Applications](/images/install-ubuntu/install-ubuntu-24.04-7.png)
 
-We recommend checking the boxes labeled **Install third-party software for graphics and Wi-Fi hardware** and **Download and install support for additional media formats** but they are not required. In the case of the third-party software you will be installing the NVIDIA driver later in this article if you have NVIDIA hardware for that support.
+Let's break down what each of the options offer in regards to hardware and software support:
+
+- **Install third-party software for graphics and Wi-Fi hardware**
+
+This installs drivers (some non-free) for support for Wi-Fi (Wireless) and GPU support mainly NVIDIA as the amdgpu driver for AMD GPU's is in the kernel.
+
+- **Download and install support for additional media formats**
+
+This installs packages for playing media files such as MP3, MP4 and other formats that may need non-free codecs for the OS to play the content.
 
 ![Download Updates](/images/install-ubuntu/install-ubuntu-24.04-8.png)
 

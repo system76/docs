@@ -55,7 +55,7 @@ From the menu shown the 'nomodeset' option can be selected during this boot. -->
 
 ![grub](/images/install-ubuntu/GRUB-2.12.png)
 
-Once Ubuntu starts and you have selected your language, any accessibility features that you may need, your keyboard selection, and network connectivity you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
+Once Ubuntu starts and you have selected your language, any accessibility features that you may need, your keyboard selection, and network connectivity. Next,f you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
 
 >**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The Ubuntu installation process will wipe any data on the drive that is selected for the installation. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
@@ -83,11 +83,11 @@ Let's break down what each of the options offer in regards to hardware and softw
 
 - **Install third-party software for graphics and Wi-Fi hardware**
 
-This installs drivers (some non-free) for support for Wi-Fi (Wireless) and GPU support mainly NVIDIA as the amdgpu driver for AMD GPU's is in the kernel.
+This installs drivers (some non-free) for Wi-Fi and GPU support, mainly NVIDIA as the amdgpu driver for AMD GPU's is in the kernel.
 
 - **Download and install support for additional media formats**
 
-This installs packages for playing media files such as MP3, MP4 and other formats that may need non-free codecs for the OS to play the content.
+This installs packages for playing media files such as MP3, MP4, and other formats that may need non-free codecs for the OS to play the content.
 
 ![Download Updates](/images/install-ubuntu/install-ubuntu-24.04-8.png)
 

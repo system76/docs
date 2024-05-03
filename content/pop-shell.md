@@ -15,7 +15,7 @@ tableOfContents: true
 
 #### For Ubuntu-Based Distros
 
-In order to build Pop Shell from source, we'll first need to install the build dependencies and <u>git</u> to clone the repository:
+In order to build Pop Shell from source, we'll first need to install the build dependencies, <u>git</u> to clone the repository, and the <u>Extensions</u> app to provide a GUI for enabling/disabling extensions and changing advanced extension settings:
 
 ```bash
 sudo apt install git node-typescript make gnome-shell-extension-prefs

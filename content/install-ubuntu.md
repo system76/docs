@@ -55,7 +55,7 @@ From the menu shown the 'nomodeset' option can be selected during this boot. -->
 
 ![grub](/images/install-ubuntu/GRUB-2.12.png)
 
-Once Ubuntu starts and you have selected your language, any accessibility features that you may need, your keyboard selection, and network connectivity. Next,f you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
+Once Ubuntu starts, you will be asked to select your language, any accessibility features that you may need, your keyboard layout, and network connectivity. Next, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
 
 >**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The Ubuntu installation process will wipe any data on the drive that is selected for the installation. Next, double-click on the **Install Ubuntu** icon on the desktop.
 
@@ -83,11 +83,11 @@ Let's break down what each of the options offer in regards to hardware and softw
 
 - **Install third-party software for graphics and Wi-Fi hardware**
 
-This installs drivers (some non-free) for Wi-Fi and GPU support, mainly NVIDIA as the amdgpu driver for AMD GPU's is in the kernel.
+This installs drivers (some non-free) to provide Wi-Fi/Bluetooth and GPU support (mainly for NVIDIA graphics, as AMD and Intel graphics are supported natively by the Linux kernel).
 
 - **Download and install support for additional media formats**
 
-This installs packages for playing media files such as MP3, MP4, and other formats that may need non-free codecs for the OS to play the content.
+This installs packages for playing media files such as MP3, MP4, and other formats that may need non-free codecs in order to play the content.
 
 ![Download Updates](/images/install-ubuntu/install-ubuntu-24.04-8.png)
 
@@ -97,7 +97,7 @@ Option             | Action
 ------------------ | ----------------
 **Install Ubuntu Alongside** | To allow you to add an additional operating system to your computer. Choose this option if you already have an operating system, such as Windows or another version of Linux, and would like to also install Ubuntu. Please note that the existing operating system's partition will need to be reduced before installing Ubuntu in the extra space.
 **Erase Disk** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, select **Use LVM with the new Ubuntu Installation** option for flexibility with partitions later.
-**Manual Installation** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
+**Manual Installation** | To do a manual installation of the partitions. This can be used to customize the partition layout and put specific directories on separate partitions or disks.
 
 ### Installation type
 
@@ -113,7 +113,7 @@ Option             | Action
 
 ### User creation
 
-This is when you will create your first user in your new install of Ubuntu.
+This is when you will create your first user for your new installation of Ubuntu.
 
 ![User Creation](/images/install-ubuntu/install-ubuntu-24.04-10.png)
 
@@ -121,7 +121,7 @@ This is when you will create your first user in your new install of Ubuntu.
 
 ![Location](/images/install-ubuntu/install-ubuntu-24.04-11.png)
 
-This option will effect your timezone.
+This option will set your timezone.
 
 ### Write changes to the drive/disk
 
@@ -161,7 +161,7 @@ Select your User from the login screen and enter your user passphrase.
 
 ![Ubuntu Pro](/images/install-ubuntu/ubuntu-24.04_initial-setup-2.png)
 
-Canonical offers Ubuntu Pro for free on up to 5 machines but it is not required to use Ubuntu and it's features, and does not change your experience.
+Canonical offers Ubuntu Pro for free on up to 5 machines, but it is not required to use Ubuntu and its features, and does not change the user experience.
 
 ### Telemetry
 
@@ -189,7 +189,7 @@ And often will prompt for a restart once complete:
 
 ### Install System76 Driver
 
-Once you've installed Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> and run the following commands. For using the <u>Terminal</u> refer to our [Linux Terminal Basics article](/articles/terminal-basics).
+Once you've installed Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> and run the following commands. For using the <u>Terminal</u>, refer to our [Linux Terminal Basics article](/articles/terminal-basics).
 
 ```bash
 sudo apt-add-repository -y ppa:system76-dev/stable

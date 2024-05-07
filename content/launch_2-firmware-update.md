@@ -76,4 +76,4 @@ Future updates will now be done with the firmware manager in Pop!\_OS or Ubuntu,
 
 ## Getting help
 
-If this does not work, please open a [support case](https://support.system76.com/) for for your keyboard. Factory updates to firmware done via ISP cable can be arranged.
+If this does not work, please open a [support case](https://support.system76.com/) for your keyboard. Factory updates to firmware done via ISP cable can be arranged.

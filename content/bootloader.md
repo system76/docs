@@ -82,7 +82,7 @@ Pop!_OS 22.04 LTS
        4      496GB   500GB   4295MB  linux-swap(v1)            swap
 ```
 
->**NOTE:** A BIOS install of Pop!\_OS will not have a Recovery Partition and the Flags for the Boot Partition will not note esp.
+**NOTE:** A BIOS install of Pop!\_OS will not have a Recovery Partition and the Flags for the Boot Partition will not note esp.
 
 ---
 

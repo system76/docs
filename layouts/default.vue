@@ -7,10 +7,10 @@
 
       <template #copy>
         <a
-          href="https://system76.com/specials"
+          href="https://system76.com/desktops"
           target="_blank"
         >
-          Tuxmas: Upgrade & Save up to $460!
+          Computers Engineered to Unleash Your Potential
         </a>
       </template>
 

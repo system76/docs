@@ -35,9 +35,9 @@ While Pop!_OS is designed to be [easy to use](https://www.forbes.com/sites/jason
 
 The installer offers encryption out of the box and takes care of setting up your user preferences (language, keyboard layout, installation method). On first use, the installer also makes it easy to select your time zone and integrate any online accounts into your desktop.
 
-![Intel/AMD + NVIDIA](/images/difference-between-pop-ubuntu/intel-amd-nvidia-1904.png)
+![Intel/AMD + NVIDIA](/images/difference-between-pop-ubuntu/intel-nvidia-rpi.png)
 
-Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings, and the proprietary NVIDIA driver for NVIDIA systems. Ensuring the best performance, and use of CUDA tools is one command away.
+Pop!_OS comes in two versions: Intel/AMD and NVIDIA. This allows us to include different settings, and the proprietary NVIDIA driver for NVIDIA systems. Ensuring the best performance, and use of CUDA tools is one command away. Pop!_OS also provides an ISO for the Raspberry Pi 4.
 
 ## Privacy
 
@@ -47,7 +47,7 @@ With encryption enabled by default, and reporting through Ubuntu disabled, Pop!\
 
 ## Custom Keyboard Shortcuts
 
-After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to make some shortcuts more efficient for common user behaviors. The shortcut for switching workspaces, for example, is <kbd>Super</kbd> + <kbd>Arrow</kbd> <kbd>Up</kbd> or <kbd>Down</kbd>.
+After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to make some shortcuts more efficient for common user behaviors. The shortcut for switching workspaces, for example, is <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>Arrow</kbd> <kbd>Up</kbd> or <kbd>Down</kbd>.
 [See all keyboard shortcuts](/articles/pop-keyboard-shortcuts/)
 
 ## Default Apps: Slimming down on bloatware
@@ -71,4 +71,4 @@ Pop!\_OS is built from Ubuntu repositories, meaning you get the same access to s
 
 ## Recovery Partition
 
-The recovery partition on this operating system is a full copy of the Pop!\_OS installation media. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder. You can otherwise opt to do a fresh install, which will recreate the partitions and files to reset data. Refresh Installs are only available on a fresh install of either Pop!\_OS 19.04 and newer (18.04 has this feature backpored in lastest releases of the ISO). To learn more about the Recovery Partition read about it [here](/articles/pop-recovery/).
+The recovery partition on this operating system is a full copy of the Pop!\_OS installation media. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder. You can otherwise opt to do a fresh install, which will recreate the partitions and files to reset data. Refresh Installs are only available on a fresh install of either Pop!\_OS 19.04 and newer (18.04 has this feature backported in lastest releases of the ISO). To learn more about the Recovery Partition read about it [here](/articles/pop-recovery/).

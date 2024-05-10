@@ -116,7 +116,7 @@ The EFI partition is the next partition to be mounted. To help identify it, this
 | ```sudo mount /dev/sda1 /mnt/boot/efi```    | ```sudo mount /dev/nvme0n1p1 /mnt/boot/efi```  |
 
 ```bash
-for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -R $i /mnt$i; done
 sudo chroot /mnt
 ```
 

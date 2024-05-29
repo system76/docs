@@ -70,12 +70,13 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 | ------------------------------------------------------------------------------------------ | ---------------------------------------------- |
 | <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>                               | Navigate between workspaces                    |
 | <kbd>SUPER</kbd> + <kbd>Home</kbd>/<kbd>End</kbd>                                            | Navigate to first/last workspace               |
-| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>Direction keys</kbd>                              | Move active window between workspaces/displays |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>Direction keys</kbd>                              | Move active window between  upper and lower workspaces as well as right and left monitors respectively          |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>            | Move the active window between upper and lower displays
 | <kbd>SUPER</kbd> + <kbd>ESC</kbd>                                                            | Lock the screen                                |
 
 ### Use the launcher
 
-The launcher allows searching through open windows and installed applications, and also has the additional functions listed below.
+The launcher allows searching through open windows and installed applications and has the additional functions listed below.
 
 | Shortcut/command                                           | Action                          |
 | ---------------------------------------------------------- | ------------------------------- |

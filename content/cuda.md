@@ -30,7 +30,7 @@ The `nvidia-cuda-toolkit` package is [maintained by Ubuntu](https://packages.ubu
 
 The `nvidia-container-toolkit` package uses Docker containers to allow alternate versions of the CUDA libraries to be installed alongside the one included with the NVIDIA driver. You can see the different Docker images that are published by NVIDIA here: <https://hub.docker.com/r/nvidia/cuda/>
 
-This example installs a development enviroment with CUDA version 12.5.
+This example installs a development enviroment with CUDA version 12.4.
 
 #### Install Software
 
@@ -70,7 +70,7 @@ sudo systemctl restart docker
 Run this command to check the Docker configuration for CUDA:
 
 ```bash
-docker run --rm --runtime=nvidia --gpus all nvidia/cuda:12.5.0-devel-ubuntu22.04 nvidia-smi
+docker run --rm --runtime=nvidia --gpus all nvidia/cuda:12.4.0-devel-ubuntu22.04 nvidia-smi
 ```
 
 The output displays the CUDA version supported by the container:
@@ -78,7 +78,7 @@ The output displays the CUDA version supported by the container:
 ```
 Thu Jun 13 14:43:51 2024       
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 555.42.02    Driver Version: 555.42.02    CUDA Version: 12.5     |
+| NVIDIA-SMI 550.67.      Driver Version: 550.67       CUDA Version: 12.4     |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
@@ -102,7 +102,7 @@ Thu Jun 13 14:43:51 2024
 Start a shell within the container:
 
 ```bash
-docker run -it --rm --runtime=nvidia --gpus all nvidia/cuda:12.5.0-devel-ubuntu22.04 bash
+docker run -it --rm --runtime=nvidia --gpus all nvidia/cuda:12.4.0-devel-ubuntu22.04 bash
 ```
 
 Commands can then be run with CUDA support:
@@ -111,9 +111,9 @@ Commands can then be run with CUDA support:
 root@5397e7ea7f57:/# nvcc --version
 nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2024 NVIDIA Corporation
-Built on Wed_Apr_17_19:19:55_PDT_2024
-Cuda compilation tools, release 12.5, V12.5.40
-Build cuda_12.5.r12.5/compiler.34177558_0
+Built on Thu_Mar_28_02:18:24_PDT_2024
+Cuda compilation tools, release 12.4, V12.4.131
+Build cuda_12.4.r12.4/compiler.34097967_0
 ```
 
 The container can be viewed and managed using `docker ps` in another terminal or tab:
@@ -121,7 +121,7 @@ The container can be viewed and managed using `docker ps` in another terminal or
 ```bash
 system76@pop-os:~$ docker ps
 CONTAINER ID   IMAGE                                 COMMAND   CREATED         STATUS         PORTS     NAMES
-5397e7ea7f57   nvidia/cuda:12.5.0-devel-ubuntu22.04   "/opt/nvidia/nvidia_…"   2 minutes ago   Up 2 minutes             boring_tesla
+5397e7ea7f57   nvidia/cuda:12.4.0-devel-ubuntu22.04   "/opt/nvidia/nvidia_…"   2 minutes ago   Up 2 minutes             boring_tesla
 ```
 
 The container ID can be referenced to copy files into and out of the container:

@@ -92,6 +92,8 @@ Depending on the model, the system may reboot at this point. The system's fans m
 
 After the system powers off, **press the power button** to turn it back on. It may be necessary to power on more than once after a firmware update. On machines running Open Firmware, the system should then boot normally.
 
+* Note: EC firmware updates need to have the whole system power cycled, not just a reboot. To force a power cycle the EC hardware, either unplug the AC power adapter once the system shuts down for 15 seconds before plugging the AC power back in or press and hold the power button for 15 seconds to force the power off.
+
 ### Disabling the ME
 
 For laptops not running Open Firmware, a few extra steps may be required after an update to ensure the Intel ME is disabled.

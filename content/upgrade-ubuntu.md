@@ -26,11 +26,11 @@ First, we recommend having Ubuntu installation media (a DVD or USB drive) handy 
 
 ## Create Install Media
 
-Create an Installation USB | Create an Installation DVD
--------------------------- | ---------------------------
-[Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
-[Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+Create an Installation USB
+--------------------------
+[Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu)
+[Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows)
+[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx)
 
 Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. We have a support article that goes over creating backups [here.](/articles/backup-files)
 
@@ -38,13 +38,13 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 ### Open Software Updater
 
-Open the Activities Overview by clicking on the Activities button in the top left and then search for <u>Software Updater</u>.
+Open the Applications menu by clicking on the Show Apps button on the bottom left of the home screen. The icon looks like a 3-by-3 grid of squares. Then you can type Software Updater in the search bar and open it.</u>.
 
 ![Updater in Overview](/images/upgrade-ubuntu/ubuntu-update.png)
 
 ### Configure Version Updates
 
-Click on **Settings…** and then select **Updates**. You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labeled "Notify me of a new Ubuntu version".
+Click on **Settings…** and then select **Updates**. The Software Updater may run for a moment before presenting the settings button. You can choose to receive all updates or only LTS updates using the drop-down menu at the bottom, labeled "Notify me of a new Ubuntu version".
 
 Option | Result
 ------ | ------

@@ -270,3 +270,13 @@ hardware.system76.enableAll = true;
 ```bash
 sudo nixos-rebuild switch
 ```
+
+If your system has power-profiles-daemon installed (done by default on GNOME), you'll need to disable it for system76-power to start. Add this line to your `/etc/nixos/configuration.nix` file then rebuild the OS:
+
+```bash
+services.power-profiles-daemon.enable = false;
+```
+
+```bash
+sudo nixos-rebuild switch
+```

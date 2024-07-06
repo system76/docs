@@ -91,4 +91,4 @@ sudo nvme smart-log /dev/nvme0n1
 
 ## Collect Logs
 
-The System76 Driver has the ability to generate a robust log file. To run the driver, access your Activities menu in the top left of your Desktop, type System76 and select the System76 driver. After opening the application, click the button in the bottom right to Create Log Files, then a log file will populate in your home folder. Please attach the log file in a reply to this ticket. If you are having any issues you can refer to this [article](/articles/log-files).
+The Settings application has the ability to generate a robust log file. To generate a log file, open the Settings application, select the "Support" section, and click on the button named "Create Log Files". After you type your password into the prompt that appears, a log file will be generated in your home folder. Please attach the log file in a reply to this ticket. If you are having any issues, you can refer to this [article](/articles/log-files).

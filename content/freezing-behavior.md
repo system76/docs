@@ -91,7 +91,7 @@ sudo nvme smart-log /dev/nvme0n1
 
 ## Collect Logs
 
-If you are using Pop!\_OS, the Settings application has the ability to generate a robust log file. To generate a log file, open the Settings application, select the "Support" section, and click on the button named "Create Log Files". After you type your password into the prompt that appears, a log file will be generated in your home folder. 
+If you are using Pop!\_OS, the Settings application has the ability to generate a robust log file. To generate a log file, open the Settings application, select the "Support" section, and click on the button named "Create Log Files". After you type your password into the prompt that appears, a log file will be generated in your home folder.
 
 If you are on a System76 computer _not_ running Pop!\_OS, use the System76 Driver to generate the log file. If the driver is not already installed, follow the steps in [this article to install it](https://support.system76.com/articles/system76-driver) before proceeding. To run the driver, access your Activities menu in the top left of your Desktop, type System76 and select the System76 driver. After opening the application, click the button in the bottom right to Create Log Files, then a log file will populate in your home folder.
 

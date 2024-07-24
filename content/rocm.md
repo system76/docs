@@ -84,6 +84,19 @@ Agent 2
 system76@pop-os:~$ 
 ```
 
+### Docker Compatibility
+
+Instructions from AMD for building and running a docker image with Pytorch and ROCM are [here](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/3rd-party/pytorch-install.html#using-docker-with-pytorch-pre-installed). Note that Docker Desktop runs in a virtual environment so it's recommended to use the docker.io package instead to avoid permissions issues. To install docker.io:
+
+```sh
+sudo apt install docker.io
+sudo usermod -aG docker $USER
+```
+
+Also note that you may need to run docker commands using sudo (ie. `sudo docker run -it ....`). 
+
 ### Blender Compatibility
 
 The default Blender `.deb` package in Pop!\_OS 22.04, which is provided by Ubuntu, does not support HIP workloads. The Blender flatpak package may be unable to properly detect the GPU(s) due to sandboxing restrictions. Therefore, for GPU rendering with HIP in Blender, it's recommended to [download Blender directly from blender.org](https://www.blender.org/). (After extracting the `.tar.xz` file, simply double-click the `blender` executable to run the program.)
+
+

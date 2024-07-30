@@ -86,9 +86,9 @@ system76@pop-os:~$
 
 ### Using Docker
 
-Instructions from AMD for building and running a docker image with Pytorch and ROCm are [here](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/3rd-party/pytorch-install.html#using-docker-with-pytorch-pre-installed). Note that you will likely have to run the docker commands as sudo (ie. `sudo docker run -it ...`) for typical docker setups.
+Instructions from AMD for building and running a Docker image with Pytorch and ROCm are [here](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/3rd-party/pytorch-install.html#using-docker-with-pytorch-pre-installed). Note that you will likely have to run the Docker commands as sudo (i.e. `sudo docker run -it ...`) for typical Docker setups.
 
-Also note that Docker Desktop runs in a virtual environment so it's recommended to use the Docker engine instead to avoid permissions issues. Instructions on installing the Docker engine are [on Docker's website](https://docs.docker.com/engine/install/ubuntu/). Another way to install the Docker engine is to install the `docker.io` package which is maintained by Ubuntu: 
+Also note that Docker Desktop runs in a virtual environment, so it's recommended to use Docker Engine instead to avoid permission issues. Instructions on installing the latest version of Docker Engine are [on Docker's website](https://docs.docker.com/engine/install/ubuntu/). You can alternatively install Docker Engine via the `docker.io` package, which is maintained by Ubuntu (and may not be up-to-date):
 
 ```sh
 sudo apt install docker.io

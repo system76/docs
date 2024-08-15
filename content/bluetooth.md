@@ -106,51 +106,63 @@ Then, run <u>Bluetooth Manager</u>. Check for the device being trusted, and also
 
 ### Useful Commands
 
+To show if the Bluetooth module (driver) is loaded, and see what system messages have been logged:
+
 ```bash
 lsmod | grep bluetooth
 dmesg | grep Bluetooth
 ```
 
-These will show if the Bluetooth module (driver) is loaded, and what the system messages are.
+To check if the service that handles Bluetooth is running:
 
 ```bash
 sudo systemctl status bluetooth
 ```
 
-This will check to see if the service that handles Bluetooth is running.
+To check if Bluetooth or Wireless (Wi-Fi) are software-blocked:
 
 ```bash
 rfkill list
+```
+
+To unblock Bluetooth:
+
+```
 sudo rfkill unblock bluetooth
 ```
 
-If both Bluetooth and Wireless are soft blocked or if the Wireless is soft blocked run this command to unblock:
+To unblock all wireless types:
 
 ```bash
 sudo rfkill unblock all
 ```
 
-This will check to see Bluetooth is blocked, and if so, unblock it.
-
-*For Pop!\_OS 21.10 or 20.04:*
+To manually reload the Bluetooth USB kernel module:
 
 ```bash
-pactl load-module module-bluetooth-discover
+sudo rmmod btusb
+sudo modprobe btusb
 ```
 
-This will load the PulseAudio module responsible for Bluetooth Audio.  Typically, it's loaded by default, but sometimes a manual loading can get Bluetooth headsets working again. This module is no longer used on Pop!\_OS 22.04 or higher.
+To monitor Bluetooth-related messages (try leaving this command running while pairing or using a device to see any error messages or failures):
 
 ```bash
 sudo btmon
 ```
 
-This will show all Bluetooth related messages.  Try leaving this command running while pairing or using a device to see any error messages or failures.
+To reset the Bluetooth device profiles and require re-pairing all devices (this can help if your Bluetooth audio device is stuck in an HSP/HFP profile and will not switch to A2DP mode after updates <sup>[1](https://github.com/bluez/bluez/issues/157)</sup>):
 
 ```bash
 sudo rm -r /var/lib/bluetooth/
 ```
 
-This will reset the Bluetooth device profiles and require re-pairing all devices. This can help if your Bluetooth audio device is stuck in an HSP/HFP profile and will not switch to A2DP mode after updates <sup>[1](https://github.com/bluez/bluez/issues/157)</sup>.
+*For Pop!\_OS 21.10 or 20.04:*
+
+Older Pop!\_OS versions used a PulseAudio module for Bluetooth audio. It's typically loaded by default, but sometimes a manual load can get Bluetooth headsets working again:
+
+```bash
+pactl load-module module-bluetooth-discover
+```
 
 ## Additional Info
 

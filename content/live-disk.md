@@ -62,6 +62,26 @@ sha256sum Downloads/pop-os_22.04_amd64_nvidia_4.iso
 
 If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
 
+### For MacOS
+
+Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal and run the following command:
+
+#### For Intel/AMD iso
+
+```
+shasum -a 256  ~/Downloads/pop-os_22.04_amd64_intel_4.iso
+```
+
+#### For NVIDIA iso
+
+```
+shasum -a 256  ~/Downloads/pop-os_22.04_amd64_nvidia_4.iso
+```
+
+**Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
+
+If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+
 ### For Windows
 
 Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Prompt and run the following command:
@@ -69,13 +89,13 @@ Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Promp
 #### For Intel/AMD iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_22.04_amd64_intel_4.iso sha256
+CertUtil -hashfile Downloads\pop-os_22.04_amd64_intel_4.iso SHA256
 ```
 
 #### For NVIDIA iso
 
 ```
-CertUtil -hashfile Downloads\pop-os_22.04_amd64_nvidia_4.iso sha256
+CertUtil -hashfile Downloads\pop-os_22.04_amd64_nvidia_4.iso SHA256
 ```
 
 **Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
@@ -159,11 +179,15 @@ Pop!_OS will boot into the familiar Pop!_OS desktop.
 
 ## Using the Live Environment
 
-The list provided at the beginning of the article provides links to other articles on using the live environment for hardware testing, restoration/upgrades, and boot repair.
+Aside from [installing Pop!_OS](/articles/install-pop), you can also use the live environment for hardware testing, restoration/upgrades, and boot repair.
 
 ### Repairing an Existing Operating System
 
-Since the live environment is a full Pop!_OS installation, it works just like the normal environment. There are tools and methods that allow to `chroot` (change root) into the normal installation and work in the existing operating system to repair a broken package or other problem that is preventing normal booting.
+Since the live environment is a full Pop!_OS installation, it has all the same tools as the normal environment. If the system can't boot normally, you can `chroot` (change root) into the normal installation using the commands [here](/articles/pop-recovery#chroot), which allows you to run commands in the existing operating system to repair broken packages or other problems.
+
+### Refreshing the Operating System
+
+A Pop!\_OS live disk can also be used to refresh an existing Pop!_OS installation without losing user account information and data in the `/home` directory. You can find out more about this option [here](/articles/pop-recovery#refresh-install).
 
 ### Backing Up Files
 

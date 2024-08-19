@@ -34,16 +34,16 @@ If you want to use an AUR helper like [Paru](https://github.com/Morganamilo/paru
 This command will install all of the packages using <u>Paru</u>.
 
 ```bash
-paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms
+paru -S system76-firmware-daemon system76-firmware firmware-manager system76-power gnome-shell-extension-system76-power-git system76-driver system76-dkms system76-acpi-dkms system76-io-dkms
 ```
-
-This command will install `firmware-manager` using <u>Paru</u>.
 
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s firmware-manager
+paru -S firmware-manager
 ```
+
+This command will install <u>firmware-manager</u> using <u>Paru</u>.
 
 ### System76 DKMS
 
@@ -60,7 +60,7 @@ This command will install `system76-dkms` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-dkms
+paru -S system76-dkms
 ```
 
 ### System76 ACPI DKMS
@@ -78,7 +78,7 @@ This command will install `system76-acpi-dkms` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-acpi-dkms
+paru -S system76-acpi-dkms
 ```
 
 ### System76 Power
@@ -96,7 +96,7 @@ These commands will install `system76-power` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-power
+paru -S system76-power
 sudo systemctl enable --now com.system76.PowerDaemon.service
 sudo gpasswd -a $USER adm
 ```
@@ -114,7 +114,7 @@ This command will install `gnome-shell-extension-system76-power` using <u>Paru</
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s gnome-shell-extension-system76-power
+paru -S gnome-shell-extension-system76-power
 ```
 
 ### System76 Thelio Io DKMS
@@ -130,7 +130,7 @@ This command will install `system76-io-dkms` using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-paru -s system76-io-dkms
+paru -S system76-io-dkms
 ```
 
 **NOTE:** This package is only needed for Thelio desktops.
@@ -148,14 +148,21 @@ This command will install it using <u>Paru</u>.
 **NOTE:** choose the first software option after running the <u>Paru</u> command.
 
 ```bash
-<u>Paru</u> -s system76-acpi-oled
+paru -S system76-acpi-oled
 ```
 
 **NOTE:** This package is only needed for systems with OLED displays to control the brightness.
 
 ## Fedora
 
-Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
+Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver). The commands below will install every system76 package using the wildcard(*) use the other sections to install each package on it's own if you do not want all of the packages.
+
+```bash
+sudo dnf install system76* firmware-manager
+sudo systemctl enable --now system76-firmware-daemon
+sudo systemctl mask power-profiles-daemon.service
+sudo gpasswd -a $USER adm
+```
 
 ### System76 Firmware Manager in Fedora
 
@@ -165,6 +172,12 @@ Then install the <u>System76 Firmware Manager</u> and the <u>System76 Firmware D
 sudo dnf install firmware-manager
 sudo systemctl enable --now system76-firmware-daemon
 sudo gpasswd -a $USER adm
+```
+
+**NOTE:** After enabling the dkms systemd service for any of the DKMS packages you will need to reboot the system:
+
+```bash
+sudo systemctl reboot
 ```
 
 ### System76 Power in Fedora
@@ -183,6 +196,8 @@ sudo systemctl mask power-profiles-daemon.service
 ```
 
 ### System76 Power GNOME Shell Extension in Fedora
+
+**NOTE:** Fedora uses GNOME 44 and some of the internal APIs are missing that are used in this extention. The API change happend with the release of GNOME 43. Pull requests that update to newer APIs are very welcome!
 
 These commands will download the source code for the application, build it, install it and install the <u>Extensions</u> application:
 
@@ -221,12 +236,6 @@ sudo dnf install system76-acpi-dkms
 sudo systemctl enable dkms
 ```
 
-**NOTE:** After enabling the dkms systemd service for either the <u>System76 DKMS</u> or the <u>System76 ACPI DKMS</u> package you will need to reboot the system:
-
-```bash
-sudo systemctl reboot
-```
-
 ### System76 Thelio Io DKMS in Fedora
 
 This command will be used to install the <u>System76 Io DKMS</u> which is used for the Thelio Io board:
@@ -235,10 +244,39 @@ This command will be used to install the <u>System76 Io DKMS</u> which is used f
 sudo dnf install system76-io-dkms
 ```
 
+**NOTE:** After enabling the dkms systemd service for any of the DKMS packages you will need to reboot the system:
+
+```bash
+sudo systemctl reboot
+```
+
 ### System76 OLED in Fedora
 
 This command will be used to install the <u>System76 OLED</u> which is used for systems with OLED panels:
 
 ```bash
 sudo dnf install system76-oled
+```
+
+## NixOS
+
+For hardware support, this line needs to be added to your `/etc/nixos/configuration.nix` file then rebuild the OS:
+
+```bash
+# System76
+hardware.system76.enableAll = true;
+```
+
+```bash
+sudo nixos-rebuild switch
+```
+
+If your system has power-profiles-daemon installed (done by default on GNOME), you'll need to disable it for system76-power to start. Add this line to your `/etc/nixos/configuration.nix` file then rebuild the OS:
+
+```bash
+services.power-profiles-daemon.enable = false;
+```
+
+```bash
+sudo nixos-rebuild switch
 ```

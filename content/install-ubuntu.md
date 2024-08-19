@@ -4,8 +4,7 @@ description: >
   Full instructions on installing Ubuntu your computer.
 keywords:
   - Ubuntu
-  - Ubuntu 16.04
-  - Ubuntu 16.10
+  - Ubuntu 24.04
   - LTS
   - Restore
   - Reinstall
@@ -24,35 +23,27 @@ section: ubuntu
 tableOfContents: true
 ---
 
-System76 computers use a standard Ubuntu installation disc and the System76 Driver to fully restore the system to factory settings.
+## Important Disclaimer - Please Read
+
+Ubuntu releases beyond 24.04 are not fully tested, but certain packages are made available in the system76-dev/stable PPA on Launchpad.
 
 > **NOTE: Oryx Pro (oryp2) Touchpad** On our second generation Oryx Pro (oryp2), the System76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
 ## Recent Upgrade Issues
 
-If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [Repair the Bootloader](/articles/bootloader)
-
----
+If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [Repair the Bootloader](/articles/bootloader).
 
 ## Create Install Media
 
-First, you'll need to create bootable media you can restore or install Ubuntu with.
+First, you'll need to create bootable USB you can restore or install Ubuntu with.
 
-Create an Installation USB | Create an Installation DVD
---------------------------------- | ---------------------------
-[Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) | [Using Ubuntu](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-ubuntu)
-[Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) | [Using Windows](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-windows)
-[Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) | [Using Mac OS X](http://www.ubuntu.com/download/desktop/burn-a-dvd-on-mac-osx)
+- [Using Ubuntu](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#1-overview)
+- [Using Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview)
+- [Using macOS](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview)
 
-### Boot From Install Media
+### Boot From Install USB
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk. Immediately after you turn the computer on:
-
-Laptops                             | Desktops
------------------------------------ | ------------------------------------
-Hold <kbd>F7</kbd> or <kbd>F1</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>
-
----
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk by accessing the Boot Menu using the key combos in this [article](/articles/bootloader). Once you see the GRUB screen, select **Try or Install Ubuntu** by pressing the <kbd>Enter</kbd> key.
 
 <!--#### NVIDIA Graphics
 
@@ -62,139 +53,147 @@ Ubuntu may need a special option enabled to install and boot from Ubuntu until t
 
 From the menu shown the 'nomodeset' option can be selected during this boot. -->
 
----
-
-![grub](/images/install-ubuntu/ubuntu-grub.png)
-
-Once Ubuntu starts, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
-
->**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The restore process is designed to leave your files intact, but it's best to be safe in case something goes wrong. Next, double-click on the **Install Ubuntu** icon on the desktop.
-
-![Try or Install](/images/install-ubuntu/ubuntu-install-try-install.png)
-
->**NOTE:** You may or may not see the screen pictured above. Your system may boot directly to the screen pictured below:
-
-![Try or Install 2](/images/install-ubuntu/install-ubuntu-21.04-1.png)
-
-If all of your files are backed up, or if you are installing from scratch, pick the **Install Ubuntu** option to continue with the installation. Please check the box labeled **Download updates while installing Ubuntu** to ensure that your new installation is fully up to date once the installation is complete.
-
-![Download Updates](/images/install-ubuntu/ubuntu-install-screen2.png)
-
-## Install Ubuntu
-
-Option             | Action
------------------- | ----------------
-**Upgrade** | To preserve everything in the `/home` directory and attempt to restore Ubuntu to a working condition. This option can also be used to upgrade Ubuntu to the version currently on the bootable media. Choose this option if you would like to repair your OS. This is the least destructive of the options.
-**Erase Ubuntu** | To erase only the partitions related to Ubuntu. Choose this option if you would like to preserve an existing installation of Windows or another operating system, while still reinstalling Ubuntu.
-**Install Ubuntu Alongside** | To allow you to add an additional operating system to your computer. Choose this option if you already have an operating system, such as Windows or another version of Linux, and would like to also install Ubuntu. Please note that the existing operating system's partition will need to be reduced before installing Ubuntu in the extra space.
-**Erase Disk** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. When encrypting the drive, select **Use LVM with the new Ubuntu Installation** option for flexibility with partitions later.
-**Something Else** | To do a manual installation of the partitions. This can be used to customize the partition or put certain directories on separate partitions or disks.
+![grub](/images/install-ubuntu/GRUB-2.12.png)
 
 ### Language and Keyboard layout
 
-![Keyboard Layout](/images/install-ubuntu/install-ubuntu-21.04-2.png)
+Once Ubuntu starts and the installer auto-launches, you will be asked to select your language, any accessibility features that you may need, your keyboard layout, and network connectivity.
 
-### Installation type
+![Language](/images/install-ubuntu/install-ubuntu-24.04-1.png)
 
-![Installation Type](/images/install-ubuntu/install-ubuntu-21.04-3.png)
+![Keyboard Layout](/images/install-ubuntu/install-ubuntu-24.04-3.png)
 
-### Advanced Features
+Next, you will be asked to **Try Ubuntu without installing** or to **Install Ubuntu**. If you are attempting to restore a broken operating system, please choose **Try Ubuntu**.
 
-![Advanced Features](/images/install-ubuntu/install-ubuntu-21.04-3.5.png)
+If all of your files are backed up, or if you are installing from scratch, pick the **Install Ubuntu** option to continue with the installation.
 
-### Disk encryption
+>**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The Ubuntu installation process will wipe any data on the drive that is selected for the installation.
 
-![Disk Encryption](/images/install-ubuntu/install-ubuntu-21.04-3.6.png)
+![Try or Install](/images/install-ubuntu/install-ubuntu-24.04-5.png)
 
-### Write changes to the drive/disk
+When asked how you'd like to install, choose the **Interactive installation** type to enter your preferences through the GUI.
 
-![Write to Disk](/images/install-ubuntu/install-ubuntu-21.04-3.7.png)
+![Type of Installation](/images/install-ubuntu/install-ubuntu-24.04-6.png)
 
-### Location
+The **Default selection** of applications will suffice for most installations, while the **Extended selection** includes additional apps such as the LibreOffice suite and more. Those applications can be installed once the installation is finished if the **Default selection** is used instead.
 
-![Location](/images/install-ubuntu/install-ubuntu-21.04-5.png)
+![Applications](/images/install-ubuntu/install-ubuntu-24.04-7.png)
 
-This option will effect your timezone.
+Next, you will be asked whether to install several categories of proprietary software. Let's break down what each of the options offer in regards to hardware and software support:
+
+- **Install third-party software for graphics and Wi-Fi hardware**
+
+This installs proprietary (non-free) drivers to provide the best Wi-Fi/Bluetooth and GPU support (mainly for NVIDIA graphics, as AMD and Intel graphics are supported natively by the Linux kernel).
+
+- **Download and install support for additional media formats**
+
+This installs packages for playing media files such as MP3, MP4, and other formats that may require non-free codecs.
+
+![Download Updates](/images/install-ubuntu/install-ubuntu-24.04-8.png)
+
+## Install Ubuntu
+
+### Disk setup
+
+Option             | Action
+------------------ | ----------------
+**Install Ubuntu alongside...** | To allow you to add an additional operating system to your computer. Choose this option if you already have an operating system, such as Windows or another version of Linux, and would like to also install Ubuntu. The existing operating system's partition size will need to be reduced before installing Ubuntu in the extra space. This option won't show up if you don't have an existing OS installed that is compatible with this feature.
+**Erase disk and install Ubuntu** | To erase everything on the hard drive and install Ubuntu. The is the most destructive of the options, and will guarantee a clean slate. This option also has to be selected if you would like to encrypt the entire drive. To encrypt the drive, select **Advanced features...** and then choose **Use LVM and encryption**.
+**Manual installation** | To do a manual installation of the partitions. This can be used to customize the partition layout and put specific directories on separate partitions or disks.
+
+![Installation Type](/images/install-ubuntu/install-ubuntu-24.04-9.png)
+
+#### Advanced Features
+
+![Advanced Features](/images/install-ubuntu/install-ubuntu-24.04-9-a.png)
+
+#### Disk encryption
+
+![Disk Encryption](/images/install-ubuntu/install-ubuntu-24.04-9-b.png)
 
 ### User creation
 
-![User Creation](/images/install-ubuntu/install-ubuntu-21.04-6.png)
+This is when you will create your first user account for your new installation of Ubuntu.
 
-This is when you will create your first user in your new install of Ubuntu.
+![User Creation](/images/install-ubuntu/install-ubuntu-24.04-10.png)
+
+### Location
+
+This option will set your timezone.
+
+![Location](/images/install-ubuntu/install-ubuntu-24.04-11.png)
+
+### Write changes to disk
+
+This is the last chance to cancel the installation without affecting any preexisting data on your storage drive(s).
+
+![Write to Disk](/images/install-ubuntu/install-ubuntu-24.04-12.png)
 
 ### Slideshow
 
-![Slideshow](/images/install-ubuntu/install-ubuntu-21.04-7.png)
+While the system is installing, this page will show you a few of the preinstalled applications and what they are used for, as well as ways to get involved with the Ubuntu community.
 
-This section of the installation will show you a few of the preinstalled applications and what they are used for and how to get involved.
+![Slideshow](/images/install-ubuntu/install-ubuntu-24.04-13.png)
 
 ### Restart
 
-![Restart](/images/install-ubuntu/install-ubuntu-21.04-8.png)
-
 Once the installation is finished, the system will prompt you to reboot.
+
+![Restart](/images/install-ubuntu/install-ubuntu-24.04-14.png)
 
 ### Remove Install Media
 
-![Remove Install Media](/images/install-ubuntu/install-ubuntu-21.04-9.png)
-
 Before completing the reboot, the system will prompt you to make sure the install media has been removed.
+
+## First Boot
 
 ### Decrypt Drive
 
-![Decryption Screen](/images/install-ubuntu/ubuntu-decryption-screen.png)
+If you chose to encrypt your drive, this screen will be shown on reboot. Enter the decryption passphrase and press <kbd>Enter</kbd>.
 
-If you chose to encrypt your drive, this screen will be shown on reboot. Enter the decryption passphrase, and press <kbd>ENTER</kbd>
+![Decryption Screen](/images/install-ubuntu/ubuntu-24.04-decryption-screen.png)
 
 ### Login Screen
 
-![Login Screen 1](/images/install-ubuntu/ubuntu-login-screen-1.png)
+Select your user from the login screen and enter your user account's password, then press <kbd>Enter</kbd>.
 
-![Login Screen 2](/images/install-ubuntu/ubuntu-login-2.png)
+![Login Screen 1](/images/install-ubuntu/ubuntu-24.04-login-screen-1.png)
 
-Select your User from the login screen and enter your user passphrase.
+![Login Screen 2](/images/install-ubuntu/ubuntu-24.04-login-screen-2.png)
 
-### Online Accounts
+On the first login, the system will automatically display a wizard to select some additional settings.
 
-![Online Accounts](/images/install-ubuntu/ubuntu-online-accounts.png)
+### Ubuntu Pro
 
-Ubuntu asks users if they would like to sign into online accounts after the first login. This can be done now, or later, in <u>Settings.</u>
+Canonical offers Ubuntu Pro for free on up to 5 machines, but it is not required to use Ubuntu and its features, and it does not change the user experience.
+
+![Ubuntu Pro](/images/install-ubuntu/ubuntu-24.04_initial-setup-2.png)
 
 ### Telemetry
 
-![Telemetry](/images/install-ubuntu/ubuntu-21.04-telemetry.png)
-
 Canonical asks you if you would like to send some system information to them to improve Ubuntu. Opting in or out of this option will not affect your Ubuntu features or experience.
+
+![Telemetry](/images/install-ubuntu/ubuntu-24.04_initial-setup-3.png)
 
 ### Ready to Go
 
-![Ready](/images/install-ubuntu/ubuntu-ready-to-go.png)
-
 Congratulations, Ubuntu is now installed on your system!
+
+![Ready](/images/install-ubuntu/ubuntu-24.04_initial-setup-4.png)
 
 ### Available Updates
 
-Often, after a fresh install some packages will have been updated since the ISO file was created. If there are new updates available you'll see a dialogue box pop up like this:
+Often after a fresh install, some packages will have been updated since the ISO file was created. If there are new updates available, you'll see a dialogue box like this pop up:
 
-![Updates Available](/images/install-ubuntu/ubuntu-21.04-new-updates.png)
+![Updates Available](/images/install-ubuntu/ubuntu-updater.png)
 
-You can opt to install the updates later, or install them now by clicking **Install Now.**
+You can opt to install the updates later, or install them now by clicking **Install Now.** You may be prompted to reboot after the updates have finished installing.
 
-Installing the updates will produce this screen asking for an administrative user's password:
-
-![Authorization](/images/install-ubuntu/ubuntu-21.04-installing-updates.png)
-
-The system will display the progress of updates through this screen:
-
-![Updates in Progress](/images/install-ubuntu/ubuntu-21.04-updates-in-progress.png)
-
-And often will prompt for a restart once complete:
-
-![Updates Complete](/images/install-ubuntu/ubuntu-21.04-updates-finished.png)
+![Updates Complete](/images/install-ubuntu/ubuntu-updater-finished.png)
 
 ### Install System76 Driver
 
-Once you've reinstalled Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> (search <u>Terminal</u> from the Ubuntu (<font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon>) dash or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
+Once you've installed Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> and run the following commands. For using the <u>Terminal</u>, refer to our [Linux Terminal Basics article](/articles/terminal-basics).
 
 ```bash
 sudo apt-add-repository -y ppa:system76-dev/stable
@@ -208,52 +207,6 @@ If you ordered a system with a discrete NVIDIA graphics card or if you added one
 
 ```bash
 sudo apt install system76-driver-nvidia
-```
-
-### Apt Preferences File
-
-If you are running Ubuntu 19.10 or later, you will need to manually add an apt preferences file to "pin" the System76 repository. This will tell apt to prefer System76 packages over standard Ubuntu packages. Installing the System76 Driver will not be possible until this step is completed.
-
-Create the apt preferences file here:
-
-```bash
-sudo gedit /etc/apt/preferences.d/system76-apt-preferences
-```
-
-Add the following six lines (seven if you count the space in the middle):
-
-```bash
-Package: *
-Pin: release o=LP-PPA-system76-dev-stable
-Pin-Priority: 1001
-
-Package: *
-Pin: release o=LP-PPA-system76-dev-pre-stable
-Pin-Priority: 1001
-```
-
-Save the file. Now you should be able to install the System76 Driver as described above.
-
-### If 'nouveau.modeset=0' Was Used
-
-The `nouveau.modeset=0` modifier should be made default if your machine has NVIDIA hardware. Please run this command to edit the startup options file:
-
-```bash
-sudo gedit /etc/default/grub
-```
-
-Update this line:
-
-> GRUB_CMDLINE_LINUX="nouveau.modeset=0"
-
-to:
-
-> GRUB_CMDLINE_LINUX=""
-
-Then save the file, exit the editor, and run this command to make the change permanent:  
-
-```bash
-sudo update-grub
 ```
 
 Once the process is finished, restart your computer for all changes to take effect.

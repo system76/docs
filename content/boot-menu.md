@@ -16,15 +16,15 @@ section: software
 tableOfContents: true
 ---
 
-To enter BIOS for most System76 laptops, hold the <kbd>F2</kbd> key immediately after turning your computer on.  For the boot menu, hold down the <kbd>F7</kbd> key.  For older laptops, hold the <kbd>F1</kbd> key.
+The BIOS or boot menu can be accessed by holding specific keys down during boot. Refer to the table below for the keys on each model:
 
-| Firmware               | BIOS key | Boot Menu key                    |
-|:----------------------:|:--------:|:--------------------------------:|
-| Laptop - Open Firmware | ESC      | ESC(select one time boot option) |
-| Laptop - Proprietary   | F2       | F7                               |
-| Older Laptops          | Depends on the system | F1                  |
-| Thelio                 | Del      |  F8 or F12                       |
-| Meerkat                | F2       | F10                              |
+| Model                                                       | BIOS key | Boot Menu key                     |
+|:-----------------------------------------------------------:|:--------:|:---------------------------------:|
+| Laptops:<br/>All Open Firmware models<br/>Pangolin (pang12 and above) | ESC      | ESC:<br/>Select `One Time Boot` (Open Firmware)<br/>or `Save & Exit` → `Boot Override`. |
+| Laptops:<br/>Most proprietary firmware models               | F2       | F7                                |
+| Older laptops                                               | Depends on the system | F1                   |
+| Thelio desktops                                             | Del      | F8/F11/F12                         |
+| Meerkat (mini) desktops                                     | F2       | F10                               |
 
 ## Open Firmware Screenshots
 

@@ -60,7 +60,7 @@ The Dock can be moved in both OSes. macOS has this feature in System Preferences
 
 For more information on GNOME extensions, refer to the following support articles:
 [Customize Pop!\_OS](/articles/customize-gnome)
-[Dock Customization](/articles/dash-to-dock)
+[Dock Customization](/articles/customize-dock)
 
 ### View Installed applications
 
@@ -403,7 +403,7 @@ Audacity can be used for recording and editing voice tracks for things like podc
 
 ![ardour](/images/pop-os-screenshots/ardour.png)
 
-Ardour is for more advanced audo engineering. It contains a multi-channel track and midi mixing program.
+Ardour is for more advanced audio engineering. It contains a multi-channel track and midi mixing program.
 
 LMMS, Ardour and Audacity are all available in the Pop!\_Shop.
 

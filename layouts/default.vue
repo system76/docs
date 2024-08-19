@@ -2,12 +2,7 @@
   <div class="min-h-screen flex flex-col">
     <sys-omnibar>
       <template #global>
-        <a
-          href="https://system76.com/specials"
-          target="_blank"
-        >
-          Special Offers
-        </a>
+        <span :class="$style.hidden" />
       </template>
 
       <template #copy>
@@ -15,7 +10,7 @@
           href="https://system76.com/desktops"
           target="_blank"
         >
-          New Thelio Accent Panels! Learn More!
+          Computers Engineered to Unleash Your Potential
         </a>
       </template>
 
@@ -30,6 +25,8 @@
       url-desktops="https://system76.com/desktops"
       url-mini="https://system76.com/desktops/meerkat"
       url-servers="https://system76.com/servers"
+      url-components="https://system76.com/components"
+      url-keyboards="https://system76.com/accessories/launch"
       url-pop-os="https://pop.system76.com"
       url-contact="https://system76.com/contact"
       url-login="https://system76.com/login"
@@ -41,13 +38,9 @@
       url-contact="https://system76.com/contact"
       url-about="https://system76.com/about"
       url-careers="https://system76.com/careers"
-      url-specials="https://system76.com/specials"
+      url-sustainability="https://system76.com/sustainability"
       url-shipping="https://system76.com/shipping"
-      url-financing="https://system76.com/financing"
-      url-warranty="https://system76.com/warranty"
-      url-privacy="https://system76.com/privacy"
-      url-disclaimer="https://system76.com/disclaimer"
-      url-terms="https://system76.com/terms"
+      url-privacy="https://system76.com/privacy-and-legal"
     />
   </div>
 </template>

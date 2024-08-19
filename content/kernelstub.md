@@ -39,7 +39,7 @@ The benefit of `kernelstub` is the ease with which kernel options and boot param
 For example, the command below adds both "quiet" and "splash" to the kernel options:
 
 ```bash
-sudo kernelstub -o "quiet splash"
+sudo kernelstub -a "quiet splash"
 ```
 
 A full set of available options are listed on the Github page. They can also be printed out in the Terminal by passing:

@@ -20,7 +20,7 @@ tableOfContents: true
 3. Confirm the outlet you are connecting to works by plugging in another device.
 4. Plug in the AC Adapter to the wall and computer. Laptops have a charging indicator in front with a light. Please provide the light color(s) and icon underneath it to the support team.
      - 4A. If the battery is removable, unplug the machine, remove the battery, and plug the machine back into the power source without the battery installed. Please provide the light status to the support team.
-5. To perform a hardware reset, unplug the system. Disconnect the CMOS battery for 30 seconds. Reconnect the CMOS battery and turn the computer on with the battery installed and the AC Adapter plugged in. Instructions to disconnect the CMOS battery can be found for your model [here](https://tech-docs.system76.com/models/README.html).
+5. To perform a hardware reset, unplug the system. Disconnect the main battery and CMOS battery for 30 seconds. Reconnect the CMOS battery and the main battery, connect the AC adapter, and power the computer on. Instructions to disconnect the main battery and CMOS battery can be found for your model [here](https://tech-docs.system76.com/README.html).
 6. If the keyboard backlight (both multi color and single color) comes on but nothing is on the display try the following steps:
     - 6a. Connect an external display if possible
     - 6b. Remove the bottom cover of the system (if you are comfortable) and remove one stick of RAM if you have more then one. This will allow us to test both sticks as a bad stick of RAM can cause a system to not boot. Refer to this [article](/articles/guides) to find the service manual for your system.

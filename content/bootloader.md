@@ -138,7 +138,7 @@ First, we need to mount the OS partitions. Run these commands based on what type
 Then continue with the following commands for either disk type:
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+for i in dev dev/pts proc sys run; do sudo mount -R /$i /mnt/$i; done
 sudo chroot /mnt
 apt install --reinstall linux-image-generic linux-headers-generic
 update-initramfs -c -k all
@@ -180,7 +180,7 @@ If you are using a non-default partitioning scheme (such as a dual boot), replac
 Then continue with the following commands for either disk type:
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+for i in dev dev/pts proc sys run; do sudo mount -R /$i /mnt/$i; done
 sudo chroot /mnt
 apt install --reinstall linux-image-generic linux-headers-generic
 update-initramfs -c -k all
@@ -224,7 +224,7 @@ Then continue with the following commands for either disk type:
 After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+for i in dev dev/pts proc sys run; do sudo mount -R /$i /mnt/$i; done
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all
@@ -267,7 +267,7 @@ Then continue with the following commands for either disk type:
 After the partitions are mounted, we'll ensure the internet settings from the OS are coped over, as well as reinstall the kernel and the bootloader.
 
 ```bash
-for i in dev dev/pts proc sys run; do sudo mount -B /$i /mnt/$i; done
+for i in dev dev/pts proc sys run; do sudo mount -R /$i /mnt/$i; done
 sudo chroot /mnt
 apt install --reinstall grub-efi-amd64 linux-generic linux-headers-generic
 update-initramfs -c -k all

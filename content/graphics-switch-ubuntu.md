@@ -5,13 +5,9 @@ description: >
 keywords:
   - System76
   - Ubuntu
-  - 18.04
-  - 19.10
   - 20.04
-  - 20.10
-  - 21.04
-  - 21.10
   - 22.04
+  - 24.04
   - NVIDIA
   - Hybrid
   - Integrated
@@ -27,11 +23,13 @@ tableOfContents: true
 
 Many modern laptops with NVIDIA graphics cards have switchable graphics, which allows users to switch their primary GPU between the CPU's integrated graphics processor and the dedicated NVIDIA graphics card. The following System76 laptops have these switchable graphics capabilities:
 
-- Adder WS (addw1, addw2)
+- Adder WS (addw1 and newer)
+- Bonobo WS (bonw15)
 - Galago Pro (galp5 - NVIDIA models only)
-- Gazelle (gaze14, gaze15, gaze16, gaze17)
+- Gazelle (gaze14 and newer)
 - Kudu (kudu6)
-- Oryx Pro (oryp4, oryp4-b, oryp5, oryp6, oryp7, oryp8, oryp9, oryp10)
+- Oryx Pro (oryp4 and newer)
+- Serval WS (serw13)
 
 ## Graphics modes
 
@@ -99,6 +97,8 @@ Now enable the System76 Power extension with the toggle to the right.
 
 Click the system menu in the top right corner of your screen to access graphics
 switching.
+
+>**Note**: GNOME Shell versions newer than 42 (Ubuntu 22.10 and above) are not supported by the System76 Power extension.
 
 ![Graphics](/images/graphics-switch-ubuntu/system-menu.png)
 

@@ -5,7 +5,7 @@
         alt="Buy a computer - Don't talk to one. Lifetime support from 100% real humans"
         class="px-4 py-8 lg:py-10 mx-auto w-full max-w-3xl"
         height="440"
-        src="/images/website/robot-type.png"
+        src="/images/website/open-ticket.png"
         width="1207"
       />
       <h1 class="hidden">

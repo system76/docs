@@ -3,9 +3,9 @@ title: Upgrade Ubuntu
 description: >
   Get the newest version of Ubuntu on your System76 computer! Check out our upgrade directions.
 keywords:
-  - Ubuntu 16.04
-  - Ubuntu 18.04
   - Ubuntu 20.04
+  - Ubuntu 22.04
+  - Ubuntu 24.04
   - LTS
   - Point Release
   - Upgrade
@@ -27,9 +27,9 @@ First, we recommend having Ubuntu installation media (a DVD or USB drive) handy 
 ## Create Install Media
 
 Create an Installation USB
-- [Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu)
-- [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows)
-- [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx)
+ - [Using Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) 
+ - [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) 
+ - [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) 
 
 Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. We have a support article that goes over creating backups [here.](/articles/backup-files)
 

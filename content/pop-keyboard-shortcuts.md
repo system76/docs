@@ -66,16 +66,18 @@ Directional actions can use either the standard arrow keys or their Vim equivale
 
 ### Manage workspaces and displays
 
-| Shortcut                                                                                   | Action                                         |
-| ------------------------------------------------------------------------------------------ | ---------------------------------------------- |
-| <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>                               | Navigate between workspaces                    |
-| <kbd>SUPER</kbd> + <kbd>Home</kbd>/<kbd>End</kbd>                                            | Navigate to first/last workspace               |
-| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>Direction keys</kbd>                              | Move active window between workspaces/displays |
-| <kbd>SUPER</kbd> + <kbd>ESC</kbd>                                                            | Lock the screen                                |
+| Shortcut                                                                          | Action                                              |
+| --------------------------------------------------------------------------------- | --------------------------------------------------- |
+| <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>                    | Navigate between workspaces                         |
+| <kbd>SUPER</kbd> + <kbd>Home</kbd>/<kbd>End</kbd>                                 | Navigate to first/last workspace                    |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd>                   | Move active window between upper/lower workspaces   |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>/<kbd>→</kbd>                   | Move active window between left/right displays      |
+| <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd> | Move the active window between upper/lower displays |
+| <kbd>SUPER</kbd> + <kbd>ESC</kbd>                                                 | Lock the screen                                     |
 
 ### Use the launcher
 
-The launcher allows searching through open windows and installed applications, and also has the additional functions listed below.
+The launcher allows searching through open windows and installed applications. It also has the additional functions listed below.
 
 | Shortcut/command                                           | Action                          |
 | ---------------------------------------------------------- | ------------------------------- |

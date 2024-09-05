@@ -45,3 +45,4 @@ jobs:
           cname: support.system76.com
           github_token: ${{ secrets.RELEASE_TOKEN }}
           publish_dir: ./dist
+          force_orphan: true

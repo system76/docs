@@ -59,13 +59,13 @@ sudo dnf install gnome-shell-extension-pop-shell
 
 <u>Pop Shell</u> is packaged in the AUR, but for the keyboard shortcuts to work, you will need to build it from source like we did above.
 
-In order to build Pop Shell from source we'll first need to install the build dependencies and <u>git</u> to clone the repository:
+In order to build Pop Shell from source, we'll first need to install the build dependencies and <u>git</u> to clone the repository:
 
 ```bash
 sudo pacman -S git typescript make
 ```
 
-Next we'll clone the repository using this command:
+Next, we'll clone the repository using this command:
 
 ```bash
 git clone https://github.com/pop-os/shell.git
@@ -103,4 +103,4 @@ gsettings set org.gnome.mutter overlay-key ''
 sudo pamac install gnome-shell-extension-pop-shell
 ```
 
-To learn about <u>Pop Shell</u>'s keyboard shortcuts you can view this [support article](/articles/pop-keyboard-shortcuts/). You can also view <u>Pop Shell</u>'s source code [here](https://github.com/pop-os/shell).
+To learn about <u>Pop Shell</u>'s keyboard shortcuts, you can view this [support article](/articles/pop-keyboard-shortcuts/). You can also view <u>Pop Shell</u>'s source code [here](https://github.com/pop-os/shell).

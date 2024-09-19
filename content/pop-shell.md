@@ -32,7 +32,7 @@ cd shell
 
 Then, check out the appropriate branch for your version of Ubuntu. Not all Ubuntu codenames are listed; if your version isn't listed, use the closest version _before_ it in alphabetical order.
 
-```
+```bash
 git checkout master_focal # For Ubuntu 20.04, 20.10, 21.04, and 21.10.
 git checkout master_jammy # For Ubuntu 22.04, 22.10, and 23.04.
 git checkout master_mantic # For Ubuntu 23.10.

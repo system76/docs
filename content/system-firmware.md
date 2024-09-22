@@ -158,16 +158,13 @@ sudo mkdir -p /boot/efi
 sudo mount /dev/sda1 /boot/efi
 gnome-control-center firmware
 ```
+Where `/dev/sda1` is the EFI system partition.
 
-After the above commands are ran depending on the drive that the OS is installed on, you can use the above instructions to update your firmware.
+After the System76 Driver is installed and the EFI partition has been mounted using the above commands, you can use the above instructions to [update the firmware](#starting-the-update-gui) normally.
 
 ### Firmware Notifications for Laptops
 
 If you’re receiving the firmware update notification after a firmware update, then your system’s Intel ME may be turned on. Let’s reboot the laptop and hold F2 to get to the BIOS. Then go to Advanced -> Advanced Chipset Control and make sure that the ME is disabled, then go to the Exit tab and save. That should stop the notifications about a firmware update and you're all set.
-
-Where `/dev/sda1` is the EFI system partition.
-
-After the System76 Driver is installed and the EFI partition has been mounted using the above commands, you can use the above instructions to [update the firmware](#starting-the-update-gui) normally.
 
 ### Switching Between Proprietary Firmware and System76 Open Firmware
 

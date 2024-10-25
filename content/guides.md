@@ -26,20 +26,24 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 
 ### Tech Docs
 
+Browse the [tech docs website](https://tech-docs.system76.com) directly to see all available models, including new models not yet added to the table below. Tech docs include service manuals, port guides, and tech specs.
+
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
 | Adder WS [(addw1)](https://tech-docs.system76.com/models/addw1/README.html) | Meerkat [(meer5)](https://tech-docs.system76.com/models/meer5/README.html) | Launch [(launch_1)](https://tech-docs.system76.com/models/launch_1/README.html) |
 | Adder WS [(addw2)](https://tech-docs.system76.com/models/addw2/README.html) | Meerkat [(meer6)](https://tech-docs.system76.com/models/meer6/README.html)  | Launch [(launch_2)](https://tech-docs.system76.com/models/launch_2/README.html) |
-| Adder WS [(addw3)](https://tech-docs.system76.com/models/addw3/README.html) | Meerkat [(meer7)](https://tech-docs.system76.com/models/meer7/README.html) | Launch Lite [(launch_lite_1)](https://tech-docs.system76.com/models/launch_lite_1/README.html) |
-| Bonobo WS [(bonw14)](https://tech-docs.system76.com/models/bonw14/README.html) | Thelio B4 [(thelio-b4)](https://tech-docs.system76.com/models/thelio-b4/README.html) | |  Launch Heavy [(launch_heavy_1)](https://tech-docs.system76.com/models/launch_heavy_1/README.html) | Thelio Major [(thelio-major-r3)](https://tech-docs.system76.com/models/thelio-major-r3/README.html) |
-| Bonobo WS [(bonw15)](https://tech-docs.system76.com/models/bonw15/README.html) | Thelio Major [(thelio-major-b1-b2/r1-r2)](https://tech-docs.system76.com/models/thelio-major-b1-b2-r1-r2/README.html) |
-| Darter Pro [(darp6)](https://tech-docs.system76.com/models/darp6/README.html) | Thelio Massive B1 [(thelio-massive-b1)](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
-| Darter Pro [(darp7)](https://tech-docs.system76.com/models/darp7/README.html) | Thelio Mega R1 [(thelio-mega-r1)](https://tech-docs.system76.com/models/thelio-mega-r1.0/README.html) |
-| Darter Pro [(darp8)](https://tech-docs.system76.com/models/darp8/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
-| Darter Pro [(darp9)](https://tech-docs.system76.com/models/darp9/README.html) | Thelio Mira B1 [(thelio-mira-b1)](https://tech-docs.system76.com/models/thelio-mira-b1.0/README.html) |
-| Galago Pro [(galp4)](https://tech-docs.system76.com/models/galp4/README.html) | Thelio Mira R3 [(thelio-mira-r3)](https://tech-docs.system76.com/models/thelio-mira-r3/README.html) |
-| Galago Pro [(galp5)](https://tech-docs.system76.com/models/galp5/README.html) |
-| Galago Pro [(galp6)](https://tech-docs.system76.com/models/galp6/README.html) |
+| Adder WS [(addw3)](https://tech-docs.system76.com/models/addw3/README.html) | Meerkat [(meer7)](https://tech-docs.system76.com/models/meer7/README.html) | Launch [(launch_3)](https://tech-docs.system76.com/models/launch_3/README.html) |
+| Adder WS [(addw4)](https://tech-docs.system76.com/models/addw4/README.html) | Meerkat [(meer8)](https://tech-docs.system76.com/models/meer8/README.html) | Launch Heavy [(launch_heavy_1)](https://tech-docs.system76.com/models/launch_heavy_1/README.html) |
+| Bonobo WS [(bonw14)](https://tech-docs.system76.com/models/bonw14/README.html) | Thelio B4 [(thelio-b4)](https://tech-docs.system76.com/models/thelio-b4/README.html) | Launch Heavy [(launch_heavy_3)](https://tech-docs.system76.com/models/launch_heavy_3/README.html) |
+| Bonobo WS [(bonw15)](https://tech-docs.system76.com/models/bonw15/README.html) | Thelio R3-N1 [(thelio-r3-n1)](https://tech-docs.system76.com/models/thelio-r3-n1/README.html) | Launch Lite [(launch_lite_1)](https://tech-docs.system76.com/models/launch_lite_1/README.html) |
+| Darter Pro [(darp6)](https://tech-docs.system76.com/models/darp6/README.html) | Thelio Major B1, B2, R1, and R2 [(thelio-major-b1-b2/r1-r2)](https://tech-docs.system76.com/models/thelio-major-b1-b2-r1-r2/README.html) |
+| Darter Pro [(darp7)](https://tech-docs.system76.com/models/darp7/README.html) | Thelio Major R3 [(thelio-major-r3)](https://tech-docs.system76.com/models/thelio-major-r3/README.html) |
+| Darter Pro [(darp8)](https://tech-docs.system76.com/models/darp8/README.html) | Thelio Massive B1 [(thelio-massive-b1)](https://tech-docs.system76.com/models/thelio-massive-b1.2/README.html) |
+| Darter Pro [(darp9)](https://tech-docs.system76.com/models/darp9/README.html) | Thelio Mega R1 [(thelio-mega-r1)](https://tech-docs.system76.com/models/thelio-mega-r1.0/README.html) |
+| Darter Pro [(darp10)](https://tech-docs.system76.com/models/darp10/README.html) | Thelio Mira R1 [(thelio-mira-r1)](https://tech-docs.system76.com/models/thelio-mira-r1.0/README.html) |
+| Galago Pro [(galp4)](https://tech-docs.system76.com/models/galp4/README.html) | Thelio Mira B1 [(thelio-mira-b1)](https://tech-docs.system76.com/models/thelio-mira-b1.0/README.html) |
+| Galago Pro [(galp5)](https://tech-docs.system76.com/models/galp5/README.html) | Thelio Mira R3 [(thelio-mira-r3)](https://tech-docs.system76.com/models/thelio-mira-r3/README.html) |
+| Galago Pro [(galp6)](https://tech-docs.system76.com/models/galp6/README.html) | Thelio Spark B1-N2 [(thelio-spark-b1-n2)](https://tech-docs.system76.com/models/thelio-spark-b1-n2/README.html) |
 | Galago Pro [(galp7)](https://tech-docs.system76.com/models/galp7/README.html) |
 | Gazelle [(gaze15)](https://tech-docs.system76.com/models/gaze15/README.html) |
 | Gazelle [(gaze16)](https://tech-docs.system76.com/models/gaze16/README.html) |
@@ -50,11 +54,14 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Lemur Pro [(lemp10)](https://tech-docs.system76.com/models/lemp10/README.html) |
 | Lemur Pro [(lemp11)](https://tech-docs.system76.com/models/lemp11/README.html) |
 | Lemur Pro [(lemp12)](https://tech-docs.system76.com/models/lemp12/README.html) |
+| Lemur Pro [(lemp13)](https://tech-docs.system76.com/models/lemp13/README.html) |
 | Oryx Pro [(oryp6)](https://tech-docs.system76.com/models/oryp6/README.html) |
 | Oryx Pro [(oryp7)](https://tech-docs.system76.com/models/oryp7/README.html) |
 | Oryx Pro [(oryp8)](https://tech-docs.system76.com/models/oryp8/README.html) |
 | Oryx Pro [(oryp9)](https://tech-docs.system76.com/models/oryp9/README.html) |
 | Oryx Pro [(oryp10)](https://tech-docs.system76.com/models/oryp10/README.html) |
+| Oryx Pro [(oryp11)](https://tech-docs.system76.com/models/oryp11/README.html) |
+| Oryx Pro [(oryp12)](https://tech-docs.system76.com/models/oryp12/README.html) |
 | Pangolin [(pang10)](https://tech-docs.system76.com/models/pang10/README.html) |
 | Pangolin [(pang11)](https://tech-docs.system76.com/models/pang11/README.html) |
 | Pangolin [(pang12)](https://tech-docs.system76.com/models/pang12/README.html) |
@@ -63,7 +70,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Serval WS [(serw12)](https://tech-docs.system76.com/models/serw12/README.html) |
 | Serval WS [(serw13)](https://tech-docs.system76.com/models/serw13/README.html) |
 
-### Service Manuals
+### Service Manuals (older models)
 
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|
@@ -75,7 +82,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides, fi
 | Oryx Pro [(oryp5)](/service-manuals/pdfs/Oryx/oryp5-service-manual.pdf) |
 | Serval WS [(serw11)](/service-manuals/pdfs/Serval/serw11-service-manual.pdf) |
 
-### Quickstart Guides
+### Quickstart Guides (older models)
 
 | Laptops | Desktops | Accessories |
 |:-------:|:--------:|:-----------:|

@@ -43,6 +43,8 @@ Integrated graphics mode uses the integrated GPU only and turns off the NVIDIA
 GPU. This mode uses less power, leading to a longer battery life and less fan
 noise.
 
+Note: External monitors might not work with this mode if the system relies on GPU for supporting them.
+
 ### NVIDIA
 
 NVIDIA graphics mode uses the discrete NVIDIA GPU only. This provides a better

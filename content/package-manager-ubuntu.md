@@ -116,7 +116,7 @@ If the Terminal returns nothing, no packages are held.
 
 If the Ubuntu Store indicates that some remote repositories can't be reached, open <u>Software & Updates</u> and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
 
-## Snap Pacakges
+## Snap Packages
 
 Snaps are designed to update themselves as needed, but if you'd like to manually update the Snaps on your Ubuntu system, run these commands:
 

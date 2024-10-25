@@ -20,11 +20,15 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 ### Before You Begin
 
-* Make sure the laptop is **plugged into the AC Adapter** for the entire firmware updating process. USB Type-C charging is **not** supported during firmware updates on the following models: Galago Pro (galp3-c, galp4), Darter Pro (darp5, darp6)
+* Make sure the laptop is **plugged into the AC Adapter** for the entire firmware updating process.
+  * USB Type-C charging is **not** supported during firmware updates on the following models: Galago Pro (galp3-c, galp4), Darter Pro (darp5, darp6)
 * **Disconnect external devices**, including any displays or USB devices.
+  * If external devices are connected, the firmware update may restart without being written (and without showing an error).
+* Make sure you can **see the System76 splash screen on boot**.
+  * Some GPU ports might not provide a signal before booting is complete. You may need to switch from using one type of cable to another, or use the built-in screen on a laptop.
 * **Take a picture of these instructions** or pull up [s76.co/sfu](https://s76.co/sfu) on a phone or other device for reference.
 * During the firmware updating process, **the system will restart several times**. Prompts will occasionally ask for user involvement.
-  
+
 ### Starting the Update (GUI)
 
 In Pop!\_OS, you can check for firmware updates using **Settings -> Firmware**.
@@ -91,6 +95,8 @@ Depending on the model, the system may reboot at this point. The system's fans m
 ![Press any key to shut down](/images/system-firmware/press-any-key.jpg)
 
 After the system powers off, **press the power button** to turn it back on. It may be necessary to power on more than once after a firmware update. On machines running Open Firmware, the system should then boot normally.
+
+* Note: EC firmware updates need to have the whole system power cycled, not just a reboot. To force a power cycle, either unplug the AC power adapter once the system shuts down for 15 seconds before plugging the AC power adapter back in or press and hold the power button for 15 seconds to force the power off.
 
 ### Disabling the ME
 

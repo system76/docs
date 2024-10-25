@@ -1,7 +1,7 @@
 ---
-title: Transferring photos from your phone to Pop!_OS
+title: Transferring Photos From Your Phone to Pop!_OS
 description: >
-  How to move your photos from your Android or iPhone to Pop!_OS
+  How to move your photos from your Android or iPhone to Pop!\_OS
 keywords:
   - System76
   - Apple
@@ -21,43 +21,45 @@ section: switching
 tableOfContents: true
 ---
 
-## From Pixel/Android to Pop!_OS
+## From Pixel/Android to Pop!\_OS
 
 ### Changing the USB Preference
 
-When you connect your Pixel/Android device to your system there is a notification about USB Preferences which can be reached when you swipe from the top of the screen like the screenshot below:
+When you connect your Android device to your computer, a notification will appear about USB Preferences. Swipe down from the top of your screen to reach this notification:
 
-![Pixel USB Notification](/images/transfer-photos-from-phone/Pixel-USB-Notification.png)
+![Android USB Notification](/images/transfer-photos-from-phone/Pixel-USB-Notification.png)
 
-Once you press on the notification the following screen will appear:
+Once you tap on the notification, the following screen will appear:
 
-![Pixel USB Preferences](/images/transfer-photos-from-phone/Pixel-USB-Preferences-1.png)
+![Android USB Preferences](/images/transfer-photos-from-phone/Pixel-USB-Preferences-1.png)
 
-Change "no data transfer" to "File transfer / Android Auto":
+Select "File transfer / Android Auto":
 
-![Pixel USB Preferences](/images/transfer-photos-from-phone/Pixel-USB-Preferences-2.png)
+![Android USB Preferences](/images/transfer-photos-from-phone/Pixel-USB-Preferences-2.png)
 
-### Open the Files application
+### Open the Files Application
 
-Next open the <u>Files</u> application and left-click on the Pixel 8 item (in this example it may say the OEM of your device such as Samsung) in the menu on the left side of the window to access the file system on the device.
+Next, open the <u>Files</u> application. The name of your Android device should appear in the left pane of the file browser.
 
-![Pixel File System](/images/transfer-photos-from-phone/Pixel-Files-1.png)
+![Android File System](/images/transfer-photos-from-phone/Pixel-Files-1.png)
 
-## From iPhone to Pop!_OS
+Click on the device's name to explore the device's filesystem.
 
-### Trusting the computer in iOS
+## From iPhone to Pop!\_OS
 
-First the iPhone must trust your computer which then allows access to the file system on the iPhone. This can be done using the prompt that appears when you connect the iPhone to your system in this screenshot:
+### Trusting the Computer in iOS
+
+Your iPhone will only allow filesystem access to a trusted computer. When you first connect your iPhone to your computer, a prompt will appear and ask if you want to trust the computer:
 
 ![iPhone Trust Prompt](/images/transfer-photos-from-phone/iPhone-Trust-Device-scaled.png)
 
 ### Open the Files application
 
-Next open the <u>Files</u> application and right-click on the iPhone item in the menu on the left side of the window to access the file system on the iPhone.
+Next, open the <u>Files</u> application and click on the iPhone item in the left pane of the window. This will take you into the iPhone's filesystem.
 
 ![iPhone File System](/images/transfer-photos-from-phone/iPhone-Files-2.png)
 
-### Open the DCIM folder/directory
+### Open the DCIM Directory
 
 The directories inside DCIM are named with the year and month of when the photos inside were taken. For example, "201801__" contains photos that were taken in January of 2018.
 

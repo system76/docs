@@ -59,6 +59,6 @@ Next open the <u>Files</u> application and right-click on the iPhone item in the
 
 ### Open the DCIM folder/directory
 
-From there you can access your photos based on YEARMONTH such as 201801__ in the screenshot below:
+The directories inside DCIM are named with the year and month of when the photos inside were taken. For example, "201801__" contains photos that were taken in January of 2018.
 
 ![iPhone DCIM folder/directory](/images/transfer-photos-from-phone/iPhone-Files-3.png)

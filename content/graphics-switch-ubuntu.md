@@ -39,6 +39,8 @@ Integrated graphics mode uses the integrated GPU only and turns off the NVIDIA
 GPU. This mode uses less power, leading to a longer battery life and less fan
 noise.
 
+Note: External monitors might not work with this mode if the system relies on GPU for supporting them.
+
 ### NVIDIA
 
 NVIDIA graphics mode uses the discrete NVIDIA GPU only. This provides a better
@@ -70,6 +72,8 @@ Hybrid graphics mode is available on 19.10 and later.
 
 Compute graphics mode uses the integrated GPU for all rendering. The NVIDIA
 GPU is left available, allowing it to be used as a compute node.
+
+Note: External monitors might not work with this mode if the system relies on GPU for supporting them.
 
 ## Switch graphics
 

@@ -29,17 +29,17 @@ When you connect your Pixel/Android device to your system there is a notificatio
 
 ![Pixel USB Notification](/images/transfer-photos-from-phone/Pixel-USB-Notification.png)
 
-Once you press on the notification the follow screen will appear:
+Once you press on the notification the following screen will appear:
 
 ![Pixel USB Preferences](/images/transfer-photos-from-phone/Pixel-USB-Preferences-1.png)
 
-Simply change "no data transfer" to "File transfer / Android Auto":
+Change "no data transfer" to "File transfer / Android Auto":
 
 ![Pixel USB Preferences](/images/transfer-photos-from-phone/Pixel-USB-Preferences-2.png)
 
 ### Open the Files application
 
-Next open the <u>Files</u> application and right-click on the Pixel 8 item (in this example it may say the OEM of your device such as Samsung) in the menu on the left side of the window to access the file system on the device.
+Next open the <u>Files</u> application and left-click on the Pixel 8 item (in this example it may say the OEM of your device such as Samsung) in the menu on the left side of the window to access the file system on the device.
 
 ![Pixel File System](/images/transfer-photos-from-phone/Pixel-Files-1.png)
 

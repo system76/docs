@@ -85,7 +85,7 @@ mkdir ~/system76
 journalctl > ~/system76/journal.log
 dmesg > ~/system76/dmesg.log
 cp ~/.local/share/xorg/Xorg.0.log ~/system76/Xorg.0.log 2> /dev/null
-sudo dmidecode > ~/system76/demidecode
+sudo dmidecode > ~/system76/dmidecode
 sudo lspci -vv > ~/system76/lspci.log
 sudo lsusb -vv > ~/system76/lsusb.log
 uname -a > ~/system76/uname.log

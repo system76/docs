@@ -19,9 +19,9 @@ section: getting-help
 tableOfContents: true
 ---
 
-Hello! 
+Hello!
 
-You have landed on a place holder page as our web site has had some changes as of Novemember 1st, 2024. Links in support emails that land here are no longer supported by the new site. 
+You have landed on a place holder page as our web site has had some changes as of Novemember 1st, 2024. Links in support emails that land here are no longer supported by the new site.
 
 We do want to help you if you do have questions, concerns or on going issues! If you are logged into your System76.com account, the following link will allow you to create a support ticket now:
 
@@ -31,7 +31,7 @@ We do want to help you if you do have questions, concerns or on going issues! If
 
 ### 1. Do you have a current backup of your files?
 
-If your issue is time-sensitive, reinstalling or [refreshing](/articles/pop-recovery#refresh-install) the operating system may provide the fastest resolution. Be sure to back up all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe. 
+If your issue is time-sensitive, reinstalling or [refreshing](/articles/pop-recovery#refresh-install) the operating system may provide the fastest resolution. Be sure to back up all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
 
 **Note**: This guide may cover diagnostics and testing that you've already performed. Skip those sections as needed, but be sure to provide that information when submitting your ticket.
 

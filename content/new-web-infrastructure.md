@@ -21,13 +21,13 @@ tableOfContents: true
 
 Hello!
 
-You have landed on a place holder page as our web site has had some changes as of Novemember 1st, 2024. Links in support emails that land here are no longer supported by the new site.
+You have landed on a placeholder page because our website has had some changes as of Novemember 1st, 2024. Links in support emails that land here are no longer supported by the new site.
 
-We do want to help you if you do have questions, concerns or on going issues! If you are logged into your System76.com account, the following link will allow you to create a support ticket now:
+We do want to help you if you do have questions, concerns, or ongoing issues! If you are logged into your System76.com account, the following link will allow you to create a support ticket now:
 
 [Open New Support Ticket](https://system76.com/my-account/support-tickets/new)
 
-## Suggested self help fisrt steps
+## Suggested self-help steps
 
 ### 1. Do you have a current backup of your files?
 
@@ -39,13 +39,15 @@ We have a help article to guide you through backing up your system [here.](/arti
 
 ### 2. Do you have a Pop!\_OS or Ubuntu Live USB?
 
-A Live USB can be used as a rescue disk. This will provide us an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary.
+A Live USB can be used as a rescue disk. This will provide you with an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary.
 
 We have an article to guide you through creating [Live USBs here.](/articles/live-disk)
 
+The default Pop!\_OS install also has a recovery partition that provides the same purpose as a Live USB drive. Accessing the recovery partition is covered [here.](https://support.system76.com/articles/pop-recovery)
+
 ## Local repair and upgrades
 
-We offer techincal documenation (tech-docs such as service manuals) in this [article](/articles/guides).
+We offer techincal documentation such as service manuals in this [article](/articles/guides).
 
 ## Common Issue Sources
 
@@ -67,7 +69,7 @@ See this article for troubleshooting software issues [here.](/articles/software-
 
 ### Hardware
 
-Steps 3 and 5 from the above Environment section will confirm the issue is caused by hardware configuration or failure. We also recommend following this guide for [diagnosing hardware failure](/articles/hardware-failure).
+Changes to either local networking hardware or of the configuration on your computer can be signs of hardware failure. We also recommend following this guide for [diagnosing hardware failure](/articles/hardware-failure).
 
 ## What Information Should I Provide to Support?
 
@@ -75,7 +77,7 @@ Any information or test results you can provide when opening your support case w
 
 ## Attaching Files In Your Ticket
 
-The summery that you send to start a ticket does not support file attachments; however, you can reply to the initial automated message with any attachements that you feel will be helpful.
+The summary that you send to start a ticket does not support file attachments; however, you can reply to the initial automated message with any attachements that you feel will be helpful.
 
 If you're having difficulty attaching a file, you can also email the file to info@system76.com. Please be sure to tell us on the ticket if you have sent an email attachment.
 
@@ -83,7 +85,7 @@ If you're having difficulty attaching a file, you can also email the file to inf
 
 We have several repair or replacement options available depending on the circumstances.
 
-### Advance Replacement Whole System - Within 30 days of Shipment
+### Advance Replacement of Whole System - Within 30 days of Shipment
 
 We build and ship a replacement system with the same configuration, and have you return the defective system once the new one is received. More details will be provided if this process is requested.
 

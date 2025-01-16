@@ -21,11 +21,11 @@ tableOfContents: true
 
 Hello!
 
-You have landed on a placeholder page because our website has had some changes as of Novemember 1st, 2024. Links in support emails that land here are no longer supported by the new site.
+You have landed on a placeholder page because our website has had some changes as of Novemember 5th, 2024. Links in support emails that land here are no longer supported by the new site.
 
 We do want to help you if you do have questions, concerns, or ongoing issues! If you are logged into your System76.com account, the following link will allow you to create a support ticket now:
 
-[Open New Support Ticket](https://system76.com/my-account/support-tickets/new)
+[Open New Support Ticket](https://system76.com/contact/support)
 
 ## Suggested self-help steps
 

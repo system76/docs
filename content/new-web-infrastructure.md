@@ -87,7 +87,7 @@ We have several repair or replacement options available depending on the circums
 
 ### Advance Replacement of Whole System - Within 30 days of Shipment
 
-We build and ship a replacement system with the same configuration, and have you return the defective system once the new one is received. More details will be provided if this process is requested.
+We build and ship a replacement system with the same configuration, and have you return the defective system once the new one is received. More details will be provided if this process is required.
 
 ### Advance Replacement Part - Within Warranty Period
 

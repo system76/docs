@@ -27,7 +27,7 @@ We do want to help you if you do have questions, concerns, or ongoing issues! If
 
 [Open New Support Ticket](https://system76.com/contact/support)
 
-## Suggested self-help steps
+## Suggested Self-help Steps
 
 ### 1. Do you have a current backup of your files?
 
@@ -45,7 +45,7 @@ We have an article to guide you through creating [Live USBs here.](/articles/liv
 
 The default Pop!\_OS install also has a recovery partition that provides the same purpose as a Live USB drive. Accessing the recovery partition is covered [here.](https://support.system76.com/articles/pop-recovery)
 
-## Local repair and upgrades
+## Local Repair and Upgrades
 
 We offer techincal documentation such as service manuals in this [article](/articles/guides).
 
@@ -53,14 +53,14 @@ We offer techincal documentation such as service manuals in this [article](/arti
 
 ### Software
 
-See this article for troubleshooting software issues [here.](/articles/software-triage)
+See this article for troubleshooting software issues: [Software-triage](/articles/software-triage)
 
 ### Environment
 
 1. Are any other machines or users in your home or workspace experiencing the same issue?
 2. If the issue involves networking, have you tried resetting your modem/router?
 
-   **NOTE:** Please try this again, even if it appears no other devices are affected.
+   **NOTE:** Networking errors can be device specific -- doing a full power cycle is strongly suggested before making changes at the OS level.
 
 3. Are there any devices in proximity with your system that could be causing Wi-Fi or Bluetooth interference?
 4. Is your work environment a stable temperature or has it been particularly warm or cold lately?

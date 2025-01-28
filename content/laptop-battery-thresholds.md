@@ -5,6 +5,8 @@ description: >
 keywords:
   - Battery
   - Battery Life
+  - Charging Thresholds
+  - FlexiCharge
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -24,7 +26,7 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 | Model | Codename |
 |:-----:|:---------:|
-| Pangolin | pang12-pang14 |
+| Pangolin | pang12-pang15 |
 
 ## Configuring Charging Thresholds (Open Firmware)
 

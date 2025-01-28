@@ -22,14 +22,14 @@ The default charging profile for System76 laptops with Open Firmware has a start
 
 To determine if your laptop has Open Firmware or proprietary firmware, see [this article](/articles/open-firmware-systems). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
 
-## Charging Thresholds or FlexiCharge support
+## Models that do not support either Charging Thresholds or FlexiCharge
 
-| Model | Codename | Charging Thresholds | FleixCharger |
-|:-----:|:---------:|:---------:|:---------:|
-| Pangolin | pang12 | No | No |
-| Pangolin | pang13 | No | No |
-| Pangolin | pang14 | No | No |
-| Pangolin | pang15 | No | No |
+| Model | Codename |
+|:-----:|:---------:|
+| Pangolin | pang12 |
+| Pangolin | pang13 |
+| Pangolin | pang14 |
+| Pangolin | pang15 |
 
 ## Configuring Charging Thresholds (Open Firmware)
 

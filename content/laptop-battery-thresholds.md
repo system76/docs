@@ -20,6 +20,12 @@ The default charging profile for System76 laptops with Open Firmware has a start
 
 To determine if your laptop has Open Firmware or proprietary firmware, see [this article](/articles/open-firmware-systems). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
 
+## Do not support Charging Thresholds or FlexiCharge
+
+| Model | Codename |
+|:-----:|:---------:|
+| Pangolin | pang12-pang14 |
+
 ## Configuring Charging Thresholds (Open Firmware)
 
 **Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged). Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them. To work around this limitation in the short term, you can [use systemd to set thresholds at boot](#at-boot).
@@ -97,5 +103,3 @@ To adjust the thresholds, reboot the computer and enter the UEFI setup utility b
 ![Enabling FlexiCharger](/images/laptop-charging-thresholds/flexicharger.jpg)
 
 Once configured, save and exit the setup utility. The thresholds can be disabled at any time by setting FlexiCharger back to Disabled.
-
-**Note:** The pang12, pang13 and pang14 do not support FlexiCharging.

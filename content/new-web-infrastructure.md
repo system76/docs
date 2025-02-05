@@ -35,7 +35,7 @@ If your issue is time-sensitive, reinstalling or [refreshing](/articles/pop-reco
 
 **Note**: This guide may cover diagnostics and testing that you've already performed. Skip those sections as needed, but be sure to provide that information when submitting your ticket.
 
-We have a help article to guide you through backing up your system [here.](/articles/backup-files)
+For guidance backing up your system, see [Back Up Files](/articles/backup-files).
 
 ### 2. Do you have a Pop!\_OS or Ubuntu Live USB?
 
@@ -53,14 +53,14 @@ We offer techincal documentation such as service manuals in this [article](/arti
 
 ### Software
 
-See this article for troubleshooting software issues: [Software-triage](/articles/software-triage)
+See [Software Troubleshooting Triage](/articles/software-triage) for assistance troubleshooting software issues.
 
 ### Environment
 
 1. Are any other machines or users in your home or workspace experiencing the same issue?
 2. If the issue involves networking, have you tried resetting your modem/router?
 
-   **NOTE:** Networking errors can be device specific -- doing a full power cycle is strongly suggested before making changes at the OS level.
+   **NOTE:** Networking errors can be device-specific -- doing a full power cycle is strongly suggested before making changes at the OS level.
 
 3. Are there any devices in proximity with your system that could be causing Wi-Fi or Bluetooth interference?
 4. Is your work environment a stable temperature or has it been particularly warm or cold lately?

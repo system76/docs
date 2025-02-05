@@ -109,13 +109,4 @@ We create and offer a quote to purchase the part in question. We can offer the p
 
 ### Warranty Information
 
-Read the details of our warranty coverage [here.](https://system76.com/warranty)
-
----
-
-<!--
-- Document Version: 1.0.0
-- Date: (12-19-2024)
-- Author: Thomas Zimmerman
-- Contributing Editor(s): Aaron Honeycutt
--->
+Read the details of our warranty coverage at [system76.com/warranty](https://system76.com/warranty).

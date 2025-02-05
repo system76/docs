@@ -23,9 +23,7 @@ Hello!
 
 You have landed on a placeholder page because our website has had some changes as of Novemember 5th, 2024. Links in support emails that land here are no longer supported by the new site.
 
-We do want to help you if you do have questions, concerns, or ongoing issues! If you are logged into your System76.com account, the following link will allow you to create a support ticket now:
-
-[Open New Support Ticket](https://system76.com/contact/support)
+We want to help you if you have questions, concerns, or ongoing issues! If you are logged into your System76.com account, the following link will allow you to create a support ticket now: [Open New Support Ticket](https://system76.com/contact/support)
 
 ## Suggested Self-help Steps
 
@@ -41,13 +39,13 @@ For guidance backing up your system, see [Back Up Files](/articles/backup-files)
 
 A Live USB can be used as a rescue disk. This will provide you with an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary.
 
-We have an article to guide you through creating [Live USBs here.](/articles/live-disk)
+We have an article to guide you through [creating Live USBs](/articles/live-disk).
 
-The default Pop!\_OS install also has a recovery partition that provides the same purpose as a Live USB drive. Accessing the recovery partition is covered [here.](https://support.system76.com/articles/pop-recovery)
+The default Pop!\_OS install also has a recovery partition that provides the same purpose as a Live USB drive. Accessing the recovery partition is covered in the [Recovery Partition](/articles/pop-recovery) article.
 
 ## Local Repair and Upgrades
 
-We offer techincal documentation such as service manuals in this [article](/articles/guides).
+We offer techincal documentation such as service manuals in the [Find Documentation For Your Model](/articles/guides) article.
 
 ## Common Issue Sources
 
@@ -69,7 +67,7 @@ See [Software Troubleshooting Triage](/articles/software-triage) for assistance 
 
 ### Hardware
 
-Changes to either local networking hardware or of the configuration on your computer can be signs of hardware failure. We also recommend following this guide for [diagnosing hardware failure](/articles/hardware-failure).
+Changes to networking or other performance on your computer can be signs of hardware failure. We also recommend following this guide for [diagnosing hardware failure](/articles/hardware-failure).
 
 ## What Information Should I Provide to Support?
 

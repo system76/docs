@@ -91,7 +91,7 @@ We build and ship a replacement system with the same configuration, and have you
 
 ### Advance Replacement Part - Within Warranty Period
 
-We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available [service manuals here](/articles/guides) and [here](https://tech-docs.system76.com/)
+We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available service manuals in the [relevant support article](/articles/guides) or on the [Tech Docs website](https://tech-docs.system76.com/).
 
 More details will be provided if this process is requested.
 

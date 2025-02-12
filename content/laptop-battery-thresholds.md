@@ -5,6 +5,8 @@ description: >
 keywords:
   - Battery
   - Battery Life
+  - Charging Thresholds
+  - FlexiCharge
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -19,6 +21,15 @@ Charging thresholds allow your System76 laptop to avoid charging the battery unt
 The default charging profile for System76 laptops with Open Firmware has a start threshold of 90 and a stop threshold of 100. This increases battery longevity while keeping the battery very close to a full charge.
 
 To determine if your laptop has Open Firmware or proprietary firmware, see [this article](/articles/open-firmware-systems). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
+
+## Models that do not support either Charging Thresholds or FlexiCharge
+
+| Model | Codename |
+|:-----:|:---------:|
+| Pangolin | pang12 |
+| Pangolin | pang13 |
+| Pangolin | pang14 |
+| Pangolin | pang15 |
 
 ## Configuring Charging Thresholds (Open Firmware)
 
@@ -97,5 +108,3 @@ To adjust the thresholds, reboot the computer and enter the UEFI setup utility b
 ![Enabling FlexiCharger](/images/laptop-charging-thresholds/flexicharger.jpg)
 
 Once configured, save and exit the setup utility. The thresholds can be disabled at any time by setting FlexiCharger back to Disabled.
-
-**Note:** The pang12, pang13 and pang14 do not support FlexiCharging.

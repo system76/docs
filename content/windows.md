@@ -48,6 +48,7 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 | Adder WS (addw1)     | Yes        | Yes                |
 | Adder WS (addw2)     | Yes        | No                 |
 | Adder WS (addw3)     | Yes        | Yes                |
+| Adder WS (addw4)     | Yes        | Yes                |
 | Bonobo WS (bonw14)   | Yes        | No                 |
 | Bonobo WS (bonw15)   | Yes        | Yes                |
 | Darter Pro (darp8 and older) | Yes | No                |

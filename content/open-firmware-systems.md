@@ -53,7 +53,7 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 | Gazelle (gaze16 and newer)   | Yes           | Yes     |
 | Lemur Pro (lemp8 and older)  | No            | No      |
 | Lemur Pro (lemp9 and newer)  | Yes           | Yes     |
-| Meerkat (meer9)              | Yes           | Yes     |
+| Meerkat (meer9)              | Yes           | N/A     |
 | Oryx Pro (oryp5 and older)   | No            | No      |
 | Oryx Pro (oryp6 and newer)   | Yes           | Yes     |
 

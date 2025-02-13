@@ -6,6 +6,8 @@ keywords:
   - battery percentage
   - gnome tweak tool
   - battery
+  - Pop!_OS 22.04
+  - Pop!_OS 20.04
 
 facebookImage: /_social/article
 twitterImage: /_social/article
@@ -15,7 +17,15 @@ section: community
 tableOfContents: true
 ---
 
-To show the battery percentage in the top bar in Pop!\_OS, you will need to use the GNOME Tweak Tool.
+## Pop!_OS 22.04
+
+1. Open the Application menu and open Settings
+2. Click on Power on the left side
+3. Switch the Show Battery Percentage toggle on
+
+## Pop!_OS 20.04
+
+To show the battery percentage in the top bar, you will need to use the GNOME Tweak Tool.
 
 ### Installing the GNOME Tweak Tool
 

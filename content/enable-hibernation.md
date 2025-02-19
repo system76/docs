@@ -22,7 +22,7 @@ tableOfContents: true
 
 ## Disclaimer
 
-Hibernation is not officially supported on Pop!_OS as of 22.04. This documentation is supplied for your own explorative purposes. Any changes to your system configuration may break hibernation, or hibernation may not work at all. Support or assistance may not be provided.
+Hibernation is not officially supported on Pop!_OS as of 22.04. This documentation is supplied for your own explorative purposes. Future changes to your system configuration may break hibernation. Support or assistance may not be provided.
 
 ## State of Hibernation on Pop!_OS
 

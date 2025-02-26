@@ -26,8 +26,8 @@ To install our Driver you need to run the following commands in the Terminal:
 
 ```bash
 sudo apt-add-repository -y ppa:system76-dev/stable
-sudo apt-get update
 sudo apt install system76-driver
+sudo apt upgrade
 ```
 
 This installs the System76 driver and related utilities which are needed to enable full functionality for your system.

@@ -199,6 +199,7 @@ Once you've installed Ubuntu, you'll need to download and install the <u>System7
 sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt update
 sudo apt install system76-driver
+sudo apt upgrade
 ```
 
 ### NVIDIA Graphics

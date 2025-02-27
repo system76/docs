@@ -86,46 +86,38 @@ There a a number of other options for PAM and ways to configure that to your lik
 - /etc/pam.d/login
 - /etc/pam.d/gdm-password
 
-### Using a central authfile
+### Using Universal 2 Factor (U2F) to authenticate your Yubikey
 
-Modern builds of Debian have expanded the number of config files under `/etc/pam.d`. **Simply modifying the `/etc/pam.d/common-auth` file will not enable Yubikey login from the lock screen**. 
+There are a growing number of config files under `/etc/pam.d`. **Simply modifying the `/etc/pam.d/common-auth` file will not enable Yubikey unlock from the lock screen**. 
 
-To address this problem, one approach is to use a central authfile and reference it in all applicable config files. 
+To address this problem, one approach based on this [Ask Ubuntu](https://askubuntu.com/a/1171969 answer, is to create a single authfile and reference it in all applicable config files. 
 
-```bash
-# Inspired by: https://askubuntu.com/a/1171969
+Install Universal 2 Factor (U2F) support for PAM:
 
-# Install Universal 2 Factor (U2F) support for PAM
-sudo apt install libpam-u2f
-```
+    sudo apt install libpam-u2f
 
-```
-# Generate U2F device mappings and append them to the config file
-pamu2fcfg | sudo tee -a /etc/u2f_mappings
-```
+Generate U2F device mappings and append them to the config file:
+
+    pamu2fcfg | sudo tee -a /etc/u2f_mappings
 
 Press the device button. You should see a long string of numbers.
 If you don't, make sure you have `udev` setup correctly.
 
-```
-sudo -i
-echo >> /etc/u2f_mappings
-cd /etc/pam.d
+    sudo -i
+    echo >> /etc/u2f_mappings #adds newline to end of file
+    cd /etc/pam.d
 
-echo 'auth sufficient pam_u2f.so authfile=/etc/u2f_mappings cue' > common-u2f
-```
+    echo 'auth sufficient pam_u2f.so authfile=/etc/u2f_mappings cue' > common-u2f
 
-To add U2F authentication to all files where common-auth is included:
+To add U2F authentication to *all* files where common-auth is included:
 
-```
-for f in $(grep -l "@include common-auth" *); do
-  if [[ $f == *~ ]]; then continue; fi
-  if grep -q "@include common-u2f" $f; then continue; fi
-  mv $f $f~
-  awk '/@include common-auth/ {print "@include common-u2f"}; {print}' $f~ > $f
-done
-exit
-```
+    for f in $(grep -l "@include common-auth" *); do
+      if [[ $f == *~ ]]; then continue; fi
+      if grep -q "@include common-u2f" $f; then continue; fi
+      mv $f $f~
+      awk '/@include common-auth/ {print "@include common-u2f"}; {print}' $f~ > $f
+    done
+    exit
 
 You should now be able to log in and unlock by touching your Yubikey device. 
 

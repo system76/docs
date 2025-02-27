@@ -104,9 +104,7 @@ Press the device button. You should see a long string of numbers.
 If you don't, make sure you have `udev` setup correctly.
 
     sudo -i
-    echo >> /etc/u2f_mappings #adds newline to end of file
     cd /etc/pam.d
-
     echo 'auth sufficient pam_u2f.so authfile=/etc/u2f_mappings cue' > common-u2f
 
 To add U2F authentication to *all* files where common-auth is included:

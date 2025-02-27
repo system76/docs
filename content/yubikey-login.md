@@ -86,6 +86,39 @@ There a a number of other options for PAM and ways to configure that to your lik
 - /etc/pam.d/login
 - /etc/pam.d/gdm-password
 
+### Using Universal 2 Factor (U2F) to authenticate your Yubikey
+
+There are a growing number of config files under `/etc/pam.d`. **Updating the `/etc/pam.d/common-auth` file alone will not enable the Yubikey to unlock from the lock screen**. 
+
+To address this problem, one approach based on this [Ask Ubuntu](https://askubuntu.com/a/1171969 answer, is to create a single authfile and reference it in all applicable config files. 
+
+Install Universal 2 Factor (U2F) support for PAM:
+
+    sudo apt install libpam-u2f
+
+Generate U2F device mappings and append them to the config file:
+
+    pamu2fcfg | sudo tee -a /etc/u2f_mappings
+
+Press the device button. You should see a long string of numbers.
+If you don't, make sure you have `udev` setup correctly.
+
+    sudo -i
+    cd /etc/pam.d
+    echo 'auth sufficient pam_u2f.so authfile=/etc/u2f_mappings cue' > common-u2f
+
+To add U2F authentication to *all* files where common-auth is included:
+
+    for f in $(grep -l "@include common-auth" *); do
+      if [[ $f == *~ ]]; then continue; fi
+      if grep -q "@include common-u2f" $f; then continue; fi
+      mv $f $f~
+      awk '/@include common-auth/ {print "@include common-u2f"}; {print}' $f~ > $f
+    done
+    exit
+
+You should now be able to log in and unlock by touching your Yubikey device. 
+
 ## Debugging and Testing your PAM configuration
 
 You will want to keep a root terminal logged in while setting this up to make sure you can reverse any changes that do not allow you to login.  In the initial setup, the parameters to setup libpam-yubico included debug message. "Sudo" on the command line will now show debug output when run.

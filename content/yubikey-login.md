@@ -88,7 +88,7 @@ There a a number of other options for PAM and ways to configure that to your lik
 
 ### Using Universal 2 Factor (U2F) to authenticate your Yubikey
 
-There are a growing number of config files under `/etc/pam.d`. **Simply modifying the `/etc/pam.d/common-auth` file will not enable Yubikey unlock from the lock screen**. 
+There are a growing number of config files under `/etc/pam.d`. **Updating the `/etc/pam.d/common-auth` file alone will not enable the Yubikey to unlock from the lock screen**. 
 
 To address this problem, one approach based on this [Ask Ubuntu](https://askubuntu.com/a/1171969 answer, is to create a single authfile and reference it in all applicable config files. 
 

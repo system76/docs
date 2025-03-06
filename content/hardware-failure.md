@@ -129,12 +129,6 @@ We can also test the GPU by using GPU Burn; first, if we're on Ubuntu, we'll nee
 sudo apt install git system76-cuda-latest 
 ```
 
-Then, we will create the symlink for <u>gpu-burn</u>:
-
-```bash
-sudo ln -s /usr/lib/cuda-11.2 /usr/local/cuda
-```
-
 Next, we can clone the repository with this command:
 
 ```bash
@@ -150,8 +144,10 @@ cd gpu-burn
 Now we'll compile it:
 
 ```bash
-make
+make CUDAPATH=/usr/lib/cuda
 ```
+
+(If you receive an error about your version of GCC being too new, consider installing the appropriate version with e.g. `sudo apt install g++-10` and then passing `NVCCFLAGS='-ccbin /usr/bin/g++-10'` or equivalent as a Make argument.)
 
 For NVIDIA **RTX** GPUs we can use Tensor cores to run it like so (this example will run it for 60 minutes/1 hour):
 

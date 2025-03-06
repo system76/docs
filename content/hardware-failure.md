@@ -123,39 +123,48 @@ Click the 'Run' button to begin the program.
 
 ### GPU Burn (for NVIDIA GPU's only)
 
-We can also test the GPU by using GPU Burn; first, if we're on Ubuntu, we'll need to install git and CUDA with this command:
+We can also test the GPU by using GPU Burn. First, ensure git and CUDA are installed with this command:
 
 ```bash
-sudo apt install git system76-cuda-latest 
+sudo apt install git nvidia-cuda-toolkit
 ```
 
-Next, we can clone the repository with this command:
+Next, clone the repository and enter its directory with these commands:
 
 ```bash
 git clone https://github.com/wilicc/gpu-burn.git
-```
-
-Now that we have cloned it, we can move into that directory like so:
-
-```bash
 cd gpu-burn
 ```
 
 Now we'll compile it:
 
 ```bash
-make CUDAPATH=/usr/lib/cuda
+make
 ```
 
-(If you receive an error about your version of GCC being too new, consider installing the appropriate version with e.g. `sudo apt install g++-10` and then passing `NVCCFLAGS='-ccbin /usr/bin/g++-10'` or equivalent as a Make argument.)
+#### GCC Errors (Pop!_OS 22.04)
 
-For NVIDIA **RTX** GPUs we can use Tensor cores to run it like so (this example will run it for 60 minutes/1 hour):
+On some versions of Pop!_OS and Ubuntu (including 22.04), the default version of GCC may fail to compile gpu-burn. Install a compatible version with this command:
+
+```
+sudo apt install g++-10
+```
+
+Then, run `make` again, specifying which version of GCC to use:
+
+```
+make NVCCFLAGS='-ccbin /usr/bin/g++-10'
+```
+
+#### Running GPU Burn Tests
+
+For NVIDIA **RTX** GPUs, run the test using Tensor cores like so (this example will run it for 3600 seconds/1 hour):
 
 ```bash
 ./gpu_burn -tc 3600
 ```
 
-For NVIDIA **GTX** GPUs run it like so (this example will run it for 60 minutes/1 hour):
+For NVIDIA **GTX** GPUs, run the test using CUDA cores like so (this example will run it for 3600 seconds/1 hour):
 
 ```bash
 ./gpu_burn 3600

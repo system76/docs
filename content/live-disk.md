@@ -122,6 +122,8 @@ Once the flash is complete (should look like the screenshot above), it's time to
 
 Etcher is an open source app for Windows, macOS, and Linux that allows you to burn disk images to USB drives. You can download it at [balena.io/etcher/](https://www.balena.io/etcher/).
 
+> Note: Balena Etcher collects usage statistics by default. You can turn off this data collection in Settings.
+
 Once you have installed Etcher and downloaded the Pop!\_OS.iso image, open up the Etcher application. You should see something like this:
 
 ![Etcher Startup](/images/live-disk-new/etcher01-start.png)

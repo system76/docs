@@ -1,5 +1,5 @@
 ---
-title: New website infrastructure.
+title: New Website Infrastructure
 description: >
  A troubleshooting triage to help you self-diagnose a variety of issues.
 keywords:

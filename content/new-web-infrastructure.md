@@ -14,7 +14,7 @@ keywords:
 facebookImage: /_social/article
 twitterImage: /_social/article
 
-hidden: true
+hidden: false
 section: getting-help
 tableOfContents: true
 ---

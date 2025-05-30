@@ -1,7 +1,7 @@
 ---
-title: Access BIOS or Boot Menu
+title: Access BIOS/UEFI or Boot Menu
 description: >
-  How to access BIOS settings or boot from other media.
+  How to access BIOS/UEFI settings or boot from other media.
 keywords:
   - boot
   - menu
@@ -16,15 +16,17 @@ section: software
 tableOfContents: true
 ---
 
-The BIOS or boot menu can be accessed by holding specific keys down during boot. Refer to the table below for the keys on each model:
+The BIOS/UEFI or boot menu can be accessed by holding specific keys down during boot. Refer to the table below for the keys on each model:
 
-| Model                                                       | BIOS key | Boot Menu key                     |
+| Model                                                       | BIOS/UEFI key | Boot Menu key                     |
 |:-----------------------------------------------------------:|:--------:|:---------------------------------:|
 | Laptops:<br/>[All Open Firmware models](https://support.system76.com/articles/open-firmware-systems/)<br/>Pangolin (pang12 and above) | ESC      | ESC:<br/>Select `One Time Boot` (Open Firmware)<br/>or `Save & Exit` → `Boot Override`. |
 | Laptops:<br/>Most proprietary firmware models               | F2       | F7                                |
 | Older laptops                                               | Depends on the system | F1                   |
-| Thelio desktops                                             | Del      | F8/F11/F12                         |
+| Thelio desktops                                             | Del/F2      | F8/F11/F12                         |
 | Meerkat (mini) desktops                                     | F2       | F10                               |
+
+If the listed keys don't work, try holding each F1 through F12 key during separate reboots until the BIOS/UEFI appears.
 
 ## Open Firmware Screenshots
 

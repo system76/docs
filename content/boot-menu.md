@@ -26,7 +26,7 @@ The BIOS/UEFI or boot menu can be accessed by holding specific keys down during 
 | Thelio desktops                                             | Del/F2      | F8/F11/F12                         |
 | Meerkat (mini) desktops                                     | F2       | F10                               |
 
-*In the event that none of the keys listed access the BIOS/UEFI, try holding each of the FX keys during a new boot cycle starting with F1 and moving up in numbers until the BIOS/UEFI appears. Be sure to hold a new key with each new boot cycle until you successfully access the BIOS/UEFI screen*
+If the listed keys don't work, try holding each F1 through F12 key during separate reboots until the BIOS/UEFI appears.
 
 ## Open Firmware Screenshots
 

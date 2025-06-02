@@ -20,7 +20,7 @@ The BIOS/UEFI or boot menu can be accessed by holding specific keys down during 
 
 | Model                                                       | BIOS/UEFI key | Boot Menu key                     |
 |:-----------------------------------------------------------:|:--------:|:---------------------------------:|
-| Laptops:<br/>All Open Firmware models<br/>Pangolin (pang12 and above) | ESC      | ESC:<br/>Select `One Time Boot` (Open Firmware)<br/>or `Save & Exit` → `Boot Override`. |
+| Laptops:<br/>[All Open Firmware models](https://support.system76.com/articles/open-firmware-systems/)<br/>Pangolin (pang12 and above) | ESC      | ESC:<br/>Select `One Time Boot` (Open Firmware)<br/>or `Save & Exit` → `Boot Override`. |
 | Laptops:<br/>Most proprietary firmware models               | F2       | F7                                |
 | Older laptops                                               | Depends on the system | F1                   |
 | Thelio desktops                                             | Del/F2      | F8/F11/F12                         |

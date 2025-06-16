@@ -41,8 +41,8 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 | Adder WS (addw2)             | Yes\*         | Yes\*   |
 | Adder WS (addw3 and newer)   | Yes           | Yes     |
 | Bonobo WS (bonw13 and older) | No            | No      |
-| Bonobo WS (bonw14)           | Yes           | Yes     |
-| Bonobo WS (bonw15 and newer) | No**          | No**    |
+| Bonobo WS (bonw14 and bonw15)| Yes           | Yes     |
+| Bonobo WS (bonw15-b and newer)| No**         | No**    |
 | Darter Pro (darp5 and older) | No            | No      |
 | Darter Pro (darp6)           | Yes           | Yes\*   |
 | Darter Pro (darp7 and newer) | Yes           | Yes     |
@@ -62,4 +62,4 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 
 \* These models shipped with closed firmware/EC, but have since been updated to Open Firmware/EC. [This article](/articles/transition-firmware) can be used to move your system from closed to Open Firmware/EC.
 
-\*\* Thunderbolt 4 support at the firmware level is under development to allow transistion to Open Firmware.
+\*\* Thunderbolt 5 support at the firmware level is under development to allow transistion to Open Firmware.

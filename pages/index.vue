@@ -361,7 +361,7 @@ export default {
       }]
     }, {
       title: 'Community Articles',
-      description: 'The following documents have been graciously submitted by community members. They have not been checked for accuracy, completeness, or style. Please contact the contributers through their GitHub account for any questions.',
+      description: 'The following documents have been graciously submitted by community members. They have not been checked for accuracy, completeness, or style. Please contact the contributors through their GitHub accounts for any questions.',
       section: 'community'
     }, {
       title: 'Case Studies',

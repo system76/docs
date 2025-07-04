@@ -1,7 +1,7 @@
 ---
 title: Transferring Photos From Your Phone to Pop!_OS
 description: >
-  How to move your photos from your Android or iPhone to Pop!\_OS
+  How to move your photos from your Android or iPhone to Pop!_OS
 keywords:
   - System76
   - Apple

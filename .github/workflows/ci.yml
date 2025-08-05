@@ -1,5 +1,4 @@
 ---
-
 name: CI
 
 on:
@@ -12,14 +11,23 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          cache: npm
+          node-version-file: .tool-versions
 
-      - name: Install
+      - id: cache
+        name: Cache
+        uses: actions/cache@v4
+        with:
+          path: ./node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - if: steps.cache.outputs.cache-hit != 'true'
+        name: Install
         run: npm ci
 
       - name: Lint
@@ -31,17 +39,26 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          cache: npm
+          node-version-file: .tool-versions
 
       - name: Setup Markdown
         uses: xt0rted/markdownlint-problem-matcher@v1
 
-      - name: Install
+      - id: cache
+        name: Cache
+        uses: actions/cache@v4
+        with:
+          path: ./node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - if: steps.cache.outputs.cache-hit != 'true'
+        name: Install
         run: npm ci
 
       - name: Lint
@@ -52,23 +69,24 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          cache: npm
+          node-version-file: .tool-versions
 
-      - name: Cache
-        id: cache
+      - id: cache
+        name: Cache
         uses: actions/cache@v4
         with:
           path: ./node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install
+      - if: steps.cache.outputs.cache-hit != 'true'
+        name: Install
         run: npm ci
-        if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Build
         run: npm run build

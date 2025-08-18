@@ -28,7 +28,7 @@ Fan Speeds can be monitored with <u>psensor</u>, which can be installed from eit
 
 Our [Open Firmware laptops](/articles/open-firmware-systems) have fan controls to swap between max or automatic thermal control. Use Fn+1 to toggle between the modes. (Your model will show support on the key section of their [tech-docs](https://tech-docs.system76.com)).
 
-### Easy settings to effect fan noise
+### Easy settings to affect fan noise
 
 Fan speed is based on thermal output of the system. There are some settings that will indirectly limit how much heat is created during use:
 

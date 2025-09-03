@@ -44,7 +44,7 @@ Cursor | A visual indicator of the user's current position in the <u>Terminal</u
 
 As you change folders and move throughout your computer, the prompt will change in response. In many cases, you won't need to move around to run a command.
 
-To list all files and folders in the current directory, type `ls` To change directories (folders), type `cd [directory name]`. To go back up a directory type `cd ..`. At any time, you can press the Tab key to have the <u>Terminal</u> guess the completion for your entry, or twice to show all possibilities.
+To list all files and folders in the current directory, type `ls`. To change directories (folders), type `cd [directory name]`. To go back up a directory type `cd ..`. To return to your home directory from any location in the filesystem, type `cd`. At any time, you can press the Tab key to have the <u>Terminal</u> guess the completion for your entry, or twice to show all possibilities.
 
 ![Moving around](/images/terminal/moving-around.png)
 

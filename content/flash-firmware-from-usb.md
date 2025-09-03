@@ -62,7 +62,7 @@ Next, select the .img file use the `Choose Image` button.
 
 ![Popsicle Image](/images/pop-live-disk/popsicle-image-selection.png)
 
-Now select the USB Flash Drive that you are coping the file(s) to.
+Now select the USB Flash Drive that you are copying the file(s) to.
 
 ![Popsicle Drive](/images/pop-live-disk/popsicle-drive-selection.png)
 

@@ -27,7 +27,7 @@ The Super key is the OS key on your keyboard.
 - On generic third-party products, it may be labeled with a Windows logo.
 - On Mac accessories, it may be labeled `command`.
 
-In Pop!\_OS, the Super key handles the majority of OS and window actions. This key is represented by Pop in the lists below. All key bindings can be modified in COSMIC Settings (Input devices > Keyboard > Keyboard shortcuts).
+In Pop!\_OS, the Super key handles the majority of OS and window actions. All key bindings can be modified in COSMIC Settings (Input devices > Keyboard > Keyboard shortcuts).
 
 ### Direction keys
 

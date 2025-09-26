@@ -96,8 +96,8 @@ The launcher allows searching through open windows and installed applications. I
 | <kbd>SUPER</kbd> + <kbd>G</kbd>                            | Toggle floating window                         |
 | <kbd>SUPER</kbd> + <kbd>O</kbd>                            | Change window orientation inside the tiled layout from vertical to horizontal |
 | <kbd>SUPER</kbd> + <kbd>X</kbd>                            | Swap windows using direction keys to indicate a window for swap | 
-| <kbd>SUPER</kbd> + <kbd>U</kbd>                            | Select additional windows up in the tiling tree (which then can be manged together) |
-| <kbd>SUPER</kbd> + <kbd>I</kbd>                            | Select fewer windows up in the tiling tree (which then can be manged together) | 
+| <kbd>SUPER</kbd> + <kbd>U</kbd>                            | Select additional windows up in the tiling tree (which then can be managed together) |
+| <kbd>SUPER</kbd> + <kbd>I</kbd>                            | Select fewer windows up in the tiling tree (which then can be managed together) | 
 
 ### Other system shortcuts
 

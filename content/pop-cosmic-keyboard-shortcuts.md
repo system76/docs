@@ -87,6 +87,7 @@ The launcher allows searching through open windows and installed applications. I
 | <kbd>SUPER</kbd> + <kbd>M</kbd>                                                   | Maximize window                                     |
 | <kbd>SUPER</kbd> + <kbd>F11</kbd>                                                 | Fullscreen window                                   |
 | <kbd>SUPER</kbd> + <kbd>R</kbd> and <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>  | Resize window using each side                 |
+| <kbd>SUPER</kbd> + <kbd>S</kbd>                                                   | Toggle stacking (window tabs)                       |
 
 ### Manage tiled windows
 

@@ -47,7 +47,7 @@ The launcher allows searching through open windows and installed applications. I
 | Shortcut                                                                | Action                                   |
 | ----------------------------------------------------------------------- | ---------------------------------------- |
 | <kbd>SUPER</kbd>                                                        | Activate the launcher                    |
-| <kbd>SUPER</kbd> + <kbd>/</kbd>                                         | Secondary option to activcate the launcher|
+| <kbd>SUPER</kbd> + <kbd>/</kbd>                                         | Secondary option to activate the launcher|
 | `recent filename`                                                       | Browse and search recent files           |
 | `/` or `~/`                                                             | Browse the file system                   |
 | `find` with `filename`                                                  | Search the file system for a certain file|

@@ -73,7 +73,7 @@ The launcher allows searching through open windows and installed applications. I
 
 | Shortcut                                                                                  | Action                                     |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------ |
-| <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Direction keys</kbd>                           | Move window (the window moves to adjacent workspaces, followed by displays |
+| <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Direction keys</kbd>                           | Move window (the window moves to adjacent workspaces, followed by displays) |
 | <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Alt</kbd> + <kbd>Direction keys</kbd>          | Move window between displays               |
 | <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>Direction keys</kbd>         | Move window between workspaces             |
 | <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>1-9 keys</kbd>                                 | Move window to workspaces 1-9 respectively |

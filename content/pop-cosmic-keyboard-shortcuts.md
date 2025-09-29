@@ -47,7 +47,7 @@ The launcher allows searching through open windows and installed applications. I
 | Shortcut                                                                | Action                                   |
 | ----------------------------------------------------------------------- | ---------------------------------------- |
 | <kbd>SUPER</kbd>                                                        | Activate the launcher                    |
-| <kbd>SUPER</kbd> + <kbd>/</kbd>                                         | Secondary option to activcate the launcher|
+| <kbd>SUPER</kbd> + <kbd>/</kbd>                                         | Secondary option to activate the launcher|
 | `recent filename`                                                       | Browse and search recent files           |
 | `/` or `~/`                                                             | Browse the file system                   |
 | `find` with `filename`                                                  | Search the file system for a certain file|
@@ -73,7 +73,7 @@ The launcher allows searching through open windows and installed applications. I
 
 | Shortcut                                                                                  | Action                                     |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------ |
-| <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Direction keys</kbd>                           | Move window (the window moves to adjacent workspaces, followed by displays |
+| <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Direction keys</kbd>                           | Move window (the window moves to adjacent workspaces, followed by displays) |
 | <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Alt</kbd> + <kbd>Direction keys</kbd>          | Move window between displays               |
 | <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>Ctrl</kbd> + <kbd>Direction keys</kbd>         | Move window between workspaces             |
 | <kbd>Shift</kbd> + <kbd>SUPER</kbd> + <kbd>1-9 keys</kbd>                                 | Move window to workspaces 1-9 respectively |
@@ -87,6 +87,7 @@ The launcher allows searching through open windows and installed applications. I
 | <kbd>SUPER</kbd> + <kbd>M</kbd>                                                   | Maximize window                                     |
 | <kbd>SUPER</kbd> + <kbd>F11</kbd>                                                 | Fullscreen window                                   |
 | <kbd>SUPER</kbd> + <kbd>R</kbd> and <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>  | Resize window using each side                 |
+| <kbd>SUPER</kbd> + <kbd>S</kbd>                                                   | Toggle stacking (window tabs)                       |
 
 ### Manage tiled windows
 
@@ -96,8 +97,8 @@ The launcher allows searching through open windows and installed applications. I
 | <kbd>SUPER</kbd> + <kbd>G</kbd>                            | Toggle floating window                         |
 | <kbd>SUPER</kbd> + <kbd>O</kbd>                            | Change window orientation inside the tiled layout from vertical to horizontal |
 | <kbd>SUPER</kbd> + <kbd>X</kbd>                            | Swap windows using direction keys to indicate a window for swap | 
-| <kbd>SUPER</kbd> + <kbd>U</kbd>                            | Select additional windows up in the tiling tree (which then can be manged together) |
-| <kbd>SUPER</kbd> + <kbd>I</kbd>                            | Select fewer windows up in the tiling tree (which then can be manged together) | 
+| <kbd>SUPER</kbd> + <kbd>U</kbd>                            | Select additional windows up in the tiling tree (which then can be managed together) |
+| <kbd>SUPER</kbd> + <kbd>I</kbd>                            | Select fewer windows up in the tiling tree (which then can be managed together) | 
 
 ### Other system shortcuts
 

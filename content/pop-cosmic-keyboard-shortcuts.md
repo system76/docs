@@ -56,7 +56,6 @@ The launcher allows searching through open windows and installed applications. I
 | `=` or start typing an equation                                         | Calculate and equation                   |
 | `?`                                                                     | Help menu                                |
 
-
 ### Navigation
 
 | Shortcut                                                                | Action                                   |
@@ -96,9 +95,9 @@ The launcher allows searching through open windows and installed applications. I
 | <kbd>SUPER</kbd> + <kbd>Y</kbd>                            | Toggle window tiling for the current workspace |
 | <kbd>SUPER</kbd> + <kbd>G</kbd>                            | Toggle floating window                         |
 | <kbd>SUPER</kbd> + <kbd>O</kbd>                            | Change window orientation inside the tiled layout from vertical to horizontal |
-| <kbd>SUPER</kbd> + <kbd>X</kbd>                            | Swap windows using direction keys to indicate a window for swap | 
+| <kbd>SUPER</kbd> + <kbd>X</kbd>                            | Swap windows using direction keys to indicate a window for swap |
 | <kbd>SUPER</kbd> + <kbd>U</kbd>                            | Select additional windows up in the tiling tree (which then can be managed together) |
-| <kbd>SUPER</kbd> + <kbd>I</kbd>                            | Select fewer windows up in the tiling tree (which then can be managed together) | 
+| <kbd>SUPER</kbd> + <kbd>I</kbd>                            | Select fewer windows up in the tiling tree (which then can be managed together) |
 
 ### Other system shortcuts
 
@@ -108,7 +107,7 @@ The launcher allows searching through open windows and installed applications. I
 | <kbd>SUPER</kbd> + <kbd>W</kbd>                                                 | Toggle Workspaces Overview                     |
 | <kbd>SUPER</kbd> + <kbd>F</kbd>                                                 | Open Files                                     |
 | <kbd>SUPER</kbd> + <kbd>T</kbd>                                                 | Open Terminal                                  |
-| <kbd>SUPER</kbd> + <kbd>Escape</kbd>                                            | Lock screen                                    | 
+| <kbd>SUPER</kbd> + <kbd>Escape</kbd>                                            | Lock screen                                    |
 | <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>Escape</kbd>                         | Log out                                        |
 | <kbd>Print</kbd>                                                                | Take a screenshot                              |
 | <kbd>Print</kbd> + <kbd>Space</kbd>                                             | Switch between added language/input sources    |

@@ -110,7 +110,7 @@ The launcher allows searching through open windows and installed applications. I
 | <kbd>SUPER</kbd> + <kbd>Escape</kbd>                                            | Lock screen                                    |
 | <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>Escape</kbd>                         | Log out                                        |
 | <kbd>Print</kbd>                                                                | Take a screenshot                              |
-| <kbd>Print</kbd> + <kbd>Space</kbd>                                             | Switch between added language/input sources    |
+| <kbd>SUPER</kbd> + <kbd>Space</kbd>                                             | Switch between added language/input sources    |
 
 ### Accessibility shortcuts
 

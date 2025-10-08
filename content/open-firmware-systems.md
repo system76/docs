@@ -58,12 +58,13 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 | Meerkat (meer8 and older)     | No            | N/A     |
 | Meerkat (meer9)               | Yes           | N/A     |
 | Meerkat (meer10)              | No            | N/A     |
-| Oryx Pro (oryp5 and older)    | No            | No      |
+| Oryx Pro (oryp4 and older)    | No            | No      |
+| Oryx Pro (oryp5)              | Yes\*         | Yes\*   |
 | Oryx Pro (oryp6 to oryp12)    | Yes           | Yes     |
-| Oryx Pro (oryp13)             | No\*\*        | No\*\*  |
+| Oryx Pro (oryp13)             | No            | No      |
 | Serval WS (serw12 and older)  | No            | No      |
 | Serval WS (serw13)            | Yes           | Yes     |
 | Serval WS (serw14)            | No\*\*        | No\*\*  |
 
 \* These models shipped with closed firmware/EC, but have since been updated to Open Firmware/EC. [This article](/articles/transition-firmware) can be used to move your system from closed to Open Firmware/EC.
-\*\* Pending working coreboot support for Thunderbolt 5
+\*\* Pending working coreboot support for Thunderbolt 5 and full features working.

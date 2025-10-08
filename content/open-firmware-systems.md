@@ -67,4 +67,4 @@ The source code for our Open EC can be found [here](https://github.com/system76/
 | Serval WS (serw14)            | No\*\*        | No\*\*  |
 
 \* These models shipped with closed firmware/EC, but have since been updated to Open Firmware/EC. [This article](/articles/transition-firmware) can be used to move your system from closed to Open Firmware/EC.
-\*\* Pending working coreboot support for Thunderbolt 5 and full features working.
+\*\* Pending working coreboot support for Thunderbolt 5

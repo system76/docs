@@ -21,6 +21,7 @@ Some models shipped with proprietary firmware, but later received support for [S
 - Darter Pro (darp6)
   - Model shipped wih System76 Open Firmware and proprietary EC. Firmware transition installs System76 Open EC.
 - Gazelle (gaze15)
+- Oryx Pro (oryp5)
 
 This list may expand in the future as more models are ported.
 

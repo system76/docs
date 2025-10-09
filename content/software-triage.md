@@ -13,7 +13,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: getting-help
+section: software-troubleshooting
 tableOfContents: true
 ---
 

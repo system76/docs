@@ -15,7 +15,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: getting-help
+section: repairs-returns
 tableOfContents: true
 ---
 

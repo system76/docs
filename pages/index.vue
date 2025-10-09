@@ -106,7 +106,7 @@
       <div class="px-4 py-3 flex flex-col bg-white rounded-lg">
         <div class="mx-4 my-4 md:min-h-[4rem]">
           <h2 class="sys-article-h3">
-            Support Articles
+            Support Documentation
           </h2>
 
           <p class="text-lg my-4 text-warm-gray-600">
@@ -115,6 +115,25 @@
         </div>
 
         <ul class="space-y-2">
+          <li>
+            <nuxt-link
+              to="/articles/guides"
+              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            >
+              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
+                <font-awesome-icon icon="screwdriver" />
+              </div>
+              <div class="ml-4">
+                <p class="font-bold text-warm-gray-800">
+                  System76 Tech Docs
+                </p>
+                <p class="text-warm-gray-600">
+                  Diagrams and components for System76 hardware.
+                </p>
+              </div>
+            </nuxt-link>
+          </li>
+
           <li>
             <nuxt-link
               to="#troubleshoot"
@@ -148,25 +167,6 @@
                 </p>
                 <p class="text-warm-gray-600">
                   Information on how to upgrade, maintain, and customize your system.
-                </p>
-              </div>
-            </nuxt-link>
-          </li>
-
-          <li>
-            <nuxt-link
-              to="#learn"
-              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
-                <font-awesome-icon icon="graduation-cap" />
-              </div>
-              <div class="ml-4">
-                <p class="font-bold text-warm-gray-800">
-                  Learn
-                </p>
-                <p class="text-warm-gray-600">
-                  A general guide for new users. Welcome!
                 </p>
               </div>
             </nuxt-link>
@@ -306,9 +306,6 @@ export default {
     results: [],
 
     listings: [{
-      title: 'Getting Help',
-      section: 'getting-help'
-    }, {
       title: 'Troubleshoot',
       section: 'troubleshoot',
       listings: [{

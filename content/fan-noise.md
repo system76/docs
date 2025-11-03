@@ -47,14 +47,6 @@ A clicking or grinding noise may indicate a dirty or physically damaged fan.
 
 Be sure to hold the fan blades still while blowing air to prevent them from spinning. If you suspect a damaged fan or want to locate the fan for inspection, refer to your model’s [service manual](https://tech-docs.system76.com/README.html).
 
-## Clicking or Grinding Sounds
-
-A clicking or grinding noise may indicate a dirty or physically damaged fan.
-
-1. Inspect the fan blades for cracks, chips, or foreign objects.
-
-2. Clean the fan using a can of compressed air to remove dust and debris.
-
 ## Rattling Noise
 
 A rattling sound may indicate a loose screw or component near the fan.

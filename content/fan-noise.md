@@ -35,9 +35,9 @@ Fan speed is based on thermal output of the system. There are some settings that
 1. Run the laptop while on battery: This will limit power consumption for the CPU and GPU and will lower thermal output.
 2. Set the laptop to Battery Life mode in either Power Profiles in the system menu or using `system76-power`. This limits the CPU's boost frequency, a side effect is to also limit how much heat is created.
 
-### Mechanical Troubleshooting
+## Mechanical Troubleshooting
 
-## Clicking or Grinding Sounds
+### Clicking or Grinding Sounds
 
 A clicking or grinding noise may indicate a dirty or physically damaged fan.
 
@@ -47,7 +47,7 @@ A clicking or grinding noise may indicate a dirty or physically damaged fan.
 
 Be sure to hold the fan blades still while blowing air to prevent them from spinning. If you suspect a damaged fan or want to locate the fan for inspection, refer to your model’s [service manual](https://tech-docs.system76.com/README.html).
 
-## Rattling Noise
+### Rattling Noise
 
 A rattling sound may indicate a loose screw or component near the fan.
 
@@ -55,7 +55,7 @@ A rattling sound may indicate a loose screw or component near the fan.
 
 2. Tighten any that may have come loose over time.
 
-## Loud Whirring or Constant High-Speed Fan
+### Loud Whirring or Constant High-Speed Fan
 
 If the fan is consistently running at high speed or making a loud whirring noise, it may be working harder than usual to keep the system cool.
 
@@ -65,8 +65,8 @@ If the fan is consistently running at high speed or making a loud whirring noise
 
 If proper ventilation doesn’t resolve the issue, the thermal paste between your CPU/GPU and heatsink may have dried out and need to be reapplied.
 
-### Replacing the Cooling System or Thermal Paste on your System76 Computer
+## Replacing the Cooling System or Thermal Paste on your System76 Computer
 
-Depending on the age of your system, warranty status and your comfort level for at home repairs, you can either send your system in for repair or you can follow step by step instructions in your model’s [service manual](https://tech-docs.system76.com/README.html).
+Depending on the age of your system, warranty status, and your comfort level for at-home repairs, you can either send your system in for repair or you can follow step by step instructions in your model’s [service manual](https://tech-docs.system76.com/README.html).
 
 If you are unable to source the part for your System76 computer, System76 may be able to help. Please have your serial number ready to [open a support ticket](https://system76.com/contact/support).

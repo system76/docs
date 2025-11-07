@@ -38,14 +38,16 @@ This guide helps users recover data and restore system functionality after _OS f
 ```bash
 sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root /mnt
 ```
+
 * If Disk is not Encrypted:
 * Open **Files** > **Other Locations** and locate your system drive.
 
 ## Backup Tools
 
 Deja Dup
+
 * Available via **Pop!_Shop** or **Ubuntu Software Center**.
-* Supports local, remote, and cloud backups. 
+* Supports local, remote, and cloud backups.
 * Can be scheduled for automatic backups.
 
 ### Installing Deja Dup

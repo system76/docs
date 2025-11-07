@@ -80,22 +80,31 @@ Ubuntu - <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>
 From there, you can enter the following commands:
 
 ```bash
-cd ~/
-mkdir ~/system76
-journalctl > ~/system76/journal.log
-dmesg > ~/system76/dmesg.log
-cp ~/.local/share/xorg/Xorg.0.log ~/system76/Xorg.0.log 2> /dev/null
-sudo dmidecode > ~/system76/dmidecode
-sudo lspci -vv > ~/system76/lspci.log
-sudo lsusb -vv > ~/system76/lsusb.log
+cat << "EOF" > make-logs.sh
+#!/bin/bash
+echo "Creating Logs"
+mkdir -p ~/system76/apt
+cp -r /etc/apt ~/system76/apt
+mkdir -p ~/system76/apt/logs
+cp -r /var/log/apt ~/system76/apt/logs
+journalctl --since="4 days ago" > ~/system76/journal.log
+sudo dmesg > ~/system76/dmesg.log
+cp ~/.local/share/xorg/Xorg.0.log ~/system76/Xorg.0.log 2>/dev/null
+sudo dmidecode > ~/system76/dmidecode 2>/dev/null
+sudo lspci -vv > ~/system76/lspci.log 2>/dev/null
+sudo lsusb -vv > ~/system76/lsusb.log 2>/dev/null
 uname -a > ~/system76/uname.log
-cp /etc/os-release ~/system76/os-release
-lsblk -f > ~/system76/lsblk.log
-df -h > ~/system76/df.log
-cp /etc/fstab ~/system76/fstab.log
-tar czf system76-log.tgz ~/system76/*
-rm ~/system76/*
-rmdir ~/system76
+df -h / > ~/system76/df
+lsblk -f > ~/system76/lsblk
+cp /etc/fstab ~/system76/fstab 2>/dev/null
+cp /etc/os-release ~/system76/os-release 2>/dev/null
+upower -d > ~/system76/upower
+[ -f /usr/bin/sensors ] && sensors > ~/system76/sensors.log
+tar cvzf ~/system76-log.tgz ~/system76/
+rm -rf ~/system76/
+rm make-logs.sh
+EOF
+bash make-logs.sh
 ```
 
 As with the <u>System76 Driver</u> application, the log files will be stored within your home directory.

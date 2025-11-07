@@ -20,17 +20,17 @@ This guide helps users recover data and restore system functionality after _OS f
 ## If you can't boot your installed OS
 
 * Pop!_OS
-   * Use Recovery Partition: Hold **Spacebar** or press **ESC** at boot menu. Select **Pop!_OS Recovery**
-   * **If Recovery is missing:** Create a Live USB from this [link](https://pop.system76.com/).
+  * Use Recovery Partition: Hold **Spacebar** or press **ESC** at boot menu. Select **Pop!_OS Recovery**
+  * **If Recovery is missing:** Create a Live USB from this [link](https://pop.system76.com/).
 * Ubuntu
   * **Use Live USB:** Download Ubuntu ISO from this [link](https://ubuntu.com/download) and flash using Rufus or Startup Disk Creator.
   * Boot from USB and select **Try Ubuntu**.
 
-## Connect to Internet
-- Use the **top-right system menu** to connect to Wi-Fi or ethernet.
-- A stable connection is recommended for installing backuo tools or uploading data.
+### Connect to Internet
+* Use the **top-right system menu** to connect to Wi-Fi or ethernet.
+* A stable connection is recommended for installing backuo tools or uploading data.
 
-## Mounting the Installed OS
+### Mounting the Installed OS
 * If Disk is Encrypted:
 ```bash
 sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root /mnt
@@ -45,13 +45,13 @@ Deja Dup
   * Supports local, remote, and cloud backups. 
   * Can be scheduled for automatic backups.
  
-## Installing Deja Dup
+### Installing Deja Dup
 * Appears as **Backups** in the Activities menu. 
 
 ```bash
 sudo apt install deja-dup
 ```
-## Rsync (CLI)
+### Rsync (CLI)
 * Preserves file permissions and supports resumable transfers
 ```bash
 rsync -avxP \
@@ -60,19 +60,19 @@ rsync -avxP \
 ```
 _Note:_ Upload speeds can vary depending on your internet provider, cloud service, or physical location and may even be subject to throttling. For faster and more reliable file transfer, it's recommended to use a wired Ethernet connection whenever possible.
 
-## Current backup Tools
+### Current backup Tools
 While **Deja Dup** remains a top choice for casual desktop users due to its simplicity and built-in GNOME intergration, several other tools offer more flexibility, performance, or control depending on audience.
 
 * **Deja Dup** -- encrypted backups with cloud support (Google Drive, Nextcloud)
 *  Timeshift -- ideal for system snapshots and rollback (especially on Ubuntu/Pop!_OS)
 *  Duplicati -- web-based interface, encrypted backups, supports cloud storage
 
-## CLI & Power user Tools
+### CLI & Power user Tools
 * BorgBackup -- deduplication, compression, encryption; great for data recovery
 * Restic -- fast, secure, cross-platform; supports many backends (SFTP, AWS, etc.)
 * **Rsync** -- highly customizable; ideal for scripted or incremental backups
 
-## Enterprise-grade Solutions
+### Enterprise-grade Solutions
 * Amanda/Zamanda -- centralized backup management, tape support
 * Veeam Agent for Linux -- commercial-grade, agent-based backups with recovery tools
 

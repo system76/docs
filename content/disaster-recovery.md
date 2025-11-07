@@ -34,29 +34,32 @@ This guide helps users recover data and restore system functionality after _OS f
 ### Mounting the Installed OS
 
 * If Disk is Encrypted:
+
 ```bash
 sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root /mnt
 ```
 * If Disk is not Encrypted:
-  * Open **Files** > **Other Locations** and locate your system drive.
+* Open **Files** > **Other Locations** and locate your system drive.
 
 ## Backup Tools
 
 Deja Dup
-  * Available via **Pop!_Shop** or **Ubuntu Software Center**.
-  * Supports local, remote, and cloud backups. 
-  * Can be scheduled for automatic backups.
- 
+* Available via **Pop!_Shop** or **Ubuntu Software Center**.
+* Supports local, remote, and cloud backups. 
+* Can be scheduled for automatic backups.
+
 ### Installing Deja Dup
 
-* Appears as **Backups** in the Activities menu. 
+* Appears as **Backups** in the Activities menu.
 
 ```bash
 sudo apt install deja-dup
 ```
+
 ### Rsync (CLI)
 
 * Preserves file permissions and supports resumable transfers
+
 ```bash
 rsync -avxP \
 /path/to/directory/to/backup \
@@ -69,8 +72,8 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 While **Deja Dup** remains a top choice for casual desktop users due to its simplicity and built-in GNOME intergration, several other tools offer more flexibility, performance, or control depending on audience.
 
 * **Deja Dup** -- encrypted backups with cloud support (Google Drive, Nextcloud)
-*  Timeshift -- ideal for system snapshots and rollback (especially on Ubuntu/Pop!_OS)
-*  Duplicati -- web-based interface, encrypted backups, supports cloud storage
+* Timeshift -- ideal for system snapshots and rollback (especially on Ubuntu/Pop!_OS)
+* Duplicati -- web-based interface, encrypted backups, supports cloud storage
 
 ### CLI & Power user Tools
 
@@ -117,6 +120,7 @@ _Note:_ System76 and Ubuntu do not offer or partner with recovery service. Drive
 Use Deja Dup or rsync to automate backups on a daily or weekly schedule. This ensures your data is protected without manual effort.
 Follow the **3-2-1** Backup Rule
 To protect your data against hardware failure, theft, or unexpected events:
+
 * **3 total copies** of your important files
 * **2 stored locally** (e.g., internal drive + external USB)
 * **1 stored off-site**, such as:

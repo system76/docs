@@ -27,17 +27,19 @@ This guide helps users recover data and restore system functionality after _OS f
   * Boot from USB and select **Try Ubuntu**.
 
 ### Connect to Internet
+
 * Use the **top-right system menu** to connect to Wi-Fi or ethernet.
 * A stable connection is recommended for installing backuo tools or uploading data.
 
 ### Mounting the Installed OS
+
 * If Disk is Encrypted:
 ```bash
 sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root /mnt
 ```
 * If Disk is not Encrypted:
   * Open **Files** > **Other Locations** and locate your system drive.
-  
+
 ## Backup Tools
 
 Deja Dup
@@ -46,12 +48,14 @@ Deja Dup
   * Can be scheduled for automatic backups.
  
 ### Installing Deja Dup
+
 * Appears as **Backups** in the Activities menu. 
 
 ```bash
 sudo apt install deja-dup
 ```
 ### Rsync (CLI)
+
 * Preserves file permissions and supports resumable transfers
 ```bash
 rsync -avxP \
@@ -61,6 +65,7 @@ rsync -avxP \
 _Note:_ Upload speeds can vary depending on your internet provider, cloud service, or physical location and may even be subject to throttling. For faster and more reliable file transfer, it's recommended to use a wired Ethernet connection whenever possible.
 
 ### Current backup Tools
+
 While **Deja Dup** remains a top choice for casual desktop users due to its simplicity and built-in GNOME intergration, several other tools offer more flexibility, performance, or control depending on audience.
 
 * **Deja Dup** -- encrypted backups with cloud support (Google Drive, Nextcloud)
@@ -68,25 +73,31 @@ While **Deja Dup** remains a top choice for casual desktop users due to its simp
 *  Duplicati -- web-based interface, encrypted backups, supports cloud storage
 
 ### CLI & Power user Tools
+
 * BorgBackup -- deduplication, compression, encryption; great for data recovery
 * Restic -- fast, secure, cross-platform; supports many backends (SFTP, AWS, etc.)
 * **Rsync** -- highly customizable; ideal for scripted or incremental backups
 
 ### Enterprise-grade Solutions
+
 * Amanda/Zamanda -- centralized backup management, tape support
 * Veeam Agent for Linux -- commercial-grade, agent-based backups with recovery tools
 
 ## Selecting Data to Back Up
+
 * By default, Deja Dup backs up the **Home** directory.
 * Excludes **Downloads** and **Trash**.
 * Use + and -- to customize included/excluded folders.
 
 ## Choosing a Backup Location
+
 External Drive
+
 * Use USB 3.0 or 2.0
 * Match or exceed the size of you OS drive.
 
 Internal Drive
+
 * Open **Files** > **Other Locations**
 * Look for secondary drives or partitions.
 * On System76 devices, secondary drives may be labeled **Extra Drive**.
@@ -95,13 +106,15 @@ Internal Drive
 * Back up data using the steps above.
 
 ## If the Drive is the Problem
-* Stop using the drive immediately.
-* Contact a professional data recovery service. 
 
-_Note:_ System76 and Ubuntu do not offer or partner with recovery service. Drive manufacturers may offer recovery options under warranty. 
+* Stop using the drive immediately.
+* Contact a professional data recovery service.
+
+_Note:_ System76 and Ubuntu do not offer or partner with recovery service. Drive manufacturers may offer recovery options under warranty.
 
 ### Set Up Scheduled Backups
-Use Deja Dup or rsync to automate backups on a daily or weekly schedule. This ensures your data is protected without manual effort. 
+
+Use Deja Dup or rsync to automate backups on a daily or weekly schedule. This ensures your data is protected without manual effort.
 Follow the **3-2-1** Backup Rule
 To protect your data against hardware failure, theft, or unexpected events:
 * **3 total copies** of your important files
@@ -110,11 +123,11 @@ To protect your data against hardware failure, theft, or unexpected events:
   * A cloud storage service (e.g., Dropbox, Google Drive, Backblaze)
   * An external drive kept at a trsuted relative's house
   * A secure location like a safety deposit box
-  
 **This layered approach ensures that even if one or two copies are compromised, your data remains recoverable.**
 
 ## Restoring Data after Reinstall
+
 1. Open **Backups**.
 2. Click **Restore**
 3. Select the backup location.
-4. Deja Dup will restore the most recent backup to its original location. 
+4. Deja Dup will restore the most recent backup to its original location.

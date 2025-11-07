@@ -99,3 +99,13 @@ man sudo
 ```
 
 The `man` command is short for manual. You can type the `man` command in front of any command that you want more information about.
+
+```bash
+sudo apt remove [package]
+```
+The `remove` command will remove a particular package from your computer.
+
+```bash
+sudo apt autoremove
+```
+This `autoremove` command will automatically remove unused packages from your computer.

@@ -15,14 +15,41 @@ section: network-troubleshooting
 tableOfContents: true
 ---
 
-## Important Notes About Bluetooth
+## About Bluetooth
 
-Bluetooth is a bit odd.
-There are a lot of factors that go into whether Bluetooth devices work together as expected.
+Bluetooth is incredibly flexible. With a range of factors that enhance compatibility, Bluetooth devices effortlessly connect and work together for a smooth, seamless experience.
 
 ### Bluetooth version
 
 Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer versions or devices.
+
+### Confirm the bluetooth version of your device and make sure it is 5.0 or higher
+
+Use bluetoothctl, on your terminal type:
+
+```bash
+bluetoothctl
+```
+
+If you have multiple Bluetooth controllers, choose the one you wish to connect to the device.
+
+Check list of controllers:
+```
+List
+```
+
+Select the controller you want to use:
+
+```
+select <mac address>
+```
+
+Check the version:
+```
+version
+```
+
+![bluetoothclt version](/images/bluetooth/bluetooth_1.png)
 
 ### Signal Interference
 
@@ -72,37 +99,124 @@ This process lowers the sound quality of the stream when in HSP/HFP mode, so aud
 
 Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
-Then, try reinstalling Bluetooth related software with this command, depending on the verison of Pop!\_OS you're using.
-
-*For Pop!\_OS 22.04 or higher:*
-
-```bash
-sudo apt reinstall --purge bluez gnome-bluetooth
-```
-
-*For Pop!\_OS 21.10 or 20.04:*
-
-```bash
-sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudio-module-bluetooth
-```
-
-**NOTE:** After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
-
-If `tlp` is installed, then there may be settings interfering with Bluetooth functionality.  Edit this file and disable Wifi and Bluetooth power saving features:
-
-```bash
-sudo gedit /etc/default/tlp
-```
-
-### Useful Programs
-
-There is a program called <u>Bluetooth Manager</u> which is included with <u>XFCE</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
+Installing Bluetooth related software with this command:
 
 ```bash
 sudo apt install blueman
 ```
 
+**NOTE:** After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
+
+Open bluetooth manager, Super + Space and search:
+
+![bluetooth manager](/images/bluetooth/bluetooth_2.png)
+
+Remove the device, allowing for a fresh, new connection.
+
+![Remove device](/images/bluetooth/bluetooth_3.png)
+
+Click search and pair the device again:
+
+![Pair device](/images/bluetooth/bluetooth_4.png)
+
+If `tlp` is installed, then there may be settings interfering with Bluetooth functionality.  Edit this file and disable Wifi and Bluetooth power saving features:
+
+```bash
+sudo nano /etc/tlp.conf
+```
+
+### Useful Programs
+
+There is a program called <u>Bluetooth Manager</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
+
+```bash
+sudo apt install blueman
+```
+
+Start the bluetooth using systemctl:
+
+```bash
+sudo systemctl start bluetooth
+```
+
+```bash
+sudo systemctl enable bluetooth
+```
+
+Check the status of the bluetooth
+
+```bash
+sudo systemctl status bluetooth
+```
+
+Sample output:
+
+![bluetooth status systemd](/images/bluetooth/bluetooth_5.png)
+
 Then, run <u>Bluetooth Manager</u>. Check for the device being trusted, and also try re-pairing in that program.
+
+### Using bluetoothctl
+Using bluetoothctl over a UI offers more control, flexibility, and efficiency, especially for advanced users. It allows precise management of Bluetooth devices via the terminal, which is faster than navigating through graphical menus. For troubleshooting, bluetoothctl provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a UI might not be available.
+
+To get started, ensure Bluetooth is unblocked by running rfkill to check and enable it if necessary. Use the command:
+
+```bash
+rfkill unblock bluetooth
+```
+to ensure that Bluetooth is not disabled at the system level.
+
+Type:
+```
+bluetoothctl
+```
+![bluetoothclt](/images/bluetooth/bluetooth_6.png)
+
+If you have multiple Bluetooth controllers, choose the one you wish to connect to the device:
+
+Check list of controllers:
+```
+list
+```
+
+Check controller information:
+```
+info <controller_address>
+```
+
+Select the controller you want to use:
+```
+select <mac address>
+```
+
+Make sure to power it on
+```
+power on
+```
+![bluetoothctl power on](/images/bluetooth/bluetooth_7.png)
+
+Look for the device you want to connect:
+```
+scan on
+```
+Add trusted device
+```
+trust <mac address>
+```
+See list of paired devices:
+
+```
+devices
+```
+
+To connect the device:
+```
+connect <mac address>
+```
+![bluetootctl list scan trust connect](/images/bluetooth/bluetooth_8.png)
+
+Successful device connection:
+
+![bluetooothctl device connected](/images/bluetooth/bluetooth_9.png)
 
 ### Useful Commands
 
@@ -110,6 +224,9 @@ To show if the Bluetooth module (driver) is loaded, and see what system messages
 
 ```bash
 lsmod | grep bluetooth
+```
+
+```bash
 dmesg | grep Bluetooth
 ```
 
@@ -141,6 +258,9 @@ To manually reload the Bluetooth USB kernel module:
 
 ```bash
 sudo rmmod btusb
+```
+
+```bash
 sudo modprobe btusb
 ```
 
@@ -154,14 +274,6 @@ To reset the Bluetooth device profiles and require re-pairing all devices (this 
 
 ```bash
 sudo rm -r /var/lib/bluetooth/
-```
-
-*For Pop!\_OS 21.10 or 20.04:*
-
-Older Pop!\_OS versions used a PulseAudio module for Bluetooth audio. It's typically loaded by default, but sometimes a manual load can get Bluetooth headsets working again:
-
-```bash
-pactl load-module module-bluetooth-discover
 ```
 
 ## Additional Info

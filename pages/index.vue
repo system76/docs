@@ -220,7 +220,7 @@
                   Open a Support Ticket
                 </p>
                 <p class="text-warm-gray-600">
-                  Get expert help from real support humans. Recommended for most users.
+                  Get expert help from real support humans if you own a System76 computer.
                 </p>
               </div>
             </a>

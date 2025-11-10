@@ -156,6 +156,7 @@ Sample output:
 Then, run <u>Bluetooth Manager</u>. Check for the device being trusted, and also try re-pairing in that program.
 
 ### Using bluetoothctl
+
 Using bluetoothctl over a UI offers more control, flexibility, and efficiency, especially for advanced users. It allows precise management of Bluetooth devices via the terminal, which is faster than navigating through graphical menus. For troubleshooting, bluetoothctl provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a UI might not be available.
 
 To get started, ensure Bluetooth is unblocked by running rfkill to check and enable it if necessary. Use the command:

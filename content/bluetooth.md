@@ -34,7 +34,7 @@ Every Bluetooth device is different. They use the same or similar protocols, but
 
 Some of the code and technologies that make Bluetooth work reliably are patented, and only device vendors who have licensed the permission to use that patented technology will be able to experience the full benefits (for more information see the "Audio Input/Output" section below.)
 
-> **NOTE:** Some devices, such as Apple or Sony headphones, particularly take advantage of these patents and technologies to ensure they work well with similar devices. Often these devices are not tested against Linux machines. That doesn't mean these devices will not work, only that behavior or performance may vary.
+> Some devices, such as Apple or Sony headphones, particularly take advantage of these patents and technologies to ensure they work well with similar devices. Often these devices are not tested against Linux machines. That doesn't mean these devices will not work, only that behavior or performance may vary.
 
 ### Kernel Versions
 
@@ -86,7 +86,7 @@ sudo apt reinstall --purge bluez gnome-bluetooth
 sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudio-module-bluetooth
 ```
 
-**NOTE:** After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
+After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
 
 If `tlp` is installed, then there may be settings interfering with Bluetooth functionality.  Edit this file and disable Wifi and Bluetooth power saving features:
 
@@ -190,7 +190,7 @@ Then they can be installed with this command:
 sudo dpkg -i linux-firmware_#.###.#_all.deb
 ```
 
-> **NOTE:** You'll need to replace the numbers/file name with the most current version after downloading it.
+> You'll need to replace the numbers/file name with the most current version after downloading it.
 
 ### File Transfer
 

@@ -105,7 +105,7 @@ Installing Bluetooth related software with this command:
 sudo apt install blueman
 ```
 
-**NOTE:** After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
+> After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
 
 Open bluetooth manager, Super + Space and search:
 

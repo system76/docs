@@ -142,7 +142,7 @@ For unstable networks, set IPv6 to “Ignore” in the network settings:
  2.) Select your Wi-Fi connection.
  3.) Go to IPv6 tab → change method to Ignore.
 
- ## Bluetooth and Airplane Mode Interactions
+## Bluetooth and Airplane Mode Interactions
 
  If Wi-Fi disappears when Bluetooth is active:
 

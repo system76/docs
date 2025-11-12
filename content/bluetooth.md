@@ -51,7 +51,6 @@ Sample output:
 
 ![bluetooth status systemd](/images/bluetooth/bluetooth_5.png)
 
-
 There is a program called <u>Bluetooth Manager</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
 
 Install Bluetooth related software with this command:
@@ -153,7 +152,6 @@ Bluetooth audio devices, such as headphones and speakers, usually default to the
 
 Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in.
 This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny," compressed (lower-fidelity), or at a lower volume. That is expected behavior.
-
 
 ### Using bluetoothctl
 

@@ -1,7 +1,7 @@
 ---
-title: Wireless Troubleshooting
+title: Wireless and Basic Troubleshooting
 description: >
-  If you’re having problems with your wireless Internet connection, take a look at the suggestions in this article.
+  If your computer can’t connect to wireless networks or the connection is unstable, use this guide to diagnose and resolve the issue.
 keywords:
   - wireless
   - wifi
@@ -16,34 +16,164 @@ section: network-troubleshooting
 tableOfContents: true
 ---
 
-WiFi issues are influenced by many different factors, including:
+If your computer can’t connect to wireless networks or the connection is unstable, use this guide to diagnose and resolve the issue.  
+Start with the quick checks, then follow the targeted diagnostic and recovery steps.  
+Include logs when you ask for support.
 
-- Hardware (WiFi card, access point)
-- Settings at both ends of the connection
-- The local environment
+---
 
-## Basic Troubleshooting
+## Quick Checks (First Steps)
 
-If you’re having problems, try these steps first:
+Try these steps before diving into advanced troubleshooting:
 
-- Try unplugging the wireless router or modem to reboot it.
-- Try airplane mode by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting 10s, then disabling.
-- Try rebooting the computer.
-
-Some router settings can cause problems. Try adjusting your access point to these settings:
-
-- WPA2-AES is preferred over WPA/WPA2 mixed mode or TKIP.
-- A channel width of 20 MHz in the 2.4 GHz band is more stable than automatic 20/40 MHz or fixed 40 MHz.
-- Set 2.4Ghz and 5Ghz SSID names differently.
-- Pick a fixed channel.  Use either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic selection.
-- Check if the router is set to N speeds only.  Auto B/G/N is preferred.
-- Lower the max/burst speeds, turn off channel bonding, and reduce channel width. Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and may decrease stability. Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
-- After making these changes, reboot the router.
-
-If the issues started after you applied updates, try running this command to make sure a bad WiFi driver has not been installed, then reboot your computer:
+- Reboot the router/modem and the computer.
+- Toggle Airplane Mode: **Fn + F11 → wait 10s → disable Airplane Mode.**
+- If your Wi-Fi issues started after an update, try removing the backported Wi-Fi driver:
 
 ```bash
-sudo apt remove backport-iwlwifi-dkms
+  sudo apt remove backport-iwlwifi-dkms
+```
+Then restart your computer.
+Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
+Boot from a Live USB of your distribution to determine whether the issue exists outside your installed system.
+
+Router and Access Point Recommendations
+
+Many connection issues are caused by router settings.
+
+Make sure your access point is configured for stability and compatibility.
+
+Use 2.4 GHz channels 1, 6, or 11 to minimize overlap.
+
+Set the channel width to 20 MHz for crowded networks.
+
+For 5 GHz, use an explicit channel instead of “Auto” when troubleshooting.
+
+Use mixed mode (b/g/n/ax) if devices vary by generation.
+
+If a single device struggles, temporarily set your router to a common mode and test.
+
+Avoid complex access point features such as:
+ -Band steering
+ -Aggressive airtime fairness
+ -Deep MAC filtering
+ -Ensure your device’s MAC address isn’t being filtered.
+  Check with:
+  
+```bash
+ip link show | grep ether
+```
+
+Then confirm that address is allowed in your router’s admin panel.
+
+You can also confirm what channel and frequency your connection is using:
+
+```bash
+iw dev
+iwlist wlan0 scan | grep -E 'SSID|Channel|Frequency'
+```
+
+## Device-Level Checks and Commands
+
+These commands help verify whether your wireless card and drivers are functioning correctly.
+
+ip a — List all network interfaces and IP addresses confirms your Wi-Fi interface (usually wlp2s0 or wlan0) is recognized.
+
+iw dev — Show wireless devices and their states.
+
+sudo rfkill list — Check for hardware or software Wi-Fi blocks.
+
+nmcli device status — Check NetworkManager device states.
+
+sudo systemctl restart NetworkManager — Restart the network stack (safe to run anytime).
+
+journalctl -b | grep -i network — View network-related boot logs.
+
+dmesg | grep -i -E 'wifi|wlan|firmware|ieee80211|rtl|brcm|ath' — View driver and firmware kernel logs.
+
+To collect diagnostic info automatically:
+
+```bash
+sudo dmesg | grep -i wlan > ~/wireless-dmesg.txt
+```
+
+## Driver and Firmware Checks
+
+If the device is detected but unstable, verify the driver and firmware setup.
+
+Confirm the kernel has loaded the correct driver and firmware.
+
+Check for missing firmware messages:
+
+```bash
+dmesg | grep -i firmware
+```
+
+Reinstall firmware packages:
+
+```bash
+sudo apt update
+sudo apt install --reinstall linux-firmware
+```
+
+Test with a different router or mobile hotspot.
+
+Try a Live USB session to determine if the issue is system-specific.
+
+## NetworkManager and Configuration Tips
+
+NetworkManager controls Wi-Fi connections on most Linux systems.
+
+Restart NetworkManager:
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+-Delete and recreate saved connections:
+
+```bash
+nmcli connection delete <SSID>
+nmcli device wifi connect <SSID>
+```
+
+For unstable networks, set IPv6 to “Ignore” in the network settings:
+ 1.) Open Settings → Network.
+ 2.) Select your Wi-Fi connection.
+ 3.) Go to IPv6 tab → change method to Ignore.
+
+ ## Bluetooth and Airplane Mode Interactions
+
+ If Wi-Fi disappears when Bluetooth is active:
+
+```bash
+sudo rfkill list
+sudo systemctl restart bluetooth
+```
+
+You can also disable Bluetooth coexistence in the Intel Wi-Fi driver configuration file:
+
+```bash
+sudo gedit /etc/modprobe.d/iwlwifi.conf
+```
+
+Add the following line:
+
+```bash
+options iwlwifi bt_coex_active=0
+```
+
+Save, then reboot.
+
+## Quick Reference Commands
+
+```bash
+ip a
+iw dev
+sudo rfkill list
+nmcli device status
+sudo systemctl restart NetworkManager
+sudo dmesg | grep -i wlan > ~/wireless-dmesg.txt
 ```
 
 ## Advanced Troubleshooting
@@ -207,3 +337,16 @@ Sometimes the newest version of the firmware will clear up occasional bugs.  Ple
 ### Windows Dual Boot
 
 If you are dual booting Windows, you may lose access to your wifi card entirely after running driver/OS updates in Windows. You may be able to gain access to your wifi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.
+
+## When to Contact Support
+
+If you’ve tried all the steps above and your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and contact System76 Support.
+
+When reaching out, include:
+-The model of your computer
+-Your version of Pop!_OS or Ubuntu
+-The commands and results listed above
+
+This information helps the support team quickly identify the cause and get you back online.
+
+This will save relevant wireless logs you can share with System76 Support.

@@ -23,38 +23,6 @@ tableOfContents: true
 
 If your system has no sound, distorted sound, or missing input/output devices, this guide will walk you through verifying hardware, reloading drivers, and resetting audio services for Pop!_OS 22.04 and Pop!_OS 24.04.
 
-## Verify Audio Devices Detected by the System
-
-Below are set of commands that can be used to detect various information about your audio device.
-
-To list all detected audio devices:
-
-```
-aplay -l
-```
-
-To list audio input devices:
-
-```
-arecord -l
-```
-
-To list the current sound cards:
-
-```
-cat /proc/asound/cards
-```
-
-To list kernel modules related to audio:
-
-```
-sudo lspci -k | grep -A 3 -i audio
-```
-
-Your audio devices should appear in these lists.
-
-If not, this may be a driver issue.
-
 ## Verify if the Correct Device is Selected
 
 If the system is not playing any audio, you can confirm the selected device from the System Settings.
@@ -67,9 +35,41 @@ Under the Sound Settings, the Input and Output Device selected will be displayed
 
 ![audio_2](images/audio/audio_2.png)
 
+## Verify Audio Devices Detected by the System
+
+Below are set of commands that can be used to detect various information about your audio device.
+
+List all detected audio devices:
+
+```
+aplay -l
+```
+
+List audio input devices:
+
+```
+arecord -l
+```
+
+List the current sound cards:
+
+```
+cat /proc/asound/cards
+```
+
+List kernel modules related to audio:
+
+```
+sudo lspci -k | grep -A 3 -i audio
+```
+
+Your audio devices should appear in these lists.
+
+If not, this may be a driver issue.
+
 ## Restart the Audio Services
 
-If the system is not playing audio, first try restarting the audio daemon:
+Restart the audio daemon:
 
 ```
 systemctl --user restart wireplumber pipewire pipewire-pulse

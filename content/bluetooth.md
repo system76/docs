@@ -31,7 +31,7 @@ Turn on Bluetooth and confirm it is enabled in the top bar, or in the Bluetooth 
 
 ![bluetooth system settings](/images/bluetooth/bluetooth_12.png)
 
-Using systemd:
+To start, enable or check the status of Bluetooth using the command line, open the Terminal by pressing `Super` + `T` and type the following commands:
 
 ```bash
 sudo systemctl start bluetooth
@@ -61,7 +61,7 @@ sudo apt install blueman
 
 > After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
 
-Open Bluetooth Manager by pressing Super + Space and search:
+Open Bluetooth Manager by pressing `Super` and search:
 
 ![bluetooth manager](/images/bluetooth/bluetooth_2.png)
 
@@ -155,7 +155,7 @@ This process lowers the sound quality of the stream when in HSP/HFP mode, so aud
 
 ### Using bluetoothctl
 
-Using bluetoothctl over a UI offers more control, flexibility, and efficiency, especially for advanced users. It allows precise management of Bluetooth devices via the terminal, which is faster than navigating through graphical menus. For troubleshooting, bluetoothctl provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a UI might not be available.
+The program bluetoothctl offers control, flexibility, and efficiency through precise management of Bluetooth devices via the terminal. For troubleshooting, bluetoothctl provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a user interface might not be available.
 
 To get started, ensure Bluetooth is unblocked by running rfkill to check and enable it if necessary. Use the command:
 
@@ -308,3 +308,7 @@ sudo apt install obexfs obexftp
 ```
 
 Then connect (pair) to the device and see if send files works.  To receive files over Bluetooth you will need to enable the option in <u>Personal File Sharing</u>.
+
+### Get Support for Ongoing Bluetooth Issues
+
+If you purchased a computer from System76 and you are still encountering bluetooth problems, please have your serial number ready and [open a support ticket.](https://system76.com/contact/support)

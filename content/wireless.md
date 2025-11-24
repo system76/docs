@@ -22,16 +22,16 @@ Start with the quick checks, then follow the targeted diagnostic and recovery st
 ---
 
 Try these steps before diving into advanced troubleshooting:
-1. Reboot the router/modem and the computer.
-2. Toggle Airplane Mode by pressing **Fn + F11 →.**
-3. If your Wi-Fi issues started after an update, try removing the backported Wi-Fi driver using the command line. Open the Terminal by pressing Super+t and type the following and press Enter:
+1.Reboot the router/modem and the computer.
+2.Toggle Airplane Mode by pressing **Fn + F11 →.**
+3.If your Wi-Fi issues started after an update, try removing the backported Wi-Fi driver using the command line. Open the Terminal by pressing Super+t and type the following and press Enter:
 
 ```bash
   sudo apt remove backport-iwlwifi-dkms
 ```
 Then restart your computer.
-4. Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
-5. [Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
+4.Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
+5.[Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
 
 ## Router and Access Point Recommendations
 
@@ -94,7 +94,6 @@ nmcli device status
 ```
 
 Check NetworkManager device states.
-
 
 ```bash
 sudo systemctl restart NetworkManager 

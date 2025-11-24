@@ -17,29 +17,23 @@ tableOfContents: true
 ---
 
 If your computer can’t connect to wireless networks or the connection is unstable, use this guide to diagnose and resolve the issue.  
-Start with the quick checks, then follow the targeted diagnostic and recovery steps.  
-Include logs when you ask for support.
+Start with the quick checks, then follow the targeted diagnostic and recovery steps.
 
 ---
 
-## Quick Checks (First Steps)
-
 Try these steps before diving into advanced troubleshooting:
-
-- Reboot the router/modem and the computer.
-- Toggle Airplane Mode: **Fn + F11 → wait 10s → disable Airplane Mode.**
-- If your Wi-Fi issues started after an update, try removing the backported Wi-Fi driver:
+1. Reboot the router/modem and the computer.
+2. Toggle Airplane Mode by pressing **Fn + F11 →.**
+3. If your Wi-Fi issues started after an update, try removing the backported Wi-Fi driver using the command line. Open the Terminal by pressing Super+t and type the following and press Enter:
 
 ```bash
   sudo apt remove backport-iwlwifi-dkms
 ```
 Then restart your computer.
-Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
-Boot from a Live USB of your distribution to determine whether the issue exists outside your installed system.
+4. Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
+5. [Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
 
-Router and Access Point Recommendations
-
-Many connection issues are caused by router settings.
+## Router and Access Point Recommendations
 
 Make sure your access point is configured for stability and compatibility.
 
@@ -77,19 +71,48 @@ iwlist wlan0 scan | grep -E 'SSID|Channel|Frequency'
 
 These commands help verify whether your wireless card and drivers are functioning correctly.
 
-ip a — List all network interfaces and IP addresses confirms your Wi-Fi interface (usually wlp2s0 or wlan0) is recognized.
+```bash
+ip a
+```
 
-iw dev — Show wireless devices and their states.
+List all network interfaces and IP addresses confirms your Wi-Fi interface (usually wlp2s0 or wlan0) is recognized.
 
-sudo rfkill list — Check for hardware or software Wi-Fi blocks.
+```bash
+iw dev
+```
 
-nmcli device status — Check NetworkManager device states.
+Show wireless devices and their states.
 
-sudo systemctl restart NetworkManager — Restart the network stack (safe to run anytime).
+```bash
+sudo rfkill list
+```
 
-journalctl -b | grep -i network — View network-related boot logs.
+Check for hardware or software Wi-Fi blocks.
 
-dmesg | grep -i -E 'wifi|wlan|firmware|ieee80211|rtl|brcm|ath' — View driver and firmware kernel logs.
+```bash
+nmcli device status 
+```
+
+Check NetworkManager device states.
+
+
+```bash
+sudo systemctl restart NetworkManager 
+```
+
+Restart the network stack (safe to run anytime).
+
+```bash
+journalctl -b | grep -i network
+```
+
+View network-related boot logs.
+
+```bash
+dmesg | grep -i -E 'wifi|wlan|firmware|ieee80211|rtl|brcm|ath'
+```
+
+View driver and firmware kernel logs.
 
 To collect diagnostic info automatically:
 
@@ -130,7 +153,7 @@ Restart NetworkManager:
 sudo systemctl restart NetworkManager
 ```
 
--Delete and recreate saved connections:
+Delete and recreate saved connections:
 
 ```bash
 nmcli connection delete <SSID>
@@ -164,17 +187,6 @@ options iwlwifi bt_coex_active=0
 ```
 
 Save, then reboot.
-
-## Quick Reference Commands
-
-```bash
-ip a
-iw dev
-sudo rfkill list
-nmcli device status
-sudo systemctl restart NetworkManager
-sudo dmesg | grep -i wlan > ~/wireless-dmesg.txt
-```
 
 ## Advanced Troubleshooting
 
@@ -338,15 +350,6 @@ Sometimes the newest version of the firmware will clear up occasional bugs.  Ple
 
 If you are dual booting Windows, you may lose access to your wifi card entirely after running driver/OS updates in Windows. You may be able to gain access to your wifi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.
 
-## When to Contact Support
+## Contact System76 Support
 
-If you’ve tried all the steps above and your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and contact System76 Support.
-
-When reaching out, include:
--The model of your computer
--Your version of Pop!_OS or Ubuntu
--The commands and results listed above
-
-This information helps the support team quickly identify the cause and get you back online.
-
-This will save relevant wireless logs you can share with System76 Support.
+If you purchased a System76 computer and you’ve tried all the steps above, but your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and contact [System76 Support](https://system76.com/contact/support)

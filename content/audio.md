@@ -27,25 +27,25 @@ If your system has no sound, distorted sound, or missing input/output devices, t
 
 If the system is not playing any audio, you can confirm the selected device from the System Settings.
 
-Go to <u>Launcher</u> and search for Sound:
+How to open the Launcher and search for Sound:
 
-![audio_1](images/audio/audio_1.png)
+![COSMIC Launcher search for Sound](images/audio/Launcher-Sound.png)
 
 Under the Sound Settings, the Input and Output Device selected will be displayed:
 
-![audio_2](images/audio/audio_2.png)
+![Sound Settings](images/audio/Sound-Settings.png)
 
 ## Verify Audio Devices Detected by the System
 
-Below are set of commands that can be used to detect various information about your audio device.
+Below is a set of commands to display information about your audio device.
 
-List all detected audio devices:
+List all detected output audio devices:
 
 ```
 aplay -l
 ```
 
-List audio input devices:
+List all detected input audio devices:
 
 ```
 arecord -l
@@ -57,24 +57,21 @@ List the current sound cards:
 cat /proc/asound/cards
 ```
 
-List kernel modules related to audio:
+List loaded drivers and available kernel modules for each PCI audio device:
 
 ```
 sudo lspci -k | grep -A 3 -i audio
 ```
 
-Your audio devices should appear in these lists.
+Your audio devices should appear in these lists. If not, there may be a driver issue.
 
-If not, this may be a driver issue.
+## Restart the Audio Daemon
 
-## Restart the Audio Services
-
-Restart the audio daemon:
+If the system is not playing audio, try restarting the audio daemon:
 
 ```
 systemctl --user restart wireplumber pipewire pipewire-pulse
-```
-```
+
 rm -r ~/.config/pulse
 ```
 
@@ -82,51 +79,39 @@ This set of commands restarts the <u>PipeWire audio server</u> and its associate
 
 ## Check the PulseAudio Controls
 
-The program <u>PulseAudio Volume Control</u> is helpful in figuring out which program is producing audio, where that audio is being routed, what the default input/output devices are, and what the volume levels are set to. It can be installed using the Pop!_Shop or Cosmic Store:
+The program <u>PulseAudio Volume Control</u> is helpful to figure out which programs are producing audio, where that audio is being routed, what the default input/output devices are, and what the volume levels are set to. It can be installed using the Pop!_Shop or COSMIC Store:
 
-![audio_3](images/audio/audio_3.png)
+![PulseAudio Volume Control shown in the COSMIC Store](images/audio/pavucontrol-in-cosmic-store.png)
 
-or with this command:
+...or with this command:
 
 ```
 sudo apt install pavucontrol
 ```
 
-Once installed, open the PulseAudio Volume Control app in the Activities or Applications menu, or run pavucontrol in a terminal.
+Once installed, open the PulseAudio Volume Control app in the Activities or Applications menu, or run `pavucontrol` in a terminal.
 
 The "Playback" tab will show a list of applications that are currently playing audio. The volume for each application can be individually controlled.
 
-![audio_4](images/audio/audio_4.png)
+![Playback tab in PulseAudio Volume Control](images/audio/pavucontrol-playback-tab.png)
 
 Similarly, the "Recording" tab will show a list of applications that are currently recording audio.
 
-![audio_5](images/audio/audio_5.png)
+![Recording tab in PulseAudio Volume Control](images/audio/pavucontrol-recording-tab.png)
 
 The "Output Devices" tab shows a list of output devices, and an indicator of what's being played out of each device. The green checkmark being selected indicates a device is the default output device.
 
-![audio_6](images/audio/audio_6.png)
+![Output devices tab in PulseAudio Volume Control](images/audio/pavucontrol-output-devices-tab.png)
 
 The "Input Devices" tab shows a similar list for input devices.
 
-![audio_7](images/audio/audio_7.png)
+![Input devices tab in PulseAudio Volume Control](images/audio/pavucontrol-input-devices-tab.png)
 
 Under "Configuration," each sound card should be listed.
 
-![audio_8](images/audio/audio_8.png)
+![Configuration tab in PulseAudio Volume Control](images/audio/pavucontrol-configuration-tab.png)
 
 ## Troubleshooting ALSA
-
-PulseAudio sits on top of ALSA. If PulseAudio is not seeing any input/output devices, check what playback devices ALSA is detecting:
-
-```
-aplay -l
-```
-
-Or, check what recording devices ALSA is detecting:
-
-```
-arecord -l
-```
 
 A device may be muted in the ALSA mixer, which will override any PulseAudio volume settings. You can open the ALSA mixer with this command:
 
@@ -134,26 +119,26 @@ A device may be muted in the ALSA mixer, which will override any PulseAudio volu
 alsamixer
 ```
 
-You can navigate between the different volume meters using the left and right arrow keys. Each meter can be adjusted using the up and down arrow keys. An "MM" at the bottom of a meter indicates that meter is muted. If the PulseAudio Volume Control shows that sound is playing, but you don't hear any sound, try unmuting all of the volume meters in alsamixer by pressing the M key while each meter is selected.
+You can navigate between the different volume meters using the left and right arrow keys. Each meter can be adjusted using the up and down arrow keys. An "MM" at the bottom of a meter indicates that meter is muted. If the PulseAudio Volume Control shows that sound is playing, but you don't hear any sound, try unmuting all of the volume meters in alsamixer by pressing the <kbd>M</kbd> key while each meter is selected.
 
-![audio_9](images/audio/audio_9.png)
+![ALSAMixer](images/audio/ALSA-Mixer.png)
 
 If your system has more than one sound card (for example, an Intel sound card and an NVIDIA sound card in switchable-graphics systems), you can switch between them by pressing F6.
 
-![audio_10](images/audio/audio_10.png)
+![ALSAMixer select soundcard](images/audio/ALSA-Mixer-soundcard.png)
 
 ## Other Useful Commands
 
 This command will reinstall ALSA and some of the other core audio packages:
 
 ```
-sudo apt install --reinstall alsa-base alsa-utils linux-sound-base libasound2
+sudo apt reinstall alsa-base alsa-utils linux-sound-base libasound2
 ```
 
 This command will reinstall the PulseAudio packages:
 
 ```
-sudo apt install --reinstall libpulse0 libpulsedsp pulseaudio pulseaudio-module-bluetooth pulseaudio-utils
+sudo apt reinstall libpulse0 libpulsedsp pulseaudio pulseaudio-module-bluetooth pulseaudio-utils
 ```
 
 This command will reinstall the PipeWire packages:
@@ -189,24 +174,23 @@ pw-top
 ## Installing Sound Open Firmware Binaries
 
 This firmware is essential for proper audio functionality on systems using Intel audio hardware that relies on Sound Open Firmware.
+This package is installed by default and would only be required to manually install if it somehow got removed.
 
-To install, run the command:
+To install, run the commands:
 
 ```
 sudo apt update
-sudo apt upgrade
 sudo apt install firmware-sof-signed
 ```
 
-## Installing Alsa Firmware Loaders
+## Installing ALSA Firmware Loaders
 
 This package provides firmware files that may be necessary for certain sound cards to function correctly with the Advanced Linux Sound Architecture (ALSA).
 
-To install, run the command:
+To install, run the commands:
 
 ```
 sudo apt update
-sudo apt upgrade
 sudo apt install alsa-firmware-loaders
 ```
 
@@ -220,4 +204,4 @@ alsa-info
 
 When the script is finished gathering information, type <kbd>y</kbd> and press Enter to upload your output to the ALSA website, then send the link to Support.
 
-![audio_11](images/audio/audio_11.png)
+![ALSA-info](images/audio/alsa-info.png)

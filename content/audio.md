@@ -25,13 +25,13 @@ If your system has no sound, distorted sound, or missing input/output devices, t
 
 ## Verify if the Correct Device is Selected
 
-If the system is not playing any audio, you can confirm the selected device from the System Settings.
+If the system is not playing any audio, you can confirm the selected device from the system's Settings app.
 
-How to open the Launcher and search for Sound:
+Access the Sound page of Settings by opening the Launcher (by default, press <kbd>Super</kbd>) and searching for Sound:
 
 ![COSMIC Launcher search for Sound](images/audio/Launcher-Sound.png)
 
-Under the Sound Settings, the Input and Output Device selected will be displayed:
+On the Sound page of Settings, the selected Input and Output Device will be displayed:
 
 ![Sound Settings](images/audio/Sound-Settings.png)
 
@@ -71,7 +71,6 @@ If the system is not playing audio, try restarting the audio daemon:
 
 ```
 systemctl --user restart wireplumber pipewire pipewire-pulse
-
 rm -r ~/.config/pulse
 ```
 
@@ -173,8 +172,7 @@ pw-top
 
 ## Installing Sound Open Firmware Binaries
 
-This firmware is essential for proper audio functionality on systems using Intel audio hardware that relies on Sound Open Firmware.
-This package is installed by default and would only be required to manually install if it somehow got removed.
+This firmware package is essential for proper audio functionality on systems using Intel audio hardware that relies on Sound Open Firmware. It's installed by default, but could be accidentally removed by other package operations.
 
 To install, run the commands:
 
@@ -202,6 +200,6 @@ The 'alsa-info' command will gather a number of outputs, including some of the a
 alsa-info
 ```
 
-When the script is finished gathering information, type <kbd>y</kbd> and press Enter to upload your output to the ALSA website, then send the link to Support.
+When the script is finished gathering information, type <kbd>y</kbd> and press <kbd>Enter</kbd> to upload your output to the ALSA website, then send the link to Support.
 
 ![ALSA-info](images/audio/alsa-info.png)

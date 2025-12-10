@@ -106,11 +106,11 @@
       <div class="px-4 py-3 flex flex-col bg-white rounded-lg">
         <div class="mx-4 my-4 md:min-h-[4rem]">
           <h2 class="sys-article-h3">
-            Support Documentation
+            System76 Service Manuals
           </h2>
 
           <p class="text-lg my-4 text-warm-gray-600">
-            Search helpful documentation for answers to a variety of questions or issues.
+            Detailed parts and repair information for System76 Hardware.
           </p>
         </div>
 
@@ -250,39 +250,39 @@ export default {
     search: '',
     results: [],
 
-listings: [
-  {
     listings: [
-      { title: 'Getting Started with Pop!_OS', section: 'pop' },
-      { title: 'System76 Hardware', section: 'about-your-computer' },
-      { title: 'Media', section: 'media' },
-      { title: 'Software Troubleshooting', section: 'software-troubleshooting' },
-      { title: 'Network Troubleshooting', section: 'network-troubleshooting' },
-      { title: 'Hardware Troubleshooting', section: 'hardware-troubleshooting' },
+      {
+        listings: [
+          { title: 'Getting Started with Pop!_OS', section: 'pop' },
+          { title: 'System76 Hardware', section: 'about-your-computer' },
+          { title: 'Media', section: 'media' },
+          { title: 'Software Troubleshooting', section: 'software-troubleshooting' },
+          { title: 'Network Troubleshooting', section: 'network-troubleshooting' },
+          { title: 'Hardware Troubleshooting', section: 'hardware-troubleshooting' }
+        ]
+      },
+      {
+        listings: [
+          { title: 'Software Installation and Tips', section: 'software' },
+          { title: 'Hardware Configuration', section: 'hardware' }
+        ]
+      },
+      {
+        listings: [
+          { title: 'Switching To Linux', section: 'switching' },
+          { title: 'Getting Started with Ubuntu', section: 'ubuntu' }
+        ]
+      },
+      {
+        title: 'Community Articles',
+        description: 'The following documents have been graciously submitted by community members. They have not been checked for accuracy, completeness, or style. Please contact the contributors through their GitHub accounts for any questions.',
+        section: 'community'
+      },
+      {
+        title: 'Case Studies',
+        section: 'case-studies'
+      }
     ]
-  },
-  {
-    listings: [
-      { title: 'Software', section: 'software' },
-      { title: 'Hardware', section: 'hardware' }
-    ]
-  },
-  {
-    listings: [
-      { title: 'Switching To Linux', section: 'switching' },
-      { title: 'Getting Started with Ubuntu', section: 'ubuntu' },
-    ]
-  },
-  {
-    title: 'Community Articles',
-    description: 'The following documents have been graciously submitted by community members. They have not been checked for accuracy, completeness, or style. Please contact the contributors through their GitHub accounts for any questions.',
-    section: 'community'
-  },
-  {
-    title: 'Case Studies',
-    section: 'case-studies'
-  }
-]
   }),
 
   async fetch () {

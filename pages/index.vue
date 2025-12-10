@@ -106,11 +106,11 @@
       <div class="px-4 py-3 flex flex-col bg-white rounded-lg">
         <div class="mx-4 my-4 md:min-h-[4rem]">
           <h2 class="sys-article-h3">
-            System76 Service Manuals
+            Service Manuals
           </h2>
 
           <p class="text-lg my-4 text-warm-gray-600">
-            Detailed parts and repair information for System76 Hardware.
+            Detailed parts and repair information for System76 hardware.
           </p>
         </div>
 

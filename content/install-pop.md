@@ -32,7 +32,7 @@ The following guide describes how to download the Pop!\_OS.iso image, write it t
 | RAM       | 4 GB        | 8 GB        |
 | Drive Storage | 20 GB   |             |
 
-From <https://system76.com/pop/download/>, choose **DOWNLOAD**. The download dialog includes the current _Requirements_, and download _Filesize_, as well as the image checksums used to verify the file once downloaded.
+From <https://system76.com/pop/download/>, choose **DOWNLOAD** under the section best matching your computer (generic, NVIDIA, or Raspberry Pi). The download page includes the current _Requirements_ and download _Filesize_, as well as the image checksums used to verify the file once downloaded.
 
 ### Installation Media
 

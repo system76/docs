@@ -1,7 +1,7 @@
 ---
-title: Pop!_OS Customization
+title: Pop!_OS 22.04 Customization
 description: >
-  Pop with the GNOME desktop is highly customizable!  See here to get started making your desktop just right for you.
+  Pop 22.04 with the GNOME desktop is highly customizable!
 keywords:
   - Pop_OS!
   - GNOME
@@ -14,7 +14,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: Pop
 tableOfContents: true
 ---
 

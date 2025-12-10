@@ -1,7 +1,7 @@
 ---
 title: Gaming on Pop!_OS
 description: >
-   Want to game on your super awesome new System76 machine?  Take a look at these instructions to set your system up for gaming!
+   Set your system up for gaming!
 keywords:
   - gaming
   - support

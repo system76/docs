@@ -1,5 +1,5 @@
 ---
-title: Fix Raw Image Previews
+title: Raw Image Previews
 description: >
    Add a custom thumbnail generator to display thumbnails for raw image in Files.
 keywords:
@@ -12,7 +12,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software-troubleshooting
+section: media
 tableOfContents: true
 ---
 

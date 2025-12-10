@@ -1,7 +1,7 @@
 ---
 title: Watch Videos and Play Music (MP3, DVD, etc.)
 description: >
-  Proprietary multimedia formats, such as MP3 files and DVD decoders, aren't included by default. To enable playback of these media, please see this document.
+  Enable playback of proprietary multimedia formats, such as MP3 files.
 keywords:
   - Support
   - multimedia

@@ -15,7 +15,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: repairs-returns
+section: about-your-computer
 tableOfContents: true
 ---
 

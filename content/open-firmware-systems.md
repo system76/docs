@@ -9,7 +9,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: general-hardware-info
+section: about-your-computer
 tableOfContents: true
 ---
 

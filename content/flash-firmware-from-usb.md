@@ -11,7 +11,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software-troubleshooting
+section: about-your-computer
 tableOfContents: true
 ---
 

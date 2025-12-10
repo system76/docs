@@ -1,7 +1,7 @@
 ---
 title: Keep PPAs Enabled when Upgrading Releases
 description: >
-  Upgrading to a new releases disables PPAs and third party repos.  Learn how to keep your PPA or third party repo enabled during upgrades.
+  How to keep your PPA or third party repo enabled during upgrades.
 keywords:
   - ppa
   - disabled

@@ -1,7 +1,7 @@
 ---
 title: Dock (Move or Customize)
 description: >
-  How to move the Dock to different areas of the screen and customize other settings.
+  Move the Dock to different areas of the screen and customize.
 keywords:
   - Launcher
   - Bottom
@@ -16,7 +16,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: pop
 tableOfContents: true
 
 redirect_from:

@@ -1,7 +1,7 @@
 ---
 title: What is the Intel Management Engine?
 description: >
-    This article describes the Intel Management Engine, scenarios in which the IME is disabled, and how to manually disable on systems running coreboot.
+    How to manually disable on systems running coreboot.
 keywords:
   - Firmware
   - Intel ME
@@ -13,7 +13,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: about-your-computer
 tableOfContents: true
 ---
 

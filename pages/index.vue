@@ -106,11 +106,11 @@
       <div class="px-4 py-3 flex flex-col bg-white rounded-lg">
         <div class="mx-4 my-4 md:min-h-[4rem]">
           <h2 class="sys-article-h3">
-            Support Documentation
+            Service Manuals
           </h2>
 
           <p class="text-lg my-4 text-warm-gray-600">
-            Search helpful documentation for answers to a variety of questions or issues.
+            Detailed parts and repair information for System76 hardware.
           </p>
         </div>
 
@@ -134,43 +134,6 @@
             </nuxt-link>
           </li>
 
-          <li>
-            <nuxt-link
-              to="#troubleshoot"
-              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
-                <font-awesome-icon icon="search" />
-              </div>
-              <div class="ml-4">
-                <p class="font-bold text-warm-gray-800">
-                  Troubleshoot
-                </p>
-                <p class="text-warm-gray-600">
-                  Detailed solutions for prominent issues.
-                </p>
-              </div>
-            </nuxt-link>
-          </li>
-
-          <li>
-            <nuxt-link
-              to="#tune"
-              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
-                <font-awesome-icon icon="wrench" />
-              </div>
-              <div class="ml-4">
-                <p class="font-bold text-warm-gray-800">
-                  Tune
-                </p>
-                <p class="text-warm-gray-600">
-                  Information on how to upgrade, maintain, and customize your system.
-                </p>
-              </div>
-            </nuxt-link>
-          </li>
         </ul>
       </div>
 
@@ -186,24 +149,6 @@
         </div>
 
         <ul class="space-y-2 md:space-y-4">
-          <li>
-            <a
-              href="/articles/before-you-open-a-support-ticket"
-              class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
-            >
-              <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
-                <font-awesome-icon icon="bolt" />
-              </div>
-              <div class="ml-4">
-                <p class="font-bold text-warm-gray-800">
-                  Before You Open a Ticket
-                </p>
-                <p class="text-warm-gray-600">
-                  A troubleshooting triage to help you self-diagnose a variety of issues.
-                </p>
-              </div>
-            </a>
-          </li>
 
           <li>
             <a
@@ -305,65 +250,39 @@ export default {
     search: '',
     results: [],
 
-    listings: [{
-      title: 'Troubleshoot',
-      section: 'troubleshoot',
-      listings: [{
-        title: 'Software Troubleshooting',
-        section: 'software-troubleshooting'
-      }, {
-        title: 'Network Troubleshooting',
-        section: 'network-troubleshooting'
-      }, {
-        title: 'Hardware Troubleshooting',
-        section: 'hardware-troubleshooting'
-      }, {
-        title: 'Repairs and Returns',
-        section: 'repairs-returns'
-      }]
-    }, {
-      title: 'Tune',
-      section: 'tune',
-      listings: [{
-        title: 'Software',
-        section: 'software'
-      }, {
-        title: 'Hardware',
-        section: 'hardware'
-      }]
-    }, {
-      title: 'Learn',
-      section: 'learn',
-      listings: [{
-        title: 'Switching To Linux',
-        section: 'switching'
-      }, {
-        title: 'About Your Computer',
-        section: 'about-your-computer'
-      }, {
-        title: 'About Your Operating System',
-        section: 'about-your-os'
-      }, {
-        title: 'About Pop!_OS',
-        section: 'pop'
-      }, {
-        title: 'About Ubuntu',
-        section: 'ubuntu'
-      }, {
-        title: 'Media',
-        section: 'media'
-      }, {
-        title: 'General Hardware Information',
-        section: 'general-hardware-info'
-      }]
-    }, {
-      title: 'Community Articles',
-      description: 'The following documents have been graciously submitted by community members. They have not been checked for accuracy, completeness, or style. Please contact the contributors through their GitHub accounts for any questions.',
-      section: 'community'
-    }, {
-      title: 'Case Studies',
-      section: 'case-studies'
-    }]
+    listings: [
+      {
+        listings: [
+          { title: 'Getting Started with Pop!_OS', section: 'pop' },
+          { title: 'System76 Hardware', section: 'about-your-computer' },
+          { title: 'Media', section: 'media' },
+          { title: 'Software Troubleshooting', section: 'software-troubleshooting' },
+          { title: 'Network Troubleshooting', section: 'network-troubleshooting' },
+          { title: 'Hardware Troubleshooting', section: 'hardware-troubleshooting' }
+        ]
+      },
+      {
+        listings: [
+          { title: 'Software Installation and Tips', section: 'software' },
+          { title: 'Hardware Configuration', section: 'hardware' }
+        ]
+      },
+      {
+        listings: [
+          { title: 'Switching To Linux', section: 'switching' },
+          { title: 'Getting Started with Ubuntu', section: 'ubuntu' }
+        ]
+      },
+      {
+        title: 'Community Articles',
+        description: 'The following documents have been graciously submitted by community members. They have not been checked for accuracy, completeness, or style. Please contact the contributors through their GitHub accounts for any questions.',
+        section: 'community'
+      },
+      {
+        title: 'Case Studies',
+        section: 'case-studies'
+      }
+    ]
   }),
 
   async fetch () {

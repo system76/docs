@@ -1,7 +1,7 @@
 ---
 title: Pop!_OS Basics
 description: >
-  Learn how to navigate your new Pop!_OS desktop environment with a few easy tips.
+  Learn how to navigate your new Pop!_OS desktop environment.
 keywords:
   - Support
   - Pop!

@@ -1,7 +1,7 @@
 ---
 title: HDMI Audio Configuration
 description: >
-  Here is how to play audio over an HDMI or DisplayPort connection.
+  Play audio over an HDMI or DisplayPort connection.
 keywords:
   - hdmi
   - audio settings
@@ -12,7 +12,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: media
 tableOfContents: true
 ---
 

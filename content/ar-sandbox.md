@@ -1,5 +1,5 @@
 ---
-title: AR Sandbox
+title: Augmented Reality Sandbox
 description: Calibrate and use your new AR Sandbox
 keywords:
  - AR
@@ -11,7 +11,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: hardware
+section: case-studies
 tableOfContents: true
 ---
 

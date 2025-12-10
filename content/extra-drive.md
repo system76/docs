@@ -1,7 +1,7 @@
 ---
 title: Auto-Mount Second Hard Drive(s)
 description: >
-  If you ordered your computer with additional storage, it comes pre-formatted and ready for use. For instructions on automatically mounting an additional hard drive, check out this extra drive documentation.
+  Automatically mount additional hard drives.
 keywords:
   - extra drive
   - mount
@@ -14,7 +14,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: about-your-computer
 tableOfContents: true
 
 redirect_from:

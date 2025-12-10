@@ -1,7 +1,7 @@
 ---
 title: HiDPI Multi-Monitor Support
 description: >
-  Mixing HiDPI and LoDpi displays can be complicated.  Learn what to do and how System76 automates this for you!
+  Mixing HiDPI and LoDpi displays on multiple monitors.
 keywords:
   - hidpi
   - system76 driver
@@ -15,7 +15,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: media
 tableOfContents: true
 ---
 

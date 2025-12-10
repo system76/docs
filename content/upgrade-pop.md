@@ -1,7 +1,7 @@
 ---
 title: Upgrade Pop!_OS
 description: >
-  Get the newest version of Pop!_OS on your computer! Check out our upgrade directions.
+  Upgrade to the newest version of Pop!_OS on your computer!
 keywords:
   - Pop!_OS 17.10
   - Pop!_OS 18.04
@@ -26,7 +26,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: pop
 tableOfContents: true
 ---
 

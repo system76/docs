@@ -1,7 +1,7 @@
 ---
 title: Use AMD FidelityFX SuperResolution (FSR) on Pop!_OS
 description: >
-   Want to use AMD's FidelityFX SuperResolution to increase your gaming performance?  Take a look at these instructions to set your games up for FSR!
+   Use AMD's FidelityFX SuperResolution to increase gaming performance.
 keywords:
   - gaming
   - support

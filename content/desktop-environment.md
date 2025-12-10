@@ -1,7 +1,7 @@
 ---
-title: Desktop Environment (Change)
+title: Change Desktop Environment (Pop!_OS 22.04)
 description: >
-  Pop!_OS Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
+  Pop!_OS 22.04 Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
 keywords:
   - desktop environment
   - MATE
@@ -15,7 +15,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: pop
 tableOfContents: true
 ---
 

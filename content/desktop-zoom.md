@@ -1,7 +1,7 @@
 ---
 title: Zoom-in or Enlarge Desktop
 description: >
-  Zooming in or enlarging your desktop interface can be done through the Settings panel.
+  Zoom in or enlarge your desktop interface.
 keywords:
   - zoom desktop
   - zoom in
@@ -13,7 +13,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software-accessibility
+section: pop
 ---
 
 ## Zoom in or Enlarge Desktop

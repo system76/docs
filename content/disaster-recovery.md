@@ -22,7 +22,7 @@ This guide helps users recover data and restore system functionality after _OS f
 # Pop!\_OS
 Use Recovery Partition: 
 1. Hold <kbd>Spacebar</kbd>or press <kbd>ESC</kbd> at boot menu. Select **Pop!\_OS Recovery**
-  * **If Recovery is missing:** Create a Live USB from this [link](https://pop.system76.com/).
+  _If Recovery is missing_: Download Pop!\_OS and create a Live USB from this [link](https://pop.system76.com/).
 * Ubuntu
   * **Use Live USB:** Download Ubuntu ISO from this [link](https://ubuntu.com/download) and flash using Rufus or Startup Disk Creator.
   * Boot from USB and select **Try Ubuntu**.

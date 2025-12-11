@@ -33,7 +33,7 @@ Use Recovery Partition:
 1. Use the **top-right system menu** to connect to Wi-Fi or ethernet.
 _A stable connection is recommended for installing backup tools or uploading data._
 
-### Mounting the Installed OS
+### Mount the Installed OS Drive
 
 * If Disk is Encrypted:
 

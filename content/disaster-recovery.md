@@ -24,7 +24,8 @@ Use Recovery Partition:
 1. Hold <kbd>Spacebar</kbd>or press <kbd>ESC</kbd> at boot menu. Select **Pop!\_OS Recovery**
   _If Recovery is missing_: Download Pop!\_OS and create a Live USB from this [link](https://pop.system76.com/).
 # Ubuntu
-  * **Use Live USB:** Download Ubuntu ISO from this [link](https://ubuntu.com/download) and flash using Rufus or Startup Disk Creator.
+  Use Live USB: 
+  1. Download Ubuntu ISO from this [link](https://ubuntu.com/download) and create a live [USB](https://support.system76.com/articles/live-disk) using Rufus or Startup Disk Creator.
   * Boot from USB and select **Try Ubuntu**.
 
 ### Connect to Internet

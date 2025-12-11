@@ -15,7 +15,7 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-This guide helps users recover data and restore system functionality after _OS failure, update issues, bootloader errors, or hardware problems._
+This guide helps users recover data and restore system functionality after _OS failure, update issues, bootloader errors, or hardware problems.
 
 ## If you can't boot your installed OS
 

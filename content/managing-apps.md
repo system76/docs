@@ -95,7 +95,7 @@ Cosmic includes a graphical user interface (GUI) called the Cosmic Store for eas
 
 ![app download type version](/images/managing-apps/IURA_24_3.png)
 
-### Installing an Application Not Included in the Cosmic Store.
+### Installing an Application Not Included in the Cosmic Store
 
 The Cosmic Store does not include all applications available for installation in Pop!_OS. Use the web to search for and install additional applications.
 

@@ -31,7 +31,7 @@ Use Recovery Partition:
 ### Connect to Internet
 
 1. Use the **top-right system menu** to connect to Wi-Fi or ethernet.
-* A stable connection is recommended for installing backuo tools or uploading data.
+_A stable connection is recommended for installing backup tools or uploading data._
 
 ### Mounting the Installed OS
 

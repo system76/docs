@@ -106,7 +106,7 @@ External Drive
 Internal Drive
 
 * Open **Files** > **Other Locations**
-* Look for secondary drives or partitions.
+2. Identify secondary drives or partitions. On System76 devices, secondary drives may be labeled **Extra Drive**.
 * On System76 devices, secondary drives may be labeled **Extra Drive**.
 * Refer to your model's service manual to remove the drive.
 * Use a USB-to-SATA adapter to connect it to another system.

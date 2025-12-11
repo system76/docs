@@ -26,7 +26,7 @@ Use Recovery Partition:
 # Ubuntu
   Use Live USB: 
   1. Download Ubuntu ISO from this [link](https://ubuntu.com/download) and create a live [USB](https://support.system76.com/articles/live-disk) using Rufus or Startup Disk Creator.
-  * Boot from USB and select **Try Ubuntu**.
+2. Boot from USB and select **Try Ubuntu**.
 
 ### Connect to Internet
 

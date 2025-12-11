@@ -19,7 +19,7 @@ This guide helps users recover data and restore system functionality after _OS f
 
 ## If you can't boot your installed OS
 
-* Pop!_OS
+# Pop!\_OS
   * Use Recovery Partition: Hold **Spacebar** or press **ESC** at boot menu. Select **Pop!_OS Recovery**
   * **If Recovery is missing:** Create a Live USB from this [link](https://pop.system76.com/).
 * Ubuntu

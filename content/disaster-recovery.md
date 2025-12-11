@@ -30,7 +30,7 @@ Use Recovery Partition:
 
 ### Connect to Internet
 
-* Use the **top-right system menu** to connect to Wi-Fi or ethernet.
+1. Use the **top-right system menu** to connect to Wi-Fi or ethernet.
 * A stable connection is recommended for installing backuo tools or uploading data.
 
 ### Mounting the Installed OS

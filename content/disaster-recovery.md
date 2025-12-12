@@ -91,7 +91,7 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 ## Command Line Tools
 
 **BorgBackup** -- deduplication, compression, encryption; great for data recovery
-* Restic -- fast, secure, cross-platform; supports many backends (SFTP, AWS, etc.)
+**Restic** -- fast, secure, cross-platform; supports many backends (SFTP, AWS, etc.)
 * **Rsync** -- highly customizable; ideal for scripted or incremental backups
 
 ### Enterprise-grade Solutions

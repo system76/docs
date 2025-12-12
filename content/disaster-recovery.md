@@ -112,7 +112,7 @@ Use USB 3.0 or 2.0  hard drive that matches the capacity of your current operati
 
 ## Internal Drive
 
-* Open **Files** > **Other Locations**
+1. Open **Files** > **Other Locations**
 * Look for secondary drives or partitions.
 * On System76 devices, secondary drives may be labeled **Extra Drive**.
 * If you are troubleshooting boot or recovery issues, temporarily removing the secondary drive can help isolate the problem and prevent conflicts during the recovery process.

@@ -94,7 +94,7 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 **Restic** -- fast, secure, cross-platform; supports many backends (SFTP, AWS, etc.)
 **Rsync** -- highly customizable; ideal for scripted or incremental backups
 
-### Enterprise-grade Solutions
+## Enterprise-grade Solutions
 
 * Amanda/Zamanda -- centralized backup management, tape support
 * Veeam Agent for Linux -- commercial-grade, agent-based backups with recovery tools

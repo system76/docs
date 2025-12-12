@@ -35,7 +35,8 @@ _A stable connection is recommended for installing backup tools or uploading dat
 
 ### Mount the Installed OS Drive
 
-* If Disk is Encrypted:
+# If Disk is Encrypted:
+1. Open a terminal by pressing <kbd>Super</kbd> + <kbd>T</kbd> and type the following commands:
 
 ```bash
 sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root /mnt

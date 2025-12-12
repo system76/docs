@@ -74,7 +74,6 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 
 ### Additional backup Tool Options
 
-While **Deja Dup** remains a top choice for casual desktop users due to its simplicity and built-in GNOME intergration, several other tools offer more flexibility, performance, or control depending on audience.
 
 * **Deja Dup** -- encrypted backups with cloud support (Google Drive, Nextcloud)
 * Timeshift -- ideal for system snapshots and rollback (especially on Ubuntu/Pop!_OS)

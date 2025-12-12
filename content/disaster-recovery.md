@@ -85,7 +85,7 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 ### Additional backup Tool Options
 
 
-* Timeshift -- ideal for system snapshots and rollback (especially on Ubuntu/Pop!_OS)
+**Timeshift** -- ideal for system snapshots and rollback
 * Duplicati -- web-based interface, encrypted backups, supports cloud storage
 
 ### CLI & Power user Tools

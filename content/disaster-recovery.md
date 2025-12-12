@@ -75,7 +75,6 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 ### Additional backup Tool Options
 
 
-* **Deja Dup** -- encrypted backups with cloud support (Google Drive, Nextcloud)
 * Timeshift -- ideal for system snapshots and rollback (especially on Ubuntu/Pop!_OS)
 * Duplicati -- web-based interface, encrypted backups, supports cloud storage
 

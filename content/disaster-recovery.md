@@ -108,7 +108,7 @@ Use (+) and (-) to customize included/excluded folders.
 
 ## External Drive
 
-* Use USB 3.0 or 2.0
+Use USB 3.0 or 2.0  hard drive that matches the capacity of your current operating system drive.
 * Match or exceed the size of you OS drive.
 
 Internal Drive

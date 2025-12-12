@@ -110,7 +110,7 @@ Use (+) and (-) to customize included/excluded folders.
 
 Use USB 3.0 or 2.0  hard drive that matches the capacity of your current operating system drive.
 
-Internal Drive
+## Internal Drive
 
 * Open **Files** > **Other Locations**
 * Look for secondary drives or partitions.

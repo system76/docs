@@ -115,8 +115,11 @@ External Drive
 Internal Drive
 
 * Open **Files** > **Other Locations**
-2. Identify secondary drives or partitions. On System76 devices, secondary drives may be labeled **Extra Drive**.
-* Refer to your model's service manual to remove the drive.
+* Look for secondary drives or partitions.
+* On System76 devices, secondary drives may be labeled **Extra Drive**.
+* If you are troubleshooting boot or recovery issues, temporarily removing the secondary drive can help isolate the problem and prevent conflicts during the recovery process.
+* Refer to your model's service manual to remove the drive safely.
+
 * Use a USB-to-SATA adapter to connect it to another system.
 ### Initiate the Backup
 

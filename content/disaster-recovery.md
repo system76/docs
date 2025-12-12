@@ -99,7 +99,7 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 * Amanda/Zamanda -- centralized backup management, tape support
 * Veeam Agent for Linux -- commercial-grade, agent-based backups with recovery tools
 
-## Selecting Data to Back Up
+### Select Data to Back Up
 
 * By default, Deja Dup backs up the **Home** directory.
 * Excludes **Downloads** and **Trash**.

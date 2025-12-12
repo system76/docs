@@ -43,7 +43,7 @@ sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root
 ```
 
 # If Disk is not Encrypted:
-* Open **Files** > **Other Locations** and locate your system drive.
+1. Open **Files** > **Other Locations** and locate your system drive.
 
 ## Backup Tools
 

@@ -19,7 +19,7 @@ tableOfContents: true
 
 ## Installing & Uninstalling Applications via Terminal
 
-Launch the Terminal (SUPER + T) to Install applications using a command line interface. Terminal commands instruct package managers to retrieve application installation packages from repositories.
+Launch the Terminal `SUPER` + `T` to Install applications using a command line interface. Terminal commands instruct package managers to retrieve application installation packages from repositories.
 
 ### Flatpaks & .Deb Files
 
@@ -81,7 +81,7 @@ sudo apt dist-upgrade
 
 ### Installing an Application
 
-Cosmic includes a GUI called the Cosmic Store for easy installation and management of open source applications.
+Cosmic includes a graphical user interface (GUI) called the Cosmic Store for easy installation and management of open source applications.
 
 1. Open Cosmic Store by clicking the icon in the dock, or press `SUPER` and type “Cosmic Store”.
 
@@ -173,7 +173,7 @@ Add frequently used applications to the dock for quicker access. Applications th
 
 ![cosmic dock](/images/managing-apps/IURA_24_17.png)
 
-Pin applications to the dock by right clicking and selecting **Pin to App Tray**.
+Pin applications to the dock by right clicking and selecting `Pin to App Tray`.
 
 ![cosmic pin to app tray](/images/managing-apps/IURA_24_18.png)
 
@@ -199,6 +199,16 @@ Update Pop!_OS and installed applications using the Cosmic Store.
 2. Select `Update All`.
 
 ![cosmic store update](/images/managing-apps/IURA_24_20.png)
+
+#### Updating via Terminal
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt upgrade
+```
 
 ## Pop!\_OS 22.04
 

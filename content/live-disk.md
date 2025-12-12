@@ -23,7 +23,7 @@ tableOfContents: true
 
 ## Overview
 
-Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_OS or Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
+You can run a full version of Pop!_OS or Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
 - [Installing Pop!_OS](/articles/install-pop/)
 - [Installing Ubuntu](/articles/install-ubuntu/)
@@ -32,75 +32,48 @@ Pop!_OS and Ubuntu are remarkably flexible. You can run a full version of Pop!_O
 - [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
 - [Fixing the boot loader](/articles/bootloader)
 
-A live disk is a handy tool to have around. Support recommends using a live disk when doing hardware troubleshooting.
+A live disk can be helpful when doing hardware troubleshooting.
 
 ## Downloading the ISO
 
-In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can [download Pop!_OS here](https://pop.system76.com) or [Ubuntu 22.04 here](https://ubuntu.com/download/desktop).
+In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can download Pop!_OS 24.04 [here](https://system76.com/pop/download/) or Ubuntu [here](https://ubuntu.com/download/desktop).
 
 ## Verifying the Download
 
-Verifying your download is an important step: we generate a "checksum" for Pop!_OS images and recommend that you verify that your download matches that checksum before trying to install. This ensures that you've received the full, complete download and that it is not corrupted.
+Verifying your download is an important step: A "checksum" for Pop!_OS images is available on the software download page and it is recommended to verify your download matches the checksum before trying to install. This ensures you've received the full, complete download and that it is not corrupted.
 
 ### For Ubuntu/Pop!_OS
 
-Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal (<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> + <kbd>T</kbd> on Pop!_OS or <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> on Ubuntu) and run the following command:
-
-#### For Intel/AMD iso
+Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal (<kbd>SUPER</kbd> + <kbd>T</kbd> on Pop!_OS or <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> on Ubuntu) and run the following command:
 
 ```
-sha256sum Downloads/pop-os_22.04_amd64_intel_4.iso
+sha256sum Downloads/pop-os_*.iso
 ```
+**Note:** If you are trying to download a specific .iso version, replace the <kbd>*</kbd> with the version name in the .iso file name.
 
-#### For NVIDIA iso
+An example of the terminal output to expect is below. The large block of numbers and letters is the checksum to match with the download page. The version of the iso is indicated in the filename. In this example, we are viewing the checksum for Pop!_OS 24.04 intel version 20 .iso.
 
-```
-sha256sum Downloads/pop-os_22.04_amd64_nvidia_4.iso
-```
-
-**Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
-
-If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+![Checksum Terminal Output](/images/live-disk/checksumexample.png)
 
 ### For MacOS
 
 Assuming you downloaded Pop!_OS to your ~/Downloads folder, open the Terminal and run the following command:
 
-#### For Intel/AMD iso
-
 ```
-shasum -a 256  ~/Downloads/pop-os_22.04_amd64_intel_4.iso
+shasum -a 256  ~/Downloads/pop-os_*.iso
 ```
-
-#### For NVIDIA iso
-
-```
-shasum -a 256  ~/Downloads/pop-os_22.04_amd64_nvidia_4.iso
-```
-
-**Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
-
-If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+**Note:** If you are trying to download a specific .iso version, replace the <kbd>*</kbd> with the version name in the .iso file name.
 
 ### For Windows
 
 Assuming you downloaded Pop!_OS to your Downloads folder, open the Command Prompt and run the following command:
 
-#### For Intel/AMD iso
-
 ```
-CertUtil -hashfile Downloads\pop-os_22.04_amd64_intel_4.iso SHA256
+CertUtil -hashfile Downloads\pop-os_*.iso SHA256
 ```
+**Note:** If you are trying to download a specific .iso version, replace the <kbd>*</kbd> with the version name in the .iso file name.
 
-#### For NVIDIA iso
-
-```
-CertUtil -hashfile Downloads\pop-os_22.04_amd64_nvidia_4.iso SHA256
-```
-
-**Note:** The .iso filenames will change over time, so please make sure you are using the correct .iso filename.
-
-If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.
+**If the checksum does not match the one on the [download page](https://pop.system76.com), you may need to re-download your copy of Pop!_OS and ensure it completes downloading before re-verifying it.**
 
 ## Making the Bootable Drive
 
@@ -108,7 +81,7 @@ In order to make the bootable live disk, you must have a flash drive and softwar
 
 ### For Ubuntu/Pop!_OS
 
-Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'disks' to launch the Disks application.
+Press the <kbd>SUPER</kbd> key then type 'disks' to launch the Disks application.
 
 ![Disks](/images/live-disk/disks.png)
 
@@ -177,7 +150,7 @@ Use the arrow keys to select the USB drive, then press <kbd>Enter</kbd> to boot 
 
 Pop!_OS will boot into the familiar Pop!_OS desktop.
 
-![Live Disk](/images/live-disk/live-desktop.png)
+![Live Disk](/images/live-disk/2404installerlaunch.png)
 
 ## Using the Live Environment
 
@@ -193,4 +166,4 @@ A Pop!\_OS live disk can also be used to refresh an existing Pop!_OS installatio
 
 ### Backing Up Files
 
-Perhaps you're reinstalling, or maybe you can't boot but you want to try and recover and back up your files? The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar <u>Files</u> utility.
+The live environment will automatically detect and mount most file systems including Linux and Windows. You can then copy files from the disk to another external disk using the familiar <u>Files</u> utility.

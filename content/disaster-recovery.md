@@ -72,7 +72,7 @@ rsync -avxP \
 ```
 _Note:_ Upload speeds can vary depending on your internet provider, cloud service, or physical location and may even be subject to throttling. For faster and more reliable file transfer, it's recommended to use a wired Ethernet connection whenever possible.
 
-### Current backup Tools
+### Additional backup Tool Options
 
 While **Deja Dup** remains a top choice for casual desktop users due to its simplicity and built-in GNOME intergration, several other tools offer more flexibility, performance, or control depending on audience.
 

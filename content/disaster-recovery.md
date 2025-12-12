@@ -106,7 +106,7 @@ Use (+) and (-) to customize included/excluded folders.
 
 ### Choose a Backup Location
 
-External Drive
+## External Drive
 
 * Use USB 3.0 or 2.0
 * Match or exceed the size of you OS drive.

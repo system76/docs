@@ -42,7 +42,7 @@ _A stable connection is recommended for installing backup tools or uploading dat
 sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root /mnt
 ```
 
-* If Disk is not Encrypted:
+# If Disk is not Encrypted:
 * Open **Files** > **Other Locations** and locate your system drive.
 
 ## Backup Tools

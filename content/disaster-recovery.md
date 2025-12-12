@@ -102,7 +102,6 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 ### Select Data to Back Up
 
 By default, Deja Dup backs up the **Home** directory. This excludes **Downloads** and **Trash**.
-* Excludes **Downloads** and **Trash**.
 * Use + and -- to customize included/excluded folders.
 
 ## Choosing a Backup Location

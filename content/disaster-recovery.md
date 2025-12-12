@@ -86,7 +86,7 @@ _Note:_ Upload speeds can vary depending on your internet provider, cloud servic
 
 
 **Timeshift** -- ideal for system snapshots and rollback
-* Duplicati -- web-based interface, encrypted backups, supports cloud storage
+**Duplicati** -- web-based interface, encrypted backups, supports cloud storage
 
 ### CLI & Power user Tools
 

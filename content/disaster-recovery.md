@@ -45,7 +45,17 @@ sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root
 # If Disk is not Encrypted:
 1. Open **Files** > **Other Locations** and locate your system drive.
 
-## Backup Tools
+### Install Backup Software
+# Deja Dup
+_ Supports local, remote, and cloud backups and has ability to schedule automatic backups._
+1. Open **Pop! Shop** if using Pop!\_OS
+2. Search for **Deja Dup** in Pop! Shop and download the application. If using Ubuntu, open the **Backups** application, which is also Deja Dup.
+
+# Rsync
+_Command line utility that reserves file permissions and supports resumable transfers_
+1. Install rsync if not already installed.
+```bash
+sudo apt install rsync
 
 Deja Dup
 

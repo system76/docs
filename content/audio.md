@@ -29,11 +29,13 @@ If the system is not playing any audio, you can confirm the selected device from
 
 Access the Sound page of Settings by opening the Launcher (by default, press <kbd>Super</kbd>) and searching for Sound:
 
-![COSMIC Launcher search for Sound](images/audio/Launcher-Sound.png)
+![COSMIC Launcher](images/audio/COSMIC-Launcher.png)
+
+![COSMIC Launcher search for Sound](images/audio/COSMIC-Launcher-Sound.png)
 
 On the Sound page of Settings, the selected Input and Output Device will be displayed:
 
-![Sound Settings](images/audio/Sound-Settings.png)
+![Sound Settings](images/audio/COSMIC-Sound-Settings.png)
 
 ## Verify Audio Devices Detected by the System
 
@@ -80,7 +82,7 @@ This set of commands restarts the <u>PipeWire audio server</u> and its associate
 
 The program <u>PulseAudio Volume Control</u> is helpful to figure out which programs are producing audio, where that audio is being routed, what the default input/output devices are, and what the volume levels are set to. It can be installed using the Pop!_Shop or COSMIC Store:
 
-![PulseAudio Volume Control shown in the COSMIC Store](images/audio/pavucontrol-in-cosmic-store.png)
+![PulseAudio Volume Control shown in the COSMIC Store](images/audio/COSMIC-pavucontrol.png)
 
 ...or with this command:
 
@@ -92,23 +94,23 @@ Once installed, open the PulseAudio Volume Control app in the Activities or Appl
 
 The "Playback" tab will show a list of applications that are currently playing audio. The volume for each application can be individually controlled.
 
-![Playback tab in PulseAudio Volume Control](images/audio/pavucontrol-playback-tab.png)
+![Playback tab in PulseAudio Volume Control](images/audio/COSMIC-pavucontrol-playback.png)
 
 Similarly, the "Recording" tab will show a list of applications that are currently recording audio.
 
-![Recording tab in PulseAudio Volume Control](images/audio/pavucontrol-recording-tab.png)
+![Recording tab in PulseAudio Volume Control](images/audio/COSMIC-pavucontrol-recording.png)
 
 The "Output Devices" tab shows a list of output devices, and an indicator of what's being played out of each device. The green checkmark being selected indicates a device is the default output device.
 
-![Output devices tab in PulseAudio Volume Control](images/audio/pavucontrol-output-devices-tab.png)
+![Output devices tab in PulseAudio Volume Control](images/audio/COSMIC-pavucontrol-output.png)
 
 The "Input Devices" tab shows a similar list for input devices.
 
-![Input devices tab in PulseAudio Volume Control](images/audio/pavucontrol-input-devices-tab.png)
+![Input devices tab in PulseAudio Volume Control](images/audio/COSMIC-pavucontrol-input.png)
 
 Under "Configuration," each sound card should be listed.
 
-![Configuration tab in PulseAudio Volume Control](images/audio/pavucontrol-configuration-tab.png)
+![Configuration tab in PulseAudio Volume Control](images/audio/COSMIC-pavucontrol-configuration.png)
 
 ## Troubleshooting ALSA
 
@@ -120,11 +122,11 @@ alsamixer
 
 You can navigate between the different volume meters using the left and right arrow keys. Each meter can be adjusted using the up and down arrow keys. An "MM" at the bottom of a meter indicates that meter is muted. If the PulseAudio Volume Control shows that sound is playing, but you don't hear any sound, try unmuting all of the volume meters in alsamixer by pressing the <kbd>M</kbd> key while each meter is selected.
 
-![ALSAMixer](images/audio/ALSA-Mixer.png)
+![ALSAMixer](images/audio/COSMIC-ALSAmixer.png)
 
 If your system has more than one sound card (for example, an Intel sound card and an NVIDIA sound card in switchable-graphics systems), you can switch between them by pressing F6.
 
-![ALSAMixer select soundcard](images/audio/ALSA-Mixer-soundcard.png)
+![ALSAMixer select soundcard](images/audio/COSMIC-ALSAmixer-soundcard.png)
 
 ## Other Useful Commands
 
@@ -202,4 +204,4 @@ alsa-info
 
 When the script is finished gathering information, type <kbd>y</kbd> and press <kbd>Enter</kbd> to upload your output to the ALSA website, then send the link to Support.
 
-![ALSA-info](images/audio/alsa-info.png)
+![ALSA-info](images/audio/COSMIC-ALSA-info.png)

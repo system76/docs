@@ -29,9 +29,9 @@ If the system is not playing any audio, you can confirm the selected device from
 
 Access the Sound page of Settings by opening the Launcher (by default, press <kbd>Super</kbd>) and searching for Sound:
 
-![COSMIC Launcher](images/audio/COSMIC-Launcher.png)
+![COSMIC Launcher](images/audio/COSMIC-Launcher.jpg)
 
-![COSMIC Launcher search for Sound](images/audio/COSMIC-Launcher-Sound.png)
+![COSMIC Launcher search for Sound](images/audio/COSMIC-Launcher-Sound.jpg)
 
 On the Sound page of Settings, the selected Input and Output Device will be displayed:
 

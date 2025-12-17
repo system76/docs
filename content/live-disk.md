@@ -36,7 +36,7 @@ A live disk can be helpful when doing hardware troubleshooting.
 
 ## Downloading the ISO
 
-In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can download Pop!_OS 24.04 [here](https://system76.com/pop/download/) or Ubuntu [here](https://ubuntu.com/download/desktop).
+In order to install Pop!_OS or Ubuntu, you must first download the .iso image. This is a disk image with the operating system and installer on it. You can download [Pop!_OS here](https://system76.com/pop/download/) or [Ubuntu here](https://ubuntu.com/download/desktop).
 
 ## Verifying the Download
 

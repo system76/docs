@@ -1,16 +1,15 @@
 ---
-title: DaVinci Resolve (Install)
+title: Install DaVinci Resolve
 description: >
-   Want to up your video editing skills? Try DaVinci Resolve
+   Steps to install the DaVinci Resolve video editor from Blackmagic Design.
 keywords:
   - Video Editor
   - DaVinci Resolve
-  - Pop 20.04 LTS
 
 facebookImage: /_social/article
 twitterImage: /_social/article
 
-hidden: true
+hidden: false
 section: software
 tableOfContents: true
 ---
@@ -29,7 +28,7 @@ sudo apt install fakeroot libglu1-mesa libssl3 ocl-icd-opencl-dev qtwayland5 xor
 
 ### Download DaVinci Resolve and the MakeResolveDeb script
 
-**Please note that the MakeResolveDeb script is not created by Black Magic or System76 and is maintained by the community.**
+**Please note that the MakeResolveDeb script is not created by Blackmagic Design or System76 and is maintained by the community.**
 
 DaVinci Resolve can be downloaded [here](https://www.blackmagicdesign.com/products/davinciresolve/). Select the regular DaVinci Resolve version and not the Studio version, unless you have a license for the Studio version.
 

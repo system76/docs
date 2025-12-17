@@ -35,5 +35,19 @@
     "postcss": "^8.4.29",
     "shiki": "^0.9.3",
     "unist-util-visit": "^2.0.3"
-  }
+  },
+  "description": "The docs system is powered by [NuxtJS][1] with [`@nuxtjs/content`][2],\r [tailwindcss][3], and some other packages. It uses Markdown in the `/content/`\r folder to render every article. If you don't know what Markdown is (or need a\r refresher), take a minute to look over [the basics][4].",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/system76/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/system76/docs/issues"
+  },
+  "homepage": "https://github.com/system76/docs#readme"
 }

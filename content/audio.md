@@ -42,11 +42,11 @@ sudo apt install pavucontrol
 
 Once installed, open the <u>PulseAudio Volume Control</u> app in the Activities or Applications menu, or run `pavucontrol` in a terminal.
 
-The "Playback" tab will show a list of applications that are currently playing audio. The volume for each application can be individually controlled.
+The "Playback" tab will show a list of applications that are currently playing audio. In other words, you must be actively outputing audio for the devices to show up.  The volume for each application can be individually controlled.
 
 ![Playback tab](/images/audio/pavucontrol-playback.png)
 
-Similarly, the "Recording" tab will show a list of applications that are currently recording audio.
+Similarly, the "Recording" tab will show a list of applications that are currently recording audio. In other words, you must be actively recording audio for the devices to show up.
 
 ![Recording tab](/images/audio/pavucontrol-recording.png)
 

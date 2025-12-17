@@ -1,7 +1,6 @@
----
 title: Data Recovery
 description: >
- How to back up your files if your operating system doesn't boot
+  How to back up your files if your operating system doesn't boot
 keywords:
   - files
   - backup
@@ -15,31 +14,36 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-This guide helps users recover data and restore system functionality after _OS failure, update issues, bootloader errors, or hardware problems.
+This guide helps users recover data and restore system functionality after OS failure, update issues, bootloader errors, or hardware problems.
 
-## If you can't boot your installed OS
+# If you can't boot your installed OS
 
-# Pop!\_OS
-Use Recovery Partition: 
-1. Hold <kbd>Spacebar</kbd>or press <kbd>ESC</kbd> at boot menu. Select **Pop!\_OS Recovery**
-  _If Recovery is missing_: Download Pop!\_OS and create a Live USB from this [link](https://pop.system76.com/).
-# Ubuntu
-  Use Live USB: 
-  1. Download Ubuntu ISO from this [link](https://ubuntu.com/download) and create a live [USB](https://support.system76.com/articles/live-disk) using Rufus or Startup Disk Creator.
-2. Boot from USB and select **Try Ubuntu**.
+## Pop!_OS
 
-### Connect to Internet
+- Use Recovery Partition:
+  1. Hold <kbd>Spacebar</kbd> or press <kbd>ESC</kbd> at boot menu.
+  2. Select **Pop!_OS Recovery**.
 
-1. Use the **top-right system menu** to connect to Wi-Fi or ethernet.
-_A stable connection is recommended for installing backup tools or uploading data._
+_If Recovery is missing_: Download Pop!_OS and create a Live USB from this [link](https://pop.system76.com/).
 
-### Mount the Installed OS Drive
+## Ubuntu
 
-# If Disk is Encrypted:
-1. Open a terminal by pressing <kbd>Super</kbd> + <kbd>T</kbd> and type the following commands:
+- Use Live USB:
+  - Download Ubuntu ISO from this [link](https://ubuntu.com/download) and flash using Rufus or Startup Disk Creator.
+  - Boot from USB and select **Try Ubuntu**.
+
+## Connect to Internet
+
+- Use the **top-right system menu** to connect to Wi-Fi or ethernet.
+- A stable connection is recommended for installing backup tools or uploading data.
+
+## Mounting the Installed OS
+
+- If Disk is Encrypted:
 
 ```bash
-sudo cryptsetup luksOpen /dev/sdX ubuntu-root sudo mount /dev/mapper/ubuntu-root /mnt
+sudo cryptsetup luksOpen /dev/sdX ubuntu-root
+sudo mount /dev/mapper/ubuntu-root /mnt
 ```
 
 # If Disk is not Encrypted:

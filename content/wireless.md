@@ -21,7 +21,7 @@ Start with the quick checks, then follow the targeted diagnostic and recovery st
 
 ---
 
-## Initial Troubleshooting:
+## Initial Troubleshooting
 
 1.Reboot the router/modem and the computer.
 
@@ -54,13 +54,13 @@ If a single device struggles, temporarily set your router to a common mode and t
 
 Avoid complex access point features such as:
 
- -Band steering
+Band steering
 
- -Aggressive airtime fairness
+Aggressive airtime fairness
  
- -Deep MAC filtering
+ Deep MAC filtering
  
- -Ensure your device’s MAC address isn’t being filtered.
+ Ensure your device’s MAC address isn’t being filtered.
  
   Check with:
   
@@ -171,11 +171,11 @@ nmcli device wifi connect <SSID>
 
 For unstable networks, set IPv6 to “Ignore” in the network settings:
 
- 1.) Open Settings → Network.
+1. Open Settings → Network.
  
- 2.) Select your Wi-Fi connection.
+2. Select your Wi-Fi connection.
  
- 3.) Go to IPv6 tab → change method to Ignore.
+3. Go to IPv6 tab → change method to Ignore.
 
 ## Bluetooth and Airplane Mode Interactions
 

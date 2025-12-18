@@ -22,10 +22,11 @@ Start with the quick checks, then follow the targeted diagnostic and recovery st
 ---
 
 ## Initial Troubleshooting
-
 1.Reboot the router/modem and the computer.
 
+
 2.Toggle Airplane Mode by pressing **Fn + F11 →.**
+
 
 3.If your Wi-Fi issues started after an update, try removing the backported Wi-Fi driver using the command line. Open the Terminal by pressing Super+t and type the following and press Enter:
 
@@ -34,7 +35,9 @@ Start with the quick checks, then follow the targeted diagnostic and recovery st
 ```
 Then restart your computer.
 
+
 4.Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
+
 
 5.[Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
 
@@ -56,11 +59,15 @@ Avoid complex access point features such as:
 
 Band steering
 
+
 Aggressive airtime fairness
+
  
  Deep MAC filtering
+
  
  Ensure your device’s MAC address isn’t being filtered.
+
  
   Check with:
   
@@ -171,10 +178,13 @@ nmcli device wifi connect <SSID>
 
 For unstable networks, set IPv6 to “Ignore” in the network settings:
 
+
 1. Open Settings → Network.
  
+
 2. Select your Wi-Fi connection.
  
+
 3. Go to IPv6 tab → change method to Ignore.
 
 ## Bluetooth and Airplane Mode Interactions

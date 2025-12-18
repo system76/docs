@@ -51,7 +51,7 @@ sha256sum Downloads/pop-os_*.iso
 ```
 **Version numbers:** This command will list the checksums for all Pop!_OS .iso files. If you're trying to verify a specific .iso version, replace the <kbd>*</kbd> with the version name in the .iso filename.
 
-An example of the terminal output to expect is below. The large block of numbers and letters is the checksum to match with the download page. The version of the iso is indicated in the filename. In this example, we are viewing the checksum for Pop!_OS 24.04 intel version 20 .iso.
+An example of the terminal output to expect is below. The large block of numbers and letters is the checksum to match with the download page. The version of the iso is indicated in the filename. In this example, we are viewing the checksum for the Pop!_OS 24.04 generic version 20 .iso.
 
 ![Checksum Terminal Output](/images/live-disk/checksumexample.png)
 

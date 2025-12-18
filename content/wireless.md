@@ -60,8 +60,8 @@ Aggressive airtime fairness
 
 Deep MAC filtering
 
-Ensure your device’s MAC address isn’t being filtered.
- 
+Ensure your device’s MAC address isn’t being filtered
+
 Check with
   
 ```bash

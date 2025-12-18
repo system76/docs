@@ -62,7 +62,7 @@ Deep MAC filtering
 
 Ensure your device’s MAC address isn’t being filtered.
  
-  Check with:
+Check with
   
 ```bash
 ip link show | grep ether

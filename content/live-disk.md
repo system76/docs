@@ -81,15 +81,23 @@ In order to make the bootable live disk, you must have a flash drive and softwar
 
 ### For Ubuntu/Pop!_OS
 
-Press the <kbd>SUPER</kbd> key then type 'disks' to launch the Disks application.
+Press the <kbd>SUPER</kbd> key then type 'disks' to launch the Disks application. Select your flash drive in the list on the left.
 
 ![Disks](/images/live-disk/disks.png)
 
-Next, select the flash drive in the list on left and click on the three dots on the top right of the window. Now select `Restore Disk Image...` and select the Pop!\_OS or Ubuntu .iso file. Finally, click the `Start Restoring...` button and enter your user password.
+Click on the three vertical dots near the top right of the window, then select `Restore Disk Image...` from the menu. Next, select the Pop!\_OS or Ubuntu .iso file. Finally, click the `Start Restoring...` button.
 
-![Disks](/images/live-disk/disks-selection.png)
+![Disks File Selection](/images/live-disk/disks-file-selection.png)
 
-Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
+After entering your user password, flashing will begin and a progress bar will appear.
+
+![Disks Progress](/images/live-disk/disks-progress.png)
+
+Once the flash is complete, the Pop!_OS partition will appear on the flash drive, as seen below.
+
+![Disks Complete](/images/live-disk/disks-complete.png)
+
+Now it's time to boot it up on the machine that you want to install Pop!_OS on!
 
 ### For Windows/macOS
 

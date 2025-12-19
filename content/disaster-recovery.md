@@ -17,14 +17,14 @@ tableOfContents: true
 
 This guide helps users recover data and restore system functionality after _OS failure, update issues, bootloader errors, or hardware problems.
 
-# If you can't boot your installed OS
+## If you can't boot your installed OS
 
-## Pop!_OS
+### Pop!_OS
 
 * Use Recovery Partition: Hold **Spacebar** or press **ESC** at boot menu. Select **Pop!_OS Recovery**
 * **If Recovery is missing:** Create a Live USB from this [link](https://pop.system76.com/).
 
-## Ubuntu
+### Ubuntu
 
 * **Use Live USB:** Download Ubuntu ISO from this [link](https://ubuntu.com/download) and flash using Rufus or Startup Disk Creator.
 * Boot from USB and select **Try Ubuntu**.

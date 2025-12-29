@@ -122,6 +122,7 @@ If you installed from the Intel/AMD ISO and your system has discrete NVIDIA grap
 ```
 sudo apt install system76-driver-nvidia
 ```
+
 ### Initial Setup
 
 After rebooting, the COSMIC-greeter screen will appear and prompt for a password, or if you chose to encrypt your drive, you'll be prompted to enter that first.

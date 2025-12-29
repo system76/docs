@@ -24,6 +24,7 @@ If your system complains about a failed upgrade, package manager conflicts, brok
 
 ```bash
 sudo apt clean
+sudo rm -r /var/lib/apt/lists/*
 sudo apt update
 sudo dpkg --configure -a
 sudo apt install -f
@@ -33,12 +34,13 @@ sudo apt autoremove --purge
 
 ## What Do These Do?
 
-- `apt clean` - The `clean` command clears out the local repository of retrieved package files.
+- `apt clean` - The `clean` command clears out the local repository of retrieved package files (including older versions) from `/var/cache/apt/archives/`.
+- `sudo rm -r /var/lib/apt/lists/*` - This command clears all locally cached apt repository metadata (package lists and index files). This forces apt to fully re-fetch and rebuild its database of available packages on the next `apt update`.
 - `apt update` - the `update` option fetches indexes from all configured sources. These indexes are used by other apt options to determine which packages can be upgraded or installed.
 - `dpkg --configure -a` - The `--configure -a` command configures any unpacked but not yet configured packages.
 - `apt install -f` - The `-f` option attempts to correct broken dependencies
 - `apt dist-upgrade` - In addition to downloading and installing package updates, `dist-upgrade` downgrades or removes dependencies as necessary when upgrading packages. Dist-upgrade also has a conflict resolution system that will prioritize upgrading more important packages if needed.
-- `apt autoremove --purge` - Running this command with no specified package will remove any packages that were previously dependencies for other installed packages but are no longer required (either because the dependent package was removed, or because the package was updated to no longer depend on certain packages.)
+- `apt autoremove --purge` - Running this command with no specified package will remove any packages that were previously dependencies for other installed packages but are no longer required (either because the dependent package was removed, or because the package was updated to no longer depend on certain packages).
 
 ### Fix Individual Packages
 

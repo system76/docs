@@ -122,3 +122,46 @@ If you installed from the Intel/AMD ISO and your system has discrete NVIDIA grap
 ```
 sudo apt install system76-driver-nvidia
 ```
+### Initial Setup
+
+After rebooting, the COSMIC-greeter screen will appear and prompt for a password, or if you chose to encrypt your drive, you'll be prompted to enter that first.
+
+![Cosmic-greeter screen with date and time, clickable settings icons underneath and a password prompt box to the right. Icons under the date and time from left to right include; accessibility, keyboard layout, user accounts, session settings, suspend, restart and shutdown.](/images/install-pop/2404/cosmic-greeter-initial1.png)
+
+At first login, the screen reader will be active. The first screen at initial setup is for accessibility settings and is where to enable screen reader, magnifier, high contrast and color invert. To disable the screen reader during initial setup, toggle the screen reader button on the right. Click 'Next' to advance to the next setup window.
+
+![Initial Setup accessibility settings on the Pop 24.04 Welcome screen. First option is the 'screen reader' feature which can be enabled with the toggle button on the right, Next option is 'interface size' as a percentage in the dropdown menu to the right. After that is the 'additional scale options' with option to choose a percentage using a minus sign or plus sign. The last option is the 'Magnifier' which can be enabled with the toggle button on the right. Click the 'Next' button to advance to the next setup window](/images/install-pop/2404/initial-setup-1.png)
+
+Personalize the desktop appearance with one of the pre-configured color themes, then click 'Next.'
+
+![Personalize Appearance window during initial setup. Three options on top from left to right include COSMIC Dark, COSMIC Light and Comet Light. The second row of options from left to right includes Cream Light, Mocha Dark and Nebula Dark. You can further customize accent colors and the look of your desktop in Appearance Settings.](/images/install-pop/2404/initial-setup-personalize.png)
+
+Choose the layout configuration for your dock and panel and click 'Next.'
+
+![Layout configuration settings for the dock and panel during initial setup. The first option is Top Panel and Bottom Dock. The second option is Bottom Panel. Move the panel or dock to any edge, change the size and automatically hide them in Settings.](/images/install-pop/2404/initial-setup-layout-configuration.png)
+
+The following windows during initial setup are for informative purposes. Click 'Next' on each window to advance to the next.
+
+### New System Applications
+
+![New System Applications during initial setup window with icons for the applications highlighted in an image and text that says Enjoy an array of new system applications that come with the COSMIC desktop environment. Including Settings, COSMIC App Store, Files, Text Editor and Terminal.](/images/install-pop/2404/initial-setup-4.png)
+
+### Workspaces for Your Workflow
+
+![Workspaces for Your Workflow describes the features to automatically tile or float windows per-workspace using the tiling applet. You can select vertical or horizontal workspaces and pin workspaces to make them static.](/images/install-pop/2404/initial-setup-5.png)
+
+### New Keyboard Shortcuts
+
+![New Keyboard Shortcuts explains new shortcuts like Shift+Super+arrows or drag with the pointer to move windows. Take advantage of visual hints when using automatic window tiling](/images/install-pop/2404/initial-setup-6.png)
+
+### Fast and Efficient
+
+![Fast and Efficient informative window during initial setup. Press the Super or Windows key to activate the Launcher. Search and press enter to open an app or switch to it. You can also jump to settings or system functions like suspend. Type "?" to learn about the Launcher's advanced features](/images/install-pop/2404/initial-setup-7.png)
+
+Click 'Next' to advance to your new Linux Desktop Installation of Pop!_OS.
+
+![Pop 24.04 desktop after initial setup is complete](/images/install-pop/2404/initial-setup-8.png)
+
+To customize Pop!_OS 24.04 further, visit COSMIC Settings by clicking the toggle button icon in the dock.
+
+![COSMIC Settings in Pop!_OS 24.04 showing the Desktop tab, including wallpaper, appearance, panel, dock, window maangement and workspaces options](/images/install-pop/2404/initial-setup-9.png)

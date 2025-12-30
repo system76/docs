@@ -1,10 +1,10 @@
 ---
 title: Wireless Troubleshooting
 description: >
-  If you’re having problems with your wireless Internet connection, take a look at the suggestions in this article.
+  If your computer can’t connect to wireless networks or the connection is unstable, use this guide to diagnose and resolve the issue.
 keywords:
   - wireless
-  - wifi
+  - Wi-Fi
   - support
   - System76
 
@@ -16,35 +16,182 @@ section: network-troubleshooting
 tableOfContents: true
 ---
 
-WiFi issues are influenced by many different factors, including:
+If your computer can’t connect to wireless networks or the connection is unstable, this guide can help you diagnose and fix the issue.
 
-- Hardware (WiFi card, access point)
-- Settings at both ends of the connection
-- The local environment
+---
 
-## Basic Troubleshooting
+## Initial Troubleshooting
 
-If you’re having problems, try these steps first:
+1. Reboot the router/modem and the computer.
 
-- Try unplugging the wireless router or modem to reboot it.
-- Try airplane mode by pressing <kbd>Fn</kbd>+<kbd>F11</kbd>, waiting 10s, then disabling.
-- Try rebooting the computer.
+2. Toggle Airplane Mode from the system menu in the top-right corner of the screen, or using your keyboard shortcut which varies by System76 model. Most commonly **Fn + F11**
 
-Some router settings can cause problems. Try adjusting your access point to these settings:
-
-- WPA2-AES is preferred over WPA/WPA2 mixed mode or TKIP.
-- A channel width of 20 MHz in the 2.4 GHz band is more stable than automatic 20/40 MHz or fixed 40 MHz.
-- Set 2.4Ghz and 5Ghz SSID names differently.
-- Pick a fixed channel.  Use either 1, 6, or 11 in the 2.4 Ghz band, rather than automatic selection.
-- Check if the router is set to N speeds only.  Auto B/G/N is preferred.
-- Lower the max/burst speeds, turn off channel bonding, and reduce channel width. Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and may decrease stability. Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
-- After making these changes, reboot the router.
-
-If the issues started after you applied updates, try running this command to make sure a bad WiFi driver has not been installed, then reboot your computer:
+3. If your Wi-Fi issues began after an update and you are using an Intel wireless card with the `backport-iwlwifi-dkms` package installed manually, removing it may resolve the issue. Open the Terminal by pressing Super+T, type the following command, and press Enter:
 
 ```bash
-sudo apt remove backport-iwlwifi-dkms
+  sudo apt remove backport-iwlwifi-dkms
 ```
+Then restart your computer.
+
+4. Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
+
+5. [Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
+
+## Router and Access Point Recommendations
+
+Make sure your access point is configured for stability and compatibility.
+
+Use 2.4 GHz channels 1, 6, or 11 to minimize overlap.
+
+Set the channel width to 20 MHz for crowded networks.
+
+For 5 GHz, use an explicit channel instead of “Auto” when troubleshooting.
+
+Use mixed mode (b/g/n/ax) if devices vary by generation.
+
+If a single device struggles, temporarily set your router to a common mode and test.
+
+Avoid complex access point features such as
+
+Band steering
+
+Aggressive airtime fairness
+
+Deep MAC filtering
+
+Ensure your device’s MAC address isn’t being filtered
+
+Check with
+  
+```bash
+ip link show | grep ether
+```
+
+Then confirm that address is allowed in your router’s admin panel.
+
+You can also confirm what channel and frequency your connection is using:
+
+```bash
+iw dev
+iwlist wlan0 scan | grep -E 'SSID|Channel|Frequency'
+```
+
+## Device-Level Checks and Commands
+
+These commands help verify whether your wireless card and drivers are functioning correctly.
+
+```bash
+ip a
+```
+
+List all network interfaces and IP addresses confirms your Wi-Fi interface (usually wlp2s0 or wlan0) is recognized.
+
+```bash
+iw dev
+```
+
+Show wireless devices and their states.
+
+```bash
+sudo rfkill list
+```
+
+Check for hardware or software Wi-Fi blocks.
+
+```bash
+nmcli device status 
+```
+
+Check NetworkManager device states.
+
+```bash
+sudo systemctl restart NetworkManager 
+```
+
+Restart the network stack (safe to run anytime).
+
+```bash
+journalctl -b | grep -i network
+```
+
+View network-related boot logs.
+
+```bash
+dmesg | grep -i -E 'wifi|wlan|firmware|ieee80211|rtl|brcm|ath'
+```
+
+View driver and firmware kernel logs.
+
+To collect diagnostic info automatically:
+
+```bash
+sudo dmesg | grep -i wlan > ~/wireless-dmesg.txt
+```
+
+## Driver and Firmware Checks
+
+If the device is detected but unstable, verify the driver and firmware setup.
+
+Confirm the kernel has loaded the correct driver and firmware.
+
+Check for missing firmware messages:
+
+```bash
+dmesg | grep -i firmware
+```
+
+Reinstall firmware packages:
+
+```bash
+sudo apt update
+sudo apt install --reinstall linux-firmware
+```
+
+Test with a different router or mobile hotspot.
+
+Try a Live USB session to determine if the issue is system-specific.
+
+## NetworkManager and Configuration Tips
+
+NetworkManager controls Wi-Fi connections on most Linux systems.
+
+Restart NetworkManager:
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+Delete and recreate saved connections:
+
+```bash
+nmcli connection delete <SSID>
+nmcli device wifi connect <SSID>
+```
+
+For unstable networks, set IPv6 to “Ignore” in the network settings
+
+1. Open Settings → Network.
+
+2. Select your Wi-Fi connection.
+
+3. Go to the IPv6 tab → change method to Ignore.
+
+## Bluetooth and Airplane Mode Interactions
+
+ If Wi-Fi disappears when Bluetooth is active:
+
+```bash
+sudo rfkill list
+sudo systemctl restart bluetooth
+```
+
+If the issues started after you applied updates, add a modprobe configuration to prevent a problematic Wi-Fi driver from loading, then reboot your computer:
+
+```bash
+echo "blacklist iwlwifi" | sudo tee -a /etc/modprobe.d/iwlwifi.conf
+```
+
+Save, then reboot.
 
 ## Advanced Troubleshooting
 
@@ -52,7 +199,7 @@ If the above steps aren't working, or you would like to fine tune and improve yo
 
 ### Regulatory Domain
 
-In many cases, it's recommended to explicitly set the WiFi regulatory domain. Check yours with this command:
+In many cases, it's recommended to explicitly set the Wi-Fi regulatory domain. Check yours with this command:
 
 ```bash
 sudo iw reg get
@@ -107,22 +254,13 @@ If you have trouble with a Bluetooth headset and keeping a steady downlink speed
 
 ### Power Management
 
-Another way to help with Wifi issues is to turn off power management for the hardware. To do so, edit the configuration file with this command:
+Another way to help with Wi-Fi issues is to turn off Wi-Fi power management by adding a NetworkManager configuration, then reboot your computer:
 
 ```bash
-sudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+echo -e "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/default-wifi-powersave-off.conf
 ```
 
-And change the file to read (effective upon reboot):
-
-> \[connection\]  
-> wifi.powersave = 2  
-
-If `tlp` is installed, take a look at the settings file found here for additional Wifi power saving being enabled:
-
-```bash
-sudo gedit /etc/default/tlp
-```
+If TLP is installed, it may also enable Wi-Fi power saving. You can review its configuration in `/etc/default/tlp`.
 
 ## Useful Programs
 
@@ -144,7 +282,7 @@ sudo wavemon
 iwevent
 ```
 
-Run this command to watch what the Wifi hardware is doing.  Pay attention to the disconnect reasons, and ignore the scans.
+Run this command to watch what the Wi-Fi hardware is doing.  Pay attention to the disconnect reasons, and ignore the scans.
 
 ```bash
 sudo systemctl restart NetworkManager
@@ -186,15 +324,19 @@ This will reinstall network-manager, which can fix some network issues.
 
 ## Additional Info
 
-Wifi Speeds and Frequencies:
+Wi-Fi Speeds and Frequencies:
 
 - 54 Mb/s uses the 802.11g & 802.11b standards.
+
 - 145 Mb/s and 300 Mb/s modes use the 802.11n standard and 20MHz or 40MHz bandwidths.
+
 - 300Mbps / 40Mhz will provide the maximum performance in most cases.
+
 - 145Mbps / 20MHz will work better in areas with more access points.
+
 - 450Mbps uses a 60Mhz channel width and 600Mbps uses a 80Mhz channel width, and is typically less stable.
 
-The name of the Linux driver for Intel Wifi cards is called <u>iwlwifi</u> and is included in the kernel by default. All information about the driver can be found here:
+The name of the Linux driver for Intel Wi-Fi cards is called <u>iwlwifi</u> and is included in the kernel by default. All information about the driver can be found here:
 
 [wireless.wiki.kernel.org/en/users/drivers/iwlwifi](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi)
 
@@ -206,4 +348,8 @@ Sometimes the newest version of the firmware will clear up occasional bugs.  Ple
 
 ### Windows Dual Boot
 
-If you are dual booting Windows, you may lose access to your wifi card entirely after running driver/OS updates in Windows. You may be able to gain access to your wifi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.
+If you're dual booting Windows, you may lose access to your Wi-Fi card entirely after running driver/OS updates in Windows. You may be able to gain access to your Wi-Fi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.
+
+## Contact System76 Support
+
+If you purchased a System76 computer and you’ve tried all the steps above, but your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and [contact support](https://system76.com/contact/support).

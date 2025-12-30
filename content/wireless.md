@@ -1,5 +1,5 @@
 ---
-title: Wireless and Basic Troubleshooting
+title: Wireless Troubleshooting
 description: >
   If your computer can’t connect to wireless networks or the connection is unstable, use this guide to diagnose and resolve the issue.
 keywords:
@@ -16,27 +16,26 @@ section: network-troubleshooting
 tableOfContents: true
 ---
 
-If your computer can’t connect to wireless networks or the connection is unstable, use this guide to diagnose and resolve the issue.  
-Start with the quick checks, then follow the targeted diagnostic and recovery steps.
+If your computer can’t connect to wireless networks or the connection is unstable, this guide can help you diagnose and fix the issue.
 
 ---
 
 ## Initial Troubleshooting
 
-1.Reboot the router/modem and the computer.
+1. Reboot the router/modem and the computer.
 
-2.Toggle Airplane Mode by pressing **Fn + F11 →.**
+2. Toggle Airplane Mode from the system menu in the top-right corner of the screen, or using your keyboard shortcut which varies by System76 model. Most commonly **Fn + F11**
 
-3.If your Wi-Fi issues started after an update, try removing the backported Wi-Fi driver using the command line. Open the Terminal by pressing Super+t and type the following and press Enter:
+3. If your Wi-Fi issues began after an update and you are using an Intel wireless card with the `backport-iwlwifi-dkms` package installed manually, removing it may resolve the issue. Open the Terminal by pressing Super+T, type the following command, and press Enter:
 
 ```bash
   sudo apt remove backport-iwlwifi-dkms
 ```
 Then restart your computer.
 
-4.Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
+4. Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
 
-5.[Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
+5. [Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
 
 ## Router and Access Point Recommendations
 
@@ -175,7 +174,7 @@ For unstable networks, set IPv6 to “Ignore” in the network settings
 
 2. Select your Wi-Fi connection.
 
-3. Go to IPv6 tab → change method to Ignore.
+3. Go to the IPv6 tab → change method to Ignore.
 
 ## Bluetooth and Airplane Mode Interactions
 
@@ -186,16 +185,10 @@ sudo rfkill list
 sudo systemctl restart bluetooth
 ```
 
-You can also disable Bluetooth coexistence in the Intel Wi-Fi driver configuration file:
+If the issues started after you applied updates, add a modprobe configuration to prevent a problematic Wi-Fi driver from loading, then reboot your computer:
 
 ```bash
-sudo gedit /etc/modprobe.d/iwlwifi.conf
-```
-
-Add the following line:
-
-```bash
-options iwlwifi bt_coex_active=0
+echo "blacklist iwlwifi" | sudo tee -a /etc/modprobe.d/iwlwifi.conf
 ```
 
 Save, then reboot.
@@ -261,22 +254,13 @@ If you have trouble with a Bluetooth headset and keeping a steady downlink speed
 
 ### Power Management
 
-Another way to help with Wi-Fi issues is to turn off power management for the hardware. To do so, edit the configuration file with this command:
+Another way to help with Wi-Fi issues is to turn off Wi-Fi power management by adding a NetworkManager configuration, then reboot your computer:
 
 ```bash
-sudo gedit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+echo -e "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/default-wifi-powersave-off.conf
 ```
 
-And change the file to read (effective upon reboot):
-
-> \[connection\]  
-> wifi.powersave = 2  
-
-If `tlp` is installed, take a look at the settings file found here for additional Wi-Fi power saving being enabled:
-
-```bash
-sudo gedit /etc/default/tlp
-```
+If TLP is installed, it may also enable Wi-Fi power saving. You can review its configuration in `/etc/default/tlp`.
 
 ## Useful Programs
 
@@ -364,8 +348,8 @@ Sometimes the newest version of the firmware will clear up occasional bugs.  Ple
 
 ### Windows Dual Boot
 
-If you are dual booting Windows, you may lose access to your Wi-Fi card entirely after running driver/OS updates in Windows. You may be able to gain access to your Wi-Fi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.
+If you're dual booting Windows, you may lose access to your Wi-Fi card entirely after running driver/OS updates in Windows. You may be able to gain access to your Wi-Fi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.
 
 ## Contact System76 Support
 
-If you purchased a System76 computer and you’ve tried all the steps above, but your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and contact [System76 Support](https://system76.com/contact/support)
+If you purchased a System76 computer and you’ve tried all the steps above, but your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and [contact support](https://system76.com/contact/support).

@@ -24,12 +24,12 @@ If your computer can’t connect to wireless networks or the connection is unsta
 
 1. Reboot the router/modem and the computer.
 
-2. Toggle Airplane Mode from the system menu in the top-right corner of the screen, or using your keyboard shortcut which varies by System76 model. Most commonly **Fn + F11**
+2. Toggle Airplane Mode from the system menu in the top-right corner of the screen, or using your keyboard shortcut (most commonly **Fn + F11**, depending on your System76 model).
 
-3. If your Wi-Fi issues began after an update and you are using an Intel wireless card with the `backport-iwlwifi-dkms` package installed manually, removing it may resolve the issue. Open the Terminal by pressing Super+T, type the following command, and press Enter:
+3. If you've installed the backport-iwlwifi-dkms package for your Intel wireless card and your Wi-Fi issues began after an update, removing that package may resolve the issue.
 
 ```bash
-  sudo apt remove backport-iwlwifi-dkms
+sudo apt remove backport-iwlwifi-dkms
 ```
 Then restart your computer.
 
@@ -39,27 +39,27 @@ Then restart your computer.
 
 ## Router and Access Point Recommendations
 
-Make sure your access point is configured for stability and compatibility.
+- Make sure your access point is configured for stability and compatibility.
 
-Use 2.4 GHz channels 1, 6, or 11 to minimize overlap.
+- Use 2.4 GHz channels 1, 6, or 11 to minimize overlap.
 
-Set the channel width to 20 MHz for crowded networks.
+- Set the channel width to 20 MHz for crowded networks.
 
-For 5 GHz, use an explicit channel instead of “Auto” when troubleshooting.
+- For 5 GHz, use an explicit channel instead of “Auto” when troubleshooting.
 
-Use mixed mode (b/g/n/ax) if devices vary by generation.
+- Use mixed mode (b/g/n/ax) if devices vary by generation.
 
-If a single device struggles, temporarily set your router to a common mode and test.
+- If a single device struggles, temporarily set your router to a widely supported mode (such as **802.11n-only**) and test connectivity.
 
-Avoid complex access point features such as
+- Avoid complex access point features such as:
 
-Band steering
+    - Band steering
+      
+    - Aggressive airtime fairness
+    
+    - Deep MAC filtering
 
-Aggressive airtime fairness
-
-Deep MAC filtering
-
-Ensure your device’s MAC address isn’t being filtered
+Ensure your device’s MAC address isn’t being filtered.
 
 Check with
   
@@ -67,7 +67,7 @@ Check with
 ip link show | grep ether
 ```
 
-Then confirm that address is allowed in your router’s admin panel.
+Then confirm the MAC address is allowed in your router’s admin panel.
 
 You can also confirm what channel and frequency your connection is using:
 
@@ -84,31 +84,31 @@ These commands help verify whether your wireless card and drivers are functionin
 ip a
 ```
 
-List all network interfaces and IP addresses confirms your Wi-Fi interface (usually wlp2s0 or wlan0) is recognized.
+Confirm that your Wi-Fi interface (usually `wlp2s0` or `wlan0`) is recognized.
 
 ```bash
 iw dev
 ```
 
-Show wireless devices and their states.
+Show wireless devices and their states:
 
 ```bash
 sudo rfkill list
 ```
 
-Check for hardware or software Wi-Fi blocks.
+Check for hardware or software Wi-Fi blocks:
 
 ```bash
 nmcli device status 
 ```
 
-Check NetworkManager device states.
+Check NetworkManager device states:
 
 ```bash
 sudo systemctl restart NetworkManager 
 ```
 
-Restart the network stack (safe to run anytime).
+Restart the network stack (safe to run at any time).
 
 ```bash
 journalctl -b | grep -i network
@@ -132,8 +132,6 @@ sudo dmesg | grep -i wlan > ~/wireless-dmesg.txt
 
 If the device is detected but unstable, verify the driver and firmware setup.
 
-Confirm the kernel has loaded the correct driver and firmware.
-
 Check for missing firmware messages:
 
 ```bash
@@ -149,11 +147,9 @@ sudo apt install --reinstall linux-firmware
 
 Test with a different router or mobile hotspot.
 
-Try a Live USB session to determine if the issue is system-specific.
-
 ## NetworkManager and Configuration Tips
 
-NetworkManager controls Wi-Fi connections on most Linux systems.
+NetworkManager controls Wi-Fi connections on many Linux systems, including Pop!_OS and Ubuntu systems by default.
 
 Restart NetworkManager:
 
@@ -168,13 +164,11 @@ nmcli connection delete <SSID>
 nmcli device wifi connect <SSID>
 ```
 
-For unstable networks, set IPv6 to “Ignore” in the network settings
+For unstable networks, set IPv6 to “Ignore” in the network settings:
 
 1. Open Settings → Network.
-
 2. Select your Wi-Fi connection.
-
-3. Go to the IPv6 tab → change method to Ignore.
+3. Go to the IPv6 tab → change the method to Ignore.
 
 ## Bluetooth and Airplane Mode Interactions
 
@@ -188,7 +182,7 @@ sudo systemctl restart bluetooth
 If the issues started after you applied updates, add a modprobe configuration to prevent a problematic Wi-Fi driver from loading, then reboot your computer:
 
 ```bash
-echo "blacklist iwlwifi" | sudo tee -a /etc/modprobe.d/iwlwifi.conf
+echo "options iwlwifi bt_coex_active=0" | sudo tee -a /etc/modprobe.d/iwlwifi.conf
 ```
 
 Save, then reboot.
@@ -352,4 +346,4 @@ If you're dual booting Windows, you may lose access to your Wi-Fi card entirely 
 
 ## Contact System76 Support
 
-If you purchased a System76 computer and you’ve tried all the steps above, but your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and [contact support](https://system76.com/contact/support).
+If you purchased a System76 computer and you’ve tried all the steps above, but your wireless connection still isn’t working as expected, please collect the output from the diagnostic commands and [contact System76 support](https://system76.com/contact/support).

@@ -53,11 +53,11 @@ Then restart your computer.
 
 - Avoid complex access point features such as:
 
-    - Band steering
-      
-    - Aggressive airtime fairness
-    
-    - Deep MAC filtering
+  - Band steering
+
+  - Aggressive airtime fairness
+
+  - Deep MAC filtering
 
 Ensure your device’s MAC address isn’t being filtered.
 

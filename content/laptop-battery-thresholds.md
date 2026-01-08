@@ -33,8 +33,6 @@ To determine if your laptop has Open Firmware or proprietary firmware, see [this
 
 ## Configuring Charging Thresholds (Open Firmware)
 
-**Note:** This feature is not currently finished. Currently, the thresholds are reset when the EC is reset (which happens when the system is shut down and the power is unplugged). Once the feature is complete, the thresholds will be persistent and a GUI will be available to set them. To work around this limitation in the short term, you can [use systemd to set thresholds at boot](#at-boot).
-
 ### Using the terminal
 
 You can see the thresholds that are currently set using this command:
@@ -72,10 +70,11 @@ Charging thresholds are exposed by the firmware through ACPI, and the `system76_
 
 The thresholds can be controlled by reading from and writing to these sysfs files.
 
-### At boot
+### At boot (for older firmware)
 
-To work around the limitation in open firmware causing the thresholds to be reset when the system
-is shut down and unplugged, you can set the thresholds at boot via systemd. To do so, create a file called
+Firmware versions beginning with the date `2025-07-24` or earlier did not persist charging thresholds across EC resets (which occur when the system is shut down and the power is unplugged). To work around this lack of persistence, you can use systemd to set thresholds at boot.
+
+To do so, create a file called
 `/etc/systemd/system/charge-thresholds.service` with the following contents:
 
 ```

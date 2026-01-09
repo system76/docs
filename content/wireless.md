@@ -84,7 +84,7 @@ These commands help verify whether your wireless card and drivers are functionin
 ip a
 ```
 
-Confirm that your Wi-Fi interface (usually `wlp2s0` or `wlan0`) is recognized.
+List all wireless network interfaces to confirm that your Wi-Fi interface (usually `wlp2s0` or `wlan0`) is recognized.
 
 ```bash
 iw dev

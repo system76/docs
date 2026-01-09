@@ -26,7 +26,7 @@ If your computer can’t connect to wireless networks or the connection is unsta
 
 2. Toggle Airplane Mode from the system menu in the top-right corner of the screen, or using your keyboard shortcut (most commonly **Fn + F11**, depending on your System76 model).
 
-3. If you've installed the backport-iwlwifi-dkms package for your Intel wireless card and your Wi-Fi issues began after an update, removing that package may resolve the issue.
+3. If you've installed the `backport-iwlwifi-dkms` package for your Intel wireless card and your Wi-Fi issues began after an update, removing that package may resolve the issue.
 
 ```bash
 sudo apt remove backport-iwlwifi-dkms

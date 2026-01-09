@@ -191,28 +191,6 @@ Save, then reboot.
 
 If the above steps aren't working, or you would like to fine tune and improve you connection, see the following steps.
 
-### Regulatory Domain
-
-In many cases, it's recommended to explicitly set the Wi-Fi regulatory domain. Check yours with this command:
-
-```bash
-sudo iw reg get
-```
-
-If you get 00, that is a one-size-maybe-fits-all setting. Find yours here: [ISO_3166](http://wikipedia.org/wiki/ISO_3166-1).
-
-And set it permanently with this command:
-
-```bash
-sudo gedit /etc/default/crda
-```
-
-Change the last line to read:
-
-> REGDOMAIN=US  
-
-Save and close the text editor.
-
 ### IPv6
 
 Unless specifically required, you can set IPv6 to Ignore in Network Manager. Go to **System Settings** → **Network** and click the orange arrow next to your network, then click **Settings** → **Network** → **Ethernet** → **Gear Icon** → **IPv6 Settings** then change **Automatic** to **Disable**.
@@ -248,7 +226,7 @@ If you have trouble with a Bluetooth headset and keeping a steady downlink speed
 
 ### Power Management
 
-Another way to help with Wi-Fi issues is to turn off Wi-Fi power management by adding a NetworkManager configuration, then reboot your computer:
+Another way to help with Wi-Fi issues is to turn off Wi-Fi power management. This can be done by adding the appropriate NetworkManager configuration using the following command, then rebooting your computer:
 
 ```bash
 echo -e "[connection]\nwifi.powersave = 2" | sudo tee /etc/NetworkManager/conf.d/default-wifi-powersave-off.conf

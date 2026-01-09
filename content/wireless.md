@@ -59,17 +59,17 @@ Then restart your computer.
 
   - Deep MAC filtering
 
-Ensure your device’s MAC address isn’t being filtered.
+- Ensure your device’s MAC address isn’t being filtered.
 
-Check with
+  - Check your MAC address with:
   
-```bash
-ip link show | grep ether
-```
+  ```bash
+  ip link show | grep ether
+  ```
 
-Then confirm the MAC address is allowed in your router’s admin panel.
+  Then confirm that MAC address is allowed in your router’s admin panel.
 
-You can also confirm what channel and frequency your connection is using:
+- Confirm what channel and frequency your connection is using:
 
 ```bash
 iw dev

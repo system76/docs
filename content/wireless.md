@@ -24,7 +24,7 @@ If your computer can’t connect to wireless networks or the connection is unsta
 
 1. Reboot the router/modem and the computer.
 
-2. Toggle Airplane Mode from the system menu in the top-right corner of the screen, or using your keyboard shortcut (most commonly **Fn + F11**, depending on your System76 model).
+2. Toggle Airplane Mode from the system menu in the top-right corner of the screen, or using a keyboard shortcut (most commonly **Fn + F11**, depending on your System76 model).
 
 3. If you've installed the `backport-iwlwifi-dkms` package for your Intel wireless card and your Wi-Fi issues began after an update, removing that package may resolve the issue.
 

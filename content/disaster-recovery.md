@@ -15,111 +15,149 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](/articles/login-loop-pop) may be helpful instead.
+This guide helps users recover data and restore system functionality after _OS failure, update issues, bootloader errors, or hardware problems.
 
 ## If you can't boot your installed OS
 
-If you are not able to boot into your installed OS, then we will want to boot from a live disk. If you have Pop!\_OS installed we can use the Pop!\_OS Recovery Partition.
+### Pop!_OS
 
-### Creating the live disk (Bootable OS)
+* Use Recovery Partition: Hold **Spacebar** or press **ESC** at boot menu. Select **Pop!_OS Recovery**
+* **If Recovery is missing:** Create a Live USB from this [link](https://pop.system76.com/).
 
-We can use this [article](/articles/live-disk) to create a live disk of Ubuntu if you aren't using Pop. For more information about accessing Recovery see [here](/articles/pop-recovery). For Ubuntu, refer to this [article](/articles/bootloader).
+### Ubuntu
 
-We do not need to chroot into the installed OS to back up data, only mount the OS drive. Once this is done, we can install the software used for the backup process: <u>Deja Dup</u> (see below).
+* **Use Live USB:** Download Ubuntu ISO from this [link](https://ubuntu.com/download) and flash using Rufus or Startup Disk Creator.
+* Boot from USB and select **Try Ubuntu**.
 
-### Connect to the Internet
+### Connect to Internet
 
-![Top Left Menu](/images/disaster-recovery/Dialog.png)
+![datarecovery](/images/disaster-recovery/datarecovery_1.png)
 
-Use the top-right menu (as shown above) to connect to your Wi-Fi once booted into the live disk.
+* Use the **top-right system menu** to connect to Wi-Fi or ethernet.
+* A stable connection is recommended for installing backuo tools or uploading data.
 
-### Mount the installed OS
+### Mounting the Installed OS
 
-Once connected to the Internet, open <u>Firefox</u> and access the [bootloader](/articles/bootloader) article.
-Then copy and paste the encryption commands (if the OS is encrypted) and the mount commands.
+* If Disk is Encrypted:
 
-> **NOTE:** If you own System76 hardware and/or have a System76 Account, this will also allow you to access Support Tickets, copy/paste commands from those tickets or upload log files, etc.
+```bash
+sudo cryptsetup luksOpen /dev/sdX ubuntu-root 
+sudo mount /dev/mapper/ubuntu-root /mnt
+```
 
-## Software
+* If Disk is not Encrypted:
+* Open **Files** > **Other Locations** and locate your system drive.
 
-Once the drive is mounted, we can install software to back up files.
+## Backup Tools
 
-### Deja Dup
+Deja Dup
 
-[Déjà Dup](https://wiki.gnome.org/Apps/DejaDup) is a popular, straightforward backup option. It can be used to back up user data locally, remotely, or to a cloud server. It can also be set up to run automatically on a regular basis.
+* Available via **Pop!_Shop** or **Ubuntu Software Center**.
+* Supports local, remote, and cloud backups.
+* Can be scheduled for automatic backups.
 
-### Rsync
+![datarecovery](/images/disaster-recovery/datarecovery_2.png)
 
-[rsync](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories) is a popular command-line tool to copy data while keeping the permissions. It is useful if the system is powering down or if you want a command-line tool to copy the files.
+### Installing Deja Dup
+
+* Appears as **Backups** in the Activities menu.
+
+```bash
+sudo apt install deja-dup
+```
+
+### Rsync (CLI)
+
+* Preserves file permissions and supports resumable transfers
 
 ```bash
 rsync -avxP \
 /path/to/directory/to/backup \
 /path/to/directory/for/storing/backup
 ```
+_Note:_ Upload speeds can vary depending on your internet provider, cloud service, or physical location and may even be subject to throttling. For faster and more reliable file transfer, it's recommended to use a wired Ethernet connection whenever possible.
 
-> **NOTE:** Depending on your ISP/Cloud Provider or physical location. Upload speeds may vary or even be throttled. If possible, connect via Ethernet for a faster, more stable connection when transferring files.
+### Current backup Tools
 
-#### Installation
+While **Deja Dup** remains a top choice for casual desktop users due to its simplicity and built-in GNOME intergration, several other tools offer more flexibility, performance, or control depending on audience.
 
-To install <u>Deja Dup</u>, search for it in the <u>Pop!\_Shop</u>, <u>Ubuntu Software</u> or run this command:
+* **Deja Dup** -- encrypted backups with cloud support (Google Drive, Nextcloud)
+* Timeshift -- ideal for system snapshots and rollback (especially on Ubuntu/Pop!_OS)
+* Duplicati -- web-based interface, encrypted backups, supports cloud storage
 
-```bash
-sudo apt install deja-dup
-```
+### CLI & Power user Tools
 
-Once Deja Dup is installed, it will be labeled as "Backups" in the Activities overview.
+* BorgBackup -- deduplication, compression, encryption; great for data recovery
+* Restic -- fast, secure, cross-platform; supports many backends (SFTP, AWS, etc.)
+* **Rsync** -- highly customizable; ideal for scripted or incremental backups
 
-#### Selecting Data to Backup
+### Enterprise-grade Solutions
 
-With Deja Dup (Backups) open, you can select the folders you wish to save or ignore using the pages listed on the left. By default, Deja Dup will backup your entire home directory, which includes your Documents, Pictures, Music, and Videos folders. It ignores your Downloads folder and any items in the Trash. Use the plus (+) and minus (-) buttons as needed to modify both categories.
+* Amanda/Zamanda -- centralized backup management, tape support
+* Veeam Agent for Linux -- commercial-grade, agent-based backups with recovery tools
 
-![Selecting data to backup in Deja-Dup](/images/backup/deja_selection.png)
+## Selecting Data to Back Up
 
-#### Choosing a Backup Location
+![datarecovery](/images/disaster-recovery/datarecovery_3.png)
 
-On the **Storage location** page, you can configure the location where your backup will be stored.
+* By default, Deja Dup backs up the **Home** directory.
+* Excludes **Downloads** and **Trash**.
+* Use + and -- to customize included/excluded folders.
 
-![Selecting a backup location in Deja-Dup](/images/backup/deja_location.png)
+## Choosing a Backup Location
 
-## Hardware
+![datarecovery](/images/disaster-recovery/datarecovery_4.png)
 
-An external or internal drive can be used as a local backup location.
+External Drive
 
-### External
+* Use USB 3.0 or 2.0
+* Match or exceed the size of you OS drive.
 
-The specs below offer an idea on what to look for when purchasing external storage:
+Internal Drive
 
-- USB 3.0/2.0
-- Match your OS drive size or larger. If you have a 1TB drive, purchase a 1TB drive or a 2TB+ drive, if you want to store multiple backups.
+* Open **Files** > **Other Locations**
+* Look for secondary drives or partitions.
+* On System76 devices, secondary drives may be labeled **Extra Drive**.
+* Refer to your model's service manual to remove the drive.
+* Use a USB-to-SATA adapter to connect it to another system.
+* Back up data using the steps above.
 
-### Internal
+## If the Drive is the Problem
 
-If your system included a second drive beside the OS drive, we have this [article](/articles/extra-drive/) that goes over setting up the drive to auto-mount once the OS is either repaired or reinstalled.
-If we have the installed OS mounted in the live disk open the <u>Files</u> application then go to ***Other Locations*** to access the secondary drive. Unless you've changed the name of your drive, System76 systems ship with secondary drives labelled "Extra Drive" or "Extra Drive #."
+* Stop using the drive immediately.
+* Contact a professional data recovery service.
 
-#### Restoring Your Data
+_Note:_ System76 and Ubuntu do not offer or partner with recovery service. Drive manufacturers may offer recovery options under warranty.
 
-Once we have our data backed up we can reinstall the OS. This [article](/articles/install-pop) goes over the usual install process whether you're intalling from Recovery or a Live Disk:
+### Set Up Scheduled Backups
 
-Now that we reinstalled the OS we can start restoring our data. To restore your data with Deja Dup, select the **Overview** page, then click the **Restore...** button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.
+![datarecovery](/images/disaster-recovery/datarecovery_5.png)
 
-![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
+Use Deja Dup or rsync to automate backups on a daily or weekly schedule. This ensures your data is protected without manual effort.
+Follow the **3-2-1** Backup Rule
+To protect your data against hardware failure, theft, or unexpected events:
 
-## If the System Doesn't Power On
+* **3 total copies** of your important files
+* **2 stored locally** (e.g., internal drive + external USB)
+* **1 stored off-site**, such as:
+  * A cloud storage service (e.g., Dropbox, Google Drive, Backblaze)
+  * An external drive kept at a trsuted relative's house
+  * A secure location like a safety deposit box
+**This layered approach ensures that even if one or two copies are compromised, your data remains recoverable.**
 
-Refer to your models [service manual](/articles/guides) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
+## Restoring Data after Reinstall
 
-## What if the Drive is the Problem?
+![datarecovery](/images/disaster-recovery/datarecovery_6.png)
 
-If signs are pointing to the drive itself being the issue, and your files are corrupted, or no longer accessible, a data recovery service may be the only viable option. If that is the case, remove the drive, and stop using it until it can be taken to a data recovery site. Continued use of the drive may exacerbate bad sectors, or overwrite existing, partially retrievable data.
+1. Open **Backups**.
+2. Click **Restore**
 
-> **NOTE:** Data recovery services are not guarantees of data recovery, and may be cost-prohibitive for some users. System76 is not a data recovery service. Nor do we partner with any. A data recovery service is not a substitute for having robust backups. However, your drive manufacturer may provide data recovery services as part of your service agreement or warranty.
+![datarecovery](/images/disaster-recovery/datarecovery_7.png)
 
-## Future Steps
+3. Select the backup location.
 
-Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help.
+![datarecovery](/images/disaster-recovery/datarecovery_8.png)
 
-> **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two (2) copies on-site, and one (1) copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
+4. Deja Dup will restore the most recent backup to its original location.
 
-<!--Rsync/Your Script? Let's also link to the service manuals page in case they need to pull the drive.-->
+![datarecovery](/images/disaster-recovery/datarecovery_9.png)

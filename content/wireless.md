@@ -80,91 +80,72 @@ iwlist wlan0 scan | grep -E 'SSID|Channel|Frequency'
 
 These commands help verify whether your wireless card and drivers are functioning correctly.
 
-```bash
-ip a
-```
-
-List all wireless network interfaces to confirm that your Wi-Fi interface (usually `wlp2s0` or `wlan0`) is recognized.
-
-```bash
-iw dev
-```
-
-Show wireless devices and their states:
-
-```bash
-sudo rfkill list
-```
-
-Check for hardware or software Wi-Fi blocks:
-
-```bash
-nmcli device status 
-```
-
-Check NetworkManager device states:
-
-```bash
-sudo systemctl restart NetworkManager 
-```
-
-Restart the network stack (safe to run at any time).
-
-```bash
-journalctl -b | grep -i network
-```
-
-View network-related boot logs.
-
-```bash
-dmesg | grep -i -E 'wifi|wlan|firmware|ieee80211|rtl|brcm|ath'
-```
-
-View driver and firmware kernel logs.
-
-To collect diagnostic info automatically:
-
-```bash
-sudo dmesg | grep -i wlan > ~/wireless-dmesg.txt
-```
+- List all wireless network interfaces to confirm that your Wi-Fi interface (usually `wlp2s0` or `wlan0`) is recognized:
+  ```bash
+  ip a
+  ```
+- Show wireless devices and their states:
+  ```bash
+  iw dev
+  ```
+- Check for hardware or software Wi-Fi blocks:
+  ```bash
+  sudo rfkill list
+  ```
+- Check NetworkManager device states:
+  ```bash
+  nmcli device status 
+  ```
+- Restart the network stack (safe to run at any time):
+  ```bash
+  sudo systemctl restart NetworkManager 
+  ```
+- View network-related boot logs:
+  ```bash
+  journalctl -b | grep -i network
+  ```
+- View driver and firmware kernel logs:
+  ```bash
+  sudo dmesg | grep -i -E 'wifi|wlan|firmware|ieee80211|rtl|brcm|ath'
+  ```
+  - To save the logs to a file:
+    ```bash
+    sudo dmesg | grep -i -E 'wifi|wlan|firmware|ieee80211|rtl|brcm|ath' > ~/wireless-dmesg.txt
+    ```
 
 ## Driver and Firmware Checks
 
 If the device is detected but unstable, verify the driver and firmware setup.
 
-Check for missing firmware messages:
-
-```bash
-dmesg | grep -i firmware
-```
-
-Reinstall firmware packages:
-
-```bash
-sudo apt update
-sudo apt install --reinstall linux-firmware
-```
-
-Test with a different router or mobile hotspot.
+- Check for missing firmware messages:
+  ```bash
+  dmesg | grep -i firmware
+  ```
+- Reinstall firmware packages:
+  ```bash
+  sudo apt update
+  sudo apt install --reinstall linux-firmware
+  ```
+- Test with a different router or mobile hotspot.
 
 ## NetworkManager and Configuration Tips
 
 NetworkManager controls Wi-Fi connections on many Linux systems, including Pop!_OS and Ubuntu systems by default.
 
-Restart NetworkManager:
+To restart NetworkManager, run this command:
 
 ```bash
 sudo systemctl restart NetworkManager
 ```
 
-Delete and recreate saved connections:
+To delete and recreate saved connections, run these commands:
 
 ```bash
 nmcli connection delete <SSID>
 nmcli device wifi connect <SSID>
 ```
 
-For unstable networks, set IPv6 to “Ignore” in the network settings:
+If network connectivity seems unstable, try setting IPv6 to “Ignore” in the network settings:
 
 1. Open Settings → Network.
 2. Select your Wi-Fi connection.
@@ -172,20 +153,38 @@ For unstable networks, set IPv6 to “Ignore” in the network settings:
 
 ## Bluetooth and Airplane Mode Interactions
 
- If Wi-Fi disappears when Bluetooth is active:
+The `rfkill` command can be used to view whether Bluetooth, Wireless LAN (Wi-Fi), or both are disabled at a software or hardware level:
 
 ```bash
 sudo rfkill list
+```
+
+Sample output where Bluetooth and Wi-Fi are both enabled looks like this:
+
+```
+0: hci0: Bluetooth
+    Soft blocked: no
+    Hard blocked: no
+1: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no
+```
+
+If anything is blocked, check that airplane mode is off and that Bluetooth and Wi-Fi are enabled in your system settings.
+
+This command can be used to restart the Bluetooth stack:
+
+```
 sudo systemctl restart bluetooth
 ```
 
-If the issues started after you applied updates, add a modprobe configuration to prevent a problematic Wi-Fi driver from loading, then reboot your computer:
+If Wi-Fi drops after you've used Bluetooth (or vice versa), run the following command to add modprobe configuration to allow both Wi-Fi and Bluetooth to transmit at the same time:
 
 ```bash
 echo "options iwlwifi bt_coex_active=0" | sudo tee -a /etc/modprobe.d/iwlwifi.conf
 ```
 
-Save, then reboot.
+Reboot after running this command. Note that transmitting both Wi-Fi and Bluetooth at the same time can cause interference between the two; only certain wireless cards that don't track transmission properly (e.g. acting as if Bluetooth is always transmitting) need this option applied.
 
 ## Advanced Troubleshooting
 
@@ -250,49 +249,31 @@ sudo wavemon
 
 ## Useful Commands
 
-```bash
-iwevent
-```
+These are miscellaneous commands that may be useful for troubleshooting.
 
-Run this command to watch what the Wi-Fi hardware is doing.  Pay attention to the disconnect reasons, and ignore the scans.
-
-```bash
-sudo systemctl restart NetworkManager
-```
-
-This command will restart the service that manages all Internet traffic on the computer, which is usually easier than restarting the computer.
-
-```bash
-dmesg | grep iwlwifi
-```
-
-This will check the hardware startup and driver loading messages.
-
-```bash
-lspci | grep Network
-```
-
-This will check if the hardware is being detected by the kernel.
-
-```bash
-lsmod | grep iwlwifi
-```
-
-This will check to see if the device driver (module) is loaded.
-
-```bash
-sudo rm /etc/NetworkManager/system-connections/*
-```
-
-This will erase the stored information about all wireless access points.
-
-```bash
-sudo apt install --reinstall network-manager
-```
-
-This will reinstall network-manager, which can fix some network issues.
-
-**NOTE:** After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
+- To watch what the Wi-Fi hardware is doing, including disconnection reasons and scan logs:
+  ```bash
+  iwevent
+  ```
+- To check what hardware network controllers are detected by your system:
+  ```bash
+  lspci | grep Network
+  lsusb | grep Network
+  ```
+- To check if the Intel Wi-Fi kernel module is loaded:
+  ```bash
+  lsmod | grep iwlwifi
+  ```
+- To erase all saved network information, such as Wi-Fi passwords and other configuration:
+  ```bash
+  sudo rm /etc/NetworkManager/system-connections/*
+  ```
+- To reinstall NetworkManager:
+  ```bash
+  sudo apt install --reinstall network-manager
+  sudo systemctl poweroff
+  ```
+  After the system has completely powered off, power it back on. (This allows network hardware to fully reset.)
 
 ## Additional Info
 
@@ -308,15 +289,9 @@ Wi-Fi Speeds and Frequencies:
 
 - 450Mbps uses a 60Mhz channel width and 600Mbps uses a 80Mhz channel width, and is typically less stable.
 
-The name of the Linux driver for Intel Wi-Fi cards is called <u>iwlwifi</u> and is included in the kernel by default. All information about the driver can be found here:
+The name of the Linux driver for Intel Wi-Fi cards is called <u>iwlwifi</u> and is included in the kernel by default. All information about the driver can be found [on the Kernel.org wiki](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi).
 
-[wireless.wiki.kernel.org/en/users/drivers/iwlwifi](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi)
-
-The newest version of the <u>linux-firmware</u> package, which contains the iwlwifi driver, can be found here:
-
-[mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware](https://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware)
-
-Sometimes the newest version of the firmware will clear up occasional bugs.  Please download the newest `.deb` package.
+Sometimes the newest version of the `linux-firmware` package will clear up occasional bugs. You can download the newest `.deb` package from [the Kernel.org Ubuntu mirror](https://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware).
 
 ### Windows Dual Boot
 

@@ -17,59 +17,59 @@ section: pop
 tableOfContents: true
 ---
 
-## Installing & Uninstalling Applications via Terminal
+## Installing & Uninstalling Applications via the Terminal
 
-Launch the Terminal `SUPER` + `T` to Install applications using a command line interface. Terminal commands instruct package managers to retrieve application installation packages from repositories.
+Launch the Terminal (`SUPER` + `T`) to install applications using a command line interface. Which commands to use depends on which package manager you're using for an app.
 
-### Flatpaks & .Deb Files
+### Flatpaks
 
-**Flatpaks** will install a “containerized” version of the software. This means the software runs in its own sandbox, and the installation will include all dependencies and libraries required by the application. Flatpaks pull all dependencies from flathub.org, while installing with apt will pull from Ubuntu repos.
+**Flatpaks** are a modern type of package that utilize containerization and sandboxing for increased stability and security. Installing a Flatpak also installs all of its dependencies and libraries, and different Flatpak applications can use different versions of their dependencies at the same time if necessary. [Flathub](https://flathub.org/) is the default source for most Flatpak applications in Pop!_OS.
 
-Substitute `[packagename]` with the desired application (do not include brackets in the command).
+To install an application as a Flatpak:
 
-Apt install:
-
-```bash
-apt install [packagename]
+```
+flatpak install --app [packagename]
 ```
 
-Apt uninstall:
+Flatpak will ask which app to install if multiple apps match the package name you provided. If you omit the `--app` flag, you'll also see libraries that match the package name.
 
-```bash
-sudo apt remove [packagename]
+To uninstall an application as a Flatpak:
+
 ```
-
-Apt uninstall (alternative):
-
-```bash
-sudo apt purge [packagename]
-```
-
-Flatpak install:
-
-```bash
-flatpak install [packagename]
-```
-
-Flatpak uninstallL
-
-```bash
 flatpak uninstall [packagename]
 ```
 
-## Updating POP!\_OS via Terminal
+### .deb Files
 
-1. Open a terminal by pressing `SUPER` + `T` and type the following commands:
+**.deb files** (short for Debian files) are an older packaging format that forms the base of the operating system. They're installed by the `dpkg` or `apt` utilities (with `apt` also handling dependency resolution). Only one version of a dependency can usually be installed at a time with .deb files. [The Ubuntu repositories](https://packages.ubuntu.com/) are the primary source of non-default .deb packages available to install in Pop!_OS and Ubuntu.
+
+To install an application with apt:
+
+```bash
+sudo apt install [packagename]
+```
+
+To uninstall an application with apt:
+
+```bash
+sudo apt autoremove --purge [packagename]
+```
+
+The `autoremove` command removes dependencies that are no longer needed in addition to the app itself. The `--purge` flag removes system-wide configuration (such as from the `/etc/` directory) when uninstalling the package. User-specific configuration (in the `/home/` directory) is usually retained when removing packages with apt.
+
+## Updating Pop!\_OS via the Terminal
+
+### Updating System-wide Software (.deb)
+
+1. Open a terminal by pressing `Super` + `T` and type the following commands:
 
 ```bash
 sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove --purge
 ```
 
-```bash
-sudo apt dist-upgrade
-```
-
-2. Answer `Y` and enter the password when prompted.
+2. After each command, if prompted, answer `Y` and enter your password.
 
 ![yes](/images/managing-apps/IURA_22_24.png)
 
@@ -81,9 +81,9 @@ sudo apt dist-upgrade
 
 ### Installing an Application
 
-Cosmic includes a graphical user interface (GUI) called the Cosmic Store for easy installation and management of open source applications.
+COSMIC includes a graphical user interface (GUI) called the COSMIC Store for easy installation and management of applications.
 
-1. Open Cosmic Store by clicking the icon in the dock, or press `SUPER` and type “Cosmic Store”.
+1. Open the COSMIC Store by clicking the icon in the dock, or by pressing `Super` open the launcher and then typing “COSMIC Store”.
 
 ![cosmic store icon](/images/managing-apps/IURA_24_1.png)
 
@@ -92,6 +92,8 @@ Cosmic includes a graphical user interface (GUI) called the Cosmic Store for eas
 ![cosmic store search](/images/managing-apps/IURA_24_2.png)
 
 3. Select the system or flathub version.
+    - Flatpak packages (installed from Flathub by default) are generally more up-to-date. They'll only be available to the user who installed them.
+    - System (.deb) packages (installed from the Ubuntu or Pop!_OS repositories by default) are available to all user accounts on the computer.
 
 ![app download type version](/images/managing-apps/IURA_24_3.png)
 
@@ -107,11 +109,11 @@ The Cosmic Store does not include all applications available for installation in
 
 ![cosmic deb file on download](/images/managing-apps/IURA_22_5.png)
 
-3. After downloading, go to the Downloads folder and double click the .deb file.
+3. After downloading, go to the Downloads folder and double-click the .deb file.
 
 ![cosmic store icon](/images/managing-apps/IURA_24_5.png)
 
-4. Cosmic Store will open automatically and present you with the option to install the file.
+4. The COSMIC Store will open and present you with the option to install the file.
 
 ![cosmic store downloaded file installation](/images/managing-apps/IURA_24_6.png)
 
@@ -119,9 +121,9 @@ The Cosmic Store does not include all applications available for installation in
 
 Add, remove, and edit repositories using Repoman. Repoman allows users to add Personal Package Archives (PPAs). PPAs are created by developers to distribute software not included in default repositories. Users may want to add a PPA if their software is not included in the Pop!_Shop, or they may want to remove PPA’s after uninstalling a package.
 
-**Caution:** Adding PPA’s allows users to install software that has not been validated by System76 or other trusted linux repositories. PPA’s may not be vetted against packages that introduce security vulnerabilities. Users should take caution and only add PPA’s that they trust.
+**Caution:** Adding PPA’s allows users to install software that has not been validated by System76 or other trusted Linux repositories. PPA’s may not be vetted against packages that introduce security vulnerabilities. Users should take caution and only add PPA’s that they trust.
 
-1. Press `SUPER` and search for “Repoman"
+1. Press `Super` to open the launcher, then search for “Repoman".
 
 ![cosmic repoman](/images/managing-apps/IURA_24_7.png)
 
@@ -145,7 +147,7 @@ Add, remove, and edit repositories using Repoman. Repoman allows users to add Pe
 
 ### Removing a Repository
 
-Select a repository from the list and then click on the trashcan icon to delete the repository.
+Select a repository from the list, then click on the trashcan icon to delete the repository.
 
 ![cosmic repoman removing source list](/images/managing-apps/IURA_24_12.png)
 
@@ -153,11 +155,11 @@ Select a repository from the list and then click on the trashcan icon to delete 
 
 Find and start installed applications using these four methods.
 
-Use the Launcher to quickly find and launch installed applications. Pressing The `SUPER` key displays the Launcher. Search for applications by name, then hit `Enter` to launch the application.
+Use the Launcher to quickly find and launch installed applications. Pressing the `SUPER` key displays the Launcher. Search for applications by name, then hit `Enter` to launch the application.
 
 ![cosmic launch app](/images/managing-apps/IURA_24_13.png)
 
-View installed applications with Show Applications. Display installed applications by clicking Show Applications in the dock.
+View installed applications with Show Applications. Display installed applications by clicking Applications in the dock.
 
 ![cosmic applications icon](/images/managing-apps/IURA_24_14.png)
 
@@ -196,7 +198,7 @@ Update Pop!_OS and installed applications using the Cosmic Store.
 
 1. Open the Cosmic Store by clicking the icon in the dock. Click `Updates` on the sidebar.
 
-2. Select `Update All`.
+2. Select `Update all`.
 
 ![cosmic store update](/images/managing-apps/IURA_24_20.png)
 
@@ -242,7 +244,7 @@ The Pop!_Shop does not include all applications available for installation in Po
 
 ![pop download .deb app ](/images/managing-apps/IURA_22_5.png)
 
-3. After downloading, go to the Downloads folder and double click the .deb file.
+3. After downloading, go to the Downloads folder and double-click the .deb file.
 
 ![pop downloaded .deb file](/images/managing-apps/IURA_22_6.png)
 
@@ -258,7 +260,7 @@ The Pop!_Shop does not include all applications available for installation in Po
 
 Add, remove, and edit repositories using Repoman. Repoman allows users to add Personal Package Archives (PPAs). PPAs are created by developers to distribute software not included in default repositories. Users may want to add a PPA if their software is not included in the Pop!_Shop, or they may want to remove PPA’s after uninstalling a package.
 
-**Caution:** Adding PPA’s allows users to install software that has not been validated by System76 or other trusted linux repositories. PPA’s may not be vetted against packages that introduce security vulnerabilities. Users should take caution and only add PPA’s that they trust.
+**Caution:** Adding PPA’s allows users to install software that has not been validated by System76 or other trusted Linux repositories. PPA’s may not be vetted against packages that introduce security vulnerabilities. Users should take caution and only add PPA’s that they trust.
 
 1. Access Repoman by launching the Pop!_Shop and click the `System Software Sources` or `Ctrl` + `S`.
 

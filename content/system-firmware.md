@@ -31,7 +31,9 @@ These instructions are for System76 owners who have been prompted for a firmware
 
 ### Starting the Update (GUI)
 
-In Pop!\_OS, you can check for firmware updates using **Settings -> Firmware**.
+In Pop!\_OS 24.04, you can check for firmware updates by running **Firmware Manager** from your list of installed Applications.
+
+In Pop!\_OS 22.04, you can check for firmware updates using **Settings -> Firmware**.
 
 ![Firmware settings in Pop!_OS](/images/system-firmware/gui-pop.jpg)
 
@@ -135,7 +137,7 @@ After creating the live disk, [access the boot menu](/articles/boot-menu/) and s
 lsblk
 ```
 
-Identify the EFI partition in the list. (The EFI partition is usually the first partition on one of the drives, and is around 512MB in size or slightly smaller.) Once you have identified the EFI partition, use the following commands to set up the system for a firmware update:
+Identify the EFI partition in the list. (The EFI partition is usually the first partition on one of the drives, and is around 1024MB in size or slightly smaller.) Once you have identified the EFI partition, use the following commands to set up the system for a firmware update:
 
 #### For NVMe Drives
 
@@ -144,7 +146,6 @@ sudo apt update
 sudo apt install system76-driver system76-firmware
 sudo mkdir -p /boot/efi
 sudo mount /dev/nvme0n1p1 /boot/efi
-gnome-control-center firmware
 ```
 
 Where `/dev/nvme0n1p1` is the EFI system partition.
@@ -156,7 +157,6 @@ sudo apt update
 sudo apt install system76-driver system76-firmware
 sudo mkdir -p /boot/efi
 sudo mount /dev/sda1 /boot/efi
-gnome-control-center firmware
 ```
 Where `/dev/sda1` is the EFI system partition.
 

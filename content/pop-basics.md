@@ -21,7 +21,7 @@ Welcome to the Pop!_OS desktop! The Pop!_OS operating system provides all the fe
 
 ## Pop!_OS COSMIC Desktop Environment
 
-Pop!_OS 24.04 includes the COSMIC Desktop environment. COSMIC is written in the rust programming language and is an acronym for _Computer Operating System Main Interface Components_.
+Pop!\_OS 24.04 includes the COSMIC Desktop environment. COSMIC is written in the rust programming language and is an acronym for _Computer Operating System Main Interface Components_.
 
 ## The Launcher
 

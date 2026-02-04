@@ -33,7 +33,7 @@ Now you will have installed Minecraft! Open Minecraft and log in with your usern
 
 ## Debian and Ubuntu
 
-Go to https://www.minecraft.net/download and download the _Debian + Debian based_ version. Open the downloaded `.deb` file to install.
+Go to [minecraft.net](https://www.minecraft.net/download) and download the _Debian + Debian based_ version. Open the downloaded `.deb` file to install.
 
 ![Minecraft download page listing multiple versions](/images/minecraft/downloadversions.png)
 
@@ -44,7 +44,7 @@ wget https://launcher.mojang.com/download/Minecraft.deb
 sudo dpkg --install Minecraft.deb
 ```
 
-Now start Minecraft! Log in with your username and password and start playing!
+Now start Minecraft from the app launcher! Log in with your username and password and start playing!
 
 ---
 

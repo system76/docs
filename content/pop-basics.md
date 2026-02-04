@@ -21,13 +21,13 @@ Welcome to the Pop!_OS desktop! The Pop!_OS operating system provides all the fe
 
 ## Pop!_OS COSMIC Desktop Environment
 
-Pop!_OS 24.04 includes the COSMIC Desktop environment. COSMIC is written in the rust programming language and is an acronym for _Computer Operating System Main Interface Components_.
+Pop!_OS 24.04 includes the COSMIC Desktop environment. COSMIC is written in the rust programming language and is an acronym for <i>Computer Operating System Main Interface Components</i>.
 
 ## The Launcher
 
 The <u>Launcher</u> is the software responsible for accessing and opening applications and files.
 
-_This video demonstrates the powerful funcationality of the COSMIC Desktop launcher._
+<i>This video demonstrates the powerful funcationality of the COSMIC Desktop launcher.</i>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zHuXKCPbX9E?si=WWSfW8zj4zgEEnRq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -117,7 +117,7 @@ Move active application windows to the previous or next workspaces by clicking a
 
 ## Applications
 
-<u>Applications</u> opens the application menu, which shows installed programs and program folders in alphabetical order. There is also a search box located at the top of the page to quickly find a desired application or to search the Cosmic Store. 
+<u>Applications</u> opens the application menu, which shows installed programs and program folders in alphabetical order. There is also a search box located at the top of the page to quickly find a desired application or to search the Cosmic Store.
 
 ![Applications overview in Pop!_OS 24.04](/images/pop-basics/pop-basics-applications-overview.png)
 

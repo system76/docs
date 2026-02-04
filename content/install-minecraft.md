@@ -32,29 +32,19 @@ Now you will have installed Minecraft! Open Minecraft and log in with your usern
 ![Minecraft Installed](/images/minecraft/minecraftinstalled.png)
 
 ## Debian and Ubuntu
-  
-First, you will need Java runtime.  
+
+Go to https://www.minecraft.net/download and download the _Debian + Debian based_ version. Open the downloaded `.deb` file to install.
+
+![Minecraft download page listing multiple versions](/images/minecraft/downloadversions.png)
+
+Alternatively you can use the terminal:
 
 ```bash
-sudo apt-get install openjdk-8-jre
+wget https://launcher.mojang.com/download/Minecraft.deb
+sudo dpkg --install Minecraft.deb
 ```
 
-So, you want oracle runtime instead? But.... fine....  
-Get the repository and install the package.  
-
-```bash
-sudo apt-add-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
-```
-
-You will then download the launcher. Go to the [minecraft.net](https://minecraft.net/en-us/download/) page to download or...
-
-```bash
-wget http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
-```
-
-Now run the file! Log in with your username and password and start playing!
+Now start Minecraft! Log in with your username and password and start playing!
 
 ---
 

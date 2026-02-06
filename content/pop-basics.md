@@ -42,7 +42,7 @@ Additional features can be accessed by starting your search with specific charac
 - **Built-in Calculator:** Type <kbd>=</kbd> and the equation, then press <kbd>Enter</kbd> for the result.
 - **File Search:** Find files by typing `find` followed by the search term or file name, then select a result to open it.
 - **Internet Search:** Search a variety of popular search engines from the Launcher. You can type the name of the search engine, like `google` or `duckduckgo`, or use abbreviations (`gs` and `ddg`, respectively), followed by your search term. When the Launcher result is selected, the default web browser will open with the search results.
-    - The Launcher's GitHub repository contains [a full list of supported search engines and abbreviations](https://github.com/pop-os/launcher/blob/master/plugins/src/web/config.ron).
+  - The Launcher's GitHub repository contains [a full list of supported search engines and abbreviations](https://github.com/pop-os/launcher/blob/master/plugins/src/web/config.ron).
 
 ## The Dock
 
@@ -60,7 +60,7 @@ Dock settings include the following options:
 - Which screen(s) and where on the screen the Dock should appear
 - The size and background opacity of the Dock
 - Which applets are present on the Dock, and in what order
-    - Click `Configure dock applets` to rearrange existing applets on the Dock, and then `Add applet` to view the list of available applets.
+  - Click `Configure dock applets` to rearrange existing applets on the Dock, and then `Add applet` to view the list of available applets.
 
 ![Add Applets in Pop 24.04 COSMIC Dock Settings](/images/pop-basics/pop-basics-add-applet.png)
 
@@ -85,8 +85,8 @@ This video shows the auto-tiling and window stacking features of the COSMIC desk
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/xTb5VhctG50' frameborder='0' allowfullscreen></iframe></div>
 
 - Click the tiling icon in the top right of the panel to access tiling settings.
-    - Toggle the `Tile current workspace` option to activate or deactivate tiling in the current workspace.
-    - The `Active hint` option highlights the border of the active application window in a color of your choice.
+  - Toggle the `Tile current workspace` option to activate or deactivate tiling in the current workspace.
+  - The `Active hint` option highlights the border of the active application window in a color of your choice.
 
 ![Tile current workspace in Pop!_OS 24.04](/images/pop-basics/pop-basics-activate-tiling.png)
 

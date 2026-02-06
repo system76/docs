@@ -27,7 +27,7 @@ Pop!\_OS 24.04 includes the [COSMIC desktop environment](https://system76.com/co
 
 The <u>Launcher</u> is a search-based utility for accessing and opening applications and files. This video demonstrates the powerful funcationality of the COSMIC Launcher:
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/zHuXKCPbX9E' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/zHuXKCPbX9E' frameborder='0' allowfullscreen></iframe></div>
 
 To open the Launcher, press the <kbd>SUPER</kbd> key, which is usually located between the `Fn` and `Alt` keys (and may have an icon with a window on it). You can also click the Launcher magnifying glass icon in the dock.
 
@@ -82,7 +82,7 @@ Adjust system settings and personal preferences like the look and feel of the de
 
 This video shows the auto-tiling and window stacking features of the COSMIC desktop:
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/xTb5VhctG50' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/xTb5VhctG50' frameborder='0' allowfullscreen></iframe></div>
 
 - Click the tiling icon in the top right of the panel to access tiling settings.
   - Toggle the `Tile current workspace` option to activate or deactivate tiling in the current workspace.
@@ -103,7 +103,7 @@ Accessing <u>Workspaces</u> will show an overview of all open windows, available
 
 This video shows the Workspaces functionality in Pop!\_OS 24.04:
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/hqgk5tMfI3A' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/hqgk5tMfI3A' frameborder='0' allowfullscreen></iframe></div>
 
 By default, there are three ways to access the Workspaces overview:
 

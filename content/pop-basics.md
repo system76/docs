@@ -141,4 +141,4 @@ To update currently installed software, click `Updates` in the left menu in the 
 
 For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [this article](/articles/pop-keyboard-shortcuts).
 
-You can read more about Pop!\_OS features [here](/https://system76.com/pop/) or [view the source code](https://github.com/pop-os/).
+You can read more about Pop!\_OS features [here](https://system76.com/pop/) or [view the source code](https://github.com/pop-os/).

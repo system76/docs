@@ -17,35 +17,36 @@ section: pop
 tableOfContents: true
 ---
 
-Welcome to the Pop!_OS desktop! The Pop!_OS operating system provides all the features you would expect from a modern desktop. The basic elements are outlined below.
+Welcome to the Pop!_OS desktop! Pop!_OS provides all the features you would expect from a modern operating system. The basic elements are outlined below.
 
-## Pop!_OS COSMIC Desktop Environment
+## COSMIC Desktop Environment
 
-Pop!\_OS 24.04 includes the COSMIC Desktop environment. COSMIC is written in the rust programming language and is an acronym for _Computer Operating System Main Interface Components_.
+Pop!\_OS 24.04 includes the [COSMIC desktop environment](https://system76.com/cosmic). COSMIC is written in the Rust programming language and is an acronym for _Computer Operating System Main Interface Components_.
 
 ## The Launcher
 
-The <u>Launcher</u> is the software responsible for accessing and opening applications and files.
+The <u>Launcher</u> is a search-based utility for accessing and opening applications and files. This video demonstrates the powerful funcationality of the COSMIC Launcher:
 
-_This video demonstrates the powerful funcationality of the COSMIC Desktop launcher._
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/zHuXKCPbX9E' frameborder='0' allowfullscreen></iframe></div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zHuXKCPbX9E?si=WWSfW8zj4zgEEnRq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-To open the launcher press the <kbd>SUPER</kbd> key, which is usually located between `Fn` and `Alt` keys and may have an icon with a window on it. You can also click the launcher magnifying glass icon in the dock.
+To open the Launcher, press the <kbd>SUPER</kbd> key, which is usually located between the `Fn` and `Alt` keys (and may have an icon with a window on it). You can also click the Launcher magnifying glass icon in the dock.
 
 ![Activating the Launcher in Pop!_OS 24.04](/images/pop-basics/pop-basics-launcher-example.png)
 
-To switch between open applications you can click, or arrow down, the list of applications in the Launcher window and press `Enter`. Keyboard shortcuts to launch the application are listed to the right of the application name in the launcher.
+To switch between open applications, you can click one of the windows listed in the launcher, or use the up and down arrow keys to select one followed by `Enter`. Installed applications available to launch are listed below the open windows. Keyboard shortcuts to activate the first ten results are listed on the right side.
 
-## Launcher Features
+### Launcher Features
 
-- Built-in Calculator: Type <kbd>=</kbd> and the equation then press enter</kbd> for the result.
-- File Search: Find files by typing `find` and the search term or file name then select the result in the launcher.
-- Internet Search: Search Google or DuckDuckGo within the launcher. Type `google` or `duckduckgo` in the launcher with the search term, then press enter. The default web browser will open with the search results.
+Additional features can be accessed by starting your search with specific characters or terms.
 
-## COSMIC Dock
+- **Built-in Calculator:** Type <kbd>=</kbd> and the equation, then press <kbd>Enter</kbd> for the result.
+- **File Search:** Find files by typing `find` followed by the search term or file name, then select a result to open it.
+- **Internet Search:** Search a variety of popular search engines from the Launcher. You can type the name of the search engine, like `google` or `duckduckgo`, or use abbreviations (`gs` and `ddg`, respectively), followed by your search term. When the Launcher result is selected, the default web browser will open with the search results.
+    - The Launcher's GitHub repository contains [a full list of supported search engines and abbreviations](https://github.com/pop-os/launcher/blob/master/plugins/src/web/config.ron).
 
-By default, the <u>Dock</u> is the bottom bar on the desktop conisting of application icons, called applets. To customize the dock, as well as other aspects of the look and feel of the Pop!\_OS desktop environment, navigate to `Settings` -> `Desktop`. To change settings for the dock select the `Dock` submenu.
+## The Dock
+
+By default, the <u>Dock</u> is located at the bottom of the screen and consists of pinned application icons, running applications, and minimized windows. To customize the dock, as well as other aspects of the desktop environment, navigate to `Settings` -> `Desktop`. To change settings for the Dock, select the `Dock` submenu.
 
 ![Access Dock Settings in Pop 24.04](/images/pop-basics/pop-basics-access-dock-in-cosmic-settings.png)
 
@@ -53,92 +54,93 @@ By default, the <u>Dock</u> is the bottom bar on the desktop conisting of applic
 
 Dock settings include the following options:
 
-- Enable/Disable the dock
-- `Automatically hide dock`.
-- `Extend dock to screen edges` or only take up space in the middle.
-- Position on screen has options for `Bottom`, `Right`, `Left` or `Top` of the screen.
-- Choose which display to show the dock on.
-- Change the style with size and appearance adjustments.
-- `Configure dock applets` enables customization of which applications are accessible with one click on the dock. Applets can be added to the **Start segment**, **Center segment** and/or **End segment**. Click `Add applet` to view the list of available applets.
+- Whether to enable or disable the Dock
+- Whether to hide the Dock when it's not in use
+- Whether to extend the Dock to the screen edges or only take up space in the middle
+- Which screen(s) and where on the screen the Dock should appear
+- The size and background opacity of the Dock
+- Which applets are present on the Dock, and in what order
+    - Click `Configure dock applets` to rearrange existing applets on the Dock, and then `Add applet` to view the list of available applets.
 
 ![Add Applets in Pop 24.04 COSMIC Dock Settings](/images/pop-basics/pop-basics-add-applet.png)
 
-## COSMIC Panel
+The Launcher, Workspaces, and Applications shortcuts are their own applets; all other pinned applications are part of the `App Tray` applet. To remove pinned applications from the Dock or pin running applications to the Dock, right-click their icon in the Dock and select the appropriate option.
 
-In the default settings, the <u>Panel</u> is the top bar of the desktop that includes the clock and other icons to access various settings. The components of the panel are also called applets, like the dock has. The panel applets can be used to adjust various settings like volume, bluetooth and accessibility or to connect to WiFi networks, change power or graphics settings and log out/restart/shut down the computer. Quick access to applications can also be added to the panel.
+## The Panel
 
-Open COSMIC Settings and click `Desktop` then select `Panel` to customize behavior, style and placement of applets. The panel settings include the same options as the dock settings.
+By default, the <u>Panel</u> is the top bar of the desktop with a clock in the middle. The Panel is made up of the same type of applets that make up the Dock. The default applets in the Panel can be used to adjust various settings like volume, Bluetooth, and accessibility, or to connect to WiFi networks, change power or graphics settings, and log out/restart/shut down the computer. Quick access to applications can also be added to the panel.
+
+Open COSMIC Settings and click `Desktop`, then select `Panel` to customize the behavior, style, and placement of applets on the Panel. The Panel settings include the same options as the Dock settings.
 
 ![Access COSMIC Panel Settings in Pop!_OS 24.04](/images/pop-basics/pop-basics-access-panel-settings.png)
 
 ## COSMIC Settings
 
-Adjust system settings and personal preferences like the look and feel of the desktop in the <u>COSMIC Settings</u> application. Click the icon with the button toggle symbol in the dock or activate the launcher and type 'settings' to view available configuration options.
+Adjust system settings and personal preferences like the look and feel of the desktop in the <u>COSMIC Settings</u> application. To view available configuration options, click the icon with the button toggle symbol in the Dock, or activate the Launcher and search 'settings'.
 
 ## Automatic Window Tiling
 
-_This video shows the features of COSMIC Desktop auto-tiling and window stacking._
+This video shows the auto-tiling and window stacking features of the COSMIC desktop:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xTb5VhctG50?si=kHJV5SqFADamO2eh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/xTb5VhctG50' frameborder='0' allowfullscreen></iframe></div>
 
-- Click the tiling icon in the top right of the panel to acces tiling settings.
-- Toggle the button next to `Tile current workspace` to activate tiling in the current workspace.
-- `Active hint` can be disabled/enabled which highlights the border of the active application window in a color of your choice.
+- Click the tiling icon in the top right of the panel to access tiling settings.
+    - Toggle the `Tile current workspace` option to activate or deactivate tiling in the current workspace.
+    - The `Active hint` option highlights the border of the active application window in a color of your choice.
 
 ![Tile current workspace in Pop!_OS 24.04](/images/pop-basics/pop-basics-activate-tiling.png)
 
-## Window Stacking
+### Window Stacking
 
 - <kbd>SUPER</kbd> + <kbd>S</kbd> converts a window to a stack. Dragging a window out of the stack and repeating the <kbd>SUPER</kbd> + <kbd>S</kbd> combination again converts back to a standard window.
-- Add windows by dragging into the stack.
+- In tiling mode, you can add windows to a stack by dragging them into the stack.
 - While on an active stack, launching an application from the launcher will automatically add it to the stack.
-- Switch between windows in the stack by pressing <kbd>SUPER</kbd> + <kbd>←</kbd> / <kbd>→</kbd>.
+- Switch between windows in the stack by pressing <kbd>SUPER</kbd> + <kbd>←</kbd> / <kbd>→</kbd>, or using the tabs at the top of the stack.
 
 ## Workspaces
 
 Accessing <u>Workspaces</u> will show an overview of all open windows, available workspaces, and the placement of application windows in the workspaces.
 
-_This video shows workspaces functionality in Pop!\_OS 24.04. Workspaces can be pinned and assigned to certain displays in multi-monitor situations._
+This video shows the Workspaces functionality in Pop!\_OS 24.04:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hqgk5tMfI3A?si=PKZGtk5pznS5x5Ld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/hqgk5tMfI3A' frameborder='0' allowfullscreen></iframe></div>
 
-There are three ways to access the workspaces overview:
+By default, there are three ways to access the Workspaces overview:
 
 1. Click on the Workspaces icon in the Dock.
-2. Click on the word Workspaces in the top-left.
-3. Press <kbd>SUPER</kbd> + <kbd>w</kbd>
+2. Click on the word Workspaces in the top left of the screen.
+3. Press <kbd>SUPER</kbd> + <kbd>w</kbd>.
+
+From the Workspaces overview, you can switch between the current workspaces by clicking on them, drag windows between different workspaces, rearrange workspaces by dragging them, and pin workspaces to keep them even when empty.
 
 ### Workspaces Shortcuts
 
-Click on the thumbnail for a specific workspace to switch to it, or use
-<kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd> to switch to workspaces above or below the current one.
-
-Move active application windows to the previous or next workspaces by clicking and dragging them, or by pressing <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>CTRL</kbd> <kbd>←</kbd> / <kbd>→</kbd>.
+You can use <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd> to switch to workspaces above or below the current one without opening the Workspaces menu. You can also move the selected window to the previous or next workspace using <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>CTRL</kbd> <kbd>←</kbd> / <kbd>→</kbd>.
 
 ## Applications
 
-<u>Applications</u> opens the application menu, which shows installed programs and program folders in alphabetical order. There is also a search box located at the top of the page to quickly find a desired application or to search the Cosmic Store.
+<u>Applications</u> opens the application library, which shows installed programs in alphabetical order. There's a search box located at the top of the page to quickly find a desired application or to search the COSMIC Store. A list of folders to organize the applications is at the bottom.
 
 ![Applications overview in Pop!_OS 24.04](/images/pop-basics/pop-basics-applications-overview.png)
 
-Individual applications will have variations in their sub-menus. Many applications have a menu button located in the top-right or left of the application window for application-specific settings and functions. This menu button is usually represented by either three stacked vertical lines or three vertical dots, sometimes referred to as the 'hamburger menu.'
+Individual applications will have variations in their sub-menus. Many applications have a menu button located in the top-right or left of the application window for application-specific settings and functions. This menu button is usually represented by either three stacked vertical lines or three vertical dots, sometimes referred to as the "hamburger menu."
 
-Default applications included with Pop!_OS 24.04 are outlined in [this article](/articles/default-apps).
+Default applications included with Pop!_OS 24.04 are outlined in [the Default Apps article](/articles/default-apps).
 
 ## COSMIC Store (Application Installation and Software Updates)
 
-The <u>Cosmic Store</u> can be used to install additional software and update currently installed software. Search for programs or browse for them by category, and click the `Install` button to add them to your computer.
+The <u>COSMIC Store</u> can be used to install additional software and update currently installed software. Search for programs or browse for them by category, then click the `Install` button to add them to your computer.
 
 ![COSMIC Store](/images/pop-basics/pop-basics-cosmic-store.png)
 
-Manage repositories by clicking the gear icon in the top right of the COSMIC Store. For more information about package management in Pop!\_OS see this [article](/articles/manage-repos-pop/).
+Manage repositories by clicking the gear icon in the top right of the COSMIC Store. For more information about package management in Pop!\_OS, see the [Manage Repos article](/articles/manage-repos-pop/).
 
-To update currently installed software, click `Updates` in the left menu in the COSMIC Store. Buttons to `check for updates` and `update all` exist in the top right corner of the window.
+To update currently installed software, click `Updates` in the left menu of the COSMIC Store. Buttons to `Check for updates` and `Update all` are located in the top right corner of the page.
 
 ![Update Software in Pop!_OS 24.04 COSMIC Store](/images/pop-basics/pop-basics-software-updates-cosmic-store.png)
 
 ## Keyboard Shortcuts
 
-For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [this article](/articles/pop-keyboard-shortcuts).
+For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [the Keyboard Shortcuts article](/articles/pop-keyboard-shortcuts).
 
-You can read more about Pop!\_OS features [here](https://system76.com/pop/) or [view the source code](https://github.com/pop-os/).
+You can read more about Pop!\_OS features on the [Pop!_OS homepage](https://system76.com/pop/), or view the source code in [the Pop!_OS GitHub organization](https://github.com/pop-os/).

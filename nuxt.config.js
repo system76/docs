@@ -64,7 +64,8 @@ export default async () => ({
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@system76/design/dist/minimal.common.css',
     '@system76/components/dist/index.common.css',
-    '~/assets/styles/code-highlighting.css'
+    '~/assets/styles/code-highlighting.css',
+    '~/assets/styles/responsive-videos.css'
   ],
 
   plugins: [

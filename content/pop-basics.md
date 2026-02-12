@@ -25,7 +25,7 @@ Pop!\_OS 24.04 includes the [COSMIC desktop environment](https://system76.com/co
 
 ## The Launcher
 
-The <u>Launcher</u> is a search-based utility for accessing and opening applications and files. This video demonstrates the powerful funcationality of the COSMIC Launcher:
+The <u>Launcher</u> is a search-based utility for accessing and opening applications and files. This video demonstrates the powerful functionality of the COSMIC Launcher:
 
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/zHuXKCPbX9E' frameborder='0' allowfullscreen></iframe></div>
 

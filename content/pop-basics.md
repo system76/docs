@@ -141,6 +141,6 @@ To update currently installed software, click `Updates` in the left menu of the 
 
 ## Keyboard Shortcuts
 
-For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [the Keyboard Shortcuts article](/articles/pop-keyboard-shortcuts).
+For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [the Keyboard Shortcuts article](/articles/pop-cosmic-keyboard-shortcuts).
 
 You can read more about Pop!\_OS features on the [Pop!_OS homepage](https://system76.com/pop/), or view the source code in [the Pop!_OS GitHub organization](https://github.com/pop-os/).

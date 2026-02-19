@@ -1,7 +1,7 @@
 ---
 title: Auto-Mount Second Hard Drive(s)
 description: >
-  If you ordered your computer with additional storage, it comes pre-formatted and ready for use. For instructions on automatically mounting an additional hard drive, check out this extra drive documentation.
+  Automatically mount additional hard drives.
 keywords:
   - extra drive
   - mount
@@ -14,7 +14,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software
+section: about-your-computer
 tableOfContents: true
 
 redirect_from:
@@ -55,7 +55,7 @@ Press the Super key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awe
 
 ## Set Mount Options
 
-Turn off the Automatic Mount Options switch, then set the fields as follows:
+Turn off the User Session Defaults switch, then set the fields as follows:
 
 Option                                     | Value
 -------------------------------------------|------------------------------------------
@@ -68,11 +68,11 @@ Symbolic Icon Name                         | *{leave blank}*
 *{unlabeled field}*                        | `nosuid,nodev,nofail,x-gvfs-show`*
 Mount Point                                | `/home/...`*{from step 2}*
 Identify As                                | `/dev/disk/by-uuid/...`
-Filesystem Type                            | `ext4`**
+Filesystem Type                            | `auto`**
 
 \* If you plan on running Windows games via Proton on an NTFS drive, [refer to the Proton manual](https://github.com/ValveSoftware/Proton/wiki/Using-a-NTFS-disk-with-Linux-and-Windows#editing-fstab) for this field.
 
-\** This will match the default settings. Set accordingly if you reformatted your extra partition with a different filesystem type.
+\** The `auto` setting is the default. If you're using a non-standard filesystem type, you can enter it here.
 
 ![Mount Options Set Correctly](/images/extra-drive/Step4-updated.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Pop!_OS New COSMIC Keyboard Shortcuts
+title: Pop!_OS 24.04 LTS COSMIC Keyboard Shortcuts
 description: Learn how master using COSMIC with your keyboard.
 keywords:
   - keyboard

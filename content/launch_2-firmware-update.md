@@ -1,7 +1,7 @@
 ---
 title: Manual steps to update firmware on Launch and Launch Heavy keyboards
 description: >
-  Launch firmware before version 0.12.20 will need these manual steps to make sure they can reliably upgrade firmware with `fwupd`
+  Launch firmware before version 0.12.20 requires these steps to upgrade firmware with `fwupd`
 keywords:
   - Firmware
   - Open Firmware
@@ -13,7 +13,7 @@ facebookImage: /_social/article
 twitterImage: /_social/article
 
 hidden: false
-section: software-troubleshooting
+section: about-your-computer
 tableOfContents: true
 ---
 

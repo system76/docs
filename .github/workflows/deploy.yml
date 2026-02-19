@@ -1,5 +1,4 @@
 ---
-
 name: Deploy
 
 on:
@@ -8,30 +7,29 @@ on:
       - master
 
 jobs:
-  Deploy:
+  Build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v6
 
-      - name: Setup
-        uses: actions/setup-node@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
         with:
-          node-version: 14
+          cache: npm
+          node-version-file: .tool-versions
 
-      - name: Cache
-        id: cache
-        uses: actions/cache@v4
+      - id: cache
+        name: Cache
+        uses: actions/cache@v5
         with:
           path: ./node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install
+      - if: steps.cache.outputs.cache-hit != 'true'
+        name: Install
         run: npm ci
-        if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Build
         run: npm run build
@@ -39,10 +37,24 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_ENV: production
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
         with:
-          cname: support.system76.com
-          github_token: ${{ secrets.RELEASE_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: true
+          path: dist/
+
+  Deploy:
+    needs: Build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: Support
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - id: deployment
+        name: Deploy
+        uses: actions/deploy-pages@v4

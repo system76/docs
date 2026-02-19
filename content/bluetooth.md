@@ -17,7 +17,11 @@ tableOfContents: true
 
 ### Basic Troubleshooting
 
-Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
+If Bluetooth isn't working, first try toggling airplane mode on and back off. This can be done using a keyboard shortcut if your keyboard has one (look for a key with an airplane symbol, commonly `Fn`+`F11` or `Fn`+`F9` on System76 laptops). Otherwise, use the option at the top of the Wi-Fi menu near the top-right corner of your screen.
+
+![Bluetooth toggle in WiFi menu](/images/bluetooth/airplane-mode.png)
+
+Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
 
 Navigate to the upper-right corner of the screen and click on the Settings icon. A window will appear. In the Wi-Fi tab, you'll find the Airplane Mode toggle. Switch it on and off to enable and disable Airplane Mode.
 

@@ -94,7 +94,7 @@ You can add, remove, and edit software repositories using Repoman. This includes
 
 ![Adding a source in Repoman (24.04)](/images/managing-apps/repoman-adding-2404.png)
 
-3. The repository will appear in the sources list.
+3. After entering your password (if prompted), the repository will appear in the sources list.
 
 ![Added source in Repoman (24.04)](/images/managing-apps/repoman-added-2404.png)
 
@@ -130,7 +130,7 @@ flatpak search [search term]
 
 The package name for each search result is displayed in the `Application ID` column.
 
-![Flatpak search results](/images/managing-apps/search-flatpak.jpg)
+![Flatpak search results](/images/managing-apps/search-flatpak.webp)
 
 #### .deb (System) Packages
 
@@ -142,7 +142,7 @@ apt search [search term]
 
 The package name for each search result is displayed in green, before the `/` character.
 
-![apt search results](/images/managing-apps/search-apt.jpg)
+![apt search results](/images/managing-apps/search-apt.webp)
 
 ### Installing and Removing Applications
 
@@ -192,13 +192,14 @@ sudo apt full-upgrade
 sudo apt autoremove --purge
 ```
 
-2. After each command, if prompted, answer `Y` and enter your password.
+2. After each command, enter your password or answer `Y` as prompted.
+    - When prompted for your password in the terminal, no onscreen feedback will appear while typing the password; press `Enter` after you're done typing the password.
 
-![Bad screenshot that needs to be replaced](/images/managing-apps/terminal-dist-upgrade-bad.png)
+![Bad screenshot that needs to be replaced](/images/managing-apps/terminal-dist-upgrade.webp)
 
 3. If an error appears, read the error message and run any commands it suggests.
 
-![Bad screenshot taht needs to be replaced](/images/managing-apps/terminal-error-bad.png)
+![Bad screenshot taht needs to be replaced](/images/managing-apps/terminal-error.webp)
 
 #### Updating Flatpaks
 
@@ -277,7 +278,7 @@ You can add, remove, and edit software repositories using Repoman. This includes
 
 ![Adding a source in Repoman (22.04)](/images/managing-apps/repoman-adding-2204.png)
 
-3. The repository will appear in the sources list.
+3. After entering your password (if prompted), the repository will appear in the sources list.
 
 ![Added source in Repoman (22.04)](/images/managing-apps/repoman-added-2204.png)
 

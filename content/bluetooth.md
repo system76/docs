@@ -19,21 +19,13 @@ tableOfContents: true
 
 If Bluetooth isn't working, first try toggling airplane mode on and back off. This can be done using a keyboard shortcut if your keyboard has one (look for a key with an airplane symbol, commonly `Fn`+`F11` or `Fn`+`F9` on System76 laptops). Otherwise, use the option at the top of the Wi-Fi menu near the top-right corner of your screen.
 
-![Bluetooth toggle in WiFi menu](/images/bluetooth/airplane-mode.png)
+![Airplane mode toggle in WiFi menu](/images/bluetooth/airplane-mode.png)
 
-Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
+Next, make sure Bluetooth is enabled in the top bar, or in the Bluetooth page of the Settings application.
 
-Navigate to the upper-right corner of the screen and click on the Settings icon. A window will appear. In the Wi-Fi tab, you'll find the Airplane Mode toggle. Switch it on and off to enable and disable Airplane Mode.
+![Bluetooth toggle in applet](/images/bluetooth/bluetooth-enable-applet.png)
 
-![navigate to settings tab](/images/bluetooth/bluetooth_10.png)
-
-![airplane mode toggle](/images/bluetooth/bluetooth_11.png)
-
-Turn on Bluetooth and confirm it is enabled in the top bar, or in the Bluetooth system settings.
-
-![bluetooth top bar](/images/bluetooth/bluetooth_13.png)
-
-![bluetooth system settings](/images/bluetooth/bluetooth_12.png)
+![Bluetooth toggle in Settings](/images/bluetooth/bluetooth-enable-settings.png)
 
 To start, enable or check the status of Bluetooth using the command line, open the Terminal by pressing `Super` + `T` and type the following commands:
 

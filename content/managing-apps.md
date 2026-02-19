@@ -27,9 +27,9 @@ There are multiple package formats that can be used for installing applications 
   - In Pop!_OS, Flatpak applications will only be available to the user who installed them by default.
 
 - **.deb files** (short for Debian files), sometimes called "system packages," are an older packaging format that forms the base of the operating system. They're installed by the `dpkg` or `apt` utilities (with `apt` also handling dependency resolution). Only one version of a dependency can usually be installed at a time with .deb files.
-    - [The Ubuntu repositories](https://packages.ubuntu.com/) are the primary source of non-default .deb packages available to install in Pop!_OS and Ubuntu. (System packages installed by default are sometimes sourced from the first-party Pop!_OS repositories instead.)
-    - System (.deb) packages sometimes offer older versions of applications than Flatpaks, since applications installed from the Ubuntu repositories only receive feature updates during major version upgrades of Pop!_OS.
-    - Installed system (.deb) packages are available to all user accounts on the computer. For this reason, only administrators can install or update .deb packages.
+  - [The Ubuntu repositories](https://packages.ubuntu.com/) are the primary source of non-default .deb packages available to install in Pop!_OS and Ubuntu. (System packages installed by default are sometimes sourced from the first-party Pop!_OS repositories instead.)
+  - System (.deb) packages sometimes offer older versions of applications than Flatpaks, since applications installed from the Ubuntu repositories only receive feature updates during major version upgrades of Pop!_OS.
+  - Installed system (.deb) packages are available to all user accounts on the computer. For this reason, only administrators can install or update .deb packages.
 
 ## Using the COSMIC Store
 
@@ -66,7 +66,7 @@ The COSMIC Store lists applications available in the configurated software repos
 ![Downloaded .deb file in Pop!_OS 24.04](/images/managing-apps/downloaded-deb-file-2404.png)
 
 4. The COSMIC Store will open and present you with the option to install the file.
-    - When installing this way, the application may install a new repository so COSMIC Store can check for updates in the future, or you may need to download updates manually the same way you downloaded the initial installer.
+  - When installing this way, the application may install a new repository so COSMIC Store can check for updates in the future, or you may need to download updates manually the same way you downloaded the initial installer.
 
 ![Installing a .deb file with the COSMIC Store](/images/managing-apps/cosmic-store-file-install.png)
 

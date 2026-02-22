@@ -50,7 +50,7 @@ You should receive a unique *challenge-serial* in your output.
 Now, to finish up:
 
     sudo mv ~/.yubico/challenge-123456 /var/yubico/aaronh-serial
-    sudo chown root.root /var/yubico/aaronh-serial
+    sudo chown root:root /var/yubico/aaronh-serial
     sudo chmod 600 /var/yubico/aaronh-serial
 
 Pay close attention when copying/pasting the commands above.  The *challenge-123456* and *aaronh-serial* needs to match the both the output from the `ykpamcfg` command and the final file needs to match the name of your user name and serial.**

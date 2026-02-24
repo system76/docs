@@ -15,7 +15,27 @@ section: network-troubleshooting
 tableOfContents: true
 ---
 
-### Basic Troubleshooting
+## Pairing and Removing Devices
+
+To pair a new device, open the Bluetooth applet located near the top-right corner of the screen, expand the "Other Bluetooth devices" drop-down, and select the device you wish to pair with.
+
+![Available Bluetooth devices in the applet drop-down](/images/bluetooth/devices-available-applet.png)
+
+Alternatively, open the Settings app, navigate to the Bluetooth page, and select the device there.
+
+![Available Bluetooth devices in the Settings app](/images/bluetooth/devices-available-settings.png)
+
+Follow any prompts you see to confirm the connection (e.g. by entering a pairing code displayed on your device).
+
+To temprarily disconnect from a device, click the device in the Bluetooth applet.
+
+![Connected Bluetooth devices in the applet drop-down](/images/bluetooth/devices-connected-applet.png)
+
+Alternatively, in the Settings app, click the three dots to the right of the device, and click Disconnect (to temporarily disconnect) or Forget (to unpair the device, requiring a manual re-pairing to use it again later).
+
+![Connected Bluetooth devices in the Settings app](/images/bluetooth/devices-connected-settings.png)
+
+## Troubleshooting
 
 If Bluetooth isn't working, first try toggling airplane mode on and back off. This can be done using a keyboard shortcut if your keyboard has one (look for a key with an airplane symbol, commonly `Fn`+`F11` or `Fn`+`F9` on System76 laptops). Otherwise, use the option at the top of the Wi-Fi menu near the top-right corner of your screen.
 
@@ -27,59 +47,57 @@ Next, make sure Bluetooth is enabled in the top bar, or in the Bluetooth page of
 
 ![Bluetooth toggle in Settings](/images/bluetooth/bluetooth-enable-settings.png)
 
-To start, enable or check the status of Bluetooth using the command line, open the Terminal by pressing `Super` + `T` and type the following commands:
-
-```bash
-sudo systemctl start bluetooth
-```
-
-```bash
-sudo systemctl enable bluetooth
-```
-
-Check the status of the bluetooth
+If Bluetooth still isn't working, press `Super`+`T` to launch a Terminal, then check that the Bluetooth service is running with the following command:
 
 ```bash
 sudo systemctl status bluetooth
 ```
 
-Sample output:
-
 ![bluetooth status systemd](/images/bluetooth/bluetooth_5.png)
 
-There is a program called <u>Bluetooth Manager</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
+If it's stopped, enable it to auto-start and immediately start it using the following command:
 
-Install Bluetooth related software with this command:
+```bash
+sudo systemctl enable --now bluetooth
+```
+
+### Using Bluetooth Manager (blueman)
+
+A third-party program called <u>Bluetooth Manager</u> can sometimes pair and trust Bluetooth devices better than the default Bluetooth settings. Install it with this command:
 
 ```bash
 sudo apt install blueman
 ```
 
-> After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
+> After installing the above package, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
 
-Open Bluetooth Manager by pressing `Super` and search:
+Open Bluetooth Manager by pressing `Super` and searching for "blueman":
 
 ![bluetooth manager](/images/bluetooth/bluetooth_2.png)
 
-Remove the device, allowing for a fresh, new connection.
+If the device is already paired, start by removing it to allow for a fresh connection.
 
 ![Remove device](/images/bluetooth/bluetooth_3.png)
 
-Click search and pair the device again:
+Next, click the Search button, select your device from the list, and click the key icon to pair it again:
 
 ![Pair device](/images/bluetooth/bluetooth_4.png)
 
-If `tlp` is installed, then there may be settings interfering with Bluetooth functionality.  Edit this file and disable Wifi and Bluetooth power saving features:
+Finally, right-click your paired device and select `Connect` to connect to it:
+
+
+
+### Check TLP Settings
+
+If `tlp` is installed, then there may be settings interfering with Bluetooth functionality. Edit this file and disable any WiFi and Bluetooth power saving features:
 
 ```bash
 sudo nano /etc/tlp.conf
 ```
 
-### Bluetooth version
+### Bluetooth Version
 
-Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer versions or devices.
-
-### Confirm the bluetooth version of your device and make sure it is 5.0 or higher
+Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older Bluetooth versioned devices are not always compatible with newer versions or devices.
 
 Use bluetoothctl, on your terminal type:
 
@@ -136,11 +154,6 @@ The easiest way to test this is to "forget" the paired Bluetooth device, and pai
 A more thorough way of testing this would be to create a [test user](/articles/other-accounts), or boot from a [Live Disk](/articles/live-disk) to see if Bluetooth works in either case.
 If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem.
 Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
-
-## Setting Expectations
-
-Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, the issue may not be resolved at all.
-Or, in a future update or change to the system, the devices may start working again. In some cases (many cases) users will not experience any issue with Bluetooth at all.
 
 ### Audio Input/Output
 
@@ -283,7 +296,7 @@ There will be a drop-down in the Playback tab for each of your applications that
 
 ### Linux Firmware
 
-Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
+Occasionally the kernel and/or Linux firmware will have problems. Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
 
 [http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/](http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/)
 
@@ -297,14 +310,16 @@ sudo dpkg -i linux-firmware_#.###.#_all.deb
 
 ### File Transfer
 
-Sometimes, additional programs need to be installed for mobile equipment file transfer.  Please install the transfer tool with this command:
+Sometimes, additional programs need to be installed for mobile device file transfer. Install the transfer tool with this command:
 
 ```bash
 sudo apt install obexfs obexftp
 ```
 
-Then connect (pair) to the device and see if send files works.  To receive files over Bluetooth you will need to enable the option in <u>Personal File Sharing</u>.
+Then connect (pair) to the device and see if send files works. To receive files over Bluetooth, you will need to enable the option in <u>Personal File Sharing</u>.
 
-### Get Support for Ongoing Bluetooth Issues
+## Get Support for Ongoing Bluetooth Issues
 
-If you purchased a computer from System76 and you are still encountering bluetooth problems, please have your serial number ready and [open a support ticket.](https://system76.com/contact/support)
+If you own a System76 computer and you're still experiencing Bluetooth problems after troubleshooting with the above steps, [open a support ticket](https://system76.com/contact/support) for additional assistance.
+
+Bluetooth compatibility can depend on a variety of hardware and software factors. While Bluetooth often works flawlessly, certain devices may never be trouble-free with a particular computer or OS, while other devices may start working with software updates at a later date.

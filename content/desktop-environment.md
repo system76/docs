@@ -1,7 +1,7 @@
 ---
 title: Change Desktop Environment (Pop!_OS 24.04)
 description: >
-  Pop!_OS 24.04 Comes with GNOME by default.  Follow these instructions to install additional desktop environments.
+  Pop!_OS 24.04 Comes with COSMIC by default.  Follow these instructions to install additional desktop environments.
 keywords:
   - desktop environment
   - MATE
@@ -23,7 +23,7 @@ Pop!\_OS has the COSMIC desktop environment by default. A desktop environment is
 
 You can install an alternative desktop environment using the instructions below.
 
-> **Warning:** Installing other desktop environments may affect the visual style and functionality of the default GNOME desktop (on both Ubuntu and Pop!_OS).
+> **Warning:** Installing other desktop environments may affect the visual style and functionality of the default COSMIC desktop.
 
 If you run into trouble while using an alternative desktop environment, you may wish to revert to the default environment. To ensure the default COSMIC desktop environment is installed in Pop!\_OS, install the `pop-desktop` package:
 
@@ -75,7 +75,7 @@ sudo apt install cinnamon-desktop-environment
 
 ### GNOME
 
-Pop!_OS 24.04 Comes with the new COSMIC desktop environment by default. You can also install a vanilla GNOME session to get the GNOME experience.
+Pop!_OS 24.04 Comes with the new COSMIC desktop environment by default. You can also install a vanilla GNOME session to get the vanilla GNOME experience.
 
 ![GNOME](/images/desktop-environment/GNOME.png)
 

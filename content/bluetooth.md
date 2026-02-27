@@ -15,18 +15,123 @@ section: network-troubleshooting
 tableOfContents: true
 ---
 
-## Important Notes About Bluetooth
+## Pairing and Removing Devices
 
-Bluetooth is a bit odd.
-There are a lot of factors that go into whether Bluetooth devices work together as expected.
+To pair a new device, open the Bluetooth applet located near the top-right corner of the screen, expand the "Other Bluetooth devices" drop-down, and select the device you wish to pair with.
 
-### Bluetooth version
+![Available Bluetooth devices in the applet drop-down](/images/bluetooth/devices-available-applet.png)
 
-Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older bluetooth versioned devices are not always compatible with newer versions or devices.
+Alternatively, open the Settings app, navigate to the Bluetooth page, and select the device there.
+
+![Available Bluetooth devices in the Settings app](/images/bluetooth/devices-available-settings.png)
+
+Follow any prompts you see to confirm the connection (e.g. by entering a pairing code displayed on your device).
+
+To temprarily disconnect from a device, click the device in the Bluetooth applet.
+
+![Connected Bluetooth devices in the applet drop-down](/images/bluetooth/devices-connected-applet.png)
+
+Alternatively, in the Settings app, click the three dots to the right of the device, and click Disconnect (to temporarily disconnect) or Forget (to unpair the device, requiring a manual re-pairing to use it again later).
+
+![Connected Bluetooth devices in the Settings app](/images/bluetooth/devices-connected-settings.png)
+
+## Troubleshooting
+
+If Bluetooth isn't working, first try toggling airplane mode on and back off. This can be done using a keyboard shortcut if your keyboard has one (look for a key with an airplane symbol, commonly `Fn`+`F11` or `Fn`+`F9` on System76 laptops). Otherwise, use the option at the top of the Wi-Fi menu near the top-right corner of your screen.
+
+![Airplane mode toggle in WiFi menu](/images/bluetooth/airplane-mode.png)
+
+Next, make sure Bluetooth is enabled in the top bar, or in the Bluetooth page of the Settings application.
+
+![Bluetooth toggle in applet](/images/bluetooth/bluetooth-enable-applet.png)
+
+![Bluetooth toggle in Settings](/images/bluetooth/bluetooth-enable-settings.png)
+
+If Bluetooth still isn't working, press `Super`+`T` to launch a Terminal, then check that the Bluetooth service is running with the following command:
+
+```bash
+sudo systemctl status bluetooth
+```
+
+![bluetooth status systemd](/images/bluetooth/bluetooth_5.png)
+
+If it's stopped, enable it to auto-start and immediately start it using the following command:
+
+```bash
+sudo systemctl enable --now bluetooth
+```
+
+### Using Bluetooth Manager (blueman)
+
+A third-party program called <u>Bluetooth Manager</u> can sometimes pair and trust Bluetooth devices better than the default Bluetooth settings. Install it with this command:
+
+```bash
+sudo apt install blueman
+```
+
+> After installing the above package, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
+
+Open Bluetooth Manager by pressing `Super` and searching for "blueman":
+
+![Searching for blueman in the launcher](/images/bluetooth/blueman-launcher.png)
+
+On first launch, you may be asked if Bluetooth should be enabled automatically. Choose `Yes`.
+
+![First-start blueman prompt](/images/bluetooth/blueman-first-launch.png)
+
+If the device is already paired, start by removing it to allow for a fresh connection. You can do this by selecting the deivce and clicking the `-` button.
+
+![Remove device](/images/bluetooth/blueman-remove.png)
+
+Next, click the Search button, select your device from the list, and click the key icon to pair it again:
+
+![Pair device](/images/bluetooth/bluetooth_4.png)
+
+Finally, right-click your paired device and select `Connect` to connect to it:
+
+
+
+### Check TLP Settings
+
+If `tlp` is installed, then there may be settings interfering with Bluetooth functionality. Edit this file and disable any WiFi and Bluetooth power saving features:
+
+```bash
+sudo nano /etc/tlp.conf
+```
+
+### Bluetooth Version
+
+Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older Bluetooth versioned devices are not always compatible with newer versions or devices.
+
+Use bluetoothctl, on your terminal type:
+
+```bash
+bluetoothctl
+```
+
+If you have multiple Bluetooth controllers, choose the one you wish to connect to the device.
+
+Check list of controllers:
+```
+List
+```
+
+Select the controller you want to use:
+
+```
+select <mac address>
+```
+
+Check the version:
+```
+version
+```
+
+![bluetoothctl version](/images/bluetooth/bluetooth_1.png)
 
 ### Signal Interference
 
-Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in most of our machines it is on the same chip as the Wi-Fi module. They usually have two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues. If users are in an area crowded with other Wi-Fi networks or devices, the interference from these outside sources can impact performance and range.
+Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in some machines it is on the same chip as the Wi-Fi module. The Wi-Fi module usually has two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues. If users are in an area crowded with other Wi-Fi networks or devices, the interference from these outside sources can impact performance and range.
 
 ### Device Specific Differences
 
@@ -44,8 +149,6 @@ As the Linux kernel develops, support for more devices are added. Sometimes Blue
 
 Similar to the kernel versions. Improvements are often made in newer versions of Ubuntu and Pop!\_OS. Running software updates is always a good idea, followed by a reboot.
 
-<!--## Bluez Versions-->
-
 ### Configuration Issues
 
 Sometimes Bluetooth devices are working correctly, but something in settings needs to be reset.
@@ -56,11 +159,6 @@ A more thorough way of testing this would be to create a [test user](/articles/o
 If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem.
 Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
 
-## Setting Expectations
-
-Because of all of these factors, if the steps outlined in the Bluetooth troubleshooting article, and the previous troubleshooting steps don't resolve the issue, the issue may not be resolved at all.
-Or, in a future update or change to the system, the devices may start working again. In some cases (many cases) users will not experience any issue with Bluetooth at all.
-
 ### Audio Input/Output
 
 Bluetooth audio devices, such as headphones and speakers, usually default to the A2DP protocol, which works effectively as an audio output source.
@@ -68,41 +166,69 @@ Bluetooth audio devices, such as headphones and speakers, usually default to the
 Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in.
 This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny," compressed (lower-fidelity), or at a lower volume. That is expected behavior.
 
-## Bluetooth Troubleshooting
+### Using bluetoothctl
 
-Bluetooth issues can be troubleshooted in several ways.  The first thing to check is toggling airplane mode which will sometimes get Bluetooth functioning again.  Next, make sure Bluetooth is enabled in the top bar, or in the <u>Bluetooth</u> system settings.
+The program bluetoothctl offers control, flexibility, and efficiency through precise management of Bluetooth devices via the terminal. For troubleshooting, bluetoothctl provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a user interface might not be available.
 
-Then, try reinstalling Bluetooth related software with this command, depending on the verison of Pop!\_OS you're using.
-
-*For Pop!\_OS 22.04 or higher:*
+To get started, ensure Bluetooth is unblocked by running rfkill to check and enable it if necessary. Use the command:
 
 ```bash
-sudo apt reinstall --purge bluez gnome-bluetooth
+rfkill unblock bluetooth
+```
+to ensure that Bluetooth is not disabled at the system level.
+
+Type:
+```
+bluetoothctl
+```
+![bluetoothctl](/images/bluetooth/bluetooth_6.png)
+
+If you have multiple Bluetooth controllers, choose the one you wish to connect to the device:
+
+Check list of controllers:
+```
+list
 ```
 
-*For Pop!\_OS 21.10 or 20.04:*
-
-```bash
-sudo apt install --reinstall bluez gnome-bluetooth indicator-bluetooth pulseaudio-module-bluetooth
+Check controller information:
+```
+info <controller_address>
 ```
 
-After reinstalling the above packages, fully shut down the machine and then power it back on, rather than rebooting. This ensures the hardware completely resets.
-
-If `tlp` is installed, then there may be settings interfering with Bluetooth functionality.  Edit this file and disable Wifi and Bluetooth power saving features:
-
-```bash
-sudo gedit /etc/default/tlp
+Select the controller you want to use:
+```
+select <mac address>
 ```
 
-### Useful Programs
+Make sure to power it on
+```
+power on
+```
+![bluetoothctl power on](/images/bluetooth/bluetooth_7.png)
 
-There is a program called <u>Bluetooth Manager</u> which is included with <u>XFCE</u>. It can sometimes pair and trust Bluetooth devices better than the default <u>Bluetooth</u> settings. Install it with:
+Look for the device you want to connect:
+```
+scan on
+```
+Add trusted device
+```
+trust <mac address>
+```
+See list of paired devices:
 
-```bash
-sudo apt install blueman
+```
+devices
 ```
 
-Then, run <u>Bluetooth Manager</u>. Check for the device being trusted, and also try re-pairing in that program.
+To connect the device:
+```
+connect <mac address>
+```
+![bluetootctl list scan trust connect](/images/bluetooth/bluetooth_8.png)
+
+Successful device connection:
+
+![bluetooothctl device connected](/images/bluetooth/bluetooth_9.png)
 
 ### Useful Commands
 
@@ -110,6 +236,9 @@ To show if the Bluetooth module (driver) is loaded, and see what system messages
 
 ```bash
 lsmod | grep bluetooth
+```
+
+```bash
 dmesg | grep Bluetooth
 ```
 
@@ -141,6 +270,9 @@ To manually reload the Bluetooth USB kernel module:
 
 ```bash
 sudo rmmod btusb
+```
+
+```bash
 sudo modprobe btusb
 ```
 
@@ -156,18 +288,6 @@ To reset the Bluetooth device profiles and require re-pairing all devices (this 
 sudo rm -r /var/lib/bluetooth/
 ```
 
-*For Pop!\_OS 21.10 or 20.04:*
-
-Older Pop!\_OS versions used a PulseAudio module for Bluetooth audio. It's typically loaded by default, but sometimes a manual load can get Bluetooth headsets working again:
-
-```bash
-pactl load-module module-bluetooth-discover
-```
-
-## Additional Info
-
-Here are a few additional tidbits about the Bluetooth system that may help with troubleshooting.
-
 ### Controlling audio
 
 Once you are connected to a Bluetooth speaker, you may need to change where your current audio is "routed". You can get a more advanced interface to settings on audio with the program called PulseAudio Volume Control. To install, run this command:
@@ -180,7 +300,7 @@ There will be a drop-down in the Playback tab for each of your applications that
 
 ### Linux Firmware
 
-Occasionally the kernel and/or Linux firmware will have problems.  Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
+Occasionally the kernel and/or Linux firmware will have problems. Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
 
 [http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/](http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/)
 
@@ -194,10 +314,16 @@ sudo dpkg -i linux-firmware_#.###.#_all.deb
 
 ### File Transfer
 
-Sometimes, additional programs need to be installed for mobile equipment file transfer.  Please install the transfer tool with this command:
+Sometimes, additional programs need to be installed for mobile device file transfer. Install the transfer tool with this command:
 
 ```bash
 sudo apt install obexfs obexftp
 ```
 
-Then connect (pair) to the device and see if send files works.  To receive files over Bluetooth you will need to enable the option in <u>Personal File Sharing</u>.
+Then connect (pair) to the device and see if send files works. To receive files over Bluetooth, you will need to enable the option in <u>Personal File Sharing</u>.
+
+## Get Support for Ongoing Bluetooth Issues
+
+If you own a System76 computer and you're still experiencing Bluetooth problems after troubleshooting with the above steps, [open a support ticket](https://system76.com/contact/support) for additional assistance.
+
+Bluetooth compatibility can depend on a variety of hardware and software factors. While Bluetooth often works flawlessly, certain devices may never be trouble-free with a particular computer or OS, while other devices may start working with software updates at a later date.

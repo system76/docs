@@ -74,7 +74,7 @@ Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon>
 
 ![Disks](/images/live-disk/disks.png)
 
-Next, select the flash drive in the list on the left and click on the three dots on the top right of the window. Now select `Restore Disk Image...` and select the Ubuntu or Pop_OS ISO file. Finally, click the `Start Restoring...` button and enter your password.
+Next, select the flash drive in the list on the left and click on the three dots on the top right of the window. Now select `Restore Disk Image...` and select the .img file. Finally, click the `Start Restoring...` button and enter your password.
 
 ![Disks](/images/live-disk/disks-selection.png)
 

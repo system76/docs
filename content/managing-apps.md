@@ -66,7 +66,8 @@ The COSMIC Store lists applications available in the configurated software repos
 ![Downloaded .deb file in Pop!_OS 24.04](/images/managing-apps/downloaded-deb-file-2404.png)
 
 4. The COSMIC Store will open and present you with the option to install the file.
-  - When installing this way, the application may install a new repository so COSMIC Store can check for updates in the future, or you may need to download updates manually the same way you downloaded the initial installer.
+
+    - When installing this way, the application may install a new repository so COSMIC Store can check for updates in the future, or you may need to download updates manually the same way you downloaded the initial installer.
 
 ![Installing a .deb file with the COSMIC Store](/images/managing-apps/cosmic-store-file-install.png)
 

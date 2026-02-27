@@ -73,11 +73,15 @@ sudo apt install blueman
 
 Open Bluetooth Manager by pressing `Super` and searching for "blueman":
 
-![bluetooth manager](/images/bluetooth/bluetooth_2.png)
+![Searching for blueman in the launcher](/images/bluetooth/blueman-launcher.png)
 
-If the device is already paired, start by removing it to allow for a fresh connection.
+On first launch, you may be asked if Bluetooth should be enabled automatically. Choose `Yes`.
 
-![Remove device](/images/bluetooth/bluetooth_3.png)
+![First-start blueman prompt](/images/bluetooth/blueman-first-launch.png)
+
+If the device is already paired, start by removing it to allow for a fresh connection. You can do this by selecting the deivce and clicking the `-` button.
+
+![Remove device](/images/bluetooth/blueman-remove.png)
 
 Next, click the Search button, select your device from the list, and click the key icon to pair it again:
 

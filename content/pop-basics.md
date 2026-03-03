@@ -25,7 +25,7 @@ Pop!\_OS 24.04 includes the [COSMIC desktop environment](https://system76.com/co
 
 ## The Launcher
 
-The <u>Launcher</u> is a search-based utility for accessing and opening applications and files. This video demonstrates the powerful funcationality of the COSMIC Launcher:
+The <u>Launcher</u> is a search-based utility for accessing and opening applications and files. This video demonstrates the powerful functionality of the COSMIC Launcher:
 
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/zHuXKCPbX9E' frameborder='0' allowfullscreen></iframe></div>
 
@@ -141,6 +141,6 @@ To update currently installed software, click `Updates` in the left menu of the 
 
 ## Keyboard Shortcuts
 
-For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [the Keyboard Shortcuts article](/articles/pop-keyboard-shortcuts).
+For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [the Keyboard Shortcuts article](/articles/pop-cosmic-keyboard-shortcuts).
 
 You can read more about Pop!\_OS features on the [Pop!_OS homepage](https://system76.com/pop/), or view the source code in [the Pop!_OS GitHub organization](https://github.com/pop-os/).

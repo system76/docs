@@ -90,3 +90,6 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Debug
+        run: ls -la dist/_nuxt/content 2>&1 || true

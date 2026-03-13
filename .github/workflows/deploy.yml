@@ -38,7 +38,7 @@ jobs:
           NODE_ENV: production
 
       - name: Debug
-        run: ls -la dist/ .output/public/ 2>&1 || true
+        run: ls -la dist/_nuxt/content 2>&1 || true
 
       - name: Upload
         uses: actions/upload-pages-artifact@v3

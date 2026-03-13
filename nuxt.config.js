@@ -75,7 +75,7 @@ export default async () => ({
 
   buildModules: [
     '@nuxt/image',
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
 
   modules: [

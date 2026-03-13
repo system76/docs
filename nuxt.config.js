@@ -75,13 +75,8 @@ export default async () => ({
 
   buildModules: [
     '@nuxt/image',
-    '@nuxtjs/tailwindcss',
-    'nuxt-dynamic-images'
+    '@nuxtjs/tailwindcss'
   ],
-
-  dynamicImages: {
-    puppeteerOptions: { headless: true, args: ['--no-sandbox'] }
-  },
 
   modules: [
     'nuxt-content-git',

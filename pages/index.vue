@@ -120,9 +120,9 @@
               href="https://tech-docs.system76.com/"
               class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
               target="_blank"
-              @click.stop
               rel="noopener noreferrer"
-              >
+              @click.stop
+            >
               <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-full bg-warm-gray-600 text-white sm:h-12 sm:w-12 transition duration-150 ease-in-out group-hover:bg-orange-500 group-focus:bg-orange-500">
                 <font-awesome-icon icon="screwdriver" />
               </div>
@@ -151,7 +151,6 @@
         </div>
 
         <ul class="space-y-2 md:space-y-4">
-
           <li>
             <a
               href="https://system76.com/my-account/support-tickets/new"

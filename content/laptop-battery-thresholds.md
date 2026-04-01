@@ -74,6 +74,12 @@ The thresholds can be controlled by reading from and writing to these sysfs file
 
 ### At boot
 
+The current version of open firmware should persist the threshold values in flash.
+If changes to your system's charge thresholds do not persist across reboots, 
+you should update your firmware.
+<!-- https://github.com/system76/ec/pull/498 merged Nov 26, 2024 -->
+If you cannot update your firmware, you can use the instructions below as a workaround.
+
 To work around the limitation in open firmware causing the thresholds to be reset when the system
 is shut down and unplugged, you can set the thresholds at boot via systemd. To do so, create a file called
 `/etc/systemd/system/charge-thresholds.service` with the following contents:

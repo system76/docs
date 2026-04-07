@@ -20,13 +20,17 @@ section: about-your-computer
 tableOfContents: true
 ---
 
-### Tech Docs (current and recently released models)
+## Tech Docs
 
-Technical documentation for current System76 products can be viewed on the [tech docs website](https://tech-docs.system76.com). Tech docs include service manuals, port guides, and tech specs for current and recently released models.
+Technical documentation for System76 products released after 2020 can be viewed on the [tech docs website](https://tech-docs.system76.com).
+
+Tech docs include tech specs, port guides, and service manuals.
+
+## Older Models
 
 To see ports, keyboard layouts, function keys, and product quickstart guides for System76 products released before 2020, find your model below.
 
-### Service Manuals (older models)
+### Service Manuals (pre-2020)
 
 | Laptops | Desktops |
 |:-------:|:--------:|
@@ -38,7 +42,7 @@ To see ports, keyboard layouts, function keys, and product quickstart guides for
 | Oryx Pro [(oryp5)](https://drive.google.com/file/d/1vAhtiHkPDLpN6iqOcgJGMhdypLkalPcA/view?usp=drive_link) |
 | Serval WS [(serw11)](https://drive.google.com/file/d/1iQaJs_OXYGzIVSJH3ss8FY7JZU8kCt7n/view?usp=drive_link) |
 
-### Quickstart Guides (older models)
+### Quickstart Guides (pre-2020)
 
 | Laptops | Desktops |
 |:-------:|:--------:|

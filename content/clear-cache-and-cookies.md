@@ -29,7 +29,7 @@ Cache and cookie options are located in the Privacy and Security settings and wi
 
 ## Chrome
 
-In Chrome, the option to delete browsing data is in the browser menu or a shortcut of `Ctrl`+`Shift`+`Del` can be used. To choose options of which history, cookies and cache to delete, access the `Settings`-> `Privacy and Security` tab and choose `Delete browsing data`.
+In Chrome, the option to delete browsing data is in the browser menu or a shortcut of `Ctrl`+`Shift`+`Del` can be used. To choose options of which history, cookies, and cache to delete, access the `Settings`-> `Privacy and Security` tab and choose `Delete browsing data`.
 
 ![Chrome](/images/clear-cache/chrome-settings.jpg)
 ![Chrome](/images/clear-cache/chrome-privacy-settings.jpg)

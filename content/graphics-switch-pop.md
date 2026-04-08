@@ -36,7 +36,9 @@ Pop!\_OS includes utilities (`system76-power`) for switching between these modes
 
 ## COSMIC Desktop
 
-The COSMIC desktop is designed to run in hybrid graphics mode if available on your hardware and does not have a graphical way to change modes. Many applications that benefit from a dedicated GPU will launch with the environmental hints already set. To launch an application on the dGPU, right-click the icon in the application library and choose the GPU you want to use. Additionally, the NVIDIA driver suggests that switchable graphics systems run in hybrid mode to allow more performance for targeted applications. The battery applet will also show applications that are using the dGPU if you swap to battery and want to shut them down to save power while away from the main power.
+The COSMIC desktop is designed to run in hybrid graphics mode and does not have a graphical way to change modes. This is NVIDIA's recommended approach to maximize GPU performance for the applications that need it, while saving power when no applications are running on the dedicated GPU.
+
+Many applications that benefit from a dedicated GPU will launch on the dGPU automatically (as defined in their launcher files). To do so manually, right-click the icon in the application library or the dock and choose the GPU you want to use. You can check what processes are running on the dGPU using the battery applet or the `nvidia-smi` command.
 
 ## Graphics modes
 

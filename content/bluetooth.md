@@ -101,33 +101,16 @@ sudo nano /etc/tlp.conf
 
 ### Bluetooth Version
 
-Bluetooth 5.0 is backwards compatible with older Bluetooth versions, but older Bluetooth versioned devices are not always compatible with newer versions or devices.
+Computers with newer Bluetooth versions will generally work with devices built for older Bluetooth versions, but devices requiring newer Bluetooth versions may not work on computers with older Bluetooth versions.
 
-Use bluetoothctl, on your terminal type:
-
-```bash
-bluetoothctl
-```
-
-If you have multiple Bluetooth controllers, choose the one you wish to connect to the device.
-
-Check list of controllers:
-```
-List
-```
-
-Select the controller you want to use:
+You can check your computer's Bluetooth version by installing and running the `inxi` tool:
 
 ```
-select <mac address>
+sudo apt install inxi
+inxi -E
 ```
 
-Check the version:
-```
-version
-```
-
-![bluetoothctl version](/images/bluetooth/bluetooth_1.png)
+The Bluetooth version for each wireless card will be displayed at the end of the `Report` line. For example, if the output says `bt-v: 5.2`, then your computer supports Bluetooth 5.2 (and below).
 
 ### Signal Interference
 

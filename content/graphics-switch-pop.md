@@ -30,9 +30,15 @@ The following System76 laptops have these switchable graphics capabilities:
 - Gazelle (gaze14 and newer)
 - Kudu (kudu6)
 - Oryx Pro (oryp4 and newer)
-- Serval WS (serw13)
+- Serval WS (serw13 and newer)
 
-Pop!\_OS includes utilities for switching between these modes, which you can learn more about below.
+Pop!\_OS includes utilities (`system76-power`) for switching between these modes, which you can learn more about below.
+
+## COSMIC Desktop
+
+The COSMIC desktop is designed to run in hybrid graphics mode and does not have a graphical way to change modes. This is NVIDIA's recommended approach to maximize GPU performance for the applications that need it, while saving power when no applications are running on the dedicated GPU.
+
+Many applications that benefit from a dedicated GPU will launch on the dGPU automatically (as defined in their launcher files). To do so manually, right-click the icon in the application library or the dock and choose the GPU you want to use. You can check what processes are running on the dGPU using the battery applet or the `nvidia-smi` command.
 
 ## Graphics modes
 

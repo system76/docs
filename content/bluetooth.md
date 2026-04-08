@@ -114,7 +114,7 @@ The Bluetooth version for each wireless card will be displayed at the end of the
 
 ### Signal Interference
 
-Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in some machines it is on the same chip as the Wi-Fi module. The Wi-Fi module usually has two antennae, one for Bluetooth, and one for Wi-Fi, but it is possible for other Wi-Fi or Bluetooth devices signals to cross and to cause connection issues. If users are in an area crowded with other Wi-Fi networks or devices, the interference from these outside sources can impact performance and range.
+Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in many computers, it uses the same wireless card and antennas as the W-Fi. If you're in an area crowded with other Wi-Fi networks or devices, the interference can impact Bluetooth performance and range.
 
 ### Device Specific Differences
 

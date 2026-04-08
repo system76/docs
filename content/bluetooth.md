@@ -116,54 +116,53 @@ The Bluetooth version for each wireless card will be displayed at the end of the
 
 Bluetooth uses the same bandwidth as the 2.4Ghz Wi-Fi band, and in many computers, it uses the same wireless card and antennas as the W-Fi. If you're in an area crowded with other Wi-Fi networks or devices, the interference can impact Bluetooth performance and range.
 
-### Device Specific Differences
+### Device-Specific Differences
 
-Every Bluetooth device is different. They use the same or similar protocols, but the printed circuit boards (PCBs), are specific to each device, and the firmware they are running is often custom designed, and closed-source.
+Every Bluetooth device is different. They use the same or similar protocols, but the printed circuit boards (PCBs) are specific to each device, and the firmware they run is often custom-designed and closed-source. Many devices are not tested against Linux systems by their manufacturers.
 
-Some of the code and technologies that make Bluetooth work reliably are patented, and only device vendors who have licensed the permission to use that patented technology will be able to experience the full benefits (for more information see the "Audio Input/Output" section below.)
-
-> Some devices, such as Apple or Sony headphones, particularly take advantage of these patents and technologies to ensure they work well with similar devices. Often these devices are not tested against Linux machines. That doesn't mean these devices will not work, only that behavior or performance may vary.
-
-### Kernel Versions
-
-As the Linux kernel develops, support for more devices are added. Sometimes Bluetooth devices will work better in a different kernel version.
-
-### OS Versions
-
-Similar to the kernel versions. Improvements are often made in newer versions of Ubuntu and Pop!\_OS. Running software updates is always a good idea, followed by a reboot.
-
-### Configuration Issues
-
-Sometimes Bluetooth devices are working correctly, but something in settings needs to be reset.
-
-The easiest way to test this is to "forget" the paired Bluetooth device, and pair it again.
-
-A more thorough way of testing this would be to create a [test user](/articles/other-accounts), or boot from a [Live Disk](/articles/live-disk) to see if Bluetooth works in either case.
-If it does, config files may need deleted. If it doesn't (especially in the Live Disk), reinstalling the OS may solve the problem.
-Reinstalling the OS won't affect Bluetooth hardware directly, but resetting and starting with a clean slate can solve a slew of problems and save time hunting for a specific file or bug.
+Some devices, such as Apple or Sony headphones, may utilize patentend technologies that aren't available on all computers or operating systems. That doesn't mean these devices won't work, but does mean their behavior or performance may vary.
 
 ### Audio Input/Output
 
-Bluetooth audio devices, such as headphones and speakers, usually default to the A2DP protocol, which works effectively as an audio output source.
+Several audio protocols exist for handling audio steaming over Bluetooth:
 
-Bluetooth devices with microphones built in, can be used if the device supports HFP/HSP. However, without the technology that companies like Sony have patented, the solution is to divide up the audio stream so that some of it is used for audio out and some for audio in.
-This process lowers the sound quality of the stream when in HSP/HFP mode, so audio may be "tinny," compressed (lower-fidelity), or at a lower volume. That is expected behavior.
+- **A2DP (Advanced Audio Distribution Profile)**: This protocol allows high-quality stereo audio streaming. However, with some devices, it only supports audio in one direction at a time (e.g. speakers only, no microphone).
+- **HSP (Bluetooth Headset Protocol) and HFP (Hands-Free Protocol):** These protocols allow bidirectional audio streaming (e.g. speakers and microphone at the same time), but are limited to lower-quality, mono audio.
+
+You can try a different device profile by navigating to Settings -> Sound -> Device Profiles and using the drop-down next to your device.
+
+### OS & Kernel Versions
+
+As the Linux kernel develops, support for more devices are added. Sometimes, Bluetooth devices will work better in a different kernel version.
+
+Running software updates and rebooting can ensure you're using the most recent available software for Bluetooth support.
+
+#### Linux Firmware Packages
+
+Sometimes, newer Linux firmware packages will contain bux fixes that aren't yet in the standard software repositories. Newer Linux firmware packages can be downloaded from here:
+
+[http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/](http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/)
+
+Then, they can be installed with this command (filling in the version numbers in the filename as appropriate):
+
+```bash
+sudo dpkg -i linux-firmware_#.###.#_all.deb
+```
+
+Rebooting is required to load the newly installed firmware.
+
+### Configuration Issues
+
+Beyond forgetting and re-pairing deivces, you can check if any local configuration files are causing problems with a device by creating a [test user](/articles/other-accounts) or booting from a [live disk](/articles/live-disk) to see if Bluetooth works in either case. If it does, config files in your normal user account may need to be deleted.
 
 ### Using bluetoothctl
 
-The program bluetoothctl offers control, flexibility, and efficiency through precise management of Bluetooth devices via the terminal. For troubleshooting, bluetoothctl provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a user interface might not be available.
+The `bluetoothctl` program offers control, flexibility, and efficiency through precise management of Bluetooth devices via the terminal. For troubleshooting, `bluetoothctl` provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a user interface might not be available.
 
-To get started, ensure Bluetooth is unblocked by running rfkill to check and enable it if necessary. Use the command:
+To get started, ensure Bluetooth is unblocked by running `rfkill` to check and enable it if necessary. Use the command `rfkill unblock bluetooth` to ensure that Bluetooth is not disabled at the system level.
 
-```bash
-rfkill unblock bluetooth
-```
-to ensure that Bluetooth is not disabled at the system level.
+Then, run `bluetoothctl` in a terminal to enter the Bluetooth control tool.
 
-Type:
-```
-bluetoothctl
-```
 ![bluetoothctl](/images/bluetooth/bluetooth_6.png)
 
 If you have multiple Bluetooth controllers, choose the one you wish to connect to the device:
@@ -280,20 +279,6 @@ sudo apt install pavucontrol
 ```
 
 There will be a drop-down in the Playback tab for each of your applications that is outputting sound that you should be able to change to your Bluetooth speaker.
-
-### Linux Firmware
-
-Occasionally the kernel and/or Linux firmware will have problems. Sometimes, newer Linux firmware packages will have fixed bugs that aren't yet in the repositories.  They can be downloaded from here:
-
-[http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/](http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/)
-
-Then they can be installed with this command:
-
-```bash
-sudo dpkg -i linux-firmware_#.###.#_all.deb
-```
-
-> You'll need to replace the numbers/file name with the most current version after downloading it.
 
 ### File Transfer
 

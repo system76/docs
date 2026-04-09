@@ -101,7 +101,7 @@ sudo nano /etc/tlp.conf
 
 ### Bluetooth Version
 
-Computers with newer Bluetooth versions will generally work with devices built for older Bluetooth versions, but devices requiring newer Bluetooth versions may not work on computers with older Bluetooth versions.
+Computers with newer Bluetooth versions will generally work with accessories built for older Bluetooth versions, but accessories requiring newer Bluetooth versions may not work on computers with older Bluetooth versions.
 
 You can check your computer's Bluetooth version by installing and running the `inxi` tool:
 
@@ -214,23 +214,25 @@ Successful device connection:
 
 ### Useful Commands
 
-To show if the Bluetooth module (driver) is loaded, and see what system messages have been logged:
+#### Logging
+
+To show kernel logs related to Bluetooth:
 
 ```bash
-lsmod | grep bluetooth
+sudo dmesg | grep -i Bluetooth
 ```
+
+To monitor Bluetooth events (try leaving this command running while pairing or using a device to see any error messages or failures):
 
 ```bash
-dmesg | grep Bluetooth
+sudo btmon
 ```
 
-To check if the service that handles Bluetooth is running:
+#### Blocks
 
-```bash
-sudo systemctl status bluetooth
-```
+The `rfkill` utility shows whether Bluetooth or Wi-Fi are blocked in software or hardware. Generally, this information corresponds to whether airplane mode is enabled, but it can be useful to check separately in case of bugs in the airplane mode GUI or other components.
 
-To check if Bluetooth or Wireless (Wi-Fi) are software-blocked:
+To check if Bluetooth or Wireless LAN (Wi-Fi) are blocked:
 
 ```bash
 rfkill list
@@ -238,7 +240,7 @@ rfkill list
 
 To unblock Bluetooth:
 
-```
+```bash
 sudo rfkill unblock bluetooth
 ```
 
@@ -248,47 +250,52 @@ To unblock all wireless types:
 sudo rfkill unblock all
 ```
 
+#### Kernel Module
+
+To show what Bluetooth kernel modules (drivers) are loaded:
+
+```bash
+lsmod | grep bluetooth
+```
+
 To manually reload the Bluetooth USB kernel module:
 
 ```bash
 sudo rmmod btusb
-```
-
-```bash
 sudo modprobe btusb
 ```
 
-To monitor Bluetooth-related messages (try leaving this command running while pairing or using a device to see any error messages or failures):
+#### Resetting Bluetooth Devices
 
-```bash
-sudo btmon
-```
-
-To reset the Bluetooth device profiles and require re-pairing all devices (this can help if your Bluetooth audio device is stuck in an HSP/HFP profile and will not switch to A2DP mode after updates <sup>[1](https://github.com/bluez/bluez/issues/157)</sup>):
+Resetting the Bluetooth device profiles will require re-pairing all devices:
 
 ```bash
 sudo rm -r /var/lib/bluetooth/
 ```
 
-### Controlling audio
+This can help if your Bluetooth audio device is stuck on an HSP/HFP profile and won't switch to A2DP mode.
 
-Once you are connected to a Bluetooth speaker, you may need to change where your current audio is "routed". You can get a more advanced interface to settings on audio with the program called PulseAudio Volume Control. To install, run this command:
+### Controlling Audio
+
+Once you're connected to a Bluetooth speaker, you may need to change where your current audio is "routed." PulseAudio Volume Control provides a more advanced GUI interface for routing audio. To install it, run this command:
 
 ```bash
 sudo apt install pavucontrol
 ```
 
-There will be a drop-down in the Playback tab for each of your applications that is outputting sound that you should be able to change to your Bluetooth speaker.
+There will be a drop-down in the Playback tab for each of your applications that's outputting sound, which you can use to send audio from individual applications to your Bluetooth speaker.
 
 ### File Transfer
 
-Sometimes, additional programs need to be installed for mobile device file transfer. Install the transfer tool with this command:
+Sometimes, additional programs need to be installed for mobile device file transfer to work. Install the Object Exchange (OBEX) packages with this command:
 
 ```bash
 sudo apt install obexfs obexftp
 ```
 
-Then connect (pair) to the device and see if send files works. To receive files over Bluetooth, you will need to enable the option in <u>Personal File Sharing</u>.
+Then connect (pair) to the device and see if file sending works.
+
+On GNOME environments (such as Pop!_OS 22.04 and below), you may need to enable the Personal File Sharing option in Settings for file receiving to work.
 
 ## Get Support for Ongoing Bluetooth Issues
 

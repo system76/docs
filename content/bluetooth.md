@@ -156,6 +156,16 @@ Several audio protocols exist for handling audio steaming over Bluetooth:
 
 You can try a different device profile by navigating to Settings -> Sound -> Device Profiles and using the drop-down next to your device.
 
+#### Controlling Audio
+
+The default Settings app allows you to select one input or output device for all applications. You may want only certain applications to play through a Bluetooth speaker. PulseAudio Volume Control provides a more advanced GUI interface for routing audio in this manner. To install it, run this command:
+
+```bash
+sudo apt install pavucontrol
+```
+
+There will be a drop-down in the Playback tab for each of your applications that's outputting sound, which you can use to select which set of speakers (e.g. built-in or Bluetooth) that application's sound will play through.
+
 ### OS & Kernel Versions
 
 As the Linux kernel develops, support for more devices are added. Sometimes, Bluetooth devices will work better in a different kernel version.
@@ -179,16 +189,6 @@ Rebooting is required to load the newly installed firmware.
 ### Configuration Issues
 
 Beyond forgetting and re-pairing deivces, you can check if any local configuration files are causing problems with a device by creating a [test user](/articles/other-accounts) or booting from a [live disk](/articles/live-disk) to see if Bluetooth works in either case. If it does, config files in your normal user account may need to be deleted.
-
-### Controlling Audio
-
-Once you're connected to a Bluetooth speaker, you may need to change where your current audio is "routed." PulseAudio Volume Control provides a more advanced GUI interface for routing audio. To install it, run this command:
-
-```bash
-sudo apt install pavucontrol
-```
-
-There will be a drop-down in the Playback tab for each of your applications that's outputting sound, which you can use to send audio from individual applications to your Bluetooth speaker.
 
 ### File Transfer
 

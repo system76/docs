@@ -19,33 +19,33 @@ tableOfContents: true
 
 To pair a new device, open the Bluetooth applet located near the top-right corner of the screen, expand the "Other Bluetooth devices" drop-down, and select the device you wish to pair with.
 
-![Available Bluetooth devices in the applet drop-down](/images/bluetooth/devices-available-applet.png)
+![Available Bluetooth devices in the applet drop-down](/images/bluetooth/devices-available-applet.webp)
 
 Alternatively, open the Settings app, navigate to the Bluetooth page, and select the device there.
 
-![Available Bluetooth devices in the Settings app](/images/bluetooth/devices-available-settings.png)
+![Available Bluetooth devices in the Settings app](/images/bluetooth/devices-available-settings.webp)
 
 Follow any prompts you see to confirm the connection (e.g. by entering a pairing code displayed on your device).
 
 To temprarily disconnect from a device, click the device in the Bluetooth applet.
 
-![Connected Bluetooth devices in the applet drop-down](/images/bluetooth/devices-connected-applet.png)
+![Connected Bluetooth devices in the applet drop-down](/images/bluetooth/devices-connected-applet.webp)
 
 Alternatively, in the Settings app, click the three dots to the right of the device, and click Disconnect (to temporarily disconnect) or Forget (to unpair the device, requiring a manual re-pairing to use it again later).
 
-![Connected Bluetooth devices in the Settings app](/images/bluetooth/devices-connected-settings.png)
+![Connected Bluetooth devices in the Settings app](/images/bluetooth/devices-connected-settings.webp)
 
 ## Enabling Bluetooth
 
 If Bluetooth isn't working, first try toggling airplane mode on and back off. This can be done using a keyboard shortcut if your keyboard has one (look for a key with an airplane symbol, commonly `Fn`+`F11` or `Fn`+`F9` on System76 laptops). Otherwise, use the option at the top of the Wi-Fi menu near the top-right corner of your screen.
 
-![Airplane mode toggle in WiFi menu](/images/bluetooth/airplane-mode.avif)
+![Airplane mode toggle in WiFi menu](/images/bluetooth/airplane-mode.webp)
 
 Next, make sure Bluetooth is enabled in the top bar, or in the Bluetooth page of the Settings application.
 
-![Bluetooth toggle in applet](/images/bluetooth/bluetooth-enable-applet.png)
+![Bluetooth toggle in applet](/images/bluetooth/bluetooth-enable-applet.webp)
 
-![Bluetooth toggle in Settings](/images/bluetooth/bluetooth-enable-settings.png)
+![Bluetooth toggle in Settings](/images/bluetooth/bluetooth-enable-settings.webp)
 
 If Bluetooth still isn't working, press `Super`+`T` to launch a Terminal, then check that the Bluetooth service is running with the following command:
 
@@ -53,7 +53,7 @@ If Bluetooth still isn't working, press `Super`+`T` to launch a Terminal, then c
 sudo systemctl status bluetooth
 ```
 
-![bluetooth status systemd](/images/bluetooth/bluetooth-systemd-status.png)
+![bluetooth status systemd](/images/bluetooth/bluetooth-systemd-status.webp)
 
 If it's stopped, enable it to auto-start and immediately start it using the following command:
 
@@ -73,23 +73,23 @@ sudo apt install blueman
 
 Open Bluetooth Manager by pressing `Super` and searching for "blueman":
 
-![Searching for blueman in the launcher](/images/bluetooth/blueman-launcher.png)
+![Searching for blueman in the launcher](/images/bluetooth/blueman-launcher.webp)
 
 On first launch, you may be asked if Bluetooth should be enabled automatically. Choose `Yes`.
 
-![First-start blueman prompt](/images/bluetooth/blueman-first-launch.png)
+![First-start blueman prompt](/images/bluetooth/blueman-first-launch.webp)
 
 If the device is already paired, start by removing it to allow for a fresh connection. You can do this by selecting the deivce and clicking the `-` button.
 
-![Remove device](/images/bluetooth/blueman-remove.png)
+![Remove device](/images/bluetooth/blueman-remove.webp)
 
 Next, click the Search button, select your device from the list, and click the key icon to pair it again:
 
-![Pair device](/images/bluetooth/blueman-pair.png)
+![Pair device](/images/bluetooth/blueman-pair.webp)
 
 Finally, right-click your paired device and select `Connect` to connect to it:
 
-![Pair device](/images/bluetooth/blueman-connect.png)
+![Pair device](/images/bluetooth/blueman-connect.webp)
 
 ## Using bluetoothctl
 
@@ -97,7 +97,7 @@ The `bluetoothctl` program offers control, flexibility, and efficiency through p
 
 To get started, ensure Bluetooth is unblocked by running `sudo rfkill unblock bluetooth` in a terminal, then run `bluetoothctl` to enter the Bluetooth control tool.
 
-![bluetoothctl](/images/bluetooth/bluetoothctl-launch.png)
+![bluetoothctl](/images/bluetooth/bluetoothctl-launch.webp)
 
 If you have multiple Bluetooth controllers, you can list them with the `list` command, show information about them with `show <MAC address>`, and select one to use with `select <MAC address`.
 
@@ -112,7 +112,7 @@ Devices with human-readable names (such as a product name) will show them after 
 
 Finally, connect with the device using the `connect <MAC address>` command. A `Connection successful` message will appear if the connection succeeds.
 
-![bluetootctl trusting & connecting to a device](/images/bluetooth/bluetoothctl-connection.png)
+![bluetootctl trusting & connecting to a device](/images/bluetooth/bluetoothctl-connection.webp)
 
 ## Further Troubleshooting
 

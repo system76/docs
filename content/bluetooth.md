@@ -240,7 +240,7 @@ To unblock all wireless types:
 sudo rfkill unblock all
 ```
 
-### Kernel Module
+### Kernel Modules
 
 To show what Bluetooth kernel modules (drivers) are loaded:
 

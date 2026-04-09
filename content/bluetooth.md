@@ -35,11 +35,11 @@ Alternatively, in the Settings app, click the three dots to the right of the dev
 
 ![Connected Bluetooth devices in the Settings app](/images/bluetooth/devices-connected-settings.png)
 
-## Troubleshooting
+## Enabling Bluetooth
 
 If Bluetooth isn't working, first try toggling airplane mode on and back off. This can be done using a keyboard shortcut if your keyboard has one (look for a key with an airplane symbol, commonly `Fn`+`F11` or `Fn`+`F9` on System76 laptops). Otherwise, use the option at the top of the Wi-Fi menu near the top-right corner of your screen.
 
-![Airplane mode toggle in WiFi menu](/images/bluetooth/airplane-mode.png)
+![Airplane mode toggle in WiFi menu](/images/bluetooth/airplane-mode.avif)
 
 Next, make sure Bluetooth is enabled in the top bar, or in the Bluetooth page of the Settings application.
 
@@ -53,7 +53,7 @@ If Bluetooth still isn't working, press `Super`+`T` to launch a Terminal, then c
 sudo systemctl status bluetooth
 ```
 
-![bluetooth status systemd](/images/bluetooth/bluetooth_5.png)
+![bluetooth status systemd](/images/bluetooth/bluetooth-systemd-status.png)
 
 If it's stopped, enable it to auto-start and immediately start it using the following command:
 
@@ -61,7 +61,7 @@ If it's stopped, enable it to auto-start and immediately start it using the foll
 sudo systemctl enable --now bluetooth
 ```
 
-### Using Bluetooth Manager (blueman)
+## Using Bluetooth Manager (blueman)
 
 A third-party program called <u>Bluetooth Manager</u> can sometimes pair and trust Bluetooth devices better than the default Bluetooth settings. Install it with this command:
 
@@ -90,6 +90,31 @@ Next, click the Search button, select your device from the list, and click the k
 Finally, right-click your paired device and select `Connect` to connect to it:
 
 ![Pair device](/images/bluetooth/blueman-connect.png)
+
+## Using bluetoothctl
+
+The `bluetoothctl` program offers control, flexibility, and efficiency through precise management of Bluetooth devices via the terminal. For troubleshooting, `bluetoothctl` provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a user interface might not be available.
+
+To get started, ensure Bluetooth is unblocked by running `sudo rfkill unblock bluetooth` in a terminal, then run `bluetoothctl` to enter the Bluetooth control tool.
+
+![bluetoothctl](/images/bluetooth/bluetoothctl-launch.png)
+
+If you have multiple Bluetooth controllers, you can list them with the `list` command, show information about them with `show <MAC address>`, and select one to use with `select <MAC address`.
+
+Power the controller on and scan for available devices to connect to using the following commands:
+
+```
+power on
+scan on
+```
+
+Devices with human-readable names (such as a product name) will show them after the MAC address. To pair with a device, use the `trust <MAC address>` command. Use `devices` to see a list of paired devices.
+
+Finally, connect with the device using the `connect <MAC address>` command. A `Connection successful` message will appear if the connection succeeds.
+
+![bluetootctl trusting & connecting to a device](/images/bluetooth/bluetoothctl-connection.png)
+
+## Further Troubleshooting
 
 ### Check TLP Settings
 
@@ -155,126 +180,6 @@ Rebooting is required to load the newly installed firmware.
 
 Beyond forgetting and re-pairing deivces, you can check if any local configuration files are causing problems with a device by creating a [test user](/articles/other-accounts) or booting from a [live disk](/articles/live-disk) to see if Bluetooth works in either case. If it does, config files in your normal user account may need to be deleted.
 
-### Using bluetoothctl
-
-The `bluetoothctl` program offers control, flexibility, and efficiency through precise management of Bluetooth devices via the terminal. For troubleshooting, `bluetoothctl` provides direct feedback and logs, which can help identify connection issues, detect devices, or configure settings in real time. It’s also useful for headless or remote setups where a user interface might not be available.
-
-To get started, ensure Bluetooth is unblocked by running `rfkill` to check and enable it if necessary. Use the command `rfkill unblock bluetooth` to ensure that Bluetooth is not disabled at the system level.
-
-Then, run `bluetoothctl` in a terminal to enter the Bluetooth control tool.
-
-![bluetoothctl](/images/bluetooth/bluetooth_6.png)
-
-If you have multiple Bluetooth controllers, choose the one you wish to connect to the device:
-
-Check list of controllers:
-```
-list
-```
-
-Check controller information:
-```
-info <controller_address>
-```
-
-Select the controller you want to use:
-```
-select <mac address>
-```
-
-Make sure to power it on
-```
-power on
-```
-![bluetoothctl power on](/images/bluetooth/bluetooth_7.png)
-
-Look for the device you want to connect:
-```
-scan on
-```
-Add trusted device
-```
-trust <mac address>
-```
-See list of paired devices:
-
-```
-devices
-```
-
-To connect the device:
-```
-connect <mac address>
-```
-![bluetootctl list scan trust connect](/images/bluetooth/bluetooth_8.png)
-
-Successful device connection:
-
-![bluetooothctl device connected](/images/bluetooth/bluetooth_9.png)
-
-### Useful Commands
-
-#### Logging
-
-To show kernel logs related to Bluetooth:
-
-```bash
-sudo dmesg | grep -i Bluetooth
-```
-
-To monitor Bluetooth events (try leaving this command running while pairing or using a device to see any error messages or failures):
-
-```bash
-sudo btmon
-```
-
-#### Blocks
-
-The `rfkill` utility shows whether Bluetooth or Wi-Fi are blocked in software or hardware. Generally, this information corresponds to whether airplane mode is enabled, but it can be useful to check separately in case of bugs in the airplane mode GUI or other components.
-
-To check if Bluetooth or Wireless LAN (Wi-Fi) are blocked:
-
-```bash
-rfkill list
-```
-
-To unblock Bluetooth:
-
-```bash
-sudo rfkill unblock bluetooth
-```
-
-To unblock all wireless types:
-
-```bash
-sudo rfkill unblock all
-```
-
-#### Kernel Module
-
-To show what Bluetooth kernel modules (drivers) are loaded:
-
-```bash
-lsmod | grep bluetooth
-```
-
-To manually reload the Bluetooth USB kernel module:
-
-```bash
-sudo rmmod btusb
-sudo modprobe btusb
-```
-
-#### Resetting Bluetooth Devices
-
-Resetting the Bluetooth device profiles will require re-pairing all devices:
-
-```bash
-sudo rm -r /var/lib/bluetooth/
-```
-
-This can help if your Bluetooth audio device is stuck on an HSP/HFP profile and won't switch to A2DP mode.
-
 ### Controlling Audio
 
 Once you're connected to a Bluetooth speaker, you may need to change where your current audio is "routed." PulseAudio Volume Control provides a more advanced GUI interface for routing audio. To install it, run this command:
@@ -296,6 +201,69 @@ sudo apt install obexfs obexftp
 Then connect (pair) to the device and see if file sending works.
 
 On GNOME environments (such as Pop!_OS 22.04 and below), you may need to enable the Personal File Sharing option in Settings for file receiving to work.
+
+## Other Useful Commands
+
+### Logging
+
+To show kernel logs related to Bluetooth:
+
+```bash
+sudo dmesg | grep -i Bluetooth
+```
+
+To monitor Bluetooth events (try leaving this command running while pairing or using a device to see any error messages or failures):
+
+```bash
+sudo btmon
+```
+
+### Blocks
+
+The `rfkill` utility shows whether Bluetooth or Wi-Fi are blocked in software or hardware. Generally, this information corresponds to whether airplane mode is enabled, but it can be useful to check separately in case of bugs in the airplane mode GUI or other components.
+
+To check if Bluetooth or Wireless LAN (Wi-Fi) are blocked:
+
+```bash
+rfkill list
+```
+
+To unblock Bluetooth:
+
+```bash
+sudo rfkill unblock bluetooth
+```
+
+To unblock all wireless types:
+
+```bash
+sudo rfkill unblock all
+```
+
+### Kernel Module
+
+To show what Bluetooth kernel modules (drivers) are loaded:
+
+```bash
+lsmod | grep bluetooth
+```
+
+To manually reload the Bluetooth USB kernel module:
+
+```bash
+sudo rmmod btusb
+sudo modprobe btusb
+```
+
+### Resetting Bluetooth Devices
+
+Resetting the Bluetooth device profiles will require re-pairing all devices:
+
+```bash
+sudo rm -r /var/lib/bluetooth/
+```
+
+This can help if your Bluetooth audio device is stuck on an HSP/HFP profile and won't switch to A2DP mode.
 
 ## Get Support for Ongoing Bluetooth Issues
 

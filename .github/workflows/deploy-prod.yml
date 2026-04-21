@@ -45,19 +45,9 @@ jobs:
         with:
           path: dist/
 
-  Deploy:
-    needs: Build
-    runs-on: ubuntu-latest
-
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: Support
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - id: deployment
-        name: Deploy
-        uses: actions/deploy-pages@v4
+      - name: Deploy
+        run: aws s3 sync ./dist s3://${{ secrets.PRODUCTION_AWS_S3_BUCKET }}/support --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.PRODUCTION_AWS_REGION }}

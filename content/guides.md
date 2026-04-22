@@ -22,7 +22,7 @@ tableOfContents: true
 
 ## Tech Docs
 
-Technical documentation for System76 products released after 2020 can be viewed on the [tech docs website](https://tech-docs.system76.com).
+Technical documentation for System76 products released after 2020 can be viewed on the [tech docs website](https://system76.com/tech-docs/).
 
 Tech docs include tech specs, port guides, and service manuals.
 

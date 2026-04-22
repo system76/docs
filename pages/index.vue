@@ -117,7 +117,7 @@
         <ul class="space-y-2">
           <li>
             <a
-              href="https://tech-docs.system76.com/"
+              href="https://system76.com/tech-docs/"
               class="flex items-center px-4 py-3 transition duration-150 ease-in-out rounded-md group hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-orange-500"
               target="_blank"
               rel="noopener noreferrer"

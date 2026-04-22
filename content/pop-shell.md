@@ -55,6 +55,8 @@ make local-install
 sudo dnf install gnome-shell-extension-pop-shell
 ```
 
+After installing, open the Extensions app and enable the toggle for `Pop Shell`.
+
 #### For Arch
 
 <u>Pop Shell</u> is packaged in the AUR, but for the keyboard shortcuts to work, you will need to build it from source like we did above.

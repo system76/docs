@@ -1,0 +1,53 @@
+---
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          cache: npm
+          node-version-file: .tool-versions
+
+      - id: cache
+        name: Cache
+        uses: actions/cache@v5
+        with:
+          path: ./node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - if: steps.cache.outputs.cache-hit != 'true'
+        name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: production
+
+      - name: Debug
+        run: ls -la dist/_nuxt/content 2>&1 || true
+
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+      - name: Deploy
+        run: aws s3 sync ./dist s3://${{ secrets.PRODUCTION_AWS_S3_BUCKET }}/support --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.PRODUCTION_AWS_REGION }}

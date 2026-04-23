@@ -2,6 +2,6 @@
   pkgs.mkShell {
     nativeBuildInputs = with pkgs; [ 
        nodejs_20
-       nodePackages.npm
+       pkgs.prefetch-npm-deps
        ];
 }

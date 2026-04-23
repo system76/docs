@@ -5,6 +5,10 @@ import linkFixes from './modules/link-fixes'
 export default async () => ({
   target: 'static',
 
+  router: {
+    base: '/support/'
+  },
+
   components: true,
 
   content: {
@@ -33,7 +37,7 @@ export default async () => ({
       { charset: 'utf-8' },
 
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-
+      { hid: 'og:url', property: 'og:url', content: 'https://system76.com/support' },
       { hid: 'description', name: 'description', content: 'Official System76 Support and useful documentation' },
       { hid: 'og:title', property: 'og:title', content: 'System76 Support' },
       { hid: 'og:description', property: 'og:description', content: 'Official System76 Support and useful documentation' },

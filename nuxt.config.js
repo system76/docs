@@ -5,6 +5,10 @@ import linkFixes from './modules/link-fixes'
 export default async () => ({
   target: 'static',
 
+  router: {
+    base: '/support/'
+  },
+
   components: true,
 
   content: {
@@ -33,7 +37,7 @@ export default async () => ({
       { charset: 'utf-8' },
 
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-
+      { hid: 'og:url', property: 'og:url', content: 'https://system76.com/support' },
       { hid: 'description', name: 'description', content: 'Official System76 Support and useful documentation' },
       { hid: 'og:title', property: 'og:title', content: 'System76 Support' },
       { hid: 'og:description', property: 'og:description', content: 'Official System76 Support and useful documentation' },
@@ -42,18 +46,16 @@ export default async () => ({
     ],
 
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ],
 
     script: [
       {
         async: true,
-        defer: true,
-        'data-domain': 'support.system76.com',
-        src: 'https://plausible.io/js/plausible.js'
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-H37KSF3165'
       },
       {
-        innerHTML: 'window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }'
+        innerHTML: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-H37KSF3165');"
       }
     ],
 
@@ -75,13 +77,8 @@ export default async () => ({
 
   buildModules: [
     '@nuxt/image',
-    '@nuxtjs/tailwindcss',
-    'nuxt-dynamic-images'
+    '@nuxtjs/tailwindcss'
   ],
-
-  dynamicImages: {
-    puppeteerOptions: { headless: true, args: ['--no-sandbox'] }
-  },
 
   modules: [
     'nuxt-content-git',

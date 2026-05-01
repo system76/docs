@@ -55,7 +55,11 @@ make local-install
 sudo dnf install gnome-shell-extension-pop-shell
 ```
 
-After installing, open the Extensions app and enable the toggle for `Pop Shell`.
+After installing, log out and back in (or reboot), then run the following command to enable the extension:
+
+```bash
+gnome-extensions enable pop-shell@system76.com
+```
 
 #### For Arch
 

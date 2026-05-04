@@ -4,7 +4,6 @@ description: >
   Instructions for installing Windows on System76 hardware or within a virtual machine, and for locating Windows drivers.
 keywords:
   - Windows
-  - Windows 10
   - Windows 11
   - Microsoft
   - Drivers
@@ -38,44 +37,44 @@ Installing Windows is undertaken at your own risk. It's possible not all hardwar
 
 ## Windows 11
 
-> **Windows 11 Compatibility:** Windows 11 is not supported on all systems. Open Firmware systems below 13th Gen do not support Secure Boot which is a requirement for Windows 11. If your computer does not meet [Windows 11 requirements](https://support.microsoft.com/en-us/topic/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3), try Windows 10.  Windows 10 is still supported by Microsoft until [October of 2025](https://docs.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro).
+> **Windows 11 Compatibility:** Windows 11 is not supported on all systems. Open Firmware systems below 13th Gen do not support Secure Boot which is a requirement for Windows 11.
 
 ### Compatibility Table
 
 ---
-| Laptop Model | Windows 10 Support | Windows 11 Support |
-| ------------ | ------------------ | ------------------ |
-| Adder WS (addw1)     | Yes        | Yes                |
-| Adder WS (addw2)     | Yes        | No                 |
-| Adder WS (addw3)     | Yes        | Yes                |
-| Adder WS (addw4)     | Yes        | Yes                |
-| Bonobo WS (bonw14)   | Yes        | No                 |
-| Bonobo WS (bonw15)   | Yes        | Yes                |
-| Darter Pro (darp8 and older) | Yes | No                |
-| Darter Pro (darp9 and newer) | Yes | Yes               |
-| Galago Pro (galp6 and older) | Yes | No                |
-| Galago Pro (galp7 and newer) | Yes        | Yes        |
-| Gazelle (gaze17 and older)   | Yes        | No         |
-| Gazelle (gaze18 and newer)   | Yes        | Yes        |
-| Lemur Pro (lemp11 and older) | Yes        | No         |
-| Lemur Pro (lemp12 and newer) | Yes        | Yes        |
-| Oryx Pro (oryp10 and older)  | Yes        | No         |
-| Oryx Pro (oryp11 and newer)  | Yes        | Yes        |
-| Pangolin (pang10 and newer)  | Yes        | Yes        |
-| Serval WS (serw12 and newer) | Yes        | Yes        |
+| Laptop Model | Windows 11 Support |
+| ------------ | ------------------ |
+| Adder WS (addw1)     | Yes        |
+| Adder WS (addw2)     | No         |
+| Adder WS (addw3)     | Yes        |
+| Adder WS (addw4)     | Yes        |
+| Bonobo WS (bonw14)   | No         |
+| Bonobo WS (bonw15)   | Yes        |
+| Darter Pro (darp8 and older) | No |
+| Darter Pro (darp9 and newer) | Yes|
+| Galago Pro (galp6 and older) | No | 
+| Galago Pro (galp7 and newer) | Yes|
+| Gazelle (gaze17 and older)   | No |
+| Gazelle (gaze18 and newer)   | Yes|
+| Lemur Pro (lemp11 and older) | No |
+| Lemur Pro (lemp12 and newer) | Yes|
+| Oryx Pro (oryp10 and older)  | No |
+| Oryx Pro (oryp11 and newer)  | Yes|
+| Pangolin (pang10 and newer)  | Yes|
+| Serval WS (serw12 and newer) | Yes|
 
-| Desktop Model     | Windows 10 Support | Windows 11 Support |
-| ----------------- | ------------------ | ------------------ |
-| Meerkat (meer5 and newer) | Yes        | Yes                |
-| Thelio (thelio-r1 and newer) | Yes     | Yes                |
-| Thelio (thelio-b1 and newer) | Yes     | Yes                |
-| Thelio Mira (thelio-mira-r1 and newer) | Yes  | Yes*        |
-| Thelio Mira (thelio-mira-b1 and newer) | Yes  | Yes*        |
-| Thelio Major (thelio-major-r1 and newer) | Yes | Yes*       |
-| Thelio Major (thelio-major-b1 and newer) | Yes | Yes*       |
-| Thelio Mega (thelio-mega-r1 and newer) | Yes | Yes*         |
-| Thelio Massive (thelio-massive-b1 and newer) | Yes | Yes*   |
-| Thelio Spark (thelio-spark-b1-n2 and newer)  | Yes | Yes*   |
+| Desktop Model     | Windows 11 Support |
+| ----------------- | ------------------ |
+| Meerkat (meer5 and newer) | Yes        |
+| Thelio (thelio-r1 and newer) | Yes     |
+| Thelio (thelio-b1 and newer) | Yes     |
+| Thelio Mira (thelio-mira-r1 and newer) | Yes*  |
+| Thelio Mira (thelio-mira-b1 and newer) | Yes*  |
+| Thelio Major (thelio-major-r1 and newer) | Yes* |
+| Thelio Major (thelio-major-b1 and newer) | Yes* |
+| Thelio Mega (thelio-mega-r1 and newer) | Yes* |
+| Thelio Massive (thelio-massive-b1 and newer) | Yes* |
+| Thelio Spark (thelio-spark-b1-n2 and newer)  | Yes* |
 
 \* For desktop computers you will want to confirm you have an 8th Gen Intel Core Processor or 2000 Ryzen AMD Processor, and that you have TPM enabled in the UEFI settings.
 
@@ -129,7 +128,7 @@ Once you have `VirtualBox` installed, we'll need to create the virtual computer 
 
 ![VirtualBox Main Window](/images/windows/step4.png)
 
-Click on the `New` button in the toolbar, then give your machine a name. If it isn't already filled out, set the machine "Type" to `Microsoft Windows` and the "Version" to `Windows 10 64-bit`, and click `Next`.
+Click on the `New` button in the toolbar, then give your machine a name. If it isn't already filled out, set the machine "Type" to `Microsoft Windows` and the "Version" to `Windows 11 64-bit`, and click `Next`.
 
 ![Setting up the Virtual Machine](/images/windows/step5.png)
 
@@ -207,7 +206,7 @@ If you prefer to use a local account, you can skip this step.
 
 ![Sign into your Microsoft Account](/images/windows/step21.png)
 
-Windows 10 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop.
+Windows 11 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop.
 
 ![Windows 10 Desktop](/images/windows/step22.png)
 
@@ -288,7 +287,7 @@ On the `Activate Windows` page, enter your Windows product key, then click `Next
 
 ![Windows activation](/images/dual-booting/windows-activation.jpg)
 
-If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 10 Pro` (if you're not sure which version to select, use this one.)
+If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 11 Home` (if you're not sure which version to select, use this one.)
 
 ![Windows edition selection](/images/dual-booting/windows-select-edition.jpg)
 
@@ -338,9 +337,7 @@ Follow the wizard to select your preferences:
 - Privacy settings
 - Cortana settings
 
-After completing the wizard, Windows will display a slideshow while it finishes setting up. Eventually, you will see the Windows desktop:
-
-![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
+After completing the wizard, Windows will display a slideshow while it finishes setting up. Eventually, you will see the Windows desktop.
 
 See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
@@ -421,7 +418,7 @@ On the `Activate Windows` page, enter your Windows product key, then click `Next
 
 ![Windows activation](/images/dual-booting/windows-activation.jpg)
 
-If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 10 Home` (if you're not sure which version to select, use this one.)
+If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 11 Home` (if you're not sure which version to select, use this one.)
 
 ![Windows edition selection](/images/dual-booting/windows-select-edition.jpg)
 
@@ -462,9 +459,7 @@ Follow the wizard to select your preferences for:
 - Privacy settings
 - Cortana settings
 
-After completing the wizard, Windows will display a slideshow while it finishes setting up. Once the set up is completed, you will see the Windows desktop:
-
-![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
+After completing the wizard, Windows will display a slideshow while it finishes setting up. Once the set up is completed, you will see the Windows desktop.
 
 See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 

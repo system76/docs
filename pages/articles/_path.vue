@@ -14,9 +14,9 @@
                   <span class="sr-only">All Articles</span>
                 </nuxt-link>
 
-                <h1 class="my-0 ml-3 font-sans italic text-lg truncate md:text-3xl">
+                <div class="my-0 ml-3 font-sans italic text-lg truncate md:text-3xl">
                   Support Articles
-                </h1>
+                </div>
               </div>
             </div>
           </div>
@@ -83,9 +83,9 @@
           v-if="article.tableOfContents"
           class="hidden ml-8 lg:block lg:flex-none lg:w-1/4"
         >
-          <h1 class="mt-0 mx-7 font-bold text-sm uppercase">
+          <h2 class="mt-0 mx-7 font-bold text-sm uppercase">
             Table of Contents
-          </h1>
+          </h2>
 
           <ul class="max-w-7xl mx-auto py-2 px-4">
             <li

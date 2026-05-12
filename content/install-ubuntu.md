@@ -1,5 +1,5 @@
 ---
-title: Ubuntu (Install)
+title: Install Ubuntu
 description: >
   Full instructions on installing Ubuntu your computer.
 keywords:
@@ -191,22 +191,6 @@ You can opt to install the updates later, or install them now by clicking **Inst
 
 ![Updates Complete](/images/install-ubuntu/ubuntu-updater-finished.png)
 
-### Install System76 Driver
+### Install System76 & NVIDIA Drivers
 
-Once you've installed Ubuntu, you'll need to download and install the <u>System76 Driver</u>. Open the <u>Terminal</u> and run the following commands. For using the <u>Terminal</u>, refer to our [Linux Terminal Basics article](/articles/terminal-basics).
-
-```bash
-sudo apt-add-repository -y ppa:system76-dev/stable
-sudo apt install system76-driver
-sudo apt upgrade
-```
-
-### NVIDIA Graphics
-
-If you ordered a system with a discrete NVIDIA graphics card or if you added one later on, you will need to manually install the drivers for your card to get the optimum performance. Please run the following command after the above commands to install the driver:
-
-```bash
-sudo apt install system76-driver-nvidia
-```
-
-Once the process is finished, restart your computer for all changes to take effect.
+Once you've installed Ubuntu, you'll need to download and install the System76 Driver; if you ordered a system with a discrete NVIDIA graphics card (or if you add one later on), you'll also need to install the NVIDIA graphics drivers. See [Install the System76 Driver](/articles/system76-driver) for instructions.

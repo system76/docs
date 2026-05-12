@@ -22,10 +22,14 @@ Please note these steps are not necessary in Pop!\_OS, which includes the reposi
 
 ## Installing the Driver
 
-To install our Driver you need to run the following commands in the Terminal:
+The [System76 APT repository](https://github.com/pop-os/system76-ubuntu-repo) first needs to be added to your system. Visit the [Releases section](https://github.com/pop-os/system76-ubuntu-repo/releases/) and download the latest .deb file that corresponds to your PC's architecture. If you are not certain, amd64 is probably the one you need. Double click the .deb file and install it with Ubuntu App Center.
+
+**Note:** App Center will show a warning about installing third-party packages. We recommend caution when installing third-party packages.
+
+Installing that package sets up our repository automatically, so the System76 Driver can be installed with this terminal command:
 
 ```bash
-sudo apt-add-repository -y ppa:system76-dev/stable
+sudo apt update
 sudo apt install system76-driver
 sudo apt upgrade
 ```
@@ -34,13 +38,13 @@ This installs the System76 driver and related utilities which are needed to enab
 
 ### Installing the System76 NVIDIA Driver for Systems with NVIDIA GPUs
 
-If your system has an NVIDIA graphics card, you will want to go ahead and use this command to install the System76 Driver with NVIDIA graphics drivers built-in:
+If your system has an NVIDIA graphics card, use this command to install the System76 Driver with NVIDIA graphics drivers included:
 
 ```bash
 sudo apt-get install system76-driver-nvidia
 ```
 
-In addition to the standard packages, that will pull in the latest NVIDIA drivers as packaged by System76, and all related packages needed to take full advantage of your dedicated NVIDIA graphics card.
+In addition to the standard packages, this package also pulls in the current NVIDIA drivers and all related packages needed to take full advantage of your dedicated NVIDIA graphics card.
 
 ## Install System76 Driver on Other Operating Systems
 

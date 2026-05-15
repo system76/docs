@@ -524,11 +524,11 @@ You can use that info to find the manufacturer, then search for drivers.
 
 ### Disabling Fast Startup
 
-It is also recommended to disable "Fast Startup" within Windows to avoid problems switching between operating systems. To do this, navigate to Settings -> System -> Power & sleep and click `Additional power settings` in the right sidebar:
+It is also recommended to disable "Fast Startup" within Windows to avoid problems switching between operating systems. To do this, push `Super` + `R` to open a Run window (or use Windows Search to open the "Run" program). Once you have Run open, type in `control` and push `Enter` to launch the Control Panel.
 
 ![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-1.jpg)
 
-This will open another control panel. In this panel, click `Choose what the power buttons do` in the left sidebar.
+In the Control Panel, click on `Hardware and Sound`, then select `Choose a power plan`, followed by `Choose what the power buttons do` in the left sidebar.
 
 ![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-2.jpg)
 

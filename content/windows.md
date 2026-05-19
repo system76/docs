@@ -528,7 +528,7 @@ It is also recommended to disable "Fast Startup" within Windows to avoid problem
 
 ![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-1.jpg)
 
-In the Control Panel, click on `Hardware and Sound`, then select `Choose a power plan`, followed by `Choose what the power buttons do` in the left sidebar.
+In the Control Panel, click on `Hardware and Sound`, then select `Choose what the power buttons do`.
 
 ![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-2.jpg)
 

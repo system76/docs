@@ -44,18 +44,18 @@ system76-firmware: failed to schedule: failed to add boot entry: exit code: 5
 
 It may be necessary to clear the SMMSTORE ROM by flashing new firmware using a flash drive with a custom firmware update tool. After flashing, this will remove any custom EFI variables (such as those installed by boot managers). Information on repairing the bootloader can be found at the end of this article.
 
-To begin, download the zip file for your system. The zip file link below will land on the firmware file page on Github. Click the menu with 3 dots next to the file name and select Download. Unzip the files to a FAT32 formatted USB drive. Then shutdown the laptop and remove all NVMe M.2 drive(s) in the system using the step by step instructions for your system:
+To begin, download the zip file for your system below. Unzip the files to a FAT32 formatted USB drive. Then, shut down the laptop and remove all NVMe M.2 drive(s) in the system using the step-by-step instructions for your system:
 
 |   System            |              Patched Firmware                             |                                        Tech Docs                                            |
 |:-------------------:|:---------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
-| Adder WS  (addw2)   | [addw2-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/addw2-76ec.zip)    | [addw2](https://system76.com/tech-docs/models/addw2/repairs.html#replacing-an-m2nvme-ssd)   |
-| Bonobo WS  (bonw14) | [bonw14-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/bonw14-76ec.zip)  | [bonw14](https://system76.com/tech-docs/models/bonw14/repairs.html#replacing-an-m2nvme-ssd) |
-| Darter Pro (darp6)  | [darp6-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/darp6-76ec.zip)    | [darp6](https://system76.com/tech-docs/models/darp6/repairs.html#replacing-an-m2nvme-ssd)   |
-| Darter Pro (darp7)  | [darp7-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/darp7-76ec.zip)    | [darp7](https://system76.com/tech-docs/models/darp7/repairs.html#replacing-an-m2nvme-ssd)   |
-| Galago Pro (galp5)  | [galp5-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/galp5-76ec.zip)    | [galp5](https://system76.com/tech-docs/models/galp5/repairs.html#replacing-an-m2nvme-ssd)   |
-| Lemur Pro (lemp9)   | [lemp9-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/lemp9-76ec.zip)    | [lemp9](https://system76.com/tech-docs/models/lemp9/repairs.html#replacing-an-m2nvme-ssd)   |
-| Lemur Pro (lemp10)  | [lemp10-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/lemp10-76ec.zip)  | [lemp10](https://system76.com/tech-docs/models/lemp10/repairs.html#replacing-an-m2nvme-ssd) |
-| Oryx Pro (oryp6)    | [oryp6-76ec.zip](https://github.com/system76/docs/blob/master/static/files/clear-smmstore/oryp6-76ec.zip)    | [oryp6](https://system76.com/tech-docs/models/oryp6/repairs.html#replacing-an-m2nvme-ssd)   |
+| Adder WS  (addw2)   | [addw2-76ec.zip](/support/files/clear-smmstore/addw2-76ec.zip)    | [addw2](https://system76.com/tech-docs/models/addw2/repairs.html#replacing-an-m2nvme-ssd)   |
+| Bonobo WS  (bonw14) | [bonw14-76ec.zip](/support/files/clear-smmstore/bonw14-76ec.zip)  | [bonw14](https://system76.com/tech-docs/models/bonw14/repairs.html#replacing-an-m2nvme-ssd) |
+| Darter Pro (darp6)  | [darp6-76ec.zip](/support/files/clear-smmstore/darp6-76ec.zip)    | [darp6](https://system76.com/tech-docs/models/darp6/repairs.html#replacing-an-m2nvme-ssd)   |
+| Darter Pro (darp7)  | [darp7-76ec.zip](/support/files/clear-smmstore/darp7-76ec.zip)    | [darp7](https://system76.com/tech-docs/models/darp7/repairs.html#replacing-an-m2nvme-ssd)   |
+| Galago Pro (galp5)  | [galp5-76ec.zip](/support/files/clear-smmstore/galp5-76ec.zip)    | [galp5](https://system76.com/tech-docs/models/galp5/repairs.html#replacing-an-m2nvme-ssd)   |
+| Lemur Pro (lemp9)   | [lemp9-76ec.zip](/support/files/clear-smmstore/lemp9-76ec.zip)    | [lemp9](https://system76.com/tech-docs/models/lemp9/repairs.html#replacing-an-m2nvme-ssd)   |
+| Lemur Pro (lemp10)  | [lemp10-76ec.zip](/support/files/clear-smmstore/lemp10-76ec.zip)  | [lemp10](https://system76.com/tech-docs/models/lemp10/repairs.html#replacing-an-m2nvme-ssd) |
+| Oryx Pro (oryp6)    | [oryp6-76ec.zip](/support/files/clear-smmstore/oryp6-76ec.zip)    | [oryp6](https://system76.com/tech-docs/models/oryp6/repairs.html#replacing-an-m2nvme-ssd)   |
 
 ## Unzipping the Files
 

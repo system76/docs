@@ -6,6 +6,7 @@ keywords:
   - Ubuntu 20.04
   - Ubuntu 22.04
   - Ubuntu 24.04
+  - Ubuntu 26.04
   - LTS
   - Point Release
   - Upgrade
@@ -70,19 +71,7 @@ A message will appear informing you of the availability of the new release. Clic
 
 ### Install The System76 Driver
 
-Once you've upgraded Ubuntu, you'll need to download and install the current System76 Driver. Open the Terminal app (search <u>Terminal</u> from the Activities Overview or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), then enter the following commands:
-
-```bash
-sudo apt-add-repository ppa:system76-dev/stable
-sudo apt update
-sudo apt install system76-driver
-```
-
-**For NVIDIA Graphics:** If you own a system with a discrete NVIDIA graphics card, you will need to manually install the closed source drivers for your card to get the optimum performance. Please run the following command:
-
-```bash
-sudo apt install system76-driver-nvidia
-```
+After upgrading Ubuntu, the System76 Ubuntu software repository should be added and the System76 Driver should be installed. [This article](/articles/system76-driver) covers that process.
 
 Once the process is finished, reboot your computer for the changes to take effect.
 

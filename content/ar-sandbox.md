@@ -31,13 +31,13 @@ In hopes of giving this awesome software wider exposure and making it easier to 
 
 - Roughly 200 pounds of white sand like [Sandtastik White Sandbox Sand](https://www.amazon.com/Sandtastik-White-Play-Sand-SND025/dp/B001AZ0CGG)
 
-- A System76 computer with a fast NVIDIA GPU, running Pop!_OS 22.04 or newer.
+- A System76 computer with a fast NVIDIA GPU, running Pop!_OS 22.04.
 
 In terms of System76 computers we recommend the [Oryx Pro](https://system76.com/laptops/oryx) laptop or [Thelio](https://system76.com/desktops) desktop with a dedicated GPU.
 
 ## Install Software
 
-- You'll need a computer running Pop!_OS 22.04 or newer.
+- You'll need a computer running Pop!_OS 22.04.
 
 - Then install ArSandbox via the [terminal](https://support.system76.com/articles/terminal-basics)
 

@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          lfs: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -36,9 +38,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_ENV: production
-
-      - name: Debug
-        run: ls -la dist/_nuxt/content 2>&1 || true
 
       - name: Upload
         uses: actions/upload-pages-artifact@v3

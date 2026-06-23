@@ -1,52 +1,18 @@
 {
   "name": "@system76/docs",
-  "version": "1.0.0",
-  "private": true,
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "nuxt dev",
-    "build": "nuxt generate --fail-on-error",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:md": "markdownlint content/"
+    "dev": "astro dev --host 0.0.0.0",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "astro": "astro"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@nuxt/content": "^1.14.0",
-    "@system76/components": "^1.11.1",
-    "@system76/design": "^5.4.2",
-    "core-js": "^3.32.2",
-    "nuxt": "^2.17.1",
-    "nuxt-content-git": "^3.0.0"
+    "@astrojs/starlight": "^0.40.0",
+    "astro": "^7.0.0",
+    "sharp": "^0.34.5"
   },
-  "devDependencies": {
-    "@nuxt/image": "^0.6.0",
-    "@nuxtjs/eslint-config": "^6.0.0",
-    "@nuxtjs/tailwindcss": "^4.2.1",
-    "@tailwindcss/line-clamp": "^0.2.2",
-    "@tailwindcss/typography": "^0.4.1",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.19.1",
-    "lodash": "^4.17.21",
-    "markdownlint-cli": "^0.31.1",
-    "postcss": "^8.4.29",
-    "shiki": "^0.9.3",
-    "unist-util-visit": "^2.0.3"
-  },
-  "description": "The docs system is powered by [NuxtJS][1] with [`@nuxtjs/content`][2],\r [tailwindcss][3], and some other packages. It uses Markdown in the `/content/`\r folder to render every article. If you don't know what Markdown is (or need a\r refresher), take a minute to look over [the basics][4].",
-  "main": ".eslintrc.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/system76/docs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/system76/docs/issues"
-  },
-  "homepage": "https://github.com/system76/docs#readme"
+  "packageManager": "pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26"
 }

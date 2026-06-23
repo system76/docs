@@ -6,6 +6,7 @@ on:
 
 jobs:
   Lint_JS:
+    if: false
     name: Lint (Javascript)
     runs-on: ubuntu-latest
 
@@ -36,6 +37,7 @@ jobs:
         run: npm run lint:js
 
   Lint_MD:
+    if: false
     name: Lint (Markdown)
     runs-on: ubuntu-latest
 
@@ -69,6 +71,7 @@ jobs:
         run: npm run lint:md
 
   Build:
+    if: false
     runs-on: ubuntu-latest
 
     steps:

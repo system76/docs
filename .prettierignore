@@ -1,0 +1,7 @@
+*.md
+*.mdx
+*.svg
+*.yml
+*.yaml
+src/content/*
+tsconfig.json

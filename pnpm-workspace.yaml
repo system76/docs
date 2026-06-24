@@ -4,3 +4,16 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - '@astrojs/markdown-satteri@0.3.1'
   - astro@7.0.0
+  - '@astrojs/markdown-satteri@0.3.2'
+  - '@astrojs/starlight@0.41.0'
+  - '@bruits/satteri-darwin-arm64@0.9.2'
+  - '@bruits/satteri-darwin-x64@0.9.2'
+  - '@bruits/satteri-linux-arm64-gnu@0.9.2'
+  - '@bruits/satteri-linux-arm64-musl@0.9.2'
+  - '@bruits/satteri-linux-x64-gnu@0.9.2'
+  - '@bruits/satteri-linux-x64-musl@0.9.2'
+  - '@bruits/satteri-wasm32-wasi@0.9.2'
+  - '@bruits/satteri-win32-arm64-msvc@0.9.2'
+  - '@bruits/satteri-win32-x64-msvc@0.9.2'
+  - satteri@0.9.2
+  - astro@7.0.2

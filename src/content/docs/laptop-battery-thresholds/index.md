@@ -106,6 +106,6 @@ FlexiCharger is an implementation of charging thresholds in proprietary firmware
 
 To adjust the thresholds, reboot the computer and enter the UEFI setup utility by holding down <kbd>F2</kbd> and selecting `Setup Utility`. Navigate to Advanced, then Advanced Chipset Control, and set FlexiCharger to Enabled. Two new options will appear where you can set the start and stop thresholds.
 
-![Enabling FlexiCharger](/images/laptop-charging-thresholds/flexicharger.jpg)
+![Enabling FlexiCharger](img/flexicharger.jpg)
 
 Once configured, save and exit the setup utility. The thresholds can be disabled at any time by setting FlexiCharger back to Disabled.

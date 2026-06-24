@@ -33,11 +33,11 @@ sudo apt install fakeroot libglu1-mesa libssl3 ocl-icd-opencl-dev qtwayland5 xor
 
 DaVinci Resolve can be downloaded [here](https://www.blackmagicdesign.com/products/davinciresolve/). Select the regular DaVinci Resolve version and not the Studio version, unless you have a license for the Studio version.
 
-![Download button](/images/davinci-resolve/davinci-resolve-download.png)
+![Download button](img/davinci-resolve-download.png)
 
 Before DaVinci Resolve will download, the website asks you to fill in a contact form (shown below).
 
-![Questions for download](/images/davinci-resolve/davinci-resolve-questions.png)
+![Questions for download](img/davinci-resolve-questions.png)
 
 Also download the MakeResolveDeb script from [here](http://www.danieltufvesson.com/makeresolvedeb).
 
@@ -65,8 +65,8 @@ sudo dpkg -i davinci-resolve*_amd64.deb
 
 After installing, DaVinci Resolve will be ready to launch from your Activities menu:
 
-![DaVinci Resolve Icon](/images/davinci-resolve/davinci-icon.png)
+![DaVinci Resolve Icon](img/davinci-icon.png)
 
-![DaVinci Loading Screen](/images/davinci-resolve/davinci-loading-screen.png)
+![DaVinci Loading Screen](img/davinci-loading-screen.png)
 
-![DaVinci App Open](/images/davinci-resolve/davinci-app-open.png)
+![DaVinci App Open](img/davinci-app-open.png)

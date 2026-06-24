@@ -28,7 +28,7 @@ On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather t
 
 First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key.  On the menu, choose **Recovery Mode**.
 
-![systemd-boot](/images/password/systemd-boot.png)
+![systemd-boot](img/systemd-boot.png)
 
 Once the live disk boots move to a new workspace, to do this on Ubuntu use the Activities button in the top left and on Pop!\_OS use the Workspaces button in the top left (be sure not to choose any install or repair options in the installer window, as this could result in data loss).
 

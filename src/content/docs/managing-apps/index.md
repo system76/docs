@@ -39,15 +39,15 @@ COSMIC includes a graphical user interface (GUI) called the COSMIC Store for eas
 
 1. Open the COSMIC Store by clicking the icon in the dock, or by pressing `Super` to open the launcher and then searching for “COSMIC Store”.
 
-![COSMIC Store icon in the Dock](/images/managing-apps/cosmic-store-icon.png)
+![COSMIC Store icon in the Dock](img/cosmic-store-icon.png)
 
 2. Explore apps or type the application name in the search field.
 
-![Search bar in the COSMIC Store](/images/managing-apps/cosmic-store-search.png)
+![Search bar in the COSMIC Store](img/cosmic-store-search.png)
 
 3. Select the system (.deb) or Flathub (Flatpak) version.
 
-![Selecting the app type in the COSMIC Store](/images/managing-apps/cosmic-store-select-type.png)
+![Selecting the app type in the COSMIC Store](img/cosmic-store-select-type.png)
 
 ### Installing an Application Not Listed in the COSMIC Store
 
@@ -55,21 +55,21 @@ The COSMIC Store lists applications available in the configurated software repos
 
 1. Search for the application download link and instructions online.
 
-![Pop!_OS 24.04 browser search](/images/managing-apps/browser-search-2404.png)
+![Pop!_OS 24.04 browser search](img/browser-search-2404.png)
 
 2. Download the application. When given multiple options of file type, look for a 64-bit .deb or Debian/Ubuntu option.
 
-![Selecting the .deb type on the download webpage](/images/managing-apps/browser-select-type.png)
+![Selecting the .deb type on the download webpage](img/browser-select-type.png)
 
 3. After downloading, go to the Downloads folder and double-click the .deb file.
 
-![Downloaded .deb file in Pop!_OS 24.04](/images/managing-apps/downloaded-deb-file-2404.png)
+![Downloaded .deb file in Pop!_OS 24.04](img/downloaded-deb-file-2404.png)
 
 4. The COSMIC Store will open and present you with the option to install the file.
 
     - When installing this way, the application may install a new repository so COSMIC Store can check for updates in the future, or you may need to download updates manually the same way you downloaded the initial installer.
 
-![Installing a .deb file with the COSMIC Store](/images/managing-apps/cosmic-store-file-install.png)
+![Installing a .deb file with the COSMIC Store](img/cosmic-store-file-install.png)
 
 ### Managing Repositories
 
@@ -79,31 +79,31 @@ You can add, remove, and edit software repositories using Repoman. This includes
 
 1. Press `Super` to open the launcher, then search for “Repoman".
 
-![Searching for Repoman in the COSMIC Launcher](/images/managing-apps/repoman-launcher.png)
+![Searching for Repoman in the COSMIC Launcher](img/repoman-launcher.png)
 
 2. Click on the Extra Sources tab to manage .deb repositories (PPAs), or the Flatpak tab to manage Flatpak repositories.
 
-![Repoman's Extra Sources page in Pop!_OS 24.04](/images/managing-apps/repoman-extra-sources-2404.png)
+![Repoman's Extra Sources page in Pop!_OS 24.04](img/repoman-extra-sources-2404.png)
 
 #### Adding a Repository
 
 1. Click the `+` button in the bottom-left corner.
 
-![Add button in Repoman (24.04)](/images/managing-apps/repoman-add-button-2404.png)
+![Add button in Repoman (24.04)](img/repoman-add-button-2404.png)
 
 2. Enter the source details for the repository and click Add.
 
-![Adding a source in Repoman (24.04)](/images/managing-apps/repoman-adding-2404.png)
+![Adding a source in Repoman (24.04)](img/repoman-adding-2404.png)
 
 3. After entering your password (if prompted), the repository will appear in the sources list.
 
-![Added source in Repoman (24.04)](/images/managing-apps/repoman-added-2404.png)
+![Added source in Repoman (24.04)](img/repoman-added-2404.png)
 
 #### Removing a Repository
 
 Select a repository from the list, then click on the trashcan icon to delete the repository.
 
-![Remove button in Repoman (24.04)](/images/managing-apps/repoman-remove-button-2404.png)
+![Remove button in Repoman (24.04)](img/repoman-remove-button-2404.png)
 
 ### Updating Installed Applications
 
@@ -113,7 +113,7 @@ The COSMIC Store can update any applications installed from the software reposit
 2. Click `Updates` on the sidebar.
 3. Select `Update all` in the top-right corner.
 
-![Updates page & button in the COSMIC Store](/images/managing-apps/cosmic-store-updates.png)
+![Updates page & button in the COSMIC Store](img/cosmic-store-updates.png)
 
 ## Using the Terminal
 
@@ -131,7 +131,7 @@ flatpak search [search term]
 
 The package name for each search result is displayed in the `Application ID` column.
 
-![Flatpak search results](/images/managing-apps/search-flatpak.webp)
+![Flatpak search results](img/search-flatpak.webp)
 
 #### .deb (System) Packages
 
@@ -143,7 +143,7 @@ apt search [search term]
 
 The package name for each search result is displayed in green, before the `/` character.
 
-![apt search results](/images/managing-apps/search-apt.webp)
+![apt search results](img/search-apt.webp)
 
 ### Installing and Removing Applications
 
@@ -196,11 +196,11 @@ sudo apt autoremove --purge
 2. After each command, enter your password or answer `Y` as prompted.
     - When prompted for your password in the terminal, no onscreen feedback will appear while typing the password; press `Enter` after you're done typing the password.
 
-![Bad screenshot that needs to be replaced](/images/managing-apps/terminal-dist-upgrade.webp)
+![Bad screenshot that needs to be replaced](img/terminal-dist-upgrade.webp)
 
 3. If an error appears, read the error message and run any commands it suggests.
 
-![Bad screenshot taht needs to be replaced](/images/managing-apps/terminal-error.webp)
+![Bad screenshot taht needs to be replaced](img/terminal-error.webp)
 
 #### Updating Flatpaks
 
@@ -219,15 +219,15 @@ Pop!_OS 22.04 and below include the Pop!_Shop, which looks different from the CO
 
 1. Open the Pop! Shop by clicking the rocket ship icon in the dock, or press SUPER and search for “pop shop”.
 
-![Pop!_Shop icon in the dock](/images/managing-apps/pop-shop-icon.png)
+![Pop!_Shop icon in the dock](img/pop-shop-icon.png)
 
 2. Explore apps in categories, or type the application name in the search field.
 
-![Pop!_Shop search bar](/images/managing-apps/pop-shop-search.png)
+![Pop!_Shop search bar](img/pop-shop-search.png)
 
 3. Select the Pop!_OS/Ubuntu (.deb) or flathub (Flatpak) version.
 
-![Selecting the app type in the Pop!_Shop](/images/managing-apps/pop-shop-select-type.png)
+![Selecting the app type in the Pop!_Shop](img/pop-shop-select-type.png)
 
 4. Click **Install**.
 
@@ -237,23 +237,23 @@ The Pop!_Shop lists applications available in the configurated software reposito
 
 1. Search for the application download link and instructions online.
 
-![Pop!_OS 22.04 browser search](/images/managing-apps/browser-search-2204.png)
+![Pop!_OS 22.04 browser search](img/browser-search-2204.png)
 
 2. Download the application. When given multiple options of file type, look for a 64-bit .deb or Debian/Ubuntu option.
 
-![Selecting the .deb type on the download webpage](/images/managing-apps/browser-select-type.png)
+![Selecting the .deb type on the download webpage](img/browser-select-type.png)
 
 3. After downloading, go to the Downloads folder and double-click the .deb file.
 
-![Downloaded .deb file in Pop!_OS 22.04](/images/managing-apps/downloaded-deb-file-2204.png)
+![Downloaded .deb file in Pop!_OS 22.04](img/downloaded-deb-file-2204.png)
 
 4. Open the file in Eddy, the default hanlder for .deb files in older versions of Pop!_OS.
 
-![Opening a .deb file with Eddy in Pop!_OS 22.04](/images/managing-apps/eddy-open-with.png)
+![Opening a .deb file with Eddy in Pop!_OS 22.04](img/eddy-open-with.png)
 
 5. Click Install, then enter your password if prompted.
 
-![Installing a package with Eddy in Pop!_OS 22.04](/images/managing-apps/eddy-install.png)
+![Installing a package with Eddy in Pop!_OS 22.04](img/eddy-install.png)
 
 ### Managing Repositories
 
@@ -263,31 +263,31 @@ You can add, remove, and edit software repositories using Repoman. This includes
 
 1. Access Repoman by launching the Pop!_Shop, then clicking the `System Software Sources` option in the top-right menu or pressing the `Ctrl` + `S` keyboard shortcut in the Pop!_Shop.
 
-![Pop!_Shop System Software Sources menu item](/images/managing-apps/pop-shop-sources.png)
+![Pop!_Shop System Software Sources menu item](img/pop-shop-sources.png)
 
 2. Click on the Extra Sources tab to manage .deb repositories (PPAs), or the Flatpak tab to manage Flatpak repositories.
 
-![Repoman's Extra Sources page in Pop!_OS 22.04](/images/managing-apps/repoman-extra-sources-2204.png)
+![Repoman's Extra Sources page in Pop!_OS 22.04](img/repoman-extra-sources-2204.png)
 
 #### Adding a Repository
 
 1. Click the `+` button in the bottom-left corner.
 
-![Add button in Repoman (22.04)](/images/managing-apps/repoman-add-button-2204.png)
+![Add button in Repoman (22.04)](img/repoman-add-button-2204.png)
 
 2. Enter the source details for the repository and click Add.
 
-![Adding a source in Repoman (22.04)](/images/managing-apps/repoman-adding-2204.png)
+![Adding a source in Repoman (22.04)](img/repoman-adding-2204.png)
 
 3. After entering your password (if prompted), the repository will appear in the sources list.
 
-![Added source in Repoman (22.04)](/images/managing-apps/repoman-added-2204.png)
+![Added source in Repoman (22.04)](img/repoman-added-2204.png)
 
 #### Removing a Repository
 
 Select a repository from the list, then click on the trashcan icon to delete the repository.
 
-![Remove button in Repoman (22.04)](/images/managing-apps/repoman-remove-button-2204.png)
+![Remove button in Repoman (22.04)](img/repoman-remove-button-2204.png)
 
 ### Updating Installed Applications
 
@@ -297,8 +297,8 @@ The Pop!_Shop can update any applications installed from the software repositori
 
 2. Click `Updates & Installed Software` in the top-right menu, or press the `Ctrl` + `I` keyboard shortcut in the Pop!_Shop.
 
-![Pop!_Shop Updates & Installed Software menu button](/images/managing-apps/pop-shop-updates-menu.png)
+![Pop!_Shop Updates & Installed Software menu button](img/pop-shop-updates-menu.png)
 
 3. Select `Update All`.
 
-![Updates page & button in the Pop!_Shop](/images/managing-apps/pop-shop-updates-page.png)
+![Updates page & button in the Pop!_Shop](img/pop-shop-updates-page.png)

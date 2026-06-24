@@ -37,7 +37,7 @@ Once you've made a mount point, double click it to open it and ensure that it is
 
 Press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
 
-![Disks Application](/images/extra-drive/Step1.png)
+![Disks Application](img/Step1.png)
 
 Click on your extra drive in the list. You can identify it by size, or by the label; the extra drive is usually `/dev/sdb` or `/dev/sdc`.
 
@@ -49,9 +49,9 @@ If this is a new drive, and it is not formatted, it will need to be formatted be
 
 Press the Super key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. Click on the Extra Drive Partition under "Volumes", then click on the Gear icon <font-awesome-icon icon="cog"></font-awesome-icon> to open the options menu for the Volume. Then click on **Edit Mount Options**.
 
-![Volume Options Menu](/images/extra-drive/Step2.png)
+![Volume Options Menu](img/Step2.png)
 
-![Mount Options Dialog](/images/extra-drive/Step3.png)
+![Mount Options Dialog](img/Step3.png)
 
 ## Set Mount Options
 
@@ -74,7 +74,7 @@ Filesystem Type                            | `auto`**
 
 \** The `auto` setting is the default. If you're using a non-standard filesystem type, you can enter it here.
 
-![Mount Options Set Correctly](/images/extra-drive/Step4-updated.png)
+![Mount Options Set Correctly](img/Step4-updated.png)
 
 The red box shows the item we don't want to change and the green box shows the item we want to change.
 

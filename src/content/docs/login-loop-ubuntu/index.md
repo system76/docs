@@ -43,7 +43,7 @@ The easiest way to confirm your username is by booting into recovery mode, enter
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 
-![Login and initial prompt](/images/login-loop/login-initial.png)
+![Login and initial prompt](img/login-initial.png)
 
 Note that you can always return to the graphical login screen by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>, or by typing `sudo systemctl restart gdm`.
 
@@ -112,7 +112,7 @@ sudo apt autoremove
 sudo apt clean
 ```
 
-![Removing NVIDIA](/images/login-loop/purge-nvidia.png)
+![Removing NVIDIA](img/purge-nvidia.png)
 
 After the NVIDIA driver has been removed, add it back using the following commands:
 

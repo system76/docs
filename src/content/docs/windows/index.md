@@ -105,7 +105,7 @@ On some models, for example, Thelio (thelio-r1) and Thelio Major (thelio-major-r
 
 M.I.T tab -> Advanced Frequency Settings -> Advanced CPU Core Settings -> SVM mode -> Enabled.
 
-![AMD BIOS Settings](/images/windows/AMD-BIOS.png)
+![AMD BIOS Settings](img/AMD-BIOS.png)
 
 <!-- TO-DO: Create an article on AMD-V and add a hyperlink to this article.-->
 
@@ -115,7 +115,7 @@ To act as your hypervisor, we recommend installing `VirtualBox`, since it's free
 
 Open the `Pop!_Shop`, then enter "virtualbox" in the search field. Click on the `VirtualBox` result with the blue icon. You should see the window below:
 
-![VirtualBox Listing in Popshop](/images/windows/virtualbox-popshop.png)
+![VirtualBox Listing in Popshop](img/virtualbox-popshop.png)
 
 Click the `Install` button, then wait for the download and install process to complete.
 
@@ -123,19 +123,19 @@ Click the `Install` button, then wait for the download and install process to co
 
 Once you have `VirtualBox` installed, we'll need to create the virtual computer upon which we'll install Windows later. Press the `SUPER` Key on your keyboard and then enter "virtualbox" in the search field.
 
-![Opening VirtualBox through the Dash](/images/windows/step3.png)
+![Opening VirtualBox through the Dash](img/step3.png)
 
 <!-- Update Alt Text ^ -->
 
-![VirtualBox Main Window](/images/windows/step4.png)
+![VirtualBox Main Window](img/step4.png)
 
 Click on the `New` button in the toolbar, then give your machine a name. If it isn't already filled out, set the machine "Type" to `Microsoft Windows` and the "Version" to `Windows 10 64-bit`, and click `Next`.
 
-![Setting up the Virtual Machine](/images/windows/step5.png)
+![Setting up the Virtual Machine](img/step5.png)
 
 Increase the virtual machine memory size to half of the total RAM available. For the Hard Drive, you'll want to choose to `Create a virtual hard drive now`.
 
-![Creating a virtual hard drive](/images/windows/step6.png)
+![Creating a virtual hard drive](img/step6.png)
 
 For the options in creating the virtual hard drive, create a `VHD (Virtual Hard Disk)`, `Fixed size`, 16 GB or larger.
 
@@ -143,23 +143,23 @@ For the options in creating the virtual hard drive, create a `VHD (Virtual Hard 
 
 Once you've created the new VM, you should see it listed in the `VirtualBox` window:
 
-![VM listed in the VirtualBox Window](/images/windows/step7.png)
+![VM listed in the VirtualBox Window](img/step7.png)
 
 The next step is to boot the virtual machine and install an OS on it. Click on the VM in the list so that it is highlighted orange, then click the `Start` button. This is equivalent to pressing the power button on the virtual computer.
 
 `VirtualBox` will now ask you to select a start-up disk. Click the small folder icon next to the dropdown, then point `VirtualBox` at your ISO file and open it. `VirtualBox` will then boot the file.
 
-![Start-up disk selection](/images/windows/step8.png)
+![Start-up disk selection](img/step8.png)
 
-![Windows booting up](/images/windows/step9.png)
+![Windows booting up](img/step9.png)
 
 After Windows finishes booting from the ISO, you should see the Windows Setup window. Select your desired options for "Language to install," "Time and currency format," and "Keyboard or input method," then click `Next`.
 
-![Windows Setup window](/images/windows/step10.png)
+![Windows Setup window](img/step10.png)
 
 On the next screen, click `Install Now` to start the installation.
 
-![Click Install Now to start the installation](/images/windows/step11.png)
+![Click Install Now to start the installation](img/step11.png)
 
 To install Windows on your System 76 computer, we will need to create a Windows USB installer. Creating a Windows installer on Linux is similar to how you create Linux USB installers. However, the Windows installer has unique set up requirements, so not all USB creation tools will work.
 
@@ -167,27 +167,27 @@ To install Windows on your System 76 computer, we will need to create a Windows 
 
 Review the terms of the EULA. You are required to accept the terms of the EULA before completing the installation. Checking the box and clicking `Next` assumes you do accept the terms and agree to be bound by them. Do not continue with the installation if you don't agree to the terms in the EULA.
 
-![Accept the EULA](/images/windows/step13.png)
+![Accept the EULA](img/step13.png)
 
 Make sure you select `Custom: Install Windows only (advanced)`, as this is a new installation of Windows.
 
-![Select the Custom: Install Windows only option](/images/windows/step14.png)
+![Select the Custom: Install Windows only option](img/step14.png)
 
 Select the `Drive 0 Unallocated Space` area, then click `Next`.
 
-![Selecting Partition 2 for installation](/images/windows/step15.png)
+![Selecting Partition 2 for installation](img/step15.png)
 
 Windows will next begin copying over the installation files onto the virtual hard disk. This step may take a while, so feel free to work in the background while it's running. The virtual machine will automatically reboot when it's time to continue.
 
-![Installing Windows](/images/windows/step16.png)
+![Installing Windows](img/step16.png)
 
 When the VM reboots, you may be prompted to "Press any key to boot from CD or DVD..." (pictured below). **Do not press any keys here, or the installation will start over.**
 
-![Do not press any key. Seriously.](/images/windows/step17.png)
+![Do not press any key. Seriously.](img/step17.png)
 
 Windows will now finish installing files and get the system ready to be set up. The virtual machine may reboot again. **Remember** do not press any keys to boot from the CD or DVD.
 
-![Getting ready](/images/windows/step18.png)
+![Getting ready](img/step18.png)
 
 After the process is finalized, you can begin the setup process.
 
@@ -195,21 +195,21 @@ After the process is finalized, you can begin the setup process.
 
 Setup will begin with the following screen:
 
-![Get Going Fast](/images/windows/step19.png)
+![Get Going Fast](img/step19.png)
 
 You may select either "Use express settings," or you can customize the settings to suit your preferences. Next, Windows will download updates to ensure you're on the latest version of the OS. This step may take a while, depending on your Internet connection. When it's finished, Windows will ask you who owns this PC. Select `I own it`, unless you're setting the VM up for someone else. Click `Next`.
 
-![Who owns this PC?](/images/windows/step20.png)
+![Who owns this PC?](img/step20.png)
 
 Next, you'll be prompted to sign in with your Microsoft account. This step is recommended as it can allow for resetting your password remotely if you forget it. It can also sync your settings, apps, and files to other Window's PCs. If you don't have a Microsoft account, you can create one with the supplied link.
 
 If you prefer to use a local account, you can skip this step.
 
-![Sign into your Microsoft Account](/images/windows/step21.png)
+![Sign into your Microsoft Account](img/step21.png)
 
 Windows 10 allows you to set a PIN for logging in instead of a password. If you'd like to set a PIN, you can do so now, or skip this step. After completing the rest of your setup to your preferences, your desktop will load, and you'll be able to log in using the PIN or password. You'll then be presented with the desktop.
 
-![Windows 10 Desktop](/images/windows/step22.png)
+![Windows 10 Desktop](img/step22.png)
 
 ## Use the Windows Virtual Machine
 
@@ -223,7 +223,7 @@ In `VirtualBox`, click your virtual machine so it's highlighted in orange. Selec
 
 Select `OK` and power on your virtual machine. Go to the Printer menu and select the option to `Add a Printer`. Windows should automatically find your printer. Select it and follow the prompts to finish the installation. Print a test page to confirm the connection worked.
 
-![Windows 10 Desktop](/images/windows/vmsettings.png)
+![Windows 10 Desktop](img/vmsettings.png)
 
 ---
 
@@ -249,7 +249,7 @@ Once installed, open the WoeUSB-ng application and create the USB installer with
 2. Select the USB flash drive as the target device.
 3. Click `Install`.
 
-![WoeUSB-ng](/images/dual-booting/woeusb.png)
+![WoeUSB-ng](img/woeusb.png)
 
 It may take several minutes or more for the process to finish -- wait until the `Installation succeeded!` message appears.
 
@@ -278,27 +278,27 @@ From the boot menu, select the drive containing the Windows ISO.
 
 Select your language, region, and keyboard settings, then click `Next`.
 
-![Windows region & language settings](/images/dual-booting/windows-language-settings.jpg)
+![Windows region & language settings](img/windows-language-settings.jpg)
 
 On the next page, click `Install now`.
 
-![Windows installer](/images/dual-booting/windows-install-now.jpg)
+![Windows installer](img/windows-install-now.jpg)
 
 On the `Activate Windows` page, enter your Windows product key, then click `Next`. If you don't have a product key, click `I don't have a product key`. (Usage of Windows without a product key may violate Microsoft's [license terms](https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm) for Windows, and some features may be limited or unavailable.)
 
-![Windows activation](/images/dual-booting/windows-activation.jpg)
+![Windows activation](img/windows-activation.jpg)
 
 If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 10 Pro` (if you're not sure which version to select, use this one.)
 
-![Windows edition selection](/images/dual-booting/windows-select-edition.jpg)
+![Windows edition selection](img/windows-select-edition.jpg)
 
 Next, you will be asked to read and accept Microsoft's license terms for Windows. To continue, check the `I accept the license terms` checkbox and click `Next`.
 
-![Windows license terms](/images/dual-booting/windows-accept-license-terms.jpg)
+![Windows license terms](img/windows-accept-license-terms.jpg)
 
 The next page will ask what type of installation you want to perform. Since there is no existing Windows installation to upgrade, select the `Custom: Install Windows only (advanced)` option.
 
-![Windows installation types](/images/dual-booting/windows-installation-type.jpg)
+![Windows installation types](img/windows-installation-type.jpg)
 
 Finally, the installer will ask you to select where you want to install to. In this scenario, we are installing Windows to a dedicated drive (if you're doing something else, see [Planning the Installation](#planning-the-installation)).
 
@@ -306,29 +306,29 @@ If the drive to be used for Windows already contains any partitions, start by de
 
 For example, if you purchased a System76 machine with multiple drives, any extra drives should have a single partition (while the OS drive for Pop!\_OS will have three or four partitions.) In this example, the Pop!\_OS drive is 256GB and the Windows drive is 128GB, so we'll delete the single partition on `Drive 1` because it's closest to 128GB:
 
-![Windows deleting existing partitions](/images/dual-booting/windows-delete-existing-partitions.jpg)
+![Windows deleting existing partitions](img/windows-delete-existing-partitions.jpg)
 
 (If your flash drive is large enough, it may also show up in the list of drives; once again, identify it by its size and do not attempt to delete its partitions, since it's where the installer is stored.)
 
 You will be asked to confirm any partitions you delete:
 
-![Windows confirming a partition deletion](/images/dual-booting/windows-confirm-partition-delete.jpg)
+![Windows confirming a partition deletion](img/windows-confirm-partition-delete.jpg)
 
 Once all of the partitions have been deleted from the soon-to-be Windows drive, select the `Unallocated Space` on that drive and click `Next`. This will allow the installer to configure the necessary partitions automatically.
 
-![Windows selecting unallocated space](/images/dual-booting/windows-select-unallocated-space.jpg)
+![Windows selecting unallocated space](img/windows-select-unallocated-space.jpg)
 
 Next, wait for the Windows installation to complete. The installer will show progress as it copies and expands the OS files. The system may reboot one or more times.
 
-![Windows being installed](/images/dual-booting/windows-installing.jpg)
+![Windows being installed](img/windows-installing.jpg)
 
 If you see a message about checking the disk, wait and allow the installer to check its newly-created partitions.
 
-![Windows checking the disk](/images/dual-booting/windows-checking-disk.jpg)
+![Windows checking the disk](img/windows-checking-disk.jpg)
 
 Eventually, the Windows out-of-box experience wizard will start. Select your country (it may be automatically selected if you're connected to the internet) and click `Yes`.
 
-![Windows first-time setup wizard](/images/dual-booting/windows-oobe.jpg)
+![Windows first-time setup wizard](img/windows-oobe.jpg)
 
 Follow the wizard to select your preferences:
 
@@ -340,7 +340,7 @@ Follow the wizard to select your preferences:
 
 After completing the wizard, Windows will display a slideshow while it finishes setting up. Eventually, you will see the Windows desktop:
 
-![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
+![Windows 10 desktop](img/windows-10-desktop.jpg)
 
 See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
@@ -358,7 +358,7 @@ Start by [installing Pop!\_OS](/articles/install-pop/), making sure to select `D
 
 Once Pop!\_OS is installed (and not encrypted), boot into Recovery mode by holding down the spacebar during boot and selecting `Pop!\_OS recovery` from the list of boot options.
 
-![Entering Pop!\_OS Recovery](/images/dual-booting/pop-recovery.jpg)
+![Entering Pop!\_OS Recovery](img/pop-recovery.jpg)
 
 Once Recovery mode has finished loading, select your language and keyboard layout, then select `Try Demo Mode` in the bottom left to exit the installer.
 
@@ -368,31 +368,31 @@ The Recovery partition is installed on the same drive as the main Pop!\_OS insta
 
 The largest partition in an unencrypted, default layout is an ext4 partition. Select this partition from the list, then click the `Resize/Move` button.
 
-![Selecting the Pop!\_OS partition in GParted](/images/dual-booting/gparted-select-partition.jpg)
+![Selecting the Pop!\_OS partition in GParted](img/gparted-select-partition.jpg)
 
 In the resizing dialog, drag the end of the partition to the left to shrink its size. (If you want the Pop!\_OS partition to be a specific size, you can also enter the size value manually in the `New size (MiB)` text box.)
 
-![Resizing the Pop!\_OS partition in GParted](/images/dual-booting/gparted-resize-partition.png)
+![Resizing the Pop!\_OS partition in GParted](img/gparted-resize-partition.png)
 
 Click the `Resize/Move` button in the bottom right to confirm the change. Next, select the `unallocated` space immediately following the resized partition and click the `New` button to create a new partition for Windows.
 
-![Creating a Windows partition in GParted](/images/dual-booting/gparted-create-partition.jpg)
+![Creating a Windows partition in GParted](img/gparted-create-partition.jpg)
 
 In the "Create new Partition" dialog, change the `File system:` dropdown to `ntfs`, then click `Add` to confirm the options.
 
-![Creating a Windows partition in GParted](/images/dual-booting/gparted-new-partition.jpg)
+![Creating a Windows partition in GParted](img/gparted-new-partition.jpg)
 
 Finally, click the `Apply All Operations` button (green check-mark) to write the changes to the disk.
 
-![Applying the GParted operations](/images/dual-booting/gparted-apply-1.jpg)
+![Applying the GParted operations](img/gparted-apply-1.jpg)
 
 In the confirmation dialog, click `Apply` again to confirm.
 
-![Applying the GParted operations](/images/dual-booting/gparted-apply-2.jpg)
+![Applying the GParted operations](img/gparted-apply-2.jpg)
 
 Wait until all of the operations complete, then click the `Close` button.
 
-![Completed GParted operations](/images/dual-booting/gparted-complete.jpg)
+![Completed GParted operations](img/gparted-complete.jpg)
 
 Exit out of GParted and use the top-right menu to power off the system.
 
@@ -411,27 +411,27 @@ From the boot menu, select the drive containing the Windows installer, then wait
 
 Select your language, region, and keyboard settings, then click `Next`.
 
-![Windows region & language settings](/images/dual-booting/windows-language-settings.jpg)
+![Windows region & language settings](img/windows-language-settings.jpg)
 
 On the next page, click `Install now`.
 
-![Windows installer](/images/dual-booting/windows-install-now.jpg)
+![Windows installer](img/windows-install-now.jpg)
 
 On the `Activate Windows` page, enter your Windows product key, then click `Next`. If you don't have a product key, click `I don't have a product key`. (Usage of Windows without a product key may violate Microsoft's [license terms](https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm) for Windows, and some features may be limited or unavailable.)
 
-![Windows activation](/images/dual-booting/windows-activation.jpg)
+![Windows activation](img/windows-activation.jpg)
 
 If you didn't enter a product key, you will be asked to choose which version of Windows to install. The standard version for desktop and laptop computers is `Windows 10 Home` (if you're not sure which version to select, use this one.)
 
-![Windows edition selection](/images/dual-booting/windows-select-edition.jpg)
+![Windows edition selection](img/windows-select-edition.jpg)
 
 Next, you will be asked to read and accept Microsoft's license terms for Windows. To continue, check the `I accept the license terms` checkbox and click `Next`.
 
-![Windows license terms](/images/dual-booting/windows-accept-license-terms.jpg)
+![Windows license terms](img/windows-accept-license-terms.jpg)
 
 The next page will ask what type of installation you want to perform. Since there is no existing Windows installation to upgrade, select the `Custom: Install Windows only (advanced)` option.
 
-![Windows installation types](/images/dual-booting/windows-installation-type.jpg)
+![Windows installation types](img/windows-installation-type.jpg)
 
 Finally, the installer will ask you to select where you want to install to. In this scenario, we are installing Windows to a pre-made partition on the shared drive (if you're doing something else, see [Planning the Installation](#planning-the-installation)).
 
@@ -439,20 +439,20 @@ Select the partition that matches the size and position in the list of what you 
 
 >**Warning:** You should not need to format any partitions during this step. If you see a `Windows can't be installed on drive # partition #` message, either you have the wrong partition selected, or you did not select `NTFS` as the partition type when creating the partition in GParted earlier. Try selecting a different partition, or go back to [Shrinking Pop!\_OS](#shrinking-pop_os).
 
-![Windows selecting a partition](/images/dual-booting/windows-select-partition.jpg)
+![Windows selecting a partition](img/windows-select-partition.jpg)
 
 Next, wait for the Windows installation to complete. The installer will show progress as it copies and expands the OS files. The system may reboot one or more times.
 
-![Windows being installed](/images/dual-booting/windows-installing.jpg)
+![Windows being installed](img/windows-installing.jpg)
 
 If you see a message about checking the disk, wait and allow the installer to check its newly-created partitions.
 
-![Windows checking the disk](/images/dual-booting/windows-checking-disk.jpg)
+![Windows checking the disk](img/windows-checking-disk.jpg)
 
 ### Windows Set Up
 
 After the install is completed, the system will reboot and then load the Windows set-up wizard. Select your country (it may be automatically selected if you're connected to the internet) and click `Yes`.
-![Windows first-time setup wizard](/images/dual-booting/windows-oobe.jpg)
+![Windows first-time setup wizard](img/windows-oobe.jpg)
 
 Follow the wizard to select your preferences for:
 
@@ -464,7 +464,7 @@ Follow the wizard to select your preferences for:
 
 After completing the wizard, Windows will display a slideshow while it finishes setting up. Once the set up is completed, you will see the Windows desktop:
 
-![Windows 10 desktop](/images/dual-booting/windows-10-desktop.jpg)
+![Windows 10 desktop](img/windows-10-desktop.jpg)
 
 See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
@@ -476,7 +476,7 @@ See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
 After finishing the Windows installation, open Settings -> Update & Security and click `Check for updates` to install any drivers available through Windows Update first.
 
-![Checking for Windows updates](/images/dual-booting/windows-update.jpg)
+![Checking for Windows updates](img/windows-update.jpg)
 
 Click `Restart now` if you are prompted to restart to finish installing any updates. Repeat this process until no more updates are available.
 
@@ -526,19 +526,19 @@ You can use that info to find the manufacturer, then search for drivers.
 
 It is also recommended to disable "Fast Startup" within Windows to avoid problems switching between operating systems. To do this, navigate to Settings -> System -> Power & sleep and click `Additional power settings` in the right sidebar:
 
-![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-1.jpg)
+![Accessing additional power settings in Windows](img/windows-power-settings-1.jpg)
 
 This will open another control panel. In this panel, click `Choose what the power buttons do` in the left sidebar.
 
-![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-2.jpg)
+![Accessing additional power settings in Windows](img/windows-power-settings-2.jpg)
 
 On the next page, click `Change settings that are currently unavailable`.
 
-![Accessing additional power settings in Windows](/images/dual-booting/windows-power-settings-3.jpg)
+![Accessing additional power settings in Windows](img/windows-power-settings-3.jpg)
 
 Finally, scroll down to the "Shutdown settings" section, uncheck the `Turn on fast startup (recommended)` option, and click `Save changes`.
 
-![Disabling Fast Startup in Windows](/images/dual-booting/windows-power-settings-4.jpg)
+![Disabling Fast Startup in Windows](img/windows-power-settings-4.jpg)
 
 This will ensure Windows fully shuts down and allows other operating systems to use the hardware.
 

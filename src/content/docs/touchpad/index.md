@@ -22,15 +22,15 @@ On most System76 laptops, press <kbd>Fn</kbd>+<kbd>F1</kbd> to turn your laptop 
 
 To configure your touchpad, press the Super key (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>), then type <u>Mouse & Touchpad</u> and click on the result.
 
-![Mouse Search](/images/touchpad/mouse-search.png)
+![Mouse Search](img/mouse-search.png)
 
 After scrolling down to the Touchpad section, settings such as the touchpad speed and click methods can be configured.
 
-![Mouse & Touchpad Settings](/images/touchpad/gnome-settings.png)
+![Mouse & Touchpad Settings](img/gnome-settings.png)
 
 <u>GNOME Tweaks</u> has a few other settings for the touchpad (for example, changing the acceleration profile.)
 
-![GNOME Tweaks](/images/touchpad/gnome-tweak-tool.png)
+![GNOME Tweaks](img/gnome-tweak-tool.png)
 
 <u>GNOME Tweaks</u> can be installed from the <u>Pop!_Shop</u> (Pop!_OS), <u>Ubuntu Software Center</u> (Ubuntu), or from the <u>Terminal</u> with this command:
 

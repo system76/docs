@@ -32,7 +32,7 @@ Following the steps in [Gaming for Linux](/articles/linux-gaming/) article will 
 
 AMD's FSR works by running the game in a lower resolution (thereby increasing performance), then using AI to upscale the image to your output resolution. AMD has recommended specific resolutions at which your game should run, depending on your screen resolution. Here is a handy image.
 
-![Recommmended Resolutions](/images/use-amd-fsr/recommended-resolutions.png)
+![Recommmended Resolutions](img/recommended-resolutions.png)
 
 The Quality preset, on the furthest left column, is determined by which resolution you select in-game. The higher the quality, the better the image! Conversely, the lower the quality, the higher your performance gains. Which you choose depends on your own goals and system!
 

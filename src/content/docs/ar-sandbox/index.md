@@ -90,11 +90,11 @@ RawKinectViewer -compress 0
 
 - Maximize this window so it's easier to see your sandbox:
 
-![RawKinectViewer](/images/ar-sandbox/3-A-maximize-3eb069c85a.png)
+![RawKinectViewer](img/3-A-maximize-3eb069c85a.png)
 
 The image on the left is the depth view, the right is the standard camera view:
 
-![Align Kinect](/images/ar-sandbox/3-B-align-kinect-73dd8344d5.png)
+![Align Kinect](img/3-B-align-kinect-73dd8344d5.png)
 
 The Augmented Reality Sandbox only uses the depth view (left), but the camera view (right) is still helpful in aligning your Kinect.
 
@@ -108,7 +108,7 @@ The Augmented Reality Sandbox only uses the depth view (left), but the camera vi
 
 On the other hand, if you've already filed your sandbox with sand, you can calculate the base plane by placing a piece of poster board (or a similar flat surface) on top of your sandbox, which is what we'll do in this example:
 
-![Align Kinect](/images/ar-sandbox/4-A-posterboard-718b802347.jpg)
+![Align Kinect](img/4-A-posterboard-718b802347.jpg)
 
 - From a terminal, launch the RawKinectViewer:
 
@@ -118,15 +118,15 @@ RawKinectViewer -compress 0
 
 - Maximize this window so it's easier to see your sandbox:
 
-![RawKinectViewer](/images/ar-sandbox/3-A-maximize-3eb069c85a.png)
+![RawKinectViewer](img/3-A-maximize-3eb069c85a.png)
 
 - Press and hold the right mouse button, move your cursor over Average Frames, then release the mouse button:
 
-![Right Click Menu](/images/ar-sandbox/4-B-average-frames-1ba827544a.png)
+![Right Click Menu](img/4-B-average-frames-1ba827544a.png)
 
 - Press and hold `Shift` and `1`, move your cursor over Extract Planes, then release both keys. Releasing this key will trigger this action, and assign calibration to `Shift` + `1`.
 
-![Extract Planes](/images/ar-sandbox/4-C-extract-plane-1cbd8abb5e.png)
+![Extract Planes](img/4-C-extract-plane-1cbd8abb5e.png)
 
 - We now need to run the `Extract Planes` feature. Hover your mouse over one corner of your flat plane within your sandbox. Now, press `Shift` and `1`, then press `Ctrl` all at the same time. Drag your mouse from one corner to the opposite corner within the sandbox. There should be a rectangle forming around the path the mouse moved on.
 
@@ -134,13 +134,13 @@ RawKinectViewer -compress 0
 
 - If successful there will be a new line in your terminal with something like `Camera-space plane equation: X * (0.1234567, -0.1234567, 0.1234567) = -01.1234`, if not there is no harm in pressing `Esc` to close the Kinect Viewer, and trying again.
 
-![Kinect Area View](/images/ar-sandbox/4-D-drag-rectangle-a8b53ecc87.png)
+![Kinect Area View](img/4-D-drag-rectangle-a8b53ecc87.png)
 
 - Hit Esc to close the RawKinectViewer.
 
 - In the terminal you'll see two lines printed. Select the portion of the 2nd line shown below, then right click and select Copy:
 
-![Space Plane](/images/ar-sandbox/4-E-terminal-output-25a90e21ae.png)
+![Space Plane](img/4-E-terminal-output-25a90e21ae.png)
 
 - Edit the BoxLayout.txt file by running this command from the terminal:
 
@@ -154,7 +154,7 @@ You also need edit this line, replacing the "=" (equal sign) with a "," (comma).
 
 You should end up with a first line something like this:
 
-![Gedit BoxLayout.txt](/images/ar-sandbox/4-F-gedit-eb460dffb4.png)
+![Gedit BoxLayout.txt](img/4-F-gedit-eb460dffb4.png)
 
 - Save the file and close `gedit`.
 
@@ -176,15 +176,15 @@ RawKinectViewer -compress 0
 
 - Maximize this window so it's easier to see your sandbox:
 
-![RawKinectViewer](/images/ar-sandbox/3-A-maximize-3eb069c85a.png)
+![RawKinectViewer](img/3-A-maximize-3eb069c85a.png)
 
 - Press and hold the right mouse button, move your cursor over Average Frames, then release the mouse button:
 
-![Right Click Menu](/images/ar-sandbox/4-B-average-frames-1ba827544a.png)
+![Right Click Menu](img/4-B-average-frames-1ba827544a.png)
 
 - Press and hold the `Shift` and `1`, move your cursor over Measure 3D positions, then release both keys,
 
-![Measure 3D Positions](/images/ar-sandbox/5-A-measure-3d-positions-14f7ae1f35.png)
+![Measure 3D Positions](img/5-A-measure-3d-positions-14f7ae1f35.png)
 
 - You'll now measure the 3D extents of the interior of the sandbox
 
@@ -194,25 +194,25 @@ First, move your cursor to the lower-left interior corner, then press the 1 key:
 
 Note there is no feedback from the UI when you press the 1 key.
 
-![Corner 1](/images/ar-sandbox/5-B-corner1-e25b256651.png)
+![Corner 1](img/5-B-corner1-e25b256651.png)
 
 - Second, move your cursor to the lower-right interior corner, then press the 1 key:
 
-![Corner 2](/images/ar-sandbox/5-B-corner2-2929d14acd.png)
+![Corner 2](img/5-B-corner2-2929d14acd.png)
 
 - Third, move your cursor to the upper-left interior corner, then press the 1 key:
 
-![Corner 3](/images/ar-sandbox/5-B-corner3-879f6980e8.png)
+![Corner 3](img/5-B-corner3-879f6980e8.png)
 
 - Finally, move your cursor to the upper-right interior corner, then press the 1 key:
 
-![Corner 4](/images/ar-sandbox/5-B-corner4-323ddfd555.png)
+![Corner 4](img/5-B-corner4-323ddfd555.png)
 
 - Hit Esc to exit `RawKinectViewer`.
 
 - In the terminal you'll see four lines printed (if you don't see this output, repeat this step, making sure to choose points within the green rectangle). You need to highlight these four lines as shown below, then right click and select Copy:
 
-![RawKinectViewer Output](/images/ar-sandbox/5-C-terminal-output-bfe04cf344.png)
+![RawKinectViewer Output](img/5-C-terminal-output-bfe04cf344.png)
 
 - Edit the `BoxLayout.txt` file by running this command from the terminal:
 
@@ -222,7 +222,7 @@ sudo gedit /etc/SAR*/BoxLayout.txt
 
 - Replace the bottom four lines in BoxLayout.txt with the four lines you just copied, so you end up with something like this:
 
-![Edited BoxLayout.txt](/images/ar-sandbox/5-D-gedit-57a97839c7.png)
+![Edited BoxLayout.txt](img/5-D-gedit-57a97839c7.png)
 
 - Save the file and close `gedit`.
 
@@ -232,7 +232,7 @@ sudo gedit /etc/SAR*/BoxLayout.txt
 
 - If you have a dedicated display in addition to the projector, you'll find it easier if you set up the two displays to be mirrored:
 
-![Mirror settings](/images/ar-sandbox/6-A-mirror-displays-9275bf68e0.png)
+![Mirror settings](img/6-A-mirror-displays-9275bf68e0.png)
 
 - Launch the XBackgroud tool from a terminal like this:
 
@@ -244,7 +244,7 @@ XBackground
 
 - You'll need to position the projector so that it fills the interior of your sandbox. It's okay if it overlaps slightly.
 
-![Aligning grid to box](/images/ar-sandbox/6-C-xbackground-af01671469.jpg)
+![Aligning grid to box](img/6-C-xbackground-af01671469.jpg)
 
 After you're done positioning your projector, hit Esc to close the `XBackground` application.
 
@@ -254,7 +254,7 @@ After you're done positioning your projector, hit Esc to close the `XBackground`
 
 - To calibrate your sandbox, you'll need an alignment target and several spacers to help you perform the alignment at multiple heights:
 
-![Tools](/images/ar-sandbox/7-A-tools-27804401fe.jpg)
+![Tools](img/7-A-tools-27804401fe.jpg)
 
 The easiest way to build an alignment target is to create a target cross-hair on a piece of paper and tape it to the top of an old CD or DVD. The cross-hairs should be at right angles to one-another and be centered on the CD or DVD.
 
@@ -278,25 +278,25 @@ CalibrateProjector -s 1920 1080
 
 - You MUST maximize the window with `F11` ot `Fn` and `F11`
 
-![CalibrateProjector](/images/ar-sandbox/7-maximize-478e070818.png)
+![CalibrateProjector](img/7-maximize-478e070818.png)
 
 - Press and hold `Shift` and `1` keys, move your cursor over Capture, then release both keys:
 
-![Tools Menu](/images/ar-sandbox/7-B-press-1-17ad6d4ad8.png)
+![Tools Menu](img/7-B-press-1-17ad6d4ad8.png)
 
 - Then press the `2` key when you see this dialog:
 
-![Capture](/images/ar-sandbox/7-C-press-2-867c3ffac3.png)
+![Capture](img/7-C-press-2-867c3ffac3.png)
 
 Press the `2` key to capture the background image, after which you'll briefly see a uniform red color projected onto your sandbox:
 
-![Uniform Red Color](/images/ar-sandbox/7-D-capture-background-af5f6cb582.jpg)
+![Uniform Red Color](img/7-D-capture-background-af5f6cb582.jpg)
 
 After this is completed, you can proceed with the calibration.
 
 - Next, you'll capture tie-points at the lowest height. Using your shortest spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface. Just set the spacer and only pushing down enough to level the alignment target.
 
-![Lowest](/images/ar-sandbox/7-E-lowest-db2aad81b1.jpg)
+![Lowest](img/7-E-lowest-db2aad81b1.jpg)
 
 Then press the `1` key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
 
@@ -304,7 +304,7 @@ Repeat this process for the remaining 11 tie-points at this depth. Once the whit
 
 - Now you'll capture tie-points at the middle height. Using a taller spacer, line-up your alignment target under the white cross-hairs projected onto the sand surface:
 
-![Middle](/images/ar-sandbox/7-F-middle-8e56231939.jpg)
+![Middle](img/7-F-middle-8e56231939.jpg)
 
 Then press the 1 key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
 
@@ -312,7 +312,7 @@ Repeat this process for the remaining 11 tie-points at this depth. Once the whit
 
 - Finally, you'll capture tie-points at highest height. Using your tallest spacer (or stacking two spacers on top of each other), line-up your alignment target under the white cross-hairs projected onto the sand surface:
 
-![Highest](/images/ar-sandbox/7-G-highest-948cda7d1e.jpg)
+![Highest](img/7-G-highest-948cda7d1e.jpg)
 
 Then press the 1 key to capture this tie-point. After a brief moment, the software will automatically move the projected cross-hairs to the next tie-point.
 
@@ -326,15 +326,15 @@ Hitting Esc will automatically write the calibration file in `/etc/SAR*/Projecto
 
 - Launch the main `SARndbox` application by searching for "sandbox" in GNOME Search:
 
-![Launch SARndbox](/images/ar-sandbox/9-A-launch-sarndbox-3d1afe80d2.png)
+![Launch SARndbox](img/9-A-launch-sarndbox-3d1afe80d2.png)
 
 - Then maximize the application so it fills your entire sandbox:
 
-![SARndbox](/images/ar-sandbox/8-maximize-6789e388ee.png)
+![SARndbox](img/8-maximize-6789e388ee.png)
 
 - If in step 4 you calculated the base plane with a piece of poster board (or a similar flat surface) on top of your sandbox, your sea level will be too high, and you'll see something like this:
 
-![Sea Level too high](/images/ar-sandbox/8-A-sea-level-too-high-6eaead66d8.jpg)
+![Sea Level too high](img/8-A-sea-level-too-high-6eaead66d8.jpg)
 
 On the other hand, if in step 4 you calculated the base plane when your sandbox was empty, the sea level will be too low. Either way, you'll want to adjust the sea level so it's just below the surface of your sand when it's more or less flattened out.
 
@@ -348,16 +348,16 @@ sudo gedit /etc/SAR*/BoxLayout.txt
 
 The value highlighted below in `BoxLayout.txt` controls the sea-level:
 
-![BoxLayout1](/images/ar-sandbox/8-B-gedit-1-66e79657fe.png)
+![BoxLayout1](img/8-B-gedit-1-66e79657fe.png)
 
 - You'll want to adjust the final value in the first line to be roughly the same as the smallest of the final value on the four lines at the end.
 In our example `-106.927` is the smallest value:
 
-![BoxLayout2](/images/ar-sandbox/8-C-gedit-2-6673dc3a21.png)
+![BoxLayout2](img/8-C-gedit-2-6673dc3a21.png)
 
 So we'll set the sea-level to `-107`, like this:
 
-![BoxLayout3](/images/ar-sandbox/8-D-gedit-3-36f32a4191.png)
+![BoxLayout3](img/8-D-gedit-3-36f32a4191.png)
 
 - Though this isn't an exact science. Play with your SARndbox and adjust this value to whatever feels the most correct to you. A more negative value will lower the sea level, a more positive one will raise the sea level. In general the adjustments are about +/` 10 of the smallest value.
 
@@ -365,7 +365,7 @@ So we'll set the sea-level to `-107`, like this:
 
 - Re-launch the AR Sandbox application from the Ubuntu dash, maximize the window, and you'll see something like this:
 
-![Sea Level just right](/images/ar-sandbox/8-E-sea-level-just-right-cdc5f0037b.jpg)
+![Sea Level just right](img/8-E-sea-level-just-right-cdc5f0037b.jpg)
 
 You can experiment with different values for the sea-level to suit your preferences, but our recommendations here will give you a good starting point.
 
@@ -378,11 +378,11 @@ As long as you don't change the physical setup of your sandbox (in particular, t
 
 - If you hold your hand above the sand surface (like a cloud), you can "make it rain":
 
-![Make it rain](/images/ar-sandbox/9-B-make-it-rain-fe5051a11f.jpg)
+![Make it rain](img/9-B-make-it-rain-fe5051a11f.jpg)
 
 - As a convenience, the System76 packaging for Pop!_/OS includes a launcher you can search for in the GNOME Search:
 
-![Launch SARndbox](/images/ar-sandbox/9-A-launch-sarndbox-3d1afe80d2.png)
+![Launch SARndbox](img/9-A-launch-sarndbox-3d1afe80d2.png)
 
 This is a shortcut to launch `SARndbox` with the following arguments (which you can also do directly from a terminal):
 

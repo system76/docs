@@ -29,7 +29,7 @@ We do not need to chroot into the installed OS to back up data, only mount the O
 
 ### Connect to the Internet
 
-![Top Left Menu](/images/disaster-recovery/Dialog.png)
+![Top Left Menu](img/Dialog.png)
 
 Use the top-right menu (as shown above) to connect to your Wi-Fi once booted into the live disk.
 
@@ -74,13 +74,13 @@ Once Deja Dup is installed, it will be labeled as "Backups" in the Activities ov
 
 With Deja Dup (Backups) open, you can select the folders you wish to save or ignore using the pages listed on the left. By default, Deja Dup will backup your entire home directory, which includes your Documents, Pictures, Music, and Videos folders. It ignores your Downloads folder and any items in the Trash. Use the plus (+) and minus (-) buttons as needed to modify both categories.
 
-![Selecting data to backup in Deja-Dup](/images/backup/deja_selection.png)
+![Selecting data to backup in Deja-Dup](img/deja_selection.png)
 
 #### Choosing a Backup Location
 
 On the **Storage location** page, you can configure the location where your backup will be stored.
 
-![Selecting a backup location in Deja-Dup](/images/backup/deja_location.png)
+![Selecting a backup location in Deja-Dup](img/deja_location.png)
 
 ## Hardware
 
@@ -104,7 +104,7 @@ Once we have our data backed up we can reinstall the OS. This [article](/article
 
 Now that we reinstalled the OS we can start restoring our data. To restore your data with Deja Dup, select the **Overview** page, then click the **Restore...** button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.
 
-![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
+![Restoring data in Deja-Dup](img/deja_overview.png)
 
 ## If the System Doesn't Power On
 

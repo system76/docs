@@ -27,7 +27,7 @@ tableOfContents: true
 
 Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
-![Pop!_Shop Steam](/images/linux-gaming/pop-shop_steam.png)
+![Pop!_Shop Steam](img/pop-shop_steam.png)
 
 Once installed, use the Applications button to search for and run <u>Steam</u>.
 
@@ -35,7 +35,7 @@ Once installed, use the Applications button to search for and run <u>Steam</u>.
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Application Library](/images/linux-gaming/search-terminal.png)
+![Application Library](img/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -43,7 +43,7 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search steam
 ```
 
-![Terminal](/images/linux-gaming/terminal-steam-search.png)
+![Terminal](img/terminal-steam-search.png)
 
 Once we find the right name for <u>Steam</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
@@ -59,7 +59,7 @@ Proton is a compatibility layer tool which enables support for some Windows game
 
 Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supported titles AND "Enable Steam Play for all other titles" as pictured below:
 
-![Steam Settings](/images/linux-gaming/enable-steam-play_proton.png)
+![Steam Settings](img/enable-steam-play_proton.png)
 
 ## Using Steam
 
@@ -67,9 +67,9 @@ Once installed, use the Applications button to search for and run <u>Steam</u>.
 
 ### Proton vs. Native
 
-![Playing a Proton Game](/images/linux-gaming/playing-proton-game.png)
+![Playing a Proton Game](img/playing-proton-game.png)
 
-![Playing a native game](/images/linux-gaming/playing-native-game.png)
+![Playing a native game](img/playing-native-game.png)
 
 From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
 Once you've enabled Steam Play, they both present the usual green "Play" button.
@@ -78,9 +78,9 @@ Once you've enabled Steam Play, they both present the usual green "Play" button.
 
 If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
 
-![Skyrim 1](/images/linux-gaming/skyrim-info-pane.png)
+![Skyrim 1](img/skyrim-info-pane.png)
 
-![Skyrim Detail](/images/linux-gaming/steamplay-detail.png)
+![Skyrim Detail](img/steamplay-detail.png)
 
 ### Changing the Proton Version for a Specific Game
 
@@ -98,7 +98,7 @@ To change the Proton version:
 
 5. Select the desired Proton version from the drop down menu (as pictured below).
 
-![Compatibility Menu](/images/linux-gaming/skyrim-proton-version.png)
+![Compatibility Menu](img/skyrim-proton-version.png)
 
 ### Use Protonup to Manage Custom Proton Versions
 
@@ -161,7 +161,7 @@ Downloaded 100.0% - 407.25 MiB/407.23 MiB
 
 ProtonUP-Qt is available as a Flatpak in the Pop!\_Shop. Launch the Pop!\_Shop, search for "ProtonUp, and click the `Install` button.
 
-![Pop Shop ProtonUp-Qt](/images/linux-gaming/pop-shop-protonup-qt.png)
+![Pop Shop ProtonUp-Qt](img/pop-shop-protonup-qt.png)
 
 ## GameHub
 
@@ -171,7 +171,7 @@ ProtonUP-Qt is available as a Flatpak in the Pop!\_Shop. Launch the Pop!\_Shop, 
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Application Library](/images/linux-gaming/search-terminal.png)
+![Application Library](img/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -179,7 +179,7 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search gamehub
 ```
 
-![Terminal](/images/linux-gaming/terminal-gamehub-search.png)
+![Terminal](img/terminal-gamehub-search.png)
 
 Once we find the right name for <u>GameHub</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
@@ -191,7 +191,7 @@ sudo apt install gamehub
 
 Open the <u>Pop!_Shop</u> application then either search for GameHub, or navigate to the GameHub page by clicking the <u>GameHub</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
-![Pop!_Shop GameHub](/images/linux-gaming/pop-shop_gamehub.png)
+![Pop!_Shop GameHub](img/pop-shop_gamehub.png)
 
 Once installed, use the Applications button to search for and run <u>GameHub</u>.
 
@@ -205,7 +205,7 @@ You can read more about Lutris [here](https://lutris.net/).
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>SUPER</kbd>.
 
-![Activities Overview](/images/linux-gaming/search-terminal.png)
+![Activities Overview](img/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -213,7 +213,7 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search lutris
 ```
 
-![Terminal](/images/linux-gaming/terminal-lutris-search.png)
+![Terminal](img/terminal-lutris-search.png)
 
 Once we find the right name for <u>Lutris</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
@@ -225,7 +225,7 @@ sudo apt install lutris
 
 Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicking the <u>Lutris</u> icon on the Pop!_Shop home page. Now click the **Install** button.
 
-![Pop!_Shop Lutris](/images/linux-gaming/pop-shop_lutris.png)
+![Pop!_Shop Lutris](img/pop-shop_lutris.png)
 
 ## Using GameHub
 
@@ -233,7 +233,7 @@ Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicki
 
 Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be displayed. Note that games will be slightly discolored if they aren't installed. Notice, in this example, that the two, top left games are installed on this system.
 
-![Using Steam with GameHub](/images/linux-gaming/gamehub-steam.png)
+![Using Steam with GameHub](img/gamehub-steam.png)
 
 ## Using Lutris
 
@@ -243,15 +243,15 @@ Some games like World of Warcraft (WoW) have installers on Lutris' [website](htt
 
 With <u>Lutris</u> installed you can click the **Install** button to start the installer script. A pop-up window will appear asking to use Lutris as the application to run the installer.
 
-![Lutris Install Button](/images/linux-gaming/lutris-install-button.png)
+![Lutris Install Button](img/lutris-install-button.png)
 
 Use <u>Lutris</u> to open the installer (shown below). From there click the **Install** button to start the installation.
 
-![Lutris Installer](/images/linux-gaming/lutris-installer.png)
+![Lutris Installer](img/lutris-installer.png)
 
 Next, click the **Continue** button to start the installation of <u>Battle.net</u>
 
-![Lutris Installer 2](/images/linux-gaming/lutris-installer2.png)
+![Lutris Installer 2](img/lutris-installer2.png)
 
 You will need to install some WINE packages during the installation of <u>Battle.net</u>.
 
@@ -263,17 +263,17 @@ Once <u>Battle.net</u> launches you can finish the World of Warcraft installatio
 
 **NOTE:** If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two separate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.
 
-![Lutris Installed Game](/images/linux-gaming/lutris-wow-installed.png)
+![Lutris Installed Game](img/lutris-wow-installed.png)
 
 ### Using .exe files
 
 In this example we'll be using the Windows build of Firefox to show the power of both Wine/Proton and Lutris. From the Game Info screen when adding a game we'll set the Name and Runner (you can read more about Runners [here](https://lutris.net/runners/)).
 
-![Lutris Add Game Info](/images/linux-gaming/lutris-add-game-info.png)
+![Lutris Add Game Info](img/lutris-add-game-info.png)
 
 In the Game Options tab we'll set the path to the Executable (the .exe file extensions is short for executable) and we'll choose the `firefox setup [version].exe` file downloaded from the Firefox website (it will be in your ~/Downloads folder by default). For this example, we can leave the rest of the boxes empty in the other tabs and close this window.
 
-![Lutris Add Game Options](/images/linux-gaming/lutris-add-game-options.png)
+![Lutris Add Game Options](img/lutris-add-game-options.png)
 
 Now click on the Firefox item in <u>Lutris</u> and then press the **Play** button. Once the install is finished be sure to unclick the checkbox at the end of the installer. Once the installer closes, right-click on the Firefox item and hit the **Configure** button. Now change the Executable path to `~/.wine/drive_c/Program Files/Mozilla Firefox/firefox.exe` using the **Browse...** button. Otherwise, every time you launch Firefox, it will run the setup wizard again, instead of the newly installed `Firefox.exe`.
 
@@ -287,22 +287,22 @@ Now save and launch Firefox again with the **Play** button. After waiting for a 
 
 <u>Unvanquished</u> is a free, open-source first-person strategy game/shooter written in C++. You can read more about Unvanquished, and how to install it on their website [here](https://unvanquished.net/).
 
-![Unvanquished One](/images/linux-gaming/unvanquished-game_play.png)
+![Unvanquished One](img/unvanquished-game_play.png)
 
 #### Veloren
 
 <u>Veloren</u> is a multiplayer RPG which is written in Rust. You can read more about it and about installing it on their website [here](https://veloren.net/).
 
-![Veloren](/images/linux-gaming/veloren-game_play.png)
+![Veloren](img/veloren-game_play.png)
 
 #### 0 A.D
 
 <u>O A.D.</u> is a free, open-source game of ancient warfare written in C++. You can read more about it and about installing it on their website [here](https://play0ad.com/download/linux/#Ubuntu).
 
-![0ad](/images/linux-gaming/0ad-game_play.png)
+![0ad](img/0ad-game_play.png)
 
 #### Battle for Wesnoth
 
 <u>Battle for Wesnoth</u> is an open source, turn-based strategy game with a high fantasy theme. You can read more about it and about installing it on their website [here](https://wiki.wesnoth.org/WesnothBinariesLinux).
 
-![Battle for Wesnoth](/images/linux-gaming/wesnoth-game_play.png)
+![Battle for Wesnoth](img/wesnoth-game_play.png)

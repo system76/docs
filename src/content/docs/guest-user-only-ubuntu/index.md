@@ -37,27 +37,27 @@ Power on (or reboot) your system and tap the <kbd>ESC</kbd> key to get to the GR
 
 If you end up at the GRUB CLI (it looks like `grub >`) type `normal`, press <kbd>Enter</kbd> and then immediately press <kbd>ESC</kbd>. If that fails, just reboot the computer with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>, pressing the reset button, or holding the power button until the computer shuts off.
 
-![GRUB menu](/images/oem-firstboot/grub-menu.png)
+![GRUB menu](img/grub-menu.png)
 
 Once you're in the GRUB boot menu, choose **Advanced options for Ubuntu** and then **(recovery mode)** on the first listed kernel. The system will boot into the recovery menu.
 
-![Advanced options](/images/oem-firstboot/recovery-mode.png)
+![Advanced options](img/recovery-mode.png)
 
 At any time, random messages or text may clutter up the recovery menu. If this happens, just press the up/down arrow keys to re-draw the menu items. The text does not affect operation of the recovery menu.
 
 The system will boot into the recovery menu:
 
-![fsck option at recovery mode](/images/oem-firstboot/fsck-option.png)
+![fsck option at recovery mode](img/fsck-option.png)
 
 Choose **fsck**, and then press <kbd>Enter</kbd>. You will be notified that to continue, "your / filesystem will be mounted in read/write mode". Choose **Yes** to continue.
 
-![fsck remount request](/images/oem-firstboot/fsck-remount.png)
+![fsck remount request](img/fsck-remount.png)
 
 <u>fsck</u> will run for about 3 seconds and ends with `[ OK ] Reached target Swap.` At this point, press <kbd>Enter</kbd> for the Recovery menu.
 
 Choose **root** and press <kbd>Enter</kbd> to continue. Press <kbd>Enter</kbd> until the system shows a root prompt like the image below:
 
-![Root shell](/images/oem-firstboot/recovery-menu.png)
+![Root shell](img/recovery-menu.png)
 
 #### Recover First-Boot Menu
 

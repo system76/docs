@@ -20,7 +20,7 @@ tableOfContents: true
 
 2. In the Printers Application, click the `Add` button. Wait a few seconds for printers to appear in the Device List.
 
-    ![Add Printer](/images/add-a-printer-ubuntu/selectcorrectprinter.png)
+    ![Add Printer](img/selectcorrectprinter.png)
 
 3. Select the correct printer and click `Forward`. The computer will search for the correct Drivers to enable the printer.
 
@@ -36,7 +36,7 @@ CUPS can be managed directly using a web browser by navigating to the following 
 
 The status window will show current print jobs, detected printers, and other information about the printing system.
 
-![CUPS](/images/add-a-printer-ubuntu/cups-settings.png)
+![CUPS](img/cups-settings.png)
 
 ### Adding Users to the lpadmin Group
 
@@ -58,7 +58,7 @@ If you prefer to manage printers in Terminal, See the [CUPS documentation](https
 
 Share a printer with the local network by clicking the `Administration` tab.
 
-![CUPS Administration Tab](/images/add-a-printer-ubuntu/admin-tab.png)
+![CUPS Administration Tab](img/admin-tab.png)
 
 Check the box for `Share printers connected to this system`.
 
@@ -124,7 +124,7 @@ Brother provides a driver installation tool for Linux users. Install the appropr
 
 9. If your printer configuration requires a device URI, you can find that by opening up Settings > Printers > Additional Printer Settings, then right-click your printer and click `Properties`. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
 
-![Printer Properties](/images/add-a-printer-ubuntu/printer-properties.png)
+![Printer Properties](img/printer-properties.png)
 
 ## Troubleshooting
 

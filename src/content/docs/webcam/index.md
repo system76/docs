@@ -22,7 +22,7 @@ If you can’t see the image from your webcam or you receive a "No device found!
 - On some Pangolin models (pang12, pang13 and pang14), there is a physical switch on the left side of the computer (while facing the screen). Ensure the switch is switched on, then restart the application using the webcam (such as <u>Cheese</u>).
   - The Pangolin models with a physical webcam switch do not have a webcam toggle key combination.
 
-![Cheese](/images/webcam/cheese.png)
+![Cheese](img/cheese.png)
 
 The key combination or switch controls the visibility of the webcam on the USB bus at the device level. Applications do not get notified of new devices, and will need to be restarted to discover the webcam after toggling it on.
 

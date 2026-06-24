@@ -42,7 +42,7 @@ This extension allows for the desktop to be themed in further ways than default.
 
 [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 
-![dash-to-dock](/images/customize-gnome/dash-to-dock.png)
+![dash-to-dock](img/dash-to-dock.png)
 
  >**Note:** Starting with version 22.04, Pop!\_OS includes Cosmic Dock, which is forked from Dash to Dock. GNOME Settings has options for customization in Settings -> Desktop -> Dock. You will want to disable Cosmic Dock in the Extension application if adding Dash to Dock.
 
@@ -54,7 +54,7 @@ This extension brings a launcher similar to the Unity launcher on the left side,
 
 [Backslide](https://extensions.gnome.org/extension/543/backslide/)
 
-![backslide](/images/customize-gnome/backslide.png)
+![backslide](img/backslide.png)
 
 This extension is a wallpaper slideshow for your desktop.  After choosing a folder of pictures, they will be rotated automatically at a predefined time period.
 
@@ -64,7 +64,7 @@ This extension is a wallpaper slideshow for your desktop.  After choosing a fold
 
 [Window List](https://extensions.gnome.org/extension/602/window-list/)
 
-![window-list](/images/customize-gnome/window-list.png)
+![window-list](img/window-list.png)
 
 This extension adds a window list to the bottom of the monitors.  This shows what windows are open, and allows for them to be minimized, maximized, and closed from the bar, similar to Microsoft Window's window list.
 
@@ -75,7 +75,7 @@ This extension adds a window list to the bottom of the monitors.  This shows wha
 [Appindicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
 [Top Icons](https://extensions.gnome.org/extension/1031/topicons/)
 
-![topicons](/images/customize-gnome/topicons.png)
+![topicons](img/topicons.png)
 
 >**Note:** Starting with Pop!\_OS 22.04 the Ubuntu fork of this extension is included by default.
 
@@ -89,7 +89,7 @@ See [blogs.gnome.org](https://blogs.gnome.org/aday/2017/08/31/status-icons-and-g
 
 [Internet Radio](https://extensions.gnome.org/extension/836/internet-radio/)
 
-![internet-radio](/images/customize-gnome/internet-radio.png)
+![internet-radio](img/internet-radio.png)
 
 Internet Radio adds a quick menu integration to play various radio stations found online.  A few default stations are included, and many more can be found at [www.internet-radio.com](https://www.internet-radio.com/).  Simply right-click on the `.m3u` file and choose 'Copy link address', and add that as a station to the Internet Radio icon at the top right of the menu bar.
 
@@ -99,7 +99,7 @@ Internet Radio adds a quick menu integration to play various radio stations foun
 
 [Sound Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
-![sound-output](/images/customize-gnome/sound-output.png)
+![sound-output](img/sound-output.png)
 
 The Sound Output Chooser adds a quick change option to the system menu in the top right of the screen.  This allows for changing audio inputs and outputs and adjusting volume levels quickly.
 
@@ -109,7 +109,7 @@ The Sound Output Chooser adds a quick change option to the system menu in the to
 
 [CPU Power Manager](https://extensions.gnome.org/extension/945/cpu-power-manager/)
 
-![cpu-power](/images/customize-gnome/cpu-power.png)
+![cpu-power](img/cpu-power.png)
 
 CPU power meter allows for quick switching of various CPU frequency settings.
 
@@ -119,6 +119,6 @@ CPU power meter allows for quick switching of various CPU frequency settings.
 
 [Lock keys](https://extensions.gnome.org/extension/36/lock-keys/)
 
-![lock keys](/images/customize-gnome/lock-keys.png)
+![lock keys](img/lock-keys.png)
 
 The lock keys extension notifies you when you press the Caps Lock or the Num Lock and let's you know at all times if you have either button active.

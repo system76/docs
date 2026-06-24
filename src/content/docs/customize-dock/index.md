@@ -30,13 +30,13 @@ Pop!\_OS and Ubuntu both contain an application dock on the screen. The location
 
 Pop!\_OS's dock is positioned along the bottom edge of the screen by default.
 
-![Stock Pop Dock](/images/customize-dock/pop-dock.png)
+![Stock Pop Dock](img/pop-dock.png)
 
 ## Default Dock on Ubuntu
 
 Ubuntu's dock is positioned along the left edge of the screen by default.
 
-![Stock Ubuntu Dock](/images/customize-dock/ubuntu-dock.png)
+![Stock Ubuntu Dock](img/ubuntu-dock.png)
 
 ## dconf Editor
 
@@ -46,4 +46,4 @@ Since both Ubuntu Dock and COSMIC Dock are based on Dash to Dock they have the s
 sudo apt install dconf-editor
 ```
 
-![Dash to Dock in dconf](/images/customize-dock/dash-to-dock.png)
+![Dash to Dock in dconf](img/dash-to-dock.png)

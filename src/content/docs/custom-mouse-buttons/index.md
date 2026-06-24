@@ -22,7 +22,7 @@ tableOfContents: true
 
 ### Piper
 
-![Piper Buttons Window](/images/custom-mouse-buttons/Piper-2.png)
+![Piper Buttons Window](img/Piper-2.png)
 
 <u>Piper</u> is a frontend to the <u>libratbag</u> backend for setting custom actions to mouse buttons like the Logitech MX Master 3 (sold by System76). In this section we will be using that mouse as an example for using <u>Piper</u>. You can see the source code of <u>Piper</u> [here](https://github.com/libratbag/piper).
 
@@ -30,15 +30,15 @@ tableOfContents: true
 
 <u>Piper</u> can be installed from the <u>Pop!\_Shop</u> on Pop!\_OS and from the <u>Ubuntu Software</u> on Ubuntu.
 
-![Piper Buttons Assign Window](/images/custom-mouse-buttons/Piper-3.png)
+![Piper Buttons Assign Window](img/Piper-3.png)
 
 In this window the button that has been clicked can be reassigned to a differet function like changing the Left-click to the Right-click or swapping the Forward button to the Back button for web pages.
 
 ### Solaar
 
-![Solaar Main Window](/images/custom-mouse-buttons/Solaar.png)
+![Solaar Main Window](img/Solaar.png)
 
-![Solaar Main Window with information](/images/custom-mouse-buttons/Solaar-2.png)
+![Solaar Main Window with information](img/Solaar-2.png)
 
 <u>Solaar</u> is a graphical tool for adding more devices to your Logitech USB Unify receiver. It also provides information on the following:
 
@@ -127,7 +127,7 @@ xbindkeys
 
 By default xbindkeys does not start on reboot and you will need to add it using the <u>Startup Application Preferences</u>.
 
-![Startup Applications Pref](/images/custom-mouse-buttons/startup-applications-pref.png)
+![Startup Applications Pref](img/startup-applications-pref.png)
 
 Once the application is opened then click the **Add** button then name the program to something like 'xbindkeys', enter the command for the application which is 'xbindkeys'. Now click the **Add** button and your done!
 

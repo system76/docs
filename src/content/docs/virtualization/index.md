@@ -21,7 +21,7 @@ section: switching
 tableOfContents: true
 ---
 
-![GNOME Boxes with VMs](/images/gnome-boxes/boxes-full.png)
+![GNOME Boxes with VMs](img/boxes-full.png)
 
 Virtual machines allow you to run other operating systems from within your primary operating systems. This is a great way to run applications that require older software, run applications that require an OS other than Linux, or to try out other operating systems.
 
@@ -37,7 +37,7 @@ This article assumes you are already running a Linux distribution. Instructions 
 
 ## Install GNOME Boxes
 
-![GNOME Boxes Empty](/images/gnome-boxes/boxes-empty.png)
+![GNOME Boxes Empty](img/boxes-empty.png)
 
 On Pop!_OS, you can install [GNOME Boxes](https://wiki.gnome.org/Apps/Boxes) from the Pop!\_Shop. On Ubuntu, it is available in the Software Center.
 
@@ -59,19 +59,19 @@ Now that GNOME Boxes has been installed, we can begin to create the virtual mach
 
 ### Selecting the Operating System
 
-![Create a VM](/images/gnome-boxes/boxes-create-1.png)
+![Create a VM](img/boxes-create-1.png)
 
-![Select ISO File](/images/gnome-boxes/boxes-create-2.png)
+![Select ISO File](img/boxes-create-2.png)
 
 The first step in the VM creator, is to select the OS installer you would like to use. Most often, these installers will be provided as `.iso` files. To use the ISO file, select "Operating System Image File" at the bottom of the "Select an OS Source" window. Then, a file explorer window will open, and you can navigate to and select your ISO file.
 
-![Identify OS](/images/gnome-boxes/boxes-create-3.png)
+![Identify OS](img/boxes-create-3.png)
 
 After selecting your ISO file, the following window will ask you to identify your operating system. If your operating system is listed in the "Templates" drop down, you can select it. Otherwise, select "Unknown OS" from the list of templates.
 
 ### Resource Allocation
 
-![Resource Allocation](/images/gnome-boxes/boxes-create-4.png)
+![Resource Allocation](img/boxes-create-4.png)
 
 At this point, you should see the "Resource Allocation" screen where you can select the amount of RAM and the disk size for the VM. The amount of RAM and drive space you give to the VM will be dependant on the hardware requirements for the OS you are looking to install.
 
@@ -79,13 +79,13 @@ If you are unsure what values to use, 8GB of RAM and 60GB for the maximum disk s
 
 ## Express Install
 
-![Express Install](/images/gnome-boxes/boxes-windows-expressinst.png)
+![Express Install](img/boxes-windows-expressinst.png)
 
 When you attempt to create a VM, you may see a prompt for the "Express Install" feature of GNOME Boxes. You can certainly use the Express Install to expedite the process. However, for this article, turn off the Express Install, then click "Next" at the top right to move to the standard installer set up.
 
 ## Performing the OS Install
 
-![Install the VM](/images/gnome-boxes/boxes-vm-install.png)
+![Install the VM](img/boxes-vm-install.png)
 
 After selecting the resources for your VM, the VM will boot the selected operating system installer. Likely, you will see some odd graphical behavior, such as the black bars shown in the above screenshot. This is because some of the drivers needed for the VM are not installed yet. These oddities can be ignored for now, and we will install the drivers later.
 
@@ -172,7 +172,7 @@ Once your VM has the `spice-vdagent` or an equivalent package installed on your 
 
 ### Share a USB Device
 
-![Devices and Shares](/images/gnome-boxes/boxes-vmprefs-usb.png)
+![Devices and Shares](img/boxes-vmprefs-usb.png)
 
 One of the features of GNOME Boxes is the ability to transfer a USB device connected to your Host to the VM. To share a USB device:
 
@@ -185,7 +185,7 @@ You should now see the USB device disappear from your Host operating system, and
 
 ## Share a Folder
 
-![Folder Shares](/images/gnome-boxes/boxes-folder-shares.png)
+![Folder Shares](img/boxes-folder-shares.png)
 
 To share a folder from the Host with your VM, you will need the `spice-webdavd` or an equivelent package installed on your VM.
 
@@ -207,7 +207,7 @@ In this pop-up, the "Local Folder" refers to the folder's name on the Host syste
 
 ### Accessing a Shared Folder
 
-![Accessing a Shared Folder](/images/gnome-boxes/boxes-vm-access-folder-share.png)
+![Accessing a Shared Folder](img/boxes-vm-access-folder-share.png)
 
 Now that GNOME Boxes is sharing the folder, we can close the properties menu and move back to the VM to access that folder.
 
@@ -221,11 +221,11 @@ Now that GNOME Boxes is sharing the folder, we can close the properties menu and
 6. Click on the new "Spice client folder" entry and you will see the shared folder listed.
     - You can also click the "Spice client folder" item listed on the left hand column.
 
-![Mounted Shared Folder](/images/gnome-boxes/boxes-vm-folder-share-mounted.png)
+![Mounted Shared Folder](img/boxes-vm-folder-share-mounted.png)
 
 ## Snapshots
 
-![Snapshots](/images/gnome-boxes/boxes-snapshots.png)
+![Snapshots](img/boxes-snapshots.png)
 
 Snapshots are another feature of GNOME Boxes found in the properties menu under the "Snapshots" tab. A snapshot is similar to a backup of your VM. When you take a snapshot of your VM, you are taking a "picture" of the state of the VM at that moment. So, if you take a snapshot, then make changes to your VM that you later want to undo, you can rollback to before the changes.
 

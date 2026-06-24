@@ -31,7 +31,7 @@ System76 Open Firmware is an open source distribution of firmware utilizing core
 
 You can confirm if the IME is enabled on your PC by booting into the firmware menu and navigating to `Firmware Configuration Information`. See [this article](/articles/boot-menu/) for instructions to access the firmware menu for your System76 machine.
 
-![Firmware Config Menu](/images/intel-me/firmwareconfiginfo.png)
+![Firmware Config Menu](img/firmwareconfiginfo.png)
 
 For Open Firmware systems, the IME is typically disabled by default unless doing so would break functionality (such as suspend/resume). System76 maintains a list of machines that ship with Open Firmware in [this article](/articles/open-firmware-systems/).
 

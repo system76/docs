@@ -61,7 +61,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     Click on the encrypted `luks` partition and select the "Resize/Move" button. Use the GUI drag tools, or number fields, to make sure the OS partition extends to the end of the drive (after `EFI` and `recovery`). Use the green check-mark to apply the changes to the drive and close `gparted` once the changes are complete.
 
-    ![gparted](/images/hibernation/gparted.png)
+    ![gparted](img/gparted.png)
 
     Open the encrypted partition using these Terminal commands:
 
@@ -104,7 +104,7 @@ However, these limitations aside, hibernation is an often requested feature for 
     sudo nano /mnt/etc/crypttab
     ```
 
-    ![crypttab](/images/hibernation/crypttab.png)
+    ![crypttab](img/crypttab.png)
 
     Open `fstab` to update the mount path for the new swap volume.
 
@@ -114,7 +114,7 @@ However, these limitations aside, hibernation is an often requested feature for 
     sudo nano /mnt/etc/fstab
     ```
 
-    ![fstab](/images/hibernation/fstab.png)
+    ![fstab](img/fstab.png)
 
 8. Reboot your computer and allow it to load Pop!\_OS normally. Check that the swap partition in use and is sized for your system memory by running the following command in a terminal:
 
@@ -134,7 +134,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
     **NOTE:** Replace everything after `UUID=` with the ID of your new `swap` volume.
 
-    ![blkid](/images/hibernation/blkid.png)
+    ![blkid](img/blkid.png)
 
     The system should now be ready to suspend to, and resume from disk.
 

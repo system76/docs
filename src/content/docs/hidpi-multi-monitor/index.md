@@ -39,7 +39,7 @@ When you connect a non-HiDPI display to your HiDPI laptop, the System76 driver w
 
 This dialog appears whenever the driver detects a new mixed-DPI configuration:
 
-![Dialog Screenshot](/images/hidpi-multi-monitor/dialog.png)
+![Dialog Screenshot](img/dialog.png)
 
 You can keep the changes or revert if you'd prefer to keep each display at its native resolution.  Most of the time you'll want to Keep Changes, but there are a few cases where the Revert option is useful....
 
@@ -53,7 +53,7 @@ If you don't want to restart these applications right now, you can choose the Re
 
 Using the Displays panel in the System Settings center to change resolution or layout can cause problems on NVIDIA systems because of the way scaling is handled.  Please use the NVIDIA X Server Settings application if you have an NVIDIA GPU.  
 
-![X Server Display Configuration](/images/hidpi-multi-monitor/nvidia-display-settings.png)
+![X Server Display Configuration](img/nvidia-display-settings.png)
 
 #### Disable HiDPI Daemon
 

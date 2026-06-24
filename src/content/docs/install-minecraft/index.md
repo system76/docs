@@ -21,21 +21,21 @@ Alright! Hitch on and let's go on!
 
 First, open the COSMIC Store (or the Pop!\_Shop on versions 22.04 and below). Next, type "minecraft" into the search bar, and click "Minecraft".
 
-![Search Page](/images/minecraft/searchforminecraft.webp)
+![Search Page](img/searchforminecraft.webp)
 
 Next, click Install.
 
-![Open Minecraft page](/images/minecraft/minecraftapppage.webp)
+![Open Minecraft page](img/minecraftapppage.webp)
 
 Now you will have installed Minecraft! Open Minecraft and log in with your username and password to start playing!
 
-![Minecraft Installed](/images/minecraft/minecraftinstalled.webp)
+![Minecraft Installed](img/minecraftinstalled.webp)
 
 ## Debian and Ubuntu
 
 Go to [minecraft.net](https://www.minecraft.net/download) and download the _Debian + Debian based_ version. Open the downloaded `.deb` file to install.
 
-![Minecraft download page listing multiple versions](/images/minecraft/downloadversions.png)
+![Minecraft download page listing multiple versions](img/downloadversions.png)
 
 Alternatively, you can use the terminal:
 

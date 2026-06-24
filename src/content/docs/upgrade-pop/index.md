@@ -68,14 +68,14 @@ Open Pop! Shop by clicking the shopping bag icon in the application menu. Or, pr
 
 To begin, confirm the current installation is fully up to date. Click the icon with three stacked bars in the top right corner and select software and updates to update the existing packages.
 
-![Check for updates in the Pop! Shop](/images/upgrade-pop/uprade-pop2404-check-for-updates.png)
+![Check for updates in the Pop! Shop](img/uprade-pop2404-check-for-updates.png)
 
 Once the updates are applied, a notification should appear at the top of your screen saying that an upgrade is available. Click on this notification, or go to `Settings` -> `OS Upgrade & Recovery`. The upgrade page will display a message that Pop!_OS 24.04 is available with a `Start Upgrade` button.
 
-![Pop!_OS 24.04 Upgrade Dialog box which describes the COSMIC Desktop and other changes to expect after the upgrade is complete](/images/upgrade-pop/upgrade-pop2404-dialog.png)
+![Pop!_OS 24.04 Upgrade Dialog box which describes the COSMIC Desktop and other changes to expect after the upgrade is complete](img/upgrade-pop2404-dialog.png)
 
 If you are planning on staying on the Pop!_OS 22.04 release, this is also the page where you can dismiss upgrade notifications.
-![Settings OS Upgrade](/images/upgrade-pop/Pop-22.04-Upgrade.png)
+![Settings OS Upgrade](img/Pop-22.04-Upgrade.png)
 
 **NOTE:** Refreshing is **not** part of the upgrade process. `Refresh` will reinstall the Operating System with the version stored in Recovery, and will erase all user-installed applications.
 

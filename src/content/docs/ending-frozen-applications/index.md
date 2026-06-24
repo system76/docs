@@ -32,7 +32,7 @@ The System Monitor application comes prepackaged in Pop!\_OS. This tool provides
 1. Press <kbd>Super</kbd> and type `system monitor`, then hit Enter.
 2. Locate frozen and hanging applications.
 3. Select the application and click End Process.
-   ![gnome-system-monitor](/images/ending-frozen-applications/gnome-system-monitor.png)
+   ![gnome-system-monitor](img/gnome-system-monitor.png)
 
 ### Using xkill (GUI)
 
@@ -40,7 +40,7 @@ Launching xkill allows users to click and force close applications.
 
 1. Press <kbd>Alt</kbd> + <kbd>F2</kbd>.
 2. Type `xkill` and hit Enter.
-   ![launch-xkill](/images/ending-frozen-applications/launch-xkill.png)
+   ![launch-xkill](img/launch-xkill.png)
 3. The cursor will turn into a small 'x'. Left click any window to kill the process associated with that window.
 
 ### Using the kill Command (CLI)

@@ -31,7 +31,7 @@ The <u>Launcher</u> is a search-based utility for accessing and opening applicat
 
 To open the Launcher, press the <kbd>SUPER</kbd> key, which is usually located between the `Fn` and `Alt` keys (and may have an icon with a window on it). You can also click the Launcher magnifying glass icon in the dock.
 
-![Activating the Launcher in Pop!_OS 24.04](/images/pop-basics/pop-basics-launcher-example.png)
+![Activating the Launcher in Pop!_OS 24.04](img/pop-basics-launcher-example.png)
 
 To switch between open applications, you can click one of the windows listed in the launcher, or use the up and down arrow keys to select one followed by `Enter`. Installed applications available to launch are listed below the open windows. Keyboard shortcuts to activate the first ten results are listed on the right side.
 
@@ -48,9 +48,9 @@ Additional features can be accessed by starting your search with specific charac
 
 By default, the <u>Dock</u> is located at the bottom of the screen and consists of pinned application icons, running applications, and minimized windows. To customize the dock, as well as other aspects of the desktop environment, navigate to `Settings` -> `Desktop`. To change settings for the Dock, select the `Dock` submenu.
 
-![Access Dock Settings in Pop 24.04](/images/pop-basics/pop-basics-access-dock-in-cosmic-settings.png)
+![Access Dock Settings in Pop 24.04](img/pop-basics-access-dock-in-cosmic-settings.png)
 
-![Pop 24.04 COSMIC Dock Settings](/images/pop-basics/pop-basics-dock-settings-view.png)
+![Pop 24.04 COSMIC Dock Settings](img/pop-basics-dock-settings-view.png)
 
 Dock settings include the following options:
 
@@ -62,7 +62,7 @@ Dock settings include the following options:
 - Which applets are present on the Dock, and in what order
   - Click `Configure dock applets` to rearrange existing applets on the Dock, and then `Add applet` to view the list of available applets.
 
-![Add Applets in Pop 24.04 COSMIC Dock Settings](/images/pop-basics/pop-basics-add-applet.png)
+![Add Applets in Pop 24.04 COSMIC Dock Settings](img/pop-basics-add-applet.png)
 
 The Launcher, Workspaces, and Applications shortcuts are their own applets; all other pinned applications are part of the `App Tray` applet. To remove pinned applications from the Dock or pin running applications to the Dock, right-click their icon in the Dock and select the appropriate option.
 
@@ -72,7 +72,7 @@ By default, the <u>Panel</u> is the top bar of the desktop with a clock in the m
 
 Open COSMIC Settings and click `Desktop`, then select `Panel` to customize the behavior, style, and placement of applets on the Panel. The Panel settings include the same options as the Dock settings.
 
-![Access COSMIC Panel Settings in Pop!_OS 24.04](/images/pop-basics/pop-basics-access-panel-settings.png)
+![Access COSMIC Panel Settings in Pop!_OS 24.04](img/pop-basics-access-panel-settings.png)
 
 ## COSMIC Settings
 
@@ -88,7 +88,7 @@ This video shows the auto-tiling and window stacking features of the COSMIC desk
   - Toggle the `Tile current workspace` option to activate or deactivate tiling in the current workspace.
   - The `Active hint` option highlights the border of the active application window in a color of your choice.
 
-![Tile current workspace in Pop!_OS 24.04](/images/pop-basics/pop-basics-activate-tiling.png)
+![Tile current workspace in Pop!_OS 24.04](img/pop-basics-activate-tiling.png)
 
 ### Window Stacking
 
@@ -121,7 +121,7 @@ You can use <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>
 
 <u>Applications</u> opens the application library, which shows installed programs in alphabetical order. There's a search box located at the top of the page to quickly find a desired application or to search the COSMIC Store. A list of folders to organize the applications is at the bottom.
 
-![Applications overview in Pop!_OS 24.04](/images/pop-basics/pop-basics-applications-overview.png)
+![Applications overview in Pop!_OS 24.04](img/pop-basics-applications-overview.png)
 
 Individual applications will have variations in their sub-menus. Many applications have a menu button located in the top-right or left of the application window for application-specific settings and functions. This menu button is usually represented by either three stacked vertical lines or three vertical dots, sometimes referred to as the "hamburger menu."
 
@@ -131,13 +131,13 @@ Default applications included with Pop!_OS 24.04 are outlined in [the Default Ap
 
 The <u>COSMIC Store</u> can be used to install additional software and update currently installed software. Search for programs or browse for them by category, then click the `Install` button to add them to your computer.
 
-![COSMIC Store](/images/pop-basics/pop-basics-cosmic-store.png)
+![COSMIC Store](img/pop-basics-cosmic-store.png)
 
 Manage repositories by clicking the gear icon in the top right of the COSMIC Store. For more information about package management in Pop!\_OS, see the [Manage Repos article](/articles/manage-repos-pop/).
 
 To update currently installed software, click `Updates` in the left menu of the COSMIC Store. Buttons to `Check for updates` and `Update all` are located in the top right corner of the page.
 
-![Update Software in Pop!_OS 24.04 COSMIC Store](/images/pop-basics/pop-basics-software-updates-cosmic-store.png)
+![Update Software in Pop!_OS 24.04 COSMIC Store](img/pop-basics-software-updates-cosmic-store.png)
 
 ## Keyboard Shortcuts
 

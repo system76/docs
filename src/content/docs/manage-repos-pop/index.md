@@ -32,15 +32,15 @@ Pop!\_OS comes pre-installed with a number of sources for installing additional 
 
 Pop!\_OS's tool for adding, removing and editing repositories and sources is called <u>Repoman</u>, and it is accessible through the Pop!_Shop.
 
-![Pop!_OS Shop](/images/manage-repos/pop-shop-button.png)
+![Pop!_OS Shop](img/pop-shop-button.png)
 
 Click on the menu icon in the top right of the <u>Pop!_Shop</u> window and then click `System Software Sources`. Alternatively <kbd>Ctrl</kbd> + <kbd>S</kbd> will also open <u>Repoman</u>. Once <u>Repoman</u> is opened, click on the `Extra Sources` tab to view the configured repositories for system-wide software packages.
 
-![Repoman Extra Sources window](/images/manage-repos/Repoman-extra-sources.png)
+![Repoman Extra Sources window](img/Repoman-extra-sources.png)
 
 There will be three buttons on the lower left. The `Plus` button is for adding new repositories by hand, although third-party software will usually do this automatically. The `Pencil` button will open up a selected repository for editing, including the ability to disable it without completely removing it.
 
-![Repoman repository edit window](/images/manage-repos/Repoman-edit-repo.png)
+![Repoman repository edit window](img/Repoman-edit-repo.png)
 
 The `Trash` button will delete a selected software repository completely.
 
@@ -48,11 +48,11 @@ The `Trash` button will delete a selected software repository completely.
 
 <u>Repoman</u> can be also be used to add, remove, and edit Flatpak sources starting with Pop!_OS 20.04 LTS. Click on the **Flatpak** tab to view them, and there will be similar buttons for adding, editing, or removing sources.
 
-![Repoman Flatpak tab](/images/manage-repos/Repoman-Flatpak-tab.png)
+![Repoman Flatpak tab](img/Repoman-Flatpak-tab.png)
 
 Editing a Flatpak source will allow you to disable it without removing it, and can also show you what software has been installed from that source.
 
-![Repoman Flatpak edit window](/images/manage-repos/Repoman-Flatpak-edit.png)
+![Repoman Flatpak edit window](img/Repoman-Flatpak-edit.png)
 
 ## Repositories, Sources, and the Command Line
 

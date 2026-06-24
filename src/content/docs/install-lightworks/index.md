@@ -22,15 +22,15 @@ Lightworks is a powerful video-editing tool used by industry professionals. This
 
 In order to use this software you are required to register an account on Lightworks' website.
 
-![Registration](/images/lightworks/lightworks-registration.png)
+![Registration](img/lightworks-registration.png)
 
 Once the account is created you will be taken to the your account dashboard:
 
-![Dashboard](/images/lightworks/lightworks-dashboard.png)
+![Dashboard](img/lightworks-dashboard.png)
 
 ## Download the Linux DEB file
 
-![Download Button](/images/lightworks/lightworks-download-page.png)
+![Download Button](img/lightworks-download-page.png)
 
 Your browser (Firefox is the default in Pop!\_OS) will ask whether you want to open or save the file.
 
@@ -40,17 +40,17 @@ In Pop!\_OS, the default application for opening .deb files is Eddy. Choose the 
 
 Click the green "Install" button in the top-right corner of Eddy to install the package. When the process is finished, a red "Uninstall" button will appear in its place.
 
-![Eddy Installation](/images/lightworks/lightworks-eddy-2.png)
+![Eddy Installation](img/lightworks-eddy-2.png)
 
 Now, the Lightworks launcher will appear in the Application menu or the Launcher when you search for it.
 
-![Application Menu](/images/lightworks/lightworks-application-library.png)
+![Application Menu](img/lightworks-application-library.png)
 
-![Launcher Menu](/images/lightworks/lightworks-launcher.png)
+![Launcher Menu](img/lightworks-launcher.png)
 
 When you first launch the application you will need to sign into your Lightworks account.
 
-![Welcome Screen](/images/lightworks/lightworks-welcome.png)
+![Welcome Screen](img/lightworks-welcome.png)
 
 ### Terminal Instructions
 

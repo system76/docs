@@ -35,7 +35,7 @@ Issues may disable user access to the desktop environment, including the web bro
 ```bash
 cd --help
 ```
-![--help output](/images/finding-command-help/--help-output.png)
+![--help output](img/--help-output.png)
 
 ### whatis
 
@@ -48,7 +48,7 @@ cd --help
 ```bash
 whatis mkdir
 ```
-![whatis output](/images/finding-command-help/what-output.png)
+![whatis output](img/what-output.png)
 
 ### dpkg -S
 
@@ -62,7 +62,7 @@ whatis mkdir
 dpkg -S pop-upgrade
 ```
 
-![dpkg -S output](/images/finding-command-help/dpkg-search-output.png)
+![dpkg -S output](img/dpkg-search-output.png)
 
 ### which & dpkg -S
 
@@ -76,7 +76,7 @@ dpkg -S pop-upgrade
 which libreoffice | xargs dpkg -S
 ```
 
-![dpkg file lookup output](/images/finding-command-help/dpkg-file-lookup-output.png)
+![dpkg file lookup output](img/dpkg-file-lookup-output.png)
 
 #### Commands within symlinked directories
 
@@ -86,7 +86,7 @@ Users may see an error stating no matching path can be found:
 which mkdir | xargs dpkg -S
 ```
 
-![dpkg -S output with no results](/images/finding-command-help/dpkg-search-no-results.png)
+![dpkg -S output with no results](img/dpkg-search-no-results.png)
 
 This occurs when a package is programmed to install a file to one directory, but that directory is symlinked to another directory on the system; in this situation, the package manager installs the file to a directory that differs from the original package's progamming. The following directories are commonly symlinked on Pop!_OS systems:
 
@@ -104,7 +104,7 @@ which mkdir
 dpkg -S /bin/mkdir
 ```
 
-![dpkg file lookup with a /usr symlink](/images/finding-command-help/dpkg-search-usr-symlink.png)
+![dpkg file lookup with a /usr symlink](img/dpkg-search-usr-symlink.png)
 
 In the above example, the `mkdir` command (which comes from the `coreutils` package) was supposed to be installed to `/bin/mkdir`, but is located at `/usr/bin/mkdir` instead because `/bin` is a symlink to `/usr/bin` in Pop!_OS.
 
@@ -118,7 +118,7 @@ ls -l /usr/sbin/reboot
 dpkg -S /bin/systemctl
 ```
 
-![dpkg file lookup with a symlinked executable](/images/finding-command-help/dpkg-search-symlinked-executable.png)
+![dpkg file lookup with a symlinked executable](img/dpkg-search-symlinked-executable.png)
 
 In the above example, the `reboot` command is located at `/usr/sbin/reboot` (which is installed from the `systemd-sysv` package), but that file is actually a symlink to `/bin/systemctl` (which comes from the `systemd` package.)
 
@@ -133,7 +133,7 @@ In the above example, the `reboot` command is located at `/usr/sbin/reboot` (whi
 ```bash
 apropos reboot
 ```
-![apropos output](/images/finding-command-help/apropos-output.png)
+![apropos output](img/apropos-output.png)
 
 ### man
 
@@ -146,7 +146,7 @@ apropos reboot
 ```bash
 man reboot
 ```
-![man output](/images/finding-command-help/man-output.png)
+![man output](img/man-output.png)
 
 ### info
 
@@ -171,4 +171,4 @@ man reboot
 ```bash
 info ls
 ```
-![info output](/images/finding-command-help/info-output.png)
+![info output](img/info-output.png)

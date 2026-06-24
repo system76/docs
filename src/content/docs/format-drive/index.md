@@ -40,8 +40,8 @@ The <u>Disks</u> application can be used to format the drive to remove any perso
 
 In this screenshot the drive is a USB Flash Drive, though the concept is the same for any drive, including the drive where your OS is installed. First left-click on the drive on the left side then left-click on the top right menu with three dots (three lines on older releases).
 
-![Disks](/images/format-drive/disks-format-disk.png)
+![Disks](img/disks-format-disk.png)
 
 Now select the `Format Disk...` option then make sure to have the 'Compatible with modern systems and hard drives > 2TB (GPT)' selected (you can use either the Quick option or the Slow option).
 
-![Disks](/images/format-drive/disks-format-disk2.png)
+![Disks](img/disks-format-disk2.png)

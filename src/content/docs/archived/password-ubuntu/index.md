@@ -24,7 +24,7 @@ On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather t
 
 First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or the <kbd>ESC</kbd> key.  On the menu, choose **Recovery Mode**.
 
-![systemd-boot](/images/password/systemd-boot.png)
+![systemd-boot](img/systemd-boot.png)
 
 Once the recovery operating system has opened, click **Install Pop!_OS** in the top left, and choose **quit**.  Then, press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> to open a terminal, and type in these commands:
 
@@ -80,27 +80,27 @@ Now, enter the original passphrase. Here you will be prompted for the new passph
 
 There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot. Make sure to stop tapping <kbd>ESC</kbd> when the menu appears:
 
-![Grub1](/images/password/grub1.png)
+![Grub1](img/grub1.png)
 
 If you do tap <kbd>ESC</kbd> when the menu appears, a GRUB command prompt will appear:
 
-![Prompt](/images/password/prompt.png)
+![Prompt](img/prompt.png)
 
 If you get to the GRUB command prompt, type in `normal`, then press <kbd>ENTER</kbd> and immediately press <kbd>ESC</kbd>.
 
 Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**, then, choose the 3rd option **Ubuntu, with Linux &lt;current kernel number&gt; (recovery mode)**.
 
-![Grub2](/images/password/grub2.png)
+![Grub2](img/grub2.png)
 
 At the recovery menu, choose the **root** option, then press <kbd>Enter</kbd> to drop to a root prompt.
 
-![Recovery](/images/password/recovery.png)
+![Recovery](img/recovery.png)
 
 ### Root Prompt
 
 **A note on the root prompt:** Since the system is operating with only a single console, all output is printed to the screen. This can be really confusing, but nothing has changed -- it's just output. **If your screen looks like the image below, with a timeout notice or similar,** press Ctrl+C to return to the prompt and continue working. You will need to re-enter the command you were typing.
 
-![Timeout in recovery mode](/images/password/timeout.png)
+![Timeout in recovery mode](img/timeout.png)
 
 Now, type this command to make your hard drive editable:
 
@@ -124,7 +124,7 @@ passwd april
 
 Enter a new password, then press <kbd>Enter</kbd>. Even though you are typing, no text will be displayed as seen in the image below.
 
-![Full commands to reset password](/images/password/example.png)
+![Full commands to reset password](img/example.png)
 
 Enter the same password again to confirm, then press <kbd>Enter</kbd>.
 
@@ -156,4 +156,4 @@ sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 
 Click on the drive that has the OS installed on it on the left side of the <u>Disks</u> application. Then click on the LUKS partition (where the root partition is) and then click on the gear icon under the 'Volumes' section.
 
-![GNOME Disks](/images/password/disks-change-passphrase.png)
+![GNOME Disks](img/disks-change-passphrase.png)

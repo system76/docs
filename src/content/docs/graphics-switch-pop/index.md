@@ -90,7 +90,7 @@ ability to switch between integrated, NVIDIA, and hybrid graphics modes.
 Click the system menu in the top right corner of your screen to access graphics
 switching.
 
-![Graphics](/images/graphics-switch-pop/system-menu.png)
+![Graphics](img/system-menu.png)
 
 Click on NVIDIA, Integrated, Hybrid, or Compute depending on your use case.
 

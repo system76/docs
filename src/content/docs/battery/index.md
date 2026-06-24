@@ -25,13 +25,13 @@ Pop!\_OS does a lot to conserve the battery life of your laptop just by default,
 
 One of the largest consumers of laptop power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor, but brightness can be adjusted manually via the **System Menu** (see screenshot below) or with the keyboard shortcuts for each individual laptop model, which can be found on the "External Overview" pages of [each model's technical documentation](https://support.system76.com/articles/guides/).
 
-![Brightness](/images/battery/brightness.png)
+![Brightness](img/brightness.png)
 
 ## Changing Power Profiles
 
 Pop!\_OS comes preloaded with the `system76-power` package, which allows you to select **Power Profiles** through the **System Menu**, as shown in the image below. Changing power profiles does not require rebooting the laptop. This screenshot is from a laptop that has switchable NVIDIA graphics, and a laptop that has only Intel graphics will not have those options.
 
-![Battery](/images/battery/power-menu.png)
+![Battery](img/power-menu.png)
 
 The system will default on each startup to the `Balanced` setting, which is usually preferred even when connected to AC power as it helps keep the system running cool and quiet. When maximum performance is needed, the `High Performance` setting will uncap everything and let the system run as hot and power-hungry as it wants, which can dramaticaly reduce battery life and may also increase the noise made by the system fan(s).
 
@@ -52,7 +52,7 @@ Switching graphics modes does require restarting the laptop, which will use up s
 
 Wi-Fi and Bluetooth are wireless technologies that use up a small amount of power even when they're not being used, as they monitor for wireless network activity. If you're not using them, disabling either Wi-Fi or Bluetooth can improve battery life, and the `Airplane Mode` setting will disable both for maximum savings. They can be disabled individually via the Wi-Fi and Bluetooth panels in the Settings application by toggling the switch at the top of the window, and Airplane Mode is available underneath it on the Wi-Fi settings panel:
 
-![disable-Wi-Fi](/images/battery/disable-wifi.png)
+![disable-Wi-Fi](img/disable-wifi.png)
 
 ## Monitoring System Performance
 
@@ -86,7 +86,7 @@ will start `powertop` in an interactive monitoring mode. Use the <kbd>Tab</kbd> 
 
 The GUI application named System Monitor is installed by default on Pop!\_OS, and is a GUI tool for watching system proceses. By clicking on the column labeled "CPU", so that the arrow is pointing down, it will sort the processes by how much CPU time they're using. This can be useful for finding a process that's running the background and keeping the CPU busy.
 
-![system-monitor](/images/battery/system-monitor.png)
+![system-monitor](img/system-monitor.png)
 
 ### Using `top` and Variants
 
@@ -106,7 +106,7 @@ sudo htop
 
 Here'a a screenshot of it running on a system with eight physical cores and sixteen threads:
 
-![htop](/images/battery/htop.png)
+![htop](img/htop.png)
 
 ### NVIDIA GPUs: Using `nvtop`
 
@@ -124,7 +124,7 @@ nvtop
 
 It's recommended that you expand the terminal window horizontally, as `nvtop` can show additional information (like video decoding) if it has extra room. This screenshot shows `nvtop` monitoring the GTX 2070 GPU in an Oryx Pro model _oryp6_ while it's running a small 3D application and decoding a video on the GPU at the same time, so the `DEC[]` section appears in the upper right:
 
-![nvtop](/images/battery/nvtop.png)
+![nvtop](img/nvtop.png)
 
 If `nvtop` is showing a lot of GPU activity when no GPU-heavy applications (like games or 3D software) are running, there may be an program which is using the GPU when it's not supposed to be.
 
@@ -144,7 +144,7 @@ sudo intel_gpu_top
 
 This screenshot shows `intel_gpu_top` on a system running some normal applications with a 3D accelerated desktop, along with a video player that's using the Intel hardware for decoding.
 
-![intel_gpu_top](/images/battery/intel_gpu_top.png)
+![intel_gpu_top](img/intel_gpu_top.png)
 
 If `intel_gpu_top` is showing a lot of GPU activity when no GPU-heavy applications (like games or 3D software) are running, there may be an program which is using the GPU when it's not supposed to be.
 

@@ -45,7 +45,7 @@ System76 Open Firmware is designed to be lightweight and performant with a simpl
 
 Below is a comparison between the UEFI setup menu on proprietary firmware (left) and System76 Open Firmware (right):
 
-![Proprietary vs. Open Firmware](/images/system-firmware/proprietary-vs-open.webp)
+![Proprietary vs. Open Firmware](img/proprietary-vs-open.webp)
 
 ### Checking the Current Firmware Version
 

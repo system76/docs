@@ -25,13 +25,13 @@ To open a <u>Terminal</u>, tap the Super Key <kbd><font-awesome-icon :icon="['fa
 
 A box like the one below will appear:
 
-![Terminal](/images/terminal/main.png)
+![Terminal](img/main.png)
 
 ## Navigating The Terminal
 
 It might not look like much, and at first glance there might not appear to be much information, but the <u>Terminal</u> is one of the most powerful tools at your disposal. Take a look:
 
-![Terminal Overview](/images/terminal/overview.png)
+![Terminal Overview](img/overview.png)
 
 Section | Description
 :------:|------------
@@ -46,13 +46,13 @@ As you change folders and move throughout your computer, the prompt will change 
 
 To list all files and folders in the current directory, type `ls`. To change directories (folders), type `cd [directory name]`. To go back up a directory type `cd ..`. To return to your home directory from any location in the filesystem, type `cd`. At any time, you can press the Tab key to have the <u>Terminal</u> guess the completion for your entry, or twice to show all possibilities.
 
-![Moving around](/images/terminal/moving-around.png)
+![Moving around](img/moving-around.png)
 
 ## Running Elevated Commands
 
 In most cases, the <u>Terminal</u> prevents you from damaging your system by requiring authentication or elevated privileges to run certain commands. For example, to check for updates you will need to prepend the command `apt update` with `sudo`. Below is an example of the same command, ran once without `sudo` and once with.
 
-![Using sudo](/images/terminal/sudo.png)
+![Using sudo](img/sudo.png)
 
 When you run a command with `sudo` in front of it, you'll be prompted for your password. When typing your password, you won't see anything. Just enter your password and then press <kbd>Enter</kbd>. If it's entered incorrectly, the <u>Terminal</u> will let you know and give you another chance to enter your password.
 

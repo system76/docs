@@ -53,7 +53,7 @@ sha256sum Downloads/pop-os_*.iso
 
 An example of the terminal output to expect is below. The large block of numbers and letters is the checksum to match with the download page. The version of the iso is indicated in the filename. In this example, we are viewing the checksum for the Pop!_OS 24.04 generic version 20 .iso.
 
-![Checksum Terminal Output](/images/live-disk/checksumexample.png)
+![Checksum Terminal Output](img/checksumexample.png)
 
 ### For MacOS
 
@@ -83,19 +83,19 @@ In order to make the bootable live disk, you must have a flash drive and softwar
 
 Press the <kbd>SUPER</kbd> key then type 'disks' to launch the Disks application. Select your flash drive in the list on the left.
 
-![Disks](/images/live-disk/disks.png)
+![Disks](img/disks.png)
 
 Click on the three vertical dots near the top right of the window, then select `Restore Disk Image...` from the menu. Next, select the Pop!\_OS or Ubuntu .iso file. Finally, click the `Start Restoring...` button.
 
-![Disks File Selection](/images/live-disk/disks-file-selection.png)
+![Disks File Selection](img/disks-file-selection.png)
 
 After entering your user password, flashing will begin and a progress bar will appear.
 
-![Disks Progress](/images/live-disk/disks-progress.png)
+![Disks Progress](img/disks-progress.png)
 
 Once the flash is complete, the Pop!_OS partition will appear on the flash drive, as seen below.
 
-![Disks Complete](/images/live-disk/disks-complete.png)
+![Disks Complete](img/disks-complete.png)
 
 Now it's time to boot it up on the machine that you want to install Pop!_OS on!
 
@@ -107,31 +107,31 @@ Etcher is an open source app for Windows, macOS, and Linux that allows you to bu
 
 Once you have installed Etcher and downloaded the Pop!\_OS .iso image, open the Etcher application. You should see something like this:
 
-![Etcher Startup](/images/live-disk-new/etcher01-start.png)
+![Etcher Startup](img/etcher01-start.png)
 
 Choose `Flash from file` and then navigate to where you downloaded the Pop!_OS .iso file (typically your "Downloads" folder). Click on the file then and hit the `Open` button. On Windows, it should look something like this:
 
-![Select Pop!_OS iso](/images/live-disk-new/etcher02-filepicker.png)
+![Select Pop!_OS iso](img/etcher02-filepicker.png)
 
 Now click on `Select target`:
 
-![Click on Select Target](images/live-disk-new/etcher03-select-target.png)
+![Click on Select Target](img/etcher03-select-target.png)
 
 Next, select the drive that you want to use by checking the box next to it. It should only show removable drives by default. After the box for your USB stick is checked, click on the `Select` button:
 
-![Flash Drive Select](/images/live-disk-new/etcher04-select-device.png)
+![Flash Drive Select](img/etcher04-select-device.png)
 
 Now hit the `Flash!` button, and Etcher will start writing to the USB drive.
 
-![Click Finish](/images/live-disk-new/etcher05-select-finish.png)
+![Click Finish](img/etcher05-select-finish.png)
 
 You'll see a progress bar (and some information about other projects by *Balena*, the company that makes Etcher). Wait for it to finish writing to the USB device.
 
-![Flashing the drive](/images/live-disk-new/etcher06-in-progress.png)
+![Flashing the drive](img/etcher06-in-progress.png)
 
 When it's complete, you can just close the app.
 
-![Flash Complete](/images/live-disk-new/etcher07-complete.png)
+![Flash Complete](img/etcher07-complete.png)
 
 Now it's time to boot it up on the machine that you want to install Pop!_OS on!
 
@@ -148,17 +148,17 @@ If done correctly, you should see a boot device selection menu, like one of the 
 
 On proprietary firmware systems, the menu may look like this (but appearance varies by model):
 
-![Boot Menu](/images/live-disk/boot-menu.jpg)
+![Boot Menu](img/boot-menu.jpg)
 
 On Open Firmware systems, the menu looks like this:
 
-![One Time Boot](/images/boot-menu/one-time-boot.jpg)
+![One Time Boot](img/one-time-boot.jpg)
 
 Use the arrow keys to select the USB drive, then press <kbd>Enter</kbd> to boot the selection.
 
 Pop!_OS will boot into the familiar Pop!_OS desktop.
 
-![Live Disk](/images/live-disk/2404installerlaunch.png)
+![Live Disk](img/2404installerlaunch.png)
 
 ## Using the Live Environment
 

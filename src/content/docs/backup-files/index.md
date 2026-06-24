@@ -58,13 +58,13 @@ Once Deja Dup is installed, it will be labeled as "Backups" in the Activities ov
 
 With Deja Dup (Backups) open, you can select the folders you wish to save or ignore using the pages listed on the left. By default, Deja Dup will backup your entire home directory, which includes your Documents, Pictures, Music, and Videos folders. It ignores your Downloads folder and any items in the Trash. Use the plus and minus buttons as needed to modify both categories.
 
-![Selecting data to backup in Deja-Dup](/images/backup/deja_selection.png)
+![Selecting data to backup in Deja-Dup](img/deja_selection.png)
 
 #### Choosing a Backup Location
 
 On the **Storage location** page, you can configure the location where your backup will be stored.
 
-![Selecting a backup location in Deja-Dup](/images/backup/deja_location.png)
+![Selecting a backup location in Deja-Dup](img/deja_location.png)
 
 The available options are:
 
@@ -99,13 +99,13 @@ Will be slower to back up (depending on your internet speed), and uses your data
 
 To schedule backups to run automatically, select **Scheduling** from the list on the left, then flip the switch to enable automatic backups. Schedule the backup for a time when you know the location will be available (for example, when you know you'll have the USB drive plugged in). Many people choose to let their backups run overnight or on weekends.
 
-![Scheduling backups in Deja-Dup](/images/backup/deja_scheduling.png)
+![Scheduling backups in Deja-Dup](img/deja_scheduling.png)
 
 #### Restoring Your Data
 
 To restore your data with Deja Dup, select the **Overview** page, then click the **Restore...** button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.
 
-![Restoring data in Deja-Dup](/images/backup/deja_overview.png)
+![Restoring data in Deja-Dup](img/deja_overview.png)
 
 ### Cloud Desktop Clients
 
@@ -193,23 +193,23 @@ System-wide program configuration files can be found in many locations of the OS
 
 Pop!\_OS comes with a disk management utility called GNOME Disks. You can find it in your apps list.
 
-![Disks app](/images/backup/disks-1-none-selected.png)
+![Disks app](img/disks-1-none-selected.png)
 
 Upon opening, on the left, you will see a list of all disks connected to your computer. Choose which disk you want to back up or restore and click on it.
 
-![drop down menu in Disks app](/images/backup/disks-2-disk-selected.png)
+![drop down menu in Disks app](img/disks-2-disk-selected.png)
 
 Once you select a disk, a "Disk options" button will appear near the top right corner of the app window. When you press it, a drop down menu will appear, allowing you to select the option you want - to create or restore a disk image.
 
 ### Creating a disk image
 
-![image](/images/backup/disks-3-create-disk-image.png)
+![image](img/disks-3-create-disk-image.png)
 
 When you press a "Create disk image" in the drop-down menu mentioned before, you will have a pop-up appear, presenting you with choice to name the disk image you're creating and select where to put it.
 
 **NOTE** that creating a full disk-image is only available when booting from a [live disk](/articles/live-disk). You can't make changes to an internal disk or partition from which you're booting.
 
-![image](/images/backup/disks-3-create-disk-image-busy.png)
+![image](img/disks-3-create-disk-image-busy.png)
 
 After clicking "Start creating," it may ask for your password. Next Disks will start creating your disk image. A progress bar will be shown. You can cancel creating the image at any time by pressing the trash can icon on the right, next to the progress bar.
 
@@ -221,11 +221,11 @@ Upon finishing, you will have a disk image file in `.img` format. The file will 
 
 > **IMPORTANT NOTE:** Restoring a disk image to a drive erases the current contents of the selected drive or partition. Again, this will result in a complete loss of data. Only restore disk images to drives that are already backed up, or on which you don't wish to preserve the data.
 
-![image](/images/backup/disks-4-restore-disk-image.png)
+![image](img/disks-4-restore-disk-image.png)
 
 When you press "Restore disk image" in the drop-down menu mentioned before, a pop-up will appear, presenting a button to select which disk image you want to restore The "Destination" will be whichever disk you selected previously (on the left).
 
-![image](/images/backup/disks-4-restore-disk-image-busy.png.png)
+![image](img/disks-4-restore-disk-image-busy.png.png)
 
 After you press "Start restoring," it will ask for a confirmation and may ask for a user password. After that, process of restoring a disk image onto your disk will start, showing you restoring progress. You can cancel at any time by pressing the trash can icon on the right from the progress bar.
 

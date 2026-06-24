@@ -43,21 +43,21 @@ sudo apt install popsicle-gtk
 
 Once you have installed Popsicle and downloaded the Pop!_OS.iso image, open up the Popsicle application, you should see something like this:
 
-![Popsicle](/images/pop-live-disk/popsicle.png)
+![Popsicle](img/popsicle.png)
 
 Pick *Choose Image* and navigate to where you downloaded Pop!_OS, click on it and hit the *open* button:
 
-![Select Pop!_OS iso](/images/pop-live-disk/popsicle-image-selection.png)
+![Select Pop!_OS iso](img/popsicle-image-selection.png)
 
 Next, select the drive that you want to use; the name of the drive most likely will be the brand name, e.g. "SanDisk" or "Kingston".
 
-![Popsicle Flash Drive Selected](/images/pop-live-disk/popsicle-drive-selection.png)
+![Popsicle Flash Drive Selected](img/popsicle-drive-selection.png)
 
 Now hit the *Flash* button and watch the magic happen!
 
-![Flashing Pop!_OS...](/images/pop-live-disk/popsicle-progress.png)
+![Flashing Pop!_OS...](img/popsicle-progress.png)
 
-![Flash Complete](/images/pop-live-disk/popsicle-finished.png)
+![Flash Complete](img/popsicle-finished.png)
 
 Once the flash is complete (should look like the screenshot above), it's time to boot it up on the machine that you want to install Pop!_OS on!
 
@@ -72,13 +72,13 @@ After creating the live disk, insert the USB into your computer, then reboot or 
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 
-![Boot Menu](/images/pop-live-disk/boot-menu.jpg)
+![Boot Menu](img/boot-menu.jpg)
 
 Use the arrow keys to select the USB drive, then press <kbd>Enter</kbd> to boot the selection.  
 
 Pop!_OS will boot into the installer once you pick your language and keyboard then select 'Try Demo Mode' in the third slide.
 
-![Live Disk](/images/pop-live-disk/live-desktop.png)
+![Live Disk](img/live-desktop.png)
 
 ## Using Live Environment
 

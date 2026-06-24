@@ -22,7 +22,7 @@ tableOfContents: true
 
 On some products using AMD Threadripper or Threadripper Pro processors, VirtualBox guests may display a blank screen as seen below:
 
-![VirtualBox guest showing a blank screen](/images/virtualbox-threadripper/virtual-machine-black-screen.webp)
+![VirtualBox guest showing a blank screen](img/virtual-machine-black-screen.webp)
 
 On systems affected with this issue, checking `VBox.log` while the virtual machine is running will show the following log line every second:
 
@@ -39,16 +39,16 @@ Affected System76 models include:
 
 In order to allow VirtualBox guests to properly show their displays, ensure the virtual machine is not running, then open the virtual machine's settings.
 
-![Virtual machine settings button](/images/virtualbox-threadripper/vm-settings-button.png)
+![Virtual machine settings button](img/vm-settings-button.png)
 
 Navigate to the `System` page, then to the `Acceleration` tab.
 
-![Virtual machine System/Acceleration settings section](/images/virtualbox-threadripper/vm-system-acceleration-settings.png)
+![Virtual machine System/Acceleration settings section](img/vm-system-acceleration-settings.png)
 
 Uncheck the checkbox labeled `Enable Nested Paging`.
 
-![VirtualBox nested paging setting](/images/virtualbox-threadripper/vm-disable-nested-paging.png)
+![VirtualBox nested paging setting](img/vm-disable-nested-paging.png)
 
 Select `OK` to save the settings, then start the virtual machine again. The display will output successfully.
 
-![VirtualBox guest showing a working screen](/images/virtualbox-threadripper/virtual-machine-working-screen.webp)
+![VirtualBox guest showing a working screen](img/virtual-machine-working-screen.webp)

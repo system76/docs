@@ -57,7 +57,7 @@ xorg.0.log
 
 Starting in Pop!\_OS 21.10, logs are no longer generated through the <u>System76 Driver</u> application. Instead, a "Support" section has been added to the <u>Settings</u> application. Clicking the `Create Log Files` button will prompt you for your admin password, and then generate and save a file called `pop-support_[timestamp].tar.xz`. This file is saved in your Home directory (`/home/username`).
 
-![Settings-Logs](/images/system76-driver/logs-in-settings.png)
+![Settings-Logs](img/logs-in-settings.png)
 
 ## Generating Log Files Using the System76 Driver Application
 
@@ -65,7 +65,7 @@ The System76 Driver can be opened by clicking the `Activities` or `Applications`
 
 Next click on the button outlined in red in the <u>System76 Driver</u> application and a file called `system76-logs.tgz` will be created and placed in your Home directory (`/home/username`).
 
-![CreateLogFiles](/images/system76-driver/CreateLogFiles.png)
+![CreateLogFiles](img/CreateLogFiles.png)
 
 ### Manually Generating Log Files
 

@@ -28,7 +28,7 @@ If you are not able to boot into the installed OS due to this issue we can boot 
 
 We can use the Disks application once the drive (on the left side) is selected. From there click on the partiton (Pop and Ubuntu uses Ext4 for the root partition) then the gear icon for the menu in the below screenshot:
 
-![Disks-Repair](/images/fixing-drives/disks-application.png)
+![Disks-Repair](img/disks-application.png)
 
 ### CLI (Command Line Interace)
 

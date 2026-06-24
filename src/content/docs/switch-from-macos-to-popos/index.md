@@ -34,12 +34,12 @@ Pop!\_OS offers corresponding workflows and applications to those available in m
 |---|---|
 | Spotlight Search | Activities Overview |
 
-![search](/images/pop-os-mac-screenshots/search.png)
+![search](img/search.png)
 
 On macOS, Spotlight Search can be launched by clicking the magnifying glass in the upper right-hand corner of the screen, or by pressing CMD+SPACE.
 In Pop!\_OS, clicking on the "Activities" menu in the upper left-hand corner of the screen opens the Activities Overview. Overview has a search bar situated in the top-center of the screen which will search file names and applications.
 
-![activities-overview](/images/pop-os-screenshots/activities-pop-os.png)
+![activities-overview](img/activities-pop-os.png)
 
 The Activities Overview screen can also be launched by pressing the SUPER key. Once Overview is launched, users can begin typing to search their computer.
 
@@ -72,7 +72,7 @@ Both macOS and Pop!\_OS have a method for showing installed applications in an i
 
 In macOS this feature is called Launchpad and is represented by the rocket-ship icon.
 
-![launchpad-show-applications](/images/pop-os-mac-screenshots/launchpad-show-applications.png)
+![launchpad-show-applications](img/launchpad-show-applications.png)
 
 In Pop!\_OS, the apps overview can be shown by clicking on the icon resembling a grid of dots in the lower-left of the screen at the bottom of the dock. This is the "Show Applications" icon.
 
@@ -88,7 +88,7 @@ In macOS applications are installed from two (2) main sources. The Apple App Sto
 
 Applications downloaded and installed from the internet make use of .dmg files or .pkg files which run installer programs and guide users in moving Applications to the Applications folder.
 
-![appstore-popshop](/images/pop-os-mac-screenshots/appstore-popshop.png)
+![appstore-popshop](img/appstore-popshop.png)
 
 In Pop!\_OS. The Pop!\_Shop functions as an app store. The Pop!\_Shop highlights popular applications and lets users install them with a click and password authentication.
 
@@ -113,7 +113,7 @@ The placement of applications in Pop!\_OS is handled transparently by the operat
 
 Both macOS and Pop!\_OS use workspaces to organize open application windows
 
-![workspaces-overivew-activities-overview](/images/pop-os-mac-screenshots/workspaces-activites-overview.png)
+![workspaces-overivew-activities-overview](img/workspaces-activites-overview.png)
 
 macOS uses multi-touch gestures, or <kbd>CTRL</kbd>+<kbd>up</kbd> or <kbd>down</kbd>, to launch "Mission Control" and <kbd>CTRL</kbd>+<kbd>left</kbd> or <kbd>right</kbd> are used to navigate between workspaces.
 
@@ -151,7 +151,7 @@ The file-systems layouts in macOS and Pop!\_OS both feature location shortcuts o
 
  In Pop!\_OS, the Files application serves the same purpose. It is represented by a gray icon that looks like a tabbed folder from a filing cabinet.
 
-![files-finder](/images/pop-os-mac-screenshots/files-edited.png)
+![files-finder](img/files-edited.png)
 
 ### Light Mode vs. Dark Mode
 
@@ -163,7 +163,7 @@ Dark Mode can be enabled by visiting
 
 Settings>Appearance>Appearance(Tab)>Dark (Radio button)
 
-![appearance-settings](/images/pop-os-screenshots/appearance-settings.png)
+![appearance-settings](img/appearance-settings.png)
 
 ## Software
 
@@ -189,7 +189,7 @@ Examples include:
 - [1Password](https://1password.com/)
 - [LastPass](https://www.lastpass.com/)
 
-![bitwarden](/images/pop-os-screenshots/bitwarden.png)
+![bitwarden](img/bitwarden.png)
 
 Other Browser Options:
 
@@ -207,9 +207,9 @@ For users accustomed to Chrome, Chrome is available for Linux, as well as Chrome
 
 The software suite formerly known as "iWork" contains Apple's equivalent to Microsoft Office. It contains Pages (word processing), Numbers (spreadsheets) and Keynote (presentations). These apps are all capable of reading and saving files in outside formats like those used in Microsoft Office, but by default, they save files in formats specific to the iWorks suite: .pages, .numbers, and .keynote respectively.
 
-![libreoffice-icons](/images/pop-os-screenshots/libreoffice-icons.png)
+![libreoffice-icons](img/libreoffice-icons.png)
 
-![libreoffice-windows-open](/images/pop-os-screenshots/libreoffice-windows-open.png)
+![libreoffice-windows-open](img/libreoffice-windows-open.png)
 
 Pop!\_OS comes with the open-source office suite LibreOffice installed by default. LibreOffice can open Microsoft Office files, and export to Office formats (.docx, etc.). LibreOffice cannot open iWork formatted projects. For example, documents ending in .pages will need saved in a different format before LibreOffice will open them. LibreOffice saves documents in the .odt format by default.
 
@@ -242,7 +242,7 @@ Element (formerly Riot.im) is an open-source instant messaging client which make
 
 Linux versions of Slack and its open-source alternative Mattermost are available in Pop!\_Shop.
 
-![element](/images/pop-os-screenshots/element.png)
+![element](img/element.png)
 
 #### Video/Calls
 
@@ -253,7 +253,7 @@ Linux versions of Slack and its open-source alternative Mattermost are available
 | | [Skype](https://www.skype.com/en/) (also available in the Pop!\_Shop) |
 | | [Zoom](https://zoom.us/) (also available in the Pop!\_Shop) |
 
-![jitsi](/images/pop-os-screenshots/jitsi.png)
+![jitsi](img/jitsi.png)
 
 Jitsi is a multi-user video chat program which runs in a browser. It allows password protected rooms, phone-dial-in and IM-ing alongside video-chat. All calls are encrypted by default using HTTPS, with additional end-to-end encryption options also offered. The System76 team makes daily use of the Jitsi platform.
 
@@ -267,7 +267,7 @@ Linux clients are available for popular apps like Discord, Skype and Zoom.
 
 There is a program available in the Pop!\_Shop called "Cheese." Cheese allows users to take webcam selfies, and apply image filters.
 
-![cheese](/images/pop-os-screenshots/cheese.png)
+![cheese](img/cheese.png)
 
 ### Manage Photos
 
@@ -280,7 +280,7 @@ Pop!\_OS comes with a photo viewing application called Image Viewer which previe
 There are several applications available in the Pop!\_Shop for more in-depth photo management. Shotwell is highlighted below.
 Shotwell organizes photos by albums and event dates, and allows for importing, viewing, and sorting photographs.
 
-![shotwell](/images/pop-os-screenshots/shotwell.png)
+![shotwell](img/shotwell.png)
 
 ### Email
 
@@ -291,11 +291,11 @@ Shotwell organizes photos by albums and event dates, and allows for importing, v
 
 Pop!\_OS offers the GNOME "Geary" email client by default. Geary makes use of a column view, and supports adding a variety of email accounts.
 
-![geary](/images/pop-os-screenshots/geary.png)
+![geary](img/geary.png)
 
 For users more accustomed to Microsoft Outlook, there's an alternative, open-source program by Mozilla called Thunderbird which supports calendar integration and similar organization features to Outlook.
 
-![thunderbird](/images/pop-os-screenshots/thunderbird.png)
+![thunderbird](img/thunderbird.png)
 
 **NOTE:** Regardless of platform or client, many email accounts (e.g. Google) have implemented a security policy where a single-use password must be created for each email app users want to sync with their account. These passwords have to be created from the email provider's account website.
 
@@ -315,7 +315,7 @@ In addition, most modern Email Service Providers (ESPs) have an online version o
 | Quicktime | [GNOME Videos](https://wiki.gnome.org/Apps/Videos) (default) |
 | | [VLC](https://www.videolan.org/vlc/index.html) (available in the Pop!\_Shop) |
 
-![gnome-video](/images/pop-os-screenshots/gnome-videos.png)
+![gnome-video](img/gnome-videos.png)
 
 The Pop!\_OS default video player is GNOME Videos. It can play local media or fetch videos from RSS feeds.
 
@@ -344,7 +344,7 @@ sudo apt-get install gnome-sushi
 
 **NOTE:** You need to restart Nautilus (default file manager) in order for this to take effect. Log out and log back in to do so.
 
-![Sushi](/images/pop-os-screenshots/sushi.png)
+![Sushi](img/sushi.png)
 
 ### Listening to Music
 
@@ -355,11 +355,11 @@ sudo apt-get install gnome-sushi
 
 There are many music player apps available for Linux. One polished and versatile example is Lollypop. Lollypop has a similar layout to iTunes and can play music stored local to the computer or stream internet radio channels.
 
-![Lollypop](/images/pop-os-screenshots/lollypop.png)
+![Lollypop](img/lollypop.png)
 
 There is also a Linux client for the popular streaming service Spotify, available in the Pop!\_Shop.
 
-![Spotify](/images/pop-os-screenshots/spotify.png)
+![Spotify](img/spotify.png)
 
 Other options:
 
@@ -381,7 +381,7 @@ Pop!\_OS supports two (2) professional video editing suites. Lightworks and DaVi
 
 There is also an open-source video editing program called Kden Live which offers a comparable interface and feature-set to iMovie, and is available in the Pop!\_Shop.
 
-![kden-live](/images/pop-os-screenshots/kden-live.png)
+![kden-live](img/kden-live.png)
 
 ### Sound Recording
 
@@ -393,15 +393,15 @@ There is also an open-source video editing program called Kden Live which offers
 
 There are several applications that can be used for music editing and sound recording.
 
-![LMMS](/images/pop-os-screenshots/lmms.png)
+![LMMS](img/lmms.png)
 
 LMMS (Let's Make Music Software) is an open-source music mixer which can record and loop inputs from midi-keyboards.
 
-![audacity](/images/pop-os-screenshots/audacity.png)
+![audacity](img/audacity.png)
 
 Audacity can be used for recording and editing voice tracks for things like podcasts and memos.
 
-![ardour](/images/pop-os-screenshots/ardour.png)
+![ardour](img/ardour.png)
 
 Ardour is for more advanced audio engineering. It contains a multi-channel track and midi mixing program.
 
@@ -419,11 +419,11 @@ Pop!\_OS does not have a proprietary coding language, but supports a variety of 
 
 Common development tools like Sublime Text and Microsoft Visual Studio Code are also available in the Pop!\_Shop.
 
-![text-editor](/images/pop-os-screenshots/text-editor.png)
+![text-editor](img/text-editor.png)
 
-![sublime](/images/pop-os-screenshots/sublime.png)
+![sublime](img/sublime.png)
 
-![vscode](/images/pop-os-screenshots/vs-studio.png)
+![vscode](img/vs-studio.png)
 
 ### Gaming
 
@@ -445,11 +445,11 @@ With these ongoing improvements, there are many more games available on Linux th
 
 The website [ProtonDB (Proton Database)](https://www.protondb.com/) is an unofficial repository of user-tested games with notes about how well they work on Linux.
 
-![popshop-games](/images/pop-os-screenshots/popshop-games.png)
+![popshop-games](img/popshop-games.png)
 
-![steam](/images/pop-os-screenshots/steam.png)
+![steam](img/steam.png)
 
-![lutris](/images/pop-os-screenshots/lutris.png)
+![lutris](img/lutris.png)
 
 ### Cloud Storage
 
@@ -477,7 +477,7 @@ Additional Options:
 
 On macOS there are two main ways to kill unresponsive programs. The force-quit menu and the Activity Monitor application.
 
-![force-quit-activity-monitor](/images/macOS-Screenshots/force-quit-activity-monitor.png)
+![force-quit-activity-monitor](img/force-quit-activity-monitor.png)
 
 Force-quit is launched by clicking on the Apple menu in the upper-left-hand corner of the screen, or by pressing Opt+Cmd+Esc, selecting the application, and then "force-quit."
 
@@ -485,7 +485,7 @@ Users can also get an overview of running processes and stop or kill them from t
 
 It is also possible to kill processes in the Terminal if process ID is known.
 
-![system-monitor-terminal](/images/pop-os-screenshots/system-monitor-terminal.png)
+![system-monitor-terminal](img/system-monitor-terminal.png)
 
 Pop!\_OS also has options for killing misbehaving processes. System Monitor (equivalent to Activity Monitor), displays running processes and allows users to stop or kill them.
 
@@ -513,7 +513,7 @@ sudo kill -pid ####
 |---|---|
 | System Preferences | Settings |
 
-![network-setting-pop-mac](/images/pop-os-mac-screenshots/network-settings-pop-mac.png)
+![network-setting-pop-mac](img/network-settings-pop-mac.png)
 
 macOS and Pop!\_OS manage network menus and settings almost identically. Both have a drop-down menu in the upper right corner of the screen to quickly connect to an available network.
 
@@ -525,7 +525,7 @@ Both have dedicated areas in System Preferences (macOS) and Settings (Pop!\_OS) 
 |---|---|
 | Filevault | LUKS (during Install) |
 
-![encryption-pop](/images/install-pop/5_encrypt_notice-cropped-20-04.png)
+![encryption-pop](img/5_encrypt_notice-cropped-20-04.png)
 
 On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS partition is encrypted using the LUKS disk layout. This tool adds a decryption screen so that every time the computer boots, it requires a decryption password before moving to the login screen. With an encrypted drive, if hardware is stolen, the only way to remove the encryption is to erase the disk.
 
@@ -538,7 +538,7 @@ On Pop!\_OS, encryption is offered during initial setup, or a reinstall. The OS 
 | Time Machine | [Timeshift](https://github.com/teejee2008/timeshift) (available in the Pop!\_Shop) |
 | | [Déjà Dup Backups](https://wiki.gnome.org/Apps/DejaDup) (available in the Pop!\_Shop) |
 
-![pop-backups](/images/pop-os-screenshots/pop-backups.png)
+![pop-backups](img/pop-backups.png)
 
 In the interest of user-choice, Pop!\_OS does not have a built in backup utility, but several applications are available to choose from in the Pop!\_Shop. The two (2) featured here are Timeshift (pictured left) and Déjà Dup Backups (pictured right).
 

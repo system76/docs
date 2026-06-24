@@ -31,10 +31,10 @@ sudo apt install julia
 
 Launch the Pop!\_OS shop and search for "julia". Then, click `Install`.
 
-![Install Julia in Pop!_Shop](/images/install-julia/julia-pop-shop-install.png)
+![Install Julia in Pop!_Shop](img/julia-pop-shop-install.png)
 
 ## Launching Julia
 
 Press the <kbd>Super</kbd> key to bring up the Launcher, then type “julia” and hit enter.
 
-![Launching Julia in Pop!_OS](/images/install-julia/launch-julia.png)
+![Launching Julia in Pop!_OS](img/launch-julia.png)

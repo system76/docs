@@ -24,13 +24,13 @@ Most printers will be automatically added to the computer. If a printer is not a
 
 3. In the `Printers` settings panel, click the `Add a Printer...` button to search for locally connected printers.
 
-    ![Add Printer](/images/add-a-printer-pop/add-a-printer.png)
+    ![Add Printer](img/add-a-printer.png)
 
 4. Wait a few seconds for printers to appear in the Device List.
 
 5. Select the correct printer and click `Add`.
 
-  ![Add Printer](/images/add-a-printer-pop/click-add.png)
+  ![Add Printer](img/click-add.png)
 
 ## Checking Printer Status in CUPS
 
@@ -40,7 +40,7 @@ CUPS can be managed directly using a web browser by navigating to the following 
 
 The status window will show current print jobs, detected printers, and other information about the printing system.
 
-![CUPS Status Window](/images/add-a-printer-pop/cups-settings.png)
+![CUPS Status Window](img/cups-settings.png)
 
 ### Adding Users to the lpadmin Group
 
@@ -62,7 +62,7 @@ If you prefer to manage printers in Terminal, See the [CUPS documentation](https
 
 Share a printer with the local network by clicking the `Administration` tab.
 
-![CUPS Administration Tab](/images/add-a-printer-pop/admin-tab.png)
+![CUPS Administration Tab](img/admin-tab.png)
 
 Check the box for `Share printers connected to this system`.
 
@@ -86,7 +86,7 @@ sudo apt install python3-pyqt5
 
 Then run `hp-setup` to start the HP Device Manager.
 
-![HP Device Manager](/images/add-a-printer-pop/hp-setup.png)
+![HP Device Manager](img/hp-setup.png)
 
 ## Epson Printers
 
@@ -133,7 +133,7 @@ Brother provides a driver installation tool for Linux users. Install the appropr
   
 9. If your printer configuration requires a device URI, you can find that by opening up Settings > Printers > Additional Printer Settings, then right-click your printer and click `Properties`. In the resulting window, you'll be able to find your Device URI, as shown in the screenshot below.
 
-![Printer Properties](/images/add-a-printer-pop/printer-properties.png)
+![Printer Properties](img/printer-properties.png)
 
 ## Troubleshooting
 

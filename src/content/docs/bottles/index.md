@@ -18,7 +18,7 @@ tableOfContents: true
 
 [Bottles](https://docs.usebottles.com/) is a front end for Wine that uses <u>environments</u> to streamline configuration of libraries and dependencies. These environments simplify steps required to get up and running with Windows-only applications.
 
-![Bottles Main Screen](/images/using-bottles/bottles-main-screen.png)
+![Bottles Main Screen](img/bottles-main-screen.png)
 
 ## Considerations
 
@@ -28,7 +28,7 @@ A program must be compatible with Wine in order to run in Bottles. Not all Windo
 
 The Bottles Flatpak is easily installed using the Pop!\_Shop.
 
-![Install Bottles Pop Shop](/images/using-bottles/install-bottles-pop-shop.png)
+![Install Bottles Pop Shop](img/install-bottles-pop-shop.png)
 
 You can also install Bottles from the command line:
 
@@ -41,19 +41,19 @@ flatpak install flathub com.usebottles.bottles
 You can choose a gaming, application, or custom environment. In this example, we will install a Windows application.
 
 1. Launch Bottles and click through the introductory screens. Click `Create a new Bottle`.
-  ![Create a new bottle](/images/using-bottles/create-new-bottle.png)
+  ![Create a new bottle](img/create-new-bottle.png)
 2. Select the option to create an `Application` environment. Enter a name for your new bottle, then click `Create`.
-  ![Select Application Environment](/images/using-bottles/select-application-environment.png)
+  ![Select Application Environment](img/select-application-environment.png)
 3. Wait while required dependencies and libraries are installed. Click `Close` when the process completes.
-  ![Install Dependencies](/images/using-bottles/install-dependencies.png)
+  ![Install Dependencies](img/install-dependencies.png)
 4. Select your newly created bottle by clicking the `>`.
-  ![Launch Bottles](/images/using-bottles/launch-bottle.png)
+  ![Launch Bottles](img/launch-bottle.png)
 5. Click `Run executable`.
-  ![Run Executable](/images/using-bottles/run-executable.png)
+  ![Run Executable](img/run-executable.png)
 6. Navigate to your .exe file.
-  ![Navigate to exe](/images/using-bottles/navigate-to-exe.png)
+  ![Navigate to exe](img/navigate-to-exe.png)
 7. Complete the setup wizard for your Windows executable.
-  ![Complete Setup](/images/using-bottles/complete-setup.png)
+  ![Complete Setup](img/complete-setup.png)
 
 ### See Also
 

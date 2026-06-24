@@ -22,7 +22,7 @@ System76 sets custom fan curves for laptops to maximize their performance while 
 
 Fan Speeds can be monitored with <u>psensor</u>, which can be installed from either the <u>Pop!_Shop</u> or the <u>Ubuntu Software</u> applications. Below is an example from a Oryx Pro (the number of cores/threads/GPU present will be different depending on the system).
 
-![psensor on an oryp7](/images/fan-noise/psensor-oryp7.png)
+![psensor on an oryp7](img/psensor-oryp7.png)
 
 ### Fan Modes
 

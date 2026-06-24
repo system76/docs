@@ -39,7 +39,7 @@ If entering your decryption passphrase does not unlock your disk, one of two thi
 1. The decryption passphrase is incorrect.
 2. Your keyfile has been corrupted (rare).
 
-![bad-password](/images/login-loop/bad-password.png)
+![bad-password](img/bad-password.png)
 
 In either case, unless you have set an [alternative decryption key](https://support.system76.com/articles/advanced-luks), the drive will need to be erased and re-imaged to regain acess. This is the cost/benefit of drives secured by encryption. It's important to have current [backups](https://support.system76.com/articles/backup-files) of your files to avoid data-loss.
 
@@ -47,7 +47,7 @@ In either case, unless you have set an [alternative decryption key](https://supp
 
 If your decryption passphrase is correct, but you're unable to reach the login screen, some of the packages that first run on login may need reinstalled. One symptom of this situation, will be if the screen freezes on "cryptdata setup successfully" (pictured below):
 
-![decryption freeze](/images/login-loop/good-password.png)
+![decryption freeze](img/good-password.png)
 
 To correct this, follow the steps below. If you're unable to reach a Terminal, refer to the "Recovery" section below.
 
@@ -65,7 +65,7 @@ The easiest way to confirm your username is by booting into recovery mode, enter
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 
-![Login and initial prompt](/images/login-loop/login-initial.png)
+![Login and initial prompt](img/login-initial.png)
 
 Note that you can always return to the graphical login screen by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F1</kbd>, or by typing `sudo systemctl restart gdm`.
 
@@ -134,7 +134,7 @@ sudo apt autoremove
 sudo apt clean
 ```
 
-![Removing NVIDIA](/images/login-loop/purge-nvidia.png)
+![Removing NVIDIA](img/purge-nvidia.png)
 
 After the NVIDIA driver has been removed, add it back using the following commands:
 

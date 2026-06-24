@@ -39,7 +39,7 @@ Next, we recommend backing up all important files from your computer. The upgrad
 
 Open the Applications menu by clicking on the Show Apps button on the bottom left of the home screen (the icon looks like a 3-by-3 grid of squares). Then, type Software Updater in the search bar and open it.
 
-![Updater in Overview](/images/upgrade-ubuntu/ubuntu-update.png)
+![Updater in Overview](img/ubuntu-update.png)
 
 ### Configure Version Updates
 
@@ -51,7 +51,7 @@ For any new version | Will show both Standard and LTS updates.
 For long-term support versions | Will show only LTS updates.
 Never | Will prevent upgrades to newer versions.
 
-![Update Preference](/images/upgrade-ubuntu/notification-preference.png)
+![Update Preference](img/notification-preference.png)
 
 Changing this option will require your user password. After selecting your update preference, close the window.
 
@@ -61,13 +61,13 @@ The system will automatically check for updates. You may need to update (and som
 
 <!-- ![Software Updater](/images/upgrade-ubuntu/Step-2.png) -->
 
-![Software Updater](/images/upgrade-ubuntu/ubuntu-24.04-upgrade-prompt.png)
+![Software Updater](img/ubuntu-24.04-upgrade-prompt.png)
 
 ### Install The Upgrade
 
 A message will appear informing you of the availability of the new release. Click **Yes, Upgrade Now**  or **Upgrade** depending on the window that you have, then follow the on-screen instructions.
 
-![Upgrade Message](/images/upgrade-ubuntu/ubuntu-24.04-upgrade-window.png)
+![Upgrade Message](img/ubuntu-24.04-upgrade-window.png)
 
 ### Install The System76 Driver
 
@@ -81,7 +81,7 @@ Once rebooted, the computer will be on the newly upgraded version of Ubuntu! If 
 
 If you use any third-party packages, you'll need to re-enable them in the **Software & Updates** app on the **Other Software** tab. Check any sources that you might need, then close the window.
 
-![Other Software tab](/images/upgrade-ubuntu/Other-Software.png)
+![Other Software tab](img/Other-Software.png)
 
 ---
 

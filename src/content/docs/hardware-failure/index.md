@@ -243,7 +243,7 @@ If you prefer a GUI tool which provides graphing over time, the application Psen
 
 2. Install Through Pop!\_Shop
 
-   ![psensor-pop](/images/unexpected-reboots/psensor.png)
+   ![psensor-pop](img/psensor.png)
 
 3. Run Psensor:
 
@@ -255,7 +255,7 @@ If you prefer a GUI tool which provides graphing over time, the application Psen
 
   Or, to launch through the OS interface, click on "Activities" in the top-left (Pop!\_OS 20.04 LTS, or Ubuntu), or "Applications" (Pop!\_OS COSMIC) and search for "Psensor"
 
-![psensor-running](/images/unexpected-reboots/psensor-running.png)
+![psensor-running](img/psensor-running.png)
 
 #### High Temperatures
 

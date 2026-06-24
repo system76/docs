@@ -28,11 +28,11 @@ tableOfContents: true
 6. If the power button does not light up, the computer may need a new power button or power supply. To troubleshoot the power button on a Thelio desktop, visit this [link](https://tech-docs.system76.com/models/thelio-massive-b1.2/repairs.html#troubleshooting-the-power-button).
 7. Does the computer turn on when using the power switch on the Thelio IO board instead of the button? The backup power button is located on the IO board near the power button on the internal part of the case.
 
-![Thelio Io v1 power button](/images/failure-power-on/thelio-io-v1-power-button.png)
+![Thelio Io v1 power button](img/thelio-io-v1-power-button.png)
 
 > **NOTE: Thelio Io v1, in this photo the button is circled in red.**
 
-![Thelio Io v2 power button](/images/failure-power-on/thelio-io-v2-power-button.png)
+![Thelio Io v2 power button](img/thelio-io-v2-power-button.png)
 
 > **NOTE: Thelio Io v2, in this photo the button is highlighted in cyan.**
 

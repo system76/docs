@@ -35,17 +35,17 @@ In Pop!\_OS 24.04, you can check for firmware updates by running **Firmware Mana
 
 In Pop!\_OS 22.04, you can check for firmware updates using **Settings -> Firmware**.
 
-![Firmware settings in Pop!_OS](/images/system-firmware/gui-pop.jpg)
+![Firmware settings in Pop!_OS](img/gui-pop.jpg)
 
 In Ubuntu, you can check for firmware updates using the **Firmware Manager** application.
 
-![Firmware Manager in Ubuntu](/images/system-firmware/gui-ubuntu.jpg)
+![Firmware Manager in Ubuntu](img/gui-ubuntu.jpg)
 
 If a green **Update** button is present, then a firmware update is available. Click the **Update** button, then click **Reboot and Install** to begin the update.
 
-![Starting a firmware update (Pop!_OS)](/images/system-firmware/install-pop.jpg)
+![Starting a firmware update (Pop!_OS)](img/install-pop.jpg)
 
-![Starting a firmware update (Ubuntu)](/images/system-firmware/install-ubuntu.jpg)
+![Starting a firmware update (Ubuntu)](img/install-ubuntu.jpg)
 
 ### Starting the Update (CLI)
 
@@ -90,11 +90,11 @@ Firmware update scheduled. Reboot your machine to install.
 
 The System76 Firmware Updater will start on the next boot. Once it has initialized, you'll be prompted to **press <kbd>Enter</kbd>** to commence flashing.
 
-![Press Enter to commence flashing](/images/system-firmware/press-enter.jpg)
+![Press Enter to commence flashing](img/press-enter.jpg)
 
 Depending on the model, the system may reboot at this point. The system's fans may spin at full speed while the new firmware is being written. Once the firmware update process is complete, you may see a prompt to **press any key** to shut down.
 
-![Press any key to shut down](/images/system-firmware/press-any-key.jpg)
+![Press any key to shut down](img/press-any-key.jpg)
 
 After the system powers off, **press the power button** to turn it back on. It may be necessary to power on more than once after a firmware update. On machines running Open Firmware, the system should then boot normally.
 
@@ -108,19 +108,19 @@ Depending on the model, two blue boxes may appear in succession with a message a
 
 On some laptops, the UEFI menu will display automatically. (If it doesn't, you can also access this menu by holding down <kbd>F2</kbd> during boot.) Select **Setup Utility** to enter the UEFI setup utility.
 
-![Setup Utility](/images/system-firmware/setup-utility.jpg)
+![Setup Utility](img/setup-utility.jpg)
 
 Navigate to the **Advanced** section in the left sidebar, then select **Advanced Chipset Control**.
 
-![Advanced Chipset Control](/images/system-firmware/advanced-chipset-control.jpg)
+![Advanced Chipset Control](img/advanced-chipset-control.jpg)
 
 If there is an **ME State** option at the bottom of the list, select it, then select **Disabled** to ensure the ME is disabled.
 
-![ME State (enabled)](/images/system-firmware/me-state-enabled.jpg)
+![ME State (enabled)](img/me-state-enabled.jpg)
 
-![Disabling the ME](/images/system-firmware/disabling-me.jpg)
+![Disabling the ME](img/disabling-me.jpg)
 
-![ME State (disabled)](/images/system-firmware/me-state-disabled.jpg)
+![ME State (disabled)](img/me-state-disabled.jpg)
 
 Navigate to the **Exit** section in the left sidebar, then select **Exit Saving Changes** and **Yes** to save and exit the setup utility. The system may power off and back on again, then it should boot normally.
 

@@ -41,7 +41,7 @@ The desktop environment acts as the top graphical layer of the OS. The desktop e
 
 If multiple desktop environments are installed, GDM will display a gear icon, which will allow you to select the desktop environment you want to launch. You will need to either reboot or restart your display manager using `sudo systemctl restart gdm` before a newly-installed desktop environment will show up in the list of options.
 
-![Login2](/images/desktop-environment/Login2.png)
+![Login2](img/Login2.png)
 
 ## Different Desktop Environments
 
@@ -49,7 +49,7 @@ If multiple desktop environments are installed, GDM will display a gear icon, wh
 
 MATE is a simple and attractive desktop using traditional concepts. MATE is a fork of GNOME 2.
 
-![MATE](/images/desktop-environment/MATE.png)
+![MATE](img/MATE.png)
 
 This command will install MATE and its dependencies:
 
@@ -63,7 +63,7 @@ sudo apt install mate-desktop-environment mate-desktop-environment-extras ubuntu
 
 Cinnamon is used in Linux Mint by default. Cinnamon strives to provide a traditional experience and is a fork of GNOME 3.
 
-![Cinnamon](/images/desktop-environment/Cinnamon.png)
+![Cinnamon](img/Cinnamon.png)
 
 Cinnamon is installed with:
 
@@ -77,7 +77,7 @@ sudo apt install cinnamon-desktop-environment
 
 While Pop and Ubuntu contain GNOME by default, both include a number of customizations to GNOME. You can also install a vanilla GNOME session to get the upstream GNOME experience.
 
-![GNOME](/images/desktop-environment/GNOME.png)
+![GNOME](img/GNOME.png)
 
 You can install the vanilla GNOME session using this command:
 
@@ -91,7 +91,7 @@ sudo apt install gnome-session
 
 The KDE Plasma desktop environment is a familiar working environment and looks similar to Windows' desktop. It is highly customizable and looks clean.
 
-![KDE Plasma](/images/desktop-environment/Plasma.png)
+![KDE Plasma](img/Plasma.png)
 
 The KDE Plasma desktop and its dependencies can be installed with this command:
 
@@ -101,11 +101,11 @@ sudo apt install kde-standard
 
 While installing KDE, you'll be prompted to choose a display manager:
 
-![Display Manager Section](/images/desktop-environment/sddm-1.png)
+![Display Manager Section](img/sddm-1.png)
 
 Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
 
-![Display Manager Section](/images/desktop-environment/sddm-2.png)
+![Display Manager Section](img/sddm-2.png)
 
 ---
 
@@ -113,7 +113,7 @@ Press Enter to select the OK option. (If the OK option is not selected, press Ta
 
 UKUI is a lightweight desktop environment based on a pluggable framework for Linux and other UNIX-like distributions. It provides a simple experience for browsing, searching, and managing your computer. It is developed using GTK and Qt.
 
-![UKUI](/images/desktop-environment/UKUI.png)
+![UKUI](img/UKUI.png)
 
 UKUI can be installed with:
 
@@ -127,7 +127,7 @@ sudo apt install ukui-desktop-environment
 
 XFCE embodies the traditional UNIX philosophy of modularity and re-usability. This environment provides a good amount of conformity for the programs written for it. XFCE also provides a highly customizable environment, while being leaner on resources.
 
-![Xfce](/images/desktop-environment/XFCE.png)
+![Xfce](img/XFCE.png)
 
 You can install XFCE and its dependencies with this command:
 
@@ -137,11 +137,11 @@ sudo apt install xfce4 xfce4-goodies
 
 While installing XFCE, you'll see a prompt to select your default display manager:
 
-![Display Manager Section](/images/desktop-environment/lightdm-1.png)
+![Display Manager Section](img/lightdm-1.png)
 
 Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
 
-![Display Manager Section](/images/desktop-environment/lightdm-2.png)
+![Display Manager Section](img/lightdm-2.png)
 
 ---
 
@@ -149,7 +149,7 @@ Press Enter to select the OK option. (If the OK option is not selected, press Ta
 
 The Lightweight X11 Desktop Environment is a fast and energy-saving desktop environment. It looks similar to older versions of Windows. This is a lean desktop environment and can help extend battery life in laptops.
 
-![LXDE](/images/desktop-environment/LXDE.png)
+![LXDE](img/LXDE.png)
 
 LXDE can be installed with:
 
@@ -159,11 +159,11 @@ sudo apt install lxde
 
 While installing LXDE, you'll see a prompt to select your default display manager:
 
-![Display Manager Section](/images/desktop-environment/lightdm-1.png)
+![Display Manager Section](img/lightdm-1.png)
 
 Press Enter to select the OK option. (If the OK option is not selected, press Tab to select it.) At the list, press Enter again to keep gdm3 as your display manager:
 
-![Display Manager Section](/images/desktop-environment/lightdm-2.png)
+![Display Manager Section](img/lightdm-2.png)
 
 ---
 
@@ -171,7 +171,7 @@ Press Enter to select the OK option. (If the OK option is not selected, press Ta
 
 LXQt is a lightweight Qt desktop environment. It's being developed as a successor to LXDE. It is focused on being a classic desktop with a modern look and feel.
 
-![LXQt](/images/desktop-environment/LXQt.png)
+![LXQt](img/LXQt.png)
 
 LXQt can be installed with:
 

@@ -38,13 +38,13 @@ The mainboard will not know how to access the files inside the directory. The fi
 
 Pop!\_OS extracts the files correctly by default (see screenshots below), but other extraction tools or other operating systems such as macOS may behave differently.
 
-![zipfile](/images/open-firmware-smmstore/zipfile.png)
+![zipfile](img/zipfile.png)
 
-![unzipping](/images/open-firmware-smmstore/unzip-in-progress.png)
+![unzipping](img/unzip-in-progress.png)
 
 The highlighted files pictured below (the hash will change based on file and model) are the two items that should be in the root of the USB drive.
 
-![files-unzipped](/images/open-firmware-smmstore/files-unzipped.png)
+![files-unzipped](img/files-unzipped.png)
 
 ## Extracting an img to the USB drive
 
@@ -56,15 +56,15 @@ We can do this using the USB Flasher (Popsicle) application.
 
 Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'usb' to launch the Popsicle application.
 
-![Popsicle](/images/pop-live-disk/popsicle.png)
+![Popsicle](img/popsicle.png)
 
 Next, select the .img file use the `Choose Image` button.
 
-![Popsicle Image](/images/pop-live-disk/popsicle-image-selection.png)
+![Popsicle Image](img/popsicle-image-selection.png)
 
 Now select the USB Flash Drive that you are copying the file(s) to.
 
-![Popsicle Drive](/images/pop-live-disk/popsicle-drive-selection.png)
+![Popsicle Drive](img/popsicle-drive-selection.png)
 
 ### Ubuntu
 
@@ -72,11 +72,11 @@ We do this by "restoring" the image to the drive using the Disks application.
 
 Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'disks' to launch the Disks application.
 
-![Disks](/images/live-disk/disks.png)
+![Disks](img/disks.png)
 
 Next, select the flash drive in the list on the left and click on the three dots on the top right of the window. Now select `Restore Disk Image...` and select the .img file. Finally, click the `Start Restoring...` button and enter your password.
 
-![Disks](/images/live-disk/disks-selection.png)
+![Disks](img/disks-selection.png)
 
 ## Booting the USB Firmware Updater
 

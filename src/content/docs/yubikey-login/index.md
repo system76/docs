@@ -67,8 +67,8 @@ You will want to change the "Parameters for Yubico PAM:" to be:
 
  >**Note:** The debug option is used for testing the change, review the Debugging and Testing section of this article for more information.
 
-![dpkg-reconfigure-pg1](/images/yubikey-login/dpkg-reconfigure-pg1.png)
-![dpkg-reconfigure-pg2](/images/yubikey-login/dpkg-reconfigure-pg2.png)
+![dpkg-reconfigure-pg1](img/dpkg-reconfigure-pg1.png)
+![dpkg-reconfigure-pg2](img/dpkg-reconfigure-pg2.png)
 
 Setting this to sufficient is the recommended method as the login manager will take your password **or** the Yubikey to login. To do this you will need to change the second setting in the following line in ```/etc/pam.d/common-auth```:
 

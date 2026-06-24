@@ -29,7 +29,7 @@ Once the menu is shown, choose **Pop!_OS Recovery**.
 
 >**Note**: The Pop!\_OS recovery environment will not have your WiFi password saved. Once booted into the live environment, you will need to reconnect manually to your WiFi in order to access the internet.
 
-![systemd-boot](/images/pop-recovery/systemd-boot.png)
+![systemd-boot](img/systemd-boot.png)
 
 ## Clean Install
 
@@ -51,7 +51,7 @@ If the `Refresh Install` option is not present on the install screen, one of two
 
 2. The Recovery version is out of date. See the [update instructions](#update-recovery-partition).
 
-![Refresh Install Option](/images/pop-recovery/recovery-install-page-20.04.png)
+![Refresh Install Option](img/recovery-install-page-20.04.png)
 
 ### Reinstall
 
@@ -139,15 +139,15 @@ The Recovery Partition can be updated from within the OS by either using Setting
 
 If using Settings, click on OS Upgrade like in the screenshot below:
 
-![Pop Recovery Update Available](/images/pop-recovery/pop-recovery-update.png)
+![Pop Recovery Update Available](img/pop-recovery-update.png)
 
 Once the `Update` button is pressed you will see the below screenshot:
 
-![Pop Recovery Updating](/images/pop-recovery/pop-recovery-update-updating.png)
+![Pop Recovery Updating](img/pop-recovery-update-updating.png)
 
 The screenshot below shows that the Recovery Partition has been upgraded successfully:
 
-![Pop Recovery Updated](/images/pop-recovery/pop-recovery-update-upgraded.png)
+![Pop Recovery Updated](img/pop-recovery-update-upgraded.png)
 
 ### Update Recovery Partition from the command-line
 

@@ -20,7 +20,7 @@ tableOfContents: true
 
 Access OpenVPN setting in the <u>Settings</u> application (GNOME Control Center)
 
-![GNOME-Control-Center](/images/use-openvpn/GNOME-Control-Center.png)
+![GNOME-Control-Center](img/GNOME-Control-Center.png)
 
 ## Getting a .ovpn file
 
@@ -34,6 +34,6 @@ OpenVPN uses `.ovpn` files for setting up the VPN on your system and includes th
 
 After getting a `.ovpn` (OpenVPN file type) click the plus icon to the right of the VPN section. A dialog will as show will open. Click 'Import from file...'
 
-![VPN-Dialog](/images/use-openvpn/VPN-Dialog.png)
+![VPN-Dialog](img/VPN-Dialog.png)
 
 Select the `.ovpn` file downloaded from your VPN provider.

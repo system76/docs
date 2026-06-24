@@ -19,7 +19,7 @@ The Super key is the OS key on your keyboard.
 
 - On recent System76 products, it's between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys. The key is labelled with a rectangle and two two vertical lines, one on either side of the rectangle.
 
-  ![Super Key](/images/super_key_vector_x64.png)
+  ![Super Key](img/super_key_vector_x64.png)
 
 - On older System76 products, the Super key is between the <kbd>Fn</kbd> and the <kbd>Alt</kbd> keys and is represented by the Ubuntu logo (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
 - On the Launch keyboard it is the <kbd>SUPER</kbd> key.

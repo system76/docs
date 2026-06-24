@@ -28,7 +28,7 @@ sudo apt install system76-driver-nvidia
 
 Open NVIDIA X Settings, go to 'X Server Display Configuration', then select 'Advanced...' now click "Enable SLI Mosaic".
 
-![NVIDIA-Settings](/images/multi-displays/enable-sli-mosaic.png)
+![NVIDIA-Settings](img/enable-sli-mosaic.png)
 
 ### Change Configuration
 
@@ -36,14 +36,14 @@ Select each of the orange colored displays and change their 'Configuration' to '
 
 #### Before
 
-![NVIDIA-Settings](/images/multi-displays/orange-disabled.png)
+![NVIDIA-Settings](img/orange-disabled.png)
 
 #### After
 
-![NVIDIA-Settings](/images/multi-displays/orange-enabled.png)
+![NVIDIA-Settings](img/orange-enabled.png)
 
 ### Save Configuration
 
 Select 'Save to X Configuration File' and now click 'Save'. Once the computer is rebooted the new settings will take effect.
 
-![NVIDIA-Settings](/images/multi-displays/save-x-window.png)
+![NVIDIA-Settings](img/save-x-window.png)

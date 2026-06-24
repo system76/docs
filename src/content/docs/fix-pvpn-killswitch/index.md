@@ -21,9 +21,9 @@ tableOfContents: true
 
 ProtonVPN's kill switch will disable internet connectivity when you are not connected to a VPN server. This ensures the true IP address if your computer is never leaked to the internet. If the kill switch is set to `Permanent`, then your computer will be unable to connect to the internet, even if ProtonVPN isn't running (i.e., at system start up), the GUI application becomes inaccessible, or if ProtonVPN was improperly removed from the system.
 
-![ProtonVPN Settings](images/fix-pvpn-killswitch/ProtonVPN-Settings.png)
+![ProtonVPN Settings](img/ProtonVPN-Settings.png)
 
-![ProtonVPN Kill switch](images/fix-pvpn-killswitch/ProtonVPN-Killswitch.png)
+![ProtonVPN Kill switch](img/ProtonVPN-Killswitch.png)
 
 > **NOTE:** ProtonVPN installs to the entire system; not just for a single user. If ProtonVPN is installed under another user account and has the kill switch enabled, other users will not be able to connect to the internet until ProtonVPN connects to a server.
 
@@ -55,7 +55,7 @@ First, confirm the kill switch is still enabled using this command:
 nmcli d status
 ```
 
-![Permanent Killswitch Enabled](images/fix-pvpn-killswitch/confirm-with-nmcli.png)
+![Permanent Killswitch Enabled](img/confirm-with-nmcli.png)
 
 The `CONNECTION` column may list either `pvpn-killswitch`, `pvpn-ipv6leak-protection`, or both. These can be removed with the following commands:
 

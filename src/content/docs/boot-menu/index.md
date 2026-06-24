@@ -36,22 +36,22 @@ The following screenshots show the menus in System76 Open Firmware with Coreboot
 
 Displays the computer model, firmware version, and available options.
 
-![Main menu](/images/boot-menu/homepage.jpg)
+![Main menu](img/homepage.jpg)
 
 ### One Time Boot
 
 Allows booting to a non-default boot device.
 
-![One Time Boot](/images/boot-menu/one-time-boot.jpg)
+![One Time Boot](img/one-time-boot.jpg)
 
 ### Change Boot Order
 
 Allows changing the order for selecting the default boot device.
 
-![Change Boot Order](/images/boot-menu/change-boot-order.jpg)
+![Change Boot Order](img/change-boot-order.jpg)
 
 ### Firmware Configuration Information
 
 Displays information about the firmware's build-time configuration.
 
-![Configuration info](/images/boot-menu/configuration-info.jpg)
+![Configuration info](img/configuration-info.jpg)

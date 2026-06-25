@@ -76,7 +76,7 @@ Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon>
 
 Next, select the flash drive in the list on the left and click on the three dots on the top right of the window. Now select `Restore Disk Image...` and select the .img file. Finally, click the `Start Restoring...` button and enter your password.
 
-![Disks](img/disks-selection.png)
+![Disks](img/disks-selection.webp)
 
 ## Booting the USB Firmware Updater
 

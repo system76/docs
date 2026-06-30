@@ -60,6 +60,8 @@ If it's stopped, enable it to auto-start and immediately start it using the foll
 ```bash
 sudo systemctl enable --now bluetooth
 ```
+ 
+Even after being enabled successfully some Pop!_OS users have reported the issue only being resolved after shutting down the PC and unplugging the power cable for at least 1 minute.
 
 ## Using Bluetooth Manager (blueman)
 

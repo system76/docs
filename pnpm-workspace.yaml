@@ -17,3 +17,4 @@ minimumReleaseAgeExclude:
   - '@bruits/satteri-win32-x64-msvc@0.9.2'
   - satteri@0.9.2
   - astro@7.0.2
+  - '@system76/satteri-relative-markdown-links@1.0.0'

@@ -12,9 +12,14 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.3.3",
     "@astrojs/starlight": "^0.41.0",
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@iconify-json/fa6-solid": "^1.2.4",
+    "@iconify-json/simple-icons": "^1.2.89",
+    "@system76/satteri-relative-markdown-links": "^1.0.0",
     "astro": "^7.0.2",
-    "satteri": "^0.9.2",
+    "astro-icon": "^1.1.5",
     "sharp": "^0.34.5"
   },
   "devDependencies": {
@@ -22,5 +27,5 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-organize-imports": "^4.3.0"
   },
-  "packageManager": "pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26"
+  "packageManager": "pnpm@11.10.0+sha512.0b7f8b98060031904c017e3a41eb187a16d40eeb829b95c4f8cb03681761fc4ab53dd219115b9b447f4dce1a05a214764461e7d3703392a9f32f9511ce8c86c8"
 }

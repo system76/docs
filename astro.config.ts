@@ -1,8 +1,11 @@
 // @ts-check
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
+import { satteriRelativeMarkdownLinks } from "@system76/satteri-relative-markdown-links";
+import { satteri } from "@astrojs/markdown-satteri";
+import icon from "astro-icon";
 
-const base = "docs";
+const base = "support";
 
 const site = import.meta.env.PROD
     ? `https://system76.com/${base}`
@@ -19,6 +22,7 @@ export default defineConfig({
                 replacesTitle: true,
             },
             lastUpdated: true,
+            customCss: ["./src/assets/css/icons.css"],
             social: [
                 {
                     icon: "x.com",
@@ -42,7 +46,30 @@ export default defineConfig({
                 },
             ],
         }),
+        icon({
+            iconDir: "src/assets/icons",
+        }),
     ],
     base,
     site,
+    image: {
+        // service: {
+        //     entrypoint: "./src/avifImageService.mjs",
+        // },
+        layout: "constrained",
+        responsiveStyles: true,
+    },
+    markdown: {
+        processor: satteri({
+            mdastPlugins: [
+                satteriRelativeMarkdownLinks({
+                    base,
+                    collectionBase: false,
+                }),
+                // wrapImagesWithOriginals({
+                //     base,
+                // }),
+            ],
+        }),
+    },
 });

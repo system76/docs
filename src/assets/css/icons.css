@@ -1,0 +1,11 @@
+/*
+ * Starlight resets `svg` to `display: block` inside content so that images
+ * don't overflow. astro-icon icons are meant to sit inline with text, so
+ * override that here rather than per-instance.
+ */
+svg[data-icon] {
+    display: inline-block;
+    max-width: none;
+    height: 1em;
+    vertical-align: -0.125em;
+}

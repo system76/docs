@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+    light: ImageMetadata;
+    dark: ImageMetadata;
+    alt?: string;
+}
+
+const { light, dark, alt = "" } = Astro.props;
+---
+
+<div class="hero-image-wrapper not-content">
+    <Image src={dark} alt={alt} class="hero-image light:sl-hidden" />
+    <Image src={light} alt={alt} class="hero-image dark:sl-hidden" />
+</div>
+
+<style>
+    @layer starlight.core {
+        .hero-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>

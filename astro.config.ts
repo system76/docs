@@ -22,7 +22,14 @@ export default defineConfig({
                 replacesTitle: true,
             },
             lastUpdated: true,
-            customCss: ["./src/assets/css/icons.css"],
+            components: {
+                PageTitle: "./src/components/PageTitle.astro",
+                ContentPanel: "./src/components/ContentPanel.astro",
+            },
+            customCss: [
+                "./src/assets/css/icons.css",
+                "./src/assets/css/variables.css"
+            ],
             social: [
                 {
                     icon: "x.com",
@@ -46,9 +53,7 @@ export default defineConfig({
                 },
             ],
         }),
-        icon({
-            iconDir: "src/assets/icons",
-        }),
+        icon(),
     ],
     base,
     site,

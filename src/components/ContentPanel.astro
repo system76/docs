@@ -1,0 +1,8 @@
+---
+import Default from '@astrojs/starlight/components/ContentPanel.astro';
+
+const rendered = await Astro.slots.render('default');
+const isEmpty = rendered.trim().length === 0;
+---
+
+{!isEmpty && <Default><slot /></Default>}

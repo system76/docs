@@ -244,4 +244,4 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 204DD8AEC33A7AFF
 sudo apt update
 ```
 
-The following [article](/articles/system76-driver) will go over installing the System76 NVIDIA driver.
+The following [article](../system76-driver/index.md) will go over installing the System76 NVIDIA driver.

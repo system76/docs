@@ -21,7 +21,7 @@ tableOfContents: true
 
 The Recovery Partition is a full copy of the Pop!\_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can perform a refresh install, which allows you to reinstall without losing any user data or data in your home directory. Recovery can also perform a clean install, which resets all OS data.
 
-To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding/repeatedly tapping <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](/articles/boot-menu) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>).
+To boot into recovery mode, bring up the <u>systemd-boot</u> menu by holding/repeatedly tapping <kbd>SPACE</kbd> while the system is booting, or by holding/tapping any function keys **NOT** used to [Access the BIOS/Boot Menu](../boot-menu/index.md) (On non-System76 hardware, try the keys <kbd>F1</kbd> through <kbd>F12</kbd>).
 
  >**Note:** These instructions assume Pop!\_OS is the only OS running on your system. If you are booting more than one operating system you may need to change your boot order first, or manually select the Pop!\_OS Disk from your BIOS/Boot menu.
 
@@ -35,7 +35,7 @@ Once the menu is shown, choose **Pop!_OS Recovery**.
 
 This option erases the current install along with all user files. It reformats the drive partitions and installs the version of Pop!\_OS contained in the Recovery partition.
 
-Steps to back up user-files from a Live Disk/Recovery can be found [here](https://support.system76.com/articles/disaster-recovery).
+Steps to back up user-files from a Live Disk/Recovery can be found [here](../disaster-recovery/index.md).
 
 >**Note:** The Recovery partition OS version will either be the same as the OS version that shipped with your computer, or the latest version to which the Recovery partition has been [updated](#update-recovery-partition).
 
@@ -55,7 +55,7 @@ If the `Refresh Install` option is not present on the install screen, one of two
 
 ### Reinstall
 
-Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](/articles/install-pop/).
+Once Recovery has booted, the <u>Pop Installer</u> will start automatically.  If the system needs to be reinstalled, go ahead and continue the installation steps as demonstrated [here](../install-pop/index.md).
 
 If the existing install is encrypted, please see the [encrypted disk](#encrypted-disk) instructions.
 
@@ -120,7 +120,7 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -R $i /mnt$i; done
 sudo chroot /mnt
 ```
 
-With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](/articles/package-manager-pop). You can also access your files with <u>Files</u> via "Other Locations" -> "Computer" -> "mnt."
+With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](../package-manager-pop/index.md). You can also access your files with <u>Files</u> via "Other Locations" -> "Computer" -> "mnt."
 
 ### After Chroot
 

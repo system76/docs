@@ -21,12 +21,12 @@ tableOfContents: true
 
 ## Log in from Live Disk (Chroot)
 
-It is possible to mount an OS drive and log into the installed OS with root access. This is called gaining "chroot" (change to root) access. This process is useful when [rescuing files](/articles/disaster-recovery), [fixing package manager issues](/articles/package-manager-pop), or [resetting forgotten user passwords](/articles/password).
+It is possible to mount an OS drive and log into the installed OS with root access. This is called gaining "chroot" (change to root) access. This process is useful when [rescuing files](../disaster-recovery/index.md), [fixing package manager issues](../package-manager-pop/index.md), or [resetting forgotten user passwords](../password/index.mdx).
 
 >**Note**: The live environment will not have your WiFi password saved. Once booted into the live environment, you will need to reconnect manually to your WiFi in order to access the internet.
 
-You'll need a Live OS Environment from which to mount your drive, and log in. This can be done from a [live USB](/articles/live-disk), or on Pop!_OS from the [recovery partition](/articles/pop-recovery).
-Boot the computer while holding down the [boot menu key for your system](/articles/boot-menu), or the <kbd>SPACE</kbd> bar to access Systemd, and the Pop!\_OS Recovery partition.
+You'll need a Live OS Environment from which to mount your drive, and log in. This can be done from a [live USB](../live-disk/index.md), or on Pop!_OS from the [recovery partition](../pop-recovery/index.md).
+Boot the computer while holding down the [boot menu key for your system](../boot-menu/index.md), or the <kbd>SPACE</kbd> bar to access Systemd, and the Pop!\_OS Recovery partition.
 
 Once booted into the Live Environment, press <kbd>SUPER</kbd>+<kbd>T</kbd> to open a terminal (Pop!\_OS), or <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> (Ubuntu) then type this command:
 
@@ -72,7 +72,7 @@ sudo vgchange -ay
 sudo mount /dev/mapper/data-root /mnt
 ```
 
-**Note:** If you want to backup your files, you can do so at this point in the process if you don't already have a [backup of your data](/articles/backup-files/)
+**Note:** If you want to backup your files, you can do so at this point in the process if you don't already have a [backup of your data](../backup-files/index.md)
 
 ## Chroot
 
@@ -90,7 +90,7 @@ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo chroot /mnt
 ```
 
-With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](/articles/package-manager-pop). You can also access your files with <u>Files</u> via `+ Other Locations` -> `Computer` -> `/mnt`.
+With this last command, you will have root access to your installed system. Once the drive is accessed, commands for maintenance can be run on the installed system. For example, [package manager repair commands](../package-manager-pop/index.md). You can also access your files with <u>Files</u> via `+ Other Locations` -> `Computer` -> `/mnt`.
 
 ### After Chroot
 

@@ -19,9 +19,9 @@ tableOfContents: true
 
 ## Gather Tools
 
-- [Backups](/articles/backup-files)
-- [Live Disk](/articles/live-disk)
-- [Logs](/articles/log-files)
+- [Backups](../backup-files/index.md)
+- [Live Disk](../live-disk/index.md)
+- [Logs](../log-files/index.md)
 
 ## Suspend, Reboot, Shut Down
 
@@ -29,9 +29,9 @@ Do the symptoms go away if the system is suspended, rebooted or shut down and th
 
 ## Symptoms
 
-- System or Applications Crashing or [Freezing](/articles/freezing-behavior)
+- System or Applications Crashing or [Freezing](../freezing-behavior/index.mdx)
 - Black Screen or No Login Screen
-    Symptoms like those described [here](/articles/login-loop-pop) or [here](/articles/login-loop-ubuntu)
+    Symptoms like those described [here](../login-loop-pop/index.md) or [here](../login-loop-ubuntu/index.md)
 - Applications will not open.
     Clicking on the application icon in the Dock does not launch the program, and/or entering the package name in the terminal will not launch the program.
 - Updates will not complete.
@@ -90,7 +90,7 @@ To generate the logs we need, please click on **Activities** in the top left of 
 
 Then click on the **Create Log Files** button and the log file will be in your home directory when you first open the Files application.
 
-For more information, please see this support article: [Creating Log Files](/articles/log-files)
+For more information, please see this support article: [Creating Log Files](../log-files/index.md)
 
 ### 2. Update the Installed OS
 
@@ -127,9 +127,9 @@ For more detailed information on troubleshooting the package manager, or managin
 
 Sources:
 
-[Fix Package Manager](/articles/package-manager-pop)
+[Fix Package Manager](../package-manager-pop/index.md)
 
-[Manage Repositories](/articles/manage-repos-pop)
+[Manage Repositories](../manage-repos-pop/index.md)
 
 ### 4. Test Second Admin User
 
@@ -144,15 +144,15 @@ That can be done by:
 
 If the problem is not present in the new user, the issue is tied to a specific file, setting or configuration of the previous user.
 
-[Users (Manage)](/articles/other-accounts)
+[Users (Manage)](../other-accounts/index.md)
 
 ### 5. Test in a Live Environment
 
 We have help articles on the Recovery Partition and how to access the Boot Menu listed below.
 
-[Recovery Partition](/articles/pop-recovery)
+[Recovery Partition](../pop-recovery/index.md)
 
-[Boot Menu](/articles/boot-menu)
+[Boot Menu](../boot-menu/index.md)
 
 ### 6. Remove or Reinstall Specific Packages
 
@@ -187,9 +187,9 @@ Where "[packagename]" is replaced with the program name, without angle-brackets.
 
 You can also inspect and edit your software sources using the instructions in these help articles:
 
-[Manage Repositories in Pop!\_OS](/articles/manage-repos-pop)
+[Manage Repositories in Pop!\_OS](../manage-repos-pop/index.md)
 
-[Manage Repositories in Ubuntu](/articles/manage-repos-ubuntu)
+[Manage Repositories in Ubuntu](../manage-repos-ubuntu/index.md)
 
 ### 7. Try a Different Kernel
 
@@ -252,9 +252,9 @@ This will print out the current kernel version the system is running.
 Upgrading to the latest OS version usually includes newer kernel modules and software packages, as well as security updates and bug-fixes.
 These updates may directly or indirectly resolve the issue.
 
-[Upgrade Pop](/articles/upgrade-pop)
+[Upgrade Pop](../upgrade-pop/index.md)
 
-[Upgrade Ubuntu](/articles/upgrade-ubuntu)
+[Upgrade Ubuntu](../upgrade-ubuntu/index.md)
 
 > **NOTE:** Not all OS releases are the same. Every other ##.04 release is a Long Term Release (LTS). Meaning that it continues to receive standard updates for 5 years and security updates for 10 years (total) after it is released. All other releases stop receiving support after 9 months.
 Some users prefer to run only LTS releases so they don't have to upgrade as often.
@@ -265,30 +265,30 @@ Certain packages and library files are so intertwined with the rest of the OS th
 
 0. Back Up Personal Files
 
-    [Backups](https://support.system76.com/articles/backup-files)
+    [Backups](../backup-files/index.md)
 
 1. Create a Live Disk, OR, Boot into Recovery:
 
-    A: [Live Disk](https://support.system76.com/articles/live-disk)
+    A: [Live Disk](../live-disk/index.md)
 
-    B: [Recovery](https://support.system76.com/articles/pop-recovery)
+    B: [Recovery](../pop-recovery/index.md)
 
 2. Access the Boot Menu (if not Recovery)
 
-    [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
+    [BIOS/Boot Menu](../boot-menu/index.md)
 
     > **NOTE:** It may be helpful/necessary to format the drive before reinstalling the OS. This should only be done with a Live Disk, not the recovery partition; the recovery partition is on the same drive you would be trying to format.
 
-    2.5 [Format Drive](https://support.system76.com/articles/format-drive)
+    2.5 [Format Drive](../format-drive/index.md)
 
 3. Install the OS:
 
-[Install PopOS](https://support.system76.com/articles/install-pop)
+[Install PopOS](../install-pop/index.md)
 
 OR
 
-[Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
+[Install Ubuntu](../install-ubuntu/index.md)
 
 ## Next Steps
 
-If the issue is not resolved with any of the above steps, or if the problem is showing up in a Live Environment, then the issue is probably not software. More likely, [Hardware](/articles/hardware-failure) is the source of the problem.
+If the issue is not resolved with any of the above steps, or if the problem is showing up in a Live Environment, then the issue is probably not software. More likely, [Hardware](../hardware-failure/index.md) is the source of the problem.

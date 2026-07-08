@@ -125,7 +125,7 @@ You can use <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>
 
 Individual applications will have variations in their sub-menus. Many applications have a menu button located in the top-right or left of the application window for application-specific settings and functions. This menu button is usually represented by either three stacked vertical lines or three vertical dots, sometimes referred to as the "hamburger menu."
 
-Default applications included with Pop!_OS 24.04 are outlined in [the Default Apps article](/articles/default-apps).
+Default applications included with Pop!_OS 24.04 are outlined in [the Default Apps article](../default-apps/index.md).
 
 ## COSMIC Store (Application Installation and Software Updates)
 
@@ -133,7 +133,7 @@ The <u>COSMIC Store</u> can be used to install additional software and update cu
 
 ![COSMIC Store](img/pop-basics-cosmic-store.png)
 
-Manage repositories by clicking the gear icon in the top right of the COSMIC Store. For more information about package management in Pop!\_OS, see the [Manage Repos article](/articles/manage-repos-pop/).
+Manage repositories by clicking the gear icon in the top right of the COSMIC Store. For more information about package management in Pop!\_OS, see the [Manage Repos article](../manage-repos-pop/index.md).
 
 To update currently installed software, click `Updates` in the left menu of the COSMIC Store. Buttons to `Check for updates` and `Update all` are located in the top right corner of the page.
 
@@ -141,6 +141,6 @@ To update currently installed software, click `Updates` in the left menu of the 
 
 ## Keyboard Shortcuts
 
-For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [the Keyboard Shortcuts article](/articles/pop-cosmic-keyboard-shortcuts).
+For a more detailed overview of Pop!\_OS keyboard shortcuts, refer to [the Keyboard Shortcuts article](../pop-cosmic-keyboard-shortcuts/index.mdx).
 
 You can read more about Pop!\_OS features on the [Pop!_OS homepage](https://system76.com/pop/), or view the source code in [the Pop!_OS GitHub organization](https://github.com/pop-os/).

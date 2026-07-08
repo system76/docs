@@ -26,27 +26,27 @@ This article combines several self-help articles resolving common issues experie
 
 ### 1. Do you have a current backup of your files?
 
-If your issue is time-sensitive, reinstalling or [refreshing](/articles/pop-recovery#refresh-install) the operating system may provide the fastest resolution. Be sure to back up all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
+If your issue is time-sensitive, reinstalling or [refreshing](../pop-recovery/index.md#refresh-install) the operating system may provide the fastest resolution. Be sure to back up all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
 
 **Note**: This guide may cover diagnostics and testing that you've already performed. Skip those sections as needed, but be sure to provide that information when submitting your ticket.
 
-We have a help article to guide you through backing up your system [here.](/articles/backup-files)
+We have a help article to guide you through backing up your system [here.](../backup-files/index.md)
 
 ### 2. Do you have a Pop!\_OS or Ubuntu Live USB?
 
 A Live USB can be used as a rescue disk. This will provide us an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary.
 
-We have an article to guide you through creating [Live USBs here.](/articles/live-disk)
+We have an article to guide you through creating [Live USBs here.](../live-disk/index.md)
 
 ## Local repair and upgrades
 
-We offer techincal documenation (tech-docs such as service manuals) in this [article](/articles/guides).
+We offer techincal documenation (tech-docs such as service manuals) in this [article](../guides/index.md).
 
 ## Common Issue Sources
 
 ### Software
 
-See this article for troubleshooting software issues [here.](/articles/software-triage)
+See this article for troubleshooting software issues [here.](../software-triage/index.md)
 
 ### Environment
 
@@ -62,11 +62,11 @@ See this article for troubleshooting software issues [here.](/articles/software-
 
 ### Hardware
 
-Steps 3 and 5 from the above Environment section will confirm the issue is caused by hardware configuration or failure. We also recommend following this guide for [diagnosing hardware failure](/articles/hardware-failure).
+Steps 3 and 5 from the above Environment section will confirm the issue is caused by hardware configuration or failure. We also recommend following this guide for [diagnosing hardware failure](../hardware-failure/index.md).
 
 ## How Do I Submit A Support Ticket?
 
-- **Online** - Submit a ticket online by logging into our [support page](https://account.system76.com/login). Please [follow these steps](/articles/clear-cache-and-cookies) if you're having issues signing into your account or opening a ticket.
+- **Online** - Submit a ticket online by logging into our [support page](https://account.system76.com/login). Please [follow these steps](../clear-cache-and-cookies/index.md) if you're having issues signing into your account or opening a ticket.
 
 - **By Phone** - Contact us at (720)-226-9269. We're open 8am-5pm MST. Response time may be limited on weekends and holidays.
 
@@ -90,7 +90,7 @@ We build and ship a replacement system with the same configuration, and have you
 
 ### Advance Replacement Part - Within Warranty Period
 
-We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available [service manuals here](/articles/guides) and [here](https://tech-docs.system76.com/)
+We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available [service manuals here](../guides/index.md) and [here](https://tech-docs.system76.com/)
 
 More details will be provided if this process is requested.
 

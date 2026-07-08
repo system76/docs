@@ -34,7 +34,7 @@ If the hard drive is included with the shipment, please backup all important dat
 
 ### Packing Computer
 
-For sending in Laptop computers, please follow the [Repackaging Instructions](/articles/reboxing/).  If the original box isn't available, please use a laptop mailer available from USPS, UPS, and other major shipping carriers.  Please make sure to send AC adapter for any battery, power, or charging related issues.
+For sending in Laptop computers, please follow the [Repackaging Instructions](../reboxing/index.md).  If the original box isn't available, please use a laptop mailer available from USPS, UPS, and other major shipping carriers.  Please make sure to send AC adapter for any battery, power, or charging related issues.
 
 For shipping a desktop computer, we recommend using the original packaging of hard styrofoam. Using peanuts or bubble wrap is not advised if the original packaging and foam corners are used, as they allow additional forces to be applied to the computer during shipping.  If the original packaging isn't available, please wrap the computer in 3-4 inches of bubble wrap evenly, and package in a box just large enough for the bundle.  Do not put the computer into a larger box with empty airspace, as it will shift rapidly during shipping and damage the computer.  Please have the computer professionally packaged and watch while it's being boxed.  Do not use peanuts for packing desktop computers or servers.
 

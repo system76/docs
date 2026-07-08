@@ -114,7 +114,7 @@ apt-mark showhold
 
 If the Terminal returns nothing, no packages are held.
 
-If the <u>Pop!_Shop</u> indicates that some remote repositories can't be reached, open [Repoman](/articles/manage-repos-pop) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
+If the <u>Pop!_Shop</u> indicates that some remote repositories can't be reached, open [Repoman](../manage-repos-pop/index.md) and look in the **Extra Sources** page for the broken repository.  Either disable or remove the repository, or search for the software vendor to determine what has happened to their software server. Sometimes the version of the repo (xenial, bionic, focal, groovy, etc) needs changed to match the current version of the operating system.
 
 ## Flatpak
 

@@ -25,12 +25,12 @@ tableOfContents: true
 
 You can run a full version of Pop!_OS or Ubuntu from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
-- [Installing Pop!_OS](/articles/install-pop/)
-- [Installing Ubuntu](/articles/install-ubuntu/)
+- [Installing Pop!_OS](../install-pop/index.md)
+- [Installing Ubuntu](../install-ubuntu/index.md)
 - Recovering your existing operating system
 - Backing up files when you can't boot
-- [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
-- [Fixing the boot loader](/articles/bootloader)
+- [Determining if an issue is caused by hardware or software](../hardware-failure/index.md)
+- [Fixing the boot loader](../bootloader/index.md)
 
 A live disk can be helpful when doing hardware troubleshooting.
 
@@ -142,7 +142,7 @@ After creating the live disk, insert the USB drive into your computer, then rebo
  Firmware             | Laptops                                                               | Desktops                                              |
  -------------------- | --------------------------------------------------------------------- | ----------------------------------------------------- |
  Proprietary Firmware | Hold <kbd>F7</kbd>/<kbd>F1</kbd>/<kbd>F2</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>                        |
- [Open Firmware](https://support.system76.com/articles/open-firmware-systems)        | Hold <kbd>Esc</kbd>                                            |
+ [Open Firmware](../open-firmware-systems/index.md)        | Hold <kbd>Esc</kbd>                                            |
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 
@@ -162,15 +162,15 @@ Pop!_OS will boot into the familiar Pop!_OS desktop.
 
 ## Using the Live Environment
 
-Aside from [installing Pop!_OS](/articles/install-pop), you can also use the live environment for hardware testing, restoration/upgrades, and boot repair.
+Aside from [installing Pop!_OS](../install-pop/index.md), you can also use the live environment for hardware testing, restoration/upgrades, and boot repair.
 
 ### Repairing an Existing Operating System
 
-Since the live environment is a full Pop!_OS installation, it has all the same tools as the normal environment. If the system can't boot normally, you can `chroot` (change root) into the normal installation using the commands [in the Recovery Partition article](/articles/pop-recovery#chroot), which allows you to run commands in the existing operating system to repair broken packages or other problems.
+Since the live environment is a full Pop!_OS installation, it has all the same tools as the normal environment. If the system can't boot normally, you can `chroot` (change root) into the normal installation using the commands [in the Recovery Partition article](../pop-recovery/index.md#chroot), which allows you to run commands in the existing operating system to repair broken packages or other problems.
 
 ### Refreshing the Operating System
 
-A Pop!\_OS live disk can also be used to refresh an existing Pop!_OS installation without losing user account information and data in the `/home` directory. You can find out more about this option [in the Recovery Partition article](/articles/pop-recovery#refresh-install).
+A Pop!\_OS live disk can also be used to refresh an existing Pop!_OS installation without losing user account information and data in the `/home` directory. You can find out more about this option [in the Recovery Partition article](../pop-recovery/index.md#refresh-install).
 
 ### Backing Up Files
 

@@ -37,7 +37,7 @@ However, these limitations aside, hibernation is an often requested feature for 
 
 ## Enable Hibernation on an Encrypted Drive
 
-1. Boot into [Pop!_OS Recovery](https://support.system76.com/articles/pop-recovery)
+1. Boot into [Pop!_OS Recovery](../pop-recovery/index.md)
 
     Turn your computer off, then turn it back on and hold down the `SPACE` bar immediately. In the menu that appears, select `PopOS Recovery`, and let it boot.
 

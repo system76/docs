@@ -28,11 +28,11 @@ In order to format the drive that has your OS on it we will need to boot from ei
 
 ### Option 1: Live USB
 
-A live disk is a bootable USB storage device that runs the entire operating system in RAM. See [this article for instructions to create a bootable Pop!\_OS live USB.](/articles/live-disk/)
+A live disk is a bootable USB storage device that runs the entire operating system in RAM. See [this article for instructions to create a bootable Pop!\_OS live USB.](../live-disk/index.md)
 
 ### Option 2: Pop Recovery Partition
 
-The Recovery Partition is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. See [this article for instructions to boot into the Pop!\_OS recovery partition.](/articles/pop-recovery/)
+The Recovery Partition is a full copy of the Pop!_OS installation disk. It can be used exactly the same as if a live disk copy of Pop!_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. See [this article for instructions to boot into the Pop!\_OS recovery partition.](../pop-recovery/index.md)
 
 ### Disks application
 

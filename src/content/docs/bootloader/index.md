@@ -27,13 +27,13 @@ On a fresh install of Pop!_OS 18.04 and newer, <u>systemd-boot</u> is used rathe
 
 ### Create Live Disk
 
-Please see our instructions for making a live disk of Pop!_OS [here](/articles/live-disk/).
+Please see our instructions for making a live disk of Pop!_OS [here](../live-disk/index.md).
 
 >**Note**: The live environment will not have your WiFi password saved. Once booted into the live environment, you will need to reconnect manually to your WiFi in order to access the internet.
 
 ### Boot from Live Disk
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the live disk. When you see the System76 logo on the screen, press and hold the appropriate key for your system based on this [article](/articles/boot-menu).
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the live disk. When you see the System76 logo on the screen, press and hold the appropriate key for your system based on this [article](../boot-menu/index.md).
 
 Use the arrow keys and Enter key to select the live disk from the boot menu.
 
@@ -124,7 +124,7 @@ If you get the output below then you do not need to decrypt the drive first:
 Device /dev/nvme0n1p3 or /dev/sda3 is not a valid LUKS device.
 ```
 
-If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](../bootloader/index.md#encrypted-disk) to decrypt the drive first.
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
@@ -166,7 +166,7 @@ If you get the output below then you do not need to decrypt the drive first:
 Device /dev/nvme0n1p2 or /dev/sda2 is not a valid LUKS device.
 ```
 
-If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](../bootloader/index.md#encrypted-disk) to decrypt the drive first.
 
 First, we need to mount the OS partitions. Run these commands based on what type of disk you have:
 
@@ -208,7 +208,7 @@ If you get the output below then you do not need to decrypt the drive first:
 Device /dev/nvme0n1p3 or /dev/sda3 is not a valid LUKS device.
 ```
 
-If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](../bootloader/index.md#encrypted-disk) to decrypt the drive first.
 
 Run these commands based on what type of disk you have:
 
@@ -251,7 +251,7 @@ If you get the output below then you do not need to decrypt the drive first:
 Device /dev/nvme0n1p2 or /dev/sda2 is not a valid LUKS device.
 ```
 
-If it is a valid LUKS device then follow these [steps](/articles/bootloader#encrypted-disk) to decrypt the drive first.
+If it is a valid LUKS device then follow these [steps](../bootloader/index.md#encrypted-disk) to decrypt the drive first.
 
 Run these commands based on what type of disk you have:
 

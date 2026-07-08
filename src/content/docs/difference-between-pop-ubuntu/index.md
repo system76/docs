@@ -48,7 +48,7 @@ With encryption enabled by default, and reporting through Ubuntu disabled, Pop!\
 ## Custom Keyboard Shortcuts
 
 After conducting a study of Ubuntu and GNOME keyboard shortcuts, we decided to make some shortcuts more efficient for common user behaviors. The shortcut for switching workspaces, for example, is <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>Arrow</kbd> <kbd>Up</kbd> or <kbd>Down</kbd>.
-[See all keyboard shortcuts](/articles/pop-keyboard-shortcuts/)
+[See all keyboard shortcuts](../pop-keyboard-shortcuts/index.mdx)
 
 ## Default Apps: Slimming down on bloatware
 
@@ -64,11 +64,11 @@ Pop!\_OS is built from Ubuntu repositories, meaning you get the same access to s
 
 * Vulkan drivers and libraries are installed by default to get the most out of your GPU’s performance. Selecting the NVIDIA version of Pop!\_OS on install also downloads the NVIDIA drivers by default.
 * The power profile picker in the top right menu easily toggles between high performance, balanced, and battery saver modes. On the Oryx Pro, this is also where you’ll find the toggle for switching graphics between Intel and NVIDIA. While these features have been developed specifically for System76 products, they may likely still work on your hardware.
-* For scientific workloads, installing [CUDA](/articles/cuda) and [TensorFlow](/articles/install-tensorflow) is made simple with a single command line.
+* For scientific workloads, installing [CUDA](../cuda/index.md) and [TensorFlow](../tensorman/index.md) is made simple with a single command line.
  ![CUDA/Tensorflow command](img/Tensorflow.png)
 * Do Not Disturb mode silences notifications to help you focus on your work.
 * systemd-boot bootloader and the automatic configuration tool we’ve created for it called kernelstub replace the outdated GRUB bootloader used on Ubuntu. The systemd-boot bootloader is faster and smaller in size, increasing your computer’s startup speed.
 
 ## Recovery Partition
 
-The recovery partition on this operating system is a full copy of the Pop!\_OS installation media. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder. You can otherwise opt to do a fresh install, which will recreate the partitions and files to reset data. Refresh Installs are only available on a fresh install of either Pop!\_OS 19.04 and newer (18.04 has this feature backported in lastest releases of the ISO). To learn more about the Recovery Partition read about it [here](/articles/pop-recovery/).
+The recovery partition on this operating system is a full copy of the Pop!\_OS installation media. It can be used exactly the same as if a live disk copy of Pop!\_OS was booted from a USB drive. The existing operating system can be repaired or reinstalled from the recovery mode. You can either do a refresh install, which allows you to reinstall without losing any user data or data in your Home folder. You can otherwise opt to do a fresh install, which will recreate the partitions and files to reset data. Refresh Installs are only available on a fresh install of either Pop!\_OS 19.04 and newer (18.04 has this feature backported in lastest releases of the ISO). To learn more about the Recovery Partition read about it [here](../pop-recovery/index.md).

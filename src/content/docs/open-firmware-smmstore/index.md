@@ -77,8 +77,8 @@ With all drive(s) removed, replace the cover and boot with the USB stick inserte
 
 Once the system is put back together we may need to boot with a live image in order to repair the boot loader if you dual-boot with Windows 10. We provide step by step instructions on how to do this in our support articles in the links below:
 
-[https://support.system76.com/articles/live-disk/](/articles/live-disk)
+[https://support.system76.com/articles/live-disk/](../live-disk/index.md)
 
-[https://support.system76.com/articles/bootloader/](/articles/bootloader)
+[https://support.system76.com/articles/bootloader/](../bootloader/index.md)
 
 If at any point you run into any errors during this process please paste / attach photos of the errors in a support ticket.

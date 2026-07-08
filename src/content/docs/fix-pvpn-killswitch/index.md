@@ -43,7 +43,7 @@ protonvpn-cli ks --off
 
 ## Permanent Kill Switch Persists After System Refresh
 
-Pop!\_OS's [Refresh Install](/articles/pop-recovery) feature is a convenient tool for recovering a broken installation while preserving some of the user's data.
+Pop!\_OS's [Refresh Install](../pop-recovery/index.md) feature is a convenient tool for recovering a broken installation while preserving some of the user's data.
 
 Any applications installed outside of the `/home` directory will be removed, however; system configurations made by applications may persist. You may be unable to connect to the internet if you are using ProtonVPN and enabled the `Permanent Kill Switch` option.
 
@@ -66,4 +66,4 @@ nmcli c delete pvpn-killswitch
 
 ## See Also
 
-- [Install and Use VPN in Pop!\_OS](/articles/use-vpn-software)
+- [Install and Use VPN in Pop!\_OS](../use-vpn-software/index.mdx)

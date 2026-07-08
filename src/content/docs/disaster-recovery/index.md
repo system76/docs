@@ -15,7 +15,7 @@ section: software-troubleshooting
 tableOfContents: true
 ---
 
-This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](/articles/login-loop-pop) may be helpful instead.
+This article covers ways to extract and save your data in the event of an OS failure, update failure, or similar situation. If you are having issues reaching your login screen, this [article](../login-loop-pop/index.md) may be helpful instead.
 
 ## If you can't boot your installed OS
 
@@ -23,7 +23,7 @@ If you are not able to boot into your installed OS, then we will want to boot fr
 
 ### Creating the live disk (Bootable OS)
 
-We can use this [article](/articles/live-disk) to create a live disk of Ubuntu if you aren't using Pop. For more information about accessing Recovery see [here](/articles/pop-recovery). For Ubuntu, refer to this [article](/articles/bootloader).
+We can use this [article](../live-disk/index.md) to create a live disk of Ubuntu if you aren't using Pop. For more information about accessing Recovery see [here](../pop-recovery/index.md). For Ubuntu, refer to this [article](../bootloader/index.md).
 
 We do not need to chroot into the installed OS to back up data, only mount the OS drive. Once this is done, we can install the software used for the backup process: <u>Deja Dup</u> (see below).
 
@@ -35,7 +35,7 @@ Use the top-right menu (as shown above) to connect to your Wi-Fi once booted int
 
 ### Mount the installed OS
 
-Once connected to the Internet, open <u>Firefox</u> and access the [bootloader](/articles/bootloader) article.
+Once connected to the Internet, open <u>Firefox</u> and access the [bootloader](../bootloader/index.md) article.
 Then copy and paste the encryption commands (if the OS is encrypted) and the mount commands.
 
 > **NOTE:** If you own System76 hardware and/or have a System76 Account, this will also allow you to access Support Tickets, copy/paste commands from those tickets or upload log files, etc.
@@ -95,12 +95,12 @@ The specs below offer an idea on what to look for when purchasing external stora
 
 ### Internal
 
-If your system included a second drive beside the OS drive, we have this [article](/articles/extra-drive/) that goes over setting up the drive to auto-mount once the OS is either repaired or reinstalled.
+If your system included a second drive beside the OS drive, we have this [article](../extra-drive/index.mdx) that goes over setting up the drive to auto-mount once the OS is either repaired or reinstalled.
 If we have the installed OS mounted in the live disk open the <u>Files</u> application then go to ***Other Locations*** to access the secondary drive. Unless you've changed the name of your drive, System76 systems ship with secondary drives labelled "Extra Drive" or "Extra Drive #."
 
 #### Restoring Your Data
 
-Once we have our data backed up we can reinstall the OS. This [article](/articles/install-pop) goes over the usual install process whether you're intalling from Recovery or a Live Disk:
+Once we have our data backed up we can reinstall the OS. This [article](../install-pop/index.md) goes over the usual install process whether you're intalling from Recovery or a Live Disk:
 
 Now that we reinstalled the OS we can start restoring our data. To restore your data with Deja Dup, select the **Overview** page, then click the **Restore...** button. This will allow you to select the location containing the Deja Dup backup folder, and will copy the data from the most recent backup to its original location.
 
@@ -108,7 +108,7 @@ Now that we reinstalled the OS we can start restoring our data. To restore your 
 
 ## If the System Doesn't Power On
 
-Refer to your models [service manual](/articles/guides) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](/articles/backup-files).
+Refer to your models [service manual](../guides/index.md) for removing the drive(s). Once you have moved the drives containing your data to another system, you can transfer them to an external hard drive (or other location) with the steps in our [backup article](../backup-files/index.md).
 
 ## What if the Drive is the Problem?
 
@@ -118,7 +118,7 @@ If signs are pointing to the drive itself being the issue, and your files are co
 
 ## Future Steps
 
-Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](/articles/backup-files) can help.
+Now that we have our data, and a clean install of the OS, let's prepare for if this issue happens again. It's good practice to set up scheduled backups. Our [backup article](../backup-files/index.md) can help.
 
 > **NOTE** Good practice to prevent data loss is to ensure that any important files are backed up in at least three (3) places. Two (2) copies on-site, and one (1) copy off-site. This off-site backup could be through a cloud storage solution, or a drive that's kept at a relative's house, or in a safety deposit box.
 

@@ -34,4 +34,4 @@ If we would like to decrypt the drive on login into the system there are setting
 
 ### Editing Mount Options
 
-The Extra Drive [article](/articles/extra-drive/) goes over changing the mounting options for the drive.
+The Extra Drive [article](../extra-drive/index.mdx) goes over changing the mounting options for the drive.

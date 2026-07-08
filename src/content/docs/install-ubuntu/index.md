@@ -31,7 +31,7 @@ Ubuntu releases beyond 24.04 are not fully tested, but certain packages are made
 
 ## Recent Upgrade Issues
 
-If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [Repair the Bootloader](/articles/bootloader).
+If your recently upgraded system does not boot, it can often be recovered.  If you see a flashing underscore on the screen after booting, then it's likely that Ubuntu's bootloader (GRUB) was not properly updated. To restore it, see [Repair the Bootloader](../bootloader/index.md).
 
 ## Create Install Media
 
@@ -43,7 +43,7 @@ First, you'll need to create bootable USB you can restore or install Ubuntu with
 
 ### Boot From Install USB
 
-Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk by accessing the Boot Menu using the key combos in this [article](/articles/bootloader). Once you see the GRUB screen, select **Try or Install Ubuntu** by pressing the <kbd>Enter</kbd> key.
+Once you have the disk made, reboot your system. You'll need to tell the computer to boot from the Live Disk by accessing the Boot Menu using the key combos in this [article](../bootloader/index.md). Once you see the GRUB screen, select **Try or Install Ubuntu** by pressing the <kbd>Enter</kbd> key.
 
 <!--#### NVIDIA Graphics
 
@@ -67,7 +67,7 @@ Next, you will be asked to **Try Ubuntu without installing** or to **Install Ubu
 
 If all of your files are backed up, or if you are installing from scratch, pick the **Install Ubuntu** option to continue with the installation.
 
->**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](https://support.system76.com/articles/backup-files). The Ubuntu installation process will wipe any data on the drive that is selected for the installation.
+>**IMPORTANT NOTE:** System76 recommends [backing up all important files from your computer](../backup-files/index.md). The Ubuntu installation process will wipe any data on the drive that is selected for the installation.
 
 ![Try or Install](img/install-ubuntu-24.04-5.png)
 
@@ -193,4 +193,4 @@ You can opt to install the updates later, or install them now by clicking **Inst
 
 ### Install System76 & NVIDIA Drivers
 
-Once you've installed Ubuntu, you'll need to download and install the System76 Driver; if you ordered a system with a discrete NVIDIA graphics card (or if you add one later on), you'll also need to install the NVIDIA graphics drivers. See [Install the System76 Driver](/articles/system76-driver) for instructions.
+Once you've installed Ubuntu, you'll need to download and install the System76 Driver; if you ordered a system with a discrete NVIDIA graphics card (or if you add one later on), you'll also need to install the NVIDIA graphics drivers. See [Install the System76 Driver](../system76-driver/index.md) for instructions.

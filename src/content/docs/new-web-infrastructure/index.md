@@ -29,29 +29,29 @@ We want to help you if you have questions, concerns, or ongoing issues! If you a
 
 ### 1. Do you have a current backup of your files?
 
-If your issue is time-sensitive, reinstalling or [refreshing](/articles/pop-recovery#refresh-install) the operating system may provide the fastest resolution. Be sure to back up all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
+If your issue is time-sensitive, reinstalling or [refreshing](../pop-recovery/index.md#refresh-install) the operating system may provide the fastest resolution. Be sure to back up all important data before performing any tests or contacting Support. Re-imaging is much easier to do if we know that your important files are safe.
 
 **Note**: This guide may cover diagnostics and testing that you've already performed. Skip those sections as needed, but be sure to provide that information when submitting your ticket.
 
-For guidance backing up your system, see [Back Up Files](/articles/backup-files).
+For guidance backing up your system, see [Back Up Files](../backup-files/index.md).
 
 ### 2. Do you have a Pop!\_OS or Ubuntu Live USB?
 
 A Live USB can be used as a rescue disk. This will provide you with an outside OS environment to access your installed system, potentially rescue files that have not been backed up, or quickly reinstall the OS if necessary.
 
-We have an article to guide you through [creating Live USBs](/articles/live-disk).
+We have an article to guide you through [creating Live USBs](../live-disk/index.md).
 
-The default Pop!\_OS install also has a recovery partition that provides the same purpose as a Live USB drive. Accessing the recovery partition is covered in the [Recovery Partition](/articles/pop-recovery) article.
+The default Pop!\_OS install also has a recovery partition that provides the same purpose as a Live USB drive. Accessing the recovery partition is covered in the [Recovery Partition](../pop-recovery/index.md) article.
 
 ## Local Repair and Upgrades
 
-We offer techincal documentation such as service manuals in the [Find Documentation For Your Model](/articles/guides) article.
+We offer techincal documentation such as service manuals in the [Find Documentation For Your Model](../guides/index.md) article.
 
 ## Common Issue Sources
 
 ### Software
 
-See [Software Troubleshooting Triage](/articles/software-triage) for assistance troubleshooting software issues.
+See [Software Troubleshooting Triage](../software-triage/index.md) for assistance troubleshooting software issues.
 
 ### Environment
 
@@ -67,7 +67,7 @@ See [Software Troubleshooting Triage](/articles/software-triage) for assistance 
 
 ### Hardware
 
-Changes to networking or other performance on your computer can be signs of hardware failure. We also recommend following this guide for [diagnosing hardware failure](/articles/hardware-failure).
+Changes to networking or other performance on your computer can be signs of hardware failure. We also recommend following this guide for [diagnosing hardware failure](../hardware-failure/index.md).
 
 ## What Information Should I Provide to Support?
 
@@ -89,7 +89,7 @@ We build and ship a replacement system with the same configuration, and have you
 
 ### Advance Replacement Part - Within Warranty Period
 
-We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available service manuals in the [relevant support article](/articles/guides) or on the [Tech Docs website](https://tech-docs.system76.com/).
+We send a replacement part for self-service or service at a local repair shop, then have you return the defective part. We also provide the service manual for your machine if applicable. You can see the available service manuals in the [relevant support article](../guides/index.md) or on the [Tech Docs website](https://tech-docs.system76.com/).
 
 More details will be provided if this process is requested.
 

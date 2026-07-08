@@ -31,8 +31,8 @@ This article will cover the GNOME Boxes application for running virtual machines
 
 This article assumes you are already running a Linux distribution. Instructions in this guide use Pop!_OS as the "Host" operating system, or the operating system that runs the virtualization software. See instructions below if you aren't running Linux, or would like to install Pop!_OS to make things simple.
 
-- Try [Pop!_OS](/articles/install-in-vm) in a VM on your current OS
-- Install [Pop!_OS](/articles/install-pop) on your computer
+- Try [Pop!_OS](../install-in-vm/index.md) in a VM on your current OS
+- Install [Pop!_OS](../install-pop/index.md) on your computer
 - Download the [Ubuntu ISO](https://ubuntu.com/download/desktop)
 
 ## Install GNOME Boxes
@@ -91,9 +91,9 @@ After selecting the resources for your VM, the VM will boot the selected operati
 
 The install process for your chosen operating system will be just like any other install, with nothing VM specific at this time. Proceed through the OS install using one of the install guides linked below, or the OS developer's guide:
 
-- [Install Pop!_OS](https://support.system76.com/articles/install-pop/)
+- [Install Pop!_OS](../install-pop/index.md)
 - [Install Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-desktop#4-boot-from-usb-flash-drive)
-- [Install Windows](https://support.system76.com/articles/windows/)
+- [Install Windows](../windows/index.md)
 
 ## Install GNOME Boxes Drivers
 

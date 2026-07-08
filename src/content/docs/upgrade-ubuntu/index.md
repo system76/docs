@@ -31,7 +31,7 @@ First, we recommend having Ubuntu installation media (a DVD or USB drive) handy 
 - [Using Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows)
 - [Using Mac OS X](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx)
 
-Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. We have a support article that goes over creating backups [here](/articles/backup-files).
+Next, we recommend backing up all important files from your computer. The upgrade process will leave your files intact, but it's best to be safe in case something goes wrong. We have a support article that goes over creating backups [here](../backup-files/index.md).
 
 ## Upgrade
 
@@ -71,7 +71,7 @@ A message will appear informing you of the availability of the new release. Clic
 
 ### Install The System76 Driver
 
-After upgrading Ubuntu, the System76 Ubuntu software repository should be added and the System76 Driver should be installed. [This article](/articles/system76-driver) covers that process.
+After upgrading Ubuntu, the System76 Ubuntu software repository should be added and the System76 Driver should be installed. [This article](../system76-driver/index.md) covers that process.
 
 Once the process is finished, reboot your computer for the changes to take effect.
 
@@ -109,11 +109,11 @@ Please see the steps above to create bootable media. Restart your computer and u
 
 Next, follow the steps to repair GRUB first:
 
-[Repair Bootloader](/articles/bootloader/)
+[Repair Bootloader](../bootloader/index.md)
 
 And the steps to repair the package manager next:
 
-[Repair Package Manager](/articles/package-manager-ubuntu/)
+[Repair Package Manager](../package-manager-ubuntu/index.md)
 
 Then, continue the upgrade with this command:
 

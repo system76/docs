@@ -38,13 +38,13 @@ tableOfContents: true
 
 Pop!_OS 24.04 now includes the COSMIC Desktop. Some changes to expect are outlined in the following articles;
 
-- [New keyboard shortcuts](articles/pop-cosmic-keyboard-shortcuts)
-- [New default Applications](/articles/default-apps)
-- [Desktop customization and window behavior](/articles/pop-basics)
+- [New keyboard shortcuts](../pop-cosmic-keyboard-shortcuts/index.mdx)
+- [New default Applications](../default-apps/index.md)
+- [Desktop customization and window behavior](../pop-basics/index.md)
 
 ## Upgrade Versus Fresh Installation
 
-A fresh installation is recommended for any release prior to Pop!_OS 22.04. Instructions for a fresh installation can be found [here](articles/install-pop).
+A fresh installation is recommended for any release prior to Pop!_OS 22.04. Instructions for a fresh installation can be found [here](../install-pop/index.md).
 
 The likelihood of complications during the upgrade process increases on systems that are:
 
@@ -54,7 +54,7 @@ The likelihood of complications during the upgrade process increases on systems 
 
 ## Before the Upgrade
 
-[Back up your files](/articles/backup-files/) before beginning the upgrade. The upgrade process will leave your files in place, but no matter which system or version you are running, we always recommend creating a good backup of your files, just to be on the safe side in case anything unexpected happens during the upgrade.
+[Back up your files](../backup-files/index.md) before beginning the upgrade. The upgrade process will leave your files in place, but no matter which system or version you are running, we always recommend creating a good backup of your files, just to be on the safe side in case anything unexpected happens during the upgrade.
 
 The Pop upgrade process can take up to an hour to complete depending on download speeds and the speed of the components in the system you are upgrading.
 

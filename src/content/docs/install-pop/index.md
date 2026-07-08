@@ -36,7 +36,7 @@ From <https://system76.com/pop/download/>, choose **DOWNLOAD** under the section
 
 ### Installation Media
 
-The Pop!\_OS.iso can be easily flashed to a USB drive. See our [Live Disk Creation](/articles/live-disk/) article for instructions to create a bootable USB drive in Windows, macOS, and Linux.
+The Pop!\_OS.iso can be easily flashed to a USB drive. See our [Live Disk Creation](../live-disk/index.md) article for instructions to create a bootable USB drive in Windows, macOS, and Linux.
 
 ### Secure Boot
 

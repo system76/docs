@@ -23,7 +23,7 @@ Pop!\_OS does a lot to conserve the battery life of your laptop just by default,
 
 ## Adjusting Screen Brightness
 
-One of the largest consumers of laptop power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor, but brightness can be adjusted manually via the **System Menu** (see screenshot below) or with the keyboard shortcuts for each individual laptop model, which can be found on the "External Overview" pages of [each model's technical documentation](https://support.system76.com/articles/guides/).
+One of the largest consumers of laptop power is the display backlight. Up to 10% more battery life can be gained by reducing display brightness. Our laptops don't currently have an ambient light sensor, but brightness can be adjusted manually via the **System Menu** (see screenshot below) or with the keyboard shortcuts for each individual laptop model, which can be found on the "External Overview" pages of [each model's technical documentation](../guides/index.md).
 
 ![Brightness](img/brightness.png)
 
@@ -39,7 +39,7 @@ The `Battery Life` setting will do a number of things to improve battery life, i
 
 ## Switching Graphics Settings
 
-The settings for the graphics modes on laptops that have switchable NVIDIA graphics are outlined in detail [on their own support document](https://support.system76.com/articles/graphics-switch-pop), but to summarize:
+The settings for the graphics modes on laptops that have switchable NVIDIA graphics are outlined in detail [on their own support document](../graphics-switch-pop/index.md), but to summarize:
 
 * Integrated Intel graphics mode will provide increased battery life at the cost of 3D performance, and some laptops will not support external displays in that mode.
 * Hybrid graphics allow you to choose to use the more powerful NVIDIA GPU when needed, but applications will default to using the lower-power Intel graphics.

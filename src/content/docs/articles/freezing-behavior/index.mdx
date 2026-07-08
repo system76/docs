@@ -15,6 +15,8 @@ section: hardware-troubleshooting
 tableOfContents: true
 ---
 
+import { Icon } from "astro-icon/components";
+
 Freezing behaviors tend to occur when a piece of hardware is defective.  
 More common culprits are the hard drive or memory modules. This article covers checking the health of your hard drive and running a memory test.
 
@@ -24,7 +26,7 @@ More common culprits are the hard drive or memory modules. This article covers c
 
 To begin, we need to determine how much memory your system has. Open <u>Settings</u>, then navigate to the "About" pane. Look for the item marked "Memory." It should have a number, such as 16GB though it may be 15.5GB, or something similar as some of the memory is used up by the OS itself.
 
-You can also run the following <u>Terminal</u> command to print your total RAM. Open a Terminal by pressing <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd>Super</kbd> and run the following set of commands:
+You can also run the following <u>Terminal</u> command to print your total RAM. Open a Terminal by pressing <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd>/<kbd>Super</kbd> and run the following set of commands:
 
 Command:
 

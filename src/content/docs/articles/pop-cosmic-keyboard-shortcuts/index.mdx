@@ -14,6 +14,8 @@ section: pop
 tableOfContents: true
 ---
 
+import { Icon } from "astro-icon/components";
+
 ## Super key
 
 The Super key is the OS key on your keyboard.
@@ -22,7 +24,7 @@ The Super key is the OS key on your keyboard.
 
   ![Super Key](img/super_key_vector_x64.png)
 
-- On older System76 products, the Super key is represented by the Ubuntu logo (<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>).
+- On older System76 products, the Super key is represented by the Ubuntu logo (<kbd><Icon name="fa6-brands:ubuntu" /></kbd>).
 - On the Launch keyboard it is the <kbd>SUPER</kbd> key.
 - On generic third-party products, it may be labeled with a Windows logo.
 - On Mac accessories, it may be labeled `command`.
@@ -60,7 +62,7 @@ The launcher allows searching through open windows and installed applications. I
 
 | Shortcut                                                                | Action                                   |
 | ----------------------------------------------------------------------- | ---------------------------------------- |
-| <kbd>SUPER</kbd></kbd> + <kbd>Direction keys</kbd>                      | Navigate between windows                 |
+| <kbd>SUPER</kbd> + <kbd>Direction keys</kbd>                      | Navigate between windows                 |
 | <kbd>SUPER</kbd> + <kbd>Tab</kbd>                                       | Switch between windows                   |
 | <kbd>Shift</kbd> + <kbd>Super</kbd> + <kbd>Tab</kbd>                    | Switch between windows in reverse order  |
 | <kbd>SUPER</kbd> + <kbd>Alt</kbd> + <kbd>Direction keys</kbd>           | Navigate between displays                |

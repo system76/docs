@@ -6,16 +6,11 @@ prev: false
 lastUpdated: false
 ---
 
-import { CardGrid, Card,  } from '@astrojs/starlight/components';
-import HeroImage from '../../components/HeroImage.astro';
-import heroLight from "../../assets/img/support_page_hero-light.svg";
-import heroDark from "../../assets/img/support_page_hero-dark.svg";
-
-
-<HeroImage light={heroLight} dark={heroDark} />
+import { CardGrid, Card } from '@astrojs/starlight/components';
+import Hero from '../../components/Hero.astro'
 
 <div>
-
+    <Hero />
     <hr />
     <CardGrid stagger>
         <Card title="Documentation that delights" icon="open-book">

@@ -57,5 +57,5 @@ You can choose a gaming, application, or custom environment. In this example, we
 
 ### See Also
 
-- [Gaming on Pop!\_OS](/articles/linux-gaming/)
-- [Creating Virtual Machines in Linux](/articles/virtualization/)
+- [Gaming on Pop!\_OS](../linux-gaming/index.mdx)
+- [Creating Virtual Machines in Linux](../virtualization/index.md)

@@ -22,7 +22,7 @@ File Systems can be damaged from events like unexpected power loss or unsafe rem
 
 ## Solution
 
-If you are not able to boot into the installed OS due to this issue we can boot into a [live disk](http://support.system76.com/articles/live-disk/), mount the drive, then chroot into the installed OS. More details [here](https://support.system76.com/articles/bootloader/). Once chrooted, follow these steps:
+If you are not able to boot into the installed OS due to this issue we can boot into a [live disk](../live-disk/index.md), mount the drive, then chroot into the installed OS. More details [here](../bootloader/index.md). Once chrooted, follow these steps:
 
 ### GUI (Graphical User Interface)
 
@@ -43,4 +43,4 @@ Substitute # with the partition number of your OS install, which can be determin
 The drive with the / mountpoint will be your OS installation.
 
 If the commands complete without errors, or with errors corrected, reboot back into the installed OS.
-If errors are reported and not corrected, your drive may be experiencing hardware issues. You'll want to use your live environemnt (Live Disk or Recovery) to back up your files to another drive. We have an article on this process [here](https://support.system76.com/articles/disaster-recovery).
+If errors are reported and not corrected, your drive may be experiencing hardware issues. You'll want to use your live environemnt (Live Disk or Recovery) to back up your files to another drive. We have an article on this process [here](../disaster-recovery/index.md).

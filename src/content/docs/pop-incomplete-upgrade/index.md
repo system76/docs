@@ -34,11 +34,11 @@ pop-upgrade release upgrade
 
 ## Backup Your Files
 
-The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](/articles/backup-files/) for helpful instructions.
+The upgrade process will leave your files intact, but it's always a good idea to play it safe and create a backup of any important files. Please read our article on [how to backup your files](../backup-files/index.md) for helpful instructions.
 
 ## If you can't boot the OS
 
-Refer to the [data recovery article](/articles/disaster-recovery) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
+Refer to the [data recovery article](../disaster-recovery/index.md) to boot from an live disk or the Pop Recovery to backup your files before working on either repairing or reinstalling the OS.
 
 ## Recovery Partition is full
 
@@ -112,7 +112,7 @@ After you have made the edit, save the file and start the upgrade again.
     - 1A. Turn your computer off, then turn it back on and hold down the space bar immediately. In the menu that appears, select Pop!_OS Recovery, and let it boot.
     - 1B. Once it boots, close out of the installation window or choose “Try Demo Mode” (be sure not to choose any install or repair options, as this could result in data loss).
 
-    **If you do not have a Pop Recovery option:** you can create a live disk image of the OS and follow the next steps to mount the installed OS while running in a live disk. To create a live disk, use the instructions in the following [article](/articles/live-disk), then proceed to the next step.
+    **If you do not have a Pop Recovery option:** you can create a live disk image of the OS and follow the next steps to mount the installed OS while running in a live disk. To create a live disk, use the instructions in the following [article](../live-disk/index.md), then proceed to the next step.
 
 2. Connect to your network
 
@@ -200,7 +200,7 @@ After you have made the edit, save the file and start the upgrade again.
 
 ## If you are still not able to upgrade
 
-You can refresh the OS without losing user account information and data in the `/home` directory. You can find out more about this option [here](/articles/pop-recovery).
+You can refresh the OS without losing user account information and data in the `/home` directory. You can find out more about this option [here](../pop-recovery/index.md).
 
 If the system is still not able to upgrade and you have a System76 system, please open a [support ticket](https://system76.com/my-account/support-tickets/new) and include this file:
 

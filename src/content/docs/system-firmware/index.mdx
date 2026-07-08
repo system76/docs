@@ -82,7 +82,7 @@ calling Schedule method failed: "failed to add boot entry: exit code: 5
 system76-firmware: failed to schedule: failed to add boot entry: exit code: 5
 ```
 
-Please refer to this [support article](/articles/open-firmware-smmstore). If you see the message below then you can reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
+Please refer to this [support article](../open-firmware-smmstore/index.md). If you see the message below then you can reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update.
 
 ```
 Firmware update scheduled. Reboot your machine to install.
@@ -130,10 +130,10 @@ Navigate to the **Exit** section in the left sidebar, then select **Exit Saving 
 
 If your system is running another Linux-based OS installed with an EFI System Partition (ESP), then you can update your firmware using a live disk of Pop!\_OS. First, create a live disk using one of the following articles:
 
-* [Live Disk creation on Pop!_OS](/articles/pop-live-disk/)
-* [Live Disk creation on Other OS's](/articles/live-disk/)
+* [Live Disk creation on Pop!_OS](../pop-live-disk/index.md)
+* [Live Disk creation on Other OS's](../live-disk/index.md)
 
-After creating the live disk, [access the boot menu](/articles/boot-menu/) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><Icon name="simple-icons:popos" /></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
+After creating the live disk, [access the boot menu](../boot-menu/index.md) and select it from the list of options. Once the desktop appears, open a terminal (<kbd><Icon name="simple-icons:popos" /></kbd> + <kbd>T</kbd>) and use this command to list the partitions on your system:
 
 ```bash
 lsblk
@@ -170,4 +170,4 @@ If you’re receiving the firmware update notification after a firmware update, 
 
 ### Switching Between Proprietary Firmware and System76 Open Firmware
 
-If you would like to transition from proprietary firmware to System76 Open Firmware (on a supported model), please view [this article](/articles/transition-firmware/).
+If you would like to transition from proprietary firmware to System76 Open Firmware (on a supported model), please view [this article](../transition-firmware/index.md).

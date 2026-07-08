@@ -261,7 +261,7 @@ If you prefer a GUI tool which provides graphing over time, the application Psen
 
 If the system temperatures are abnormally high, the fans may need replaced, and/or the thermal compound may need re-applied to the CPU and GPU cores.
 
-Specific instructions for working on your hardware model can be found [here](https://support.system76.com/articles/guides)
+Specific instructions for working on your hardware model can be found [here](../guides/index.md)
 
 Quotes for replacement fans and thermal paste can be generated on open support tickets. To open a support ticket, visit [this link](https://system76.com/my-account/support-tickets/new)
 
@@ -290,8 +290,8 @@ If there is no log or the log is empty, then the crash isn't related to a hardwa
 ## Won't Power On
 
 > **NOTE:** If the system fails to power on, please use the following articles to troubleshoot:
-[Desktops](https://support.system76.com/articles/power-on-failure-desktop)
-[Laptops](https://support.system76.com/articles/power-on-failure-laptop)
+[Desktops](../power-on-failure-desktop/index.md)
+[Laptops](../power-on-failure-laptop/index.md)
 
 ## Support
 

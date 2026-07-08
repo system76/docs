@@ -65,4 +65,4 @@ Once Universal Access is open you will have options for the following sections.
 
 ## Keyboard Shortcuts & Modifiers
 
-Pop!_OS also provides many keyboard shortcuts to help users with navigating their system from the keyboard. The documentation for the keyboard shortcuts can be found by clicking this link [here](https://support.system76.com/articles/pop-keyboard-shortcuts).
+Pop!_OS also provides many keyboard shortcuts to help users with navigating their system from the keyboard. The documentation for the keyboard shortcuts can be found by clicking this link [here](../pop-keyboard-shortcuts/index.mdx).

@@ -89,7 +89,7 @@ sudo apt clean
 sudo apt autoremove
 ```
 
-For more information, check out our [Package Management Pop!_OS Article](https://support.system76.com/articles/package-manager-pop) or the [Ubuntu Equivalent](https://support.system76.com/articles/package-manager-ubuntu)
+For more information, check out our [Package Management Pop!_OS Article](../package-manager-pop/index.md) or the [Ubuntu Equivalent](../package-manager-ubuntu/index.md)
 
 #### Test Admin User
 
@@ -97,29 +97,29 @@ Sometimes, an intentional or unintentional change to system configuration files 
 
 To test whether the problem exists at a user-level or system-level, create a test administrator account and see if the reboots or shutdowns occur there.
 
-For more information, visit our [User Management Article](https://support.system76.com/articles/other-accounts)
+For more information, visit our [User Management Article](../other-accounts/index.md)
 
 #### Upgrade or Reinstall OS
 
 Sometimes, a problem is endemic enough that it warrants a new OS version or a clean reinstall of the OS. We have several help articles that go over this process:
 
-0. Back up your personal files using the steps [here](https://support.system76.com/articles/backup-files)
+0. Back up your personal files using the steps [here](../backup-files/index.md)
 
 1. Upgrade the Current OS:
 
-   Instructions for [Upgrading PopOS](https://support.system76.com/articles/upgrade-pop)
-   Instructions for [Upgrading Ubuntu](https://support.system76.com/articles/upgrade-ubuntu)
+   Instructions for [Upgrading PopOS](../upgrade-pop/index.md)
+   Instructions for [Upgrading Ubuntu](../upgrade-ubuntu/index.md)
 
 2. Boot from a Live Disk for Clean Install:
 
-   Make a [Live Disk](https://support.system76.com/articles/live-disk)
+   Make a [Live Disk](../live-disk/index.md)
 
-3. Access the [BIOS/Boot Menu](https://support.system76.com/articles/boot-menu)
+3. Access the [BIOS/Boot Menu](../boot-menu/index.md)
 
 4. Reinstall the OS:
 
-   [Install Pop](https://support.system76.com/articles/install-pop)
-   [Install Ubuntu](https://support.system76.com/articles/install-ubuntu)
+   [Install Pop](../install-pop/index.md)
+   [Install Ubuntu](../install-ubuntu/index.md)
 
 ### RAM Issues
 
@@ -139,7 +139,7 @@ If your system is not POSTing (Power On Self Test), typically you'll get symptom
 
 #### To Test RAM
 
-The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](https://support.system76.com/articles/live-disk), or the [Recovery Partition](https://support.system76.com/articles/pop-recovery)
+The application Memtester can be used to scan the RAM sticks for bad sectors. Memtester can be run from your booted OS, or from a Live Environment. This can be a [Live USB](../live-disk/index.md), or the [Recovery Partition](../pop-recovery/index.md)
 
   1. Install Memtester
 
@@ -260,7 +260,7 @@ If you prefer a GUI tool which provides graphing over time, the application Psen
 
 If the system temperatures are abnormally high, the fans may need replaced, and/or the thermal compound may need re-applied to the CPU and GPU cores.
 
-Specific instructions for working on your hardware model can be found [here](https://support.system76.com/articles/guides)
+Specific instructions for working on your hardware model can be found [here](../guides/index.md)
 
 Quotes for replacement fans and thermal paste can be generated on open support tickets. To open a support ticket, visit [this link](https://system76.com/my-account/support-tickets/new)
 
@@ -420,7 +420,7 @@ Thelios include a SATA passthrough device called the Thelio I/O board. If that p
 
 On the Meerkats, the Power Supply consists of a power cable similar to a laptop with a wall plug, "brick" and DC-In plug.
 
-Locate [Service Manuals for your Desktop here](https://support.system76.com/articles/guides)
+Locate [Service Manuals for your Desktop here](../guides/index.md)
 
 ### Power Supply Unit (PSU)
 

@@ -261,11 +261,11 @@ The easiest way to dual-boot Windows is to install it on a separate physical dri
 
 >**NOTE:** If you want to use full-disk encryption in Pop!\_OS, this is the only option.
 
-For the safest experience, power off your machine, [open the case](https://support.system76.com/articles/guides), and remove the drive with Pop!\_OS prior to installing Windows. This ensures Windows won't overwrite the Pop!\_OS bootloader, and helps avoid accidentally overwriting Pop!\_OS.
+For the safest experience, power off your machine, [open the case](../guides/index.md), and remove the drive with Pop!\_OS prior to installing Windows. This ensures Windows won't overwrite the Pop!\_OS bootloader, and helps avoid accidentally overwriting Pop!\_OS.
 
 ## Install Windows
 
-Plug the [USB installer](#create-a-windows-usb-installer) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
+Plug the [USB installer](#create-a-windows-usb-installer) into your machine, then power on while holding the appropriate key to enter the [boot menu](../boot-menu/index.md):
 
 - `Esc` for laptops with Open Firmware
 - `F7` for laptops with proprietary firmware
@@ -350,7 +350,7 @@ See [additional setup](#additional-setup-for-windows-not-in-vm) for next steps.
 
 If you need to install both operating systems on a single drive (for example, if your computer only supports a single SSD), it is possible to install both OS's using a custom partition scheme. Pop!\_OS's full-disk encryption is not supported with this setup.
 
-Start by [installing Pop!\_OS](/articles/install-pop/), making sure to select `Don't Encrypt` during the installation process.
+Start by [installing Pop!\_OS](../install-pop/index.md), making sure to select `Don't Encrypt` during the installation process.
 
 (System76 computers shipped with Pop!\_OS give you the option of whether or not to encrypt on first boot. If you chose to encrypt at first boot, or if you reinstalled and chose to encrypt, you will need to reinstall without encrypting before proceeding. If you want to dual boot and also use full-disk encryption, you will need to [use a dedicated drive](#installing-on-a-dedicated-drive) instead.)
 
@@ -398,7 +398,7 @@ Exit out of GParted and use the top-right menu to power off the system.
 
 ### Starting the Windows installer
 
-Plug the [Windows install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](/articles/boot-menu/):
+Plug the [Windows install media](#creating-install-media) into your machine, then power on while holding the appropriate key to enter the [boot menu](../boot-menu/index.md):
 
 - `Esc` for laptops with Open Firmware
 - `F7` for laptops with proprietary firmware
@@ -548,10 +548,10 @@ Depending on how you installed Windows and which firmware your computer is runni
 
 #### Using the firmware boot menu
 
-- **Change the default OS** using the [UEFI setup menu](/articles/boot-menu/) (while booting, hold down `ESC` on Open Firmware laptops, `F2` on closed firmware laptops, `DEL` on Thelio desktops, or `F2` on Meerkat desktops.)
+- **Change the default OS** using the [UEFI setup menu](../boot-menu/index.md) (while booting, hold down `ESC` on Open Firmware laptops, `F2` on closed firmware laptops, `DEL` on Thelio desktops, or `F2` on Meerkat desktops.)
 - Navigate to the boot options and set the desired order, then save and exit.
 - If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
-- **Boot the secondary OS** using the [UEFI boot menu](/articles/boot-menu/) (while booting, hold down `ESC` on Open Firmware laptops, `F7` on closed firmware laptops, `F8` or `F12` on Thelio desktops, or `F10` on Meerkat desktops.)
+- **Boot the secondary OS** using the [UEFI boot menu](../boot-menu/index.md) (while booting, hold down `ESC` on Open Firmware laptops, `F7` on closed firmware laptops, `F8` or `F12` on Thelio desktops, or `F10` on Meerkat desktops.)
 - Select the desired OS (or the drive that it's on.)
 - If there's more than one entry for an OS or drive, try them from top to bottom until you find the one that works.
 
@@ -571,7 +571,7 @@ Systemd-boot is the bootloader used by Pop!\_OS. It can be used to select which 
 
 ## Repairing the Pop!\_OS Bootloader
 
-If Pop!\_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](/articles/bootloader) for information on repairing the Pop!\_OS bootloader.
+If Pop!\_OS stops booting or no longer appears as a boot option after the Windows installation, or after a Windows update, see [this article](../bootloader/index.md) for information on repairing the Pop!\_OS bootloader.
 
 ### Fixing the System Clock
 

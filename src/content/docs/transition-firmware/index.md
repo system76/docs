@@ -88,4 +88,4 @@ You may then follow the [steps below](#performing-the-update) to perform the upd
 
 ### Performing the update
 
-Reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update. For more information about the firmware upgrade process, please view the [Update System Firmware](/articles/system-firmware) article.
+Reboot the system using `sudo systemctl reboot` to proceed with the update, or use `sudo system76-firmware-cli unschedule` to cancel the update. For more information about the firmware upgrade process, please view the [Update System Firmware](../system-firmware/index.mdx) article.

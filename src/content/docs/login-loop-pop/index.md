@@ -41,7 +41,7 @@ If entering your decryption passphrase does not unlock your disk, one of two thi
 
 ![bad-password](img/bad-password.png)
 
-In either case, unless you have set an [alternative decryption key](https://support.system76.com/articles/advanced-luks), the drive will need to be erased and re-imaged to regain acess. This is the cost/benefit of drives secured by encryption. It's important to have current [backups](https://support.system76.com/articles/backup-files) of your files to avoid data-loss.
+In either case, unless you have set an [alternative decryption key](../advanced-luks/index.md), the drive will need to be erased and re-imaged to regain acess. This is the cost/benefit of drives secured by encryption. It's important to have current [backups](../backup-files/index.md) of your files to avoid data-loss.
 
 ### Correct Passphrase, No Login Screen
 
@@ -61,7 +61,7 @@ If you're not able to log in, the reason could be:
 * **Wrong password**: you're notified of this at the graphical login screen.
 * Something else is blocking the login.
 
-The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](/articles/password/) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](/articles/install-pop/) or contacting Support for more assistance.
+The easiest way to confirm your username is by booting into recovery mode, entering a chroot, and running `ls` in the `/home` directory, as outlined in the [Password Reset](../password/index.mdx) article. If your username and password are both correct, then something else is blocking the login. This is a difficult issue to troubleshoot, and you might want to consider backing up your files from a live disk and [Reinstalling Pop!_OS](../install-pop/index.md) or contacting Support for more assistance.
 
 After logging in, you'll be presented with a prompt showing your username, hostname, and a tilde (~) representing your home directory.
 
@@ -159,7 +159,7 @@ sudo shutdown -r now
 
 ### Recovery
 
-We have an article on accessing the Recovery Partition [here](https://support.system76.com/articles/pop-recovery/)
+We have an article on accessing the Recovery Partition [here](../pop-recovery/index.md)
 
 To access Recovery, turn your computer off, then turn it back on and hold down the space bar immediately. In the menu that appears, select PopOS Recovery, and let it boot.
 

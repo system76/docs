@@ -207,7 +207,7 @@ Once you select a disk, a "Disk options" button will appear near the top right c
 
 When you press a "Create disk image" in the drop-down menu mentioned before, you will have a pop-up appear, presenting you with choice to name the disk image you're creating and select where to put it.
 
-**NOTE** that creating a full disk-image is only available when booting from a [live disk](/articles/live-disk). You can't make changes to an internal disk or partition from which you're booting.
+**NOTE** that creating a full disk-image is only available when booting from a [live disk](../live-disk/index.md). You can't make changes to an internal disk or partition from which you're booting.
 
 ![image](img/disks-3-create-disk-image-busy.png)
 

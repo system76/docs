@@ -20,11 +20,11 @@ tableOfContents: true
 
 ### Setting your System up for Gaming
 
-Following the steps in [Gaming for Linux](/articles/linux-gaming/) article will ensure your system is setup and ready to use AMD's Fidelity SuperResolution (FSR). The most important steps are:
+Following the steps in [Gaming for Linux](../linux-gaming/index.mdx) article will ensure your system is setup and ready to use AMD's Fidelity SuperResolution (FSR). The most important steps are:
 
-1. [Enable Steam Play (Proton)](/articles/linux-gaming#enable-steam-play-proton)
-2. Get the latest version of Proton-GE via [Protonup](/articles/linux-gaming#install-protonup-to-manage-custom-proton-versions)
-3. Enable the latest version of Proton-GE by [changing the Proton version for each game](/articles/linux-gaming#changing-the-proton-version-for-a-specific-game)
+1. [Enable Steam Play (Proton)](../linux-gaming/index.mdx#enable-steam-play-proton)
+2. Get the latest version of Proton-GE via [Protonup](../linux-gaming/index.mdx#install-protonup-to-manage-custom-proton-versions)
+3. Enable the latest version of Proton-GE by [changing the Proton version for each game](../linux-gaming/index.mdx#changing-the-proton-version-for-a-specific-game)
 
 ## AMD FSR
 
@@ -81,7 +81,7 @@ Then follow the "Setup your In-game Resolution" steps above, and enjoy FSR via L
 
 ### Bottles
 
-For more information about the Bottles app refer to [this article](/articles/bottles).
+For more information about the Bottles app refer to [this article](../bottles/index.md).
 
 Bottles version 2021.10.14 and greater includes a toggle for AMD FSR in the preferences of each bottle.
 

@@ -65,20 +65,20 @@ The mainboard will not know how to access the files inside the directory. The fi
 
 Pop!\_OS extracts the files correctly by default (see screenshots below), but other extraction tools or other operating systems such as macOS may behave differently.
 
-![zipfile](img/zipfile.png)
+![zipfile](/images/open-firmware-smmstore/zipfile.png)
 
-![unzipping](img/unzip-in-progress.png)
+![unzipping](/images/open-firmware-smmstore/unzip-in-progress.png)
 
 The highlighted files pictured below (the hash will change based on file and model) are the two items that should be in the root of the USB drive.
 
-![files-unzipped](img/files-unzipped.png)
+![files-unzipped](/images/open-firmware-smmstore/files-unzipped.png)
 
 With all drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the drive(s).
 
 Once the system is put back together, it may be necessary to boot with a live image in order to repair the boot loader, if you dual-boot with Windows 10. Step by step instructions are located below below:
 
-[https://system76.com/support/articles/live-disk](/articles/live-disk)
+[https://system76.com/support/articles/live-disk](../live-disk/index.md)
 
-[https://system76.com/support/articles/bootloader](/articles/bootloader)
+[https://system76.com/support/articles/bootloader](../bootloader/index.md)
 
 If at any point you run into any errors during this process please attach photos of the errors in a [support ticket](https://system76.com/contact/support).

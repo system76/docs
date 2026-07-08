@@ -27,9 +27,9 @@ We may determine that troubleshooting has exceeded the scope of support. If that
 
 ## Arch
 
-Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver).
+Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](../system76-driver/index.md).
 
-If you want to use an AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps on this [page](/articles/system76-driver) as well.
+If you want to use an AUR helper like [Paru](https://github.com/Morganamilo/paru) then follow the steps on this [page](../system76-driver/index.md) as well.
 
 This command will install all of the packages using <u>Paru</u>.
 
@@ -155,7 +155,7 @@ paru -S system76-acpi-oled
 
 ## Fedora
 
-Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](/articles/system76-driver). The commands below will install every system76 package using the wildcard(*) use the other sections to install each package on it's own if you do not want all of the packages.
+Be sure to install the <u>System76 Driver</u> first. The steps to do that are [here](../system76-driver/index.md). The commands below will install every system76 package using the wildcard(*) use the other sections to install each package on it's own if you do not want all of the packages.
 
 ```bash
 sudo dnf install system76* firmware-manager

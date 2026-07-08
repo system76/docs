@@ -185,7 +185,7 @@ Running software updates and rebooting can ensure you're using the most recent a
 
 Sometimes, newer Linux firmware packages will contain bux fixes that aren't yet in the standard software repositories. Newer Linux firmware packages can be downloaded from here:
 
-[http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/](http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/)
+[https://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/](https://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/)
 
 Then, they can be installed with this command (filling in the version numbers in the filename as appropriate):
 
@@ -197,7 +197,7 @@ Rebooting is required to load the newly installed firmware.
 
 ### Configuration Issues
 
-Beyond forgetting and re-pairing deivces, you can check if any local configuration files are causing problems with a device by creating a [test user](/articles/other-accounts) or booting from a [live disk](/articles/live-disk) to see if Bluetooth works in either case. If it does, config files in your normal user account may need to be deleted.
+Beyond forgetting and re-pairing deivces, you can check if any local configuration files are causing problems with a device by creating a [test user](../other-accounts/index.md) or booting from a [live disk](../live-disk/index.md) to see if Bluetooth works in either case. If it does, config files in your normal user account may need to be deleted.
 
 ### File Transfer
 

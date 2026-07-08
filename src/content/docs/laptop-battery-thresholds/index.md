@@ -20,7 +20,7 @@ Charging thresholds allow your System76 laptop to avoid charging the battery unt
 
 The default charging profile for System76 laptops with Open Firmware has a start threshold of 90 and a stop threshold of 100. This increases battery longevity while keeping the battery very close to a full charge.
 
-To determine if your laptop has Open Firmware or proprietary firmware, see [this article](/articles/open-firmware-systems). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
+To determine if your laptop has Open Firmware or proprietary firmware, see [this article](../open-firmware-systems/index.md). (If a system has Open Firmware, then it must also have Open EC to work with charging thresholds.) See [Charging Thresholds](#configuring-charging-thresholds-open-firmware) for Open Firmware systems or [FlexiCharger](#configuring-flexicharger-proprietary-firmware) for proprietary firmware systems.
 
 ## Models that do not support either Charging Thresholds or FlexiCharge
 

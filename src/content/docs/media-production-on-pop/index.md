@@ -40,7 +40,7 @@ Install Directly From the Pop!\_Shop
 
 DaVinci Resolve 16 is the world’s only solution that combines professional 8K editing, color correction, visual effects and audio post production all in one software tool.
 
-See installation instructions [here](/articles/install-davinci-resolve/). -->
+See installation instructions [here](../install-davinci-resolve/index.md). -->
 
 ### Godot Game Engine
 
@@ -54,7 +54,7 @@ Install Directly From the Pop!\_Shop
 
 Lightworks is a non-linear editing system for editing and mastering digital video. It was an early developer of computer-based non-linear editing systems, and has been in development since 1989 and won a 2017 EMMY Award for pioneering digital nonlinear editing.
 
-See installation instructions [here](/articles/install-lightworks/).
+See installation instructions [here](../install-lightworks/index.md).
 
 ### OBS Studio
 

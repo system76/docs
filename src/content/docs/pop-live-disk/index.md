@@ -21,11 +21,11 @@ tableOfContents: true
 
 Pop!_OS is remarkably flexible. You can run a full version of Pop!_OS from a USB drive (often known as a thumb drive, flash drive, or USB stick) in what's known as a *live environment*. Using a live environment (live disk) is useful for:
 
-- [Installing Pop!_OS](/articles/install-pop/)
+- [Installing Pop!_OS](../install-pop/index.md)
 - Recovering your existing operating system
 - Backing up files when you can't boot
-- [Determining if an issue is caused by hardware or software](/articles/hardware-failure/)
-- [Fixing the boot loader](/articles/bootloader/)
+- [Determining if an issue is caused by hardware or software](../hardware-failure/index.md)
+- [Fixing the boot loader](../bootloader/index.md)
 
 A live disk is a handy tool to have around!
 
@@ -68,7 +68,7 @@ After creating the live disk, insert the USB into your computer, then reboot or 
  Firmware             | Laptops                                                               | Desktops                                              |
  -------------------- | --------------------------------------------------------------------- | ----------------------------------------------------- |
  Proprietary Firmware | Hold <kbd>F7</kbd>/<kbd>F1</kbd>/<kbd>F2</kbd> | Hold <kbd>F12</kbd>, <kbd>F8</kbd>, or <kbd>F10</kbd>                        |
- [Open Firmware](https://support.system76.com/articles/open-firmware-systems)        | Hold <kbd>Esc</kbd>                                            |
+ [Open Firmware](../open-firmware-systems/index.md)        | Hold <kbd>Esc</kbd>                                            |
 
 If done correctly, you should see a boot device selection menu, like one of the following images.
 

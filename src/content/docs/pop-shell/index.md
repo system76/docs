@@ -109,4 +109,4 @@ gsettings set org.gnome.mutter overlay-key ''
 sudo pamac install gnome-shell-extension-pop-shell
 ```
 
-To learn about <u>Pop Shell</u>'s keyboard shortcuts, you can view this [support article](/articles/pop-keyboard-shortcuts/). You can also view <u>Pop Shell</u>'s source code [here](https://github.com/pop-os/shell).
+To learn about <u>Pop Shell</u>'s keyboard shortcuts, you can view this [support article](../pop-keyboard-shortcuts/index.mdx). You can also view <u>Pop Shell</u>'s source code [here](https://github.com/pop-os/shell).

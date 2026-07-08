@@ -187,3 +187,5 @@ dist
 
 .pnpm-store/
 .vscode/settings.json
+.playwright*/
+.claude/

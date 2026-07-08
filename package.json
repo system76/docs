@@ -23,6 +23,7 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
+    "@playwright/cli": "^0.1.15",
     "prettier": "^3.8.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-organize-imports": "^4.3.0"

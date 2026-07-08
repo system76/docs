@@ -15,7 +15,7 @@ const site = import.meta.env.PROD
 export default defineConfig({
     integrations: [
         starlight({
-            title: "System76 Technical Documentation",
+            title: "System76 Support Documentation",
             logo: {
                 light: "./src/assets/img/system76_logo-light.svg",
                 dark: "./src/assets/img/system76_logo-dark.svg",
@@ -101,9 +101,6 @@ export default defineConfig({
                     base,
                     collectionBase: false,
                 }),
-                // wrapImagesWithOriginals({
-                //     base,
-                // }),
             ],
         }),
     },

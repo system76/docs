@@ -12,21 +12,22 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@astrojs/markdown-satteri": "^0.3.3",
-    "@astrojs/starlight": "^0.41.0",
+    "@astrojs/markdown-satteri": "^0.3.5",
+    "@astrojs/starlight": "^0.41.5",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
-    "@iconify-json/simple-icons": "^1.2.89",
-    "@system76/satteri-relative-markdown-links": "^1.0.0",
-    "astro": "^7.0.2",
+    "@iconify-json/simple-icons": "^1.2.92",
+    "@system76/satteri-relative-markdown-links": "^1.1.0",
+    "astro": "^7.1.6",
     "astro-icon": "^1.1.5",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "vite-plugin-static-copy": "^4.1.1"
   },
   "devDependencies": {
-    "@playwright/cli": "^0.1.15",
-    "prettier": "^3.8.4",
+    "@playwright/cli": "^0.1.17",
+    "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-organize-imports": "^4.3.0"
   },
-  "packageManager": "pnpm@11.10.0+sha512.0b7f8b98060031904c017e3a41eb187a16d40eeb829b95c4f8cb03681761fc4ab53dd219115b9b447f4dce1a05a214764461e7d3703392a9f32f9511ce8c86c8"
+  "packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c"
 }

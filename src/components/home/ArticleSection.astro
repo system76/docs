@@ -1,0 +1,49 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ArticleListing from './ArticleListing.astro';
+
+interface Props {
+    id: string;
+    title: string;
+    description?: string;
+    articles: CollectionEntry<'docs'>[];
+    /** Matches the old site's split between sys-article-h2 (standalone groups like Community Articles) and sys-article-h3 (nested groups like Getting Started with Pop!_OS). */
+    level?: 2 | 3;
+}
+
+const { id, title, description, articles, level = 2 } = Astro.props;
+const Heading = level === 3 ? 'h3' : 'h2';
+---
+
+{articles.length > 0 && (
+    <section>
+        <Heading id={id}>{title}</Heading>
+        {description && <p class="description">{description}</p>}
+        <ul class="listing-grid">
+            {articles.map((article) => <ArticleListing entry={article} />)}
+        </ul>
+    </section>
+)}
+
+<style>
+    section {
+        margin-block: 2.5rem;
+    }
+
+    .description {
+        color: var(--sl-color-gray-3);
+    }
+
+    .listing-grid {
+        display: grid;
+        gap: 1rem 2rem;
+        margin: 1.5rem 0 0;
+        padding: 0;
+    }
+
+    @media (min-width: 50rem) {
+        .listing-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>

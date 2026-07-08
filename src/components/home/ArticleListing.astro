@@ -1,0 +1,71 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+    entry: CollectionEntry<'docs'>;
+}
+
+const { entry } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const href = `${base}/${entry.id}/`;
+---
+
+<li>
+    <a href={href}>
+        <p class="title">{entry.data.title}</p>
+        {entry.data.description && <p class="description">{entry.data.description}</p>}
+    </a>
+</li>
+
+<style>
+    li {
+        list-style: none;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+
+    a:hover .title {
+        text-decoration: underline;
+    }
+
+    /*
+     * Sizing ported from the old Nuxt site's sys-article-p Tailwind class
+     * (shared by both the title and description here), including its sm
+     * (40rem) and xl (80rem) responsive breakpoints.
+     */
+    .title,
+    .description {
+        margin: 0;
+        font-size: 1rem; /* 16px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .title {
+        font-weight: 700;
+        color: var(--sl-color-white);
+    }
+
+    .description {
+        margin-top: 0.25rem;
+        color: var(--sl-color-gray-3);
+    }
+
+    @media (min-width: 40rem) {
+        .title,
+        .description {
+            font-size: 1.125rem; /* 18px */
+            line-height: 2rem; /* 32px */
+        }
+    }
+
+    @media (min-width: 80rem) {
+        .title,
+        .description {
+            font-size: 1.25rem; /* 20px */
+            line-height: 2.25rem; /* 36px */
+        }
+    }
+</style>

@@ -15,12 +15,14 @@ section: community
 tableOfContents: true
 ---
 
+import { Icon } from "astro-icon/components";
+
 In this article we will setup [Howdy](https://github.com/Boltgolt/howdy) - open source face authentication tool.
 Please make sure your webcam works before you start installation. An article about webcam troubleshooting can be found [here](/content/webcam.md).
 
 ## Installation on Pop!\_OS, Ubuntu or any other Ubuntu based distribution
 
-Firstly, we will need a terminal. You can open it by pressing Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> on your keyboard or searching for terminal app in your application menu.
+Firstly, we will need a terminal. You can open it by pressing Super Key <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd> on your keyboard or searching for terminal app in your application menu.
 
 Then, adding a Howdy PPA is needed so our system knows where to get the app:
 
@@ -134,7 +136,7 @@ sudo howdy add
 
 ### Howdy always says "Timeout is reached" and never identifies you
 
-You can try lowering certainty level of howdy--in by editing it's configuration file. Hit the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and <kbd>T</kbd> to open a terminal window.
+You can try lowering certainty level of howdy--in by editing it's configuration file. Hit the Super Key <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd> and <kbd>T</kbd> to open a terminal window.
 Once you get there, type in:
 
 ```bash
@@ -173,7 +175,7 @@ But replacing ID with number you memorized a step before.
 ### Uninstalling Howdy
 
 If you, for some reason, want to uninstall Howdy.
-Open a terminal window by pressing the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and <kbd>T</kbd> or searching for a Terminal app in your applications menu. Type in:
+Open a terminal window by pressing the Super Key <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd> and <kbd>T</kbd> or searching for a Terminal app in your applications menu. Type in:
 
 ```bash
 sudo howdy clear

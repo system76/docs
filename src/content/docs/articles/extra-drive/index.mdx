@@ -21,6 +21,8 @@ redirect_from:
   - /extradrive
 ---
 
+import { Icon } from "astro-icon/components";
+
 If you've added a second drive to your computer when you originally ordered it, then it came pre-formatted and ready for use; no additional setup is required. The drive will be made available when you first open it up after each time you start your computer, and will remain mounted until the next start/boot or until you click the **eject (⏏) icon**. If you prefer to have the drive made available (mounted) automatically every time you start your computer, this is possible with some configuration changes.  
 
 Auto-mounting is a per user configuration, and is optional.  Extra drives can always be accessed by clicking on them in the file explorer, which will mount the drive if not currently mounted.  
@@ -35,7 +37,7 @@ Once you've made a mount point, double click it to open it and ensure that it is
 
 ## Locate The Drive
 
-Press the Super Key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
+Press the Super Key <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. It should open up a window similar to the one below:
 
 ![Disks Application](img/Step1.png)
 
@@ -47,7 +49,7 @@ If this is a new drive, and it is not formatted, it will need to be formatted be
 
 ## Open Extra Drive Mount Options
 
-Press the Super key <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. Click on the Extra Drive Partition under "Volumes", then click on the Gear icon <font-awesome-icon icon="cog"></font-awesome-icon> to open the options menu for the Volume. Then click on **Edit Mount Options**.
+Press the Super key <kbd><Icon name="fa6-brands:ubuntu" /></kbd> and then type in <u>Disks</u> and press <kbd>Enter</kbd>. Click on the Extra Drive Partition under "Volumes", then click on the Gear icon <Icon name="fa6-solid:gear" /> to open the options menu for the Volume. Then click on **Edit Mount Options**.
 
 ![Volume Options Menu](img/Step2.png)
 
@@ -62,11 +64,11 @@ Option                                     | Value
 Mount at startup                           | Checked ☑
 Show in user interface                     | Checked ☑
 Require additional authorization to mount  | Unchecked ☐
-Display Name                               | *{leave blank}*
-Icon Name                                  | *{leave blank}*
-Symbolic Icon Name                         | *{leave blank}*
-*{unlabeled field}*                        | `nosuid,nodev,nofail,x-gvfs-show`*
-Mount Point                                | `/home/...`*{from step 2}*
+Display Name                               | *\{leave blank\}*
+Icon Name                                  | *\{leave blank\}*
+Symbolic Icon Name                         | *\{leave blank\}*
+*\{unlabeled field\}*                        | `nosuid,nodev,nofail,x-gvfs-show`*
+Mount Point                                | `/home/...`*\{from step 2\}*
 Identify As                                | `/dev/disk/by-uuid/...`
 Filesystem Type                            | `auto`**
 

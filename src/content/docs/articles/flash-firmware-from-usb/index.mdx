@@ -15,6 +15,8 @@ section: about-your-computer
 tableOfContents: true
 ---
 
+import { Icon } from "astro-icon/components";
+
 ## Flashing Firmware from a USB Flash Drive
 
 This article covers flashing, or installing, firmware onto your System76 computer using a USB flash drive. These instructions are written for firmware files provided directly by System76. If you are experiencing behavior on your System76 computer that you believe is due to the firmware you are using, please [contact System76 support](https://system76.com/my-account/support-tickets/new).
@@ -54,7 +56,7 @@ Firmware is typically packaged in the form of a zip archive, but support will oc
 
 We can do this using the USB Flasher (Popsicle) application.
 
-Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'usb' to launch the Popsicle application.
+Press the <kbd><Icon name="simple-icons:popos" /></kbd>/<kbd><Icon name="fa6-brands:ubuntu" /></kbd> key then type 'usb' to launch the Popsicle application.
 
 ![Popsicle](img/popsicle.png)
 
@@ -70,7 +72,7 @@ Now select the USB Flash Drive that you are copying the file(s) to.
 
 We do this by "restoring" the image to the drive using the Disks application.
 
-Press the <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>/<kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd> key then type 'disks' to launch the Disks application.
+Press the <kbd><Icon name="simple-icons:popos" /></kbd>/<kbd><Icon name="fa6-brands:ubuntu" /></kbd> key then type 'disks' to launch the Disks application.
 
 ![Disks](img/disks.png)
 

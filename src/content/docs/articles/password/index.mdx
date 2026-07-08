@@ -18,6 +18,8 @@ section: software
 tableOfContents: true
 ---
 
+import { Icon } from "astro-icon/components";
+
 ## Changing user password
 
 If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
@@ -38,7 +40,7 @@ If you are using Ubuntu we can boot from a live disk and [here](/articles/live-d
 
 #### Mounting the Installed OS
 
-On Pop!\_OS press <kbd><font-awesome-icon :icon="['fab', 'pop-os']"></font-awesome-icon></kbd>+<kbd>T</kbd> or on Ubuntu press <kbd><font-awesome-icon :icon="['fab', 'ubuntu']"></font-awesome-icon></kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
+On Pop!\_OS press <kbd><Icon name="simple-icons:popos" /></kbd>+<kbd>T</kbd> or on Ubuntu press <kbd><Icon name="fa6-brands:ubuntu" /></kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> to open a terminal, and type in these commands:
 
 ```bash
 lsblk

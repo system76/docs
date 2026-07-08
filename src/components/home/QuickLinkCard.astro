@@ -1,0 +1,126 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface QuickLink {
+    icon: string;
+    title: string;
+    description: string;
+    href: string;
+}
+
+interface Props {
+    title: string;
+    description: string;
+    links: QuickLink[];
+}
+
+const { title, description, links } = Astro.props;
+---
+
+<article class="quick-link-card">
+    <h3>{title}</h3>
+    <p class="description">{description}</p>
+    <ul class="links">
+        {
+            links.map((link) => (
+                <li>
+                    <a href={link.href} target="_blank" rel="noopener noreferrer">
+                        <span class="icon">
+                            <Icon name={link.icon} />
+                        </span>
+                        <span class="text">
+                            <span class="link-title">{link.title}</span>
+                            <span class="link-description">{link.description}</span>
+                        </span>
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</article>
+
+<style>
+    /*
+     * `subgrid` adopts the row tracks of the parent `.quick-links-grid`, so the
+     * title/description/link rows are sized to fit the tallest sibling in that
+     * row across every card, keeping `.links` pinned to the same position
+     * regardless of how much text is in either the description above or a
+     * link's own description below it.
+     */
+    .quick-link-card {
+        display: grid;
+        grid-row: span 3;
+        grid-template-rows: subgrid;
+        row-gap: 0.75rem;
+        padding: clamp(1rem, calc(0.125rem + 3vw), 2.5rem);
+        border: 1px solid var(--sl-color-gray-5);
+        background-color: var(--sl-color-black);
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .description {
+        margin: 0;
+        color: var(--sl-color-gray-3);
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: -0.5rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        transition: background-color 0.15s ease-in-out;
+    }
+
+    a:hover {
+        background-color: var(--sl-color-gray-6);
+    }
+
+    a:hover .icon {
+        background-color: var(--sl-color-accent);
+    }
+
+    .icon {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 999px;
+        background-color: var(--sl-color-gray-2);
+        color: var(--sl-color-black);
+        font-size: 1.1rem;
+        transition: background-color 0.15s ease-in-out;
+    }
+
+    .link-title {
+        display: block;
+        font-weight: 700;
+        line-height: 1.5;
+        color: var(--sl-color-white);
+    }
+
+    .link-description {
+        display: block;
+        color: var(--sl-color-gray-3);
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+</style>

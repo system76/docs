@@ -61,7 +61,9 @@ If it's stopped, enable it to auto-start and immediately start it using the foll
 sudo systemctl enable --now bluetooth
 ```
 
-If Bluetooth does not enable after that command, try the following steps:
+## Desktop computer power reset
+
+This solution is not applicable to laptops and in some cases can be resolved via these steps. 
 
 - Shut down the computer.
 - Unplug the computer.

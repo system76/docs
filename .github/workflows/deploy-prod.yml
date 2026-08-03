@@ -36,6 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_ENV: production
+          BUILD_ENV: production
 
       - name: Debug
         run: ls -la dist/_nuxt/content 2>&1 || true

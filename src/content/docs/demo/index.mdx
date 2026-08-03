@@ -1,0 +1,9 @@
+---
+title: Asciinema Demo
+description: Test page for the colocated asciinema recording component.
+---
+
+import AsciinemaPlayer from "../../../components/AsciinemaPlayer.astro";
+import demoCast from "./casts/demo.cast?url";
+
+<AsciinemaPlayer src={demoCast} cols={173} rows={80} />

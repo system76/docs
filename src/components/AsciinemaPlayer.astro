@@ -1,0 +1,54 @@
+---
+import "asciinema-player/dist/bundle/asciinema-player.css";
+
+interface Props {
+    src: string;
+    rows?: number;
+    cols?: number;
+    theme?: string;
+    autoPlay?: boolean;
+    loop?: boolean | number;
+    poster?: string;
+    idleTimeLimit?: number;
+    speed?: number;
+    terminalFontSize?: string;
+}
+
+const {
+    src,
+    rows,
+    cols,
+    theme,
+    autoPlay,
+    loop,
+    poster,
+    idleTimeLimit,
+    speed,
+    terminalFontSize,
+} = Astro.props;
+
+const opts = {
+    rows,
+    cols,
+    theme,
+    autoPlay,
+    loop,
+    poster,
+    idleTimeLimit,
+    speed,
+    terminalFontSize,
+};
+---
+
+<div class="asciinema-player-embed" data-src={src} data-opts={JSON.stringify(opts)}></div>
+
+<script>
+    import { create } from "asciinema-player";
+
+    for (const el of document.querySelectorAll<HTMLElement>(
+        ".asciinema-player-embed:not([data-initialized])",
+    )) {
+        el.dataset.initialized = "true";
+        create(el.dataset.src!, el, JSON.parse(el.dataset.opts ?? "{}"));
+    }
+</script>

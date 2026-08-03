@@ -1,6 +1,4 @@
 :root {
-    --sl-content-width: 47rem;
-
     /* Brand typography, migrated from the old Nuxt site's @system76/design fonts. */
     --sl-font: var(--font-fira-sans), var(--sl-font-system);
     --sl-font-mono: var(--font-ubuntu-mono), var(--sl-font-system-mono);

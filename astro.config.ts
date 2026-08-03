@@ -42,6 +42,7 @@ export default defineConfig({
                 PageTitle: "./src/components/PageTitle.astro",
                 ContentPanel: "./src/components/ContentPanel.astro",
                 Search: "./src/components/Search.astro",
+                
             },
             customCss: [
                 "./src/assets/css/icons.css",

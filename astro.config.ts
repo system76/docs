@@ -5,11 +5,25 @@ import { satteriRelativeMarkdownLinks } from "@system76/satteri-relative-markdow
 import { satteri } from "@astrojs/markdown-satteri";
 import icon from "astro-icon";
 
+import googleAnalytics from "./src/plugins/googleAnalytics.ts"
+
 const base = "support";
 
-const site = import.meta.env.PROD
-    ? `https://system76.com/${base}`
-    : `http://localhost:4321/${base}`;
+const buildEnv = process.env.BUILD_ENV ?? "local";
+
+const siteByBuildEnv = {
+    local: `http://localhost:4321/${base}`,
+    staging: `https://genesis76.com/${base}`,
+    production: `https://system76.com/${base}`,
+};
+
+const site = siteByBuildEnv[buildEnv as keyof typeof siteByBuildEnv];
+
+if (!(buildEnv in siteByBuildEnv)) {
+    throw new Error(
+        `Invalid BUILD_ENV "${buildEnv}", expected one of: ${Object.keys(siteByBuildEnv).join(", ")}`,
+    );
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,7 +36,7 @@ export default defineConfig({
                 replacesTitle: true,
             },
             lastUpdated: true,
-            routeMiddleware: "./src/routeMiddleware.ts",
+            routeMiddleware: "./src/plugins/sidebarMiddleware.ts",
             components: {
                 Head: "./src/components/Head.astro",
                 PageTitle: "./src/components/PageTitle.astro",
@@ -56,6 +70,7 @@ export default defineConfig({
                     href: "https://github.com/system76",
                 },
             ],
+            head: [...googleAnalytics(buildEnv)],
         }),
         icon(),
     ],

@@ -8,7 +8,7 @@ export default {
 
     // Let SVGs skip validation entirely — sharp can't process them
     validateOptions(options, config) {
-        if (options.src?.format !== "svg") {
+        if (!["svg", "gif"].includes(options.src?.format)) {
             options.format = "avif";
         }
         return sharpService.validateOptions(options, config);

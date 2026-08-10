@@ -63,7 +63,7 @@ sudo systemctl enable --now bluetooth
 
 ## Desktop computer power reset
 
-This solution is not applicable to laptops and in some cases can be resolved via these steps. 
+Bluetooth issues on desktop computers can sometimes be fixed by powering off the machine and fully draining power from the capacitors. This method is not applicable to laptop computers since they have a built-in main battery.
 
 - Shut down the computer.
 - Unplug the computer.

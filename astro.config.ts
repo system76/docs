@@ -34,6 +34,7 @@ export default defineConfig({
                 light: "./src/assets/img/system76_logo-light.svg",
                 dark: "./src/assets/img/system76_logo-dark.svg",
                 replacesTitle: true,
+                alt: "System76 Logo"
             },
             lastUpdated: true,
             routeMiddleware: "./src/plugins/sidebarMiddleware.ts",

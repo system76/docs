@@ -1,0 +1,115 @@
+---
+import { getCollection } from 'astro:content';
+import Hero from './Hero.astro';
+import ArticleSection from './ArticleSection.astro';
+import QuickLinkCard from './QuickLinkCard.astro';
+
+const articles = (await getCollection('docs', (entry) => !entry.data.hidden)).sort((a, b) =>
+    a.data.title.localeCompare(b.data.title)
+);
+
+const articlesForSection = (section: string) => articles.filter((entry) => entry.data.section === section);
+
+/* Nested groups (sys-article-h3 on the old site, one size down from the standalone groups below). */
+const nestedSections: { id: string; title: string; section: string; description?: string }[] = [
+    { id: 'pop', title: 'Getting Started with Pop!_OS', section: 'pop' },
+    { id: 'about-your-computer', title: 'System76 Hardware', section: 'about-your-computer' },
+    { id: 'media', title: 'Media', section: 'media' },
+    { id: 'software-troubleshooting', title: 'Software Troubleshooting', section: 'software-troubleshooting' },
+    { id: 'network-troubleshooting', title: 'Network Troubleshooting', section: 'network-troubleshooting' },
+    { id: 'hardware-troubleshooting', title: 'Hardware Troubleshooting', section: 'hardware-troubleshooting' },
+    { id: 'software', title: 'Software Installation and Tips', section: 'software' },
+    { id: 'hardware', title: 'Hardware Configuration', section: 'hardware' },
+    { id: 'switching', title: 'Switching To Linux', section: 'switching' },
+    { id: 'ubuntu', title: 'Getting Started with Ubuntu', section: 'ubuntu' },
+];
+
+/* Standalone groups (sys-article-h2 on the old site). */
+const standaloneSections = [
+    {
+        id: 'community',
+        title: 'Community Articles',
+        description:
+            'The following documents have been graciously submitted by community members. They have not been checked for accuracy, completeness, or style. Please contact the contributors through their GitHub accounts for any questions.',
+        section: 'community',
+    },
+    { id: 'case-studies', title: 'Case Studies', section: 'case-studies' },
+];
+---
+
+<div class="not-content">
+    <Hero />
+
+    <div class="quick-links">
+        <div class="quick-links-grid">
+            <QuickLinkCard
+                title="Service Manuals"
+                description="Detailed parts and repair information for System76 hardware."
+                links={[
+                    {
+                        icon: 'fa6-solid:screwdriver',
+                        title: 'System76 Tech Docs',
+                        description: 'Diagrams and components for System76 hardware.',
+                        href: 'https://system76.com/tech-docs/',
+                    },
+                ]}
+            />
+            <QuickLinkCard
+                title="Contact Us"
+                description="Can't find what you're looking for in our support articles? Our team is here to help."
+                links={[
+                    {
+                        icon: 'fa6-solid:ticket',
+                        title: 'Open a Support Ticket',
+                        description: 'Get expert help from real support humans if you own a System76 computer.',
+                        href: 'https://system76.com/my-account/support-tickets/new',
+                    },
+                ]}
+            />
+        </div>
+    </div>
+
+    {
+        nestedSections.map((section) => (
+            <ArticleSection
+                id={section.id}
+                title={section.title}
+                description={section.description}
+                articles={articlesForSection(section.section)}
+                level={3}
+            />
+        ))
+    }
+
+    {
+        standaloneSections.map((section) => (
+            <ArticleSection
+                id={section.id}
+                title={section.title}
+                description={section.description}
+                articles={articlesForSection(section.section)}
+                level={2}
+            />
+        ))
+    }
+</div>
+
+<style>
+    .quick-links {
+        margin-top: 2rem;
+    }
+
+    .quick-links-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* title / description / links, shared with each card via `subgrid` */
+        grid-template-rows: auto auto auto;
+        gap: 1.5rem;
+    }
+
+    @media (min-width: 50rem) {
+        .quick-links-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>

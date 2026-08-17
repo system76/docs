@@ -1,0 +1,17 @@
+---
+import Default from '@astrojs/starlight/components/ContentPanel.astro';
+---
+
+<Default><slot /></Default>
+
+<style>
+    /*
+     * `:empty` won't match here: when PageTitle hides itself, Page.astro's own
+     * whitespace between the conditional expressions leaves a text node behind.
+     * Checking for an element child directly (rather than nesting :has() inside
+     * :has(), which is invalid) ignores that text node.
+     */
+    :global(.content-panel:not(:has(.sl-container > *))) {
+        display: none;
+    }
+</style>

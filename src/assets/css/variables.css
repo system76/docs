@@ -1,0 +1,162 @@
+:root {
+    /* Brand typography, migrated from the old Nuxt site's @system76/design fonts. */
+    --sl-font: var(--font-fira-sans), var(--sl-font-system);
+    --sl-font-mono: var(--font-ubuntu-mono), var(--sl-font-system-mono);
+    --sl-heading-font: var(--font-roboto-slab), serif;
+
+    /* Dark mode colors. */
+    --sl-color-accent-low: #0c292c;
+    --sl-color-accent: #007883;
+    --sl-color-accent-high: #b0cfd4;
+    --sl-color-white: #ffffff;
+    --sl-color-gray-1: #f1ede9;
+    --sl-color-gray-2: #ccc7c3;
+    --sl-color-gray-3: #aba299;
+    --sl-color-gray-4: #5f564e;
+    --sl-color-gray-5: #3e372f;
+    --sl-color-gray-6: #2c251e;
+    --sl-color-black: #1b1714;
+}
+
+:root[data-theme="light"] {
+    /* Light mode colors. */
+    --sl-color-accent-low: #c4dcdf;
+    --sl-color-accent: #00565f;
+    --sl-color-accent-high: #06393f;
+    --sl-color-white: #1b1714;
+    --sl-color-gray-1: #2c251e;
+    --sl-color-gray-2: #3e372f;
+    --sl-color-gray-3: #5f564e;
+    --sl-color-gray-4: #938a81;
+    --sl-color-gray-5: #c6c1bc;
+    --sl-color-gray-6: #f1ede9;
+    --sl-color-gray-7: #f8f6f4;
+    --sl-color-black: #ffffff;
+}
+
+/*
+ * Full typographic scale ported from the old Nuxt site's sys-article-h1..h6
+ * Tailwind classes (tailwind.config.js), including their sm (40rem) and xl
+ * (80rem) responsive breakpoints. Colors are intentionally left to Starlight's
+ * own theme-aware --sl-color-* tokens rather than the old hardcoded hex
+ * values, since this site (unlike the old one) supports dark mode.
+ *
+ * Scoped to `main` so this only touches the page title and article/homepage
+ * content, not Starlight's own UI chrome (the right sidebar's "On this page"
+ * TOC heading, etc. live in a sibling <aside>, outside <main>).
+ */
+main h1 {
+    font-weight: 200;
+    font-size: 2.25rem; /* 36px */
+    line-height: 1.75rem; /* 28px */
+}
+
+main h2 {
+    font-family: var(--sl-heading-font);
+    font-weight: 400;
+    font-size: 2rem; /* 32px */
+    line-height: 2.25rem; /* 36px */
+}
+
+main h3 {
+    font-family: var(--sl-heading-font);
+    font-weight: 400;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+
+main h4 {
+    font-family: var(--sl-heading-font);
+    font-weight: 700;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+main h5 {
+    font-family: var(--sl-heading-font);
+    font-weight: 700;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5rem; /* 24px */
+}
+
+main h6 {
+    font-family: var(--sl-heading-font);
+    font-weight: 700;
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+}
+
+/* sys-article-p, same scale already used for the homepage's article listings. */
+.sl-markdown-content p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.75rem; /* 28px */
+}
+
+@media (min-width: 40rem) {
+    main h1 {
+        font-size: 2.625rem; /* 42px */
+        line-height: 3rem; /* 48px */
+    }
+
+    main h2 {
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.625rem; /* 42px */
+    }
+
+    main h3 {
+        font-size: 1.75rem; /* 28px */
+        line-height: 2.25rem; /* 36px */
+    }
+
+    main h4 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+    }
+
+    main h5 {
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .sl-markdown-content p {
+        font-size: 1.125rem; /* 18px */
+        line-height: 2rem; /* 32px */
+    }
+}
+
+@media (min-width: 80rem) {
+    main h1 {
+        font-size: 3rem; /* 48px */
+        line-height: 3.375rem; /* 54px */
+    }
+
+    main h2 {
+        font-size: 2.5rem; /* 40px */
+        line-height: 3rem; /* 48px */
+    }
+
+    main h3 {
+        font-size: 2rem; /* 32px */
+        line-height: 2.5rem; /* 40px */
+    }
+
+    main h4 {
+        font-size: 1.75rem; /* 28px */
+        line-height: 2rem; /* 32px */
+    }
+
+    main h5 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    main h6 {
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.5rem; /* 24px */
+    }
+
+    .sl-markdown-content p {
+        font-size: 1.25rem; /* 20px */
+        line-height: 2.25rem; /* 36px */
+    }
+}

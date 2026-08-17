@@ -1,0 +1,24 @@
+---
+import Search from '@astrojs/starlight/components/Search.astro';
+import HeroImage from './HeroImage.astro'
+import heroLight from "../../assets/img/support_page_hero-light.svg";
+import heroDark from "../../assets/img/support_page_hero-dark.svg";
+---
+
+<div>
+    <HeroImage light={heroLight} dark={heroDark} />
+    <Search class="homepage-search not-content"/>
+</div>
+
+<style>
+    :global(.homepage-search button[data-open-modal]) {
+        margin-top: 1.5rem;
+    }
+
+    @media (min-width: 50rem) {
+        :global(.homepage-search button[data-open-modal]) {
+            max-width: 75%;
+            margin-inline: auto;
+        }
+    }
+</style>

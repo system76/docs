@@ -1,0 +1,76 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { Icon } from 'astro-icon/components';
+import { docsHomeHref } from '../plugins/sidebarMiddleware';
+
+const isHomepage = Astro.locals.starlightRoute.id === '';
+// Not `siteTitleHref` — the middleware repoints that at the marketing site for the
+// header logo, while this link stays on the docs home.
+const homeHref = docsHomeHref;
+---
+
+{!isHomepage && (
+	<div class="title-row">
+		<a class="back-link" href={homeHref}>
+			<Icon name="fa6-solid:arrow-left" />
+			Support
+		</a>
+		<Default><slot /></Default>
+	</div>
+)}
+
+<style>
+	.back-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 0.5rem;
+		/*
+		 * Sized to sit closer to the title without borrowing its style: the title's
+		 * own weight/scale comes from `main h1` in variables.css, this keeps the
+		 * body font at its default weight.
+		 */
+		font-size: 1.5rem;
+		color: var(--sl-color-gray-3);
+		text-decoration: none;
+	}
+
+	.back-link:hover {
+		color: var(--sl-color-white);
+	}
+
+	.back-link svg {
+		width: 0.8em;
+		height: 0.8em;
+	}
+
+	/*
+	 * Starlight widens the content column to 67.5rem here because the left sidebar
+	 * is disabled site-wide (`html:not([data-has-sidebar])`), so empty gutters only
+	 * open up past ~108rem — the point where one clears this link at its full size.
+	 * Once they do, lift the back link out of the flow into the left gutter, aligned
+	 * with the header logo (both sit one `--sl-content-pad-x` in from the pane's
+	 * left edge). Below that the gutter collapses to the panel padding and the link
+	 * stays stacked above the title.
+	 */
+	@media (min-width: 108rem) {
+		/* The content panel is the full-width positioning context for the gutter. */
+		:global(.content-panel:has(.title-row)) {
+			position: relative;
+		}
+
+		.back-link {
+			position: absolute;
+			/*
+			 * The panel's only content is the title, so centering against the panel
+			 * centers against the title — offset by half of the `margin-top: 1rem`
+			 * Starlight puts on the h1, which collapses through the row and pushes
+			 * the title that much below the panel's midpoint.
+			 */
+			top: calc(50% + 0.5rem);
+			left: var(--sl-content-pad-x);
+			transform: translateY(-50%);
+			margin-bottom: 0;
+		}
+	}
+</style>

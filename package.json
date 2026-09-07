@@ -12,20 +12,20 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@astrojs/markdown-satteri": "^0.3.5",
-    "@astrojs/starlight": "^0.41.7",
+    "@astrojs/markdown-satteri": "^0.4.0",
+    "@astrojs/starlight": "^0.42.0",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
-    "@iconify-json/simple-icons": "^1.2.93",
+    "@iconify-json/simple-icons": "^1.2.94",
     "@system76/satteri-relative-markdown-links": "^1.1.0",
     "asciinema-player": "^3.17.0",
-    "astro": "^7.2.1",
-    "astro-icon": "^1.1.5",
-    "sharp": "^0.34.5",
+    "astro": "^7.3.1",
+    "astro-icon": "^1.2.0",
+    "sharp": "^0.35.4",
     "vite-plugin-static-copy": "^4.1.1"
   },
   "devDependencies": {
-    "@playwright/cli": "^0.1.18",
+    "@playwright/cli": "^0.1.19",
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-organize-imports": "^4.3.0"

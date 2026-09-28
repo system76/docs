@@ -20,16 +20,17 @@ tableOfContents: true
 ---
 
 import { Icon } from "astro-icon/components";
+import { Aside } from '@astrojs/starlight/components';
 
 ## Steam
 
 <u>Steam</u> is a popular game client released by Valve. Steam offers games that are natively compatible with Linux, and compatibility for many non-native games can be achieved using Proton.
 
-### Install Steam From the Pop!_Shop
+### Install Steam From the COSMIC Store
 
-Open the <u>Pop!_Shop</u> application then either search for Steam or by clicking the <u>Steam</u> icon on the Pop!_Shop home page. Now click the **Install** button.
+Open the <u>COSMIC Store</u> application then either search for Steam or by clicking the <u>Steam (installer)</u> icon on the COSMIC Store home page. The COSMIC Store will tell you which version of an application you are about to install and allow you to switch the version you're installing if there is a dropdown beneath the Install button like what's shown below. Steam has a System Package and Flatpak version available for installation, the System Package is recommended for this particular application. Verify that the System Package is selected and click the **Install** button.
 
-![Pop!_Shop Steam](img/pop-shop_steam.png)
+![COSMIC Store Steam](./img/cosmic-store/steam.png)
 
 Once installed, use the Applications button to search for and run <u>Steam</u>.
 
@@ -37,7 +38,7 @@ Once installed, use the Applications button to search for and run <u>Steam</u>.
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd>/<kbd>SUPER</kbd>.
 
-![Application Library](img/search-terminal.png)
+![Application Library](./img/search-terminal.png)
 
 Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
 
@@ -45,9 +46,13 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search steam
 ```
 
-![Terminal](img/terminal-steam-search.png)
+![Terminal](./img/terminal-steam-search.png)
 
-Once we find the right name for <u>Steam</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
+In the image above, we'll note that Steam has the <u>steam-installer</u> package name and the <u>steam</u> package name. <u>steam</u> is a transitional package for <u>steam-installer</u>.
+
+Installing <u>steam</u> will simply point to <u>steam-installer</u> when you install it, which means you can install either package and end up with steam installed.
+
+Now that we found the right name for <u>Steam</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
 ```bash
 sudo apt install steam
@@ -55,38 +60,58 @@ sudo apt install steam
 
 **IMPORTANT NOTE:** Be very careful when using sudo with ANY Command. It can make system wide changes so be sure to read everything before entering 'Y'.
 
-### Enable Steam Play (Proton)
-
-Proton is a compatibility layer tool which enables support for some Windows games on Linux. It's based on the WINE project with some tweaks and additions by Valve. Use the [Protondb database](https://www.protondb.com/) to confirm if a specific game has been tested and verified working using Proton. You can enable Proton in:
-
-Steam -> Settings -> Steam Play -> Check the box for "Enable Steam Play for supported titles AND "Enable Steam Play for all other titles" as pictured below:
-
-![Steam Settings](img/enable-steam-play_proton.png)
-
 ## Using Steam
 
 Once installed, use the Applications button to search for and run <u>Steam</u>.
 
+### Steam Play (Proton)
+
+#### Protondb - Game Compatibility Reviews by the Community
+Proton is a compatibility layer tool which enables support for most Windows games on Linux. It's based on the WINE project with some tweaks and additions by Valve. Use the [Protondb database](https://www.protondb.com/) to confirm if a specific game has been tested and verified working using Proton. Game compatibility is calculated into an average from community feedback for each game and assigned a medal scoring system from Platinum through Borked.
+
+Popular games with many reviews are pretty reliable, though if you are playing an obscure game where the recent or most of the reviews are many years old, you may find that compatibility has changed since then so it's important to always read the timestamps on game scores provided by users. You may find some games are rated Bronze or Silver because it previously didn't work, but has since been improved and now runs flawlessly.
+
+Similarly some users may report that you need special launch options or tweaks in order to get particular games to run properly. This makes Protondb a useful database on how to get games running if you are having issues with a particular title on Steam.
+
+If you wish, you can even sign in to protondb with your Steam account which allows you to view your entire Steam Library and check compatibility that way.
+
+![protondb's Explore Page](./img/protondb-explore.png)
+
+
+Proton can also be utilized outside of Steam for non-steam games. Proton Management for other applications is covered further into this article. Protondb does not provide ratings for games outside of Steam.
+
+#### Change Default Proton in Steam
+Proton is enabled by default on Steam so there's nothing you need to do here to start playing a game. Just click <b>Install</b> then <b>Play</b> as easily as you would in Windows to play a game on Linux.
+
+If you'd like to manage the version of Proton that you are using as the default version, you can do so in:
+
+<b>Steam -> Settings -> Compatibility</b> There is a dropdown for <b>"Default compatibility tool"</b> where you can change the default version of Proton as pictured below:
+
+![Steam Settings](./img/steam/default-proton.png)
+
+Generally we've found that <u>Proton Experimental</u> has the best results. If you need to change a proton version for a specific game, you would do that on a per-game basis in your Steam Library instead of changing that in the Settings menu for Steam as a whole. This is covered a little further below.
+
 ### Proton vs. Native
 
-![Playing a Proton Game](img/playing-proton-game.png)
+![Playing a Proton Game](./img/steam/playing-proton-game.png)
 
-![Playing a native game](img/playing-native-game.png)
+![Playing a native game](./img/steam/playing-native-game.png)
 
 From a UI standpoint, there is virtually no difference between launching a Linux Native game and a game using Proton. The first picture is of a Windows game using Proton, the second is a Linux Native game.
 Once you've enabled Steam Play, they both present the usual green "Play" button.
 
-**NOTE:** If you haven't enabled Steam Play, other options like "Stream" or a greyed-out "Download" button may be present.
 
-If you click on the "i" button in the top-right corner of the game info pane, you can see that Proton games show the message: "Runs on this computer via Steam Play" and shows the Proton version you've selected.
+![Skyrim 1](./img/steam/skyrim-info-pane.png)
 
-![Skyrim 1](img/skyrim-info-pane.png)
+![Skyrim Detail](./img/steam/steamplay-detail.png)
 
-![Skyrim Detail](img/steamplay-detail.png)
+If you click on the <b>"i" (information)</b> button in the top-right corner of the game info pane, you can see that Proton games show the message: <b>Runs on this computer via Steam Play</b> and shows the Proton version you've selected. If it reads <b>Steam Linux Linux Runtime 1.0</b> or higher, it is a native Linux version that will play when you launch the game.
+
+It will also let you know who selected the Proton version. If it says <b>by you</b>, it is using the Proton version you selected either from your default selected Proton or a version you specified for that particular game. If it says by <b>Valve Testing</b>, that means that Valve has tested the game and recommends a specified version of Proton. You can override the version Valve has selected by forcing a version of Proton for that specific game.
 
 ### Changing the Proton Version for a Specific Game
 
-It's possible to specify a certain Proton version on per game basis. You can switch between older and newer Proton versions installed on your system by the Steam client, or select custom versions of proton like ProtonGE.
+It's possible to specify a certain Proton version on per game basis. You can switch between older and newer versions of Proton installed in Steam using the Steam client, or select custom versions of proton like ProtonGE.
 
 To change the Proton version:
 
@@ -100,37 +125,57 @@ To change the Proton version:
 
 5. Select the desired Proton version from the drop down menu (as pictured below).
 
-![Compatibility Menu](img/skyrim-proton-version.png)
+![Compatibility Menu](./img/steam/skyrim-proton-version.png)
 
-### Use Protonup to Manage Custom Proton Versions
+### Manage Custom Proton Versions
 
 Valve's official Proton release may not provide optimal compatibility for specific games, or community contributors may discover improvements not yet implemented by Valve. If a game is not working with mainline or experimental versions of Proton, consider trying a community-contributed fork.
 
 - **ProtonGE** is a popular fork created by Glorious Eggroll. Glorious Eggroll tests newer games in Proton, and often implements bug fixes ahead of Valve's official releases. You can view Glorious Eggroll's Github repo for ProtonGE [here](https://github.com/GloriousEggroll/proton-ge-custom).
 
+**How to Install and update Custom Proton Versions**
+
+In order to install ProtonGE or another version of Proton, it is recommended that you use one of the following Proton management applications. You can select any of the following based on which one fits your needs best.
+
+- **ProtonUp-Qt** is a community-maintained GUI tool based on AUNaseef's CLI tool. The app allows downloading Proton versions for Steam, and WINE versions for Lutris and other game launchers. It will automatically put each of these compatibility layer versions in the correct location to be found by Steam and Lutris respectively. The ProtonUp-Qt Github repository can be found [here](https://github.com/DavidoTek/ProtonUp-Qt).
+
+- **ProtonPlus** is another community-maintained GUI tool that allows downloading Proton versions. It can be used instead of ProtonUp-Qt if you prefer it's interface. It allows downloading Proton versions and wrappers for various game launchers such as Steam, Lutris, and others. Much like ProtonUp-Qt, it automatically installs these in the correct location to be found by Steam and their respective launchers. The ProtonPlus Github repository can be found [here](https://github.com/Vysp3r/ProtonPlus)
+
 - **Protonup** is a command-line tool that installs, manages, and updates ProtonGE. Protonup is written in Python and maintained by AUNaseef in the [Pypi project directory](https://pypi.org/project/protonup/).
 
-- **ProtonUp-Qt** is a community-maintained GUI tool based on AUNaseef's CLI tool. The app allows downloading Proton versions for Steam, and WINE versions for Lutris. It will automatically put each of these compatibility layer versions in the correct location to be found by Steam and Lutris respectively. The ProtonUp-Qt Github repository can be found [here](https://github.com/DavidoTek/ProtonUp-Qt).
+#### Install ProtonUp-Qt
+
+ProtonUP-Qt is available as a Flatpak in the COSMIC Store. Launch the COSMIC Store, search for "ProtonUp", and click the `Install` button.
+
+![COSMIC Store ProtonUp-Qt](./img/cosmic-store/protonup-qt.png)
+
+#### Install ProtonPlus
+
+ProtonPlus is available as a Flatpak in the COSMIC Store. Launch the COSMIC Store, search for "ProtonPlus", and click the `Install` button.
+
+![COSMIC Store ProtonPlus](./img/cosmic-store/protonplus.png)
 
 #### Install Protonup
 
-First, to install `protonup` we'll need the Python package manager, `pip`.
+First, to install `protonup` we'll need the Python CLI package manager, `pipx`. Before installing, make sure you have Steam installed and you've logged into the account once before exiting.
 
 ```bash
 sudo apt update
-sudo apt install python3-pip
+sudo apt install pipx
 ```
 
-Now, let's install `protonup` via `pip`.
+With pipx installed, we now need to ensure that the location pipx is going to be installing our programs is included in our `PATH`. This will allow us to launch applications in the terminal by simply typing their names in and our terminal will understand what we're trying to run.
 
-```bash
-pip3 install protonup
+```
+pipx ensurepath
 ```
 
-The `protonup` command will be available after a reboot, or you can run the below command to add it to your `PATH` for immediate use.
+Once you've ran that command, you'll need to close the terminal and launch it once more for the changes to take effect. With `pipx ensurepath` having been ran, we should now be able to install protonup and run it without issues.
+
+Now, let's install `protonup` via `pipx`.
 
 ```bash
-source ~/.profile
+pipx install protonup
 ```
 
 #### Manage ProtonGE with Protonup
@@ -139,103 +184,68 @@ After <u>Steam</u> is installed, you can run protonup in a terminal. The command
 
 ```bash
 protonup
-Ready to download Proton-6.10-GE-1
-Size      : 370.81 MiB
-Published : 2021-06-07
+Ready to download GE-Proton11-3
+Size      : 507.9 MiB
+Published : 2026-07-25
 Continue? (Y/N): y
-Downloaded 100.0% - 370.81 MiB/370.81 MiB
-[INFO] Installed in: /home/aaronh/.steam/root/compatibilitytools.d/Proton-6.10-GE-1
+Downloaded 100.0% - 507.9 MiB/507.9 MiB
+[INFO] Installed in: /home/system76/.steam/root/compatibilitytools.d/GE-Proton11-3
 ```
 
 You can also use `protonup` to install older versions of ProtonGE. For example, if you have a game that works better on an older release, you can install that version by first using the `protonup --releases` command to list versions. Next, specify the version to install by running `protonup -t`, followed by a specific release number:
 
 ```bash
-➜  ~ protonup -t GE-Proton7-1
-Ready to download Proton-GE-Proton7-1 
-Size      : 407.23 MiB 
-Published : 2022-02-27
+protonup -t GE-Proton10-13
+Ready to download GE-Proton10-13
+Size      : 479.0 MiB
+Published : 2025-08-27
 Continue? (Y/N): y
-Downloaded 100.0% - 407.25 MiB/407.23 MiB
-[INFO] Installed in: /home/s31bz/.steam/root/compatibilitytools.d/Proton-GE-Proton7-1
+Downloaded 100.0% - 479.0 MiB/479.0 MiB
+[INFO] Installed in: /home/system76/.steam/root/compatibilitytools.d/GE-Proton10-13
 ```
 
-#### Install ProtonUp-Qt
+For a full list of protonup options, you can run `protonup --help` to be shown all available commands for protonup such as `-r TAG` for remove existing installations.
 
-ProtonUP-Qt is available as a Flatpak in the Pop!\_Shop. Launch the Pop!\_Shop, search for "ProtonUp, and click the `Install` button.
-
-![Pop Shop ProtonUp-Qt](img/pop-shop-protonup-qt.png)
-
-## GameHub
-
-<u>GameHub</u> is a game launcher that can use different compatibility layers like Wine/Proton, DOSBox and other tools. It can hook into Steam, GOG and other sources. It is written in Vala and you can read more about it [here](https://tkashkin.github.io/projects/gamehub/).
-
-### Install GameHub From Command Line
-
-Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd>/<kbd>SUPER</kbd>.
-
-![Application Library](img/search-terminal.png)
-
-Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
-
-```bash
-apt search gamehub
-```
-
-![Terminal](img/terminal-gamehub-search.png)
-
-Once we find the right name for <u>GameHub</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
-
-```bash
-sudo apt install gamehub
-```
-
-### Install GameHub From the Pop!_Shop
-
-Open the <u>Pop!_Shop</u> application then either search for GameHub, or navigate to the GameHub page by clicking the <u>GameHub</u> icon on the Pop!_Shop home page. Now click the **Install** button.
-
-![Pop!_Shop GameHub](img/pop-shop_gamehub.png)
-
-Once installed, use the Applications button to search for and run <u>GameHub</u>.
+> **NOTE:** You will need to fully exit out of Steam and relaunch it for new community versions of Proton to show up. You can right click Steam in your panel and close it there or left click "Steam" in the top left corner of the window and select Exit to close Steam fully.
 
 ## Lutris
 
-<u>Lutris</u> is a game launcher, written in Python, that is very similar to <u>GameHub</u>, though it also has its own community that writes installer scripts like the [WoW installer](#find-custom-install-scripts-on-the-lutris-website).
+<u>Lutris</u> is a game launcher, written in Python. it also has its own community that writes installer scripts like the [Battle.net installer](https://lutris.net/games/battlenet/).
+
+While Lutris is available in both System Package format and as a Flatpak, we recommend the flatpak verison of Lutris because it is more up to date than the System Package version.
 
 You can read more about Lutris [here](https://lutris.net/).
+
+### Install Lutris From the COSMIC Store
+
+Open the <u>COSMIC Store</u> application. Each time the COSMIC Store opens, it will load in data for all flatpaks. If it's been a while since you've opened COSMIC Store or if it's your first time using it, updating applications on COSMIC Store may take a little longer than usual. You can still use the store while it's syncing, but flatpaks may not show up until after this sync has completed. You can see whether or not the store has fully loaded by observing if the loading circle is spinning in the top right corner to the left of the settings cog wheel.
+
+![COSMIC Store Syncing](./img/cosmic-store/syncing.png)
+
+Once the COSMIC Store has fully updated, either search for Lutris or simply click the <u>Lutris</u> icon on the COSMIC Store home page. Verify whether you are installing the System Package or Flatpak version of this application. You can click the dropdown to change which version you are installing if the store has finished updating app data. Switching the application to to either option will show you what version you're about to install at the bottom of the store page. Once you've decided on whether you want to install the System Package or Flatpak version, click the **Install** button.
+
+![COSMIC Store Lutris](./img/cosmic-store/lutris.png)
 
 ### Install Lutris From Command Line
 
 Open the <u>Terminal</u> application by searching for <u>Terminal</u> after pressing the Super Key <kbd><Icon name="fa6-brands:ubuntu" /></kbd>/<kbd><Icon name="simple-icons:popos" /></kbd>/<kbd>SUPER</kbd>.
 
-![Activities Overview](img/search-terminal.png)
+![Activities Overview](./img/search-terminal.png)
 
-Once the <u>Terminal</u> application is opened you can use the Command Line tool `apt` to search for it like so:
-
-```bash
-apt search lutris
-```
-
-![Terminal](img/terminal-lutris-search.png)
-
-Once we find the right name for <u>Lutris</u> we can install it with `apt` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
+Once the <u>Terminal</u> application is opened you can use the Command Line tool `flatpak` to search for it like so:
 
 ```bash
-sudo apt install lutris
+flatpak search lutris
 ```
 
-### Install Lutris From the Pop!_Shop
+![Terminal](./img/terminal-lutris-search.png)
 
-Open the <u>Pop!_Shop</u> application then either search for Lutris or by clicking the <u>Lutris</u> icon on the Pop!_Shop home page. Now click the **Install** button.
+Once we find the right name for <u>Lutris</u> we can install it with `flatpak` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
-![Pop!_Shop Lutris](img/pop-shop_lutris.png)
-
-## Using GameHub
-
-### Using Steam on GameHub
-
-Once you sign into <u>Steam</u> though <u>GameHub</u> your games will be displayed. Note that games will be slightly discolored if they aren't installed. Notice, in this example, that the two, top left games are installed on this system.
-
-![Using Steam with GameHub](img/gamehub-steam.png)
+**Installing the Flatpak Version of Lutris**
+```bash
+flatpak install Lutris
+```
 
 ## Using Lutris
 
@@ -245,19 +255,29 @@ Some games like World of Warcraft (WoW) have installers on Lutris' [website](htt
 
 With <u>Lutris</u> installed you can click the **Install** button to start the installer script. A pop-up window will appear asking to use Lutris as the application to run the installer.
 
-![Lutris Install Button](img/lutris-install-button.png)
+Some games will have multiple installation scripts associated with them. Each tagged with it's runner and the version of the game it is installing for. For example, the top script for World of Warcraft shown at the time of the screenshot is for when you've already installed and set up battle.net through Lutris. It is important to read the full description of the installer you are about to run as they will often include instructions on how to install and set up certain games or be for versions of the game that may not match what you're running.
+
+![Lutris Website Install Button](./img/lutris/website-install-button.png)
+
+If you'd rather not use the Lutris site, you can also simply click the **Plus** icon in the top left corner of Lutris to add a game.
+
+![Lutris Install Button](./img/lutris/add-game-button.png)
+
+This will bring up a window for you to add a game by searching the website within the application, Installing via a setup.exe file, or other means. For our example above with World of Warcraft, we'll select the "Search" option at the top.
+
+![Lutris Add Games Menu](./img/lutris/add-game-options.png)
 
 Use <u>Lutris</u> to open the installer (shown below). From there click the **Install** button to start the installation.
 
-![Lutris Installer](img/lutris-installer.png)
+![Lutris Installer](./img/lutris/installer.png)
 
 Next, click the **Continue** button to start the installation of <u>Battle.net</u>
 
-![Lutris Installer 2](img/lutris-installer2.png)
+![Lutris Installer 2](./img/lutris/installer2.png)
 
 You will need to install some WINE packages during the installation of <u>Battle.net</u>.
 
-**IMPORTANT NOTE:** Close <u>Battle.net</u> to complete the installation then reopen it to sign into your account.
+**IMPORTANT NOTE:** For Battle.net in particlar, you need to close <u>Battle.net</u> to complete the installation. Do not sign into your account yet. You may need to wait and close it a second time if it auto-launches itself. After Lutris' install script says that the install was successful, you can launch Battle.net and log in to your account.
 
 Now that <u>Battle.net</u> is installed, you can select WoW from your Games and launch Battle.net with the **Play** button.
 
@@ -265,23 +285,68 @@ Once <u>Battle.net</u> launches you can finish the World of Warcraft installatio
 
 **NOTE:** If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two separate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.
 
-![Lutris Installed Game](img/lutris-wow-installed.png)
+![Lutris Installed Game](./img/lutris/wow-installed.png)
 
-### Using .exe files
+### Installing a Game with a setup.exe File
 
-In this example we'll be using the Windows build of Firefox to show the power of both Wine/Proton and Lutris. From the Game Info screen when adding a game we'll set the Name and Runner (you can read more about Runners [here](https://lutris.net/runners/)).
+In this example we'll be using the Windows build of Mozilla Firefox to show the power of both Wine/Proton and Lutris. If you have a setup.exe then you can simply select Install a Windows game from an executable. This will handle the setup for you and automate the process of unpacking and setting up everything.
 
-![Lutris Add Game Info](img/lutris-add-game-info.png)
+![Lutris Add Games Menu](./img/lutris/add-game-options.png)
 
-In the Game Options tab we'll set the path to the Executable (the .exe file extensions is short for executable) and we'll choose the `firefox setup [version].exe` file downloaded from the Firefox website (it will be in your ~/Downloads folder by default). For this example, we can leave the rest of the boxes empty in the other tabs and close this window.
+Once you've done that, you will need to provide a name for your game. In our case, we're using Firefox, so we'll call it Mozilla Firefox. Click **Install** to proceed.
 
-![Lutris Add Game Options](img/lutris-add-game-options.png)
+![Lutris Installing a game with a setup.exe](./img/lutris/setup-exe-installer.png)
 
-Now click on the Firefox item in <u>Lutris</u> and then press the **Play** button. Once the install is finished be sure to unclick the checkbox at the end of the installer. Once the installer closes, right-click on the Firefox item and hit the **Configure** button. Now change the Executable path to `~/.wine/drive_c/Program Files/Mozilla Firefox/firefox.exe` using the **Browse...** button. Otherwise, every time you launch Firefox, it will run the setup wizard again, instead of the newly installed `Firefox.exe`.
+On this screen, you need to click the **Install** button to be taken to the next page where you'll select the installation directory for the game. This by default will be where your default installation directory is. In our example, we'll keep the default /home/system76/Games/mozilla-firefox and click **Continue** to proceed. point to where your setup.exe file is located on your computer. Once you've selected the .exe file, click the big Install button in the top corner to proceed.
 
-> **NOTE:** You will need to hit <kbd>Ctrl</kbd>+<kbd>H</kbd> to show the hidden `.wine` folder when setting the Executable path first.
+![Lutris Installing a game with a setup.exe](./img/lutris/setup-exe-installer2.png)
 
-Now save and launch Firefox again with the **Play** button. After waiting for a few seconds a <u>Firefox</u> window should open.
+This will run you through the setup.exe installer and install your game on your system!
+
+Sometimes when installing a game this way, they like to auto-run after the installer is closed. In the event that this happens, you'll need to make sure that you close out of the application and once you've done so, the installer for Lutris will complete. You can then just click on your game in Lutris and click **Play** to run it.
+
+### Installing Games Manually
+
+For this example, we will be installing a game manually. This usually makes sense for portable games where the game's .exe and game files are already present on the drive, but if you'd like to run a setup.exe manually, that can still be done manually as well.
+
+First you will want to click on the **Plus** icon in the top left corner to add a new game. This brings up the options menu for how you want to add a game. In this example, we are adding a game manually, so we will select **Add locally installed game** to start this process.
+
+![Lutris Add Games Menu](./img/lutris/add-game-options.png)
+
+From the Game Info screen when adding a game we'll set the Name and Runner (you can read more about Runners [here](https://lutris.net/runners/)). For our example, we will be installing a Windows game, so we will select **Wine** out of our list.
+
+All other fields are optional and we will be leaving them blank on this tab. Please be aware that Lutris may sometimes pull game artwork based on the name of your game. If it matches perfectly, you'll often find that lutris may scrape the artwork for you automatically after a few moments after you have completed the Lutris installation. You can override the image later and nothing is downloaded until the game is completely added.
+
+![Lutris Add Game Info](./img/lutris/manual-add-game-info.png)
+
+In the Game Options tab we'll set the path to the Executable (the .exe file extensions is short for executable) and we'll choose the `Gw2Setup-64.exe` file downloaded from the  website (it will be in your ~/Downloads folder by default). You'll want to click on the **...** icon to open the file picker and pick your .exe file.
+
+We also recommend setting up individual Wine Prefixes for each game to make management of game data easy. In the location Lutris installs our games, we can click the **...** icon to open our file picker. You'll want to navigate to the location you store your Lutris games and create a folder for your game. Once you get to where all your games are stored, you can make a new folder by pushing **Ctrl + Shift + N** on your keyboard to open the New Folder dialog window. In our example we're making `guild-wars-2` and will select that as our Wine Prefix.
+
+For this example, we can leave the rest of the boxes empty in the other tabs and select save in the top corner to close this window and manually create our game.
+
+**Optional: Generating a prefix before running the program**
+If you'd like to generate a Wine Prefix before selecting your .exe, you can do that by specifying the Wine Prefix and leaving the Executable blank. This will create the prefix when you "launch" the game later. This may be helpful if you want to make a Wine Prefix, move your .exe into the prefix, then launch the .exe from within the prefix.
+
+![Lutris Add Game Options](./img/lutris/manual-add-game-options.png)
+
+<Aside type="tip">
+
+If you omitted an executable when manually setting up your game, clicking **Play** on the game will generate the prefix before erroring out with a message telling you that **"The game has no executable set and the install didn't finish properly."** We'd expect this behavior, as an executable was not selected. If you look in your prefix directory, you'll see a prefix has been generated and you can drop whatever files you want into the `drive_c` directory that was generated, then tell Lutris to launch the executable from the directory within the prefix.
+
+Once you've put your executable in the prefix, just right click the game tile in Lutris, click on `Configure` and pick `Game options` in the top tab. Select your executable and select save.
+
+</Aside>
+
+Now click on the game we added in <u>Lutris</u> and then press the **Play** button. If you included an Executable, it should just launch. If it's a `setup.exe` then it will launch the setup installer. Run through the installer, then close out of the program if the program auto-runs after being installed. With the game no longer running, you need to right click the game and select **Configure**. Navigate to Game options on the top tab navigation and change your `setup.exe` to the executable for your program. This will be located in your prefix under drive_c wherever you installed the game to. This will likely be under either `Program Files` or `Program Files (x86)`. The install path will be the location you installed it to with the setup.exe. For our installation of Guild Wars 2, the default location of the game executable is under `/home/system76/Games/guild-wars-2/drive_c/Program Files/Guild Wars 2/Gw2-64.exe` This is the file I will be changing my executable to because we no longer want to point to the setup file for the game, but rather the game itself. Click on **Save** in the top right corner and you will close out of the Configure screen while saving all changes. At this point you have successfully done a manual installation of your game, and can now click Play to launch the game!
+
+If Lutris doesn't pull in your game's artwork automatically, you can add art under the `Game Info` tab.
+
+![Lutris Change the Executable to the Game](./img/lutris/manual-changing-executable.png)
+
+**Important Note: Deleting Game Files for Manually Installed Games**
+
+Do note that games installed manually will need to have the wine prefixes deleted manually as well. The option to have Lutris delete the game files from the computer is not present for games that were installed manually. In our case, we'd just delete the guild-wars-2 directory from our Games folder if we want to free up the space. Leaving the directory intact does allow us to easily add it back later if we so choose to.
 
 ### Open Source Games
 
@@ -289,22 +354,22 @@ Now save and launch Firefox again with the **Play** button. After waiting for a 
 
 <u>Unvanquished</u> is a free, open-source first-person strategy game/shooter written in C++. You can read more about Unvanquished, and how to install it on their website [here](https://unvanquished.net/).
 
-![Unvanquished One](img/unvanquished-game_play.png)
+![Unvanquished One](./img/open-source-games/unvanquished-game_play.png)
 
 #### Veloren
 
 <u>Veloren</u> is a multiplayer RPG which is written in Rust. You can read more about it and about installing it on their website [here](https://veloren.net/).
 
-![Veloren](img/veloren-game_play.png)
+![Veloren](./img/open-source-games/veloren-game_play.png)
 
 #### 0 A.D
 
 <u>O A.D.</u> is a free, open-source game of ancient warfare written in C++. You can read more about it and about installing it on their website [here](https://play0ad.com/download/linux/#Ubuntu).
 
-![0ad](img/0ad-game_play.png)
+![0ad](./img/open-source-games/0ad-game_play.png)
 
 #### Battle for Wesnoth
 
 <u>Battle for Wesnoth</u> is an open source, turn-based strategy game with a high fantasy theme. You can read more about it and about installing it on their website [here](https://wiki.wesnoth.org/WesnothBinariesLinux).
 
-![Battle for Wesnoth](img/wesnoth-game_play.png)
+![Battle for Wesnoth](./img/open-source-games/wesnoth-game_play.png)

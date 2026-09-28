@@ -12,19 +12,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           lfs: true
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           cache: npm
           node-version-file: .tool-versions
 
       - id: cache
         name: Cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ./node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -43,22 +43,22 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           lfs: true
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           cache: npm
           node-version-file: .tool-versions
 
       - name: Setup Markdown
-        uses: xt0rted/markdownlint-problem-matcher@v1
+        uses: xt0rted/markdownlint-problem-matcher@v3
 
       - id: cache
         name: Cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ./node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -76,19 +76,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           lfs: true
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           cache: npm
           node-version-file: .tool-versions
 
       - id: cache
         name: Cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ./node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}

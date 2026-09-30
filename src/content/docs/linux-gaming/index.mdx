@@ -230,7 +230,7 @@ For a full list of protonup options, you can run `protonup --help` to be shown a
 
 <u>Faugus Launcher</u> is a game launcher, written in Python. It's a simple and lightweight app for running Windows games and the launcher itself supports gamepads, making it great for launching games and apps from the couch, your computer desk, or wherever you like to play games.
 
-Faugus is available as a Flatpak in the <u>COSMIC Store</u>. It can also be downloaded from their repository as either an AppImage or through the terminal with apt. The repository for Faugus Launcher can be viewed [here](https://github.com/Faugus/faugus-launcher).
+Faugus is available as a Flatpak in the <u>COSMIC Store</u>. It can also be downloaded from their repository as either an AppImage, .deb, or through apt in the terminal after adding their repository. The repository for Faugus Launcher can be viewed [here](https://github.com/Faugus/faugus-launcher).
 
 ### Install Faugus Launcher from the COSMIC Store
 
@@ -277,13 +277,17 @@ The first thing you may want to do is configure your settings. This is entirely 
 
 To modify settings, just click the settings gear cog icon and you will be taken there.
 
-The settings menu has a lot of options for you to tweak and modify to your liking. There is a built in Proton Manager that allows you to download different Proton versions for Faugus much like what the Proton Managers above allow. It also allows you to change your Default Prefix location, which can be thought of as the virtualized Windows environment that gets created for each game.
+![Faugus List Mode Access to Settings Menu](./img/faugus/Main-Settings.png)
+
+The settings menu has a lot of options for you to tweak and modify to your liking. There is a built in Proton Manager that allows you to download different Proton versions for Faugus much like what the Proton Managers that were mentioned above allow. It also allows you to change your Default Prefix location, which can be thought of as the virtualized Windows environment that gets created for each game.
 
 #### Proton/WINE Prefixes
 
 Each Prefix has a `virtualized C:\ drive` which mimics a Windows directory structure for your game. This is where your game's save data will be stored as well as well as where you may need to store some mods that would go in the `AppData` directory of a Windows install. While not necessary, you can even place the files for your game inside of a prefix which effectively treats the WINE/Proton Prefix as both the location where your game is installed and the environment for that game all in one directory.
 
 If you want to store the games somewhere completely separate from the prefix, you can move the game files to another location such as a second drive while still keeping your prefixes somewhere else.
+
+![Faugus Settings](./img/faugus/Settings-General.png)
 
 On our system, we're using multiple launchers, and we like to keep them all in one, singular location. The default location that Faugus likes to create Prefixes is in `~/Faugus`, but we prefer `~/Games/Faugus`. By putting everything under a subdirectory of Games, we can have separate directories for Lutris, Heroic, or any other game launchers you may want to try out and have it all in one, easy to access directory. If you'd like, you can even set this to be on a different drive entirely such as `/mnt/extradrive/Games/Faugus` if you have another drive you store all your games on. Ultimately, there is no harm in leaving the default, but if you'll find yourself installing games from a installers, you will want to use a drive that has space to install games on.
 
@@ -299,11 +303,19 @@ Faugus Launcher supports SteamGridDB Integration to scrape covers and banners fo
 
 To add an API key, navigate to `Interface` on the top menu bar of your settings menu to tab over to the Interface menu. Click the Checkbox for `SteamGridDB` to turn it on and click the searchglass icon to open SteamGridDB's login page in your default web browser. You will need to log in to your Steam Account and once you have done so, you will be granted an API key from SteamGridDB which you can then copy, and paste into the `API Key` field. Doing this will unlock the ability to grab Banner Art which has a checkbox to toggle on and off on the right side. Each API key is unique to your account and should **NOT** be shared with others you don't trust. In the event that happens, you can always revoke and request a new API key from SteamGridDB.
 
+![Faugus Interface Settings](./img/faugus/Settings-Interface.png)
+
 #### Setting up a Game Art View or Cover Art View
 
 If you'd like something a little prettier than the default view, we suggest setting your interface to either `Covers` or `Carrousel` mode, starting up Faugus in either `Maximized` or `Fullscreen`, changing the Position of your games to `Bottom`, then setting the checkboxes under `Display` for `Labels`, `Banner`, and `Overview` on. We suggest leaving `Overview` off though if you're using `Covers` view mode. If you have an API Key added, you can then click OK to save your interface and you will get a view that heavily showcases artwork for your games.
 
 There's other views you can set up too, experiment with what looks nice for you or leave the default settings.
+
+**Faugus with a Covers View with Banners on in the Background**
+![Faugus Covers View](./img/faugus/View-Mode-Covers.png)
+
+**Faugus with a Carrousel View**
+![Faugus Carrousel View](./img/faugus/View-Mode-Carrousel.png)
 
 ### Adding a Windows Game
 
@@ -311,10 +323,17 @@ Now that we have Faugus set up the way we want it, we can add our first game.
 
 Faugus can be used to launch multiple kinds of games, both Windows and Linux.
 
-We're going to install a Windows Game. In the New Game/App menu, let's give our game a name. This name you enter will be used to scrape the artwork from steamgrid.db. This happens regardless of if you added an API Key or not.
+Let's start by clicking the Add Game button from the main interface. This is signified with a **+** icon.
+
+
+![Faugus Add Game Menu](./img/faugus/Add-Game.png)
+
+We're going to install a Windows Game. In the New Game/App menu, let's give our game a name. This name you enter will be used to scrape the artwork from <u>steamgrid.db</u>. This happens regardless of if you added an API Key or not.
 
 <Aside type="tip" title="Scraping Artwork">
 If you've integrated SteamGridDB into Faugus, it'll suggest game names based on results from the website as you type. You also should be able to simply left click the banner and Cover artwork fields to freely select artwork that is to your liking.
+
+![Faugus Adding a Game Banner](./img/faugus/Add-Game-Banner.png)
 
 If an API Key was not added, you can still right click the cover art and Refresh it, grabbing new art from your game's name, or select artwork that you're providing instead. You will not be able to select a banner since that field will be missing.
 </Aside>
@@ -327,11 +346,23 @@ This is the option you're going to want to pick if your game launches from just 
 <Aside type="tip" title="Storing your Game Inside of a Prefix when Selecting an Executable">
 When you install a game from an installer, the executable is installed inside of the Prefix, making it where the Prefix and Game Files are all together. This is not the case if you select an executable by default and it can lead to the location of the games differing depending on the installation method you choose in Faugus.
 
-If you would like to generate the Prefix so you can move your game inside of the Prefix, you should point to an executable that won't launch. Typing in something such as `null` in the text field is enough to make it where Faugus will generate your Prefix without actually launching anything when you click the `Play button` on your game. Your game will show it's artwork in greyscale, which indicates that your executable is not found. Since we put null, that'd be expected. If you do this, make sure you move the game into the Prefix after generating it. This is done by right clicking the game, and select `Edit` so you can change the executable to your `game.exe` after moving it into the newly made Prefix.
+If you would like to generate the Prefix so you can move your game inside of the Prefix, you should point to an executable that won't launch. Typing in something such as `null` in the `Path` text field is enough to make it where Faugus will generate your Prefix without actually launching anything when you click the `Play button` on your game. Fill out the title, `null` the path, and pick a Prefix location if the default isn't where you want to store it, then click `Ok` to save the game. Your game will show it's artwork in greyscale, which indicates that your executable is not found. Since we put `null`, that'd be expected.
+
+![Faugus Selecting null for Path to generate the Prefix First](./img/faugus/Add-Game-Move-into-Prefix.png)
+
+If you set the path to something that won't launch and click the `Play Button` it will generate your Prefix. After that's done, make sure you move the game files into the Prefix after it's been generated. Then we need to set your `Path` to now point at your game's Executable. This is done by right clicking the game, and select `Edit` so you can change the executable to your `game.exe` after moving it into the newly made Prefix.
+
+![Faugus Correcting our path from null to the Proper File](./img/faugus/Edit-Game-Correcting-Executable.png)
 </Aside>
   </TabItem>
   <TabItem label="Running an Installer">
 If you are trying to install a game that has a `setup.exe` or some other kind of installer, you can select this option to run the installer. This launches the installer and allows us to click through the setup wizard.
+
+![Faugus Run an Installer](./img/faugus/Add-Game-Executable-Selection.png)
+
+
+![Running an Installer within Faugus](./img/faugus/FFXIV-Installer.png)
+
 
 <Aside type="note" title="A Note on Running an Installer">
 Some installers will automatically run the game or it's launcher after finishing. For games that do this, make sure to close out of it. We will launch it after the game is added to Faugus. All processes opened by the installer need to be closed out to finish adding it to Faugus.
@@ -344,6 +375,9 @@ Once all processes are closed from the installer, you should see that Faugus int
 The Prefix is where we are going to have our virtual Windows environment for Proton or WINE. Prefixes are automatically assigned for each game, but if you'd like to override this or store the Prefix for this specific game on a different location or drive, you can control that here. Faugus auto-fills this field intelligently for you, but it can be changed as needed. Since we changed the default location of our Prefixes to where we want earlier, we can simply leave the default location for this prefix.
 
 If you want to set special settings under Tools, you can do so, and if you want Application Shortcuts you can set that below. These are entirely optional and can be left alone in most cases. Just click Ok to finish making the game.
+
+![Faugus Finalized Game Entry](./img/faugus/Edit-Game-Corrected-Executable.png)
+
 </Tabs>
 
 ### Other Launchers under Faugus such as Battle.net
@@ -352,15 +386,22 @@ Faugus has support for many of the other launchers under Windows to run through 
 
 In this example we'll add `Battle.net` by simply clicking `Add Game`, then selecting `Windows Game` and changing it to `Battle.net`. With Battle.net selected, it'll scrape the Battle.net artwork and you should be able to just click Ok to add it. This will download and install Battle.net for you and once you get to the login screen, just close out of Battle.net and you'll have the Battle.net launcher added to your Faugus Library! This creates and manages the Proton Prefix for you automatically with only a few simple clicks needed to get everything working.
 
+![Faugus Installing Battle.net](./img/faugus/Add-Battle-Net.png)
+
 #### Adding World of Warcraft
 
 If you'd like to add a separate entry for World of Warcraft, you can do that too! The easiest way of doing this is going to be Duplicating our Battle.net entry. To do this, right click Battle.net and select `Duplicate`. This will ask you what to name it. Select `World of Warcraft: Midnight` for our example or simply `World of Warcraft`. This will make a duplicate entry in Lutris. From here, right click again and select `Edit`. Once you're at the edit screen change your artwork as you wish.
+
+![Faugus Adding an Entry for World of Warcraft](./img/faugus/Duplicate-Game-1.png)
 
 We have two options here for World of Warcraft. We can either make it so that selecting this game automatically takes us to the World of Warcraft game in Battle.net's launcher, or we can have it launch World of Warcraft directly.
 
 <Tabs>
   <TabItem label="Shortcut to Game in Battle.net">
 If you'd simply like Battle.net to jump you to the World of Warcraft game when you launch it, you can set this by clicking on `Tools` and adding the following Game Arguemen `--exec="launch WoW"`. Make sure it is exactly as shown there, and click Ok to save the changes. If done right, you will be taken to World of Warcraft's page instead of the Home page.
+
+![Faugus Adding Launch Options for World of Warcraft](./img/faugus/Duplicate-Game-2.png)
+
   </TabItem>
 
   <TabItem label="Launching World of Warcraft Directly">
@@ -378,7 +419,9 @@ In the event that you already have a game made and you just want to move it to a
 
 ### Adding a Native Linux Game
 
-If you have a native Linux game, then you can also add that to Faugus Launcher. You have access to the Steam Runtimes which contain library stacks and containerized environments that may improve compatibility for some Linux games. For the most part, you should be able to just add a Linux game by selecting it's Binary or the .sh script that runs the game for your `Path`.
+If you have a native Linux game, then you can also add that to Faugus Launcher. You have access to the Steam Runtimes which contain library stacks and containerized environments that may improve compatibility for some Linux games. For the most part, you should be able to just add a Linux game by selecting it's Binary or the .sh script that runs the game for your `Path`, but if you're having issues, try one of the Steam Linux Runtimes to get the game running.
+
+![Faugus Adding a Native Linux Title](./img/faugus/Add-Linux-Game.png)
 
 ## Lutris
 

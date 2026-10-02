@@ -22,8 +22,7 @@ tableOfContents: true
 import { Icon } from "astro-icon/components";
 import { Aside } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-
-## State of Play
+import { LinkCard } from '@astrojs/starlight/components';
 
 There's many ways to play games on Pop!_OS. Popular platforms like Steam have strong Linux support, while non-steam games can be ran through a variety of launchers on Linux such as the following:
 
@@ -46,7 +45,7 @@ The COSMIC Store will tell you which version of an application you are about to 
 
 ![COSMIC Store Steam](./img/cosmic-store/steam.png)
 
-<Aside type="note">If there is no dropdown box for an application on COSMIC Store, that means it is only offered in the one format it is available as and the the other format isn't available.</Aside>
+<Aside type="note">If there is no dropdown box for an application on COSMIC Store, that means it is only offered in the one format it is available as and the other format isn't available.</Aside>
 
 Once installed, use the Applications button to search for and run <u>Steam</u>.
 
@@ -64,9 +63,9 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 apt search steam
 ```
 
-![Terminal](./img/terminal-steam-search.png)
+In the image below, we'll note that Steam has the <u>steam-installer</u> package name and the <u>steam</u> package name. <u>steam</u> is a transitional package for <u>steam-installer</u>.
 
-In the image above, we'll note that Steam has the <u>steam-installer</u> package name and the <u>steam</u> package name. <u>steam</u> is a transitional package for <u>steam-installer</u>.
+![Terminal](./img/terminal-steam-search.png)
 
 Installing <u>steam</u> will simply point to <u>steam-installer</u> when you install it. Because of this, you can install either package and end up with steam installed. It does not matter which you go with.
 
@@ -119,7 +118,7 @@ From a UI standpoint, there is virtually no difference between launching a Linux
 Once you've enabled Steam Play, they both present the usual green "Play" button.
 
 
-![Skyrim 1](./img/steam/skyrim-info-pane.png)
+![Skyrim Info Pane](./img/steam/skyrim-info-pane.png)
 
 ![Skyrim Detail](./img/steam/steamplay-detail.png)
 
@@ -254,7 +253,7 @@ Once the <u>Terminal</u> application is opened you can use the Command Line tool
 flatpak search faugus
 ```
 
-![Terminal](./img/terminal-faugus-search.png)
+![Searching with the Terminal](./img/terminal-faugus-search.png)
 
 Once we find the right name for <u>Faugus</u> we can install it with `flatpak` as well. Please type this command into the terminal and press <kbd>Enter</kbd>:
 
@@ -273,7 +272,7 @@ Now that we have Faugus up and running, There's a few tweaks we can set dependin
 
 ### Configure Settings
 
-The first thing you may want to do is configure your settings. This is entirely optional, but does allow you to set Faugus to work better to your needs.
+The first thing you may want to do is configure your settings. This is entirely optional, but does allow you to set Faugus to work better for your needs.
 
 To modify settings, just click the settings gear cog icon and you will be taken there.
 
@@ -285,7 +284,7 @@ The settings menu has a lot of options for you to tweak and modify to your likin
 
 Each Prefix has a `virtualized C:\ drive` which mimics a Windows directory structure for your game. This is where your game's save data will be stored as well as well as where you may need to store some mods that would go in the `AppData` directory of a Windows install. While not necessary, you can even place the files for your game inside of a prefix which effectively treats the WINE/Proton Prefix as both the location where your game is installed and the environment for that game all in one directory.
 
-If you want to store the games somewhere completely separate from the prefix, you can move the game files to another location such as a second drive while still keeping your prefixes somewhere else.
+If you want to store the games somewhere completely separate from the prefix, you can move the game files to another location such as a second drive while still keeping your prefixes somewhere else, or even just store the entire prefix on another drive.
 
 ![Faugus Settings](./img/faugus/Settings-General.png)
 
@@ -339,11 +338,12 @@ If an API Key was not added, you can still right click the cover art and Refresh
 </Aside>
 
 Our Path is where we select the path to the game's executable. This is what Faugus is launching when you click `Play` in the Faugus Launcher. For a Windows game, this will be our `.exe` application. Simply click the searchglass icon and pick your executable application. Faugus allows you to either select the `.exe` if it's already ready to play, or run a `setup.exe installer` which will run the installer of the game and then change the executable to your game's executable, all while also setting up the Prefix for you. If you run an installer, everything is set up automatically for you.
-<Tabs>
-  <TabItem label="Select an Executable">
+<Aside type="caution" icon="bars" title="Options for Installing a Game">
+  <Tabs>
+    <TabItem label="Select an Executable">
 This is the option you're going to want to pick if your game launches from just a `.exe` or if you've already installed the game and are adding it to Faugus. Simply navigate to where your Executable file is stored and select it. Now when you launch the game, it will launch this Executable that is associated with it. The Icon for Faugus will generally pull the Executable icon automatically.
 
-<Aside type="tip" title="Storing your Game Inside of a Prefix when Selecting an Executable">
+  <Aside type="note" title="Storing your Game Inside of a Prefix when Selecting an Executable">
 When you install a game from an installer, the executable is installed inside of the Prefix, making it where the Prefix and Game Files are all together. This is not the case if you select an executable by default and it can lead to the location of the games differing depending on the installation method you choose in Faugus.
 
 If you would like to generate the Prefix so you can move your game inside of the Prefix, you should point to an executable that won't launch. Typing in something such as `null` in the `Path` text field is enough to make it where Faugus will generate your Prefix without actually launching anything when you click the `Play button` on your game. Fill out the title, `null` the path, and pick a Prefix location if the default isn't where you want to store it, then click `Ok` to save the game. Your game will show it's artwork in greyscale, which indicates that your executable is not found. Since we put `null`, that'd be expected.
@@ -353,9 +353,9 @@ If you would like to generate the Prefix so you can move your game inside of the
 If you set the path to something that won't launch and click the `Play Button` it will generate your Prefix. After that's done, make sure you move the game files into the Prefix after it's been generated. Then we need to set your `Path` to now point at your game's Executable. This is done by right clicking the game, and select `Edit` so you can change the executable to your `game.exe` after moving it into the newly made Prefix.
 
 ![Faugus Correcting our path from null to the Proper File](./img/faugus/Edit-Game-Correcting-Executable.png)
-</Aside>
-  </TabItem>
-  <TabItem label="Running an Installer">
+  </Aside>
+    </TabItem>
+    <TabItem label="Running an Installer">
 If you are trying to install a game that has a `setup.exe` or some other kind of installer, you can select this option to run the installer. This launches the installer and allows us to click through the setup wizard.
 
 ![Faugus Run an Installer](./img/faugus/Add-Game-Executable-Selection.png)
@@ -364,13 +364,13 @@ If you are trying to install a game that has a `setup.exe` or some other kind of
 ![Running an Installer within Faugus](./img/faugus/FFXIV-Installer.png)
 
 
-<Aside type="note" title="A Note on Running an Installer">
+  <Aside type="note" title="A Note on Running an Installer">
 Some installers will automatically run the game or it's launcher after finishing. For games that do this, make sure to close out of it. We will launch it after the game is added to Faugus. All processes opened by the installer need to be closed out to finish adding it to Faugus.
-</Aside>
+  </Aside>
 
 Once all processes are closed from the installer, you should see that Faugus intelligently selected our game's executable for us. Because of this, we do not need to pick the `Path` for games installed this way unless the incorrect executable is chosen or Faugus failed to automatically select the executable.
 
-  </TabItem>
+    </TabItem>
 
 The Prefix is where we are going to have our virtual Windows environment for Proton or WINE. Prefixes are automatically assigned for each game, but if you'd like to override this or store the Prefix for this specific game on a different location or drive, you can control that here. Faugus auto-fills this field intelligently for you, but it can be changed as needed. Since we changed the default location of our Prefixes to where we want earlier, we can simply leave the default location for this prefix.
 
@@ -378,7 +378,8 @@ If you want to set special settings under Tools, you can do so, and if you want 
 
 ![Faugus Finalized Game Entry](./img/faugus/Edit-Game-Corrected-Executable.png)
 
-</Tabs>
+  </Tabs>
+</Aside>
 
 ### Other Launchers under Faugus such as Battle.net
 
@@ -415,7 +416,17 @@ With the Executable selected, click `Ok` to save our changes and now when we lau
 
 If you'd like to store your game data on another drive while you are making a new game, then when Adding a new game you will want to set your `Path` to the game's executable on the secondary drive. Your Prefix will still be made in the default directory by default. This generally isn't going to be a problem and works perfectly fine as is, but if you would like to also store the Prefix on another drive, then simply modify the Prefix so that it is created on the same drive as the game. Our trick from earlier that let's you generate a Prefix can also be used if you wish to store the game files inside the Prefix.
 
-In the event that you already have a game made and you just want to move it to another drive, it should be as simple as just moving the folder that contains all your game data to another drive. If your Prefix contains the game data, you can simply drag the game data out if you would like and keep your Prefix where it is, but we think it's better to move the whole Prefix to an extra drive. With the files now on another drive, we just need to edit the game and make sure both our `Path` and `Prefix` directories are correct with where they now are stored. Once the path to those directories is fixed up, just save your changes and you should be able to launch the game just like before, freeing up space on your default drive!
+In the event that you already have a game made and you just want to move it to another drive, it should be as simple as just moving the folder that contains all your game data to another drive. If your Prefix contains the game data, you can simply drag the game data out if you would like and keep your Prefix where it is, but we think it's better to move the whole Prefix to an extra drive. With the files now on another drive, we just need to edit the game and make sure both our `Path` and `Prefix` directories are correct with where they now are stored. Once the path to those directories is fixed up, just save your changes and you should be able to launch the game just like before, freeing up space on your default drive.
+
+<Aside type="tip">
+If you need help setting up an extra drive, we have an article that can help with that below.
+
+<LinkCard
+title="Auto-Mount Second Hard Drive(s)"
+href="https://system76.com/support/extra-drive/"
+description="Learn how to set Pop!_OS up so that your extra drives automatically mount themselves, making them already available when you boot into Pop!_OS for your launcher of choice."
+/>
+</Aside>
 
 ### Adding a Native Linux Game
 
@@ -430,6 +441,8 @@ If you have a native Linux game, then you can also add that to Faugus Launcher. 
 While Lutris is available in both System Package format and as a Flatpak, we recommend the flatpak verison of Lutris because it is more up to date than the System Package version.
 
 You can read more about Lutris [here](https://lutris.net/).
+
+![Lutris' Main Screen with Games Installed](./img/lutris/overview.png)
 
 ### Install Lutris From the COSMIC Store
 
@@ -468,61 +481,116 @@ flatpak install net.lutrus.Lutris
 
 ## Using Lutris
 
-### Finding Install Scripts
+### Configure Settings
+
+The first thing you may want to do is configure your settings. This is entirely optional, but does allow you to set Lutris to work better for your needs.
+
+To modify settings, just click the three vertically stacked lines icons for the **Menu Button** and click on **Preferences**
+
+![Lutris Access to Settings Menu](./img/lutris/accessing-preferences.png)
+
+The Lutris Settings menu allows you to make some Interface changes, enable or disable **Runners**, **Sources**, your Lutris and Steam **Accounts**,and the **Default Installation Directory**.
+
+There is an **Advanced** slider which reveals further settings, but we will be ignoring that.
+
+#### Proton/WINE Prefixes
+
+Each Prefix has a `virtualized C:\ drive` which mimics a Windows directory structure for your game. This is where your game's save data will be stored as well as well as where you may need to store some mods that would go in the `AppData` directory of a Windows install. While not necessary, you can even place the files for your game inside of a prefix which effectively treats the WINE/Proton Prefix as both the location where your game is installed and the environment for that game all in one directory.
+
+If you want to store the games somewhere completely separate from the prefix, you can move the game files to another location such as a second drive while still keeping your prefixes somewhere else, or even just store the entire prefix on another drive.
+
+![Lutris Settings](./img/lutris/global-settings.png)
+
+On our system, we're using multiple launchers, and we like to keep them all in one, singular location. The default location that Lutris likes to create Prefixes is in `~/Games`, but we prefer `~/Games/Lutris`. By putting everything under a subdirectory of Games, we can have separate directories for Faugus, Heroic, or any other game launchers you may want to try out and have it all in one, easy to access directory. If you'd like, you can even set this to be on a different drive entirely such as `/mnt/extradrive/Games/Lutris` if you have another drive you store all your games on. Ultimately, there is no harm in leaving the default, but if you'll find yourself installing games from a installers, you will want to use a drive that has space to install games on.
+
+<Aside type="note"> In Linux, when a `~/` is present, this is shortform for your user's home directory. In the examples above, the examples would point to `/home/system76/Games/Lutris` if your username for the computer is system76. </Aside>
+
+### Finding Install Scripts and Installing Games with them
 
 Some games like World of Warcraft (WoW) have installers on Lutris' [website](https://lutris.net/games) (see screenshot below).
 
 With <u>Lutris</u> installed you can click the **Install** button to start the installer script. A pop-up window will appear asking to use Lutris as the application to run the installer.
 
-Some games will have multiple installation scripts associated with them. Each tagged with it's runner and the version of the game it is installing for. For example, the top script for World of Warcraft shown at the time of the screenshot is for when you've already installed and set up battle.net through Lutris. It is important to read the full description of the installer you are about to run as they will often include instructions on how to install and set up certain games or be for versions of the game that may not match what you're running.
+Some games will have multiple installation scripts associated with them. Each tagged with it's runner and the version of the game it is installing. For example, the top script for World of Warcraft shown at the time of the screenshot is for when you've already installed and set up battle.net through Lutris. If you do not have an existing install of Battle.net through Lutris, it will install it for you before finalizing the World of Warcraft install. It is important to read the full description of the installer you are about to run as they will often include instructions on how to install and set up certain games or the scripts can even be for versions of the game that may not match what you're running.
 
 ![Lutris Website Install Button](./img/lutris/website-install-button.png)
 
-If you'd rather not use the Lutris site, you can also simply click the **Plus** icon in the top left corner of Lutris to add a game.
+If you'd rather not use the Lutris site, you can also simply click the **+** icon in the top left corner of Lutris to add a game. We will cover both methods as they are both essentially the same after a point.
 
 ![Lutris Install Button](./img/lutris/add-game-button.png)
 
-This will bring up a window for you to add a game by searching the website within the application, Installing via a setup.exe file, or other means. For our example above with World of Warcraft, we'll select the "Search" option at the top.
+<Aside type="caution" icon="bars" title="Options for Install Scripts">
+<Tabs>
+<TabItem label="Installing from within Lutris">
+After clicking the **+** icon in the top left corner to add a new game, you'll be greeted by the various options you have to add games into Lutris. You will want to select **Search the Lutris Website for Installers** to search lutris.net from within the application without ever needing to open a web browser.
 
 ![Lutris Add Games Menu](./img/lutris/add-game-options.png)
 
-Use <u>Lutris</u> to open the installer (shown below). From there click the **Install** button to start the installation.
+Once you click on that button, you'll need to run a search for what you want to install. This will show all relevant options related to your search. Simply select the game you are installing from the list.
 
-![Lutris Installer](./img/lutris/installer.png)
+![Lutris Game Search](./img/lutris/game-search.png)
 
-Next, click the **Continue** button to start the installation of <u>Battle.net</u>
+From there, you'll be greeted with all the versions of World of Warcraft that lutris.net has installation scripts for. These scripts are all maintained by the community and users like yourself. If you're having trouble with one, you should look on lutris.net for the game page and see if the script is out of date or if it offers specialized instructions. In our example, we'll be installing the first option for Battle.net's standard version of World of Warcraft by clicking **Install**.
 
-![Lutris Installer 2](./img/lutris/installer2.png)
+![Lutris Game Versions](./img/lutris/install-wow-options.png)
 
-You will need to install some WINE packages during the installation of <u>Battle.net</u>.
+</TabItem>
 
-<Aside type="note">For Battle.net in particlar, you need to close <u>Battle.net</u> to complete the installation. Do not sign into your account yet. You may need to wait and close it a second time if it auto-launches itself. After Lutris' install script says that the install was successful, you can launch Battle.net and log in to your account.</Aside>
+<TabItem label="Installing from lutris.net">
+If we're installing from lutris.net, simply select the **Install** button on the version of World of Warcraft to install. We are installing the Battle.net version, so we will click that.
 
-Now that <u>Battle.net</u> is installed, you can select WoW from your Games and launch Battle.net with the **Play** button.
+![Lutris Website Install Button](./img/lutris/website-install-button.png)
 
-Once <u>Battle.net</u> launches you can finish the World of Warcraft installation.
+Once you have done so, this will launch Lutris if it isn't running and open the installer dialog for Lutris associated with this script. Because we selected the script, it will only show the install button for specifically the script you selected from the website.
 
-<Aside type="note">If you run two installer scripts for games from the same launcher application (e.g. <u>Battle.net</u>, <u>uPlay</u>, <u>EA Origin</u>, etc.) Lutris will install multiple copies of that launcher in separate folders inside the virtual `C:\` drive. This shouldn't prevent the games from being installed, just be mindful of hard drive space, and pay attention to where Lutris is installing game files. Overwatch could end up in the same general area as World of Warcraft, or in two separate folders, each with their own <u>Battle.net</u> install. This means that clicking on Overwatch, or World of Warcraft will both launch <u>Battle.net</u> but one may show Overwatch as installed, and the other may show only WoW as installed, or vice-versa.</Aside>
+![Lutris Website Install Screen](./img/lutris/installing-from-lutris-website.png)
 
-![Lutris Installed Game](./img/lutris/wow-installed.png)
+</TabItem>
+</Tabs>
+</Aside>
+If you have not installed Battle.net first before installing World of Warcraft, you will be met with a Missing Dependency dialog box that tells you that you need to install battlenet-standard. Select **Yes** to install it. If you've installed battle.net before in Lutris, then this will not show up.
+
+Click through the battle.net installer and select your installation directory. This will default to where you chose to have your default Prefixes save to. In our case, this is our `~/Games/Lutris` directory that we set earlier, so it will create a battlenet directory under `~/Games/Lutris/battlenet` where our Prefix and the Battle.net game files will be stored. This is also where World of Warcraft will be stored because World of Warcraft is installed under the battle.net Prefix.
+
+![Lutris Selecting Prefix Directory for Battle.net](./img/lutris/install-battlenet-prefix.png)
+
+<Aside type="note"> In Linux, when a `~/` is present, this is shortform for your user's home directory. In the examples above, the examples would point to `/home/system76/Games/Lutris` if your username for the computer is system76. </Aside>
+
+Once you've selected the destination for the Prefix, you'll need to supply the installer. You can either have Lutris **Download** the file for you, which is the default option, or you can **Select File** to use your own Battle.net-Setup.exe for the install process. We're just going to Download this because it's easier and works great. clicking next will start downloading the battle.net setup executable and open the battle.net launcher and create your Wine Prefix.
+
+![Lutris Selecting the Source of your Installer](./img/lutris/file-source.png)
+
+You will eventually be greeted by the installer app and Lutris will tell you to not attempt to log in to Battle.net and simply close it once you have reached the log in screen.
+
+Proceed through the installer and do just that. Once you do close out of the installer, it may look like nothing is happening for a bit on Lutris' end and you may even see **All processes have quit** and **Exit with return code 0**. This is normal, just be patient and wait for Lutris to finish. You should eventually see the page change and say **Installation completed!**. Click Close because we still need to install World of Warcraft.
+
+![Instlling Battle.net through Lutris with the notice on logging in](./img/lutris/battlenet-login-notice.png)
+
+Simply click the **Install** button once more. Once you have done so, it'll immediately finish installing! You can now click Close, or Launch World of Warcraft!
+
+![Lutris Install Complete](./img/lutris/installation-completed.png)
+
+![Lutris Installed Games](./img/lutris/wow-installed.png)
 
 ### Installing a Game with a setup.exe File
 
-In this example we'll be using the Windows build of Mozilla Firefox to show the power of both Wine/Proton and Lutris. If you have a setup.exe then you can simply select Install a Windows game from an executable. This will handle the setup for you and automate the process of unpacking and setting up everything.
+In this example we'll be using the Final Fantasy XIV to show the power of both Wine/Proton and Lutris. If you have a setup.exe then you can simply select Install a Windows game from an executable. This will handle the setup for you and automate the process of unpacking and setting up everything.
 
 ![Lutris Add Games Menu](./img/lutris/add-game-options.png)
 
-Once you've done that, you will need to provide a name for your game. In our case, we're using Firefox, so we'll call it Mozilla Firefox. Click **Install** to proceed.
+Once you've done that, you will need to provide a name for your game. In our case, we're using Final Fantasy XIV, so we'll call it Final Fantasy XIV Online. Click **Install** to proceed.
 
 ![Lutris Installing a game with a setup.exe](./img/lutris/setup-exe-installer.png)
 
-On this screen, you need to click the **Install** button to be taken to the next page where you'll select the installation directory for the game. This by default will be where your default installation directory is. In our example, we'll keep the default /home/system76/Games/mozilla-firefox and click **Continue** to proceed. point to where your setup.exe file is located on your computer. Once you've selected the .exe file, click the big Install button in the top corner to proceed.
+On this screen, you need to click the **Install** button to be taken to the next page where you'll select the installation directory for the game. This by default will be where your default installation directory is. In our example, we'll keep the default `/home/system76/Games/Lutris/final-fantasy-xiv-online` This is where we're going to not only set up our Prefix, but also install the game to. Once you're happy with the install directory, click **Continue** to proceed. Point to where your setup.exe file is located on your computer. Once you've selected the .exe file, click the big **Install** button in the top corner to proceed.
 
-![Lutris Installing a game with a setup.exe](./img/lutris/setup-exe-installer2.png)
+![Lutris Selecting the Source File](./img/lutris/setup-exe-installer2.png)
 
-This will run you through the setup.exe installer and install your game on your system!
+This will run you through the setup.exe installer for the game you are trying to install and install your game on your system!
 
-Sometimes when installing a game this way, they like to auto-run after the installer is closed. In the event that this happens, you'll need to make sure that you close out of the application and once you've done so, the installer for Lutris will complete. You can then just click on your game in Lutris and click **Play** to run it.
+<Aside type="note" title="A Note on Running an Installer">
+Some installers will automatically run the game or it's launcher after finishing. For games that do this, make sure to close out of it. We will launch it after the game is added to Lutris. All processes opened by the installer need to be closed out to finish adding it to Lutris.
+</Aside>
 
 ### Installing Games Manually
 

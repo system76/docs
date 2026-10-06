@@ -537,6 +537,10 @@ To modify settings, just click the three vertically stacked lines icons for the 
 
 The Lutris Settings menu allows you to make some Interface changes, enable or disable **Runners**, **Sources**, your Lutris and Steam **Accounts**,and the **Default Installation Directory**.
 
+ A **Runner** is the method we will be running our game with. Windows games will run through Proton or Wine, while Linux games would use either the Steam, Linux, or Flatpak runners. You can install additional Runners in Preferences. 
+
+ A **Source** is where you get the game from. This can be Steam, GOG, Battle.net, or Itch.io.
+
 There is an **Advanced** slider which reveals further settings, but we will be ignoring that.
 
 #### Proton/WINE Prefixes
@@ -618,7 +622,7 @@ Click through the battle.net installer and select your installation directory. T
 
 <Aside type="note"> In Linux, when a **~/** is present, this is shortform for your user's home directory. In the examples above, the examples would point to **/home/system76/Games/Lutris** if your username for the computer is system76. </Aside>
 
-Once you've selected the destination for the Prefix, you'll need to supply the installer. You can either have Lutris **Download** the file for you, which is the default option, or you can **Select File** to use your own Battle.net-Setup.exe for the install process. We're just going to Download this because it's easier and works great. clicking next will start downloading the battle.net setup executable and open the battle.net launcher and create your Wine Prefix.
+Once you've selected the destination for the Prefix, you'll need to supply the installer. You can either have Lutris **Download** the file for you, which is the default option, or you can **Select File** to use your own Battle.net-Setup.exe for the install process. We're just going to Download this because it's easier and works great. clicking next will start downloading the battle.net setup executable, open the battle.net launcher, and create your Wine Prefix.
 
 ![Lutris Selecting the Source of your Installer](./img/lutris/file-source.png)
 
@@ -636,7 +640,7 @@ Simply click the **Install** button once more. Once you have done so, it'll imme
 
 ### Installing a Game with a setup.exe File
 
-In this example we'll be using the Final Fantasy XIV to show the power of both Wine/Proton and Lutris. If you have a setup.exe then you can simply select Install a Windows game from an executable. This will handle the setup for you and automate the process of unpacking and setting up everything.
+In this example we'll be using Final Fantasy XIV to show the power of both Wine/Proton and Lutris. If you have a setup.exe then you can simply select Install a Windows game from an executable. This will handle the setup for you and automate the process of unpacking and setting up everything.
 
 ![Lutris Add Games Menu](./img/lutris/add-game-options.png)
 
@@ -662,7 +666,7 @@ First you will want to click on the **Plus** icon in the top left corner to add 
 
 ![Lutris Add Games Menu](./img/lutris/add-game-options.png)
 
-From the Game Info screen when adding a game we'll set the Name and Runner (you can read more about Runners [here](https://lutris.net/runners/)). For our example, we will be installing a Windows game, so we will select **Wine** out of our list.
+From the Game Info screen when adding a game we'll set the **Name** and **Runner**. For our example, we will be installing a Windows game, so we will select **Wine** out of our list.
 
 All other fields are optional and we will be leaving them blank on this tab. Please be aware that Lutris may sometimes pull game artwork based on the name of your game. If it matches perfectly, you'll often find that lutris may scrape the artwork for you automatically after a few moments after you have completed the Lutris installation. You can override the image later and nothing is downloaded until the game is completely added.
 

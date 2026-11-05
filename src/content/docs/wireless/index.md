@@ -34,7 +34,7 @@ If your computer can’t connect to wireless networks or the connection is unsta
 
 4. Temporarily use a phone hotspot to confirm whether the network or your computer is the issue.
 
-5. [Boot from a Live USB](https://support.system76.com/articles/live-disk) of your distribution to determine whether the issue exists outside your installed system.
+5. [Boot from a Live USB](../live-disk/index.md) of your distribution to determine whether the issue exists outside your installed system.
 
 ## Router and Access Point Recommendations
 

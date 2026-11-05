@@ -76,6 +76,11 @@ export default defineConfig({
         }),
         icon(),
     ],
+    redirects: {
+        // The Steam article was folded into the Linux gaming article. Old /support/articles/steam links
+        // are rewritten to /support/steam by CloudFront.
+        "/steam": "/support/linux-gaming",
+    },
     base,
     site,
     fonts: [

@@ -72,4 +72,4 @@ Finally, the [COSMIC Media Player](https://github.com/pop-os/cosmic-player) is n
 
 For a full list of components included in COSMIC Desktop, visit the [public repository](https://github.com/pop-os/cosmic-epoch) and review the README.
 
-### Download Pop!_OS 24.04 LTS at: [https://system76.com/pop/download/](https://system76.com/pop/download/)
+### Download Pop!_OS 24.04 LTS at: [https://system76.com/download-pop/](https://system76.com/download-pop/)

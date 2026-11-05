@@ -65,13 +65,13 @@ The mainboard will not know how to access the files inside the directory. The fi
 
 Pop!\_OS extracts the files correctly by default (see screenshots below), but other extraction tools or other operating systems such as macOS may behave differently.
 
-![zipfile](/images/open-firmware-smmstore/zipfile.png)
+![zipfile](img/zipfile.png)
 
-![unzipping](/images/open-firmware-smmstore/unzip-in-progress.png)
+![unzipping](img/unzip-in-progress.png)
 
 The highlighted files pictured below (the hash will change based on file and model) are the two items that should be in the root of the USB drive.
 
-![files-unzipped](/images/open-firmware-smmstore/files-unzipped.png)
+![files-unzipped](img/files-unzipped.png)
 
 With all drive(s) removed, replace the cover and boot with the USB stick inserted. After the firmware has been flashed, remove the USB stick and reinstall the drive(s).
 

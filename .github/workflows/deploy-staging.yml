@@ -52,8 +52,30 @@ jobs:
       #     AWS_DEFAULT_REGION: ${{ secrets.STAGING_AWS_REGION }}
 
       - name: Deploy
-        run: aws s3 sync ./dist s3://${{ secrets.STAGING_AWS_S3_BUCKET }}/support --delete
+        # Order matters: live pages must never reference an asset that has not
+        # been uploaded yet, or one that has already been deleted.
+        run: |
+          # Hashed filenames change with their content, so size is enough to skip existing files.
+          aws s3 sync ./dist/_astro "$S3_PREFIX/_astro" --size-only
+          aws s3 sync ./dist "$S3_PREFIX" --exclude "_astro/*" --delete
+
+          # CloudFront caches rewritten URIs (/x/index.html), which these wildcards also match.
+          # Read top-level folders from the build so new sections are never missed.
+          # _astro is skipped because its filenames change with their content.
+          mapfile -t DIR_PATHS < <(cd dist && find . -mindepth 1 -maxdepth 1 -type d ! -name _astro ! -name '.*' -printf '/support/%P*\n')
+          INVALIDATION_ID=$(aws cloudfront create-invalidation \
+            --distribution-id "$DISTRIBUTION_ID" \
+            --paths "/support" "/support/" "/support/index.html" \
+                    "${DIR_PATHS[@]}" \
+                    "/support/sitemap-*" "/support/favicon.png" "/support/robots.txt" \
+            --query Invalidation.Id --output text)
+          aws cloudfront wait invalidation-completed \
+            --distribution-id "$DISTRIBUTION_ID" --id "$INVALIDATION_ID"
+
+          aws s3 sync ./dist/_astro "$S3_PREFIX/_astro" --size-only --delete
         env:
+          S3_PREFIX: s3://${{ secrets.STAGING_AWS_S3_BUCKET }}/support
+          DISTRIBUTION_ID: ${{ secrets.STAGING_AWS_CLOUDFRONT_DISTRIBUTION_ID }}
           AWS_ACCESS_KEY_ID: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.STAGING_AWS_REGION }}

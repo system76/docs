@@ -25,7 +25,7 @@ tableOfContents: true
 
 ## Important Disclaimer - Please Read
 
-Ubuntu releases beyond 24.04 are not fully tested, but certain packages are made available in the system76-dev/stable PPA on Launchpad.
+Non-LTS Ubuntu releases beyond 24.04 are not fully tested, but certain packages are made available in the system76-dev/stable PPA on Launchpad.
 
 > **NOTE: Oryx Pro (oryp2) Touchpad** On our second generation Oryx Pro (oryp2), the System76 driver is required for the touchpad.  Please use the keyboard or an external mouse for the initial install steps and until the driver is installed.
 
